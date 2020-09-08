@@ -10,7 +10,6 @@ namespace Assets.GameModel
 	{
 		public string Id;
 
-		public Action PerTurnAction;
 		public bool Active;
 	}
 }

@@ -12,9 +12,5 @@ namespace Assets.GameModel.XmlParsers
 		public string PerTurnAction;
 		public bool Active;
 
-		public Policy FromXml()
-		{
-
-		}
 	}
 }

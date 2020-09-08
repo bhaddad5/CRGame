@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEngine;
 
 namespace Assets.GameModel
 {
 	public class Interaction
 	{
 		public string Id;
+		public string Name;
 
 		public int TurnCost = 1;
 		public float EgoCost = 0;
@@ -46,9 +48,9 @@ namespace Assets.GameModel
 			mgm.Ego -= EgoCost;
 			mgm.Funds -= MoneyCost;
 
-			fem.Pride += PrideEffect;
-			fem.Ambition += AmbitionEffect;
-			mgm.Ego += EgoEffect;
+			fem.Pride = Mathf.Max(fem.Pride + PrideEffect, 0);
+			fem.Ambition = Mathf.Max(fem.Ambition + AmbitionEffect, 0);
+			mgm.Ego = Mathf.Max(mgm.Ego + EgoEffect, 0);
 			fem.Controlled = fem.Controlled || ControlEffect;
 		}
 	}
