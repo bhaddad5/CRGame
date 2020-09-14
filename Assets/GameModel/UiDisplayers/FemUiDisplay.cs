@@ -17,14 +17,14 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private InteractionUiDisplay InteractionButtonPrefab;
 
 		private Fem fem;
-		public void Setup(Fem fem)
+		public void Setup(Fem fem, MainGameManager mgm)
 		{
 			this.fem = fem;
 
 			foreach (Interaction interaction in fem.Interactions)
 			{
 				var interact = Instantiate(InteractionButtonPrefab);
-				interact.Setup(interaction, fem);
+				interact.Setup(interaction, fem, mgm);
 				interact.transform.SetParent(DialogOptions);
 			}
 

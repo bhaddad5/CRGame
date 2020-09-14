@@ -10,13 +10,15 @@ namespace Assets.GameModel
 	{
 		public int TurnNumber = 0;
 
+		private const int maxTurnActions = 4;
 		public int RemainingTurnActions = 4;
 		public float Ego = 10;
 		public float Funds = 0;
 		public float CorporateCulture = 0;
 		public List<string> ActivePolicies;
 
-		List<IUiDisplay> RootLevelUiDisplays = new List<IUiDisplay>();
+		[SerializeField] private MainGameUiDisplay MainUiDisplay;
+		private List<IUiDisplay> RootLevelUiDisplays = new List<IUiDisplay>();
 
 		public void RefreshAllUi()
 		{
@@ -26,8 +28,20 @@ namespace Assets.GameModel
 			}
 		}
 
+		public void EndTurn()
+		{
+			TurnNumber++;
+			Ego += 10;
+			RemainingTurnActions = maxTurnActions;
+			RefreshAllUi();
+		}
+
 		void Start()
 		{
+			RootLevelUiDisplays.Add(MainUiDisplay);
+			MainUiDisplay.Setup(this);
+
+			//Test Shit!!!
 			Interaction insinuatingComments = new Interaction()
 			{
 				Id = "insinuatingComments",
@@ -62,7 +76,7 @@ namespace Assets.GameModel
 			Fem deborahJones = new Fem()
 			{
 				Id = "deborahJones",
-				Ambition = 50,
+				Ambition = 20,
 				Pride = 100,
 				Name = "Deborah Jones",
 				Age = 24,
@@ -83,9 +97,12 @@ namespace Assets.GameModel
 			};
 
 			var fem = Instantiate(FemPrefab);
-			fem.Setup(deborahJones);
-			fem.RefreshUiDisplay(this);
+			fem.Setup(deborahJones, this);
 			RootLevelUiDisplays.Add(fem);
+
+			//END TEST SHIT
+
+			RefreshAllUi();
 		}
 
 		//Test Shit

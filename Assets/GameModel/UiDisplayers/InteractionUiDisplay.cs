@@ -12,20 +12,20 @@ public class InteractionUiDisplay : MonoBehaviour, IUiDisplay
 
 	private Interaction interaction;
 	private Fem fem;
-	public void Setup(Interaction interaction, Fem fem)
+	public void Setup(Interaction interaction, Fem fem, MainGameManager mgm)
 	{
 		this.interaction = interaction;
 		this.fem = fem;
+		Button.onClick.AddListener(() =>
+		{
+			interaction.ExecuteInteraction(mgm, fem);
+			mgm.RefreshAllUi();
+		});
 	}
 
 	public void RefreshUiDisplay(MainGameManager mgm)
 	{
 		Text.text = $"({interaction.Name}) {interaction.Dialog}";
 		Button.interactable = interaction.InteractionValid(mgm, fem);
-		Button.onClick.AddListener(() =>
-		{
-			interaction.ExecuteInteraction(mgm, fem);
-			mgm.RefreshAllUi();
-		});
 	}
 }

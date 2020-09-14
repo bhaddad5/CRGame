@@ -35,6 +35,8 @@ namespace Assets.GameModel
 				return false;
 			if (RequiredPride >= 0 && RequiredPride < fem.Pride)
 				return false;
+			if (ControlEffect && fem.Controlled)
+				return false;
 			foreach (var policy in RequiredPolicies)
 			{
 				if (!mgm.ActivePolicies.Contains(policy))
