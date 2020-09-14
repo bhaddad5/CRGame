@@ -37,10 +37,8 @@ namespace Assets.GameModel.UiDisplayers
 			Ambition.text = $"Ambition: {fem.Ambition}";
 			Pride.text = $"Pride: {fem.Pride}";
 
-			foreach (var interactionUi in DialogOptions.GetComponentsInChildren<InteractionUiDisplay>(true))
-			{
-				interactionUi.RefreshUiDisplay(mgm);
-			}
+			foreach (var button in DialogOptions.GetComponentsInChildren<InteractionUiDisplay>(true))
+				button.RefreshUiDisplay(mgm);
 		}
 	}
 }

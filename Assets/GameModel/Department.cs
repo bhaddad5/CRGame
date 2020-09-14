@@ -11,6 +11,8 @@ namespace Assets.GameModel
 		public string Id;
 		public string Name;
 
+		public bool Accessible = true;
+
 		public List<Policy> Policies;
 		public List<Fem> Fems;
 

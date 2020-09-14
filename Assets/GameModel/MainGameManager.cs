@@ -17,6 +17,8 @@ namespace Assets.GameModel
 		public float CorporateCulture = 0;
 		public List<string> ActivePolicies;
 
+		private List<Department> Locations = new List<Department>();
+
 		[SerializeField] private MainGameUiDisplay MainUiDisplay;
 		private List<IUiDisplay> RootLevelUiDisplays = new List<IUiDisplay>();
 
@@ -38,9 +40,6 @@ namespace Assets.GameModel
 
 		void Start()
 		{
-			RootLevelUiDisplays.Add(MainUiDisplay);
-			MainUiDisplay.Setup(this);
-
 			//Test Shit!!!
 			Interaction insinuatingComments = new Interaction()
 			{
@@ -96,12 +95,12 @@ namespace Assets.GameModel
 				Policies = new List<Policy>() { peaceOfMind },
 			};
 
-			var fem = Instantiate(FemPrefab);
-			fem.Setup(deborahJones, this);
-			RootLevelUiDisplays.Add(fem);
+			Locations.Add(legal);
 
 			//END TEST SHIT
 
+			RootLevelUiDisplays.Add(MainUiDisplay);
+			MainUiDisplay.Setup(this, Locations);
 			RefreshAllUi();
 		}
 

@@ -15,13 +15,29 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private TMP_Text Culture;
 		[SerializeField] private TMP_Text TurnNumber;
 		[SerializeField] private Button EndTurn;
+		[SerializeField] private Transform DepartmentsParent;
 
-		public void Setup(MainGameManager mgm)
+		[SerializeField] private DepartmentSelectionUiDisplay DepartmentButtonPrefab;
+		[SerializeField] private DepartmentUiDisplay DepartmentUiPrefab;
+
+		public void Setup(MainGameManager mgm, List<Department> locations)
 		{
 			EndTurn.onClick.AddListener(() =>
 			{
 				mgm.EndTurn();
 			});
+
+			foreach (Department dept in locations)
+			{
+				var d = Instantiate(DepartmentButtonPrefab);
+				d.Setup(dept, this);
+				d.transform.SetParent(DepartmentsParent);
+			}
+		}
+
+		public void ShowDepartment(Department dept)
+		{
+			Debug.Log("Hit!!!");
 		}
 		
 		public void RefreshUiDisplay(MainGameManager mgm)
@@ -32,6 +48,8 @@ namespace Assets.GameModel.UiDisplayers
 			Culture.text = $"Corp Culture: {mgm.CorporateCulture}";
 			TurnNumber.text = $"{mgm.TurnNumber}";
 
+			foreach (var button in DepartmentsParent.GetComponentsInChildren<DepartmentSelectionUiDisplay>(true))
+				button.RefreshUiDisplay(mgm);
 		}
 	}
 }
