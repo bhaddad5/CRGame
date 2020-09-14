@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Assets.GameModel;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Assets.GameModel.UiDisplayers
 {
@@ -13,11 +14,12 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private TMP_Text Ambition;
 		[SerializeField] private TMP_Text Pride;
 		[SerializeField] private Transform DialogOptions;
+		[SerializeField] private Button BackButton;
 
 		[SerializeField] private InteractionUiDisplay InteractionButtonPrefab;
 
 		private Fem fem;
-		public void Setup(Fem fem, MainGameManager mgm)
+		public void Setup(Fem fem, MainGameManager mgm, DepartmentUiDisplay duid)
 		{
 			this.fem = fem;
 
@@ -28,6 +30,7 @@ namespace Assets.GameModel.UiDisplayers
 				interact.transform.SetParent(DialogOptions);
 			}
 
+			BackButton.onClick.AddListener(() => duid.CloseCurrentFem());
 		}
 
 		public void RefreshUiDisplay(MainGameManager mgm)

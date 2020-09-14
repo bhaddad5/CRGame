@@ -39,10 +39,20 @@ namespace Assets.GameModel.UiDisplayers
 		public void ShowDepartment(Department dept, MainGameManager mgm)
 		{
 			currOpenDepartment = Instantiate(DepartmentUiPrefab);
-			currOpenDepartment.Setup(dept);
+			currOpenDepartment.Setup(dept, this, mgm);
 			currOpenDepartment.RefreshUiDisplay(mgm);
 		}
-		
+
+		public void CloseCurrentDepartment()
+		{
+			if (currOpenDepartment != null)
+			{
+				GameObject.Destroy(currOpenDepartment.gameObject);
+				currOpenDepartment = null;
+			}
+		}
+
+
 		public void RefreshUiDisplay(MainGameManager mgm)
 		{
 			Actions.text = $"Actions: {mgm.RemainingTurnActions}";
