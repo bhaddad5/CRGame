@@ -17,6 +17,8 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private FemSelectionUiDisplay FemButtonPrefab;
 		[SerializeField] private FemUiDisplay FemUiPrefab;
 
+		[SerializeField] private PolicyUiDisplay PolicyButtonPrefab;
+
 		private Department dept;
 		public void Setup(Department dept, MainGameUiDisplay mguid, MainGameManager mgm)
 		{
@@ -28,6 +30,13 @@ namespace Assets.GameModel.UiDisplayers
 				var f = Instantiate(FemButtonPrefab);
 				f.Setup(fem, this, mgm);
 				f.transform.SetParent(FemOptionsParent);
+			}
+
+			foreach (Policy policy in dept.Policies)
+			{
+				var p = Instantiate(PolicyButtonPrefab);
+				p.Setup(policy, dept, mgm);
+				p.transform.SetParent(PolicyOptionsParent);
 			}
 		}
 
@@ -53,6 +62,9 @@ namespace Assets.GameModel.UiDisplayers
 			Name.text = dept.Name + (dept.Controlled() ? "(Controlled)" : "");
 
 			foreach (var button in FemOptionsParent.GetComponentsInChildren<FemSelectionUiDisplay>(true))
+				button.RefreshUiDisplay(mgm);
+
+			foreach (var button in PolicyOptionsParent.GetComponentsInChildren<PolicyUiDisplay>(true))
 				button.RefreshUiDisplay(mgm);
 
 			if (currOpenFem != null)

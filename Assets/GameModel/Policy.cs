@@ -9,6 +9,7 @@ namespace Assets.GameModel
 	public class Policy
 	{
 		public string Id;
+		public string Name;
 
 		public bool Active;
 	}

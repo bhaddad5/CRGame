@@ -85,6 +85,7 @@ namespace Assets.GameModel
 			Policy peaceOfMind = new Policy()
 			{
 				Id = "peaceOfMind",
+				Name = "Peace of Mind",
 			};
 
 			Department legal = new Department()
