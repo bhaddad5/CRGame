@@ -11,6 +11,7 @@ namespace Assets.GameModel
 	{
 		public string Id;
 		public string Name;
+		public string Dialog;
 
 		public int TurnCost = 1;
 		public float EgoCost = 0;

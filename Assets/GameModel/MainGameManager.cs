@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Assets.GameModel.UiDisplayers;
 using UnityEngine;
 
 namespace Assets.GameModel
@@ -15,21 +16,23 @@ namespace Assets.GameModel
 		public float CorporateCulture = 0;
 		public List<string> ActivePolicies;
 
+		List<IUiDisplay> RootLevelUiDisplays = new List<IUiDisplay>();
+
+		public void RefreshAllUi()
+		{
+			foreach (var uiDisplay in RootLevelUiDisplays)
+			{
+				uiDisplay.RefreshUiDisplay(this);
+			}
+		}
+
 		void Start()
 		{
-			Fem deborahJones = new Fem()
-			{
-				Id = "deborahJones",
-				Ambition = 50,
-				Pride = 100,
-				Name = "Deborah Jones",
-				Age = 24,
-			};
-
 			Interaction insinuatingComments = new Interaction()
 			{
 				Id = "insinuatingComments",
 				Name = "Insinuating Comments",
+				Dialog = "No wonder you got this job, with an ass like that...",
 				EgoCost = 10,
 				AmbitionEffect = -4,
 			};
@@ -38,6 +41,7 @@ namespace Assets.GameModel
 			{
 				Id = "takeControl",
 				Name = "Take Control",
+				Dialog = "I own you now.",
 				RequiredAmbition = 0,
 				EgoEffect = 100,
 				ControlEffect = true,
@@ -47,11 +51,22 @@ namespace Assets.GameModel
 			{
 				Id = "motivationRoomApt",
 				Name = "Motivation Room Appointment",
+				Dialog = "I think your attitude needs correcting...",
 				RequiredControl = true,
 				RequiredPolicies = new List<string>() { "peaceOfMind" },
 				TurnCost = 4,
 				EgoCost = 20,
 				PrideEffect = -20,
+			};
+
+			Fem deborahJones = new Fem()
+			{
+				Id = "deborahJones",
+				Ambition = 50,
+				Pride = 100,
+				Name = "Deborah Jones",
+				Age = 24,
+				Interactions = new List<Interaction>() { insinuatingComments, takeControl, motivationRoomApt }
 			};
 
 			Policy peaceOfMind = new Policy()
@@ -67,49 +82,13 @@ namespace Assets.GameModel
 				Policies = new List<Policy>() { peaceOfMind },
 			};
 
-			Debug.Log(insinuatingComments.InteractionValid(this, deborahJones));
-			Debug.Log(takeControl.InteractionValid(this, deborahJones));
-			Debug.Log(motivationRoomApt.InteractionValid(this, deborahJones));
-
-			insinuatingComments.ExecuteInteraction(this, deborahJones);
-			Debug.Log(deborahJones.Ambition);
-			insinuatingComments.ExecuteInteraction(this, deborahJones);
-			insinuatingComments.ExecuteInteraction(this, deborahJones); 
-			insinuatingComments.ExecuteInteraction(this, deborahJones);
-			insinuatingComments.ExecuteInteraction(this, deborahJones);
-			insinuatingComments.ExecuteInteraction(this, deborahJones);
-			insinuatingComments.ExecuteInteraction(this, deborahJones);
-			insinuatingComments.ExecuteInteraction(this, deborahJones);
-			insinuatingComments.ExecuteInteraction(this, deborahJones);
-			insinuatingComments.ExecuteInteraction(this, deborahJones);
-			insinuatingComments.ExecuteInteraction(this, deborahJones);
-			insinuatingComments.ExecuteInteraction(this, deborahJones);
-			insinuatingComments.ExecuteInteraction(this, deborahJones);
-			insinuatingComments.ExecuteInteraction(this, deborahJones);
-			insinuatingComments.ExecuteInteraction(this, deborahJones);
-			insinuatingComments.ExecuteInteraction(this, deborahJones);
-			insinuatingComments.ExecuteInteraction(this, deborahJones);
-			insinuatingComments.ExecuteInteraction(this, deborahJones);
-			insinuatingComments.ExecuteInteraction(this, deborahJones);
-			insinuatingComments.ExecuteInteraction(this, deborahJones);
-			insinuatingComments.ExecuteInteraction(this, deborahJones);
-			insinuatingComments.ExecuteInteraction(this, deborahJones);
-			insinuatingComments.ExecuteInteraction(this, deborahJones);
-			insinuatingComments.ExecuteInteraction(this, deborahJones);
-			insinuatingComments.ExecuteInteraction(this, deborahJones);
-			insinuatingComments.ExecuteInteraction(this, deborahJones);
-			insinuatingComments.ExecuteInteraction(this, deborahJones);
-			insinuatingComments.ExecuteInteraction(this, deborahJones);
-
-			Debug.Log(deborahJones.Ambition);
-
-			RemainingTurnActions = 4;
-
-			Debug.Log(takeControl.InteractionValid(this, deborahJones));
-			takeControl.ExecuteInteraction(this, deborahJones);
-
-			Debug.Log(legal.Controlled());
-			//legal.Policies.First().Active 
+			var fem = Instantiate(FemPrefab);
+			fem.Setup(deborahJones);
+			fem.RefreshUiDisplay(this);
+			RootLevelUiDisplays.Add(fem);
 		}
+
+		//Test Shit
+		[SerializeField] private FemUiDisplay FemPrefab;
 	}
 }

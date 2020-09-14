@@ -17,5 +17,7 @@ namespace Assets.GameModel
 
 		public string Name;
 		public int Age;
+
+		public List<Interaction> Interactions = new List<Interaction>();
 	}
 }

@@ -19,7 +19,7 @@ namespace Assets.GameModel
 			return Fems.All(f => f.Controlled);
 		}
 
-		public bool ActivatePolicy(MainGameManager mgm, string policyId)
+		public void ActivatePolicy(MainGameManager mgm, string policyId)
 		{
 			mgm.ActivePolicies.Add(policyId);
 			Policies.First(pol => pol.Id == policyId).Active = true;
