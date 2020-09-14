@@ -30,14 +30,17 @@ namespace Assets.GameModel.UiDisplayers
 			foreach (Department dept in locations)
 			{
 				var d = Instantiate(DepartmentButtonPrefab);
-				d.Setup(dept, this);
+				d.Setup(dept, this, mgm);
 				d.transform.SetParent(DepartmentsParent);
 			}
 		}
 
-		public void ShowDepartment(Department dept)
+		private DepartmentUiDisplay currOpenDepartment = null;
+		public void ShowDepartment(Department dept, MainGameManager mgm)
 		{
-			Debug.Log("Hit!!!");
+			currOpenDepartment = Instantiate(DepartmentUiPrefab);
+			currOpenDepartment.Setup(dept);
+			currOpenDepartment.RefreshUiDisplay(mgm);
 		}
 		
 		public void RefreshUiDisplay(MainGameManager mgm)
@@ -50,6 +53,9 @@ namespace Assets.GameModel.UiDisplayers
 
 			foreach (var button in DepartmentsParent.GetComponentsInChildren<DepartmentSelectionUiDisplay>(true))
 				button.RefreshUiDisplay(mgm);
+
+			if(currOpenDepartment != null)
+				currOpenDepartment.RefreshUiDisplay(mgm);
 		}
 	}
 }
