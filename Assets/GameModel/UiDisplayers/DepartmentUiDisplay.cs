@@ -20,7 +20,7 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private PolicyUiDisplay PolicyButtonPrefab;
 
 		private Department dept;
-		public void Setup(Department dept, MainGameUiDisplay mguid, MainGameManager mgm)
+		public void Setup(Department dept, MainMapUiDisplay mguid, MainGameManager mgm)
 		{
 			this.dept = dept;
 			BackButton.onClick.AddListener(() => mguid.CloseCurrentDepartment());

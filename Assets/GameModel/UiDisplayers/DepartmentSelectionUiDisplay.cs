@@ -15,12 +15,12 @@ namespace Assets.GameModel.UiDisplayers
 
 		private Department dept;
 
-		public void Setup(Department dept, MainGameUiDisplay mainGameUi, MainGameManager mgm)
+		public void Setup(Department dept, MainMapUiDisplay mainMapUi, MainGameManager mgm)
 		{
 			this.dept = dept;
 			Button.onClick.AddListener(() =>
 			{
-				mainGameUi.ShowDepartment(dept, mgm);
+				mainMapUi.ShowDepartment(dept, mgm);
 			});
 		}
 

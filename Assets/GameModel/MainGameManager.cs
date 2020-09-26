@@ -19,7 +19,8 @@ namespace Assets.GameModel
 
 		private List<Department> Locations = new List<Department>();
 
-		[SerializeField] private MainGameUiDisplay MainUiDisplay;
+		[SerializeField] private HudUiDisplay HudUiDisplay;
+		[SerializeField] private MainMapUiDisplay MainMapUiDisplay;
 		private List<IUiDisplay> RootLevelUiDisplays = new List<IUiDisplay>();
 
 		public void RefreshAllUi()
@@ -100,12 +101,11 @@ namespace Assets.GameModel
 
 			//END TEST SHIT
 
-			RootLevelUiDisplays.Add(MainUiDisplay);
-			MainUiDisplay.Setup(this, Locations);
+			RootLevelUiDisplays.Add(HudUiDisplay);
+			RootLevelUiDisplays.Add(MainMapUiDisplay);
+			HudUiDisplay.Setup(this);
+			MainMapUiDisplay.Setup(this, Locations);
 			RefreshAllUi();
 		}
-
-		//Test Shit
-		[SerializeField] private FemUiDisplay FemPrefab;
 	}
 }
