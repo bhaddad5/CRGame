@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEngine;
 
 namespace Assets.GameModel
 {
@@ -10,6 +11,8 @@ namespace Assets.GameModel
 	{
 		public string Id;
 		public string Name;
+
+		public Vector2 UiPosition;
 
 		public bool Accessible = true;
 

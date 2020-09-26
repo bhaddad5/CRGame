@@ -95,6 +95,7 @@ namespace Assets.GameModel
 				Name = "Legal",
 				Fems = new List<Fem>(){ deborahJones },
 				Policies = new List<Policy>() { peaceOfMind },
+				UiPosition = new Vector2(911, 429),
 			};
 
 			Locations.Add(legal);

@@ -22,6 +22,7 @@ namespace Assets.GameModel.UiDisplayers
 			{
 				mainMapUi.ShowDepartment(dept, mgm);
 			});
+			Button.transform.position = new Vector3(dept.UiPosition.x, dept.UiPosition.y, 0);
 		}
 
 		public void RefreshUiDisplay(MainGameManager mgm)
