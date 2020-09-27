@@ -48,7 +48,7 @@ namespace Assets.GameModel
 				Name = "Insinuating Comments",
 				Dialog = "No wonder you got this job, with an ass like that...",
 				EgoCost = 10,
-				AmbitionEffect = -4,
+				AmbitionEffect = -20,
 			};
 
 			Interaction takeControl = new Interaction()
@@ -76,7 +76,7 @@ namespace Assets.GameModel
 			Fem deborahJones = new Fem()
 			{
 				Id = "deborahJones",
-				Ambition = 20,
+				Ambition = 90,
 				Pride = 100,
 				Name = "Deborah Jones",
 				Age = 24,

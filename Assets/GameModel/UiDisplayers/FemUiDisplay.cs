@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using Assets.GameModel;
 using TMPro;
 using UnityEngine;
@@ -15,6 +16,7 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private TMP_Text Pride;
 		[SerializeField] private Transform DialogOptions;
 		[SerializeField] private Button BackButton;
+		[SerializeField] private Image Picture;
 
 		[SerializeField] private InteractionUiDisplay InteractionButtonPrefab;
 
@@ -39,9 +41,29 @@ namespace Assets.GameModel.UiDisplayers
 			Age.text = $"{fem.Age} years old";
 			Ambition.text = $"Ambition: {fem.Ambition}";
 			Pride.text = $"Pride: {fem.Pride}";
+			Picture.sprite = LoadFemPicture();
+			Debug.Log(Picture.sprite);
 
 			foreach (var button in DialogOptions.GetComponentsInChildren<InteractionUiDisplay>(true))
 				button.RefreshUiDisplay(mgm);
+		}
+
+		private Sprite LoadFemPicture()
+		{
+			Debug.Log(Path.Combine("FemPics", fem.Id, DetermineFemPictureId()));
+			return Resources.Load<Sprite>(Path.Combine("FemPics", fem.Id, DetermineFemPictureId()));
+		}
+
+		private string DetermineFemPictureId()
+		{
+			if (fem.Controlled)
+				return "owned";
+			else if (fem.Ambition > 70)
+				return "angry";
+			else if (fem.Ambition > 30)
+				return "neutral";
+			else
+				return "submissive";
 		}
 	}
 }
