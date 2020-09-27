@@ -48,7 +48,13 @@ namespace Assets.GameModel
 				Name = "Insinuating Comments",
 				Dialog = "No wonder you got this job, with an ass like that...",
 				EgoCost = 10,
-				AmbitionEffect = -20,
+				Effects = new List<Effect>()
+				{
+					new Effect()
+					{
+						AmbitionEffect = -20,
+					}
+				}
 			};
 
 			Interaction takeControl = new Interaction()
@@ -57,8 +63,14 @@ namespace Assets.GameModel
 				Name = "Take Control",
 				Dialog = "I own you now.",
 				RequiredAmbition = 0,
-				EgoEffect = 100,
-				ControlEffect = true,
+				Effects = new List<Effect>()
+				{
+					new Effect()
+					{
+						EgoEffect = 100,
+						ControlEffect = true,
+					}
+				}
 			};
 
 			Interaction motivationRoomApt = new Interaction()
@@ -70,7 +82,13 @@ namespace Assets.GameModel
 				RequiredPolicies = new List<string>() { "peaceOfMind" },
 				TurnCost = 4,
 				EgoCost = 20,
-				PrideEffect = -20,
+				Effects = new List<Effect>()
+				{
+					new Effect()
+					{
+						PrideEffect = -20,
+					}
+				}
 			};
 
 			Fem deborahJones = new Fem()

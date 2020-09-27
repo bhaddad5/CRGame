@@ -42,7 +42,6 @@ namespace Assets.GameModel.UiDisplayers
 			Ambition.text = $"Ambition: {fem.Ambition}";
 			Pride.text = $"Pride: {fem.Pride}";
 			Picture.sprite = LoadFemPicture();
-			Debug.Log(Picture.sprite);
 
 			foreach (var button in DialogOptions.GetComponentsInChildren<InteractionUiDisplay>(true))
 				button.RefreshUiDisplay(mgm);
@@ -50,7 +49,6 @@ namespace Assets.GameModel.UiDisplayers
 
 		private Sprite LoadFemPicture()
 		{
-			Debug.Log(Path.Combine("FemPics", fem.Id, DetermineFemPictureId()));
 			return Resources.Load<Sprite>(Path.Combine("FemPics", fem.Id, DetermineFemPictureId()));
 		}
 

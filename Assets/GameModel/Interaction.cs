@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
+using Random = System.Random;
 
 namespace Assets.GameModel
 {
@@ -22,10 +23,7 @@ namespace Assets.GameModel
 		public float RequiredAmbition = -1;
 		public float RequiredPride = -1;
 
-		public float AmbitionEffect = 0;
-		public float PrideEffect = 0;
-		public float EgoEffect = 0;
-		public bool ControlEffect = false;
+		public List<Effect> Effects;
 
 		public bool InteractionValid(MainGameManager mgm, Fem fem)
 		{
@@ -35,7 +33,7 @@ namespace Assets.GameModel
 				return false;
 			if (RequiredPride >= 0 && RequiredPride < fem.Pride)
 				return false;
-			if (ControlEffect && fem.Controlled)
+			if (Effects.Any(eff => eff.ControlEffect) && fem.Controlled)
 				return false;
 			foreach (var policy in RequiredPolicies)
 			{
@@ -51,10 +49,8 @@ namespace Assets.GameModel
 			mgm.Ego -= EgoCost;
 			mgm.Funds -= MoneyCost;
 
-			fem.Pride = Mathf.Max(fem.Pride + PrideEffect, 0);
-			fem.Ambition = Mathf.Max(fem.Ambition + AmbitionEffect, 0);
-			mgm.Ego = Mathf.Max(mgm.Ego + EgoEffect, 0);
-			fem.Controlled = fem.Controlled || ControlEffect;
+			var chosenEffect = Effects[UnityEngine.Random.Range(0, Effects.Count - 1)];
+			chosenEffect.ExecuteEffect(mgm, fem);
 		}
 	}
 }
