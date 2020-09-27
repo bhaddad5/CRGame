@@ -24,6 +24,14 @@ namespace Assets.GameModel
 			return Fems.All(f => f.Controlled);
 		}
 
+		public void HandleEndTurn(MainGameManager mgm)
+		{
+			foreach (var fem in Fems)
+			{
+				fem.HandleEndTurn(mgm, this);
+			}
+		}
+
 		public void ActivatePolicy(MainGameManager mgm, string policyId)
 		{
 			mgm.ActivePolicies.Add(policyId);

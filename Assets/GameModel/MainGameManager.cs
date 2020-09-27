@@ -23,6 +23,17 @@ namespace Assets.GameModel
 		[SerializeField] private MainMapUiDisplay MainMapUiDisplay;
 		private List<IUiDisplay> RootLevelUiDisplays = new List<IUiDisplay>();
 
+		private void HandleEndTurn()
+		{
+			TurnNumber++;
+			Ego += 10;
+			RemainingTurnActions = maxTurnActions;
+			foreach (Department department in Locations)
+			{
+				department.HandleEndTurn(this);
+			}
+		}
+
 		public void RefreshAllUi()
 		{
 			foreach (var uiDisplay in RootLevelUiDisplays)
@@ -33,9 +44,7 @@ namespace Assets.GameModel
 
 		public void EndTurn()
 		{
-			TurnNumber++;
-			Ego += 10;
-			RemainingTurnActions = maxTurnActions;
+			HandleEndTurn();
 			RefreshAllUi();
 		}
 
@@ -91,6 +100,16 @@ namespace Assets.GameModel
 				}
 			};
 
+			Trait overAchiever = new Trait()
+			{
+				Id = "overAchiever",
+				Name = "Over-achiever",
+				Effect = new Effect()
+				{
+					AmbitionEffect = .5f
+				}
+			};
+
 			Fem deborahJones = new Fem()
 			{
 				Id = "deborahJones",
@@ -98,7 +117,11 @@ namespace Assets.GameModel
 				Pride = 100,
 				Name = "Deborah Jones",
 				Age = 24,
-				Interactions = new List<Interaction>() { insinuatingComments, takeControl, motivationRoomApt }
+				Interactions = new List<Interaction>() { insinuatingComments, takeControl, motivationRoomApt },
+				Traits = new List<Trait>()
+				{
+					overAchiever,
+				}
 			};
 
 			Policy peaceOfMind = new Policy()

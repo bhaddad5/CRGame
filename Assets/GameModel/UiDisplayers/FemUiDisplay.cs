@@ -14,6 +14,7 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private TMP_Text Age;
 		[SerializeField] private TMP_Text Ambition;
 		[SerializeField] private TMP_Text Pride;
+		[SerializeField] private TMP_Text Traits;
 		[SerializeField] private Transform DialogOptions;
 		[SerializeField] private Button BackButton;
 		[SerializeField] private Image Picture;
@@ -42,9 +43,22 @@ namespace Assets.GameModel.UiDisplayers
 			Ambition.text = $"Ambition: {fem.Ambition}";
 			Pride.text = $"Pride: {fem.Pride}";
 			Picture.sprite = LoadFemPicture();
+			Traits.text = GetTraitsString();
 
 			foreach (var button in DialogOptions.GetComponentsInChildren<InteractionUiDisplay>(true))
 				button.RefreshUiDisplay(mgm);
+		}
+
+		private string GetTraitsString()
+		{
+			string traitsText = "";
+			foreach (var trait in fem.Traits)
+			{
+				traitsText += trait.Name + ",";
+			}
+			if (traitsText.EndsWith(","))
+				traitsText = traitsText.Substring(0, traitsText.Length - 1);
+			return $"Traits: {traitsText}";
 		}
 
 		private Sprite LoadFemPicture()

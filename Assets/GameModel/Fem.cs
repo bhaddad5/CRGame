@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Assets.GameModel
 {
@@ -19,5 +15,14 @@ namespace Assets.GameModel
 		public int Age;
 
 		public List<Interaction> Interactions = new List<Interaction>();
+		public List<Trait> Traits = new List<Trait>();
+
+		public void HandleEndTurn(MainGameManager mgm, Department dept)
+		{
+			foreach (var trait in Traits)
+			{
+				trait.Effect.ExecuteEffect(mgm, this);
+			}
+		}
 	}
 }
