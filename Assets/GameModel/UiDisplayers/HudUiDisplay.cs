@@ -11,6 +11,7 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 	[SerializeField] private TMP_Text Ego;
 	[SerializeField] private TMP_Text Funds;
 	[SerializeField] private TMP_Text Culture;
+	[SerializeField] private TMP_Text Power;
 	[SerializeField] private TMP_Text TurnNumber;
 	[SerializeField] private Button EndTurn;
 
@@ -28,6 +29,7 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 		Ego.text = $"Ego: {mgm.Ego}";
 		Funds.text = $"Funds: ${mgm.Funds}";
 		Culture.text = $"Corp Culture: {mgm.CorporateCulture}";
+		Power.text = $"Power: {mgm.Power}";
 		TurnNumber.text = $"{mgm.TurnNumber}";
 	}
 }

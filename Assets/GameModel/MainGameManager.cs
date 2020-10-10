@@ -14,6 +14,7 @@ namespace Assets.GameModel
 		public int RemainingTurnActions = 4;
 		public float Ego = 10;
 		public float Funds = 0;
+		public float Power = 0;
 		public float CorporateCulture = 0;
 		public List<string> ActivePolicies;
 
