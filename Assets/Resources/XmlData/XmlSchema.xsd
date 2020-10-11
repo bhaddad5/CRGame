@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="XMLSchema" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+
+	<xs:element name="InteractionsList" type="Interactions"/>
+	<xs:element name="FemsList" type="Fems"/>
+
+	<xs:complexType name="Effect">
+		<xs:attribute name="AmbitionEffect" type="xs:float"/>
+		<xs:attribute name="PrideEffect" type="xs:float"/>
+		<xs:attribute name="EgoEffect" type="xs:float"/>
+		<xs:attribute name="FundsEffect" type="xs:float"/>
+		<xs:attribute name="ControlEffect" type="xs:boolean"/>
+		<xs:attribute name="TraitsAdded" type="xs:string"/>
+		<xs:attribute name="TraitsRemoved" type="xs:string"/>
+	</xs:complexType>
+
+	<xs:complexType name="Interaction">
+		<xs:sequence>
+			<xs:choice maxOccurs="unbounded" minOccurs="1">
+				<xs:element name="Effect" type="Effect"/>
+			</xs:choice>
+		</xs:sequence>
+		<xs:attribute name="Id" type="xs:string" use="required"/>
+		<xs:attribute name="Name" type="xs:string" use="required"/>
+		<xs:attribute name="Dialog" type="xs:string"/>
+		<xs:attribute name="TurnCost" type="xs:decimal"/>
+		<xs:attribute name="EgoCost" type="xs:float"/>
+		<xs:attribute name="MoneyCost" type="xs:float"/>
+		<xs:attribute name="RequiredPolicies" type="xs:string"/>
+		<xs:attribute name="RequiredAmbition" type="xs:float"/>
+		<xs:attribute name="RequiredPride" type="xs:float"/>
+		<xs:attribute name="RequiredControl" type="xs:boolean"/>
+	</xs:complexType>
+
+	<xs:complexType name="Fem">
+		<xs:attribute name="Id" type="xs:string"/>
+		<xs:attribute name="Name" type="xs:string"/>
+	</xs:complexType>
+
+	<xs:complexType name="Interactions">
+		<xs:sequence>
+			<xs:choice maxOccurs="unbounded" minOccurs="0">
+				<xs:element name="Interaction" type="Interaction"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="Fems">
+		<xs:sequence>
+			<xs:choice maxOccurs="unbounded" minOccurs="0">
+				<xs:element name="Fem" type="Fem"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

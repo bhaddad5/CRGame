@@ -1,0 +1,12 @@
+<InteractionsList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3schools.com XmlSchema.xsd">
+	<Interaction Id="insinuatingComments" Name="Insinuating Comments" Dialog="No wonder you got this job, with an ass like that..." EgoCost="10">
+		<Effect AmbitionEffect="-20"/>
+	</Interaction>
+	<Interaction Id="takeControl" Name="Take Control" Dialog="I own you now." RequiredAmbition="0">
+		<Effect EgoEffect="100" ControlEffect="true"/>
+	</Interaction>
+	<Interaction Id="motivationRoomApt" Name="Motivation Room Appointment" Dialog="I think your attitude needs correcting..." EgoCost="20" TurnCost="4" RequiredControl="true" RequiredPolicies="peaceOfMind">
+		<Effect PrideEffect="-20"/>
+	</Interaction>
+</InteractionsList>
+

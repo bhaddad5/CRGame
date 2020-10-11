@@ -51,6 +51,9 @@ namespace Assets.GameModel
 
 		void Start()
 		{
+			var xmlResolver = new XmlResolver();
+			xmlResolver.LoadXmlData();
+
 			Locations = TempContent.GenerateContent();
 
 			RootLevelUiDisplays.Add(HudUiDisplay);
