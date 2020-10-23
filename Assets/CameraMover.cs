@@ -14,7 +14,7 @@ public class CameraMover : MonoBehaviour
 		{
 			Vector3 dragChange = Input.mousePosition - prevMousePos;
 			var desiredPos = transform.position - (dragChange * moveScaler);
-			transform.position = new Vector3(Mathf.Clamp(desiredPos.x, -7.9f, 7.9f), Mathf.Clamp(desiredPos.y, -2.6f, 1.9f), -10f);
+			transform.position = new Vector3(Mathf.Clamp(desiredPos.x, -7.9f, 7.9f), Mathf.Clamp(desiredPos.y, -2.6f, 2.6f), -10f);
 		}
 
 		prevMousePos = Input.mousePosition;
