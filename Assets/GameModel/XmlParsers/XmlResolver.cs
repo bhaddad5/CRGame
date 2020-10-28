@@ -9,18 +9,18 @@ using System.Xml.Serialization;
 using Assets.GameModel.XmlParsers;
 using UnityEngine;
 
-namespace Assets.GameModel
+namespace Assets.GameModel.XmlParsers
 {
 	public class XmlResolver
 	{
-		public List<Department> LoadXmlData()
+		public GameData LoadXmlData()
 		{
 			var gameData = (TextAsset) Resources.Load("XmlData/GameData");
 
 			var serializer = new XmlSerializer(typeof(GameDataXml));
 			var data = (GameDataXml) serializer.Deserialize(new StringReader(gameData.text));
 			
-			return data.FromXml().Departments;
+			return data.FromXml();
 		}
 	}
 }

@@ -31,11 +31,5 @@ namespace Assets.GameModel
 				fem.HandleEndTurn(mgm, this);
 			}
 		}
-
-		public void ActivatePolicy(MainGameManager mgm, string policyId)
-		{
-			mgm.ActivePolicies.Add(policyId);
-			Policies.First(pol => pol.Id == policyId).Active = true;
-		}
 	}
 }

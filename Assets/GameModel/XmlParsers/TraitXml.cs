@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel;
 using System.Xml.Serialization;
-using UnityEngine;
 
 namespace Assets.GameModel.XmlParsers
 {

@@ -2,34 +2,27 @@
 using System.Collections.Generic;
 using System.Linq;
 using Assets.GameModel.UiDisplayers;
+using Assets.GameModel.XmlParsers;
 using UnityEngine;
 
 namespace Assets.GameModel
 {
 	public class MainGameManager : MonoBehaviour
 	{
-		public int TurnNumber = 0;
+		public GameData Data;
 
 		private const int maxTurnActions = 4;
-		public int RemainingTurnActions = 4;
-		public float Ego = 10;
-		public float Funds = 0;
-		public float Power = 0;
-		public float CorporateCulture = 0;
-		public List<string> ActivePolicies;
-
-		private List<Department> Locations = new List<Department>();
-
+		
 		[SerializeField] private HudUiDisplay HudUiDisplay;
 		[SerializeField] private MainMapUiDisplay MainMapUiDisplay;
 		private List<IUiDisplay> RootLevelUiDisplays = new List<IUiDisplay>();
 
 		private void HandleEndTurn()
 		{
-			TurnNumber++;
-			Ego += 10;
-			RemainingTurnActions = maxTurnActions;
-			foreach (Department department in Locations)
+			Data.TurnNumber++;
+			Data.Ego += 10;
+			Data.Actions = maxTurnActions;
+			foreach (Department department in Data.Departments)
 			{
 				department.HandleEndTurn(this);
 			}
@@ -54,12 +47,12 @@ namespace Assets.GameModel
 			var xmlResolver = new XmlResolver();
 			xmlResolver.LoadXmlData();
 
-			Locations = new XmlResolver().LoadXmlData();//TempContent.GenerateContent();
+			Data = new XmlResolver().LoadXmlData();//TempContent.GenerateContent();
 
 			RootLevelUiDisplays.Add(HudUiDisplay);
 			RootLevelUiDisplays.Add(MainMapUiDisplay);
 			HudUiDisplay.Setup(this);
-			MainMapUiDisplay.Setup(this, Locations);
+			MainMapUiDisplay.Setup(this, Data.Departments);
 			RefreshAllUi();
 		}
 	}

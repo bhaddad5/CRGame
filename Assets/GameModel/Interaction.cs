@@ -35,19 +35,19 @@ namespace Assets.GameModel
 				return false;
 			if (Effects.Any(eff => eff.ControlEffect) && fem.Controlled)
 				return false;
-			foreach (var policy in RequiredPolicies)
+			foreach (var policyId in RequiredPolicies)
 			{
-				if (!mgm.ActivePolicies.Contains(policy))
+				if (!mgm.Data.GetActivePolicyIds().Contains(policyId))
 					return false;
 			}
-			return TurnCost <= mgm.RemainingTurnActions && EgoCost <= mgm.Ego && MoneyCost <= mgm.Funds;
+			return TurnCost <= mgm.Data.Actions && EgoCost <= mgm.Data.Ego && MoneyCost <= mgm.Data.Funds;
 		}
 
 		public void ExecuteInteraction(MainGameManager mgm, Fem fem)
 		{
-			mgm.RemainingTurnActions -= TurnCost;
-			mgm.Ego -= EgoCost;
-			mgm.Funds -= MoneyCost;
+			mgm.Data.Actions -= TurnCost;
+			mgm.Data.Ego -= EgoCost;
+			mgm.Data.Funds -= MoneyCost;
 
 			var chosenEffect = Effects[UnityEngine.Random.Range(0, Effects.Count - 1)];
 			chosenEffect.ExecuteEffect(mgm, fem);

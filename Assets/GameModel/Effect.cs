@@ -15,8 +15,8 @@ namespace Assets.GameModel
 
 		public void ExecuteEffect(MainGameManager mgm, Fem fem)
 		{
-			mgm.Ego = Mathf.Max(mgm.Ego + EgoEffect, 0);
-			mgm.Funds = Mathf.Max(mgm.Funds + FundsEffect, 0);
+			mgm.Data.Ego = Mathf.Max(mgm.Data.Ego + EgoEffect, 0);
+			mgm.Data.Funds = Mathf.Max(mgm.Data.Funds + FundsEffect, 0);
 
 			fem.Pride = Mathf.Max(fem.Pride + PrideEffect, 0);
 			fem.Ambition = Mathf.Max(fem.Ambition + AmbitionEffect, 0);
