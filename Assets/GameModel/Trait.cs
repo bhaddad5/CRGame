@@ -11,6 +11,6 @@ namespace Assets.GameModel
 		public string Id;
 		public string Name;
 
-		public Effect Effect;
+		public List<Effect> Effects;
 	}
 }

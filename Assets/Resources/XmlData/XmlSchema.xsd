@@ -31,8 +31,21 @@
 		<xs:attribute name="RequiredControl" type="xs:boolean"/>
 	</xs:complexType>
 
+	<xs:complexType name="Trait">
+		<xs:sequence>
+			<xs:choice maxOccurs="unbounded" minOccurs="1">
+				<xs:element name="Effect" type="Effect"/>
+			</xs:choice>
+		</xs:sequence>
+		<xs:attribute name="Id" type="xs:string" use="required"/>
+		<xs:attribute name="Name" type="xs:string" use="required"/>
+	</xs:complexType>
+
 	<xs:complexType name="Fem">
 		<xs:sequence>
+			<xs:choice maxOccurs="unbounded" minOccurs="0">
+				<xs:element name="Trait" type="Trait"/>
+			</xs:choice>
 			<xs:choice maxOccurs="unbounded" minOccurs="0">
 				<xs:element name="Interaction" type="Interaction"/>
 			</xs:choice>

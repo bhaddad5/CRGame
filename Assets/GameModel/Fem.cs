@@ -21,7 +21,10 @@ namespace Assets.GameModel
 		{
 			foreach (var trait in Traits)
 			{
-				trait.Effect.ExecuteEffect(mgm, this);
+				foreach (var effect in trait.Effects)
+				{
+					effect.ExecuteEffect(mgm, this);
+				}
 			}
 		}
 	}

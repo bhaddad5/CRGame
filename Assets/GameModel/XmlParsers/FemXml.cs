@@ -16,12 +16,21 @@ namespace Assets.GameModel.XmlParsers
 		[XmlElement("Interaction", typeof(InteractionXml))]
 		public InteractionXml[] Interactions = new InteractionXml[0];
 
+		[XmlElement("Trait", typeof(TraitXml))]
+		public TraitXml[] Traits = new TraitXml[0];
+
 		public Fem FromXml()
 		{
 			List<Interaction> interactions = new List<Interaction>();
 			foreach (var interactionXml in Interactions)
 			{
 				interactions.Add(interactionXml.FromXml());
+			}
+
+			List<Trait> traits = new List<Trait>();
+			foreach (var traitXml in Traits)
+			{
+				traits.Add(traitXml.FromXml());
 			}
 
 			return new Fem()
@@ -33,6 +42,7 @@ namespace Assets.GameModel.XmlParsers
 				Name = Name,
 				Age = Age,
 				Interactions = interactions,
+				Traits = traits,
 			};
 		}
 	}
