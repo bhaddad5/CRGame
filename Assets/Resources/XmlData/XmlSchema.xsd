@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xs:schema id="XMLSchema" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" >
 
-	<xs:element name="InteractionsList" type="Interactions"/>
-	<xs:element name="FemsList" type="Fems"/>
+	<xs:element name="GameData" type="GameData"/>
 
 	<xs:complexType name="Effect">
 		<xs:attribute name="AmbitionEffect" type="xs:float"/>
@@ -33,23 +32,56 @@
 	</xs:complexType>
 
 	<xs:complexType name="Fem">
-		<xs:attribute name="Id" type="xs:string"/>
-		<xs:attribute name="Name" type="xs:string"/>
-	</xs:complexType>
-
-	<xs:complexType name="Interactions">
 		<xs:sequence>
 			<xs:choice maxOccurs="unbounded" minOccurs="0">
 				<xs:element name="Interaction" type="Interaction"/>
 			</xs:choice>
 		</xs:sequence>
+		<xs:attribute name="Id" type="xs:string" use="required"/>
+		<xs:attribute name="Name" type="xs:string" use="required"/>
+		<xs:attribute name="Age" type="xs:decimal" use="required"/>
+		<xs:attribute name="Controlled" type="xs:boolean"/>
+		<xs:attribute name="Ambition" type="xs:float"/>
+		<xs:attribute name="Pride" type="xs:float"/>
 	</xs:complexType>
 
-	<xs:complexType name="Fems">
+	<xs:complexType name="Policy">
+		<xs:sequence>
+			<xs:choice maxOccurs="unbounded" minOccurs="0">
+				<xs:element name="PerTurnEffect" type="Effect"/>
+			</xs:choice>
+		</xs:sequence>
+		<xs:attribute name="Id" type="xs:string" use="required"/>
+		<xs:attribute name="Name" type="xs:string" use="required"/>
+		<xs:attribute name="Active" type="xs:boolean"/>
+	</xs:complexType>
+
+	<xs:complexType name="Department">
 		<xs:sequence>
 			<xs:choice maxOccurs="unbounded" minOccurs="0">
 				<xs:element name="Fem" type="Fem"/>
 			</xs:choice>
+			<xs:choice maxOccurs="unbounded" minOccurs="0">
+				<xs:element name="Policy" type="Policy"/>
+			</xs:choice>
 		</xs:sequence>
+		<xs:attribute name="Id" type="xs:string" use="required"/>
+		<xs:attribute name="Name" type="xs:string" use="required"/>
+		<xs:attribute name="Accessible" type="xs:boolean"/>
+		<xs:attribute name="UiPosX" type="xs:float" use="required"/>
+		<xs:attribute name="UiPosY" type="xs:float" use="required"/>
+	</xs:complexType>
+	
+	<xs:complexType name="GameData">
+		<xs:sequence>
+			<xs:choice maxOccurs="unbounded" minOccurs="0">
+				<xs:element name="Department" type="Department"/>
+			</xs:choice>
+		</xs:sequence>
+		<xs:attribute name="PlayerName" type="xs:string"/>
+		<xs:attribute name="Ego" type="xs:float"/>
+		<xs:attribute name="Funds" type="xs:float"/>
+		<xs:attribute name="Power" type="xs:float"/>
+		<xs:attribute name="CorporateCulture" type="xs:float"/>
 	</xs:complexType>
 </xs:schema>

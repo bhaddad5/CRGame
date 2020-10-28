@@ -1,23 +1,29 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using System.Collections.Generic;
+using System.ComponentModel;
+using System.Xml.Serialization;
 
 namespace Assets.GameModel.XmlParsers
 {
 	public class FemXml
 	{
-		//Gameplay
-		public string Id;
-		public bool Controlled;
-		public float Ambition;
-		public float Pride;
+		[XmlAttribute] [DefaultValue("")] public string Id = "";
+		[XmlAttribute] [DefaultValue("")] public string Name = "";
+		[XmlAttribute] [DefaultValue(0)] public int Age = 0;
+		[XmlAttribute] [DefaultValue(false)] public bool Controlled = false;
+		[XmlAttribute] [DefaultValue(0)] public float Ambition = 0;
+		[XmlAttribute] [DefaultValue(0)] public float Pride = 0;
 
-		//Non-Gameplay
-		public string Name;
-		public int Age;
+		[XmlElement("Interaction", typeof(InteractionXml))]
+		public InteractionXml[] Interactions = new InteractionXml[0];
 
 		public Fem FromXml()
 		{
+			List<Interaction> interactions = new List<Interaction>();
+			foreach (var interactionXml in Interactions)
+			{
+				interactions.Add(interactionXml.FromXml());
+			}
+
 			return new Fem()
 			{
 				Id = Id,
@@ -25,7 +31,8 @@ namespace Assets.GameModel.XmlParsers
 				Controlled = Controlled,
 				Pride = Pride,
 				Name = Name,
-				Age = Age
+				Age = Age,
+				Interactions = interactions,
 			};
 		}
 	}

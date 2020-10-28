@@ -13,30 +13,14 @@ namespace Assets.GameModel
 {
 	public class XmlResolver
 	{
-		private Dictionary<string, Interaction> interactionsLookup = new Dictionary<string, Interaction>();
-		private Dictionary<string, Interaction> femsLookup = new Dictionary<string, Interaction>();
-
-		[XmlInclude(typeof(InteractionXml))]
-		[XmlInclude(typeof(EffectXml))]
-		public class InteractionsList
+		public List<Department> LoadXmlData()
 		{
-			[XmlElement("Interaction", typeof(InteractionXml))]
-			public InteractionXml[] Interactions = new InteractionXml[0];
-		}
+			var gameData = (TextAsset) Resources.Load("XmlData/GameData");
 
-		public void LoadXmlData()
-		{
-			var interactionsXml = (TextAsset) Resources.Load("XmlData/Interactions");
-
-			var serializer = new XmlSerializer(typeof(InteractionsList));
-			var interactions = (InteractionsList) serializer.Deserialize(new StringReader(interactionsXml.text));
-
-			foreach (var interaction in interactions.Interactions)
-			{
-				interactionsLookup[interaction.Id] = interaction.FromXml();
-			}
-
-			Debug.Log(interactionsLookup.Count);
+			var serializer = new XmlSerializer(typeof(GameDataXml));
+			var data = (GameDataXml) serializer.Deserialize(new StringReader(gameData.text));
+			
+			return data.FromXml().Departments;
 		}
 	}
 }
