@@ -68,14 +68,12 @@ namespace Assets.GameModel.UiDisplayers
 
 		private string DetermineFemPictureId()
 		{
-			if (fem.Controlled)
-				return "owned";
-			else if (fem.Ambition > 70)
-				return "angry";
-			else if (fem.Ambition > 30)
-				return "neutral";
+			if (fem.Controlled && fem.Pride < 1)
+				return "trained";
+			else if (fem.Controlled)
+				return "controlled";
 			else
-				return "submissive";
+				return "independent";
 		}
 	}
 }
