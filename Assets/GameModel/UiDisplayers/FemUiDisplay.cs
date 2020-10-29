@@ -34,7 +34,18 @@ namespace Assets.GameModel.UiDisplayers
 				interact.transform.SetParent(DialogOptions);
 			}
 
+			StartCoroutine(RefreshLayout(DialogOptions.gameObject));
+
 			BackButton.onClick.AddListener(() => duid.CloseCurrentFem());
+		}
+
+		//From: https://answers.unity.com/questions/1276433/get-layoutgroup-and-contentsizefitter-to-update-th.html
+		IEnumerator RefreshLayout(GameObject layout)
+		{
+			yield return new WaitForFixedUpdate();
+			VerticalLayoutGroup vlg = layout.GetComponent<VerticalLayoutGroup>();
+			vlg.enabled = false;
+			vlg.enabled = true;
 		}
 
 		public void RefreshUiDisplay(MainGameManager mgm)
@@ -44,6 +55,7 @@ namespace Assets.GameModel.UiDisplayers
 			Ambition.text = $"Ambition: {fem.Ambition}";
 			Pride.text = $"Pride: {fem.Pride}";
 			Picture.sprite = LoadFemPicture();
+			Picture.preserveAspect = true;
 			Traits.text = GetTraitsString();
 
 			foreach (var button in DialogOptions.GetComponentsInChildren<InteractionUiDisplay>(true))
