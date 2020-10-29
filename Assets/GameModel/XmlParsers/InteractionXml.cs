@@ -12,7 +12,6 @@ namespace Assets.GameModel.XmlParsers
 	{
 		[XmlAttribute] [DefaultValue("")] public string Id = "";
 		[XmlAttribute] [DefaultValue("")] public string Name = "";
-		[XmlAttribute] [DefaultValue("")] public string Dialog = "";
 
 		[XmlAttribute] [DefaultValue(1)] public int TurnCost = 1;
 		[XmlAttribute] [DefaultValue(0)] public float EgoCost = 0;
@@ -23,22 +22,21 @@ namespace Assets.GameModel.XmlParsers
 		[XmlAttribute] [DefaultValue(-1)] public float RequiredAmbition = -1;
 		[XmlAttribute] [DefaultValue(-1)] public float RequiredPride = -1;
 
-		[XmlElement("Effect", typeof(EffectXml))]
-		public EffectXml[] Effects = new EffectXml[0];
+		[XmlElement("InteractionResult", typeof(InteractionResultXml))]
+		public InteractionResultXml[] InteractionResults = new InteractionResultXml[0];
 
 		public Interaction FromXml()
 		{
-			List<Effect> effects = new List<Effect>();
-			foreach (var e in Effects)
+			List<InteractionResult> results = new List<InteractionResult>();
+			foreach (var resultXml in InteractionResults)
 			{
-				effects.Add(e.FromXml());
+				results.Add(resultXml.FromXml());
 			}
 
 			return new Interaction()
 			{
 				Id = Id,
 				Name = Name,
-				Dialog = Dialog,
 				TurnCost = TurnCost,
 				EgoCost = EgoCost,
 				MoneyCost = MoneyCost,
@@ -46,7 +44,7 @@ namespace Assets.GameModel.XmlParsers
 				RequiredAmbition = RequiredAmbition,
 				RequiredPride = RequiredPride,
 				RequiredControl = RequiredControl,
-				Effects = effects,
+				InteractionResults = results,
 			};
 		}
 	}

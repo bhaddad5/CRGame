@@ -8,7 +8,6 @@ namespace Assets.GameModel
 	{
 		public string Id;
 		public string Name;
-		public string Dialog;
 
 		public int TurnCost = 1;
 		public float EgoCost = 0;
@@ -19,7 +18,7 @@ namespace Assets.GameModel
 		public float RequiredAmbition = -1;
 		public float RequiredPride = -1;
 
-		public List<Effect> Effects;
+		public List<InteractionResult> InteractionResults;
 
 		public bool InteractionValid(MainGameManager mgm, Fem fem)
 		{
@@ -29,7 +28,7 @@ namespace Assets.GameModel
 				return false;
 			if (RequiredPride >= 0 && RequiredPride < fem.Pride)
 				return false;
-			if (Effects.Any(eff => eff.ControlEffect) && fem.Controlled)
+			if (InteractionResults.Any(res => res.Effects.Any(eff => eff.ControlEffect)) && fem.Controlled)
 				return false;
 			foreach (var policyId in RequiredPolicies)
 			{
@@ -45,8 +44,8 @@ namespace Assets.GameModel
 			mgm.Data.Ego -= EgoCost;
 			mgm.Data.Funds -= MoneyCost;
 
-			var chosenEffect = Effects[UnityEngine.Random.Range(0, Effects.Count - 1)];
-			chosenEffect.ExecuteEffect(mgm, fem);
+			var chosenResult = InteractionResults[UnityEngine.Random.Range(0, InteractionResults.Count)];
+			chosenResult.Execute(mgm, fem);
 		}
 	}
 }

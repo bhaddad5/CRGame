@@ -28,7 +28,7 @@ namespace Assets.GameModel.UiDisplayers
 
 		public void RefreshUiDisplay(MainGameManager mgm)
 		{
-			Text.text = $"({interaction.Name}) {interaction.Dialog}";
+			Text.text = interaction.Name;
 			Button.interactable = interaction.InteractionValid(mgm, fem);
 		}
 	}

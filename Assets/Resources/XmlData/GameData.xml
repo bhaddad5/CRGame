@@ -4,14 +4,31 @@
 			<Trait Id="overAchiever" Name="Over-Achiever">
 				<Effect AmbitionEffect=".5" />
 			</Trait>
-			<Interaction Id="insinuatingComments" Name="Insinuating Comments" Dialog="No wonder you got this job, with an ass like that..." EgoCost="10">
-				<Effect AmbitionEffect="-20"/>
+			<Interaction Id="insinuatingComments" Name="Insinuating Comments" EgoCost="10">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="No wonder you got this job, with an ass like that..."/>
+					<DialogEntry IsPlayer="false" Dialog="Noooooo..."/>
+					<Effect AmbitionEffect="-20"/>
+				</InteractionResult>
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Hey baby..."/>
+					<DialogEntry IsPlayer="false" Dialog="Fuck you!"/>
+					<Effect AmbitionEffect="5"/>
+				</InteractionResult>
 			</Interaction>
-			<Interaction Id="takeControl" Name="Take Control" Dialog="I own you now." RequiredAmbition="0">
-				<Effect EgoEffect="100" ControlEffect="true"/>
+			<Interaction Id="takeControl" Name="Take Control" RequiredAmbition="0">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="I own you now."/>
+					<DialogEntry IsPlayer="false" Dialog="OK Sempai..."/>
+					<Effect EgoEffect="100" ControlEffect="true"/>
+				</InteractionResult>
 			</Interaction>
-			<Interaction Id="motivationRoomApt" Name="Motivation Room Appointment" Dialog="I think your attitude needs correcting..." EgoCost="20" TurnCost="4" RequiredControl="true" RequiredPolicies="peaceOfMind">
-				<Effect PrideEffect="-20"/>
+			<Interaction Id="motivationRoomApt" Name="Motivation Room Appointment" EgoCost="20" TurnCost="4" RequiredControl="true" RequiredPolicies="peaceOfMind">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="I think your attitude needs correcting..."/>
+					<DialogEntry IsPlayer="false" Dialog="Oh no!  Please don't spank me sir!"/>
+					<Effect PrideEffect="-20"/>
+				</InteractionResult>
 			</Interaction>
 		</Fem>
 		<Policy Id="peaceOfMind" Name="Peace of Mind" Active="false"/>

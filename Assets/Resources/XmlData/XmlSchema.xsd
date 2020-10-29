@@ -13,15 +13,30 @@
 		<xs:attribute name="TraitsRemoved" type="xs:string"/>
 	</xs:complexType>
 
-	<xs:complexType name="Interaction">
+	<xs:complexType name="DialogEntry">
+		<xs:attribute name="IsPlayer" type="xs:boolean" use="required"/>
+		<xs:attribute name="Dialog" type="xs:string" use="required"/>
+	</xs:complexType>
+
+	<xs:complexType name="InteractionResult">
 		<xs:sequence>
+			<xs:choice maxOccurs="unbounded" minOccurs="1">
+				<xs:element name="DialogEntry" type="DialogEntry"/>
+			</xs:choice>
 			<xs:choice maxOccurs="unbounded" minOccurs="1">
 				<xs:element name="Effect" type="Effect"/>
 			</xs:choice>
 		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="Interaction">
+		<xs:sequence>
+			<xs:choice maxOccurs="unbounded" minOccurs="1">
+				<xs:element name="InteractionResult" type="InteractionResult"/>
+			</xs:choice>
+		</xs:sequence>
 		<xs:attribute name="Id" type="xs:string" use="required"/>
 		<xs:attribute name="Name" type="xs:string" use="required"/>
-		<xs:attribute name="Dialog" type="xs:string"/>
 		<xs:attribute name="TurnCost" type="xs:decimal"/>
 		<xs:attribute name="EgoCost" type="xs:float"/>
 		<xs:attribute name="MoneyCost" type="xs:float"/>
