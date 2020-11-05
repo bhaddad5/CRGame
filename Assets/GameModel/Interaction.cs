@@ -38,7 +38,7 @@ namespace Assets.GameModel
 			return TurnCost <= mgm.Data.Actions && EgoCost <= mgm.Data.Ego && MoneyCost <= mgm.Data.Funds;
 		}
 
-		public void ExecuteInteraction(MainGameManager mgm, Fem fem)
+		public InteractionResult ExecuteInteraction(MainGameManager mgm, Fem fem)
 		{
 			mgm.Data.Actions -= TurnCost;
 			mgm.Data.Ego -= EgoCost;
@@ -46,6 +46,7 @@ namespace Assets.GameModel
 
 			var chosenResult = InteractionResults[UnityEngine.Random.Range(0, InteractionResults.Count)];
 			chosenResult.Execute(mgm, fem);
+			return chosenResult;
 		}
 	}
 }

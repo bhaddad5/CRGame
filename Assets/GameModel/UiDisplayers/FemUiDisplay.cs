@@ -21,6 +21,7 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private Image Picture;
 
 		[SerializeField] private InteractionUiDisplay InteractionButtonPrefab;
+		[SerializeField] private Transform DialogParent;
 
 		private Fem fem;
 		public void Setup(Fem fem, MainGameManager mgm, DepartmentUiDisplay duid)
@@ -30,11 +31,12 @@ namespace Assets.GameModel.UiDisplayers
 			foreach (Interaction interaction in fem.Interactions)
 			{
 				var interact = Instantiate(InteractionButtonPrefab);
-				interact.Setup(interaction, fem, mgm);
+				interact.Setup(interaction, fem, mgm, DialogParent);
 				interact.transform.SetParent(DialogOptions);
 			}
 
 			StartCoroutine(RefreshLayout(DialogOptions.gameObject));
+			StartCoroutine(RefreshLayout(DialogParent.gameObject));
 
 			BackButton.onClick.AddListener(() => duid.CloseCurrentFem());
 		}
@@ -60,6 +62,12 @@ namespace Assets.GameModel.UiDisplayers
 
 			foreach (var button in DialogOptions.GetComponentsInChildren<InteractionUiDisplay>(true))
 				button.RefreshUiDisplay(mgm);
+
+			foreach (var dialog in DialogParent.GetComponentsInChildren<DialogUiDisplay>(true))
+				dialog.RefreshUiDisplay(mgm);
+
+			StartCoroutine(RefreshLayout(DialogOptions.gameObject));
+			StartCoroutine(RefreshLayout(DialogParent.gameObject));
 		}
 
 		private string GetTraitsString()
