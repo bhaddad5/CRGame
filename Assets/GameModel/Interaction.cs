@@ -13,10 +13,14 @@ namespace Assets.GameModel
 		public float EgoCost = 0;
 		public float MoneyCost = 0;
 
+		public List<string> RequiredInteractionsCompleted = new List<string>();
 		public List<string> RequiredPolicies = new List<string>();
 		public bool RequiredControl = false;
 		public float RequiredAmbition = -1;
 		public float RequiredPride = -1;
+		public bool Repeatable = false;
+
+		public bool Completed = false;
 
 		public List<InteractionResult> InteractionResults;
 
@@ -30,6 +34,13 @@ namespace Assets.GameModel
 				return false;
 			if (InteractionResults.Any(res => res.Effects.Any(eff => eff.ControlEffect)) && fem.Controlled)
 				return false;
+			if (Completed && !Repeatable)
+				return false;
+			foreach (var interactionId in RequiredInteractionsCompleted)
+			{
+				if (!mgm.Data.GetCompletedInteractionIds(fem.Id).Contains(interactionId))
+					return false;
+			}
 			foreach (var policyId in RequiredPolicies)
 			{
 				if (!mgm.Data.GetActivePolicyIds().Contains(policyId))
@@ -43,6 +54,8 @@ namespace Assets.GameModel
 			mgm.Data.Actions -= TurnCost;
 			mgm.Data.Ego -= EgoCost;
 			mgm.Data.Funds -= MoneyCost;
+
+			Completed = true;
 
 			var chosenResult = InteractionResults[UnityEngine.Random.Range(0, InteractionResults.Count)];
 			chosenResult.Execute(mgm, fem);

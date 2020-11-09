@@ -15,7 +15,6 @@ namespace Assets.GameModel
 		
 		[SerializeField] private HudUiDisplay HudUiDisplay;
 		[SerializeField] private MainMapUiDisplay MainMapUiDisplay;
-		private List<IUiDisplay> RootLevelUiDisplays = new List<IUiDisplay>();
 
 		private void HandleEndTurn()
 		{
@@ -30,10 +29,8 @@ namespace Assets.GameModel
 
 		public void RefreshAllUi()
 		{
-			foreach (var uiDisplay in RootLevelUiDisplays)
-			{
-				uiDisplay.RefreshUiDisplay(this);
-			}
+			HudUiDisplay.RefreshUiDisplay(this);
+			MainMapUiDisplay.RefreshUiDisplay(this);
 		}
 
 		public void EndTurn()
@@ -49,8 +46,6 @@ namespace Assets.GameModel
 
 			Data = new XmlResolver().LoadXmlData();//TempContent.GenerateContent();
 
-			RootLevelUiDisplays.Add(HudUiDisplay);
-			RootLevelUiDisplays.Add(MainMapUiDisplay);
 			HudUiDisplay.Setup(this);
 			MainMapUiDisplay.Setup(this, Data.Departments);
 			RefreshAllUi();

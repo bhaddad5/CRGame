@@ -61,7 +61,7 @@ namespace Assets.GameModel.UiDisplayers
 			Traits.text = GetTraitsString();
 
 			foreach (var button in DialogOptions.GetComponentsInChildren<InteractionUiDisplay>(true))
-				button.RefreshUiDisplay(mgm);
+				button.RefreshUiDisplay(mgm, fem);
 
 			foreach (var dialog in DialogParent.GetComponentsInChildren<DialogUiDisplay>(true))
 				dialog.RefreshUiDisplay(mgm);

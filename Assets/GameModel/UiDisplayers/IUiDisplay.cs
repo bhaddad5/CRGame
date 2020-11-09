@@ -5,5 +5,5 @@ using UnityEngine;
 
 public interface IUiDisplay
 {
-	void RefreshUiDisplay(MainGameManager mgm);
+	//void RefreshUiDisplay(MainGameManager mgm);
 }

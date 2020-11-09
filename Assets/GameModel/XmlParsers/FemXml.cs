@@ -22,13 +22,13 @@ namespace Assets.GameModel.XmlParsers
 		public Fem FromXml()
 		{
 			List<Interaction> interactions = new List<Interaction>();
-			foreach (var interactionXml in Interactions)
+			foreach (var interactionXml in Interactions ?? new InteractionXml[0])
 			{
 				interactions.Add(interactionXml.FromXml());
 			}
 
 			List<Trait> traits = new List<Trait>();
-			foreach (var traitXml in Traits)
+			foreach (var traitXml in Traits ?? new TraitXml[0])
 			{
 				traits.Add(traitXml.FromXml());
 			}

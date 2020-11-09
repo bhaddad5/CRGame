@@ -40,10 +40,11 @@ namespace Assets.GameModel.UiDisplayers
 			});
 		}
 
-		public void RefreshUiDisplay(MainGameManager mgm)
+		public void RefreshUiDisplay(MainGameManager mgm, Fem fem)
 		{
 			Text.text = interaction.Name;
 			Button.interactable = interaction.InteractionValid(mgm, fem);
+			gameObject.SetActive(interaction.InteractionValid(mgm, fem));
 		}
 	}
 }

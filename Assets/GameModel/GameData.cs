@@ -29,4 +29,24 @@ public class GameData
 
 		return activePolicyIds;
 	}
+
+	public List<string> GetCompletedInteractionIds(string femId)
+	{
+		List<string> completedInteractionIds = new List<string>();
+		foreach (var department in Departments)
+		{
+			foreach (var fem in department.Fems)
+			{
+				if (fem.Id == femId)
+				{
+					foreach (var interaction in fem.Interactions)
+					{
+						if(interaction.Completed)
+							completedInteractionIds.Add(interaction.Id);
+					}
+				}
+			}
+		}
+		return completedInteractionIds;
+	}
 }

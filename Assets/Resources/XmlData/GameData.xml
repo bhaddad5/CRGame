@@ -1,33 +1,115 @@
 <GameData Actions="4" Ego="20" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3schools.com XmlSchema.xsd">
 	<Department Id="legal" Name="Legal" Accessible="true" UiPosX="911" UiPosY="429">
-		<Fem Id="deborahJones" Name="Deborah Jones" Age="24" Ambition="90" Pride="100">
+		<Fem Id="deborahJones" Name="Deborah Jones" Age="24" Ambition="50" Pride="100">
 			<Trait Id="overAchiever" Name="Over-Achiever">
 				<Effect AmbitionEffect=".5" />
 			</Trait>
-			<Interaction Id="insinuatingComments" Name="Insinuating Comments - No wonder you got this job, with an ass like that...  I may have to smack it one of these days." EgoCost="10">
+			<Interaction Id="introduction" Name="Introduction">
 				<InteractionResult>
-					<DialogEntry IsPlayer="true" Dialog="No wonder you got this job, with an ass like that...  I may have to smack it one of these days."/>
-					<DialogEntry IsPlayer="false" Dialog="Noooooo..."/>
-					<Effect AmbitionEffect="-20"/>
-				</InteractionResult>
-				<InteractionResult>
-					<DialogEntry IsPlayer="true" Dialog="Hey baby..."/>
-					<DialogEntry IsPlayer="false" Dialog="Fuck you!"/>
-					<Effect AmbitionEffect="5"/>
+					<DialogEntry IsPlayer="true" Dialog="Nice to meet you!"/>
+					<DialogEntry IsPlayer="false" Dialog="So, you're the new guy?  Welcome to Artemis."/>
+					<DialogEntry IsPlayer="true" Dialog="It's great to be here."/>
+					<DialogEntry IsPlayer="false" Dialog="Sure, sure.  See you around."/>
+					<Effect/>
 				</InteractionResult>
 			</Interaction>
-			<Interaction Id="takeControl" Name="Take Control" RequiredAmbition="0">
+			<Interaction Id="offerAssistance" Name="Offer to Assist Her" EgoCost="20">
 				<InteractionResult>
-					<DialogEntry IsPlayer="true" Dialog="I own you now."/>
-					<DialogEntry IsPlayer="false" Dialog="OK Sempai..."/>
+					<DialogEntry IsPlayer="true" Dialog="You look really busy! Is there anything I can do to help out?"/>
+					<DialogEntry IsPlayer="false" Dialog="I suppose. Could you scan through these files for me and look for anything on competitive trends?"/>
+					<DialogEntry IsPlayer="true" Dialog="Sure, no problem!"/>
+					<DialogEntry IsPlayer="false" Dialog="Thanks.  That's nice of you."/>
+					<Effect AmbitionEffect="-5"/>
+				</InteractionResult>
+			</Interaction>
+			<Interaction Id="takeControl" Name="Take Control of Deborah Jones" RequiredAmbition="0">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="I think we both know why you're here.  It is high time someone put you in your place."/>
+					<DialogEntry IsPlayer="false" Dialog="You have a hell of a nerve!"/>
+					<DialogEntry IsPlayer="true" Dialog="From now on, you're going to do as you're told-- or I'll make sure you never work in corporate again!"/>
+					<DialogEntry IsPlayer="false" Dialog="Fine-- you win.  For now."/>
 					<Effect EgoEffect="100" ControlEffect="true"/>
 				</InteractionResult>
 			</Interaction>
 			<Interaction Id="motivationRoomApt" Name="Motivation Room Appointment" EgoCost="20" TurnCost="4" RequiredControl="true" RequiredPolicies="peaceOfMind">
 				<InteractionResult>
-					<DialogEntry IsPlayer="true" Dialog="I think your attitude needs correcting..."/>
-					<DialogEntry IsPlayer="false" Dialog="Oh no!  Please don't spank me sir!"/>
+					<DialogEntry IsPlayer="true" Dialog="I've had it with you!  Your stiff necked attitude towards me is unacceptable!"/>
+					<DialogEntry IsPlayer="false" Dialog="Let me go!  You have no right--"/>
+					<DialogEntry IsPlayer="true" Dialog="As your manager, I have every right to send you here!  When you're released, I suspect you'll return to your duties with a far better attitude towards authority!"/>
+					<DialogEntry IsPlayer="false" Dialog="Please!  Don't leave me here!  Please!  I'm sorry-- I'll do whatever you want!"/>
 					<Effect PrideEffect="-20"/>
+				</InteractionResult>
+			</Interaction>
+			<Interaction Id="insinuatingComments" Name="Insinuating Comments" EgoCost="10">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="You seem upset with me."/>
+					<DialogEntry IsPlayer="false" Dialog="I am!  Don't think I haven't heard about why you're saying about me!"/>
+					<DialogEntry IsPlayer="true" Dialog="You're being paranoid."/>
+					<DialogEntry IsPlayer="false" Dialog="Am I?  I don't think so!"/>
+					<Effect AmbitionEffect="-4"/>
+				</InteractionResult>
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="You seem upset with me."/>
+					<DialogEntry IsPlayer="false" Dialog="I am!  Don't think I haven't heard about why you're saying about me!"/>
+					<DialogEntry IsPlayer="true" Dialog="You're being paranoid."/>
+					<DialogEntry IsPlayer="false" Dialog="Am I?  I don't think so!"/>
+					<Effect/>
+				</InteractionResult>
+			</Interaction>
+
+
+			<Interaction Id="debugNukeAmbition" Name="DEBUG - nuke ambition" EgoCost="0" TurnCost="0">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog=""/>
+					<DialogEntry IsPlayer="false" Dialog=""/>
+					<DialogEntry IsPlayer="true" Dialog=""/>
+					<DialogEntry IsPlayer="false" Dialog=""/>
+					<Effect AmbitionEffect="-110"/>
+				</InteractionResult>
+			</Interaction>
+			<Interaction Id="debugControl" Name="DEBUG - control" EgoCost="0" TurnCost="0">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Test control"/>
+					<Effect ControlEffect="true"/>
+				</InteractionResult>
+			</Interaction>
+			<Interaction Id="debugNukePride" Name="DEBUG - nuke pride" EgoCost="0" TurnCost="0">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Test nuke pride"/>
+					<Effect PrideEffect="-110"/>
+				</InteractionResult>
+			</Interaction>
+		</Fem>
+		<Fem Id="britneyBower" Name="Britney Bower" Age="19" Ambition="10" Pride="70">
+			<Interaction Id="introduction" Name="Introduction">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Nice to meet you!"/>
+					<DialogEntry IsPlayer="false" Dialog="So, you're the new guy?  Welcome to Artemis."/>
+					<DialogEntry IsPlayer="true" Dialog="It's great to be here."/>
+					<DialogEntry IsPlayer="false" Dialog="Sure, sure.  See you around."/>
+					<Effect/>
+				</InteractionResult>
+			</Interaction>
+			
+			<Interaction Id="debugNukeAmbition" Name="DEBUG - nuke ambition" EgoCost="0" TurnCost="0">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog=""/>
+					<DialogEntry IsPlayer="false" Dialog=""/>
+					<DialogEntry IsPlayer="true" Dialog=""/>
+					<DialogEntry IsPlayer="false" Dialog=""/>
+					<Effect AmbitionEffect="-110"/>
+				</InteractionResult>
+			</Interaction>
+			<Interaction Id="debugControl" Name="DEBUG - control" EgoCost="0" TurnCost="0">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Test control"/>
+					<Effect ControlEffect="true"/>
+				</InteractionResult>
+			</Interaction>
+			<Interaction Id="debugNukePride" Name="DEBUG - nuke pride" EgoCost="0" TurnCost="0">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Test nuke pride"/>
+					<Effect PrideEffect="-110"/>
 				</InteractionResult>
 			</Interaction>
 		</Fem>
