@@ -52,7 +52,7 @@ namespace Assets.GameModel.UiDisplayers
 
 		public void RefreshUiDisplay(MainGameManager mgm)
 		{
-			Name.text = fem.Name + (fem.Controlled ? "(Controlled)" : "");
+			Name.text = fem.Name;
 			Age.text = $"{fem.Age} years old";
 			Ambition.text = $"Ambition: {fem.Ambition}";
 			Pride.text = $"Pride: {fem.Pride}";

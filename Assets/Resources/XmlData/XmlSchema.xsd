@@ -40,10 +40,13 @@
 		<xs:attribute name="TurnCost" type="xs:decimal"/>
 		<xs:attribute name="EgoCost" type="xs:float"/>
 		<xs:attribute name="MoneyCost" type="xs:float"/>
+		<xs:attribute name="RequiredInteractions" type="xs:string"/>
 		<xs:attribute name="RequiredPolicies" type="xs:string"/>
 		<xs:attribute name="RequiredAmbition" type="xs:float"/>
 		<xs:attribute name="RequiredPride" type="xs:float"/>
 		<xs:attribute name="RequiredControl" type="xs:boolean"/>
+		<xs:attribute name="Repeatable" type="xs:boolean"/>
+		<xs:attribute name="Completed" type="xs:boolean"/>
 	</xs:complexType>
 
 	<xs:complexType name="Trait">

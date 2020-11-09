@@ -13,13 +13,13 @@ namespace Assets.GameModel
 		public float EgoCost = 0;
 		public float MoneyCost = 0;
 
-		public List<string> RequiredInteractionsCompleted = new List<string>();
+		public List<string> RequiredInteractions = new List<string>();
 		public List<string> RequiredPolicies = new List<string>();
 		public bool RequiredControl = false;
 		public float RequiredAmbition = -1;
 		public float RequiredPride = -1;
-		public bool Repeatable = false;
 
+		public bool Repeatable = false;
 		public bool Completed = false;
 
 		public List<InteractionResult> InteractionResults;
@@ -36,7 +36,7 @@ namespace Assets.GameModel
 				return false;
 			if (Completed && !Repeatable)
 				return false;
-			foreach (var interactionId in RequiredInteractionsCompleted)
+			foreach (var interactionId in RequiredInteractions)
 			{
 				if (!mgm.Data.GetCompletedInteractionIds(fem.Id).Contains(interactionId))
 					return false;

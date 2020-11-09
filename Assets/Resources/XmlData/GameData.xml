@@ -13,7 +13,7 @@
 					<Effect/>
 				</InteractionResult>
 			</Interaction>
-			<Interaction Id="offerAssistance" Name="Offer to Assist Her" EgoCost="20">
+			<Interaction Id="offerAssistance" Name="Offer to Assist Her" EgoCost="20" RequiredInteractions="introduction">
 				<InteractionResult>
 					<DialogEntry IsPlayer="true" Dialog="You look really busy! Is there anything I can do to help out?"/>
 					<DialogEntry IsPlayer="false" Dialog="I suppose. Could you scan through these files for me and look for anything on competitive trends?"/>
@@ -40,7 +40,7 @@
 					<Effect PrideEffect="-20"/>
 				</InteractionResult>
 			</Interaction>
-			<Interaction Id="insinuatingComments" Name="Insinuating Comments" EgoCost="10">
+			<Interaction Id="insinuatingComments" Name="Insinuating Comments" EgoCost="10" Repeatable="true">
 				<InteractionResult>
 					<DialogEntry IsPlayer="true" Dialog="You seem upset with me."/>
 					<DialogEntry IsPlayer="false" Dialog="I am!  Don't think I haven't heard about why you're saying about me!"/>
@@ -56,7 +56,15 @@
 					<Effect/>
 				</InteractionResult>
 			</Interaction>
-
+			<Interaction Id="coffeAndBJ" Name="Coffee and a BJ" EgoCost="0" TurnCost="0" RequiredPride="30" RequiredControl="true">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Hey there, pretty girl."/>
+					<DialogEntry IsPlayer="false" Dialog="Is there something you need?"/>
+					<DialogEntry IsPlayer="true" Dialog="Coffee and a blowjob would be nice.  Can you handle that, Sweetie?"/>
+					<DialogEntry IsPlayer="false" Dialog="Yes, of course.  I'll be right back with your coiffee."/>
+					<Effect EgoEffect="3"/>
+				</InteractionResult>
+			</Interaction>
 
 			<Interaction Id="debugNukeAmbition" Name="DEBUG - nuke ambition" EgoCost="0" TurnCost="0">
 				<InteractionResult>
@@ -65,18 +73,6 @@
 					<DialogEntry IsPlayer="true" Dialog=""/>
 					<DialogEntry IsPlayer="false" Dialog=""/>
 					<Effect AmbitionEffect="-110"/>
-				</InteractionResult>
-			</Interaction>
-			<Interaction Id="debugControl" Name="DEBUG - control" EgoCost="0" TurnCost="0">
-				<InteractionResult>
-					<DialogEntry IsPlayer="true" Dialog="Test control"/>
-					<Effect ControlEffect="true"/>
-				</InteractionResult>
-			</Interaction>
-			<Interaction Id="debugNukePride" Name="DEBUG - nuke pride" EgoCost="0" TurnCost="0">
-				<InteractionResult>
-					<DialogEntry IsPlayer="true" Dialog="Test nuke pride"/>
-					<Effect PrideEffect="-110"/>
 				</InteractionResult>
 			</Interaction>
 		</Fem>
@@ -88,6 +84,15 @@
 					<DialogEntry IsPlayer="true" Dialog="It's great to be here."/>
 					<DialogEntry IsPlayer="false" Dialog="Sure, sure.  See you around."/>
 					<Effect/>
+				</InteractionResult>
+			</Interaction>
+			<Interaction Id="coffeAndBJ" Name="Coffee and a BJ" EgoCost="0" TurnCost="0" RequiredPride="30" RequiredControl="true">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Hey there, pretty girl."/>
+					<DialogEntry IsPlayer="false" Dialog="Is there something you need?"/>
+					<DialogEntry IsPlayer="true" Dialog="Coffee and a blowjob would be nice.  Can you handle that, Sweetie?"/>
+					<DialogEntry IsPlayer="false" Dialog="Yes, of course.  I'll be right back with your coffee."/>
+					<Effect EgoEffect="3"/>
 				</InteractionResult>
 			</Interaction>
 			

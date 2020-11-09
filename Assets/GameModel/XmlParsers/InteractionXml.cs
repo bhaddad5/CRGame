@@ -17,10 +17,14 @@ namespace Assets.GameModel.XmlParsers
 		[XmlAttribute] [DefaultValue(0)] public float EgoCost = 0;
 		[XmlAttribute] [DefaultValue(0)] public float MoneyCost = 0;
 
+		[XmlAttribute] [DefaultValue("")] public string RequiredInteractions = "";
 		[XmlAttribute] [DefaultValue("")] public string RequiredPolicies = "";
 		[XmlAttribute] [DefaultValue(false)] public bool RequiredControl = false;
 		[XmlAttribute] [DefaultValue(-1)] public float RequiredAmbition = -1;
 		[XmlAttribute] [DefaultValue(-1)] public float RequiredPride = -1;
+
+		[XmlAttribute] [DefaultValue(false)] public bool Repeatable = false;
+		[XmlAttribute] [DefaultValue(false)] public bool Completed = false;
 
 		[XmlElement("InteractionResult", typeof(InteractionResultXml))]
 		public InteractionResultXml[] InteractionResults = new InteractionResultXml[0];
@@ -40,10 +44,13 @@ namespace Assets.GameModel.XmlParsers
 				TurnCost = TurnCost,
 				EgoCost = EgoCost,
 				MoneyCost = MoneyCost,
+				RequiredInteractions = RequiredInteractions.XmlStringToList(),
 				RequiredPolicies = RequiredPolicies.XmlStringToList(),
 				RequiredAmbition = RequiredAmbition,
 				RequiredPride = RequiredPride,
 				RequiredControl = RequiredControl,
+				Repeatable = Repeatable,
+				Completed = Completed,
 				InteractionResults = results,
 			};
 		}
