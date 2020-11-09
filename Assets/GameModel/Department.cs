@@ -21,7 +21,7 @@ namespace Assets.GameModel
 
 		public bool Controlled()
 		{
-			return Fems.All(f => f.Controlled);
+			return Fems[0].Controlled;
 		}
 
 		public void HandleEndTurn(MainGameManager mgm)

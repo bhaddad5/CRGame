@@ -22,6 +22,50 @@
 					<Effect AmbitionEffect="-5"/>
 				</InteractionResult>
 			</Interaction>
+			<Interaction Id="offerToCollaborate" Name="Offer to Collaborate" EgoCost="10" RequiredInteractions="offerAssistance">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="I bet if we suppoerted each other, we'd both get our work done a lot quicker."/>
+					<DialogEntry IsPlayer="false" Dialog="That's a nice offer. Let me think about it, ok?"/>
+					<DialogEntry IsPlayer="true" Dialog="I think we'd work well together."/>
+					<DialogEntry IsPlayer="false" Dialog="I'll get back to you on this."/>
+					<Effect AmbitionEffect="-3"/>
+				</InteractionResult>
+			</Interaction>
+			<Interaction Id="shareResources" Name="Share Resources" EgoCost="4" RequiredInteractions="offerToCollaborate">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Why don't we collaborate on a project together?"/>
+					<DialogEntry IsPlayer="false" Dialog="No offense, but I work better on my own."/>
+					<DialogEntry IsPlayer="true" Dialog="If that's the way you want it."/>
+					<DialogEntry IsPlayer="false" Dialog="I appreciate the offer."/>
+					<Effect AmbitionEffect="-1"/>
+				</InteractionResult>
+			</Interaction>
+			<Interaction Id="declareTruce" Name="Declare a Truce" RequiredInteractions="shareResources">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="There's no reason we can't BOTH make it through Management Training together."/>
+					<DialogEntry IsPlayer="false" Dialog="We both know there's only one open Management spot!"/>
+					<DialogEntry IsPlayer="true" Dialog="Well, if you land the spot, maybe you'll recommend me when the next one comes up."/>
+					<DialogEntry IsPlayer="false" Dialog="I must say, I like your attitude!"/>
+					<Effect AmbitionEffect="-3"/>
+				</InteractionResult>
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="There's no reason we can't BOTH make it through Management Training together."/>
+					<DialogEntry IsPlayer="false" Dialog="I think it is obvious I'm going to get the spot."/>
+					<DialogEntry IsPlayer="true" Dialog="You don't know that for sure."/>
+					<DialogEntry IsPlayer="false" Dialog="Oh, I think I've pretty much got a lock on it!"/>
+					<Effect EgoEffect="-5"/>
+				</InteractionResult>
+			</Interaction>
+			<Interaction Id="acknowledgeRivalry" Name="Acknowledge Rivalry" RequiredInteractions="declareTruce">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="If this is a war, let the best man win!"/>
+					<DialogEntry IsPlayer="false" Dialog="You mean let the best WOMAN win!"/>
+					<DialogEntry IsPlayer="true" Dialog="I meant what I said."/>
+					<DialogEntry IsPlayer="false" Dialog="We'll see what you say when you end up reporting to me!"/>
+					<Effect EgoEffect="10"/>
+					<Effect AmbitionEffect="2"/>
+				</InteractionResult>
+			</Interaction>
 			<Interaction Id="takeControl" Name="Take Control of Deborah Jones" RequiredAmbition="0">
 				<InteractionResult>
 					<DialogEntry IsPlayer="true" Dialog="I think we both know why you're here.  It is high time someone put you in your place."/>
