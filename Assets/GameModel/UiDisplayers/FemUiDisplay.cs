@@ -82,41 +82,9 @@ namespace Assets.GameModel.UiDisplayers
 			return $"Traits: {traitsText}";
 		}
 
-		private Dictionary<string, List<Sprite>> femPicsLookup = null;
 		private Sprite LoadFemPicture()
 		{
-			if (femPicsLookup == null)
-			{
-				femPicsLookup = new Dictionary<string, List<Sprite>>();
-				var femPics = Resources.LoadAll<Sprite>(Path.Combine("FemPics", fem.Id)).ToList();
-				foreach (var femPic in femPics)
-				{
-					string id = "";
-					var splitName = femPic.name.Split('_');
-					for (int i = 0; i < splitName.Length-1; i++)
-					{
-						id += "_" + splitName[i];
-					}
-					id = id.Substring(1);
-					if(!femPicsLookup.ContainsKey(id))
-						femPicsLookup[id] = new List<Sprite>();
-
-					femPicsLookup[id].Add(femPic);
-				}
-			}
-
-			var lookup = femPicsLookup[DetermineFemPictureId()];
-			return lookup[Random.Range(0, lookup.Count)];
-		}
-
-		private string DetermineFemPictureId()
-		{
-			if (fem.Controlled && fem.Pride < 1)
-				return "trained";
-			else if (fem.Controlled)
-				return "controlled";
-			else
-				return "independent";
+			return FemPicManager.GetFemPicFromId(fem.Id, fem.DetermineCurrPictureId());
 		}
 	}
 }

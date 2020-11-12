@@ -10,6 +10,7 @@ namespace Assets.GameModel.UiDisplayers
 	{
 		[SerializeField] private Button Button;
 		[SerializeField] private TMP_Text Text;
+		[SerializeField] private Image FemPic;
 
 		private Fem fem;
 
@@ -25,6 +26,7 @@ namespace Assets.GameModel.UiDisplayers
 		public void RefreshUiDisplay(MainGameManager mgm)
 		{
 			Text.text = $"{fem.Name}";
+			FemPic.sprite = FemPicManager.GetFemPicFromId(fem.Id, fem.DetermineCurrPictureId());
 		}
 	}
 }

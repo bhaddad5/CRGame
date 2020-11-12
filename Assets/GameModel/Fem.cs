@@ -27,5 +27,15 @@ namespace Assets.GameModel
 				}
 			}
 		}
+
+		public string DetermineCurrPictureId()
+		{
+			if (Controlled && Pride < 1)
+				return "trained";
+			else if (Controlled)
+				return "controlled";
+			else
+				return "independent";
+		}
 	}
 }
