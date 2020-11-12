@@ -26,6 +26,7 @@ namespace Assets.GameModel.UiDisplayers
 				displayHandler.HandleDisplayDialogs(res.Dialogs);
 				mgm.RefreshAllUi();
 			});
+			RefreshUiDisplay(mgm, fem);
 		}
 
 		public void RefreshUiDisplay(MainGameManager mgm, Fem fem)

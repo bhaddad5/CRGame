@@ -4,7 +4,7 @@
 			<Trait Id="overAchiever" Name="Over-Achiever">
 				<Effect AmbitionEffect=".5" />
 			</Trait>
-			<Interaction Id="introduction" Name="Introduction">
+			<Interaction Id="introduction" Name="Introduction" Category="OfficePolitics">
 				<InteractionResult>
 					<DialogEntry IsPlayer="true" Dialog="Nice to meet you!"/>
 					<DialogEntry IsPlayer="false" Dialog="So, you're the new guy?  Welcome to Artemis."/>
@@ -13,7 +13,7 @@
 					<Effect/>
 				</InteractionResult>
 			</Interaction>
-			<Interaction Id="offerAssistance" Name="Offer to Assist Her" EgoCost="20" RequiredInteractions="introduction">
+			<Interaction Id="offerAssistance" Name="Offer to Assist Her" EgoCost="20" RequiredInteractions="introduction" Category="OfficePolitics">
 				<InteractionResult>
 					<DialogEntry IsPlayer="true" Dialog="You look really busy! Is there anything I can do to help out?"/>
 					<DialogEntry IsPlayer="false" Dialog="I suppose. Could you scan through these files for me and look for anything on competitive trends?"/>
@@ -22,7 +22,7 @@
 					<Effect AmbitionEffect="-5"/>
 				</InteractionResult>
 			</Interaction>
-			<Interaction Id="offerToCollaborate" Name="Offer to Collaborate" EgoCost="10" RequiredInteractions="offerAssistance">
+			<Interaction Id="offerToCollaborate" Name="Offer to Collaborate" EgoCost="10" RequiredInteractions="offerAssistance" Category="OfficePolitics">
 				<InteractionResult>
 					<DialogEntry IsPlayer="true" Dialog="I bet if we supported each other, we'd both get our work done a lot quicker."/>
 					<DialogEntry IsPlayer="false" Dialog="That's a nice offer. Let me think about it, ok?"/>
@@ -31,7 +31,7 @@
 					<Effect AmbitionEffect="-3"/>
 				</InteractionResult>
 			</Interaction>
-			<Interaction Id="shareResources" Name="Share Resources" EgoCost="4" RequiredInteractions="offerToCollaborate">
+			<Interaction Id="shareResources" Name="Share Resources" EgoCost="4" RequiredInteractions="offerToCollaborate" Category="OfficePolitics">
 				<InteractionResult>
 					<DialogEntry IsPlayer="true" Dialog="Why don't we collaborate on a project together?"/>
 					<DialogEntry IsPlayer="false" Dialog="No offense, but I work better on my own."/>
@@ -40,7 +40,7 @@
 					<Effect AmbitionEffect="-1"/>
 				</InteractionResult>
 			</Interaction>
-			<Interaction Id="declareTruce" Name="Declare a Truce" RequiredInteractions="shareResources">
+			<Interaction Id="declareTruce" Name="Declare a Truce" RequiredInteractions="shareResources" Category="OfficePolitics">
 				<InteractionResult>
 					<DialogEntry IsPlayer="true" Dialog="There's no reason we can't BOTH make it through Management Training together."/>
 					<DialogEntry IsPlayer="false" Dialog="We both know there's only one open Management spot!"/>
@@ -56,7 +56,7 @@
 					<Effect EgoEffect="-5"/>
 				</InteractionResult>
 			</Interaction>
-			<Interaction Id="acknowledgeRivalry" Name="Acknowledge Rivalry" RequiredInteractions="declareTruce">
+			<Interaction Id="acknowledgeRivalry" Name="Acknowledge Rivalry" RequiredInteractions="declareTruce" Category="OfficePolitics">
 				<InteractionResult>
 					<DialogEntry IsPlayer="true" Dialog="If this is a war, let the best man win!"/>
 					<DialogEntry IsPlayer="false" Dialog="You mean let the best WOMAN win!"/>
@@ -66,7 +66,7 @@
 					<Effect AmbitionEffect="2"/>
 				</InteractionResult>
 			</Interaction>
-			<Interaction Id="takeControl" Name="Take Control of Deborah Jones" RequiredAmbition="0">
+			<Interaction Id="takeControl" Name="Take Control of Deborah Jones" RequiredAmbition="0" Category="Challenge">
 				<InteractionResult>
 					<DialogEntry IsPlayer="true" Dialog="I think we both know why you're here.  It is high time someone put you in your place."/>
 					<DialogEntry IsPlayer="false" Dialog="You have a hell of a nerve!"/>
@@ -75,16 +75,7 @@
 					<Effect EgoEffect="100" ControlEffect="true"/>
 				</InteractionResult>
 			</Interaction>
-			<Interaction Id="motivationRoomApt" Name="Motivation Room Appointment" EgoCost="20" TurnCost="4" RequiredControl="true" RequiredPolicies="peaceOfMind">
-				<InteractionResult>
-					<DialogEntry IsPlayer="true" Dialog="I've had it with you!  Your stiff necked attitude towards me is unacceptable!"/>
-					<DialogEntry IsPlayer="false" Dialog="Let me go!  You have no right--"/>
-					<DialogEntry IsPlayer="true" Dialog="As your manager, I have every right to send you here!  When you're released, I suspect you'll return to your duties with a far better attitude towards authority!"/>
-					<DialogEntry IsPlayer="false" Dialog="Please!  Don't leave me here!  Please!  I'm sorry-- I'll do whatever you want!"/>
-					<Effect PrideEffect="-20"/>
-				</InteractionResult>
-			</Interaction>
-			<Interaction Id="insinuatingComments" Name="Insinuating Comments" EgoCost="10" Repeatable="true">
+			<Interaction Id="insinuatingComments" Name="Insinuating Comments" EgoCost="10" Repeatable="true" Category="Challenge">
 				<InteractionResult>
 					<DialogEntry IsPlayer="true" Dialog="You seem upset with me."/>
 					<DialogEntry IsPlayer="false" Dialog="I am!  Don't think I haven't heard about why you're saying about me!"/>
@@ -100,7 +91,16 @@
 					<Effect/>
 				</InteractionResult>
 			</Interaction>
-			<Interaction Id="coffeAndBJ" Name="Coffee and a BJ" EgoCost="0" TurnCost="0" RequiredPride="30" RequiredControl="true">
+			<Interaction Id="motivationRoomApt" Name="Motivation Room Appointment" EgoCost="20" TurnCost="4" RequiredControl="true" RequiredPolicies="peaceOfMind" Category="Train" Repeatable="true">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="I've had it with you!  Your stiff necked attitude towards me is unacceptable!"/>
+					<DialogEntry IsPlayer="false" Dialog="Let me go!  You have no right--"/>
+					<DialogEntry IsPlayer="true" Dialog="As your manager, I have every right to send you here!  When you're released, I suspect you'll return to your duties with a far better attitude towards authority!"/>
+					<DialogEntry IsPlayer="false" Dialog="Please!  Don't leave me here!  Please!  I'm sorry-- I'll do whatever you want!"/>
+					<Effect PrideEffect="-20"/>
+				</InteractionResult>
+			</Interaction>
+			<Interaction Id="coffeAndBJ" Name="Coffee and a BJ" EgoCost="0" TurnCost="0" RequiredPride="30" RequiredControl="true" Category="Conversation">
 				<InteractionResult>
 					<DialogEntry IsPlayer="true" Dialog="Hey there, pretty girl."/>
 					<DialogEntry IsPlayer="false" Dialog="Is there something you need?"/>
@@ -110,7 +110,7 @@
 				</InteractionResult>
 			</Interaction>
 
-			<Interaction Id="debugNukeAmbition" Name="DEBUG - nuke ambition" EgoCost="0" TurnCost="0">
+			<Interaction Id="debugNukeAmbition" Name="DEBUG - nuke ambition" EgoCost="0" TurnCost="0" Category="OfficePolitics">
 				<InteractionResult>
 					<DialogEntry IsPlayer="true" Dialog=""/>
 					<DialogEntry IsPlayer="false" Dialog=""/>
@@ -119,9 +119,21 @@
 					<Effect AmbitionEffect="-110"/>
 				</InteractionResult>
 			</Interaction>
+			<Interaction Id="debugControl" Name="DEBUG - control" EgoCost="0" TurnCost="0" Category="OfficePolitics">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Test control"/>
+					<Effect ControlEffect="true"/>
+				</InteractionResult>
+			</Interaction>
+			<Interaction Id="debugNukePride" Name="DEBUG - nuke pride" EgoCost="0" TurnCost="0" Category="OfficePolitics">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Test nuke pride"/>
+					<Effect PrideEffect="-110"/>
+				</InteractionResult>
+			</Interaction>
 		</Fem>
 		<Fem Id="britneyBower" FirstName="Britney" LastName="Bower" Age="19" Ambition="10" Pride="70">
-			<Interaction Id="introduction" Name="Introduction">
+			<Interaction Id="introduction" Name="Introduction" Category="OfficePolitics">
 				<InteractionResult>
 					<DialogEntry IsPlayer="true" Dialog="Nice to meet you!"/>
 					<DialogEntry IsPlayer="false" Dialog="So, you're the new guy?  Welcome to Artemis."/>
@@ -130,7 +142,7 @@
 					<Effect/>
 				</InteractionResult>
 			</Interaction>
-			<Interaction Id="coffeAndBJ" Name="Coffee and a BJ" EgoCost="0" TurnCost="0" RequiredPride="30" RequiredControl="true">
+			<Interaction Id="coffeAndBJ" Name="Coffee and a BJ" EgoCost="0" TurnCost="0" RequiredPride="30" RequiredControl="true" Category="Socialize">
 				<InteractionResult>
 					<DialogEntry IsPlayer="true" Dialog="Hey there, pretty girl."/>
 					<DialogEntry IsPlayer="false" Dialog="Is there something you need?"/>
@@ -140,7 +152,7 @@
 				</InteractionResult>
 			</Interaction>
 			
-			<Interaction Id="debugNukeAmbition" Name="DEBUG - nuke ambition" EgoCost="0" TurnCost="0">
+			<Interaction Id="debugNukeAmbition" Name="DEBUG - nuke ambition" EgoCost="0" TurnCost="0" Category="OfficePolitics">
 				<InteractionResult>
 					<DialogEntry IsPlayer="true" Dialog=""/>
 					<DialogEntry IsPlayer="false" Dialog=""/>
@@ -149,19 +161,18 @@
 					<Effect AmbitionEffect="-110"/>
 				</InteractionResult>
 			</Interaction>
-			<Interaction Id="debugControl" Name="DEBUG - control" EgoCost="0" TurnCost="0">
+			<Interaction Id="debugControl" Name="DEBUG - control" EgoCost="0" TurnCost="0" Category="OfficePolitics">
 				<InteractionResult>
 					<DialogEntry IsPlayer="true" Dialog="Test control"/>
 					<Effect ControlEffect="true"/>
 				</InteractionResult>
 			</Interaction>
-			<Interaction Id="debugNukePride" Name="DEBUG - nuke pride" EgoCost="0" TurnCost="0">
+			<Interaction Id="debugNukePride" Name="DEBUG - nuke pride" EgoCost="0" TurnCost="0" Category="OfficePolitics">
 				<InteractionResult>
 					<DialogEntry IsPlayer="true" Dialog="Test nuke pride"/>
 					<Effect PrideEffect="-110"/>
 				</InteractionResult>
 			</Interaction>
 		</Fem>
-		<Policy Id="peaceOfMind" Name="Peace of Mind" Active="false"/>
 	</Department>
 </GameData>

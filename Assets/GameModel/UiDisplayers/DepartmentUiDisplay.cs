@@ -59,7 +59,7 @@ namespace Assets.GameModel.UiDisplayers
 
 		public void RefreshUiDisplay(MainGameManager mgm)
 		{
-			Name.text = dept.Name + (dept.Controlled() ? "(Controlled)" : "");
+			Name.text = dept.Name;
 
 			foreach (var button in FemOptionsParent.GetComponentsInChildren<FemSelectionUiDisplay>(true))
 				button.RefreshUiDisplay(mgm);

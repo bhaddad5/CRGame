@@ -30,7 +30,7 @@ namespace Assets.GameModel.XmlParsers
 			}
 
 			List<Policy> policies = new List<Policy>();
-			foreach (var policyXml in Policies)
+			foreach (var policyXml in Policies ?? new PolicyXml[0])
 			{
 				policies.Add(policyXml.FromXml());
 			}

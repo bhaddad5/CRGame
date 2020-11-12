@@ -9,6 +9,19 @@ namespace Assets.GameModel
 		public string Id;
 		public string Name;
 
+		public enum InteractionCategory
+		{
+			OfficePolitics,
+			Conversation,
+			Challenge,
+			Socialize,
+			Projects,
+			Train,
+			Fun,
+			Surveillance,
+		}
+		public InteractionCategory Category;
+
 		public int TurnCost = 1;
 		public float EgoCost = 0;
 		public float MoneyCost = 0;

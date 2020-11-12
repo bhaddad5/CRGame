@@ -37,6 +37,20 @@
 		</xs:sequence>
 		<xs:attribute name="Id" type="xs:string" use="required"/>
 		<xs:attribute name="Name" type="xs:string" use="required"/>
+		<xs:attribute name="Category" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="OfficePolitics"/>
+					<xs:enumeration value="Conversation"/>
+					<xs:enumeration value="Challenge"/>
+					<xs:enumeration value="Socialize"/>
+					<xs:enumeration value="Projects"/>
+					<xs:enumeration value="Train"/>
+					<xs:enumeration value="Fun"/>
+					<xs:enumeration value="Surveillance"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
 		<xs:attribute name="TurnCost" type="xs:decimal"/>
 		<xs:attribute name="EgoCost" type="xs:float"/>
 		<xs:attribute name="MoneyCost" type="xs:float"/>
