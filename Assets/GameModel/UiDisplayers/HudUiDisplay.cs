@@ -25,11 +25,11 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 
 	public void RefreshUiDisplay(MainGameManager mgm)
 	{
-		Actions.text = $"Actions: {mgm.Data.Actions}";
-		Ego.text = $"Ego: {mgm.Data.Ego}";
-		Funds.text = $"Funds: ${mgm.Data.Funds}";
-		Culture.text = $"Corp Culture: {mgm.Data.CorporateCulture}";
-		Power.text = $"Power: {mgm.Data.Power}";
-		TurnNumber.text = $"{mgm.Data.TurnNumber}";
+		Actions.text = $"{mgm.Data.Actions}";
+		Ego.text = $"{mgm.Data.Ego}";
+		Funds.text = $"${mgm.Data.Funds}";
+		Culture.text = $"{mgm.Data.CorporateCulture}";
+		Power.text = $"{mgm.Data.Power}";
+		//TurnNumber.text = $"{mgm.Data.TurnNumber}";
 	}
 }
