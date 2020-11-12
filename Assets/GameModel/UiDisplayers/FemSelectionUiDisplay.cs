@@ -25,7 +25,7 @@ namespace Assets.GameModel.UiDisplayers
 
 		public void RefreshUiDisplay(MainGameManager mgm)
 		{
-			Text.text = $"{fem.Name}";
+			Text.text = $"{fem.FirstName} {fem.LastName}";
 			FemPic.sprite = FemPicManager.GetFemPicFromId(fem.Id, fem.DetermineCurrPictureId());
 		}
 	}

@@ -7,7 +7,8 @@ namespace Assets.GameModel.XmlParsers
 	public class FemXml
 	{
 		[XmlAttribute] [DefaultValue("")] public string Id = "";
-		[XmlAttribute] [DefaultValue("")] public string Name = "";
+		[XmlAttribute] [DefaultValue("")] public string FirstName = "";
+		[XmlAttribute] [DefaultValue("")] public string LastName = "";
 		[XmlAttribute] [DefaultValue(0)] public int Age = 0;
 		[XmlAttribute] [DefaultValue(false)] public bool Controlled = false;
 		[XmlAttribute] [DefaultValue(0)] public float Ambition = 0;
@@ -39,7 +40,8 @@ namespace Assets.GameModel.XmlParsers
 				Ambition = Ambition,
 				Controlled = Controlled,
 				Pride = Pride,
-				Name = Name,
+				FirstName = FirstName,
+				LastName = LastName,
 				Age = Age,
 				Interactions = interactions,
 				Traits = traits,

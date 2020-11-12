@@ -11,7 +11,8 @@ namespace Assets.GameModel
 		public float Ambition;
 		public float Pride;
 
-		public string Name;
+		public string FirstName;
+		public string LastName;
 		public int Age;
 
 		public List<Interaction> Interactions = new List<Interaction>();

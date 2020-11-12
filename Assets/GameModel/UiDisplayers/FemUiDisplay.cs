@@ -21,7 +21,7 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private Image Picture;
 
 		[SerializeField] private InteractionUiDisplay InteractionButtonPrefab;
-		[SerializeField] private Transform DialogParent;
+		[SerializeField] private DialogDisplayHandler DialogHandler;
 
 		private Fem fem;
 		public void Setup(Fem fem, MainGameManager mgm, DepartmentUiDisplay duid)
@@ -31,12 +31,13 @@ namespace Assets.GameModel.UiDisplayers
 			foreach (Interaction interaction in fem.Interactions)
 			{
 				var interact = Instantiate(InteractionButtonPrefab);
-				interact.Setup(interaction, fem, mgm, DialogParent);
+				interact.Setup(interaction, fem, mgm, DialogHandler);
 				interact.transform.SetParent(DialogOptions);
 			}
 
+			DialogHandler.Setup(fem);
+
 			StartCoroutine(RefreshLayout(DialogOptions.gameObject));
-			StartCoroutine(RefreshLayout(DialogParent.gameObject));
 
 			BackButton.onClick.AddListener(() => duid.CloseCurrentFem());
 		}
@@ -52,7 +53,7 @@ namespace Assets.GameModel.UiDisplayers
 
 		public void RefreshUiDisplay(MainGameManager mgm)
 		{
-			Name.text = fem.Name;
+			Name.text = $"{fem.FirstName} {fem.LastName}";
 			Age.text = $"{fem.Age} years old";
 			Ambition.text = $"Ambition: {fem.Ambition}";
 			Pride.text = $"Pride: {fem.Pride}";
@@ -62,12 +63,8 @@ namespace Assets.GameModel.UiDisplayers
 
 			foreach (var button in DialogOptions.GetComponentsInChildren<InteractionUiDisplay>(true))
 				button.RefreshUiDisplay(mgm, fem);
-
-			foreach (var dialog in DialogParent.GetComponentsInChildren<DialogUiDisplay>(true))
-				dialog.RefreshUiDisplay(mgm);
-
+			
 			StartCoroutine(RefreshLayout(DialogOptions.gameObject));
-			StartCoroutine(RefreshLayout(DialogParent.gameObject));
 		}
 
 		private string GetTraitsString()
