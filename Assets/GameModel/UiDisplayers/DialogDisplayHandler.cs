@@ -43,6 +43,8 @@ public class DialogDisplayHandler : MonoBehaviour
 	{
 		gameObject.SetActive(true);
 		currDialogsToShow = new List<DialogEntry>(dialogs);
+		if(runningCoroutine != null)
+			StopCoroutine(runningCoroutine);
 		runningCoroutine = StartCoroutine(ShowDialog());
 	}
 
