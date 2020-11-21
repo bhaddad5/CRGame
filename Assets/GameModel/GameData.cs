@@ -15,6 +15,17 @@ public class GameData
 
 	public List<Department> Departments = new List<Department>();
 
+	public List<string> GetControlledDepartmentIds()
+	{
+		List<string> controlledDepts = new List<string>();
+		foreach (var dept in Departments)
+		{
+			if(dept.Controlled())
+				controlledDepts.Add(dept.Id);
+		}
+		return controlledDepts;
+	}
+
 	public List<string> GetActivePolicyIds()
 	{
 		List<string> activePolicyIds = new List<string>();
@@ -48,5 +59,20 @@ public class GameData
 			}
 		}
 		return completedInteractionIds;
+	}
+
+	public Fem GetFemById(string femId)
+	{
+		foreach (var department in Departments)
+		{
+			foreach (var fem in department.Fems)
+			{
+				if (fem.Id == femId)
+				{
+					return fem;
+				}
+			}
+		}
+		return null;
 	}
 }

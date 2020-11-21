@@ -5,22 +5,40 @@ namespace Assets.GameModel
 {
 	public class Effect
 	{
+		public string ContextualFemId = "";
 		public float AmbitionEffect = 0;
 		public float PrideEffect = 0;
 		public float EgoEffect = 0;
 		public float FundsEffect = 0;
+		public float PowerEffect = 0;
+		public float CultureEffect = 0;
 		public bool ControlEffect = false;
+		public bool RemoveNpcFromGame = false;
 		public List<string> TraitsAdded;
 		public List<string> TraitsRemoved;
 
 		public void ExecuteEffect(MainGameManager mgm, Fem fem)
 		{
+			if (ContextualFemId != "")
+				fem = mgm.Data.GetFemById(ContextualFemId);
+
+			if (fem == null)
+			{
+				Debug.LogWarning("FemId not found: " + ContextualFemId);
+				return;
+			}
+
+			if (RemoveNpcFromGame)
+				Debug.LogWarning("TODO: Implement remove from game!");
+
 			mgm.Data.Ego = Mathf.Max(mgm.Data.Ego + EgoEffect, 0);
 			mgm.Data.Funds = Mathf.Max(mgm.Data.Funds + FundsEffect, 0);
 
 			fem.Pride = Mathf.Max(fem.Pride + PrideEffect, 0);
 			fem.Ambition = Mathf.Max(fem.Ambition + AmbitionEffect, 0);
 			fem.Controlled = fem.Controlled || ControlEffect;
+			mgm.Data.Power = Mathf.Max(mgm.Data.Power + PowerEffect, 0);
+			mgm.Data.CorporateCulture = Mathf.Max(mgm.Data.CorporateCulture + CultureEffect, 0);
 		}
 	}
 }

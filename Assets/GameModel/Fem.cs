@@ -22,9 +22,19 @@ namespace Assets.GameModel
 		{
 			foreach (var trait in Traits)
 			{
-				foreach (var effect in trait.Effects)
+				if (Controlled)
 				{
-					effect.ExecuteEffect(mgm, this);
+					foreach (var effect in trait.ControlledEffects)
+					{
+						effect?.ExecuteEffect(mgm, this);
+					}
+				}
+				else
+				{
+					foreach (var effect in trait.FreeEffects)
+					{
+						effect?.ExecuteEffect(mgm, this);
+					}
 				}
 			}
 		}

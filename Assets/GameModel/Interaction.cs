@@ -29,6 +29,7 @@ namespace Assets.GameModel
 		public List<string> RequiredInteractions = new List<string>();
 		public List<string> RequiredPolicies = new List<string>();
 		public bool RequiredControl = false;
+		public List<string> RequiredDepartmentsControled = new List<string>();
 		public float RequiredAmbition = -1;
 		public float RequiredPride = -1;
 
@@ -49,9 +50,23 @@ namespace Assets.GameModel
 				return false;
 			if (Completed && !Repeatable)
 				return false;
+			foreach (var interactionDept in RequiredDepartmentsControled)
+			{
+				if (!mgm.Data.GetControlledDepartmentIds().Contains(interactionDept))
+					return false;
+			}
 			foreach (var interactionId in RequiredInteractions)
 			{
-				if (!mgm.Data.GetCompletedInteractionIds(fem.Id).Contains(interactionId))
+				var id = interactionId;
+				bool inverse = false;
+				if (id.StartsWith("!"))
+				{
+					id = id.Substring(1);
+					inverse = true;
+				}
+				if (!inverse && !mgm.Data.GetCompletedInteractionIds(fem.Id).Contains(id))
+					return false;
+				else if (inverse && mgm.Data.GetCompletedInteractionIds(fem.Id).Contains(id))
 					return false;
 			}
 			foreach (var policyId in RequiredPolicies)

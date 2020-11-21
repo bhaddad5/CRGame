@@ -4,11 +4,15 @@
 	<xs:element name="GameData" type="GameData"/>
 
 	<xs:complexType name="Effect">
+		<xs:attribute name="ContextualFemId" type="xs:string"/>
 		<xs:attribute name="AmbitionEffect" type="xs:float"/>
 		<xs:attribute name="PrideEffect" type="xs:float"/>
 		<xs:attribute name="EgoEffect" type="xs:float"/>
 		<xs:attribute name="FundsEffect" type="xs:float"/>
+		<xs:attribute name="PowerEffect" type="xs:float"/>
+		<xs:attribute name="CultureEffect" type="xs:float"/>
 		<xs:attribute name="ControlEffect" type="xs:boolean"/>
+		<xs:attribute name="RemoveNpcFromGame" type="xs:boolean"/>
 		<xs:attribute name="TraitsAdded" type="xs:string"/>
 		<xs:attribute name="TraitsRemoved" type="xs:string"/>
 	</xs:complexType>
@@ -54,6 +58,7 @@
 		<xs:attribute name="TurnCost" type="xs:decimal"/>
 		<xs:attribute name="EgoCost" type="xs:float"/>
 		<xs:attribute name="MoneyCost" type="xs:float"/>
+		<xs:attribute name="RequiredDepartmentsControlled" type="xs:string"/>
 		<xs:attribute name="RequiredInteractions" type="xs:string"/>
 		<xs:attribute name="RequiredPolicies" type="xs:string"/>
 		<xs:attribute name="RequiredAmbition" type="xs:float"/>
@@ -66,7 +71,10 @@
 	<xs:complexType name="Trait">
 		<xs:sequence>
 			<xs:choice maxOccurs="unbounded" minOccurs="1">
-				<xs:element name="Effect" type="Effect"/>
+				<xs:element name="FreeEffect" type="Effect"/>
+			</xs:choice>
+			<xs:choice maxOccurs="unbounded" minOccurs="1">
+				<xs:element name="ControlledEffect" type="Effect"/>
 			</xs:choice>
 		</xs:sequence>
 		<xs:attribute name="Id" type="xs:string" use="required"/>

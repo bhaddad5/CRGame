@@ -22,6 +22,7 @@ namespace Assets.GameModel.XmlParsers
 		[XmlAttribute] [DefaultValue("")] public string RequiredInteractions = "";
 		[XmlAttribute] [DefaultValue("")] public string RequiredPolicies = "";
 		[XmlAttribute] [DefaultValue(false)] public bool RequiredControl = false;
+		[XmlAttribute] [DefaultValue("")] public string RequiredDepartmentsControled = "";
 		[XmlAttribute] [DefaultValue(-1)] public float RequiredAmbition = -1;
 		[XmlAttribute] [DefaultValue(-1)] public float RequiredPride = -1;
 
@@ -47,6 +48,7 @@ namespace Assets.GameModel.XmlParsers
 				EgoCost = EgoCost,
 				MoneyCost = MoneyCost,
 				RequiredInteractions = RequiredInteractions.XmlStringToList(),
+				RequiredDepartmentsControled = RequiredDepartmentsControled.XmlStringToList(),
 				RequiredPolicies = RequiredPolicies.XmlStringToList(),
 				RequiredAmbition = RequiredAmbition,
 				RequiredPride = RequiredPride,

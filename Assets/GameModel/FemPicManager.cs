@@ -19,9 +19,11 @@ public static class FemPicManager
 public class FemPicsLookup
 {
 	private Dictionary<string, List<Sprite>> picsLookup = new Dictionary<string, List<Sprite>>();
+	private string femId;
 
 	public FemPicsLookup(string femId)
 	{
+		this.femId = femId;
 		var femPics = Resources.LoadAll<Sprite>(Path.Combine("FemPics", femId)).ToList();
 		foreach (var femPic in femPics)
 		{
@@ -41,6 +43,12 @@ public class FemPicsLookup
 
 	public Sprite GetPicOfType(string type)
 	{
+		if (!picsLookup.ContainsKey(type))
+		{
+			Debug.LogError($"Failed to find lookup pic for fem {femId} of type {type}");
+			return null;
+		}
+
 		var lookup = picsLookup[type];
 		return lookup[Random.Range(0, lookup.Count)];
 	}

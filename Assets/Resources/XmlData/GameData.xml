@@ -2,17 +2,9 @@
 	<Department Id="consulting" Name="Consulting" Accessible="true" UiPosX="911" UiPosY="429">
 		<Fem Id="deborahJones" FirstName="Deborah" LastName="Jones" Age="24" Ambition="50" Pride="100">
 			<Trait Id="overAchiever" Name="Over-Achiever">
-				<Effect AmbitionEffect=".5" />
+				<FreeEffect AmbitionEffect=".5" />
+				<ControlledEffect PowerEffect=".1"/>
 			</Trait>
-			<Interaction Id="introduction" Name="Introduction" Category="OfficePolitics">
-				<InteractionResult>
-					<DialogEntry IsPlayer="true" Dialog="Nice to meet you!"/>
-					<DialogEntry IsPlayer="false" Dialog="So, you're the new guy?  Welcome to Artemis."/>
-					<DialogEntry IsPlayer="true" Dialog="It's great to be here."/>
-					<DialogEntry IsPlayer="false" Dialog="Sure, sure.  See you around."/>
-					<Effect/>
-				</InteractionResult>
-			</Interaction>
 			<Interaction Id="offerAssistance" Name="Offer to Assist Her" EgoCost="20" RequiredInteractions="introduction" Category="OfficePolitics">
 				<InteractionResult>
 					<DialogEntry IsPlayer="true" Dialog="You look really busy! Is there anything I can do to help out?"/>
@@ -66,6 +58,78 @@
 					<Effect AmbitionEffect="2"/>
 				</InteractionResult>
 			</Interaction>
+			<Interaction Id="bullyDeborah" Name="Bully Deborah" RequiredAmbition="25" Category="OfficePolitics" Repeatable="true">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="You're clearly not up to the pressure around here."/>
+					<DialogEntry IsPlayer="false" Dialog="Who the hell do you think you're talking to?"/>
+					<DialogEntry IsPlayer="true" Dialog="I'm just making an observation."/>
+					<DialogEntry IsPlayer="false" Dialog="You better watch what you say, unless you want me to report you to HR!"/>
+					<Effect AmbitionEffect="-5"/>
+				</InteractionResult>
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="You're clearly not up to the pressure around here."/>
+					<DialogEntry IsPlayer="false" Dialog="That's it.  I've had it!"/>
+					<DialogEntry IsPlayer="true" Dialog="What do you mean?"/>
+					<DialogEntry IsPlayer="false" Dialog="You're bullying me and I intend to report you to HR!"/>
+					<Effect EgoEffect="-5"/>
+				</InteractionResult>
+			</Interaction>
+			<Interaction Id="betraySusanGranger" Name="Betray Susan Granger" RequiredControl="true" Category="OfficePolitics" TurnCost="3">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="I want you to keep an eye on Susan for me."/>
+					<DialogEntry IsPlayer="false" Dialog="What do you mean?  You want me to spy on her?"/>
+					<DialogEntry IsPlayer="true" Dialog="That's exactly what I want you to do.  Find examples of her incompetence-- or you'll face the consequences.  Understand?"/>
+					<DialogEntry IsPlayer="false" Dialog="Yes, I understand.  You expect me to spy on her for you-- or else."/>
+					<Effect ContextualFemId="susanGranger" AmbitionEffect="-20"/>
+				</InteractionResult>
+			</Interaction>
+			<Interaction Id="loyaltyTest" Name="Loyalty Test" RequiredControl="true" Category="OfficePolitics">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="If you like working, you better choose sides."/>
+					<DialogEntry IsPlayer="false" Dialog="You mean choose YOUR side."/>
+					<DialogEntry IsPlayer="true" Dialog="Only if you want to stay on the team."/>
+					<DialogEntry IsPlayer="false" Dialog="You're not leaving me any options, so-- yes.  I want to be on YOUR team, ok?"/>
+					<Effect PrideEffect="-3"/>
+				</InteractionResult>
+			</Interaction>
+			<Interaction Id="demotion" Name="Demote" RequiredControl="true" RequiredDepartmentsControlled="consulting" Category="OfficePolitics">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Now that I'm in charge, there are going to be some changes."/>
+					<DialogEntry IsPlayer="false" Dialog="I thought there might be."/>
+					<DialogEntry IsPlayer="true" Dialog="While you aren't qualified for an executive position, I can offer you an admin role-- as my secertary.  What's your answer?"/>
+					<DialogEntry IsPlayer="false" Dialog="But... fine.  My answer is... yes."/>
+					<Effect PrideEffect="-10"/>
+				</InteractionResult>
+			</Interaction>
+			<Interaction Id="dismissal" Name="Dismiss" RequiredControl="true" RequiredDepartmentsControlled="consulting" RequiredInteractions="!demotion" Category="OfficePolitics">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Now that I'm in charge, there are going to be some changes."/>
+					<DialogEntry IsPlayer="false" Dialog="I thought there might be."/>
+					<DialogEntry IsPlayer="true" Dialog="I'm sorry. but your services are no longer required.  Your employment is terminated, effective immediately."/>
+					<DialogEntry IsPlayer="false" Dialog="I never thought this would happen to me! "/>
+					<Effect RemoveNpcFromGame="true"/>
+				</InteractionResult>
+			</Interaction>
+			<Interaction Id="moveToSecDorm" Name="Move to Secretarial Dorm" RequiredControl="true" Category="OfficePolitics" RequiredPolicies="affordableHousing" RequiredInteractions="demotion">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="You must be finding it difficult to make ends these days."/>
+					<DialogEntry IsPlayer="false" Dialog="You know I make a lot less now than I was before you demoted me!"/>
+					<DialogEntry IsPlayer="true" Dialog="Lucky for you, I've reserved you a room in the Secretarial Dormitory.  You can move in immediately."/>
+					<DialogEntry IsPlayer="false" Dialog="I'm going to miss my apartment.  Yes, I'll begin packing tonight."/>
+					<Effect PrideEffect="-10"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="introduction" Name="Introduction" Category="Conversation">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Nice to meet you!"/>
+					<DialogEntry IsPlayer="false" Dialog="So, you're the new guy?  Welcome to Artemis."/>
+					<DialogEntry IsPlayer="true" Dialog="It's great to be here."/>
+					<DialogEntry IsPlayer="false" Dialog="Sure, sure.  See you around."/>
+					<Effect/>
+				</InteractionResult>
+			</Interaction>
+
 			<Interaction Id="takeControl" Name="Take Control of Deborah Jones" RequiredAmbition="0" Category="Challenge">
 				<InteractionResult>
 					<DialogEntry IsPlayer="true" Dialog="I think we both know why you're here.  It is high time someone put you in your place."/>
@@ -132,7 +196,7 @@
 				</InteractionResult>
 			</Interaction>
 		</Fem>
-		<Fem Id="britneyBower" FirstName="Britney" LastName="Bower" Age="19" Ambition="10" Pride="70">
+		<Fem Id="britneyBower" FirstName="Britney" LastName="Bower" Age="18" Ambition="30" Pride="40">
 			<Interaction Id="introduction" Name="Introduction" Category="OfficePolitics">
 				<InteractionResult>
 					<DialogEntry IsPlayer="true" Dialog="Nice to meet you!"/>
@@ -173,6 +237,18 @@
 					<Effect PrideEffect="-110"/>
 				</InteractionResult>
 			</Interaction>
+		</Fem>
+		<Fem Id="annMiller" FirstName="Ann" LastName="Miller" Age="35" Ambition="70" Pride="80">
+			
+		</Fem>
+		<Fem Id="susanGranger" FirstName="Susan" LastName="Granger" Age="34" Ambition="65" Pride="70">
+
+		</Fem>
+		<Fem Id="jillVander" FirstName="Jill" LastName="Vander" Age="21" Ambition="30" Pride="40">
+
+		</Fem>
+		<Fem Id="amandaEllsbach" FirstName="Susan" LastName="Granger" Age="20" Ambition="30" Pride="40">
+
 		</Fem>
 	</Department>
 </GameData>
