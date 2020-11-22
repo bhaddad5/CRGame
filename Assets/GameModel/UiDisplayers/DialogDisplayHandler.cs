@@ -31,8 +31,11 @@ public class DialogDisplayHandler : MonoBehaviour
 			}
 			else
 			{
-				if(currDialogsToShow.Count == 0)
+				if (currDialogsToShow.Count == 0)
+				{
+					femUiDisplay.UnsetImage();
 					gameObject.SetActive(false);
+				}
 				else
 					runningCoroutine = StartCoroutine(ShowDialog());
 			}

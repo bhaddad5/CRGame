@@ -47,9 +47,16 @@ namespace Assets.GameModel.UiDisplayers
 			InteractionsHandler.RefreshInteractionVisibilities(fem, mgm);
 		}
 
+		private string overridingImage = null;
 		public void SetImage(string image)
 		{
-			Picture.sprite = FemPicManager.GetFemPicFromId(fem.Id, image);
+			overridingImage = image;
+			Picture.sprite = LoadFemPicture();
+		}
+
+		public void UnsetImage()
+		{
+			overridingImage = null;
 		}
 
 		private string GetTraitsString()
@@ -66,7 +73,7 @@ namespace Assets.GameModel.UiDisplayers
 
 		private Sprite LoadFemPicture()
 		{
-			return FemPicManager.GetFemPicFromId(fem.Id, fem.DetermineCurrPictureId());
+			return FemPicManager.GetFemPicFromId(fem.Id, overridingImage ?? fem.DetermineCurrPictureId());
 		}
 	}
 }
