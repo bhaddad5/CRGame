@@ -15,10 +15,18 @@ namespace Assets.GameModel.XmlParsers
 	{
 		public GameData LoadXmlData()
 		{
-			var gameData = (TextAsset) Resources.Load("XmlData/GameData");
+			string gameData;
+			if (File.Exists(Path.Combine(Application.streamingAssetsPath, "GameData.xml")))
+			{
+				gameData = File.ReadAllText(Path.Combine(Application.streamingAssetsPath, "GameData.xml"));
+			}
+			else
+			{	
+				gameData = ((TextAsset)Resources.Load("XmlData/GameData")).text;
+			}
 
 			var serializer = new XmlSerializer(typeof(GameDataXml));
-			var data = (GameDataXml) serializer.Deserialize(new StringReader(gameData.text));
+			var data = (GameDataXml) serializer.Deserialize(new StringReader(gameData));
 			
 			return data.FromXml();
 		}

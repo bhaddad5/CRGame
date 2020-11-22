@@ -2,7 +2,7 @@
 	<Department Id="consulting" Name="Consulting Services" Accessible="true" UiPosX="911" UiPosY="429">
 		<Fem Id="deborahJones" FirstName="Deborah" LastName="Jones" Age="24" Ambition="50" Pride="100">
 			<Trait Id="overAchiever" Name="Over-Achiever">
-				<FreeEffect AmbitionEffect=".5" />
+				<FreeEffect AmbitionEffect=".5"/>
 				<ControlledEffect PowerEffect=".1"/>
 			</Trait>
 			<Interaction Id="offerAssistance" Name="Offer to Assist Her" EgoCost="20" RequiredInteractions="introduction" Category="OfficePolitics">
@@ -347,7 +347,7 @@
 					<Effect PrideEffect="-5"/>
 				</InteractionResult>
 			</Interaction>
-			<Interaction Id="dogCollar" Name="New slutwear work clothes" RequiredControl="true" Category="Train">
+			<Interaction Id="dogCollar" Name="Wear a dog collar" RequiredControl="true" Category="Train">
 				<InteractionResult>
 					<DialogEntry IsPlayer="true" Dialog="Do you like it?"/>
 					<DialogEntry IsPlayer="false" Dialog="It's a dog collar!"/>
@@ -376,7 +376,7 @@
 			</Interaction>
 			<Interaction Id="publicBrag" Name="Brag about how easy she is in public" RequiredPride="10" RequiredControl="true" Category="Train">
 				<InteractionResult>
-					<DialogEntry IsPlayer="true" Dialog="YBritney's got a great attitude."/>
+					<DialogEntry IsPlayer="true" Dialog="Britney's got a great attitude."/>
 					<DialogEntry IsPlayer="true" Dialog="You might even say she's a bit of a suck up."/>
 					<DialogEntry IsPlayer="true" Dialog="She loves working under a manager who knows how to handle her. "/>
 					<DialogEntry IsPlayer="true" Dialog="She's flexible and always ready to bend over backwards to keep her manager happy!"/>
@@ -395,7 +395,7 @@
 
 			<Interaction Id="gameDay" Name="Game Day" RequiredControl="true" Category="Fun">
 				<InteractionResult>
-					<DialogEntry IsPlayer="true" Dialog="Ready for Game Day?"/>
+					<DialogEntry IsPlayer="true" Dialog="Ready for Game Day?" NpcImage="rewardGameDay"/>
 					<DialogEntry IsPlayer="false" Dialog="I feel kind of silly!"/>
 					<DialogEntry IsPlayer="true" Dialog="No, you just look like you are very excited about the Championship game."/>
 					<DialogEntry IsPlayer="false" Dialog="I thought I had graduated high school already!"/>
@@ -404,7 +404,7 @@
 			</Interaction>
 			<Interaction Id="pantyInspection1" Name="Panty Inspection" RequiredPride="0" RequiredControl="true" Category="Fun">
 				<InteractionResult>
-					<DialogEntry IsPlayer="true" Dialog="Let's go.  Flip up that skirt and show me something sexy."/>
+					<DialogEntry IsPlayer="true" Dialog="Let's go.  Flip up that skirt and show me something sexy." NpcImage="rewardPanties1"/>
 					<DialogEntry IsPlayer="false" Dialog="What if someone sees me?"/>
 					<DialogEntry IsPlayer="true" Dialog="I guess they'll just think the receptionist is being a slut, as usual."/>
 					<DialogEntry IsPlayer="false" Dialog="But I'm really not!"/>
@@ -413,7 +413,7 @@
 			</Interaction>
 			<Interaction Id="pantyInspection2" Name="Panty Inspection" RequiredPride="0" RequiredControl="true" RequiredInteractions="pantyInspection1" Category="Fun">
 				<InteractionResult>
-					<DialogEntry IsPlayer="true" Dialog="Let's go.  Flip up that skirt and show me something sexy."/>
+					<DialogEntry IsPlayer="true" Dialog="Let's go.  Flip up that skirt and show me something sexy." NpcImage="rewardPanties2"/>
 					<DialogEntry IsPlayer="false" Dialog="What if someone sees me?"/>
 					<DialogEntry IsPlayer="true" Dialog="I guess they'll just think the receptionist is being a slut, as usual."/>
 					<DialogEntry IsPlayer="false" Dialog="But I'm really not!"/>
@@ -422,7 +422,7 @@
 			</Interaction>
 			<Interaction Id="daisyDukes" Name="Daisy Dukes" RequiredPride="20" RequiredControl="true" Category="Fun">
 				<InteractionResult>
-					<DialogEntry IsPlayer="true" Dialog="Stop squirming.  You look great."/>
+					<DialogEntry IsPlayer="true" Dialog="Stop squirming.  You look great." NpcImage="rewardDaisyDukes"/>
 					<DialogEntry IsPlayer="false" Dialog="Everyone's been looking at me!"/>
 					<DialogEntry IsPlayer="true" Dialog="Spare me.  You love it when you get attention."/>
 					<DialogEntry IsPlayer="false" Dialog="But not like this!"/>
@@ -431,11 +431,21 @@
 			</Interaction>
 			<Interaction Id="bikiniModeling" Name="Bikini Modeling" RequiredPride="10" RequiredControl="true" Category="Fun">
 				<InteractionResult>
-					<DialogEntry IsPlayer="true" Dialog="I approve.  You look like a beach bunny cocktease."/>
+					<DialogEntry IsPlayer="true" Dialog="I approve.  You look like a beach bunny cocktease." NpcImage="rewardBikini"/>
 					<DialogEntry IsPlayer="false" Dialog="It barely covers me!"/>
 					<DialogEntry IsPlayer="true" Dialog="True-- but since you're a &quot;But-her-face&quot;, that's the whole idea."/>
 					<DialogEntry IsPlayer="false" Dialog="That's such a mean thing to say!"/>
 					<Effect EgoEffect="2" PrideEffect="-2" FundsEffect="100"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="nukeEverything" Name="Debug - NukeEverything" Category="OfficePolitics">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Do you live near the office?"/>
+					<DialogEntry IsPlayer="false" Dialog="Like I could afford it on my salary!  The rents around here are insane!"/>
+					<DialogEntry IsPlayer="true" Dialog="So you have a bit of a commute?"/>
+					<DialogEntry IsPlayer="false" Dialog="The only good thing about Botany Bay Housing project is that it is on the bus line!"/>
+					<Effect AmbitionEffect="-100" PrideEffect="-100"/>
 				</InteractionResult>
 			</Interaction>
 		</Fem>

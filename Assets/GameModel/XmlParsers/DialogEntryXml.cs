@@ -12,6 +12,7 @@ namespace Assets.GameModel.XmlParsers
 	{
 		[XmlAttribute] [DefaultValue(false)] public bool IsPlayer = false;
 		[XmlAttribute] [DefaultValue("")] public string Dialog = "";
+		[XmlAttribute] [DefaultValue("")] public string NpcImage = "";
 
 		public DialogEntry FromXml()
 		{
@@ -19,6 +20,7 @@ namespace Assets.GameModel.XmlParsers
 			{
 				IsPlayer = IsPlayer,
 				Text = Dialog,
+				NpcImage = NpcImage,
 			};
 		}
 	}

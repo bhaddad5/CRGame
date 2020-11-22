@@ -8,5 +8,6 @@ namespace Assets.GameModel
 	{
 		public bool IsPlayer = false;
 		public string Text = "";
+		public string NpcImage = "";
 	}
 }

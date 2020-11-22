@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Assets.GameModel;
+using Assets.GameModel.UiDisplayers;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,10 +14,12 @@ public class DialogDisplayHandler : MonoBehaviour
 	[SerializeField] private Image NextDialogImage;
 
 	private Fem fem;
+	private FemUiDisplay femUiDisplay;
 
-	public void Setup(Fem fem)
+	public void Setup(Fem fem, FemUiDisplay femUiDisplay)
 	{
 		this.fem = fem;
+		this.femUiDisplay = femUiDisplay;
 		DialogAreaButton.onClick.AddListener(() =>
 		{
 			if (runningCoroutine != null)
@@ -58,6 +61,8 @@ public class DialogDisplayHandler : MonoBehaviour
 		DialogText.text = "";
 		NextDialogImage.enabled = false;
 		textToShow = dialog.Text;
+		if (dialog.NpcImage != "")
+			femUiDisplay.SetImage(dialog.NpcImage);
 
 		foreach (var c in dialog.Text)
 		{

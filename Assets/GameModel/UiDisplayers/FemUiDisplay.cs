@@ -29,7 +29,7 @@ namespace Assets.GameModel.UiDisplayers
 
 			InteractionsHandler.Setup(fem.Interactions, fem, mgm, DialogHandler);
 
-			DialogHandler.Setup(fem);
+			DialogHandler.Setup(fem, this);
 			
 			BackButton.onClick.AddListener(() => duid.CloseCurrentFem());
 		}
@@ -45,6 +45,11 @@ namespace Assets.GameModel.UiDisplayers
 			Traits.text = GetTraitsString();
 
 			InteractionsHandler.RefreshInteractionVisibilities(fem, mgm);
+		}
+
+		public void SetImage(string image)
+		{
+			Picture.sprite = FemPicManager.GetFemPicFromId(fem.Id, image);
 		}
 
 		private string GetTraitsString()
