@@ -198,7 +198,7 @@
 				<InteractionResult>
 					<DialogEntry IsPlayer="true" Dialog="Hi!  I'm the new guy."/>
 					<DialogEntry IsPlayer="false" Dialog="I'm Britney-- Britney Bower.  I'm the Receptionist."/>
-					<DialogEntry IsPlayer="true" Dialog="I look forward to workign with you."/>
+					<DialogEntry IsPlayer="true" Dialog="I look forward to working with you."/>
 					<DialogEntry IsPlayer="false" Dialog="You better go to Ms. Granger's office.  She's been expecting you."/>
 					<Effect/>
 				</InteractionResult>
@@ -451,7 +451,186 @@
 		</Fem>
 
 		<Fem Id="annMiller" FirstName="Ann" LastName="Miller" Age="35" Ambition="70" Pride="80">
-			
+			<Interaction Id="salesCall" Name="Sales Call Ride-along" EgoCost="20" TurnCost= "2" RequiredInteractions="whoZoo" Category="OfficePolitics">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Would you mind if I joined you on some sales calls?"/>
+					<DialogEntry IsPlayer="false" Dialog="I'm better on my own."/>
+					<DialogEntry IsPlayer="true" Dialog="I was hoping to learn from you.  Everyone sayes you're the best sales person in the company."/>
+					<DialogEntry IsPlayer="false" Dialog="Alright-- but keep your comments to yourself!"/>
+					<Effect AmbitionEffect="-3"  PowerEffect="1"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="salesCall" Name="Sales Call Ride-along" EgoCost="20" TurnCost= "2" RequiredInteractions="whoZoo" Category="OfficePolitics">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Would you mind if I joined you on some sales calls?"/>
+					<DialogEntry IsPlayer="false" Dialog="I'm better on my own."/>
+					<DialogEntry IsPlayer="true" Dialog="I was hoping to learn from you.  Everyone sayes you're the best sales person in the company."/>
+					<DialogEntry IsPlayer="false" Dialog="Alright-- but keep your comments to yourself!"/>
+					<Effect AmbitionEffect="-3"  PowerEffect= "1"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="jointSalescalls" Name="Joint Sales Calls" EgoCost="35" TurnCost= "2" RequiredInteractions="salesCall" Category="OfficePolitics">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Can we keep making sales calls together?  I'm learning so much!"/>
+					<DialogEntry IsPlayer="false" Dialog="I'm not paid to tutor you."/>
+					<DialogEntry IsPlayer="true" Dialog="I'll follow your lead completely.  Please?"/>
+					<DialogEntry IsPlayer="false" Dialog="Oh, alright.  Just as long as I get credit for the sales."/>
+					<Effect AmbitionEffect="-3"  PowerEffect= "1"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="titanDefence" Name="Titan Defence Contract" EgoCost="50" TurnCost= "2" RequiredInteractions="jointSalescalls" Category="OfficePolitics">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Can we keep making sales calls together?  I'm learning so much!"/>
+					<DialogEntry IsPlayer="false" Dialog="I'm not paid to tutor you."/>
+					<DialogEntry IsPlayer="true" Dialog="I'll follow your lead completely.  Please?"/>
+					<DialogEntry IsPlayer="false" Dialog="Oh, alright.  Just as long as I get credit for the sales."/>
+					<Effect AmbitionEffect="-3" PowerEffect= "3" FundsEffect="3000" />
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="compPlan" Name="Compensation Plan Adjustment" SpreadsheetCost= "1" TurnCost= "1" RequiredInteractions="introduction" Category="OfficePolitics">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="I think you'll find that Comp Plan issue fixed."/>
+					<DialogEntry IsPlayer="false" Dialog="No way.  I've been fighting that for months!"/>
+					<DialogEntry IsPlayer="true" Dialog="I used a little juice to get it sorted."/>
+					<DialogEntry IsPlayer="false" Dialog="You're a useful man to know!"/>
+					<Effect AmbitionEffect="-1"  PowerEffect= "2" />
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="marketingSupport" Name="Marketing Support" BrandCost= "1" TurnCost= "1" RequiredInteractions="introduction" Category="OfficePolitics">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="From now on, you'll be getting the marketing support you've been asking for."/>
+					<DialogEntry IsPlayer="false" Dialog="I very much doubt that."/>
+					<DialogEntry IsPlayer="true" Dialog="Doubt all you like-- you'll get everything on your wish list.  I used a favour with Marketing."/>
+					<DialogEntry IsPlayer="false" Dialog="Damn-- you really do have some juice around here!"/>
+					<Effect AmbitionEffect="-1"  PowerEffect= "2" />
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="susanArrangement" Name="An Arrangement is negotiated" EgoCost= "-50" TurnCost= "1" RequiredInteractions="introduction" Category="OfficePolitics">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Susan's an impediment."/>
+					<DialogEntry IsPlayer="false" Dialog="You mean she's in your way.  Look, I'm planning on leaving soon.  Just leave me alone and I'll drop a poison pill on her for you on my way out."/>
+					<DialogEntry IsPlayer="true" Dialog="I'm a fan.  You have nothing to worry about from me.  But, if we had a deal..."/>
+					<DialogEntry IsPlayer="false" Dialog="We have a deal.  Believe me, I've been dying to drop the dirt on how incompetent Susan is.  I'm getting married and don't need this job anymore."/>
+					<Effect ContextualFemId="susanGranger" AmbitionEffect="-15"  RemoveNpcFromGame="true" />
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="introduction" Name="introduction" TurnCost= "1" Category="Conversation">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Are you the Sales Manager for CSG?"/>
+					<DialogEntry IsPlayer="false" Dialog="I'm the lead sales exec.  Who are you?  Oh, the new kid-  right?"/>
+					<DialogEntry IsPlayer="true" Dialog="I'm in the Management Trainee Program."/>
+					<DialogEntry IsPlayer="false" Dialog="Good for you.  You do know this is the company’s dumping ground, don’t you?"/>
+					<Effect/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="haveMinute" Name="Do you have a minute?" TurnCost= "1" RequiredInteractions="introduction" Category="Conversation">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Do you have a minute?"/>
+					<DialogEntry IsPlayer="false" Dialog="Not really.  What do you want?"/>
+					<DialogEntry IsPlayer="true" Dialog="I was just hoping you could tell me--"/>
+					<DialogEntry IsPlayer="false" Dialog="I'm on my way to a sales call.  Maybe later, ok?"/>
+					<Effect/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="longCommute" Name="Do you have a long commute?" TurnCost= "1" RequiredInteractions="introduction" Category="Conversation">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Do you have a long commute?"/>
+					<DialogEntry IsPlayer="false" Dialog="I’m over in Tempo Townhouses.  Great place-- my unit has gone up twenty percent since I bought it!"/>
+					<DialogEntry IsPlayer="true" Dialog="Sounds like a great investment!"/>
+					<DialogEntry IsPlayer="false" Dialog="Work hard and maybe you'll get there too."/>
+					<Effect/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="whoZoo" Name="Who’s who in the zoo around here?" TurnCost= "1" RequiredInteractions="introduction" Category="Conversation">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Who’s who in the zoo around here?"/>
+					<DialogEntry IsPlayer="false" Dialog="Zoo is right.  CSG is a mess."/>
+					<DialogEntry IsPlayer="true" Dialog="Why is that?"/>
+					<DialogEntry IsPlayer="false" Dialog="You'll figure it out pretty quickly.  Maybe we'll chat leter."/>
+					<Effect/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="doseHornical" Name="Dose with Hornical" TurnCost= "1" RequiredItem="hornical" Category="Challenge">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Are you ok?"/>
+					<DialogEntry IsPlayer="false" Dialog="Please leave me alone."/>
+					<DialogEntry IsPlayer="true" Dialog="What's the matter?"/>
+					<DialogEntry IsPlayer="false" Dialog="I don't feel right!  Something's wrong!"/>
+					<Effect AmbitionEffect="-20"  PrideEffect="-20"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="increaseBudget" Name="Increase CSG Sales Budget" TurnCost= "1" EgoCost= "-30" RequiredInteractions="millerbudget" Category="Challenge">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="I heard they are really turning up the heat on you."/>
+					<DialogEntry IsPlayer="false" Dialog="That witch Granger has doubled my sales goal!"/>
+					<DialogEntry IsPlayer="true" Dialog="Why would she do such a thing?"/>
+					<DialogEntry IsPlayer="false" Dialog="She's desperate to keep her own job, that's why!"/>
+					<Effect AmbitionEffect="-30"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="reassigneKeyaccounts" Name="Re-assign Key Accounts" TurnCost= "2" EgoCost= "-40" RequiredInteractions="millerkeyaccounts" Category="Challenge">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="You don't look happy."/>
+					<DialogEntry IsPlayer="false" Dialog="Susan just stole half my key clients and decided they were 'house accounts'!"/>
+					<DialogEntry IsPlayer="true" Dialog="That's not fair!  You worked hard to build up those accounts!"/>
+					<DialogEntry IsPlayer="false" Dialog="I sure as hell did.  It's just outright theft."/>
+					<Effect AmbitionEffect="-30"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="confiscasteRing" Name="Confiscate Engagement Ring" TurnCost= "1" RequiredPolicies="AntitheftProcedures" Category="Challenge">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="I'm sorry about this.  These new rules are just crazy!"/>
+					<DialogEntry IsPlayer="false" Dialog="You damn well better keep it safe."/>
+					<DialogEntry IsPlayer="true" Dialog="Of course.  Your engagement ring will be kept under lock and key.  No one will be able to steal it."/>
+					<DialogEntry IsPlayer="false" Dialog="It just seems over the top but at least the company is trying to protect my property."/>
+					<Effect AmbitionEffect="-15"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="donaldVideo" Name="Reveal Donald Fairchild Video" TurnCost= "1" RequiredItems="dfairchildvideo" Category="Challenge">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="I thought I'd better let you know about this before the word gets out."/>
+					<DialogEntry IsPlayer="false" Dialog="This is so humiliating.  You have to keep this between us."/>
+					<DialogEntry IsPlayer="true" Dialog="I'll try.  What will you do now?"/>
+					<DialogEntry IsPlayer="false" Dialog="The engagement is over.  Beyond that, I don't know what to do.  This changes everything."/>
+					<Effect AmbitionEffect="-50"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="controlAnne" Name="Take control of Anne Miller" TurnCost= "1" RequiredAmbition="0" Category="Challenge">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Considering what a disaster you've turned out to be, you think you'd be grateful for a second chance."/>
+					<DialogEntry IsPlayer="false" Dialog="What do you mean?"/>
+					<DialogEntry IsPlayer="true" Dialog="I mean you work for me from now on.  You'll do as say-- or I'll have you terminated."/>
+					<DialogEntry IsPlayer="false" Dialog="No need for that.  I'll do what you want."/>
+					<Effect EgoEffect="70"  ControlEffect="true"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="fireHer" Name="Fire her" RequiredDepartmentsControlled="consulting" Category="Challenge">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="You knew this day would come."/>
+					<DialogEntry IsPlayer="false" Dialog="Wait-- what do you mean??"/>
+					<DialogEntry IsPlayer="true" Dialog="I mean you're done here.  I have no further use for you."/>
+					<DialogEntry IsPlayer="false" Dialog="You use me-- then toss me away?  Just like that?"/>
+					<Effect EgoEffect="40" RemoveNpcFromGame="true"/>
+				</InteractionResult>
+			</Interaction>
+
 		</Fem>
 
 		<Fem Id="susanGranger" FirstName="Susan" LastName="Granger" Age="34" Ambition="65" Pride="70">
