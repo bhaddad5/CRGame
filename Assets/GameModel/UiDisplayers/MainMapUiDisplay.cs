@@ -9,7 +9,10 @@ namespace Assets.GameModel.UiDisplayers
 {
 	public class MainMapUiDisplay : MonoBehaviour, IUiDisplay
 	{
-		
+		[SerializeField] private Color MorningTint;
+		[SerializeField] private Color AfternoonTint;
+		[SerializeField] private Image MapImage;
+
 		[SerializeField] private Transform DepartmentsParent;
 
 		[SerializeField] private DepartmentSelectionUiDisplay DepartmentButtonPrefab;
@@ -37,12 +40,12 @@ namespace Assets.GameModel.UiDisplayers
 		{
 			if (currOpenDepartment != null)
 			{
+				currOpenDepartment.CloseCurrentFem();
 				GameObject.Destroy(currOpenDepartment.gameObject);
 				currOpenDepartment = null;
 			}
 		}
-
-
+		
 		public void RefreshUiDisplay(MainGameManager mgm)
 		{
 			foreach (var button in DepartmentsParent.GetComponentsInChildren<DepartmentSelectionUiDisplay>(true))
@@ -50,6 +53,16 @@ namespace Assets.GameModel.UiDisplayers
 
 			if(currOpenDepartment != null)
 				currOpenDepartment.RefreshUiDisplay(mgm);
+
+			ShowTimeOfDay(mgm.Data.TurnNumber % 2 == 1);
+		}
+
+		public void ShowTimeOfDay(bool afternoon)
+		{
+			if (afternoon)
+				MapImage.color = AfternoonTint;
+			else
+				MapImage.color = MorningTint;
 		}
 	}
 }

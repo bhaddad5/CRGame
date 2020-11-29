@@ -51,6 +51,7 @@ namespace Assets.GameModel
 				HandleWeekChange();
 			}
 
+			MainMapUiDisplay.CloseCurrentDepartment();
 			RefreshAllUi();
 		}
 
