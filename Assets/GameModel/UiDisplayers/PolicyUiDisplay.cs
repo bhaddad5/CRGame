@@ -21,7 +21,7 @@ namespace Assets.GameModel.UiDisplayers
 			Button.onClick.AddListener(() =>
 			{
 				policy.Active = true;
-				mgm.RefreshAllUi();
+				mgm.HandleTurnChange();
 			});
 		}
 

@@ -24,7 +24,7 @@ namespace Assets.GameModel.UiDisplayers
 				var res = interaction.ExecuteInteraction(mgm, fem);
 
 				displayHandler.HandleDisplayDialogs(res.Dialogs);
-				mgm.RefreshAllUi();
+				mgm.HandleTurnChange();
 			});
 			RefreshUiDisplay(mgm, fem);
 		}

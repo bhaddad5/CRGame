@@ -7,7 +7,6 @@ using UnityEngine.UI;
 
 public class HudUiDisplay : MonoBehaviour, IUiDisplay
 {
-	[SerializeField] private TMP_Text Actions;
 	[SerializeField] private TMP_Text Ego;
 	[SerializeField] private TMP_Text Funds;
 	[SerializeField] private TMP_Text Power;
@@ -18,20 +17,23 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 	[SerializeField] private TMP_Text Revanue;
 	[SerializeField] private TMP_Text Patents;
 
-	[SerializeField] private TMP_Text TurnNumber;
-	[SerializeField] private Button EndTurn;
+	[SerializeField] private TMP_Text Day;
+	[SerializeField] private TMP_Text Time;
+	[SerializeField] private TMP_Text Month;
+
+	[SerializeField] private Button Rest;
 
 	public void Setup(MainGameManager mgm)
 	{
-		EndTurn.onClick.AddListener(() =>
+		Rest.onClick.AddListener(() =>
 		{
-			mgm.EndTurn();
+			mgm.Data.Ego += 5;
+			mgm.HandleTurnChange();
 		});
 	}
 
 	public void RefreshUiDisplay(MainGameManager mgm)
 	{
-		Actions.text = $"{mgm.Data.Actions}";
 		Ego.text = $"{mgm.Data.Ego}";
 		Funds.text = $"${mgm.Data.Funds}";
 		Power.text = $"{mgm.Data.Power}";
@@ -41,6 +43,10 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 		Patents.text = $"{mgm.Data.Patents}";
 		Brand.text = $"{mgm.Data.Brand}";
 		Revanue.text = $"{mgm.Data.Revenue}";
-		//TurnNumber.text = $"{mgm.Data.TurnNumber}";
-	}
+
+		string timeOfDay = mgm.Data.TurnNumber % 2 == 1 ? "Afternoon" : "Morning";
+		var DateTime = mgm.GetDateFromTurnNumber();
+		Time.text = $"{timeOfDay}";
+		Day.text = $"{DateTime.DayOfWeek}";
+		Month.text = $"{DateTime:MMMM} {DateTime.Day}";}
 }

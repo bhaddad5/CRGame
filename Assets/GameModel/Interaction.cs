@@ -79,12 +79,11 @@ namespace Assets.GameModel
 				if (!mgm.Data.GetActivePolicyIds().Contains(policyId))
 					return false;
 			}
-			return TurnCost <= mgm.Data.Actions && EgoCost <= mgm.Data.Ego && MoneyCost <= mgm.Data.Funds;
+			return EgoCost <= mgm.Data.Ego && MoneyCost <= mgm.Data.Funds;
 		}
 
 		public InteractionResult ExecuteInteraction(MainGameManager mgm, Fem fem)
 		{
-			mgm.Data.Actions -= TurnCost;
 			mgm.Data.Ego -= EgoCost;
 			mgm.Data.Funds -= MoneyCost;
 

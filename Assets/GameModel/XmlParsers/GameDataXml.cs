@@ -10,7 +10,6 @@ namespace Assets.GameModel.XmlParsers
 	{
 		[XmlAttribute] [DefaultValue("")] public string PlayerName = "";
 		[XmlAttribute] [DefaultValue(0)] public int TurnNumber = 0;
-		[XmlAttribute] [DefaultValue(0)] public int Actions = 0;
 		[XmlAttribute] [DefaultValue(0)] public float Ego = 0;
 		[XmlAttribute] [DefaultValue(0)] public float Funds = 0;
 		[XmlAttribute] [DefaultValue(0)] public float Power = 0;
@@ -35,7 +34,6 @@ namespace Assets.GameModel.XmlParsers
 			{
 				PlayerName = PlayerName,
 				TurnNumber = TurnNumber,
-				Actions = Actions,
 				Ego = Ego,
 				Funds = Funds,
 				Power = Power,

@@ -18,27 +18,6 @@ namespace Assets.GameModel
 		public List<Interaction> Interactions = new List<Interaction>();
 		public List<Trait> Traits = new List<Trait>();
 
-		public void HandleEndTurn(MainGameManager mgm, Department dept)
-		{
-			foreach (var trait in Traits)
-			{
-				if (Controlled)
-				{
-					foreach (var effect in trait.ControlledEffects)
-					{
-						effect?.ExecuteEffect(mgm, this);
-					}
-				}
-				else
-				{
-					foreach (var effect in trait.FreeEffects)
-					{
-						effect?.ExecuteEffect(mgm, this);
-					}
-				}
-			}
-		}
-
 		public string DetermineCurrPictureId()
 		{
 			if (Controlled && Pride < 1)

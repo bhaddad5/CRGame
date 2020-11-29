@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 
 namespace Assets.GameModel
@@ -22,14 +19,6 @@ namespace Assets.GameModel
 		public bool Controlled()
 		{
 			return Fems[0].Controlled;
-		}
-
-		public void HandleEndTurn(MainGameManager mgm)
-		{
-			foreach (var fem in Fems)
-			{
-				fem.HandleEndTurn(mgm, this);
-			}
 		}
 	}
 }
