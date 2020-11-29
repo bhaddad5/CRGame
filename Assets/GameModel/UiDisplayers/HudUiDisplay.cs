@@ -7,6 +7,9 @@ using UnityEngine.UI;
 
 public class HudUiDisplay : MonoBehaviour, IUiDisplay
 {
+	[SerializeField] private TMP_Text PlayerName;
+	[SerializeField] private TMP_Text PlayerTitle;
+
 	[SerializeField] private TMP_Text Ego;
 	[SerializeField] private TMP_Text Funds;
 	[SerializeField] private TMP_Text Power;
@@ -34,6 +37,9 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 
 	public void RefreshUiDisplay(MainGameManager mgm)
 	{
+		PlayerName.text = mgm.Data.PlayerName;
+		PlayerTitle.text = mgm.GetPlayerTitleFromPower();
+
 		Ego.text = $"{mgm.Data.Ego}";
 		Funds.text = $"${mgm.Data.Funds}";
 		Power.text = $"{mgm.Data.Power}";
