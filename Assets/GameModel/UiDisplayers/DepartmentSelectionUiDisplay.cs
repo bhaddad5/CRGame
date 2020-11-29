@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Assets.GameModel;
 using Assets.GameModel.UiDisplayers;
@@ -28,7 +29,9 @@ namespace Assets.GameModel.UiDisplayers
 		public void RefreshUiDisplay(MainGameManager mgm)
 		{
 			Text.text = $"{dept.Name}";
-			Button.interactable = dept.Accessible;
+			var dayOfWeek = mgm.GetDateFromTurnNumber().DayOfWeek;
+			Button.interactable = !dept.ClosedOnWeekends || (dayOfWeek != DayOfWeek.Saturday && dayOfWeek != DayOfWeek.Sunday);
+			Button.gameObject.SetActive(dept.Accessible);
 		}
 	}
 }

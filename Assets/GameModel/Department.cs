@@ -11,6 +11,7 @@ namespace Assets.GameModel
 
 		public Vector2 UiPosition;
 
+		public bool ClosedOnWeekends;
 		public bool Accessible = true;
 
 		public List<Policy> Policies;

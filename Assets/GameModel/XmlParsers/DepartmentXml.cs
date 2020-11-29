@@ -11,6 +11,7 @@ namespace Assets.GameModel.XmlParsers
 	{
 		[XmlAttribute] [DefaultValue("")] public string Id = "";
 		[XmlAttribute] [DefaultValue("")] public string Name = "";
+		[XmlAttribute] [DefaultValue(false)] public bool ClosedOnWeekends = false;
 		[XmlAttribute] [DefaultValue(false)] public bool Accessible = false;
 		[XmlAttribute] [DefaultValue(0)] public float UiPosX = 0;
 		[XmlAttribute] [DefaultValue(0)] public float UiPosY = 0;
@@ -39,6 +40,7 @@ namespace Assets.GameModel.XmlParsers
 			{
 				Id = Id,
 				Name = Name,
+				ClosedOnWeekends = ClosedOnWeekends,
 				Accessible = Accessible,
 				Fems = fems,
 				Policies = policies,
