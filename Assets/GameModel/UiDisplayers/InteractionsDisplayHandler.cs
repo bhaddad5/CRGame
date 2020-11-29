@@ -89,6 +89,6 @@ public class InteractionsDisplayHandler : MonoBehaviour
 
 	private void RefreshCategory(Interaction.InteractionCategory category, Button categoryParent, Fem fem, MainGameManager mgm)
 	{
-		categoryParent.gameObject.SetActive(allInteractions.Any(i => i.Category == category && i.InteractionValid(mgm, fem)));
+		categoryParent.gameObject.SetActive(allInteractions.Any(i => i.Category == category && i.InteractionVisible(mgm, fem)));
 	}
 }

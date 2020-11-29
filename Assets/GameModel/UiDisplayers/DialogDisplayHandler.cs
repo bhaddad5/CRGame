@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Assets.GameModel;
 using Assets.GameModel.UiDisplayers;
@@ -35,6 +36,8 @@ public class DialogDisplayHandler : MonoBehaviour
 				{
 					femUiDisplay.UnsetImage();
 					gameObject.SetActive(false);
+					dialogsComplete?.Invoke();
+					femUiDisplay.InteractionsHandler.gameObject.SetActive(true);
 				}
 				else
 					runningCoroutine = StartCoroutine(ShowDialog());
@@ -45,8 +48,12 @@ public class DialogDisplayHandler : MonoBehaviour
 
 	private List<DialogEntry> currDialogsToShow = new List<DialogEntry>();
 	private Coroutine runningCoroutine = null;
-	public void HandleDisplayDialogs(List<DialogEntry> dialogs)
+	private Action dialogsComplete = null;
+	public void HandleDisplayDialogs(List<DialogEntry> dialogs, Action dialogsComplete)
 	{
+		femUiDisplay.InteractionsHandler.gameObject.SetActive(false);
+
+		this.dialogsComplete = dialogsComplete;
 		gameObject.SetActive(true);
 		currDialogsToShow = new List<DialogEntry>(dialogs);
 		if(runningCoroutine != null)

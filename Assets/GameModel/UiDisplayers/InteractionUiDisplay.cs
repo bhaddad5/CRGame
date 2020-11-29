@@ -21,10 +21,13 @@ namespace Assets.GameModel.UiDisplayers
 			this.fem = fem;
 			Button.onClick.AddListener(() =>
 			{
-				var res = interaction.ExecuteInteraction(mgm, fem);
+				var res = interaction.GetInteractionResult(mgm, fem);
 
-				displayHandler.HandleDisplayDialogs(res.Dialogs);
-				mgm.HandleTurnChange();
+				displayHandler.HandleDisplayDialogs(res.Dialogs, () =>
+				{
+					res.Execute(mgm, fem);
+					mgm.HandleTurnChange();
+				});
 			});
 			RefreshUiDisplay(mgm, fem);
 		}
@@ -33,7 +36,7 @@ namespace Assets.GameModel.UiDisplayers
 		{
 			Text.text = interaction.Name;
 			Button.interactable = interaction.InteractionValid(mgm, fem);
-			gameObject.SetActive(interaction.InteractionValid(mgm, fem));
+			gameObject.SetActive(interaction.InteractionVisible(mgm, fem));
 		}
 	}
 }

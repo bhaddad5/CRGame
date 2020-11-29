@@ -19,7 +19,7 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private Button BackButton;
 		[SerializeField] private Image Picture;
 
-		[SerializeField] private InteractionsDisplayHandler InteractionsHandler;
+		[SerializeField] public InteractionsDisplayHandler InteractionsHandler;
 		[SerializeField] private DialogDisplayHandler DialogHandler;
 
 		private Fem fem;

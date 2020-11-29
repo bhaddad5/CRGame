@@ -43,17 +43,11 @@ namespace Assets.GameModel
 
 		public List<InteractionResult> InteractionResults;
 
-		public bool InteractionValid(MainGameManager mgm, Fem fem)
+		public bool InteractionVisible(MainGameManager mgm, Fem fem)
 		{
-			if (RequiredControl && !fem.Controlled)
-				return false;
-			if (RequiredAmbition >= 0 && RequiredAmbition < fem.Ambition)
-				return false;
-			if (RequiredPride >= 0 && RequiredPride < fem.Pride)
-				return false;
-			if (InteractionResults.Any(res => res.Effects.Any(eff => eff.ControlEffect)) && fem.Controlled)
-				return false;
 			if (Completed && !Repeatable)
+				return false;
+			if (RequiredControl && !fem.Controlled)
 				return false;
 			foreach (var interactionDept in RequiredDepartmentsControled)
 			{
@@ -79,10 +73,24 @@ namespace Assets.GameModel
 				if (!mgm.Data.GetActivePolicyIds().Contains(policyId))
 					return false;
 			}
+
+			return true;
+		}
+
+		public bool InteractionValid(MainGameManager mgm, Fem fem)
+		{
+			if (!InteractionVisible(mgm, fem))
+				return false;
+			if (RequiredAmbition >= 0 && RequiredAmbition < fem.Ambition)
+				return false;
+			if (RequiredPride >= 0 && RequiredPride < fem.Pride)
+				return false;
+			if (InteractionResults.Any(res => res.Effects.Any(eff => eff.ControlEffect)) && fem.Controlled)
+				return false;
 			return EgoCost <= mgm.Data.Ego && MoneyCost <= mgm.Data.Funds;
 		}
 
-		public InteractionResult ExecuteInteraction(MainGameManager mgm, Fem fem)
+		public InteractionResult GetInteractionResult(MainGameManager mgm, Fem fem)
 		{
 			mgm.Data.Ego -= EgoCost;
 			mgm.Data.Funds -= MoneyCost;
@@ -90,7 +98,6 @@ namespace Assets.GameModel
 			Completed = true;
 
 			var chosenResult = InteractionResults[UnityEngine.Random.Range(0, InteractionResults.Count)];
-			chosenResult.Execute(mgm, fem);
 			return chosenResult;
 		}
 	}
