@@ -14,7 +14,11 @@ namespace Assets.GameModel.XmlParsers
 		[XmlAttribute] [DefaultValue(0)] public float Ego = 0;
 		[XmlAttribute] [DefaultValue(0)] public float Funds = 0;
 		[XmlAttribute] [DefaultValue(0)] public float Power = 0;
+		[XmlAttribute] [DefaultValue(0)] public float Patents = 0;
 		[XmlAttribute] [DefaultValue(0)] public float CorporateCulture = 0;
+		[XmlAttribute] [DefaultValue(0)] public float Spreadsheets = 0;
+		[XmlAttribute] [DefaultValue(0)] public float Brand = 0;
+		[XmlAttribute] [DefaultValue(0)] public float Revenue = 0;
 
 		[XmlElement("Department", typeof(DepartmentXml))]
 		public DepartmentXml[] Departments = new DepartmentXml[0];
@@ -32,10 +36,14 @@ namespace Assets.GameModel.XmlParsers
 				PlayerName = PlayerName,
 				TurnNumber = TurnNumber,
 				Actions = Actions,
-				CorporateCulture = CorporateCulture,
 				Ego = Ego,
 				Funds = Funds,
 				Power = Power,
+				Patents = Patents,
+				CorporateCulture = CorporateCulture,
+				Spreadsheets = Spreadsheets,
+				Brand = Brand,
+				Revenue = Revenue,
 				Departments = depts,
 			};
 		}

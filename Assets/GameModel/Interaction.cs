@@ -25,6 +25,11 @@ namespace Assets.GameModel
 		public int TurnCost = 1;
 		public float EgoCost = 0;
 		public float MoneyCost = 0;
+		public float SpreadsheetsCost = 0;
+		public float CultureCost = 0;
+		public float PatentsCost = 0;
+		public float BrandCost = 0;
+		public float RevanueCost = 0;
 
 		public List<string> RequiredInteractions = new List<string>();
 		public List<string> RequiredPolicies = new List<string>();

@@ -12,7 +12,11 @@ namespace Assets.GameModel.XmlParsers
 		[XmlAttribute] [DefaultValue(0)] public float EgoEffect = 0;
 		[XmlAttribute] [DefaultValue(0)] public float FundsEffect = 0;
 		[XmlAttribute] [DefaultValue(0)] public float PowerEffect = 0;
+		[XmlAttribute] [DefaultValue(0)] public float PatentsEffect = 0;
 		[XmlAttribute] [DefaultValue(0)] public float CultureEffect = 0;
+		[XmlAttribute] [DefaultValue(0)] public float SpreadsheetsEffect = 0;
+		[XmlAttribute] [DefaultValue(0)] public float BrandEffect = 0;
+		[XmlAttribute] [DefaultValue(0)] public float RevanueEffect = 0;
 		[XmlAttribute] [DefaultValue(false)] public bool ControlEffect = false;
 		[XmlAttribute] [DefaultValue(false)] public bool RemoveNpcFromGame = false;
 		[XmlAttribute] [DefaultValue("")] public string TraitsAdded = "";
@@ -29,7 +33,11 @@ namespace Assets.GameModel.XmlParsers
 				EgoEffect = EgoEffect,
 				FundsEffect = FundsEffect,
 				PowerEffect = PowerEffect,
+				PatentsEffect = PatentsEffect,
 				CultureEffect = CultureEffect,
+				SpreadsheetsEffect = SpreadsheetsEffect,
+				BrandEffect = BrandEffect,
+				RevanueEffect = RevanueEffect,
 				PrideEffect = PrideEffect,
 				TraitsAdded = TraitsAdded.XmlStringToList(),
 				TraitsRemoved = TraitsRemoved.XmlStringToList(),

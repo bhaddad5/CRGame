@@ -92,6 +92,7 @@
 					<Effect PrideEffect="-3"/>
 				</InteractionResult>
 			</Interaction>
+
 			<Interaction Id="demotion" Name="Demote" RequiredControl="true" TurnCost= "1" RequiredDepartmentsControlled="consulting" Category="OfficePolitics">
 				<InteractionResult>
 					<DialogEntry IsPlayer="true" Dialog="Now that I'm in charge, there are going to be some changes."/>
@@ -101,6 +102,7 @@
 					<Effect PrideEffect="-10"/>
 				</InteractionResult>
 			</Interaction>
+
 			<Interaction Id="dismissal" Name="Dismiss" RequiredControl="true" TurnCost= "1" RequiredDepartmentsControlled="consulting" RequiredInteractions="!demotion" Category="OfficePolitics">
 				<InteractionResult>
 					<DialogEntry IsPlayer="true" Dialog="Now that I'm in charge, there are going to be some changes."/>
@@ -110,6 +112,7 @@
 					<Effect RemoveNpcFromGame="true"/>
 				</InteractionResult>
 			</Interaction>
+
 			<Interaction Id="moveToSecDorm" Name="Move to Secretarial Dorm" TurnCost= "1" RequiredControl="true" Category="OfficePolitics" RequiredPolicies="affordableHousing" RequiredInteractions="demotion">
 				<InteractionResult>
 					<DialogEntry IsPlayer="true" Dialog="You must be finding it difficult to make ends these days."/>
@@ -129,6 +132,7 @@
 					<Effect/>
 				</InteractionResult>
 			</Interaction>
+
 			<Interaction Id="compliment" EgoCost="5" TurnCost= "1" Name="Compliment" Category="Conversation" RequiredInteractions="introduction">
 				<InteractionResult>
 					<DialogEntry IsPlayer="true" Dialog="I can't help but admire how driven you are!"/>
@@ -240,6 +244,7 @@
 					<Effect AmbitionEffect="-10"/>
 				</InteractionResult>
 			</Interaction>
+
 			<Interaction Id="putInPlace" Name="Put her in her place" TurnCost= "1" RequiredAmbition="0" Category="Challenge">
 				<InteractionResult>
 					<DialogEntry IsPlayer="true" Dialog="From now on, you'll be reporting to me.  Understand?"/>
@@ -249,6 +254,7 @@
 					<Effect ControlEffect="true"/>
 				</InteractionResult>
 			</Interaction>
+
 			<Interaction Id="fireHer" Name="Fire her" TurnCost= "1" RequiredDepartmentsControlled="consulting" Category="Challenge">
 				<InteractionResult>
 					<DialogEntry IsPlayer="true" Dialog="You're fired Britney."/>
@@ -267,6 +273,7 @@
 					<DialogEntry IsPlayer="false" Dialog="I don't know what to say!  You're so nice!"/>
 					<Effect AmbitionEffect="3"/>
 				</InteractionResult>
+
 			</Interaction>
 			<Interaction Id="chatUp" Name="Chat her up" TurnCost= "1" EgoCost="5" Category="Socialize">
 				<InteractionResult>
@@ -492,7 +499,7 @@
 				</InteractionResult>
 			</Interaction>
 
-			<Interaction Id="compPlan" Name="Compensation Plan Adjustment" SpreadsheetCost= "1" TurnCost= "1" RequiredInteractions="introduction" Category="OfficePolitics">
+			<Interaction Id="compPlan" Name="Compensation Plan Adjustment" SpreadsheetsCost="1" TurnCost= "1" RequiredInteractions="introduction" Category="OfficePolitics">
 				<InteractionResult>
 					<DialogEntry IsPlayer="true" Dialog="I think you'll find that Comp Plan issue fixed."/>
 					<DialogEntry IsPlayer="false" Dialog="No way.  I've been fighting that for months!"/>
@@ -1019,6 +1026,286 @@
 		</Fem>
 
 		<Fem Id="jillVander" FirstName="Jill" LastName="Vander" Age="21" Ambition="30" Pride="40">
+
+			<Interaction Id="jillTps" Name="TPS form" TurnCost= "1" Category="Conversation">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Sorry, who are you and what do you need?"/>
+					<DialogEntry IsPlayer="false" Dialog="I'm Jill-- Jill Vander.  I'm temping here.  HR needs your TPS form filled out."/>
+					<DialogEntry IsPlayer="true" Dialog="Oh, sure.  Here it is."/>
+					<DialogEntry IsPlayer="false" Dialog="Thanks.  See you around, I guess."/>
+					<Effect/>
+				</InteractionResult>
+			</Interaction>
+
+					<Interaction Id="jillAddress" Name="Ask if she lives near the office" TurnCost= "1" Category="Conversation">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Are you a local?"/>
+					<DialogEntry IsPlayer="false" Dialog="No.  Just wound up her because of school.  I’m kind of couch surfing right now.  I live with some girls in Tout Suite Studios.  It’s only temporary though, while I figure out my next move."/>
+					<DialogEntry IsPlayer="true" Dialog="Where do you think you'll end up?"/>
+					<DialogEntry IsPlayer="false" Dialog="The Projects probablly.  It sucks but it is cheap-- and that's all I can afford right now."/>
+					<Effect/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="jillCareerplans" Name="Ask her about her career plans" TurnCost= "1" Category="Conversation">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="So, you're looking to land a full time job here?"/>
+					<DialogEntry IsPlayer="false" Dialog="I guess.  Until I save up enough to go back to school, I’ll probably have to keep working and saving.  One of these days, I’d love to work overseas."/>
+					<DialogEntry IsPlayer="true" Dialog="So, this isn't exactly your dream job?"/>
+					<DialogEntry IsPlayer="false" Dialog="Far from it-- but for now, I don't have many options."/>
+					<Effect/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="jillBritney" Name="Her take on: Britney" TurnCost= "1" RequiredAmbition= "20" RequiredInteractions="jillCareerplans" Category="OfficePolitics">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="What do you make of that receptionist?"/>
+					<DialogEntry IsPlayer="false" Dialog="That airhead?  You have to be kidding."/>
+					<DialogEntry IsPlayer="true" Dialog="She's certainly no Rhodes Scholar, I'll give you that."/>
+					<DialogEntry IsPlayer="false" Dialog="Britney's like a door knob.  Everyone gets a turn."/>
+					<Effect AmbitionEffect="-1"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="jillDeborah" Name="Her take on: Deborah" TurnCost= "1" RequiredAmbition= "20" RequiredInteractions="jillCareerplans" Category="OfficePolitics">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Do you know Deborah Jones well?"/>
+					<DialogEntry IsPlayer="false" Dialog="Miss Career Girl? She is such a shallow tool.  She thinks she’s the next big time around here."/>
+					<DialogEntry IsPlayer="true" Dialog="She seems very self-assured."/>
+					<DialogEntry IsPlayer="false" Dialog="Of course she is.  She thinks she’s a superstar."/>
+					<Effect AmbitionEffect="-1"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="jillArtemis" Name="Her take on: Deborah" TurnCost= "1" RequiredAmbition= "20" RequiredInteractions="jillCareerplans" Category="OfficePolitics">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Do you like working here?"/>
+					<DialogEntry IsPlayer="false" Dialog="Ask me when they put into a full time job."/>
+					<DialogEntry IsPlayer="true" Dialog="So, you DO like it here."/>
+					<DialogEntry IsPlayer="false" Dialog="What I will say is that for such a ‘female-friendly’ company, they sure treat the admin staff like they were disposable.."/>
+					<Effect AmbitionEffect="-1"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="jillCoffee" Name="Coffee?" TurnCost= "1" RequiredInteractions="jillTps" EgoCost="5" Category="Socialize">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="I'm going to grab a coffee-- want one?"/>
+					<DialogEntry IsPlayer="false" Dialog="Would love one but I'm broke."/>
+					<DialogEntry IsPlayer="true" Dialog="It's on me-- what can I get you?"/>
+					<DialogEntry IsPlayer="false" Dialog="Really?  Well, a chai latte would be great."/>
+					<Effect AmbitionEffect="-2"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="jillReading" Name="Ask what she’s reading" TurnCost= "1" RequiredInteractions="jillTps" EgoCost="5" Category="Socialize">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="I've noticed you're a voracious reader.  What's that one?"/>
+					<DialogEntry IsPlayer="false" Dialog="Iris Murdoch.  I’m studying English Lit—well, I was last semester.  I’ve just got to get to London one of these days."/>
+					<DialogEntry IsPlayer="true" Dialog="Maybe some day!"/>
+					<DialogEntry IsPlayer="false" Dialog="I hope so!"/>
+					<Effect AmbitionEffect="-2"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="jillFamily" Name="Ask about her family" TurnCost= "1" RequiredInteractions="jillTps" EgoCost="10" Category="Socialize">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Do you have family near?"/>
+					<DialogEntry IsPlayer="false" Dialog="Why do you ask?  I haven’t talked to my family since I pissed them off by going to university and trying to do something with my life!"/>
+					<DialogEntry IsPlayer="true" Dialog="I guess you're not in touch then."/>
+					<DialogEntry IsPlayer="false" Dialog="Not recently!  It's ok.  I'm pretty self-reliant."/>
+					<Effect/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="jillFlirt" Name="Flirt with Jill" TurnCost= "1" RequiredInteractions="jillTps" EgoCost="10" Category="Socialize">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="What about drinks after work?"/>
+					<DialogEntry IsPlayer="false" Dialog="Sorry-- I'm taken already."/>
+					<DialogEntry IsPlayer="true" Dialog="I never see you with anyone."/>
+					<DialogEntry IsPlayer="false" Dialog="Look, I kind of have a boyfriend. Walter’s amazing—he’s doing charity work in Central America. I wish I could have gone with him."/>
+					<Effect AmbitionEffect="-4"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="jillLunch" Name="Lunch?" TurnCost= "1" RequiredInteractions="jillFlirt" EgoCost="10" Category="Socialize">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Come on--  at least let me take you out for lunch sometime."/>
+					<DialogEntry IsPlayer="false" Dialog="Just because my boyfriend's overseas doesn't mean I'm not in a relationship."/>
+					<DialogEntry IsPlayer="true" Dialog="I think you're going to regret this!"/>
+					<DialogEntry IsPlayer="false" Dialog="Yeah, sure.  Look, I'm flattered.  Let's leave it at that, ok?"/>
+					<Effect AmbitionEffect="-6"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="jillPromise" Name="Promise to make her Full Time" RequiredInteractions="jillCareerplans" TurnCost= "1" EgoCost= "10"  Category="Challenge">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="When I'm in a position to do so, I could easily move you from temping to full time."/>
+					<DialogEntry IsPlayer="false" Dialog="That would be great.   I'd owe you one."/>
+					<DialogEntry IsPlayer="true" Dialog="I think you deserve it."/>
+					<DialogEntry IsPlayer="false" Dialog="It means a lot to me.  I'd make more money full time.  The temp agency takes a third of my pay as a placement fee."/>
+					<Effect AmbitionEffect="-10"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="jillOffer" Name="Offer to help her get Overseas" TurnCost= "1" MoneyCost= "2000" RequiredInteractions="jillFlirt" Category="Challenge">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="TO DO  This takes Deb Ambition -5, Susan Ambition -5  You wanted to ask me for a favour?"/>
+					<DialogEntry IsPlayer="false" Dialog="Here’s the thing— if you could loan me the money to travel, I’d be out of here in a heartbeat.  "/>
+					<DialogEntry IsPlayer="true" Dialog="That's a lot of money.  What do I get out of this?"/>
+					<DialogEntry IsPlayer="false" Dialog="If you could help me— I have a way to really screw with Deborah and Susan’s TPS forms big time!"/>
+					<Effect EgoEffect="25" RemoveNpcFromGame="true"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="takecontrolJill" Name="Take Control of Jill Vander" TurnCost= "1" RequiredAmbition="0" Category="Challenge">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="You're reporting to me from now on."/>
+					<DialogEntry IsPlayer="false" Dialog="I didn't get that memo."/>
+					<DialogEntry IsPlayer="true" Dialog="Don't push me.  We both know you'll do what I tell you to do from now on."/>
+					<DialogEntry IsPlayer="false" Dialog="OK.  I get it-- you're the boss."/>
+					<Effect ControlEffect="true"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="fireJill" Name="Fire Jill Vander" TurnCost= "1" RequiredDepartmentsControlled="consulting" Category="Challenge">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="I'm tired of seeing your face Jill."/>
+					<DialogEntry IsPlayer="false" Dialog="But what did I do?"/>
+					<DialogEntry IsPlayer="true" Dialog="You're fired, Jill.  Get out-- now."/>
+					<DialogEntry IsPlayer="false" Dialog="But I don't understand what I did!"/>
+					<Effect EgoEffect="10" RemoveNpcFromGame="true"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="selectaJill" Name="Selectacorp Referral" TurnCost= "1" RequiredDepartmentsControlled="consulting" RequiredInteractions="jillFamily" Category="Challenge">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="I'm referring you for a new position."/>
+					<DialogEntry IsPlayer="false" Dialog="What department?"/>
+					<DialogEntry IsPlayer="true" Dialog="Not here at Artemis.  It's with a company called Selectacorp.  I've scheduled an interview for you."/>
+					<DialogEntry IsPlayer="false" Dialog="Wow!  That's fantastic!  Thank you so much!"/>
+					<Effect RemoveNpcFromGame="true" FundsEffect= "5000"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="britneyTps" Name="Misfile Britney’s TPS Form" TurnCost= "2" RequiredControl="true" Category="Projects">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Since you're the TPS girl, why don't you stick Britney's form in the circular file for me."/>
+					<DialogEntry IsPlayer="false" Dialog="Sure.  Whatever you say.  Did the bimbo piss you off or something?"/>
+					<DialogEntry IsPlayer="true" Dialog="Just do as you're told."/>
+					<DialogEntry IsPlayer="false" Dialog="Yes, Sir!"/>
+					<Effect ContextualFemId="britneyBower" AmbitionEffect="-2"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="deborahTps" Name="Misfile Deborah’s TPS Form" TurnCost= "2" RequiredControl="true" Category="Projects">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="I think you might misplace Deborah's file."/>
+					<DialogEntry IsPlayer="false" Dialog="No I won't.  I'm very careful when it comes to those forms."/>
+					<DialogEntry IsPlayer="true" Dialog="I don't think you heard me."/>
+					<DialogEntry IsPlayer="false" Dialog="Oh, I get it.  Yeah, I just might misfile it."/>
+					<Effect ContextualFemId="deborahJones" AmbitionEffect="-3"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="susanTps" Name="Misfile Susan’s TPS Form" TurnCost= "2" RequiredControl="true" Category="Projects">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="If Susan's TPS form went missing, what would happen?"/>
+					<DialogEntry IsPlayer="false" Dialog="She'd probably get in trouble."/>
+					<DialogEntry IsPlayer="true" Dialog="See to it then."/>
+					<DialogEntry IsPlayer="false" Dialog="Yes, Sir!"/>
+					<Effect ContextualFemId="susanGranger" AmbitionEffect="-4"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="secPool" Name="Send to Secretarial Pool" TurnCost= "1" RequiredControl="true" Category="Projects">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Remeber I told you I'd give you a full time job?"/>
+					<DialogEntry IsPlayer="false" Dialog="Yes, I do."/>
+					<DialogEntry IsPlayer="true" Dialog="As of now, you're officially shifting to the SecPool."/>
+					<DialogEntry IsPlayer="false" Dialog="TO DO  But that's NOT the position I was hoping for!  requiredpolicies=secpool RequiredPride=20 reward 1 corp culture"/>
+					<Effect ContextualFemId="jillVander"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="moveToSecDorm" Name="Move to Secretarial Dorm" TurnCost= "1" RequiredControl="true" Category="Projects" RequiredPolicies="affordableHousing">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="It's crazy to pay rent when you can move into the dorm."/>
+					<DialogEntry IsPlayer="false" Dialog="But I like having my own place!"/>
+					<DialogEntry IsPlayer="true" Dialog="You'll get used to it."/>
+					<DialogEntry IsPlayer="false" Dialog="But I don't want to get used to it!"/>
+					<Effect PrideEffect="-10" EgoEffect= "20" />
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="assignDollHouse" Name="Assign to the Doll House" TurnCost= "1" RequiredControl="true" Category="Projects">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="It's been suggested you might be more useful in another role."/>
+					<DialogEntry IsPlayer="false" Dialog="Like what?"/>
+					<DialogEntry IsPlayer="true" Dialog="I'm assigning you to the Doll House."/>
+					<DialogEntry IsPlayer="false" Dialog="TO DO  But I'm not a whore! adds to DHouse rev"/>
+					<Effect RemoveNpcFromGame="true"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="tempwearJill" Name="Tempwear Tizzy" TurnCost= "1" RequiredControl="true" Category="Train">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="If you want to keep your temp job here, you better start impressing me."/>
+					<DialogEntry IsPlayer="false" Dialog="How do I do that?"/>
+					<DialogEntry IsPlayer="true" Dialog="Start dressing the part."/>
+					<DialogEntry IsPlayer="false" Dialog="I'll try."/>
+					<Effect PrideEffect="-5"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="disciplineJill" Name="Discipline Jill Vander" TurnCost= "1" RequiredControl="true" Repeatable="true" Category="Train">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Let's get this over.  I'm a busy man."/>
+					<DialogEntry IsPlayer="false" Dialog="Get what over?"/>
+					<DialogEntry IsPlayer="true" Dialog="You've been moody.  A spanking should cure that."/>
+					<DialogEntry IsPlayer="false" Dialog="There's no need for that!"/>
+					<Effect PrideEffect="-5"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="breakJill" Name="Break Jill Vander" TurnCost= "1" RequiredControl="true" RequiredPride= "0" Category="Train">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="I like having you at my beck and call."/>
+					<DialogEntry IsPlayer="false" Dialog="I'm sure you do."/>
+					<DialogEntry IsPlayer="true" Dialog="Watch your mouth or you can discover what unemployment is like."/>
+					<DialogEntry IsPlayer="false" Dialog="I apologise.   I like reporting to you-- really."/>
+					<Effect EgoEffect= "25"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="walkJill" Name="Walk of Shame" TurnCost= "1" RequiredControl="true" RequiredPride = "30" Category="Fun">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="What do you think the staff think we do in these meetings?"/>
+					<DialogEntry IsPlayer="false" Dialog="I'm pretty sure they know what we do."/>
+					<DialogEntry IsPlayer="true" Dialog="And what's that?"/>
+					<DialogEntry IsPlayer="false" Dialog="Please don't make me say it!"/>
+					<Effect EgoEffect="2" PrideEffect="-5"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="inspectJill" Name="Intimates Snap Check" TurnCost= "1" RequiredControl="true" RequiredPride = "35" Category="Fun">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="You don't mind if I take a picture of you?"/>
+					<DialogEntry IsPlayer="false" Dialog="Would it make a difference if I did?"/>
+					<DialogEntry IsPlayer="true" Dialog="No. Now pose for the camera."/>
+					<DialogEntry IsPlayer="false" Dialog="Is this ok?"/>
+					<Effect EgoEffect="3" PrideEffect="-5"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="walterJill" Name="Walter Wake-up and Break-up" TurnCost= "1" RequiredControl="true" RequiredPride = "25" RequiredInteractions= "jillFlirt" Category="Fun">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="TO WALTER FROM A FRIEND"/>
+					<DialogEntry IsPlayer="false" Dialog="I THOUGHT YOU DESERVED"/>
+					<DialogEntry IsPlayer="true" Dialog="TO KNOW THAT JILL"/>
+					<DialogEntry IsPlayer="false" Dialog="IS CHEATING ON YOU"/>
+					<Effect EgoEffect="10" PrideEffect="-10"/>
+				</InteractionResult>
+			</Interaction>
 
 		</Fem>
 

@@ -11,7 +11,11 @@ public class GameData
 	public float Ego = 10;
 	public float Funds = 0;
 	public float Power = 0;
+	public float Patents = 0;
 	public float CorporateCulture = 0;
+	public float Spreadsheets = 0;
+	public float Brand = 0;
+	public float Revenue = 0;
 
 	public List<Department> Departments = new List<Department>();
 

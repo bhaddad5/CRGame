@@ -18,6 +18,11 @@ namespace Assets.GameModel.XmlParsers
 		[XmlAttribute] [DefaultValue(1)] public int TurnCost = 1;
 		[XmlAttribute] [DefaultValue(0)] public float EgoCost = 0;
 		[XmlAttribute] [DefaultValue(0)] public float MoneyCost = 0;
+		[XmlAttribute] [DefaultValue(0)] public float SpreadsheetsCost = 0;
+		[XmlAttribute] [DefaultValue(0)] public float CultureCost = 0;
+		[XmlAttribute] [DefaultValue(0)] public float BrandCost = 0;
+		[XmlAttribute] [DefaultValue(0)] public float RevanueCost = 0;
+		[XmlAttribute] [DefaultValue(0)] public float PatentsCost = 0;
 
 		[XmlAttribute] [DefaultValue("")] public string RequiredInteractions = "";
 		[XmlAttribute] [DefaultValue("")] public string RequiredPolicies = "";
@@ -47,6 +52,11 @@ namespace Assets.GameModel.XmlParsers
 				TurnCost = TurnCost,
 				EgoCost = EgoCost,
 				MoneyCost = MoneyCost,
+				SpreadsheetsCost = SpreadsheetsCost,
+				CultureCost = CultureCost,
+				BrandCost = BrandCost,
+				RevanueCost = RevanueCost,
+				PatentsCost = PatentsCost,
 				RequiredInteractions = RequiredInteractions.XmlStringToList(),
 				RequiredDepartmentsControled = RequiredDepartmentsControled.XmlStringToList(),
 				RequiredPolicies = RequiredPolicies.XmlStringToList(),
