@@ -42,8 +42,33 @@ namespace Assets.GameModel.UiDisplayers
 		public string GetTooltip(MainGameManager mgm)
 		{
 			if (interaction.InteractionValid(mgm, fem))
+			{
 				return null;
-			return "Cannot do this!";
+			}
+
+			string tooltip = "";
+			if (interaction.RequiredAmbition >= 0 && interaction.RequiredAmbition < fem.Ambition)
+				tooltip += $"\nRequires {interaction.RequiredAmbition} or less Ambition";
+			if (interaction.RequiredPride >= 0 && interaction.RequiredPride < fem.Pride)
+				tooltip += $"\nRequires {interaction.RequiredPride} or less Pride";
+			if(interaction.EgoCost > mgm.Data.Ego)
+				tooltip += $"\nRequires {interaction.EgoCost} Ego";
+			if (interaction.MoneyCost > mgm.Data.Funds)
+				tooltip += $"\nRequires ${interaction.MoneyCost}";
+			if (interaction.CultureCost > mgm.Data.CorporateCulture)
+				tooltip += $"\nRequires {interaction.CultureCost} Corporate Culture";
+			if (interaction.BrandCost > mgm.Data.Brand)
+				tooltip += $"\nRequires {interaction.BrandCost} Brand";
+			if (interaction.SpreadsheetsCost > mgm.Data.Spreadsheets)
+				tooltip += $"\nRequires {interaction.SpreadsheetsCost} Spreadsheets";
+			if (interaction.RevanueCost > mgm.Data.Revenue)
+				tooltip += $"\nRequires {interaction.RevanueCost} Revenue";
+			if (interaction.PatentsCost > mgm.Data.Patents)
+				tooltip += $"\nRequires {interaction.PatentsCost} Patents";
+
+			if (tooltip.Length > 0)
+				return tooltip.Substring(1);
+			return "Interaction invalid";
 		}
 	}
 }

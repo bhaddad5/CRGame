@@ -73,6 +73,8 @@ namespace Assets.GameModel
 				if (!mgm.Data.GetActivePolicyIds().Contains(policyId))
 					return false;
 			}
+			if (InteractionResults.Any(res => res.Effects.Any(eff => eff.ControlEffect)) && fem.Controlled)
+				return false;
 
 			return true;
 		}
@@ -85,9 +87,13 @@ namespace Assets.GameModel
 				return false;
 			if (RequiredPride >= 0 && RequiredPride < fem.Pride)
 				return false;
-			if (InteractionResults.Any(res => res.Effects.Any(eff => eff.ControlEffect)) && fem.Controlled)
-				return false;
-			return EgoCost <= mgm.Data.Ego && MoneyCost <= mgm.Data.Funds;
+			return EgoCost <= mgm.Data.Ego && 
+			       MoneyCost <= mgm.Data.Funds && 
+			       CultureCost <= mgm.Data.CorporateCulture && 
+			       BrandCost <= mgm.Data.Brand &&
+			       SpreadsheetsCost <= mgm.Data.Spreadsheets && 
+			       RevanueCost <= mgm.Data.Revenue && 
+			       PatentsCost <= mgm.Data.Patents;
 		}
 
 		public InteractionResult GetInteractionResult(MainGameManager mgm, Fem fem)
