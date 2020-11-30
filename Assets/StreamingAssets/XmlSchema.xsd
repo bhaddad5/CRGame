@@ -25,6 +25,7 @@
 		<xs:attribute name="IsPlayer" type="xs:boolean" use="required"/>
 		<xs:attribute name="Dialog" type="xs:string" use="required"/>
 		<xs:attribute name="NpcImage" type="xs:string"/>
+		<xs:attribute name="InPlayerOffice" type="xs:boolean"/>
 	</xs:complexType>
 
 	<xs:complexType name="InteractionResult">
@@ -107,6 +108,7 @@
 		<xs:attribute name="Controlled" type="xs:boolean"/>
 		<xs:attribute name="Ambition" type="xs:float"/>
 		<xs:attribute name="Pride" type="xs:float"/>
+		<xs:attribute name="BackgroundImage" type="xs:string" use="required"/>
 	</xs:complexType>
 
 	<xs:complexType name="Policy">
@@ -135,6 +137,8 @@
 		<xs:attribute name="Accessible" type="xs:boolean"/>
 		<xs:attribute name="UiPosX" type="xs:float" use="required"/>
 		<xs:attribute name="UiPosY" type="xs:float" use="required"/>
+		<xs:attribute name="BackgroundImage" type="xs:string" use="required"/>
+		<xs:attribute name="LocationIcon" type="xs:string" use="required"/>
 	</xs:complexType>
 	
 	<xs:complexType name="GameData">

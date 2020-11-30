@@ -4,6 +4,64 @@ using System.IO;
 using System.Linq;
 using UnityEngine;
 
+public static class LocationIconLookup
+{
+	private static Dictionary<string, Sprite> iconsLookup = null;
+
+	public static Sprite GetLocationIcon(string iconId)
+	{
+		if (string.IsNullOrEmpty(iconId))
+			return null;
+
+		if (iconsLookup == null)
+		{
+			iconsLookup = new Dictionary<string, Sprite>();
+			var icons = Resources.LoadAll<Sprite>("LocationIcons").ToList();
+			foreach (var icon in icons)
+			{
+				iconsLookup[icon.name] = icon;
+			}
+		}
+
+		if (!iconsLookup.ContainsKey(iconId))
+		{
+			Debug.LogError($"Cannot find location icon with id {iconId}");
+			return null;
+		}
+
+		return iconsLookup[iconId];
+	}
+}
+
+public static class BackgroundImagesLookup
+{
+	private static Dictionary<string, Sprite> backgroundsLookup = null;
+
+	public static Sprite GetBackgroundImage(string backgroundId)
+	{
+		if (string.IsNullOrEmpty(backgroundId))
+			return null;
+
+		if (backgroundsLookup == null)
+		{
+			backgroundsLookup = new Dictionary<string, Sprite>();
+			var icons = Resources.LoadAll<Sprite>("OfficePics").ToList();
+			foreach (var icon in icons)
+			{
+				backgroundsLookup[icon.name] = icon;
+			}
+		}
+
+		if (!backgroundsLookup.ContainsKey(backgroundId))
+		{
+			Debug.LogError($"Cannot find location icon with id {backgroundId}");
+			return null;
+		}
+
+		return backgroundsLookup[backgroundId];
+	}
+}
+
 public static class FemPicManager
 {
     private static Dictionary<string, FemPicsLookup> femPicsLookups = new Dictionary<string, FemPicsLookup>();

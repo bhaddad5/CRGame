@@ -14,6 +14,8 @@ namespace Assets.GameModel.XmlParsers
 		[XmlAttribute] [DefaultValue(0)] public float Ambition = 0;
 		[XmlAttribute] [DefaultValue(0)] public float Pride = 0;
 
+		[XmlAttribute] [DefaultValue("")] public string BackgroundImage = "";
+
 		[XmlElement("Interaction", typeof(InteractionXml))]
 		public InteractionXml[] Interactions = new InteractionXml[0];
 
@@ -45,6 +47,7 @@ namespace Assets.GameModel.XmlParsers
 				Age = Age,
 				Interactions = interactions,
 				Traits = traits,
+				backgroundImage = BackgroundImagesLookup.GetBackgroundImage(BackgroundImage),
 			};
 		}
 	}

@@ -14,6 +14,9 @@ namespace Assets.GameModel
 		public bool ClosedOnWeekends;
 		public bool Accessible = true;
 
+		public Sprite Icon;
+		public Sprite BackgroundImage;
+
 		public List<Policy> Policies;
 		public List<Fem> Fems;
 

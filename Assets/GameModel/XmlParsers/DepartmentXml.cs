@@ -16,6 +16,9 @@ namespace Assets.GameModel.XmlParsers
 		[XmlAttribute] [DefaultValue(0)] public float UiPosX = 0;
 		[XmlAttribute] [DefaultValue(0)] public float UiPosY = 0;
 
+		[XmlAttribute] [DefaultValue("")] public string LocationIcon = "";
+		[XmlAttribute] [DefaultValue("")] public string BackgroundImage = "";
+
 		[XmlElement("Fem", typeof(FemXml))]
 		public FemXml[] Fems = new FemXml[0];
 
@@ -45,6 +48,8 @@ namespace Assets.GameModel.XmlParsers
 				Fems = fems,
 				Policies = policies,
 				UiPosition = new Vector2(UiPosX, UiPosY),
+				BackgroundImage = BackgroundImagesLookup.GetBackgroundImage(BackgroundImage),
+				Icon = LocationIconLookup.GetLocationIcon(LocationIcon),
 			};
 		}
 	}

@@ -18,6 +18,7 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private TMP_Text Traits;
 		[SerializeField] private Button BackButton;
 		[SerializeField] private Image Picture;
+		[SerializeField] private Image BackgroundImage;
 
 		[SerializeField] public InteractionsDisplayHandler InteractionsHandler;
 		[SerializeField] private DialogDisplayHandler DialogHandler;
@@ -43,6 +44,7 @@ namespace Assets.GameModel.UiDisplayers
 			Picture.sprite = LoadFemPicture();
 			Picture.preserveAspect = true;
 			Traits.text = GetTraitsString();
+			BackgroundImage.sprite = fem.backgroundImage;
 
 			InteractionsHandler.RefreshInteractionVisibilities(fem, mgm);
 		}

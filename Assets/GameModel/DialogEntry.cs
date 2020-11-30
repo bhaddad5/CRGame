@@ -8,6 +8,9 @@ namespace Assets.GameModel
 	{
 		public bool IsPlayer = false;
 		public string Text = "";
+
+		//Should these be up a level in InteractionResult?
+		public bool InPlayerOffice;
 		public string NpcImage = "";
 	}
 }

@@ -13,6 +13,7 @@ namespace Assets.GameModel.UiDisplayers
 	public class DepartmentSelectionUiDisplay : MonoBehaviour, IUiDisplay, ITooltipProvider
 	{
 		[SerializeField] private Button Button;
+		[SerializeField] private Image Icon;
 		[SerializeField] private TMP_Text Text;
 
 		private Department dept;
@@ -29,6 +30,7 @@ namespace Assets.GameModel.UiDisplayers
 
 		public void RefreshUiDisplay(MainGameManager mgm)
 		{
+			Icon.sprite = dept.Icon;
 			Text.text = $"{dept.Name}";
 			var dayOfWeek = mgm.GetDateFromTurnNumber().DayOfWeek;
 			Button.interactable = !dept.ClosedOnWeekends || (dayOfWeek != DayOfWeek.Saturday && dayOfWeek != DayOfWeek.Sunday);

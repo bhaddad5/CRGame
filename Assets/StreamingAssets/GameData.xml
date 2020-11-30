@@ -1,6 +1,6 @@
 <GameData PlayerName="Hunter Downe" Ego="20" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3schools.com XmlSchema.xsd">
-	<Department Id="consulting" Name="Consulting Services" Accessible="true" ClosedOnWeekends="true" UiPosX="911" UiPosY="429">
-		<Fem Id="deborahJones" FirstName="Deborah" LastName="Jones" Age="24" Ambition="50" Pride="100">
+	<Department Id="consulting" Name="Consulting Services" Accessible="true" ClosedOnWeekends="true" UiPosX="911" UiPosY="429" BackgroundImage="dept_consulting" LocationIcon="dept_consulting">
+		<Fem Id="deborahJones" FirstName="Deborah" LastName="Jones" Age="24" Ambition="50" Pride="100" BackgroundImage="deborahOffice">
 			<Trait Id="overAchiever" Name="Over-Achiever">
 				<FreeEffect AmbitionEffect=".5"/>
 				<ControlledEffect PowerEffect=".1"/>
@@ -197,7 +197,7 @@
 			</Interaction>
 		</Fem>
 
-		<Fem Id="britneyBower" FirstName="Britney" LastName="Bower" Age="18" Ambition="30" Pride="40">
+		<Fem Id="britneyBower" FirstName="Britney" LastName="Bower" Age="18" Ambition="30" Pride="40" BackgroundImage="TOWER 3_2">
 			<Interaction Id="introduction" Name="Introduction" Category="Conversation">
 				<InteractionResult>
 					<DialogEntry IsPlayer="true" Dialog="Hi!  I'm the new guy."/>
@@ -458,7 +458,7 @@
 			</Interaction>
 		</Fem>
 
-		<Fem Id="annMiller" FirstName="Ann" LastName="Miller" Age="35" Ambition="70" Pride="80">
+		<Fem Id="annMiller" FirstName="Ann" LastName="Miller" Age="35" Ambition="70" Pride="80" BackgroundImage="TOWER 3_1">
 			<Interaction Id="salesCall" Name="Sales Call Ride-along" EgoCost="20" TurnCost= "2" RequiredInteractions="whoZoo" Category="OfficePolitics">
 				<InteractionResult>
 					<DialogEntry IsPlayer="true" Dialog="Would you mind if I joined you on some sales calls?"/>
@@ -811,7 +811,7 @@
 
 		</Fem>
 
-		<Fem Id="amandaEllsbach" FirstName="Amanda" LastName="Ellsbach" Age="20" Ambition="30" Pride="40">
+		<Fem Id="amandaEllsbach" FirstName="Amanda" LastName="Ellsbach" Age="20" Ambition="30" Pride="40" BackgroundImage="TOWER 3_5">
 
 			<Interaction Id="amandaHello" Name="Hello!" TurnCost= "1" Category="Conversation">
 				<InteractionResult>
@@ -1025,7 +1025,7 @@
 
 		</Fem>
 
-		<Fem Id="jillVander" FirstName="Jill" LastName="Vander" Age="21" Ambition="30" Pride="40">
+		<Fem Id="jillVander" FirstName="Jill" LastName="Vander" Age="21" Ambition="30" Pride="40" BackgroundImage="TOWER 3_6">
 
 			<Interaction Id="jillTps" Name="TPS form" TurnCost= "1" Category="Conversation">
 				<InteractionResult>
@@ -1037,7 +1037,7 @@
 				</InteractionResult>
 			</Interaction>
 
-					<Interaction Id="jillAddress" Name="Ask if she lives near the office" TurnCost= "1" Category="Conversation">
+			<Interaction Id="jillAddress" Name="Ask if she lives near the office" TurnCost= "1" Category="Conversation">
 				<InteractionResult>
 					<DialogEntry IsPlayer="true" Dialog="Are you a local?"/>
 					<DialogEntry IsPlayer="false" Dialog="No.  Just wound up her because of school.  I’m kind of couch surfing right now.  I live with some girls in Tout Suite Studios.  It’s only temporary though, while I figure out my next move."/>
@@ -1309,7 +1309,386 @@
 
 		</Fem>
 
-		<Fem Id="susanGranger" FirstName="Susan" LastName="Granger" Age="34" Ambition="65" Pride="70">
+		<Fem Id="susanGranger" FirstName="Susan" LastName="Granger" Age="34" Ambition="65" Pride="70" BackgroundImage="susanGrangerOffice">
+			<Interaction Id="susanIntro" Name="Present yourself to Ms. Granger" TurnCost= "1" RequiredInteractions= "britneyIntroduction" Category="Conversation">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="TO DO reveal Trait Indecisive Welcome to Artemis!  This is a bit strange—you’re our first male staff member.  Perhaps I should gather all of our team to introduce you. Or maybe it is better for you to meet each individually.  Hmmm—I’m not sure!"/>
+					<DialogEntry IsPlayer="false" Dialog="I'm excited to be here."/>
+					<DialogEntry IsPlayer="true" Dialog="Perhaps I should gather all of our team to introduce you. Or maybe it is better for you to meet each individually.  Hmmm—I’m not sure!"/>
+					<DialogEntry IsPlayer="false" Dialog="Well, you're the boss, so whatever you say!"/>
+					<Effect/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="susanCsg" Name="The Consulting Services Group" TurnCost= "1" RequiredInteractions= "susanIntro" Category="Conversation">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="What does the CSG do?"/>
+					<DialogEntry IsPlayer="false" Dialog="This is a brand new business unit—a great time to start!  We’re the consulting arm of the company and work with key clients to add additional services and offer solutions customised for our top clients!"/>
+					<DialogEntry IsPlayer="true" Dialog="Who else works in the CSG?"/>
+					<DialogEntry IsPlayer="false" Dialog="We have Deborah Jones.  Like you, she's another Management Trainee and almost ready to complete the program.  We have Anne Miller, our sales lead.  Britney handles reception and Jill's a temp who'd been with us.  And Amanda-- the college intern."/>
+					<Effect/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="susanOffice" Name="The Office Location" TurnCost= "1" RequiredInteractions= "susanIntro" Category="Conversation">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="I noticed we're not in the bigger office complexes."/>
+					<DialogEntry IsPlayer="false" Dialog="We’re separate from the corporate campus and the Planning Department, which we’re a subsidiary of.  That gives us some breathing space to be honest! "/>
+					<DialogEntry IsPlayer="true" Dialog="Do you live close to the office?"/>
+					<DialogEntry IsPlayer="false" Dialog="I live halfway between the main office and here.  We all used to work in the big towers but, like I say, I'm appreciating having our own space."/>
+					<Effect/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="susanStory" Name="Susan’s Story" TurnCost= "1" RequiredInteractions= "susanIntro" Category="Conversation">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="TO DO reveal Susan trophy Have you been with Artemis for very long?"/>
+					<DialogEntry IsPlayer="false" Dialog="I’ve been here from the beginning!  Haven’t had even so much time for  social life since I started working here!  Do you believe I was once paid in company stock when we were going through a tough time?"/>
+					<DialogEntry IsPlayer="true" Dialog="Those shares will be worth a lot when the company IPO kicks off!"/>
+					<DialogEntry IsPlayer="false" Dialog="I hope so!  I was just recently the General Manager, but Jennifer needed me to launch this new group, so I’m running Consulting Services now!"/>
+					<Effect/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="susanCookies" Name="Cookies!" TurnCost= "1" EgoCost="10" Category="Socialize">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="I hope you like them!"/>
+					<DialogEntry IsPlayer="false" Dialog="What do we have here?  Did you bake these cookies?"/>
+					<DialogEntry IsPlayer="true" Dialog="Yes, Ma'am-- for you and the rest of the team.  I hope that's ok."/>
+					<DialogEntry IsPlayer="false" Dialog="How thoughtful!  What a lovely surprise!"/>
+					<Effect AmbitionEffect="-5"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="susanPosters" Name="Compliment Susan" TurnCost= "1" EgoCost="10" RequiredInteractions= "susanCookies" Category="Socialize">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="These posters you've chosen for the office are so motivational!"/>
+					<DialogEntry IsPlayer="false" Dialog="You like them? I know some of the staff think they are a bit cringey, but--"/>
+					<DialogEntry IsPlayer="true" Dialog="No way, Ms. Granger!  They really send a message!"/>
+					<DialogEntry IsPlayer="false" Dialog="I agree.  You're a very perceptive young man!"/>
+					<Effect AmbitionEffect="-5"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="susanMeetings" Name="Compliment Susan" TurnCost= "1" EgoCost="10" RequiredInteractions= "susanCookies" Category="Socialize">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="They way you lead staff meetings is so inspirational!"/>
+					<DialogEntry IsPlayer="false" Dialog="Thank you!  Sometimes I think I waffle on too much, but--"/>
+					<DialogEntry IsPlayer="true" Dialog="Not at all, Ms. Granger!  Everyone leaves excited and motivated."/>
+					<DialogEntry IsPlayer="false" Dialog="Of course, that's what I hope to do.  Thanks for noticing!"/>
+					<Effect AmbitionEffect="-5"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="susanDatabase" Name="Offer to Organize CSG Client Database" TurnCost= "1" EgoCost="10" RequiredInteractions="susanStory" Category="OfficePolitics">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Ms. Granger, I'm feeling under utlized."/>
+					<DialogEntry IsPlayer="false" Dialog="Well, waht can I do to changhe that?"/>
+					<DialogEntry IsPlayer="true" Dialog="Well, I was hoping it would be ok with you if I organized the department client database."/>
+					<DialogEntry IsPlayer="false" Dialog="TO DO Build Dept Missions/Policies to unlock this If you think you're up to it, that's fine with me."/>
+					<Effect/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="susanInternship" Name="Ask to manage Internship Program" TurnCost= "1" EgoCost="10" RequiredInteractions="susanStory" Category="OfficePolitics">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="TO DO This interaction has a 50% chance of success  ALSO because trait is indecisive, player can try twice if it fails    Ms. Granger, I really thinkk I could do a far better job running the internship program than Deborah."/>
+					<DialogEntry IsPlayer="false" Dialog="I know Deborah’s not going to like this.  Let me think about it."/>
+					<DialogEntry IsPlayer="true" Dialog="The longer she mismanages things, the more work it will be to fix the program."/>
+					<DialogEntry IsPlayer="false" Dialog="If I do this, Deborah will eb very demotivated.  TO DO: interaction has 50% chance of success/fail   if success, it will unlock the dept mission"/>
+					<Effect/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="susanItaudit" Name="Volunteer to institute IT Systems Audit" TurnCost= "1" EgoCost="10" RequiredInteractions="susanStory" Category="OfficePolitics">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="TO DO This interaction has a 50% chance of success  ALSO because trait is indecisive, player can try twice if it fails  TO DO this interaction unlock a dept mission   Ms. Granger, CSG is overdue in conducting our IT systems audit."/>
+					<DialogEntry IsPlayer="false" Dialog="I know but no one is bothering me about it."/>
+					<DialogEntry IsPlayer="true" Dialog="I'd be happy to take it on, if that's ok with you."/>
+					<DialogEntry IsPlayer="false" Dialog="By all means. Feel free to have at it!"/>
+					<Effect/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="susanDeptbudget" Name="Ask to Plan Budget for Consulting Group" TurnCost= "1" EgoCost="10" RequiredInteractions="susanStory" Category="OfficePolitics">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="TO DO This interaction has a 50% chance of success  ALSO because trait is indecisive, player can try twice if it fails TO DO this interaction unlock a dept mission   If you'd like, I'd be happy to draft the department budget."/>
+					<DialogEntry IsPlayer="false" Dialog="That's really something I should be doing."/>
+					<DialogEntry IsPlayer="true" Dialog="I just thought you had more important things to do."/>
+					<DialogEntry IsPlayer="false" Dialog="It is such a boring task.  Still, I'm not sure I should hand this off..."/>
+					<Effect/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="susanKeyaccounts" Name="Suggest a re-assignment of Key Accounts" TurnCost= "1" EgoCost="10" RequiredInteractions="susanStory" Category="OfficePolitics">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="TO DO This interaction has a 50% chance of success  ALSO because trait is indecisive, player can try twice if it fails TO DO this   Ms. Granger, it seems crazy that the Key Accounts aren't considered House Accounts."/>
+					<DialogEntry IsPlayer="false" Dialog="You may be right, but Anne Miller really did a lot of work to--"/>
+					<DialogEntry IsPlayer="true" Dialog="Re-classifying the acccounts would make the bottom line look much better."/>
+					<DialogEntry IsPlayer="false" Dialog="That's true.  I'm still not convinced it is worth upsetting Anne over this though."/>
+					<Effect/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="susanSalesbudget" Name="Suggest an increase in Sales Quotas" TurnCost= "1" EgoCost="10" RequiredInteractions="susanStory" Category="OfficePolitics">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="TO DO This interaction has a 50% chance of success  ALSO because trait is indecisive, player can try twice if it fails TO DO this    The quarterly numbers don't look great, Ms. Granger.  May I make a suggestion?"/>
+					<DialogEntry IsPlayer="false" Dialog="Let's hear it.  I'm open to anything reasonable."/>
+					<DialogEntry IsPlayer="true" Dialog="Increase Ms. Miller's budget.  If she could step up, we coudl still make our numbers."/>
+					<DialogEntry IsPlayer="false" Dialog="Maybe.  But it's a big ask, even for Anne."/>
+					<Effect/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="susanForecast" Name="Offer to adjust up Group projections " TurnCost= "1" EgoCost="10" RequiredInteractions="susanStory" Category="OfficePolitics">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="TO DO This interaction has a 50% chance of success  ALSO because trait is indecisive, player can try twice if it fails TO DO this interaction unlock a dept mission   CSG metrics don't look great--"/>
+					<DialogEntry IsPlayer="false" Dialog="Please don't remind me.  I'm doing my best!"/>
+					<DialogEntry IsPlayer="true" Dialog="Of course, Ms. Granger.  I was only going to offer to re-forecast. With a little tweaking, I think I can make things look a lot better to Management."/>
+					<DialogEntry IsPlayer="false" Dialog="I appreciate the offer.  If you think some adjustments might make CSG look a bit more positive...  Let me think about it."/>
+					<Effect/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="susanHremail" Name="Anonymous email to HR" TurnCost= "1" EgoCost= "10" Category="Challenge">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog= "You seem pre-occupied, Ms. Granger."/>
+					<DialogEntry IsPlayer="false" Dialog="I just received a strange email from HR.  They got an anonymous complaint."/>
+					<DialogEntry IsPlayer="true" Dialog="They can't place much stock in anonymous complaints, can they?"/>
+					<DialogEntry IsPlayer="false" Dialog="No-- but it plants a seed."/>
+					<Effect AmbitionEffect="-10"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="susanPlanningemail" Name="Anonymous email to Planning" TurnCost= "1" EgoCost= "10" Category="Challenge">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog= "What's wrong, Ms. Granger?"/>
+					<DialogEntry IsPlayer="false" Dialog="Tracey Bledsoe-- my direct superior-- just sent me a pretty blistering email."/>
+					<DialogEntry IsPlayer="true" Dialog="About what?  You do such a great job running CSG!"/>
+					<DialogEntry IsPlayer="false" Dialog="She's been getting anonymous reports on how I run CSG-- and they are NOT positive!"/>
+					<Effect AmbitionEffect="-10"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="susanPlanningbcc" Name="Planning Dept. BCC’d on Group Forecast" TurnCost= "1" RequiredInteractions= "susanForecast" Category="Challenge">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog= "Can I get you something?  You look like you're in shock!"/>
+					<DialogEntry IsPlayer="false" Dialog="I just got a meeting request from Tracey."/>
+					<DialogEntry IsPlayer="true" Dialog="Ms. Bledsoe?  For what?"/>
+					<DialogEntry IsPlayer="false" Dialog="She says she wants to discuss the disparities between the original forecast-- and the updated forecast.  I think she's highly skeptical."/>
+					<Effect AmbitionEffect="-20"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="controlSusan" Name="Take control of Susan Granger" TurnCost= "1" RequiredAmbition="0" Category="Challenge">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="TO DO  This unlocks the Dept Challenge Control CSG Mission Given have things are going, I think it is time I stepped up."/>
+					<DialogEntry IsPlayer="false" Dialog="Stepped up to what?"/>
+					<DialogEntry IsPlayer="true" Dialog="Susan, we both know who's best suited to run CSG. I need to know you're prepared to follow."/>
+					<DialogEntry IsPlayer="false" Dialog="I didn't think I was doing such a poor job, but..."/>
+					<Effect ControlEffect="true"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="promotionCSG" Name="CSG Promotion" TurnCost= "1" Category="Challenge">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="TO DO  This reqs challenge csg dept  You may be the first to congratulate me on my promotion."/>
+					<DialogEntry IsPlayer="false" Dialog="This is a little awkward-- you in charge and me reporting to you..."/>
+					<DialogEntry IsPlayer="true" Dialog="Susan, you were never cut out for management.  You're a follower, not a leader."/>
+					<DialogEntry IsPlayer="false" Dialog="If you say so.  Congratulations on your promotion to run CSG."/>
+					<Effect ControlEffect="true" PowerEffect= "30"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="demotionSusan" Name="Demote" RequiredControl="true" TurnCost= "1" RequiredDepartmentsControlled="consulting" Category="OfficePolitics">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Susan, it no longer makes sense for you to hold a management title."/>
+					<DialogEntry IsPlayer="false" Dialog="But I earned that title!"/>
+					<DialogEntry IsPlayer="true" Dialog="Your incompetence makes you ineligible for it.  You'll be an Admin girl from now on."/>
+					<DialogEntry IsPlayer="false" Dialog="Very well-- but I do intend to make a complaint about this unfair demotion!"/>
+					<Effect PrideEffect="-10"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="dismissalSusan" Name="Dismiss" RequiredControl="true" TurnCost= "1" RequiredDepartmentsControlled="consulting" RequiredInteractions="demotionSusan" Category="OfficePolitics">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="What a shame the company has carried you for so long."/>
+					<DialogEntry IsPlayer="false" Dialog="I've been here from the start!"/>
+					<DialogEntry IsPlayer="true" Dialog="You're a mistake I am rectifying.  You're fired, Susan."/>
+					<DialogEntry IsPlayer="false" Dialog="I can't beleive this!"/>
+					<Effect RemoveNpcFromGame="true" EgoEffect= "40" />
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="susanupdateTracey" Name="Update for Tracey" TurnCost= "1" RequiredControl="true" Category="Projects">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Let Ms. Bledsoe know what an amazing job I'm doing here in CSG."/>
+					<DialogEntry IsPlayer="false" Dialog="I'll send her an email."/>
+					<DialogEntry IsPlayer="true" Dialog="Let me see it before you send it."/>
+					<DialogEntry IsPlayer="false" Dialog="As you wish."/>
+					<Effect ContextualFemId="traceyBledsoe" AmbitionEffect="-10"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="susanalertJennifer" Name="Talent Alert to Jennifer" TurnCost= "1" RequiredControl="true" Category="Projects">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="I'm sure Ms. Page would like to learn what a great job I'm doing."/>
+					<DialogEntry IsPlayer="false" Dialog="Of course."/>
+					<DialogEntry IsPlayer="true" Dialog="Leave her a message and make it good, Susan."/>
+					<DialogEntry IsPlayer="false" Dialog="Yes, I will do waht you want."/>
+					<Effect ContextualFemId="jenniferPage" AmbitionEffect="-5"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="susanfanmailCarole" Name="Fan mail for Carole" TurnCost= "1" RequiredControl="true" Category="Projects">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="HR should really know how effective I am here."/>
+					<DialogEntry IsPlayer="false" Dialog="I can send a report to Carole.  She runs HR."/>
+					<DialogEntry IsPlayer="true" Dialog="Why don't you make it a priority, Susan?"/>
+					<DialogEntry IsPlayer="false" Dialog="I'll get to it right away."/>
+					<Effect ContextualFemId="caroleFontain" AmbitionEffect="-10"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="secPoolSusan" Name="Send to Secretarial Pool" TurnCost= "1" RequiredControl="true" Category="Projects">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="There's zero reason to continue to pretend you can contribute meaningfully."/>
+					<DialogEntry IsPlayer="false" Dialog="I've been a loyal employee for years!"/>
+					<DialogEntry IsPlayer="true" Dialog="Which is the only reason I'm even keeping you on-- in the Secretarial Pool."/>
+					<DialogEntry IsPlayer="false" Dialog="Thi si scrazy!  I sed to be your boss!  requiredpolicies=secpool RequiredPride=20 reward 1 corp culture"/>
+					<Effect PrideEffect= "-20" ContextualFemId="susanGranger"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="susanmoveToSecDorm" Name="Move to Secretarial Dorm" TurnCost= "1" RequiredControl="true" Category="Projects" RequiredPolicies="affordableHousing" RequiredInteractions="demotion">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Sticking you in the dorm only makes sense."/>
+					<DialogEntry IsPlayer="false" Dialog="I was a manager here!  How can I possibly--"/>
+					<DialogEntry IsPlayer="true" Dialog="Save it.  I'm not interested.  You 'll move at once."/>
+					<DialogEntry IsPlayer="false" Dialog="If you insist!"/>
+					<Effect PrideEffect="-20"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="susanassignDollHouse" Name="Assign to the Doll House" TurnCost= "1" RequiredControl="true" Category="Projects" RequiredInteractions="demotionSusan">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Time to move one of my pieces!  Susie!"/>
+					<DialogEntry IsPlayer="false" Dialog="Sir?"/>
+					<DialogEntry IsPlayer="true" Dialog="You're re-assigned to the Doll House."/>
+					<DialogEntry IsPlayer="false" Dialog="I am?  applied to DHouse rev"/>
+					<Effect RemoveNpcFromGame="true"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="susanDiversity" Name="Diversity Certification" TurnCost= "8" RequiredPride= "40" RequiredControl="true" Category="Train">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="I'veapproved the paperwork for your training."/>
+					<DialogEntry IsPlayer="false" Dialog="What kind of training?"/>
+					<DialogEntry IsPlayer="true" Dialog="Sensitivity training-- so you'll become more comfortable interacting with lesbians."/>
+					<DialogEntry IsPlayer="false" Dialog="TO DO  will reveal trait Lipstick Lesbian  But I am already tolerant and sensitive!"/>
+					<Effect />
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="susanDresscode" Name="Dress Code Compliance" TurnCost= "1" MoneyCost="2000" RequiredControl="true" Category="Train">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="If you expect to keep your job, you're going to have to follow the Admin Dress Code."/>
+					<DialogEntry IsPlayer="false" Dialog="I can't afford to buy a whole new wardrobe!"/>
+					<DialogEntry IsPlayer="true" Dialog="I'll give you a loan-- but you WILL meet code requirements."/>
+					<DialogEntry IsPlayer="false" Dialog="Very well."/>
+					<Effect PrideEffect="-5"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="susanPersonalsafety" Name="Employee Personal Measures for Susan" TurnCost= "1" RequiredPride="30" RequiredControl="true" Category="Train">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Putting you under lock and key is for your own good.  TO DO: requires tbtn policy"/>
+					<DialogEntry IsPlayer="false" Dialog="I can't allow you to do that!"/>
+					<DialogEntry IsPlayer="true" Dialog="You'll behave yourself and cut the whining."/>
+					<DialogEntry IsPlayer="false" Dialog="It's so uncomfortable!"/>
+					<Effect/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="disciplineSusan" Name="Susan Granger Demerits RTeview" TurnCost= "1" RequiredControl="true" Repeatable="true" Category="Train">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="You'll only improve if I give you feedback."/>
+					<DialogEntry IsPlayer="false" Dialog="But why does it always require corporal punishment?"/>
+					<DialogEntry IsPlayer="true" Dialog="Because girls like you never seem to learn."/>
+					<DialogEntry IsPlayer="false" Dialog="You're just being mean!"/>
+					<Effect PrideEffect="-3"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="susanMotivationroomapt" Name="Motivation Room Appointment" EgoCost="20" TurnCost="4" RequiredControl="true" RequiredPolicies="peaceOfMind" Category="Train" Repeatable="true">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="I'm surprised-- you're tougher than you look!"/>
+					<DialogEntry IsPlayer="false" Dialog="Why am I here?"/>
+					<DialogEntry IsPlayer="true" Dialog="You are here because you are a stubborn girl in need of motivation!"/>
+					<DialogEntry IsPlayer="false" Dialog="This isn't necessary!  Don't leave me here!"/>
+					<Effect PrideEffect="-20"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="breakSusan" Name="Break Susan Granger" RequiredPride="0" TurnCost= "1" RequiredControl="true" Category="Train">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="You've come along nicely.  Who's the boss now, Susan?"/>
+					<DialogEntry IsPlayer="false" Dialog="You're the boss, Sir."/>
+					<DialogEntry IsPlayer="true" Dialog="Good girl.  No more nonsense about you being a manager, right?"/>
+					<DialogEntry IsPlayer="false" Dialog="I'm very happy to serve you in my current capacity-- thank you!"/>
+					<Effect EgoEffect="40"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="gropeSusan" Name="Grope Susan Granger" TurnCost= "1" RequiredControl="true" Repeatable="true" Category="Fun">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="TO DO: Reqs a Harrassement Waiver policy  Any objections to me feeling you up?"/>
+					<DialogEntry IsPlayer="false" Dialog="Of course!  I wish you'd keep your hands to yourself!"/>
+					<DialogEntry IsPlayer="true" Dialog="And if I don't?"/>
+					<DialogEntry IsPlayer="false" Dialog="Oh, just do what you want! You know there's nothing I can say that will mak eyou stop!"/>
+					<Effect EgoEffect="2" PrideEffect="-5"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="signsharesSusan" Name="Compel Susan to sign over her Artemis stock" MoneyCost= "2000" TurnCost= "1" RequiredControl="true" RequiredPride= "20" Category="Fun">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="TO DO: will create a trophy for Player  I think my offer is extremely generous."/>
+					<DialogEntry IsPlayer="false" Dialog="Those shares will be worth a lot more than $2,000 when the IPO happens!"/>
+					<DialogEntry IsPlayer="true" Dialog="It is your choice, Susan."/>
+					<DialogEntry IsPlayer="false" Dialog="I don't have any choice.  I'm falling behind so much, I have to take what I can get."/>
+					<Effect/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="courtshipSusan" Name="Play matchmaker with Alexis and Susan" TurnCost= "20" RequiredInteractions= "susanDiversity" RequiredControl="true" RequiredPride= "10" Category="Fun">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="TO DO: set up Alex conditions  I think Alexis Hunter likes you."/>
+					<DialogEntry IsPlayer="false" Dialog="So what?  I'm not a lesbian."/>
+					<DialogEntry IsPlayer="true" Dialog="I think you two would make a nice couple."/>
+					<DialogEntry IsPlayer="false" Dialog="That's not something I want though!  I'm not interested in her!"/>
+					<Effect/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="planweddingSusan" Name="Have Susan polan her wedding to Alexis" TurnCost= "20" RequiredInteractions= "courtshipSusan" RequiredControl="true" RequiredPride= "5" Category="Fun">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="TO DO: set up Alex conditions  Congratulations!  I understand Alexis has proposed!"/>
+					<DialogEntry IsPlayer="false" Dialog="Whatever."/>
+					<DialogEntry IsPlayer="true" Dialog="Now you'll need to plan your wedding."/>
+					<DialogEntry IsPlayer="false" Dialog="Yes, I'll plan my wedding-- to another woman."/>
+					<Effect/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="honeymoonSusan" Name="Play matchmaker with Alexis and Susan" TurnCost= "10" MoneyCost= "5000" RequiredInteractions= "planweddingSusan" RequiredControl="true" RequiredPride= "0" Category="Fun">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="TO DO: set up Alex trait inspired which will allow her to generate Patent pts  I hope you don't mind me joining you two."/>
+					<DialogEntry IsPlayer="false" Dialog="I thought honeymoonms where when a couple spends time alone?"/>
+					<DialogEntry IsPlayer="true" Dialog="You two are so naughty, it is clear you need a chaperone. I'll let you two have fun-- right after I've had MY fun."/>
+					<DialogEntry IsPlayer="false" Dialog="I guess if you're paying for the honeymoon, you get to make the rules."/>
+					<Effect/>
+				</InteractionResult>
+			</Interaction>
 
 		</Fem>
 	</Department>

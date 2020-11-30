@@ -10,6 +10,7 @@ namespace Assets.GameModel.UiDisplayers
 	public class DepartmentUiDisplay : MonoBehaviour, IUiDisplay
 	{
 		[SerializeField] private TMP_Text Name;
+		[SerializeField] private Image BackgroundImage;
 		[SerializeField] private Transform FemOptionsParent;
 		[SerializeField] private Transform PolicyOptionsParent;
 		[SerializeField] private Button BackButton;
@@ -59,6 +60,7 @@ namespace Assets.GameModel.UiDisplayers
 
 		public void RefreshUiDisplay(MainGameManager mgm)
 		{
+			BackgroundImage.sprite = dept.BackgroundImage;
 			Name.text = dept.Name;
 
 			foreach (var button in FemOptionsParent.GetComponentsInChildren<FemSelectionUiDisplay>(true))

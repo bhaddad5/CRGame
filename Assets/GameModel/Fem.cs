@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using UnityEngine;
 
 namespace Assets.GameModel
 {
@@ -14,6 +15,8 @@ namespace Assets.GameModel
 		public string FirstName;
 		public string LastName;
 		public int Age;
+
+		public Sprite backgroundImage;
 
 		public List<Interaction> Interactions = new List<Interaction>();
 		public List<Trait> Traits = new List<Trait>();
