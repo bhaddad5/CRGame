@@ -5,11 +5,12 @@ using Assets.GameModel;
 using Assets.GameModel.UiDisplayers;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 namespace Assets.GameModel.UiDisplayers
 {
-	public class DepartmentSelectionUiDisplay : MonoBehaviour, IUiDisplay
+	public class DepartmentSelectionUiDisplay : MonoBehaviour, IUiDisplay, ITooltipProvider
 	{
 		[SerializeField] private Button Button;
 		[SerializeField] private TMP_Text Text;
@@ -32,6 +33,13 @@ namespace Assets.GameModel.UiDisplayers
 			var dayOfWeek = mgm.GetDateFromTurnNumber().DayOfWeek;
 			Button.interactable = !dept.ClosedOnWeekends || (dayOfWeek != DayOfWeek.Saturday && dayOfWeek != DayOfWeek.Sunday);
 			Button.gameObject.SetActive(dept.Accessible);
+		}
+
+		public string GetTooltip(MainGameManager mgm)
+		{
+			if (!Button.interactable)
+				return "Office locations are closed on weekends";
+			return null;
 		}
 	}
 }

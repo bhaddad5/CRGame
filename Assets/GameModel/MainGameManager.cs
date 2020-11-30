@@ -10,6 +10,8 @@ namespace Assets.GameModel
 {
 	public class MainGameManager : MonoBehaviour
 	{
+		public static MainGameManager Manager = null;
+
 		public GameData Data;
 
 		[SerializeField] private HudUiDisplay HudUiDisplay;
@@ -17,6 +19,8 @@ namespace Assets.GameModel
 
 		void Start()
 		{
+			Manager = this;
+
 			var xmlResolver = new XmlResolver();
 			xmlResolver.LoadXmlData();
 

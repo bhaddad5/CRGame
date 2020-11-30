@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 namespace Assets.GameModel.UiDisplayers
 {
-	public class InteractionUiDisplay : MonoBehaviour, IUiDisplay
+	public class InteractionUiDisplay : MonoBehaviour, IUiDisplay, ITooltipProvider
 	{
 		[SerializeField] private Button Button;
 		[SerializeField] private TMP_Text Text;
@@ -37,6 +37,13 @@ namespace Assets.GameModel.UiDisplayers
 			Text.text = interaction.Name;
 			Button.interactable = interaction.InteractionValid(mgm, fem);
 			gameObject.SetActive(interaction.InteractionVisible(mgm, fem));
+		}
+
+		public string GetTooltip(MainGameManager mgm)
+		{
+			if (interaction.InteractionValid(mgm, fem))
+				return null;
+			return "Cannot do this!";
 		}
 	}
 }
