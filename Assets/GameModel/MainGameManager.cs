@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using Assets.GameModel.UiDisplayers;
 using Assets.GameModel.XmlParsers;
@@ -14,27 +15,42 @@ namespace Assets.GameModel
 
 		public GameData Data;
 
-		[SerializeField] private HudUiDisplay HudUiDisplay;
-		[SerializeField] private MainMapUiDisplay MainMapUiDisplay;
+		[SerializeField] private HudUiDisplay HudUiDisplayPrefab;
+		[SerializeField] private MainMapUiDisplay MainMapUiDisplayPrefab;
+
+		private HudUiDisplay hudUiDisplay;
+		private MainMapUiDisplay mainMapUiDisplay;
+
+		private XmlResolver xmlResolver = new XmlResolver();
 
 		void Start()
 		{
 			Manager = this;
 
-			var xmlResolver = new XmlResolver();
-			xmlResolver.LoadXmlData();
+			InitializeGame(Path.Combine(Application.streamingAssetsPath, "GameData.xml"));
+		}
 
-			Data = new XmlResolver().LoadXmlData();//TempContent.GenerateContent();
+		public void InitializeGame(string xmlDataPath)
+		{
+			if(hudUiDisplay != null)
+				GameObject.Destroy(hudUiDisplay.gameObject);
+			if(mainMapUiDisplay != null)
+				GameObject.Destroy(mainMapUiDisplay.gameObject);
 
-			HudUiDisplay.Setup(this);
-			MainMapUiDisplay.Setup(this, Data.Departments);
+			hudUiDisplay = Instantiate(HudUiDisplayPrefab);
+			mainMapUiDisplay = Instantiate(MainMapUiDisplayPrefab);
+
+			Data = xmlResolver.LoadXmlData(xmlDataPath);
+
+			hudUiDisplay.Setup(this);
+			mainMapUiDisplay.Setup(this, Data.Departments);
 			RefreshAllUi();
 		}
 
 		private void RefreshAllUi()
 		{
-			HudUiDisplay.RefreshUiDisplay(this);
-			MainMapUiDisplay.RefreshUiDisplay(this);
+			hudUiDisplay.RefreshUiDisplay(this);
+			mainMapUiDisplay.RefreshUiDisplay(this);
 		}
 
 		public void HandleTurnChange()
@@ -55,7 +71,7 @@ namespace Assets.GameModel
 				HandleWeekChange();
 			}
 
-			MainMapUiDisplay.CloseCurrentDepartment();
+			mainMapUiDisplay.CloseCurrentDepartment();
 			RefreshAllUi();
 		}
 
@@ -166,6 +182,11 @@ namespace Assets.GameModel
 			else if (Data.Power < 90)
 				return "CEOOffice";
 			else return "CEOOffice";
+		}
+
+		public string GetXmlSaveData()
+		{
+			return xmlResolver.SerializeXmlData(Data);
 		}
 	}
 }

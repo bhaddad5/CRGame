@@ -35,5 +35,26 @@ namespace Assets.GameModel.XmlParsers
 				Effects = effects,
 			};
 		}
+
+		public static InteractionResultXml ToXml(InteractionResult ob)
+		{
+			List<DialogEntryXml> dialogs = new List<DialogEntryXml>();
+			foreach (var dialogEntry in ob.Dialogs)
+			{
+				dialogs.Add(DialogEntryXml.ToXml(dialogEntry));
+			}
+
+			List<EffectXml> effects = new List<EffectXml>();
+			foreach (var effect in ob.Effects)
+			{
+				effects.Add(EffectXml.ToXml(effect));
+			}
+
+			return new InteractionResultXml()
+			{
+				DialogEntries = dialogs.ToArray(),
+				Effects = effects.ToArray(),
+			};
+		}
 	}
 }

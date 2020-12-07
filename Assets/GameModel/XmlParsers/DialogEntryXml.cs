@@ -26,5 +26,16 @@ namespace Assets.GameModel.XmlParsers
 				InPlayerOffice = InPlayerOffice,
 			};
 		}
+
+		public static DialogEntryXml ToXml(DialogEntry ob)
+		{
+			return new DialogEntryXml()
+			{
+				IsPlayer = ob.IsPlayer,
+				Dialog = ob.Text,
+				InPlayerOffice = ob.InPlayerOffice,
+				NpcImage = ob.NpcImage,
+			};
+		}
 	}
 }

@@ -16,7 +16,7 @@ namespace Assets.GameModel
 		public string LastName;
 		public int Age;
 
-		public Sprite backgroundImage;
+		public Sprite BackgroundImage;
 
 		public List<Interaction> Interactions = new List<Interaction>();
 		public List<Trait> Traits = new List<Trait>();

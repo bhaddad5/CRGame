@@ -45,5 +45,29 @@ namespace Assets.GameModel.XmlParsers
 				Departments = depts,
 			};
 		}
+
+		public static GameDataXml ToXml(GameData ob)
+		{
+			List<DepartmentXml> depts = new List<DepartmentXml>();
+			foreach (var department in ob.Departments)
+			{
+				depts.Add(DepartmentXml.ToXml(department));
+			}
+
+			return new GameDataXml()
+			{
+				PlayerName = ob.PlayerName,
+				TurnNumber = ob.TurnNumber,
+				Ego = ob.Ego,
+				Funds = ob.Funds,
+				Power = ob.Power,
+				Patents = ob.Patents,
+				CorporateCulture = ob.CorporateCulture,
+				Spreadsheets = ob.Spreadsheets,
+				Brand = ob.Brand,
+				Revenue = ob.Revenue,
+				Departments = depts.ToArray(),
+			};
+		}
 	}
 }

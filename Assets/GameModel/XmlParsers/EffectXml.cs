@@ -43,5 +43,27 @@ namespace Assets.GameModel.XmlParsers
 				TraitsRemoved = TraitsRemoved.XmlStringToList(),
 			};
 		}
+
+		public static EffectXml ToXml(Effect ob)
+		{
+			return new EffectXml()
+			{
+				ContextualFemId = ob.ContextualFemId,
+				AmbitionEffect = ob.AmbitionEffect,
+				ControlEffect = ob.ControlEffect,
+				RemoveNpcFromGame = ob.RemoveNpcFromGame,
+				EgoEffect = ob.EgoEffect,
+				FundsEffect = ob.FundsEffect,
+				PowerEffect = ob.PowerEffect,
+				PatentsEffect = ob.PatentsEffect,
+				CultureEffect = ob.CultureEffect,
+				SpreadsheetsEffect = ob.SpreadsheetsEffect,
+				BrandEffect = ob.BrandEffect,
+				RevanueEffect = ob.RevanueEffect,
+				PrideEffect = ob.PrideEffect,
+				TraitsAdded = ob.TraitsAdded.ListToXmlString(),
+				TraitsRemoved = ob.TraitsRemoved.ListToXmlString(),
+			};
+		}
 	}
 }

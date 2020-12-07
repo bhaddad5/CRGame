@@ -25,5 +25,15 @@ namespace Assets.GameModel.XmlParsers
 				Active = Active,
 			};
 		}
+
+		public static PolicyXml ToXml(Policy ob)
+		{
+			return new PolicyXml()
+			{
+				Id = ob.Id,
+				Name = ob.Name,
+				Active = ob.Active,
+			};
+		}
 	}
 }

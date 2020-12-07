@@ -47,7 +47,36 @@ namespace Assets.GameModel.XmlParsers
 				Age = Age,
 				Interactions = interactions,
 				Traits = traits,
-				backgroundImage = BackgroundImagesLookup.GetBackgroundImage(BackgroundImage),
+				BackgroundImage = BackgroundImagesLookup.GetBackgroundImage(BackgroundImage),
+			};
+		}
+
+		public static FemXml ToXml(Fem ob)
+		{
+			List<InteractionXml> interactions = new List<InteractionXml>();
+			foreach (var interaction in ob.Interactions)
+			{
+				interactions.Add(InteractionXml.ToXml(interaction));
+			}
+
+			List<TraitXml> traits = new List<TraitXml>();
+			foreach (var trait in ob.Traits)
+			{
+				traits.Add(TraitXml.ToXml(trait));
+			}
+
+			return new FemXml()
+			{
+				Id = ob.Id,
+				Ambition = ob.Ambition,
+				Controlled = ob.Controlled,
+				Pride = ob.Pride,
+				FirstName = ob.FirstName,
+				LastName = ob.LastName,
+				Age = ob.Age,
+				Interactions = interactions.ToArray(),
+				Traits = traits.ToArray(),
+				BackgroundImage = ob.BackgroundImage.name,
 			};
 		}
 	}

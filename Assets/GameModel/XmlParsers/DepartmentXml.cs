@@ -52,5 +52,34 @@ namespace Assets.GameModel.XmlParsers
 				Icon = LocationIconLookup.GetLocationIcon(LocationIcon),
 			};
 		}
+
+		public static DepartmentXml ToXml(Department ob)
+		{
+			List<FemXml> fems = new List<FemXml>();
+			foreach (var fem in ob.Fems)
+			{
+				fems.Add(FemXml.ToXml(fem));
+			}
+
+			List<PolicyXml> policies = new List<PolicyXml>();
+			foreach (var policy in ob.Policies)
+			{
+				policies.Add(PolicyXml.ToXml(policy));
+			}
+
+			return new DepartmentXml()
+			{
+				Id = ob.Id,
+				Name = ob.Name,
+				ClosedOnWeekends = ob.ClosedOnWeekends,
+				Accessible = ob.Accessible,
+				Fems = fems.ToArray(),
+				Policies = policies.ToArray(),
+				UiPosX = ob.UiPosition.x,
+				UiPosY = ob.UiPosition.y,
+				BackgroundImage = ob.BackgroundImage.name,
+				LocationIcon = ob.Icon.name,
+			};
+		}
 	}
 }

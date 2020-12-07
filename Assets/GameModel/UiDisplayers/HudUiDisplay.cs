@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using Assets.GameModel;
 using TMPro;
 using UnityEngine;
@@ -29,17 +31,41 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 
 	[SerializeField] private PlayerOfficeUiDisplay PlayerOfficeUiPrefab;
 
+	[SerializeField] private Button MainMenuButton;
+	[SerializeField] private Button SaveGameButton;
+	[SerializeField] private Button LoadGameButton;
+	[SerializeField] private Button ReturnToGameButton;
+	[SerializeField] private Button QuitGameButton;
+
+	[SerializeField] private Transform MainMenu;
+
+	private MainGameManager mgm;
 	public void Setup(MainGameManager mgm)
 	{
+		this.mgm = mgm;
 		Rest.onClick.AddListener(() =>
 		{
 			mgm.Data.Ego += 5;
 			mgm.HandleTurnChange();
 		});
-		PlayerOffice.onClick.AddListener(() =>
+		PlayerOffice.onClick.AddListener(ShowPlayerOffice);
+
+		MainMenuButton.onClick.AddListener(ShowMainMenu);
+		ReturnToGameButton.onClick.AddListener(HideMainMenu);
+		QuitGameButton.onClick.AddListener(Application.Quit);
+		SaveGameButton.onClick.AddListener(SaveGame);
+		LoadGameButton.onClick.AddListener(LoadGame);
+	}
+
+	void Update()
+	{
+		if (Input.GetKeyDown(KeyCode.Escape))
 		{
-			ShowPlayerOffice();
-		});
+			if(MainMenu.gameObject.activeSelf)
+				HideMainMenu();
+			else
+				ShowMainMenu();
+		}
 	}
 
 	public void RefreshUiDisplay(MainGameManager mgm)
@@ -70,8 +96,8 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 	public void ShowPlayerOffice()
 	{
 		playerOfficeDisplay = Instantiate(PlayerOfficeUiPrefab);
-		playerOfficeDisplay.Setup(this, MainGameManager.Manager);
-		playerOfficeDisplay.RefreshUiDisplay(MainGameManager.Manager);
+		playerOfficeDisplay.Setup(this, mgm);
+		playerOfficeDisplay.RefreshUiDisplay(mgm);
 		PlayerOffice.gameObject.SetActive(false);
 	}
 
@@ -82,6 +108,40 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 			GameObject.Destroy(playerOfficeDisplay.gameObject);
 			playerOfficeDisplay = null;
 			PlayerOffice.gameObject.SetActive(true);
+		}
+	}
+
+	public void ShowMainMenu()
+	{
+		MainMenu.gameObject.SetActive(true);
+	}
+
+	public void HideMainMenu()
+	{
+		MainMenu.gameObject.SetActive(false);
+	}
+
+	string savesDir => Path.Combine(Application.streamingAssetsPath, "Saves");
+	private void SaveGame()
+	{
+		if (!Directory.Exists(savesDir))
+			Directory.CreateDirectory(savesDir);
+
+		string defaultSaveName = $"CMan Save {DateTime.Now:yyyy-MM-dd-hh-mm-ss}.sav";
+		string xmlGameData = mgm.GetXmlSaveData();
+		string path = Path.Combine(savesDir, defaultSaveName);
+		File.WriteAllText(path, xmlGameData);
+	}
+
+	private void LoadGame()
+	{
+		if (!Directory.Exists(savesDir))
+			Directory.CreateDirectory(savesDir);
+		var files = Directory.GetFiles(savesDir, "*.sav");
+		if (files.Length > 0)
+		{
+			var saveFile = files[files.Length - 1];
+			mgm.InitializeGame(saveFile);
 		}
 	}
 }

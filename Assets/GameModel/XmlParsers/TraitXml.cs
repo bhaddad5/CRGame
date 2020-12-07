@@ -35,5 +35,26 @@ namespace Assets.GameModel.XmlParsers
 				ControlledEffects = ctrlEffects,
 			};
 		}
+
+		public static TraitXml ToXml(Trait ob)
+		{
+			var res = new TraitXml()
+			{
+				Id = ob.Id,
+				Name = ob.Name,
+			};
+
+			List<EffectXml> resCtrlEffects = new List<EffectXml>();
+			foreach (var effect in ob.ControlledEffects)
+				resCtrlEffects.Add(EffectXml.ToXml(effect));
+			res.ControlledEffects = resCtrlEffects.ToArray();
+
+			List<EffectXml> resFreeEffects = new List<EffectXml>();
+			foreach (var effect in ob.FreeEffects)
+				resFreeEffects.Add(EffectXml.ToXml(effect));
+			res.FreeEffects = resFreeEffects.ToArray();
+
+			return res;
+		}
 	}
 }

@@ -13,22 +13,24 @@ namespace Assets.GameModel.XmlParsers
 {
 	public class XmlResolver
 	{
-		public GameData LoadXmlData()
+		public GameData LoadXmlData(string xmlDataPath)
 		{
-			string gameData;
-			if (File.Exists(Path.Combine(Application.streamingAssetsPath, "GameData.xml")))
-			{
-				gameData = File.ReadAllText(Path.Combine(Application.streamingAssetsPath, "GameData.xml"));
-			}
-			else
-			{	
-				gameData = ((TextAsset)Resources.Load("XmlData/GameData")).text;
-			}
-
+			string gameData = File.ReadAllText(xmlDataPath);
 			var serializer = new XmlSerializer(typeof(GameDataXml));
 			var data = (GameDataXml) serializer.Deserialize(new StringReader(gameData));
 			
 			return data.FromXml();
+		}
+
+		public string SerializeXmlData(GameData data)
+		{
+			var xml = GameDataXml.ToXml(data);
+			var serializer = new XmlSerializer(typeof(GameDataXml));
+			using (StringWriter textWriter = new StringWriter())
+			{
+				serializer.Serialize(textWriter, xml);
+				return textWriter.ToString();
+			}
 		}
 	}
 }

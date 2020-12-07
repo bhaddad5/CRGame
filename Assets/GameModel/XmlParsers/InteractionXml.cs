@@ -69,5 +69,38 @@ namespace Assets.GameModel.XmlParsers
 				Category = (Interaction.InteractionCategory)Enum.Parse(typeof(Interaction.InteractionCategory), Category)
 			};
 		}
+
+		public static InteractionXml ToXml(Interaction ob)
+		{
+			List<InteractionResultXml> results = new List<InteractionResultXml>(); 
+			foreach (var result in ob.InteractionResults)
+			{
+				results.Add(InteractionResultXml.ToXml(result));
+			}
+
+			return new InteractionXml()
+			{
+				Id = ob.Id,
+				Name = ob.Name,
+				TurnCost = ob.TurnCost,
+				EgoCost = ob.EgoCost,
+				MoneyCost = ob.MoneyCost,
+				SpreadsheetsCost = ob.SpreadsheetsCost,
+				CultureCost = ob.CultureCost,
+				BrandCost = ob.BrandCost,
+				RevanueCost = ob.RevanueCost,
+				PatentsCost = ob.PatentsCost,
+				RequiredInteractions = ob.RequiredInteractions.ListToXmlString(),
+				RequiredDepartmentsControled = ob.RequiredDepartmentsControled.ListToXmlString(),
+				RequiredPolicies = ob.RequiredPolicies.ListToXmlString(),
+				RequiredAmbition = ob.RequiredAmbition,
+				RequiredPride = ob.RequiredPride,
+				RequiredControl = ob.RequiredControl,
+				Repeatable = ob.Repeatable,
+				Completed = ob.Completed,
+				InteractionResults = results.ToArray(),
+				Category = ob.Category.ToString(),
+			};
+		}
 	}
 }

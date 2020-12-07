@@ -44,7 +44,7 @@ namespace Assets.GameModel.UiDisplayers
 			Picture.sprite = LoadFemPicture();
 			Picture.preserveAspect = true;
 			Traits.text = GetTraitsString();
-			BackgroundImage.sprite = fem.backgroundImage;
+			BackgroundImage.sprite = fem.BackgroundImage;
 
 			InteractionsHandler.RefreshInteractionVisibilities(fem, mgm);
 		}
