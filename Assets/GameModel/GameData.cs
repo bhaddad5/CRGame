@@ -78,4 +78,15 @@ public class GameData
 		}
 		return null;
 	}
+
+	public Department FindFemDepartment(Fem fem)
+	{
+		foreach (var department in Departments)
+		{
+			if (department.Fems.Contains(fem))
+				return department;
+		}
+		Debug.LogError($"Could not find department containing fem {fem.Id}");
+		return null;
+	}
 }

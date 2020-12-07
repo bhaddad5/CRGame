@@ -33,7 +33,10 @@ namespace Assets.GameModel
 			}
 
 			if (RemoveNpcFromGame)
-				Debug.LogWarning("TODO: Implement remove from game!");
+			{
+				var dept = mgm.Data.FindFemDepartment(fem);
+				dept.Fems.Remove(fem);
+			}
 
 			mgm.Data.Ego = Mathf.Max(mgm.Data.Ego + EgoEffect, 0);
 			mgm.Data.Funds = Mathf.Max(mgm.Data.Funds + FundsEffect, 0);
