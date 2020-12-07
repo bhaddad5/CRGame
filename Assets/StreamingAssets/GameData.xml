@@ -93,7 +93,7 @@
 				</InteractionResult>
 			</Interaction>
 
-			<Interaction Id="demotion" Name="Demote" RequiredControl="true" TurnCost= "1" RequiredDepartmentsControlled="consulting" Category="OfficePolitics">
+			<Interaction Id="demotionDeborah" Name="Demote" RequiredControl="true" TurnCost= "1" RequiredDepartmentsControlled="consulting" Category="OfficePolitics">
 				<InteractionResult>
 					<DialogEntry IsPlayer="true" Dialog="Now that I'm in charge, there are going to be some changes."/>
 					<DialogEntry IsPlayer="false" Dialog="I thought there might be."/>
@@ -152,6 +152,86 @@
 				</InteractionResult>
 			</Interaction>
 
+			<Interaction Id="goodmorningDeborah" TurnCost= "1" Name="Good Morning!" RequiredControl="true" Category="Conversation">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Good morning.  You look lovely today.  I see you're finally complying with the Admin Dress Code."/>
+					<DialogEntry IsPlayer="false" Dialog="Yes.  I received the memo from Compliance."/>
+					<DialogEntry IsPlayer="true" Dialog="Good.  Nice to see you show your legs off.  I highly approve."/>
+					<DialogEntry IsPlayer="false" Dialog="I'd like to get back to work if that's alright."/>
+					<Effect PrideEffect= "-3"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="emergencycontactDeborah" TurnCost= "1" Name="Emergency Contact Confirmation" RequiredControl="true" Category="Conversation">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="TO DO This reqs a policy and reveals a trophy  Have you provided HR with your emergency contact details yet?"/>
+					<DialogEntry IsPlayer="false" Dialog="I did."/>
+					<DialogEntry IsPlayer="true" Dialog="Do me a favour-- have HR send me a copy of your file."/>
+					<DialogEntry IsPlayer="false" Dialog="Why would you need that?  Never mind.  Yes, I will."/>
+					<Effect/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="familiarityDeborah" TurnCost= "1" Name="Familiarity Guidelines" RequiredPride= "80" RequiredControl="true" Category="Conversation">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="I've been patient, but it is time to set some boundaries for our professional relationship."/>
+					<DialogEntry IsPlayer="false" Dialog="I'm not sure what you mean."/>
+					<DialogEntry IsPlayer="true" Dialog="From now on, I expect you to address me with the respect my position deserves-- and the very junior position you hold."/>
+					<DialogEntry IsPlayer="false" Dialog="Yes, Sir."/>
+					<Effect PrideEffect= "-3"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="coffeebjDeborah" TurnCost= "1" Name="Coffee and a BJ" RequiredPride= "30" RequiredControl="true" Repeatable="true" Category="Conversation">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Hey there, pretty girl."/>
+					<DialogEntry IsPlayer="false" Dialog="Is there something you need?"/>
+					<DialogEntry IsPlayer="true" Dialog="Coffee and a blowjob would be nice.  Can you handle that, Sweetie?"/>
+					<DialogEntry IsPlayer="false" Dialog="Yes, of course.  I'll be right back with your coffee."/>
+					<Effect EgoEffect= "1" PrideEffect= "-1"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="mbaDeborah" TurnCost= "1" Name="MBA Archiving" RequiredControl="true" Category="Conversation">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="TO DO requires antitheft policy  I know you are VERY proud of that MBA of yours-- aren't you?"/>
+					<DialogEntry IsPlayer="false" Dialog="Of course I am!  I worked hard to earn my Masters degree!"/>
+					<DialogEntry IsPlayer="true" Dialog="That's why we want to keep it safe.  Please bring it to me for safe keeping-- per company policy."/>
+					<DialogEntry IsPlayer="false" Dialog="Well, if you insist."/>
+					<Effect PrideEffect= "-3"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="birthcontrolDeborah" TurnCost= "1" Name="Birth Control Selection" EgoCost="10" RequiredControl="true" Category="Conversation">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="TO DO requires freedom of choice policy  As you know, the company will now cover your birth control expenses."/>
+					<DialogEntry IsPlayer="false" Dialog="This is kind of personal."/>
+					<DialogEntry IsPlayer="true" Dialog="I've been reviewing several options and I think an Implanon implant makes more sense than the Pill.  You can be a bit irresponsible at times."/>
+					<DialogEntry IsPlayer="false" Dialog="I don't understand why this isn't MY decision to make!"/>
+					<Effect PrideEffect= "-5"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="attorneyDeborah" TurnCost= "1" Name="Power of Attorney" RequiredPride= "0" RequiredControl="true" Category="Conversation">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="TO DO reqs Executive Sponsorship Program I think we both know you're happier when I make decisions for you."/>
+					<DialogEntry IsPlayer="false" Dialog="I guess so.  Not that I have anything to say about it."/>
+					<DialogEntry IsPlayer="true" Dialog="It's time I figured out what I'm going to do with you.  Sign this Power of Attorney so we can make it official."/>
+					<DialogEntry IsPlayer="false" Dialog="How did it get to this?  I'll sign it."/>
+					<Effect/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="fateDeborah" TurnCost= "1" Name="Deborah Jones' Fate" RequiredInteractions= "attorneyDeborah"  RequiredControl="true" Category="Conversation">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="TO DO allows 3 choices each req a specific trait-- Mistress (trait discreet), Trophy Wife (trait Adoring) or Exec PA (trait loyal)"/>
+					<DialogEntry IsPlayer="false" Dialog="TO DO Mistress adds 50 EGO"/>
+					<DialogEntry IsPlayer="true" Dialog="TO DO Exec PA adds 10 Power."/>
+					<DialogEntry IsPlayer="false" Dialog="TO DO Trophy Wife adds 10 Corp Culture"/>
+					<Effect/>
+				</InteractionResult>
+			</Interaction>
+
 			<Interaction Id="takeControl" Name="Take Control of Deborah Jones" TurnCost= "1" RequiredAmbition="0" Category="Challenge">
 				<InteractionResult>
 					<DialogEntry IsPlayer="true" Dialog="I think we both know why you're here.  It is high time someone put you in your place."/>
@@ -195,6 +275,317 @@
 					<Effect EgoEffect="3"/>
 				</InteractionResult>
 			</Interaction>
+
+			<Interaction Id="valentinesDeborah" Name="Valentine’s Day" TurnCost= "1" RequiredControl="true" MoneyCost= "100" Category="Socialize">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="I have a little surprise for you for Valentine's Day."/>
+					<DialogEntry IsPlayer="false" Dialog="That's not necessary or appropriate!"/>
+					<DialogEntry IsPlayer="true" Dialog="I think you'd look good in something skimpy like this."/>
+					<DialogEntry IsPlayer="false" Dialog="You can't think I'd accept a gift like that!  I will NOT accept this!"/>
+					<Effect PrideEffect= "-3"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="secdayDeborah" Name="Secretary’s Day" TurnCost= "1" RequiredControl="true" MoneyCost= "100" Category="Socialize">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Happy Secretary's Day!"/>
+					<DialogEntry IsPlayer="false" Dialog="Is it?  I had no idea."/>
+					<DialogEntry IsPlayer="true" Dialog="A girl like like you could alway use a boost, so I bought you a push-up bra.  You WILL wear it tomorrow."/>
+					<DialogEntry IsPlayer="false" Dialog="But I don't like to wear things like this-- especially in the office!"/>
+					<Effect PrideEffect= "-3"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="bossdayDeborah" Name="Manager’s Day" TurnCost= "1" RequiredControl="true" MoneyCost= "100" Category="Socialize">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="So, what has my Office Girl got for her manager for Boss's Day?"/>
+					<DialogEntry IsPlayer="false" Dialog="I hope you like it."/>
+					<DialogEntry IsPlayer="true" Dialog="What a nice surprise!  You have excellent taste."/>
+					<DialogEntry IsPlayer="false" Dialog="I thought it was perfect for you."/>
+					<Effect EgoEffect= "5"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="officepartyDeborah" Name="Office Party" TurnCost= "1" RequiredControl="true" Category="Socialize">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Go and drink up.  This is an office party, right?"/>
+					<DialogEntry IsPlayer="false" Dialog="Shouldn't we be out with everyone else?"/>
+					<DialogEntry IsPlayer="true" Dialog="A little privacy between the Boss and his Office Girl is perfectly fine.  Go on-- drink up."/>
+					<DialogEntry IsPlayer="false" Dialog="I don't really feel like it but...ok."/>
+					<Effect EgoEffect= "5"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="birthdayDeborah" Name="Deborah’s Birthday" TurnCost= "1" MoneyCost= "50" RequiredControl="true" Category="Socialize">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Happy Birthday!  I hope you like it!"/>
+					<DialogEntry IsPlayer="false" Dialog="A paddle?"/>
+					<DialogEntry IsPlayer="true" Dialog="For the Birthday Girl!  Anything that helps keep you focused is a good thing, right?"/>
+					<DialogEntry IsPlayer="false" Dialog="I don't need that to keep me focused!"/>
+					<Effect PrideEffect= "-2"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="uniformsDeborah" Name="Schoolgirl Fridays" TurnCost= "1" MoneyCost= "500" RequiredControl="true" Category="Socialize">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="TO DO Globalisation Protocols Policy Welcome to Schoolgirl Fridays!"/>
+					<DialogEntry IsPlayer="false" Dialog="But I feel so silly wearing this-- I'm a grown woman, not a schoolgirl!"/>
+					<DialogEntry IsPlayer="true" Dialog="You WILL wear one of your schoolgirl uniforms when instructed.  It sends the right message.  Understood?"/>
+					<DialogEntry IsPlayer="false" Dialog="Very well!"/>
+					<Effect CultureEffect= "1"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="athomeDeborah" Name="Home Inspection" TurnCost= "1" MoneyCost= "500" RequiredControl="true" Category="Socialize">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="TO DO Life Work Balance I let myself in.  I hope you don't mind."/>
+					<DialogEntry IsPlayer="false" Dialog="What are you doing here?"/>
+					<DialogEntry IsPlayer="true" Dialog="As your manager, I have a copy of your key.  Be a good little hostess and mix a cocktail."/>
+					<DialogEntry IsPlayer="false" Dialog="But this is my place!  And I didn't invite you over!"/>
+					<Effect EgoEffect= "10"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="holidayDeborah" Name="Annual Holiday" TurnCost= "10" MoneyCost= "5000" RequiredPride= "20"  RequiredInteractions= "hardbodiestDeborah" RequiredControl="true" Category="Socialize">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="TO DO Player gets to select trait Loyal/Discreet/Adoring   Model your bikini for me.  Do you like it?"/>
+					<DialogEntry IsPlayer="false" Dialog="It's so revealing!"/>
+					<DialogEntry IsPlayer="true" Dialog="That's the point.  I want to show you off during my vacation.  Are you excited about coming with me?"/>
+					<DialogEntry IsPlayer="false" Dialog="Yes!  It's been so long since I went anywhere!"/>
+					<Effect EgoEffect= "20"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="spyDeborah" Name="Spy On Staff" TurnCost= "12" RequiredControl="true" RequiredPride= "70" Category="Projects">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="TO DO - 3 ambition (after 6 turns) for Tracey Bledsoe, Candace Kelly, Susan Granger, Alexis Hunter, Amanda Ellsbach, Jill Vamder, Britney Bower  I need to crack down on the CSG and Planning.  You're going to help me."/>
+					<DialogEntry IsPlayer="false" Dialog="What do you want me to do?"/>
+					<DialogEntry IsPlayer="true" Dialog="I want you to keep an eye on all the girls.  You'll report back ANY infractions you uncover, which I will forward to HR."/>
+					<DialogEntry IsPlayer="false" Dialog="A spy?  Please don't turn me into some tattletale!"/>
+					<Effect ContextualFemId="annMiller" AmbitionEffect="-3"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="dictationDeborah" Name="Learn to take Dictation" TurnCost= "10" RequiredControl="true" Category="Projects">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="I'm sending you for vocational training."/>
+					<DialogEntry IsPlayer="false" Dialog="Wow!  I'm grateful!  What kind of training?"/>
+					<DialogEntry IsPlayer="true" Dialog="A week-long crash course in Shorthand and dictation.  I need an Office Girl who can take notes quickly and correctly."/>
+					<DialogEntry IsPlayer="false" Dialog="If you say so."/>
+					<Effect CultureEffect= "1"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="hardbodiestDeborah" Name="Hard Bodies KPIs" TurnCost= "20" MoneyCost= "2000" RequiredPride= "60" RequiredControl="true" Category="Projects">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="TO DO requires wellness policy  First, I expect her to achieve and maintain her high school graduation weight of 120 pounds."/>
+					<DialogEntry IsPlayer="false" Dialog="Second, I want her toned and trim-- not ripped."/>
+					<DialogEntry IsPlayer="true" Dialog="Third, start her on yoga positions.  I want her limber and flexible."/>
+					<DialogEntry IsPlayer="false" Dialog="Fourth, put her in heavy 'Teasercise' routine rotations.  Teach her some moves she can show off back in the office."/>
+					<Effect />
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="socialpostDeborah" Name="BossPleaser Social Credit Check" TurnCost= "1" RequiredControl="true" RequiredPride = "40" Repeatable="true" Category="Projects">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="TO DO reqs Corporate Social Credit Program  Office Girls like you need an outlet for self-expression."/>
+					<DialogEntry IsPlayer="false" Dialog="But these suggestive selfies?  I'm not like that!"/>
+					<DialogEntry IsPlayer="true" Dialog="Earning corporate social credits is part of your performance metrics."/>
+					<DialogEntry IsPlayer="false" Dialog="My posts don't have to be public, do they?"/>
+					<Effect PrideEffect="-1"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="dictationDeborah" Name="Learn to take Dictation" TurnCost= "10" RequiredControl="true" Category="Projects">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="I'm sending you for vocational training."/>
+					<DialogEntry IsPlayer="false" Dialog="Wow!  I'm grateful!  What kind of training?"/>
+					<DialogEntry IsPlayer="true" Dialog="A week-long crash course in Shorthand and dictation.  I need an Office Girl who can take notes quickly and correctly."/>
+					<DialogEntry IsPlayer="false" Dialog="If you say so."/>
+					<Effect CultureEffect= "1"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="calendarDeborah" Name="Corporate Calendar" TurnCost= "10" RequiredPride= "50" RequiredControl="true" Category="Projects">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="You'll need to be at the studio this week. It is just a little cheesecake for our clients.  Don't you want to help Marketing out?"/>
+					<DialogEntry IsPlayer="false" Dialog="Can I just wear my regular clothes?"/>
+					<DialogEntry IsPlayer="true" Dialog="Of course-- your regular lingerie or bikini.  Whatever the art director tells you to wear."/>
+					<DialogEntry IsPlayer="false" Dialog="I going to feel like a porn magazine centerfold!"/>
+					<Effect BrandEffect= "1"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="secentcertificationDeborah" Name="Secretarial Entertainment Certification" TurnCost= "10" MoneyCost= "2000" RequiredInteractions= "hardbodiestDeborah" RequiredPride= "40" RequiredControl="true" Category="Projects">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="I'd like my secretary taught to strip for me..."/>
+					<DialogEntry IsPlayer="false" Dialog="to pole dance like a pro..."/>
+					<DialogEntry IsPlayer="true" Dialog="to perform table dances like a slut before Last Call and..."/>
+					<DialogEntry IsPlayer="false" Dialog="to give lapdances like the tramp she really is, all whenever I tell her to."/>
+					<Effect EgoEffect= "20"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="kjonesrecruitmentDeborah" Name="Katherine Jones Recruitment" TurnCost= "1" RequiredPride= "40" RequiredInteractions= "emergencycontactDeborah" RequiredControl="true" Category="Projects">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="I might have an opening for your little sister."/>
+					<DialogEntry IsPlayer="false" Dialog="I don't think Katherine would be interested in an office job."/>
+					<DialogEntry IsPlayer="true" Dialog="Then you'll convince her what a great opportunity it mighty be.  Must I repeat myself?"/>
+					<DialogEntry IsPlayer="false" Dialog="No!  I'll call her right now!"/>
+					<Effect />
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="nicknameDeborah" Name="Give Deborah Jones a Nickname" TurnCost= "1" RequiredInteractions= "demotionDeborah" RequiredControl="true" Category="Train">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="I've been thinking.  'Deborah' seems so formal to me."/>
+					<DialogEntry IsPlayer="false" Dialog="But that's my name!"/>
+					<DialogEntry IsPlayer="true" Dialog="Not anymore.  From now on, I think we'll go with Debbie.  That sounds a lot friendlier.  Lose the pout, Debbie."/>
+					<DialogEntry IsPlayer="false" Dialog="Yes. Sorry!"/>
+					<Effect PrideEffect="-5"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="corpcompanionDeborah" Name="Corporate Companion Coursework" TurnCost= "10" RequiredPride= "45" RequiredControl="true" Category="Train">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="TO DO Executive Entertainment Guidelines Policy required I've signed you up for the new Executive Companionship Program."/>
+					<DialogEntry IsPlayer="false" Dialog="What's that?"/>
+					<DialogEntry IsPlayer="true" Dialog="A new course for training secretaries to provide a bit more than just typing and filing.  I expect you to earn a high grade."/>
+					<DialogEntry IsPlayer="false" Dialog="I'll try my hardest."/>
+					<Effect PowerEffect= "2"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="deborahDiversity" Name="Diversity Certification" TurnCost= "8" RequiredPride= "40" RequiredControl="true" Category="Train">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="I've decided you need to embrace a broader range fo experiences."/>
+					<DialogEntry IsPlayer="false" Dialog="Like different cultures?"/>
+					<DialogEntry IsPlayer="true" Dialog="In a way.  It's time to explore those repressed desires you have.  I look forward to seeing how you do!"/>
+					<DialogEntry IsPlayer="false" Dialog="TO DO  will reveal trait Lipstick Lesbian  Sure.  Whatever.  I mean I'm very open-minded already, but if you insist."/>
+					<Effect />
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="deborahGoldstar" Name="Teamwork Gold Star" TurnCost= "4" RequiredPride= "30" RequiredInteractions= "deborahDiversity" RequiredControl="true" Category="Train">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="TO DO gains trait 'Bisexual' (unlocks Sister Sessions) I've slotted you in for to Gold Star training."/>
+					<DialogEntry IsPlayer="false" Dialog="I'm not sure what that is."/>
+					<DialogEntry IsPlayer="true" Dialog="It's a course design to help you successfully multi-tasking with other Junior staffers."/>
+					<DialogEntry IsPlayer="false" Dialog="Oh!  That actually sounds fun!"/>
+					<Effect />
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="deborahPersonalsafety" Name="Employee Personal Safety Measures" TurnCost= "1" RequiredPride="20" RequiredControl="true" Category="Train">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="TO DO: requires tbtn policy You must feel MUCH safer now in your new protective gear."/>
+					<DialogEntry IsPlayer="false" Dialog="I suppose so but why can't I have a key to my own belt?"/>
+					<DialogEntry IsPlayer="true" Dialog="Because you're an irresponsible airhead and would lose it right away.  You know what you have to do if you need some access."/>
+					<DialogEntry IsPlayer="false" Dialog="I know, I know-- ask my manager to unlock the belt for me."/>
+					<Effect EgoEffect= "20" />
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="disciplineDeborah" Name="D. Jones Demerits Review" TurnCost= "1" RequiredControl="true" Repeatable="true" Category="Train">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Fetch the paddle so we can begin your Demerits Review."/>
+					<DialogEntry IsPlayer="false" Dialog="But I don't think I have any demerits!"/>
+					<DialogEntry IsPlayer="true" Dialog="Not according to my list, young lady.  Over my knee while I read off your various failures and errors!"/>
+					<DialogEntry IsPlayer="false" Dialog="Yes, Sir!"/>
+					<Effect PrideEffect="-3"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="deborahMotivationroomapt" Name="Motivation Room Appointment" EgoCost="20" TurnCost="4" RequiredControl="true" RequiredPolicies="peaceOfMind" Category="Train" Repeatable="true">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="I've had it with you!  Your stiff necked attitude towards me is unacceptable!"/>
+					<DialogEntry IsPlayer="false" Dialog="Let me go!  You have no right--"/>
+					<DialogEntry IsPlayer="true" Dialog="As your manager, I have every right to send you here!  When you're released, I suspect you'll return to your duties with a far better attitude towards authority!"/>
+					<DialogEntry IsPlayer="false" Dialog="Please!  Don't leave me here!  Please!  I'm sorry-- I'll do whatever you want!"/>
+					<Effect PrideEffect="-20"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="gropeDeborah" Name="Grope Deborah Jones" TurnCost= "1" RequiredControl="true" Repeatable="true" Category="Fun">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="TO DO: Reqs a Harrassement Waiver policy  Hey, calm down!  I'm just giving the goods a little squeeze!"/>
+					<DialogEntry IsPlayer="false" Dialog="Please don't touch me!"/>
+					<DialogEntry IsPlayer="true" Dialog="Excuse me-- I'll cop a feel of an office girl whenever the hell I like.  Just like this!"/>
+					<DialogEntry IsPlayer="false" Dialog="Ouch!  Please stop!"/>
+					<Effect EgoEffect="2" PrideEffect="-2"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="intimatereviewDeborah" Name="Intimate Relationship Review" TurnCost= "1" RequiredPolicies= "PeaceofMind" RequiredControl="true" Category="Fun">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="I've been reviewing your PSH file.  Not very interesting reading , to be honest."/>
+					<DialogEntry IsPlayer="false" Dialog="My what file?"/>
+					<DialogEntry IsPlayer="true" Dialog="Your Personal Sexual History file.  I requested it from Pry.  It turns out you really are a frigid little goody two shoes."/>
+					<DialogEntry IsPlayer="false" Dialog="But that's my personal medical file!"/>
+					<Effect PrideEffect="-3"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="businesstripDeborah" Name="Business Trip" TurnCost= "6" RequiredPride= "50" MoneyCost= "500" RequiredControl="true" Category="Fun">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Are you looking forward to gettign fucked in a nice hotel bed?"/>
+					<DialogEntry IsPlayer="false" Dialog="Please don't speak to me that way.  I'm a professional!"/>
+					<DialogEntry IsPlayer="true" Dialog="Did you buy some lingerie for the trip like I told you?"/>
+					<DialogEntry IsPlayer="false" Dialog="Yes, of course. I know I have to look my best when you take me with you on business trips!"/>
+					<Effect PrideEffect="-5"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="giftcardDeborah" Name="Vixxxens Gift Card" TurnCost= "1" RequiredPride= "60" MoneyCost= "500" Repeatable="true" RequiredControl="true" Category="Fun">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="I always love to see what you've bought with your gift card at Vixxxens."/>
+					<DialogEntry IsPlayer="false" Dialog="I thought you might like me in this."/>
+					<DialogEntry IsPlayer="true" Dialog="I do!  Very much so.  Not very corner office is it, Miss MBA?  But quite appropriate to your new role, which is..."/>
+					<DialogEntry IsPlayer="false" Dialog="Your personal assistant."/>
+					<Effect PrideEffect="-2"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="tattooDeborah" Name="Tattoo Time" TurnCost= "1" RequiredPride= "20" MoneyCost= "1000" RequiredControl="true" Category="Fun">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="TO DO Look you deserve policy  I've decided to really put my mark on you.  You're getting a tattoo."/>
+					<DialogEntry IsPlayer="false" Dialog="Please don't make me do that!"/>
+					<DialogEntry IsPlayer="true" Dialog="A tramp stamp for my sexy little secretary to let the world know just what you are.  Here's what I want."/>
+					<DialogEntry IsPlayer="false" Dialog="You want me to get a tattoo that says (insert Player text)?  But everyone will see it!"/>
+					<Effect PrideEffect="-5"  EgoEffect= "10"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="prysurgeryDeborah" Name="Pry Cosmetic Surgery Appointment" TurnCost= "8" RequiredPride= "10" MoneyCost= "10000" RequiredControl="true" Category="Fun">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="TO DO Look you deserve policy  A senior executive like me needs a secretary that reflects my position.  That's why I've made an appointment for you."/>
+					<DialogEntry IsPlayer="false" Dialog="An appointment?  For what?"/>
+					<DialogEntry IsPlayer="true" Dialog="To get those candy apples boosted to a nice ripe pair of grapefruits.  You're getting a nice, fake, plastic set of C cups."/>
+					<DialogEntry IsPlayer="false" Dialog="Oh God!  Please-- not that!"/>
+					<Effect PowerEffect= "2"  EgoEffect= "25"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="heaterDeborah" Name="Heater Session" TurnCost= "2" RequiredPride= "10" RequiredInteractions= "deborahGoldstar" RequiredControl="true" Repeatable="true" Category="Fun">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Now that you've been trained to perform with other secretaries, I think it is time to schedule a heater for you."/>
+					<DialogEntry IsPlayer="false" Dialog="A Heater?  Oh God-- what's that?"/>
+					<DialogEntry IsPlayer="true" Dialog="A session involving you and some honey from the Secretarial Pool really putting on a show.  Send an invite to the senior execs an hour from now.  I'll think who I want to pair you up with!"/>
+					<DialogEntry IsPlayer="false" Dialog="Another girl?  In front of the managers?  Yes, Sir."/>
+					<Effect CultureEffect= ".25"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="katherineDeborah" Name="Sister Session" TurnCost= "2" RequiredPride= "10" MoneyCost= "10000" RequiredControl="true" Category="Fun">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="TO DO Katherine is hired and her pride is 20  I think you knew this was coming.  Go and fetch your little sister Katie."/>
+					<DialogEntry IsPlayer="false" Dialog="Why?  Has she done something?"/>
+					<DialogEntry IsPlayer="true" Dialog="You are both going to do something.  I'm going to watch the Jones sisters put on the hottest sister lezzie show the world as ever seen-- right here in my office.  Go and get her, slut."/>
+					<DialogEntry IsPlayer="false" Dialog="I'm so ashamed!  Why did I ever drag my own sister into all this?"/>
+					<Effect EgoEffect= "50"/>
+				</InteractionResult>
+			</Interaction>
+
 		</Fem>
 
 		<Fem Id="britneyBower" FirstName="Britney" LastName="Bower" Age="18" Ambition="30" Pride="40" BackgroundImage="TOWER 3_2">
@@ -491,7 +882,7 @@
 
 			<Interaction Id="titanDefence" Name="Titan Defence Contract" EgoCost="50" TurnCost= "2" RequiredInteractions="jointSalescalls" Category="OfficePolitics">
 				<InteractionResult>
-					<DialogEntry IsPlayer="true" Dialog="Can we keep making sales calls together?  I'm learning so much!"/>
+					<DialogEntry IsPlayer="true" Dialog="TO DO unlocks CSG Mission Titan Defence  Can we keep making sales calls together?  I'm learning so much!"/>
 					<DialogEntry IsPlayer="false" Dialog="I'm not paid to tutor you."/>
 					<DialogEntry IsPlayer="true" Dialog="I'll follow your lead completely.  Please?"/>
 					<DialogEntry IsPlayer="false" Dialog="Oh, alright.  Just as long as I get credit for the sales."/>
@@ -751,7 +1142,7 @@
 
 			<Interaction Id="personalSafety" Name="Employee Personal Safety Measures" TurnCost= "1" RequiredPride="30" RequiredControl="true" Category="Train">
 				<InteractionResult>
-					<DialogEntry IsPlayer="true" Dialog="Clients will love the kind of customer service you'll have to offer now!  TO DO: requires tbtn policy"/>
+					<DialogEntry IsPlayer="true" Dialog="TO DO: requires tbtn policy Clients will love the kind of customer service you'll have to offer now!"/>
 					<DialogEntry IsPlayer="false" Dialog="You're going to unlock me before the sales calls?"/>
 					<DialogEntry IsPlayer="true" Dialog="No-- I'll send the access key ahead of time.  They'll do the unlocking.  Then they will lock you back up and courier the key back."/>
 					<DialogEntry IsPlayer="false" Dialog="You don't even trust me with my own damn key?"/>
@@ -1390,6 +1781,16 @@
 				</InteractionResult>
 			</Interaction>
 
+			<Interaction Id="susanTitan" Name="Ask permission to help Anne Miller land Titan Defence Account" TurnCost= "1" EgoCost="10" RequiredInteractions="susanStory" Category="OfficePolitics">
+				<InteractionResult>
+					<DialogEntry IsPlayer="true" Dialog="Ms. Granger, I'm sure I can help Ms. Miller crack this one!"/>
+					<DialogEntry IsPlayer="false" Dialog="Titan Defence would be quite a feather in my-- I mean our- caps."/>
+					<DialogEntry IsPlayer="true" Dialog="Give me permission and she'll have to include me!"/>
+					<DialogEntry IsPlayer="false" Dialog="TO DO Unlock Titan Mission  Alright-- fill out the security clearences-- but don't let me down and don't annoy Anne!"/>
+					<Effect/>
+				</InteractionResult>
+			</Interaction>
+
 			<Interaction Id="susanInternship" Name="Ask to manage Internship Program" TurnCost= "1" EgoCost="10" RequiredInteractions="susanStory" Category="OfficePolitics">
 				<InteractionResult>
 					<DialogEntry IsPlayer="true" Dialog="TO DO This interaction has a 50% chance of success  ALSO because trait is indecisive, player can try twice if it fails    Ms. Granger, I really thinkk I could do a far better job running the internship program than Deborah."/>
@@ -1582,7 +1983,7 @@
 
 			<Interaction Id="susanDiversity" Name="Diversity Certification" TurnCost= "8" RequiredPride= "40" RequiredControl="true" Category="Train">
 				<InteractionResult>
-					<DialogEntry IsPlayer="true" Dialog="I'veapproved the paperwork for your training."/>
+					<DialogEntry IsPlayer="true" Dialog="I've approved the paperwork for your training."/>
 					<DialogEntry IsPlayer="false" Dialog="What kind of training?"/>
 					<DialogEntry IsPlayer="true" Dialog="Sensitivity training-- so you'll become more comfortable interacting with lesbians."/>
 					<DialogEntry IsPlayer="false" Dialog="TO DO  will reveal trait Lipstick Lesbian  But I am already tolerant and sensitive!"/>
@@ -1610,7 +2011,7 @@
 				</InteractionResult>
 			</Interaction>
 
-			<Interaction Id="disciplineSusan" Name="Susan Granger Demerits RTeview" TurnCost= "1" RequiredControl="true" Repeatable="true" Category="Train">
+			<Interaction Id="disciplineSusan" Name="Susan Granger Demerits Review" TurnCost= "1" RequiredControl="true" Repeatable="true" Category="Train">
 				<InteractionResult>
 					<DialogEntry IsPlayer="true" Dialog="You'll only improve if I give you feedback."/>
 					<DialogEntry IsPlayer="false" Dialog="But why does it always require corporal punishment?"/>

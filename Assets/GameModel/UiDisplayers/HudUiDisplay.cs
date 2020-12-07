@@ -25,6 +25,9 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 	[SerializeField] private TMP_Text Month;
 
 	[SerializeField] private Button Rest;
+	[SerializeField] private Button PlayerOffice;
+
+	[SerializeField] private PlayerOfficeUiDisplay PlayerOfficeUiPrefab;
 
 	public void Setup(MainGameManager mgm)
 	{
@@ -32,6 +35,10 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 		{
 			mgm.Data.Ego += 5;
 			mgm.HandleTurnChange();
+		});
+		PlayerOffice.onClick.AddListener(() =>
+		{
+			ShowPlayerOffice();
 		});
 	}
 
@@ -54,5 +61,27 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 		var DateTime = mgm.GetDateFromTurnNumber();
 		Time.text = $"{timeOfDay}";
 		Day.text = $"{DateTime.DayOfWeek}";
-		Month.text = $"{DateTime:MMMM} {DateTime.Day}";}
+		Month.text = $"{DateTime:MMMM} {DateTime.Day}";
+
+		playerOfficeDisplay?.RefreshUiDisplay(mgm);
+	}
+
+	private PlayerOfficeUiDisplay playerOfficeDisplay = null;
+	public void ShowPlayerOffice()
+	{
+		playerOfficeDisplay = Instantiate(PlayerOfficeUiPrefab);
+		playerOfficeDisplay.Setup(this, MainGameManager.Manager);
+		playerOfficeDisplay.RefreshUiDisplay(MainGameManager.Manager);
+		PlayerOffice.gameObject.SetActive(false);
+	}
+
+	public void ClosePlayerOffice()
+	{
+		if (playerOfficeDisplay != null)
+		{
+			GameObject.Destroy(playerOfficeDisplay.gameObject);
+			playerOfficeDisplay = null;
+			PlayerOffice.gameObject.SetActive(true);
+		}
+	}
 }

@@ -45,7 +45,7 @@ namespace Assets.GameModel.UiDisplayers
 				currOpenDepartment = null;
 			}
 		}
-		
+
 		public void RefreshUiDisplay(MainGameManager mgm)
 		{
 			foreach (var button in DepartmentsParent.GetComponentsInChildren<DepartmentSelectionUiDisplay>(true))

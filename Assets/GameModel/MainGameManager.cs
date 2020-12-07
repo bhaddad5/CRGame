@@ -144,5 +144,28 @@ namespace Assets.GameModel
 				return 20000;
 			else return 40000;
 		}
+
+		public string GetPlayerOfficeBackgroundId()
+		{
+			if (Data.Power < 10)
+				return "cubicleOffice";
+			else if (Data.Power < 20)
+				return "execOffice";
+			else if (Data.Power < 30)
+				return "managerOffice";
+			else if (Data.Power < 40)
+				return "directorOffice";
+			else if (Data.Power < 50)
+				return "generalManagerOffice";
+			else if (Data.Power < 60)
+				return "managingDirectorOffice";
+			else if (Data.Power < 70)
+				return "VicePresidentOffice";
+			else if (Data.Power < 80)
+				return "execVpOffice";
+			else if (Data.Power < 90)
+				return "CEOOffice";
+			else return "CEOOffice";
+		}
 	}
 }
