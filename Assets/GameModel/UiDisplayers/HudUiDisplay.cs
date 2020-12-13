@@ -39,6 +39,8 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 
 	[SerializeField] private Transform MainMenu;
 
+	[SerializeField] private LoadSaveMenuManager LoadSaveMenuManager;
+
 	private MainGameManager mgm;
 	public void Setup(MainGameManager mgm)
 	{
@@ -55,6 +57,10 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 		QuitGameButton.onClick.AddListener(Application.Quit);
 		SaveGameButton.onClick.AddListener(SaveGame);
 		LoadGameButton.onClick.AddListener(LoadGame);
+
+		LoadSaveMenuManager.Setup(mgm);
+
+		HideMainMenu();
 	}
 
 	void Update()
@@ -121,27 +127,14 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 		MainMenu.gameObject.SetActive(false);
 	}
 
-	string savesDir => Path.Combine(Application.streamingAssetsPath, "Saves");
+	
 	private void SaveGame()
 	{
-		if (!Directory.Exists(savesDir))
-			Directory.CreateDirectory(savesDir);
-
-		string defaultSaveName = $"CMan Save {DateTime.Now:yyyy-MM-dd-hh-mm-ss}.sav";
-		string xmlGameData = mgm.GetXmlSaveData();
-		string path = Path.Combine(savesDir, defaultSaveName);
-		File.WriteAllText(path, xmlGameData);
+		LoadSaveMenuManager.Show(false);
 	}
 
 	private void LoadGame()
 	{
-		if (!Directory.Exists(savesDir))
-			Directory.CreateDirectory(savesDir);
-		var files = Directory.GetFiles(savesDir, "*.sav");
-		if (files.Length > 0)
-		{
-			var saveFile = files[files.Length - 1];
-			mgm.InitializeGame(saveFile);
-		}
+		LoadSaveMenuManager.Show(true);
 	}
 }

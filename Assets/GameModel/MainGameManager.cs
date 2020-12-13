@@ -32,10 +32,15 @@ namespace Assets.GameModel
 
 		public void InitializeGame(string xmlDataPath)
 		{
-			if(hudUiDisplay != null)
+			if (hudUiDisplay != null)
+			{
 				GameObject.Destroy(hudUiDisplay.gameObject);
-			if(mainMapUiDisplay != null)
+			}
+			if (mainMapUiDisplay != null)
+			{
+				mainMapUiDisplay.CloseCurrentDepartment();
 				GameObject.Destroy(mainMapUiDisplay.gameObject);
+			}
 
 			hudUiDisplay = Instantiate(HudUiDisplayPrefab);
 			mainMapUiDisplay = Instantiate(MainMapUiDisplayPrefab);
