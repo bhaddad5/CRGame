@@ -90,4 +90,31 @@ public class GameData
 		Debug.LogError($"Could not find department containing fem {fem.Id}");
 		return null;
 	}
+
+	public List<Trophy> GetOwnedTrophies()
+	{
+		List<Trophy> res = new List<Trophy>();
+		foreach (var department in Departments)
+		{
+			foreach (var fem in department.Fems)
+			{
+				foreach (var trophy in fem.Trophies)
+				{
+					if(trophy.Owned)
+						res.Add(trophy);
+				}
+			}
+		}
+		return res;
+	}
+
+	public List<string> GetOwnedTrophyIds()
+	{
+		List<string> res = new List<string>();
+		foreach (var trophy in GetOwnedTrophies())
+		{
+			res.Add(trophy.Id);
+		}
+		return res;
+	}
 }

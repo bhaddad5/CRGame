@@ -22,6 +22,9 @@ namespace Assets.GameModel.XmlParsers
 		[XmlElement("Trait", typeof(TraitXml))]
 		public TraitXml[] Traits = new TraitXml[0];
 
+		[XmlElement("Trophy", typeof(TrophyXml))]
+		public TrophyXml[] Trophies = new TrophyXml[0];
+
 		public Fem FromXml()
 		{
 			List<Interaction> interactions = new List<Interaction>();
@@ -36,6 +39,12 @@ namespace Assets.GameModel.XmlParsers
 				traits.Add(traitXml.FromXml());
 			}
 
+			List<Trophy> trophies = new List<Trophy>();
+			foreach (var trophyXml in Trophies ?? new TrophyXml[0])
+			{
+				trophies.Add(trophyXml.FromXml());
+			}
+
 			return new Fem()
 			{
 				Id = Id,
@@ -47,7 +56,8 @@ namespace Assets.GameModel.XmlParsers
 				Age = Age,
 				Interactions = interactions,
 				Traits = traits,
-				BackgroundImage = BackgroundImagesLookup.GetBackgroundImage(BackgroundImage),
+				Trophies = trophies,
+				BackgroundImage = ImageLookup.Backgrounds.GetImage(BackgroundImage),
 			};
 		}
 
@@ -65,6 +75,12 @@ namespace Assets.GameModel.XmlParsers
 				traits.Add(TraitXml.ToXml(trait));
 			}
 
+			List<TrophyXml> trophies = new List<TrophyXml>();
+			foreach (var trophy in ob.Trophies)
+			{
+				trophies.Add(TrophyXml.ToXml(trophy));
+			}
+
 			return new FemXml()
 			{
 				Id = ob.Id,
@@ -76,6 +92,7 @@ namespace Assets.GameModel.XmlParsers
 				Age = ob.Age,
 				Interactions = interactions.ToArray(),
 				Traits = traits.ToArray(),
+				Trophies = trophies.ToArray(),
 				BackgroundImage = ob.BackgroundImage.name,
 			};
 		}

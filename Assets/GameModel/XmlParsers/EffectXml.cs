@@ -22,6 +22,7 @@ namespace Assets.GameModel.XmlParsers
 		[XmlAttribute] [DefaultValue(false)] public bool RemoveNpcFromGame = false;
 		[XmlAttribute] [DefaultValue("")] public string TraitsAdded = "";
 		[XmlAttribute] [DefaultValue("")] public string TraitsRemoved = "";
+		[XmlAttribute] [DefaultValue("")] public string TrophiesClaimed = "";
 
 		public Effect FromXml()
 		{
@@ -43,6 +44,7 @@ namespace Assets.GameModel.XmlParsers
 				PrideEffect = PrideEffect,
 				TraitsAdded = TraitsAdded.XmlStringToList(),
 				TraitsRemoved = TraitsRemoved.XmlStringToList(),
+				TrophiesClaimed = TrophiesClaimed.XmlStringToList(),
 			};
 		}
 
@@ -66,6 +68,7 @@ namespace Assets.GameModel.XmlParsers
 				PrideEffect = ob.PrideEffect,
 				TraitsAdded = ob.TraitsAdded.ListToXmlString(),
 				TraitsRemoved = ob.TraitsRemoved.ListToXmlString(),
+				TrophiesClaimed = ob.TrophiesClaimed.ListToXmlString(),
 			};
 		}
 	}

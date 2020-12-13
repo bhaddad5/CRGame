@@ -11,15 +11,29 @@ public class PlayerOfficeUiDisplay : MonoBehaviour, IUiDisplay
 	[SerializeField] private Transform TrophyCaseParent;
 	[SerializeField] private Image BackgroundImage;
 
+	[SerializeField] private TrophyDisplay TrophyDisplayPrefab;
+
 	public void Setup(HudUiDisplay hudUi, MainGameManager mgm)
 	{
 		BackButton.onClick.AddListener(() => hudUi.ClosePlayerOffice());
 
-		
+		RefreshUiDisplay(mgm);
 	}
 
 	public void RefreshUiDisplay(MainGameManager mgm)
 	{
-		BackgroundImage.sprite = BackgroundImagesLookup.GetBackgroundImage(mgm.GetPlayerOfficeBackgroundId());
+		BackgroundImage.sprite = ImageLookup.Backgrounds.GetImage(mgm.GetPlayerOfficeBackgroundId());
+
+		for (int i = 0; i < TrophyCaseParent.childCount; i++)
+		{
+			GameObject.Destroy(TrophyCaseParent.GetChild(i).gameObject);
+		}
+
+		foreach (var trophy in mgm.Data.GetOwnedTrophies())
+		{
+			var trophyOb = Instantiate(TrophyDisplayPrefab);
+			trophyOb.Setup(trophy);
+			trophyOb.transform.SetParent(TrophyCaseParent);
+		}
 	}
 }

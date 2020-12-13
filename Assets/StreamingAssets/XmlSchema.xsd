@@ -20,6 +20,7 @@
 		<xs:attribute name="RemoveNpcFromGame" type="xs:boolean"/>
 		<xs:attribute name="TraitsAdded" type="xs:string"/>
 		<xs:attribute name="TraitsRemoved" type="xs:string"/>
+		<xs:attribute name="TrophiesClaimed" type="xs:string"/>
 	</xs:complexType>
 
 	<xs:complexType name="DialogEntry">
@@ -74,6 +75,7 @@
 		<xs:attribute name="RequiredDepartmentsControlled" type="xs:string"/>
 		<xs:attribute name="RequiredInteractions" type="xs:string"/>
 		<xs:attribute name="RequiredPolicies" type="xs:string"/>
+		<xs:attribute name="RequiredTrophies" type="xs:string"/>
 		<xs:attribute name="RequiredAmbition" type="xs:float"/>
 		<xs:attribute name="RequiredPride" type="xs:float"/>
 		<xs:attribute name="RequiredControl" type="xs:boolean"/>
@@ -94,10 +96,20 @@
 		<xs:attribute name="Name" type="xs:string" use="required"/>
 	</xs:complexType>
 
+	<xs:complexType name="Trophy">
+		<xs:attribute name="Id" type="xs:string" use="required"/>
+		<xs:attribute name="Name" type="xs:string" use="required"/>
+		<xs:attribute name="Image" type="xs:string" use="required"/>
+		<xs:attribute name="Owned" type="xs:boolean"/>
+	</xs:complexType>
+
 	<xs:complexType name="Fem">
 		<xs:sequence>
 			<xs:choice maxOccurs="unbounded" minOccurs="0">
 				<xs:element name="Trait" type="Trait"/>
+			</xs:choice>
+			<xs:choice maxOccurs="unbounded" minOccurs="0">
+				<xs:element name="Trophy" type="Trophy"/>
 			</xs:choice>
 			<xs:choice maxOccurs="unbounded" minOccurs="0">
 				<xs:element name="Interaction" type="Interaction"/>

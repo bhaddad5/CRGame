@@ -4,61 +4,42 @@ using System.IO;
 using System.Linq;
 using UnityEngine;
 
-public static class LocationIconLookup
+public class ImageLookup
 {
-	private static Dictionary<string, Sprite> iconsLookup = null;
+	public static ImageLookup Icons = new ImageLookup("LocationIcons");
+	public static ImageLookup Backgrounds = new ImageLookup("OfficePics");
+	public static ImageLookup Trophies = new ImageLookup("Trophies");
 
-	public static Sprite GetLocationIcon(string iconId)
+	private Dictionary<string, Sprite> lookup = null;
+	private string resourcesDir;
+
+	public ImageLookup(string resourcesDir)
 	{
-		if (string.IsNullOrEmpty(iconId))
-			return null;
-
-		if (iconsLookup == null)
-		{
-			iconsLookup = new Dictionary<string, Sprite>();
-			var icons = Resources.LoadAll<Sprite>("LocationIcons").ToList();
-			foreach (var icon in icons)
-			{
-				iconsLookup[icon.name] = icon;
-			}
-		}
-
-		if (!iconsLookup.ContainsKey(iconId))
-		{
-			Debug.LogError($"Cannot find location icon with id {iconId}");
-			return null;
-		}
-
-		return iconsLookup[iconId];
+		this.resourcesDir = resourcesDir;
 	}
-}
 
-public static class BackgroundImagesLookup
-{
-	private static Dictionary<string, Sprite> backgroundsLookup = null;
-
-	public static Sprite GetBackgroundImage(string backgroundId)
+	public Sprite GetImage(string imageName)
 	{
-		if (string.IsNullOrEmpty(backgroundId))
+		if (string.IsNullOrEmpty(imageName))
 			return null;
 
-		if (backgroundsLookup == null)
+		if (lookup == null)
 		{
-			backgroundsLookup = new Dictionary<string, Sprite>();
-			var icons = Resources.LoadAll<Sprite>("OfficePics").ToList();
-			foreach (var icon in icons)
+			lookup = new Dictionary<string, Sprite>();
+			var images = Resources.LoadAll<Sprite>(resourcesDir).ToList();
+			foreach (var image in images)
 			{
-				backgroundsLookup[icon.name] = icon;
+				lookup[image.name] = image;
 			}
 		}
 
-		if (!backgroundsLookup.ContainsKey(backgroundId))
+		if (!lookup.ContainsKey(imageName))
 		{
-			Debug.LogError($"Cannot find location icon with id {backgroundId}");
+			Debug.LogError($"Cannot find image in location {resourcesDir} with name {imageName}");
 			return null;
 		}
 
-		return backgroundsLookup[backgroundId];
+		return lookup[imageName];
 	}
 }
 

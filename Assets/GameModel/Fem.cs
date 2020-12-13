@@ -20,6 +20,7 @@ namespace Assets.GameModel
 
 		public List<Interaction> Interactions = new List<Interaction>();
 		public List<Trait> Traits = new List<Trait>();
+		public List<Trophy> Trophies = new List<Trophy>();
 
 		public string DetermineCurrPictureId()
 		{

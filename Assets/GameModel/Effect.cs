@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Assets.GameModel
@@ -21,6 +22,7 @@ namespace Assets.GameModel
 		public bool RemoveNpcFromGame = false;
 		public List<string> TraitsAdded;
 		public List<string> TraitsRemoved;
+		public List<string> TrophiesClaimed;
 
 		public void ExecuteEffect(MainGameManager mgm, Fem fem)
 		{
@@ -52,6 +54,17 @@ namespace Assets.GameModel
 			mgm.Data.Brand = Mathf.Max(mgm.Data.Brand + BrandEffect, 0);
 			mgm.Data.Revenue = Mathf.Max(mgm.Data.Revenue + RevanueEffect, 0);
 			mgm.Data.Hornical = Mathf.Max(mgm.Data.Hornical + HornicalEffect, 0);
+
+			foreach (var trophyId in TrophiesClaimed)
+			{
+				var trophy = fem.Trophies.FirstOrDefault(t => t.Id == trophyId);
+				if (trophy == null)
+				{
+					Debug.LogError($"Cannot find trophy with id {trophyId} in fem {fem.Id} to claim!");
+					continue;
+				}
+				trophy.Owned = true;
+			}
 		}
 	}
 }

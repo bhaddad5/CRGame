@@ -36,6 +36,7 @@ namespace Assets.GameModel
 		public List<string> RequiredPolicies = new List<string>();
 		public bool RequiredControl = false;
 		public List<string> RequiredDepartmentsControled = new List<string>();
+		public List<string> RequiredTrophies = new List<string>();
 		public float RequiredAmbition = -1;
 		public float RequiredPride = -1;
 
@@ -53,6 +54,11 @@ namespace Assets.GameModel
 			foreach (var interactionDept in RequiredDepartmentsControled)
 			{
 				if (!mgm.Data.GetControlledDepartmentIds().Contains(interactionDept))
+					return false;
+			}
+			foreach (var trophy in RequiredTrophies)
+			{
+				if (!mgm.Data.GetOwnedTrophyIds().Contains(trophy))
 					return false;
 			}
 			foreach (var interactionId in RequiredInteractions)

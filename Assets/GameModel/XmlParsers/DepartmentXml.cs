@@ -48,8 +48,8 @@ namespace Assets.GameModel.XmlParsers
 				Fems = fems,
 				Policies = policies,
 				UiPosition = new Vector2(UiPosX, UiPosY),
-				BackgroundImage = BackgroundImagesLookup.GetBackgroundImage(BackgroundImage),
-				Icon = LocationIconLookup.GetLocationIcon(LocationIcon),
+				BackgroundImage = ImageLookup.Backgrounds.GetImage(BackgroundImage),
+				Icon = ImageLookup.Icons.GetImage(LocationIcon),
 			};
 		}
 
