@@ -17,6 +17,7 @@ namespace Assets.GameModel.XmlParsers
 		[XmlAttribute] [DefaultValue(0)] public float SpreadsheetsEffect = 0;
 		[XmlAttribute] [DefaultValue(0)] public float BrandEffect = 0;
 		[XmlAttribute] [DefaultValue(0)] public float RevanueEffect = 0;
+		[XmlAttribute] [DefaultValue(0)] public int HornicalEffect = 0;
 		[XmlAttribute] [DefaultValue(false)] public bool ControlEffect = false;
 		[XmlAttribute] [DefaultValue(false)] public bool RemoveNpcFromGame = false;
 		[XmlAttribute] [DefaultValue("")] public string TraitsAdded = "";
@@ -38,6 +39,7 @@ namespace Assets.GameModel.XmlParsers
 				SpreadsheetsEffect = SpreadsheetsEffect,
 				BrandEffect = BrandEffect,
 				RevanueEffect = RevanueEffect,
+				HornicalEffect = HornicalEffect,
 				PrideEffect = PrideEffect,
 				TraitsAdded = TraitsAdded.XmlStringToList(),
 				TraitsRemoved = TraitsRemoved.XmlStringToList(),
@@ -60,6 +62,7 @@ namespace Assets.GameModel.XmlParsers
 				SpreadsheetsEffect = ob.SpreadsheetsEffect,
 				BrandEffect = ob.BrandEffect,
 				RevanueEffect = ob.RevanueEffect,
+				HornicalEffect = ob.HornicalEffect,
 				PrideEffect = ob.PrideEffect,
 				TraitsAdded = ob.TraitsAdded.ListToXmlString(),
 				TraitsRemoved = ob.TraitsRemoved.ListToXmlString(),

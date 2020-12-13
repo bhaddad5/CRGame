@@ -22,6 +22,8 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 	[SerializeField] private TMP_Text Revanue;
 	[SerializeField] private TMP_Text Patents;
 
+	[SerializeField] private TMP_Text Hornical;
+
 	[SerializeField] private TMP_Text Day;
 	[SerializeField] private TMP_Text Time;
 	[SerializeField] private TMP_Text Month;
@@ -88,6 +90,8 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 		Patents.text = $"{mgm.Data.Patents}";
 		Brand.text = $"{mgm.Data.Brand}";
 		Revanue.text = $"{mgm.Data.Revenue}";
+
+		Hornical.text = $"{mgm.Data.Hornical}";
 
 		string timeOfDay = mgm.Data.TurnNumber % 2 == 1 ? "Afternoon" : "Morning";
 		var DateTime = mgm.GetDateFromTurnNumber();

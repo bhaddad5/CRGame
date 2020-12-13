@@ -23,6 +23,7 @@ namespace Assets.GameModel.XmlParsers
 		[XmlAttribute] [DefaultValue(0)] public float BrandCost = 0;
 		[XmlAttribute] [DefaultValue(0)] public float RevanueCost = 0;
 		[XmlAttribute] [DefaultValue(0)] public float PatentsCost = 0;
+		[XmlAttribute] [DefaultValue(0)] public int HornicalCost = 0;
 
 		[XmlAttribute] [DefaultValue("")] public string RequiredInteractions = "";
 		[XmlAttribute] [DefaultValue("")] public string RequiredPolicies = "";
@@ -57,6 +58,7 @@ namespace Assets.GameModel.XmlParsers
 				BrandCost = BrandCost,
 				RevanueCost = RevanueCost,
 				PatentsCost = PatentsCost,
+				HornicalCost = HornicalCost,
 				RequiredInteractions = RequiredInteractions.XmlStringToList(),
 				RequiredDepartmentsControled = RequiredDepartmentsControled.XmlStringToList(),
 				RequiredPolicies = RequiredPolicies.XmlStringToList(),
@@ -90,6 +92,7 @@ namespace Assets.GameModel.XmlParsers
 				BrandCost = ob.BrandCost,
 				RevanueCost = ob.RevanueCost,
 				PatentsCost = ob.PatentsCost,
+				HornicalCost = ob.HornicalCost,
 				RequiredInteractions = ob.RequiredInteractions.ListToXmlString(),
 				RequiredDepartmentsControled = ob.RequiredDepartmentsControled.ListToXmlString(),
 				RequiredPolicies = ob.RequiredPolicies.ListToXmlString(),

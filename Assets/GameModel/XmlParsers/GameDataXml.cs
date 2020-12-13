@@ -18,6 +18,7 @@ namespace Assets.GameModel.XmlParsers
 		[XmlAttribute] [DefaultValue(0)] public float Spreadsheets = 0;
 		[XmlAttribute] [DefaultValue(0)] public float Brand = 0;
 		[XmlAttribute] [DefaultValue(0)] public float Revenue = 0;
+		[XmlAttribute] [DefaultValue(0)] public int Hornical = 0;
 
 		[XmlElement("Department", typeof(DepartmentXml))]
 		public DepartmentXml[] Departments = new DepartmentXml[0];
@@ -42,6 +43,7 @@ namespace Assets.GameModel.XmlParsers
 				Spreadsheets = Spreadsheets,
 				Brand = Brand,
 				Revenue = Revenue,
+				Hornical = Hornical,
 				Departments = depts,
 			};
 		}
@@ -66,6 +68,7 @@ namespace Assets.GameModel.XmlParsers
 				Spreadsheets = ob.Spreadsheets,
 				Brand = ob.Brand,
 				Revenue = ob.Revenue,
+				Hornical = ob.Hornical,
 				Departments = depts.ToArray(),
 			};
 		}

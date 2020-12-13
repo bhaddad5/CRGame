@@ -15,6 +15,7 @@ public class GameData
 	public float Spreadsheets = 0;
 	public float Brand = 0;
 	public float Revenue = 0;
+	public int Hornical = 0;
 
 	public List<Department> Departments = new List<Department>();
 

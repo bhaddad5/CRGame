@@ -65,6 +65,8 @@ namespace Assets.GameModel.UiDisplayers
 				tooltip += $"\nRequires {interaction.RevanueCost} Revenue";
 			if (interaction.PatentsCost > mgm.Data.Patents)
 				tooltip += $"\nRequires {interaction.PatentsCost} Patents";
+			if (interaction.HornicalCost > mgm.Data.Hornical)
+				tooltip += $"\nRequires {interaction.HornicalCost} Hornical";
 
 			if (tooltip.Length > 0)
 				return tooltip.Substring(1);

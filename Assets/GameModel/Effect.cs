@@ -16,6 +16,7 @@ namespace Assets.GameModel
 		public float SpreadsheetsEffect = 0;
 		public float BrandEffect = 0;
 		public float RevanueEffect = 0;
+		public int HornicalEffect = 0;
 		public bool ControlEffect = false;
 		public bool RemoveNpcFromGame = false;
 		public List<string> TraitsAdded;
@@ -50,6 +51,7 @@ namespace Assets.GameModel
 			mgm.Data.Spreadsheets = Mathf.Max(mgm.Data.Spreadsheets + SpreadsheetsEffect, 0);
 			mgm.Data.Brand = Mathf.Max(mgm.Data.Brand + BrandEffect, 0);
 			mgm.Data.Revenue = Mathf.Max(mgm.Data.Revenue + RevanueEffect, 0);
+			mgm.Data.Hornical = Mathf.Max(mgm.Data.Hornical + HornicalEffect, 0);
 		}
 	}
 }

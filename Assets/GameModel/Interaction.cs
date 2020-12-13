@@ -30,6 +30,7 @@ namespace Assets.GameModel
 		public float PatentsCost = 0;
 		public float BrandCost = 0;
 		public float RevanueCost = 0;
+		public int HornicalCost = 0;
 
 		public List<string> RequiredInteractions = new List<string>();
 		public List<string> RequiredPolicies = new List<string>();
@@ -92,14 +93,21 @@ namespace Assets.GameModel
 			       CultureCost <= mgm.Data.CorporateCulture && 
 			       BrandCost <= mgm.Data.Brand &&
 			       SpreadsheetsCost <= mgm.Data.Spreadsheets && 
-			       RevanueCost <= mgm.Data.Revenue && 
-			       PatentsCost <= mgm.Data.Patents;
+			       RevanueCost <= mgm.Data.Revenue &&
+			       PatentsCost <= mgm.Data.Patents &&
+			       HornicalCost <= mgm.Data.Hornical;
 		}
 
 		public InteractionResult GetInteractionResult(MainGameManager mgm, Fem fem)
 		{
 			mgm.Data.Ego -= EgoCost;
 			mgm.Data.Funds -= MoneyCost;
+			mgm.Data.Hornical -= HornicalCost;
+			mgm.Data.CorporateCulture -= CultureCost;
+			mgm.Data.Brand -= BrandCost;
+			mgm.Data.Spreadsheets -= SpreadsheetsCost;
+			mgm.Data.Revenue -= RevanueCost;
+			mgm.Data.Patents -= PatentsCost;
 
 			Completed = true;
 
