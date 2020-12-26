@@ -30,7 +30,7 @@ namespace Assets.GameModel.UiDisplayers
 
 			InteractionsHandler.Setup(fem.Interactions, fem, mgm, DialogHandler);
 
-			DialogHandler.Setup(fem, this);
+			DialogHandler.Setup(fem, this, mgm);
 			
 			BackButton.onClick.AddListener(() => duid.CloseCurrentFem());
 		}

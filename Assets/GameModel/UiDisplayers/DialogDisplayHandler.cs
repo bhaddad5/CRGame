@@ -16,9 +16,11 @@ public class DialogDisplayHandler : MonoBehaviour
 
 	private Fem fem;
 	private FemUiDisplay femUiDisplay;
+	private MainGameManager mgm;
 
-	public void Setup(Fem fem, FemUiDisplay femUiDisplay)
+	public void Setup(Fem fem, FemUiDisplay femUiDisplay, MainGameManager mgm)
 	{
+		this.mgm = mgm;
 		this.fem = fem;
 		this.femUiDisplay = femUiDisplay;
 		DialogAreaButton.onClick.AddListener(() =>
@@ -67,8 +69,13 @@ public class DialogDisplayHandler : MonoBehaviour
 		var dialog = currDialogsToShow[0];
 		currDialogsToShow.RemoveAt(0);
 
-		SpeakerName.text = dialog.IsPlayer ? "Player" : fem.FirstName;
-		DialogText.text = "";
+		SpeakerName.text = "";
+		if (dialog.CurrSpeaker == DialogEntry.Speaker.Player)
+			SpeakerName.text = "Player";
+		else if (dialog.CurrSpeaker == DialogEntry.Speaker.Fem)
+			SpeakerName.text = fem.FirstName;
+		else if (dialog.CurrSpeaker == DialogEntry.Speaker.CustomFemId)
+			SpeakerName.text = mgm.Data.GetFemById(dialog.CustomSpeakerId).FirstName;
 		NextDialogImage.enabled = false;
 		textToShow = dialog.Text;
 		if (dialog.NpcImage != "")

@@ -10,7 +10,9 @@ namespace Assets.GameModel.XmlParsers
 {
 	public class DialogEntryXml
 	{
-		[XmlAttribute] [DefaultValue(false)] public bool IsPlayer = false;
+		[XmlAttribute] [DefaultValue("")] public string Speaker = "";
+		[XmlAttribute] [DefaultValue("")] public string CustomSpeakerId = "";
+
 		[XmlAttribute] [DefaultValue("")] public string Dialog = "";
 
 		[XmlAttribute] [DefaultValue(false)] public bool InPlayerOffice = false;
@@ -18,9 +20,11 @@ namespace Assets.GameModel.XmlParsers
 
 		public DialogEntry FromXml()
 		{
+			DialogEntry.Speaker.TryParse(Speaker, out DialogEntry.Speaker speaker);
 			return new DialogEntry()
 			{
-				IsPlayer = IsPlayer,
+				CurrSpeaker = speaker,
+				CustomSpeakerId = CustomSpeakerId,
 				Text = Dialog,
 				NpcImage = NpcImage,
 				InPlayerOffice = InPlayerOffice,
@@ -31,7 +35,8 @@ namespace Assets.GameModel.XmlParsers
 		{
 			return new DialogEntryXml()
 			{
-				IsPlayer = ob.IsPlayer,
+				Speaker = ob.CurrSpeaker.ToString(),
+				CustomSpeakerId = ob.CustomSpeakerId,
 				Dialog = ob.Text,
 				InPlayerOffice = ob.InPlayerOffice,
 				NpcImage = ob.NpcImage,

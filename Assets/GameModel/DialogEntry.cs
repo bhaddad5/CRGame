@@ -6,7 +6,15 @@ namespace Assets.GameModel
 {
 	public class DialogEntry
 	{
-		public bool IsPlayer = false;
+		public enum Speaker
+		{
+			Player,
+			Fem,
+			Narrator,
+			CustomFemId,
+		}
+		public Speaker CurrSpeaker = Speaker.Fem;
+		public string CustomSpeakerId = "";
 		public string Text = "";
 
 		//Should these be up a level in InteractionResult?

@@ -24,7 +24,17 @@
 	</xs:complexType>
 
 	<xs:complexType name="DialogEntry">
-		<xs:attribute name="IsPlayer" type="xs:boolean" use="required"/>
+		<xs:attribute name="Speaker" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="Player"/>
+					<xs:enumeration value="Fem"/>
+					<xs:enumeration value="Narrator"/>
+					<xs:enumeration value="CustomFemId"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="CustomSpeakerId" type="xs:string"/>
 		<xs:attribute name="Dialog" type="xs:string" use="required"/>
 		<xs:attribute name="NpcImage" type="xs:string"/>
 		<xs:attribute name="InPlayerOffice" type="xs:boolean"/>
