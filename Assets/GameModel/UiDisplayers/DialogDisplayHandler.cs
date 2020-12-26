@@ -78,6 +78,7 @@ public class DialogDisplayHandler : MonoBehaviour
 			SpeakerName.text = mgm.Data.GetFemById(dialog.CustomSpeakerId).FirstName;
 		NextDialogImage.enabled = false;
 		textToShow = dialog.Text;
+		DialogText.text = "";
 		if (dialog.NpcImage != "")
 			femUiDisplay.SetImage(dialog.NpcImage);
 

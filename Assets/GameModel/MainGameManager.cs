@@ -38,7 +38,7 @@ namespace Assets.GameModel
 			}
 			if (mainMapUiDisplay != null)
 			{
-				mainMapUiDisplay.CloseCurrentDepartment();
+				mainMapUiDisplay.CloseCurrentDepartment(false);
 				GameObject.Destroy(mainMapUiDisplay.gameObject);
 			}
 
@@ -76,7 +76,7 @@ namespace Assets.GameModel
 				HandleWeekChange();
 			}
 
-			mainMapUiDisplay.CloseCurrentDepartment();
+			mainMapUiDisplay.CloseCurrentDepartment(true);
 			RefreshAllUi();
 		}
 

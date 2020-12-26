@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Assets.GameModel;
 using TMPro;
@@ -20,11 +21,11 @@ namespace Assets.GameModel.UiDisplayers
 
 		[SerializeField] private PolicyUiDisplay PolicyButtonPrefab;
 
-		private Department dept;
+		public Department Dept;
 		public void Setup(Department dept, MainMapUiDisplay mguid, MainGameManager mgm)
 		{
-			this.dept = dept;
-			BackButton.onClick.AddListener(() => mguid.CloseCurrentDepartment());
+			this.Dept = dept;
+			BackButton.onClick.AddListener(() => mguid.CloseCurrentDepartment(false));
 
 			foreach (Fem fem in dept.Fems)
 			{
@@ -60,8 +61,8 @@ namespace Assets.GameModel.UiDisplayers
 
 		public void RefreshUiDisplay(MainGameManager mgm)
 		{
-			BackgroundImage.sprite = dept.BackgroundImage;
-			Name.text = dept.Name;
+			BackgroundImage.sprite = Dept.BackgroundImage;
+			Name.text = Dept.Name;
 
 			foreach (var button in FemOptionsParent.GetComponentsInChildren<FemSelectionUiDisplay>(true))
 				button.RefreshUiDisplay(mgm);

@@ -18,8 +18,10 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private DepartmentSelectionUiDisplay DepartmentButtonPrefab;
 		[SerializeField] private DepartmentUiDisplay DepartmentUiPrefab;
 
+		private MainGameManager mgm;
 		public void Setup(MainGameManager mgm, List<Department> locations)
 		{
+			this.mgm = mgm;
 			foreach (Department dept in locations)
 			{
 				var d = Instantiate(DepartmentButtonPrefab);
@@ -36,13 +38,16 @@ namespace Assets.GameModel.UiDisplayers
 			currOpenDepartment.RefreshUiDisplay(mgm);
 		}
 
-		public void CloseCurrentDepartment()
+		public void CloseCurrentDepartment(bool onlyCloseIfInaccessable)
 		{
 			if (currOpenDepartment != null)
 			{
 				currOpenDepartment.CloseCurrentFem();
-				GameObject.Destroy(currOpenDepartment.gameObject);
-				currOpenDepartment = null;
+				if (!onlyCloseIfInaccessable || !currOpenDepartment.Dept.IsAccessible(mgm))
+				{
+					GameObject.Destroy(currOpenDepartment.gameObject);
+					currOpenDepartment = null;
+				}
 			}
 		}
 

@@ -24,5 +24,11 @@ namespace Assets.GameModel
 		{
 			return Fems[0].Controlled;
 		}
+
+		public bool IsAccessible(MainGameManager mgm)
+		{
+			var dayOfWeek = mgm.GetDateFromTurnNumber().DayOfWeek;
+			return !ClosedOnWeekends || (dayOfWeek != DayOfWeek.Saturday && dayOfWeek != DayOfWeek.Sunday);
+		}
 	}
 }
