@@ -7,12 +7,19 @@
 
 		</Fem>
 		<Fem Id="meganQuinn" FirstName="Meghan" LastName="Quinn" Age="31" Ambition="0" Pride="10" BackgroundImage="pussywillows">
-			<Interaction Id="salesCall" Name="Sales Call Ride-along" EgoCost="20" TurnCost= "2" RequiredInteractions="whoZoo" Category="OfficePolitics">
+			<Interaction Id="introduction" Name="Introduction" Category="Conversation">
 				<InteractionResult>
-					<DialogEntry Speaker="Player" Dialog="Would you mind if I joined you on some sales calls?"/>
-					<DialogEntry Speaker="Fem" Dialog="I'm better on my own."/>
-					<DialogEntry Speaker="Player" Dialog="I was hoping to learn from you.  Everyone sayes you're the best sales person in the company."/>
-					<DialogEntry Speaker="Fem" Dialog="Alright-- but keep your comments to yourself!"/>
+					<DialogEntry Speaker="Narrator" Dialog="A blonde shimmies up to the table with an obvious fake smile plastered across her lips.  Her fingers fidget with the striped hem of her uniform."/>
+					<DialogEntry Speaker="Fem" Dialog="Welcome to Pussywillows, Sir.  My name is Megan and I'll be your server tonight."/>
+					<DialogEntry Speaker="Narrator" Dialog="Leaning forward, she provides a brief downblouse."/>
+					<DialogEntry Speaker="Fem" Dialog="What would you like to drink?"/>
+					<Effect AmbitionEffect="-3"  PowerEffect="1"/>
+				</InteractionResult>
+			</Interaction>
+			<Interaction Id="girlsGirlsGirls" Name="Girls, Girls, Girls" Category="Conversation">
+				<InteractionResult>
+					<DialogEntry Speaker="Narrator" Dialog="Megan fiddles uncomfortably with her short tie."/>
+					<DialogEntry Speaker="Fem" Dialog="Please feel free to approach any of the girls out on the floor.  They'd all love to get to know you!"/>
 					<Effect AmbitionEffect="-3"  PowerEffect="1"/>
 				</InteractionResult>
 			</Interaction>
