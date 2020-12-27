@@ -1,10 +1,32 @@
 <GameData PlayerName="Hunter Downe" Ego="20" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3schools.com XmlSchema.xsd">
 	<Department Id="pussywillows" Name="Pusywillows" Accessible="true" ClosedOnWeekends="false" UiPosX="511" UiPosY="329" BackgroundImage="pussywillows" LocationIcon="loc_HumpAlley">
 		<Fem Id="lolita" FirstName="Lolita" LastName="" Age="18" Ambition="0" Pride="10" BackgroundImage="pussywillows_private_room">
-			
+			<Interaction Id="lapDance" Name="Lap Dance - $40" MoneyCost="40" Category="Conversation" Repeatable="true">
+				<InteractionResult>
+					<DialogEntry Speaker="Fem" Dialog="Hey there Tiger, come with me..." NpcImage="dance"/>
+					<DialogEntry Speaker="Fem" Dialog="You know, you're much cuter than the other guys around here." NpcImage="dance"/>
+					<DialogEntry Speaker="Fem" Dialog="You should come back again sometime.  We can get to know each other better." NpcImage="dance"/>
+					<Effect EgoEffect="10"/>
+				</InteractionResult>
+			</Interaction>
+			<Interaction Id="privateDance" Name="Private Dance - $100" MoneyCost="100" Category="Conversation" Repeatable="true">
+				<InteractionResult>
+					<DialogEntry Speaker="Fem" Dialog="Hey there Tiger, come with me..." NpcImage="privateDance"/>
+					<DialogEntry Speaker="Fem" Dialog="You know, you're much cuter than the other guys around here." NpcImage="privateDance"/>
+					<DialogEntry Speaker="Fem" Dialog="You should come back again sometime.  We can get to know each other better." NpcImage="privateDance"/>
+					<Effect EgoEffect="30"/>
+				</InteractionResult>
+			</Interaction>
 		</Fem>
 		<Fem Id="coco" FirstName="Coco" LastName="" Age="19" Ambition="0" Pride="10" BackgroundImage="pussywillows_private_room">
-
+			<Interaction Id="lapDance" Name="Lap Dance - $40" MoneyCost="40" Category="Conversation" Repeatable="true">
+				<InteractionResult>
+					<DialogEntry Speaker="Fem" Dialog="Hey there Tiger, come with me..." NpcImage="dance"/>
+					<DialogEntry Speaker="Fem" Dialog="You know, you're much cuter than the other guys around here." NpcImage="dance"/>
+					<DialogEntry Speaker="Fem" Dialog="You should come back again sometime.  We can get to know each other better." NpcImage="dance"/>
+					<Effect EgoEffect="10"/>
+				</InteractionResult>
+			</Interaction>
 		</Fem>
 		<Fem Id="meganQuinn" FirstName="Meghan" LastName="Quinn" Age="31" Ambition="0" Pride="10" BackgroundImage="pussywillows">
 			<Interaction Id="introduction" Name="Introduction" Category="Conversation">
@@ -13,14 +35,14 @@
 					<DialogEntry Speaker="Fem" Dialog="Welcome to Pussywillows, Sir.  My name is Megan and I'll be your server tonight."/>
 					<DialogEntry Speaker="Narrator" Dialog="Leaning forward, she provides a brief downblouse."/>
 					<DialogEntry Speaker="Fem" Dialog="What would you like to drink?"/>
-					<Effect AmbitionEffect="-3"  PowerEffect="1"/>
+					<Effect/>
 				</InteractionResult>
 			</Interaction>
 			<Interaction Id="girlsGirlsGirls" Name="Girls, Girls, Girls" Category="Conversation">
 				<InteractionResult>
 					<DialogEntry Speaker="Narrator" Dialog="Megan fiddles uncomfortably with her short tie."/>
 					<DialogEntry Speaker="Fem" Dialog="Please feel free to approach any of the girls out on the floor.  They'd all love to get to know you!"/>
-					<Effect AmbitionEffect="-3"  PowerEffect="1"/>
+					<Effect/>
 				</InteractionResult>
 			</Interaction>
 		</Fem>
@@ -981,7 +1003,7 @@
 				</InteractionResult>
 			</Interaction>
 
-			<Interaction Id="whoZoo" Name="Who’s who in the zoo around here?" TurnCost= "1" RequiredInteractions="introduction" Category="Conversation">
+			<Interaction Id="whoZoo" Name="Who’s who around here?" TurnCost= "1" RequiredInteractions="introduction" Category="Conversation">
 				<InteractionResult>
 					<DialogEntry Speaker="Player" Dialog="Who’s who in the zoo around here?"/>
 					<DialogEntry Speaker="Fem" Dialog="Zoo is right.  CSG is a mess."/>
