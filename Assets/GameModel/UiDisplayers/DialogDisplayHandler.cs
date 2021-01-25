@@ -34,33 +34,49 @@ public class DialogDisplayHandler : MonoBehaviour
 			}
 			else
 			{
-				if (currDialogsToShow.Count == 0)
-				{
-					femUiDisplay.UnsetImage();
-					gameObject.SetActive(false);
-					dialogsComplete?.Invoke();
-					femUiDisplay.InteractionsHandler.gameObject.SetActive(true);
-				}
-				else
-					runningCoroutine = StartCoroutine(ShowDialog());
+				HandleNextDialog();
 			}
 		});
 		gameObject.SetActive(false);
 	}
 
+	private void HandleNextDialog()
+	{
+		if (currDialogsToShow.Count > 0)
+		{
+			runningCoroutine = StartCoroutine(ShowDialog());
+		}
+		else if (popupToShow != null)
+		{
+			gameObject.SetActive(false);
+			mgm.ShowPopup(popupToShow, () => HandleNextDialog());
+			popupToShow = null;
+		}
+		else
+		{
+			femUiDisplay.UnsetImage();
+			gameObject.SetActive(false);
+			dialogsComplete?.Invoke();
+			femUiDisplay.InteractionsHandler.gameObject.SetActive(true);
+		}
+	}
+
+	private Popup popupToShow = null;
 	private List<DialogEntry> currDialogsToShow = new List<DialogEntry>();
 	private Coroutine runningCoroutine = null;
 	private Action dialogsComplete = null;
-	public void HandleDisplayDialogs(List<DialogEntry> dialogs, Action dialogsComplete)
+	public void HandleDisplayDialogs(List<DialogEntry> dialogs, Popup popupToShow, Action dialogsComplete)
 	{
 		femUiDisplay.InteractionsHandler.gameObject.SetActive(false);
 
 		this.dialogsComplete = dialogsComplete;
-		gameObject.SetActive(true);
+		this.popupToShow = popupToShow;
 		currDialogsToShow = new List<DialogEntry>(dialogs);
-		if(runningCoroutine != null)
+		gameObject.SetActive(true);
+		if (runningCoroutine != null)
 			StopCoroutine(runningCoroutine);
-		runningCoroutine = StartCoroutine(ShowDialog());
+
+		HandleNextDialog();
 	}
 
 	private string textToShow = "";

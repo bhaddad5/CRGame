@@ -3,12 +3,51 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Video;
+
+public class VideoLookup
+{
+	public static VideoLookup Videos = new VideoLookup("RewardVideos");
+
+	private Dictionary<string, VideoClip> lookup = null;
+	private string resourcesDir;
+
+	public VideoLookup(string resourcesDir)
+	{
+		this.resourcesDir = resourcesDir;
+	}
+
+	public VideoClip GetVideo(string name)
+	{
+		if (string.IsNullOrEmpty(name))
+			return null;
+
+		if (lookup == null)
+		{
+			lookup = new Dictionary<string, VideoClip>();
+			var images = Resources.LoadAll<VideoClip>(resourcesDir).ToList();
+			foreach (var image in images)
+			{
+				lookup[image.name] = image;
+			}
+		}
+
+		if (!lookup.ContainsKey(name))
+		{
+			Debug.LogError($"Cannot find image in location {resourcesDir} with name {name}");
+			return null;
+		}
+
+		return lookup[name];
+	}
+}
 
 public class ImageLookup
 {
 	public static ImageLookup Icons = new ImageLookup("LocationIcons");
 	public static ImageLookup Backgrounds = new ImageLookup("OfficePics");
 	public static ImageLookup Trophies = new ImageLookup("Trophies");
+	public static ImageLookup Popups = new ImageLookup("PopupImages");
 
 	private Dictionary<string, Sprite> lookup = null;
 	private string resourcesDir;

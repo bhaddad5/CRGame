@@ -33,6 +33,8 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 
 	[SerializeField] private PlayerOfficeUiDisplay PlayerOfficeUiPrefab;
 
+	[SerializeField] private PopupUiDisplay PopupDisplay;
+
 	[SerializeField] private Button MainMenuButton;
 	[SerializeField] private Button SaveGameButton;
 	[SerializeField] private Button LoadGameButton;
@@ -100,6 +102,11 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 		Month.text = $"{DateTime:MMMM} {DateTime.Day}";
 
 		playerOfficeDisplay?.RefreshUiDisplay(mgm);
+	}
+
+	public void ShowPopup(Popup popup, Action onPopupDone)
+	{
+		PopupDisplay.Show(popup, mgm, onPopupDone);
 	}
 
 	private PlayerOfficeUiDisplay playerOfficeDisplay = null;

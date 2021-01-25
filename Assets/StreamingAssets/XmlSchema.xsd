@@ -40,10 +40,20 @@
 		<xs:attribute name="InPlayerOffice" type="xs:boolean"/>
 	</xs:complexType>
 
+	<xs:complexType name="Popup">
+		<xs:attribute name="Title" type="xs:string"/>
+		<xs:attribute name="Text" type="xs:string" use="required"/>
+		<xs:attribute name="Image" type="xs:string"/>
+		<xs:attribute name="Video" type="xs:string"/>
+	</xs:complexType>
+
 	<xs:complexType name="InteractionResult">
 		<xs:sequence>
-			<xs:choice maxOccurs="unbounded" minOccurs="1">
+			<xs:choice maxOccurs="unbounded" minOccurs="0">
 				<xs:element name="DialogEntry" type="DialogEntry"/>
+			</xs:choice>
+			<xs:choice maxOccurs="1" minOccurs="0">
+				<xs:element name="Popup" type="Popup"/>
 			</xs:choice>
 			<xs:choice maxOccurs="unbounded" minOccurs="1">
 				<xs:element name="Effect" type="Effect"/>

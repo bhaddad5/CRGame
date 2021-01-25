@@ -23,7 +23,7 @@ namespace Assets.GameModel.UiDisplayers
 			{
 				var res = interaction.GetInteractionResult(mgm, fem);
 
-				displayHandler.HandleDisplayDialogs(res.Dialogs, () =>
+				displayHandler.HandleDisplayDialogs(res.Dialogs, res.OptionalPopup, () =>
 				{
 					res.Execute(mgm, fem);
 					mgm.HandleTurnChange();

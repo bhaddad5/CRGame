@@ -16,7 +16,6 @@
 					<DialogEntry Speaker="Fem" Dialog="Today's been a rough day; I can tell.  Why don't you let me take a load off your mind?" NpcImage="privateDance"/>
 					<DialogEntry Speaker="Fem" Dialog="If you really want, I'll even let you put me over your knee." NpcImage="privateDance"/>
 					<DialogEntry Speaker="Fem" Dialog="Thanks, you're an absolute stud.  All the other girls here want to be me right now." NpcImage="privateDance"/>
-
 					<Effect EgoEffect="30"/>
 				</InteractionResult>
 			</Interaction>
@@ -644,6 +643,21 @@
 					<DialogEntry Speaker="Player" Dialog="You are both going to do something.  I'm going to watch the Jones sisters put on the hottest sister lezzie show the world as ever seen-- right here in my office.  Go and get her, slut."/>
 					<DialogEntry Speaker="Fem" Dialog="I'm so ashamed!  Why did I ever drag my own sister into all this?"/>
 					<Effect EgoEffect= "50" TrophiesClaimed="debKatherinephoto"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="surveilTest" Name="DEBUG Surveilance" TurnCost= "1" Category="Surveillance">
+				<InteractionResult>
+					<DialogEntry Speaker="Player" Dialog="Have fun driving home!"/>
+					<Popup Title="Follow Her Home" Text="Follow Her Home" Video="djones_car"/>
+					<Effect EgoEffect= "10"/>
+				</InteractionResult>
+			</Interaction>
+
+			<Interaction Id="surveilPussyTest" Name="Film her Pussy" TurnCost= "1" Category="Surveillance">
+				<InteractionResult>
+					<Popup Title="Film her Pussy" Text="Film her Pussy" Video="pussyVid"/>
+					<Effect EgoEffect= "10"/>
 				</InteractionResult>
 			</Interaction>
 

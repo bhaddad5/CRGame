@@ -12,13 +12,16 @@ namespace Assets.GameModel.XmlParsers
 		[XmlElement("DialogEntry", typeof(DialogEntryXml))]
 		public DialogEntryXml[] DialogEntries = new DialogEntryXml[0];
 
+		[XmlElement("Popup", typeof(PopupXml))]
+		public PopupXml Popup = null;
+
 		[XmlElement("Effect", typeof(EffectXml))]
 		public EffectXml[] Effects = new EffectXml[0];
 
 		public InteractionResult FromXml()
 		{
 			List<DialogEntry> dialogs = new List<DialogEntry>();
-			foreach (var dialogEntryXml in DialogEntries)
+			foreach (var dialogEntryXml in DialogEntries ?? new DialogEntryXml[0])
 			{
 				dialogs.Add(dialogEntryXml.FromXml());
 			}
@@ -32,6 +35,7 @@ namespace Assets.GameModel.XmlParsers
 			return new InteractionResult()
 			{
 				Dialogs = dialogs,
+				OptionalPopup = Popup?.FromXml(),
 				Effects = effects,
 			};
 		}
@@ -50,9 +54,14 @@ namespace Assets.GameModel.XmlParsers
 				effects.Add(EffectXml.ToXml(effect));
 			}
 
+			PopupXml resPopup = null;
+			if(ob.OptionalPopup != null)
+				resPopup = PopupXml.ToXml(ob.OptionalPopup);
+
 			return new InteractionResultXml()
 			{
 				DialogEntries = dialogs.ToArray(),
+				Popup = resPopup,
 				Effects = effects.ToArray(),
 			};
 		}

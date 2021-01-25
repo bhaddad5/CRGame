@@ -8,6 +8,7 @@ namespace Assets.GameModel
 	public class InteractionResult
 	{
 		public List<DialogEntry> Dialogs;
+		public Popup OptionalPopup;
 		public List<Effect> Effects;
 
 		public void Execute(MainGameManager mgm, Fem fem)

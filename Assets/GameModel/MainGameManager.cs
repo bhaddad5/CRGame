@@ -193,5 +193,10 @@ namespace Assets.GameModel
 		{
 			return xmlResolver.SerializeXmlData(Data);
 		}
+
+		public void ShowPopup(Popup popup, Action onPopupDone)
+		{
+			hudUiDisplay.ShowPopup(popup, onPopupDone);
+		}
 	}
 }
