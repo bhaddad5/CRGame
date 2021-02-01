@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEngine;
 
 namespace Assets.GameModel
 {
@@ -12,5 +13,7 @@ namespace Assets.GameModel
 		public string Name;
 
 		public bool Active;
-	}
+        public Sprite Image;
+        public string Description;
+    }
 }

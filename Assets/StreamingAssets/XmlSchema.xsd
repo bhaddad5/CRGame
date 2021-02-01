@@ -61,10 +61,39 @@
 		</xs:sequence>
 	</xs:complexType>
 
+	<xs:complexType name="Cost">
+		<xs:attribute name="TurnCost" type="xs:decimal"/>
+		<xs:attribute name="EgoCost" type="xs:float"/>
+		<xs:attribute name="MoneyCost" type="xs:float"/>
+		<xs:attribute name="PatentsCost" type="xs:float"/>
+		<xs:attribute name="CultureCost" type="xs:float"/>
+		<xs:attribute name="SpreadsheetsCost" type="xs:float"/>
+		<xs:attribute name="BrandCost" type="xs:float"/>
+		<xs:attribute name="RevanueCost" type="xs:float"/>
+		<xs:attribute name="HornicalCost" type="xs:int"/>
+	</xs:complexType>
+
+	<xs:complexType name="Requirements">
+		<xs:attribute name="RequiredDepartmentsControlled" type="xs:string"/>
+		<xs:attribute name="RequiredInteractions" type="xs:string"/>
+		<xs:attribute name="RequiredPolicies" type="xs:string"/>
+		<xs:attribute name="RequiredTrophies" type="xs:string"/>
+		<xs:attribute name="RequiredAmbition" type="xs:float"/>
+		<xs:attribute name="RequiredPride" type="xs:float"/>
+		<xs:attribute name="RequiredControl" type="xs:boolean"/>
+	</xs:complexType>
+
+
 	<xs:complexType name="Interaction">
 		<xs:sequence>
 			<xs:choice maxOccurs="unbounded" minOccurs="1">
 				<xs:element name="InteractionResult" type="InteractionResult"/>
+			</xs:choice>
+			<xs:choice maxOccurs="1" minOccurs="1">
+				<xs:element name="Requirements" type="Requirements"/>
+			</xs:choice>
+			<xs:choice maxOccurs="1" minOccurs="1">
+				<xs:element name="Cost" type="Cost"/>
 			</xs:choice>
 		</xs:sequence>
 		<xs:attribute name="Id" type="xs:string" use="required"/>
@@ -83,22 +112,6 @@
 				</xs:restriction>
 			</xs:simpleType>
 		</xs:attribute>
-		<xs:attribute name="TurnCost" type="xs:decimal"/>
-		<xs:attribute name="EgoCost" type="xs:float"/>
-		<xs:attribute name="MoneyCost" type="xs:float"/>
-		<xs:attribute name="PatentsCost" type="xs:float"/>
-		<xs:attribute name="CultureCost" type="xs:float"/>
-		<xs:attribute name="SpreadsheetsCost" type="xs:float"/>
-		<xs:attribute name="BrandCost" type="xs:float"/>
-		<xs:attribute name="RevanueCost" type="xs:float"/>
-		<xs:attribute name="HornicalCost" type="xs:int"/>
-		<xs:attribute name="RequiredDepartmentsControlled" type="xs:string"/>
-		<xs:attribute name="RequiredInteractions" type="xs:string"/>
-		<xs:attribute name="RequiredPolicies" type="xs:string"/>
-		<xs:attribute name="RequiredTrophies" type="xs:string"/>
-		<xs:attribute name="RequiredAmbition" type="xs:float"/>
-		<xs:attribute name="RequiredPride" type="xs:float"/>
-		<xs:attribute name="RequiredControl" type="xs:boolean"/>
 		<xs:attribute name="Repeatable" type="xs:boolean"/>
 		<xs:attribute name="Completed" type="xs:boolean"/>
 	</xs:complexType>
@@ -153,6 +166,8 @@
 		</xs:sequence>
 		<xs:attribute name="Id" type="xs:string" use="required"/>
 		<xs:attribute name="Name" type="xs:string" use="required"/>
+		<xs:attribute name="Image" type="xs:string" use="required"/>
+		<xs:attribute name="Description" type="xs:string" use="required"/>
 		<xs:attribute name="Active" type="xs:boolean"/>
 	</xs:complexType>
 

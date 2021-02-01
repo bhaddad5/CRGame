@@ -13,6 +13,9 @@ namespace Assets.GameModel.XmlParsers
 		[XmlAttribute] [DefaultValue("")] public string Name = "";
 		[XmlAttribute] [DefaultValue(false)] public bool Active = false;
 
+        [XmlAttribute] [DefaultValue("")] public string Image = "";
+        [XmlAttribute] [DefaultValue("")] public string Description = "";
+
 		[XmlElement("Effect", typeof(Effect))]
 		public Effect[] PerTurnEffect = new Effect[0];
 
@@ -23,6 +26,8 @@ namespace Assets.GameModel.XmlParsers
 				Id = Id,
 				Name = Name,
 				Active = Active,
+				Description = Description,
+                Image = ImageLookup.Policies.GetImage(Image),
 			};
 		}
 
@@ -33,6 +38,8 @@ namespace Assets.GameModel.XmlParsers
 				Id = ob.Id,
 				Name = ob.Name,
 				Active = ob.Active,
+				Description = ob.Description,
+				Image = ob.Image.name,
 			};
 		}
 	}

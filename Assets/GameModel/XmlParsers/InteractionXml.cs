@@ -15,27 +15,15 @@ namespace Assets.GameModel.XmlParsers
 
 		[XmlAttribute] [DefaultValue("")] public string Category = "";
 
-		[XmlAttribute] [DefaultValue(1)] public int TurnCost = 1;
-		[XmlAttribute] [DefaultValue(0)] public float EgoCost = 0;
-		[XmlAttribute] [DefaultValue(0)] public float MoneyCost = 0;
-		[XmlAttribute] [DefaultValue(0)] public float SpreadsheetsCost = 0;
-		[XmlAttribute] [DefaultValue(0)] public float CultureCost = 0;
-		[XmlAttribute] [DefaultValue(0)] public float BrandCost = 0;
-		[XmlAttribute] [DefaultValue(0)] public float RevanueCost = 0;
-		[XmlAttribute] [DefaultValue(0)] public float PatentsCost = 0;
-		[XmlAttribute] [DefaultValue(0)] public int HornicalCost = 0;
+        [XmlAttribute] [DefaultValue(false)] public bool Repeatable = false;
+        [XmlAttribute] [DefaultValue(false)] public bool Completed = false;
 
-		[XmlAttribute] [DefaultValue("")] public string RequiredInteractions = "";
-		[XmlAttribute] [DefaultValue("")] public string RequiredPolicies = "";
-		[XmlAttribute] [DefaultValue("")] public string RequiredTrophies = "";
-		[XmlAttribute] [DefaultValue(false)] public bool RequiredControl = false;
-		[XmlAttribute] [DefaultValue("")] public string RequiredDepartmentsControled = "";
-		[XmlAttribute] [DefaultValue(-1)] public float RequiredAmbition = -1;
-		[XmlAttribute] [DefaultValue(-1)] public float RequiredPride = -1;
+		[XmlElement("Cost", typeof(ActionCostXml))]
+		public ActionCostXml[] Cost = new ActionCostXml[0];
 
-		[XmlAttribute] [DefaultValue(false)] public bool Repeatable = false;
-		[XmlAttribute] [DefaultValue(false)] public bool Completed = false;
-		
+		[XmlElement("Requirements", typeof(ActionRequirementsXml))]
+		public ActionRequirementsXml[] Requirements = new ActionRequirementsXml[0];
+
 		[XmlElement("InteractionResult", typeof(InteractionResultXml))]
 		public InteractionResultXml[] InteractionResults = new InteractionResultXml[0];
 
@@ -51,22 +39,8 @@ namespace Assets.GameModel.XmlParsers
 			{
 				Id = Id,
 				Name = Name,
-				TurnCost = TurnCost,
-				EgoCost = EgoCost,
-				MoneyCost = MoneyCost,
-				SpreadsheetsCost = SpreadsheetsCost,
-				CultureCost = CultureCost,
-				BrandCost = BrandCost,
-				RevanueCost = RevanueCost,
-				PatentsCost = PatentsCost,
-				HornicalCost = HornicalCost,
-				RequiredInteractions = RequiredInteractions.XmlStringToList(),
-				RequiredDepartmentsControled = RequiredDepartmentsControled.XmlStringToList(),
-				RequiredPolicies = RequiredPolicies.XmlStringToList(),
-				RequiredTrophies = RequiredTrophies.XmlStringToList(),
-				RequiredAmbition = RequiredAmbition,
-				RequiredPride = RequiredPride,
-				RequiredControl = RequiredControl,
+				Cost = Cost[0].FromXml(),
+				Requirements = Requirements[0].FromXml(),
 				Repeatable = Repeatable,
 				Completed = Completed,
 				InteractionResults = results,
@@ -86,22 +60,8 @@ namespace Assets.GameModel.XmlParsers
 			{
 				Id = ob.Id,
 				Name = ob.Name,
-				TurnCost = ob.TurnCost,
-				EgoCost = ob.EgoCost,
-				MoneyCost = ob.MoneyCost,
-				SpreadsheetsCost = ob.SpreadsheetsCost,
-				CultureCost = ob.CultureCost,
-				BrandCost = ob.BrandCost,
-				RevanueCost = ob.RevanueCost,
-				PatentsCost = ob.PatentsCost,
-				HornicalCost = ob.HornicalCost,
-				RequiredInteractions = ob.RequiredInteractions.ListToXmlString(),
-				RequiredDepartmentsControled = ob.RequiredDepartmentsControled.ListToXmlString(),
-				RequiredPolicies = ob.RequiredPolicies.ListToXmlString(),
-				RequiredTrophies = ob.RequiredTrophies.ListToXmlString(),
-				RequiredAmbition = ob.RequiredAmbition,
-				RequiredPride = ob.RequiredPride,
-				RequiredControl = ob.RequiredControl,
+				Cost = new []{ActionCostXml.ToXml(ob.Cost)},
+				Requirements = new[] { ActionRequirementsXml.ToXml(ob.Requirements) },
 				Repeatable = ob.Repeatable,
 				Completed = ob.Completed,
 				InteractionResults = results.ToArray(),
