@@ -13,13 +13,18 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private TMP_Text Name;
 		[SerializeField] private Image BackgroundImage;
 		[SerializeField] private Transform FemOptionsParent;
-		[SerializeField] private Transform PolicyOptionsParent;
 		[SerializeField] private Button BackButton;
+		[SerializeField] private Transform PoliciesButton;
+		[SerializeField] private Transform PoliciesPopup;
+		[SerializeField] private Transform PolicyOptionsParent;
+		[SerializeField] private Transform MissionsButton;
+		[SerializeField] private Transform MissionsPopup;
+		[SerializeField] private Transform MissionOptionsParent;
 
 		[SerializeField] private FemSelectionUiDisplay FemButtonPrefab;
 		[SerializeField] private FemUiDisplay FemUiPrefab;
 
-		[SerializeField] private PolicyUiDisplay PolicyButtonPrefab;
+		[SerializeField] private PolicySelectionUiDisplay policyPrefab;
 
 		public Department Dept;
 		public void Setup(Department dept, MainMapUiDisplay mguid, MainGameManager mgm)
@@ -34,12 +39,37 @@ namespace Assets.GameModel.UiDisplayers
 				f.transform.SetParent(FemOptionsParent);
 			}
 
+			if (dept.Policies.Count == 0)
+				PoliciesButton.gameObject.SetActive(false);
 			foreach (Policy policy in dept.Policies)
 			{
-				var p = Instantiate(PolicyButtonPrefab);
+				var p = Instantiate(policyPrefab);
 				p.Setup(policy, dept, mgm);
 				p.transform.SetParent(PolicyOptionsParent);
 			}
+
+			ClosePolicies();
+			CloseMissions();
+		}
+
+		public void OpenPolicies()
+		{
+			PoliciesPopup.gameObject.SetActive(true);
+		}
+
+		public void ClosePolicies()
+		{
+			PoliciesPopup.gameObject.SetActive(false);
+		}
+
+		public void OpenMissions()
+		{
+			MissionsPopup.gameObject.SetActive(true);
+		}
+
+		public void CloseMissions()
+		{
+			MissionsPopup.gameObject.SetActive(false);
 		}
 
 		private FemUiDisplay currOpenFem;
@@ -67,7 +97,7 @@ namespace Assets.GameModel.UiDisplayers
 			foreach (var button in FemOptionsParent.GetComponentsInChildren<FemSelectionUiDisplay>(true))
 				button.RefreshUiDisplay(mgm);
 
-			foreach (var button in PolicyOptionsParent.GetComponentsInChildren<PolicyUiDisplay>(true))
+			foreach (var button in PolicyOptionsParent.GetComponentsInChildren<PolicySelectionUiDisplay>(true))
 				button.RefreshUiDisplay(mgm);
 
 			if (currOpenFem != null)

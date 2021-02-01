@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 namespace Assets.GameModel.UiDisplayers
 {
-	public class PolicyUiDisplay : MonoBehaviour, IUiDisplay
+	public class PolicySelectionUiDisplay : MonoBehaviour, IUiDisplay
 	{
 		[SerializeField] private Button Button;
 		[SerializeField] private TMP_Text Text;
