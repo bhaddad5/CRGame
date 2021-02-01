@@ -78,11 +78,11 @@
 		<xs:attribute name="RequiredInteractions" type="xs:string"/>
 		<xs:attribute name="RequiredPolicies" type="xs:string"/>
 		<xs:attribute name="RequiredTrophies" type="xs:string"/>
+		<xs:attribute name="RequiredPower" type="xs:float"/>
 		<xs:attribute name="RequiredAmbition" type="xs:float"/>
 		<xs:attribute name="RequiredPride" type="xs:float"/>
 		<xs:attribute name="RequiredControl" type="xs:boolean"/>
 	</xs:complexType>
-
 
 	<xs:complexType name="Interaction">
 		<xs:sequence>
@@ -90,10 +90,10 @@
 				<xs:element name="InteractionResult" type="InteractionResult"/>
 			</xs:choice>
 			<xs:choice maxOccurs="1" minOccurs="1">
-				<xs:element name="Requirements" type="Requirements"/>
+				<xs:element name="Cost" type="Cost"/>
 			</xs:choice>
 			<xs:choice maxOccurs="1" minOccurs="1">
-				<xs:element name="Cost" type="Cost"/>
+				<xs:element name="Requirements" type="Requirements"/>
 			</xs:choice>
 		</xs:sequence>
 		<xs:attribute name="Id" type="xs:string" use="required"/>
@@ -160,8 +160,11 @@
 
 	<xs:complexType name="Policy">
 		<xs:sequence>
-			<xs:choice maxOccurs="unbounded" minOccurs="0">
-				<xs:element name="PerTurnEffect" type="Effect"/>
+			<xs:choice maxOccurs="1" minOccurs="1">
+				<xs:element name="Requirements" type="Requirements"/>
+			</xs:choice>
+			<xs:choice maxOccurs="unbounded" minOccurs="1">
+				<xs:element name="Effect" type="Effect"/>
 			</xs:choice>
 		</xs:sequence>
 		<xs:attribute name="Id" type="xs:string" use="required"/>

@@ -13,10 +13,13 @@ namespace Assets.GameModel.XmlParsers
 		[XmlAttribute] [DefaultValue("")] public string RequiredInteractions = "";
 		[XmlAttribute] [DefaultValue("")] public string RequiredPolicies = "";
 		[XmlAttribute] [DefaultValue("")] public string RequiredTrophies = "";
-		[XmlAttribute] [DefaultValue(false)] public bool RequiredControl = false;
 		[XmlAttribute] [DefaultValue("")] public string RequiredDepartmentsControled = "";
+		[XmlAttribute] [DefaultValue(-1)] public float RequiredPower = -1;
+
 		[XmlAttribute] [DefaultValue(-1)] public float RequiredAmbition = -1;
 		[XmlAttribute] [DefaultValue(-1)] public float RequiredPride = -1;
+		[XmlAttribute] [DefaultValue(false)] public bool RequiredControl = false;
+
 
 		public ActionRequirements FromXml()
 		{
@@ -29,6 +32,7 @@ namespace Assets.GameModel.XmlParsers
 				RequiredAmbition = RequiredAmbition,
 				RequiredPride = RequiredPride,
 				RequiredControl = RequiredControl,
+				RequiredPower = RequiredPower,
 			};
 		}
 
@@ -43,6 +47,7 @@ namespace Assets.GameModel.XmlParsers
 				RequiredAmbition = ob.RequiredAmbition,
 				RequiredPride = ob.RequiredPride,
 				RequiredControl = ob.RequiredControl,
+				RequiredPower = ob.RequiredPower,
 			};
 		}
 	}

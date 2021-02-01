@@ -10,9 +10,12 @@ namespace Assets.GameModel
 	{
 		public List<string> RequiredInteractions = new List<string>();
 		public List<string> RequiredPolicies = new List<string>();
-		public bool RequiredControl = false;
 		public List<string> RequiredDepartmentsControled = new List<string>();
 		public List<string> RequiredTrophies = new List<string>();
+		public float RequiredPower = 0;
+
+		//If there is a fem
+		public bool RequiredControl = false;
 		public float RequiredAmbition = -1;
 		public float RequiredPride = -1;
 
@@ -67,7 +70,25 @@ namespace Assets.GameModel
 				return false;
 			}
 
+			if (mgm.Data.Power < RequiredPower)
+			{
+				return false;
+			}
+
 			return true;
+		}
+
+		public List<string> GetInvalidTooltips(MainGameManager mgm, Fem fem)
+		{
+			List<string> tooltips = new List<string>();
+			if (RequiredAmbition >= 0 && RequiredAmbition < fem.Ambition)
+				tooltips.Add($"Requires {RequiredAmbition} or less Ambition");
+			if (RequiredPride >= 0 && RequiredPride < fem.Pride)
+				tooltips.Add($"Requires {RequiredPride} or less Pride");
+			if (RequiredPower > mgm.Data.Power)
+				tooltips.Add($"Requires {RequiredPower} or more Power");
+
+			return tooltips;
 		}
 	}
 }

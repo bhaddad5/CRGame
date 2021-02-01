@@ -41,5 +41,28 @@ namespace Assets.GameModel
 			mgm.Data.Revenue -= RevanueCost;
 			mgm.Data.Patents -= PatentsCost;
 		}
+
+		public List<string> GetInvalidTooltips(MainGameManager mgm)
+		{
+			List<string> tooltips = new List<string>();
+			if (EgoCost > mgm.Data.Ego)
+				tooltips.Add($"Requires {EgoCost} Ego");
+			if (MoneyCost > mgm.Data.Funds)
+				tooltips.Add($"Requires ${MoneyCost}");
+			if (CultureCost > mgm.Data.CorporateCulture)
+				tooltips.Add($"Requires {CultureCost} Corporate Culture");
+			if (BrandCost > mgm.Data.Brand)
+				tooltips.Add($"Requires {BrandCost} Brand");
+			if (SpreadsheetsCost > mgm.Data.Spreadsheets)
+				tooltips.Add($"Requires {SpreadsheetsCost} Spreadsheets");
+			if (RevanueCost > mgm.Data.Revenue)
+				tooltips.Add($"Requires {RevanueCost} Revenue");
+			if (PatentsCost > mgm.Data.Patents)
+				tooltips.Add($"Requires {PatentsCost} Patents");
+			if (HornicalCost > mgm.Data.Hornical)
+				tooltips.Add($"Requires {HornicalCost} Hornical");
+
+			return tooltips;
+		}
 	}
 }

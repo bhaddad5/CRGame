@@ -47,26 +47,11 @@ namespace Assets.GameModel.UiDisplayers
 			}
 
 			string tooltip = "";
-			if (interaction.Requirements.RequiredAmbition >= 0 && interaction.Requirements.RequiredAmbition < fem.Ambition)
-				tooltip += $"\nRequires {interaction.Requirements.RequiredAmbition} or less Ambition";
-			if (interaction.Requirements.RequiredPride >= 0 && interaction.Requirements.RequiredPride < fem.Pride)
-				tooltip += $"\nRequires {interaction.Requirements.RequiredPride} or less Pride";
-			if(interaction.Cost.EgoCost > mgm.Data.Ego)
-				tooltip += $"\nRequires {interaction.Cost.EgoCost} Ego";
-			if (interaction.Cost.MoneyCost > mgm.Data.Funds)
-				tooltip += $"\nRequires ${interaction.Cost.MoneyCost}";
-			if (interaction.Cost.CultureCost > mgm.Data.CorporateCulture)
-				tooltip += $"\nRequires {interaction.Cost.CultureCost} Corporate Culture";
-			if (interaction.Cost.BrandCost > mgm.Data.Brand)
-				tooltip += $"\nRequires {interaction.Cost.BrandCost} Brand";
-			if (interaction.Cost.SpreadsheetsCost > mgm.Data.Spreadsheets)
-				tooltip += $"\nRequires {interaction.Cost.SpreadsheetsCost} Spreadsheets";
-			if (interaction.Cost.RevanueCost > mgm.Data.Revenue)
-				tooltip += $"\nRequires {interaction.Cost.RevanueCost} Revenue";
-			if (interaction.Cost.PatentsCost > mgm.Data.Patents)
-				tooltip += $"\nRequires {interaction.Cost.PatentsCost} Patents";
-			if (interaction.Cost.HornicalCost > mgm.Data.Hornical)
-				tooltip += $"\nRequires {interaction.Cost.HornicalCost} Hornical";
+
+			foreach (var tt in interaction.Requirements.GetInvalidTooltips(mgm, fem))
+				tooltip += $"\n{tt}";
+			foreach (var tt in interaction.Cost.GetInvalidTooltips(mgm))
+				tooltip += $"\n{tt}";
 
 			if (tooltip.Length > 0)
 				return tooltip.Substring(1);

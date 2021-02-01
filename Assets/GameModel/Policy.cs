@@ -15,5 +15,8 @@ namespace Assets.GameModel
 		public bool Active;
         public Sprite Image;
         public string Description;
-    }
+
+        public ActionRequirements Requirements;
+        public List<Effect> Effects;
+	}
 }
