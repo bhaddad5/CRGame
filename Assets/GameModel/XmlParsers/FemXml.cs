@@ -16,14 +16,14 @@ namespace Assets.GameModel.XmlParsers
 
 		[XmlAttribute] [DefaultValue("")] public string BackgroundImage = "";
 
-		[XmlElement("Interaction", typeof(InteractionXml))]
-		public InteractionXml[] Interactions = new InteractionXml[0];
-
 		[XmlElement("Trait", typeof(TraitXml))]
 		public TraitXml[] Traits = new TraitXml[0];
 
 		[XmlElement("Trophy", typeof(TrophyXml))]
 		public TrophyXml[] Trophies = new TrophyXml[0];
+
+		[XmlElement("Interaction", typeof(InteractionXml))]
+		public InteractionXml[] Interactions = new InteractionXml[0];
 
 		public Fem FromXml()
 		{
