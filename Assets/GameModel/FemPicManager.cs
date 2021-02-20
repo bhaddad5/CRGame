@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Networking;
 using UnityEngine.Video;
 
 public class VideoLookup
@@ -22,6 +23,25 @@ public class VideoLookup
 		if (string.IsNullOrEmpty(name))
 			return null;
 
+		TryBuildLookup();
+
+		if (!lookup.ContainsKey(name))
+		{
+			Debug.LogError($"Cannot find image in location {resourcesDir} with name {name}");
+			return null;
+		}
+
+		return lookup[name];
+	}
+
+	public List<string> GetAllContentNames()
+	{
+		TryBuildLookup();
+		return lookup.Keys.ToList();
+	}
+
+	private void TryBuildLookup()
+	{
 		if (lookup == null)
 		{
 			lookup = new Dictionary<string, VideoClip>();
@@ -31,14 +51,6 @@ public class VideoLookup
 				lookup[image.name] = image;
 			}
 		}
-
-		if (!lookup.ContainsKey(name))
-		{
-			Debug.LogError($"Cannot find image in location {resourcesDir} with name {name}");
-			return null;
-		}
-
-		return lookup[name];
 	}
 }
 
@@ -63,15 +75,7 @@ public class ImageLookup
 		if (string.IsNullOrEmpty(imageName))
 			return null;
 
-		if (lookup == null)
-		{
-			lookup = new Dictionary<string, Sprite>();
-			var images = Resources.LoadAll<Sprite>(resourcesDir).ToList();
-			foreach (var image in images)
-			{
-				lookup[image.name] = image;
-			}
-		}
+		TryBuildLookup();
 
 		if (!lookup.ContainsKey(imageName))
 		{
@@ -81,6 +85,47 @@ public class ImageLookup
 
 		return lookup[imageName];
 	}
+
+	public List<string> GetAllContentNames()
+	{
+		TryBuildLookup();
+		return lookup.Keys.ToList();
+	}
+
+	private void TryBuildLookup()
+	{
+		if (lookup == null)
+		{
+			lookup = new Dictionary<string, Sprite>();
+			var images = Resources.LoadAll<Sprite>(resourcesDir).ToList();
+			foreach (var image in images)
+			{
+				lookup[image.name] = image;
+			}
+		}
+	}
+
+	/*private void TryBuildLookup()
+	{
+		if (lookup == null)
+		{
+			var images = Directory.GetFiles(Path.Combine(Application.streamingAssetsPath, resourcesDir), "*.png");
+
+			lookup = new Dictionary<string, Sprite>();
+			foreach (var image in images)
+			{
+				lookup[image.name] = image;
+			}
+		}
+	}
+
+	private Sprite GetSpriteFromAssetPath(string filePath)
+	{
+		using (var uwr = UnityWebRequestTexture.GetTexture(filePath))
+		{
+			uwr.SendWebRequest();
+		}
+	}*/
 }
 
 public static class FemPicManager

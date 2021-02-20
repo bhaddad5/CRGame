@@ -59,6 +59,8 @@
     <Compile Include="Assets\GameModel\XmlParsers\EffectXml.cs" />
     <Compile Include="Assets\GameModel\UiDisplayers\LoadSaveMenuManager.cs" />
     <Compile Include="Assets\GameModel\XmlParsers\DepartmentXml.cs" />
+    <Compile Include="Assets\GameModel\XmlParsers\ActionRequirementsXml.cs" />
+    <Compile Include="Assets\GameModel\XmlParsers\ActionCostXml.cs" />
     <Compile Include="Assets\GameModel\UiDisplayers\TooltipElementHandler.cs" />
     <Compile Include="Assets\GameModel\UiDisplayers\PlayerOfficeUiDisplay.cs" />
     <Compile Include="Assets\GameModel\ActionLookup.cs" />
@@ -82,6 +84,7 @@
     <Compile Include="Assets\GameModel\Effect.cs" />
     <Compile Include="Assets\GameModel\XmlParsers\XmlHelpers.cs" />
     <Compile Include="Assets\GameModel\UiDisplayers\InteractionUiDisplay.cs" />
+    <Compile Include="Assets\GameModel\ActionRequirements.cs" />
     <Compile Include="Assets\GameModel\XmlParsers\InteractionResultXml.cs" />
     <Compile Include="Assets\GameModel\UiDisplayers\MainMapUiDisplay.cs" />
     <Compile Include="Assets\GameModel\UiDisplayers\DialogDisplayHandler.cs" />
@@ -92,6 +95,7 @@
     <Compile Include="Assets\GameModel\UiDisplayers\FemUiDisplay.cs" />
     <Compile Include="Assets\GameModel\XmlParsers\InteractionXml.cs" />
     <Compile Include="Assets\GameModel\XmlParsers\GameDataXml.cs" />
+    <Compile Include="Assets\GameModel\ActionCost.cs" />
     <Compile Include="Assets\GameModel\UiDisplayers\IUiDisplay.cs" />
     <Compile Include="Assets\GameModel\UiDisplayers\PolicySelectionUiDisplay.cs" />
     <Compile Include="Assets\GameModel\Popup.cs" />
@@ -104,14 +108,11 @@
     <Compile Include="Assets\GameModel\XmlParsers\PolicyXml.cs" />
     <Compile Include="Assets\GameModel\UiDisplayers\PopupUiDisplay.cs" />
     <Compile Include="Assets\GameModel\UiDisplayers\InteractionsDisplayHandler.cs" />
-    <Compile Include="Assets\GameModel\XmlParsers\ActionRequirementsXml.cs" />
-    <Compile Include="Assets\GameModel\XmlParsers\ActionCostXml.cs" />
-    <Compile Include="Assets\GameModel\ActionCost.cs" />
-    <Compile Include="Assets\GameModel\ActionRequirements.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+     <None Include="Assets\StreamingAssets\ContentMap.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
      <None Include="Assets\StreamingAssets\GameData.xml" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
