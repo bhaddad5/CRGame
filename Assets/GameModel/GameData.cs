@@ -68,6 +68,10 @@ public class GameData
 	public Interaction GetInteractionById(string femId, string interactionId)
 	{
 		var fem = GetFemById(femId);
+
+		if (fem == null)
+			return null;
+
 		foreach (var femInteraction in fem.Interactions)
 		{
 			if (femInteraction.Id == interactionId)
