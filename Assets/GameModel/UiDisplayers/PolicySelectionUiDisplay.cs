@@ -10,6 +10,7 @@ namespace Assets.GameModel.UiDisplayers
 	{
 		[SerializeField] private Button Button;
 		[SerializeField] private TMP_Text Text;
+		[SerializeField] private Image Image;
 
 		private Policy policy;
 		private Department dept;
@@ -29,6 +30,7 @@ namespace Assets.GameModel.UiDisplayers
 		{
 			Text.text = $"{policy.Name}";
 			Button.interactable = !policy.Active && dept.Controlled();
+			Image.sprite = policy.Image;
 		}
 	}
 }
