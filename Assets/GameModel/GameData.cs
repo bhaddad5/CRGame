@@ -65,6 +65,34 @@ public class GameData
 		return completedInteractionIds;
 	}
 
+	public Interaction GetInteractionById(string femId, string interactionId)
+	{
+		var fem = GetFemById(femId);
+		foreach (var femInteraction in fem.Interactions)
+		{
+			if (femInteraction.Id == interactionId)
+				return femInteraction;
+		}
+
+		return null;
+	}
+
+	public List<Mission> GetMissionsForInteraction(string femId, string interactionId)
+	{
+		List<Mission> res = new List<Mission>();
+
+		foreach (var department in Departments)
+		{
+			foreach (var mission in department.Missions)
+			{
+				if(mission.FemId == femId && mission.InteractionId == interactionId)
+					res.Add(mission);
+			}
+		}
+
+		return res;
+	}
+
 	public Fem GetFemById(string femId)
 	{
 		foreach (var department in Departments)

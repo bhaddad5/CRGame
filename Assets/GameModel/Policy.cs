@@ -13,10 +13,10 @@ namespace Assets.GameModel
 		public string Name;
 
 		public bool Active;
-        public Sprite Image;
-        public string Description;
+		public Sprite Image;
+		public string Description;
 
-        public ActionRequirements Requirements;
-        public List<Effect> Effects;
+		public ActionRequirements Requirements;
+		public List<Effect> Effects;
 	}
 }

@@ -25,6 +25,7 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private FemUiDisplay FemUiPrefab;
 
 		[SerializeField] private PolicySelectionUiDisplay policyPrefab;
+		[SerializeField] private MissionUiDisplay misisonPrefab;
 
 		public Department Dept;
 		public void Setup(Department dept, MainMapUiDisplay mguid, MainGameManager mgm)
@@ -46,6 +47,15 @@ namespace Assets.GameModel.UiDisplayers
 				var p = Instantiate(policyPrefab);
 				p.Setup(policy, dept, mgm);
 				p.transform.SetParent(PolicyOptionsParent);
+			}
+
+			if (dept.Missions.Count == 0)
+				MissionsButton.gameObject.SetActive(false);
+			foreach (Mission mission in dept.Missions)
+			{
+				var m = Instantiate(misisonPrefab);
+				m.Setup(mission, dept, mgm);
+				m.transform.SetParent(MissionOptionsParent);
 			}
 
 			ClosePolicies();
@@ -94,11 +104,14 @@ namespace Assets.GameModel.UiDisplayers
 			BackgroundImage.sprite = Dept.BackgroundImage;
 			Name.text = Dept.Name;
 
-			foreach (var button in FemOptionsParent.GetComponentsInChildren<FemSelectionUiDisplay>(true))
-				button.RefreshUiDisplay(mgm);
+			foreach (var fem in FemOptionsParent.GetComponentsInChildren<FemSelectionUiDisplay>(true))
+				fem.RefreshUiDisplay(mgm);
 
-			foreach (var button in PolicyOptionsParent.GetComponentsInChildren<PolicySelectionUiDisplay>(true))
-				button.RefreshUiDisplay(mgm);
+			foreach (var policy in PolicyOptionsParent.GetComponentsInChildren<PolicySelectionUiDisplay>(true))
+				policy.RefreshUiDisplay(mgm);
+
+			foreach (var mission in MissionOptionsParent.GetComponentsInChildren<MissionUiDisplay>(true))
+				mission.RefreshUiDisplay(mgm);
 
 			if (currOpenFem != null)
 				currOpenFem.RefreshUiDisplay(mgm);

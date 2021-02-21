@@ -25,6 +25,9 @@ namespace Assets.GameModel.XmlParsers
 		[XmlElement("Policy", typeof(PolicyXml))]
 		public PolicyXml[] Policies = new PolicyXml[0];
 
+		[XmlElement("Mission", typeof(MissionXml))]
+		public MissionXml[] Missions = new MissionXml[0];
+
 		public Department FromXml()
 		{
 			List<Fem> fems = new List<Fem>();
@@ -39,6 +42,12 @@ namespace Assets.GameModel.XmlParsers
 				policies.Add(policyXml.FromXml());
 			}
 
+			List<Mission> missions = new List<Mission>();
+			foreach (var missionXml in Missions ?? new MissionXml[0])
+			{
+				missions.Add(missionXml.FromXml());
+			}
+
 			return new Department()
 			{
 				Id = Id,
@@ -47,6 +56,7 @@ namespace Assets.GameModel.XmlParsers
 				Accessible = Accessible,
 				Fems = fems,
 				Policies = policies,
+				Missions = missions,
 				UiPosition = new Vector2(UiPosX, UiPosY),
 				BackgroundImage = ImageLookup.Backgrounds.GetImage(BackgroundImage),
 				Icon = ImageLookup.Icons.GetImage(LocationIcon),
@@ -67,6 +77,12 @@ namespace Assets.GameModel.XmlParsers
 				policies.Add(PolicyXml.ToXml(policy));
 			}
 
+			List<MissionXml> missions = new List<MissionXml>();
+			foreach (var mission in ob.Missions)
+			{
+				missions.Add(MissionXml.ToXml(mission));
+			}
+
 			return new DepartmentXml()
 			{
 				Id = ob.Id,
@@ -75,6 +91,7 @@ namespace Assets.GameModel.XmlParsers
 				Accessible = ob.Accessible,
 				Fems = fems.ToArray(),
 				Policies = policies.ToArray(),
+				Missions = missions.ToArray(),
 				UiPosX = ob.UiPosition.x,
 				UiPosY = ob.UiPosition.y,
 				BackgroundImage = ob.BackgroundImage.name,

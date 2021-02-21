@@ -18,6 +18,7 @@ namespace Assets.GameModel
 		public Sprite BackgroundImage;
 
 		public List<Policy> Policies;
+		public List<Mission> Missions;
 		public List<Fem> Fems;
 
 		public bool Controlled()

@@ -61,6 +61,7 @@ public class ImageLookup
 	public static ImageLookup Trophies = new ImageLookup("Trophies");
 	public static ImageLookup Popups = new ImageLookup("PopupImages");
     public static ImageLookup Policies = new ImageLookup("Policies");
+    public static ImageLookup Missions = new ImageLookup("Missions");
 
 	private Dictionary<string, Sprite> lookup = null;
 	private string resourcesDir;

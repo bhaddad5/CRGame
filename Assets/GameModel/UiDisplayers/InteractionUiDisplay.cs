@@ -26,6 +26,7 @@ namespace Assets.GameModel.UiDisplayers
 				displayHandler.HandleDisplayDialogs(res.Dialogs, res.OptionalPopup, () =>
 				{
 					res.Execute(mgm, fem);
+					interaction.ExecuteMissionIfRelevant(mgm, fem);
 					mgm.HandleTurnChange();
 				});
 			});

@@ -174,6 +174,19 @@
 		<xs:attribute name="Active" type="xs:boolean"/>
 	</xs:complexType>
 
+	<xs:complexType name="Mission">
+		<xs:sequence>
+			<xs:choice maxOccurs="unbounded" minOccurs="1">
+				<xs:element name="Effect" type="Effect"/>
+			</xs:choice>
+		</xs:sequence>
+		<xs:attribute name="MissionName" type="xs:string" use="required"/>
+		<xs:attribute name="MissionDescription" type="xs:string" use="required"/>
+		<xs:attribute name="MissionImage" type="xs:string" use="required"/>
+		<xs:attribute name="FemId" type="xs:string" use="required"/>
+		<xs:attribute name="InteractionId" type="xs:string" use="required"/>
+	</xs:complexType>
+
 	<xs:complexType name="Department">
 		<xs:sequence>
 			<xs:choice maxOccurs="unbounded" minOccurs="0">
@@ -181,6 +194,9 @@
 			</xs:choice>
 			<xs:choice maxOccurs="unbounded" minOccurs="0">
 				<xs:element name="Policy" type="Policy"/>
+			</xs:choice>
+			<xs:choice maxOccurs="unbounded" minOccurs="0">
+				<xs:element name="Mission" type="Mission"/>
 			</xs:choice>
 		</xs:sequence>
 		<xs:attribute name="Id" type="xs:string" use="required"/>

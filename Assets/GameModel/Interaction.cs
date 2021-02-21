@@ -58,5 +58,17 @@ namespace Assets.GameModel
 			var chosenResult = InteractionResults[UnityEngine.Random.Range(0, InteractionResults.Count)];
 			return chosenResult;
 		}
+
+		public void ExecuteMissionIfRelevant(MainGameManager mgm, Fem fem)
+		{
+			var missions = mgm.Data.GetMissionsForInteraction(fem.Id, Id);
+			foreach (var mission in missions)
+			{
+				foreach (var effect in mission.Rewards)
+				{
+					effect.ExecuteEffect(mgm, fem);
+				}
+			}
+		}
 	}
 }
