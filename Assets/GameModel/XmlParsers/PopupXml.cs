@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
 using System.Xml.Serialization;
 using UnityEngine;
 using UnityEngine.Video;
@@ -15,9 +17,16 @@ namespace Assets.GameModel.XmlParsers
 
 		public Popup FromXml()
 		{
-			VideoClip vid = null;
+			List<VideoClip> videos = null;
 			if (!string.IsNullOrEmpty(Video))
-				vid = VideoLookup.Videos.GetVideo(Video);
+			{
+				var vids = Video.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
+				for (int i = 0; i < vids.Length; i++)
+				{
+					vids[i] = vids[i].Trim();
+				}
+				videos = VideoLookup.Videos.GetVideos(vids);
+			}
 
 			Texture2D tex = null;
 			if (!string.IsNullOrEmpty(Image))
@@ -28,17 +37,25 @@ namespace Assets.GameModel.XmlParsers
 				Title = Title,
 				Text = Text,
 				Texture = tex,
-				Video = vid,
+				Videos = videos,
 			};
 		}
 
 		public static PopupXml ToXml(Popup ob)
 		{
+			string vidsString = "";
+			foreach (var videoClip in ob.Videos)
+			{
+				vidsString += $"{videoClip.name},";
+			}
+			if (vidsString.EndsWith(","))
+				vidsString = vidsString.Substring(0, vidsString.Length - 1);
+
 			var res = new PopupXml()
 			{
 				Title = ob.Title,
 				Text = ob.Text,
-				Video = ob.Video?.name ?? "",
+				Video = vidsString,
 				Image = ob.Texture?.name ?? "",
 			};
 			

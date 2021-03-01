@@ -8,7 +8,7 @@ namespace Assets.GameModel
 	public class Popup
 	{
 		public string Title;
-		public VideoClip Video;
+		public List<VideoClip> Videos;
 		public Texture2D Texture;
 		public string Text;
 	}

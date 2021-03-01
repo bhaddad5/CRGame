@@ -33,10 +33,10 @@ public class PopupUiDisplay : MonoBehaviour, IUiDisplay
 		{
 			ImageDisplay.texture = popup.Texture;
 		}
-		else if (popup.Video != null)
+		else if (popup.Videos != null)
 		{
 			ImageDisplay.texture = VideoTexture;
-			VideoPlayer.clip = popup.Video;
+			VideoPlayer.clip = popup.Videos[UnityEngine.Random.Range(0, popup.Videos.Count)];
 		}
 	}
 

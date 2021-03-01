@@ -34,6 +34,16 @@ public class VideoLookup
 		return lookup[name];
 	}
 
+	public List<VideoClip> GetVideos(string[] clipNames)
+	{
+		List<VideoClip> results = new List<VideoClip>();
+		foreach (var clipName in clipNames)
+		{
+			results.Add(GetVideo(clipName));
+		}
+		return results;
+	}
+
 	public List<string> GetAllContentNames()
 	{
 		TryBuildLookup();
