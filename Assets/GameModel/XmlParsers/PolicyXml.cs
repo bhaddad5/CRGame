@@ -16,11 +16,11 @@ namespace Assets.GameModel.XmlParsers
         [XmlAttribute] [DefaultValue("")] public string Image = "";
         [XmlAttribute] [DefaultValue("")] public string Description = "";
 
-		[XmlElement("Effect", typeof(EffectXml))]
-		public EffectXml[] Effects = new EffectXml[0];
-
 		[XmlElement("Requirements", typeof(ActionRequirementsXml))]
 		public ActionRequirementsXml[] Requirements = new ActionRequirementsXml[0];
+
+		[XmlElement("Effect", typeof(EffectXml))]
+		public EffectXml[] Effects = new EffectXml[0];
 
 		public Policy FromXml()
 		{

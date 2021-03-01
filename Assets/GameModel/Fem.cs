@@ -5,6 +5,13 @@ namespace Assets.GameModel
 {
 	public class Fem
 	{
+		public class OfficeLayout
+		{
+			public float X = 0.5f;
+			public float Y = 0.5f;
+			public float Width = 200f;
+		}
+
 		public string Id;
 
 		public bool Controlled;
@@ -15,6 +22,8 @@ namespace Assets.GameModel
 		public string FirstName;
 		public string LastName;
 		public int Age;
+
+		public OfficeLayout Layout = new OfficeLayout();
 
 		public Sprite BackgroundImage;
 

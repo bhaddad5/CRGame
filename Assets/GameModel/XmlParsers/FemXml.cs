@@ -4,6 +4,33 @@ using System.Xml.Serialization;
 
 namespace Assets.GameModel.XmlParsers
 {
+	public class OfficeLayoutXml
+	{
+		[XmlAttribute] [DefaultValue(.5f)] public float XPercentage = .5f;
+		[XmlAttribute] [DefaultValue(.5f)] public float YPercentage = .5f;
+		[XmlAttribute] [DefaultValue(200f)] public float Width = 200f;
+
+		public Fem.OfficeLayout FromXml()
+		{
+			return new Fem.OfficeLayout()
+			{
+				X = XPercentage,
+				Y = YPercentage,
+				Width = Width,
+			};
+		}
+
+		public static OfficeLayoutXml ToXml(Fem.OfficeLayout ob)
+		{
+			return new OfficeLayoutXml()
+			{
+				Width = ob.Width,
+				XPercentage = ob.X,
+				YPercentage = ob.Y,
+			};
+		}
+	}
+
 	public class FemXml
 	{
 		[XmlAttribute] [DefaultValue("")] public string Id = "";
@@ -15,6 +42,9 @@ namespace Assets.GameModel.XmlParsers
 		[XmlAttribute] [DefaultValue(0)] public float Pride = 0;
 
 		[XmlAttribute] [DefaultValue("")] public string BackgroundImage = "";
+
+		[XmlElement("OfficeLayout", typeof(OfficeLayoutXml))]
+		public OfficeLayoutXml[] OfficeLayout = new OfficeLayoutXml[0];
 
 		[XmlElement("Trait", typeof(TraitXml))]
 		public TraitXml[] Traits = new TraitXml[0];
@@ -45,6 +75,12 @@ namespace Assets.GameModel.XmlParsers
 				trophies.Add(trophyXml.FromXml());
 			}
 
+			OfficeLayoutXml layoutXml = new OfficeLayoutXml();
+			if ((OfficeLayout?.Length ?? 0) > 0)
+			{
+				layoutXml = OfficeLayout[0];
+			}
+
 			return new Fem()
 			{
 				Id = Id,
@@ -58,6 +94,7 @@ namespace Assets.GameModel.XmlParsers
 				Traits = traits,
 				Trophies = trophies,
 				BackgroundImage = ImageLookup.Backgrounds.GetImage(BackgroundImage),
+				Layout = layoutXml.FromXml(),
 			};
 		}
 
@@ -94,6 +131,7 @@ namespace Assets.GameModel.XmlParsers
 				Traits = traits.ToArray(),
 				Trophies = trophies.ToArray(),
 				BackgroundImage = ob.BackgroundImage.name,
+				OfficeLayout = new []{OfficeLayoutXml.ToXml(ob.Layout)}
 			};
 		}
 	}

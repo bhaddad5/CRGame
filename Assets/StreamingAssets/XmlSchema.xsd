@@ -41,8 +41,8 @@
 	</xs:complexType>
 
 	<xs:complexType name="Popup">
-		<xs:attribute name="Title" type="xs:string"/>
-		<xs:attribute name="Text" type="xs:string" use="required"/>
+		<xs:attribute name="Title" type="xs:string" use="required"/>
+		<xs:attribute name="Text" type="xs:string"/>
 		<xs:attribute name="Image" type="xs:string"/>
 		<xs:attribute name="Video" type="xs:string"/>
 	</xs:complexType>
@@ -136,8 +136,17 @@
 		<xs:attribute name="Owned" type="xs:boolean"/>
 	</xs:complexType>
 
+	<xs:complexType name="OfficeLayout">
+		<xs:attribute name="XPercentage" type="xs:float" use="required"/>
+		<xs:attribute name="YPercentage" type="xs:float" use="required"/>
+		<xs:attribute name="Width" type="xs:float" use="required"/>
+	</xs:complexType>
+
 	<xs:complexType name="Fem">
 		<xs:sequence>
+			<xs:choice maxOccurs="1" minOccurs="1">
+				<xs:element name="OfficeLayout" type="OfficeLayout"/>
+			</xs:choice>
 			<xs:choice maxOccurs="unbounded" minOccurs="0">
 				<xs:element name="Trait" type="Trait"/>
 			</xs:choice>
@@ -150,7 +159,7 @@
 		</xs:sequence>
 		<xs:attribute name="Id" type="xs:string" use="required"/>
 		<xs:attribute name="FirstName" type="xs:string" use="required"/>
-		<xs:attribute name="LastName" type="xs:string" use="required"/>
+		<xs:attribute name="LastName" type="xs:string"/>
 		<xs:attribute name="Age" type="xs:decimal" use="required"/>
 		<xs:attribute name="Controlled" type="xs:boolean"/>
 		<xs:attribute name="Ambition" type="xs:float"/>
