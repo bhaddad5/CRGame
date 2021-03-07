@@ -35,7 +35,9 @@ namespace Assets.GameModel.UiDisplayers
 
 		public void RefreshUiDisplay(MainGameManager mgm, Fem fem)
 		{
-			Text.text = interaction.Name;
+			Text.text = $"{interaction.Name}";
+			if (!string.IsNullOrEmpty(interaction.Cost.GetCostString()))
+				Text.text += $" - {interaction.Cost.GetCostString()}";
 			Button.interactable = interaction.InteractionValid(mgm, fem);
 			gameObject.SetActive(interaction.InteractionVisible(mgm, fem));
 		}
