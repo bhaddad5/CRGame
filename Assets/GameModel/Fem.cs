@@ -27,6 +27,7 @@ namespace Assets.GameModel
 		public string RequiredVisibilityInteraction;
 
 		public OfficeLayout Layout = new OfficeLayout();
+		public OfficeLayout PersonalLayout = new OfficeLayout();
 
 		public Sprite BackgroundImage;
 

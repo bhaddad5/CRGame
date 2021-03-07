@@ -46,6 +46,9 @@ namespace Assets.GameModel.XmlParsers
 		[XmlElement("OfficeLayout", typeof(OfficeLayoutXml))]
 		public OfficeLayoutXml[] OfficeLayout = new OfficeLayoutXml[0];
 
+		[XmlElement("PersonalLayout", typeof(OfficeLayoutXml))]
+		public OfficeLayoutXml[] PersonalLayout = new OfficeLayoutXml[0];
+
 		[XmlElement("Trait", typeof(TraitXml))]
 		public TraitXml[] Traits = new TraitXml[0];
 
@@ -81,6 +84,12 @@ namespace Assets.GameModel.XmlParsers
 				layoutXml = OfficeLayout[0];
 			}
 
+			OfficeLayoutXml personalLayoutXml = new OfficeLayoutXml();
+			if ((PersonalLayout?.Length ?? 0) > 0)
+			{
+				personalLayoutXml = PersonalLayout[0];
+			}
+
 			return new Fem()
 			{
 				Id = Id,
@@ -96,6 +105,7 @@ namespace Assets.GameModel.XmlParsers
 				RequiredVisibilityInteraction = RequiredVisibilityInteraction,
 				BackgroundImage = ImageLookup.Backgrounds.GetImage(BackgroundImage),
 				Layout = layoutXml.FromXml(),
+				PersonalLayout = personalLayoutXml.FromXml(),
 			};
 		}
 
@@ -133,7 +143,8 @@ namespace Assets.GameModel.XmlParsers
 				Trophies = trophies.ToArray(),
 				BackgroundImage = ob.BackgroundImage.name,
 				RequiredVisibilityInteraction = ob.RequiredVisibilityInteraction,
-				OfficeLayout = new []{OfficeLayoutXml.ToXml(ob.Layout)}
+				OfficeLayout = new []{OfficeLayoutXml.ToXml(ob.Layout)},
+				PersonalLayout = new []{OfficeLayoutXml.ToXml(ob.PersonalLayout), }
 			};
 		}
 	}

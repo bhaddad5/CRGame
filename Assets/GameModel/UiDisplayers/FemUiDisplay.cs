@@ -23,6 +23,14 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] public InteractionsDisplayHandler InteractionsHandler;
 		[SerializeField] private DialogDisplayHandler DialogHandler;
 
+		void Start()
+		{
+			Picture.GetComponent<RectTransform>().anchorMin = new Vector2(fem.PersonalLayout.X, fem.PersonalLayout.Y);
+			Picture.GetComponent<RectTransform>().anchorMax = new Vector2(fem.PersonalLayout.X, fem.PersonalLayout.Y);
+			Picture.GetComponent<RectTransform>().sizeDelta = new Vector2(fem.PersonalLayout.Width, fem.PersonalLayout.Width * 2f);
+			Picture.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+		}
+
 		private Fem fem;
 		public void Setup(Fem fem, MainGameManager mgm, DepartmentUiDisplay duid)
 		{
