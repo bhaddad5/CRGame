@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Assets.GameModel
@@ -23,6 +24,8 @@ namespace Assets.GameModel
 		public string LastName;
 		public int Age;
 
+		public string RequiredVisibilityInteraction;
+
 		public OfficeLayout Layout = new OfficeLayout();
 
 		public Sprite BackgroundImage;
@@ -30,6 +33,18 @@ namespace Assets.GameModel
 		public List<Interaction> Interactions = new List<Interaction>();
 		public List<Trait> Traits = new List<Trait>();
 		public List<Trophy> Trophies = new List<Trophy>();
+
+		public bool IsVisible(MainGameManager mgm)
+		{
+			if (String.IsNullOrEmpty(RequiredVisibilityInteraction))
+				return true;
+			var interaction = RequiredVisibilityInteraction;
+			var split = interaction.Split('-');
+			var id = split[1].Trim();
+			var femId = split[0].Trim();
+
+			return mgm.Data.GetCompletedInteractionIds(femId).Contains(id);
+		}
 
 		public string DetermineCurrPictureId()
 		{

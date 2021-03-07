@@ -40,7 +40,7 @@ namespace Assets.GameModel.XmlParsers
 		[XmlAttribute] [DefaultValue(false)] public bool Controlled = false;
 		[XmlAttribute] [DefaultValue(0)] public float Ambition = 0;
 		[XmlAttribute] [DefaultValue(0)] public float Pride = 0;
-
+		[XmlAttribute] [DefaultValue("")] public string RequiredVisibilityInteraction = "";
 		[XmlAttribute] [DefaultValue("")] public string BackgroundImage = "";
 
 		[XmlElement("OfficeLayout", typeof(OfficeLayoutXml))]
@@ -93,6 +93,7 @@ namespace Assets.GameModel.XmlParsers
 				Interactions = interactions,
 				Traits = traits,
 				Trophies = trophies,
+				RequiredVisibilityInteraction = RequiredVisibilityInteraction,
 				BackgroundImage = ImageLookup.Backgrounds.GetImage(BackgroundImage),
 				Layout = layoutXml.FromXml(),
 			};
@@ -131,6 +132,7 @@ namespace Assets.GameModel.XmlParsers
 				Traits = traits.ToArray(),
 				Trophies = trophies.ToArray(),
 				BackgroundImage = ob.BackgroundImage.name,
+				RequiredVisibilityInteraction = ob.RequiredVisibilityInteraction,
 				OfficeLayout = new []{OfficeLayoutXml.ToXml(ob.Layout)}
 			};
 		}

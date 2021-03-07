@@ -48,9 +48,18 @@ namespace Assets.GameModel
 					inverse = true;
 				}
 
-				if (!inverse && !mgm.Data.GetCompletedInteractionIds(fem.Id).Contains(id))
+				var femId = fem.Id;
+
+				if (id.Contains("_"))
+				{
+					var split = id.Split('-');
+					id = split[1].Trim();
+					femId = split[0].Trim();
+				}
+
+				if (!inverse && !mgm.Data.GetCompletedInteractionIds(femId).Contains(id))
 					return false;
-				else if (inverse && mgm.Data.GetCompletedInteractionIds(fem.Id).Contains(id))
+				else if (inverse && mgm.Data.GetCompletedInteractionIds(femId).Contains(id))
 					return false;
 			}
 

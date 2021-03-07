@@ -36,6 +36,7 @@ namespace Assets.GameModel.UiDisplayers
 		{
 			Text.text = $"{fem.FirstName} {fem.LastName}";
 			FemPic.sprite = FemPicManager.GetFemPicFromId(fem.Id, fem.DetermineCurrPictureId());
+			gameObject.SetActive(fem.IsVisible(mgm));
 		}
 	}
 }
