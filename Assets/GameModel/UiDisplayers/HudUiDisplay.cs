@@ -12,17 +12,17 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 	[SerializeField] private TMP_Text PlayerName;
 	[SerializeField] private TMP_Text PlayerTitle;
 
-	[SerializeField] private TMP_Text Ego;
-	[SerializeField] private TMP_Text Funds;
-	[SerializeField] private TMP_Text Power;
+	[SerializeField] private ResourceManagerUiDisplay Ego;
+	[SerializeField] private ResourceManagerUiDisplay Funds;
+	[SerializeField] private ResourceManagerUiDisplay Power;
 
-	[SerializeField] private TMP_Text Spreadsheets;
-	[SerializeField] private TMP_Text Culture;
-	[SerializeField] private TMP_Text Brand;
-	[SerializeField] private TMP_Text Revanue;
-	[SerializeField] private TMP_Text Patents;
+	[SerializeField] private ResourceManagerUiDisplay Spreadsheets;
+	[SerializeField] private ResourceManagerUiDisplay Culture;
+	[SerializeField] private ResourceManagerUiDisplay Brand;
+	[SerializeField] private ResourceManagerUiDisplay Revanue;
+	[SerializeField] private ResourceManagerUiDisplay Patents;
 
-	[SerializeField] private TMP_Text Hornical;
+	[SerializeField] private ResourceManagerUiDisplay Hornical;
 
 	[SerializeField] private TMP_Text Day;
 	[SerializeField] private TMP_Text Time;
@@ -83,17 +83,17 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 		PlayerName.text = mgm.Data.PlayerName;
 		PlayerTitle.text = mgm.GetPlayerTitleFromPower();
 
-		Ego.text = $"{mgm.Data.Ego}";
-		Funds.text = $"${mgm.Data.Funds}";
-		Power.text = $"{mgm.Data.Power}";
+		Ego.RefreshResourceDisplay(mgm.Data.Ego);
+		Funds.RefreshResourceDisplay(mgm.Data.Funds, funds => $"${funds}");
+		Power.RefreshResourceDisplay(mgm.Data.Power);
 
-		Culture.text = $"{mgm.Data.CorporateCulture}";
-		Spreadsheets.text = $"{mgm.Data.Spreadsheets}";
-		Patents.text = $"{mgm.Data.Patents}";
-		Brand.text = $"{mgm.Data.Brand}";
-		Revanue.text = $"{mgm.Data.Revenue}";
+		Culture.RefreshResourceDisplay(mgm.Data.CorporateCulture);
+		Spreadsheets.RefreshResourceDisplay(mgm.Data.Spreadsheets);
+		Patents.RefreshResourceDisplay(mgm.Data.Patents);
+		Brand.RefreshResourceDisplay(mgm.Data.Brand);
+		Revanue.RefreshResourceDisplay(mgm.Data.Revenue);
 
-		Hornical.text = $"{mgm.Data.Hornical}";
+		Hornical.RefreshResourceDisplay(mgm.Data.Hornical);
 
 		string timeOfDay = mgm.Data.TurnNumber % 2 == 1 ? "Afternoon" : "Morning";
 		var DateTime = mgm.GetDateFromTurnNumber();

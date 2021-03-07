@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine;
 
 namespace Assets.GameModel
 {
@@ -54,8 +55,9 @@ namespace Assets.GameModel
 			Cost.SubtractCost(mgm);
 
 			Completed = true;
-
-			var chosenResult = InteractionResults[UnityEngine.Random.Range(0, InteractionResults.Count)];
+			var randValue = UnityEngine.Random.Range(0, InteractionResults.Count);
+			Debug.Log(randValue);
+			var chosenResult = InteractionResults[randValue];
 			return chosenResult;
 		}
 
