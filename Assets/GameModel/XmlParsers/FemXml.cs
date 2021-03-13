@@ -6,9 +6,9 @@ namespace Assets.GameModel.XmlParsers
 {
 	public class OfficeLayoutXml
 	{
-		[XmlAttribute] [DefaultValue(.5f)] public float XPercentage = .5f;
-		[XmlAttribute] [DefaultValue(.5f)] public float YPercentage = .5f;
-		[XmlAttribute] [DefaultValue(200f)] public float Width = 200f;
+		[XmlAttribute] [DefaultValue(0)] public float XPercentage = 0;
+		[XmlAttribute] [DefaultValue(0)] public float YPercentage = 0;
+		[XmlAttribute] [DefaultValue(100f)] public float Width = 100;
 
 		public Fem.OfficeLayout FromXml()
 		{
