@@ -13,7 +13,7 @@ namespace Assets.GameModel.XmlParsers
 		[XmlAttribute] [DefaultValue("")] public string RequiredInteractions = "";
 		[XmlAttribute] [DefaultValue("")] public string RequiredPolicies = "";
 		[XmlAttribute] [DefaultValue("")] public string RequiredTrophies = "";
-		[XmlAttribute] [DefaultValue("")] public string RequiredDepartmentsControled = "";
+		[XmlAttribute] [DefaultValue("")] public string RequiredDepartmentsControlled = "";
 		[XmlAttribute] [DefaultValue(-1)] public float RequiredPower = -1;
 
 		[XmlAttribute] [DefaultValue(-1)] public float RequiredAmbition = -1;
@@ -26,7 +26,7 @@ namespace Assets.GameModel.XmlParsers
 			return new ActionRequirements()
 			{
 				RequiredInteractions = RequiredInteractions.XmlStringToList(),
-				RequiredDepartmentsControled = RequiredDepartmentsControled.XmlStringToList(),
+				RequiredDepartmentsControled = RequiredDepartmentsControlled.XmlStringToList(),
 				RequiredPolicies = RequiredPolicies.XmlStringToList(),
 				RequiredTrophies = RequiredTrophies.XmlStringToList(),
 				RequiredAmbition = RequiredAmbition,
@@ -41,7 +41,7 @@ namespace Assets.GameModel.XmlParsers
 			return new ActionRequirementsXml()
 			{
 				RequiredInteractions = ob.RequiredInteractions.ListToXmlString(),
-				RequiredDepartmentsControled = ob.RequiredDepartmentsControled.ListToXmlString(),
+				RequiredDepartmentsControlled = ob.RequiredDepartmentsControled.ListToXmlString(),
 				RequiredPolicies = ob.RequiredPolicies.ListToXmlString(),
 				RequiredTrophies = ob.RequiredTrophies.ListToXmlString(),
 				RequiredAmbition = ob.RequiredAmbition,
