@@ -50,7 +50,7 @@ namespace Assets.GameModel
 
 				var femId = fem.Id;
 
-				if (id.Contains("_"))
+				if (id.Contains("-"))
 				{
 					var split = id.Split('-');
 					id = split[1].Trim();

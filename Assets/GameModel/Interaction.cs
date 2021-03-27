@@ -61,9 +61,14 @@ namespace Assets.GameModel
 			return chosenResult;
 		}
 
+		public List<Mission> GetRelevantMissions(MainGameManager mgm, Fem fem)
+		{
+			return mgm.Data.GetMissionsForInteraction(fem.Id, Id);
+		}
+
 		public void ExecuteMissionIfRelevant(MainGameManager mgm, Fem fem)
 		{
-			var missions = mgm.Data.GetMissionsForInteraction(fem.Id, Id);
+			var missions = GetRelevantMissions(mgm, fem);
 			foreach (var mission in missions)
 			{
 				foreach (var effect in mission.Rewards)

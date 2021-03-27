@@ -52,6 +52,18 @@ public class DialogDisplayHandler : MonoBehaviour
 			mgm.ShowPopup(popupToShow, () => HandleNextDialog());
 			popupToShow = null;
 		}
+		else if (missionsToShow.Count > 0)
+		{
+			var missionPopup = new Popup()
+			{
+				Title = $"Mission Complete: {missionsToShow[0].MissionName}",
+				Texture = missionsToShow[0].MissionImage.texture,
+				Text = missionsToShow[0].MissionDescription,
+			};
+			gameObject.SetActive(false);
+			missionsToShow.RemoveAt(0);
+			mgm.ShowPopup(missionPopup, () => HandleNextDialog());
+		}
 		else
 		{
 			femUiDisplay.UnsetImage();
@@ -61,16 +73,18 @@ public class DialogDisplayHandler : MonoBehaviour
 		}
 	}
 
-	private Popup popupToShow = null;
 	private List<DialogEntry> currDialogsToShow = new List<DialogEntry>();
+	private Popup popupToShow = null;
+	private List<Mission> missionsToShow = new List<Mission>();
 	private Coroutine runningCoroutine = null;
 	private Action dialogsComplete = null;
-	public void HandleDisplayDialogs(List<DialogEntry> dialogs, Popup popupToShow, Action dialogsComplete)
+	public void HandleDisplayDialogs(List<DialogEntry> dialogs, Popup popupToShow, List<Mission> missionsToShow, Action dialogsComplete)
 	{
 		femUiDisplay.InteractionsHandler.gameObject.SetActive(false);
 
 		this.dialogsComplete = dialogsComplete;
 		this.popupToShow = popupToShow;
+		this.missionsToShow = missionsToShow;
 		currDialogsToShow = new List<DialogEntry>(dialogs);
 		gameObject.SetActive(true);
 		if (runningCoroutine != null)
