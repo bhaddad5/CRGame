@@ -48,7 +48,7 @@ namespace Assets.GameModel
 			Data = xmlResolver.LoadXmlData(xmlDataPath);
 
 			hudUiDisplay.Setup(this);
-			mainMapUiDisplay.Setup(this, Data.Departments);
+			mainMapUiDisplay.Setup(this, Data.Locations);
 			RefreshAllUi();
 		}
 
@@ -95,7 +95,7 @@ namespace Assets.GameModel
 
 		private void HandleWeekChange()
 		{
-			foreach (var department in Data.Departments)
+			foreach (var department in Data.Locations)
 			{
 				foreach (var fem in department.Fems)
 				{

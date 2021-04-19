@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 namespace Assets.GameModel.UiDisplayers
 {
-	public class DepartmentUiDisplay : MonoBehaviour, IUiDisplay
+	public class LocationUiDisplay : MonoBehaviour, IUiDisplay
 	{
 		[SerializeField] private TMP_Text Name;
 		[SerializeField] private Image BackgroundImage;
@@ -27,8 +27,8 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private PolicySelectionUiDisplay policyPrefab;
 		[SerializeField] private MissionUiDisplay misisonPrefab;
 
-		public Department Dept;
-		public void Setup(Department dept, MainMapUiDisplay mguid, MainGameManager mgm)
+		public Location Dept;
+		public void Setup(Location dept, MainMapUiDisplay mguid, MainGameManager mgm)
 		{
 			this.Dept = dept;
 			BackButton.onClick.AddListener(() => mguid.CloseCurrentDepartment(false));

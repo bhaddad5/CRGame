@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace Assets.GameModel.XmlParsers
 {
-	public class DepartmentXml
+	public class LocationXml
 	{
 		[XmlAttribute] [DefaultValue("")] public string Id = "";
 		[XmlAttribute] [DefaultValue("")] public string Name = "";
@@ -28,7 +28,7 @@ namespace Assets.GameModel.XmlParsers
 		[XmlElement("Mission", typeof(MissionXml))]
 		public MissionXml[] Missions = new MissionXml[0];
 
-		public Department FromXml()
+		public Location FromXml()
 		{
 			List<Fem> fems = new List<Fem>();
 			foreach (var femXml in Fems)
@@ -48,7 +48,7 @@ namespace Assets.GameModel.XmlParsers
 				missions.Add(missionXml.FromXml());
 			}
 
-			return new Department()
+			return new Location()
 			{
 				Id = Id,
 				Name = Name,
@@ -63,7 +63,7 @@ namespace Assets.GameModel.XmlParsers
 			};
 		}
 
-		public static DepartmentXml ToXml(Department ob)
+		public static LocationXml ToXml(Location ob)
 		{
 			List<FemXml> fems = new List<FemXml>();
 			foreach (var fem in ob.Fems)
@@ -83,7 +83,7 @@ namespace Assets.GameModel.XmlParsers
 				missions.Add(MissionXml.ToXml(mission));
 			}
 
-			return new DepartmentXml()
+			return new LocationXml()
 			{
 				Id = ob.Id,
 				Name = ob.Name,

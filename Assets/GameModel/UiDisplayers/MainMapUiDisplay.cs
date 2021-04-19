@@ -15,49 +15,49 @@ namespace Assets.GameModel.UiDisplayers
 
 		[SerializeField] private Transform DepartmentsParent;
 
-		[SerializeField] private DepartmentSelectionUiDisplay DepartmentButtonPrefab;
-		[SerializeField] private DepartmentUiDisplay DepartmentUiPrefab;
+		[SerializeField] private LocationSelectionUiDisplay _locationButtonPrefab;
+		[SerializeField] private LocationUiDisplay _locationUiPrefab;
 
 		private MainGameManager mgm;
-		public void Setup(MainGameManager mgm, List<Department> locations)
+		public void Setup(MainGameManager mgm, List<Location> locations)
 		{
 			this.mgm = mgm;
-			foreach (Department dept in locations)
+			foreach (Location dept in locations)
 			{
-				var d = Instantiate(DepartmentButtonPrefab);
+				var d = Instantiate(_locationButtonPrefab);
 				d.Setup(dept, this, mgm);
 				d.transform.SetParent(DepartmentsParent, false);
 			}
 		}
 
-		private DepartmentUiDisplay currOpenDepartment = null;
-		public void ShowDepartment(Department dept, MainGameManager mgm)
+		private LocationUiDisplay _currOpenLocation = null;
+		public void ShowDepartment(Location dept, MainGameManager mgm)
 		{
-			currOpenDepartment = Instantiate(DepartmentUiPrefab);
-			currOpenDepartment.Setup(dept, this, mgm);
-			currOpenDepartment.RefreshUiDisplay(mgm);
+			_currOpenLocation = Instantiate(_locationUiPrefab);
+			_currOpenLocation.Setup(dept, this, mgm);
+			_currOpenLocation.RefreshUiDisplay(mgm);
 		}
 
 		public void CloseCurrentDepartment(bool onlyCloseIfInaccessable)
 		{
-			if (currOpenDepartment != null)
+			if (_currOpenLocation != null)
 			{
-				currOpenDepartment.CloseCurrentFem();
-				if (!onlyCloseIfInaccessable || !currOpenDepartment.Dept.IsAccessible(mgm))
+				_currOpenLocation.CloseCurrentFem();
+				if (!onlyCloseIfInaccessable || !_currOpenLocation.Dept.IsAccessible(mgm))
 				{
-					GameObject.Destroy(currOpenDepartment.gameObject);
-					currOpenDepartment = null;
+					GameObject.Destroy(_currOpenLocation.gameObject);
+					_currOpenLocation = null;
 				}
 			}
 		}
 
 		public void RefreshUiDisplay(MainGameManager mgm)
 		{
-			foreach (var button in DepartmentsParent.GetComponentsInChildren<DepartmentSelectionUiDisplay>(true))
+			foreach (var button in DepartmentsParent.GetComponentsInChildren<LocationSelectionUiDisplay>(true))
 				button.RefreshUiDisplay(mgm);
 
-			if(currOpenDepartment != null)
-				currOpenDepartment.RefreshUiDisplay(mgm);
+			if(_currOpenLocation != null)
+				_currOpenLocation.RefreshUiDisplay(mgm);
 
 			ShowTimeOfDay(mgm.Data.TurnNumber % 2 == 1);
 		}

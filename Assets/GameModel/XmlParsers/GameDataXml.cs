@@ -20,15 +20,15 @@ namespace Assets.GameModel.XmlParsers
 		[XmlAttribute] [DefaultValue(0)] public float Revenue = 0;
 		[XmlAttribute] [DefaultValue(0)] public int Hornical = 0;
 
-		[XmlElement("Department", typeof(DepartmentXml))]
-		public DepartmentXml[] Departments = new DepartmentXml[0];
+		[XmlElement("Location", typeof(LocationXml))]
+		public LocationXml[] Locations = new LocationXml[0];
 
 		public GameData FromXml()
 		{
-			List<Department> depts = new List<Department>();
-			foreach (var departmentXml in Departments)
+			List<Location> locations = new List<Location>();
+			foreach (var locationXml in Locations)
 			{
-				depts.Add(departmentXml.FromXml());
+				locations.Add(locationXml.FromXml());
 			}
 
 			return new GameData()
@@ -44,16 +44,16 @@ namespace Assets.GameModel.XmlParsers
 				Brand = Brand,
 				Revenue = Revenue,
 				Hornical = Hornical,
-				Departments = depts,
+				Locations = locations,
 			};
 		}
 
 		public static GameDataXml ToXml(GameData ob)
 		{
-			List<DepartmentXml> depts = new List<DepartmentXml>();
-			foreach (var department in ob.Departments)
+			List<LocationXml> locations = new List<LocationXml>();
+			foreach (var loc in ob.Locations)
 			{
-				depts.Add(DepartmentXml.ToXml(department));
+				locations.Add(LocationXml.ToXml(loc));
 			}
 
 			return new GameDataXml()
@@ -69,7 +69,7 @@ namespace Assets.GameModel.XmlParsers
 				Brand = ob.Brand,
 				Revenue = ob.Revenue,
 				Hornical = ob.Hornical,
-				Departments = depts.ToArray(),
+				Locations = locations.ToArray(),
 			};
 		}
 	}

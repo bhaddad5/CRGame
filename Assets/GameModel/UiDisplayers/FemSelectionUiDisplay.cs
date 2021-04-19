@@ -23,7 +23,7 @@ namespace Assets.GameModel.UiDisplayers
 			GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
 		}
 
-		public void Setup(Fem fem, DepartmentUiDisplay deptUi, MainGameManager mgm)
+		public void Setup(Fem fem, LocationUiDisplay deptUi, MainGameManager mgm)
 		{
 			this.fem = fem;
 			Button.onClick.AddListener(() =>

@@ -10,15 +10,15 @@ using UnityEngine.UI;
 
 namespace Assets.GameModel.UiDisplayers
 {
-	public class DepartmentSelectionUiDisplay : MonoBehaviour, IUiDisplay, ITooltipProvider
+	public class LocationSelectionUiDisplay : MonoBehaviour, IUiDisplay, ITooltipProvider
 	{
 		[SerializeField] private Button Button;
 		[SerializeField] private Image Icon;
 		[SerializeField] private TMP_Text Text;
 
-		private Department dept;
+		private Location dept;
 
-		public void Setup(Department dept, MainMapUiDisplay mainMapUi, MainGameManager mgm)
+		public void Setup(Location dept, MainMapUiDisplay mainMapUi, MainGameManager mgm)
 		{
 			this.dept = dept;
 			Button.onClick.AddListener(() =>

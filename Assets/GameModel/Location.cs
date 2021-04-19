@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Assets.GameModel
 {
-	public class Department
+	public class Location
 	{
 		public string Id;
 		public string Name;

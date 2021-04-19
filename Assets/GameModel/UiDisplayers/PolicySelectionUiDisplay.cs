@@ -13,9 +13,9 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private Image Image;
 
 		private Policy policy;
-		private Department dept;
+		private Location dept;
 
-		public void Setup(Policy policy, Department dept, MainGameManager mgm)
+		public void Setup(Policy policy, Location dept, MainGameManager mgm)
 		{
 			this.policy = policy;
 			this.dept = dept;

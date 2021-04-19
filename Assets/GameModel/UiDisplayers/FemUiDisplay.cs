@@ -32,7 +32,7 @@ namespace Assets.GameModel.UiDisplayers
 		}
 
 		private Fem fem;
-		public void Setup(Fem fem, MainGameManager mgm, DepartmentUiDisplay duid)
+		public void Setup(Fem fem, MainGameManager mgm, LocationUiDisplay duid)
 		{
 			this.fem = fem;
 

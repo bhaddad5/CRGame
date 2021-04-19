@@ -17,12 +17,12 @@ public class GameData
 	public float Revenue = 0;
 	public int Hornical = 0;
 
-	public List<Department> Departments = new List<Department>();
+	public List<Location> Locations = new List<Location>();
 
 	public List<string> GetControlledDepartmentIds()
 	{
 		List<string> controlledDepts = new List<string>();
-		foreach (var dept in Departments)
+		foreach (var dept in Locations)
 		{
 			if(dept.Controlled())
 				controlledDepts.Add(dept.Id);
@@ -33,7 +33,7 @@ public class GameData
 	public List<string> GetActivePolicyIds()
 	{
 		List<string> activePolicyIds = new List<string>();
-		foreach (var dept in Departments)
+		foreach (var dept in Locations)
 		{
 			foreach (var policy in dept.Policies)
 			{
@@ -48,7 +48,7 @@ public class GameData
 	public List<string> GetCompletedInteractionIds(string femId)
 	{
 		List<string> completedInteractionIds = new List<string>();
-		foreach (var department in Departments)
+		foreach (var department in Locations)
 		{
 			foreach (var fem in department.Fems)
 			{
@@ -85,7 +85,7 @@ public class GameData
 	{
 		List<Mission> res = new List<Mission>();
 
-		foreach (var department in Departments)
+		foreach (var department in Locations)
 		{
 			foreach (var mission in department.Missions)
 			{
@@ -99,7 +99,7 @@ public class GameData
 
 	public Fem GetFemById(string femId)
 	{
-		foreach (var department in Departments)
+		foreach (var department in Locations)
 		{
 			foreach (var fem in department.Fems)
 			{
@@ -112,9 +112,9 @@ public class GameData
 		return null;
 	}
 
-	public Department FindFemDepartment(Fem fem)
+	public Location FindFemDepartment(Fem fem)
 	{
-		foreach (var department in Departments)
+		foreach (var department in Locations)
 		{
 			if (department.Fems.Contains(fem))
 				return department;
@@ -126,7 +126,7 @@ public class GameData
 	public List<Trophy> GetOwnedTrophies()
 	{
 		List<Trophy> res = new List<Trophy>();
-		foreach (var department in Departments)
+		foreach (var department in Locations)
 		{
 			foreach (var fem in department.Fems)
 			{

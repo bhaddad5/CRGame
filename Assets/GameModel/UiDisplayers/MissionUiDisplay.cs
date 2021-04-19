@@ -13,9 +13,9 @@ public class MissionUiDisplay : MonoBehaviour, IUiDisplay
 	[SerializeField] private GameObject Complete;
 
 	private Mission mission;
-	private Department dept;
+	private Location dept;
 
-	public void Setup(Mission mission, Department dept, MainGameManager mgm)
+	public void Setup(Mission mission, Location dept, MainGameManager mgm)
 	{
 		this.mission = mission;
 		this.dept = dept;
