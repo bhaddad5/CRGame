@@ -26,7 +26,7 @@ public class InteractionsDisplayHandler : MonoBehaviour
 
 	private List<Interaction> allInteractions;
 
-	public void Setup(List<Interaction> interactions, Fem fem, MainGameManager mgm, DialogDisplayHandler dialogDisplay)
+	public void Setup(List<Interaction> interactions, Npc npc, MainGameManager mgm, DialogDisplayHandler dialogDisplay)
 	{
 		allInteractions = new List<Interaction>(interactions);
 		
@@ -39,19 +39,19 @@ public class InteractionsDisplayHandler : MonoBehaviour
 			CategoriesParent.gameObject.SetActive(true);
 		});
 
-		SetupButton(Interaction.InteractionCategory.OfficePolitics, OfficePoliticsParent, fem, mgm, dialogDisplay);
-		SetupButton(Interaction.InteractionCategory.Conversation, ConversationParent, fem, mgm, dialogDisplay);
-		SetupButton(Interaction.InteractionCategory.Challenge, ChallengeParent, fem, mgm, dialogDisplay);
-		SetupButton(Interaction.InteractionCategory.Socialize, SocializeParent, fem, mgm, dialogDisplay);
-		SetupButton(Interaction.InteractionCategory.Projects, ProjectsParent, fem, mgm, dialogDisplay);
-		SetupButton(Interaction.InteractionCategory.Train, TrainParent, fem, mgm, dialogDisplay);
-		SetupButton(Interaction.InteractionCategory.Fun, FunParent, fem, mgm, dialogDisplay);
-		SetupButton(Interaction.InteractionCategory.Surveillance, SurveillanceParent, fem, mgm, dialogDisplay);
+		SetupButton(Interaction.InteractionCategory.OfficePolitics, OfficePoliticsParent, npc, mgm, dialogDisplay);
+		SetupButton(Interaction.InteractionCategory.Conversation, ConversationParent, npc, mgm, dialogDisplay);
+		SetupButton(Interaction.InteractionCategory.Challenge, ChallengeParent, npc, mgm, dialogDisplay);
+		SetupButton(Interaction.InteractionCategory.Socialize, SocializeParent, npc, mgm, dialogDisplay);
+		SetupButton(Interaction.InteractionCategory.Projects, ProjectsParent, npc, mgm, dialogDisplay);
+		SetupButton(Interaction.InteractionCategory.Train, TrainParent, npc, mgm, dialogDisplay);
+		SetupButton(Interaction.InteractionCategory.Fun, FunParent, npc, mgm, dialogDisplay);
+		SetupButton(Interaction.InteractionCategory.Surveillance, SurveillanceParent, npc, mgm, dialogDisplay);
 
-		RefreshInteractionVisibilities(fem, mgm);
+		RefreshInteractionVisibilities(npc, mgm);
 	}
 
-	private void SetupButton(Interaction.InteractionCategory cat, Button butt, Fem fem, MainGameManager mgm, DialogDisplayHandler dialogDisplay)
+	private void SetupButton(Interaction.InteractionCategory cat, Button butt, Npc npc, MainGameManager mgm, DialogDisplayHandler dialogDisplay)
 	{
 		butt.onClick.AddListener(() =>
 		{
@@ -63,7 +63,7 @@ public class InteractionsDisplayHandler : MonoBehaviour
 			foreach (var interaction in allInteractions.Where(i => i.Category == cat))
 			{
 				var interactButton = Instantiate(InteractionPrefab);
-				interactButton.Setup(interaction, fem, mgm, dialogDisplay);
+				interactButton.Setup(interaction, npc, mgm, dialogDisplay);
 				interactButton.transform.SetParent(InteractionsParent);
 			}
 
@@ -72,25 +72,24 @@ public class InteractionsDisplayHandler : MonoBehaviour
 		});
 	}
 
-	public void RefreshInteractionVisibilities(Fem fem, MainGameManager mgm)
+	public void RefreshInteractionVisibilities(Npc npc, MainGameManager mgm)
 	{
 		foreach (var display in InteractionsParent.GetComponentsInChildren<InteractionUiDisplay>(true))
-			display.RefreshUiDisplay(mgm, fem);
+			display.RefreshUiDisplay(mgm, npc);
 
-		RefreshCategory(Interaction.InteractionCategory.OfficePolitics, OfficePoliticsParent, fem, mgm);
-		RefreshCategory(Interaction.InteractionCategory.Conversation, ConversationParent, fem, mgm);
-		RefreshCategory(Interaction.InteractionCategory.Challenge, ChallengeParent, fem, mgm);
-		RefreshCategory(Interaction.InteractionCategory.Socialize, SocializeParent, fem, mgm);
-		RefreshCategory(Interaction.InteractionCategory.Projects, ProjectsParent, fem, mgm);
-		RefreshCategory(Interaction.InteractionCategory.Train, TrainParent, fem, mgm);
-		RefreshCategory(Interaction.InteractionCategory.Fun, FunParent, fem, mgm);
-		RefreshCategory(Interaction.InteractionCategory.Surveillance, SurveillanceParent, fem, mgm);
+		RefreshCategory(Interaction.InteractionCategory.OfficePolitics, OfficePoliticsParent, npc, mgm);
+		RefreshCategory(Interaction.InteractionCategory.Conversation, ConversationParent, npc, mgm);
+		RefreshCategory(Interaction.InteractionCategory.Challenge, ChallengeParent, npc, mgm);
+		RefreshCategory(Interaction.InteractionCategory.Socialize, SocializeParent, npc, mgm);
+		RefreshCategory(Interaction.InteractionCategory.Projects, ProjectsParent, npc, mgm);
+		RefreshCategory(Interaction.InteractionCategory.Train, TrainParent, npc, mgm);
+		RefreshCategory(Interaction.InteractionCategory.Fun, FunParent, npc, mgm);
+		RefreshCategory(Interaction.InteractionCategory.Surveillance, SurveillanceParent, npc, mgm);
 	}
 
-	private void RefreshCategory(Interaction.InteractionCategory category, Button categoryParent, Fem fem, MainGameManager mgm)
+	private void RefreshCategory(Interaction.InteractionCategory category, Button categoryParent, Npc npc, MainGameManager mgm)
 	{
-		categoryParent.gameObject.SetActive(allInteractions.Any(i => i.Category == category && i.InteractionVisible(mgm, fem)));
-		//categoryParent.interactable = allInteractions.Any(i => i.Category == category && i.InteractionValid(mgm, fem));
+		categoryParent.gameObject.SetActive(allInteractions.Any(i => i.Category == category && i.InteractionVisible(mgm, npc)));
 
 		categoryParent.GetComponent<TooltipProviderBasic>().Tooltip = categoryParent.interactable ? null : "No valid interactions";
 	}

@@ -4,7 +4,7 @@
 	<xs:element name="GameData" type="GameData"/>
 
 	<xs:complexType name="Effect">
-		<xs:attribute name="ContextualFemId" type="xs:string"/>
+		<xs:attribute name="ContextualNpcId" type="xs:string"/>
 		<xs:attribute name="AmbitionEffect" type="xs:float"/>
 		<xs:attribute name="PrideEffect" type="xs:float"/>
 		<xs:attribute name="EgoEffect" type="xs:float"/>
@@ -28,9 +28,9 @@
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
 					<xs:enumeration value="Player"/>
-					<xs:enumeration value="Fem"/>
+					<xs:enumeration value="Npc"/>
 					<xs:enumeration value="Narrator"/>
-					<xs:enumeration value="CustomFemId"/>
+					<xs:enumeration value="CustomNpcId"/>
 				</xs:restriction>
 			</xs:simpleType>
 		</xs:attribute>
@@ -142,7 +142,7 @@
 		<xs:attribute name="Width" type="xs:float" use="required"/>
 	</xs:complexType>
 
-	<xs:complexType name="Fem">
+	<xs:complexType name="Npc">
 		<xs:sequence>
 			<xs:choice maxOccurs="1" minOccurs="1">
 				<xs:element name="OfficeLayout" type="OfficeLayout"/>
@@ -196,14 +196,14 @@
 		<xs:attribute name="MissionName" type="xs:string" use="required"/>
 		<xs:attribute name="MissionDescription" type="xs:string" use="required"/>
 		<xs:attribute name="MissionImage" type="xs:string" use="required"/>
-		<xs:attribute name="FemId" type="xs:string" use="required"/>
+		<xs:attribute name="NpcId" type="xs:string" use="required"/>
 		<xs:attribute name="InteractionId" type="xs:string" use="required"/>
 	</xs:complexType>
 
-	<xs:complexType name="Department">
+	<xs:complexType name="Location">
 		<xs:sequence>
 			<xs:choice maxOccurs="unbounded" minOccurs="0">
-				<xs:element name="Fem" type="Fem"/>
+				<xs:element name="Npc" type="Npc"/>
 			</xs:choice>
 			<xs:choice maxOccurs="unbounded" minOccurs="0">
 				<xs:element name="Policy" type="Policy"/>
@@ -225,7 +225,7 @@
 	<xs:complexType name="GameData">
 		<xs:sequence>
 			<xs:choice maxOccurs="unbounded" minOccurs="0">
-				<xs:element name="Department" type="Department"/>
+				<xs:element name="Location" type="Location"/>
 			</xs:choice>
 		</xs:sequence>
 		<xs:attribute name="PlayerName" type="xs:string"/>

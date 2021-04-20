@@ -11,11 +11,11 @@ namespace Assets.GameModel
 		public Popup OptionalPopup;
 		public List<Effect> Effects;
 
-		public void Execute(MainGameManager mgm, Fem fem)
+		public void Execute(MainGameManager mgm, Npc npc)
 		{
 			foreach (var effect in Effects)
 			{
-				effect.ExecuteEffect(mgm, fem);
+				effect.ExecuteEffect(mgm, npc);
 			}
 		}
 	}

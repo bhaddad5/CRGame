@@ -12,7 +12,7 @@ namespace Assets.GameModel.UiDisplayers
 	{
 		[SerializeField] private TMP_Text Name;
 		[SerializeField] private Image BackgroundImage;
-		[SerializeField] private Transform FemOptionsParent;
+		[SerializeField] private Transform NpcOptionsParent;
 		[SerializeField] private Button BackButton;
 		[SerializeField] private Transform PoliciesButton;
 		[SerializeField] private Transform PoliciesPopup;
@@ -21,8 +21,8 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private Transform MissionsPopup;
 		[SerializeField] private Transform MissionOptionsParent;
 
-		[SerializeField] private FemSelectionUiDisplay FemButtonPrefab;
-		[SerializeField] private FemUiDisplay FemUiPrefab;
+		[SerializeField] private NpcSelectionUiDisplay _npcButtonPrefab;
+		[SerializeField] private NpcUiDisplay _npcUiPrefab;
 
 		[SerializeField] private PolicySelectionUiDisplay policyPrefab;
 		[SerializeField] private MissionUiDisplay misisonPrefab;
@@ -33,11 +33,11 @@ namespace Assets.GameModel.UiDisplayers
 			this.Dept = dept;
 			BackButton.onClick.AddListener(() => mguid.CloseCurrentDepartment(false));
 
-			foreach (Fem fem in dept.Fems)
+			foreach (Npc npc in dept.Npcs)
 			{
-				var f = Instantiate(FemButtonPrefab);
-				f.Setup(fem, this, mgm);
-				f.transform.SetParent(FemOptionsParent);
+				var f = Instantiate(_npcButtonPrefab);
+				f.Setup(npc, this, mgm);
+				f.transform.SetParent(NpcOptionsParent);
 			}
 
 			if (dept.Policies.Count == 0)
@@ -82,20 +82,20 @@ namespace Assets.GameModel.UiDisplayers
 			MissionsPopup.gameObject.SetActive(false);
 		}
 
-		private FemUiDisplay currOpenFem;
-		public void ShowFem(Fem fem, MainGameManager mgm)
+		private NpcUiDisplay _currOpenNpc;
+		public void ShowNpc(Npc npc, MainGameManager mgm)
 		{
-			currOpenFem = Instantiate(FemUiPrefab);
-			currOpenFem.Setup(fem, mgm, this);
-			currOpenFem.RefreshUiDisplay(mgm);
+			_currOpenNpc = Instantiate(_npcUiPrefab);
+			_currOpenNpc.Setup(npc, mgm, this);
+			_currOpenNpc.RefreshUiDisplay(mgm);
 		}
 
-		public void CloseCurrentFem()
+		public void CloseCurrentNpc()
 		{
-			if (currOpenFem != null)
+			if (_currOpenNpc != null)
 			{
-				GameObject.Destroy(currOpenFem.gameObject);
-				currOpenFem = null;
+				GameObject.Destroy(_currOpenNpc.gameObject);
+				_currOpenNpc = null;
 			}
 		}
 
@@ -104,8 +104,8 @@ namespace Assets.GameModel.UiDisplayers
 			BackgroundImage.sprite = Dept.BackgroundImage;
 			Name.text = Dept.Name;
 
-			foreach (var fem in FemOptionsParent.GetComponentsInChildren<FemSelectionUiDisplay>(true))
-				fem.RefreshUiDisplay(mgm);
+			foreach (var npc in NpcOptionsParent.GetComponentsInChildren<NpcSelectionUiDisplay>(true))
+				npc.RefreshUiDisplay(mgm);
 
 			foreach (var policy in PolicyOptionsParent.GetComponentsInChildren<PolicySelectionUiDisplay>(true))
 				policy.RefreshUiDisplay(mgm);
@@ -113,8 +113,8 @@ namespace Assets.GameModel.UiDisplayers
 			foreach (var mission in MissionOptionsParent.GetComponentsInChildren<MissionUiDisplay>(true))
 				mission.RefreshUiDisplay(mgm);
 
-			if (currOpenFem != null)
-				currOpenFem.RefreshUiDisplay(mgm);
+			if (_currOpenNpc != null)
+				_currOpenNpc.RefreshUiDisplay(mgm);
 		}
 	}
 }

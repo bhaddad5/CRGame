@@ -45,16 +45,16 @@ public class GameData
 		return activePolicyIds;
 	}
 
-	public List<string> GetCompletedInteractionIds(string femId)
+	public List<string> GetCompletedInteractionIds(string npcId)
 	{
 		List<string> completedInteractionIds = new List<string>();
 		foreach (var department in Locations)
 		{
-			foreach (var fem in department.Fems)
+			foreach (var npc in department.Npcs)
 			{
-				if (fem.Id == femId)
+				if (npc.Id == npcId)
 				{
-					foreach (var interaction in fem.Interactions)
+					foreach (var interaction in npc.Interactions)
 					{
 						if(interaction.Completed)
 							completedInteractionIds.Add(interaction.Id);
@@ -65,23 +65,23 @@ public class GameData
 		return completedInteractionIds;
 	}
 
-	public Interaction GetInteractionById(string femId, string interactionId)
+	public Interaction GetInteractionById(string npcId, string interactionId)
 	{
-		var fem = GetFemById(femId);
+		var npc = GetNpcById(npcId);
 
-		if (fem == null)
+		if (npc == null)
 			return null;
 
-		foreach (var femInteraction in fem.Interactions)
+		foreach (var npcInteraction in npc.Interactions)
 		{
-			if (femInteraction.Id == interactionId)
-				return femInteraction;
+			if (npcInteraction.Id == interactionId)
+				return npcInteraction;
 		}
 
 		return null;
 	}
 
-	public List<Mission> GetMissionsForInteraction(string femId, string interactionId)
+	public List<Mission> GetMissionsForInteraction(string npcId, string interactionId)
 	{
 		List<Mission> res = new List<Mission>();
 
@@ -89,7 +89,7 @@ public class GameData
 		{
 			foreach (var mission in department.Missions)
 			{
-				if(mission.FemId == femId && mission.InteractionId == interactionId)
+				if(mission.npcId == npcId && mission.InteractionId == interactionId)
 					res.Add(mission);
 			}
 		}
@@ -97,29 +97,29 @@ public class GameData
 		return res;
 	}
 
-	public Fem GetFemById(string femId)
+	public Npc GetNpcById(string NpcId)
 	{
 		foreach (var department in Locations)
 		{
-			foreach (var fem in department.Fems)
+			foreach (var npc in department.Npcs)
 			{
-				if (fem.Id == femId)
+				if (npc.Id == NpcId)
 				{
-					return fem;
+					return npc;
 				}
 			}
 		}
 		return null;
 	}
 
-	public Location FindFemDepartment(Fem fem)
+	public Location FindNpcLocation(Npc npc)
 	{
 		foreach (var department in Locations)
 		{
-			if (department.Fems.Contains(fem))
+			if (department.Npcs.Contains(npc))
 				return department;
 		}
-		Debug.LogError($"Could not find department containing fem {fem.Id}");
+		Debug.LogError($"Could not find department containing npc {npc.Id}");
 		return null;
 	}
 
@@ -128,9 +128,9 @@ public class GameData
 		List<Trophy> res = new List<Trophy>();
 		foreach (var department in Locations)
 		{
-			foreach (var fem in department.Fems)
+			foreach (var npc in department.Npcs)
 			{
-				foreach (var trophy in fem.Trophies)
+				foreach (var trophy in npc.Trophies)
 				{
 					if(trophy.Owned)
 						res.Add(trophy);

@@ -14,15 +14,15 @@ public class DialogDisplayHandler : MonoBehaviour
 	[SerializeField] private Button DialogAreaButton;
 	[SerializeField] private Image NextDialogImage;
 
-	private Fem fem;
-	private FemUiDisplay femUiDisplay;
+	private Npc _npc;
+	private NpcUiDisplay _npcUiDisplay;
 	private MainGameManager mgm;
 
-	public void Setup(Fem fem, FemUiDisplay femUiDisplay, MainGameManager mgm)
+	public void Setup(Npc npc, NpcUiDisplay npcUiDisplay, MainGameManager mgm)
 	{
 		this.mgm = mgm;
-		this.fem = fem;
-		this.femUiDisplay = femUiDisplay;
+		this._npc = npc;
+		this._npcUiDisplay = npcUiDisplay;
 		DialogAreaButton.onClick.AddListener(() =>
 		{
 			if (runningCoroutine != null)
@@ -66,10 +66,10 @@ public class DialogDisplayHandler : MonoBehaviour
 		}
 		else
 		{
-			femUiDisplay.UnsetImage();
+			_npcUiDisplay.UnsetImage();
 			gameObject.SetActive(false);
 			dialogsComplete?.Invoke();
-			femUiDisplay.InteractionsHandler.gameObject.SetActive(true);
+			_npcUiDisplay.InteractionsHandler.gameObject.SetActive(true);
 		}
 	}
 
@@ -80,7 +80,7 @@ public class DialogDisplayHandler : MonoBehaviour
 	private Action dialogsComplete = null;
 	public void HandleDisplayDialogs(List<DialogEntry> dialogs, Popup popupToShow, List<Mission> missionsToShow, Action dialogsComplete)
 	{
-		femUiDisplay.InteractionsHandler.gameObject.SetActive(false);
+		_npcUiDisplay.InteractionsHandler.gameObject.SetActive(false);
 
 		this.dialogsComplete = dialogsComplete;
 		this.popupToShow = popupToShow;
@@ -102,15 +102,15 @@ public class DialogDisplayHandler : MonoBehaviour
 		SpeakerName.text = "";
 		if (dialog.CurrSpeaker == DialogEntry.Speaker.Player)
 			SpeakerName.text = "Player";
-		else if (dialog.CurrSpeaker == DialogEntry.Speaker.Fem)
-			SpeakerName.text = fem.FirstName;
-		else if (dialog.CurrSpeaker == DialogEntry.Speaker.CustomFemId)
-			SpeakerName.text = mgm.Data.GetFemById(dialog.CustomSpeakerId).FirstName;
+		else if (dialog.CurrSpeaker == DialogEntry.Speaker.Npc)
+			SpeakerName.text = _npc.FirstName;
+		else if (dialog.CurrSpeaker == DialogEntry.Speaker.CustomNpcId)
+			SpeakerName.text = mgm.Data.GetNpcById(dialog.CustomSpeakerId).FirstName;
 		NextDialogImage.enabled = false;
 		textToShow = dialog.Text;
 		DialogText.text = "";
 		if (dialog.NpcImage != "")
-			femUiDisplay.SetImage(dialog.NpcImage);
+			_npcUiDisplay.SetImage(dialog.NpcImage);
 
 		foreach (var c in dialog.Text)
 		{

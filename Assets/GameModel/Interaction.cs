@@ -32,48 +32,47 @@ namespace Assets.GameModel
 
 		public List<InteractionResult> InteractionResults;
 
-		public bool InteractionVisible(MainGameManager mgm, Fem fem)
+		public bool InteractionVisible(MainGameManager mgm, Npc npc)
 		{
 			if (Completed && !Repeatable)
 				return false;
-			if (fem.Controlled && InteractionResults.Any(res => res.Effects.Any(eff => eff.ControlEffect)))
+			if (npc.Controlled && InteractionResults.Any(res => res.Effects.Any(eff => eff.ControlEffect)))
 				return false;
 
-			return Requirements.RequirementsAreMet(mgm, fem);
+			return Requirements.RequirementsAreMet(mgm, npc);
 		}
 
-		public bool InteractionValid(MainGameManager mgm, Fem fem)
+		public bool InteractionValid(MainGameManager mgm, Npc npc)
 		{
-			if (!InteractionVisible(mgm, fem))
+			if (!InteractionVisible(mgm, npc))
 				return false;
 
 			return Cost.CanAffordCost(mgm);
 		}
 
-		public InteractionResult GetInteractionResult(MainGameManager mgm, Fem fem)
+		public InteractionResult GetInteractionResult(MainGameManager mgm, Npc npc)
 		{
 			Cost.SubtractCost(mgm);
 
 			Completed = true;
 			var randValue = UnityEngine.Random.Range(0, InteractionResults.Count);
-			Debug.Log(randValue);
 			var chosenResult = InteractionResults[randValue];
 			return chosenResult;
 		}
 
-		public List<Mission> GetRelevantMissions(MainGameManager mgm, Fem fem)
+		public List<Mission> GetRelevantMissions(MainGameManager mgm, Npc npc)
 		{
-			return mgm.Data.GetMissionsForInteraction(fem.Id, Id);
+			return mgm.Data.GetMissionsForInteraction(npc.Id, Id);
 		}
 
-		public void ExecuteMissionIfRelevant(MainGameManager mgm, Fem fem)
+		public void ExecuteMissionIfRelevant(MainGameManager mgm, Npc npc)
 		{
-			var missions = GetRelevantMissions(mgm, fem);
+			var missions = GetRelevantMissions(mgm, npc);
 			foreach (var mission in missions)
 			{
 				foreach (var effect in mission.Rewards)
 				{
-					effect.ExecuteEffect(mgm, fem);
+					effect.ExecuteEffect(mgm, npc);
 				}
 			}
 		}

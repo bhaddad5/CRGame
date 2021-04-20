@@ -13,46 +13,46 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private TMP_Text Text;
 
 		private Interaction interaction;
-		private Fem fem;
+		private Npc _npc;
 
-		public void Setup(Interaction interaction, Fem fem, MainGameManager mgm, DialogDisplayHandler displayHandler)
+		public void Setup(Interaction interaction, Npc npc, MainGameManager mgm, DialogDisplayHandler displayHandler)
 		{
 			this.interaction = interaction;
-			this.fem = fem;
+			this._npc = npc;
 			Button.onClick.AddListener(() =>
 			{
-				var res = interaction.GetInteractionResult(mgm, fem);
-				var missions = interaction.GetRelevantMissions(mgm, fem);
+				var res = interaction.GetInteractionResult(mgm, npc);
+				var missions = interaction.GetRelevantMissions(mgm, npc);
 
 				displayHandler.HandleDisplayDialogs(res.Dialogs, res.OptionalPopup, missions,() =>
 				{
-					res.Execute(mgm, fem);
-					interaction.ExecuteMissionIfRelevant(mgm, fem);
+					res.Execute(mgm, npc);
+					interaction.ExecuteMissionIfRelevant(mgm, npc);
 					mgm.HandleTurnChange();
 				});
 			});
-			RefreshUiDisplay(mgm, fem);
+			RefreshUiDisplay(mgm, npc);
 		}
 
-		public void RefreshUiDisplay(MainGameManager mgm, Fem fem)
+		public void RefreshUiDisplay(MainGameManager mgm, Npc npc)
 		{
 			Text.text = $"{interaction.Name}";
 			if (!string.IsNullOrEmpty(interaction.Cost.GetCostString()))
 				Text.text += $" - {interaction.Cost.GetCostString()}";
-			Button.interactable = interaction.InteractionValid(mgm, fem);
-			gameObject.SetActive(interaction.InteractionVisible(mgm, fem));
+			Button.interactable = interaction.InteractionValid(mgm, npc);
+			gameObject.SetActive(interaction.InteractionVisible(mgm, npc));
 		}
 
 		public string GetTooltip(MainGameManager mgm)
 		{
-			if (interaction.InteractionValid(mgm, fem))
+			if (interaction.InteractionValid(mgm, _npc))
 			{
 				return null;
 			}
 
 			string tooltip = "";
 
-			foreach (var tt in interaction.Requirements.GetInvalidTooltips(mgm, fem))
+			foreach (var tt in interaction.Requirements.GetInvalidTooltips(mgm, _npc))
 				tooltip += $"\n{tt}";
 			foreach (var tt in interaction.Cost.GetInvalidTooltips(mgm))
 				tooltip += $"\n{tt}";

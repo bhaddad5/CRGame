@@ -9,6 +9,6 @@ namespace Assets.GameModel
 	public static class ActionLookup
 	{
 		public static Dictionary<string, Action> EndOfTurnActions = new Dictionary<string, Action>();
-		public static Dictionary<string, Action<Fem>> CharacterActions = new Dictionary<string, Action<Fem>>();
+		public static Dictionary<string, Action<Npc>> CharacterActions = new Dictionary<string, Action<Npc>>();
 	}
 }

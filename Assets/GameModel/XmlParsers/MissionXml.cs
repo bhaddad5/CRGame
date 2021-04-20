@@ -12,7 +12,7 @@ public class MissionXml
 	[XmlAttribute] [DefaultValue("")] public string MissionDescription = "";
 	[XmlAttribute] [DefaultValue("")] public string MissionImage = "";
 
-	[XmlAttribute] [DefaultValue("")] public string FemId = "";
+	[XmlAttribute] [DefaultValue("")] public string NpcId = "";
 	[XmlAttribute] [DefaultValue("")] public string InteractionId = "";
 
 	[XmlElement("Effect", typeof(EffectXml))]
@@ -31,7 +31,7 @@ public class MissionXml
 			MissionName = MissionName,
 			MissionDescription = MissionDescription,
 			MissionImage = ImageLookup.Missions.GetImage(MissionImage),
-			FemId = FemId,
+			npcId = NpcId,
 			InteractionId = InteractionId,
 			Rewards = effects,
 		};
@@ -50,7 +50,7 @@ public class MissionXml
 			MissionImage = ob.MissionImage.name,
 			MissionDescription = ob.MissionDescription,
 			MissionName = ob.MissionName,
-			FemId = ob.FemId,
+			NpcId = ob.npcId,
 			InteractionId = ob.InteractionId,
 			Effects = effects.ToArray(),
 		};

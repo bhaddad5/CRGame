@@ -97,22 +97,22 @@ namespace Assets.GameModel
 		{
 			foreach (var department in Data.Locations)
 			{
-				foreach (var fem in department.Fems)
+				foreach (var npc in department.Npcs)
 				{
-					foreach (var trait in fem.Traits)
+					foreach (var trait in npc.Traits)
 					{
-						if (fem.Controlled)
+						if (npc.Controlled)
 						{
 							foreach (var effect in trait.ControlledEffects)
 							{
-								effect?.ExecuteEffect(this, fem);
+								effect?.ExecuteEffect(this, npc);
 							}
 						}
 						else
 						{
 							foreach (var effect in trait.FreeEffects)
 							{
-								effect?.ExecuteEffect(this, fem);
+								effect?.ExecuteEffect(this, npc);
 							}
 						}
 					}

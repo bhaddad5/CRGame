@@ -13,13 +13,13 @@ namespace Assets.GameModel
 		public string MissionDescription;
 		public Sprite MissionImage;
 
-		public string FemId;
+		public string npcId;
 		public string InteractionId;
 		public List<Effect> Rewards;
 
 		public bool IsComplete(MainGameManager mgm)
 		{
-			var interaction = mgm.Data.GetInteractionById(FemId, InteractionId);
+			var interaction = mgm.Data.GetInteractionById(npcId, InteractionId);
 			return interaction.Completed;
 		}
 	}

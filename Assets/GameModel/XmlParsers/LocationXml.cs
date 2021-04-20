@@ -19,8 +19,8 @@ namespace Assets.GameModel.XmlParsers
 		[XmlAttribute] [DefaultValue("")] public string LocationIcon = "";
 		[XmlAttribute] [DefaultValue("")] public string BackgroundImage = "";
 
-		[XmlElement("Fem", typeof(FemXml))]
-		public FemXml[] Fems = new FemXml[0];
+		[XmlElement("Npc", typeof(NpcXml))]
+		public NpcXml[] Npcs = new NpcXml[0];
 
 		[XmlElement("Policy", typeof(PolicyXml))]
 		public PolicyXml[] Policies = new PolicyXml[0];
@@ -30,10 +30,10 @@ namespace Assets.GameModel.XmlParsers
 
 		public Location FromXml()
 		{
-			List<Fem> fems = new List<Fem>();
-			foreach (var femXml in Fems)
+			List<Npc> npcs = new List<Npc>();
+			foreach (var npcXml in Npcs)
 			{
-				fems.Add(femXml.FromXml());
+				npcs.Add(npcXml.FromXml());
 			}
 
 			List<Policy> policies = new List<Policy>();
@@ -54,7 +54,7 @@ namespace Assets.GameModel.XmlParsers
 				Name = Name,
 				ClosedOnWeekends = ClosedOnWeekends,
 				Accessible = Accessible,
-				Fems = fems,
+				Npcs = npcs,
 				Policies = policies,
 				Missions = missions,
 				UiPosition = new Vector2(UiPosX, UiPosY),
@@ -65,10 +65,10 @@ namespace Assets.GameModel.XmlParsers
 
 		public static LocationXml ToXml(Location ob)
 		{
-			List<FemXml> fems = new List<FemXml>();
-			foreach (var fem in ob.Fems)
+			List<NpcXml> npcs = new List<NpcXml>();
+			foreach (var npc in ob.Npcs)
 			{
-				fems.Add(FemXml.ToXml(fem));
+				npcs.Add(NpcXml.ToXml(npc));
 			}
 
 			List<PolicyXml> policies = new List<PolicyXml>();
@@ -89,7 +89,7 @@ namespace Assets.GameModel.XmlParsers
 				Name = ob.Name,
 				ClosedOnWeekends = ob.ClosedOnWeekends,
 				Accessible = ob.Accessible,
-				Fems = fems.ToArray(),
+				Npcs = npcs.ToArray(),
 				Policies = policies.ToArray(),
 				Missions = missions.ToArray(),
 				UiPosX = ob.UiPosition.x,

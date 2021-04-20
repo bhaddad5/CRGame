@@ -19,11 +19,11 @@ namespace Assets.GameModel
 
 		public List<Policy> Policies;
 		public List<Mission> Missions;
-		public List<Fem> Fems;
+		public List<Npc> Npcs;
 
 		public bool Controlled()
 		{
-			return Fems[0].Controlled;
+			return Npcs[0].Controlled;
 		}
 
 		public bool IsAccessible(MainGameManager mgm)

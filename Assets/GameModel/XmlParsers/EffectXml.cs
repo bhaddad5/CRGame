@@ -5,7 +5,7 @@ namespace Assets.GameModel.XmlParsers
 {
 	public class EffectXml
 	{
-		[XmlAttribute] [DefaultValue("")] public string ContextualFemId = "";
+		[XmlAttribute] [DefaultValue("")] public string ContextualNpcId = "";
 
 		[XmlAttribute] [DefaultValue(0)] public float AmbitionEffect = 0;
 		[XmlAttribute] [DefaultValue(0)] public float PrideEffect = 0;
@@ -28,7 +28,7 @@ namespace Assets.GameModel.XmlParsers
 		{
 			return new Effect()
 			{
-				ContextualFemId = ContextualFemId,
+				ContextualNpcId = ContextualNpcId,
 				AmbitionEffect = AmbitionEffect,
 				ControlEffect = ControlEffect,
 				RemoveNpcFromGame = RemoveNpcFromGame,
@@ -52,7 +52,7 @@ namespace Assets.GameModel.XmlParsers
 		{
 			return new EffectXml()
 			{
-				ContextualFemId = ob.ContextualFemId,
+				ContextualNpcId = ob.ContextualNpcId,
 				AmbitionEffect = ob.AmbitionEffect,
 				ControlEffect = ob.ControlEffect,
 				RemoveNpcFromGame = ob.RemoveNpcFromGame,

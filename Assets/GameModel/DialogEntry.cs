@@ -9,11 +9,11 @@ namespace Assets.GameModel
 		public enum Speaker
 		{
 			Player,
-			Fem,
+			Npc,
 			Narrator,
-			CustomFemId,
+			CustomNpcId,
 		}
-		public Speaker CurrSpeaker = Speaker.Fem;
+		public Speaker CurrSpeaker = Speaker.Npc;
 		public string CustomSpeakerId = "";
 		public string Text = "";
 

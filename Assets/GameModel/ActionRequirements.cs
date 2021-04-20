@@ -14,14 +14,14 @@ namespace Assets.GameModel
 		public List<string> RequiredTrophies = new List<string>();
 		public float RequiredPower = 0;
 
-		//If there is a fem
+		//If there is a npc
 		public bool RequiredControl = false;
 		public float RequiredAmbition = -1;
 		public float RequiredPride = -1;
 
-		public bool RequirementsAreMet(MainGameManager mgm, Fem fem)
+		public bool RequirementsAreMet(MainGameManager mgm, Npc npc)
 		{
-			if (RequiredControl && !fem.Controlled)
+			if (RequiredControl && !npc.Controlled)
 			{
 				return false;
 			}
@@ -48,18 +48,18 @@ namespace Assets.GameModel
 					inverse = true;
 				}
 
-				var femId = fem.Id;
+				var npcId = npc.Id;
 
 				if (id.Contains("-"))
 				{
 					var split = id.Split('-');
 					id = split[1].Trim();
-					femId = split[0].Trim();
+					npcId = split[0].Trim();
 				}
 
-				if (!inverse && !mgm.Data.GetCompletedInteractionIds(femId).Contains(id))
+				if (!inverse && !mgm.Data.GetCompletedInteractionIds(npcId).Contains(id))
 					return false;
-				else if (inverse && mgm.Data.GetCompletedInteractionIds(femId).Contains(id))
+				else if (inverse && mgm.Data.GetCompletedInteractionIds(npcId).Contains(id))
 					return false;
 			}
 
@@ -69,12 +69,12 @@ namespace Assets.GameModel
 					return false;
 			}
 
-			if (RequiredAmbition >= 0 && RequiredAmbition < fem.Ambition)
+			if (RequiredAmbition >= 0 && RequiredAmbition < npc.Ambition)
 			{
 				return false;
 			}
 
-			if (RequiredPride >= 0 && RequiredPride < fem.Pride)
+			if (RequiredPride >= 0 && RequiredPride < npc.Pride)
 			{
 				return false;
 			}
@@ -87,12 +87,12 @@ namespace Assets.GameModel
 			return true;
 		}
 
-		public List<string> GetInvalidTooltips(MainGameManager mgm, Fem fem)
+		public List<string> GetInvalidTooltips(MainGameManager mgm, Npc npc)
 		{
 			List<string> tooltips = new List<string>();
-			if (RequiredAmbition >= 0 && RequiredAmbition < fem.Ambition)
+			if (RequiredAmbition >= 0 && RequiredAmbition < npc.Ambition)
 				tooltips.Add($"Requires {RequiredAmbition} or less Ambition");
-			if (RequiredPride >= 0 && RequiredPride < fem.Pride)
+			if (RequiredPride >= 0 && RequiredPride < npc.Pride)
 				tooltips.Add($"Requires {RequiredPride} or less Pride");
 			if (RequiredPower > mgm.Data.Power)
 				tooltips.Add($"Requires {RequiredPower} or more Power");
