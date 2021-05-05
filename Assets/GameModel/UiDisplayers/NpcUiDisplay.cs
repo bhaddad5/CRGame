@@ -19,6 +19,7 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private Button BackButton;
 		[SerializeField] private Image Picture;
 		[SerializeField] private Image BackgroundImage;
+		[SerializeField] private Transform InfoBox;
 
 		[SerializeField] public InteractionsDisplayHandler InteractionsHandler;
 		[SerializeField] private DialogDisplayHandler DialogHandler;
@@ -35,6 +36,9 @@ namespace Assets.GameModel.UiDisplayers
 		public void Setup(Npc npc, MainGameManager mgm, LocationUiDisplay duid)
 		{
 			this._npc = npc;
+
+			if(!npc.IsControllable)
+				InfoBox.gameObject.SetActive(false);
 
 			InteractionsHandler.Setup(npc.Interactions, npc, mgm, DialogHandler);
 

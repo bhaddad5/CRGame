@@ -37,6 +37,7 @@ namespace Assets.GameModel.XmlParsers
 		[XmlAttribute] [DefaultValue("")] public string FirstName = "";
 		[XmlAttribute] [DefaultValue("")] public string LastName = "";
 		[XmlAttribute] [DefaultValue(0)] public int Age = 0;
+		[XmlAttribute] [DefaultValue(true)] public bool IsControllable = true;
 		[XmlAttribute] [DefaultValue(false)] public bool Controlled = false;
 		[XmlAttribute] [DefaultValue(0)] public float Ambition = 0;
 		[XmlAttribute] [DefaultValue(0)] public float Pride = 0;
@@ -106,6 +107,7 @@ namespace Assets.GameModel.XmlParsers
 				BackgroundImage = ImageLookup.Backgrounds.GetImage(BackgroundImage),
 				Layout = layoutXml.FromXml(),
 				PersonalLayout = personalLayoutXml.FromXml(),
+				IsControllable = IsControllable,
 			};
 		}
 
@@ -144,7 +146,8 @@ namespace Assets.GameModel.XmlParsers
 				BackgroundImage = ob.BackgroundImage.name,
 				RequiredVisibilityInteraction = ob.RequiredVisibilityInteraction,
 				LocationLayout = new []{LocationLayoutXml.ToXml(ob.Layout)},
-				PersonalLayout = new []{LocationLayoutXml.ToXml(ob.PersonalLayout), }
+				PersonalLayout = new []{LocationLayoutXml.ToXml(ob.PersonalLayout), },
+				IsControllable = ob.IsControllable,
 			};
 		}
 	}

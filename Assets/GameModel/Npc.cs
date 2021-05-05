@@ -15,6 +15,7 @@ namespace Assets.GameModel
 	{
 		public string Id;
 
+		public bool IsControllable;
 		public bool Controlled;
 
 		public float Ambition;
