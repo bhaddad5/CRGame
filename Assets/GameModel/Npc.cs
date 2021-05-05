@@ -4,15 +4,15 @@ using UnityEngine;
 
 namespace Assets.GameModel
 {
+	public class LocationLayout
+	{
+		public float X = 0.5f;
+		public float Y = 0.5f;
+		public float Width = 200f;
+	}
+
 	public class Npc
 	{
-		public class OfficeLayout
-		{
-			public float X = 0.5f;
-			public float Y = 0.5f;
-			public float Width = 200f;
-		}
-
 		public string Id;
 
 		public bool Controlled;
@@ -26,8 +26,8 @@ namespace Assets.GameModel
 
 		public string RequiredVisibilityInteraction;
 
-		public OfficeLayout Layout = new OfficeLayout();
-		public OfficeLayout PersonalLayout = new OfficeLayout();
+		public LocationLayout Layout = new LocationLayout();
+		public LocationLayout PersonalLayout = new LocationLayout();
 
 		public Sprite BackgroundImage;
 

@@ -24,6 +24,10 @@ namespace Assets.GameModel
 		public List<string> TraitsRemoved;
 		public List<string> TrophiesClaimed;
 
+		public string UpdatePlayerHome;
+		public string UpdatePlayerCar;
+		public string UpdatePlayerClothes;
+
 		public void ExecuteEffect(MainGameManager mgm, Npc npc)
 		{
 			if (ContextualNpcId != "")

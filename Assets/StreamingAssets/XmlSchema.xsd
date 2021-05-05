@@ -136,7 +136,7 @@
 		<xs:attribute name="Owned" type="xs:boolean"/>
 	</xs:complexType>
 
-	<xs:complexType name="OfficeLayout">
+	<xs:complexType name="LocationLayout">
 		<xs:attribute name="XPercentage" type="xs:float" use="required"/>
 		<xs:attribute name="YPercentage" type="xs:float" use="required"/>
 		<xs:attribute name="Width" type="xs:float" use="required"/>
@@ -145,10 +145,10 @@
 	<xs:complexType name="Npc">
 		<xs:sequence>
 			<xs:choice maxOccurs="1" minOccurs="1">
-				<xs:element name="OfficeLayout" type="OfficeLayout"/>
+				<xs:element name="LocationLayout" type="LocationLayout"/>
 			</xs:choice>
 			<xs:choice maxOccurs="1" minOccurs="1">
-				<xs:element name="PersonalLayout" type="OfficeLayout"/>
+				<xs:element name="PersonalLayout" type="LocationLayout"/>
 			</xs:choice>
 			<xs:choice maxOccurs="unbounded" minOccurs="0">
 				<xs:element name="Trait" type="Trait"/>
@@ -220,6 +220,8 @@
 		<xs:attribute name="UiPosY" type="xs:float" use="required"/>
 		<xs:attribute name="BackgroundImage" type="xs:string" use="required"/>
 		<xs:attribute name="LocationIcon" type="xs:string" use="required"/>
+		<xs:attribute name="ShowTrophyCase" type="xs:boolean"/>
+		<xs:attribute name="ShowCar" type="xs:boolean"/>
 	</xs:complexType>
 	
 	<xs:complexType name="GameData">

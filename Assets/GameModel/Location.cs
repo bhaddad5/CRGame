@@ -21,6 +21,9 @@ namespace Assets.GameModel
 		public List<Mission> Missions;
 		public List<Npc> Npcs;
 
+		public bool ShowTrophyCase;
+		public bool ShowCar;
+
 		public bool Controlled()
 		{
 			return Npcs[0].Controlled;

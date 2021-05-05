@@ -19,6 +19,9 @@ namespace Assets.GameModel.XmlParsers
 		[XmlAttribute] [DefaultValue("")] public string LocationIcon = "";
 		[XmlAttribute] [DefaultValue("")] public string BackgroundImage = "";
 
+		[XmlAttribute] [DefaultValue(false)] public bool ShowTrophyCase = false;
+		[XmlAttribute] [DefaultValue(false)] public bool ShowCar = false;
+
 		[XmlElement("Npc", typeof(NpcXml))]
 		public NpcXml[] Npcs = new NpcXml[0];
 
@@ -31,7 +34,7 @@ namespace Assets.GameModel.XmlParsers
 		public Location FromXml()
 		{
 			List<Npc> npcs = new List<Npc>();
-			foreach (var npcXml in Npcs)
+			foreach (var npcXml in Npcs ?? new NpcXml[0])
 			{
 				npcs.Add(npcXml.FromXml());
 			}
@@ -60,6 +63,8 @@ namespace Assets.GameModel.XmlParsers
 				UiPosition = new Vector2(UiPosX, UiPosY),
 				BackgroundImage = ImageLookup.Backgrounds.GetImage(BackgroundImage),
 				Icon = ImageLookup.Icons.GetImage(LocationIcon),
+				ShowCar = ShowCar,
+				ShowTrophyCase = ShowTrophyCase,
 			};
 		}
 
@@ -96,6 +101,8 @@ namespace Assets.GameModel.XmlParsers
 				UiPosY = ob.UiPosition.y,
 				BackgroundImage = ob.BackgroundImage.name,
 				LocationIcon = ob.Icon.name,
+				ShowCar = ob.ShowCar,
+				ShowTrophyCase = ob.ShowTrophyCase,
 			};
 		}
 	}

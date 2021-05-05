@@ -198,5 +198,10 @@ namespace Assets.GameModel
 		{
 			hudUiDisplay.ShowPopup(popup, onPopupDone);
 		}
+
+		public void SetTrophyCaseVisibility(bool vis)
+		{
+			hudUiDisplay.SetTrophyCaseVisibility(vis);
+		}
 	}
 }

@@ -29,7 +29,6 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 	[SerializeField] private TMP_Text Month;
 
 	[SerializeField] private Button Rest;
-	[SerializeField] private Button PlayerOffice;
 
 	[SerializeField] private PlayerOfficeUiDisplay PlayerOfficeUiPrefab;
 
@@ -43,6 +42,8 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 
 	[SerializeField] private Transform MainMenu;
 
+	[SerializeField] private TrophyCaseUiDisplay TrophyCase;
+
 	[SerializeField] private LoadSaveMenuManager LoadSaveMenuManager;
 
 	private MainGameManager mgm;
@@ -54,7 +55,7 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 			mgm.Data.Ego += 5;
 			mgm.HandleTurnChange();
 		});
-		PlayerOffice.onClick.AddListener(ShowPlayerOffice);
+		//PlayerOffice.onClick.AddListener(ShowPlayerOffice);
 
 		MainMenuButton.onClick.AddListener(ShowMainMenu);
 		ReturnToGameButton.onClick.AddListener(HideMainMenu);
@@ -115,7 +116,7 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 		playerOfficeDisplay = Instantiate(PlayerOfficeUiPrefab);
 		playerOfficeDisplay.Setup(this, mgm);
 		playerOfficeDisplay.RefreshUiDisplay(mgm);
-		PlayerOffice.gameObject.SetActive(false);
+		//PlayerOffice.gameObject.SetActive(false);
 	}
 
 	public void ClosePlayerOffice()
@@ -124,7 +125,7 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 		{
 			GameObject.Destroy(playerOfficeDisplay.gameObject);
 			playerOfficeDisplay = null;
-			PlayerOffice.gameObject.SetActive(true);
+			//PlayerOffice.gameObject.SetActive(true);
 		}
 	}
 
@@ -138,6 +139,12 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 		MainMenu.gameObject.SetActive(false);
 	}
 
+	public void SetTrophyCaseVisibility(bool vis)
+	{
+		if (vis)
+			TrophyCase.UpdateVisuals(mgm);
+		TrophyCase.gameObject.SetActive(vis);
+	}
 	
 	private void SaveGame()
 	{

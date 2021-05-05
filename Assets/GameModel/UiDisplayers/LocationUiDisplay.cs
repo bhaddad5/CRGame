@@ -27,39 +27,57 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private PolicySelectionUiDisplay policyPrefab;
 		[SerializeField] private MissionUiDisplay misisonPrefab;
 
-		public Location Dept;
-		public void Setup(Location dept, MainMapUiDisplay mguid, MainGameManager mgm)
+		public Location Loc;
+		private MainGameManager mgm;
+		public void Setup(Location loc, MainMapUiDisplay mguid, MainGameManager mgm)
 		{
-			this.Dept = dept;
+			this.Loc = loc;
+			this.mgm = mgm;
 			BackButton.onClick.AddListener(() => mguid.CloseCurrentDepartment(false));
 
-			foreach (Npc npc in dept.Npcs)
+			foreach (Npc npc in loc.Npcs)
 			{
 				var f = Instantiate(_npcButtonPrefab);
 				f.Setup(npc, this, mgm);
 				f.transform.SetParent(NpcOptionsParent);
 			}
 
-			if (dept.Policies.Count == 0)
+			/*foreach (var customVisual in loc.CustomVisuals)
+			{
+				var f = Instantiate(_customVisualPrefab);
+				f.Setup(customVisual, this, mgm);
+				f.transform.SetParent(NpcOptionsParent);
+			}*/
+
+			if (loc.Policies.Count == 0)
 				PoliciesButton.gameObject.SetActive(false);
-			foreach (Policy policy in dept.Policies)
+			foreach (Policy policy in loc.Policies)
 			{
 				var p = Instantiate(policyPrefab);
-				p.Setup(policy, dept, mgm);
+				p.Setup(policy, loc, mgm);
 				p.transform.SetParent(PolicyOptionsParent);
 			}
 
-			if (dept.Missions.Count == 0)
+			if (loc.Missions.Count == 0)
 				MissionsButton.gameObject.SetActive(false);
-			foreach (Mission mission in dept.Missions)
+			foreach (Mission mission in loc.Missions)
 			{
 				var m = Instantiate(misisonPrefab);
-				m.Setup(mission, dept, mgm);
+				m.Setup(mission, loc, mgm);
 				m.transform.SetParent(MissionOptionsParent);
 			}
 
 			ClosePolicies();
 			CloseMissions();
+
+			if (loc.ShowTrophyCase)
+				mgm.SetTrophyCaseVisibility(true);
+		}
+
+		public void Shutdown()
+		{
+			if (Loc.ShowTrophyCase)
+				mgm.SetTrophyCaseVisibility(false);
 		}
 
 		public void OpenPolicies()
@@ -101,9 +119,9 @@ namespace Assets.GameModel.UiDisplayers
 
 		public void RefreshUiDisplay(MainGameManager mgm)
 		{
-			BackgroundImage.sprite = Dept.BackgroundImage;
-			Name.text = Dept.Name;
-
+			BackgroundImage.sprite = Loc.BackgroundImage;
+			Name.text = Loc.Name;
+			
 			foreach (var npc in NpcOptionsParent.GetComponentsInChildren<NpcSelectionUiDisplay>(true))
 				npc.RefreshUiDisplay(mgm);
 

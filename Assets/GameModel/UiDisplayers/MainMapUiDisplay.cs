@@ -42,8 +42,9 @@ namespace Assets.GameModel.UiDisplayers
 		{
 			if (_currOpenLocation != null)
 			{
+				_currOpenLocation.Shutdown();
 				_currOpenLocation.CloseCurrentNpc();
-				if (!onlyCloseIfInaccessable || !_currOpenLocation.Dept.IsAccessible(mgm))
+				if (!onlyCloseIfInaccessable || !_currOpenLocation.Loc.IsAccessible(mgm))
 				{
 					GameObject.Destroy(_currOpenLocation.gameObject);
 					_currOpenLocation = null;

@@ -4,15 +4,15 @@ using System.Xml.Serialization;
 
 namespace Assets.GameModel.XmlParsers
 {
-	public class OfficeLayoutXml
+	public class LocationLayoutXml
 	{
 		[XmlAttribute] [DefaultValue(0)] public float XPercentage = 0;
 		[XmlAttribute] [DefaultValue(0)] public float YPercentage = 0;
 		[XmlAttribute] [DefaultValue(100f)] public float Width = 100;
 
-		public Npc.OfficeLayout FromXml()
+		public LocationLayout FromXml()
 		{
-			return new Npc.OfficeLayout()
+			return new LocationLayout()
 			{
 				X = XPercentage,
 				Y = YPercentage,
@@ -20,9 +20,9 @@ namespace Assets.GameModel.XmlParsers
 			};
 		}
 
-		public static OfficeLayoutXml ToXml(Npc.OfficeLayout ob)
+		public static LocationLayoutXml ToXml(LocationLayout ob)
 		{
-			return new OfficeLayoutXml()
+			return new LocationLayoutXml()
 			{
 				Width = ob.Width,
 				XPercentage = ob.X,
@@ -43,11 +43,11 @@ namespace Assets.GameModel.XmlParsers
 		[XmlAttribute] [DefaultValue("")] public string RequiredVisibilityInteraction = "";
 		[XmlAttribute] [DefaultValue("")] public string BackgroundImage = "";
 
-		[XmlElement("OfficeLayout", typeof(OfficeLayoutXml))]
-		public OfficeLayoutXml[] OfficeLayout = new OfficeLayoutXml[0];
+		[XmlElement("LocationLayout", typeof(LocationLayoutXml))]
+		public LocationLayoutXml[] LocationLayout = new LocationLayoutXml[0];
 
-		[XmlElement("PersonalLayout", typeof(OfficeLayoutXml))]
-		public OfficeLayoutXml[] PersonalLayout = new OfficeLayoutXml[0];
+		[XmlElement("PersonalLayout", typeof(LocationLayoutXml))]
+		public LocationLayoutXml[] PersonalLayout = new LocationLayoutXml[0];
 
 		[XmlElement("Trait", typeof(TraitXml))]
 		public TraitXml[] Traits = new TraitXml[0];
@@ -78,13 +78,13 @@ namespace Assets.GameModel.XmlParsers
 				trophies.Add(trophyXml.FromXml());
 			}
 
-			OfficeLayoutXml layoutXml = new OfficeLayoutXml();
-			if ((OfficeLayout?.Length ?? 0) > 0)
+			LocationLayoutXml layoutXml = new LocationLayoutXml();
+			if ((LocationLayout?.Length ?? 0) > 0)
 			{
-				layoutXml = OfficeLayout[0];
+				layoutXml = LocationLayout[0];
 			}
 
-			OfficeLayoutXml personalLayoutXml = new OfficeLayoutXml();
+			LocationLayoutXml personalLayoutXml = new LocationLayoutXml();
 			if ((PersonalLayout?.Length ?? 0) > 0)
 			{
 				personalLayoutXml = PersonalLayout[0];
@@ -143,8 +143,8 @@ namespace Assets.GameModel.XmlParsers
 				Trophies = trophies.ToArray(),
 				BackgroundImage = ob.BackgroundImage.name,
 				RequiredVisibilityInteraction = ob.RequiredVisibilityInteraction,
-				OfficeLayout = new []{OfficeLayoutXml.ToXml(ob.Layout)},
-				PersonalLayout = new []{OfficeLayoutXml.ToXml(ob.PersonalLayout), }
+				LocationLayout = new []{LocationLayoutXml.ToXml(ob.Layout)},
+				PersonalLayout = new []{LocationLayoutXml.ToXml(ob.PersonalLayout), }
 			};
 		}
 	}
