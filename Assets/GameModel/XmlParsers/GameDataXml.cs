@@ -20,6 +20,9 @@ namespace Assets.GameModel.XmlParsers
 		[XmlAttribute] [DefaultValue(0)] public float Revenue = 0;
 		[XmlAttribute] [DefaultValue(0)] public int Hornical = 0;
 
+		[XmlElement("StatusSymbols", typeof(PlayerStatusSymbolsXml))]
+		public PlayerStatusSymbolsXml[] StatusSymbols = new PlayerStatusSymbolsXml[0];
+
 		[XmlElement("Location", typeof(LocationXml))]
 		public LocationXml[] Locations = new LocationXml[0];
 
@@ -30,6 +33,8 @@ namespace Assets.GameModel.XmlParsers
 			{
 				locations.Add(locationXml.FromXml());
 			}
+
+			PlayerStatusSymbols statusSymbols = StatusSymbols[0].FromXml();
 
 			return new GameData()
 			{
@@ -45,6 +50,7 @@ namespace Assets.GameModel.XmlParsers
 				Revenue = Revenue,
 				Hornical = Hornical,
 				Locations = locations,
+				StatusSymbols = statusSymbols,
 			};
 		}
 
@@ -70,6 +76,7 @@ namespace Assets.GameModel.XmlParsers
 				Revenue = ob.Revenue,
 				Hornical = ob.Hornical,
 				Locations = locations.ToArray(),
+				StatusSymbols = new []{PlayerStatusSymbolsXml.ToXml(ob.StatusSymbols)}
 			};
 		}
 	}

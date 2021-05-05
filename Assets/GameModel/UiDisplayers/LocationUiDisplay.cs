@@ -72,12 +72,16 @@ namespace Assets.GameModel.UiDisplayers
 
 			if (loc.ShowTrophyCase)
 				mgm.SetTrophyCaseVisibility(true);
+			if (loc.ShowCar)
+				mgm.SetStatusSymbolsVisibility(true);
 		}
 
 		public void Shutdown()
 		{
 			if (Loc.ShowTrophyCase)
 				mgm.SetTrophyCaseVisibility(false);
+			if(Loc.ShowCar)
+				mgm.SetStatusSymbolsVisibility(false);
 		}
 
 		public void OpenPolicies()

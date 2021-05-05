@@ -17,6 +17,7 @@ public class GameData
 	public float Revenue = 0;
 	public int Hornical = 0;
 
+	public PlayerStatusSymbols StatusSymbols = new PlayerStatusSymbols();
 	public List<Location> Locations = new List<Location>();
 
 	public List<string> GetControlledDepartmentIds()

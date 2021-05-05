@@ -43,6 +43,7 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 	[SerializeField] private Transform MainMenu;
 
 	[SerializeField] private TrophyCaseUiDisplay TrophyCase;
+	[SerializeField] private PlayerStatusSymbolsDisplay StatusSymbols;
 
 	[SerializeField] private LoadSaveMenuManager LoadSaveMenuManager;
 
@@ -145,7 +146,14 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 			TrophyCase.UpdateVisuals(mgm);
 		TrophyCase.gameObject.SetActive(vis);
 	}
-	
+
+	public void SetStatusSymbolsVisibility(bool vis)
+	{
+		if (vis)
+			StatusSymbols.UpdateVisuals(mgm);
+		StatusSymbols.gameObject.SetActive(vis);
+	}
+
 	private void SaveGame()
 	{
 		LoadSaveMenuManager.Show(false);

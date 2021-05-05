@@ -203,5 +203,10 @@ namespace Assets.GameModel
 		{
 			hudUiDisplay.SetTrophyCaseVisibility(vis);
 		}
+
+		public void SetStatusSymbolsVisibility(bool vis)
+		{
+			hudUiDisplay.SetStatusSymbolsVisibility(vis);
+		}
 	}
 }

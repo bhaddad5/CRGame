@@ -223,9 +223,17 @@
 		<xs:attribute name="ShowTrophyCase" type="xs:boolean"/>
 		<xs:attribute name="ShowCar" type="xs:boolean"/>
 	</xs:complexType>
+
+	<xs:complexType name="StatusSymbols">
+		<xs:attribute name="CarName" type="xs:string" use="required"/>
+		<xs:attribute name="CarImage" type="xs:string" use="required"/>
+	</xs:complexType>
 	
 	<xs:complexType name="GameData">
 		<xs:sequence>
+			<xs:choice maxOccurs="1" minOccurs="1">
+				<xs:element name="StatusSymbols" type="StatusSymbols"/>
+			</xs:choice>
 			<xs:choice maxOccurs="unbounded" minOccurs="0">
 				<xs:element name="Location" type="Location"/>
 			</xs:choice>
