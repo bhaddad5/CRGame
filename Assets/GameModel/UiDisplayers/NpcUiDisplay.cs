@@ -26,10 +26,7 @@ namespace Assets.GameModel.UiDisplayers
 
 		void Start()
 		{
-			Picture.GetComponent<RectTransform>().anchorMin = new Vector2(_npc.PersonalLayout.X, _npc.PersonalLayout.Y);
-			Picture.GetComponent<RectTransform>().anchorMax = new Vector2(_npc.PersonalLayout.X, _npc.PersonalLayout.Y);
-			Picture.GetComponent<RectTransform>().sizeDelta = new Vector2(_npc.PersonalLayout.Width, _npc.PersonalLayout.Width * 2f);
-			Picture.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+			Picture.GetComponent<RectTransform>().ApplyLayout(_npc.Layout);
 		}
 
 		private Npc _npc;

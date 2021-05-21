@@ -9,6 +9,7 @@ namespace Assets.GameModel.XmlParsers
 		[XmlAttribute] [DefaultValue(0)] public float XPercentage = 0;
 		[XmlAttribute] [DefaultValue(0)] public float YPercentage = 0;
 		[XmlAttribute] [DefaultValue(100f)] public float Width = 100;
+		[XmlAttribute] [DefaultValue(2f)] public float Ratio = 2f;
 
 		public LocationLayout FromXml()
 		{
@@ -17,6 +18,7 @@ namespace Assets.GameModel.XmlParsers
 				X = XPercentage,
 				Y = YPercentage,
 				Width = Width,
+				Ratio = Ratio,
 			};
 		}
 
@@ -27,6 +29,7 @@ namespace Assets.GameModel.XmlParsers
 				Width = ob.Width,
 				XPercentage = ob.X,
 				YPercentage = ob.Y,
+				Ratio = ob.Ratio,
 			};
 		}
 	}

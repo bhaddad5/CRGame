@@ -140,6 +140,7 @@
 		<xs:attribute name="XPercentage" type="xs:float" use="required"/>
 		<xs:attribute name="YPercentage" type="xs:float" use="required"/>
 		<xs:attribute name="Width" type="xs:float" use="required"/>
+		<xs:attribute name="Ratio" type="xs:float"/>
 	</xs:complexType>
 
 	<xs:complexType name="Npc">
@@ -226,6 +227,9 @@
 	</xs:complexType>
 
 	<xs:complexType name="StatusSymbols">
+		<xs:choice maxOccurs="1" minOccurs="1">
+			<xs:element name="CarLayout" type="LocationLayout"/>
+		</xs:choice>
 		<xs:attribute name="CarName" type="xs:string" use="required"/>
 		<xs:attribute name="CarImage" type="xs:string" use="required"/>
 	</xs:complexType>

@@ -9,6 +9,19 @@ namespace Assets.GameModel
 		public float X = 0.5f;
 		public float Y = 0.5f;
 		public float Width = 200f;
+		public float Ratio = 2f;
+
+	}
+
+	public static class LayoutHelpers
+	{
+		public static void ApplyLayout(this RectTransform transform, LocationLayout layout)
+		{
+			transform.anchorMin = new Vector2(layout.X, layout.Y);
+			transform.anchorMax = new Vector2(layout.X, layout.Y);
+			transform.sizeDelta = new Vector2(layout.Width, layout.Width * layout.Ratio);
+			transform.anchoredPosition = Vector2.zero;
+		}
 	}
 
 	public class Npc

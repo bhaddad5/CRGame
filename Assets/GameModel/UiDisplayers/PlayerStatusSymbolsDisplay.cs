@@ -7,12 +7,12 @@ using UnityEngine.UI;
 
 public class PlayerStatusSymbolsDisplay : MonoBehaviour
 {
-	[SerializeField] private TMP_Text CarName;
 	[SerializeField] private Image CarImage;
+	[SerializeField] private Image SuitsImage;
 
 	public void UpdateVisuals(MainGameManager mgm)
 	{
 		CarImage.sprite = mgm.Data.StatusSymbols.CarImage;
-		CarName.text = mgm.Data.StatusSymbols.CarName;
+		CarImage.GetComponent<RectTransform>().ApplyLayout(mgm.Data.StatusSymbols.CarLayout);
 	}
 }

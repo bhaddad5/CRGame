@@ -17,10 +17,7 @@ namespace Assets.GameModel.UiDisplayers
 		//Dumb, but this doesn't work when called from Setup()
 		void Start()
 		{
-			GetComponent<RectTransform>().anchorMin = new Vector2(_npc.Layout.X, _npc.Layout.Y);
-			GetComponent<RectTransform>().anchorMax = new Vector2(_npc.Layout.X, _npc.Layout.Y);
-			GetComponent<RectTransform>().sizeDelta = new Vector2(_npc.Layout.Width, _npc.Layout.Width * 2f);
-			GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+			GetComponent<RectTransform>().ApplyLayout(_npc.Layout);
 		}
 
 		public void Setup(Npc npc, LocationUiDisplay deptUi, MainGameManager mgm)
