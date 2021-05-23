@@ -100,15 +100,25 @@ public class GameData
 
 	public Npc GetNpcById(string NpcId)
 	{
-		foreach (var department in Locations)
+		foreach (var location in Locations)
 		{
-			foreach (var npc in department.Npcs)
+			foreach (var npc in location.Npcs)
 			{
 				if (npc.Id == NpcId)
 				{
 					return npc;
 				}
 			}
+		}
+		return null;
+	}
+
+	public Location GetLocationById(string locationId)
+	{
+		foreach (var location in Locations)
+		{
+			if (location.Id == locationId)
+				return location;
 		}
 		return null;
 	}

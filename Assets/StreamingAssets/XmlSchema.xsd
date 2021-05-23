@@ -3,7 +3,27 @@
 
 	<xs:element name="GameData" type="GameData"/>
 
+	<xs:complexType name="LocationLayout">
+		<xs:attribute name="XPercentage" type="xs:float" use="required"/>
+		<xs:attribute name="YPercentage" type="xs:float" use="required"/>
+		<xs:attribute name="Width" type="xs:float" use="required"/>
+		<xs:attribute name="Ratio" type="xs:float"/>
+	</xs:complexType>
+
+	<xs:complexType name="StatusSymbols">
+		<xs:choice maxOccurs="1" minOccurs="0">
+			<xs:element name="CarLayout" type="LocationLayout"/>
+		</xs:choice>
+		<xs:attribute name="CarName" type="xs:string"/>
+		<xs:attribute name="CarImage" type="xs:string"/>
+	</xs:complexType>
+
 	<xs:complexType name="Effect">
+		<xs:sequence>
+			<xs:choice maxOccurs="1" minOccurs="0">
+				<xs:element name="UpdateStatusSymbols" type="StatusSymbols"/>
+			</xs:choice>
+		</xs:sequence>
 		<xs:attribute name="ContextualNpcId" type="xs:string"/>
 		<xs:attribute name="AmbitionEffect" type="xs:float"/>
 		<xs:attribute name="PrideEffect" type="xs:float"/>
@@ -21,6 +41,11 @@
 		<xs:attribute name="TraitsAdded" type="xs:string"/>
 		<xs:attribute name="TraitsRemoved" type="xs:string"/>
 		<xs:attribute name="TrophiesClaimed" type="xs:string"/>
+
+		<xs:attribute name="ContextualLocationId" type="xs:string"/>
+		<xs:attribute name="UpdateLocationBackground" type="xs:string"/>
+		<xs:attribute name="UpdateLocationMapPosX" type="xs:float"/>
+		<xs:attribute name="UpdateLocationMapPosY" type="xs:float"/>
 	</xs:complexType>
 
 	<xs:complexType name="DialogEntry">
@@ -136,13 +161,6 @@
 		<xs:attribute name="Owned" type="xs:boolean"/>
 	</xs:complexType>
 
-	<xs:complexType name="LocationLayout">
-		<xs:attribute name="XPercentage" type="xs:float" use="required"/>
-		<xs:attribute name="YPercentage" type="xs:float" use="required"/>
-		<xs:attribute name="Width" type="xs:float" use="required"/>
-		<xs:attribute name="Ratio" type="xs:float"/>
-	</xs:complexType>
-
 	<xs:complexType name="Npc">
 		<xs:sequence>
 			<xs:choice maxOccurs="1" minOccurs="1">
@@ -226,14 +244,6 @@
 		<xs:attribute name="ShowCar" type="xs:boolean"/>
 	</xs:complexType>
 
-	<xs:complexType name="StatusSymbols">
-		<xs:choice maxOccurs="1" minOccurs="1">
-			<xs:element name="CarLayout" type="LocationLayout"/>
-		</xs:choice>
-		<xs:attribute name="CarName" type="xs:string" use="required"/>
-		<xs:attribute name="CarImage" type="xs:string" use="required"/>
-	</xs:complexType>
-	
 	<xs:complexType name="GameData">
 		<xs:sequence>
 			<xs:choice maxOccurs="1" minOccurs="1">

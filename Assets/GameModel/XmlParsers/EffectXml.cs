@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel;
 using System.Xml.Serialization;
+using UnityEngine;
 
 namespace Assets.GameModel.XmlParsers
 {
@@ -24,8 +25,23 @@ namespace Assets.GameModel.XmlParsers
 		[XmlAttribute] [DefaultValue("")] public string TraitsRemoved = "";
 		[XmlAttribute] [DefaultValue("")] public string TrophiesClaimed = "";
 
+		[XmlAttribute] [DefaultValue("")] public string ContextualLocationId = "";
+		[XmlAttribute] [DefaultValue("")] public string UpdateLocationBackground = "";
+		[XmlAttribute] [DefaultValue(-1)] public float UpdateLocationMapPosX = -1;
+		[XmlAttribute] [DefaultValue(-1)] public float UpdateLocationMapPosY = -1;
+
+		[XmlElement("UpdateStatusSymbols", typeof(PlayerStatusSymbolsXml))]
+		public PlayerStatusSymbolsXml[] UpdateStatusSymbols = new PlayerStatusSymbolsXml[0];
+
 		public Effect FromXml()
 		{
+			PlayerStatusSymbols statusSymbols = null;
+			if (UpdateStatusSymbols != null && UpdateStatusSymbols.Length > 0)
+				statusSymbols = UpdateStatusSymbols[0].FromXml();
+
+			
+
+
 			return new Effect()
 			{
 				ContextualNpcId = ContextualNpcId,
@@ -45,11 +61,18 @@ namespace Assets.GameModel.XmlParsers
 				TraitsAdded = TraitsAdded.XmlStringToList(),
 				TraitsRemoved = TraitsRemoved.XmlStringToList(),
 				TrophiesClaimed = TrophiesClaimed.XmlStringToList(),
+				ContextualLocationId = ContextualLocationId,
+				UpdateLocationBackground = ImageLookup.Backgrounds.GetImage(UpdateLocationBackground),
+				UpdateStatusSymbols = statusSymbols,
+				UpdateLocationMapPosition = new Vector2(UpdateLocationMapPosX, UpdateLocationMapPosY),
 			};
 		}
 
 		public static EffectXml ToXml(Effect ob)
 		{
+			PlayerStatusSymbolsXml[] statusSymbolsXml = null;
+			if (ob.UpdateStatusSymbols != null)
+				statusSymbolsXml = new []{PlayerStatusSymbolsXml.ToXml(ob.UpdateStatusSymbols)};
 			return new EffectXml()
 			{
 				ContextualNpcId = ob.ContextualNpcId,
@@ -69,6 +92,11 @@ namespace Assets.GameModel.XmlParsers
 				TraitsAdded = ob.TraitsAdded.ListToXmlString(),
 				TraitsRemoved = ob.TraitsRemoved.ListToXmlString(),
 				TrophiesClaimed = ob.TrophiesClaimed.ListToXmlString(),
+				ContextualLocationId = ob.ContextualLocationId,
+				UpdateLocationBackground = ob.UpdateLocationBackground.name,
+				UpdateStatusSymbols = statusSymbolsXml,
+				UpdateLocationMapPosX = ob.UpdateLocationMapPosition.x,
+				UpdateLocationMapPosY = ob.UpdateLocationMapPosition.y,
 			};
 		}
 	}

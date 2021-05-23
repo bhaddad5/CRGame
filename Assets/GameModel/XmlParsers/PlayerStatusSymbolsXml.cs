@@ -16,27 +16,30 @@ namespace Assets.GameModel.XmlParsers
 
 		public PlayerStatusSymbols FromXml()
 		{
-			LocationLayoutXml layoutXml = new LocationLayoutXml();
+			LocationLayout layout = null;
 			if ((CarLayout?.Length ?? 0) > 0)
 			{
-				layoutXml = CarLayout[0];
+				layout = CarLayout[0].FromXml();
 			}
 
 			return new PlayerStatusSymbols()
 			{
 				CarImage = ImageLookup.StatusSymbols.GetImage(CarImage),
 				CarName = CarName,
-				CarLayout = layoutXml.FromXml(),
+				CarLayout = layout,
 			};
 		}
 
 		public static PlayerStatusSymbolsXml ToXml(PlayerStatusSymbols ob)
 		{
+			LocationLayoutXml[] layoutXml = null;
+			if(ob.CarLayout != null)
+				layoutXml = new []{LocationLayoutXml.ToXml(ob.CarLayout)};
 			return new PlayerStatusSymbolsXml()
 			{
 				CarImage = ob.CarName,
 				CarName = ob.CarName,
-				CarLayout = new[] { LocationLayoutXml.ToXml(ob.CarLayout) },
+				CarLayout = layoutXml,
 			};
 		}
 	}
