@@ -10,23 +10,37 @@ namespace Assets.GameModel.XmlParsers
 		[XmlAttribute] [DefaultValue("")] public string CarName = "";
 		[XmlAttribute] [DefaultValue("")] public string CarImage = "";
 
+		[XmlAttribute] [DefaultValue("")] public string SuitsName = "";
+		[XmlAttribute] [DefaultValue("")] public string SuitsImage = "";
+
+		[XmlAttribute] [DefaultValue("")] public string JewleryCuffs = "";
+		[XmlAttribute] [DefaultValue("")] public string JewleryPen = "";
+		[XmlAttribute] [DefaultValue("")] public string JewleryRing = "";
+		[XmlAttribute] [DefaultValue("")] public string JewleryWatch = "";
+
 
 		[XmlElement("CarLayout", typeof(LocationLayoutXml))]
 		public LocationLayoutXml[] CarLayout = new LocationLayoutXml[0];
 
 		public PlayerStatusSymbols FromXml()
 		{
-			LocationLayout layout = null;
+			LocationLayout carLayout = null;
 			if ((CarLayout?.Length ?? 0) > 0)
 			{
-				layout = CarLayout[0].FromXml();
+				carLayout = CarLayout[0].FromXml();
 			}
-
+			
 			return new PlayerStatusSymbols()
 			{
 				CarImage = ImageLookup.StatusSymbols.GetImage(CarImage),
 				CarName = CarName,
-				CarLayout = layout,
+				CarLayout = carLayout,
+				SuitsImage = ImageLookup.StatusSymbols.GetImage(SuitsImage),
+				SuitsName = SuitsName,
+				JewleryCuffs = ImageLookup.StatusSymbols.GetImage(JewleryCuffs),
+				JewleryPen = ImageLookup.StatusSymbols.GetImage(JewleryPen),
+				JewleryRing = ImageLookup.StatusSymbols.GetImage(JewleryRing),
+				JewleryWatch = ImageLookup.StatusSymbols.GetImage(JewleryWatch),
 			};
 		}
 
@@ -40,6 +54,12 @@ namespace Assets.GameModel.XmlParsers
 				CarImage = ob.CarName,
 				CarName = ob.CarName,
 				CarLayout = layoutXml,
+				SuitsImage = ob.SuitsImage.name,
+				SuitsName = ob.SuitsName,
+				JewleryCuffs = ob.JewleryCuffs.name,
+				JewleryPen = ob.JewleryPen.name,
+				JewleryRing = ob.JewleryRing.name,
+				JewleryWatch = ob.JewleryWatch.name,
 			};
 		}
 	}

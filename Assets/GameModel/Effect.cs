@@ -94,6 +94,15 @@ namespace Assets.GameModel
 					mgm.Data.StatusSymbols.SuitsName = UpdateStatusSymbols.SuitsName;
 				if (UpdateStatusSymbols.SuitsImage != null)
 					mgm.Data.StatusSymbols.SuitsImage = UpdateStatusSymbols.SuitsImage;
+
+				if (UpdateStatusSymbols.JewleryCuffs != null)
+					mgm.Data.StatusSymbols.JewleryCuffs = UpdateStatusSymbols.JewleryCuffs;
+				if (UpdateStatusSymbols.JewleryPen != null)
+					mgm.Data.StatusSymbols.JewleryPen = UpdateStatusSymbols.JewleryPen;
+				if (UpdateStatusSymbols.JewleryRing != null)
+					mgm.Data.StatusSymbols.JewleryRing = UpdateStatusSymbols.JewleryRing;
+				if (UpdateStatusSymbols.JewleryWatch != null)
+					mgm.Data.StatusSymbols.JewleryWatch = UpdateStatusSymbols.JewleryWatch;
 			}
 
 			

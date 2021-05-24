@@ -12,4 +12,9 @@ public class PlayerStatusSymbols
 	public string SuitsName;
 	public Sprite SuitsImage;
 	public LocationLayout SuitsLocation;
+
+	public Sprite JewleryCuffs;
+	public Sprite JewleryPen;
+	public Sprite JewleryRing;
+	public Sprite JewleryWatch;
 }
