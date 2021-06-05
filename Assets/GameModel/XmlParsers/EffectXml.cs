@@ -93,7 +93,7 @@ namespace Assets.GameModel.XmlParsers
 				TraitsRemoved = ob.TraitsRemoved.ListToXmlString(),
 				TrophiesClaimed = ob.TrophiesClaimed.ListToXmlString(),
 				ContextualLocationId = ob.ContextualLocationId,
-				UpdateLocationBackground = ob.UpdateLocationBackground.name,
+				UpdateLocationBackground = ob.UpdateLocationBackground?.name,
 				UpdateStatusSymbols = statusSymbolsXml,
 				UpdateLocationMapPosX = ob.UpdateLocationMapPosition.x,
 				UpdateLocationMapPosY = ob.UpdateLocationMapPosition.y,

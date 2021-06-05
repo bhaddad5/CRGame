@@ -1,0 +1,2902 @@
+<?xml version="1.0" encoding="utf-16"?>
+<GameData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" PlayerName="Hunter Downe" TurnNumber="1" Ego="500" Funds="96000" Power="1">
+  <StatusSymbols CarName="Min Cooper" CarImage="car1" SuitsName="Easy Wear" SuitsImage="suit1">
+    <CarLayout XPercentage="0.55" YPercentage="0.25" Width="650" Ratio="0.5" />
+  </StatusSymbols>
+  <Location Id="playerOffice" Name="My Office" Accessible="true" UiPosX="1000" UiPosY="455" LocationIcon="icn_desk" BackgroundImage="cubicleOffice" ShowTrophyCase="true" />
+  <Location Id="playerHome" Name="My Home" Accessible="true" UiPosX="1164" UiPosY="628" LocationIcon="icn_home" BackgroundImage="home3_grey" ShowCar="true" />
+  <Location Id="jeweler" Name="Silvanus Jewelery" Accessible="true" UiPosX="872" UiPosY="722" LocationIcon="loc_HighStreet" BackgroundImage="silvanus_jewellry">
+    <Npc Id="jeweler" FirstName="Jeweler" IsControllable="false" BackgroundImage="silvanus_jewellry">
+      <LocationLayout XPercentage="0.45" YPercentage="0.2" Width="480" />
+      <PersonalLayout XPercentage="0.45" YPercentage="0.2" Width="480" />
+      <Interaction Id="buyCuffs" Name="Purchase Gold Cufflinks" Category="Conversation">
+        <Cost MoneyCost="3000" />
+        <Requirements />
+        <InteractionResult>
+          <DialogEntry Speaker="Npc" Dialog="Hello sir, what can I do for you?" />
+          <DialogEntry Speaker="Player" Dialog="I'm looking to buy some jewelery." />
+          <DialogEntry Speaker="Npc" Dialog="Of course sir!  I have just the thing..." />
+          <Effect PowerEffect="1">
+            <UpdateStatusSymbols JewleryCuffs="jewellry_cufflinks" />
+          </Effect>
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="buyPen" Name="Purchase Gold Pen" Category="Conversation">
+        <Cost MoneyCost="3000" />
+        <Requirements />
+        <InteractionResult>
+          <DialogEntry Speaker="Npc" Dialog="Hello sir, what can I do for you?" />
+          <DialogEntry Speaker="Player" Dialog="I'm looking to buy some jewelery." />
+          <DialogEntry Speaker="Npc" Dialog="Of course sir!  I have just the thing..." />
+          <Effect PowerEffect="1">
+            <UpdateStatusSymbols JewleryPen="jewellry_pen" />
+          </Effect>
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="buyRing" Name="Purchase Gold Ring" Category="Conversation">
+        <Cost MoneyCost="3000" />
+        <Requirements />
+        <InteractionResult>
+          <DialogEntry Speaker="Npc" Dialog="Hello sir, what can I do for you?" />
+          <DialogEntry Speaker="Player" Dialog="I'm looking to buy some jewelery." />
+          <DialogEntry Speaker="Npc" Dialog="Of course sir!  I have just the thing..." />
+          <Effect PowerEffect="1">
+            <UpdateStatusSymbols JewleryRing="jewellry_ring" />
+          </Effect>
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="buyWatch" Name="Purchase Gold Watch" Category="Conversation">
+        <Cost MoneyCost="3000" />
+        <Requirements />
+        <InteractionResult>
+          <DialogEntry Speaker="Npc" Dialog="Hello sir, what can I do for you?" />
+          <DialogEntry Speaker="Player" Dialog="I'm looking to buy some jewelery." />
+          <DialogEntry Speaker="Npc" Dialog="Of course sir!  I have just the thing..." />
+          <Effect PowerEffect="1">
+            <UpdateStatusSymbols JewleryWatch="jewellry_watch" />
+          </Effect>
+        </InteractionResult>
+      </Interaction>
+    </Npc>
+  </Location>
+  <Location Id="tailor" Name="Thread Thimble Fine Tailors" Accessible="true" UiPosX="549" UiPosY="539" LocationIcon="loc_HighStreet" BackgroundImage="threadthimblefinetailors">
+    <Npc Id="tailor" FirstName="Tailor" IsControllable="false" BackgroundImage="threadthimblefinetailors">
+      <LocationLayout XPercentage="0.55" YPercentage="0.4" Width="300" />
+      <PersonalLayout XPercentage="0.55" YPercentage="0.4" Width="300" />
+      <Interaction Id="buySuits2" Name="Upgrade to a Cut Above Average" Category="Conversation">
+        <Cost MoneyCost="2000" />
+        <Requirements />
+        <InteractionResult>
+          <DialogEntry Speaker="Npc" Dialog="Hello sir, what can I do for you?" />
+          <DialogEntry Speaker="Player" Dialog="I'm thinking of upgrading my office wear." />
+          <DialogEntry Speaker="Npc" Dialog="Of course sir!  I have just the thing that should fit your style." />
+          <Effect PowerEffect="1">
+            <UpdateStatusSymbols SuitsName="A Cut Above Average" SuitsImage="suit2" />
+          </Effect>
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="buySuits3" Name="Upgrade to a Corporate Three Piecer" Category="Conversation">
+        <Cost MoneyCost="2000" />
+        <Requirements RequiredInteractions="buySuits2," />
+        <InteractionResult>
+          <DialogEntry Speaker="Npc" Dialog="Hello sir, what can I do for you?" />
+          <DialogEntry Speaker="Player" Dialog="I'm thinking of upgrading my office wear." />
+          <DialogEntry Speaker="Npc" Dialog="Of course sir!  I have just the thing that should fit your style." />
+          <Effect PowerEffect="1">
+            <UpdateStatusSymbols SuitsName="Corporate Three Piecer" SuitsImage="suit3" />
+          </Effect>
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="buySuits4" Name="Upgrade to a Pinstriped Power Suit" Category="Conversation">
+        <Cost MoneyCost="2000" />
+        <Requirements RequiredInteractions="buySuits3," />
+        <InteractionResult>
+          <DialogEntry Speaker="Npc" Dialog="Hello sir, what can I do for you?" />
+          <DialogEntry Speaker="Player" Dialog="I'm thinking of upgrading my office wear." />
+          <DialogEntry Speaker="Npc" Dialog="Of course sir!  I have just the thing that should fit your style." />
+          <Effect PowerEffect="1">
+            <UpdateStatusSymbols SuitsName="Pinstriped Power Suit" SuitsImage="suit4" />
+          </Effect>
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="buySuits5" Name="Upgrade to Grey Flannel" Category="Conversation">
+        <Cost MoneyCost="2000" />
+        <Requirements RequiredInteractions="buySuits4," />
+        <InteractionResult>
+          <DialogEntry Speaker="Npc" Dialog="Hello sir, what can I do for you?" />
+          <DialogEntry Speaker="Player" Dialog="I'm thinking of upgrading my office wear." />
+          <DialogEntry Speaker="Npc" Dialog="Of course sir!  I have just the thing that should fit your style." />
+          <Effect PowerEffect="1">
+            <UpdateStatusSymbols SuitsName="Grey Flannel" SuitsImage="suit5" />
+          </Effect>
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="buySuits6" Name="Upgrade to a Beau Brummel" Category="Conversation">
+        <Cost MoneyCost="2000" />
+        <Requirements RequiredInteractions="buySuits5," />
+        <InteractionResult>
+          <DialogEntry Speaker="Npc" Dialog="Hello sir, what can I do for you?" />
+          <DialogEntry Speaker="Player" Dialog="I'm thinking of upgrading my office wear." />
+          <DialogEntry Speaker="Npc" Dialog="Of course sir!  I have just the thing that should fit your style." />
+          <Effect PowerEffect="1">
+            <UpdateStatusSymbols SuitsName="Beau Brummel" SuitsImage="suit6" />
+          </Effect>
+        </InteractionResult>
+      </Interaction>
+    </Npc>
+  </Location>
+  <Location Id="realEstateOffice" Name="Eclipse Real Estate" Accessible="true" UiPosX="1296" UiPosY="347" LocationIcon="loc_HighStreet" BackgroundImage="realtoroffice">
+    <Npc Id="realtor" FirstName="Realtor" IsControllable="false" BackgroundImage="realtoroffice">
+      <LocationLayout XPercentage="0.65" Width="680" />
+      <PersonalLayout XPercentage="0.65" Width="680" />
+      <Interaction Id="buyHouse3" Name="Move to Grey Apartments" Category="Conversation" Completed="true">
+        <Cost MoneyCost="4000" />
+        <Requirements />
+        <InteractionResult>
+          <DialogEntry Speaker="Npc" Dialog="Hello sir, what can I do for you?" />
+          <DialogEntry Speaker="Player" Dialog="I'm thinking of getting a new apartment." />
+          <DialogEntry Speaker="Npc" Dialog="Of course!  I have just the thing and I believe it's in your price range!" />
+          <Effect PowerEffect="1" ContextualLocationId="playerHome" UpdateLocationBackground="home3_grey" UpdateLocationMapPosX="1164" UpdateLocationMapPosY="628">
+            <UpdateStatusSymbols>
+              <CarLayout XPercentage="0.55" YPercentage="0.25" Width="650" Ratio="0.5" />
+            </UpdateStatusSymbols>
+          </Effect>
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="buyHouse4" Name="Move to Tempo Townhouses" Category="Conversation">
+        <Cost MoneyCost="6000" />
+        <Requirements RequiredInteractions="buyHouse3," />
+        <InteractionResult>
+          <DialogEntry Speaker="Npc" Dialog="Hello sir, what can I do for you?" />
+          <DialogEntry Speaker="Player" Dialog="I'm thinking of getting a new apartment." />
+          <DialogEntry Speaker="Npc" Dialog="Of course!  I have just the thing and I believe it's in your price range!" />
+          <Effect PowerEffect="1" ContextualLocationId="playerHome" UpdateLocationBackground="home4_temp" UpdateLocationMapPosX="609" UpdateLocationMapPosY="446">
+            <UpdateStatusSymbols>
+              <CarLayout XPercentage="0.55" YPercentage="0.35" Width="850" Ratio="0.5" />
+            </UpdateStatusSymbols>
+          </Effect>
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="buyHouse5" Name="Move to Clover Lane" Category="Conversation">
+        <Cost MoneyCost="8000" />
+        <Requirements RequiredInteractions="buyHouse4," />
+        <InteractionResult>
+          <DialogEntry Speaker="Npc" Dialog="Hello sir, what can I do for you?" />
+          <DialogEntry Speaker="Player" Dialog="I'm thinking of getting a new house." />
+          <DialogEntry Speaker="Npc" Dialog="Of course!  I have just the thing and I believe it's in your price range!" />
+          <Effect PowerEffect="2" ContextualLocationId="playerHome" UpdateLocationBackground="home5_clover" UpdateLocationMapPosX="376" UpdateLocationMapPosY="300">
+            <UpdateStatusSymbols>
+              <CarLayout XPercentage="0.55" YPercentage="0.25" Width="650" Ratio="0.5" />
+            </UpdateStatusSymbols>
+          </Effect>
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="buyHouse6" Name="Move to Stonegate Estates" Category="Conversation">
+        <Cost MoneyCost="10000" />
+        <Requirements RequiredInteractions="buyHouse5," />
+        <InteractionResult>
+          <DialogEntry Speaker="Npc" Dialog="Hello sir, what can I do for you?" />
+          <DialogEntry Speaker="Player" Dialog="I'm thinking of getting a new house." />
+          <DialogEntry Speaker="Npc" Dialog="Of course!  I have just the thing and I believe it's in your price range!" />
+          <Effect PowerEffect="2" ContextualLocationId="playerHome" UpdateLocationBackground="home6_stonegate" UpdateLocationMapPosX="607" UpdateLocationMapPosY="181">
+            <UpdateStatusSymbols>
+              <CarLayout XPercentage="0.55" YPercentage="0.25" Width="650" Ratio="0.5" />
+            </UpdateStatusSymbols>
+          </Effect>
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="buyHouse7" Name="Move to Pinnacle Penthouse" Category="Conversation">
+        <Cost MoneyCost="12000" />
+        <Requirements RequiredInteractions="buyHouse6," />
+        <InteractionResult>
+          <DialogEntry Speaker="Npc" Dialog="Hello sir, what can I do for you?" />
+          <DialogEntry Speaker="Player" Dialog="I'm thinking of getting a new penthouse." />
+          <DialogEntry Speaker="Npc" Dialog="Of course!  I have just the thing and I believe it's in your price range!" />
+          <Effect PowerEffect="2" ContextualLocationId="playerHome" UpdateLocationBackground="home7_pinnacle" UpdateLocationMapPosX="478" UpdateLocationMapPosY="701">
+            <UpdateStatusSymbols>
+              <CarLayout XPercentage="0.55" YPercentage="0.25" Width="650" Ratio="0.5" />
+            </UpdateStatusSymbols>
+          </Effect>
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="buyHouse8" Name="Move to Crown Boulevard" Category="Conversation">
+        <Cost MoneyCost="14000" />
+        <Requirements RequiredInteractions="buyHouse7," />
+        <InteractionResult>
+          <DialogEntry Speaker="Npc" Dialog="Hello sir, what can I do for you?" />
+          <DialogEntry Speaker="Player" Dialog="I'm thinking of getting a new house." />
+          <DialogEntry Speaker="Npc" Dialog="Of course!  I have just the thing and I believe it's in your price range!" />
+          <Effect PowerEffect="2" ContextualLocationId="playerHome" UpdateLocationBackground="home8_crown" UpdateLocationMapPosX="137" UpdateLocationMapPosY="796">
+            <UpdateStatusSymbols>
+              <CarLayout XPercentage="0.55" YPercentage="0.25" Width="650" Ratio="0.5" />
+            </UpdateStatusSymbols>
+          </Effect>
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="buyHouse9" Name="Move to Juniper House" Category="Conversation">
+        <Cost MoneyCost="15000" />
+        <Requirements RequiredInteractions="buyHouse8," />
+        <InteractionResult>
+          <DialogEntry Speaker="Npc" Dialog="Hello sir, what can I do for you?" />
+          <DialogEntry Speaker="Player" Dialog="I'm thinking of getting a new mansion." />
+          <DialogEntry Speaker="Npc" Dialog="Of course!  I have just the thing and I believe it's in your price range!" />
+          <Effect PowerEffect="2" ContextualLocationId="playerHome" UpdateLocationBackground="home9_juniper" UpdateLocationMapPosX="135" UpdateLocationMapPosY="860">
+            <UpdateStatusSymbols>
+              <CarLayout XPercentage="0.55" YPercentage="0.25" Width="650" Ratio="0.5" />
+            </UpdateStatusSymbols>
+          </Effect>
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="buyHouse10" Name="Move to the Downe Estate" Category="Conversation">
+        <Cost MoneyCost="16000" />
+        <Requirements RequiredInteractions="buyHouse9," />
+        <InteractionResult>
+          <DialogEntry Speaker="Npc" Dialog="Hello sir, what can I do for you?" />
+          <DialogEntry Speaker="Player" Dialog="I'm thinking of getting a new mansion." />
+          <DialogEntry Speaker="Npc" Dialog="Of course!  I have just the thing and I believe it's in your price range!" />
+          <Effect PowerEffect="4" ContextualLocationId="playerHome" UpdateLocationBackground="home10_grand" UpdateLocationMapPosX="310" UpdateLocationMapPosY="864">
+            <UpdateStatusSymbols>
+              <CarLayout XPercentage="0.55" YPercentage="0.25" Width="650" Ratio="0.5" />
+            </UpdateStatusSymbols>
+          </Effect>
+        </InteractionResult>
+      </Interaction>
+    </Npc>
+  </Location>
+  <Location Id="carDealership" Name="Ultimate Autos" Accessible="true" UiPosX="1471" UiPosY="154" LocationIcon="loc_HighStreet" BackgroundImage="cardealership">
+    <Npc Id="carSalesman" FirstName="Car Salesman" IsControllable="false" BackgroundImage="cardealership">
+      <LocationLayout XPercentage="0.65" YPercentage="0.5" Width="280" />
+      <PersonalLayout XPercentage="0.65" YPercentage="0.5" Width="280" />
+      <Interaction Id="buyCar2" Name="Upgrade to a Sedan" Category="Conversation">
+        <Cost MoneyCost="10000" />
+        <Requirements />
+        <InteractionResult>
+          <DialogEntry Speaker="Npc" Dialog="What can I do for you sir?" />
+          <DialogEntry Speaker="Player" Dialog="I'd like to upgrade my vehicle." />
+          <DialogEntry Speaker="Npc" Dialog="Of course sir!  Let me shot you what we have!" />
+          <Effect PowerEffect="2">
+            <UpdateStatusSymbols CarName="Sedan" CarImage="car2" />
+          </Effect>
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="buyCar3" Name="Upgrade to a SUV" Category="Conversation">
+        <Cost MoneyCost="25000" />
+        <Requirements RequiredInteractions="buyCar2," />
+        <InteractionResult>
+          <DialogEntry Speaker="Npc" Dialog="What can I do for you sir?" />
+          <DialogEntry Speaker="Player" Dialog="I'd like to upgrade my vehicle." />
+          <DialogEntry Speaker="Npc" Dialog="Of course sir!  Let me shot you what we have!" />
+          <Effect PowerEffect="2">
+            <UpdateStatusSymbols CarName="SUV" CarImage="car3" />
+          </Effect>
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="buyCar4" Name="Upgrade to a Sports Car" Category="Conversation">
+        <Cost MoneyCost="25000" />
+        <Requirements RequiredInteractions="buyCar3," />
+        <InteractionResult>
+          <DialogEntry Speaker="Npc" Dialog="What can I do for you sir?" />
+          <DialogEntry Speaker="Player" Dialog="I'd like to upgrade my vehicle." />
+          <DialogEntry Speaker="Npc" Dialog="Of course sir!  Let me shot you what we have!" />
+          <Effect PowerEffect="2">
+            <UpdateStatusSymbols CarName="Sports Car" CarImage="car4" />
+          </Effect>
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="buyCar5" Name="Upgrade to a Luxury Car" Category="Conversation">
+        <Cost MoneyCost="25000" />
+        <Requirements RequiredInteractions="buyCar4," />
+        <InteractionResult>
+          <DialogEntry Speaker="Npc" Dialog="What can I do for you sir?" />
+          <DialogEntry Speaker="Player" Dialog="I'd like to upgrade my vehicle." />
+          <DialogEntry Speaker="Npc" Dialog="Of course sir!  Let me shot you what we have!" />
+          <Effect PowerEffect="2">
+            <UpdateStatusSymbols CarName="Luxury Car" CarImage="car5" />
+          </Effect>
+        </InteractionResult>
+      </Interaction>
+    </Npc>
+  </Location>
+  <Location Id="maxwellsCafe" Name="Maxwell's Cybercafe" Accessible="true" UiPosX="891" UiPosY="573" LocationIcon="icn_cybercafe" BackgroundImage="MAXWELLS_CYBERCAFE">
+    <Npc Id="maxwell" FirstName="Maxwell" IsControllable="false" BackgroundImage="MAXWELLS_CYBERCAFE">
+      <LocationLayout XPercentage="0.6" YPercentage="0.3" Width="380" />
+      <PersonalLayout XPercentage="0.6" YPercentage="0.3" Width="380" />
+      <Interaction Id="hackDeborah" Name="Hack Deborah" Category="Conversation">
+        <Cost MoneyCost="100" />
+        <Requirements />
+        <InteractionResult>
+          <DialogEntry Speaker="Npc" Dialog="Alright, you can now view surveillance on Deborah." />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+    </Npc>
+  </Location>
+  <Location Id="pussywillows" Name="Pusywillows" Accessible="true" UiPosX="511" UiPosY="329" LocationIcon="loc_HumpAlley" BackgroundImage="pussywillows">
+    <Npc Id="lolita" FirstName="Lolita" Age="18" IsControllable="false" BackgroundImage="pussywillows_private_room">
+      <LocationLayout XPercentage="0.45" YPercentage="0.52" Width="180" />
+      <PersonalLayout XPercentage="0.5" YPercentage="0.3" Width="300" />
+      <Interaction Id="lapDance" Name="Lap Dance" Category="Conversation" Repeatable="true">
+        <Cost MoneyCost="40" />
+        <Requirements />
+        <InteractionResult>
+          <DialogEntry Speaker="Npc" Dialog="Mister, if you pick me, I'll show you a real good time..." NpcImage="dance" />
+          <DialogEntry Speaker="Npc" Dialog="You're one of those suits, right?  Well, I'm your fantasy office girl." NpcImage="dance" />
+          <DialogEntry Speaker="Npc" Dialog="Take a seat and I'll give you an interview you'll never forget." NpcImage="dance" />
+          <DialogEntry Speaker="Npc" Dialog="Come back and see me again, okay?" NpcImage="dance" />
+          <Effect EgoEffect="10" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="privateDance" Name="Private Dance" Category="Conversation" Repeatable="true">
+        <Cost MoneyCost="100" />
+        <Requirements />
+        <InteractionResult>
+          <DialogEntry Speaker="Npc" Dialog="This is fun and all, but get us a room and I can show off my real skills..." NpcImage="privateDance" />
+          <DialogEntry Speaker="Npc" Dialog="Today's been a rough day; I can tell.  Why don't you let me take a load off your mind?" NpcImage="privateDance" />
+          <DialogEntry Speaker="Npc" Dialog="If you really want, I'll even let you put me over your knee." NpcImage="privateDance" />
+          <DialogEntry Speaker="Npc" Dialog="Thanks, you're an absolute stud.  All the other girls here want to be me right now." NpcImage="privateDance" />
+          <Effect EgoEffect="30" />
+        </InteractionResult>
+      </Interaction>
+    </Npc>
+    <Npc Id="coco" FirstName="Coco" Age="19" IsControllable="false" BackgroundImage="pussywillows_private_room">
+      <LocationLayout XPercentage="0.2" YPercentage="0.3" Width="220" />
+      <PersonalLayout XPercentage="0.5" YPercentage="0.3" Width="300" />
+      <Interaction Id="lapDance" Name="Lap Dance" Category="Conversation" Repeatable="true">
+        <Cost MoneyCost="40" />
+        <Requirements />
+        <InteractionResult>
+          <DialogEntry Speaker="Npc" Dialog="Hey there Tiger, come with me..." NpcImage="dance" />
+          <DialogEntry Speaker="Npc" Dialog="You know, you're much cuter than the other guys around here." NpcImage="dance" />
+          <DialogEntry Speaker="Npc" Dialog="You should come back again sometime.  We can get to know each other better." NpcImage="dance" />
+          <Effect EgoEffect="10" />
+        </InteractionResult>
+      </Interaction>
+    </Npc>
+    <Npc Id="meganQuinn" FirstName="Meghan" LastName="Quinn" Age="31" IsControllable="false" BackgroundImage="pussywillows">
+      <LocationLayout XPercentage="0.7" YPercentage="0.2" Width="350" />
+      <PersonalLayout XPercentage="0.6" YPercentage="0.3" Width="400" />
+      <Interaction Id="introduction" Name="Introduction" Category="Conversation">
+        <Cost />
+        <Requirements />
+        <InteractionResult>
+          <DialogEntry Speaker="Narrator" Dialog="A blonde shimmies up to the table with an obvious fake smile plastered across her lips.  Her fingers fidget with the striped hem of her uniform." />
+          <DialogEntry Speaker="Npc" Dialog="Welcome to Pussywillows, Sir.  My name is Megan and I'll be your server tonight." />
+          <DialogEntry Speaker="Narrator" Dialog="Leaning forward, she provides a brief downblouse." />
+          <DialogEntry Speaker="Npc" Dialog="What would you like to drink?" />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="girlsGirlsGirls" Name="Girls, Girls, Girls" Category="Conversation">
+        <Cost />
+        <Requirements />
+        <InteractionResult>
+          <DialogEntry Speaker="Narrator" Dialog="Megan fiddles uncomfortably with her short tie." />
+          <DialogEntry Speaker="Npc" Dialog="Please feel free to approach any of the girls out on the floor.  They'd all love to get to know you!" />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+    </Npc>
+  </Location>
+  <Location Id="consulting" Name="Consulting Services" ClosedOnWeekends="true" Accessible="true" UiPosX="911" UiPosY="429" LocationIcon="dept_consulting" BackgroundImage="dept_consulting">
+    <Npc Id="susanGranger" FirstName="Susan" LastName="Granger" Age="34" Ambition="65" Pride="70" RequiredVisibilityInteraction="britneyBower-introduction" BackgroundImage="susanGrangerOffice">
+      <LocationLayout XPercentage="0.33" YPercentage="0.34" Width="300" />
+      <PersonalLayout XPercentage="0.35" YPercentage="0.55" Width="400" />
+      <Trophy Id="susanStockshares" Name="Susan's Stock Shares" Image="susanStockshares" />
+      <Interaction Id="susanIntro" Name="Present yourself to Ms. Granger" Category="Conversation">
+        <Cost />
+        <Requirements RequiredInteractions="britneyBower-introduction," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="TO DO reveal Trait Indecisive Welcome to Artemis!  This is a bit strange—you’re our first male staff member.  Perhaps I should gather all of our team to introduce you. Or maybe it is better for you to meet each individually.  Hmmm—I’m not sure!" />
+          <DialogEntry Speaker="Npc" Dialog="I'm excited to be here." />
+          <DialogEntry Speaker="Player" Dialog="Perhaps I should gather all of our team to introduce you. Or maybe it is better for you to meet each individually.  Hmmm—I’m not sure!" />
+          <DialogEntry Speaker="Npc" Dialog="Well, you're the boss, so whatever you say!" />
+          <Popup Title="Introduce yourself to Susan Granger" Video="sgranger_chat3" />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="susanCsg" Name="The Consulting Services Group" Category="Conversation">
+        <Cost />
+        <Requirements RequiredInteractions="susanIntro," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="What does the CSG do?" />
+          <DialogEntry Speaker="Npc" Dialog="This is a brand new business unit—a great time to start!  We’re the consulting arm of the company and work with key clients to add additional services and offer solutions customised for our top clients!" />
+          <DialogEntry Speaker="Player" Dialog="Who else works in the CSG?" />
+          <DialogEntry Speaker="Npc" Dialog="We have Deborah Jones.  Like you, she's another Management Trainee and almost ready to complete the program.  We have Anne Miller, our sales lead.  Britney handles reception and Jill's a temp who'd been with us.  And Amanda-- the college intern." />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="susanOffice" Name="The Office Location" Category="Conversation">
+        <Cost />
+        <Requirements RequiredInteractions="susanIntro," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I noticed we're not in the bigger office complexes." />
+          <DialogEntry Speaker="Npc" Dialog="We’re separate from the corporate campus and the Planning Department, which we’re a subsidiary of.  That gives us some breathing space to be honest! " />
+          <DialogEntry Speaker="Player" Dialog="Do you live close to the office?" />
+          <DialogEntry Speaker="Npc" Dialog="I live halfway between the main office and here.  We all used to work in the big towers but, like I say, I'm appreciating having our own space." />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="susanStory" Name="Susan’s Story" Category="Conversation">
+        <Cost />
+        <Requirements RequiredInteractions="susanIntro," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="TO DO reveal Susan trophy Have you been with Artemis for very long?" />
+          <DialogEntry Speaker="Npc" Dialog="I’ve been here from the beginning!  Haven’t had even so much time for  social life since I started working here!  Do you believe I was once paid in company stock when we were going through a tough time?" />
+          <DialogEntry Speaker="Player" Dialog="Those shares will be worth a lot when the company IPO kicks off!" />
+          <DialogEntry Speaker="Npc" Dialog="I hope so!  I was just recently the General Manager, but Jennifer needed me to launch this new group, so I’m running Consulting Services now!" />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="susanCookies" Name="Cookies!" Category="Socialize">
+        <Cost EgoCost="10" />
+        <Requirements />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I hope you like them!" />
+          <DialogEntry Speaker="Npc" Dialog="What do we have here?  Did you bake these cookies?" />
+          <DialogEntry Speaker="Player" Dialog="Yes, Ma'am-- for you and the rest of the team.  I hope that's ok." />
+          <DialogEntry Speaker="Npc" Dialog="How thoughtful!  What a lovely surprise!" />
+          <Effect AmbitionEffect="-5" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="susanPosters" Name="Compliment Susan" Category="Socialize">
+        <Cost EgoCost="10" />
+        <Requirements RequiredInteractions="susanCookies," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="These posters you've chosen for the office are so motivational!" />
+          <DialogEntry Speaker="Npc" Dialog="You like them? I know some of the staff think they are a bit cringey, but--" />
+          <DialogEntry Speaker="Player" Dialog="No way, Ms. Granger!  They really send a message!" />
+          <DialogEntry Speaker="Npc" Dialog="I agree.  You're a very perceptive young man!" />
+          <Effect AmbitionEffect="-5" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="susanMeetings" Name="Compliment Susan" Category="Socialize">
+        <Cost EgoCost="10" />
+        <Requirements RequiredInteractions="susanCookies," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="They way you lead staff meetings is so inspirational!" />
+          <DialogEntry Speaker="Npc" Dialog="Thank you!  Sometimes I think I waffle on too much, but--" />
+          <DialogEntry Speaker="Player" Dialog="Not at all, Ms. Granger!  Everyone leaves excited and motivated." />
+          <DialogEntry Speaker="Npc" Dialog="Of course, that's what I hope to do.  Thanks for noticing!" />
+          <Effect AmbitionEffect="-5" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="susanDatabase" Name="Offer to Organize CSG Client Database" Category="OfficePolitics">
+        <Cost EgoCost="10" />
+        <Requirements RequiredInteractions="susanStory," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Ms. Granger, I'm feeling under utlized." />
+          <DialogEntry Speaker="Npc" Dialog="Well, waht can I do to changhe that?" />
+          <DialogEntry Speaker="Player" Dialog="Well, I was hoping it would be ok with you if I organized the department client database." />
+          <DialogEntry Speaker="Npc" Dialog="TO DO Build Dept Missions/Policies to unlock this If you think you're up to it, that's fine with me." />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="susanTitan" Name="Ask permission to help Anne Miller land Titan Defence Account" Category="OfficePolitics">
+        <Cost EgoCost="10" />
+        <Requirements RequiredInteractions="susanStory," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Ms. Granger, I'm sure I can help Ms. Miller crack this one!" />
+          <DialogEntry Speaker="Npc" Dialog="Titan Defence would be quite a feather in my-- I mean our- caps." />
+          <DialogEntry Speaker="Player" Dialog="Give me permission and she'll have to include me!" />
+          <DialogEntry Speaker="Npc" Dialog="TO DO Unlock Titan Mission  Alright-- fill out the security clearences-- but don't let me down and don't annoy Anne!" />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="susanInternship" Name="Ask to manage Internship Program" Category="OfficePolitics">
+        <Cost EgoCost="10" />
+        <Requirements RequiredInteractions="susanStory," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="TO DO This interaction has a 50% chance of success  ALSO because trait is indecisive, player can try twice if it fails    Ms. Granger, I really thinkk I could do a far better job running the internship program than Deborah." />
+          <DialogEntry Speaker="Npc" Dialog="I know Deborah’s not going to like this.  Let me think about it." />
+          <DialogEntry Speaker="Player" Dialog="The longer she mismanages things, the more work it will be to fix the program." />
+          <DialogEntry Speaker="Npc" Dialog="If I do this, Deborah will eb very demotivated.  TO DO: interaction has 50% chance of success/fail   if success, it will unlock the dept mission" />
+          <Popup Title="Ask to manage the Intern Program" Video="sgranger_chat4" />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="susanItaudit" Name="Volunteer to institute IT Systems Audit" Category="OfficePolitics">
+        <Cost EgoCost="10" />
+        <Requirements RequiredInteractions="susanStory," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="TO DO This interaction has a 50% chance of success  ALSO because trait is indecisive, player can try twice if it fails  TO DO this interaction unlock a dept mission   Ms. Granger, CSG is overdue in conducting our IT systems audit." />
+          <DialogEntry Speaker="Npc" Dialog="I know but no one is bothering me about it." />
+          <DialogEntry Speaker="Player" Dialog="I'd be happy to take it on, if that's ok with you." />
+          <DialogEntry Speaker="Npc" Dialog="By all means. Feel free to have at it!" />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="susanDeptbudget" Name="Ask to Plan Budget for Consulting Group" Category="OfficePolitics">
+        <Cost EgoCost="10" />
+        <Requirements RequiredInteractions="susanStory," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="TO DO This interaction has a 50% chance of success  ALSO because trait is indecisive, player can try twice if it fails TO DO this interaction unlock a dept mission   If you'd like, I'd be happy to draft the department budget." />
+          <DialogEntry Speaker="Npc" Dialog="That's really something I should be doing." />
+          <DialogEntry Speaker="Player" Dialog="I just thought you had more important things to do." />
+          <DialogEntry Speaker="Npc" Dialog="It is such a boring task.  Still, I'm not sure I should hand this off..." />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="susanKeyaccounts" Name="Suggest a re-assignment of Key Accounts" Category="OfficePolitics">
+        <Cost EgoCost="10" />
+        <Requirements RequiredInteractions="susanStory," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="TO DO This interaction has a 50% chance of success  ALSO because trait is indecisive, player can try twice if it fails TO DO this   Ms. Granger, it seems crazy that the Key Accounts aren't considered House Accounts." />
+          <DialogEntry Speaker="Npc" Dialog="You may be right, but Anne Miller really did a lot of work to--" />
+          <DialogEntry Speaker="Player" Dialog="Re-classifying the acccounts would make the bottom line look much better." />
+          <DialogEntry Speaker="Npc" Dialog="That's true.  I'm still not convinced it is worth upsetting Anne over this though." />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="susanSalesbudget" Name="Suggest an increase in Sales Quotas" Category="OfficePolitics">
+        <Cost EgoCost="10" />
+        <Requirements RequiredInteractions="susanStory," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="TO DO This interaction has a 50% chance of success  ALSO because trait is indecisive, player can try twice if it fails TO DO this    The quarterly numbers don't look great, Ms. Granger.  May I make a suggestion?" />
+          <DialogEntry Speaker="Npc" Dialog="Let's hear it.  I'm open to anything reasonable." />
+          <DialogEntry Speaker="Player" Dialog="Increase Ms. Miller's budget.  If she could step up, we coudl still make our numbers." />
+          <DialogEntry Speaker="Npc" Dialog="Maybe.  But it's a big ask, even for Anne." />
+          <Popup Title="Let's bump the sales quota-- why not?" Video="sgranger_chat2" />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="susanForecast" Name="Offer to adjust up Group projections " Category="OfficePolitics">
+        <Cost EgoCost="10" />
+        <Requirements RequiredInteractions="susanStory," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="TO DO This interaction has a 50% chance of success  ALSO because trait is indecisive, player can try twice if it fails TO DO this interaction unlock a dept mission   CSG metrics don't look great--" />
+          <DialogEntry Speaker="Npc" Dialog="Please don't remind me.  I'm doing my best!" />
+          <DialogEntry Speaker="Player" Dialog="Of course, Ms. Granger.  I was only going to offer to re-forecast. With a little tweaking, I think I can make things look a lot better to Management." />
+          <DialogEntry Speaker="Npc" Dialog="I appreciate the offer.  If you think some adjustments might make CSG look a bit more positive...  Let me think about it." />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="susanHremail" Name="Anonymous email to HR" Category="Challenge">
+        <Cost EgoCost="10" />
+        <Requirements />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="You seem pre-occupied, Ms. Granger." />
+          <DialogEntry Speaker="Npc" Dialog="I just received a strange email from HR.  They got an anonymous complaint." />
+          <DialogEntry Speaker="Player" Dialog="They can't place much stock in anonymous complaints, can they?" />
+          <DialogEntry Speaker="Npc" Dialog="No-- but it plants a seed." />
+          <Effect AmbitionEffect="-10" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="susanPlanningemail" Name="Anonymous email to Planning" Category="Challenge">
+        <Cost EgoCost="10" />
+        <Requirements />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="What's wrong, Ms. Granger?" />
+          <DialogEntry Speaker="Npc" Dialog="Tracey Bledsoe-- my direct superior-- just sent me a pretty blistering email." />
+          <DialogEntry Speaker="Player" Dialog="About what?  You do such a great job running CSG!" />
+          <DialogEntry Speaker="Npc" Dialog="She's been getting anonymous reports on how I run CSG-- and they are NOT positive!" />
+          <Popup Title="Is there smething wrong?" Video="sgranger_chat1" />
+          <Effect AmbitionEffect="-10" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="susanPlanningbcc" Name="Planning Dept. BCC’d on Group Forecast" Category="Challenge">
+        <Cost />
+        <Requirements RequiredInteractions="susanForecast," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Can I get you something?  You look like you're in shock!" />
+          <DialogEntry Speaker="Npc" Dialog="I just got a meeting request from Tracey." />
+          <DialogEntry Speaker="Player" Dialog="Ms. Bledsoe?  For what?" />
+          <DialogEntry Speaker="Npc" Dialog="She says she wants to discuss the disparities between the original forecast-- and the updated forecast.  I think she's highly skeptical." />
+          <Effect AmbitionEffect="-20" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="controlSusan" Name="Take control of Susan Granger" Category="Challenge">
+        <Cost />
+        <Requirements RequiredAmbition="0" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="TO DO  This unlocks the Dept Challenge Control CSG Mission Given have things are going, I think it is time I stepped up." />
+          <DialogEntry Speaker="Npc" Dialog="Stepped up to what?" />
+          <DialogEntry Speaker="Player" Dialog="Susan, we both know who's best suited to run CSG. I need to know you're prepared to follow." />
+          <DialogEntry Speaker="Npc" Dialog="I didn't think I was doing such a poor job, but..." />
+          <Popup Title="Now that I'm the boss, you're do as you are told..." Video="sgranger_strip" />
+          <Effect ControlEffect="true" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="promotionCSG" Name="CSG Promotion" Category="Challenge">
+        <Cost />
+        <Requirements />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="TO DO  This reqs challenge csg dept  You may be the first to congratulate me on my promotion." />
+          <DialogEntry Speaker="Npc" Dialog="This is a little awkward-- you in charge and me reporting to you..." />
+          <DialogEntry Speaker="Player" Dialog="Susan, you were never cut out for management.  You're a follower, not a leader." />
+          <DialogEntry Speaker="Npc" Dialog="If you say so.  Congratulations on your promotion to run CSG." />
+          <Effect PowerEffect="30" ControlEffect="true" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="demotionSusan" Name="Demote" Category="OfficePolitics">
+        <Cost />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Susan, it no longer makes sense for you to hold a management title." />
+          <DialogEntry Speaker="Npc" Dialog="But I earned that title!" />
+          <DialogEntry Speaker="Player" Dialog="Your incompetence makes you ineligible for it.  You'll be an Admin girl from now on." />
+          <DialogEntry Speaker="Npc" Dialog="Very well-- but I do intend to make a complaint about this unfair demotion!" />
+          <Effect PrideEffect="-10" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="dismissalSusan" Name="Dismiss" Category="OfficePolitics">
+        <Cost />
+        <Requirements RequiredInteractions="demotionSusan," RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="What a shame the company has carried you for so long." />
+          <DialogEntry Speaker="Npc" Dialog="I've been here from the start!" />
+          <DialogEntry Speaker="Player" Dialog="You're a mistake I am rectifying.  You're fired, Susan." />
+          <DialogEntry Speaker="Npc" Dialog="I can't beleive this!" />
+          <Effect EgoEffect="40" RemoveNpcFromGame="true" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="susanupdateTracey" Name="Update for Tracey" Category="Projects">
+        <Cost />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Let Ms. Bledsoe know what an amazing job I'm doing here in CSG." />
+          <DialogEntry Speaker="Npc" Dialog="I'll send her an email." />
+          <DialogEntry Speaker="Player" Dialog="Let me see it before you send it." />
+          <DialogEntry Speaker="Npc" Dialog="As you wish." />
+          <Effect ContextualNpcId="traceyBledsoe" AmbitionEffect="-10" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="susanalertJennifer" Name="Talent Alert to Jennifer" Category="Projects">
+        <Cost />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I'm sure Ms. Page would like to learn what a great job I'm doing." />
+          <DialogEntry Speaker="Npc" Dialog="Of course." />
+          <DialogEntry Speaker="Player" Dialog="Leave her a message and make it good, Susan." />
+          <DialogEntry Speaker="Npc" Dialog="Yes, I will do waht you want." />
+          <Effect ContextualNpcId="jenniferPage" AmbitionEffect="-5" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="susanfanmailCarole" Name="Fan mail for Carole" Category="Projects">
+        <Cost />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="HR should really know how effective I am here." />
+          <DialogEntry Speaker="Npc" Dialog="I can send a report to Carole.  She runs HR." />
+          <DialogEntry Speaker="Player" Dialog="Why don't you make it a priority, Susan?" />
+          <DialogEntry Speaker="Npc" Dialog="I'll get to it right away." />
+          <Effect ContextualNpcId="caroleFontain" AmbitionEffect="-10" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="secPoolSusan" Name="Send to Secretarial Pool" Category="Projects">
+        <Cost />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="There's zero reason to continue to pretend you can contribute meaningfully." />
+          <DialogEntry Speaker="Npc" Dialog="I've been a loyal employee for years!" />
+          <DialogEntry Speaker="Player" Dialog="Which is the only reason I'm even keeping you on-- in the Secretarial Pool." />
+          <DialogEntry Speaker="Npc" Dialog="Thi si scrazy!  I sed to be your boss!  requiredpolicies=secpool RequiredPride=20 reward 1 corp culture" />
+          <Effect ContextualNpcId="susanGranger" PrideEffect="-20" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="susanmoveToSecDorm" Name="Move to Secretarial Dorm" Category="Projects">
+        <Cost />
+        <Requirements RequiredInteractions="demotion," RequiredPolicies="affordableHousing," RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Sticking you in the dorm only makes sense." />
+          <DialogEntry Speaker="Npc" Dialog="I was a manager here!  How can I possibly--" />
+          <DialogEntry Speaker="Player" Dialog="Save it.  I'm not interested.  You 'll move at once." />
+          <DialogEntry Speaker="Npc" Dialog="If you insist!" />
+          <Effect PrideEffect="-20" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="susanassignDollHouse" Name="Assign to the Doll House" Category="Projects">
+        <Cost />
+        <Requirements RequiredInteractions="demotionSusan," RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Time to move one of my pieces!  Susie!" />
+          <DialogEntry Speaker="Npc" Dialog="Sir?" />
+          <DialogEntry Speaker="Player" Dialog="You're re-assigned to the Doll House." />
+          <DialogEntry Speaker="Npc" Dialog="I am?  applied to DHouse rev" />
+          <Effect RemoveNpcFromGame="true" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="susanDiversity" Name="Diversity Certification" Category="Train">
+        <Cost TurnCost="8" />
+        <Requirements RequiredPride="40" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I've approved the paperwork for your training." />
+          <DialogEntry Speaker="Npc" Dialog="What kind of training?" />
+          <DialogEntry Speaker="Player" Dialog="Sensitivity training-- so you'll become more comfortable interacting with lesbians." />
+          <DialogEntry Speaker="Npc" Dialog="TO DO  will reveal trait Lipstick Lesbian  But I am already tolerant and sensitive!" />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="susanDresscode" Name="Dress Code Compliance" Category="Train">
+        <Cost MoneyCost="2000" />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="If you expect to keep your job, you're going to have to follow the Admin Dress Code." />
+          <DialogEntry Speaker="Npc" Dialog="I can't afford to buy a whole new wardrobe!" />
+          <DialogEntry Speaker="Player" Dialog="I'll give you a loan-- but you WILL meet code requirements." />
+          <DialogEntry Speaker="Npc" Dialog="Very well." />
+          <Effect PrideEffect="-5" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="susanPersonalsafety" Name="Employee Personal Measures for Susan" Category="Train">
+        <Cost />
+        <Requirements RequiredPride="30" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Putting you under lock and key is for your own good.  TO DO: requires tbtn policy" />
+          <DialogEntry Speaker="Npc" Dialog="I can't allow you to do that!" />
+          <DialogEntry Speaker="Player" Dialog="You'll behave yourself and cut the whining." />
+          <DialogEntry Speaker="Npc" Dialog="It's so uncomfortable!" />
+          <Popup Title="Do a good job and maybe I'll unlock you for extra credit!" Video="sgranger_bj" />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="disciplineSusan" Name="Susan Granger Demerits Review" Category="Train" Repeatable="true">
+        <Cost />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="You'll only improve if I give you feedback." />
+          <DialogEntry Speaker="Npc" Dialog="But why does it always require corporal punishment?" />
+          <DialogEntry Speaker="Player" Dialog="Because girls like you never seem to learn." />
+          <DialogEntry Speaker="Npc" Dialog="You're just being mean!" />
+          <Popup Title="Susan's been a bad, bad girl!" Video="sgranger_discipline" />
+          <Effect PrideEffect="-3" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="susanMotivationroomapt" Name="Motivation Room Appointment" Category="Train" Repeatable="true">
+        <Cost TurnCost="4" EgoCost="20" />
+        <Requirements RequiredPolicies="peaceOfMind," RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I'm surprised-- you're tougher than you look!" />
+          <DialogEntry Speaker="Npc" Dialog="Why am I here?" />
+          <DialogEntry Speaker="Player" Dialog="You are here because you are a stubborn girl in need of motivation!" />
+          <DialogEntry Speaker="Npc" Dialog="This isn't necessary!  Don't leave me here!" />
+          <Effect PrideEffect="-20" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="breakSusan" Name="Break Susan Granger" Category="Train">
+        <Cost />
+        <Requirements RequiredPride="0" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="You've come along nicely.  Who's the boss now, Susan?" />
+          <DialogEntry Speaker="Npc" Dialog="You're the boss, Sir." />
+          <DialogEntry Speaker="Player" Dialog="Good girl.  No more nonsense about you being a manager, right?" />
+          <DialogEntry Speaker="Npc" Dialog="I'm very happy to serve you in my current capacity-- thank you!" />
+          <Popup Title="Show me how to play with your new toy, Suzie..." Video="sgranger_toy" />
+          <Effect EgoEffect="40" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="gropeSusan" Name="Grope Susan Granger" Category="Fun" Repeatable="true">
+        <Cost />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="TO DO: Reqs a Harrassement Waiver policy  Any objections to me feeling you up?" />
+          <DialogEntry Speaker="Npc" Dialog="Of course!  I wish you'd keep your hands to yourself!" />
+          <DialogEntry Speaker="Player" Dialog="And if I don't?" />
+          <DialogEntry Speaker="Npc" Dialog="Oh, just do what you want! You know there's nothing I can say that will mak eyou stop!" />
+          <Effect PrideEffect="-5" EgoEffect="2" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="signsharesSusan" Name="Compel Susan to sign over her Artemis stock" Category="Fun">
+        <Cost MoneyCost="2000" />
+        <Requirements RequiredPride="20" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="TO DO: will create a trophy for Player  I think my offer is extremely generous." />
+          <DialogEntry Speaker="Npc" Dialog="Those shares will be worth a lot more than $2,000 when the IPO happens!" />
+          <DialogEntry Speaker="Player" Dialog="It is your choice, Susan." />
+          <DialogEntry Speaker="Npc" Dialog="I don't have any choice.  I'm falling behind so much, I have to take what I can get." />
+          <Effect TrophiesClaimed="susanStockshares," />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="courtshipSusan" Name="Play matchmaker with Alexis and Susan" Category="Fun">
+        <Cost TurnCost="20" />
+        <Requirements RequiredInteractions="susanDiversity," RequiredPride="10" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="TO DO: set up Alex conditions  I think Alexis Hunter likes you." />
+          <DialogEntry Speaker="Npc" Dialog="So what?  I'm not a lesbian." />
+          <DialogEntry Speaker="Player" Dialog="I think you two would make a nice couple." />
+          <DialogEntry Speaker="Npc" Dialog="That's not something I want though!  I'm not interested in her!" />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="planweddingSusan" Name="Have Susan polan her wedding to Alexis" Category="Fun">
+        <Cost TurnCost="20" />
+        <Requirements RequiredInteractions="courtshipSusan," RequiredPride="5" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="TO DO: set up Alex conditions  Congratulations!  I understand Alexis has proposed!" />
+          <DialogEntry Speaker="Npc" Dialog="Whatever." />
+          <DialogEntry Speaker="Player" Dialog="Now you'll need to plan your wedding." />
+          <DialogEntry Speaker="Npc" Dialog="Yes, I'll plan my wedding-- to another woman." />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="honeymoonSusan" Name="Play matchmaker with Alexis and Susan" Category="Fun">
+        <Cost TurnCost="10" MoneyCost="5000" />
+        <Requirements RequiredInteractions="planweddingSusan," RequiredPride="0" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="TO DO: set up Alex trait inspired which will allow her to generate Patent pts  I hope you don't mind me joining you two." />
+          <DialogEntry Speaker="Npc" Dialog="I thought honeymoonms where when a couple spends time alone?" />
+          <DialogEntry Speaker="Player" Dialog="You two are so naughty, it is clear you need a chaperone. I'll let you two have fun-- right after I've had MY fun." />
+          <DialogEntry Speaker="Npc" Dialog="I guess if you're paying for the honeymoon, you get to make the rules." />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+    </Npc>
+    <Npc Id="deborahJones" FirstName="Deborah" LastName="Jones" Age="24" Ambition="50" Pride="100" BackgroundImage="deborahOffice">
+      <LocationLayout XPercentage="0.56" YPercentage="0.3" Width="350" />
+      <PersonalLayout XPercentage="0.6" YPercentage="0.35" Width="400" />
+      <Trait Id="overAchiever" Name="Over-Achiever">
+        <FreeEffect AmbitionEffect="0.5" />
+        <ControlledEffect PowerEffect="0.1" />
+      </Trait>
+      <Trophy Id="debBizholiday" Name="Deborah's Holiday Card" Image="debBizholiday" />
+      <Trophy Id="debDiversitycertificate" Name="Deborah's Diversity Certificate" Image="debDiversitycertificate" />
+      <Trophy Id="debGoldstar" Name="Deborah's Gold Star" Image="debGoldstar" />
+      <Trophy Id="debKatherinephoto" Name="Deborah's Katherine Photo" Image="debKatherinephoto" />
+      <Trophy Id="debMba" Name="Deborah's MBA" Image="debMba" />
+      <Trophy Id="debSeccertificate" Name="Deborah's Secretarial School Certificate" Image="debSeccertificate" />
+      <Trophy Id="debSisterphoto" Name="Photo of Deborah's Sister" Image="debSisterphoto" />
+      <Trophy Id="debStudentloan" Name="Deborah's Student Loans" Image="debStudentloan" />
+      <Interaction Id="offerAssistance" Name="Offer to Assist Her" Category="OfficePolitics">
+        <Cost EgoCost="20" />
+        <Requirements RequiredInteractions="introduction," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="You look really busy! Is there anything I can do to help out?" />
+          <DialogEntry Speaker="Npc" Dialog="I suppose. Could you scan through these files for me and look for anything on competitive trends?" />
+          <DialogEntry Speaker="Player" Dialog="Sure, no problem!" />
+          <DialogEntry Speaker="Npc" Dialog="Thanks.  That's nice of you." />
+          <Effect AmbitionEffect="-5" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="offerToCollaborate" Name="Offer to Collaborate" Category="OfficePolitics">
+        <Cost EgoCost="10" />
+        <Requirements RequiredInteractions="offerAssistance," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I bet if we supported each other, we'd both get our work done a lot quicker." />
+          <DialogEntry Speaker="Npc" Dialog="That's a nice offer. Let me think about it, ok?" />
+          <DialogEntry Speaker="Player" Dialog="I think we'd work well together." />
+          <DialogEntry Speaker="Npc" Dialog="I'll get back to you on this." />
+          <Popup Title="Offer to Collaborate" Video="djones_offerToCollaborate" />
+          <Effect AmbitionEffect="-3" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="shareResources" Name="Share Resources" Category="OfficePolitics">
+        <Cost EgoCost="4" />
+        <Requirements RequiredInteractions="offerToCollaborate," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Why don't we collaborate on a project together?" />
+          <DialogEntry Speaker="Npc" Dialog="No offense, but I work better on my own." />
+          <DialogEntry Speaker="Player" Dialog="If that's the way you want it." />
+          <DialogEntry Speaker="Npc" Dialog="I appreciate the offer." />
+          <Popup Title="Offer to share resource" Video="djones_shareResources" />
+          <Effect AmbitionEffect="-1" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="declareTruce" Name="Declare a Truce" Category="OfficePolitics">
+        <Cost />
+        <Requirements RequiredInteractions="shareResources," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="There's no reason we can't BOTH make it through Management Training together." />
+          <DialogEntry Speaker="Npc" Dialog="We both know there's only one open Management spot!" />
+          <DialogEntry Speaker="Player" Dialog="Well, if you land the spot, maybe you'll recommend me when the next one comes up." />
+          <DialogEntry Speaker="Npc" Dialog="I must say, I like your attitude!" />
+          <Effect AmbitionEffect="-3" />
+        </InteractionResult>
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="There's no reason we can't BOTH make it through Management Training together." />
+          <DialogEntry Speaker="Npc" Dialog="I think it is obvious I'm going to get the spot." />
+          <DialogEntry Speaker="Player" Dialog="You don't know that for sure." />
+          <DialogEntry Speaker="Npc" Dialog="Oh, I think I've pretty much got a lock on it!" />
+          <Effect EgoEffect="-5" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="acknowledgeRivalry" Name="Acknowledge Rivalry" Category="OfficePolitics">
+        <Cost />
+        <Requirements RequiredInteractions="declareTruce," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="If this is a war, let the best man win!" />
+          <DialogEntry Speaker="Npc" Dialog="You mean let the best WOMAN win!" />
+          <DialogEntry Speaker="Player" Dialog="I meant what I said." />
+          <DialogEntry Speaker="Npc" Dialog="We'll see what you say when you end up reporting to me!" />
+          <Effect EgoEffect="10" />
+          <Effect AmbitionEffect="2" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="bullyDeborah" Name="Bully Deborah" Category="OfficePolitics" Repeatable="true">
+        <Cost />
+        <Requirements RequiredAmbition="25" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="You're clearly not up to the pressure around here." />
+          <DialogEntry Speaker="Npc" Dialog="Who the hell do you think you're talking to?" />
+          <DialogEntry Speaker="Player" Dialog="I'm just making an observation." />
+          <DialogEntry Speaker="Npc" Dialog="You better watch what you say, unless you want me to report you to HR!" />
+          <Effect AmbitionEffect="-5" />
+        </InteractionResult>
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="You're clearly not up to the pressure around here." />
+          <DialogEntry Speaker="Npc" Dialog="That's it.  I've had it!" />
+          <DialogEntry Speaker="Player" Dialog="What do you mean?" />
+          <DialogEntry Speaker="Npc" Dialog="You're bullying me and I intend to report you to HR!" />
+          <Effect EgoEffect="-5" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="betraySusanGranger" Name="Betray Susan Granger" Category="OfficePolitics">
+        <Cost TurnCost="3" />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I want you to keep an eye on Susan for me." />
+          <DialogEntry Speaker="Npc" Dialog="What do you mean?  You want me to spy on her?" />
+          <DialogEntry Speaker="Player" Dialog="That's exactly what I want you to do.  Find examples of her incompetence-- or you'll face the consequences.  Understand?" />
+          <DialogEntry Speaker="Npc" Dialog="Yes, I understand.  You expect me to spy on her for you-- or else." />
+          <Effect ContextualNpcId="susanGranger" AmbitionEffect="-20" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="loyaltyTest" Name="Loyalty Test" Category="OfficePolitics">
+        <Cost />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="If you like working, you better choose sides." />
+          <DialogEntry Speaker="Npc" Dialog="You mean choose YOUR side." />
+          <DialogEntry Speaker="Player" Dialog="Only if you want to stay on the team." />
+          <DialogEntry Speaker="Npc" Dialog="You're not leaving me any options, so-- yes.  I want to be on YOUR team, ok?" />
+          <Effect PrideEffect="-3" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="demotionDeborah" Name="Demote" Category="OfficePolitics">
+        <Cost />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Now that I'm in charge, there are going to be some changes." />
+          <DialogEntry Speaker="Npc" Dialog="I thought there might be." />
+          <DialogEntry Speaker="Player" Dialog="While you aren't qualified for an executive position, I can offer you an admin role-- as my secertary.  What's your answer?" />
+          <DialogEntry Speaker="Npc" Dialog="But... fine.  My answer is... yes." />
+          <Popup Title="Demote Deborah to Secretary" Video="djones_demotionDeborah" />
+          <Effect PrideEffect="-10" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="dismissal" Name="Dismiss" Category="OfficePolitics">
+        <Cost />
+        <Requirements RequiredInteractions="!demotion," RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Now that I'm in charge, there are going to be some changes." />
+          <DialogEntry Speaker="Npc" Dialog="I thought there might be." />
+          <DialogEntry Speaker="Player" Dialog="I'm sorry. but your services are no longer required.  Your employment is terminated, effective immediately." />
+          <DialogEntry Speaker="Npc" Dialog="I never thought this would happen to me! " />
+          <Effect RemoveNpcFromGame="true" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="moveToSecDorm" Name="Move to Secretarial Dorm" Category="OfficePolitics">
+        <Cost />
+        <Requirements RequiredInteractions="demotion," RequiredPolicies="affordableHousing," RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="You must be finding it difficult to make ends these days." />
+          <DialogEntry Speaker="Npc" Dialog="You know I make a lot less now than I was before you demoted me!" />
+          <DialogEntry Speaker="Player" Dialog="Lucky for you, I've reserved you a room in the Secretarial Dormitory.  You can move in immediately." />
+          <DialogEntry Speaker="Npc" Dialog="I'm going to miss my apartment.  Yes, I'll begin packing tonight." />
+          <Popup Title="Send Deborah to the dormitory" Video="djones_moveToSecDorm" />
+          <Effect PrideEffect="-10" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="introduction" Name="Introduction" Category="Conversation">
+        <Cost />
+        <Requirements />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Nice to meet you!" />
+          <DialogEntry Speaker="Npc" Dialog="So, you're the new guy?  Welcome to Artemis." />
+          <DialogEntry Speaker="Player" Dialog="It's great to be here." />
+          <DialogEntry Speaker="Npc" Dialog="Sure, sure.  See you around." />
+          <Popup Title="Introduction" Video="djones_introduction" />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="compliment" Name="Compliment" Category="Conversation">
+        <Cost EgoCost="5" />
+        <Requirements RequiredInteractions="introduction," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I can't help but admire how driven you are!" />
+          <DialogEntry Speaker="Npc" Dialog="I've always been this way.  I got my MBA from Forbes.  Where did you go to business school?" />
+          <DialogEntry Speaker="Player" Dialog="I didn't.  I don't have an MBA." />
+          <DialogEntry Speaker="Npc" Dialog="If you don't make it through the Management Trainee Program, maybe I can find a spot for you under me." />
+          <Popup Title="Compliment" Video="djones_compliment" />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="askAboutFamily" Name="Ask about family" Category="Conversation">
+        <Cost EgoCost="3" />
+        <Requirements RequiredInteractions="introduction," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Are you from around here?" />
+          <DialogEntry Speaker="Npc" Dialog="No.  I grew up a few hours from here." />
+          <DialogEntry Speaker="Player" Dialog="Any brothers or sisters?" />
+          <DialogEntry Speaker="Npc" Dialog="A younger sister-- Katherine.  We're not really that close though." />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="goodmorningDeborah" Name="Good Morning!" Category="Conversation">
+        <Cost />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Good morning.  You look lovely today.  I see you're finally complying with the Admin Dress Code." />
+          <DialogEntry Speaker="Npc" Dialog="Yes.  I received the memo from Compliance." />
+          <DialogEntry Speaker="Player" Dialog="Good.  Nice to see you show your legs off.  I highly approve." />
+          <DialogEntry Speaker="Npc" Dialog="I'd like to get back to work if that's alright." />
+          <Effect PrideEffect="-3" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="emergencycontactDeborah" Name="Emergency Contact Confirmation" Category="Conversation">
+        <Cost />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="TO DO This reqs a policy and reveals a trophy  Have you provided HR with your emergency contact details yet?" />
+          <DialogEntry Speaker="Npc" Dialog="I did." />
+          <DialogEntry Speaker="Player" Dialog="Do me a favour-- have HR send me a copy of your file." />
+          <DialogEntry Speaker="Npc" Dialog="Why would you need that?  Never mind.  Yes, I will." />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="familiarityDeborah" Name="Familiarity Guidelines" Category="Conversation">
+        <Cost />
+        <Requirements RequiredPride="80" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I've been patient, but it is time to set some boundaries for our professional relationship." />
+          <DialogEntry Speaker="Npc" Dialog="I'm not sure what you mean." />
+          <DialogEntry Speaker="Player" Dialog="From now on, I expect you to address me with the respect my position deserves-- and the very junior position you hold." />
+          <DialogEntry Speaker="Npc" Dialog="Yes, Sir." />
+          <Effect PrideEffect="-3" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="coffeebjDeborah" Name="Coffee and a BJ" Category="Conversation" Repeatable="true">
+        <Cost />
+        <Requirements RequiredPride="30" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Hey there, pretty girl." />
+          <DialogEntry Speaker="Npc" Dialog="Is there something you need?" />
+          <DialogEntry Speaker="Player" Dialog="Coffee and a blowjob would be nice.  Can you handle that, Sweetie?" />
+          <DialogEntry Speaker="Npc" Dialog="Yes, of course.  I'll be right back with your coffee." />
+          <Popup Title="Coffee and a BJ" Video="djones_coffeAndBJ_1,djones_coffeAndBJ_2,djones_coffeAndBJ_3" />
+          <Effect PrideEffect="-1" EgoEffect="1" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="mbaDeborah" Name="MBA Archiving" Category="Conversation">
+        <Cost />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="TO DO requires antitheft policy  I know you are VERY proud of that MBA of yours-- aren't you?" />
+          <DialogEntry Speaker="Npc" Dialog="Of course I am!  I worked hard to earn my Masters degree!" />
+          <DialogEntry Speaker="Player" Dialog="That's why we want to keep it safe.  Please bring it to me for safe keeping-- per company policy." />
+          <DialogEntry Speaker="Npc" Dialog="Well, if you insist." />
+          <Effect PrideEffect="-3" TrophiesClaimed="debMba," />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="birthcontrolDeborah" Name="Birth Control Selection" Category="Conversation">
+        <Cost EgoCost="10" />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="TO DO requires freedom of choice policy  As you know, the company will now cover your birth control expenses." />
+          <DialogEntry Speaker="Npc" Dialog="This is kind of personal." />
+          <DialogEntry Speaker="Player" Dialog="I've been reviewing several options and I think an Implanon implant makes more sense than the Pill.  You can be a bit irresponsible at times." />
+          <DialogEntry Speaker="Npc" Dialog="I don't understand why this isn't MY decision to make!" />
+          <Effect PrideEffect="-5" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="attorneyDeborah" Name="Power of Attorney" Category="Conversation">
+        <Cost />
+        <Requirements RequiredPride="0" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="TO DO reqs Executive Sponsorship Program I think we both know you're happier when I make decisions for you." />
+          <DialogEntry Speaker="Npc" Dialog="I guess so.  Not that I have anything to say about it." />
+          <DialogEntry Speaker="Player" Dialog="It's time I figured out what I'm going to do with you.  Sign this Power of Attorney so we can make it official." />
+          <DialogEntry Speaker="Npc" Dialog="How did it get to this?  I'll sign it." />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="fateDeborah" Name="Deborah Jones' Fate" Category="Conversation">
+        <Cost />
+        <Requirements RequiredInteractions="attorneyDeborah," RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="TO DO allows 3 choices each req a specific trait-- Mistress (trait discreet), Trophy Wife (trait Adoring) or Exec PA (trait loyal)" />
+          <DialogEntry Speaker="Npc" Dialog="TO DO Mistress adds 50 EGO" />
+          <DialogEntry Speaker="Player" Dialog="TO DO Exec PA adds 10 Power." />
+          <DialogEntry Speaker="Npc" Dialog="TO DO Trophy Wife adds 10 Corp Culture" />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="takeControl" Name="Take Control of Deborah Jones" Category="Challenge">
+        <Cost />
+        <Requirements RequiredAmbition="0" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I think we both know why you're here.  It is high time someone put you in your place." />
+          <DialogEntry Speaker="Npc" Dialog="You have a hell of a nerve!" />
+          <DialogEntry Speaker="Player" Dialog="From now on, you're going to do as you're told-- or I'll make sure you never work in corporate again!" />
+          <DialogEntry Speaker="Npc" Dialog="Fine-- you win.  For now." />
+          <Popup Title="Deborah is now Controlled" Video="djones_controlled" />
+          <Effect EgoEffect="100" ControlEffect="true" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="insinuatingComments" Name="Insinuating Comments" Category="Challenge" Repeatable="true">
+        <Cost EgoCost="10" />
+        <Requirements />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="You seem upset with me." />
+          <DialogEntry Speaker="Npc" Dialog="I am!  Don't think I haven't heard about why you're saying about me!" />
+          <DialogEntry Speaker="Player" Dialog="You're being paranoid." />
+          <DialogEntry Speaker="Npc" Dialog="Am I?  I don't think so!" />
+          <Effect AmbitionEffect="-4" />
+        </InteractionResult>
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="You seem upset with me." />
+          <DialogEntry Speaker="Npc" Dialog="I am!  Don't think I haven't heard about why you're saying about me!" />
+          <DialogEntry Speaker="Player" Dialog="You're being paranoid." />
+          <DialogEntry Speaker="Npc" Dialog="Am I?  I don't think so!" />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="motivationRoomApt" Name="Motivation Room Appointment" Category="Train" Repeatable="true">
+        <Cost TurnCost="4" EgoCost="20" />
+        <Requirements RequiredPolicies="peaceOfMind," RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I've had it with you!  Your stiff necked attitude towards me is unacceptable!" />
+          <DialogEntry Speaker="Npc" Dialog="Let me go!  You have no right--" />
+          <DialogEntry Speaker="Player" Dialog="As your manager, I have every right to send you here!  When you're released, I suspect you'll return to your duties with a far better attitude towards authority!" />
+          <DialogEntry Speaker="Npc" Dialog="Please!  Don't leave me here!  Please!  I'm sorry-- I'll do whatever you want!" />
+          <Effect PrideEffect="-20" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="coffeAndBJ" Name="Coffee and a BJ" Category="Conversation">
+        <Cost />
+        <Requirements RequiredPride="30" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Hey there, pretty girl." />
+          <DialogEntry Speaker="Npc" Dialog="Is there something you need?" />
+          <DialogEntry Speaker="Player" Dialog="Coffee and a blowjob would be nice.  Can you handle that, Sweetie?" />
+          <DialogEntry Speaker="Npc" Dialog="Yes, of course.  I'll be right back with your coiffee." />
+          <Effect EgoEffect="3" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="valentinesDeborah" Name="Valentine’s Day" Category="Socialize">
+        <Cost MoneyCost="100" />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I have a little surprise for you for Valentine's Day." />
+          <DialogEntry Speaker="Npc" Dialog="That's not necessary or appropriate!" />
+          <DialogEntry Speaker="Player" Dialog="I think you'd look good in something skimpy like this." />
+          <DialogEntry Speaker="Npc" Dialog="You can't think I'd accept a gift like that!  I will NOT accept this!" />
+          <Effect PrideEffect="-3" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="secdayDeborah" Name="Secretary’s Day" Category="Socialize">
+        <Cost MoneyCost="100" />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Happy Secretary's Day!" />
+          <DialogEntry Speaker="Npc" Dialog="Is it?  I had no idea." />
+          <DialogEntry Speaker="Player" Dialog="A girl like like you could alway use a boost, so I bought you a push-up bra.  You WILL wear it tomorrow." />
+          <DialogEntry Speaker="Npc" Dialog="But I don't like to wear things like this-- especially in the office!" />
+          <Effect PrideEffect="-3" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="bossdayDeborah" Name="Manager’s Day" Category="Socialize">
+        <Cost MoneyCost="100" />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="So, what has my Office Girl got for her manager for Boss's Day?" />
+          <DialogEntry Speaker="Npc" Dialog="I hope you like it." />
+          <DialogEntry Speaker="Player" Dialog="What a nice surprise!  You have excellent taste." />
+          <DialogEntry Speaker="Npc" Dialog="I thought it was perfect for you." />
+          <Effect EgoEffect="5" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="officepartyDeborah" Name="Office Party" Category="Socialize">
+        <Cost />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Go and drink up.  This is an office party, right?" />
+          <DialogEntry Speaker="Npc" Dialog="Shouldn't we be out with everyone else?" />
+          <DialogEntry Speaker="Player" Dialog="A little privacy between the Boss and his Office Girl is perfectly fine.  Go on-- drink up." />
+          <DialogEntry Speaker="Npc" Dialog="I don't really feel like it but...ok." />
+          <Effect EgoEffect="5" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="birthdayDeborah" Name="Deborah’s Birthday" Category="Socialize">
+        <Cost MoneyCost="50" />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Happy Birthday!  I hope you like it!" />
+          <DialogEntry Speaker="Npc" Dialog="A paddle?" />
+          <DialogEntry Speaker="Player" Dialog="For the Birthday Girl!  Anything that helps keep you focused is a good thing, right?" />
+          <DialogEntry Speaker="Npc" Dialog="I don't need that to keep me focused!" />
+          <Effect PrideEffect="-2" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="uniformsDeborah" Name="Schoolgirl Fridays" Category="Socialize">
+        <Cost MoneyCost="500" />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="TO DO Globalisation Protocols Policy Welcome to Schoolgirl Fridays!" />
+          <DialogEntry Speaker="Npc" Dialog="But I feel so silly wearing this-- I'm a grown woman, not a schoolgirl!" />
+          <DialogEntry Speaker="Player" Dialog="You WILL wear one of your schoolgirl uniforms when instructed.  It sends the right message.  Understood?" />
+          <DialogEntry Speaker="Npc" Dialog="Very well!" />
+          <Popup Title="Deborah wears a uniform" Video="djones_uniformsDeborah" />
+          <Effect CultureEffect="1" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="athomeDeborah" Name="Home Inspection" Category="Socialize">
+        <Cost MoneyCost="500" />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="TO DO Life Work Balance I let myself in.  I hope you don't mind." />
+          <DialogEntry Speaker="Npc" Dialog="What are you doing here?" />
+          <DialogEntry Speaker="Player" Dialog="As your manager, I have a copy of your key.  Be a good little hostess and mix a cocktail." />
+          <DialogEntry Speaker="Npc" Dialog="But this is my place!  And I didn't invite you over!" />
+          <Effect EgoEffect="10" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="holidayDeborah" Name="Annual Holiday" Category="Socialize">
+        <Cost TurnCost="10" MoneyCost="5000" />
+        <Requirements RequiredInteractions="hardbodiestDeborah," RequiredPride="20" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="TO DO Player gets to select trait Loyal/Discreet/Adoring   Model your bikini for me.  Do you like it?" />
+          <DialogEntry Speaker="Npc" Dialog="It's so revealing!" />
+          <DialogEntry Speaker="Player" Dialog="That's the point.  I want to show you off during my vacation.  Are you excited about coming with me?" />
+          <DialogEntry Speaker="Npc" Dialog="Yes!  It's been so long since I went anywhere!" />
+          <Popup Title="Take Deborah on a getaway" Video="djones_businessTripDeborah" />
+          <Effect EgoEffect="20" TrophiesClaimed="debBizholiday," />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="spyDeborah" Name="Spy On Staff" Category="Projects">
+        <Cost TurnCost="12" />
+        <Requirements RequiredPride="70" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="TO DO - 3 ambition (after 6 turns) for Tracey Bledsoe, Candace Kelly, Susan Granger, Alexis Hunter, Amanda Ellsbach, Jill Vamder, Britney Bower  I need to crack down on the CSG and Planning.  You're going to help me." />
+          <DialogEntry Speaker="Npc" Dialog="What do you want me to do?" />
+          <DialogEntry Speaker="Player" Dialog="I want you to keep an eye on all the girls.  You'll report back ANY infractions you uncover, which I will forward to HR." />
+          <DialogEntry Speaker="Npc" Dialog="A spy?  Please don't turn me into some tattletale!" />
+          <Effect ContextualNpcId="annMiller" AmbitionEffect="-3" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="dictationDeborah" Name="Learn to take Dictation" Category="Projects">
+        <Cost TurnCost="10" />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I'm sending you for vocational training." />
+          <DialogEntry Speaker="Npc" Dialog="Wow!  I'm grateful!  What kind of training?" />
+          <DialogEntry Speaker="Player" Dialog="A week-long crash course in Shorthand and dictation.  I need an Office Girl who can take notes quickly and correctly." />
+          <DialogEntry Speaker="Npc" Dialog="If you say so." />
+          <Effect CultureEffect="1" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="hardbodiestDeborah" Name="Hard Bodies KPIs" Category="Projects">
+        <Cost TurnCost="20" MoneyCost="2000" />
+        <Requirements RequiredPride="60" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="TO DO requires wellness policy  First, I expect her to achieve and maintain her high school graduation weight of 120 pounds." />
+          <DialogEntry Speaker="Npc" Dialog="Second, I want her toned and trim-- not ripped." />
+          <DialogEntry Speaker="Player" Dialog="Third, start her on yoga positions.  I want her limber and flexible." />
+          <DialogEntry Speaker="Npc" Dialog="Fourth, put her in heavy 'Teasercise' routine rotations.  Teach her some moves she can show off back in the office." />
+          <Popup Title="Begin fitness training" Video="djones_hardbodiestDeborah" />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="socialpostDeborah" Name="BossPleaser Social Credit Check" Category="Projects" Repeatable="true">
+        <Cost />
+        <Requirements RequiredPride="40" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="TO DO reqs Corporate Social Credit Program  Office Girls like you need an outlet for self-expression." />
+          <DialogEntry Speaker="Npc" Dialog="But these suggestive selfies?  I'm not like that!" />
+          <DialogEntry Speaker="Player" Dialog="Earning corporate social credits is part of your performance metrics." />
+          <DialogEntry Speaker="Npc" Dialog="My posts don't have to be public, do they?" />
+          <Popup Title="Check Deborah's social post" Video="djones_socialpostDeborah" />
+          <Effect PrideEffect="-1" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="dictationDeborah" Name="Learn to take Dictation" Category="Projects">
+        <Cost TurnCost="10" />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I'm sending you for vocational training." />
+          <DialogEntry Speaker="Npc" Dialog="Wow!  I'm grateful!  What kind of training?" />
+          <DialogEntry Speaker="Player" Dialog="A week-long crash course in Shorthand and dictation.  I need an Office Girl who can take notes quickly and correctly." />
+          <DialogEntry Speaker="Npc" Dialog="If you say so." />
+          <Effect CultureEffect="1" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="calendarDeborah" Name="Corporate Calendar" Category="Projects">
+        <Cost TurnCost="10" />
+        <Requirements RequiredPride="50" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="You'll need to be at the studio this week. It is just a little cheesecake for our clients.  Don't you want to help Marketing out?" />
+          <DialogEntry Speaker="Npc" Dialog="Can I just wear my regular clothes?" />
+          <DialogEntry Speaker="Player" Dialog="Of course-- your regular lingerie or bikini.  Whatever the art director tells you to wear." />
+          <DialogEntry Speaker="Npc" Dialog="I going to feel like a porn magazine centerfold!" />
+          <Effect BrandEffect="1" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="secentcertificationDeborah" Name="Secretarial Entertainment Certification" Category="Projects" Repeatable="true">
+        <Cost TurnCost="10" MoneyCost="2000" />
+        <Requirements RequiredInteractions="hardbodiestDeborah," RequiredPride="40" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I'd like my secretary taught to strip for me..." />
+          <DialogEntry Speaker="Npc" Dialog="to pole dance like a pro..." />
+          <DialogEntry Speaker="Player" Dialog="to perform table dances like a slut before Last Call and..." />
+          <DialogEntry Speaker="Npc" Dialog="to give lapdances like the tramp she really is, all whenever I tell her to." />
+          <Popup Title="Business Strip" Video="djones_secentcertificationDeborah_1,djones_secentcertificationDeborah_2,djones_secentcertificationDeborah_3" />
+          <Effect EgoEffect="20" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="kjonesrecruitmentDeborah" Name="Katherine Jones Recruitment" Category="Projects">
+        <Cost />
+        <Requirements RequiredInteractions="emergencycontactDeborah," RequiredPride="40" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I might have an opening for your little sister." />
+          <DialogEntry Speaker="Npc" Dialog="I don't think Katherine would be interested in an office job." />
+          <DialogEntry Speaker="Player" Dialog="Then you'll convince her what a great opportunity it mighty be.  Must I repeat myself?" />
+          <DialogEntry Speaker="Npc" Dialog="No!  I'll call her right now!" />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="nicknameDeborah" Name="Give Deborah Jones a Nickname" Category="Train">
+        <Cost />
+        <Requirements RequiredInteractions="demotionDeborah," RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I've been thinking.  'Deborah' seems so formal to me." />
+          <DialogEntry Speaker="Npc" Dialog="But that's my name!" />
+          <DialogEntry Speaker="Player" Dialog="Not anymore.  From now on, I think we'll go with Debbie.  That sounds a lot friendlier.  Lose the pout, Debbie." />
+          <DialogEntry Speaker="Npc" Dialog="Yes. Sorry!" />
+          <Effect PrideEffect="-5" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="corpcompanionDeborah" Name="Corporate Companion Coursework" Category="Train">
+        <Cost TurnCost="10" />
+        <Requirements RequiredPride="45" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="TO DO Executive Entertainment Guidelines Policy required I've signed you up for the new Executive Companionship Program." />
+          <DialogEntry Speaker="Npc" Dialog="What's that?" />
+          <DialogEntry Speaker="Player" Dialog="A new course for training secretaries to provide a bit more than just typing and filing.  I expect you to earn a high grade." />
+          <DialogEntry Speaker="Npc" Dialog="I'll try my hardest." />
+          <Popup Title="Corporate Companion" Video="djones_corpcompanionDeborah" />
+          <Effect PowerEffect="2" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="deborahDiversity" Name="Diversity Certification" Category="Train">
+        <Cost TurnCost="8" />
+        <Requirements RequiredPride="40" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I've decided you need to embrace a broader range fo experiences." />
+          <DialogEntry Speaker="Npc" Dialog="Like different cultures?" />
+          <DialogEntry Speaker="Player" Dialog="In a way.  It's time to explore those repressed desires you have.  I look forward to seeing how you do!" />
+          <DialogEntry Speaker="Npc" Dialog="TO DO  will reveal trait Lipstick Lesbian  Sure.  Whatever.  I mean I'm very open-minded already, but if you insist." />
+          <Popup Title="Begin Diversity Training" Video="djones_deborahDiversity" />
+          <Effect TrophiesClaimed="debDiversitycertificate," />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="deborahGoldstar" Name="Teamwork Gold Star" Category="Train">
+        <Cost TurnCost="4" />
+        <Requirements RequiredInteractions="deborahDiversity," RequiredPride="30" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="TO DO gains trait 'Bisexual' (unlocks Sister Sessions) I've slotted you in for to Gold Star training." />
+          <DialogEntry Speaker="Npc" Dialog="I'm not sure what that is." />
+          <DialogEntry Speaker="Player" Dialog="It's a course design to help you successfully multi-tasking with other Junior staffers." />
+          <DialogEntry Speaker="Npc" Dialog="Oh!  That actually sounds fun!" />
+          <Popup Title="Begin Gold Star Training" Video="djones_deborahGoldstar" />
+          <Effect TrophiesClaimed="debGoldstar," />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="deborahPersonalsafety" Name="Employee Personal Safety Measures" Category="Train">
+        <Cost />
+        <Requirements RequiredPride="20" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="TO DO: requires tbtn policy You must feel MUCH safer now in your new protective gear." />
+          <DialogEntry Speaker="Npc" Dialog="I suppose so but why can't I have a key to my own belt?" />
+          <DialogEntry Speaker="Player" Dialog="Because you're an irresponsible airhead and would lose it right away.  You know what you have to do if you need some access." />
+          <DialogEntry Speaker="Npc" Dialog="I know, I know-- ask my manager to unlock the belt for me." />
+          <Popup Title="Lock her up!" Video="djones_deborahPersonalsafety" />
+          <Effect EgoEffect="20" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="disciplineDeborah" Name="D. Jones Demerits Review" Category="Train" Repeatable="true">
+        <Cost />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Fetch the paddle so we can begin your Demerits Review." />
+          <DialogEntry Speaker="Npc" Dialog="But I don't think I have any demerits!" />
+          <DialogEntry Speaker="Player" Dialog="Not according to my list, young lady.  Over my knee while I read off your various failures and errors!" />
+          <DialogEntry Speaker="Npc" Dialog="Yes, Sir!" />
+          <Popup Title="Discipline Deborah" Video="djones_disciplineDeborah1" />
+          <Effect PrideEffect="-3" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="disciplineDeborah" Name="D. Jones Demerits Review" Category="Train" Repeatable="true">
+        <Cost />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Fetch the paddle so we can begin your Demerits Review." />
+          <DialogEntry Speaker="Npc" Dialog="But I don't think I have any demerits!" />
+          <DialogEntry Speaker="Player" Dialog="Not according to my list, young lady.  Over my knee while I read off your various failures and errors!" />
+          <DialogEntry Speaker="Npc" Dialog="Yes, Sir!" />
+          <Popup Title="Discipline Deborah" Video="djones_disciplineDeborah2" />
+          <Effect PrideEffect="-3" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="disciplineDeborah" Name="D. Jones Demerits Review" Category="Train" Repeatable="true">
+        <Cost />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Fetch the paddle so we can begin your Demerits Review." />
+          <DialogEntry Speaker="Npc" Dialog="But I don't think I have any demerits!" />
+          <DialogEntry Speaker="Player" Dialog="Not according to my list, young lady.  Over my knee while I read off your various failures and errors!" />
+          <DialogEntry Speaker="Npc" Dialog="Yes, Sir!" />
+          <Popup Title="Discipline Deborah" Video="djones_disciplineDeborah3" />
+          <Effect PrideEffect="-3" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="disciplineDeborah" Name="D. Jones Demerits Review" Category="Train" Repeatable="true">
+        <Cost />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Fetch the paddle so we can begin your Demerits Review." />
+          <DialogEntry Speaker="Npc" Dialog="But I don't think I have any demerits!" />
+          <DialogEntry Speaker="Player" Dialog="Not according to my list, young lady.  Over my knee while I read off your various failures and errors!" />
+          <DialogEntry Speaker="Npc" Dialog="Yes, Sir!" />
+          <Popup Title="Discipline Deborah" Video="djones_disciplineDeborah4" />
+          <Effect PrideEffect="-3" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="disciplineDeborah" Name="D. Jones Demerits Review" Category="Train" Repeatable="true">
+        <Cost />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Fetch the paddle so we can begin your Demerits Review." />
+          <DialogEntry Speaker="Npc" Dialog="But I don't think I have any demerits!" />
+          <DialogEntry Speaker="Player" Dialog="Not according to my list, young lady.  Over my knee while I read off your various failures and errors!" />
+          <DialogEntry Speaker="Npc" Dialog="Yes, Sir!" />
+          <Popup Title="Discipline Deborah" Video="djones_disciplineDeborah5" />
+          <Effect PrideEffect="-3" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="deborahMotivationroomapt" Name="Motivation Room Appointment" Category="Train" Repeatable="true">
+        <Cost TurnCost="4" EgoCost="20" />
+        <Requirements RequiredPolicies="peaceOfMind," RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I've had it with you!  Your stiff necked attitude towards me is unacceptable!" />
+          <DialogEntry Speaker="Npc" Dialog="Let me go!  You have no right--" />
+          <DialogEntry Speaker="Player" Dialog="As your manager, I have every right to send you here!  When you're released, I suspect you'll return to your duties with a far better attitude towards authority!" />
+          <DialogEntry Speaker="Npc" Dialog="Please!  Don't leave me here!  Please!  I'm sorry-- I'll do whatever you want!" />
+          <Popup Title="Deborah to Motivation Room" Video="djones_deborahMotivationroomapt1" />
+          <Effect PrideEffect="-20" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="deborahMotivationroomapt" Name="Motivation Room Appointment" Category="Train" Repeatable="true">
+        <Cost TurnCost="4" EgoCost="20" />
+        <Requirements RequiredPolicies="peaceOfMind," RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I've had it with you!  Your stiff necked attitude towards me is unacceptable!" />
+          <DialogEntry Speaker="Npc" Dialog="Let me go!  You have no right--" />
+          <DialogEntry Speaker="Player" Dialog="As your manager, I have every right to send you here!  When you're released, I suspect you'll return to your duties with a far better attitude towards authority!" />
+          <DialogEntry Speaker="Npc" Dialog="Please!  Don't leave me here!  Please!  I'm sorry-- I'll do whatever you want!" />
+          <Popup Title="Deborah to Motivation Room" Video="djones_deborahMotivationroomapt2" />
+          <Effect PrideEffect="-20" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="deborahMotivationroomapt" Name="Motivation Room Appointment" Category="Train" Repeatable="true">
+        <Cost TurnCost="4" EgoCost="20" />
+        <Requirements RequiredPolicies="peaceOfMind," RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I've had it with you!  Your stiff necked attitude towards me is unacceptable!" />
+          <DialogEntry Speaker="Npc" Dialog="Let me go!  You have no right--" />
+          <DialogEntry Speaker="Player" Dialog="As your manager, I have every right to send you here!  When you're released, I suspect you'll return to your duties with a far better attitude towards authority!" />
+          <DialogEntry Speaker="Npc" Dialog="Please!  Don't leave me here!  Please!  I'm sorry-- I'll do whatever you want!" />
+          <Popup Title="Deborah to Motivation Room" Video="djones_deborahMotivationroomapt3" />
+          <Effect PrideEffect="-20" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="deborahMotivationroomapt" Name="Motivation Room Appointment" Category="Train" Repeatable="true">
+        <Cost TurnCost="4" EgoCost="20" />
+        <Requirements RequiredPolicies="peaceOfMind," RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I've had it with you!  Your stiff necked attitude towards me is unacceptable!" />
+          <DialogEntry Speaker="Npc" Dialog="Let me go!  You have no right--" />
+          <DialogEntry Speaker="Player" Dialog="As your manager, I have every right to send you here!  When you're released, I suspect you'll return to your duties with a far better attitude towards authority!" />
+          <DialogEntry Speaker="Npc" Dialog="Please!  Don't leave me here!  Please!  I'm sorry-- I'll do whatever you want!" />
+          <Popup Title="Deborah to Motivation Room" Video="djones_deborahMotivationroomapt4" />
+          <Effect PrideEffect="-20" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="gropeDeborah" Name="Grope Deborah Jones" Category="Fun" Repeatable="true">
+        <Cost />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="TO DO: Reqs a Harrassement Waiver policy  Hey, calm down!  I'm just giving the goods a little squeeze!" />
+          <DialogEntry Speaker="Npc" Dialog="Please don't touch me!" />
+          <DialogEntry Speaker="Player" Dialog="Excuse me-- I'll cop a feel of an office girl whenever the hell I like.  Just like this!" />
+          <DialogEntry Speaker="Npc" Dialog="Ouch!  Please stop!" />
+          <Popup Title="Feel Deborah up" Video="djones_gropeDeborah" />
+          <Effect PrideEffect="-2" EgoEffect="2" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="intimatereviewDeborah" Name="Intimate Relationship Review" Category="Fun">
+        <Cost />
+        <Requirements RequiredPolicies="PeaceofMind," RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I've been reviewing your PSH file.  Not very interesting reading , to be honest." />
+          <DialogEntry Speaker="Npc" Dialog="My what file?" />
+          <DialogEntry Speaker="Player" Dialog="Your Personal Sexual History file.  I requested it from Pry.  It turns out you really are a frigid little goody two shoes." />
+          <DialogEntry Speaker="Npc" Dialog="But that's my personal medical file!" />
+          <Effect PrideEffect="-3" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="businesstripDeborah" Name="Business Trip" Category="Fun">
+        <Cost TurnCost="6" MoneyCost="500" />
+        <Requirements RequiredPride="50" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Are you looking forward to getting fucked in a nice hotel bed?" />
+          <DialogEntry Speaker="Npc" Dialog="Please don't speak to me that way.  I'm a professional!" />
+          <DialogEntry Speaker="Player" Dialog="Did you buy some lingerie for the trip like I told you?" />
+          <DialogEntry Speaker="Npc" Dialog="Yes, of course. I know I have to look my best when you take me with you on business trips!" />
+          <Popup Title="Business Trip" Video="djones_businessTripDeborah" />
+          <Effect PrideEffect="-5" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="giftcardDeborah" Name="Vixxxens Gift Card" Category="Fun" Repeatable="true">
+        <Cost MoneyCost="500" />
+        <Requirements RequiredPride="60" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I always love to see what you've bought with your gift card at Vixxxens." />
+          <DialogEntry Speaker="Npc" Dialog="I thought you might like me in this." />
+          <DialogEntry Speaker="Player" Dialog="I do!  Very much so.  Not very corner office is it, Miss MBA?  But quite appropriate to your new role, which is..." />
+          <DialogEntry Speaker="Npc" Dialog="Your personal assistant." />
+          <Popup Title="Give her a gift card" Video="djones_businessStripDeborah_1,djones_businessStripDeborah_2,djones_giftcardDeborah3" />
+          <Effect PrideEffect="-2" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="tattooDeborah" Name="Tattoo Time" Category="Fun">
+        <Cost MoneyCost="1000" />
+        <Requirements RequiredPride="20" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="TO DO Look you deserve policy  I've decided to really put my mark on you.  You're getting a tattoo." />
+          <DialogEntry Speaker="Npc" Dialog="Please don't make me do that!" />
+          <DialogEntry Speaker="Player" Dialog="A tramp stamp for my sexy little secretary to let the world know just what you are.  Here's what I want." />
+          <DialogEntry Speaker="Npc" Dialog="You want me to get a tattoo that says (insert Player text)?  But everyone will see it!" />
+          <Effect PrideEffect="-5" EgoEffect="10" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="prysurgeryDeborah" Name="Pry Cosmetic Surgery Appointment" Category="Fun">
+        <Cost TurnCost="8" MoneyCost="10000" />
+        <Requirements RequiredPride="10" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="TO DO Look you deserve policy  A senior executive like me needs a secretary that reflects my position.  That's why I've made an appointment for you." />
+          <DialogEntry Speaker="Npc" Dialog="An appointment?  For what?" />
+          <DialogEntry Speaker="Player" Dialog="To get those candy apples boosted to a nice ripe pair of grapefruits.  You're getting a nice, fake, plastic set of C cups." />
+          <DialogEntry Speaker="Npc" Dialog="Oh God!  Please-- not that!" />
+          <Popup Title="Send her for cosmetic work" Video="djones_prysurgeryDeborah" />
+          <Effect EgoEffect="25" PowerEffect="2" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="heaterDeborah" Name="Heater Session" Category="Fun" Repeatable="true">
+        <Cost TurnCost="2" />
+        <Requirements RequiredInteractions="deborahGoldstar," RequiredPride="10" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Now that you've been trained to perform with other secretaries, I think it is time to schedule a heater for you." />
+          <DialogEntry Speaker="Npc" Dialog="A Heater?  Oh God-- what's that?" />
+          <DialogEntry Speaker="Player" Dialog="A session involving you and some honey from the Secretarial Pool really putting on a show.  Send an invite to the senior execs an hour from now.  I'll think who I want to pair you up with!" />
+          <DialogEntry Speaker="Npc" Dialog="Another girl?  In front of the managers?  Yes, Sir." />
+          <Popup Title="Schedule Deborah's Heater Session" Video="djones_heaterDeborah" />
+          <Effect CultureEffect="0.25" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="katherineDeborah" Name="Sister Session" Category="Fun">
+        <Cost TurnCost="2" MoneyCost="10000" />
+        <Requirements RequiredPride="10" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="TO DO Katherine is hired and her pride is 20  I think you knew this was coming.  Go and fetch your little sister Katie." />
+          <DialogEntry Speaker="Npc" Dialog="Why?  Has she done something?" />
+          <DialogEntry Speaker="Player" Dialog="You are both going to do something.  I'm going to watch the Jones sisters put on the hottest sister lezzie show the world as ever seen-- right here in my office.  Go and get her, slut." />
+          <DialogEntry Speaker="Npc" Dialog="I'm so ashamed!  Why did I ever drag my own sister into all this?" />
+          <Popup Title="Schedule a Jones Sister Heater Session" Video="djones_katherineDeborah" />
+          <Effect EgoEffect="50" TrophiesClaimed="debKatherinephoto," />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="surveilance" Name="Have Her Followed" Category="Surveillance" Repeatable="true">
+        <Cost MoneyCost="25" />
+        <Requirements />
+        <InteractionResult>
+          <Popup Title="Surveillance" Video="djones_surveilance_1,djones_surveilance_2,djones_surveilance_3,djones_surveilance_4,djones_surveilance_5,djones_surveilance_6,djones_surveilance_7" />
+          <Effect EgoEffect="10" />
+        </InteractionResult>
+      </Interaction>
+    </Npc>
+    <Npc Id="britneyBower" FirstName="Britney" LastName="Bower" Age="18" Ambition="30" Pride="40" BackgroundImage="TOWER 3_2">
+      <LocationLayout XPercentage="0.1" YPercentage="0.45" Width="200" />
+      <PersonalLayout XPercentage="0.35" YPercentage="0.45" Width="380" />
+      <Trophy Id="britneyCollar" Name="Britney's Collar" Image="britneyCollar" />
+      <Interaction Id="introduction" Name="Introduction" Category="Conversation">
+        <Cost />
+        <Requirements />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Hi!  I'm the new guy." />
+          <DialogEntry Speaker="Npc" Dialog="I'm Britney-- Britney Bower.  I'm the Receptionist." />
+          <DialogEntry Speaker="Player" Dialog="I look forward to working with you." />
+          <DialogEntry Speaker="Npc" Dialog="You better go to Ms. Granger's office.  She's been expecting you." />
+          <Popup Title="First day at work" Video="bbowers_intro" />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="learnAboutBrittney" Name="Learn about Britney" Category="Conversation">
+        <Cost />
+        <Requirements RequiredInteractions="introduction," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Do you live near the office?" />
+          <DialogEntry Speaker="Npc" Dialog="Like I could afford it on my salary!  The rents around here are insane!" />
+          <DialogEntry Speaker="Player" Dialog="So you have a bit of a commute?" />
+          <DialogEntry Speaker="Npc" Dialog="The only good thing about Botany Bay Housing project is that it is on the bus line!" />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="askAboutJob" Name="Ask her about her job" Category="Conversation">
+        <Cost />
+        <Requirements RequiredInteractions="introduction," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Do you like being the receptionist?" />
+          <DialogEntry Speaker="Npc" Dialog="Are you for real?  Getting hit on by couriers and doing all the shit work they can throw at me?" />
+          <DialogEntry Speaker="Player" Dialog="So you're looking at it as entry level?" />
+          <DialogEntry Speaker="Npc" Dialog="I know I'll never be an executive-- but I think I could still go far by hooking up with one. At work, I mean." />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="flatterHer" Name="Flatter her" Category="Conversation">
+        <Cost EgoCost="5" />
+        <Requirements RequiredInteractions="introduction," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="You're one of the best things about working here." />
+          <DialogEntry Speaker="Npc" Dialog="Am I really?  I wish other people thought that." />
+          <DialogEntry Speaker="Player" Dialog="It's true.  You really brighten this place up." />
+          <DialogEntry Speaker="Npc" Dialog="Maybe I could say the same thing about you!" />
+          <Effect AmbitionEffect="-5" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="promiseSecretary" Name="Promise to make her your secretary" Category="Challenge">
+        <Cost EgoCost="10" />
+        <Requirements />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I expect I'll be taking on more responsibilities soon." />
+          <DialogEntry Speaker="Npc" Dialog="Good for you!  I hope it works out for you." />
+          <DialogEntry Speaker="Player" Dialog="I'm going to need a girl I can count on." />
+          <DialogEntry Speaker="Npc" Dialog="You can count on me!  That's the kind of opportunity I've been looking for!" />
+          <Effect AmbitionEffect="-10" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="putInPlace" Name="Put her in her place" Category="Challenge">
+        <Cost />
+        <Requirements RequiredAmbition="0" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="From now on, you'll be reporting to me.  Understand?" />
+          <DialogEntry Speaker="Npc" Dialog="I guess so." />
+          <DialogEntry Speaker="Player" Dialog="Not good enough.  Try again." />
+          <DialogEntry Speaker="Npc" Dialog="I'll be reporting to you from now on... Sir." />
+          <Popup Title="Put her in her place!" Video="bbowers_putinplace" />
+          <Effect ControlEffect="true" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="fireHer" Name="Fire her" Category="Challenge">
+        <Cost />
+        <Requirements RequiredDepartmentsControlled="consulting," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="You're fired Britney." />
+          <DialogEntry Speaker="Npc" Dialog="Why?  What did I do?  Why are you firing me?" />
+          <DialogEntry Speaker="Player" Dialog="Because I can.  I'm not having some dog faced slut as a receptionist in my department!" />
+          <DialogEntry Speaker="Npc" Dialog="You bastard!  You can go straight to hell!" />
+          <Effect EgoEffect="10" RemoveNpcFromGame="true" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="bringCoffee" Name="Bring her a coffee" Category="Socialize">
+        <Cost EgoCost="5" />
+        <Requirements />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Skinny cappucino, right?" />
+          <DialogEntry Speaker="Npc" Dialog="For me?  What a nice surprise!" />
+          <DialogEntry Speaker="Player" Dialog="I figured you're the one usually getting the coffees around here and it was time someone reciprocated." />
+          <DialogEntry Speaker="Npc" Dialog="I don't know what to say!  You're so nice!" />
+          <Effect AmbitionEffect="3" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="chatUp" Name="Chat her up" Category="Socialize">
+        <Cost EgoCost="5" />
+        <Requirements />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Hey, can I ask you a personal question?" />
+          <DialogEntry Speaker="Npc" Dialog="Sure, I suppose so." />
+          <DialogEntry Speaker="Player" Dialog="I was just wondering if you were seeing anybody." />
+          <DialogEntry Speaker="Npc" Dialog="Well, not at the moment!" />
+          <Effect AmbitionEffect="3" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="flirt" Name="Flirt " Category="Socialize" Repeatable="true">
+        <Cost EgoCost="5" />
+        <Requirements />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Damn. how did we get so lucky to have such a hottie as our receptionist?" />
+          <DialogEntry Speaker="Npc" Dialog="That's kind of fresh, you know." />
+          <DialogEntry Speaker="Player" Dialog="Maybe-- but it's worth getting in trouble to work with such a fox like you." />
+          <DialogEntry Speaker="Npc" Dialog="You better get out of here before I really do report you for harassment!" />
+          <Popup Title="Flirt" Video="bbowers_flirt" />
+          <Effect AmbitionEffect="-3" />
+        </InteractionResult>
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Damn. how did we get so lucky to have such a hottie as our receptionist?" />
+          <DialogEntry Speaker="Npc" Dialog="Look, that's not appropriate." />
+          <DialogEntry Speaker="Player" Dialog="What are you going to do?" />
+          <DialogEntry Speaker="Npc" Dialog="I'm going to report this!" />
+          <Effect EgoEffect="-5" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="askToLunch" Name="Ask to lunch" Category="Socialize" Repeatable="true">
+        <Cost EgoCost="10" MoneyCost="50" />
+        <Requirements />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="What say we grab some lunch together?" />
+          <DialogEntry Speaker="Npc" Dialog="Sorry-- I'm broke until pay day." />
+          <DialogEntry Speaker="Player" Dialog="Let me treat you." />
+          <DialogEntry Speaker="Npc" Dialog="Wow-- ok!" />
+          <Effect AmbitionEffect="-6" />
+        </InteractionResult>
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="What say we grab some lunch together?" />
+          <DialogEntry Speaker="Npc" Dialog="I'm not sure I'm ready for that." />
+          <DialogEntry Speaker="Player" Dialog="Come on-- don't be such a tease." />
+          <DialogEntry Speaker="Npc" Dialog="That's it!  I'm calling HR!" />
+          <Effect EgoEffect="-10" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="loseAnnMessages" Name="Lose Anne Miller’s messages" Category="Projects">
+        <Cost />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Anne must get a lot of messages when she's out on the road." />
+          <DialogEntry Speaker="Npc" Dialog="I take more for Ms. Millert than anyone else." />
+          <DialogEntry Speaker="Player" Dialog="From now on, you'll forward her messages ort me.  I'll make sure she gets them." />
+          <DialogEntry Speaker="Npc" Dialog="Whatever you say!" />
+          <Effect ContextualNpcId="annMiller" AmbitionEffect="-10" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="deborahMail" Name="Misplace mail for Deborah" Category="Projects">
+        <Cost />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I'm interested in anything that comes in for Deborah Jones." />
+          <DialogEntry Speaker="Npc" Dialog="Like mail and stuff?" />
+          <DialogEntry Speaker="Player" Dialog="Exactly.  You'll pass it all on to me." />
+          <DialogEntry Speaker="Npc" Dialog="Of course." />
+          <Popup Title="Misplace Deborah's mail" Video="bbowers_deborahmail" />
+          <Effect ContextualNpcId="deborahJones" AmbitionEffect="-10" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="blockSusanCalls" Name="Block calls for Susan" Category="Projects">
+        <Cost />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="It would be a shame if Susan missed any calls, especially from Management." />
+          <DialogEntry Speaker="Npc" Dialog="I always let her know when she gets a call from senior managers." />
+          <DialogEntry Speaker="Player" Dialog="Not any more." />
+          <DialogEntry Speaker="Npc" Dialog="No-- not any more." />
+          <Effect ContextualNpcId="susanGranger" AmbitionEffect="-10" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="slutwearClothes" Name="New slutwear work clothes" Category="Train">
+        <Cost />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Good-- that's exactly the right look for you!" />
+          <DialogEntry Speaker="Npc" Dialog="It seems a little too casual." />
+          <DialogEntry Speaker="Player" Dialog="More like a little too slutty, but I'm sure male visitors will have no objections." />
+          <DialogEntry Speaker="Npc" Dialog="That's for sure." />
+          <Effect PrideEffect="-5" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="dogCollar" Name="Wear a dog collar" Category="Train">
+        <Cost />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Do you like it?" />
+          <DialogEntry Speaker="Npc" Dialog="It's a dog collar!" />
+          <DialogEntry Speaker="Player" Dialog="Nonsense-- it is a choker.  You really need one." />
+          <DialogEntry Speaker="Npc" Dialog="It still looks like a dog collar to me!" />
+          <Effect PrideEffect="-5" TrophiesClaimed="britneyCollar," />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="sluttySelfie" Name="Insist she send you a slutty selfie" Category="Train">
+        <Cost />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Come on-- I know you like me.  Take a selfie and show me what you've got." />
+          <DialogEntry Speaker="Npc" Dialog="It's just that these pix can get you in trouble if they get out." />
+          <DialogEntry Speaker="Player" Dialog="Yes, but if show loyalty, you get loyalty back." />
+          <DialogEntry Speaker="Npc" Dialog="Well, when you out it that way..." />
+          <Effect PrideEffect="-10" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="masturbationVid" Name="Order her to record a masturbation vid" Category="Train">
+        <Cost />
+        <Requirements RequiredPride="25" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="You're not seriously telling me you don't play with yourself?" />
+          <DialogEntry Speaker="Npc" Dialog="What does that have to do with making a dirty video for you?" />
+          <DialogEntry Speaker="Player" Dialog="Because I want to see you show me how much you think of me when I'm not around." />
+          <DialogEntry Speaker="Npc" Dialog="OK-- but you have to promise never to show it to anyone else!" />
+          <Popup Title="Demand a video" Video="bbowers_masturbatationvid" />
+          <Effect PrideEffect="-10" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="publicBrag" Name="Brag about how easy she is in public" Category="Train">
+        <Cost />
+        <Requirements RequiredPride="10" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Britney's got a great attitude." />
+          <DialogEntry Speaker="Player" Dialog="You might even say she's a bit of a suck up." />
+          <DialogEntry Speaker="Player" Dialog="She loves working under a manager who knows how to handle her. " />
+          <DialogEntry Speaker="Player" Dialog="She's flexible and always ready to bend over backwards to keep her manager happy!" />
+          <Popup Title="Public brag" Video="bbowers_publicbrag" />
+          <Effect PrideEffect="-10" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="breakHer" Name="Break Her" Category="Train">
+        <Cost />
+        <Requirements RequiredPride="0" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I'm pleased with your progress.  You've become a superb 'deceptionist' office spy for me." />
+          <DialogEntry Speaker="Npc" Dialog="I'm just doing what you tell me to do." />
+          <DialogEntry Speaker="Player" Dialog="Which is exactly the way it is going to be from now on.  You understand?" />
+          <DialogEntry Speaker="Npc" Dialog="Yes, I understand.  You're the boss from now on." />
+          <Popup Title="Break her!" Video="bbowers_breakher" />
+          <Effect EgoEffect="40" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="gameDay" Name="Game Day" Category="Fun">
+        <Cost />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Ready for Game Day?" NpcImage="rewardGameDay" />
+          <DialogEntry Speaker="Npc" Dialog="I feel kind of silly!" />
+          <DialogEntry Speaker="Player" Dialog="No, you just look like you are very excited about the Championship game." />
+          <DialogEntry Speaker="Npc" Dialog="I thought I had graduated high school already!" />
+          <Effect PrideEffect="-2" EgoEffect="3" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="pantyInspection1" Name="Panty Inspection" Category="Fun">
+        <Cost />
+        <Requirements RequiredPride="0" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Let's go.  Flip up that skirt and show me something sexy." NpcImage="rewardPanties1" />
+          <DialogEntry Speaker="Npc" Dialog="What if someone sees me?" />
+          <DialogEntry Speaker="Player" Dialog="I guess they'll just think the receptionist is being a slut, as usual." />
+          <DialogEntry Speaker="Npc" Dialog="But I'm really not!" />
+          <Popup Title="Panty Inspection" Video="bbowers_pantyinspection" />
+          <Effect PrideEffect="-2" EgoEffect="1" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="pantyInspection2" Name="Panty Inspection" Category="Fun">
+        <Cost />
+        <Requirements RequiredInteractions="pantyInspection1," RequiredPride="0" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Let's go.  Flip up that skirt and show me something sexy." NpcImage="rewardPanties2" />
+          <DialogEntry Speaker="Npc" Dialog="What if someone sees me?" />
+          <DialogEntry Speaker="Player" Dialog="I guess they'll just think the receptionist is being a slut, as usual." />
+          <DialogEntry Speaker="Npc" Dialog="But I'm really not!" />
+          <Effect PrideEffect="-2" EgoEffect="1" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="daisyDukes" Name="Daisy Dukes" Category="Fun">
+        <Cost />
+        <Requirements RequiredPride="20" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Stop squirming.  You look great." NpcImage="rewardDaisyDukes" />
+          <DialogEntry Speaker="Npc" Dialog="Everyone's been looking at me!" />
+          <DialogEntry Speaker="Player" Dialog="Spare me.  You love it when you get attention." />
+          <DialogEntry Speaker="Npc" Dialog="But not like this!" />
+          <Effect PrideEffect="-2" EgoEffect="1" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="bikiniModeling" Name="Bikini Modeling" Category="Fun">
+        <Cost />
+        <Requirements RequiredPride="10" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I approve.  You look like a beach bunny cocktease." NpcImage="rewardBikini" />
+          <DialogEntry Speaker="Npc" Dialog="It barely covers me!" />
+          <DialogEntry Speaker="Player" Dialog="True-- but since you're a &quot;But-her-face&quot;, that's the whole idea." />
+          <DialogEntry Speaker="Npc" Dialog="That's such a mean thing to say!" />
+          <Effect PrideEffect="-2" EgoEffect="2" FundsEffect="100" />
+        </InteractionResult>
+      </Interaction>
+    </Npc>
+    <Npc Id="annMiller" FirstName="Ann" LastName="Miller" Age="35" Ambition="70" Pride="80" BackgroundImage="TOWER 3_1">
+      <LocationLayout XPercentage="0.2" YPercentage="0.35" Width="260" />
+      <PersonalLayout XPercentage="0.5" YPercentage="0.35" Width="400" />
+      <Trophy Id="anneChastitykey" Name="Ann's Chastity Belt Key" Image="anneChastitykey" />
+      <Trophy Id="anneEngagementring" Name="Ann's Engagement Ring" Image="anneEngagementring" />
+      <Interaction Id="salesCall" Name="Sales Call Ride-along" Category="OfficePolitics">
+        <Cost TurnCost="2" EgoCost="20" />
+        <Requirements RequiredInteractions="whoZoo," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Would you mind if I joined you on some sales calls?" />
+          <DialogEntry Speaker="Npc" Dialog="I'm better on my own." />
+          <DialogEntry Speaker="Player" Dialog="I was hoping to learn from you.  Everyone sayes you're the best sales person in the company." />
+          <DialogEntry Speaker="Npc" Dialog="Alright-- but keep your comments to yourself!" />
+          <Effect AmbitionEffect="-3" PowerEffect="1" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="salesCall" Name="Sales Call Ride-along" Category="OfficePolitics">
+        <Cost TurnCost="2" EgoCost="20" />
+        <Requirements RequiredInteractions="whoZoo," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Would you mind if I joined you on some sales calls?" />
+          <DialogEntry Speaker="Npc" Dialog="I'm better on my own." />
+          <DialogEntry Speaker="Player" Dialog="I was hoping to learn from you.  Everyone sayes you're the best sales person in the company." />
+          <DialogEntry Speaker="Npc" Dialog="Alright-- but keep your comments to yourself!" />
+          <Effect AmbitionEffect="-3" PowerEffect="1" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="jointSalescalls" Name="Joint Sales Calls" Category="OfficePolitics">
+        <Cost TurnCost="2" EgoCost="35" />
+        <Requirements RequiredInteractions="salesCall," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Can we keep making sales calls together?  I'm learning so much!" />
+          <DialogEntry Speaker="Npc" Dialog="I'm not paid to tutor you." />
+          <DialogEntry Speaker="Player" Dialog="I'll follow your lead completely.  Please?" />
+          <DialogEntry Speaker="Npc" Dialog="Oh, alright.  Just as long as I get credit for the sales." />
+          <Popup Title="Let's make some sales calls" Video="amiller_chat2" />
+          <Effect AmbitionEffect="-3" PowerEffect="1" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="titanDefence" Name="Titan Defence Contract" Category="OfficePolitics">
+        <Cost TurnCost="2" EgoCost="50" />
+        <Requirements RequiredInteractions="jointSalescalls," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="TO DO unlocks CSG Mission Titan Defence  Can we keep making sales calls together?  I'm learning so much!" />
+          <DialogEntry Speaker="Npc" Dialog="I'm not paid to tutor you." />
+          <DialogEntry Speaker="Player" Dialog="I'll follow your lead completely.  Please?" />
+          <DialogEntry Speaker="Npc" Dialog="Oh, alright.  Just as long as I get credit for the sales." />
+          <Effect AmbitionEffect="-3" FundsEffect="3000" PowerEffect="3" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="compPlan" Name="Compensation Plan Adjustment" Category="OfficePolitics">
+        <Cost SpreadsheetsCost="1" />
+        <Requirements RequiredInteractions="introduction," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I think you'll find that Comp Plan issue fixed." />
+          <DialogEntry Speaker="Npc" Dialog="No way.  I've been fighting that for months!" />
+          <DialogEntry Speaker="Player" Dialog="I used a little juice to get it sorted." />
+          <DialogEntry Speaker="Npc" Dialog="You're a useful man to know!" />
+          <Effect AmbitionEffect="-1" PowerEffect="2" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="marketingSupport" Name="Marketing Support" Category="OfficePolitics">
+        <Cost BrandCost="1" />
+        <Requirements RequiredInteractions="introduction," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="From now on, you'll be getting the marketing support you've been asking for." />
+          <DialogEntry Speaker="Npc" Dialog="I very much doubt that." />
+          <DialogEntry Speaker="Player" Dialog="Doubt all you like-- you'll get everything on your wish list.  I used a favour with Marketing." />
+          <DialogEntry Speaker="Npc" Dialog="Damn-- you really do have some juice around here!" />
+          <Effect AmbitionEffect="-1" PowerEffect="2" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="susanArrangement" Name="An Arrangement is negotiated" Category="OfficePolitics">
+        <Cost EgoCost="-50" />
+        <Requirements RequiredInteractions="introduction," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Susan's an impediment." />
+          <DialogEntry Speaker="Npc" Dialog="You mean she's in your way.  Look, I'm planning on leaving soon.  Just leave me alone and I'll drop a poison pill on her for you on my way out." />
+          <DialogEntry Speaker="Player" Dialog="I'm a fan.  You have nothing to worry about from me.  But, if we had a deal..." />
+          <DialogEntry Speaker="Npc" Dialog="We have a deal.  Believe me, I've been dying to drop the dirt on how incompetent Susan is.  I'm getting married and don't need this job anymore." />
+          <Effect AmbitionEffect="-15" RemoveNpcFromGame="true" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="introduction" Name="introduction" Category="Conversation">
+        <Cost />
+        <Requirements />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Are you the Sales Manager for CSG?" />
+          <DialogEntry Speaker="Npc" Dialog="I'm the lead sales exec.  Who are you?  Oh, the new kid-  right?" />
+          <DialogEntry Speaker="Player" Dialog="I'm in the Management Trainee Program." />
+          <DialogEntry Speaker="Npc" Dialog="Good for you.  You do know this is the company’s dumping ground, don’t you?" />
+          <Popup Title="Meet the Sales Rep" Video="amiller_chat1" />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="haveMinute" Name="Do you have a minute?" Category="Conversation">
+        <Cost />
+        <Requirements RequiredInteractions="introduction," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Do you have a minute?" />
+          <DialogEntry Speaker="Npc" Dialog="Not really.  What do you want?" />
+          <DialogEntry Speaker="Player" Dialog="I was just hoping you could tell me--" />
+          <DialogEntry Speaker="Npc" Dialog="I'm on my way to a sales call.  Maybe later, ok?" />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="longCommute" Name="Do you have a long commute?" Category="Conversation">
+        <Cost />
+        <Requirements RequiredInteractions="introduction," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Do you have a long commute?" />
+          <DialogEntry Speaker="Npc" Dialog="I’m over in Tempo Townhouses.  Great place-- my unit has gone up twenty percent since I bought it!" />
+          <DialogEntry Speaker="Player" Dialog="Sounds like a great investment!" />
+          <DialogEntry Speaker="Npc" Dialog="Work hard and maybe you'll get there too." />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="whoZoo" Name="Who’s who around here?" Category="Conversation">
+        <Cost />
+        <Requirements RequiredInteractions="introduction," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Who’s who in the zoo around here?" />
+          <DialogEntry Speaker="Npc" Dialog="Zoo is right.  CSG is a mess." />
+          <DialogEntry Speaker="Player" Dialog="Why is that?" />
+          <DialogEntry Speaker="Npc" Dialog="You'll figure it out pretty quickly.  Maybe we'll chat leter." />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="doseHornical" Name="Dose with Hornical" Category="Challenge">
+        <Cost HornicalCost="1" />
+        <Requirements />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Are you ok?" />
+          <DialogEntry Speaker="Npc" Dialog="Please leave me alone." />
+          <DialogEntry Speaker="Player" Dialog="What's the matter?" />
+          <DialogEntry Speaker="Npc" Dialog="I don't feel right!  Something's wrong!" />
+          <Effect AmbitionEffect="-20" PrideEffect="-20" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="increaseBudget" Name="Increase CSG Sales Budget" Category="Challenge">
+        <Cost EgoCost="-30" />
+        <Requirements RequiredInteractions="millerbudget," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I heard they are really turning up the heat on you." />
+          <DialogEntry Speaker="Npc" Dialog="That witch Granger has doubled my sales goal!" />
+          <DialogEntry Speaker="Player" Dialog="Why would she do such a thing?" />
+          <DialogEntry Speaker="Npc" Dialog="She's desperate to keep her own job, that's why!" />
+          <Effect AmbitionEffect="-30" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="reassigneKeyaccounts" Name="Re-assign Key Accounts" Category="Challenge">
+        <Cost TurnCost="2" EgoCost="-40" />
+        <Requirements RequiredInteractions="millerkeyaccounts," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="You don't look happy." />
+          <DialogEntry Speaker="Npc" Dialog="Susan just stole half my key clients and decided they were 'house accounts'!" />
+          <DialogEntry Speaker="Player" Dialog="That's not fair!  You worked hard to build up those accounts!" />
+          <DialogEntry Speaker="Npc" Dialog="I sure as hell did.  It's just outright theft." />
+          <Effect AmbitionEffect="-30" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="confiscasteRing" Name="Confiscate Engagement Ring" Category="Challenge">
+        <Cost />
+        <Requirements RequiredPolicies="AntitheftProcedures," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I'm sorry about this.  These new rules are just crazy!" />
+          <DialogEntry Speaker="Npc" Dialog="You damn well better keep it safe." />
+          <DialogEntry Speaker="Player" Dialog="Of course.  Your engagement ring will be kept under lock and key.  No one will be able to steal it." />
+          <DialogEntry Speaker="Npc" Dialog="It just seems over the top but at least the company is trying to protect my property." />
+          <Effect AmbitionEffect="-15" TrophiesClaimed="anneEngagementring," />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="revealFairchildVideo" Name="Reveal Donald Fairchild Video" Category="Challenge">
+        <Cost />
+        <Requirements RequiredInteractions="dfairchildvideo," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I thought I'd better let you know about this before the word gets out." />
+          <DialogEntry Speaker="Npc" Dialog="This is so humiliating.  You have to keep this between us." />
+          <DialogEntry Speaker="Player" Dialog="I'll try.  What will you do now?" />
+          <DialogEntry Speaker="Npc" Dialog="The engagement is over.  Beyond that, I don't know what to do.  This changes everything." />
+          <Effect AmbitionEffect="-50" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="controlAnne" Name="Take control of Anne Miller" Category="Challenge">
+        <Cost />
+        <Requirements RequiredAmbition="0" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Considering what a disaster you've turned out to be, you think you'd be grateful for a second chance." />
+          <DialogEntry Speaker="Npc" Dialog="What do you mean?" />
+          <DialogEntry Speaker="Player" Dialog="I mean you work for me from now on.  You'll do as say-- or I'll have you terminated." />
+          <DialogEntry Speaker="Npc" Dialog="No need for that.  I'll do what you want." />
+          <Effect EgoEffect="70" ControlEffect="true" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="fireHer" Name="Fire her" Category="Challenge">
+        <Cost />
+        <Requirements RequiredDepartmentsControlled="consulting," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="You knew this day would come." />
+          <DialogEntry Speaker="Npc" Dialog="Wait-- what do you mean??" />
+          <DialogEntry Speaker="Player" Dialog="I mean you're done here.  I have no further use for you." />
+          <DialogEntry Speaker="Npc" Dialog="You use me-- then toss me away?  Just like that?" />
+          <Effect EgoEffect="40" RemoveNpcFromGame="true" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="inaRush" Name="You always seem to be in a rush." Category="Socialize">
+        <Cost EgoCost="5" />
+        <Requirements RequiredInteractions="haveMinute," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Hey- slow it down!  Where's the fire?" />
+          <DialogEntry Speaker="Npc" Dialog="You snooze, you lose, new boy." />
+          <DialogEntry Speaker="Player" Dialog="You practically knocked me over!" />
+          <DialogEntry Speaker="Npc" Dialog="No one else is going to get things done around here.  Here’s some advice-- don’t get in my way or you’ll get run over!" />
+          <Effect AmbitionEffect="-1" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="gorgeousRing" Name="That’s a gorgeous ring." Category="Socialize">
+        <Cost EgoCost="5" />
+        <Requirements RequiredInteractions="haveMinute," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Your ring is exquisite!" />
+          <DialogEntry Speaker="Npc" Dialog="My engagement ring from Donald?  Perhaps you've heard of him-- Donald Fairchild at Perkisn Geary.  Going to make partner very soon." />
+          <DialogEntry Speaker="Player" Dialog="He's your fiance?" />
+          <DialogEntry Speaker="Npc" Dialog="Yes.  Donald and I have set the date!  It’s a year long engagement— we’re both so committed to current projects or we’d do it sooner!" />
+          <Popup Title="Comment on her ring" Video="amiller_chat3" />
+          <Effect AmbitionEffect="-1" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="revealMartinent" Name="Do you think this office is as dysfunctional as I do?" Category="Socialize">
+        <Cost EgoCost="5" />
+        <Requirements RequiredInteractions="haveMinute," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="This place is nuts!" />
+          <DialogEntry Speaker="Npc" Dialog="You're not wrong, new boy." />
+          <DialogEntry Speaker="Player" Dialog="I can't believe how poorly run this company is." />
+          <DialogEntry Speaker="Npc" Dialog="If I ran things, these lazy bitches would have no idea what hit them.  No one wants to whip this place into shape—and it badly needs it! REVELAS MARTINET TRAIT" />
+          <Effect AmbitionEffect="-1" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="clientMeetings" Name="Client Meetings" Category="Projects">
+        <Cost TurnCost="4" />
+        <Requirements RequiredInteractions="dresstoImpress," RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="You're going to bring home the bacon, right Miller?" />
+          <DialogEntry Speaker="Npc" Dialog="I'll do my best." />
+          <DialogEntry Speaker="Player" Dialog="You'll have to do better.  The only reason I'm keeping you around is because you're a moneymaker." />
+          <DialogEntry Speaker="Npc" Dialog="Understood. REWARD is 33% chance: .1 REVENUE " />
+          <Popup Title="Do anything to make the sale!" Video="amiller_TF" />
+          <Effect ContextualNpcId="annMiller" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="clientEntertainment" Name="Client Entertainment" Category="Projects">
+        <Cost TurnCost="4" />
+        <Requirements RequiredInteractions="slutWear," RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="You're certainly dressed for the part, aren't you?" />
+          <DialogEntry Speaker="Npc" Dialog="Whatever brings the deals in, right?" />
+          <DialogEntry Speaker="Player" Dialog="Absolutely correct Miller.  Good luck!" />
+          <DialogEntry Speaker="Npc" Dialog="Thanks-- I think. REWARD is 50% chance: .2 REVENUE " />
+          <Popup Title="Remember- the customer is alwatys right!" Video="amiller_DTF" />
+          <Effect ContextualNpcId="annMiller" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="clientContracts" Name="Client Contracts" Category="Projects">
+        <Cost TurnCost="4" />
+        <Requirements RequiredInteractions="personalSafety," RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I've sent the key on ahead.  When the client is done with you, you'll be locked back up and the key will be couriered back." />
+          <DialogEntry Speaker="Npc" Dialog="You know you can trust me!" />
+          <DialogEntry Speaker="Player" Dialog="Don't be silly.  Do a good job and land the contract!" />
+          <DialogEntry Speaker="Npc" Dialog="I'll come back with a signed contract! REWARD is 75% chance: .3 REVENUE " />
+          <Popup Title="Customer satisfaction is your priority" Video="amiller_bj" />
+          <Effect ContextualNpcId="annMiller" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="secPool" Name="Send to Secretarial Pool" Category="Projects">
+        <Cost />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I've sent the key on ahead.  When the client is done with you, you'll be locked back up and the key will be couriered back." />
+          <DialogEntry Speaker="Npc" Dialog="But why?" />
+          <DialogEntry Speaker="Player" Dialog="Because I think you'd look better in the Secretarial Pool." />
+          <DialogEntry Speaker="Npc" Dialog="Please don't turn me into one of those sluts!  requiredpolicies=secpool RequiredPride=20 reward 1 corp culture" />
+          <Effect ContextualNpcId="annMiller" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="moveToSecDorm" Name="Move to Secretarial Dorm" Category="Projects">
+        <Cost />
+        <Requirements RequiredInteractions="demotion," RequiredPolicies="affordableHousing," RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I want you closer to the office." />
+          <DialogEntry Speaker="Npc" Dialog="But I-" />
+          <DialogEntry Speaker="Player" Dialog="No buts.  You'll be living in the dorm from now on." />
+          <DialogEntry Speaker="Npc" Dialog="But I'll never be able to cram everything into a dorm room!" />
+          <Effect PrideEffect="-20" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="assignDollHouse" Name="Assign to the Doll House" Category="Projects">
+        <Cost />
+        <Requirements RequiredInteractions="demotion," RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="You're a natural bitch on wheels, Miller." />
+          <DialogEntry Speaker="Npc" Dialog="Am I supposed to apologise?" />
+          <DialogEntry Speaker="Player" Dialog="No-- you're suppose to thank me for putting you in charge of the Doll House." />
+          <DialogEntry Speaker="Npc" Dialog="Thank you!  Martinent must be revealed and reward will be the trit applied to DHouse rev" />
+          <Effect RemoveNpcFromGame="true" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="dresstoImpress" Name="Dress to Impress" Category="Train">
+        <Cost MoneyCost="2000" />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="If you're going to meet your goals, you'll need to dress to impress the clients." />
+          <DialogEntry Speaker="Npc" Dialog="What's wrong with the way I dress now?" />
+          <DialogEntry Speaker="Player" Dialog="You need to do a bit more teasing.  I'll pick up the cost." />
+          <DialogEntry Speaker="Npc" Dialog="If you're paying, what can I say?" />
+          <Effect PrideEffect="-20" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="slutWear" Name="Slutwear Shopping Safari" Category="Train">
+        <Cost MoneyCost="2000" />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Nice.  You'll wear that for your next client meeting." />
+          <DialogEntry Speaker="Npc" Dialog="I don't like landing the business this way!" />
+          <DialogEntry Speaker="Player" Dialog="What else do you think you have to offer?" />
+          <DialogEntry Speaker="Npc" Dialog="Excuse me-- I'm a professional, damn it!" />
+          <Effect PrideEffect="-30" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="personalSafety" Name="Employee Personal Safety Measures" Category="Train">
+        <Cost />
+        <Requirements RequiredPride="30" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="TO DO: requires tbtn policy Clients will love the kind of customer service you'll have to offer now!" />
+          <DialogEntry Speaker="Npc" Dialog="You're going to unlock me before the sales calls?" />
+          <DialogEntry Speaker="Player" Dialog="No-- I'll send the access key ahead of time.  They'll do the unlocking.  Then they will lock you back up and courier the key back." />
+          <DialogEntry Speaker="Npc" Dialog="You don't even trust me with my own damn key?" />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="disciplineAnne" Name="Discipline Anne Miller" Category="Train" Repeatable="true">
+        <Cost />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="You are not meeting your goals." />
+          <DialogEntry Speaker="Npc" Dialog="I'm doing everything I can!" />
+          <DialogEntry Speaker="Player" Dialog="It isn't close to being enough.  Bend over the desk.  You need some corporal encouragement." />
+          <DialogEntry Speaker="Npc" Dialog="Not the paddle!" />
+          <Popup Title="You need some encouragement" Video="amiller_discipline" />
+          <Effect PrideEffect="-5" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="breakHer" Name="Break Her" Category="Train">
+        <Cost />
+        <Requirements RequiredPride="0" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="How nice to have my own pet sales slut!" />
+          <DialogEntry Speaker="Npc" Dialog="I am NOT a slut!" />
+          <DialogEntry Speaker="Player" Dialog="Of course you are.  Admit it." />
+          <DialogEntry Speaker="Npc" Dialog="I'm a sales slut." />
+          <Popup Title="You'll speak when your spoken to!" Video="amiller_controlled" />
+          <Effect EgoEffect="40" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="gropeAnne" Name="Grope Anne Miller" Category="Fun" Repeatable="true">
+        <Cost />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="TO DO: Reqs a Harrassement Waiver policy  How's my sales doll doing today?" />
+          <DialogEntry Speaker="Npc" Dialog="Please don't speak to me that way." />
+          <DialogEntry Speaker="Player" Dialog="Why shouldn't I speak to you any way I wish to?" />
+          <DialogEntry Speaker="Npc" Dialog="Because it is very unprofessional!" />
+          <Effect PrideEffect="-5" EgoEffect="2" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="salesPrep" Name="Pre-sales Preparation" Category="Fun" Repeatable="true">
+        <Cost />
+        <Requirements RequiredInteractions="slutWear," RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I love inspecting you right before you make a sales call!" />
+          <DialogEntry Speaker="Npc" Dialog="Is this outfit ok then?" />
+          <DialogEntry Speaker="Player" Dialog="I think the client will love it.  Let's see you generate lots of customer satisfcation." />
+          <DialogEntry Speaker="Npc" Dialog="Whatever you say." />
+          <Effect PrideEffect="-4" EgoEffect="3" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="revengePorn" Name="Revenge Porn" Category="Fun">
+        <Cost />
+        <Requirements RequiredInteractions="donaldVideo," RequiredPride="30" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Do you think turnabout is fair play?" />
+          <DialogEntry Speaker="Npc" Dialog="I don't understand what you mean." />
+          <DialogEntry Speaker="Player" Dialog="I send your fiance a video of you in action-- to show him was a slut you actually are!" />
+          <DialogEntry Speaker="Npc" Dialog="You did WHAT?!?!?!?!" />
+          <Effect PrideEffect="-15" EgoEffect="10" TrophiesClaimed="jillRevengeporn," />
+        </InteractionResult>
+      </Interaction>
+    </Npc>
+    <Npc Id="amandaEllsbach" FirstName="Amanda" LastName="Ellsbach" Age="20" Ambition="30" Pride="40" BackgroundImage="TOWER 3_5">
+      <LocationLayout XPercentage="0.7" YPercentage="0.35" Width="230" />
+      <PersonalLayout XPercentage="0.5" YPercentage="0.35" Width="400" />
+      <Interaction Id="amandaHello" Name="Hello!" Category="Conversation">
+        <Cost />
+        <Requirements />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="My, don't you look professional!" />
+          <DialogEntry Speaker="Npc" Dialog="I'm Amanda.  Amanda Ellsbach.  I'm an intern andworking for Ms. Jones." />
+          <DialogEntry Speaker="Player" Dialog="How would you like to work for me?" />
+          <DialogEntry Speaker="Npc" Dialog="Sorry-- Ms. Jones manages the Internship Program!  I only report to her!" />
+          <Popup Title="Amanda Introduction" Video="aellesbach_chat1" />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="amandaHandover" Name="Handover Meeting" Category="Conversation">
+        <Cost />
+        <Requirements RequiredInteractions="susanInternship," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="From now on, you'll be reporting to me." />
+          <DialogEntry Speaker="Npc" Dialog="Ms. Granger told me.  As long as I'm learning, I don't mind, I guess." />
+          <DialogEntry Speaker="Player" Dialog="I expect a lot, even from an intern. Are you willing to try harder?" />
+          <DialogEntry Speaker="Npc" Dialog="You bet!  I'm hoping I might even qualify for a spot in the Management Trainee Program once I graduate!" />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="amandaAddress" Name="Where do you live?" Category="Conversation">
+        <Cost />
+        <Requirements />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Are you close to the office?" />
+          <DialogEntry Speaker="Npc" Dialog="I live on campus.  I have a single dorm room." />
+          <DialogEntry Speaker="Player" Dialog="Do you like living there?" />
+          <DialogEntry Speaker="Npc" Dialog="Not really-- but I can't afford anything off campus." />
+          <Popup Title="Give Amanda a ride home" Video="aellesbach_chat3" />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="amandaGoals" Name="Ask her about her personal goals" Category="Conversation">
+        <Cost />
+        <Requirements />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="What are you hoping to get out of your internship?" />
+          <DialogEntry Speaker="Npc" Dialog="I’m hoping if I can show what a great job I can do, I might be accepted into the Management Trainee Program when I graduate!" />
+          <DialogEntry Speaker="Player" Dialog="You're a very ambitious young woman.  You seem quite focused on what you want." />
+          <DialogEntry Speaker="Npc" Dialog="I’ve worked really hard to get into this program and it accounts for basically my whole Junior year.  Failure is not an option!" />
+          <Popup Title="Learn about Amanda" Video="aellesbach_chat2" />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="amandaDeborah" Name="Dramas with Deborah" Category="OfficePolitics">
+        <Cost EgoCost="20" />
+        <Requirements RequiredInteractions="amandaHandover," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Deborah seems to enjoy bossing you around." />
+          <DialogEntry Speaker="Npc" Dialog="I really feel uncomfortable talking about Ms. Jones." />
+          <DialogEntry Speaker="Player" Dialog="If I submit a complaint to HR on your behalf, you'll have to tell the truth." />
+          <DialogEntry Speaker="Npc" Dialog="Well, yes.   She can be a bit of a bitch from time to time.   But that doesn't mean I want to make a complaint!" />
+          <Effect AmbitionEffect="-3" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="amandaInternshipchange" Name="Internship Program Change" Category="OfficePolitics">
+        <Cost EgoCost="10" />
+        <Requirements RequiredInteractions="amandaHandover," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="TO DO: Deborah Ambition must be 25 or less  I've been asked to manage the Internship Program.  You'll be reporting to me from now on." />
+          <DialogEntry Speaker="Npc" Dialog="What about Ms. Jones?  Why aren't I reporting to her any more?" />
+          <DialogEntry Speaker="Player" Dialog="Because it was clear Deborah isn't up to the challenge.  I'll be looking after you from now on." />
+          <DialogEntry Speaker="Npc" Dialog="TO DO: this should result in Deborah losing 5 ambition  Well, I'm ready to take on any projects you want to assign me.  I need to ace this internship to keep my scholarship!" />
+          <Effect AmbitionEffect="-2" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="amandaFlirt" Name="Flirt" Category="Socialize">
+        <Cost EgoCost="5" />
+        <Requirements RequiredInteractions="amandaHandover," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="You don't have a boyfriend, do you?" />
+          <DialogEntry Speaker="Npc" Dialog="No, I don't.  How did you know?" />
+          <DialogEntry Speaker="Player" Dialog="Just a lucky guess." />
+          <DialogEntry Speaker="Npc" Dialog="Excuse me, but I don't think a staff member is allowed to flirt with an intern!" />
+          <Effect AmbitionEffect="-1" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="amandaAdvice" Name="Personal Advice" Category="Socialize">
+        <Cost EgoCost="5" />
+        <Requirements RequiredInteractions="amandaFlirt," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="If you're going to work in an office, you might put some effort into your wardrobe." />
+          <DialogEntry Speaker="Npc" Dialog="What's that supposed to mean?" />
+          <DialogEntry Speaker="Player" Dialog="Girls who dress to impress go a lot further than those who don't." />
+          <DialogEntry Speaker="Npc" Dialog="Who am I supposed to be impressing, anyway?" />
+          <Effect AmbitionEffect="-4" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="amandainternshipPA" Name="INTERNSHIP FOCUS: Personal Assistant" Category="Projects">
+        <Cost TurnCost="18" />
+        <Requirements RequiredInteractions="amandaInternshipchange," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I'm not sure what you were working on for Miss Jones, but I have other ideas for you." />
+          <DialogEntry Speaker="Npc" Dialog="As long as I'll learn something about the industry, I'm fine with that." />
+          <DialogEntry Speaker="Player" Dialog="I need a personal assistant who can handle the busywork for now." />
+          <DialogEntry Speaker="Npc" Dialog="If that's what you want." />
+          <Effect AmbitionEffect="-10" EgoEffect="18" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="amandainternshipMarketanalysis" Name="INTERNSHIP FOCUS: Market Analysis" Category="Projects">
+        <Cost TurnCost="18" />
+        <Requirements RequiredInteractions="amandaInternshipchange," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="TO DO: reward is 1 Spreadsheet  You're a smart kid.  How about taking on a real project?" />
+          <DialogEntry Speaker="Npc" Dialog="Yes, please!  What did you have in mind?" />
+          <DialogEntry Speaker="Player" Dialog="A Market Analysis Study.   Something that will make me look like a genius." />
+          <DialogEntry Speaker="Npc" Dialog="Sounds good to me!  It will take a while though. (Amanda will be unavailable for 18 turns)" />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="amandainternshipAdstudy" Name="INTERNSHIP FOCUS: Ad Effectiveness Study" Category="Projects">
+        <Cost TurnCost="18" />
+        <Requirements RequiredInteractions="amandaInternshipchange," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="TO DO: reward is 1 Brand  You're a smart kid.  How about taking on a real project?" />
+          <DialogEntry Speaker="Npc" Dialog="Yes, please!  What did you have in mind?" />
+          <DialogEntry Speaker="Player" Dialog="An Ad Effectiveness Study.   Something that will make me look like a genius." />
+          <DialogEntry Speaker="Npc" Dialog="Sounds good to me!  It will take a while though. (Amanda will be unavailable for 18 turns)" />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="amandaEval" Name="Discuss her Evaluation" Category="Challenge">
+        <Cost EgoCost="10" />
+        <Requirements />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I wish I could give you a more positive evaluation." />
+          <DialogEntry Speaker="Npc" Dialog="Why?  What's wrong?" />
+          <DialogEntry Speaker="Player" Dialog="All I'm saying is that, at this rate, you're in danger of failing to meet your internship objectives." />
+          <DialogEntry Speaker="Npc" Dialog="Give me a chance to do better!  If I fail here, I'm going to lose my scholarship!" />
+          <Effect AmbitionEffect="-10" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="amandaIntern1" Name="End of Internship Event- Passed" Category="Challenge">
+        <Cost EgoCost="10" />
+        <Requirements />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Here you go-- a personal letter of recommendation, based on the job you've done here." />
+          <DialogEntry Speaker="Npc" Dialog="Thank you!  I still wish I could land a spot here." />
+          <DialogEntry Speaker="Player" Dialog="Unfortunately, that's not possible at the moment." />
+          <DialogEntry Speaker="Npc" Dialog="I understand.  Thank you for the recoemmndation-- I'll never forget you!" />
+          <Effect EgoEffect="40" RemoveNpcFromGame="true" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="amandaIntern2" Name="End of Internship Event- Failed" Category="Challenge">
+        <Cost EgoCost="10" />
+        <Requirements />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="There's no way I can give you a passing grade for your internship." />
+          <DialogEntry Speaker="Npc" Dialog="This was the last thing I expected!  I'm going to lose my scholarship!" />
+          <DialogEntry Speaker="Player" Dialog="We all have problems.  I'm sure your's will work out." />
+          <DialogEntry Speaker="Npc" Dialog="You don't understand!  I'm going to have to drop out of university!  What am I going to do?" />
+          <Effect AmbitionEffect="-30" PrideEffect="-30" RemoveNpcFromGame="true" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="amandaIntern3" Name="End of Internship Event- Temp" Category="Challenge">
+        <Cost EgoCost="10" />
+        <Requirements />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="While your intership was a complete fiasco, I may have something else available." />
+          <DialogEntry Speaker="Npc" Dialog="I'm going to have to drop out.  I can't afford to continue at university without my scholarship." />
+          <DialogEntry Speaker="Player" Dialog="That's a shame.  Still, if you're interested, we could keep you on in a temp position." />
+          <DialogEntry Speaker="Npc" Dialog="If that's all you have, I suppose it is better than nothing." />
+          <Effect AmbitionEffect="-10" PrideEffect="-10" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="takecontrolAmanda" Name="Take Control of Amanda Ellsbach" Category="Challenge">
+        <Cost />
+        <Requirements RequiredAmbition="0" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Looks like I've got you where I want you." />
+          <DialogEntry Speaker="Npc" Dialog="I don't understand!" />
+          <DialogEntry Speaker="Player" Dialog="Let me make it clear-- you do what I say, when I say and how I say from now on." />
+          <DialogEntry Speaker="Npc" Dialog="Of course!  Whatever you say!" />
+          <Popup Title="Take Control of Amanda" Video="aellesbach_strip" />
+          <Effect EgoEffect="10" ControlEffect="true" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="nobraAmanda" Name="No Bra Club" Category="Train">
+        <Cost />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="You're probably on a tight budget these days." />
+          <DialogEntry Speaker="Npc" Dialog="I barely have a dollar to spare, to be honest." />
+          <DialogEntry Speaker="Player" Dialog="I thought so.  From now on, you don't need to wear a bra to work.  Will that help?" />
+          <DialogEntry Speaker="Npc" Dialog="It's not the kind of savings I was thinking of." />
+          <Popup Title="Time to fuck the Intern!" Video="aellesbach_fuck" />
+          <Effect PrideEffect="-5" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="flatAmanda" Name="Department Contest Winner: Flattest Chest Contest" Category="Train">
+        <Cost />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="The results are in.  You won!" />
+          <DialogEntry Speaker="Npc" Dialog="What did I win?" />
+          <DialogEntry Speaker="Player" Dialog="You've got the flattest chest in the whole office. " />
+          <DialogEntry Speaker="Npc" Dialog="I didn't even know there was a contest going on!" />
+          <Effect PrideEffect="-5" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="disciplineAmanda" Name="Discipline Amanda Ellsbach" Category="Train" Repeatable="true">
+        <Cost />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="For a scholarship girl, you sure need a lot of correction." />
+          <DialogEntry Speaker="Npc" Dialog="What have I done now?" />
+          <DialogEntry Speaker="Player" Dialog="I'll explain that to you once you've put yourself over my lap." />
+          <DialogEntry Speaker="Npc" Dialog="I don't think I've done anything to derserve being treated like this!" />
+          <Popup Title="Teach Amanda a lesson!" Video="aellesbach_train" />
+          <Effect PrideEffect="-5" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="amandaOral" Name="Oral Aptitude Check" Category="Fun" Repeatable="true">
+        <Cost />
+        <Requirements RequiredPride="10" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Ready for Game Day?" NpcImage="rewardGameDay" />
+          <DialogEntry Speaker="Npc" Dialog="I feel kind of silly!" />
+          <DialogEntry Speaker="Player" Dialog="No, you just look like you are very excited about the Championship game." />
+          <DialogEntry Speaker="Npc" Dialog="I thought I had graduated high school already!" />
+          <Popup Title="Insist on a blowjob from Amanda" Video="aellesbach_bj" />
+          <Effect PrideEffect="-2" EgoEffect="1" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="amandaPost" Name="BossPleaser Social Credit Check" Category="Fun" Repeatable="true">
+        <Cost />
+        <Requirements RequiredPride="5" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I want you to add to your little gallery." />
+          <DialogEntry Speaker="Npc" Dialog="You won't share with anyone, will you?" />
+          <DialogEntry Speaker="Player" Dialog="Those sluttly selfies of yours?  Why not?" />
+          <DialogEntry Speaker="Npc" Dialog="I'm begging you!" />
+          <Effect PrideEffect="-1" EgoEffect="2" />
+        </InteractionResult>
+      </Interaction>
+    </Npc>
+    <Npc Id="jillVander" FirstName="Jill" LastName="Vander" Age="21" Ambition="30" Pride="40" BackgroundImage="TOWER 3_6">
+      <LocationLayout XPercentage="0.85" YPercentage="0.44" Width="200" />
+      <PersonalLayout XPercentage="0.6" YPercentage="0.35" Width="380" />
+      <Trophy Id="jillRevengeporn" Name="Revenge Porn of Jill" Image="jillRevengeporn" />
+      <Interaction Id="jillTps" Name="TPS form" Category="Conversation">
+        <Cost />
+        <Requirements />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Sorry, who are you and what do you need?" />
+          <DialogEntry Speaker="Npc" Dialog="I'm Jill-- Jill Vander.  I'm temping here.  HR needs your TPS form filled out." />
+          <DialogEntry Speaker="Player" Dialog="Oh, sure.  Here it is." />
+          <DialogEntry Speaker="Npc" Dialog="Thanks.  See you around, I guess." />
+          <Popup Title="TPS Form" Video="jvander_chat4" />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="jillAddress" Name="Ask if she lives near the office" Category="Conversation">
+        <Cost />
+        <Requirements />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Are you a local?" />
+          <DialogEntry Speaker="Npc" Dialog="No.  Just wound up her because of school.  I’m kind of couch surfing right now.  I live with some girls in Tout Suite Studios.  It’s only temporary though, while I figure out my next move." />
+          <DialogEntry Speaker="Player" Dialog="Where do you think you'll end up?" />
+          <DialogEntry Speaker="Npc" Dialog="The Projects probablly.  It sucks but it is cheap-- and that's all I can afford right now." />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="jillCareerplans" Name="Ask her about her career plans" Category="Conversation">
+        <Cost />
+        <Requirements />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="So, you're looking to land a full time job here?" />
+          <DialogEntry Speaker="Npc" Dialog="I guess.  Until I save up enough to go back to school, I’ll probably have to keep working and saving.  One of these days, I’d love to work overseas." />
+          <DialogEntry Speaker="Player" Dialog="So, this isn't exactly your dream job?" />
+          <DialogEntry Speaker="Npc" Dialog="Far from it-- but for now, I don't have many options." />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="jillBritney" Name="Her take on: Britney" Category="OfficePolitics">
+        <Cost />
+        <Requirements RequiredInteractions="jillCareerplans," RequiredAmbition="20" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="What do you make of that receptionist?" />
+          <DialogEntry Speaker="Npc" Dialog="That airhead?  You have to be kidding." />
+          <DialogEntry Speaker="Player" Dialog="She's certainly no Rhodes Scholar, I'll give you that." />
+          <DialogEntry Speaker="Npc" Dialog="Britney's like a door knob.  Everyone gets a turn." />
+          <Effect AmbitionEffect="-1" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="jillDeborah" Name="Her take on: Deborah" Category="OfficePolitics">
+        <Cost />
+        <Requirements RequiredInteractions="jillCareerplans," RequiredAmbition="20" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Do you know Deborah Jones well?" />
+          <DialogEntry Speaker="Npc" Dialog="Miss Career Girl? She is such a shallow tool.  She thinks she’s the next big time around here." />
+          <DialogEntry Speaker="Player" Dialog="She seems very self-assured." />
+          <DialogEntry Speaker="Npc" Dialog="Of course she is.  She thinks she’s a superstar." />
+          <Popup Title="Her take on Deborah" Video="jvander_chat3" />
+          <Effect AmbitionEffect="-1" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="jillArtemis" Name="Her take on: Artemis" Category="OfficePolitics">
+        <Cost />
+        <Requirements RequiredInteractions="jillCareerplans," RequiredAmbition="20" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Do you like working here?" />
+          <DialogEntry Speaker="Npc" Dialog="Ask me when they put into a full time job." />
+          <DialogEntry Speaker="Player" Dialog="So, you DO like it here." />
+          <DialogEntry Speaker="Npc" Dialog="What I will say is that for such a ‘female-friendly’ company, they sure treat the admin staff like they were disposable.." />
+          <Effect AmbitionEffect="-1" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="jillCoffee" Name="Coffee?" Category="Socialize">
+        <Cost EgoCost="5" />
+        <Requirements RequiredInteractions="jillTps," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I'm going to grab a coffee-- want one?" />
+          <DialogEntry Speaker="Npc" Dialog="Would love one but I'm broke." />
+          <DialogEntry Speaker="Player" Dialog="It's on me-- what can I get you?" />
+          <DialogEntry Speaker="Npc" Dialog="Really?  Well, a chai latte would be great." />
+          <Popup Title="Her take on Deborah" Video="jvander_chat2" />
+          <Effect AmbitionEffect="-2" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="jillReading" Name="Ask what she’s reading" Category="Socialize">
+        <Cost EgoCost="5" />
+        <Requirements RequiredInteractions="jillTps," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I've noticed you're a voracious reader.  What's that one?" />
+          <DialogEntry Speaker="Npc" Dialog="Iris Murdoch.  I’m studying English Lit—well, I was last semester.  I’ve just got to get to London one of these days." />
+          <DialogEntry Speaker="Player" Dialog="Maybe some day!" />
+          <DialogEntry Speaker="Npc" Dialog="I hope so!" />
+          <Effect AmbitionEffect="-2" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="jillFamily" Name="Ask about her family" Category="Socialize">
+        <Cost EgoCost="10" />
+        <Requirements RequiredInteractions="jillTps," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Do you have family near?" />
+          <DialogEntry Speaker="Npc" Dialog="Why do you ask?  I haven’t talked to my family since I pissed them off by going to university and trying to do something with my life!" />
+          <DialogEntry Speaker="Player" Dialog="I guess you're not in touch then." />
+          <DialogEntry Speaker="Npc" Dialog="Not recently!  It's ok.  I'm pretty self-reliant." />
+          <Effect />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="jillFlirt" Name="Flirt with Jill" Category="Socialize">
+        <Cost EgoCost="10" />
+        <Requirements RequiredInteractions="jillTps," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="What about drinks after work?" />
+          <DialogEntry Speaker="Npc" Dialog="Sorry-- I'm taken already." />
+          <DialogEntry Speaker="Player" Dialog="I never see you with anyone." />
+          <DialogEntry Speaker="Npc" Dialog="Look, I kind of have a boyfriend. Walter’s amazing—he’s doing charity work in Central America. I wish I could have gone with him." />
+          <Popup Title="Her take on Deborah" Video="jvander_chat1" />
+          <Effect AmbitionEffect="-4" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="jillLunch" Name="Lunch?" Category="Socialize">
+        <Cost EgoCost="10" />
+        <Requirements RequiredInteractions="jillFlirt," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Come on--  at least let me take you out for lunch sometime." />
+          <DialogEntry Speaker="Npc" Dialog="Just because my boyfriend's overseas doesn't mean I'm not in a relationship." />
+          <DialogEntry Speaker="Player" Dialog="I think you're going to regret this!" />
+          <DialogEntry Speaker="Npc" Dialog="Yeah, sure.  Look, I'm flattered.  Let's leave it at that, ok?" />
+          <Effect AmbitionEffect="-6" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="jillPromise" Name="Promise to make her Full Time" Category="Challenge">
+        <Cost EgoCost="10" />
+        <Requirements RequiredInteractions="jillCareerplans," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="When I'm in a position to do so, I could easily move you from temping to full time." />
+          <DialogEntry Speaker="Npc" Dialog="That would be great.   I'd owe you one." />
+          <DialogEntry Speaker="Player" Dialog="I think you deserve it." />
+          <DialogEntry Speaker="Npc" Dialog="It means a lot to me.  I'd make more money full time.  The temp agency takes a third of my pay as a placement fee." />
+          <Effect AmbitionEffect="-10" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="jillOffer" Name="Offer to help her get Overseas" Category="Challenge">
+        <Cost MoneyCost="2000" />
+        <Requirements RequiredInteractions="jillFlirt," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="TO DO  This takes Deb Ambition -5, Susan Ambition -5  You wanted to ask me for a favour?" />
+          <DialogEntry Speaker="Npc" Dialog="Here’s the thing— if you could loan me the money to travel, I’d be out of here in a heartbeat.  " />
+          <DialogEntry Speaker="Player" Dialog="That's a lot of money.  What do I get out of this?" />
+          <DialogEntry Speaker="Npc" Dialog="If you could help me— I have a way to really screw with Deborah and Susan’s TPS forms big time!" />
+          <Effect EgoEffect="25" RemoveNpcFromGame="true" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="takecontrolJill" Name="Take Control of Jill Vander" Category="Challenge">
+        <Cost />
+        <Requirements RequiredAmbition="0" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="You're reporting to me from now on." />
+          <DialogEntry Speaker="Npc" Dialog="I didn't get that memo." />
+          <DialogEntry Speaker="Player" Dialog="Don't push me.  We both know you'll do what I tell you to do from now on." />
+          <DialogEntry Speaker="Npc" Dialog="OK.  I get it-- you're the boss." />
+          <Popup Title="Take control of Jill" Video="jvander_bj1" />
+          <Effect ControlEffect="true" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="fireJill" Name="Fire Jill Vander" Category="Challenge">
+        <Cost />
+        <Requirements />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I'm tired of seeing your face Jill." />
+          <DialogEntry Speaker="Npc" Dialog="But what did I do?" />
+          <DialogEntry Speaker="Player" Dialog="You're fired, Jill.  Get out-- now." />
+          <DialogEntry Speaker="Npc" Dialog="But I don't understand what I did!" />
+          <Effect EgoEffect="10" RemoveNpcFromGame="true" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="selectaJill" Name="Selectacorp Referral" Category="Challenge">
+        <Cost />
+        <Requirements RequiredInteractions="jillFamily," />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I'm referring you for a new position." />
+          <DialogEntry Speaker="Npc" Dialog="What department?" />
+          <DialogEntry Speaker="Player" Dialog="Not here at Artemis.  It's with a company called Selectacorp.  I've scheduled an interview for you." />
+          <DialogEntry Speaker="Npc" Dialog="Wow!  That's fantastic!  Thank you so much!" />
+          <Popup Title="Jill's new job!" Video="jvander_sexworkers" />
+          <Effect FundsEffect="5000" RemoveNpcFromGame="true" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="britneyTps" Name="Misfile Britney’s TPS Form" Category="Projects">
+        <Cost TurnCost="2" />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Since you're the TPS girl, why don't you stick Britney's form in the circular file for me." />
+          <DialogEntry Speaker="Npc" Dialog="Sure.  Whatever you say.  Did the bimbo piss you off or something?" />
+          <DialogEntry Speaker="Player" Dialog="Just do as you're told." />
+          <DialogEntry Speaker="Npc" Dialog="Yes, Sir!" />
+          <Effect ContextualNpcId="britneyBower" AmbitionEffect="-2" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="deborahTps" Name="Misfile Deborah’s TPS Form" Category="Projects">
+        <Cost TurnCost="2" />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I think you might misplace Deborah's file." />
+          <DialogEntry Speaker="Npc" Dialog="No I won't.  I'm very careful when it comes to those forms." />
+          <DialogEntry Speaker="Player" Dialog="I don't think you heard me." />
+          <DialogEntry Speaker="Npc" Dialog="Oh, I get it.  Yeah, I just might misfile it." />
+          <Effect ContextualNpcId="deborahJones" AmbitionEffect="-3" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="susanTps" Name="Misfile Susan’s TPS Form" Category="Projects">
+        <Cost TurnCost="2" />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="If Susan's TPS form went missing, what would happen?" />
+          <DialogEntry Speaker="Npc" Dialog="She'd probably get in trouble." />
+          <DialogEntry Speaker="Player" Dialog="See to it then." />
+          <DialogEntry Speaker="Npc" Dialog="Yes, Sir!" />
+          <Effect ContextualNpcId="susanGranger" AmbitionEffect="-4" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="secPool" Name="Send to Secretarial Pool" Category="Projects">
+        <Cost />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Remeber I told you I'd give you a full time job?" />
+          <DialogEntry Speaker="Npc" Dialog="Yes, I do." />
+          <DialogEntry Speaker="Player" Dialog="As of now, you're officially shifting to the SecPool." />
+          <DialogEntry Speaker="Npc" Dialog="TO DO  But that's NOT the position I was hoping for!  requiredpolicies=secpool RequiredPride=20 reward 1 corp culture" />
+          <Effect ContextualNpcId="jillVander" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="moveToSecDorm" Name="Move to Secretarial Dorm" Category="Projects">
+        <Cost />
+        <Requirements RequiredPolicies="affordableHousing," RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="It's crazy to pay rent when you can move into the dorm." />
+          <DialogEntry Speaker="Npc" Dialog="But I like having my own place!" />
+          <DialogEntry Speaker="Player" Dialog="You'll get used to it." />
+          <DialogEntry Speaker="Npc" Dialog="But I don't want to get used to it!" />
+          <Effect PrideEffect="-10" EgoEffect="20" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="assignDollHouse" Name="Assign to the Doll House" Category="Projects">
+        <Cost />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="It's been suggested you might be more useful in another role." />
+          <DialogEntry Speaker="Npc" Dialog="Like what?" />
+          <DialogEntry Speaker="Player" Dialog="I'm assigning you to the Doll House." />
+          <DialogEntry Speaker="Npc" Dialog="TO DO  But I'm not a whore! adds to DHouse rev" />
+          <Effect RemoveNpcFromGame="true" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="tempwearJill" Name="Tempwear Tizzy" Category="Train">
+        <Cost />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="If you want to keep your temp job here, you better start impressing me." />
+          <DialogEntry Speaker="Npc" Dialog="How do I do that?" />
+          <DialogEntry Speaker="Player" Dialog="Start dressing the part." />
+          <DialogEntry Speaker="Npc" Dialog="I'll try." />
+          <Effect PrideEffect="-5" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="disciplineJill" Name="Discipline Jill Vander" Category="Train" Repeatable="true">
+        <Cost />
+        <Requirements RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="Let's get this over.  I'm a busy man." />
+          <DialogEntry Speaker="Npc" Dialog="Get what over?" />
+          <DialogEntry Speaker="Player" Dialog="You've been moody.  A spanking should cure that." />
+          <DialogEntry Speaker="Npc" Dialog="There's no need for that!" />
+          <Effect PrideEffect="-5" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="breakJill" Name="Break Jill Vander" Category="Train">
+        <Cost />
+        <Requirements RequiredPride="0" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="I like having you at my beck and call." />
+          <DialogEntry Speaker="Npc" Dialog="I'm sure you do." />
+          <DialogEntry Speaker="Player" Dialog="Watch your mouth or you can discover what unemployment is like." />
+          <DialogEntry Speaker="Npc" Dialog="I apologise.   I like reporting to you-- really." />
+          <Effect EgoEffect="25" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="walkJill" Name="Walk of Shame" Category="Fun">
+        <Cost />
+        <Requirements RequiredPride="30" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="What do you think the staff think we do in these meetings?" />
+          <DialogEntry Speaker="Npc" Dialog="I'm pretty sure they know what we do." />
+          <DialogEntry Speaker="Player" Dialog="And what's that?" />
+          <DialogEntry Speaker="Npc" Dialog="Please don't make me say it!" />
+          <Effect PrideEffect="-5" EgoEffect="2" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="inspectJill" Name="Intimates Snap Check" Category="Fun">
+        <Cost />
+        <Requirements RequiredPride="35" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="You don't mind if I take a picture of you?" />
+          <DialogEntry Speaker="Npc" Dialog="Would it make a difference if I did?" />
+          <DialogEntry Speaker="Player" Dialog="No. Now pose for the camera." />
+          <DialogEntry Speaker="Npc" Dialog="Is this ok?" />
+          <Effect PrideEffect="-5" EgoEffect="3" />
+        </InteractionResult>
+      </Interaction>
+      <Interaction Id="walterJill" Name="Walter Wake-up and Break-up" Category="Fun">
+        <Cost />
+        <Requirements RequiredInteractions="jillFlirt," RequiredPride="25" RequiredControl="true" />
+        <InteractionResult>
+          <DialogEntry Speaker="Player" Dialog="TO WALTER FROM A FRIEND" />
+          <DialogEntry Speaker="Npc" Dialog="I THOUGHT YOU DESERVED" />
+          <DialogEntry Speaker="Player" Dialog="TO KNOW THAT JILL" />
+          <DialogEntry Speaker="Npc" Dialog="IS CHEATING ON YOU" />
+          <Effect PrideEffect="-10" EgoEffect="10" />
+        </InteractionResult>
+      </Interaction>
+    </Npc>
+    <Policy Id="competitivenessInitiative" Name="Competitiveness Initiative" Image="csg_competitiveness" Description="In order to compete globally, the company will re-set existing remuneration policy to focus on performance-based metrics.  In exchange, all employees will agree to adhere to the new approach by re-contracting with the company for a ‘fresh start’.&#xA;This policy will allow our new male managers the ability to place Artemis staff on probation at their discretion, lower salaries, and generally begin to force uncooperative girls out and convince more independent ones to toe the line.  It is an enormous step forward!">
+      <Requirements RequiredPower="20" />
+      <Effect />
+    </Policy>
+    <Policy Id="stemProgram" Name="Empowering Women in STEM Program" Image="csg_stem" Description="This policy would adjust recruitment and hiring policies to reflect a need for both STEM skilled candidates and empowering women in this challenging field.  Henceforth all executive roles would require some STEM background and priority would be given to women in such roles.&#xA;This policy may seem contra to SelectaCorp objectives,  It is not.  There are only a handful of female STEM professionals and by forcing the company to adopt this policy, it will have the quite unintended consequence of flooding mission critical roles with male candidates.   When a female can’t be found for the role, it MUST be given to the next best qualified one, which in all cases will be male.  Artemis will be enjoying a much-needed rush of testosterone in the future due to your good work!">
+      <Requirements RequiredPolicies="competitivenessInitiative," RequiredPower="30" />
+      <Effect />
+    </Policy>
+    <Policy Id="antiTheft" Name="Anti-theft Procedures" Image="csg_anti_theft" Description="In order to crack down on workplace theft, new preventive measures must be taken to ensure the safety of employee property is guaranteed!&#xA;Under the guise of protecting female staff property, you are now authorized to confiscate for ‘sake keeping’ any personal items you choose.  It is a standard form of psychological divestiture of outer office relationships You might start by confiscating these items from junior staff members!">
+      <Requirements RequiredPower="20" />
+      <Effect />
+    </Policy>
+    <Policy Id="FATE" Name="Free Advanced Technology Enterprises (F.A.T.E.)" Image="csg_fate" Description="With the economy stagnant, recent legislation has been enacted to reduce red tape in key sectors in order to spur more growth.  The F.A.T.E. program, modelled on successful models like Singapore, Dubai and Hong Kong, allow companies more flexibility than current local, judicial or regulatory bodies now permit.  The program is a trial, but applying to become part of it would allow Artemis to be more competitive AND deliver a higher share value and dividend return.&#xA;While the program seems innocuous enough, it will allow a more selective interpretation of current regulations and laws, especially those applying to employee relations.  While there will be no immediate effect, implementing this policy will pave the way for more radical changes in the days to come.  Mr. Kempler looks forward to being able to propose the next policy!">
+      <Requirements RequiredPower="10" />
+      <Effect PowerEffect="5" />
+    </Policy>
+    <Mission MissionName="Assume Control of Consulting Services" MissionDescription="It is time to take over!" MissionImage="csg_ctrl_department" NpcId="susanGranger" InteractionId="controlSusan">
+      <Effect PowerEffect="2" />
+    </Mission>
+    <Mission MissionName="Organize Client Database" MissionDescription="It is dull work, but it needs to be done!  You’ll need permission though!" MissionImage="csg_client_database" NpcId="susanGranger" InteractionId="susanDatabase">
+      <Effect PowerEffect="10" />
+    </Mission>
+    <Mission MissionName="Land the Titan Defence Account " MissionDescription="Landing a big consulting contract will earn you credibility.  You’ll need to work with Anne Miller on this one." MissionImage="csg_titan_defense" NpcId="annMiller" InteractionId="titanDefence">
+      <Effect PowerEffect="7" />
+    </Mission>
+    <Mission MissionName="Manage Internship Program " MissionDescription="Deborah Jones currently has been given this assignment but you might be able to take it away from her." MissionImage="csg_internship_program" NpcId="susanGranger" InteractionId="susanInternship">
+      <Effect PowerEffect="2" />
+    </Mission>
+    <Mission MissionName="Institute IT Systems Audit " MissionDescription="It is a complicated project.  Volunteer and give it a go!" MissionImage="csg_it_audit" NpcId="susanGranger" InteractionId="susanItaudit">
+      <Effect PowerEffect="4" />
+    </Mission>
+    <Mission MissionName="Plan Budget for Operating Group" MissionDescription="Lots of numbers and stats but if you could pull it off…" MissionImage="csg_dept_budget" NpcId="susanGranger" InteractionId="susanDeptbudget">
+      <Effect PowerEffect="8" />
+    </Mission>
+  </Location>
+</GameData>

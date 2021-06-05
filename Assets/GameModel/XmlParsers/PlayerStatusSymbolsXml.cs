@@ -51,15 +51,15 @@ namespace Assets.GameModel.XmlParsers
 				layoutXml = new []{LocationLayoutXml.ToXml(ob.CarLayout)};
 			return new PlayerStatusSymbolsXml()
 			{
-				CarImage = ob.CarName,
+				CarImage = ob.CarImage?.name,
 				CarName = ob.CarName,
 				CarLayout = layoutXml,
-				SuitsImage = ob.SuitsImage.name,
+				SuitsImage = ob.SuitsImage?.name,
 				SuitsName = ob.SuitsName,
-				JewleryCuffs = ob.JewleryCuffs.name,
-				JewleryPen = ob.JewleryPen.name,
-				JewleryRing = ob.JewleryRing.name,
-				JewleryWatch = ob.JewleryWatch.name,
+				JewleryCuffs = ob.JewleryCuffs?.name,
+				JewleryPen = ob.JewleryPen?.name,
+				JewleryRing = ob.JewleryRing?.name,
+				JewleryWatch = ob.JewleryWatch?.name,
 			};
 		}
 	}
