@@ -26,7 +26,7 @@ namespace Assets.GameModel
 
 		public bool Controlled()
 		{
-			return Npcs[0].Controlled;
+			return Npcs.Count > 0 && Npcs[0].Controlled;
 		}
 
 		public bool IsAccessible(MainGameManager mgm)
