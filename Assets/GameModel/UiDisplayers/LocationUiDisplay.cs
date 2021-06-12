@@ -42,13 +42,6 @@ namespace Assets.GameModel.UiDisplayers
 				f.transform.SetParent(NpcOptionsParent);
 			}
 
-			/*foreach (var customVisual in loc.CustomVisuals)
-			{
-				var f = Instantiate(_customVisualPrefab);
-				f.Setup(customVisual, this, mgm);
-				f.transform.SetParent(NpcOptionsParent);
-			}*/
-
 			if (loc.Policies.Count == 0)
 				PoliciesButton.gameObject.SetActive(false);
 			foreach (Policy policy in loc.Policies)
@@ -118,6 +111,7 @@ namespace Assets.GameModel.UiDisplayers
 			{
 				GameObject.Destroy(_currOpenNpc.gameObject);
 				_currOpenNpc = null;
+				RefreshUiDisplay(MainGameManager.Manager);
 			}
 		}
 
@@ -125,9 +119,15 @@ namespace Assets.GameModel.UiDisplayers
 		{
 			BackgroundImage.sprite = Loc.BackgroundImage;
 			Name.text = Loc.Name;
-			
+
 			foreach (var npc in NpcOptionsParent.GetComponentsInChildren<NpcSelectionUiDisplay>(true))
-				npc.RefreshUiDisplay(mgm);
+			{
+				//Were they just moved/removed?
+				if(!Loc.Npcs.Contains(npc._npc))
+					GameObject.Destroy(npc.gameObject);
+				else
+					npc.RefreshUiDisplay(mgm);
+			}
 
 			foreach (var policy in PolicyOptionsParent.GetComponentsInChildren<PolicySelectionUiDisplay>(true))
 				policy.RefreshUiDisplay(mgm);

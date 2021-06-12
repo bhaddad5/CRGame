@@ -134,6 +134,20 @@ public class GameData
 		return null;
 	}
 
+	public Location DeadNpcPool
+	{
+		get
+		{
+			foreach (var department in Locations)
+			{
+				if (department.Id == "deadPool")
+					return department;
+			}
+			Debug.LogError($"Could not find dead NPC pool.");
+			return null;
+		}
+	}
+
 	public List<Trophy> GetOwnedTrophies()
 	{
 		List<Trophy> res = new List<Trophy>();

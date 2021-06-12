@@ -42,6 +42,7 @@ namespace Assets.GameModel
 				{
 					var loc = mgm.Data.FindNpcLocation(npc);
 					loc.Npcs.Remove(npc);
+					mgm.Data.DeadNpcPool.Npcs.Add(npc);
 				}
 
 				mgm.Data.Ego = Mathf.Max(mgm.Data.Ego + EgoEffect, 0);

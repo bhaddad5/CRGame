@@ -20,7 +20,6 @@ namespace Assets.GameModel
 		public bool IsComplete(MainGameManager mgm)
 		{
 			var interaction = mgm.Data.GetInteractionById(npcId, InteractionId);
-			Debug.Log(InteractionId);
 			Debug.Assert(interaction != null);
 			return interaction?.Completed ?? true;
 		}

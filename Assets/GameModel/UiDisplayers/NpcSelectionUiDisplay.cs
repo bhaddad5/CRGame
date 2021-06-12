@@ -12,7 +12,7 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private TMP_Text Text;
 		[SerializeField] private Image NpcPic;
 
-		private Npc _npc;
+		public Npc _npc;
 
 		//Dumb, but this doesn't work when called from Setup()
 		void Start()
