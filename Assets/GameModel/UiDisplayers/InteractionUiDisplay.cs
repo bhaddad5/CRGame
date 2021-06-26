@@ -38,7 +38,7 @@ namespace Assets.GameModel.UiDisplayers
 		{
 			Text.text = $"{interaction.Name}";
 			if (!string.IsNullOrEmpty(interaction.Cost.GetCostString()))
-				Text.text += $" - {interaction.Cost.GetCostString()}";
+				Text.text += $" ({interaction.Cost.GetCostString()})";
 			Button.interactable = interaction.InteractionValid(mgm, npc);
 			gameObject.SetActive(interaction.InteractionVisible(mgm, npc));
 		}

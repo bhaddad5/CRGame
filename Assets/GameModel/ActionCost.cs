@@ -69,21 +69,21 @@ namespace Assets.GameModel
 		{
 			string str = "";
 			if (EgoCost > 0)
-				str += $"{EgoCost} Ego, ";
+				str += $"-{EgoCost} Ego, ";
 			if (MoneyCost > 0)
-				str += $"${MoneyCost}, ";
+				str += $"$-{MoneyCost}, ";
 			if (CultureCost > 0)
-				str += $"{CultureCost} Culture, ";
+				str += $"-{CultureCost} Culture, ";
 			if (BrandCost > 0)
-				str += $"{BrandCost} Brand, ";
+				str += $"-{BrandCost} Brand, ";
 			if (SpreadsheetsCost > 0)
-				str += $"{SpreadsheetsCost} Spreadsheets, ";
+				str += $"-{SpreadsheetsCost} Spreadsheets, ";
 			if (RevanueCost > 0)
-				str += $"{RevanueCost} Revenue, ";
+				str += $"-{RevanueCost} Revenue, ";
 			if (PatentsCost > 0)
-				str += $"{PatentsCost} Patents, ";
+				str += $"-{PatentsCost} Patents, ";
 			if (HornicalCost > 0)
-				str += $"{HornicalCost} Hornical, ";
+				str += $"-{HornicalCost} Hornical, ";
 
 			if (str.EndsWith(", "))
 				str = str.Substring(0, str.Length - 2);
