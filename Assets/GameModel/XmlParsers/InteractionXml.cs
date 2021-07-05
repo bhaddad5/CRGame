@@ -18,6 +18,8 @@ namespace Assets.GameModel.XmlParsers
         [XmlAttribute] [DefaultValue(false)] public bool Repeatable = false;
         [XmlAttribute] [DefaultValue(false)] public bool Completed = false;
 
+        [XmlAttribute] [DefaultValue(false)] public bool PreviewEffect = false;
+		
 		[XmlElement("Cost", typeof(ActionCostXml))]
 		public ActionCostXml[] Cost = new ActionCostXml[0];
 
@@ -44,6 +46,7 @@ namespace Assets.GameModel.XmlParsers
 				Repeatable = Repeatable,
 				Completed = Completed,
 				InteractionResults = results,
+				PreviewEffect = PreviewEffect,
 				Category = (Interaction.InteractionCategory)Enum.Parse(typeof(Interaction.InteractionCategory), Category)
 			};
 		}
@@ -66,6 +69,7 @@ namespace Assets.GameModel.XmlParsers
 				Completed = ob.Completed,
 				InteractionResults = results.ToArray(),
 				Category = ob.Category.ToString(),
+				PreviewEffect = ob.PreviewEffect,
 			};
 		}
 	}

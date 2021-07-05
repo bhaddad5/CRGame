@@ -38,7 +38,11 @@ namespace Assets.GameModel.UiDisplayers
 		{
 			Text.text = $"{interaction.Name}";
 			if (!string.IsNullOrEmpty(interaction.Cost.GetCostString()))
-				Text.text += $" ({interaction.Cost.GetCostString()})";
+				Text.text += $" {interaction.Cost.GetCostString()}";
+			if (!string.IsNullOrEmpty(interaction.Cost.GetCostString()) && interaction.PreviewEffect && !string.IsNullOrEmpty(interaction.GetBenefitsString()))
+				Text.text += ",";
+			if (interaction.PreviewEffect)
+				Text.text += $" {interaction.GetBenefitsString()}";
 			Button.interactable = interaction.InteractionValid(mgm, npc);
 			gameObject.SetActive(interaction.InteractionVisible(mgm, npc));
 		}
