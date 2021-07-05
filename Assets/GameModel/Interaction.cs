@@ -55,9 +55,24 @@ namespace Assets.GameModel
 			Cost.SubtractCost(mgm);
 
 			Completed = true;
-			var randValue = UnityEngine.Random.Range(0, InteractionResults.Count);
-			var chosenResult = InteractionResults[randValue];
-			return chosenResult;
+
+			int totalProbability = 0;
+			foreach (var result in InteractionResults)
+			{
+				totalProbability += result.Probability;
+			}
+			UnityEngine.Random.InitState(System.DateTime.Now.Millisecond);
+			var randValue = UnityEngine.Random.Range(0, totalProbability);
+			Debug.Log(randValue + ", " + totalProbability);
+			int checkedProbability = 0;
+			foreach (var result in InteractionResults)
+			{
+				checkedProbability += result.Probability;
+				if (randValue < checkedProbability)
+					return result;
+			}
+
+			throw new Exception($"Random probabiltiy result not found for {Name}, result = {randValue}");
 		}
 
 		public List<Mission> GetRelevantMissions(MainGameManager mgm, Npc npc)

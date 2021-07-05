@@ -71,7 +71,7 @@ namespace Assets.GameModel
 			if (EgoCost > 0)
 				str += $"-{EgoCost} Ego, ";
 			if (MoneyCost > 0)
-				str += $"$-{MoneyCost}, ";
+				str += $"-${MoneyCost}, ";
 			if (CultureCost > 0)
 				str += $"-{CultureCost} Culture, ";
 			if (BrandCost > 0)

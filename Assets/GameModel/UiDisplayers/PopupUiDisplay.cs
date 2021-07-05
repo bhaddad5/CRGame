@@ -36,6 +36,7 @@ public class PopupUiDisplay : MonoBehaviour, IUiDisplay
 		else if (popup.Videos != null)
 		{
 			ImageDisplay.texture = VideoTexture;
+			UnityEngine.Random.InitState(System.DateTime.Now.Millisecond);
 			VideoPlayer.clip = popup.Videos[UnityEngine.Random.Range(0, popup.Videos.Count)];
 		}
 	}

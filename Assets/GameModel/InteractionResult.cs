@@ -10,6 +10,7 @@ namespace Assets.GameModel
 		public List<DialogEntry> Dialogs;
 		public Popup OptionalPopup;
 		public List<Effect> Effects;
+		public int Probability;
 
 		public void Execute(MainGameManager mgm, Npc npc)
 		{

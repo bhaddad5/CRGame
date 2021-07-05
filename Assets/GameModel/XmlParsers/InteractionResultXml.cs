@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,6 +10,8 @@ namespace Assets.GameModel.XmlParsers
 {
 	public class InteractionResultXml
 	{
+		[XmlAttribute] [DefaultValue(1)] public int Probability = 1;
+
 		[XmlElement("DialogEntry", typeof(DialogEntryXml))]
 		public DialogEntryXml[] DialogEntries = new DialogEntryXml[0];
 
@@ -34,6 +37,7 @@ namespace Assets.GameModel.XmlParsers
 
 			return new InteractionResult()
 			{
+				Probability = Probability,
 				Dialogs = dialogs,
 				OptionalPopup = Popup?.FromXml(),
 				Effects = effects,
@@ -60,6 +64,7 @@ namespace Assets.GameModel.XmlParsers
 
 			return new InteractionResultXml()
 			{
+				Probability = ob.Probability,
 				DialogEntries = dialogs.ToArray(),
 				Popup = resPopup,
 				Effects = effects.ToArray(),

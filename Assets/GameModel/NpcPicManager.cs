@@ -186,6 +186,7 @@ public class NpcPicsLookup
 		}
 
 		var lookup = picsLookup[type];
+		UnityEngine.Random.InitState(System.DateTime.Now.Millisecond);
 		return lookup[Random.Range(0, lookup.Count)];
 	}
 }
