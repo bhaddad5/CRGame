@@ -47,7 +47,7 @@ namespace Assets.GameModel
 
 			Data = xmlResolver.LoadXmlData(xmlDataPath);
 
-			hudUiDisplay.Setup(this);
+			hudUiDisplay.Setup(this, mainMapUiDisplay);
 			mainMapUiDisplay.Setup(this, Data.Locations);
 			RefreshAllUi();
 		}

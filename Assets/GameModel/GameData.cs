@@ -148,6 +148,20 @@ public class GameData
 		}
 	}
 
+	public Location MyOffice
+	{
+		get
+		{
+			foreach (var department in Locations)
+			{
+				if (department.Id == "playerOffice")
+					return department;
+			}
+			Debug.LogError($"Could not find myOffice.");
+			return null;
+		}
+	}
+
 	public List<Trophy> GetOwnedTrophies()
 	{
 		List<Trophy> res = new List<Trophy>();

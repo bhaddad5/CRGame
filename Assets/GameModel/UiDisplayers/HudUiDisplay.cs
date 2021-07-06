@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using Assets.GameModel;
+using Assets.GameModel.UiDisplayers;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -29,6 +30,7 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 	[SerializeField] private TMP_Text Month;
 
 	[SerializeField] private Button Rest;
+	[SerializeField] private Button MyOffice;
 
 	[SerializeField] private PlayerOfficeUiDisplay PlayerOfficeUiPrefab;
 
@@ -48,7 +50,7 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 	[SerializeField] private LoadSaveMenuManager LoadSaveMenuManager;
 
 	private MainGameManager mgm;
-	public void Setup(MainGameManager mgm)
+	public void Setup(MainGameManager mgm, MainMapUiDisplay mapDisplay)
 	{
 		this.mgm = mgm;
 		Rest.onClick.AddListener(() =>
@@ -56,7 +58,10 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 			mgm.Data.Ego += 5;
 			mgm.HandleTurnChange();
 		});
-		//PlayerOffice.onClick.AddListener(ShowPlayerOffice);
+		MyOffice.onClick.AddListener(() =>
+		{
+			mapDisplay.ShowDepartment(mgm.Data.MyOffice, mgm);
+		});
 
 		MainMenuButton.onClick.AddListener(ShowMainMenu);
 		ReturnToGameButton.onClick.AddListener(HideMainMenu);
