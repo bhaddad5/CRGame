@@ -86,18 +86,5 @@ namespace Assets.GameModel
 
 			return true;
 		}
-
-		public List<string> GetInvalidTooltips(MainGameManager mgm, Npc npc)
-		{
-			List<string> tooltips = new List<string>();
-			if (RequiredAmbition >= 0 && RequiredAmbition < npc.Ambition)
-				tooltips.Add($"Requires {RequiredAmbition} or less Ambition");
-			if (RequiredPride >= 0 && RequiredPride < npc.Pride)
-				tooltips.Add($"Requires {RequiredPride} or less Pride");
-			if (RequiredPower > mgm.Data.Power)
-				tooltips.Add($"Requires {RequiredPower} or more Power");
-
-			return tooltips;
-		}
 	}
 }

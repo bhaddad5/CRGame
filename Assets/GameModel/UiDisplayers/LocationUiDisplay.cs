@@ -36,6 +36,7 @@ namespace Assets.GameModel.UiDisplayers
 		{
 			this.Loc = loc;
 			this.mgm = mgm;
+			BackButton.onClick.RemoveAllListeners();
 			BackButton.onClick.AddListener(() => mguid.CloseCurrentDepartment(false));
 
 			foreach (Npc npc in loc.Npcs)

@@ -23,6 +23,7 @@ public class DialogDisplayHandler : MonoBehaviour
 		this.mgm = mgm;
 		this._npc = npc;
 		this._npcUiDisplay = npcUiDisplay;
+		DialogAreaButton.onClick.RemoveAllListeners();
 		DialogAreaButton.onClick.AddListener(() =>
 		{
 			if (runningCoroutine != null)

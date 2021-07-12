@@ -57,27 +57,70 @@ namespace Assets.GameModel.UiDisplayers
 			return str;
 		}
 
-		public static List<string> GetInvalidTooltips(this ActionCost cost, MainGameManager mgm)
+		public static string GetInvalidTooltip(this ActionCost cost, MainGameManager mgm)
 		{
 			List<string> tooltips = new List<string>();
 			if (cost.EgoCost > mgm.Data.Ego)
-				tooltips.Add($"Requires {cost.EgoCost} Ego");
+				tooltips.Add($"{cost.EgoCost} Ego");
 			if (cost.MoneyCost > mgm.Data.Funds)
-				tooltips.Add($"Requires ${cost.MoneyCost}");
+				tooltips.Add($"${cost.MoneyCost}");
 			if (cost.CultureCost > mgm.Data.CorporateCulture)
-				tooltips.Add($"Requires {cost.CultureCost} Corporate Culture");
+				tooltips.Add($"{cost.CultureCost} Corporate Culture");
 			if (cost.BrandCost > mgm.Data.Brand)
-				tooltips.Add($"Requires {cost.BrandCost} Brand");
+				tooltips.Add($"{cost.BrandCost} Brand");
 			if (cost.SpreadsheetsCost > mgm.Data.Spreadsheets)
-				tooltips.Add($"Requires {cost.SpreadsheetsCost} Spreadsheets");
+				tooltips.Add($"{cost.SpreadsheetsCost} Spreadsheets");
 			if (cost.RevanueCost > mgm.Data.Revenue)
-				tooltips.Add($"Requires {cost.RevanueCost} Revenue");
+				tooltips.Add($"{cost.RevanueCost} Revenue");
 			if (cost.PatentsCost > mgm.Data.Patents)
-				tooltips.Add($"Requires {cost.PatentsCost} Patents");
+				tooltips.Add($"{cost.PatentsCost} Patents");
 			if (cost.HornicalCost > mgm.Data.Hornical)
-				tooltips.Add($"Requires {cost.HornicalCost} Hornical");
+				tooltips.Add($"{cost.HornicalCost} Hornical");
 
-			return tooltips;
+			string finalTooltip = "";
+			foreach (var tt in tooltips)
+			{
+				finalTooltip += $", {tt}";
+			}
+
+			if (finalTooltip.Length > 0)
+			{
+				finalTooltip = finalTooltip.Substring(2);
+				finalTooltip = $"Requires {finalTooltip}";
+			}
+
+			return finalTooltip;
+		}
+
+		public static string GetInvalidTooltip(this ActionRequirements req, MainGameManager mgm, Npc npc)
+		{
+			List<string> tooltips = new List<string>();
+			if (req.RequiredAmbition >= 0 && req.RequiredAmbition < npc.Ambition)
+				tooltips.Add($"{req.RequiredAmbition} or less Ambition");
+			if (req.RequiredPride >= 0 && req.RequiredPride < npc.Pride)
+				tooltips.Add($"{req.RequiredPride} or less Pride");
+			if (req.RequiredPower > mgm.Data.Power)
+				tooltips.Add($"{req.RequiredPower} or more Power");
+
+			foreach (var requiredPolicy in req.RequiredPolicies)
+			{
+				Policy p = mgm.Data.GetPolicyFromId(requiredPolicy);
+				tooltips.Add($"{p.Name}");
+			}
+
+			string finalTooltip = "";
+			foreach (var tt in tooltips)
+			{
+				finalTooltip += $", {tt}";
+			}
+
+			if (finalTooltip.Length > 0)
+			{
+				finalTooltip = finalTooltip.Substring(2);
+				finalTooltip = $"Requires {finalTooltip}";
+			}
+
+			return finalTooltip;
 		}
 	}
 }

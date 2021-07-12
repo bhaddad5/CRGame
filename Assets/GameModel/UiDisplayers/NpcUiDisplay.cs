@@ -41,6 +41,7 @@ namespace Assets.GameModel.UiDisplayers
 
 			DialogHandler.Setup(npc, this, mgm);
 			
+			BackButton.onClick.RemoveAllListeners();
 			BackButton.onClick.AddListener(() => duid.CloseCurrentNpc());
 		}
 

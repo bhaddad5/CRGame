@@ -19,6 +19,7 @@ namespace Assets.GameModel.UiDisplayers
 		{
 			this.interaction = interaction;
 			this._npc = npc;
+			Button.onClick.RemoveAllListeners();
 			Button.onClick.AddListener(() =>
 			{
 				var res = interaction.GetInteractionResult(mgm, npc);
@@ -56,13 +57,11 @@ namespace Assets.GameModel.UiDisplayers
 
 			string tooltip = "";
 
-			foreach (var tt in interaction.Requirements.GetInvalidTooltips(mgm, _npc))
-				tooltip += $"\n{tt}";
-			foreach (var tt in interaction.Cost.GetInvalidTooltips(mgm))
-				tooltip += $"\n{tt}";
-
+			tooltip += $"{interaction.Requirements.GetInvalidTooltip(mgm, _npc)}";
 			if (tooltip.Length > 0)
-				return tooltip.Substring(1);
+				tooltip += $"\n"; 
+			tooltip += $"\n{interaction.Cost.GetInvalidTooltip(mgm)}";
+			
 			return "Interaction invalid";
 		}
 	}

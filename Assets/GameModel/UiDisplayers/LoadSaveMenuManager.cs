@@ -21,6 +21,7 @@ public class LoadSaveMenuManager : MonoBehaviour
 	string savesDir => Path.Combine(Application.streamingAssetsPath, "Saves");
 	public void Setup(MainGameManager mgm)
 	{
+		loadButton.onClick.RemoveAllListeners();
 		loadButton.onClick.AddListener(() =>
 		{
 			if (!CurrentDesiredFileIsValid())
@@ -31,6 +32,7 @@ public class LoadSaveMenuManager : MonoBehaviour
 
 			gameObject.SetActive(false);
 		});
+		saveButton.onClick.RemoveAllListeners();
 		saveButton.onClick.AddListener(() =>
 		{
 			if (!CurrentDesiredFileIsValid())
@@ -41,6 +43,7 @@ public class LoadSaveMenuManager : MonoBehaviour
 
 			gameObject.SetActive(false);
 		});
+		cancelButton.onClick.RemoveAllListeners();
 		cancelButton.onClick.AddListener(() =>
 		{
 			gameObject.SetActive(false);
@@ -82,6 +85,7 @@ public class LoadSaveMenuManager : MonoBehaviour
 		{
 			var button = Instantiate(fileButtonPrefab);
 			button.transform.SetParent(filesParent);
+			button.onClick.RemoveAllListeners();
 			button.onClick.AddListener(() =>
 			{
 				filenameInput.text = Path.GetFileNameWithoutExtension(file);

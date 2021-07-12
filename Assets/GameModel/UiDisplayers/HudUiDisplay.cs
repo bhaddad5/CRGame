@@ -32,8 +32,6 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 	[SerializeField] private Button Rest;
 	[SerializeField] private Button MyOffice;
 
-	[SerializeField] private PlayerOfficeUiDisplay PlayerOfficeUiPrefab;
-
 	[SerializeField] private PopupUiDisplay PopupDisplay;
 
 	[SerializeField] private Button MainMenuButton;
@@ -107,34 +105,13 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 		Time.text = $"{timeOfDay}";
 		Day.text = $"{DateTime.DayOfWeek}";
 		Month.text = $"{DateTime:MMMM} {DateTime.Day}";
-
-		playerOfficeDisplay?.RefreshUiDisplay(mgm);
 	}
 
 	public void ShowPopup(Popup popup, Action onPopupDone)
 	{
 		PopupDisplay.Show(popup, mgm, onPopupDone);
 	}
-
-	private PlayerOfficeUiDisplay playerOfficeDisplay = null;
-	public void ShowPlayerOffice()
-	{
-		playerOfficeDisplay = Instantiate(PlayerOfficeUiPrefab);
-		playerOfficeDisplay.Setup(this, mgm);
-		playerOfficeDisplay.RefreshUiDisplay(mgm);
-		//PlayerOffice.gameObject.SetActive(false);
-	}
-
-	public void ClosePlayerOffice()
-	{
-		if (playerOfficeDisplay != null)
-		{
-			GameObject.Destroy(playerOfficeDisplay.gameObject);
-			playerOfficeDisplay = null;
-			//PlayerOffice.gameObject.SetActive(true);
-		}
-	}
-
+	
 	public void ShowMainMenu()
 	{
 		MainMenu.gameObject.SetActive(true);

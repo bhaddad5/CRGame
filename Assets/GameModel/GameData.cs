@@ -188,4 +188,19 @@ public class GameData
 		}
 		return res;
 	}
+
+	public Policy GetPolicyFromId(string id)
+	{
+		foreach (var department in Locations)
+		{
+			foreach (var policy in department.Policies)
+			{
+				if (policy.Id == id)
+					return policy;
+			}
+		}
+
+		Debug.LogError($"Failed to find policy for id {id}");
+		return null;
+	}
 }

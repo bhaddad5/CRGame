@@ -22,6 +22,7 @@ namespace Assets.GameModel.UiDisplayers
 		public void Setup(Location dept, MainMapUiDisplay mainMapUi, MainGameManager mgm)
 		{
 			this.dept = dept;
+			Button.onClick.RemoveAllListeners();
 			Button.onClick.AddListener(() =>
 			{
 				mainMapUi.ShowDepartment(dept, mgm);

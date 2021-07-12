@@ -26,7 +26,7 @@ public class TooltipElementHandler : MonoBehaviour, IPointerEnterHandler, IPoint
 		{
 			if (Time.time - enteredTime > .2f)
 			{
-				string tooltip = GetComponent<ITooltipProvider>()?.GetTooltip(MainGameManager.Manager);
+				string tooltip = GetComponentInParent<ITooltipProvider>()?.GetTooltip(MainGameManager.Manager);
 				if (tooltip != null)
 					TooltipDisplayer.CurrentTooltip = tooltip;
 			}
