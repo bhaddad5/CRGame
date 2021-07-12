@@ -14,9 +14,12 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private Image BackgroundImage;
 		[SerializeField] private Transform NpcOptionsParent;
 		[SerializeField] private Button BackButton;
+
 		[SerializeField] private Transform PoliciesButton;
 		[SerializeField] private Transform PoliciesPopup;
 		[SerializeField] private Transform PolicyOptionsParent;
+		[SerializeField] private PolicyUiDisplay SpecificPolicyPopup;
+
 		[SerializeField] private Transform MissionsButton;
 		[SerializeField] private Transform MissionsPopup;
 		[SerializeField] private Transform MissionOptionsParent;
@@ -47,7 +50,7 @@ namespace Assets.GameModel.UiDisplayers
 			foreach (Policy policy in loc.Policies)
 			{
 				var p = Instantiate(policyPrefab);
-				p.Setup(policy, loc, mgm);
+				p.Setup(policy, loc, this);
 				p.transform.SetParent(PolicyOptionsParent);
 			}
 
@@ -62,6 +65,7 @@ namespace Assets.GameModel.UiDisplayers
 
 			ClosePolicies();
 			CloseMissions();
+			ClosePolicy();
 
 			if (loc.ShowTrophyCase)
 				mgm.SetTrophyCaseVisibility(true);
@@ -85,6 +89,17 @@ namespace Assets.GameModel.UiDisplayers
 		public void ClosePolicies()
 		{
 			PoliciesPopup.gameObject.SetActive(false);
+		}
+
+		public void OpenPolicy(Policy p)
+		{
+			SpecificPolicyPopup.gameObject.SetActive(true);
+			SpecificPolicyPopup.Setup(p, Loc, mgm);
+		}
+
+		public void ClosePolicy()
+		{
+			SpecificPolicyPopup.gameObject.SetActive(false);
 		}
 
 		public void OpenMissions()

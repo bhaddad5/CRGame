@@ -41,53 +41,5 @@ namespace Assets.GameModel
 			mgm.Data.Revenue -= RevanueCost;
 			mgm.Data.Patents -= PatentsCost;
 		}
-
-		public List<string> GetInvalidTooltips(MainGameManager mgm)
-		{
-			List<string> tooltips = new List<string>();
-			if (EgoCost > mgm.Data.Ego)
-				tooltips.Add($"Requires {EgoCost} Ego");
-			if (MoneyCost > mgm.Data.Funds)
-				tooltips.Add($"Requires ${MoneyCost}");
-			if (CultureCost > mgm.Data.CorporateCulture)
-				tooltips.Add($"Requires {CultureCost} Corporate Culture");
-			if (BrandCost > mgm.Data.Brand)
-				tooltips.Add($"Requires {BrandCost} Brand");
-			if (SpreadsheetsCost > mgm.Data.Spreadsheets)
-				tooltips.Add($"Requires {SpreadsheetsCost} Spreadsheets");
-			if (RevanueCost > mgm.Data.Revenue)
-				tooltips.Add($"Requires {RevanueCost} Revenue");
-			if (PatentsCost > mgm.Data.Patents)
-				tooltips.Add($"Requires {PatentsCost} Patents");
-			if (HornicalCost > mgm.Data.Hornical)
-				tooltips.Add($"Requires {HornicalCost} Hornical");
-
-			return tooltips;
-		}
-
-		public string GetCostString()
-		{
-			string str = "";
-			if (EgoCost > 0)
-				str += $"-{EgoCost} Ego, ";
-			if (MoneyCost > 0)
-				str += $"-${MoneyCost}, ";
-			if (CultureCost > 0)
-				str += $"-{CultureCost} Culture, ";
-			if (BrandCost > 0)
-				str += $"-{BrandCost} Brand, ";
-			if (SpreadsheetsCost > 0)
-				str += $"-{SpreadsheetsCost} Spreadsheets, ";
-			if (RevanueCost > 0)
-				str += $"-{RevanueCost} Revenue, ";
-			if (PatentsCost > 0)
-				str += $"-{PatentsCost} Patents, ";
-			if (HornicalCost > 0)
-				str += $"-{HornicalCost} Hornical, ";
-
-			if (str.EndsWith(", "))
-				str = str.Substring(0, str.Length - 2);
-			return str;
-		}
 	}
 }

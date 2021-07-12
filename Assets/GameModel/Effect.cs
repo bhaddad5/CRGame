@@ -105,8 +105,6 @@ namespace Assets.GameModel
 				if (UpdateStatusSymbols.JewleryWatch != null)
 					mgm.Data.StatusSymbols.JewleryWatch = UpdateStatusSymbols.JewleryWatch;
 			}
-
-			
 		}
 	}
 }

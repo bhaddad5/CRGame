@@ -94,33 +94,15 @@ namespace Assets.GameModel
 			}
 		}
 
-		public string GetBenefitsString()
+		public InteractionResult GetDefaultResult()
 		{
 			if(InteractionResults.Count > 0)
 				Debug.Log("You should not preview results for interactions with multiple outcomes!!!");
 
 			var res = InteractionResults[0];
 
-			string str = "";
-			foreach (var effect in res.Effects)
-			{
-				if (effect.PowerEffect > 0)
-					str += $"+{effect.PowerEffect} Power, ";
-				if (effect.EgoEffect > 0)
-					str += $"+{effect.EgoEffect} Ego, ";
-				if (effect.BrandEffect > 0)
-					str += $"+{effect.BrandEffect} Brand, ";
-				if (effect.HornicalEffect > 0)
-					str += $"+{effect.HornicalEffect} Hornical, ";
-				if (effect.AmbitionEffect != 0)
-					str += $"{effect.AmbitionEffect} Ambition, ";
-				if (effect.PrideEffect != 0)
-					str += $"{effect.PrideEffect} Pride, ";
-			}
-
-			if (str.EndsWith(", "))
-				str = str.Substring(0, str.Length - 2);
-			return str;
+			
+			return res;
 		}
 	}
 }
