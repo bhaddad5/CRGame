@@ -42,7 +42,7 @@ namespace Assets.GameModel.XmlParsers
 				Dialog = ob.Text,
 				InPlayerOffice = ob.InPlayerOffice,
 				NpcImage = ob.NpcImage,
-				CustomBackground = ob.CustomBackground.name,
+				CustomBackground = ob.CustomBackground?.name,
 			};
 		}
 	}
