@@ -65,7 +65,6 @@ namespace Assets.GameModel
 			}
 			UnityEngine.Random.InitState(System.DateTime.Now.Millisecond);
 			var randValue = UnityEngine.Random.Range(0, totalProbability);
-			Debug.Log(randValue + ", " + totalProbability);
 			int checkedProbability = 0;
 			foreach (var result in InteractionResults)
 			{

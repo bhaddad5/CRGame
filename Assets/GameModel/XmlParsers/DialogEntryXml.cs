@@ -16,6 +16,7 @@ namespace Assets.GameModel.XmlParsers
 		[XmlAttribute] [DefaultValue("")] public string Dialog = "";
 
 		[XmlAttribute] [DefaultValue(false)] public bool InPlayerOffice = false;
+		[XmlAttribute] [DefaultValue("")] public string CustomBackground = "";
 		[XmlAttribute] [DefaultValue("")] public string NpcImage = "";
 
 		public DialogEntry FromXml()
@@ -28,6 +29,7 @@ namespace Assets.GameModel.XmlParsers
 				Text = Dialog,
 				NpcImage = NpcImage,
 				InPlayerOffice = InPlayerOffice,
+				CustomBackground = ImageLookup.Backgrounds.GetImage(CustomBackground),
 			};
 		}
 
@@ -40,6 +42,7 @@ namespace Assets.GameModel.XmlParsers
 				Dialog = ob.Text,
 				InPlayerOffice = ob.InPlayerOffice,
 				NpcImage = ob.NpcImage,
+				CustomBackground = ob.CustomBackground.name,
 			};
 		}
 	}

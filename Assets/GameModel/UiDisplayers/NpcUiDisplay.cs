@@ -71,6 +71,16 @@ namespace Assets.GameModel.UiDisplayers
 			overridingImage = null;
 		}
 
+		public void SetBackground(Sprite background)
+		{
+			BackgroundImage.sprite = background;
+		}
+
+		public void UnsetBackground()
+		{
+			BackgroundImage.sprite = _npc.BackgroundImage;
+		}
+		
 		private string GetTraitsString()
 		{
 			string traitsText = "";

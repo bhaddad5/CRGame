@@ -68,6 +68,7 @@ public class DialogDisplayHandler : MonoBehaviour
 		else
 		{
 			_npcUiDisplay.UnsetImage();
+			_npcUiDisplay.UnsetBackground();
 			gameObject.SetActive(false);
 			dialogsComplete?.Invoke();
 			_npcUiDisplay.InteractionsHandler.gameObject.SetActive(true);
@@ -110,6 +111,8 @@ public class DialogDisplayHandler : MonoBehaviour
 		NextDialogImage.enabled = false;
 		textToShow = dialog.Text;
 		DialogText.text = "";
+		if (dialog.CustomBackground != null)
+			_npcUiDisplay.SetBackground(dialog.CustomBackground);
 		if (dialog.NpcImage != "")
 			_npcUiDisplay.SetImage(dialog.NpcImage);
 

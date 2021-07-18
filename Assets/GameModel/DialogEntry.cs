@@ -19,6 +19,7 @@ namespace Assets.GameModel
 
 		//Should these be up a level in InteractionResult?
 		public bool InPlayerOffice;
-		public string NpcImage = "";
+		public Sprite CustomBackground = null;
+		public string NpcImage = null;
 	}
 }
