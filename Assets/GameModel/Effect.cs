@@ -5,22 +5,23 @@ using UnityEngine;
 
 namespace Assets.GameModel
 {
-	public class Effect : ScriptableObject
+	[Serializable]
+	public struct Effect
 	{
-		public string ContextualNpcId = "";
-		public float AmbitionEffect = 0;
-		public float PrideEffect = 0;
-		public float EgoEffect = 0;
-		public float FundsEffect = 0;
-		public float PowerEffect = 0;
-		public float PatentsEffect = 0;
-		public float CultureEffect = 0;
-		public float SpreadsheetsEffect = 0;
-		public float BrandEffect = 0;
-		public float RevanueEffect = 0;
-		public int HornicalEffect = 0;
-		public bool ControlEffect = false;
-		public bool RemoveNpcFromGame = false;
+		public string ContextualNpcId;
+		public float AmbitionEffect;
+		public float PrideEffect;
+		public float EgoEffect;
+		public float FundsEffect;
+		public float PowerEffect;
+		public float PatentsEffect;
+		public float CultureEffect;
+		public float SpreadsheetsEffect;
+		public float BrandEffect;
+		public float RevanueEffect;
+		public int HornicalEffect;
+		public bool ControlEffect;
+		public bool RemoveNpcFromGame;
 		public List<string> TraitsAdded;
 		public List<string> TraitsRemoved;
 		public List<string> TrophiesClaimed;
@@ -80,27 +81,24 @@ namespace Assets.GameModel
 					contextualLocation.UiPosition = UpdateLocationMapPosition;
 			}
 
-			if (UpdateStatusSymbols != null)
-			{
-				if (!String.IsNullOrEmpty(UpdateStatusSymbols.CarName))
-					mgm.Data.StatusSymbols.CarName = UpdateStatusSymbols.CarName;
-				if (UpdateStatusSymbols.CarImage != null)
-					mgm.Data.StatusSymbols.CarImage = UpdateStatusSymbols.CarImage;
-				
-				if (!String.IsNullOrEmpty(UpdateStatusSymbols.SuitsName))
-					mgm.Data.StatusSymbols.SuitsName = UpdateStatusSymbols.SuitsName;
-				if (UpdateStatusSymbols.SuitsImage != null)
-					mgm.Data.StatusSymbols.SuitsImage = UpdateStatusSymbols.SuitsImage;
+			if (!String.IsNullOrEmpty(UpdateStatusSymbols.CarName))
+				mgm.Data.StatusSymbols.CarName = UpdateStatusSymbols.CarName;
+			if (UpdateStatusSymbols.CarImage != null)
+				mgm.Data.StatusSymbols.CarImage = UpdateStatusSymbols.CarImage;
 
-				if (UpdateStatusSymbols.JewleryCuffs != null)
-					mgm.Data.StatusSymbols.JewleryCuffs = UpdateStatusSymbols.JewleryCuffs;
-				if (UpdateStatusSymbols.JewleryPen != null)
-					mgm.Data.StatusSymbols.JewleryPen = UpdateStatusSymbols.JewleryPen;
-				if (UpdateStatusSymbols.JewleryRing != null)
-					mgm.Data.StatusSymbols.JewleryRing = UpdateStatusSymbols.JewleryRing;
-				if (UpdateStatusSymbols.JewleryWatch != null)
-					mgm.Data.StatusSymbols.JewleryWatch = UpdateStatusSymbols.JewleryWatch;
-			}
+			if (!String.IsNullOrEmpty(UpdateStatusSymbols.SuitsName))
+				mgm.Data.StatusSymbols.SuitsName = UpdateStatusSymbols.SuitsName;
+			if (UpdateStatusSymbols.SuitsImage != null)
+				mgm.Data.StatusSymbols.SuitsImage = UpdateStatusSymbols.SuitsImage;
+
+			if (UpdateStatusSymbols.JewleryCuffs != null)
+				mgm.Data.StatusSymbols.JewleryCuffs = UpdateStatusSymbols.JewleryCuffs;
+			if (UpdateStatusSymbols.JewleryPen != null)
+				mgm.Data.StatusSymbols.JewleryPen = UpdateStatusSymbols.JewleryPen;
+			if (UpdateStatusSymbols.JewleryRing != null)
+				mgm.Data.StatusSymbols.JewleryRing = UpdateStatusSymbols.JewleryRing;
+			if (UpdateStatusSymbols.JewleryWatch != null)
+				mgm.Data.StatusSymbols.JewleryWatch = UpdateStatusSymbols.JewleryWatch;
 		}
 	}
 }

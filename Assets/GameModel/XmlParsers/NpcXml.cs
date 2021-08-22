@@ -9,27 +9,6 @@ namespace Assets.GameModel.XmlParsers
 		[XmlAttribute] [DefaultValue(0)] public float XPercentage = 0;
 		[XmlAttribute] [DefaultValue(0)] public float YPercentage = 0;
 		[XmlAttribute] [DefaultValue(100f)] public float Width = 100;
-		[XmlAttribute] [DefaultValue(2f)] public float Ratio = 2f;
-
-		public LocationLayout FromXml()
-		{
-			return new LocationLayout()
-			{
-				X = XPercentage,
-				Y = YPercentage,
-				Width = Width,
-			};
-		}
-
-		public static LocationLayoutXml ToXml(LocationLayout ob)
-		{
-			return new LocationLayoutXml()
-			{
-				Width = ob.Width,
-				XPercentage = ob.X,
-				YPercentage = ob.Y,
-			};
-		}
 	}
 
 	public class NpcXml
@@ -102,12 +81,15 @@ namespace Assets.GameModel.XmlParsers
 				LastName = LastName,
 				Age = Age,
 				Interactions = interactions,
-				Traits = traits,
 				Trophies = trophies,
 				RequiredVisibilityInteraction = RequiredVisibilityInteraction,
 				BackgroundImage = ImageLookup.Backgrounds.GetImage(BackgroundImage),
-				Layout = layoutXml.FromXml(),
-				PersonalLayout = personalLayoutXml.FromXml(),
+				LocationLayoutXPos = layoutXml.XPercentage,
+				LocationLayoutYPos = layoutXml.YPercentage,
+				LocationLayoutWidth = layoutXml.Width,
+				PersonalLayoutXPos = personalLayoutXml.XPercentage,
+				PersonalLayoutYPos = personalLayoutXml.YPercentage,
+				PersonalLayoutWidth = personalLayoutXml.Width,
 				IsControllable = IsControllable,
 			};
 		}
@@ -118,12 +100,6 @@ namespace Assets.GameModel.XmlParsers
 			foreach (var interaction in ob.Interactions)
 			{
 				interactions.Add(InteractionXml.ToXml(interaction));
-			}
-
-			List<TraitXml> traits = new List<TraitXml>();
-			foreach (var trait in ob.Traits)
-			{
-				traits.Add(TraitXml.ToXml(trait));
 			}
 
 			List<TrophyXml> trophies = new List<TrophyXml>();
@@ -142,12 +118,9 @@ namespace Assets.GameModel.XmlParsers
 				LastName = ob.LastName,
 				Age = ob.Age,
 				Interactions = interactions.ToArray(),
-				Traits = traits.ToArray(),
 				Trophies = trophies.ToArray(),
 				BackgroundImage = ob.BackgroundImage.name,
 				RequiredVisibilityInteraction = ob.RequiredVisibilityInteraction,
-				LocationLayout = new []{LocationLayoutXml.ToXml(ob.Layout)},
-				PersonalLayout = new []{LocationLayoutXml.ToXml(ob.PersonalLayout), },
 				IsControllable = ob.IsControllable,
 			};
 		}

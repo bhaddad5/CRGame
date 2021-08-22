@@ -45,7 +45,7 @@ namespace Assets.GameModel
 			hudUiDisplay = Instantiate(HudUiDisplayPrefab);
 			mainMapUiDisplay = Instantiate(MainMapUiDisplayPrefab);
 
-			Data = xmlResolver.LoadXmlData(xmlDataPath);
+			//Data = xmlResolver.LoadXmlData(xmlDataPath);
 
 			hudUiDisplay.Setup(this, mainMapUiDisplay);
 			mainMapUiDisplay.Setup(this, Data.Locations);
@@ -69,13 +69,6 @@ namespace Assets.GameModel
 				HandleBiMonthlyChange();
 			}
 
-			//Traits execute once a week
-			if (Data.TurnNumber % 2 == 0 &&
-			    Data.TurnNumber % 14 == 0)
-			{
-				HandleWeekChange();
-			}
-
 			mainMapUiDisplay.CloseCurrentDepartment(true);
 			RefreshAllUi();
 		}
@@ -92,34 +85,7 @@ namespace Assets.GameModel
 
 			return currentDate;
 		}
-
-		private void HandleWeekChange()
-		{
-			foreach (var department in Data.Locations)
-			{
-				foreach (var npc in department.Npcs)
-				{
-					foreach (var trait in npc.Traits)
-					{
-						if (npc.Controlled)
-						{
-							foreach (var effect in trait.ControlledEffects)
-							{
-								effect?.ExecuteEffect(this, npc);
-							}
-						}
-						else
-						{
-							foreach (var effect in trait.FreeEffects)
-							{
-								effect?.ExecuteEffect(this, npc);
-							}
-						}
-					}
-				}
-			}
-		}
-
+		
 		public string GetPlayerTitleFromPower()
 		{
 			if (Data.Power < 10)

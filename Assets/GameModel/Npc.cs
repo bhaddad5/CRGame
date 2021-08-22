@@ -20,13 +20,21 @@ namespace Assets.GameModel
 
 		public string RequiredVisibilityInteraction;
 
-		public LocationLayout Layout = new LocationLayout();
-		public LocationLayout PersonalLayout = new LocationLayout();
+		[Header("Personal Layout")]
+		public float PersonalLayoutXPos = 0.5f;
+		public float PersonalLayoutYPos = 0.5f;
+		public float PersonalLayoutWidth = 200f;
+
+		[Header("Location Layout")]
+		public float LocationLayoutXPos = 0.5f;
+		public float LocationLayoutYPos = 0.5f;
+		public float LocationLayoutWidth = 200f;
 
 		public Sprite BackgroundImage;
 
 		public List<Interaction> Interactions = new List<Interaction>();
-		public List<Trait> Traits = new List<Trait>();
+		//TODO: Re-think how Traits work!
+		//public List<Trait> Traits = new List<Trait>();
 		public List<Trophy> Trophies = new List<Trophy>();
 
 		public bool IsVisible(MainGameManager mgm)
@@ -49,6 +57,24 @@ namespace Assets.GameModel
 				return "controlled";
 			else
 				return "independent";
+		}
+
+		public void ApplyLocationLayout(RectTransform transform)
+		{
+			var ratio = 2;
+			transform.anchorMin = new Vector2(LocationLayoutXPos, LocationLayoutYPos);
+			transform.anchorMax = new Vector2(LocationLayoutXPos, LocationLayoutYPos);
+			transform.sizeDelta = new Vector2(LocationLayoutWidth, LocationLayoutWidth * ratio);
+			transform.anchoredPosition = Vector2.zero;
+		}
+
+		public void ApplyPersonalLayout(RectTransform transform)
+		{
+			var ratio = 2;
+			transform.anchorMin = new Vector2(PersonalLayoutXPos, PersonalLayoutYPos);
+			transform.anchorMax = new Vector2(PersonalLayoutXPos, PersonalLayoutYPos);
+			transform.sizeDelta = new Vector2(PersonalLayoutWidth, PersonalLayoutWidth * ratio);
+			transform.anchoredPosition = Vector2.zero;
 		}
 	}
 }

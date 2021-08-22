@@ -1,11 +1,13 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Assets.GameModel;
 using UnityEngine;
 
 namespace Assets.GameModel
 {
-	public class InteractionResult : ScriptableObject
+	[Serializable]
+	public struct InteractionResult
 	{
 		public List<DialogEntry> Dialogs;
 		public Popup OptionalPopup;

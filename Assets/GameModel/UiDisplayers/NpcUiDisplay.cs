@@ -26,7 +26,7 @@ namespace Assets.GameModel.UiDisplayers
 
 		void Start()
 		{
-			LocationLayout.ApplyLayout(Picture.GetComponent<RectTransform>(), _npc.PersonalLayout);
+			_npc.ApplyPersonalLayout(Picture.GetComponent<RectTransform>());
 		}
 
 		private Npc _npc;
@@ -83,14 +83,15 @@ namespace Assets.GameModel.UiDisplayers
 		
 		private string GetTraitsString()
 		{
-			string traitsText = "";
+			/*string traitsText = "";
 			foreach (var trait in _npc.Traits)
 			{
 				traitsText += trait.Name + ",";
 			}
 			if (traitsText.EndsWith(","))
 				traitsText = traitsText.Substring(0, traitsText.Length - 1);
-			return $"Traits: {traitsText}";
+			return $"Traits: {traitsText}";*/
+			return "";
 		}
 
 		private Sprite LoadNpcPicture()

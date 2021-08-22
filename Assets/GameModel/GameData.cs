@@ -1,8 +1,10 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Assets.GameModel;
 using UnityEngine;
 
+[Serializable]
 public class GameData : ScriptableObject
 {
 	public string PlayerName = "";
@@ -18,6 +20,7 @@ public class GameData : ScriptableObject
 	public int Hornical = 0;
 
 	public PlayerStatusSymbols StatusSymbols = new PlayerStatusSymbols();
+
 	public List<Location> Locations = new List<Location>();
 
 	public List<string> GetControlledDepartmentIds()

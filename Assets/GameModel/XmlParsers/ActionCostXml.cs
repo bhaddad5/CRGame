@@ -24,7 +24,6 @@ namespace Assets.GameModel.XmlParsers
 		{
 			return new ActionCost()
 			{
-				TurnCost = TurnCost,
 				EgoCost = EgoCost,
 				MoneyCost = MoneyCost,
 				SpreadsheetsCost = SpreadsheetsCost,
@@ -40,7 +39,6 @@ namespace Assets.GameModel.XmlParsers
 		{
 			return new ActionCostXml()
 			{
-				TurnCost = ob.TurnCost,
 				EgoCost = ob.EgoCost,
 				MoneyCost = ob.MoneyCost,
 				SpreadsheetsCost = ob.SpreadsheetsCost,

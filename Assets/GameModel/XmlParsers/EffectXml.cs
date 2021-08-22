@@ -35,7 +35,7 @@ namespace Assets.GameModel.XmlParsers
 
 		public Effect FromXml()
 		{
-			PlayerStatusSymbols statusSymbols = null;
+			PlayerStatusSymbols statusSymbols = new PlayerStatusSymbols();
 			if (UpdateStatusSymbols != null && UpdateStatusSymbols.Length > 0)
 				statusSymbols = UpdateStatusSymbols[0].FromXml();
 
@@ -71,8 +71,8 @@ namespace Assets.GameModel.XmlParsers
 		public static EffectXml ToXml(Effect ob)
 		{
 			PlayerStatusSymbolsXml[] statusSymbolsXml = null;
-			if (ob.UpdateStatusSymbols != null)
-				statusSymbolsXml = new []{PlayerStatusSymbolsXml.ToXml(ob.UpdateStatusSymbols)};
+			//if (ob.UpdateStatusSymbols != null)
+			//	statusSymbolsXml = new []{PlayerStatusSymbolsXml.ToXml(ob.UpdateStatusSymbols)};
 			return new EffectXml()
 			{
 				ContextualNpcId = ob.ContextualNpcId,

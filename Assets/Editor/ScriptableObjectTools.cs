@@ -27,12 +27,22 @@ public class ScriptableObjectTools
 				var npcPath = $"{locPath}/{npc.Id}";
 				Directory.CreateDirectory(npcPath);
 
-				foreach (var interaction in npc.Interactions)
+				var trophiesPath = $"{npcPath}/Trophies";
+				Directory.CreateDirectory(trophiesPath);
+
+				foreach (var trophy in npc.Trophies)
 				{
-					AssetDatabase.CreateAsset(interaction, $"{npcPath}/{interaction.Id}.asset");
+					AssetDatabase.CreateAsset(trophy, $"{trophiesPath}/{trophy.Id}.asset");
 				}
 
-				AssetDatabase.CreateAsset(npc, $"{npcPath}/_{npc.Id}.asset");
+				var interactionsPath = $"{npcPath}/Interactions";
+				Directory.CreateDirectory(interactionsPath);
+				foreach (var interaction in npc.Interactions)
+				{
+					AssetDatabase.CreateAsset(interaction, $"{interactionsPath}/{interaction.Id}.asset");
+				}
+
+				AssetDatabase.CreateAsset(npc, $"{npcPath}/{npc.Id}.asset");
 			}
 
 			foreach (var mission in location.Missions)
@@ -49,5 +59,23 @@ public class ScriptableObjectTools
 		}
 
 		AssetDatabase.CreateAsset(Data, "Assets/Data/GameData.asset");
+
+		Debug.Log("Conversion complete!");
+	}
+
+
+	[MenuItem("Tools/Save GameData to Json")]
+	public static void WriteGateDataToJson()
+	{
+		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
+
+		var jsonData = JsonUtility.ToJson(gameData);
+
+		var savePath = Path.Combine(Application.streamingAssetsPath, "GameData.sav");
+		var fs = File.Create(savePath);
+		fs.Close();
+		File.WriteAllText(savePath, jsonData);
+
+		Debug.Log("Save Complete");
 	}
 }

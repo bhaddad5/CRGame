@@ -7,17 +7,17 @@ using UnityEngine;
 
 namespace Assets.GameModel
 {
-	public class ActionCost : ScriptableObject
+	[Serializable]
+	public struct ActionCost
 	{
-		public int TurnCost = 1;
-		public float EgoCost = 0;
-		public float MoneyCost = 0;
-		public float SpreadsheetsCost = 0;
-		public float CultureCost = 0;
-		public float PatentsCost = 0;
-		public float BrandCost = 0;
-		public float RevanueCost = 0;
-		public int HornicalCost = 0;
+		public float EgoCost;
+		public float MoneyCost;
+		public float SpreadsheetsCost;
+		public float CultureCost;
+		public float PatentsCost;
+		public float BrandCost;
+		public float RevanueCost;
+		public int HornicalCost;
 
 		public bool CanAffordCost(MainGameManager mgm)
 		{

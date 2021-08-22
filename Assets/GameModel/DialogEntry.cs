@@ -1,25 +1,27 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace Assets.GameModel
 {
-	public class DialogEntry : ScriptableObject
+	[Serializable]
+	public struct DialogEntry
 	{
 		public enum Speaker
 		{
-			Player,
 			Npc,
+			Player,
 			Narrator,
 			CustomNpcId,
 		}
-		public Speaker CurrSpeaker = Speaker.Npc;
-		public string CustomSpeakerId = "";
-		public string Text = "";
+		public Speaker CurrSpeaker;
+		public string CustomSpeakerId;
+		public string Text;
 
 		//Should these be up a level in InteractionResult?
 		public bool InPlayerOffice;
-		public Sprite CustomBackground = null;
-		public string NpcImage = null;
+		public Sprite CustomBackground;
+		public string NpcImage;
 	}
 }
