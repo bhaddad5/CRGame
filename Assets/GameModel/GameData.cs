@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Assets.GameModel;
 using UnityEngine;
 
-public class GameData
+public class GameData : ScriptableObject
 {
 	public string PlayerName = "";
 	public int TurnNumber = 0;

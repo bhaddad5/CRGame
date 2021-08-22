@@ -26,7 +26,7 @@ namespace Assets.GameModel.UiDisplayers
 
 		void Start()
 		{
-			Picture.GetComponent<RectTransform>().ApplyLayout(_npc.PersonalLayout);
+			LocationLayout.ApplyLayout(Picture.GetComponent<RectTransform>(), _npc.PersonalLayout);
 		}
 
 		private Npc _npc;

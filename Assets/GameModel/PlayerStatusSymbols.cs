@@ -3,15 +3,13 @@ using System.Collections.Generic;
 using Assets.GameModel;
 using UnityEngine;
 
-public class PlayerStatusSymbols
+public class PlayerStatusSymbols : ScriptableObject
 {
 	public string CarName;
 	public Sprite CarImage;
-	public LocationLayout CarLayout;
 
 	public string SuitsName;
 	public Sprite SuitsImage;
-	public LocationLayout SuitsLocation;
 
 	public Sprite JewleryCuffs;
 	public Sprite JewleryPen;

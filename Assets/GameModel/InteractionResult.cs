@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Assets.GameModel
 {
-	public class InteractionResult
+	public class InteractionResult : ScriptableObject
 	{
 		public List<DialogEntry> Dialogs;
 		public Popup OptionalPopup;

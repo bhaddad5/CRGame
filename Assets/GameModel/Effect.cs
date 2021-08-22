@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Assets.GameModel
 {
-	public class Effect
+	public class Effect : ScriptableObject
 	{
 		public string ContextualNpcId = "";
 		public float AmbitionEffect = 0;
@@ -82,15 +82,11 @@ namespace Assets.GameModel
 
 			if (UpdateStatusSymbols != null)
 			{
-				if(UpdateStatusSymbols.CarLayout != null)
-					mgm.Data.StatusSymbols.CarLayout = UpdateStatusSymbols.CarLayout;
 				if (!String.IsNullOrEmpty(UpdateStatusSymbols.CarName))
 					mgm.Data.StatusSymbols.CarName = UpdateStatusSymbols.CarName;
 				if (UpdateStatusSymbols.CarImage != null)
 					mgm.Data.StatusSymbols.CarImage = UpdateStatusSymbols.CarImage;
-
-				if (UpdateStatusSymbols.SuitsLocation != null)
-					mgm.Data.StatusSymbols.SuitsLocation = UpdateStatusSymbols.SuitsLocation;
+				
 				if (!String.IsNullOrEmpty(UpdateStatusSymbols.SuitsName))
 					mgm.Data.StatusSymbols.SuitsName = UpdateStatusSymbols.SuitsName;
 				if (UpdateStatusSymbols.SuitsImage != null)

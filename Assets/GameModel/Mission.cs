@@ -7,9 +7,10 @@ using UnityEngine;
 
 namespace Assets.GameModel
 {
-	public class Mission
+	public class Mission : ScriptableObject
 	{
 		public string MissionName;
+		[TextArea(15, 20)]
 		public string MissionDescription;
 		public Sprite MissionImage;
 

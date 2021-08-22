@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Assets.GameModel
 {
-	public class Trophy
+	public class Trophy : ScriptableObject
 	{
 		public string Id;
 		public string Name;

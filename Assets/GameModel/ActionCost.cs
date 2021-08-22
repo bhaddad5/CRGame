@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEngine;
 
 namespace Assets.GameModel
 {
-	public class ActionCost
+	public class ActionCost : ScriptableObject
 	{
 		public int TurnCost = 1;
 		public float EgoCost = 0;

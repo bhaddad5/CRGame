@@ -7,13 +7,15 @@ using UnityEngine;
 
 namespace Assets.GameModel
 {
-	public class Policy
+	public class Policy : ScriptableObject
 	{
 		public string Id;
 		public string Name;
 
 		public bool Active;
 		public Sprite Image;
+
+		[TextArea(15, 20)]
 		public string Description;
 
 		public ActionRequirements Requirements;

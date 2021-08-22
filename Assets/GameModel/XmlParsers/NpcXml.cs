@@ -18,7 +18,6 @@ namespace Assets.GameModel.XmlParsers
 				X = XPercentage,
 				Y = YPercentage,
 				Width = Width,
-				Ratio = Ratio,
 			};
 		}
 
@@ -29,7 +28,6 @@ namespace Assets.GameModel.XmlParsers
 				Width = ob.Width,
 				XPercentage = ob.X,
 				YPercentage = ob.Y,
-				Ratio = ob.Ratio,
 			};
 		}
 	}

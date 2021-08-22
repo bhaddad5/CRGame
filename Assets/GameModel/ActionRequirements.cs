@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEngine;
 
 namespace Assets.GameModel
 {
-	public class ActionRequirements
+	public class ActionRequirements : ScriptableObject
 	{
 		public List<string> RequiredInteractions = new List<string>();
 		public List<string> RequiredPolicies = new List<string>();

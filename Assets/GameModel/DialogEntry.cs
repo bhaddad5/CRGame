@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Assets.GameModel
 {
-	public class DialogEntry
+	public class DialogEntry : ScriptableObject
 	{
 		public enum Speaker
 		{

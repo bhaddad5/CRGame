@@ -5,7 +5,7 @@ using UnityEngine.Video;
 
 namespace Assets.GameModel
 {
-	public class Popup
+	public class Popup : ScriptableObject
 	{
 		public string Title;
 		public List<VideoClip> Videos;

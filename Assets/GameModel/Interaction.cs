@@ -5,7 +5,8 @@ using UnityEngine;
 
 namespace Assets.GameModel
 {
-	public class Interaction
+	[CreateAssetMenu(fileName = "New Interaction", menuName = "Company Man Data/Interaction", order = 1)]
+	public class Interaction : ScriptableObject
 	{
 		public string Id;
 		public string Name;

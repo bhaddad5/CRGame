@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Assets.GameModel
 {
-	public class Location
+	public class Location : ScriptableObject
 	{
 		public string Id;
 		public string Name;

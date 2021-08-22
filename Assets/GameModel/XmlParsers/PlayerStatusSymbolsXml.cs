@@ -17,24 +17,13 @@ namespace Assets.GameModel.XmlParsers
 		[XmlAttribute] [DefaultValue("")] public string JewleryPen = "";
 		[XmlAttribute] [DefaultValue("")] public string JewleryRing = "";
 		[XmlAttribute] [DefaultValue("")] public string JewleryWatch = "";
-
-
-		[XmlElement("CarLayout", typeof(LocationLayoutXml))]
-		public LocationLayoutXml[] CarLayout = new LocationLayoutXml[0];
-
+		
 		public PlayerStatusSymbols FromXml()
 		{
-			LocationLayout carLayout = null;
-			if ((CarLayout?.Length ?? 0) > 0)
-			{
-				carLayout = CarLayout[0].FromXml();
-			}
-			
 			return new PlayerStatusSymbols()
 			{
 				CarImage = ImageLookup.StatusSymbols.GetImage(CarImage),
 				CarName = CarName,
-				CarLayout = carLayout,
 				SuitsImage = ImageLookup.StatusSymbols.GetImage(SuitsImage),
 				SuitsName = SuitsName,
 				JewleryCuffs = ImageLookup.StatusSymbols.GetImage(JewleryCuffs),
@@ -46,14 +35,10 @@ namespace Assets.GameModel.XmlParsers
 
 		public static PlayerStatusSymbolsXml ToXml(PlayerStatusSymbols ob)
 		{
-			LocationLayoutXml[] layoutXml = null;
-			if(ob.CarLayout != null)
-				layoutXml = new []{LocationLayoutXml.ToXml(ob.CarLayout)};
 			return new PlayerStatusSymbolsXml()
 			{
 				CarImage = ob.CarImage?.name,
 				CarName = ob.CarName,
-				CarLayout = layoutXml,
 				SuitsImage = ob.SuitsImage?.name,
 				SuitsName = ob.SuitsName,
 				JewleryCuffs = ob.JewleryCuffs?.name,
