@@ -104,8 +104,7 @@ namespace Assets.GameModel.UiDisplayers
 
 			foreach (var requiredPolicy in req.RequiredPolicies)
 			{
-				Policy p = mgm.Data.GetPolicyFromId(requiredPolicy);
-				tooltips.Add($"{p.Name}");
+				tooltips.Add($"{requiredPolicy.Name}");
 			}
 
 			string finalTooltip = "";

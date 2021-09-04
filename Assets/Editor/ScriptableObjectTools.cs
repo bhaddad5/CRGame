@@ -15,7 +15,17 @@ public class ScriptableObjectTools
 		
 		var Data = xmlResolver.LoadXmlData(Path.Combine(Application.streamingAssetsPath, "GameData.xml"));
 
-		
+		foreach (var location in Data.Locations)
+		{
+			foreach (var npc in location.Npcs)
+			{
+				foreach (var interaction in npc.Interactions)
+				{
+					interaction.ResolveReferences(Data, npc);
+				}
+			}
+		}
+
 		var dataPath = $"Assets/Data";
 		foreach (var location in Data.Locations)
 		{

@@ -23,30 +23,30 @@ public class GameData : ScriptableObject
 
 	public List<Location> Locations = new List<Location>();
 
-	public List<string> GetControlledDepartmentIds()
+	public List<Location> GetControlledLocations()
 	{
-		List<string> controlledDepts = new List<string>();
+		List<Location> controlledDepts = new List<Location>();
 		foreach (var dept in Locations)
 		{
 			if(dept.Controlled())
-				controlledDepts.Add(dept.Id);
+				controlledDepts.Add(dept);
 		}
 		return controlledDepts;
 	}
 
-	public List<string> GetActivePolicyIds()
+	public List<Policy> GetActivePolicies()
 	{
-		List<string> activePolicyIds = new List<string>();
+		List<Policy> activePolicies = new List<Policy>();
 		foreach (var dept in Locations)
 		{
 			foreach (var policy in dept.Policies)
 			{
 				if(policy.Active)
-					activePolicyIds.Add(policy.Id);
+					activePolicies.Add(policy);
 			}
 		}
 
-		return activePolicyIds;
+		return activePolicies;
 	}
 
 	public List<string> GetCompletedInteractionIds(string npcId)
@@ -134,6 +134,22 @@ public class GameData : ScriptableObject
 				return department;
 		}
 		Debug.LogError($"Could not find department containing npc {npc.Id}");
+		return null;
+	}
+
+	public Trophy GetTrophyById(string trophyId)
+	{
+		foreach (var location in Locations)
+		{
+			foreach (var npc in location.Npcs)
+			{
+				foreach (var trophy in npc.Trophies)
+				{
+					if (trophy.Id == trophyId)
+						return trophy;
+				}
+			}
+		}
 		return null;
 	}
 

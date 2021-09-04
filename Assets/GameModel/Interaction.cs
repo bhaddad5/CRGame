@@ -104,5 +104,12 @@ namespace Assets.GameModel
 			
 			return res;
 		}
+
+		//TODO: Delete after conversion!
+		public void ResolveReferences(GameData data, Npc npc)
+		{
+			Requirements.ResolveReferences(data, npc);
+		}
+		//TODO END
 	}
 }

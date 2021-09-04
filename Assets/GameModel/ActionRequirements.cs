@@ -7,19 +7,23 @@ using UnityEngine;
 
 namespace Assets.GameModel
 {
-	public class ActionRequirements : ScriptableObject
+	[Serializable]
+	public struct ActionRequirements
 	{
-		public List<string> RequiredInteractions = new List<string>();
-		public List<string> RequiredPolicies = new List<string>();
-		public List<string> RequiredDepartmentsControled = new List<string>();
-		public List<string> RequiredTrophies = new List<string>();
-		public float RequiredPower = 0;
-
+		public float RequiredPower;
 		//If there is a npc
-		public bool RequiredControl = false;
-		public float RequiredAmbition = -1;
-		public float RequiredPride = -1;
+		public bool RequiredControl;
+		public bool RequiresAmbitionAtOrBelowValue;
+		public float RequiredAmbition;
+		public bool RequiresPrideAtOrBelowValue;
+		public float RequiredPride;
 
+		public List<Interaction> RequiredInteractions;
+		public List<Interaction> RequiredNotCompletedInteractions;
+		public List<Policy> RequiredPolicies;
+		public List<Location> RequiredDepartmentsControled;
+		public List<Trophy> RequiredTrophies;
+		
 		public bool RequirementsAreMet(MainGameManager mgm, Npc npc)
 		{
 			if (RequiredControl && !npc.Controlled)
@@ -29,17 +33,70 @@ namespace Assets.GameModel
 
 			foreach (var interactionDept in RequiredDepartmentsControled)
 			{
-				if (!mgm.Data.GetControlledDepartmentIds().Contains(interactionDept))
+				if (!mgm.Data.GetControlledLocations().Contains(interactionDept))
 					return false;
 			}
 
 			foreach (var trophy in RequiredTrophies)
 			{
-				if (!mgm.Data.GetOwnedTrophyIds().Contains(trophy))
+				if (!mgm.Data.GetOwnedTrophies().Contains(trophy))
 					return false;
 			}
 
-			foreach (var interactionId in RequiredInteractions)
+			foreach (var interaction in RequiredInteractions)
+			{
+				if (!interaction.Completed)
+					return false;
+			}
+
+			foreach (var interaction in RequiredNotCompletedInteractions)
+			{
+				if (interaction.Completed)
+					return false;
+			}
+
+			foreach (var policy in RequiredPolicies)
+			{
+				if (!mgm.Data.GetActivePolicies().Contains(policy))
+					return false;
+			}
+
+			if (RequiresAmbitionAtOrBelowValue && RequiredAmbition < npc.Ambition)
+			{
+				return false;
+			}
+
+			if (RequiresPrideAtOrBelowValue && RequiredPride < npc.Pride)
+			{
+				return false;
+			}
+
+			if (mgm.Data.Power < RequiredPower)
+			{
+				return false;
+			}
+
+			return true;
+		}
+
+		//TODO: Delete after conversion!
+		[HideInInspector]
+		public List<string> RequiredInt;
+		[HideInInspector]
+		public List<string> RequiredPols;
+		[HideInInspector]
+		public List<string> RequiredDepts;
+		[HideInInspector]
+		public List<string> RequiredTrps;
+		public void ResolveReferences(GameData data, Npc npc)
+		{
+			RequiredInteractions = new List<Interaction>();
+			RequiredNotCompletedInteractions = new List<Interaction>();
+			RequiredPolicies = new List<Policy>();
+			RequiredDepartmentsControled = new List<Location>();
+			RequiredTrophies = new List<Trophy>();
+
+			foreach (var interactionId in RequiredInt)
 			{
 				var id = interactionId;
 				bool inverse = false;
@@ -58,34 +115,37 @@ namespace Assets.GameModel
 					npcId = split[0].Trim();
 				}
 
-				if (!inverse && !mgm.Data.GetCompletedInteractionIds(npcId).Contains(id))
-					return false;
-				else if (inverse && mgm.Data.GetCompletedInteractionIds(npcId).Contains(id))
-					return false;
+				var interaction = data.GetInteractionById(npcId, interactionId);
+				if (interaction != null)
+				{
+					if (inverse)
+						RequiredNotCompletedInteractions.Add(interaction);
+					else
+						RequiredInteractions.Add(interaction);
+				}
 			}
 
-			foreach (var policyId in RequiredPolicies)
+			foreach (var policy in RequiredPols)
 			{
-				if (!mgm.Data.GetActivePolicyIds().Contains(policyId))
-					return false;
+				var pol = data.GetPolicyFromId(policy);
+				if(pol != null)
+					RequiredPolicies.Add(pol);
 			}
 
-			if (RequiredAmbition >= 0 && RequiredAmbition < npc.Ambition)
+			foreach (var dept in RequiredDepts)
 			{
-				return false;
+				var department = data.GetLocationById(dept);
+				if(department != null)
+					RequiredDepartmentsControled.Add(department);
 			}
 
-			if (RequiredPride >= 0 && RequiredPride < npc.Pride)
+			foreach (var trophy in RequiredTrps)
 			{
-				return false;
+				var t = data.GetTrophyById(trophy);
+				if(t != null)
+					RequiredTrophies.Add(t);
 			}
-
-			if (mgm.Data.Power < RequiredPower)
-			{
-				return false;
-			}
-
-			return true;
 		}
+		//TODO END
 	}
 }
