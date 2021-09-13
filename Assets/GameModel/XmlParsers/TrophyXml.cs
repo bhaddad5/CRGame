@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
+using GameModel.Serializers;
 
 namespace Assets.GameModel.XmlParsers
 {
@@ -15,25 +16,14 @@ namespace Assets.GameModel.XmlParsers
 		[XmlAttribute] [DefaultValue("")] public string Image = "";
 		[XmlAttribute] [DefaultValue(false)] public bool Owned = false;
 
-		public Trophy FromXml()
+		public SerializedTrophy FromXml()
 		{
-			return new Trophy()
+			return new SerializedTrophy()
 			{
 				Id = Id,
 				Name = Name,
-				Image = ImageLookup.Trophies.GetImage(Image),
+				Image = Image,
 				Owned = Owned,
-			};
-		}
-
-		public static TrophyXml ToXml(Trophy ob)
-		{
-			return new TrophyXml()
-			{
-				Id = ob.Id,
-				Name = ob.Name,
-				Image = ob.Image.name,
-				Owned = ob.Owned,
 			};
 		}
 	}

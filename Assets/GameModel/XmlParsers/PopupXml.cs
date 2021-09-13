@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Xml.Serialization;
+using GameModel.Serializers;
 using UnityEngine;
 using UnityEngine.Video;
 
@@ -15,9 +16,9 @@ namespace Assets.GameModel.XmlParsers
 		[XmlAttribute] [DefaultValue("")] public string Image = "";
 		[XmlAttribute] [DefaultValue("")] public string Video = "";
 
-		public Popup FromXml()
+		public SerializedPopup FromXml()
 		{
-			List<VideoClip> videos = null;
+			List<string> videos = null;
 			if (!string.IsNullOrEmpty(Video))
 			{
 				var vids = Video.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
@@ -25,41 +26,16 @@ namespace Assets.GameModel.XmlParsers
 				{
 					vids[i] = vids[i].Trim();
 				}
-				videos = VideoLookup.Videos.GetVideos(vids);
+				videos = vids.ToList();
 			}
 
-			Texture2D tex = null;
-			if (!string.IsNullOrEmpty(Image))
-				tex = ImageLookup.Popups.GetImage(Image).texture;
-
-			return new Popup()
+			return new SerializedPopup()
 			{
 				Title = Title,
 				Text = Text,
-				Texture = tex,
+				Texture = Image,
 				Videos = videos,
 			};
-		}
-
-		public static PopupXml ToXml(Popup ob)
-		{
-			string vidsString = "";
-			foreach (var videoClip in ob.Videos)
-			{
-				vidsString += $"{videoClip.name},";
-			}
-			if (vidsString.EndsWith(","))
-				vidsString = vidsString.Substring(0, vidsString.Length - 1);
-
-			var res = new PopupXml()
-			{
-				Title = ob.Title,
-				Text = ob.Text,
-				Video = vidsString,
-				Image = ob.Texture?.name ?? "",
-			};
-			
-			return res;
 		}
 	}
 }

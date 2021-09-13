@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel;
 using System.Xml.Serialization;
+using GameModel.Serializers;
 using UnityEngine;
 
 namespace Assets.GameModel.XmlParsers
@@ -33,16 +34,13 @@ namespace Assets.GameModel.XmlParsers
 		[XmlElement("UpdateStatusSymbols", typeof(PlayerStatusSymbolsXml))]
 		public PlayerStatusSymbolsXml[] UpdateStatusSymbols = new PlayerStatusSymbolsXml[0];
 
-		public Effect FromXml()
+		public SerializedEffect FromXml()
 		{
-			PlayerStatusSymbols statusSymbols = new PlayerStatusSymbols();
+			SerializedPlayerStatysSymbols statusSymbols = new SerializedPlayerStatysSymbols();
 			if (UpdateStatusSymbols != null && UpdateStatusSymbols.Length > 0)
 				statusSymbols = UpdateStatusSymbols[0].FromXml();
 
-			
-
-
-			return new Effect()
+			return new SerializedEffect()
 			{
 				ContextualNpcId = ContextualNpcId,
 				AmbitionEffect = AmbitionEffect,
@@ -58,45 +56,13 @@ namespace Assets.GameModel.XmlParsers
 				RevanueEffect = RevanueEffect,
 				HornicalEffect = HornicalEffect,
 				PrideEffect = PrideEffect,
-				TraitsAdded = TraitsAdded.XmlStringToList(),
-				TraitsRemoved = TraitsRemoved.XmlStringToList(),
 				TrophiesClaimed = TrophiesClaimed.XmlStringToList(),
 				ContextualLocationId = ContextualLocationId,
-				UpdateLocationBackground = ImageLookup.Backgrounds.GetImage(UpdateLocationBackground),
+				UpdateLocationBackground = UpdateLocationBackground,
+				ShouldUpdateLocationMapPos = !UpdateLocationMapPosX.Equals(-1f) && !UpdateLocationMapPosY.Equals(-1f),
+				ShouldUpdateStatusSymbols = UpdateStatusSymbols != null && UpdateStatusSymbols.Length > 0,
 				UpdateStatusSymbols = statusSymbols,
 				UpdateLocationMapPosition = new Vector2(UpdateLocationMapPosX, UpdateLocationMapPosY),
-			};
-		}
-
-		public static EffectXml ToXml(Effect ob)
-		{
-			PlayerStatusSymbolsXml[] statusSymbolsXml = null;
-			//if (ob.UpdateStatusSymbols != null)
-			//	statusSymbolsXml = new []{PlayerStatusSymbolsXml.ToXml(ob.UpdateStatusSymbols)};
-			return new EffectXml()
-			{
-				ContextualNpcId = ob.ContextualNpcId,
-				AmbitionEffect = ob.AmbitionEffect,
-				ControlEffect = ob.ControlEffect,
-				RemoveNpcFromGame = ob.RemoveNpcFromGame,
-				EgoEffect = ob.EgoEffect,
-				FundsEffect = ob.FundsEffect,
-				PowerEffect = ob.PowerEffect,
-				PatentsEffect = ob.PatentsEffect,
-				CultureEffect = ob.CultureEffect,
-				SpreadsheetsEffect = ob.SpreadsheetsEffect,
-				BrandEffect = ob.BrandEffect,
-				RevanueEffect = ob.RevanueEffect,
-				HornicalEffect = ob.HornicalEffect,
-				PrideEffect = ob.PrideEffect,
-				TraitsAdded = ob.TraitsAdded.ListToXmlString(),
-				TraitsRemoved = ob.TraitsRemoved.ListToXmlString(),
-				TrophiesClaimed = ob.TrophiesClaimed.ListToXmlString(),
-				ContextualLocationId = ob.ContextualLocationId,
-				UpdateLocationBackground = ob.UpdateLocationBackground?.name,
-				UpdateStatusSymbols = statusSymbolsXml,
-				UpdateLocationMapPosX = ob.UpdateLocationMapPosition.x,
-				UpdateLocationMapPosY = ob.UpdateLocationMapPosition.y,
 			};
 		}
 	}

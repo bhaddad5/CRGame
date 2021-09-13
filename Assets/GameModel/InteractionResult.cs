@@ -10,7 +10,7 @@ namespace Assets.GameModel
 	public struct InteractionResult
 	{
 		public List<DialogEntry> Dialogs;
-		public Popup OptionalPopup;
+		public List<Popup> OptionalPopups;
 		public List<Effect> Effects;
 		public int Probability;
 

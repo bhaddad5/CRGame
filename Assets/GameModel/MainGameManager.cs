@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using Assets.GameModel.UiDisplayers;
 using Assets.GameModel.XmlParsers;
+using GameModel.Serializers;
 using UnityEngine;
 
 namespace Assets.GameModel
@@ -45,7 +46,8 @@ namespace Assets.GameModel
 			hudUiDisplay = Instantiate(HudUiDisplayPrefab);
 			mainMapUiDisplay = Instantiate(MainMapUiDisplayPrefab);
 
-			//Data = xmlResolver.LoadXmlData(xmlDataPath);
+			var deserializer = new DataDeserializer();
+			Data = deserializer.DeserializedData(xmlResolver.LoadXmlData(xmlDataPath));
 
 			hudUiDisplay.Setup(this, mainMapUiDisplay);
 			mainMapUiDisplay.Setup(this, Data.Locations);
@@ -155,9 +157,12 @@ namespace Assets.GameModel
 			else return "CEOOffice";
 		}
 
-		public string GetXmlSaveData()
+		public string SerializeToString()
 		{
-			return xmlResolver.SerializeXmlData(Data);
+			var serializedData = SerializedGameData.Serialize(Data);
+			var jsonData = JsonUtility.ToJson(serializedData);
+
+			return jsonData;
 		}
 
 		public void ShowPopup(Popup popup, Action onPopupDone)

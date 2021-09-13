@@ -77,14 +77,14 @@ namespace Assets.GameModel
 			throw new Exception($"Random probabiltiy result not found for {Name}, result = {randValue}");
 		}
 
-		public List<Mission> GetRelevantMissions(MainGameManager mgm, Npc npc)
+		public List<Mission> GetRelevantMissions(MainGameManager mgm)
 		{
-			return mgm.Data.GetMissionsForInteraction(npc.Id, Id);
+			return mgm.Data.GetMissionsForInteraction(Id);
 		}
 
 		public void ExecuteMissionIfRelevant(MainGameManager mgm, Npc npc)
 		{
-			var missions = GetRelevantMissions(mgm, npc);
+			var missions = GetRelevantMissions(mgm);
 			foreach (var mission in missions)
 			{
 				foreach (var effect in mission.Rewards)
@@ -104,12 +104,5 @@ namespace Assets.GameModel
 			
 			return res;
 		}
-
-		//TODO: Delete after conversion!
-		public void ResolveReferences(GameData data, Npc npc)
-		{
-			Requirements.ResolveReferences(data, npc);
-		}
-		//TODO END
 	}
 }

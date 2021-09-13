@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using Assets.GameModel;
 using Assets.GameModel.XmlParsers;
+using GameModel.Serializers;
 using UnityEditor;
 using UnityEngine;
 
@@ -13,19 +14,11 @@ public class ScriptableObjectTools
 	{
 		XmlResolver xmlResolver = new XmlResolver();
 		
-		var Data = xmlResolver.LoadXmlData(Path.Combine(Application.streamingAssetsPath, "GameData.xml"));
+		var serializedData = xmlResolver.LoadXmlData(Path.Combine(Application.streamingAssetsPath, "GameData.xml"));
 
-		foreach (var location in Data.Locations)
-		{
-			foreach (var npc in location.Npcs)
-			{
-				foreach (var interaction in npc.Interactions)
-				{
-					interaction.ResolveReferences(Data, npc);
-				}
-			}
-		}
-
+		var deserializer = new DataDeserializer();
+		var Data = deserializer.DeserializedData(serializedData);
+		
 		var dataPath = $"Assets/Data";
 		foreach (var location in Data.Locations)
 		{
@@ -79,8 +72,10 @@ public class ScriptableObjectTools
 	{
 		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
 
-		var jsonData = JsonUtility.ToJson(gameData);
+		SerializedGameData serializedData = SerializedGameData.Serialize(gameData);
 
+		var jsonData = JsonUtility.ToJson(serializedData);
+		
 		var savePath = Path.Combine(Application.streamingAssetsPath, "GameData.sav");
 		var fs = File.Create(savePath);
 		fs.Close();

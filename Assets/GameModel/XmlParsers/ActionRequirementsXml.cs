@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
+using GameModel.Serializers;
 
 namespace Assets.GameModel.XmlParsers
 {
@@ -21,35 +22,46 @@ namespace Assets.GameModel.XmlParsers
 		[XmlAttribute] [DefaultValue(false)] public bool RequiredControl = false;
 
 
-		public ActionRequirements FromXml()
+		public SerializedActionRequirements FromXml()
 		{
-			return new ActionRequirements()
+			var requs = RequiredInteractions.XmlStringToList();
+
+			List<string> requirements = new List<string>();
+			List<string> notRequirements = new List<string>();
+
+			foreach (var requ in requs)
 			{
-				RequiredInt = RequiredInteractions.XmlStringToList(),
-				RequiredDepts = RequiredDepartmentsControlled.XmlStringToList(),
-				RequiredPols = RequiredPolicies.XmlStringToList(),
-				RequiredTrps = RequiredTrophies.XmlStringToList(),
+				if (requ.StartsWith("!"))
+				{
+					var resId = requ.Substring(1);
+					if (resId.Contains('-'))
+						resId = resId.Split('-')[1];
+
+					notRequirements.Add(resId);
+				}
+				else
+				{
+					var resId = requ;
+					if (requ.Contains('-'))
+						resId = requ.Split('-')[1];
+
+					requirements.Add(resId);
+				}
+			}
+
+			return new SerializedActionRequirements()
+			{
+				RequiredInteractionsReferences = requirements,
+				RequiredNotCompletedInteractionsReferences = notRequirements,
+				RequiredDepartmentsControledReferences = RequiredDepartmentsControlled.XmlStringToList(),
+				RequiredPoliciesReferences = RequiredPolicies.XmlStringToList(),
+				RequiredTrophiesReferences = RequiredTrophies.XmlStringToList(),
 				RequiresAmbitionAtOrBelowValue = RequiredAmbition >= 0,
 				RequiredAmbition = RequiredAmbition,
 				RequiresPrideAtOrBelowValue = RequiredPride >= 0,
 				RequiredPride = RequiredPride,
 				RequiredControl = RequiredControl,
 				RequiredPower = RequiredPower,
-			};
-		}
-
-		public static ActionRequirementsXml ToXml(ActionRequirements ob)
-		{
-			return new ActionRequirementsXml()
-			{
-				RequiredInteractions = ob.RequiredInt.ListToXmlString(),
-				RequiredDepartmentsControlled = ob.RequiredDepts.ListToXmlString(),
-				RequiredPolicies = ob.RequiredPols.ListToXmlString(),
-				RequiredTrophies = ob.RequiredTrps.ListToXmlString(),
-				RequiredAmbition = ob.RequiredAmbition,
-				RequiredPride = ob.RequiredPride,
-				RequiredControl = ob.RequiredControl,
-				RequiredPower = ob.RequiredPower,
 			};
 		}
 	}

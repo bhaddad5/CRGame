@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Xml.Serialization;
+using GameModel.Serializers;
 using UnityEngine;
 
 namespace Assets.GameModel.XmlParsers
@@ -31,27 +32,27 @@ namespace Assets.GameModel.XmlParsers
 		[XmlElement("Mission", typeof(MissionXml))]
 		public MissionXml[] Missions = new MissionXml[0];
 
-		public Location FromXml()
+		public SerializedLocation FromXml()
 		{
-			List<Npc> npcs = new List<Npc>();
+			List<SerializedNpc> npcs = new List<SerializedNpc>();
 			foreach (var npcXml in Npcs ?? new NpcXml[0])
 			{
 				npcs.Add(npcXml.FromXml());
 			}
 
-			List<Policy> policies = new List<Policy>();
+			List<SerializedPolicy> policies = new List<SerializedPolicy>();
 			foreach (var policyXml in Policies ?? new PolicyXml[0])
 			{
 				policies.Add(policyXml.FromXml());
 			}
 
-			List<Mission> missions = new List<Mission>();
+			List<SerializedMission> missions = new List<SerializedMission>();
 			foreach (var missionXml in Missions ?? new MissionXml[0])
 			{
 				missions.Add(missionXml.FromXml());
 			}
 
-			return new Location()
+			return new SerializedLocation()
 			{
 				Id = Id,
 				Name = Name,
@@ -61,48 +62,10 @@ namespace Assets.GameModel.XmlParsers
 				Policies = policies,
 				Missions = missions,
 				UiPosition = new Vector2(UiPosX, UiPosY),
-				BackgroundImage = ImageLookup.Backgrounds.GetImage(BackgroundImage),
-				Icon = ImageLookup.Icons.GetImage(LocationIcon),
+				BackgroundImage = BackgroundImage,
+				Icon = LocationIcon,
 				ShowCar = ShowCar,
 				ShowTrophyCase = ShowTrophyCase,
-			};
-		}
-
-		public static LocationXml ToXml(Location ob)
-		{
-			List<NpcXml> npcs = new List<NpcXml>();
-			foreach (var npc in ob.Npcs)
-			{
-				npcs.Add(NpcXml.ToXml(npc));
-			}
-
-			List<PolicyXml> policies = new List<PolicyXml>();
-			foreach (var policy in ob.Policies)
-			{
-				policies.Add(PolicyXml.ToXml(policy));
-			}
-
-			List<MissionXml> missions = new List<MissionXml>();
-			foreach (var mission in ob.Missions)
-			{
-				missions.Add(MissionXml.ToXml(mission));
-			}
-
-			return new LocationXml()
-			{
-				Id = ob.Id,
-				Name = ob.Name,
-				ClosedOnWeekends = ob.ClosedOnWeekends,
-				Accessible = ob.Accessible,
-				Npcs = npcs.ToArray(),
-				Policies = policies.ToArray(),
-				Missions = missions.ToArray(),
-				UiPosX = ob.UiPosition.x,
-				UiPosY = ob.UiPosition.y,
-				BackgroundImage = ob.BackgroundImage.name,
-				LocationIcon = ob.Icon.name,
-				ShowCar = ob.ShowCar,
-				ShowTrophyCase = ob.ShowTrophyCase,
 			};
 		}
 	}

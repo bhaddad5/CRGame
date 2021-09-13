@@ -47,11 +47,12 @@ public class DialogDisplayHandler : MonoBehaviour
 		{
 			runningCoroutine = StartCoroutine(ShowDialog());
 		}
-		else if (popupToShow != null)
+		else if (popupsToShow.Count > 0)
 		{
 			gameObject.SetActive(false);
-			mgm.ShowPopup(popupToShow, () => HandleNextDialog());
-			popupToShow = null;
+			var popup = popupsToShow[0];
+			popupsToShow.RemoveAt(0);
+			mgm.ShowPopup(popup, () => HandleNextDialog());
 		}
 		else if (missionsToShow.Count > 0)
 		{
@@ -76,16 +77,16 @@ public class DialogDisplayHandler : MonoBehaviour
 	}
 
 	private List<DialogEntry> currDialogsToShow = new List<DialogEntry>();
-	private Popup popupToShow = null;
+	private List<Popup> popupsToShow = new List<Popup>();
 	private List<Mission> missionsToShow = new List<Mission>();
 	private Coroutine runningCoroutine = null;
 	private Action dialogsComplete = null;
-	public void HandleDisplayDialogs(List<DialogEntry> dialogs, Popup popupToShow, List<Mission> missionsToShow, Action dialogsComplete)
+	public void HandleDisplayDialogs(List<DialogEntry> dialogs, List<Popup> popupsToShow, List<Mission> missionsToShow, Action dialogsComplete)
 	{
 		_npcUiDisplay.InteractionsHandler.gameObject.SetActive(false);
 
 		this.dialogsComplete = dialogsComplete;
-		this.popupToShow = popupToShow;
+		this.popupsToShow = popupsToShow;
 		this.missionsToShow = missionsToShow;
 		currDialogsToShow = new List<DialogEntry>(dialogs);
 		gameObject.SetActive(true);
@@ -107,7 +108,7 @@ public class DialogDisplayHandler : MonoBehaviour
 		else if (dialog.CurrSpeaker == DialogEntry.Speaker.Npc)
 			SpeakerName.text = _npc.FirstName;
 		else if (dialog.CurrSpeaker == DialogEntry.Speaker.CustomNpcId)
-			SpeakerName.text = mgm.Data.GetNpcById(dialog.CustomSpeakerId).FirstName;
+			SpeakerName.text = dialog.CustomSpeakerReference.FirstName;
 		NextDialogImage.enabled = false;
 		textToShow = dialog.Text;
 		DialogText.text = "";

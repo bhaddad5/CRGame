@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
+using GameModel.Serializers;
 
 namespace Assets.GameModel.XmlParsers
 {
@@ -29,15 +30,15 @@ namespace Assets.GameModel.XmlParsers
 		[XmlElement("InteractionResult", typeof(InteractionResultXml))]
 		public InteractionResultXml[] InteractionResults = new InteractionResultXml[0];
 
-		public Interaction FromXml()
+		public SerializedInteraction FromXml()
 		{
-			List<InteractionResult> results = new List<InteractionResult>();
+			List<SerializedInteractionResult> results = new List<SerializedInteractionResult>();
 			foreach (var resultXml in InteractionResults)
 			{
 				results.Add(resultXml.FromXml());
 			}
 
-			return new Interaction()
+			return new SerializedInteraction()
 			{
 				Id = Id,
 				Name = Name,
@@ -47,29 +48,7 @@ namespace Assets.GameModel.XmlParsers
 				Completed = Completed,
 				InteractionResults = results,
 				PreviewEffect = PreviewEffect,
-				Category = (Interaction.InteractionCategory)Enum.Parse(typeof(Interaction.InteractionCategory), Category)
-			};
-		}
-
-		public static InteractionXml ToXml(Interaction ob)
-		{
-			List<InteractionResultXml> results = new List<InteractionResultXml>(); 
-			foreach (var result in ob.InteractionResults)
-			{
-				results.Add(InteractionResultXml.ToXml(result));
-			}
-
-			return new InteractionXml()
-			{
-				Id = ob.Id,
-				Name = ob.Name,
-				Cost = new []{ActionCostXml.ToXml(ob.Cost)},
-				Requirements = new[] { ActionRequirementsXml.ToXml(ob.Requirements) },
-				Repeatable = ob.Repeatable,
-				Completed = ob.Completed,
-				InteractionResults = results.ToArray(),
-				Category = ob.Category.ToString(),
-				PreviewEffect = ob.PreviewEffect,
+				Category = Category
 			};
 		}
 	}

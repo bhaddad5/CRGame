@@ -16,7 +16,7 @@ namespace Assets.GameModel
 			CustomNpcId,
 		}
 		public Speaker CurrSpeaker;
-		public string CustomSpeakerId;
+		public Npc CustomSpeakerReference;
 		public string Text;
 
 		//Should these be up a level in InteractionResult?

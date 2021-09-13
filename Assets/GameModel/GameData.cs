@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using Assets.GameModel;
 using UnityEngine;
 
-[Serializable]
 public class GameData : ScriptableObject
 {
 	public string PlayerName = "";
@@ -69,23 +68,7 @@ public class GameData : ScriptableObject
 		return completedInteractionIds;
 	}
 
-	public Interaction GetInteractionById(string npcId, string interactionId)
-	{
-		var npc = GetNpcById(npcId);
-
-		if (npc == null)
-			return null;
-
-		foreach (var npcInteraction in npc.Interactions)
-		{
-			if (npcInteraction.Id == interactionId)
-				return npcInteraction;
-		}
-
-		return null;
-	}
-
-	public List<Mission> GetMissionsForInteraction(string npcId, string interactionId)
+	public List<Mission> GetMissionsForInteraction(string interactionId)
 	{
 		List<Mission> res = new List<Mission>();
 
@@ -93,39 +76,14 @@ public class GameData : ScriptableObject
 		{
 			foreach (var mission in department.Missions)
 			{
-				if(mission.npcId == npcId && mission.InteractionId == interactionId)
+				if(mission.CompletionInteractionReference.Id == interactionId)
 					res.Add(mission);
 			}
 		}
 
 		return res;
 	}
-
-	public Npc GetNpcById(string NpcId)
-	{
-		foreach (var location in Locations)
-		{
-			foreach (var npc in location.Npcs)
-			{
-				if (npc.Id == NpcId)
-				{
-					return npc;
-				}
-			}
-		}
-		return null;
-	}
-
-	public Location GetLocationById(string locationId)
-	{
-		foreach (var location in Locations)
-		{
-			if (location.Id == locationId)
-				return location;
-		}
-		return null;
-	}
-
+	
 	public Location FindNpcLocation(Npc npc)
 	{
 		foreach (var department in Locations)
@@ -136,23 +94,7 @@ public class GameData : ScriptableObject
 		Debug.LogError($"Could not find department containing npc {npc.Id}");
 		return null;
 	}
-
-	public Trophy GetTrophyById(string trophyId)
-	{
-		foreach (var location in Locations)
-		{
-			foreach (var npc in location.Npcs)
-			{
-				foreach (var trophy in npc.Trophies)
-				{
-					if (trophy.Id == trophyId)
-						return trophy;
-				}
-			}
-		}
-		return null;
-	}
-
+	
 	public Location DeadNpcPool
 	{
 		get
@@ -196,30 +138,5 @@ public class GameData : ScriptableObject
 			}
 		}
 		return res;
-	}
-
-	public List<string> GetOwnedTrophyIds()
-	{
-		List<string> res = new List<string>();
-		foreach (var trophy in GetOwnedTrophies())
-		{
-			res.Add(trophy.Id);
-		}
-		return res;
-	}
-
-	public Policy GetPolicyFromId(string id)
-	{
-		foreach (var department in Locations)
-		{
-			foreach (var policy in department.Policies)
-			{
-				if (policy.Id == id)
-					return policy;
-			}
-		}
-
-		Debug.LogError($"Failed to find policy for id {id}");
-		return null;
 	}
 }

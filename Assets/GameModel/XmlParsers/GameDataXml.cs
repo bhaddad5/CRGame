@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Xml.Serialization;
+using GameModel.Serializers;
 
 namespace Assets.GameModel.XmlParsers
 {
@@ -26,17 +27,17 @@ namespace Assets.GameModel.XmlParsers
 		[XmlElement("Location", typeof(LocationXml))]
 		public LocationXml[] Locations = new LocationXml[0];
 
-		public GameData FromXml()
+		public SerializedGameData FromXml()
 		{
-			List<Location> locations = new List<Location>();
+			List<SerializedLocation> locations = new List<SerializedLocation>();
 			foreach (var locationXml in Locations)
 			{
 				locations.Add(locationXml.FromXml());
 			}
 
-			PlayerStatusSymbols statusSymbols = StatusSymbols[0].FromXml();
+			SerializedPlayerStatysSymbols statusSymbols = StatusSymbols[0].FromXml();
 
-			return new GameData()
+			return new SerializedGameData()
 			{
 				PlayerName = PlayerName,
 				TurnNumber = TurnNumber,
@@ -51,32 +52,6 @@ namespace Assets.GameModel.XmlParsers
 				Hornical = Hornical,
 				Locations = locations,
 				StatusSymbols = statusSymbols,
-			};
-		}
-
-		public static GameDataXml ToXml(GameData ob)
-		{
-			List<LocationXml> locations = new List<LocationXml>();
-			foreach (var loc in ob.Locations)
-			{
-				locations.Add(LocationXml.ToXml(loc));
-			}
-
-			return new GameDataXml()
-			{
-				PlayerName = ob.PlayerName,
-				TurnNumber = ob.TurnNumber,
-				Ego = ob.Ego,
-				Funds = ob.Funds,
-				Power = ob.Power,
-				Patents = ob.Patents,
-				CorporateCulture = ob.CorporateCulture,
-				Spreadsheets = ob.Spreadsheets,
-				Brand = ob.Brand,
-				Revenue = ob.Revenue,
-				Hornical = ob.Hornical,
-				Locations = locations.ToArray(),
-				StatusSymbols = new []{PlayerStatusSymbolsXml.ToXml(ob.StatusSymbols)}
 			};
 		}
 	}

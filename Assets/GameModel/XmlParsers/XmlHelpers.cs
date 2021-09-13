@@ -17,15 +17,5 @@ namespace Assets.GameModel.XmlParsers
 
 			return res;
 		}
-
-		public static string ListToXmlString(this List<string> strs)
-		{
-			string res = "";
-			foreach (var str in strs)
-			{
-				res += str + ",";
-			}
-			return res;
-		}
 	}
 }

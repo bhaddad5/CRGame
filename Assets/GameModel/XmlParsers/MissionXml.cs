@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Xml.Serialization;
 using Assets.GameModel;
 using Assets.GameModel.XmlParsers;
+using GameModel.Serializers;
 using UnityEngine;
 
 public class MissionXml
@@ -18,41 +19,21 @@ public class MissionXml
 	[XmlElement("Effect", typeof(EffectXml))]
 	public EffectXml[] Effects = new EffectXml[0];
 
-	public Mission FromXml()
+	public SerializedMission FromXml()
 	{
-		List<Effect> effects = new List<Effect>();
+		List<SerializedEffect> effects = new List<SerializedEffect>();
 		foreach (var effectXml in Effects)
 		{
 			effects.Add(effectXml.FromXml());
 		}
 
-		return new Mission()
+		return new SerializedMission()
 		{
 			MissionName = MissionName,
 			MissionDescription = MissionDescription,
-			MissionImage = ImageLookup.Missions.GetImage(MissionImage),
-			npcId = NpcId,
-			InteractionId = InteractionId,
+			MissionImage = MissionImage,
+			CompletionInteractionId = InteractionId,
 			Rewards = effects,
-		};
-	}
-
-	public static MissionXml ToXml(Mission ob)
-	{
-		List<EffectXml> effects = new List<EffectXml>();
-		foreach (var effect in ob.Rewards)
-		{
-			effects.Add(EffectXml.ToXml(effect));
-		}
-
-		return new MissionXml()
-		{
-			MissionImage = ob.MissionImage.name,
-			MissionDescription = ob.MissionDescription,
-			MissionName = ob.MissionName,
-			NpcId = ob.npcId,
-			InteractionId = ob.InteractionId,
-			Effects = effects.ToArray(),
 		};
 	}
 }

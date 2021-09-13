@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Xml.Serialization;
+using GameModel.Serializers;
 using UnityEngine;
 
 namespace Assets.GameModel.XmlParsers
@@ -22,43 +23,23 @@ namespace Assets.GameModel.XmlParsers
 		[XmlElement("Effect", typeof(EffectXml))]
 		public EffectXml[] Effects = new EffectXml[0];
 
-		public Policy FromXml()
+		public SerializedPolicy FromXml()
 		{
-			List<Effect> effects = new List<Effect>();
+			List<SerializedEffect> effects = new List<SerializedEffect>();
 			foreach (var effectXml in Effects)
 			{
 				effects.Add(effectXml.FromXml());
 			}
 
-			return new Policy()
+			return new SerializedPolicy()
 			{
 				Id = Id,
 				Name = Name,
 				Active = Active,
 				Description = Description,
-                Image = ImageLookup.Policies.GetImage(Image),
+                Image = Image,
                 Requirements = Requirements[0].FromXml(),
 				Effects = effects,
-			};
-		}
-
-		public static PolicyXml ToXml(Policy ob)
-		{
-			List<EffectXml> effects = new List<EffectXml>();
-			foreach (var effect in ob.Effects)
-			{
-				effects.Add(EffectXml.ToXml(effect));
-			}
-
-			return new PolicyXml()
-			{
-				Id = ob.Id,
-				Name = ob.Name,
-				Active = ob.Active,
-				Description = ob.Description,
-				Image = ob.Image.name,
-				Requirements = new[] { ActionRequirementsXml.ToXml(ob.Requirements) },
-				Effects = effects.ToArray(),
 			};
 		}
 	}

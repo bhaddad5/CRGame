@@ -14,15 +14,12 @@ namespace Assets.GameModel
 		public string MissionDescription;
 		public Sprite MissionImage;
 
-		public string npcId;
-		public string InteractionId;
+		public Interaction CompletionInteractionReference;
 		public List<Effect> Rewards;
 
-		public bool IsComplete(MainGameManager mgm)
+		public bool IsComplete()
 		{
-			var interaction = mgm.Data.GetInteractionById(npcId, InteractionId);
-			Debug.Assert(interaction != null);
-			return interaction?.Completed ?? true;
+			return CompletionInteractionReference?.Completed ?? true;
 		}
 	}
 }

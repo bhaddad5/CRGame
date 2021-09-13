@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
+using GameModel.Serializers;
 
 namespace Assets.GameModel.XmlParsers
 {
@@ -21,53 +22,32 @@ namespace Assets.GameModel.XmlParsers
 		[XmlElement("Effect", typeof(EffectXml))]
 		public EffectXml[] Effects = new EffectXml[0];
 
-		public InteractionResult FromXml()
+		public SerializedInteractionResult FromXml()
 		{
-			List<DialogEntry> dialogs = new List<DialogEntry>();
+			List<SerializedDialogEntry> dialogs = new List<SerializedDialogEntry>();
 			foreach (var dialogEntryXml in DialogEntries ?? new DialogEntryXml[0])
 			{
 				dialogs.Add(dialogEntryXml.FromXml());
 			}
 
-			List<Effect> effects = new List<Effect>();
+			List<SerializedEffect> effects = new List<SerializedEffect>();
 			foreach (var effectXml in Effects)
 			{
 				effects.Add(effectXml.FromXml());
 			}
 
-			return new InteractionResult()
+			List<SerializedPopup> popups = new List<SerializedPopup>();
+			if (Popup != null)
+			{
+				popups.Add(Popup.FromXml());
+			}
+
+			return new SerializedInteractionResult()
 			{
 				Probability = Probability,
 				Dialogs = dialogs,
-				OptionalPopup = Popup?.FromXml(),
+				OptionalPopups = popups,
 				Effects = effects,
-			};
-		}
-
-		public static InteractionResultXml ToXml(InteractionResult ob)
-		{
-			List<DialogEntryXml> dialogs = new List<DialogEntryXml>();
-			foreach (var dialogEntry in ob.Dialogs)
-			{
-				dialogs.Add(DialogEntryXml.ToXml(dialogEntry));
-			}
-
-			List<EffectXml> effects = new List<EffectXml>();
-			foreach (var effect in ob.Effects)
-			{
-				effects.Add(EffectXml.ToXml(effect));
-			}
-
-			PopupXml resPopup = null;
-			if(ob.OptionalPopup != null)
-				resPopup = PopupXml.ToXml(ob.OptionalPopup);
-
-			return new InteractionResultXml()
-			{
-				Probability = ob.Probability,
-				DialogEntries = dialogs.ToArray(),
-				Popup = resPopup,
-				Effects = effects.ToArray(),
 			};
 		}
 	}

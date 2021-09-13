@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
+using GameModel.Serializers;
 
 namespace Assets.GameModel.XmlParsers
 {
@@ -19,30 +20,16 @@ namespace Assets.GameModel.XmlParsers
 		[XmlAttribute] [DefaultValue("")] public string CustomBackground = "";
 		[XmlAttribute] [DefaultValue("")] public string NpcImage = "";
 
-		public DialogEntry FromXml()
+		public SerializedDialogEntry FromXml()
 		{
-			DialogEntry.Speaker.TryParse(Speaker, out DialogEntry.Speaker speaker);
-			return new DialogEntry()
+			return new SerializedDialogEntry()
 			{
-				CurrSpeaker = speaker,
-				CustomSpeakerId = CustomSpeakerId,
+				CurrSpeaker = Speaker,
+				CustomSpeakerReference = CustomSpeakerId,
 				Text = Dialog,
 				NpcImage = NpcImage,
 				InPlayerOffice = InPlayerOffice,
-				CustomBackground = ImageLookup.Backgrounds.GetImage(CustomBackground),
-			};
-		}
-
-		public static DialogEntryXml ToXml(DialogEntry ob)
-		{
-			return new DialogEntryXml()
-			{
-				Speaker = ob.CurrSpeaker.ToString(),
-				CustomSpeakerId = ob.CustomSpeakerId,
-				Dialog = ob.Text,
-				InPlayerOffice = ob.InPlayerOffice,
-				NpcImage = ob.NpcImage,
-				CustomBackground = ob.CustomBackground?.name,
+				CustomBackground = CustomBackground,
 			};
 		}
 	}

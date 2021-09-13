@@ -39,7 +39,7 @@ public class LoadSaveMenuManager : MonoBehaviour
 				return;
 			
 			string path = Path.Combine(savesDir, $"{filenameInput.text}.sav");
-			File.WriteAllText(path, mgm.GetXmlSaveData());
+			File.WriteAllText(path, mgm.SerializeToString());
 
 			gameObject.SetActive(false);
 		});

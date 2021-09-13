@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
+using GameModel.Serializers;
 
 namespace Assets.GameModel.XmlParsers
 {
@@ -20,9 +21,9 @@ namespace Assets.GameModel.XmlParsers
 		[XmlAttribute] [DefaultValue(0)] public float PatentsCost = 0;
 		[XmlAttribute] [DefaultValue(0)] public int HornicalCost = 0;
 
-		public ActionCost FromXml()
+		public SerializedActionCost FromXml()
 		{
-			return new ActionCost()
+			return new SerializedActionCost()
 			{
 				EgoCost = EgoCost,
 				MoneyCost = MoneyCost,
@@ -32,21 +33,6 @@ namespace Assets.GameModel.XmlParsers
 				RevanueCost = RevanueCost,
 				PatentsCost = PatentsCost,
 				HornicalCost = HornicalCost,
-			};
-		}
-
-		public static ActionCostXml ToXml(ActionCost ob)
-		{
-			return new ActionCostXml()
-			{
-				EgoCost = ob.EgoCost,
-				MoneyCost = ob.MoneyCost,
-				SpreadsheetsCost = ob.SpreadsheetsCost,
-				CultureCost = ob.CultureCost,
-				BrandCost = ob.BrandCost,
-				RevanueCost = ob.RevanueCost,
-				PatentsCost = ob.PatentsCost,
-				HornicalCost = ob.HornicalCost,
 			};
 		}
 	}

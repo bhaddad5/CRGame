@@ -23,9 +23,9 @@ namespace Assets.GameModel.UiDisplayers
 			Button.onClick.AddListener(() =>
 			{
 				var res = interaction.GetInteractionResult(mgm, npc);
-				var missions = interaction.GetRelevantMissions(mgm, npc);
+				var missions = interaction.GetRelevantMissions(mgm);
 
-				displayHandler.HandleDisplayDialogs(res.Dialogs, res.OptionalPopup, missions,() =>
+				displayHandler.HandleDisplayDialogs(res.Dialogs, res.OptionalPopups, missions,() =>
 				{
 					res.Execute(mgm, npc);
 					interaction.ExecuteMissionIfRelevant(mgm, npc);

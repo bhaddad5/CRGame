@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace Assets.GameModel
 {
+	[Serializable]
 	public class Npc : ScriptableObject
 	{
 		public string Id;
@@ -33,8 +34,6 @@ namespace Assets.GameModel
 		public Sprite BackgroundImage;
 
 		public List<Interaction> Interactions = new List<Interaction>();
-		//TODO: Re-think how Traits work!
-		//public List<Trait> Traits = new List<Trait>();
 		public List<Trophy> Trophies = new List<Trophy>();
 
 		public bool IsVisible(MainGameManager mgm)

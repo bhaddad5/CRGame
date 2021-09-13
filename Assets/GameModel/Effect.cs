@@ -8,7 +8,7 @@ namespace Assets.GameModel
 	[Serializable]
 	public struct Effect
 	{
-		public string ContextualNpcId;
+		public Npc ContextualNpcReference;
 		public float AmbitionEffect;
 		public float PrideEffect;
 		public float EgoEffect;
@@ -22,20 +22,19 @@ namespace Assets.GameModel
 		public int HornicalEffect;
 		public bool ControlEffect;
 		public bool RemoveNpcFromGame;
-		public List<string> TraitsAdded;
-		public List<string> TraitsRemoved;
-		public List<string> TrophiesClaimed;
+		public List<Trophy> TrophiesClaimedReferences;
 
-		public string ContextualLocationId;
+		public Location ContextualLocationReference;
 		public Sprite UpdateLocationBackground;
+		public bool ShouldUpdateLocationMapPos;
 		public Vector2 UpdateLocationMapPosition;
 
+		public bool ShouldUpdateStatusSymbols;
 		public PlayerStatusSymbols UpdateStatusSymbols;
 
 		public void ExecuteEffect(MainGameManager mgm, Npc npc)
 		{
-			if (ContextualNpcId != "")
-				npc = mgm.Data.GetNpcById(ContextualNpcId);
+			npc = ContextualNpcReference ?? npc;
 
 			if (npc != null)
 			{
@@ -60,25 +59,18 @@ namespace Assets.GameModel
 				mgm.Data.Revenue = Mathf.Max(mgm.Data.Revenue + RevanueEffect, 0);
 				mgm.Data.Hornical = Mathf.Max(mgm.Data.Hornical + HornicalEffect, 0);
 
-				foreach (var trophyId in TrophiesClaimed)
+				foreach (var trophy in TrophiesClaimedReferences)
 				{
-					var trophy = npc.Trophies.FirstOrDefault(t => t.Id == trophyId);
-					if (trophy == null)
-					{
-						Debug.LogError($"Cannot find trophy with id {trophyId} in npc {npc.Id} to claim!");
-						continue;
-					}
 					trophy.Owned = true;
 				}
 			}
 
-			Location contextualLocation = mgm.Data.GetLocationById(ContextualLocationId);
-			if (contextualLocation != null)
+			if (ContextualLocationReference != null)
 			{
 				if (UpdateLocationBackground != null)
-					contextualLocation.BackgroundImage = UpdateLocationBackground;
+					ContextualLocationReference.BackgroundImage = UpdateLocationBackground;
 				if (UpdateLocationMapPosition.x >= 0 && UpdateLocationMapPosition.y >= 0)
-					contextualLocation.UiPosition = UpdateLocationMapPosition;
+					ContextualLocationReference.UiPosition = UpdateLocationMapPosition;
 			}
 
 			if (!String.IsNullOrEmpty(UpdateStatusSymbols.CarName))
