@@ -83,21 +83,19 @@ namespace GameModel.Serializers
 				policies.Add(SerializedPolicy.Deserialize(policy));
 			}
 
-			var res = new Location()
-			{
-				Id = ob.Id,
-				Name = ob.Name,
-				ClosedOnWeekends = ob.ClosedOnWeekends,
-				Accessible = ob.Accessible,
-				Npcs = npcs,
-				Policies = policies,
-				Missions = missions,
-				UiPosition = ob.UiPosition,
-				BackgroundImage = ImageLookup.Backgrounds.GetImage(ob.BackgroundImage),
-				Icon = ImageLookup.Icons.GetImage(ob.Icon),
-				ShowCar = ob.ShowCar,
-				ShowTrophyCase = ob.ShowTrophyCase,
-			};
+			var res = ScriptableObject.CreateInstance<Location>();
+			res.Id = ob.Id;
+			res.Name = ob.Name;
+			res.ClosedOnWeekends = ob.ClosedOnWeekends;
+			res.Accessible = ob.Accessible;
+			res.Npcs = npcs;
+			res.Policies = policies;
+			res.Missions = missions;
+			res.UiPosition = ob.UiPosition;
+			res.BackgroundImage = ImageLookup.Backgrounds.GetImage(ob.BackgroundImage);
+			res.Icon = ImageLookup.Icons.GetImage(ob.Icon);
+			res.ShowCar = ob.ShowCar;
+			res.ShowTrophyCase = ob.ShowTrophyCase;
 
 			return res;
 		}

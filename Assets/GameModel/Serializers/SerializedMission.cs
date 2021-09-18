@@ -43,15 +43,12 @@ namespace GameModel.Serializers
 				effects.Add(SerializedEffect.Deserialize(effect));
 			}
 
-			var res = new Mission()
-			{
-				MissionName = ob.MissionName,
-				MissionDescription = ob.MissionDescription,
-				MissionImage = ImageLookup.Missions.GetImage(ob.MissionImage),
+			var res = ScriptableObject.CreateInstance<Mission>();
+			res.MissionName = ob.MissionName;
+			res.MissionDescription = ob.MissionDescription;
+			res.MissionImage = ImageLookup.Missions.GetImage(ob.MissionImage);
+			res.Rewards = effects;
 
-				Rewards = effects,
-			};
-			
 			return res;
 		}
 

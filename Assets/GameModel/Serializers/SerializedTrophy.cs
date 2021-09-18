@@ -27,13 +27,11 @@ namespace GameModel.Serializers
 
 		public static Trophy Deserialize(SerializedTrophy ob)
 		{
-			var res = new Trophy()
-			{
-				Id = ob.Id,
-				Name = ob.Name,
-				Image = ImageLookup.Trophies.GetImage(ob.Image),
-				Owned = ob.Owned,
-			};
+			var res = ScriptableObject.CreateInstance<Trophy>();
+			res.Id = ob.Id;
+			res.Name = ob.Name;
+			res.Image = ImageLookup.Trophies.GetImage(ob.Image);
+			res.Owned = ob.Owned;
 
 			return res;
 		}

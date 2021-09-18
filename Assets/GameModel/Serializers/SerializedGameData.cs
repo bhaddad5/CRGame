@@ -59,22 +59,22 @@ namespace GameModel.Serializers
 				locs.Add(SerializedLocation.Deserialize(location));
 			}
 
-			return new GameData()
-			{
-				PlayerName = ob.PlayerName,
-				TurnNumber = ob.TurnNumber,
-				Ego = ob.Ego,
-				Funds = ob.Funds,
-				Power = ob.Power,
-				Patents = ob.Patents,
-				CorporateCulture = ob.CorporateCulture,
-				Spreadsheets = ob.Spreadsheets,
-				Brand = ob.Brand,
-				Revenue = ob.Revenue,
-				Hornical = ob.Hornical,
-				StatusSymbols = SerializedPlayerStatysSymbols.Deserialize(ob.StatusSymbols),
-				Locations = locs,
-			};
+			var res = ScriptableObject.CreateInstance<GameData>();
+			res.PlayerName = ob.PlayerName;
+			res.TurnNumber = ob.TurnNumber;
+			res.Ego = ob.Ego;
+			res.Funds = ob.Funds;
+			res.Power = ob.Power;
+			res.Patents = ob.Patents;
+			res.CorporateCulture = ob.CorporateCulture;
+			res.Spreadsheets = ob.Spreadsheets;
+			res.Brand = ob.Brand;
+			res.Revenue = ob.Revenue;
+			res.Hornical = ob.Hornical;
+			res.StatusSymbols = SerializedPlayerStatysSymbols.Deserialize(ob.StatusSymbols);
+			res.Locations = locs;
+
+			return res;
 		}
 
 		public static GameData ResolveReferences(DeserializedDataAccessor deserializer, GameData data, SerializedGameData ob)

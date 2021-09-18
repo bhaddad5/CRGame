@@ -87,26 +87,24 @@ namespace GameModel.Serializers
 				trophies.Add(SerializedTrophy.Deserialize(trophy));
 			}
 
-			var res = new Npc()
-			{
-				Id = ob.Id,
-				Ambition = ob.Ambition,
-				Controlled = ob.Controlled,
-				Pride = ob.Pride,
-				FirstName = ob.FirstName,
-				LastName = ob.LastName,
-				Age = ob.Age,
-				Interactions = interactions,
-				Trophies = trophies,
-				BackgroundImage = ImageLookup.Backgrounds.GetImage(ob.BackgroundImage),
-				IsControllable = ob.IsControllable,
-				LocationLayoutXPos = ob.LocationLayoutXPos,
-				LocationLayoutYPos = ob.LocationLayoutYPos,
-				LocationLayoutWidth = ob.LocationLayoutWidth,
-				PersonalLayoutXPos = ob.PersonalLayoutXPos,
-				PersonalLayoutYPos = ob.PersonalLayoutYPos,
-				PersonalLayoutWidth = ob.PersonalLayoutWidth,
-			};
+			var res = ScriptableObject.CreateInstance<Npc>();
+			res.Id = ob.Id;
+			res.Ambition = ob.Ambition;
+			res.Controlled = ob.Controlled;
+			res.Pride = ob.Pride;
+			res.FirstName = ob.FirstName;
+			res.LastName = ob.LastName;
+			res.Age = ob.Age;
+			res.Interactions = interactions;
+			res.Trophies = trophies;
+			res.BackgroundImage = ImageLookup.Backgrounds.GetImage(ob.BackgroundImage);
+			res.IsControllable = ob.IsControllable;
+			res.LocationLayoutXPos = ob.LocationLayoutXPos;
+			res.LocationLayoutYPos = ob.LocationLayoutYPos;
+			res.LocationLayoutWidth = ob.LocationLayoutWidth;
+			res.PersonalLayoutXPos = ob.PersonalLayoutXPos;
+			res.PersonalLayoutYPos = ob.PersonalLayoutYPos;
+			res.PersonalLayoutWidth = ob.PersonalLayoutWidth;
 
 			return res;
 		}

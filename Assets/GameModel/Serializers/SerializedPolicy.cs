@@ -47,16 +47,14 @@ namespace GameModel.Serializers
 				effects.Add(SerializedEffect.Deserialize(effect));
 			}
 
-			var res = new Policy()
-			{
-				Id = ob.Id,
-				Name = ob.Name,
-				Active = ob.Active,
-				Description = ob.Description,
-				Image = ImageLookup.Policies.GetImage(ob.Image),
-				Requirements = SerializedActionRequirements.Deserialize(ob.Requirements),
-				Effects = effects,
-			};
+			var res = ScriptableObject.CreateInstance<Policy>();
+			res.Id = ob.Id;
+			res.Name = ob.Name;
+			res.Active = ob.Active;
+			res.Description = ob.Description;
+			res.Image = ImageLookup.Policies.GetImage(ob.Image);
+			res.Requirements = SerializedActionRequirements.Deserialize(ob.Requirements);
+			res.Effects = effects;
 
 			return res;
 		}

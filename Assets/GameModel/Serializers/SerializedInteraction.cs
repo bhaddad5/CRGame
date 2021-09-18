@@ -54,18 +54,16 @@ namespace GameModel.Serializers
 				results.Add(SerializedInteractionResult.Deserialize(interactionResult));
 			}
 
-			var res = new Interaction()
-			{
-				Id = ob.Id,
-				Name = ob.Name,
-				Cost = SerializedActionCost.Deserialize(ob.Cost),
-				Requirements = SerializedActionRequirements.Deserialize(ob.Requirements),
-				Repeatable = ob.Repeatable,
-				Completed = ob.Completed,
-				InteractionResults = results,
-				PreviewEffect = ob.PreviewEffect,
-				Category = (Interaction.InteractionCategory)Enum.Parse(typeof(Interaction.InteractionCategory), ob.Category)
-			};
+			var res = ScriptableObject.CreateInstance<Interaction>();
+			res.Id = ob.Id;
+			res.Name = ob.Name;
+			res.Cost = SerializedActionCost.Deserialize(ob.Cost);
+			res.Requirements = SerializedActionRequirements.Deserialize(ob.Requirements);
+			res.Repeatable = ob.Repeatable;
+			res.Completed = ob.Completed;
+			res.InteractionResults = results;
+			res.PreviewEffect = ob.PreviewEffect;
+			res.Category = (Interaction.InteractionCategory) Enum.Parse(typeof(Interaction.InteractionCategory), ob.Category);
 
 			return res;
 		}
