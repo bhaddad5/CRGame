@@ -62,7 +62,7 @@ namespace GameModel.Serializers
 				Interactions = interactions,
 				Trophies = trophies,
 				BackgroundImage = ob.BackgroundImage.name,
-				RequiredVisibilityInteraction = ob.RequiredVisibilityInteraction,
+				RequiredVisibilityInteraction = ob.RequiredVisibilityInteractionReference?.Id,
 				IsControllable = ob.IsControllable,
 				LocationLayoutXPos = ob.LocationLayoutXPos,
 				LocationLayoutYPos = ob.LocationLayoutYPos,
@@ -99,7 +99,6 @@ namespace GameModel.Serializers
 				Interactions = interactions,
 				Trophies = trophies,
 				BackgroundImage = ImageLookup.Backgrounds.GetImage(ob.BackgroundImage),
-				RequiredVisibilityInteraction = ob.RequiredVisibilityInteraction,
 				IsControllable = ob.IsControllable,
 				LocationLayoutXPos = ob.LocationLayoutXPos,
 				LocationLayoutYPos = ob.LocationLayoutYPos,
@@ -118,6 +117,8 @@ namespace GameModel.Serializers
 			{
 				data.Interactions[i] = SerializedInteraction.ResolveReferences(deserializer, data.Interactions[i], ob.Interactions[i]);
 			}
+
+			data.RequiredVisibilityInteractionReference = deserializer.FindInteractionById(ob.RequiredVisibilityInteraction);
 
 			return data;
 		}

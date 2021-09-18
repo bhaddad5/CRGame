@@ -74,7 +74,7 @@ public class ImageLookup
     public static ImageLookup Missions = new ImageLookup("Missions");
     public static ImageLookup StatusSymbols = new ImageLookup("StatusSymbols");
 
-	private Dictionary<string, Sprite> lookup = null;
+	private Dictionary<string, Texture2D> lookup = null;
 	private string resourcesDir;
 
 	public ImageLookup(string resourcesDir)
@@ -82,7 +82,7 @@ public class ImageLookup
 		this.resourcesDir = resourcesDir;
 	}
 
-	public Sprite GetImage(string imageName)
+	public Texture2D GetImage(string imageName)
 	{
 		if (string.IsNullOrEmpty(imageName))
 			return null;
@@ -108,8 +108,8 @@ public class ImageLookup
 	{
 		if (lookup == null)
 		{
-			lookup = new Dictionary<string, Sprite>();
-			var images = Resources.LoadAll<Sprite>(resourcesDir).ToList();
+			lookup = new Dictionary<string, Texture2D>();
+			var images = Resources.LoadAll<Texture2D>(resourcesDir).ToList();
 			foreach (var image in images)
 			{
 				lookup[image.name] = image;
@@ -144,7 +144,7 @@ public static class NpcPicManager
 {
     private static Dictionary<string, NpcPicsLookup> npcPicsLookups = new Dictionary<string, NpcPicsLookup>();
 
-    public static Sprite GetNpcPicFromId(string npcId, string picId)
+    public static Texture2D GetNpcPicFromId(string npcId, string picId)
     {
 		if(!npcPicsLookups.ContainsKey(npcId))
 			npcPicsLookups[npcId] = new NpcPicsLookup(npcId);
@@ -154,13 +154,13 @@ public static class NpcPicManager
 
 public class NpcPicsLookup
 {
-	private Dictionary<string, List<Sprite>> picsLookup = new Dictionary<string, List<Sprite>>();
+	private Dictionary<string, List<Texture2D>> picsLookup = new Dictionary<string, List<Texture2D>>();
 	private string npcId;
 
 	public NpcPicsLookup(string npcId)
 	{
 		this.npcId = npcId;
-		var npcPics = Resources.LoadAll<Sprite>(Path.Combine("NpcPics", npcId)).ToList();
+		var npcPics = Resources.LoadAll<Texture2D>(Path.Combine("NpcPics", npcId)).ToList();
 		foreach (var npcPic in npcPics)
 		{
 			string id = "";
@@ -171,13 +171,13 @@ public class NpcPicsLookup
 			}
 			id = id.Substring(1);
 			if (!picsLookup.ContainsKey(id))
-				picsLookup[id] = new List<Sprite>();
+				picsLookup[id] = new List<Texture2D>();
 
 			picsLookup[id].Add(npcPic);
 		}
 	}
 
-	public Sprite GetPicOfType(string type)
+	public Texture2D GetPicOfType(string type)
 	{
 		if (!picsLookup.ContainsKey(type))
 		{

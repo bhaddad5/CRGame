@@ -39,7 +39,7 @@ namespace Assets.GameModel.UiDisplayers
 			Text.text = $"{policy.Name}";
 			Description.text = $"{policy.Description}";
 			ActivatePolicyButton.interactable = !policy.Active && loc.Controlled() && policy.Requirements.RequirementsAreMet(mgm, new Npc());
-			Image.sprite = policy.Image;
+			Image.sprite = policy.Image.ToSprite();
 			ActivatePolicyButton.gameObject.SetActive(!policy.Active);
 			ActiveIndicator.gameObject.SetActive(policy.Active);
 			RewardsText.text = $"Rewards: {policy.Effects.GetEffectsString()}";

@@ -54,7 +54,7 @@ namespace Assets.GameModel.UiDisplayers
 			Picture.sprite = LoadNpcPicture();
 			Picture.preserveAspect = true;
 			Traits.text = GetTraitsString();
-			BackgroundImage.sprite = _npc.BackgroundImage;
+			BackgroundImage.sprite = _npc.BackgroundImage.ToSprite();
 
 			InteractionsHandler.RefreshInteractionVisibilities(_npc, mgm);
 		}
@@ -71,14 +71,14 @@ namespace Assets.GameModel.UiDisplayers
 			overridingImage = null;
 		}
 
-		public void SetBackground(Sprite background)
+		public void SetBackground(Texture2D background)
 		{
-			BackgroundImage.sprite = background;
+			BackgroundImage.sprite = background.ToSprite();
 		}
 
 		public void UnsetBackground()
 		{
-			BackgroundImage.sprite = _npc.BackgroundImage;
+			BackgroundImage.sprite = _npc.BackgroundImage.ToSprite();
 		}
 		
 		private string GetTraitsString()
@@ -96,7 +96,7 @@ namespace Assets.GameModel.UiDisplayers
 
 		private Sprite LoadNpcPicture()
 		{
-			return NpcPicManager.GetNpcPicFromId(_npc.Id, overridingImage ?? _npc.DetermineCurrPictureId());
+			return NpcPicManager.GetNpcPicFromId(_npc.Id, overridingImage ?? _npc.DetermineCurrPictureId()).ToSprite();
 		}
 	}
 }

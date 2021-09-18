@@ -13,7 +13,7 @@ namespace Assets.GameModel
 		public string Name;
 
 		public bool Active;
-		public Sprite Image;
+		public Texture2D Image;
 
 		[TextArea(15, 20)]
 		public string Description;

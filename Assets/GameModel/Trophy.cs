@@ -8,7 +8,7 @@ namespace Assets.GameModel
 	{
 		public string Id;
 		public string Name;
-		public Sprite Image;
+		public Texture2D Image;
 		public bool Owned;
 	}
 }

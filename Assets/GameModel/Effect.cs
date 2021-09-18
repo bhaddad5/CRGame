@@ -25,7 +25,7 @@ namespace Assets.GameModel
 		public List<Trophy> TrophiesClaimedReferences;
 
 		public Location ContextualLocationReference;
-		public Sprite UpdateLocationBackground;
+		public Texture2D UpdateLocationBackground;
 		public bool ShouldUpdateLocationMapPos;
 		public Vector2 UpdateLocationMapPosition;
 

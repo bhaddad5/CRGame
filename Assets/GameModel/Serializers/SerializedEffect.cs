@@ -44,15 +44,15 @@ namespace GameModel.Serializers
 
 			return new SerializedEffect()
 			{
-				ContextualNpcId = ob.ContextualNpcReference.Id,
+				ContextualNpcId = ob.ContextualNpcReference?.Id,
 				AmbitionEffect = ob.AmbitionEffect,
 				PrideEffect = ob.PrideEffect,
 				ControlEffect = ob.ControlEffect,
 				RemoveNpcFromGame = ob.RemoveNpcFromGame,
 				TrophiesClaimed = trophiesClaimed,
 
-				ContextualLocationId = ob.ContextualLocationReference.Id,
-				UpdateLocationBackground = ob.UpdateLocationBackground.name,
+				ContextualLocationId = ob.ContextualLocationReference?.Id,
+				UpdateLocationBackground = ob.UpdateLocationBackground?.name,
 				ShouldUpdateLocationMapPos = ob.ShouldUpdateLocationMapPos,
 				UpdateLocationMapPosition = ob.UpdateLocationMapPosition,
 

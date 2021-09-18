@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Assets.GameModel;
+using Assets.GameModel.UiDisplayers;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -25,7 +26,7 @@ public class MissionUiDisplay : MonoBehaviour, IUiDisplay
 	{
 		Title.text = $"{mission.MissionName}";
 		Description.text = $"{mission.MissionDescription}";
-		Image.sprite = mission.MissionImage;
+		Image.sprite = mission.MissionImage.ToSprite();
 		Complete.SetActive(mission.IsComplete());
 	}
 }

@@ -133,7 +133,7 @@ namespace Assets.GameModel.UiDisplayers
 
 		public void RefreshUiDisplay(MainGameManager mgm)
 		{
-			BackgroundImage.sprite = Loc.BackgroundImage;
+			BackgroundImage.sprite = Loc.BackgroundImage.ToSprite();
 			Name.text = Loc.Name;
 
 			foreach (var npc in NpcOptionsParent.GetComponentsInChildren<NpcSelectionUiDisplay>(true))

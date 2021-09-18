@@ -21,7 +21,7 @@ namespace Assets.GameModel
 
 		//Should these be up a level in InteractionResult?
 		public bool InPlayerOffice;
-		public Sprite CustomBackground;
+		public Texture2D CustomBackground;
 		public string NpcImage;
 	}
 }

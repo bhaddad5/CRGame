@@ -32,7 +32,7 @@ namespace Assets.GameModel.UiDisplayers
 
 		public void RefreshUiDisplay(MainGameManager mgm)
 		{
-			Icon.sprite = dept.Icon;
+			Icon.sprite = dept.Icon.ToSprite();
 			Text.text = $"{dept.Name}";
 			var dayOfWeek = mgm.GetDateFromTurnNumber().DayOfWeek;
 			Button.interactable = !dept.ClosedOnWeekends || (dayOfWeek != DayOfWeek.Saturday && dayOfWeek != DayOfWeek.Sunday);

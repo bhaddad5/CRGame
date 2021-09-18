@@ -10,14 +10,14 @@ namespace Assets.GameModel
 	public struct PlayerStatusSymbols
 	{
 		public string CarName;
-		public Sprite CarImage;
+		public Texture2D CarImage;
 
 		public string SuitsName;
-		public Sprite SuitsImage;
+		public Texture2D SuitsImage;
 
-		public Sprite JewleryCuffs;
-		public Sprite JewleryPen;
-		public Sprite JewleryRing;
-		public Sprite JewleryWatch;
+		public Texture2D JewleryCuffs;
+		public Texture2D JewleryPen;
+		public Texture2D JewleryRing;
+		public Texture2D JewleryWatch;
 	}
 }

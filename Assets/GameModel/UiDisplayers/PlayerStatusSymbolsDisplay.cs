@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Assets.GameModel;
+using Assets.GameModel.UiDisplayers;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -21,18 +22,18 @@ public class PlayerStatusSymbolsDisplay : MonoBehaviour
 	public void UpdateVisuals(MainGameManager mgm)
 	{
 		CarName.text = mgm.Data.StatusSymbols.CarName;
-		CarImage.sprite = mgm.Data.StatusSymbols.CarImage;
+		CarImage.sprite = mgm.Data.StatusSymbols.CarImage.ToSprite();
 
 		SuitsName.text = mgm.Data.StatusSymbols.SuitsName;
-		SuitsImage.sprite = mgm.Data.StatusSymbols.SuitsImage;
+		SuitsImage.sprite = mgm.Data.StatusSymbols.SuitsImage.ToSprite();
 
-		JewleryCuffs.sprite = mgm.Data.StatusSymbols.JewleryCuffs;
+		JewleryCuffs.sprite = mgm.Data.StatusSymbols.JewleryCuffs?.ToSprite();
 		JewleryCuffs.gameObject.SetActive(mgm.Data.StatusSymbols.JewleryCuffs != null);
-		JewleryPen.sprite = mgm.Data.StatusSymbols.JewleryPen;
+		JewleryPen.sprite = mgm.Data.StatusSymbols.JewleryPen?.ToSprite();
 		JewleryPen.gameObject.SetActive(mgm.Data.StatusSymbols.JewleryPen != null);
-		JewleryRing.sprite = mgm.Data.StatusSymbols.JewleryRing;
+		JewleryRing.sprite = mgm.Data.StatusSymbols.JewleryRing?.ToSprite();
 		JewleryRing.gameObject.SetActive(mgm.Data.StatusSymbols.JewleryRing != null);
-		JewleryWatch.sprite = mgm.Data.StatusSymbols.JewleryWatch;
+		JewleryWatch.sprite = mgm.Data.StatusSymbols.JewleryWatch?.ToSprite();
 		JewleryWatch.gameObject.SetActive(mgm.Data.StatusSymbols.JewleryWatch != null);
 
 

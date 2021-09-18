@@ -14,8 +14,8 @@ namespace Assets.GameModel
 		public bool ClosedOnWeekends;
 		public bool Accessible = true;
 
-		public Sprite Icon;
-		public Sprite BackgroundImage;
+		public Texture2D Icon;
+		public Texture2D BackgroundImage;
 
 		public List<Policy> Policies;
 		public List<Mission> Missions;

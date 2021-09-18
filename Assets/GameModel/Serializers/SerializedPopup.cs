@@ -39,7 +39,7 @@ namespace GameModel.Serializers
 				Title = ob.Title,
 				Text = ob.Text,
 				Videos = VideoLookup.Videos.GetVideos(ob.Videos?.ToArray() ?? new string[]{}),
-				Texture = ImageLookup.Popups.GetImage(ob.Texture)?.texture,
+				Texture = ImageLookup.Popups.GetImage(ob.Texture),
 			};
 
 			return res;

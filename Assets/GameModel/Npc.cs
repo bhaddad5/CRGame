@@ -19,7 +19,7 @@ namespace Assets.GameModel
 		public string LastName;
 		public int Age;
 
-		public string RequiredVisibilityInteraction;
+		public Interaction RequiredVisibilityInteractionReference;
 
 		[Header("Personal Layout")]
 		public float PersonalLayoutXPos = 0.5f;
@@ -31,21 +31,14 @@ namespace Assets.GameModel
 		public float LocationLayoutYPos = 0.5f;
 		public float LocationLayoutWidth = 200f;
 
-		public Sprite BackgroundImage;
+		public Texture2D BackgroundImage;
 
 		public List<Interaction> Interactions = new List<Interaction>();
 		public List<Trophy> Trophies = new List<Trophy>();
 
 		public bool IsVisible(MainGameManager mgm)
 		{
-			if (String.IsNullOrEmpty(RequiredVisibilityInteraction))
-				return true;
-			var interaction = RequiredVisibilityInteraction;
-			var split = interaction.Split('-');
-			var id = split[1].Trim();
-			var npcId = split[0].Trim();
-
-			return mgm.Data.GetCompletedInteractionIds(npcId).Contains(id);
+			return RequiredVisibilityInteractionReference?.Completed ?? true;
 		}
 
 		public string DetermineCurrPictureId()

@@ -62,6 +62,10 @@ namespace Assets.GameModel.XmlParsers
 			{
 				personalLayoutXml = PersonalLayout[0];
 			}
+			
+
+			if (RequiredVisibilityInteraction.Contains("-"))
+				RequiredVisibilityInteraction = RequiredVisibilityInteraction.Split('-')[1];
 
 			return new SerializedNpc()
 			{

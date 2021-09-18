@@ -59,7 +59,7 @@ public class DialogDisplayHandler : MonoBehaviour
 			var missionPopup = new Popup()
 			{
 				Title = $"Mission Complete: {missionsToShow[0].MissionName}",
-				Texture = missionsToShow[0].MissionImage.texture,
+				Texture = missionsToShow[0].MissionImage,
 				Text = missionsToShow[0].MissionDescription,
 			};
 			gameObject.SetActive(false);

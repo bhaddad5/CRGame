@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Assets.GameModel;
+using Assets.GameModel.UiDisplayers;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,7 +13,7 @@ public class TrophyDisplay : MonoBehaviour
 
 	public void Setup(Trophy trophy)
 	{
-		TrophyImage.sprite = trophy.Image;
+		TrophyImage.sprite = trophy.Image.ToSprite();
 		TrophyName.text = trophy.Name;
 	}
 }
