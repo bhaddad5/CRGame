@@ -57,6 +57,11 @@ namespace GameModel.Serializers
 
 		public static Mission ResolveReferences(DeserializedDataAccessor deserializer, Mission data, SerializedMission ob)
 		{
+			for (int i = 0; i < data.Rewards.Count; i++)
+			{
+				data.Rewards[i] = SerializedEffect.ResolveReferences(deserializer, data.Rewards[i], ob.Rewards[i]);
+			}
+
 			data.CompletionInteractionReference = deserializer.FindInteractionById(ob.CompletionInteractionId);
 
 			return data;

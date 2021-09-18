@@ -67,6 +67,8 @@ namespace GameModel.Serializers
 			{
 				data.Effects[i] = SerializedEffect.ResolveReferences(deserializer, data.Effects[i], ob.Effects[i]);
 			}
+			data.Requirements = SerializedActionRequirements.ResolveReferences(deserializer, data.Requirements, ob.Requirements);
+
 			return data;
 		}
 	}

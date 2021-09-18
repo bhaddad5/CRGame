@@ -108,6 +108,7 @@ namespace GameModel.Serializers
 			data.ContextualNpcReference = deserializer.FindNpcById(ob.ContextualNpcId);
 			data.ContextualLocationReference = deserializer.FindLocationById(ob.ContextualLocationId);
 			data.TrophiesClaimedReferences = new List<Trophy>();
+			data.UpdateStatusSymbols = SerializedPlayerStatysSymbols.ResolveReferences(deserializer, data.UpdateStatusSymbols, ob.UpdateStatusSymbols);
 			foreach (var trophyId in ob.TrophiesClaimed)
 			{
 				data.TrophiesClaimedReferences.Add(deserializer.FindTrophyById(trophyId));

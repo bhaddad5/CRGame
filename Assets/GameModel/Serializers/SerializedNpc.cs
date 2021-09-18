@@ -118,6 +118,11 @@ namespace GameModel.Serializers
 				data.Interactions[i] = SerializedInteraction.ResolveReferences(deserializer, data.Interactions[i], ob.Interactions[i]);
 			}
 
+			for (int i = 0; i < data.Trophies.Count; i++)
+			{
+				data.Trophies[i] = SerializedTrophy.ResolveReferences(deserializer, data.Trophies[i], ob.Trophies[i]);
+			}
+
 			data.RequiredVisibilityInteractionReference = deserializer.FindInteractionById(ob.RequiredVisibilityInteraction);
 
 			return data;
