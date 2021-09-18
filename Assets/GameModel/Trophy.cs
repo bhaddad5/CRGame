@@ -1,9 +1,11 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace Assets.GameModel
 {
+	[Serializable]
 	public class Trophy : ScriptableObject
 	{
 		public string Id;

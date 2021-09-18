@@ -20,7 +20,7 @@ namespace GameModel.Serializers
 			{
 				Id = ob.Id,
 				Name = ob.Name,
-				Image = ob.Image.name,
+				Image = ob.Image?.GetName(),
 				Owned = ob.Owned,
 			};
 		}

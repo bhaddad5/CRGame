@@ -56,8 +56,8 @@ namespace GameModel.Serializers
 				Policies = policies,
 				Missions = missions,
 				UiPosition = ob.UiPosition,
-				BackgroundImage = ob.BackgroundImage.name,
-				Icon = ob.Icon.name,
+				BackgroundImage = ob.BackgroundImage?.GetName(),
+				Icon = ob.Icon?.GetName(),
 				ShowCar = ob.ShowCar,
 				ShowTrophyCase = ob.ShowTrophyCase,
 			};

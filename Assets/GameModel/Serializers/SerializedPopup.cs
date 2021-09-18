@@ -28,7 +28,7 @@ namespace GameModel.Serializers
 				Title = ob.Title,
 				Text = ob.Text,
 				Videos = videos,
-				Texture = ob.Texture?.name ?? "",
+				Texture = ob.Texture?.GetName(),
 			};
 		}
 
@@ -38,7 +38,7 @@ namespace GameModel.Serializers
 			{
 				Title = ob.Title,
 				Text = ob.Text,
-				Videos = VideoLookup.Videos.GetVideos(ob.Videos?.ToArray() ?? new string[]{}),
+				Videos = VideoLookup.Videos.GetVideos(ob.Videos.ToArray()),
 				Texture = ImageLookup.Popups.GetImage(ob.Texture),
 			};
 

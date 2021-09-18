@@ -23,11 +23,11 @@ namespace GameModel.Serializers
 			return new SerializedDialogEntry()
 			{
 				CurrSpeaker = ob.CurrSpeaker.ToString(),
-				CustomSpeakerReference = ob.CustomSpeakerReference.Id,
+				CustomSpeakerReference = ob.CustomSpeakerReference?.Id,
 				Text = ob.Text,
 				InPlayerOffice = ob.InPlayerOffice,
 				NpcImage = ob.NpcImage,
-				CustomBackground = ob.CustomBackground?.name,
+				CustomBackground = ob.CustomBackground?.GetName(),
 			};
 		}
 

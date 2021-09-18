@@ -24,14 +24,14 @@ namespace GameModel.Serializers
 		{
 			return new SerializedPlayerStatysSymbols()
 			{
-				CarImage = ob.CarImage?.name,
+				CarImage = ob.CarImage?.GetName(),
 				CarName = ob.CarName,
-				SuitsImage = ob.SuitsImage?.name,
+				SuitsImage = ob.SuitsImage?.GetName(),
 				SuitsName = ob.SuitsName,
-				JewleryCuffs = ob.JewleryCuffs?.name,
-				JewleryPen = ob.JewleryPen?.name,
-				JewleryRing = ob.JewleryRing?.name,
-				JewleryWatch = ob.JewleryWatch?.name,
+				JewleryCuffs = ob.JewleryCuffs?.GetName(),
+				JewleryPen = ob.JewleryPen?.GetName(),
+				JewleryRing = ob.JewleryRing?.GetName(),
+				JewleryWatch = ob.JewleryWatch?.GetName(),
 			};
 		}
 

@@ -33,7 +33,7 @@ namespace GameModel.Serializers
 				Name = ob.Name,
 				Active = ob.Active,
 				Description = ob.Description,
-				Image = ob.Image.name,
+				Image = ob.Image?.GetName(),
 				Requirements = SerializedActionRequirements.Serialize(ob.Requirements),
 				Effects = effects,
 			};

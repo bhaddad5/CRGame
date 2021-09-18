@@ -29,31 +29,31 @@ namespace GameModel.Serializers
 			List<string> interactions = new List<string>();
 			foreach (var interaction in ob.RequiredInteractions)
 			{
-				interactions.Add(interaction.Id);
+				interactions.Add(interaction?.Id);
 			}
 
 			List<string> exclusiveInteractions = new List<string>();
 			foreach (var interaction in ob.RequiredNotCompletedInteractions)
 			{
-				exclusiveInteractions.Add(interaction.Id);
+				exclusiveInteractions.Add(interaction?.Id);
 			}
 
 			List<string> policies = new List<string>();
 			foreach (var policy in ob.RequiredPolicies)
 			{
-				policies.Add(policy.Id);
+				policies.Add(policy?.Id);
 			}
 
 			List<string> departments = new List<string>();
 			foreach (var location in ob.RequiredDepartmentsControled)
 			{
-				departments.Add(location.Id);
+				departments.Add(location?.Id);
 			}
 
 			List<string> trophies = new List<string>();
 			foreach (var trophy in ob.RequiredTrophies)
 			{
-				trophies.Add(trophy.Id);
+				trophies.Add(trophy?.Id);
 			}
 
 			return new SerializedActionRequirements()

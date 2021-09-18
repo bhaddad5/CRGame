@@ -7,6 +7,7 @@ using UnityEngine;
 
 namespace Assets.GameModel
 {
+	[Serializable]
 	public class Mission : ScriptableObject
 	{
 		public string MissionName;

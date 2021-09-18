@@ -7,6 +7,7 @@ using UnityEngine;
 
 namespace Assets.GameModel
 {
+	[Serializable]
 	public class Policy : ScriptableObject
 	{
 		public string Id;

@@ -1,142 +1,151 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using Assets.GameModel;
 using UnityEngine;
 
-public class GameData : ScriptableObject
+namespace Assets.GameModel
 {
-	public string PlayerName = "";
-	public int TurnNumber = 0;
-	public float Ego = 10;
-	public float Funds = 0;
-	public float Power = 0;
-	public float Patents = 0;
-	public float CorporateCulture = 0;
-	public float Spreadsheets = 0;
-	public float Brand = 0;
-	public float Revenue = 0;
-	public int Hornical = 0;
-
-	public PlayerStatusSymbols StatusSymbols = new PlayerStatusSymbols();
-
-	public List<Location> Locations = new List<Location>();
-
-	public List<Location> GetControlledLocations()
+	[Serializable]
+	public class GameData : ScriptableObject
 	{
-		List<Location> controlledDepts = new List<Location>();
-		foreach (var dept in Locations)
-		{
-			if(dept.Controlled())
-				controlledDepts.Add(dept);
-		}
-		return controlledDepts;
-	}
+		public string PlayerName = "";
+		public int TurnNumber = 0;
+		public float Ego = 10;
+		public float Funds = 0;
+		public float Power = 0;
+		public float Patents = 0;
+		public float CorporateCulture = 0;
+		public float Spreadsheets = 0;
+		public float Brand = 0;
+		public float Revenue = 0;
+		public int Hornical = 0;
 
-	public List<Policy> GetActivePolicies()
-	{
-		List<Policy> activePolicies = new List<Policy>();
-		foreach (var dept in Locations)
+		public PlayerStatusSymbols StatusSymbols = new PlayerStatusSymbols();
+
+		public List<Location> Locations = new List<Location>();
+
+		public List<Location> GetControlledLocations()
 		{
-			foreach (var policy in dept.Policies)
+			List<Location> controlledDepts = new List<Location>();
+			foreach (var dept in Locations)
 			{
-				if(policy.Active)
-					activePolicies.Add(policy);
+				if (dept.Controlled())
+					controlledDepts.Add(dept);
 			}
+
+			return controlledDepts;
 		}
 
-		return activePolicies;
-	}
-
-	public List<string> GetCompletedInteractionIds(string npcId)
-	{
-		List<string> completedInteractionIds = new List<string>();
-		foreach (var department in Locations)
+		public List<Policy> GetActivePolicies()
 		{
-			foreach (var npc in department.Npcs)
+			List<Policy> activePolicies = new List<Policy>();
+			foreach (var dept in Locations)
 			{
-				if (npc.Id == npcId)
+				foreach (var policy in dept.Policies)
 				{
-					foreach (var interaction in npc.Interactions)
+					if (policy.Active)
+						activePolicies.Add(policy);
+				}
+			}
+
+			return activePolicies;
+		}
+
+		public List<string> GetCompletedInteractionIds(string npcId)
+		{
+			List<string> completedInteractionIds = new List<string>();
+			foreach (var department in Locations)
+			{
+				foreach (var npc in department.Npcs)
+				{
+					if (npc.Id == npcId)
 					{
-						if(interaction.Completed)
-							completedInteractionIds.Add(interaction.Id);
+						foreach (var interaction in npc.Interactions)
+						{
+							if (interaction.Completed)
+								completedInteractionIds.Add(interaction.Id);
+						}
 					}
 				}
 			}
-		}
-		return completedInteractionIds;
-	}
 
-	public List<Mission> GetMissionsForInteraction(string interactionId)
-	{
-		List<Mission> res = new List<Mission>();
-
-		foreach (var department in Locations)
-		{
-			foreach (var mission in department.Missions)
-			{
-				if(mission.CompletionInteractionReference.Id == interactionId)
-					res.Add(mission);
-			}
+			return completedInteractionIds;
 		}
 
-		return res;
-	}
-	
-	public Location FindNpcLocation(Npc npc)
-	{
-		foreach (var department in Locations)
+		public List<Mission> GetMissionsForInteraction(string interactionId)
 		{
-			if (department.Npcs.Contains(npc))
-				return department;
-		}
-		Debug.LogError($"Could not find department containing npc {npc.Id}");
-		return null;
-	}
-	
-	public Location DeadNpcPool
-	{
-		get
-		{
+			List<Mission> res = new List<Mission>();
+
 			foreach (var department in Locations)
 			{
-				if (department.Id == "deadPool")
-					return department;
-			}
-			Debug.LogError($"Could not find dead NPC pool.");
-			return null;
-		}
-	}
-
-	public Location MyOffice
-	{
-		get
-		{
-			foreach (var department in Locations)
-			{
-				if (department.Id == "playerOffice")
-					return department;
-			}
-			Debug.LogError($"Could not find myOffice.");
-			return null;
-		}
-	}
-
-	public List<Trophy> GetOwnedTrophies()
-	{
-		List<Trophy> res = new List<Trophy>();
-		foreach (var department in Locations)
-		{
-			foreach (var npc in department.Npcs)
-			{
-				foreach (var trophy in npc.Trophies)
+				foreach (var mission in department.Missions)
 				{
-					if(trophy.Owned)
-						res.Add(trophy);
+					if (mission.CompletionInteractionReference.Id == interactionId)
+						res.Add(mission);
 				}
 			}
+
+			return res;
 		}
-		return res;
+
+		public Location FindNpcLocation(Npc npc)
+		{
+			foreach (var department in Locations)
+			{
+				if (department.Npcs.Contains(npc))
+					return department;
+			}
+
+			Debug.LogError($"Could not find department containing npc {npc.Id}");
+			return null;
+		}
+
+		public Location DeadNpcPool
+		{
+			get
+			{
+				foreach (var department in Locations)
+				{
+					if (department.Id == "deadPool")
+						return department;
+				}
+
+				Debug.LogError($"Could not find dead NPC pool.");
+				return null;
+			}
+		}
+
+		public Location MyOffice
+		{
+			get
+			{
+				foreach (var department in Locations)
+				{
+					if (department.Id == "playerOffice")
+						return department;
+				}
+
+				Debug.LogError($"Could not find myOffice.");
+				return null;
+			}
+		}
+
+		public List<Trophy> GetOwnedTrophies()
+		{
+			List<Trophy> res = new List<Trophy>();
+			foreach (var department in Locations)
+			{
+				foreach (var npc in department.Npcs)
+				{
+					foreach (var trophy in npc.Trophies)
+					{
+						if (trophy.Owned)
+							res.Add(trophy);
+					}
+				}
+			}
+
+			return res;
+		}
 	}
 }

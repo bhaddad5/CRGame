@@ -61,7 +61,7 @@ namespace GameModel.Serializers
 				Age = ob.Age,
 				Interactions = interactions,
 				Trophies = trophies,
-				BackgroundImage = ob.BackgroundImage.name,
+				BackgroundImage = ob.BackgroundImage?.GetName(),
 				RequiredVisibilityInteraction = ob.RequiredVisibilityInteractionReference?.Id,
 				IsControllable = ob.IsControllable,
 				LocationLayoutXPos = ob.LocationLayoutXPos,

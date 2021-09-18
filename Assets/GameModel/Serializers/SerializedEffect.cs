@@ -41,7 +41,7 @@ namespace GameModel.Serializers
 			{
 				trophiesClaimed.Add(trophy.Id);
 			}
-
+			
 			return new SerializedEffect()
 			{
 				ContextualNpcId = ob.ContextualNpcReference?.Id,
@@ -52,7 +52,7 @@ namespace GameModel.Serializers
 				TrophiesClaimed = trophiesClaimed,
 
 				ContextualLocationId = ob.ContextualLocationReference?.Id,
-				UpdateLocationBackground = ob.UpdateLocationBackground?.name,
+				UpdateLocationBackground = ob.UpdateLocationBackground?.GetName(),
 				ShouldUpdateLocationMapPos = ob.ShouldUpdateLocationMapPos,
 				UpdateLocationMapPosition = ob.UpdateLocationMapPosition,
 

@@ -33,7 +33,7 @@ public class PopupUiDisplay : MonoBehaviour, IUiDisplay
 		{
 			ImageDisplay.texture = popup.Texture;
 		}
-		else if (popup.Videos != null)
+		else if (popup.Videos.Count > 0)
 		{
 			ImageDisplay.texture = VideoTexture;
 			UnityEngine.Random.InitState(System.DateTime.Now.Millisecond);
