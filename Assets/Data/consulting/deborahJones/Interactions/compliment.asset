@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: compliment
+  m_EditorClassIdentifier: 
+  Id: compliment
+  Name: Compliment
+  Category: 1
+  Requirements:
+    RequiredPower: 0
+    RequiredControl: 0
+    RequiresAmbitionAtOrBelowValue: 0
+    RequiredAmbition: -1
+    RequiresPrideAtOrBelowValue: 0
+    RequiredPride: -1
+    RequiredInteractions:
+    - {fileID: 11400000, guid: fc6fa9b440bc600489500a4eb3f73f63, type: 2}
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 5
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    HornicalCost: 0
+  Repeatable: 0
+  Completed: 0
+  PreviewEffect: 0
+  InteractionResults:
+  - Dialogs:
+    - CurrSpeaker: 1
+      CustomSpeakerReference: {fileID: 0}
+      Text: I can't help but admire how driven you are!
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      NpcImage: 
+    - CurrSpeaker: 0
+      CustomSpeakerReference: {fileID: 0}
+      Text: I've always been this way.  I got my MBA from Forbes.  Where did you
+        go to business school?
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      NpcImage: 
+    - CurrSpeaker: 1
+      CustomSpeakerReference: {fileID: 0}
+      Text: I didn't.  I don't have an MBA.
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      NpcImage: 
+    - CurrSpeaker: 0
+      CustomSpeakerReference: {fileID: 0}
+      Text: If you don't make it through the Management Trainee Program, maybe I
+        can find a spot for you under me.
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      NpcImage: 
+    OptionalPopups:
+    - Title: Compliment
+      Videos:
+      - {fileID: 32900000, guid: 78164ebac36fe714189ef0dd11d4116f, type: 3}
+      Texture: {fileID: 0}
+      Text: 
+    Effects:
+    - ContextualNpcReference: {fileID: 0}
+      AmbitionEffect: 0
+      PrideEffect: 0
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      ControlEffect: 0
+      RemoveNpcFromGame: 0
+      TrophiesClaimedReferences: []
+      ContextualLocationReference: {fileID: 0}
+      UpdateLocationBackground: {fileID: 0}
+      ShouldUpdateLocationMapPos: 0
+      UpdateLocationMapPosition: {x: -1, y: -1}
+      ShouldUpdateStatusSymbols: 0
+      UpdateStatusSymbols:
+        CarName: 
+        CarImage: {fileID: 0}
+        SuitsName: 
+        SuitsImage: {fileID: 0}
+        JewleryCuffs: {fileID: 0}
+        JewleryPen: {fileID: 0}
+        JewleryRing: {fileID: 0}
+        JewleryWatch: {fileID: 0}
+    Probability: 1
