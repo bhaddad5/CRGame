@@ -12,6 +12,9 @@ namespace Assets.GameModel
 	{
 		public static MainGameManager Manager = null;
 
+		[SerializeField]
+		private GameData DefaultGameData;
+		[HideInInspector]
 		public GameData Data;
 
 		[SerializeField] private HudUiDisplay HudUiDisplayPrefab;
@@ -24,7 +27,7 @@ namespace Assets.GameModel
 		{
 			Manager = this;
 
-			InitializeGame(Path.Combine(Application.streamingAssetsPath, "GameData.sav"));
+			InitializeGame(null);
 		}
 
 		public void InitializeGame(string saveDataPath)
@@ -42,7 +45,12 @@ namespace Assets.GameModel
 			hudUiDisplay = Instantiate(HudUiDisplayPrefab);
 			mainMapUiDisplay = Instantiate(MainMapUiDisplayPrefab);
 
-			var saveData = JsonUtility.FromJson<SerializedGameData>(File.ReadAllText(saveDataPath));
+			SerializedGameData saveData;
+			if (saveDataPath != null)
+				saveData = JsonUtility.FromJson<SerializedGameData>(File.ReadAllText(saveDataPath));
+			else
+				saveData = SerializedGameData.Serialize(DefaultGameData);
+
 			var deserializer = new DataDeserializer();
 			Data = deserializer.DeserializedData(saveData);
 
