@@ -92,30 +92,41 @@ namespace GameModel.Serializers
 			data.RequiredInteractions = new List<Interaction>();
 			foreach (var interaction in ob.RequiredInteractionsReferences)
 			{
+				if (String.IsNullOrEmpty(interaction))
+					continue;
+
 				data.RequiredInteractions.Add(dda.FindInteractionById(interaction));
 			}
 
 			data.RequiredNotCompletedInteractions = new List<Interaction>();
 			foreach (var interaction in ob.RequiredNotCompletedInteractionsReferences)
 			{
+				if (String.IsNullOrEmpty(interaction))
+					continue;
 				data.RequiredNotCompletedInteractions.Add(dda.FindInteractionById(interaction));
 			}
 
 			data.RequiredPolicies = new List<Policy>();
 			foreach (var policy in ob.RequiredPoliciesReferences)
 			{
+				if (String.IsNullOrEmpty(policy))
+					continue;
 				data.RequiredPolicies.Add(dda.FindPolicyById(policy));
 			}
 
 			data.RequiredDepartmentsControled = new List<Location>();
 			foreach (var location in ob.RequiredDepartmentsControledReferences)
 			{
+				if (location == null)
+					continue;
 				data.RequiredDepartmentsControled.Add(dda.FindLocationById(location));
 			}
 
 			data.RequiredTrophies = new List<Trophy>();
 			foreach (var trophy in ob.RequiredTrophiesReferences)
 			{
+				if (String.IsNullOrEmpty(trophy))
+					continue;
 				data.RequiredTrophies.Add(dda.FindTrophyById(trophy));
 			}
 

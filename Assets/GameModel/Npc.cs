@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace Assets.GameModel
 {
+	[CreateAssetMenu(fileName = "New Interaction", menuName = "Company Man Data/NPC", order = 1)]
 	[Serializable]
 	public class Npc : ScriptableObject
 	{

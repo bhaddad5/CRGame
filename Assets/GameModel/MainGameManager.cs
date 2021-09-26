@@ -22,16 +22,14 @@ namespace Assets.GameModel
 		private HudUiDisplay hudUiDisplay;
 		private MainMapUiDisplay mainMapUiDisplay;
 
-		private XmlResolver xmlResolver = new XmlResolver();
-
 		void Start()
 		{
 			Manager = this;
 
-			InitializeGame(Path.Combine(Application.streamingAssetsPath, "GameData.xml"));
+			InitializeGame(Path.Combine(Application.streamingAssetsPath, "GameData.sav"));
 		}
 
-		public void InitializeGame(string xmlDataPath)
+		public void InitializeGame(string saveDataPath)
 		{
 			if (hudUiDisplay != null)
 			{
@@ -46,8 +44,9 @@ namespace Assets.GameModel
 			hudUiDisplay = Instantiate(HudUiDisplayPrefab);
 			mainMapUiDisplay = Instantiate(MainMapUiDisplayPrefab);
 
+			var saveData = JsonUtility.FromJson<SerializedGameData>(File.ReadAllText(saveDataPath));
 			var deserializer = new DataDeserializer();
-			Data = deserializer.DeserializedData(xmlResolver.LoadXmlData(xmlDataPath));
+			Data = deserializer.DeserializedData(saveData);
 
 			hudUiDisplay.Setup(this, mainMapUiDisplay);
 			mainMapUiDisplay.Setup(this, Data.Locations);

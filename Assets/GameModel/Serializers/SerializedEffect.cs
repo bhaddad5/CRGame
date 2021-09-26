@@ -39,6 +39,8 @@ namespace GameModel.Serializers
 			List<string> trophiesClaimed = new List<string>();
 			foreach (var trophy in ob.TrophiesClaimedReferences)
 			{
+				if (trophy == null)
+					continue;
 				trophiesClaimed.Add(trophy.Id);
 			}
 			

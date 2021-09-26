@@ -9,28 +9,6 @@ using UnityEngine;
 
 public class ScriptableObjectTools
 {
-	[MenuItem("Tools/Sanitize XML")]
-	public static void SanatizeXml()
-	{
-		XmlResolver xmlResolver = new XmlResolver();
-
-		var serializedData = xmlResolver.LoadXmlData(Path.Combine(Application.streamingAssetsPath, "GameData.xml"));
-
-		HashSet<string> interactionIds = new HashSet<string>();
-
-		foreach (var loc in serializedData.Locations)
-		{
-			foreach (var npc in loc.Npcs)
-			{
-				foreach (var interaction in npc.Interactions)
-				{
-					if(interactionIds.Contains(interaction.Id))
-						Debug.LogError($"{npc.FirstName} {npc.LastName} - {interaction.Id}");
-					interactionIds.Add(interaction.Id);
-				}
-			}
-		}
-	}
 
 	[MenuItem("Tools/Save GameData.xml To Scriptable Objects")]
 	public static void SaveToScriptableObjects()
