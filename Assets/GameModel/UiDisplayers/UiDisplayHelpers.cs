@@ -124,6 +124,8 @@ namespace Assets.GameModel.UiDisplayers
 
 		public static Sprite ToSprite(this Texture2D tex)
 		{
+			if (tex == null)
+				return null;
 			return Sprite.Create(tex, new Rect(Vector2.zero, new Vector2(tex.width, tex.height)), Vector2.zero);
 		}
 	}
