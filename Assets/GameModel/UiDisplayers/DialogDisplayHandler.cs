@@ -6,6 +6,7 @@ using Assets.GameModel.UiDisplayers;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = System.Random;
 
 public class DialogDisplayHandler : MonoBehaviour
 {
@@ -114,8 +115,8 @@ public class DialogDisplayHandler : MonoBehaviour
 		DialogText.text = "";
 		if (dialog.CustomBackground != null)
 			_npcUiDisplay.SetBackground(dialog.CustomBackground);
-		if (dialog.NpcImage != "")
-			_npcUiDisplay.SetImage(dialog.NpcImage);
+		if (dialog.CustomNpcImageOptions != null && dialog.CustomNpcImageOptions.Count > 0)
+			_npcUiDisplay.SetImage(dialog.CustomNpcImageOptions[UnityEngine.Random.Range(0, dialog.CustomNpcImageOptions.Count)]);
 
 		foreach (var c in dialog.Text)
 		{

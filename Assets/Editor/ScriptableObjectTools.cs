@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -30,9 +31,8 @@ public class ScriptableObjectTools
 	{
 		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
 
-		SerializedGameData serializedData = SerializedGameData.Serialize(gameData);
 
-		foreach (var location in serializedData.Locations)
+		foreach (var location in gameData.Locations)
 		{
 			foreach (var npc in location.Npcs)
 			{
@@ -42,17 +42,28 @@ public class ScriptableObjectTools
 					{
 						foreach (var dialog in interactionResult.Dialogs)
 						{
-							if (dialog.NpcImage != null)
+							/*if (!String.IsNullOrEmpty(dialog.NpcImage))
 							{
+								string currImagePath = Path.Combine(Application.dataPath, "Resources", "NpcPics", $"{npc.Id}", dialog.NpcImage + "_1.png");
 
-							}
+								if (!File.Exists(currImagePath))
+								{
+									Debug.LogError($"Shit, {dialog.NpcImage} either doesn't exist or was moved already");
+									continue;
+								}
+
+								string destPath = Path.Combine(Application.dataPath, "Data", $"{location.Id}", $"{npc.Id}", "Interactions", interaction.Id + ".png");
+
+								File.Move(currImagePath, destPath);
+
+								//var texRef = AssetDatabase.LoadAssetAtPath<Texture2D>(destPath);
+
+								//dialog.CustomNpcImage = texRef;
+							}*/
 						}
 					}
 				}
 			}
-
-			//var locationImage = location.BackgroundImage;
-			//File.Move(Path.Combine(Application.dataPath, "Resources", "OfficePics", locationImage+".png"), Path.Combine(Application.dataPath, "Data", ));
 		}
 		
 		Debug.Log("Move Complete");

@@ -16,7 +16,7 @@ namespace GameModel.Serializers
 		//Should these be up a level in InteractionResult?
 		public bool InPlayerOffice;
 		public Texture2D CustomBackground;
-		public string NpcImage;
+		public List<Texture2D> CustomNpcImageOptions;
 
 		public static SerializedDialogEntry Serialize(DialogEntry ob)
 		{
@@ -26,8 +26,8 @@ namespace GameModel.Serializers
 				CustomSpeakerReference = ob.CustomSpeakerReference?.Id,
 				Text = ob.Text,
 				InPlayerOffice = ob.InPlayerOffice,
-				NpcImage = ob.NpcImage,
 				CustomBackground = ob.CustomBackground,
+				CustomNpcImageOptions = ob.CustomNpcImageOptions,
 			};
 		}
 
@@ -39,8 +39,8 @@ namespace GameModel.Serializers
 				CurrSpeaker = speaker,
 				Text = ob.Text,
 				InPlayerOffice = ob.InPlayerOffice,
-				NpcImage = ob.NpcImage,
 				CustomBackground = ob.CustomBackground,
+				CustomNpcImageOptions = ob.CustomNpcImageOptions,
 			};
 			
 			return res;

@@ -59,8 +59,8 @@ namespace Assets.GameModel.UiDisplayers
 			InteractionsHandler.RefreshInteractionVisibilities(_npc, mgm);
 		}
 
-		private string overridingImage = null;
-		public void SetImage(string image)
+		private Texture2D overridingImage = null;
+		public void SetImage(Texture2D image)
 		{
 			overridingImage = image;
 			Picture.sprite = LoadNpcPicture();
@@ -96,7 +96,7 @@ namespace Assets.GameModel.UiDisplayers
 
 		private Sprite LoadNpcPicture()
 		{
-			return NpcPicManager.GetNpcPicFromId(_npc.Id, overridingImage ?? _npc.DetermineCurrPictureId()).ToSprite();
+			return (overridingImage ?? NpcPicManager.GetNpcPicFromId(_npc.Id, _npc.DetermineCurrPictureId())).ToSprite();
 		}
 	}
 }
