@@ -12,6 +12,7 @@ namespace Assets.GameModel
 		public string Id;
 
 		public bool IsControllable;
+		[HideInInspector]
 		public bool Controlled;
 
 		public float Ambition;
