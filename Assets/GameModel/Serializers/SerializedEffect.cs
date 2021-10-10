@@ -27,7 +27,7 @@ namespace GameModel.Serializers
 		public List<string> TrophiesClaimed;
 
 		public string ContextualLocationId;
-		public string UpdateLocationBackground;
+		public Texture2D UpdateLocationBackground;
 		public bool ShouldUpdateLocationMapPos;
 		public Vector2 UpdateLocationMapPosition;
 
@@ -54,7 +54,7 @@ namespace GameModel.Serializers
 				TrophiesClaimed = trophiesClaimed,
 
 				ContextualLocationId = ob.ContextualLocationReference?.Id,
-				UpdateLocationBackground = ob.UpdateLocationBackground?.GetName(),
+				UpdateLocationBackground = ob.UpdateLocationBackground,
 				ShouldUpdateLocationMapPos = ob.ShouldUpdateLocationMapPos,
 				UpdateLocationMapPosition = ob.UpdateLocationMapPosition,
 
@@ -83,7 +83,7 @@ namespace GameModel.Serializers
 				ControlEffect = ob.ControlEffect,
 				RemoveNpcFromGame = ob.RemoveNpcFromGame,
 
-				UpdateLocationBackground = ImageLookup.Backgrounds.GetImage(ob.UpdateLocationBackground),
+				UpdateLocationBackground = ob.UpdateLocationBackground,
 				ShouldUpdateLocationMapPos = ob.ShouldUpdateLocationMapPos,
 				UpdateLocationMapPosition = ob.UpdateLocationMapPosition,
 

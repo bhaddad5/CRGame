@@ -37,6 +37,10 @@ namespace Assets.GameModel
 		public List<Interaction> Interactions = new List<Interaction>();
 		public List<Trophy> Trophies = new List<Trophy>();
 
+		public List<Texture2D> IndependentImages = new List<Texture2D>();
+		public List<Texture2D> ControlledImages = new List<Texture2D>();
+		public List<Texture2D> TrainedImages = new List<Texture2D>();
+
 		public bool IsVisible(MainGameManager mgm)
 		{
 			return RequiredVisibilityInteractionReference?.Completed ?? true;
@@ -68,6 +72,11 @@ namespace Assets.GameModel
 			transform.anchorMax = new Vector2(PersonalLayoutXPos, PersonalLayoutYPos);
 			transform.sizeDelta = new Vector2(PersonalLayoutWidth, PersonalLayoutWidth * ratio);
 			transform.anchoredPosition = Vector2.zero;
+		}
+
+		public override string ToString()
+		{
+			return $"{FirstName} {LastName}";
 		}
 	}
 }

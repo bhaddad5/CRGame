@@ -15,7 +15,7 @@ namespace GameModel.Serializers
 
 		//Should these be up a level in InteractionResult?
 		public bool InPlayerOffice;
-		public string CustomBackground;
+		public Texture2D CustomBackground;
 		public string NpcImage;
 
 		public static SerializedDialogEntry Serialize(DialogEntry ob)
@@ -27,7 +27,7 @@ namespace GameModel.Serializers
 				Text = ob.Text,
 				InPlayerOffice = ob.InPlayerOffice,
 				NpcImage = ob.NpcImage,
-				CustomBackground = ob.CustomBackground?.GetName(),
+				CustomBackground = ob.CustomBackground,
 			};
 		}
 
@@ -40,7 +40,7 @@ namespace GameModel.Serializers
 				Text = ob.Text,
 				InPlayerOffice = ob.InPlayerOffice,
 				NpcImage = ob.NpcImage,
-				CustomBackground = ImageLookup.Backgrounds.GetImage(ob.CustomBackground),
+				CustomBackground = ob.CustomBackground,
 			};
 			
 			return res;

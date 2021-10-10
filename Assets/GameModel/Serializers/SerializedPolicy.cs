@@ -13,7 +13,7 @@ namespace GameModel.Serializers
 		public string Id;
 		public string Name;
 		public bool Active;
-		public string Image;
+		public Texture2D Image;
 		public string Description;
 
 		public SerializedActionRequirements Requirements;
@@ -33,7 +33,7 @@ namespace GameModel.Serializers
 				Name = ob.Name,
 				Active = ob.Active,
 				Description = ob.Description,
-				Image = ob.Image?.GetName(),
+				Image = ob.Image,
 				Requirements = SerializedActionRequirements.Serialize(ob.Requirements),
 				Effects = effects,
 			};
@@ -52,7 +52,7 @@ namespace GameModel.Serializers
 			res.Name = ob.Name;
 			res.Active = ob.Active;
 			res.Description = ob.Description;
-			res.Image = ImageLookup.Policies.GetImage(ob.Image);
+			res.Image = ob.Image;
 			res.Requirements = SerializedActionRequirements.Deserialize(ob.Requirements);
 			res.Effects = effects;
 

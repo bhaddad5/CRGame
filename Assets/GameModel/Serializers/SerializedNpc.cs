@@ -31,7 +31,7 @@ namespace GameModel.Serializers
 		public float LocationLayoutYPos;
 		public float LocationLayoutWidth;
 
-		public string BackgroundImage;
+		public Texture2D BackgroundImage;
 
 		public List<SerializedInteraction> Interactions;
 		public List<SerializedTrophy> Trophies;
@@ -61,7 +61,7 @@ namespace GameModel.Serializers
 				Age = ob.Age,
 				Interactions = interactions,
 				Trophies = trophies,
-				BackgroundImage = ob.BackgroundImage?.GetName(),
+				BackgroundImage = ob.BackgroundImage,
 				RequiredVisibilityInteraction = ob.RequiredVisibilityInteractionReference?.Id,
 				IsControllable = ob.IsControllable,
 				LocationLayoutXPos = ob.LocationLayoutXPos,
@@ -97,7 +97,7 @@ namespace GameModel.Serializers
 			res.Age = ob.Age;
 			res.Interactions = interactions;
 			res.Trophies = trophies;
-			res.BackgroundImage = ImageLookup.Backgrounds.GetImage(ob.BackgroundImage);
+			res.BackgroundImage = ob.BackgroundImage;
 			res.IsControllable = ob.IsControllable;
 			res.LocationLayoutXPos = ob.LocationLayoutXPos;
 			res.LocationLayoutYPos = ob.LocationLayoutYPos;

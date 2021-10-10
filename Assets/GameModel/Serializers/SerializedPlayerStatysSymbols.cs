@@ -10,28 +10,28 @@ namespace GameModel.Serializers
 	public class SerializedPlayerStatysSymbols
 	{
 		public string CarName;
-		public string CarImage;
+		public Texture2D CarImage;
 
 		public string SuitsName;
-		public string SuitsImage;
+		public Texture2D SuitsImage;
 
-		public string JewleryCuffs;
-		public string JewleryPen;
-		public string JewleryRing;
-		public string JewleryWatch;
+		public Texture2D JewleryCuffs;
+		public Texture2D JewleryPen;
+		public Texture2D JewleryRing;
+		public Texture2D JewleryWatch;
 
 		public static SerializedPlayerStatysSymbols Serialize(PlayerStatusSymbols ob)
 		{
 			return new SerializedPlayerStatysSymbols()
 			{
-				CarImage = ob.CarImage?.GetName(),
+				CarImage = ob.CarImage,
 				CarName = ob.CarName,
-				SuitsImage = ob.SuitsImage?.GetName(),
+				SuitsImage = ob.SuitsImage,
 				SuitsName = ob.SuitsName,
-				JewleryCuffs = ob.JewleryCuffs?.GetName(),
-				JewleryPen = ob.JewleryPen?.GetName(),
-				JewleryRing = ob.JewleryRing?.GetName(),
-				JewleryWatch = ob.JewleryWatch?.GetName(),
+				JewleryCuffs = ob.JewleryCuffs,
+				JewleryPen = ob.JewleryPen,
+				JewleryRing = ob.JewleryRing,
+				JewleryWatch = ob.JewleryWatch,
 			};
 		}
 
@@ -39,14 +39,14 @@ namespace GameModel.Serializers
 		{
 			var res = new PlayerStatusSymbols()
 			{
-				CarImage = ImageLookup.StatusSymbols.GetImage(ob.CarImage),
+				CarImage = ob.CarImage,
 				CarName = ob.CarName,
-				SuitsImage = ImageLookup.StatusSymbols.GetImage(ob.SuitsImage),
+				SuitsImage = ob.SuitsImage,
 				SuitsName = ob.SuitsName,
-				JewleryCuffs = ImageLookup.StatusSymbols.GetImage(ob.JewleryCuffs),
-				JewleryPen = ImageLookup.StatusSymbols.GetImage(ob.JewleryPen),
-				JewleryRing = ImageLookup.StatusSymbols.GetImage(ob.JewleryRing),
-				JewleryWatch = ImageLookup.StatusSymbols.GetImage(ob.JewleryWatch),
+				JewleryCuffs = ob.JewleryCuffs,
+				JewleryPen = ob.JewleryPen,
+				JewleryRing = ob.JewleryRing,
+				JewleryWatch = ob.JewleryWatch,
 			};
 			
 			return res;

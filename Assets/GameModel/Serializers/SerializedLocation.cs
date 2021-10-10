@@ -19,8 +19,8 @@ namespace GameModel.Serializers
 		public bool ShowTrophyCase;
 		public bool ShowCar;
 
-		public string Icon;
-		public string BackgroundImage;
+		public Texture2D Icon;
+		public Texture2D BackgroundImage;
 
 		public List<SerializedPolicy> Policies;
 		public List<SerializedMission> Missions;
@@ -56,8 +56,8 @@ namespace GameModel.Serializers
 				Policies = policies,
 				Missions = missions,
 				UiPosition = ob.UiPosition,
-				BackgroundImage = ob.BackgroundImage?.GetName(),
-				Icon = ob.Icon?.GetName(),
+				BackgroundImage = ob.BackgroundImage,
+				Icon = ob.Icon,
 				ShowCar = ob.ShowCar,
 				ShowTrophyCase = ob.ShowTrophyCase,
 			};
@@ -92,8 +92,8 @@ namespace GameModel.Serializers
 			res.Policies = policies;
 			res.Missions = missions;
 			res.UiPosition = ob.UiPosition;
-			res.BackgroundImage = ImageLookup.Backgrounds.GetImage(ob.BackgroundImage);
-			res.Icon = ImageLookup.Icons.GetImage(ob.Icon);
+			res.BackgroundImage = ob.BackgroundImage;
+			res.Icon = ob.Icon;
 			res.ShowCar = ob.ShowCar;
 			res.ShowTrophyCase = ob.ShowTrophyCase;
 

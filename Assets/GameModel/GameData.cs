@@ -50,28 +50,7 @@ namespace Assets.GameModel
 
 			return activePolicies;
 		}
-
-		public List<string> GetCompletedInteractionIds(string npcId)
-		{
-			List<string> completedInteractionIds = new List<string>();
-			foreach (var department in Locations)
-			{
-				foreach (var npc in department.Npcs)
-				{
-					if (npc.Id == npcId)
-					{
-						foreach (var interaction in npc.Interactions)
-						{
-							if (interaction.Completed)
-								completedInteractionIds.Add(interaction.Id);
-						}
-					}
-				}
-			}
-
-			return completedInteractionIds;
-		}
-
+		
 		public List<Mission> GetMissionsForInteraction(string interactionId)
 		{
 			List<Mission> res = new List<Mission>();
@@ -96,7 +75,7 @@ namespace Assets.GameModel
 					return department;
 			}
 
-			Debug.LogError($"Could not find department containing npc {npc.Id}");
+			Debug.LogError($"Could not find department containing npc {npc.ToString()}");
 			return null;
 		}
 

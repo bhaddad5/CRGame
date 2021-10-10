@@ -11,24 +11,18 @@ namespace GameModel.Serializers
 	public struct SerializedPopup
 	{
 		public string Title;
-		public List<string> Videos;
-		public string Texture;
+		public List<VideoClip> Videos;
+		public Texture2D Texture;
 		public string Text;
 
 		public static SerializedPopup Serialize(Popup ob)
 		{
-			List<string> videos = new List<string>();
-			foreach (var video in ob.Videos)
-			{
-				videos.Add(video.name);
-			}
-
 			return new SerializedPopup()
 			{
 				Title = ob.Title,
 				Text = ob.Text,
-				Videos = videos,
-				Texture = ob.Texture?.GetName(),
+				Videos = ob.Videos,
+				Texture = ob.Texture,
 			};
 		}
 
@@ -38,8 +32,8 @@ namespace GameModel.Serializers
 			{
 				Title = ob.Title,
 				Text = ob.Text,
-				Videos = VideoLookup.Videos.GetVideos(ob.Videos.ToArray()),
-				Texture = ImageLookup.Popups.GetImage(ob.Texture),
+				Videos = ob.Videos,
+				Texture = ob.Texture,
 			};
 
 			return res;

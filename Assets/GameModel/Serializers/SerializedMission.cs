@@ -12,7 +12,7 @@ namespace GameModel.Serializers
 	{
 		public string MissionName;
 		public string MissionDescription;
-		public string MissionImage;
+		public Texture2D MissionImage;
 
 		public string CompletionInteractionId;
 		public List<SerializedEffect> Rewards;
@@ -29,7 +29,7 @@ namespace GameModel.Serializers
 			{
 				MissionName = ob.MissionName,
 				MissionDescription = ob.MissionDescription,
-				MissionImage = ob.MissionImage?.GetName(),
+				MissionImage = ob.MissionImage,
 				CompletionInteractionId = ob.CompletionInteractionReference.Id,
 				Rewards = effects,
 			};
@@ -46,7 +46,7 @@ namespace GameModel.Serializers
 			var res = ScriptableObject.CreateInstance<Mission>();
 			res.MissionName = ob.MissionName;
 			res.MissionDescription = ob.MissionDescription;
-			res.MissionImage = ImageLookup.Missions.GetImage(ob.MissionImage);
+			res.MissionImage = ob.MissionImage;
 			res.Rewards = effects;
 
 			return res;

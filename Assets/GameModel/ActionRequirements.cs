@@ -31,11 +31,6 @@ namespace Assets.GameModel
 				return false;
 			}
 
-			if (RequiredDepartmentsControled == null)
-			{
-				Debug.Log(npc.Id);
-			}
-
 			foreach (var interactionDept in RequiredDepartmentsControled)
 			{
 				if (!mgm.Data.GetControlledLocations().Contains(interactionDept))

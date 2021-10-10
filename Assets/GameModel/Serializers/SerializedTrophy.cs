@@ -11,7 +11,7 @@ namespace GameModel.Serializers
 	{
 		public string Id;
 		public string Name;
-		public string Image;
+		public Texture2D Image;
 		public bool Owned;
 
 		public static SerializedTrophy Serialize(Trophy ob)
@@ -20,7 +20,7 @@ namespace GameModel.Serializers
 			{
 				Id = ob.Id,
 				Name = ob.Name,
-				Image = ob.Image?.GetName(),
+				Image = ob.Image,
 				Owned = ob.Owned,
 			};
 		}
@@ -30,7 +30,7 @@ namespace GameModel.Serializers
 			var res = ScriptableObject.CreateInstance<Trophy>();
 			res.Id = ob.Id;
 			res.Name = ob.Name;
-			res.Image = ImageLookup.Trophies.GetImage(ob.Image);
+			res.Image = ob.Image;
 			res.Owned = ob.Owned;
 
 			return res;
