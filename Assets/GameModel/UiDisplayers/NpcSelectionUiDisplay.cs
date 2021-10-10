@@ -32,7 +32,7 @@ namespace Assets.GameModel.UiDisplayers
 		public void RefreshUiDisplay(MainGameManager mgm)
 		{
 			Text.text = $"{_npc.FirstName} {_npc.LastName}";
-			NpcPic.sprite = NpcPicManager.GetNpcPicFromId(_npc.Id, _npc.DetermineCurrPictureId()).ToSprite();
+			NpcPic.sprite = _npc.GetCurrentPicture().ToSprite();
 			gameObject.SetActive(_npc.IsVisible(mgm));
 		}
 	}

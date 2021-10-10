@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = System.Random;
 
 namespace Assets.GameModel
 {
@@ -46,14 +47,14 @@ namespace Assets.GameModel
 			return RequiredVisibilityInteractionReference?.Completed ?? true;
 		}
 
-		public string DetermineCurrPictureId()
+		public Texture2D GetCurrentPicture()
 		{
 			if (Controlled && Pride < 1)
-				return "trained";
+				return TrainedImages[UnityEngine.Random.Range(0, TrainedImages.Count)];
 			else if (Controlled)
-				return "controlled";
+				return ControlledImages[UnityEngine.Random.Range(0, ControlledImages.Count)];
 			else
-				return "independent";
+				return IndependentImages[UnityEngine.Random.Range(0, IndependentImages.Count)];
 		}
 
 		public void ApplyLocationLayout(RectTransform transform)

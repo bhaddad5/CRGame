@@ -96,7 +96,7 @@ namespace Assets.GameModel.UiDisplayers
 
 		private Sprite LoadNpcPicture()
 		{
-			return (overridingImage ?? NpcPicManager.GetNpcPicFromId(_npc.Id, _npc.DetermineCurrPictureId())).ToSprite();
+			return (overridingImage ?? _npc.GetCurrentPicture()).ToSprite();
 		}
 	}
 }

@@ -36,6 +36,10 @@ namespace GameModel.Serializers
 		public List<SerializedInteraction> Interactions;
 		public List<SerializedTrophy> Trophies;
 
+		public List<Texture2D> IndependentImages;
+		public List<Texture2D> ControlledImages;
+		public List<Texture2D> TrainedImages;
+
 		public static SerializedNpc Serialize(Npc ob)
 		{
 			List<SerializedInteraction> interactions = new List<SerializedInteraction>();
@@ -70,6 +74,9 @@ namespace GameModel.Serializers
 				PersonalLayoutXPos = ob.PersonalLayoutXPos,
 				PersonalLayoutYPos = ob.PersonalLayoutYPos,
 				PersonalLayoutWidth = ob.PersonalLayoutWidth,
+				IndependentImages = ob.IndependentImages,
+				ControlledImages = ob.ControlledImages,
+				TrainedImages = ob.TrainedImages,
 			};
 		}
 
@@ -105,6 +112,9 @@ namespace GameModel.Serializers
 			res.PersonalLayoutXPos = ob.PersonalLayoutXPos;
 			res.PersonalLayoutYPos = ob.PersonalLayoutYPos;
 			res.PersonalLayoutWidth = ob.PersonalLayoutWidth;
+			res.IndependentImages = ob.IndependentImages;
+			res.ControlledImages = ob.ControlledImages;
+			res.TrainedImages = ob.TrainedImages;
 
 			return res;
 		}

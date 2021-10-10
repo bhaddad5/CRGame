@@ -36,33 +36,35 @@ public class ScriptableObjectTools
 		{
 			foreach (var npc in location.Npcs)
 			{
-				foreach (var interaction in npc.Interactions)
+				//string currImagesPath = Path.Combine(Application.dataPath, "Resources", "NpcPics", $"{npc.Id}");
+
+				string independentDestPath = Path.Combine("Data", $"{location.Id}", $"{npc.Id}", "Pics-Independent");
+				string controlledDestPath = Path.Combine("Data", $"{location.Id}", $"{npc.Id}", "Pics-Controlled");
+				string trainedDestPath = Path.Combine("Data", $"{location.Id}", $"{npc.Id}", "Pics-Trained");
+
+				npc.IndependentImages = new List<Texture2D>();
+				npc.ControlledImages = new List<Texture2D>();
+				npc.TrainedImages = new List<Texture2D>();
+
+				foreach (var pic in Directory.GetFiles(Path.Combine(Application.dataPath, independentDestPath), "*.png"))
 				{
-					foreach (var interactionResult in interaction.InteractionResults)
-					{
-						foreach (var dialog in interactionResult.Dialogs)
-						{
-							/*if (!String.IsNullOrEmpty(dialog.NpcImage))
-							{
-								string currImagePath = Path.Combine(Application.dataPath, "Resources", "NpcPics", $"{npc.Id}", dialog.NpcImage + "_1.png");
-
-								if (!File.Exists(currImagePath))
-								{
-									Debug.LogError($"Shit, {dialog.NpcImage} either doesn't exist or was moved already");
-									continue;
-								}
-
-								string destPath = Path.Combine(Application.dataPath, "Data", $"{location.Id}", $"{npc.Id}", "Interactions", interaction.Id + ".png");
-
-								File.Move(currImagePath, destPath);
-
-								//var texRef = AssetDatabase.LoadAssetAtPath<Texture2D>(destPath);
-
-								//dialog.CustomNpcImage = texRef;
-							}*/
-						}
-					}
+					var picRef = AssetDatabase.LoadAssetAtPath<Texture2D>(Path.Combine("Assets", independentDestPath, Path.GetFileName(pic)));
+					npc.IndependentImages.Add(picRef);
 				}
+
+				foreach (var pic in Directory.GetFiles(Path.Combine(Application.dataPath, controlledDestPath), "*.png"))
+				{
+					var picRef = AssetDatabase.LoadAssetAtPath<Texture2D>(Path.Combine("Assets", controlledDestPath, Path.GetFileName(pic)));
+					npc.ControlledImages.Add(picRef);
+				}
+
+				foreach (var pic in Directory.GetFiles(Path.Combine(Application.dataPath, trainedDestPath), "*.png"))
+				{
+					var picRef = AssetDatabase.LoadAssetAtPath<Texture2D>(Path.Combine("Assets", trainedDestPath, Path.GetFileName(pic)));
+					npc.TrainedImages.Add(picRef);
+				}
+
+				EditorUtility.SetDirty(npc);
 			}
 		}
 		
