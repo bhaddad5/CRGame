@@ -21,9 +21,10 @@ public class CreateNpcWindow : EditorWindow
 		window.Show();
 	}
 
+	private GameData data;
+
 	private string firstName;
 	private string lastName;
-	private GameData data;
 
 	private string picsSrcInd;
 	private string picsSrcCtrl;
