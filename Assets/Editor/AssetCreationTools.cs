@@ -11,7 +11,7 @@ public class CreateNpcWindow : EditorWindow
 {
 	private static CreateNpcWindow window;
 
-	[MenuItem("Tools/Create NPC")] 
+	[MenuItem("Company Man/Create NPC")] 
 
 	static void Init()
 	{
