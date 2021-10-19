@@ -45,12 +45,16 @@ namespace GameModel.Serializers
 			List<SerializedInteraction> interactions = new List<SerializedInteraction>();
 			foreach (var interaction in ob.Interactions)
 			{
+				if (interaction == null)
+					continue;
 				interactions.Add(SerializedInteraction.Serialize(interaction));
 			}
 
 			List<SerializedTrophy> trophies = new List<SerializedTrophy>();
 			foreach (var trophy in ob.Trophies)
 			{
+				if(trophy == null)
+					continue;
 				trophies.Add(SerializedTrophy.Serialize(trophy));
 			}
 

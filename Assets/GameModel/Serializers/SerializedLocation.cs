@@ -31,18 +31,24 @@ namespace GameModel.Serializers
 			List<SerializedNpc> npcs = new List<SerializedNpc>();
 			foreach (var npc in ob.Npcs)
 			{
+				if(npc == null)
+					continue;
 				npcs.Add(SerializedNpc.Serialize(npc));
 			}
 
 			List<SerializedMission> missions = new List<SerializedMission>();
 			foreach (var mission in ob.Missions)
 			{
+				if(mission == null)
+					continue;
 				missions.Add(SerializedMission.Serialize(mission));
 			}
 
 			List<SerializedPolicy> policies = new List<SerializedPolicy>();
 			foreach (var policy in ob.Policies)
 			{
+				if(policy == null)
+					continue;
 				policies.Add(SerializedPolicy.Serialize(policy));
 			}
 

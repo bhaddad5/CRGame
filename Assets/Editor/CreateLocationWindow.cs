@@ -44,7 +44,7 @@ public class CreateLocationWindow : EditorWindow
 		AssetDatabase.CreateFolder($"Assets/Data", loc.Id);
 		string locFolder = $"Assets/Data/{loc.Id}";
 		AssetDatabase.CreateFolder(locFolder, "_Missions");
-		AssetDatabase.CreateFolder(locFolder, "Policies");
+		AssetDatabase.CreateFolder(locFolder, "_Policies");
 
 		AssetDatabase.CreateAsset(loc, $"Assets/Data/{loc.Id}/{loc.Id}.asset");
 		AssetDatabase.SaveAssets();
