@@ -6,6 +6,7 @@ using Assets.GameModel;
 using GameModel.Serializers;
 using UnityEditor;
 using UnityEngine;
+using System.Linq;
 using UnityEngine.Assertions;
 
 public class CreateNpcWindow : EditorWindow
@@ -30,39 +31,94 @@ public class CreateNpcWindow : EditorWindow
 	private string picsSrcCtrl;
 	private string picsSrcTrn;
 
+	private string department;
+
+	private string errorMsg;
+
 	void OnGUI()
 	{
 		firstName = EditorGUILayout.TextField("First Name:", firstName);
 		lastName = EditorGUILayout.TextField("Last Name:", lastName);
 
-		picsSrcInd = EditorGUILayout.TextField("Independent Pics:", picsSrcInd);
+		EditorGUILayout.PrefixLabel($"Independent Pics:{picsSrcInd}");
 		if (GUILayout.Button("Choose Independent Pics Source Folder"))
 		{
 			picsSrcInd = EditorUtility.OpenFolderPanel("Choose Pics Source Folder", "", "");
 		}
 
-		picsSrcCtrl = EditorGUILayout.TextField("Controlled Pics:", picsSrcCtrl);
+		EditorGUILayout.PrefixLabel($"Controlled Pics:{picsSrcCtrl}");
 		if (GUILayout.Button("Choose Controlled Pics Source Folder"))
 		{
 			picsSrcCtrl = EditorUtility.OpenFolderPanel("Choose Pics Source Folder", "", "");
 		}
 
-		picsSrcTrn = EditorGUILayout.TextField("Trained Pics:", picsSrcTrn);
+		EditorGUILayout.PrefixLabel($"Trained Pics:{picsSrcTrn}");
 		if (GUILayout.Button("Choose Trained Pics Source Folder"))
 		{
 			picsSrcTrn = EditorUtility.OpenFolderPanel("Choose Pics Source Folder", "", "");
 		}
 
-		GUILayout.Label("Location:", EditorStyles.boldLabel);
-		foreach (var loc in data.Locations)
+		DrawDropdown();
+
+		GUILayout.Space(10);
+
+		GUILayout.Label($"Finish:", EditorStyles.boldLabel);
+
+		if (GUILayout.Button("Create NPC"))
 		{
-			if (GUILayout.Button(loc.Name))
+			var loc = data.Locations.FirstOrDefault(l => l.Name == department);
+
+			errorMsg = "";
+
+			if (firstName == null || lastName == null)
+			{
+				errorMsg = $"ERROR: NPC not fully named!";
+			}
+			else if (loc == null)
+			{
+				errorMsg = $"ERROR: YOU MUST SELECT A LOCATION";
+			}
+			else
 			{
 				CreateNpc(loc);
 
 				window.Close();
 			}
+
+			
 		}
+
+		if(!String.IsNullOrEmpty(errorMsg))
+			GUILayout.Label(errorMsg, EditorStyles.boldLabel);
+	}
+
+	private void DrawDropdown()
+	{
+		GUILayout.Label($"Location:", EditorStyles.boldLabel);
+
+		var content = new GUIContent($"{department}");
+		var dropdownPos = GUILayoutUtility.GetRect(content, GUIStyle.none);
+		if (!EditorGUILayout.DropdownButton(content, FocusType.Passive))
+		{
+			return;
+		}
+
+
+		void handleItemClicked(object dept)
+		{
+			department = (dept as Location).Name;
+		}
+
+		GenericMenu menu = new GenericMenu();
+		foreach (var loc in data.Locations)
+		{
+			if (loc == null)
+				continue;
+
+			menu.AddItem(new GUIContent(loc.Name), false, handleItemClicked, loc);
+		}
+
+		menu.DropDown(dropdownPos);
 	}
 
 	private void CreateNpc(Location loc)
