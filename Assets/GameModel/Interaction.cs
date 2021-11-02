@@ -30,6 +30,7 @@ namespace Assets.GameModel
 		public ActionCost Cost;
 
 		public bool Repeatable = false;
+		[HideInInspector]
 		public bool Completed = false;
 
 		public bool PreviewEffect = false;

@@ -91,7 +91,7 @@ public class CreateInteractionWindow : EditorWindow
 	{
 		Interaction interaction = ScriptableObject.CreateInstance<Interaction>();
 		interaction.Name = interactionName;
-		interaction.Id = interactionName;
+		interaction.Id = npcId+interactionName;
 
 		var foundNpc = FindNpc();
 

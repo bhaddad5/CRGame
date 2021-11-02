@@ -17,6 +17,7 @@ namespace Assets.GameModel
 		}
 		public Speaker CurrSpeaker;
 		public Npc CustomSpeakerReference;
+		[TextArea(15, 20)]
 		public string Text;
 
 		//Should these be up a level in InteractionResult?

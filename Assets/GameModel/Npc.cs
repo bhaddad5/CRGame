@@ -24,15 +24,15 @@ namespace Assets.GameModel
 
 		public Interaction RequiredVisibilityInteractionReference;
 
-		[Header("Personal Layout")]
-		public float PersonalLayoutXPos = 0.5f;
-		public float PersonalLayoutYPos = 0.5f;
-		public float PersonalLayoutWidth = 200f;
-
-		[Header("Location Layout")]
+		[Header("Screen Position in Department/Location")]
 		public float LocationLayoutXPos = 0.5f;
 		public float LocationLayoutYPos = 0.5f;
 		public float LocationLayoutWidth = 200f;
+
+		[Header("Screen Position when talking to her")]
+		public float PersonalLayoutXPos = 0.5f;
+		public float PersonalLayoutYPos = 0.5f;
+		public float PersonalLayoutWidth = 200f;
 
 		public Texture2D BackgroundImage;
 
