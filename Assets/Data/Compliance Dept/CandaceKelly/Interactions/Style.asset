@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Home Address
+  m_Name: Style
   m_EditorClassIdentifier: 
-  Id: Home AddressCandaceKelly
-  Name: Home Address
-  Category: 1
+  Id: StyleCandaceKelly
+  Name: Style
+  Category: 3
   Requirements:
     RequiredPower: 0
     RequiredControl: 0
@@ -28,7 +28,7 @@ MonoBehaviour:
     RequiredDepartmentsControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 3
+    EgoCost: 7
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -42,51 +42,36 @@ MonoBehaviour:
   InteractionResults:
   - Dialogs:
     - CurrSpeaker: 1
+      Text: The younger girls here try hard but they never seem to manage to look
+        anywhere near as stylish as you Candace.  May I call you Candace?
       CustomSpeakerReference: {fileID: 0}
-      Text: Do you live near the office?
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
+      Text: Of course you can.  Thanks.  I try my best.  You're sweet to say so.
       CustomSpeakerReference: {fileID: 0}
-      Text: Not far.  We live on Clover Lane.  it is a nice, quiet neighborhood.
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 1
+      Text: I'm just telling the truth.  For a single mom of two teenagers, you look
+        amazing.
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 0
+      Text: Well... thank you.
+      CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     OptionalPopups:
-    - Title: I live on Clover Lane.
+    - Title: Thank you!
       Videos:
-      - {fileID: 32900000, guid: 640cbd8426896b94c959b73bfba573b0, type: 3}
+      - {fileID: 32900000, guid: 36be1b0646f1e184ebcfdb3817885d9f, type: 3}
       Texture: {fileID: 0}
       Text: 
-    Effects:
-    - ContextualNpcReference: {fileID: 0}
-      AmbitionEffect: -3
-      PrideEffect: 0
-      EgoEffect: 0
-      FundsEffect: 0
-      PowerEffect: 0
-      PatentsEffect: 0
-      CultureEffect: 0
-      SpreadsheetsEffect: 0
-      BrandEffect: 0
-      RevanueEffect: 0
-      HornicalEffect: 0
-      ControlEffect: 0
-      RemoveNpcFromGame: 0
-      TrophiesClaimedReferences: []
-      ContextualLocationReference: {fileID: 0}
-      UpdateLocationBackground: {fileID: 0}
-      ShouldUpdateLocationMapPos: 0
-      UpdateLocationMapPosition: {x: 0, y: 0}
-      ShouldUpdateStatusSymbols: 0
-      UpdateStatusSymbols:
-        CarName: 
-        CarImage: {fileID: 0}
-        SuitsName: 
-        SuitsImage: {fileID: 0}
-        JewleryCuffs: {fileID: 0}
-        JewleryPen: {fileID: 0}
-        JewleryRing: {fileID: 0}
-        JewleryWatch: {fileID: 0}
+    Effects: []
     Probability: 1
