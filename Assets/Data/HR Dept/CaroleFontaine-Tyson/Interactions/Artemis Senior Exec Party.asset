@@ -10,26 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: askAboutFamily
+  m_Name: Artemis Senior Exec Party
   m_EditorClassIdentifier: 
-  Id: askAboutFamily
-  Name: Ask about family
-  Category: 1
+  Id: Artemis Senior Exec PartyCaroleFontaine-Tyson
+  Name: Artemis Senior Exec Party
+  Category: 3
   Requirements:
-    RequiredPower: 0
+    RequiredPower: 70
     RequiredControl: 0
     RequiresAmbitionAtOrBelowValue: 0
-    RequiredAmbition: -1
+    RequiredAmbition: 0
     RequiresPrideAtOrBelowValue: 0
-    RequiredPride: -1
+    RequiredPride: 0
     RequiredInteractions:
-    - {fileID: 11400000, guid: fc6fa9b440bc600489500a4eb3f73f63, type: 2}
+    - {fileID: 11400000, guid: 2b744fbf34ee1fd429a0cf513358039c, type: 2}
+    - {fileID: 11400000, guid: cb5bee6c18d31cf4eaf87221693b7ec8, type: 2}
+    - {fileID: 11400000, guid: b06363b83b63dad47ba8fa0b880d8af0, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 3
+    EgoCost: 0
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -43,59 +45,31 @@ MonoBehaviour:
   InteractionResults:
   - Dialogs:
     - CurrSpeaker: 1
-      Text: Are you from around here?
+      Text: Will you and Donald be attending the Executive get together?
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: No.  I grew up a few hours from here.  I'm over in Tout Suite Apartments
-        actually.
+      Text: I suppose so.  Yourself?
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      Text: That's a great place!  Any brothers or sisters?
+      Text: Oh, yes!  Looking forward to it-- mostly to get to know your husband
+        better!
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: A younger sister-- Katherine.  We're not really that close though.
+      Text: I will let him know!  He usually hates these corporate social things
+        but if he has someone to talk to, it is a lot less painful.
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     OptionalPopups: []
-    Effects:
-    - ContextualNpcReference: {fileID: 0}
-      AmbitionEffect: 0
-      PrideEffect: 0
-      EgoEffect: 0
-      FundsEffect: 0
-      PowerEffect: 0
-      PatentsEffect: 0
-      CultureEffect: 0
-      SpreadsheetsEffect: 0
-      BrandEffect: 0
-      RevanueEffect: 0
-      HornicalEffect: 0
-      ControlEffect: 0
-      RemoveNpcFromGame: 0
-      TrophiesClaimedReferences: []
-      ContextualLocationReference: {fileID: 0}
-      UpdateLocationBackground: {fileID: 0}
-      ShouldUpdateLocationMapPos: 0
-      UpdateLocationMapPosition: {x: -1, y: -1}
-      ShouldUpdateStatusSymbols: 0
-      UpdateStatusSymbols:
-        CarName: 
-        CarImage: {fileID: 0}
-        SuitsName: 
-        SuitsImage: {fileID: 0}
-        JewleryCuffs: {fileID: 0}
-        JewleryPen: {fileID: 0}
-        JewleryRing: {fileID: 0}
-        JewleryWatch: {fileID: 0}
+    Effects: []
     Probability: 1

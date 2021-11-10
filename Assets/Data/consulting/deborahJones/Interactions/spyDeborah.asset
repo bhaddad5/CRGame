@@ -21,8 +21,9 @@ MonoBehaviour:
     RequiresAmbitionAtOrBelowValue: 0
     RequiredAmbition: -1
     RequiresPrideAtOrBelowValue: 1
-    RequiredPride: 70
-    RequiredInteractions: []
+    RequiredPride: -1
+    RequiredInteractions:
+    - {fileID: 0}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -42,32 +43,32 @@ MonoBehaviour:
   InteractionResults:
   - Dialogs:
     - CurrSpeaker: 1
-      CustomSpeakerReference: {fileID: 0}
       Text: TO DO - 3 ambition (after 6 turns) for Tracey Bledsoe, Candace Kelly,
         Susan Granger, Alexis Hunter, Amanda Ellsbach, Jill Vamder, Britney Bower 
         I need to crack down on the CSG and Planning.  You're going to help me.
+      CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
-      NpcImage: 
+      CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      CustomSpeakerReference: {fileID: 0}
       Text: What do you want me to do?
+      CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
-      NpcImage: 
+      CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      CustomSpeakerReference: {fileID: 0}
       Text: I want you to keep an eye on all the girls.  You'll report back ANY infractions
         you uncover, which I will forward to HR.
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
-      NpcImage: 
-    - CurrSpeaker: 0
       CustomSpeakerReference: {fileID: 0}
-      Text: A spy?  Please don't turn me into some tattletale!
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
-      NpcImage: 
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 0
+      Text: A spy?  Please don't turn me into some tattletale!
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
     OptionalPopups: []
     Effects:
     - ContextualNpcReference: {fileID: 0}

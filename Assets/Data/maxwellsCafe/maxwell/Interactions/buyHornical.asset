@@ -22,7 +22,8 @@ MonoBehaviour:
     RequiredAmbition: -1
     RequiresPrideAtOrBelowValue: 0
     RequiredPride: -1
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 4ac7d97e7d94eb44eb729587cc0c7ca1, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -42,11 +43,14 @@ MonoBehaviour:
   InteractionResults:
   - Dialogs:
     - CurrSpeaker: 0
+      Text: You know what this stuff does?  Drives 'em crazy!  Dose a coffee, a glass
+        of wine, even water-- and just stand back and watch.  If that's what you're
+        here for, you're lucky.  I have a dose-- but let's see the cash first.  That'll
+        do it!  Nice doing business with you.
       CustomSpeakerReference: {fileID: 0}
-      Text: Alright, here you go.
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
-      NpcImage: 
+      CustomNpcImageOptions: []
     OptionalPopups: []
     Effects:
     - ContextualNpcReference: {fileID: 0}

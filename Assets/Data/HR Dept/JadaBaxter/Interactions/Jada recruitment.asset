@@ -10,26 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: susanOffice
+  m_Name: Jada recruitment
   m_EditorClassIdentifier: 
-  Id: susanOffice
-  Name: The Office Location
+  Id: Jada recruitmentJadaBaxter
+  Name: Jada recruitment
   Category: 1
   Requirements:
     RequiredPower: 0
     RequiredControl: 0
     RequiresAmbitionAtOrBelowValue: 0
-    RequiredAmbition: -1
+    RequiredAmbition: 0
     RequiresPrideAtOrBelowValue: 0
-    RequiredPride: -1
+    RequiredPride: 0
     RequiredInteractions:
-    - {fileID: 11400000, guid: 33981c8a9ebc5c14dac600c34dc101f1, type: 2}
+    - {fileID: 11400000, guid: 9fd341824ed186d4ca9f800521a2330d, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 0
+    EgoCost: 5
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -43,62 +43,37 @@ MonoBehaviour:
   InteractionResults:
   - Dialogs:
     - CurrSpeaker: 1
-      Text: I noticed we're not in the bigger office complexes.
+      Text: So how did you wind up at Artemis?
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: "We\u2019re separate from the corporate campus and the Planning Department,
-        which we\u2019re a subsidiary of.  That gives us some breathing space to
-        be honest! "
+      Text: Have you taken a look around?  They needed to meet a quota.
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      Text: Do you live close to the office?
+      Text: I'm sure you're more than just that.
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: I live halfway between the main office and here- over in Tempo Townhouses. 
-        We all used to work in the big towers but, like I say, I'm appreciating having
-        our own space.
+      Text: 'Of course I am!  But that''s not why I was hired.  Carole needed a face
+        that wasn''t lily white in HR-- otherwise, what kind of a hypocite would
+        she look like?  I don''t care- I like my job.  '
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 1
+      Text: Well, I should get back to my desk...
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     OptionalPopups: []
-    Effects:
-    - ContextualNpcReference: {fileID: 0}
-      AmbitionEffect: 0
-      PrideEffect: 0
-      EgoEffect: 0
-      FundsEffect: 0
-      PowerEffect: 0
-      PatentsEffect: 0
-      CultureEffect: 0
-      SpreadsheetsEffect: 0
-      BrandEffect: 0
-      RevanueEffect: 0
-      HornicalEffect: 0
-      ControlEffect: 0
-      RemoveNpcFromGame: 0
-      TrophiesClaimedReferences: []
-      ContextualLocationReference: {fileID: 0}
-      UpdateLocationBackground: {fileID: 0}
-      ShouldUpdateLocationMapPos: 0
-      UpdateLocationMapPosition: {x: -1, y: -1}
-      ShouldUpdateStatusSymbols: 0
-      UpdateStatusSymbols:
-        CarName: 
-        CarImage: {fileID: 0}
-        SuitsName: 
-        SuitsImage: {fileID: 0}
-        JewleryCuffs: {fileID: 0}
-        JewleryPen: {fileID: 0}
-        JewleryRing: {fileID: 0}
-        JewleryWatch: {fileID: 0}
+    Effects: []
     Probability: 1
