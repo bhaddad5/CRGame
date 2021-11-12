@@ -17,7 +17,7 @@ MonoBehaviour:
   Category: 4
   Requirements:
     RequiredPower: 0
-    RequiredControl: 0
+    RequiredControl: 1
     RequiresAmbitionAtOrBelowValue: 0
     RequiredAmbition: 0
     RequiresPrideAtOrBelowValue: 0
@@ -28,7 +28,7 @@ MonoBehaviour:
     RequiredDepartmentsControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 0
+    EgoCost: 10
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -88,5 +88,35 @@ MonoBehaviour:
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: d1be2990eb933294694d779dc0df37bb, type: 3}
     OptionalPopups: []
-    Effects: []
+    Effects:
+    - ContextualNpcReference: {fileID: 11400000, guid: f42fb56e29e0b374386530f7e2189a62,
+        type: 2}
+      AmbitionEffect: -15
+      PrideEffect: -15
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      ControlEffect: 0
+      RemoveNpcFromGame: 0
+      TrophiesClaimedReferences: []
+      ContextualLocationReference: {fileID: 0}
+      UpdateLocationBackground: {fileID: 0}
+      ShouldUpdateLocationMapPos: 0
+      UpdateLocationMapPosition: {x: 0, y: 0}
+      ShouldUpdateStatusSymbols: 0
+      UpdateStatusSymbols:
+        CarName: 
+        CarImage: {fileID: 0}
+        SuitsName: 
+        SuitsImage: {fileID: 0}
+        JewleryCuffs: {fileID: 0}
+        JewleryPen: {fileID: 0}
+        JewleryRing: {fileID: 0}
+        JewleryWatch: {fileID: 0}
     Probability: 1

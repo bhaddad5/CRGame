@@ -28,7 +28,7 @@ MonoBehaviour:
     RequiredDepartmentsControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 0
+    EgoCost: 10
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -38,7 +38,7 @@ MonoBehaviour:
     HornicalCost: 0
   Repeatable: 1
   Completed: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   InteractionResults:
   - Dialogs:
     - CurrSpeaker: 1
@@ -65,5 +65,34 @@ MonoBehaviour:
       - {fileID: 32900000, guid: 228814f2848d1dc4bbceb59bc36b905b, type: 3}
       Texture: {fileID: 0}
       Text: 
-    Effects: []
+    Effects:
+    - ContextualNpcReference: {fileID: 0}
+      AmbitionEffect: 0
+      PrideEffect: -15
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      ControlEffect: 0
+      RemoveNpcFromGame: 0
+      TrophiesClaimedReferences: []
+      ContextualLocationReference: {fileID: 0}
+      UpdateLocationBackground: {fileID: 0}
+      ShouldUpdateLocationMapPos: 0
+      UpdateLocationMapPosition: {x: 0, y: 0}
+      ShouldUpdateStatusSymbols: 0
+      UpdateStatusSymbols:
+        CarName: 
+        CarImage: {fileID: 0}
+        SuitsName: 
+        SuitsImage: {fileID: 0}
+        JewleryCuffs: {fileID: 0}
+        JewleryPen: {fileID: 0}
+        JewleryRing: {fileID: 0}
+        JewleryWatch: {fileID: 0}
     Probability: 1

@@ -22,13 +22,14 @@ MonoBehaviour:
     RequiredAmbition: 0
     RequiresPrideAtOrBelowValue: 0
     RequiredPride: 0
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: ea8ec59832782e44985db2c79ee4aed8, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 0
+    EgoCost: 15
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -42,7 +43,8 @@ MonoBehaviour:
   InteractionResults:
   - Dialogs:
     - CurrSpeaker: 1
-      Text: It seems that Ms. Tyson-Fontaine resents your involvement with her husband.
+      Text: It seems that Director Tyson-Fontaine resents your involvement with her
+        husband.
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
@@ -81,5 +83,35 @@ MonoBehaviour:
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     OptionalPopups: []
-    Effects: []
+    Effects:
+    - ContextualNpcReference: {fileID: 11400000, guid: f42fb56e29e0b374386530f7e2189a62,
+        type: 2}
+      AmbitionEffect: -35
+      PrideEffect: -35
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      ControlEffect: 0
+      RemoveNpcFromGame: 0
+      TrophiesClaimedReferences: []
+      ContextualLocationReference: {fileID: 0}
+      UpdateLocationBackground: {fileID: 0}
+      ShouldUpdateLocationMapPos: 0
+      UpdateLocationMapPosition: {x: 0, y: 0}
+      ShouldUpdateStatusSymbols: 0
+      UpdateStatusSymbols:
+        CarName: 
+        CarImage: {fileID: 0}
+        SuitsName: 
+        SuitsImage: {fileID: 0}
+        JewleryCuffs: {fileID: 0}
+        JewleryPen: {fileID: 0}
+        JewleryRing: {fileID: 0}
+        JewleryWatch: {fileID: 0}
     Probability: 1

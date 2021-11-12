@@ -17,11 +17,11 @@ MonoBehaviour:
   Category: 6
   Requirements:
     RequiredPower: 0
-    RequiredControl: 0
+    RequiredControl: 1
     RequiresAmbitionAtOrBelowValue: 0
     RequiredAmbition: 0
-    RequiresPrideAtOrBelowValue: 0
-    RequiredPride: 0
+    RequiresPrideAtOrBelowValue: 1
+    RequiredPride: 10
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
@@ -87,5 +87,34 @@ MonoBehaviour:
       - {fileID: 32900000, guid: dc064c9a359e26842a61f1799986d195, type: 3}
       Texture: {fileID: 0}
       Text: 
-    Effects: []
+    Effects:
+    - ContextualNpcReference: {fileID: 0}
+      AmbitionEffect: 0
+      PrideEffect: 0
+      EgoEffect: 20
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      ControlEffect: 0
+      RemoveNpcFromGame: 0
+      TrophiesClaimedReferences: []
+      ContextualLocationReference: {fileID: 0}
+      UpdateLocationBackground: {fileID: 0}
+      ShouldUpdateLocationMapPos: 0
+      UpdateLocationMapPosition: {x: 0, y: 0}
+      ShouldUpdateStatusSymbols: 0
+      UpdateStatusSymbols:
+        CarName: 
+        CarImage: {fileID: 0}
+        SuitsName: 
+        SuitsImage: {fileID: 0}
+        JewleryCuffs: {fileID: 0}
+        JewleryPen: {fileID: 0}
+        JewleryRing: {fileID: 0}
+        JewleryWatch: {fileID: 0}
     Probability: 1
