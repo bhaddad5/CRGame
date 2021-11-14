@@ -30,7 +30,7 @@ MonoBehaviour:
     RequiredDepartmentsControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 0
+    EgoCost: 10
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -42,7 +42,37 @@ MonoBehaviour:
   Completed: 0
   PreviewEffect: 0
   InteractionResults:
-  - Dialogs: []
+  - Dialogs:
+    - CurrSpeaker: 1
+      Text: Hello.  You must be Deirdre.
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 0
+      Text: Hey-- you can't just come into my house!
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 1
+      Text: Relax-- I work with your mom.  Is Candace around?
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 0
+      Text: No, she is NOT and you should leave!
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 1
+      Text: That's fine.  Just tell her I dropped by, ok?
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
     OptionalPopups: []
     Effects: []
     Probability: 1
