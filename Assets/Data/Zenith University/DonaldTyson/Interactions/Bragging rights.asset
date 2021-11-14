@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: Bragging rightsDonaldTyson
   Name: Bragging rights
-  Category: 0
+  Category: 3
   Requirements:
     RequiredPower: 0
     RequiredControl: 0
@@ -22,7 +22,10 @@ MonoBehaviour:
     RequiredAmbition: 0
     RequiresPrideAtOrBelowValue: 0
     RequiredPride: 0
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 0a9356d205edab140af72108e7d404f3, type: 2}
+    - {fileID: 11400000, guid: cf9c31e9f4d71044880cb822fca5a46f, type: 2}
+    - {fileID: 11400000, guid: a109ffbb7873b2e4eb70425bc318507d, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -40,7 +43,37 @@ MonoBehaviour:
   Completed: 0
   PreviewEffect: 0
   InteractionResults:
-  - Dialogs: []
+  - Dialogs:
+    - CurrSpeaker: 1
+      Text: Now that things are underway, you ought to pay little Deirdre a visit.
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 0
+      Text: I'll drop by when Candace is home from work.
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 1
+      Text: Why wait?  Deirdr'e home from school.  You could drop over right now.
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 0
+      Text: Won't that make her a bit nervous?
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 1
+      Text: Do you really care?
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
     OptionalPopups: []
     Effects: []
     Probability: 1
