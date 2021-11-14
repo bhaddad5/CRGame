@@ -31,7 +31,7 @@ public class CreateNpcWindow : EditorWindow
 	private string picsSrcCtrl;
 	private string picsSrcTrn;
 
-	private string department;
+	private LocationPicker locPicker = new LocationPicker();
 
 	private string errorMsg;
 
@@ -58,7 +58,7 @@ public class CreateNpcWindow : EditorWindow
 			picsSrcTrn = EditorUtility.OpenFolderPanel("Choose Pics Source Folder", "", "");
 		}
 
-		DrawDropdown();
+		locPicker.DrawLocationDropdown(data);
 
 		GUILayout.Space(10);
 
@@ -66,7 +66,7 @@ public class CreateNpcWindow : EditorWindow
 
 		if (GUILayout.Button("Create NPC"))
 		{
-			var loc = data.Locations.FirstOrDefault(l => l.Name == department);
+			var loc = data.FindLocation(locPicker.LocationId);
 
 			errorMsg = "";
 
@@ -91,36 +91,7 @@ public class CreateNpcWindow : EditorWindow
 		if(!String.IsNullOrEmpty(errorMsg))
 			GUILayout.Label(errorMsg, EditorStyles.boldLabel);
 	}
-
-	private void DrawDropdown()
-	{
-		GUILayout.Label($"Location:", EditorStyles.boldLabel);
-
-		var content = new GUIContent($"{department}");
-		var dropdownPos = GUILayoutUtility.GetRect(content, GUIStyle.none);
-		if (!EditorGUILayout.DropdownButton(content, FocusType.Passive))
-		{
-			return;
-		}
-
-
-		void handleItemClicked(object dept)
-		{
-			department = (dept as Location).Name;
-		}
-
-		GenericMenu menu = new GenericMenu();
-		foreach (var loc in data.Locations)
-		{
-			if (loc == null)
-				continue;
-
-			menu.AddItem(new GUIContent(loc.Name), false, handleItemClicked, loc);
-		}
-
-		menu.DropDown(dropdownPos);
-	}
-
+	
 	private void CreateNpc(Location loc)
 	{
 		Npc npc = ScriptableObject.CreateInstance<Npc>();

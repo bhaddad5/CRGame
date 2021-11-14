@@ -20,13 +20,13 @@ public class CreateInteractionWindow : EditorWindow
 
 	private GameData data;
 	private string interactionName;
-	private string npcId;
+	private NpcPicker npcPicker = new NpcPicker();
 
 	void OnGUI()
 	{
 		interactionName = EditorGUILayout.TextField("Name:", interactionName);
 
-		DrawDropdown();
+		npcPicker.DrawNpcDropdown(data);
 
 		if (GUILayout.Button("Create!"))
 		{
@@ -36,66 +36,15 @@ public class CreateInteractionWindow : EditorWindow
 		}
 	}
 
-	private void DrawDropdown()
-	{
-		GUILayout.Label($"NPC:", EditorStyles.boldLabel);
-
-		var content = new GUIContent($"{npcId}");
-		var dropdownPos = GUILayoutUtility.GetRect(content, GUIStyle.none);
-		if (!EditorGUILayout.DropdownButton(content, FocusType.Passive))
-		{
-			return;
-		}
-		
-		void handleItemClicked(object ob)
-		{
-			npcId = (ob as Npc).Id;
-		}
-
-		GenericMenu menu = new GenericMenu();
-		foreach (var loc in data.Locations)
-		{
-			if (loc == null)
-				continue;
-
-			foreach (var locNpc in loc.Npcs)
-			{
-				if (locNpc == null)
-					continue;
-				menu.AddItem(new GUIContent(locNpc.Id), false, handleItemClicked, locNpc);
-			}
-
-			
-		}
-
-		menu.DropDown(dropdownPos);
-	}
-
-	private Tuple<Location,Npc> FindNpc()
-	{
-		foreach (var loc in data.Locations)
-		{
-			foreach (var locNpc in loc?.Npcs ?? new List<Npc>())
-			{
-				if (locNpc?.Id == npcId)
-				{
-					return new Tuple<Location, Npc>(loc, locNpc);
-				}
-			}
-		}
-
-		return null;
-	}
-
 	private void CreateInteraction()
 	{
 		Interaction interaction = ScriptableObject.CreateInstance<Interaction>();
 		interaction.Name = interactionName;
-		interaction.Id = interactionName+ npcId;
+		interaction.Id = interactionName+ npcPicker.NpcId;
 		interaction.InteractionResults = new List<InteractionResult>();
 		interaction.InteractionResults.Add(new InteractionResult(){Probability = 1});
 
-		var foundNpc = FindNpc();
+		var foundNpc = data.FindNpc(npcPicker.NpcId);
 
 		if (foundNpc == null)
 			return;
