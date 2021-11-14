@@ -30,6 +30,8 @@ namespace GameModel.Serializers
 			var locs = new List<SerializedLocation>();
 			foreach (var location in ob.Locations)
 			{
+				if (location == null)
+					continue;
 				locs.Add(SerializedLocation.Serialize(location));
 			}
 
