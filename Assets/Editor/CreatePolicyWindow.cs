@@ -1,0 +1,58 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using Assets.GameModel;
+using UnityEditor;
+using UnityEngine;
+
+public class CreatePolicyWindow : EditorWindow
+{
+	private static CreatePolicyWindow window;
+
+	[MenuItem("Company Man/Create Policy")]
+
+	static void Init()
+	{
+		window = (CreatePolicyWindow)EditorWindow.GetWindow(typeof(CreatePolicyWindow));
+		window.data = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
+		window.Show();
+	}
+
+	private GameData data;
+	private string policyName;
+	private LocationPicker locPicker = new LocationPicker();
+
+	void OnGUI()
+	{
+		policyName = EditorGUILayout.TextField("Name:", policyName);
+
+		locPicker.DrawLocationDropdown(data);
+
+		if (GUILayout.Button("Create!"))
+		{
+			Create();
+
+			window.Close();
+		}
+	}
+	
+	private void Create()
+	{
+		Policy policy = ScriptableObject.CreateInstance<Policy>();
+		policy.Name = policyName;
+		policy.Id = policyName + locPicker.LocationId;
+
+		var foundLoc = data.FindLocation(locPicker.LocationId);
+
+		if (foundLoc == null)
+			return;
+
+
+		foundLoc.Policies.Add(policy);
+		EditorUtility.SetDirty(foundLoc);
+
+		AssetDatabase.CreateAsset(policy, $"Assets/Data/{foundLoc.Id}/_Policies/{policy.Name}.asset");
+		AssetDatabase.SaveAssets();
+	}
+
+}
