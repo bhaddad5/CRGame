@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Father's Day
+  m_Name: Mom's upcoming review
   m_EditorClassIdentifier: 
-  Id: Father's DayKevinKelly
-  Name: Father's Day
-  Category: 3
+  Id: Mom's upcoming reviewDeirdreKelly
+  Name: Mom's upcoming review
+  Category: 2
   Requirements:
     RequiredPower: 0
     RequiredControl: 0
@@ -23,13 +23,13 @@ MonoBehaviour:
     RequiresPrideAtOrBelowValue: 0
     RequiredPride: 0
     RequiredInteractions:
-    - {fileID: 11400000, guid: d251d887897c38947ab8c96bd0ca4668, type: 2}
+    - {fileID: 11400000, guid: cf9c31e9f4d71044880cb822fca5a46f, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 0
+    EgoCost: 10
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -43,63 +43,93 @@ MonoBehaviour:
   InteractionResults:
   - Dialogs:
     - CurrSpeaker: 0
-      Text: Thanks for coming over.  I needed to talk to somebody about this and
-        I felt funny about bringing it up with Mom.  Is that ok?
+      Text: What's wrong?
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      Text: Of course, Kevin!  I'm always happy to have a chat.  What's on your mind?
+      Text: Oh, you poor dear!  I'm hoping you can help your mom.
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: Well, you know my dad got killed in the war.  And Father's Day is coming
-        up and I was thinking...
+      Text: Why?  What's wrong?
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      Text: You want to give a present to Donald for Father's Day, but you feel conflicted.
+      Text: Your Mom reports to me at work and I'm afraid she's not doing very well. 
+        I'm probably going to have to let her go-- unless...
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: How did you know?
+      Text: Unless what?
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      Text: Kevin, it's natural.  I know Donald thinks the world of you and I think
-        he'd be thrilled by a gesture like that.
+      Text: Unless you and I become very friendly.  Very, very friendly.  You're
+        a big girl-- I think you know what I'm talking about.
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: Thanks!  I kind of think of him like a father.  I'm going to do it. 
-        What should I get him?
+      Text: You can't!  I won't!  Get out!  Go-- just get out!
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
-      CustomNpcImageOptions: []
+      CustomNpcImageOptions:
+      - {fileID: 0}
     - CurrSpeaker: 1
-      Text: He's a man's man-- how about a box of cigars?
+      Text: If I leave here, your mom's going to be unemployed.
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
-      CustomNpcImageOptions: []
+      CustomNpcImageOptions:
+      - {fileID: 0}
     - CurrSpeaker: 0
-      Text: That's a great idea!  I'll do it!
+      Text: No- wait!  Come back!  We can... be friends, just like you want!
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
-      CustomNpcImageOptions: []
+      CustomNpcImageOptions:
+      - {fileID: 0}
     OptionalPopups: []
-    Effects: []
+    Effects:
+    - ContextualNpcReference: {fileID: 0}
+      AmbitionEffect: -10
+      PrideEffect: 0
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      ControlEffect: 0
+      RemoveNpcFromGame: 0
+      TrophiesClaimedReferences: []
+      ContextualLocationReference: {fileID: 0}
+      UpdateLocationBackground: {fileID: 0}
+      ShouldUpdateLocationMapPos: 0
+      UpdateLocationMapPosition: {x: 0, y: 0}
+      ShouldUpdateStatusSymbols: 0
+      UpdateStatusSymbols:
+        CarName: 
+        CarImage: {fileID: 0}
+        SuitsName: 
+        SuitsImage: {fileID: 0}
+        JewleryCuffs: {fileID: 0}
+        JewleryPen: {fileID: 0}
+        JewleryRing: {fileID: 0}
+        JewleryWatch: {fileID: 0}
     Probability: 1

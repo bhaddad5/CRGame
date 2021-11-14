@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Professor Tyson
+  m_Name: Boyfriend question
   m_EditorClassIdentifier: 
-  Id: Professor TysonKevinKelly
-  Name: Professor Tyson
-  Category: 3
+  Id: Boyfriend questionDeirdreKelly
+  Name: Boyfriend question
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredControl: 0
@@ -23,13 +23,13 @@ MonoBehaviour:
     RequiresPrideAtOrBelowValue: 0
     RequiredPride: 0
     RequiredInteractions:
-    - {fileID: 11400000, guid: 1054aff1b95eb024c88711b527cd02f2, type: 2}
+    - {fileID: 11400000, guid: ef3a415ec1368ce4e934ad7180533da9, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 0
+    EgoCost: 10
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -43,41 +43,66 @@ MonoBehaviour:
   InteractionResults:
   - Dialogs:
     - CurrSpeaker: 1
-      Text: Hi Kev!  Hey, what do you think of your mom's new friend?
+      Text: Hi there, cute stuff!
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: Professor Tyson?
+      Text: Oh, hi!  You here to see Mom?
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      Text: Exactly.  What do you think of him?
+      Text: Actually, I'm just dropping off more paperwork.  Are you here alone or
+        do you have a boyfriend hiding somewhere?
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: I like him!  Of course, Deirdre HATES him.  But I think he's cool.
+      Text: You're teasing!  I don't have a boyfirned!
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      Text: So you're ok with him seeing your mom?
-      CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
-      CustomNpcImageOptions: []
-    - CurrSpeaker: 0
-      Text: Yeah- I think it is great.  She seems really happy!
+      Text: A pretty girl liek you?  That's very hard ot believe... and a kind of
+        a waste.
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     OptionalPopups: []
-    Effects: []
+    Effects:
+    - ContextualNpcReference: {fileID: 0}
+      AmbitionEffect: -10
+      PrideEffect: 0
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      ControlEffect: 0
+      RemoveNpcFromGame: 0
+      TrophiesClaimedReferences: []
+      ContextualLocationReference: {fileID: 0}
+      UpdateLocationBackground: {fileID: 0}
+      ShouldUpdateLocationMapPos: 0
+      UpdateLocationMapPosition: {x: 0, y: 0}
+      ShouldUpdateStatusSymbols: 0
+      UpdateStatusSymbols:
+        CarName: 
+        CarImage: {fileID: 0}
+        SuitsName: 
+        SuitsImage: {fileID: 0}
+        JewleryCuffs: {fileID: 0}
+        JewleryPen: {fileID: 0}
+        JewleryRing: {fileID: 0}
+        JewleryWatch: {fileID: 0}
     Probability: 1
