@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Boyfriend question
+  m_Name: Final Consulting Report
   m_EditorClassIdentifier: 
-  Id: Boyfriend questionDeirdreKelly
-  Name: Boyfriend question
-  Category: 1
+  Id: Final Consulting ReportDonaldTyson
+  Name: Final Consulting Report
+  Category: 4
   Requirements:
     RequiredPower: 0
     RequiredControl: 0
@@ -23,14 +23,14 @@ MonoBehaviour:
     RequiresPrideAtOrBelowValue: 0
     RequiredPride: 0
     RequiredInteractions:
-    - {fileID: 11400000, guid: ef3a415ec1368ce4e934ad7180533da9, type: 2}
+    - {fileID: 11400000, guid: 6af45a8b5dec3d64ba8c1c4f979eb6b8, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 10
-    MoneyCost: 0
+    EgoCost: 0
+    MoneyCost: 25000
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -39,45 +39,70 @@ MonoBehaviour:
     HornicalCost: 0
   Repeatable: 0
   Completed: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   InteractionResults:
   - Dialogs:
     - CurrSpeaker: 1
-      Text: Hi there, cute stuff!
+      Text: You've completed your investigation?
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: Oh, hi!  You here to see Mom?
+      Text: Yes-- it's all here.  And it is dynomite.
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      Text: Actually, I'm just dropping off more paperwork.  Are you here alone or
-        do you have a boyfriend hiding somewhere?
+      Text: Explain.
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: You're teasing!  I don't have a boyfriend!
+      Text: It is all in here, but I'll cut to the chase.  Jennifer Page is a fraud. 
+        She didn't develop anything.  In fact, Artemis probably doesn't even have
+        the rights to hald the IP it claims is it's own.
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      Text: A pretty girl like you?  That's very hard ot believe... and a kind of
-        a waste.
+      Text: How is this possible?
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
-    OptionalPopups: []
+    - CurrSpeaker: 0
+      Text: She used shell companies to cover her tracks but she basically scavenged
+        other people's work, made slight changes and re-submitted it to get the patent
+        in her own name.  It is a complete fraud.
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 1
+      Text: If this becomes public, she'll be destroyed professionally and Artemis
+        would be reduced to a penny stock.
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 0
+      Text: Exactly-- like I said-- dynomite.
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
+    OptionalPopups:
+    - Title: 
+      Videos: []
+      Texture: {fileID: 2800000, guid: 7977ce0e00b0a344aaa7cc397ac81d0b, type: 3}
+      Text: Tyson Consulting Report
     Effects:
     - ContextualNpcReference: {fileID: 0}
-      AmbitionEffect: -10
+      AmbitionEffect: 0
       PrideEffect: 0
       EgoEffect: 0
       FundsEffect: 0

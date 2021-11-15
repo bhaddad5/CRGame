@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Consider the dividend
+  m_Name: Consulting Project Update
   m_EditorClassIdentifier: 
-  Id: Consider the dividendDonaldTyson
-  Name: Consider the dividend
-  Category: 3
+  Id: Consulting Project UpdateDonaldTyson
+  Name: Consulting Project Update
+  Category: 4
   Requirements:
     RequiredPower: 0
     RequiredControl: 0
@@ -23,14 +23,14 @@ MonoBehaviour:
     RequiresPrideAtOrBelowValue: 0
     RequiredPride: 0
     RequiredInteractions:
-    - {fileID: 11400000, guid: ba54dced750464e4dbb4db3d8d79ec34, type: 2}
+    - {fileID: 11400000, guid: 6c51d9c02397eae459c7efa50d9de2f2, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 0
+    MoneyCost: 15000
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -39,49 +39,40 @@ MonoBehaviour:
     HornicalCost: 0
   Repeatable: 0
   Completed: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   InteractionResults:
   - Dialogs:
     - CurrSpeaker: 1
-      Text: 'Candace isn''t exactly keeping your affair very secret around the office.  '
+      Text: What have you learned?
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: I don't care.  It is nice to have Carole on the back foot.
+      Text: 'Some strange things, to be honest.  The patents on which Artemis is
+        based were originally claimed by various third parties.  '
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      Text: Did you know there's a dividend waiting?  Candace has a daughter-- Dierdre.
+      Text: But Jennifer Page claimes those are all her patents.
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: Does she?
+      Text: Yes, it is odd.  Shall I contnue looking into all this?
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      Text: 'You should drop in and introduce yourself.  She''s a real cutie.  '
+      Text: By all means.  I'll send over the second payment right now.
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
-    - CurrSpeaker: 0
-      Text: I think I shall!
-      CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
-      CustomNpcImageOptions: []
-    OptionalPopups:
-    - Title: 
-      Videos: []
-      Texture: {fileID: 0}
-      Text: 
+    OptionalPopups: []
     Effects: []
     Probability: 1

@@ -10,20 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Consider the dividend
+  m_Name: Deirdre after school
   m_EditorClassIdentifier: 
-  Id: Consider the dividendDonaldTyson
-  Name: Consider the dividend
+  Id: Deirdre after schoolDeirdreKelly
+  Name: Deirdre after school
   Category: 3
   Requirements:
     RequiredPower: 0
     RequiredControl: 0
-    RequiresAmbitionAtOrBelowValue: 0
+    RequiresAmbitionAtOrBelowValue: 1
     RequiredAmbition: 0
     RequiresPrideAtOrBelowValue: 0
     RequiredPride: 0
-    RequiredInteractions:
-    - {fileID: 11400000, guid: ba54dced750464e4dbb4db3d8d79ec34, type: 2}
+    RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -39,49 +38,80 @@ MonoBehaviour:
     HornicalCost: 0
   Repeatable: 0
   Completed: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   InteractionResults:
   - Dialogs:
     - CurrSpeaker: 1
-      Text: 'Candace isn''t exactly keeping your affair very secret around the office.  '
+      Text: How was school today?
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: I don't care.  It is nice to have Carole on the back foot.
+      Text: It was fine.  Look, I have a lot of homework to do and...
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      Text: Did you know there's a dividend waiting?  Candace has a daughter-- Dierdre.
+      Text: I'm going to be dropping over from time to time-- so we can become better
+        friends.  You'd like that, wouldn't you?
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: Does she?
+      Text: I don't know...
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      Text: 'You should drop in and introduce yourself.  She''s a real cutie.  '
+      Text: I think you do.  You wouldn't want your mom to lose her job, would you?
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: I think I shall!
+      Text: No, I wouldn't want that...so, I guess it is ok.
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     OptionalPopups:
-    - Title: 
-      Videos: []
+    - Title: Our little secret
+      Videos:
+      - {fileID: 32900000, guid: 3d8ba66d132da2246ab7def115d312da, type: 3}
       Texture: {fileID: 0}
       Text: 
-    Effects: []
+    Effects:
+    - ContextualNpcReference: {fileID: 0}
+      AmbitionEffect: 0
+      PrideEffect: -10
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      ControlEffect: 0
+      RemoveNpcFromGame: 0
+      TrophiesClaimedReferences: []
+      ContextualLocationReference: {fileID: 0}
+      UpdateLocationBackground: {fileID: 0}
+      ShouldUpdateLocationMapPos: 0
+      UpdateLocationMapPosition: {x: 0, y: 0}
+      ShouldUpdateStatusSymbols: 0
+      UpdateStatusSymbols:
+        CarName: 
+        CarImage: {fileID: 0}
+        SuitsName: 
+        SuitsImage: {fileID: 0}
+        JewleryCuffs: {fileID: 0}
+        JewleryPen: {fileID: 0}
+        JewleryRing: {fileID: 0}
+        JewleryWatch: {fileID: 0}
     Probability: 1

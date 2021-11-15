@@ -10,20 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Consider the dividend
+  m_Name: Deflower Deirdre
   m_EditorClassIdentifier: 
-  Id: Consider the dividendDonaldTyson
-  Name: Consider the dividend
-  Category: 3
+  Id: Deflower DeirdreDeirdreKelly
+  Name: Deflower Deirdre
+  Category: 6
   Requirements:
     RequiredPower: 0
     RequiredControl: 0
-    RequiresAmbitionAtOrBelowValue: 0
+    RequiresAmbitionAtOrBelowValue: 1
     RequiredAmbition: 0
     RequiresPrideAtOrBelowValue: 0
     RequiredPride: 0
-    RequiredInteractions:
-    - {fileID: 11400000, guid: ba54dced750464e4dbb4db3d8d79ec34, type: 2}
+    RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -39,49 +38,75 @@ MonoBehaviour:
     HornicalCost: 0
   Repeatable: 0
   Completed: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   InteractionResults:
   - Dialogs:
-    - CurrSpeaker: 1
-      Text: 'Candace isn''t exactly keeping your affair very secret around the office.  '
-      CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
-      CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: I don't care.  It is nice to have Carole on the back foot.
+      Text: Please don't do this!
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      Text: Did you know there's a dividend waiting?  Candace has a daughter-- Dierdre.
+      Text: You think I was going to forgo this particular delicacy?  I don't think
+        so, Deirdre!
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: Does she?
+      Text: No!  Please-- I'm begging you!  Please-- just leav eme alone!
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      Text: 'You should drop in and introduce yourself.  She''s a real cutie.  '
+      Text: Get on your back NOW and spread your legs-- I might even be gentle with
+        my little virgin!
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: I think I shall!
+      Text: Yes-- please!  This i smy first time-- please be gentle!!!
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     OptionalPopups:
-    - Title: 
-      Videos: []
+    - Title: Pop goes the cherry!
+      Videos:
+      - {fileID: 32900000, guid: 73d367fe2e55c214890a19695153a87d, type: 3}
       Texture: {fileID: 0}
       Text: 
-    Effects: []
+    Effects:
+    - ContextualNpcReference: {fileID: 0}
+      AmbitionEffect: 0
+      PrideEffect: -20
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      ControlEffect: 0
+      RemoveNpcFromGame: 0
+      TrophiesClaimedReferences: []
+      ContextualLocationReference: {fileID: 0}
+      UpdateLocationBackground: {fileID: 0}
+      ShouldUpdateLocationMapPos: 0
+      UpdateLocationMapPosition: {x: 0, y: 0}
+      ShouldUpdateStatusSymbols: 0
+      UpdateStatusSymbols:
+        CarName: 
+        CarImage: {fileID: 0}
+        SuitsName: 
+        SuitsImage: {fileID: 0}
+        JewleryCuffs: {fileID: 0}
+        JewleryPen: {fileID: 0}
+        JewleryRing: {fileID: 0}
+        JewleryWatch: {fileID: 0}
     Probability: 1

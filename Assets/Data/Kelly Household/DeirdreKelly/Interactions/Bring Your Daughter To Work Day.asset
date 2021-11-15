@@ -10,26 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Boyfriend question
+  m_Name: Bring Your Daughter To Work Day
   m_EditorClassIdentifier: 
-  Id: Boyfriend questionDeirdreKelly
-  Name: Boyfriend question
-  Category: 1
+  Id: Bring Your Daughter To Work DayDeirdreKelly
+  Name: Bring Your Daughter To Work Day
+  Category: 3
   Requirements:
     RequiredPower: 0
     RequiredControl: 0
-    RequiresAmbitionAtOrBelowValue: 0
+    RequiresAmbitionAtOrBelowValue: 1
     RequiredAmbition: 0
-    RequiresPrideAtOrBelowValue: 0
-    RequiredPride: 0
+    RequiresPrideAtOrBelowValue: 1
+    RequiredPride: 20
     RequiredInteractions:
-    - {fileID: 11400000, guid: ef3a415ec1368ce4e934ad7180533da9, type: 2}
+    - {fileID: 11400000, guid: aad123f22db651a419dc6dcee90e4af3, type: 2}
+    - {fileID: 11400000, guid: ea8ec59832782e44985db2c79ee4aed8, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 10
+    EgoCost: 5
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -39,46 +40,50 @@ MonoBehaviour:
     HornicalCost: 0
   Repeatable: 0
   Completed: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   InteractionResults:
   - Dialogs:
     - CurrSpeaker: 1
-      Text: Hi there, cute stuff!
+      Text: Did you have a fun day at my office, Deirdre?
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: Oh, hi!  You here to see Mom?
+      Text: I don't want to do that again.
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      Text: Actually, I'm just dropping off more paperwork.  Are you here alone or
-        do you have a boyfriend hiding somewhere?
+      Text: Why not?
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: You're teasing!  I don't have a boyfriend!
+      Text: 'I didn''t like doing what you made me do on the way home.  '
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      Text: A pretty girl like you?  That's very hard ot believe... and a kind of
-        a waste.
+      Text: I think you'll get used to it. You're not very good at it an dyou'll
+        need a lot more tutoring.
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
-    OptionalPopups: []
+    OptionalPopups:
+    - Title: The Ride Home
+      Videos:
+      - {fileID: 32900000, guid: a36de1bb443a3e64b824177f5da70a6b, type: 3}
+      Texture: {fileID: 0}
+      Text: 
     Effects:
     - ContextualNpcReference: {fileID: 0}
-      AmbitionEffect: -10
-      PrideEffect: 0
+      AmbitionEffect: 0
+      PrideEffect: -10
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
