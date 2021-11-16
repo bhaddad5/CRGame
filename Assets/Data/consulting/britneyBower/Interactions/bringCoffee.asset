@@ -18,19 +18,20 @@ MonoBehaviour:
   Requirements:
     RequiredPower: 0
     RequiredControl: 0
-    RequiresAmbitionAtOrBelowValue: 1
-    RequiredAmbition: 20
+    RequiresAmbitionAtOrBelowValue: 0
+    RequiredAmbition: 0
     RequiresPrideAtOrBelowValue: 0
     RequiredPride: -1
     RequiredInteractions:
     - {fileID: 11400000, guid: 0a21c074c55172948a6101abc647c2f7, type: 2}
+    - {fileID: 11400000, guid: c951eadfed54276479e8704d51aa3a4f, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredTrophies: []
   Cost:
     EgoCost: 5
-    MoneyCost: 0
+    MoneyCost: 5
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -70,7 +71,7 @@ MonoBehaviour:
     OptionalPopups: []
     Effects:
     - ContextualNpcReference: {fileID: 0}
-      AmbitionEffect: 3
+      AmbitionEffect: 5
       PrideEffect: 0
       EgoEffect: 0
       FundsEffect: 0
