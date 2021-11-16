@@ -30,7 +30,7 @@ namespace GameModel.Serializers
 				MissionName = ob.MissionName,
 				MissionDescription = ob.MissionDescription,
 				MissionImage = ob.MissionImage,
-				CompletionInteractionId = ob.CompletionInteractionReference.Id,
+				CompletionInteractionId = ob.CompletionInteractionReference?.Id,
 				Rewards = effects,
 			};
 		}
