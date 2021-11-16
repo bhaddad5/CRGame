@@ -22,8 +22,10 @@ MonoBehaviour:
     RequiredAmbition: -1
     RequiresPrideAtOrBelowValue: 0
     RequiredPride: -1
-    RequiredInteractions: []
-    RequiredNotCompletedInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: c951eadfed54276479e8704d51aa3a4f, type: 2}
+    RequiredNotCompletedInteractions:
+    - {fileID: 0}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredTrophies: []
@@ -42,30 +44,30 @@ MonoBehaviour:
   InteractionResults:
   - Dialogs:
     - CurrSpeaker: 1
-      CustomSpeakerReference: {fileID: 0}
       Text: Sorry, who are you and what do you need?
+      CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
-      NpcImage: 
+      CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      CustomSpeakerReference: {fileID: 0}
       Text: I'm Jill-- Jill Vander.  I'm temping here.  HR needs your TPS form filled
         out.
+      CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
-      NpcImage: 
+      CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      CustomSpeakerReference: {fileID: 0}
       Text: Oh, sure.  Here it is.
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
-      NpcImage: 
-    - CurrSpeaker: 0
       CustomSpeakerReference: {fileID: 0}
-      Text: Thanks.  See you around, I guess.
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
-      NpcImage: 
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 0
+      Text: Thanks.  See you around, I guess.
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
     OptionalPopups:
     - Title: TPS Form
       Videos:

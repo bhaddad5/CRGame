@@ -18,8 +18,8 @@ MonoBehaviour:
   Requirements:
     RequiredPower: 0
     RequiredControl: 0
-    RequiresAmbitionAtOrBelowValue: 0
-    RequiredAmbition: -1
+    RequiresAmbitionAtOrBelowValue: 1
+    RequiredAmbition: 60
     RequiresPrideAtOrBelowValue: 0
     RequiredPride: -1
     RequiredInteractions:
@@ -43,30 +43,30 @@ MonoBehaviour:
   InteractionResults:
   - Dialogs:
     - CurrSpeaker: 1
-      CustomSpeakerReference: {fileID: 0}
       Text: Would you mind if I joined you on some sales calls?
+      CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
-      NpcImage: 
+      CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      CustomSpeakerReference: {fileID: 0}
       Text: I'm better on my own.
+      CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
-      NpcImage: 
+      CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      CustomSpeakerReference: {fileID: 0}
       Text: I was hoping to learn from you.  Everyone sayes you're the best sales
         person in the company.
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
-      NpcImage: 
-    - CurrSpeaker: 0
       CustomSpeakerReference: {fileID: 0}
-      Text: Alright-- but keep your comments to yourself!
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
-      NpcImage: 
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 0
+      Text: Alright-- but keep your comments to yourself!
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
     OptionalPopups: []
     Effects:
     - ContextualNpcReference: {fileID: 0}

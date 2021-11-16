@@ -22,7 +22,8 @@ MonoBehaviour:
     RequiredAmbition: -1
     RequiresPrideAtOrBelowValue: 0
     RequiredPride: -1
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 3b3da77ab117479488d9fea95c4b047f, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -42,31 +43,36 @@ MonoBehaviour:
   InteractionResults:
   - Dialogs:
     - CurrSpeaker: 1
-      CustomSpeakerReference: {fileID: 0}
       Text: I thought I'd better let you know about this before the word gets out.
+      CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
-      NpcImage: 
+      CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      CustomSpeakerReference: {fileID: 0}
       Text: This is so humiliating.  You have to keep this between us.
+      CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
-      NpcImage: 
+      CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      CustomSpeakerReference: {fileID: 0}
       Text: I'll try.  What will you do now?
+      CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
-      NpcImage: 
+      CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      CustomSpeakerReference: {fileID: 0}
       Text: The engagement is over.  Beyond that, I don't know what to do.  This
         changes everything.
+      CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
-      NpcImage: 
-    OptionalPopups: []
+      CustomNpcImageOptions: []
+    OptionalPopups:
+    - Title: Found on SecretHookups.com
+      Videos:
+      - {fileID: 32900000, guid: b9656e51cdb640541ae58bdb49dd5fa4, type: 3}
+      Texture: {fileID: 0}
+      Text: 
     Effects:
     - ContextualNpcReference: {fileID: 0}
       AmbitionEffect: -50
