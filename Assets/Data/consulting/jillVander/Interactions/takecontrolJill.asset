@@ -38,36 +38,36 @@ MonoBehaviour:
     HornicalCost: 0
   Repeatable: 0
   Completed: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   InteractionResults:
   - Dialogs:
     - CurrSpeaker: 1
-      CustomSpeakerReference: {fileID: 0}
       Text: You're reporting to me from now on.
+      CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
-      NpcImage: 
+      CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      CustomSpeakerReference: {fileID: 0}
       Text: I didn't get that memo.
+      CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
-      NpcImage: 
+      CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      CustomSpeakerReference: {fileID: 0}
       Text: Don't push me.  We both know you'll do what I tell you to do from now
         on.
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
-      NpcImage: 
-    - CurrSpeaker: 0
       CustomSpeakerReference: {fileID: 0}
-      Text: OK.  I get it-- you're the boss.
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
-      NpcImage: 
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 0
+      Text: OK.  I get it-- you're the boss.
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
     OptionalPopups:
-    - Title: Take control of Jill
+    - Title: A great way to re-set our relationship...
       Videos:
       - {fileID: 32900000, guid: dc9f2a07604b2e445bc029aa50535762, type: 3}
       Texture: {fileID: 0}
@@ -76,7 +76,7 @@ MonoBehaviour:
     - ContextualNpcReference: {fileID: 0}
       AmbitionEffect: 0
       PrideEffect: 0
-      EgoEffect: 0
+      EgoEffect: 30
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
