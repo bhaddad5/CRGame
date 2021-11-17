@@ -13,14 +13,20 @@ MonoBehaviour:
   m_Name: 'Manage Internship Program '
   m_EditorClassIdentifier: 
   MissionName: 'Manage Internship Program '
-  MissionDescription: Deborah Jones currently has been given this assignment but
+  MissionDescription: 'Deborah Jones currently has been given this assignment but
     you might be able to take it away from her.
+
+    EARN +2 POWER
+
+    DEBORAH JONES
+    LOSES -10 AMBITION'
   MissionImage: {fileID: 2800000, guid: 493d4757a8e26704d89d2754eadfbe68, type: 3}
   CompletionInteractionReference: {fileID: 11400000, guid: 9572c2a10529ffe489806abd54f5c1da,
     type: 2}
   Rewards:
-  - ContextualNpcReference: {fileID: 0}
-    AmbitionEffect: 0
+  - ContextualNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+      type: 2}
+    AmbitionEffect: -10
     PrideEffect: 0
     EgoEffect: 0
     FundsEffect: 0
