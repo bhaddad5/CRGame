@@ -23,7 +23,8 @@ MonoBehaviour:
     RequiresPrideAtOrBelowValue: 0
     RequiredPride: -1
     RequiredInteractions:
-    - {fileID: 0}
+    - {fileID: 11400000, guid: 74b667179472ad0488eeb9e1cd780a78, type: 2}
+    - {fileID: 11400000, guid: 64c108dc2ac4a5040b07c1391a27dc2d, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -39,34 +40,34 @@ MonoBehaviour:
     HornicalCost: 0
   Repeatable: 0
   Completed: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   InteractionResults:
   - Dialogs:
     - CurrSpeaker: 1
-      CustomSpeakerReference: {fileID: 0}
       Text: You're going to bring home the bacon, right Miller?
+      CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
-      NpcImage: 
+      CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      CustomSpeakerReference: {fileID: 0}
       Text: I'll do my best.
+      CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
-      NpcImage: 
+      CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      CustomSpeakerReference: {fileID: 0}
       Text: You'll have to do better.  The only reason I'm keeping you around is
         because you're a moneymaker.
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
-      NpcImage: 
-    - CurrSpeaker: 0
       CustomSpeakerReference: {fileID: 0}
-      Text: Understood.
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
-      NpcImage: 
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 0
+      Text: Understood.
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
     OptionalPopups:
     - Title: Do anything to make the sale!
       Videos:
@@ -78,7 +79,7 @@ MonoBehaviour:
       AmbitionEffect: 0
       PrideEffect: 0
       EgoEffect: 0
-      FundsEffect: 0
+      FundsEffect: 1000
       PowerEffect: 0
       PatentsEffect: 0
       CultureEffect: 0

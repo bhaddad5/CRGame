@@ -23,7 +23,8 @@ MonoBehaviour:
     RequiresPrideAtOrBelowValue: 0
     RequiredPride: -1
     RequiredInteractions:
-    - {fileID: 0}
+    - {fileID: 11400000, guid: 74b667179472ad0488eeb9e1cd780a78, type: 2}
+    - {fileID: 11400000, guid: 64c108dc2ac4a5040b07c1391a27dc2d, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -39,34 +40,34 @@ MonoBehaviour:
     HornicalCost: 0
   Repeatable: 0
   Completed: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   InteractionResults:
   - Dialogs:
     - CurrSpeaker: 1
-      CustomSpeakerReference: {fileID: 0}
       Text: I've sent the key on ahead.  When the client is done with you, you'll
         be locked back up and the key will be couriered back.
+      CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
-      NpcImage: 
+      CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      CustomSpeakerReference: {fileID: 0}
       Text: You know you can trust me!
+      CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
-      NpcImage: 
+      CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      CustomSpeakerReference: {fileID: 0}
       Text: Don't be silly.  Do a good job and land the contract!
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
-      NpcImage: 
-    - CurrSpeaker: 0
       CustomSpeakerReference: {fileID: 0}
-      Text: 'I''ll come back with a signed contract! REWARD is 75% chance: .3 REVENUE '
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
-      NpcImage: 
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 0
+      Text: I'll come back with a signed contract!
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
     OptionalPopups:
     - Title: Customer satisfaction is your priority
       Videos:
