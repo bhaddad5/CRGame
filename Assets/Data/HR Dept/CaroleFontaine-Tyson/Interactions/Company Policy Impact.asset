@@ -10,21 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Take control of Carole
+  m_Name: Company Policy Impact
   m_EditorClassIdentifier: 
-  Id: Take control of CaroleCaroleFontaine-Tyson
-  Name: Take control of Carole
+  Id: Company Policy ImpactCaroleFontaine-Tyson
+  Name: Company Policy Impact
   Category: 2
   Requirements:
     RequiredPower: 0
     RequiredControl: 0
-    RequiresAmbitionAtOrBelowValue: 1
+    RequiresAmbitionAtOrBelowValue: 0
     RequiredAmbition: 0
     RequiresPrideAtOrBelowValue: 0
     RequiredPride: 0
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 15721713dc74f514fa1c45f3d0202e26, type: 2}
     RequiredNotCompletedInteractions: []
-    RequiredPolicies: []
+    RequiredPolicies:
+    - {fileID: 11400000, guid: ef81645bd20a5284fbfdd270c684ddb5, type: 2}
     RequiredDepartmentsControled: []
     RequiredTrophies: []
   Cost:
@@ -38,31 +40,32 @@ MonoBehaviour:
     HornicalCost: 0
   Repeatable: 0
   Completed: 0
-  PreviewEffect: 1
+  PreviewEffect: 0
   InteractionResults:
   - Dialogs:
     - CurrSpeaker: 1
-      Text: After considerable reflection, I feel compelled to involve myself in
-        your affairs.  Carole, you're a mess.
+      Text: I'm afraid that, under the Qualifications policy, your position and job
+        description will have to be reviewed.
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: I know-- I'm sorry.  I'm feeling so helpless lately.
+      Text: But I've been carrying out my duties perfectly fine!
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      Text: Which is exactly why you'll be taking orders from me from now on.  You're
-        simply incapable of making decisiosn for yourself.  Do you understand?
+      Text: Yes, but Carole you are, based on your own credentials, no longer eligible
+        to hold the Director of HR office!
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: Yes, you're right.  Thank you for setting me straight.
+      Text: But how am I suppose to do my job now?  I never thought the policy would
+        be interpeted this way!  I feel so de-motivated.
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
@@ -70,7 +73,7 @@ MonoBehaviour:
     OptionalPopups: []
     Effects:
     - ContextualNpcReference: {fileID: 0}
-      AmbitionEffect: 0
+      AmbitionEffect: -90
       PrideEffect: 0
       EgoEffect: 0
       FundsEffect: 0
@@ -81,7 +84,7 @@ MonoBehaviour:
       BrandEffect: 0
       RevanueEffect: 0
       HornicalEffect: 0
-      ControlEffect: 1
+      ControlEffect: 0
       RemoveNpcFromGame: 0
       TrophiesClaimedReferences: []
       ContextualLocationReference: {fileID: 0}

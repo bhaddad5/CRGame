@@ -10,19 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Take control of Carole
+  m_Name: Divorce
   m_EditorClassIdentifier: 
-  Id: Take control of CaroleCaroleFontaine-Tyson
-  Name: Take control of Carole
+  Id: DivorceCaroleFontaine-Tyson
+  Name: Divorce
   Category: 2
   Requirements:
     RequiredPower: 0
     RequiredControl: 0
-    RequiresAmbitionAtOrBelowValue: 1
+    RequiresAmbitionAtOrBelowValue: 0
     RequiredAmbition: 0
     RequiresPrideAtOrBelowValue: 0
     RequiredPride: 0
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 351e0adc833356143aacf4bc20fa29f3, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -42,27 +43,33 @@ MonoBehaviour:
   InteractionResults:
   - Dialogs:
     - CurrSpeaker: 1
-      Text: After considerable reflection, I feel compelled to involve myself in
-        your affairs.  Carole, you're a mess.
+      Text: How are you holding up?  I heard about the divorce.  I'm so sorry.
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: I know-- I'm sorry.  I'm feeling so helpless lately.
+      Text: Yes, well... I'll just have to pick myself up and start over.
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      Text: Which is exactly why you'll be taking orders from me from now on.  You're
-        simply incapable of making decisiosn for yourself.  Do you understand?
+      Text: I suppose.  You're not that young though.  I mean, what man would be
+        interested in an older girl like you when there are so many young hotties
+        out there?
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: Yes, you're right.  Thank you for setting me straight.
+      Text: That's very cruel of you to say!
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 1
+      Text: Yes, well-- I do feel sorry for you!
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
@@ -70,7 +77,7 @@ MonoBehaviour:
     OptionalPopups: []
     Effects:
     - ContextualNpcReference: {fileID: 0}
-      AmbitionEffect: 0
+      AmbitionEffect: -50
       PrideEffect: 0
       EgoEffect: 0
       FundsEffect: 0
@@ -81,7 +88,7 @@ MonoBehaviour:
       BrandEffect: 0
       RevanueEffect: 0
       HornicalEffect: 0
-      ControlEffect: 1
+      ControlEffect: 0
       RemoveNpcFromGame: 0
       TrophiesClaimedReferences: []
       ContextualLocationReference: {fileID: 0}

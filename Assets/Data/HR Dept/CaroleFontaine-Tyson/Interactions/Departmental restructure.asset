@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Take control of Carole
+  m_Name: Departmental restructure
   m_EditorClassIdentifier: 
-  Id: Take control of CaroleCaroleFontaine-Tyson
-  Name: Take control of Carole
+  Id: Departmental restructureCaroleFontaine-Tyson
+  Name: Departmental restructure
   Category: 2
   Requirements:
     RequiredPower: 0
-    RequiredControl: 0
-    RequiresAmbitionAtOrBelowValue: 1
+    RequiredControl: 1
+    RequiresAmbitionAtOrBelowValue: 0
     RequiredAmbition: 0
     RequiresPrideAtOrBelowValue: 0
     RequiredPride: 0
@@ -42,27 +42,29 @@ MonoBehaviour:
   InteractionResults:
   - Dialogs:
     - CurrSpeaker: 1
-      Text: After considerable reflection, I feel compelled to involve myself in
-        your affairs.  Carole, you're a mess.
+      Text: I've been considering your value to the company and since I no longer
+        place much value in your weak executive skills, that you'd be better suited
+        to another role.
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: I know-- I'm sorry.  I'm feeling so helpless lately.
+      Text: I see.  What did you have in mind-- and who will carry out my current
+        duties?
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      Text: Which is exactly why you'll be taking orders from me from now on.  You're
-        simply incapable of making decisiosn for yourself.  Do you understand?
+      Text: I think Jada Baxter will do just fine.  As for you, I suppose some trainer
+        job might be found for you.  How's that?
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: Yes, you're right.  Thank you for setting me straight.
+      Text: I'd be grateful for that.  Thank you for keeping me on.
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
@@ -72,16 +74,45 @@ MonoBehaviour:
     - ContextualNpcReference: {fileID: 0}
       AmbitionEffect: 0
       PrideEffect: 0
-      EgoEffect: 0
+      EgoEffect: 50
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
-      CultureEffect: 0
+      CultureEffect: 2
       SpreadsheetsEffect: 0
       BrandEffect: 0
       RevanueEffect: 0
       HornicalEffect: 0
-      ControlEffect: 1
+      ControlEffect: 0
+      RemoveNpcFromGame: 0
+      TrophiesClaimedReferences: []
+      ContextualLocationReference: {fileID: 0}
+      UpdateLocationBackground: {fileID: 0}
+      ShouldUpdateLocationMapPos: 0
+      UpdateLocationMapPosition: {x: 0, y: 0}
+      ShouldUpdateStatusSymbols: 0
+      UpdateStatusSymbols:
+        CarName: 
+        CarImage: {fileID: 0}
+        SuitsName: 
+        SuitsImage: {fileID: 0}
+        JewleryCuffs: {fileID: 0}
+        JewleryPen: {fileID: 0}
+        JewleryRing: {fileID: 0}
+        JewleryWatch: {fileID: 0}
+    - ContextualNpcReference: {fileID: 0}
+      AmbitionEffect: 0
+      PrideEffect: -50
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 2
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      ControlEffect: 0
       RemoveNpcFromGame: 0
       TrophiesClaimedReferences: []
       ContextualLocationReference: {fileID: 0}
