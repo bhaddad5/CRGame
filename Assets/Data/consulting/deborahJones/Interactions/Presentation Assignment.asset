@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Hello
+  m_Name: Presentation Assignment
   m_EditorClassIdentifier: 
-  Id: Hello
-  Name: Hello
-  Category: 1
+  Id: Presentation AssignmentdeborahJones
+  Name: Presentation Assignment
+  Category: 4
   Requirements:
-    RequiredPower: 15
-    RequiredControl: 0
+    RequiredPower: 0
+    RequiredControl: 1
     RequiresAmbitionAtOrBelowValue: 0
     RequiredAmbition: 0
     RequiresPrideAtOrBelowValue: 0
@@ -25,10 +25,11 @@ MonoBehaviour:
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
-    RequiredDepartmentsControled: []
+    RequiredDepartmentsControled:
+    - {fileID: 11400000, guid: 61a8eb709285dc0448c63cbd36baeed2, type: 2}
     RequiredTrophies: []
   Cost:
-    EgoCost: 3
+    EgoCost: 0
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -36,45 +37,28 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
-  Repeatable: 0
+  Repeatable: 1
   Completed: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   InteractionResults:
   - Dialogs:
-    - CurrSpeaker: 0
-      Text: I don't think we've met.  I'm Candace Kelly.
-      CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
-      CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      Text: What do you do here?
+      Text: 'I want you to work on a new presentation for me.  I''ll email you the
+        particulars but I want it to look fantastic and I expect it to be persuasive.  '
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: I'm the Compliance Manager.  Pretty much responsible for making the trains
-        run on time.  Compliance is part of Planning, so I report to Tracey Bledsoe.
+      Text: I'll begin working on it right away!
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
-    - CurrSpeaker: 1
-      Text: You sound like a useful person to know!
-      CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
-      CustomNpcImageOptions: []
-    OptionalPopups:
-    - Title: Candace Kelly
-      Videos:
-      - {fileID: 32900000, guid: 96fee6427c0144b4fabf5ec25676a410, type: 3}
-      Texture: {fileID: 0}
-      Text: 
+    OptionalPopups: []
     Effects:
     - ContextualNpcReference: {fileID: 0}
-      AmbitionEffect: -2
+      AmbitionEffect: 0
       PrideEffect: 0
       EgoEffect: 0
       FundsEffect: 0
@@ -82,7 +66,7 @@ MonoBehaviour:
       PatentsEffect: 0
       CultureEffect: 0
       SpreadsheetsEffect: 0
-      BrandEffect: 0
+      BrandEffect: 0.25
       RevanueEffect: 0
       HornicalEffect: 0
       ControlEffect: 0

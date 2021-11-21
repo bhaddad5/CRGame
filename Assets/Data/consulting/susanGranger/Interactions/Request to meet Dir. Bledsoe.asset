@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Hello
+  m_Name: Request to meet Dir. Bledsoe
   m_EditorClassIdentifier: 
-  Id: Hello
-  Name: Hello
+  Id: Request to meet Dir. BledsoesusanGranger
+  Name: Request to meet Dir. Bledsoe
   Category: 1
   Requirements:
-    RequiredPower: 15
+    RequiredPower: 7
     RequiredControl: 0
-    RequiresAmbitionAtOrBelowValue: 0
-    RequiredAmbition: 0
+    RequiresAmbitionAtOrBelowValue: 1
+    RequiredAmbition: 50
     RequiresPrideAtOrBelowValue: 0
     RequiredPride: 0
     RequiredInteractions: []
@@ -28,7 +28,7 @@ MonoBehaviour:
     RequiredDepartmentsControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 3
+    EgoCost: 0
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -38,45 +38,44 @@ MonoBehaviour:
     HornicalCost: 0
   Repeatable: 0
   Completed: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   InteractionResults:
   - Dialogs:
-    - CurrSpeaker: 0
-      Text: I don't think we've met.  I'm Candace Kelly.
-      CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
-      CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      Text: What do you do here?
+      Text: I was wondering if there might be an opportunity to meet Director Bledsoe. 
+        Since CSG falls under her group, it would nice to...
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: I'm the Compliance Manager.  Pretty much responsible for making the trains
-        run on time.  Compliance is part of Planning, so I report to Tracey Bledsoe.
+      Text: '...get your face in front of her?  I think that might be arranged. 
+        Considering the effort you''ve been putting it, I think you deserve it.  '
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      Text: You sound like a useful person to know!
+      Text: 'I hear she can be intimidating.  '
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
-    OptionalPopups:
-    - Title: Candace Kelly
-      Videos:
-      - {fileID: 32900000, guid: 96fee6427c0144b4fabf5ec25676a410, type: 3}
-      Texture: {fileID: 0}
-      Text: 
+    - CurrSpeaker: 0
+      Text: Tracey Bledsoe is a very serious player here at Artemis.  She's got Jennifer's
+        ear and her strategic thinking provides the Management Team with amazing
+        perspective.  If you can impress her, you'll go far here.  Let me arrange
+        a quick intro for you at her office.
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
+    OptionalPopups: []
     Effects:
     - ContextualNpcReference: {fileID: 0}
-      AmbitionEffect: -2
+      AmbitionEffect: 0
       PrideEffect: 0
-      EgoEffect: 0
+      EgoEffect: -25
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
