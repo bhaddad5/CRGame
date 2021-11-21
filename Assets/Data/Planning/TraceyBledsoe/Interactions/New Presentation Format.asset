@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: CSG Re-org Announcement
+  m_Name: New Presentation Format
   m_EditorClassIdentifier: 
-  Id: CSG Re-org AnnouncementTraceyBledsoe
-  Name: CSG Re-org Announcement
-  Category: 1
+  Id: New Presentation FormatTraceyBledsoe
+  Name: New Presentation Format
+  Category: 3
   Requirements:
     RequiredPower: 0
     RequiredControl: 0
@@ -23,11 +23,10 @@ MonoBehaviour:
     RequiresPrideAtOrBelowValue: 0
     RequiredPride: 0
     RequiredInteractions:
-    - {fileID: 11400000, guid: 47cfc64559d8d984dada61645f24bd67, type: 2}
+    - {fileID: 11400000, guid: d087b4b747ce9c947a103524f9c9cff3, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
-    RequiredDepartmentsControled:
-    - {fileID: 11400000, guid: 61a8eb709285dc0448c63cbd36baeed2, type: 2}
+    RequiredDepartmentsControled: []
     RequiredTrophies: []
   Cost:
     EgoCost: 0
@@ -35,7 +34,7 @@ MonoBehaviour:
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
-    BrandCost: 0
+    BrandCost: 1
     RevanueCost: 0
     HornicalCost: 0
   Repeatable: 0
@@ -43,44 +42,38 @@ MonoBehaviour:
   PreviewEffect: 1
   InteractionResults:
   - Dialogs:
-    - CurrSpeaker: 0
-      Text: While I'm not happy about the circumstances, I am pleased to appoint
-        you as Manager of the Consulting Services Group.  Congratulations.
-      CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
-      CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      Text: Thank you, Ms. Tracey!  I promise you won't regret it!
+      Text: I thought you'd like to have a look at thi snew multimedia presentation
+        format I've designed.
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: I hope not.  Poor Susan-- I do hope you'll be able to do something with
-        her.  Whilst she's proven a complete failure at management, perhaps you can
-        put her to some use in CSG.
+      Text: I'm impressed!  This is very impressive!
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      Text: I'll certainly do what I kind.  Thanks again!
+      Text: If you like, I'd be happy to email you the master template, if you wanted
+        to use it for your own presentations.
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
-    OptionalPopups:
-    - Title: '"Congratulations on your appointment to CSG!"'
-      Videos:
-      - {fileID: 32900000, guid: ea1fff5e7dc11204489fc2c61a0d2040, type: 3}
-      Texture: {fileID: 0}
-      Text: 
+    - CurrSpeaker: 0
+      Text: Yes, please do that.  Good work!
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
+    OptionalPopups: []
     Effects:
     - ContextualNpcReference: {fileID: 0}
-      AmbitionEffect: -15
+      AmbitionEffect: -10
       PrideEffect: 0
-      EgoEffect: 10
+      EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0

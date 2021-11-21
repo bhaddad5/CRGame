@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: Daily pill
+  m_EditorClassIdentifier: 
+  Id: Daily pillTraceyBledsoe
+  Name: Daily pill
+  Category: 3
+  Requirements:
+    RequiredPower: 0
+    RequiredControl: 0
+    RequiresAmbitionAtOrBelowValue: 1
+    RequiredAmbition: 80
+    RequiresPrideAtOrBelowValue: 0
+    RequiredPride: 0
+    RequiredInteractions:
+    - {fileID: 11400000, guid: d087b4b747ce9c947a103524f9c9cff3, type: 2}
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 0
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    HornicalCost: 0
+  Repeatable: 0
+  Completed: 0
+  PreviewEffect: 0
+  InteractionResults:
+  - Dialogs:
+    - CurrSpeaker: 0
+      Text: Oh!  Sorry-- just let me take my pills.  I forgot and I really can't
+        miss a day.
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 1
+      Text: Of course!  Please take your time.
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 0
+      Text: Ah!  And some water-- and done.  Sorry, if I don't take my perscription...
+        well, anyway...
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 1
+      Text: No need to explain!  You need to follow Doctor's orders!
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
+    OptionalPopups:
+    - Title: '"I''ve been taking them for years.  They... calm me down."'
+      Videos:
+      - {fileID: 32900000, guid: 10494ba331eceee43b5762dd8e9bd652, type: 3}
+      Texture: {fileID: 0}
+      Text: 
+    Effects: []
+    Probability: 1
