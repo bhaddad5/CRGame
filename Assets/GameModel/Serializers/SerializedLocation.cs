@@ -23,6 +23,7 @@ namespace GameModel.Serializers
 		public Texture2D BackgroundImage;
 
 		public string RequiredVisibilityInteraction;
+		public string ControlInteractionReference;
 
 		public List<SerializedPolicy> Policies;
 		public List<SerializedMission> Missions;
@@ -60,6 +61,7 @@ namespace GameModel.Serializers
 				Name = ob.Name,
 				ClosedOnWeekends = ob.ClosedOnWeekends,
 				RequiredVisibilityInteraction = ob.RequiredVisibilityInteractionReference?.Id,
+				ControlInteractionReference = ob.ControlInteractionReference?.Id,
 				Npcs = npcs,
 				Policies = policies,
 				Missions = missions,
@@ -125,6 +127,7 @@ namespace GameModel.Serializers
 			}
 
 			data.RequiredVisibilityInteractionReference = deserializer.FindInteractionById(ob.RequiredVisibilityInteraction);
+			data.ControlInteractionReference = deserializer.FindInteractionById(ob.ControlInteractionReference);
 
 			return data;
 		}

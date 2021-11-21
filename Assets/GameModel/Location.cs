@@ -10,14 +10,15 @@ namespace Assets.GameModel
 	{
 		public string Id;
 		public string Name;
+		public Texture2D Icon;
+		public Texture2D BackgroundImage;
 
 		public Vector2 UiPosition;
 
 		public Interaction RequiredVisibilityInteractionReference;
 		public bool ClosedOnWeekends;
 
-		public Texture2D Icon;
-		public Texture2D BackgroundImage;
+		public Interaction ControlInteractionReference;
 
 		public List<Policy> Policies;
 		public List<Mission> Missions;
@@ -34,7 +35,7 @@ namespace Assets.GameModel
 
 		public bool Controlled()
 		{
-			return Npcs.Count > 0 && Npcs[0].Controlled;
+			return ControlInteractionReference?.Completed ?? false;
 		}
 
 		public bool IsAccessible(MainGameManager mgm)
