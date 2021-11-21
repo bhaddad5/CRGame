@@ -21,6 +21,7 @@ namespace Assets.GameModel
 		public string Description;
 
 		public ActionRequirements Requirements;
+		public ActionCost Cost;
 		public List<Effect> Effects;
 	}
 }

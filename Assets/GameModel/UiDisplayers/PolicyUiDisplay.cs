@@ -12,6 +12,7 @@ namespace Assets.GameModel.UiDisplayers
 	{
 		[SerializeField] private TMP_Text Text;
 		[SerializeField] private Image Image;
+		[SerializeField] private TMP_Text Cost;
 		[SerializeField] private TMP_Text Description;
 		[SerializeField] private TMP_Text RewardsText;
 		[SerializeField] private Transform ActiveIndicator;
@@ -29,6 +30,7 @@ namespace Assets.GameModel.UiDisplayers
 			ActivatePolicyButton.onClick.AddListener(() =>
 			{
 				policy.Active = true;
+				policy.Cost.SubtractCost(mgm);
 				RefreshUiDisplay(mgm);
 			});
 			RefreshUiDisplay(mgm);
@@ -38,7 +40,8 @@ namespace Assets.GameModel.UiDisplayers
 		{
 			Text.text = $"{policy.Name}";
 			Description.text = $"{policy.Description}";
-			ActivatePolicyButton.interactable = !policy.Active && loc.Controlled() && policy.Requirements.RequirementsAreMet(mgm, new Npc());
+			Cost.text = $"Cost: {policy.Cost.GetCostString()}";
+			ActivatePolicyButton.interactable = !policy.Active && loc.Controlled() && policy.Requirements.RequirementsAreMet(mgm, new Npc()) && policy.Cost.CanAffordCost(mgm);
 			Image.sprite = policy.Image.ToSprite();
 			ActivatePolicyButton.gameObject.SetActive(!policy.Active);
 			ActiveIndicator.gameObject.SetActive(policy.Active);

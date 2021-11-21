@@ -17,6 +17,7 @@ namespace GameModel.Serializers
 		public string Description;
 
 		public SerializedActionRequirements Requirements;
+		public SerializedActionCost Costs;
 		public List<SerializedEffect> Effects;
 
 		public static SerializedPolicy Serialize(Policy ob)
@@ -35,6 +36,7 @@ namespace GameModel.Serializers
 				Description = ob.Description,
 				Image = ob.Image,
 				Requirements = SerializedActionRequirements.Serialize(ob.Requirements),
+				Costs = SerializedActionCost.Serialize(ob.Cost),
 				Effects = effects,
 			};
 		}
@@ -54,6 +56,7 @@ namespace GameModel.Serializers
 			res.Description = ob.Description;
 			res.Image = ob.Image;
 			res.Requirements = SerializedActionRequirements.Deserialize(ob.Requirements);
+			res.Cost = SerializedActionCost.Deserialize(ob.Costs);
 			res.Effects = effects;
 
 			return res;
@@ -66,6 +69,7 @@ namespace GameModel.Serializers
 				data.Effects[i] = SerializedEffect.ResolveReferences(deserializer, data.Effects[i], ob.Effects[i]);
 			}
 			data.Requirements = SerializedActionRequirements.ResolveReferences(deserializer, data.Requirements, ob.Requirements);
+			data.Cost = SerializedActionCost.ResolveReferences(deserializer, data.Cost, ob.Costs);
 
 			return data;
 		}
