@@ -22,6 +22,8 @@ namespace GameModel.Serializers
 		public Texture2D Icon;
 		public Texture2D BackgroundImage;
 
+		public string RequiredVisibilityInteraction;
+
 		public List<SerializedPolicy> Policies;
 		public List<SerializedMission> Missions;
 		public List<SerializedNpc> Npcs;
@@ -57,7 +59,7 @@ namespace GameModel.Serializers
 				Id = ob.Id,
 				Name = ob.Name,
 				ClosedOnWeekends = ob.ClosedOnWeekends,
-				Accessible = ob.Accessible,
+				RequiredVisibilityInteraction = ob.RequiredVisibilityInteractionReference?.Id,
 				Npcs = npcs,
 				Policies = policies,
 				Missions = missions,
@@ -93,7 +95,6 @@ namespace GameModel.Serializers
 			res.Id = ob.Id;
 			res.Name = ob.Name;
 			res.ClosedOnWeekends = ob.ClosedOnWeekends;
-			res.Accessible = ob.Accessible;
 			res.Npcs = npcs;
 			res.Policies = policies;
 			res.Missions = missions;
@@ -122,6 +123,8 @@ namespace GameModel.Serializers
 			{
 				data.Policies[i] = SerializedPolicy.ResolveReferences(deserializer, data.Policies[i], ob.Policies[i]);
 			}
+
+			data.RequiredVisibilityInteractionReference = deserializer.FindInteractionById(ob.RequiredVisibilityInteraction);
 
 			return data;
 		}

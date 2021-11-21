@@ -13,8 +13,8 @@ namespace Assets.GameModel
 
 		public Vector2 UiPosition;
 
+		public Interaction RequiredVisibilityInteractionReference;
 		public bool ClosedOnWeekends;
-		public bool Accessible = true;
 
 		public Texture2D Icon;
 		public Texture2D BackgroundImage;
@@ -25,6 +25,12 @@ namespace Assets.GameModel
 
 		public bool ShowTrophyCase;
 		public bool ShowCar;
+
+
+		public bool IsVisible(MainGameManager mgm)
+		{
+			return RequiredVisibilityInteractionReference?.Completed ?? true;
+		}
 
 		public bool Controlled()
 		{

@@ -36,7 +36,7 @@ namespace Assets.GameModel.UiDisplayers
 			Text.text = $"{dept.Name}";
 			var dayOfWeek = mgm.GetDateFromTurnNumber().DayOfWeek;
 			Button.interactable = !dept.ClosedOnWeekends || (dayOfWeek != DayOfWeek.Saturday && dayOfWeek != DayOfWeek.Sunday);
-			Button.gameObject.SetActive(dept.Accessible);
+			Button.gameObject.SetActive(dept.IsVisible(mgm));
 			Button.transform.localPosition = ConvertMapPos(dept.UiPosition);
 		}
 
