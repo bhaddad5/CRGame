@@ -15,7 +15,8 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private TMP_Text Age;
 		[SerializeField] private TMP_Text Ambition;
 		[SerializeField] private TMP_Text Pride;
-		[SerializeField] private TMP_Text Traits;
+		[SerializeField] private TMP_Text Education;
+		[SerializeField] private TMP_Text Bio;
 		[SerializeField] private Button BackButton;
 		[SerializeField] private Image Picture;
 		[SerializeField] private Image BackgroundImage;
@@ -53,7 +54,8 @@ namespace Assets.GameModel.UiDisplayers
 			Pride.text = $"Pride: {_npc.Pride}";
 			Picture.sprite = LoadNpcPicture();
 			Picture.preserveAspect = true;
-			Traits.text = GetTraitsString();
+			Bio.text = $"Notes: {_npc.Bio}";
+			Education.text = $"Education: {_npc.Education}";
 			BackgroundImage.sprite = _npc.BackgroundImage.ToSprite();
 
 			InteractionsHandler.RefreshInteractionVisibilities(_npc, mgm);
@@ -81,19 +83,6 @@ namespace Assets.GameModel.UiDisplayers
 			BackgroundImage.sprite = _npc.BackgroundImage.ToSprite();
 		}
 		
-		private string GetTraitsString()
-		{
-			/*string traitsText = "";
-			foreach (var trait in _npc.Traits)
-			{
-				traitsText += trait.Name + ",";
-			}
-			if (traitsText.EndsWith(","))
-				traitsText = traitsText.Substring(0, traitsText.Length - 1);
-			return $"Traits: {traitsText}";*/
-			return "";
-		}
-
 		private Sprite LoadNpcPicture()
 		{
 			return (overridingImage ?? _npc.GetCurrentPicture()).ToSprite();

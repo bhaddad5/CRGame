@@ -21,6 +21,9 @@ namespace Assets.GameModel
 		public string FirstName;
 		public string LastName;
 		public int Age;
+		public string Education;
+		[TextArea(15, 20)]
+		public string Bio;
 
 		public Interaction RequiredVisibilityInteractionReference;
 
