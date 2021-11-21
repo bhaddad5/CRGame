@@ -59,7 +59,7 @@ namespace Assets.GameModel
 			{
 				foreach (var mission in department.Missions)
 				{
-					if (mission.CompletionInteractionReference.Id == interactionId)
+					if (mission.CompletionInteractionReference?.Id == interactionId)
 						res.Add(mission);
 				}
 			}

@@ -15,6 +15,7 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private TMP_Text Age;
 		[SerializeField] private TMP_Text Ambition;
 		[SerializeField] private TMP_Text Pride;
+		[SerializeField] private TMP_Text Education;
 		[SerializeField] private TMP_Text Bio;
 		[SerializeField] private Button BackButton;
 		[SerializeField] private Image Picture;
@@ -53,7 +54,8 @@ namespace Assets.GameModel.UiDisplayers
 			Pride.text = $"Pride: {_npc.Pride}";
 			Picture.sprite = LoadNpcPicture();
 			Picture.preserveAspect = true;
-			Bio.text = _npc.Bio;
+			Bio.text = $"Notes: {_npc.Bio}";
+			Education.text = $"Education: {_npc.Education}";
 			BackgroundImage.sprite = _npc.BackgroundImage.ToSprite();
 
 			InteractionsHandler.RefreshInteractionVisibilities(_npc, mgm);

@@ -21,6 +21,7 @@ namespace GameModel.Serializers
 		public string LastName;
 		public int Age;
 		public string Bio;
+		public string Education;
 
 		public string RequiredVisibilityInteraction;
 
@@ -83,6 +84,7 @@ namespace GameModel.Serializers
 				ControlledImages = ob.ControlledImages,
 				TrainedImages = ob.TrainedImages,
 				Bio = ob.Bio,
+				Education = ob.Education,
 			};
 		}
 
@@ -122,6 +124,7 @@ namespace GameModel.Serializers
 			res.ControlledImages = ob.ControlledImages;
 			res.TrainedImages = ob.TrainedImages;
 			res.Bio = ob.Bio;
+			res.Education = ob.Education;
 
 			return res;
 		}
