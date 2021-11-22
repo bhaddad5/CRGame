@@ -45,12 +45,18 @@ namespace Assets.GameModel
 
 			foreach (var interaction in RequiredInteractions)
 			{
+				if(interaction == null)
+					continue;
+
 				if (!interaction.Completed)
 					return false;
 			}
 
 			foreach (var interaction in RequiredNotCompletedInteractions)
 			{
+				if (interaction == null)
+					continue;
+
 				if (interaction.Completed)
 					return false;
 			}

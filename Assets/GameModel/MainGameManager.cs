@@ -45,7 +45,7 @@ namespace Assets.GameModel
 			hudUiDisplay = Instantiate(HudUiDisplayPrefab);
 			mainMapUiDisplay = Instantiate(MainMapUiDisplayPrefab);
 
-			Data = DefaultGameData;
+			Data = Instantiate(DefaultGameData);
 
 			if (saveDataPath != null)
 				SaveLoadHandler.LoadAndApplyToGameData(saveDataPath, Data);

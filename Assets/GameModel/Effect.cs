@@ -23,12 +23,7 @@ namespace Assets.GameModel
 		public bool ControlEffect;
 		public bool RemoveNpcFromGame;
 		public List<Trophy> TrophiesClaimedReferences;
-
-		public Location ContextualLocationReference;
-		public Texture2D UpdateLocationBackground;
-		public bool ShouldUpdateLocationMapPos;
-		public Vector2 UpdateLocationMapPosition;
-
+		
 		public int Car;
 		public int Suits;
 
@@ -68,14 +63,6 @@ namespace Assets.GameModel
 				{
 					trophy.Owned = true;
 				}
-			}
-
-			if (ContextualLocationReference != null)
-			{
-				if (UpdateLocationBackground != null)
-					ContextualLocationReference.BackgroundImage = UpdateLocationBackground;
-				if (UpdateLocationMapPosition.x >= 0 && UpdateLocationMapPosition.y >= 0)
-					ContextualLocationReference.UiPosition = UpdateLocationMapPosition;
 			}
 
 			if (Car > 0)
