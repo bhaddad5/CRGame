@@ -177,6 +177,7 @@ namespace Assets.GameModel.Save
 		public float Ambition;
 		public float Pride;
 		public bool Controlled;
+		public bool Exists;
 
 		public List<SavedInteractionState> Interactions;
 		public List<SavedTrophyState> Trophies;
@@ -188,6 +189,7 @@ namespace Assets.GameModel.Save
 			res.Ambition = data.Ambition;
 			res.Controlled = data.Controlled;
 			res.Pride = data.Pride;
+			res.Exists = data.Exists;
 
 			res.Interactions = new List<SavedInteractionState>();
 			foreach (var dataInteraction in data.Interactions)
@@ -217,6 +219,7 @@ namespace Assets.GameModel.Save
 			data.Ambition = Ambition;
 			data.Controlled = Controlled;
 			data.Pride = Pride;
+			data.Exists = Exists;
 
 			foreach (var interaction in Interactions)
 			{

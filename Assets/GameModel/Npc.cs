@@ -14,6 +14,8 @@ namespace Assets.GameModel
 		public bool IsControllable;
 		[HideInInspector]
 		public bool Controlled;
+		[HideInInspector]
+		public bool Exists = true;
 
 		public float Ambition;
 		public float Pride;
@@ -48,6 +50,9 @@ namespace Assets.GameModel
 
 		public bool IsVisible(MainGameManager mgm)
 		{
+			if (!Exists)
+				return false;
+
 			return RequiredVisibilityInteractionReference?.Completed ?? true;
 		}
 

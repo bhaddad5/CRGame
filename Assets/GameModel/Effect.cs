@@ -40,9 +40,7 @@ namespace Assets.GameModel
 			{
 				if (RemoveNpcFromGame)
 				{
-					var loc = mgm.Data.FindNpcLocation(npc);
-					loc.Npcs.Remove(npc);
-					mgm.Data.DeadNpcPool.Npcs.Add(npc);
+					npc.Exists = false;
 				}
 
 				mgm.Data.Ego = Mathf.Max(mgm.Data.Ego + EgoEffect, 0);
