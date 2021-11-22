@@ -20,7 +20,13 @@ namespace Assets.GameModel
 		public float Revenue = 0;
 		public int Hornical = 0;
 
-		public PlayerStatusSymbols StatusSymbols = new PlayerStatusSymbols();
+		//Status Symbols
+		public int Car;
+		public int Suits;
+		public bool JewleryCuffs;
+		public bool JewleryPen;
+		public bool JewleryRing;
+		public bool JewleryWatch;
 
 		public List<Location> Locations = new List<Location>();
 
@@ -43,7 +49,7 @@ namespace Assets.GameModel
 			{
 				foreach (var policy in dept.Policies)
 				{
-					if (policy.Active)
+					if (policy?.Active ?? false)
 						activePolicies.Add(policy);
 				}
 			}
@@ -59,7 +65,7 @@ namespace Assets.GameModel
 			{
 				foreach (var mission in department.Missions)
 				{
-					if (mission.CompletionInteractionReference?.Id == interactionId)
+					if (mission?.CompletionInteractionReference?.Id == interactionId)
 						res.Add(mission);
 				}
 			}

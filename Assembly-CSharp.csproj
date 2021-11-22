@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>8.0</LangVersion>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -53,27 +53,16 @@
     <UnityVersion>2021.1.19f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Assets\GameModel\UiDisplayers\TooltipElementHandler.cs" />
-    <Compile Include="Assets\GameModel\Serializers\SerializedInteraction.cs" />
     <Compile Include="Assets\CameraMover.cs" />
     <Compile Include="Assets\GameModel\UiDisplayers\TrophyCaseUiDisplay.cs" />
     <Compile Include="Assets\GameModel\UiDisplayers\PlayerStatusSymbolsDisplay.cs" />
-    <Compile Include="Assets\GameModel\PlayerStatusSymbols.cs" />
     <Compile Include="Assets\GameModel\UiDisplayers\TooltipProviderBasic.cs" />
-    <Compile Include="Assets\GameModel\Serializers\SerializedPlayerStatysSymbols.cs" />
     <Compile Include="Assets\GameModel\MainGameManager.cs" />
     <Compile Include="Assets\GameModel\Trophy.cs" />
-    <Compile Include="Assets\GameModel\Serializers\SerializedPopup.cs" />
     <Compile Include="Assets\GameModel\Mission.cs" />
-    <Compile Include="Assets\GameModel\Serializers\DataSerializerHelpers.cs" />
-    <Compile Include="Assets\GameModel\Serializers\SerializedActionCost.cs" />
     <Compile Include="Assets\GameModel\UiDisplayers\TrophyDisplay.cs" />
     <Compile Include="Assets\GameModel\Effect.cs" />
-    <Compile Include="Assets\GameModel\Serializers\SerializedEffect.cs" />
-    <Compile Include="Assets\GameModel\Serializers\SerializedLocation.cs" />
     <Compile Include="Assets\GameModel\InteractionResult.cs" />
     <Compile Include="Assets\GameModel\Location.cs" />
     <Compile Include="Assets\GameModel\UiDisplayers\NpcUiDisplay.cs" />
@@ -83,21 +72,13 @@
     <Compile Include="Assets\GameModel\UiDisplayers\PolicyUiDisplay.cs" />
     <Compile Include="Assets\GameModel\UiDisplayers\ITooltipProvider.cs" />
     <Compile Include="Assets\GameModel\UiDisplayers\HudUiDisplay.cs" />
-    <Compile Include="Assets\GameModel\Serializers\SerializedActionRequirements.cs" />
-    <Compile Include="Assets\GameModel\Serializers\SerializedMission.cs" />
     <Compile Include="Assets\GameModel\UiDisplayers\LoadSaveMenuManager.cs" />
-    <Compile Include="Assets\GameModel\Serializers\SerializedTrophy.cs" />
     <Compile Include="Assets\GameModel\UiDisplayers\LocationUiDisplay.cs" />
     <Compile Include="Assets\GameModel\UiDisplayers\MissionUiDisplay.cs" />
     <Compile Include="Assets\GameModel\Npc.cs" />
     <Compile Include="Assets\GameModel\DialogEntry.cs" />
-    <Compile Include="Assets\GameModel\Serializers\DataDeserializer.cs" />
-    <Compile Include="Assets\GameModel\Serializers\SerializedInteractionResult.cs" />
     <Compile Include="Assets\GameModel\UiDisplayers\TooltipDisplayer.cs" />
-    <Compile Include="Assets\GameModel\Serializers\SerializedDialogEntry.cs" />
     <Compile Include="Assets\GameModel\Interaction.cs" />
-    <Compile Include="Assets\GameModel\Serializers\SerializedPolicy.cs" />
-    <Compile Include="Assets\GameModel\Serializers\SerializedNpc.cs" />
     <Compile Include="Assets\GameModel\UiDisplayers\ResourceManagerUiDisplay.cs" />
     <Compile Include="Assets\GameModel\UiDisplayers\InteractionUiDisplay.cs" />
     <Compile Include="Assets\GameModel\ActionRequirements.cs" />
@@ -111,7 +92,8 @@
     <Compile Include="Assets\GameModel\UiDisplayers\NpcSelectionUiDisplay.cs" />
     <Compile Include="Assets\GameModel\UiDisplayers\PopupUiDisplay.cs" />
     <Compile Include="Assets\GameModel\UiDisplayers\InteractionsDisplayHandler.cs" />
-    <Compile Include="Assets\GameModel\Serializers\SerializedGameData.cs" />
+    <Compile Include="Assets\GameModel\SaveGameState\SaveGameState.cs" />
+    <Compile Include="Assets\GameModel\SaveGameState\SaveLoadHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />

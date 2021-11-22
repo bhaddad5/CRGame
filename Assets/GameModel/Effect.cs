@@ -29,8 +29,13 @@ namespace Assets.GameModel
 		public bool ShouldUpdateLocationMapPos;
 		public Vector2 UpdateLocationMapPosition;
 
-		public bool ShouldUpdateStatusSymbols;
-		public PlayerStatusSymbols UpdateStatusSymbols;
+		public int Car;
+		public int Suits;
+
+		public bool JewleryCuffs;
+		public bool JewleryPen;
+		public bool JewleryRing;
+		public bool JewleryWatch;
 
 		public void ExecuteEffect(MainGameManager mgm, Npc npc)
 		{
@@ -73,24 +78,19 @@ namespace Assets.GameModel
 					ContextualLocationReference.UiPosition = UpdateLocationMapPosition;
 			}
 
-			if (!String.IsNullOrEmpty(UpdateStatusSymbols.CarName))
-				mgm.Data.StatusSymbols.CarName = UpdateStatusSymbols.CarName;
-			if (UpdateStatusSymbols.CarImage != null)
-				mgm.Data.StatusSymbols.CarImage = UpdateStatusSymbols.CarImage;
+			if (Car > 0)
+				mgm.Data.Car = Car;
+			if (Suits > 0)
+				mgm.Data.Suits = Suits;
 
-			if (!String.IsNullOrEmpty(UpdateStatusSymbols.SuitsName))
-				mgm.Data.StatusSymbols.SuitsName = UpdateStatusSymbols.SuitsName;
-			if (UpdateStatusSymbols.SuitsImage != null)
-				mgm.Data.StatusSymbols.SuitsImage = UpdateStatusSymbols.SuitsImage;
-
-			if (UpdateStatusSymbols.JewleryCuffs != null)
-				mgm.Data.StatusSymbols.JewleryCuffs = UpdateStatusSymbols.JewleryCuffs;
-			if (UpdateStatusSymbols.JewleryPen != null)
-				mgm.Data.StatusSymbols.JewleryPen = UpdateStatusSymbols.JewleryPen;
-			if (UpdateStatusSymbols.JewleryRing != null)
-				mgm.Data.StatusSymbols.JewleryRing = UpdateStatusSymbols.JewleryRing;
-			if (UpdateStatusSymbols.JewleryWatch != null)
-				mgm.Data.StatusSymbols.JewleryWatch = UpdateStatusSymbols.JewleryWatch;
+			if(JewleryCuffs)
+				mgm.Data.JewleryCuffs = true;
+			if(JewleryPen)
+				mgm.Data.JewleryPen = true;
+			if(JewleryRing)
+				mgm.Data.JewleryRing = true;
+			if(JewleryWatch)
+				mgm.Data.JewleryWatch = true;
 		}
 	}
 }
