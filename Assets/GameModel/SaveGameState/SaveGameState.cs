@@ -86,7 +86,7 @@ namespace Assets.GameModel.Save
 
 			foreach (var location in Locations)
 			{
-				location.ApplyToData(data.Locations.FirstOrDefault(l => l.Id == location.Id));
+				location.ApplyToData(data.Locations.FirstOrDefault(d => d?.Id == location.Id));
 			}
 		}
 	}
@@ -133,11 +133,11 @@ namespace Assets.GameModel.Save
 
 			foreach (var npc in Npcs)
 			{
-				npc.ApplyToData(data.Npcs.FirstOrDefault(d => d.Id == npc.Id));
+				npc.ApplyToData(data.Npcs.FirstOrDefault(d => d?.Id == npc.Id));
 			}
 			foreach (var policy in Policies)
 			{
-				policy.ApplyToData(data.Policies.FirstOrDefault(d => d.Id == policy.Id));
+				policy.ApplyToData(data.Policies.FirstOrDefault(d => d?.Id == policy.Id));
 			}
 		}
 	}
@@ -220,11 +220,11 @@ namespace Assets.GameModel.Save
 
 			foreach (var interaction in Interactions)
 			{
-				interaction.ApplyToData(data.Interactions.FirstOrDefault(d => d.Id == interaction.Id));
+				interaction.ApplyToData(data.Interactions.FirstOrDefault(d => d?.Id == interaction.Id));
 			}
 			foreach (var trophy in Trophies)
 			{
-				trophy.ApplyToData(data.Trophies.FirstOrDefault(d => d.Id == trophy.Id));
+				trophy.ApplyToData(data.Trophies.FirstOrDefault(d => d?.Id == trophy.Id));
 			}
 		}
 	}

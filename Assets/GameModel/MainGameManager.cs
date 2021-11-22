@@ -30,6 +30,8 @@ namespace Assets.GameModel
 			InitializeGame(null);
 		}
 
+		private SaveGameState startingData;
+
 		public void InitializeGame(string saveDataPath)
 		{
 			if (hudUiDisplay != null)
@@ -45,7 +47,8 @@ namespace Assets.GameModel
 			hudUiDisplay = Instantiate(HudUiDisplayPrefab);
 			mainMapUiDisplay = Instantiate(MainMapUiDisplayPrefab);
 
-			Data = Instantiate(DefaultGameData);
+			startingData = SaveGameState.FromData(DefaultGameData);
+			Data = DefaultGameData;
 
 			if (saveDataPath != null)
 				SaveLoadHandler.LoadAndApplyToGameData(saveDataPath, Data);
@@ -53,6 +56,12 @@ namespace Assets.GameModel
 			hudUiDisplay.Setup(this, mainMapUiDisplay);
 			mainMapUiDisplay.Setup(this, Data.Locations);
 			RefreshAllUi();
+		}
+
+		void OnApplicationQuit()
+		{
+			startingData.ApplyToData(DefaultGameData);
+			Debug.Log("Data reset on quit");
 		}
 
 		private void RefreshAllUi()
