@@ -14,12 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: Planning
   Name: Planning Dept.
-  UiPosition: {x: 520, y: 370}
-  ClosedOnWeekends: 1
-  Accessible: 1
   Icon: {fileID: 2800000, guid: 66bddcbff2f899c43ab1deaf77a74f08, type: 3}
   BackgroundImage: {fileID: 2800000, guid: 1e8eadfd923c7284084ffbd1e58c1286, type: 3}
-  Policies: []
+  UiPosition: {x: 520, y: 370}
+  VisibilityInteractions: []
+  VisibilityNotCompletedInteractions: []
+  ClosedOnWeekends: 1
+  ControlInteractionReference: {fileID: 0}
+  Policies:
+  - {fileID: 11400000, guid: 2634cd0cfa0d37a40b3e6655b1c4cf65, type: 2}
+  - {fileID: 11400000, guid: e2a34d579509d1c4dade6c8686391b53, type: 2}
+  - {fileID: 11400000, guid: 811af2250c7107a4fbf94ed6d06114a4, type: 2}
   Missions: []
   Npcs:
   - {fileID: 11400000, guid: 3e388f1db150adc41861a8d778471965, type: 2}

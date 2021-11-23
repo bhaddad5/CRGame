@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Take control of Tracey
+  m_Name: Intro to Jen Page
   m_EditorClassIdentifier: 
-  Id: Take control of TraceyTraceyBledsoe
-  Name: Take control of Tracey
-  Category: 2
+  Id: Intro to Jen PageTraceyBledsoe
+  Name: Intro to Jen Page
+  Category: 0
   Requirements:
-    RequiredPower: 0
+    RequiredPower: 40
     RequiredControl: 0
     RequiresAmbitionAtOrBelowValue: 1
-    RequiredAmbition: 0
+    RequiredAmbition: 100
     RequiresPrideAtOrBelowValue: 0
     RequiredPride: 0
     RequiredInteractions: []
@@ -28,7 +28,7 @@ MonoBehaviour:
     RequiredDepartmentsControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 25
+    EgoCost: 20
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -42,54 +42,29 @@ MonoBehaviour:
   InteractionResults:
   - Dialogs:
     - CurrSpeaker: 1
-      Text: Tracey, there's no point in putting this off any longer.  You need to
-        let me start giving the orders or you're goign to find yourself in major
-        difficulty.
+      Text: I haven't meet with our CEO yet.
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: You're a junior manager!  You're in no position to--
+      Text: With respect, she doesn't clear her schedule to meet with juniors!
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      Text: Tracey, you're going to accept the inevitable-- or you're goign to lose
-        everything.  You're hanging by a thread right now.  You've always been a
-        clever girl-- make the right decision.
+      Text: I was hoping you'd arrange it for me.
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: Fine.  I just can't take this pressure any more!
+      Text: Yes, I suppose it is time she knew who you are.  I'll ask for a time.
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     OptionalPopups: []
-    Effects:
-    - ContextualNpcReference: {fileID: 0}
-      AmbitionEffect: 0
-      PrideEffect: 0
-      EgoEffect: 150
-      FundsEffect: 0
-      PowerEffect: 0
-      PatentsEffect: 0
-      CultureEffect: 0
-      SpreadsheetsEffect: 0
-      BrandEffect: 0
-      RevanueEffect: 0
-      HornicalEffect: 0
-      ControlEffect: 0
-      RemoveNpcFromGame: 0
-      TrophiesClaimedReferences: []
-      Car: 0
-      Suits: 0
-      JewleryCuffs: 0
-      JewleryPen: 0
-      JewleryRing: 0
-      JewleryWatch: 0
+    Effects: []
     Probability: 1

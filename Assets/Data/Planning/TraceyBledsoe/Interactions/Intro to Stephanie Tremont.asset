@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Take control of Tracey
+  m_Name: Intro to Stephanie Tremont
   m_EditorClassIdentifier: 
-  Id: Take control of TraceyTraceyBledsoe
-  Name: Take control of Tracey
-  Category: 2
+  Id: Intro to Stephanie TremontTraceyBledsoe
+  Name: Intro to Stephanie Tremont
+  Category: 0
   Requirements:
-    RequiredPower: 0
+    RequiredPower: 30
     RequiredControl: 0
     RequiresAmbitionAtOrBelowValue: 1
-    RequiredAmbition: 0
+    RequiredAmbition: 120
     RequiresPrideAtOrBelowValue: 0
     RequiredPride: 0
     RequiredInteractions: []
@@ -28,7 +28,7 @@ MonoBehaviour:
     RequiredDepartmentsControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 25
+    EgoCost: 15
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -42,54 +42,30 @@ MonoBehaviour:
   InteractionResults:
   - Dialogs:
     - CurrSpeaker: 1
-      Text: Tracey, there's no point in putting this off any longer.  You need to
-        let me start giving the orders or you're goign to find yourself in major
-        difficulty.
+      Text: Stephanie Tremont is the COO, right?
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: You're a junior manager!  You're in no position to--
+      Text: Correct.  But you don't fall under her office.
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      Text: Tracey, you're going to accept the inevitable-- or you're goign to lose
-        everything.  You're hanging by a thread right now.  You've always been a
-        clever girl-- make the right decision.
+      Text: True, but I want to get to know all the top execs here.  Could you arrange
+        a metting?
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: Fine.  I just can't take this pressure any more!
+      Text: Yes.  Leave it with me and I'll give her a call.
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     OptionalPopups: []
-    Effects:
-    - ContextualNpcReference: {fileID: 0}
-      AmbitionEffect: 0
-      PrideEffect: 0
-      EgoEffect: 150
-      FundsEffect: 0
-      PowerEffect: 0
-      PatentsEffect: 0
-      CultureEffect: 0
-      SpreadsheetsEffect: 0
-      BrandEffect: 0
-      RevanueEffect: 0
-      HornicalEffect: 0
-      ControlEffect: 0
-      RemoveNpcFromGame: 0
-      TrophiesClaimedReferences: []
-      Car: 0
-      Suits: 0
-      JewleryCuffs: 0
-      JewleryPen: 0
-      JewleryRing: 0
-      JewleryWatch: 0
+    Effects: []
     Probability: 1
