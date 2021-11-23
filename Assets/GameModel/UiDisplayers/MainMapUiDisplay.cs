@@ -24,6 +24,9 @@ namespace Assets.GameModel.UiDisplayers
 			this.mgm = mgm;
 			foreach (Location dept in locations)
 			{
+				if (dept == null)
+					continue;
+
 				var d = Instantiate(_locationButtonPrefab);
 				d.Setup(dept, this, mgm);
 				d.transform.SetParent(DepartmentsParent, false);

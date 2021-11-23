@@ -36,6 +36,9 @@ namespace Assets.GameModel
 
 			foreach (var department in Locations)
 			{
+				if (department == null)
+					continue;
+
 				foreach (var mission in department.Missions)
 				{
 					if (mission?.CompletionInteractionReference?.Id == interactionId)
