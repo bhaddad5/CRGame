@@ -33,7 +33,9 @@ namespace Assets.GameModel
 
 			foreach (var interactionDept in RequiredDepartmentsControled)
 			{
-				if (!mgm.Data.GetControlledLocations().Contains(interactionDept))
+				if (interactionDept == null)
+					continue;
+				if (!interactionDept.Controlled())
 					return false;
 			}
 
@@ -45,19 +47,28 @@ namespace Assets.GameModel
 
 			foreach (var interaction in RequiredInteractions)
 			{
+				if(interaction == null)
+					continue;
+
 				if (!interaction.Completed)
 					return false;
 			}
 
 			foreach (var interaction in RequiredNotCompletedInteractions)
 			{
+				if (interaction == null)
+					continue;
+
 				if (interaction.Completed)
 					return false;
 			}
 
 			foreach (var policy in RequiredPolicies)
 			{
-				if (!mgm.Data.GetActivePolicies().Contains(policy))
+				if(policy == null)
+					continue;
+
+				if (!policy.Active)
 					return false;
 			}
 

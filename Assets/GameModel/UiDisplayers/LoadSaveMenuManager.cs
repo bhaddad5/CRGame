@@ -7,6 +7,7 @@ using Assets.GameModel;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using Assets.GameModel.Save;
 
 public class LoadSaveMenuManager : MonoBehaviour
 {
@@ -39,7 +40,7 @@ public class LoadSaveMenuManager : MonoBehaviour
 				return;
 			
 			string path = Path.Combine(savesDir, $"{filenameInput.text}.sav");
-			File.WriteAllText(path, mgm.SerializeToString());
+			File.WriteAllText(path, SaveLoadHandler.SaveToJson(mgm.Data));
 
 			gameObject.SetActive(false);
 		});

@@ -20,36 +20,15 @@ namespace Assets.GameModel
 		public float Revenue = 0;
 		public int Hornical = 0;
 
-		public PlayerStatusSymbols StatusSymbols = new PlayerStatusSymbols();
+		//Status Symbols
+		public int Car;
+		public int Suits;
+		public bool JewleryCuffs;
+		public bool JewleryPen;
+		public bool JewleryRing;
+		public bool JewleryWatch;
 
 		public List<Location> Locations = new List<Location>();
-
-		public List<Location> GetControlledLocations()
-		{
-			List<Location> controlledDepts = new List<Location>();
-			foreach (var dept in Locations)
-			{
-				if (dept.Controlled())
-					controlledDepts.Add(dept);
-			}
-
-			return controlledDepts;
-		}
-
-		public List<Policy> GetActivePolicies()
-		{
-			List<Policy> activePolicies = new List<Policy>();
-			foreach (var dept in Locations)
-			{
-				foreach (var policy in dept.Policies)
-				{
-					if (policy.Active)
-						activePolicies.Add(policy);
-				}
-			}
-
-			return activePolicies;
-		}
 		
 		public List<Mission> GetMissionsForInteraction(string interactionId)
 		{
@@ -59,41 +38,14 @@ namespace Assets.GameModel
 			{
 				foreach (var mission in department.Missions)
 				{
-					if (mission.CompletionInteractionReference?.Id == interactionId)
+					if (mission?.CompletionInteractionReference?.Id == interactionId)
 						res.Add(mission);
 				}
 			}
 
 			return res;
 		}
-
-		public Location FindNpcLocation(Npc npc)
-		{
-			foreach (var department in Locations)
-			{
-				if (department.Npcs.Contains(npc))
-					return department;
-			}
-
-			Debug.LogError($"Could not find department containing npc {npc.ToString()}");
-			return null;
-		}
-
-		public Location DeadNpcPool
-		{
-			get
-			{
-				foreach (var department in Locations)
-				{
-					if (department.Id == "deadPool")
-						return department;
-				}
-
-				Debug.LogError($"Could not find dead NPC pool.");
-				return null;
-			}
-		}
-
+		
 		public Location MyOffice
 		{
 			get

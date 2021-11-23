@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Assets.GameModel;
@@ -19,27 +20,46 @@ public class PlayerStatusSymbolsDisplay : MonoBehaviour
 	[SerializeField] private Image JewleryPen;
 	[SerializeField] private Image JewleryRing;
 	[SerializeField] private Image JewleryWatch;
+
+	[SerializeField] private List<StatusSymbolOption> CarOptions;
+	[SerializeField] private List<StatusSymbolOption> SuitOptions;
+
+	[Serializable]
+	public struct StatusSymbolOption
+	{
+		[SerializeField] public string Name;
+		[SerializeField] public Sprite Pic;
+	}
+
 	public void UpdateVisuals(MainGameManager mgm)
 	{
-		CarName.text = mgm.Data.StatusSymbols.CarName;
-		CarImage.sprite = mgm.Data.StatusSymbols.CarImage.ToSprite();
+		if (mgm.Data.Car >= CarOptions.Count)
+		{
+			Debug.Log($"Current car index {mgm.Data.Car} is out of bounds.");
+			mgm.Data.Car = CarOptions.Count - 1;
+		}
 
-		SuitsName.text = mgm.Data.StatusSymbols.SuitsName;
-		SuitsImage.sprite = mgm.Data.StatusSymbols.SuitsImage.ToSprite();
+		CarName.text = CarOptions[mgm.Data.Car].Name;
+		CarImage.sprite = CarOptions[mgm.Data.Car].Pic;
 
-		JewleryCuffs.sprite = mgm.Data.StatusSymbols.JewleryCuffs?.ToSprite();
-		JewleryCuffs.gameObject.SetActive(mgm.Data.StatusSymbols.JewleryCuffs != null);
-		JewleryPen.sprite = mgm.Data.StatusSymbols.JewleryPen?.ToSprite();
-		JewleryPen.gameObject.SetActive(mgm.Data.StatusSymbols.JewleryPen != null);
-		JewleryRing.sprite = mgm.Data.StatusSymbols.JewleryRing?.ToSprite();
-		JewleryRing.gameObject.SetActive(mgm.Data.StatusSymbols.JewleryRing != null);
-		JewleryWatch.sprite = mgm.Data.StatusSymbols.JewleryWatch?.ToSprite();
-		JewleryWatch.gameObject.SetActive(mgm.Data.StatusSymbols.JewleryWatch != null);
+		if (mgm.Data.Suits >= SuitOptions.Count)
+		{
+			Debug.Log($"Current suit index {mgm.Data.Suits} is out of bounds.");
+			mgm.Data.Suits = SuitOptions.Count - 1;
+		}
+
+		SuitsName.text = SuitOptions[mgm.Data.Suits].Name;
+		SuitsImage.sprite = SuitOptions[mgm.Data.Suits].Pic;
+
+		JewleryCuffs.gameObject.SetActive(mgm.Data.JewleryCuffs);
+		JewleryPen.gameObject.SetActive(mgm.Data.JewleryPen);
+		JewleryRing.gameObject.SetActive(mgm.Data.JewleryRing);
+		JewleryWatch.gameObject.SetActive(mgm.Data.JewleryWatch);
 
 
-		JewleryCuffs.transform.parent.gameObject.SetActive(mgm.Data.StatusSymbols.JewleryCuffs != null ||
-		                                                   mgm.Data.StatusSymbols.JewleryPen != null ||
-		                                                   mgm.Data.StatusSymbols.JewleryRing != null ||
-		                                                   mgm.Data.StatusSymbols.JewleryWatch != null);
+		JewleryCuffs.transform.parent.gameObject.SetActive(mgm.Data.JewleryCuffs ||
+		                                                   mgm.Data.JewleryPen ||
+		                                                   mgm.Data.JewleryRing ||
+		                                                   mgm.Data.JewleryWatch);
 	}
 }

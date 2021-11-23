@@ -15,7 +15,8 @@ namespace Assets.GameModel
 
 		public Vector2 UiPosition;
 
-		public Interaction RequiredVisibilityInteractionReference;
+		public List<Interaction> VisibilityInteractions;
+		public List<Interaction> VisibilityNotCompletedInteractions;
 		public bool ClosedOnWeekends;
 
 		public Interaction ControlInteractionReference;
@@ -30,7 +31,17 @@ namespace Assets.GameModel
 
 		public bool IsVisible(MainGameManager mgm)
 		{
-			return RequiredVisibilityInteractionReference?.Completed ?? true;
+			foreach (var interaction in VisibilityInteractions)
+			{
+				if (interaction != null && !interaction.Completed)
+					return false;
+			}
+			foreach (var interaction in VisibilityNotCompletedInteractions)
+			{
+				if (interaction != null && interaction.Completed)
+					return false;
+			}
+			return true;
 		}
 
 		public bool Controlled()

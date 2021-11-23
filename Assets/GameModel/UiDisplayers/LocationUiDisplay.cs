@@ -50,6 +50,9 @@ namespace Assets.GameModel.UiDisplayers
 				PoliciesButton.gameObject.SetActive(false);
 			foreach (Policy policy in loc.Policies)
 			{
+				if (policy == null)
+					continue;
+
 				var p = Instantiate(policyPrefab);
 				p.Setup(policy, loc, this);
 				p.transform.SetParent(PolicyOptionsParent);
@@ -59,6 +62,9 @@ namespace Assets.GameModel.UiDisplayers
 				MissionsButton.gameObject.SetActive(false);
 			foreach (Mission mission in loc.Missions)
 			{
+				if (mission == null)
+					continue;
+
 				var m = Instantiate(misisonPrefab);
 				m.Setup(mission, loc, mgm);
 				m.transform.SetParent(MissionOptionsParent);

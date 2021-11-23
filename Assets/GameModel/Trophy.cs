@@ -12,6 +12,7 @@ namespace Assets.GameModel
 		public string Id;
 		public string Name;
 		public Texture2D Image;
+
 		public bool Owned;
 	}
 }

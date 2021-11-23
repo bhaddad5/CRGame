@@ -42,23 +42,23 @@ MonoBehaviour:
   InteractionResults:
   - Dialogs:
     - CurrSpeaker: 0
-      CustomSpeakerReference: {fileID: 0}
       Text: Hello sir, what can I do for you?
+      CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
-      NpcImage: 
+      CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      CustomSpeakerReference: {fileID: 0}
       Text: I'm looking to buy something special.
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
-      NpcImage: 
-    - CurrSpeaker: 0
       CustomSpeakerReference: {fileID: 0}
-      Text: Of course sir!  I have just the thing...
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
-      NpcImage: 
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 0
+      Text: Of course sir!  I have just the thing...
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
     OptionalPopups: []
     Effects:
     - ContextualNpcReference: {fileID: 0}
@@ -80,14 +80,12 @@ MonoBehaviour:
       UpdateLocationBackground: {fileID: 0}
       ShouldUpdateLocationMapPos: 0
       UpdateLocationMapPosition: {x: -1, y: -1}
-      ShouldUpdateStatusSymbols: 1
-      UpdateStatusSymbols:
-        CarName: 
-        CarImage: {fileID: 0}
-        SuitsName: 
-        SuitsImage: {fileID: 0}
-        JewleryCuffs: {fileID: 0}
-        JewleryPen: {fileID: 0}
-        JewleryRing: {fileID: 2800000, guid: 82a58b925f4065e448f6ac8a7f9226c5, type: 3}
-        JewleryWatch: {fileID: 0}
+      ShouldUpdateCar: 0
+      Car: 0
+      ShouldUpdateSuits: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 1
+      JewleryWatch: 0
     Probability: 1

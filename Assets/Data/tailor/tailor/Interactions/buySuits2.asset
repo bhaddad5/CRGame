@@ -42,23 +42,23 @@ MonoBehaviour:
   InteractionResults:
   - Dialogs:
     - CurrSpeaker: 0
-      CustomSpeakerReference: {fileID: 0}
       Text: Hello sir, what can I do for you?
+      CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
-      NpcImage: 
+      CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      CustomSpeakerReference: {fileID: 0}
       Text: I'm thinking of upgrading my wardrobe.
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
-      NpcImage: 
-    - CurrSpeaker: 0
       CustomSpeakerReference: {fileID: 0}
-      Text: Of course sir!  I have just the thing that should fit your style.
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
-      NpcImage: 
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 0
+      Text: Of course sir!  I have just the thing that should fit your style.
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
     OptionalPopups: []
     Effects:
     - ContextualNpcReference: {fileID: 0}
@@ -80,14 +80,12 @@ MonoBehaviour:
       UpdateLocationBackground: {fileID: 0}
       ShouldUpdateLocationMapPos: 0
       UpdateLocationMapPosition: {x: -1, y: -1}
-      ShouldUpdateStatusSymbols: 1
-      UpdateStatusSymbols:
-        CarName: 
-        CarImage: {fileID: 0}
-        SuitsName: A Cut Above Casual
-        SuitsImage: {fileID: 2800000, guid: 406b7ad799c5ddc4d9f8637ca2ebefcc, type: 3}
-        JewleryCuffs: {fileID: 0}
-        JewleryPen: {fileID: 0}
-        JewleryRing: {fileID: 0}
-        JewleryWatch: {fileID: 0}
+      ShouldUpdateCar: 0
+      Car: 0
+      ShouldUpdateSuits: 1
+      Suits: 1
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
     Probability: 1

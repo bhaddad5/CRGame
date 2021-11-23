@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using Assets.GameModel.UiDisplayers;
-using GameModel.Serializers;
+using Assets.GameModel.Save;
 using UnityEngine;
 
 namespace Assets.GameModel
@@ -30,6 +30,8 @@ namespace Assets.GameModel
 			InitializeGame(null);
 		}
 
+		private SaveGameState startingData;
+
 		public void InitializeGame(string saveDataPath)
 		{
 			if (hudUiDisplay != null)
@@ -45,18 +47,21 @@ namespace Assets.GameModel
 			hudUiDisplay = Instantiate(HudUiDisplayPrefab);
 			mainMapUiDisplay = Instantiate(MainMapUiDisplayPrefab);
 
-			SerializedGameData saveData;
-			if (saveDataPath != null)
-				saveData = JsonUtility.FromJson<SerializedGameData>(File.ReadAllText(saveDataPath));
-			else
-				saveData = SerializedGameData.Serialize(DefaultGameData);
+			startingData = SaveGameState.FromData(DefaultGameData);
+			Data = DefaultGameData;
 
-			var deserializer = new DataDeserializer();
-			Data = deserializer.DeserializedData(saveData);
+			if (saveDataPath != null)
+				SaveLoadHandler.LoadAndApplyToGameData(saveDataPath, Data);
 
 			hudUiDisplay.Setup(this, mainMapUiDisplay);
 			mainMapUiDisplay.Setup(this, Data.Locations);
 			RefreshAllUi();
+		}
+
+		void OnApplicationQuit()
+		{
+			startingData.ApplyToData(DefaultGameData);
+			Debug.Log("Data reset on quit");
 		}
 
 		private void RefreshAllUi()
@@ -161,15 +166,7 @@ namespace Assets.GameModel
 				return "CEOOffice";
 			else return "CEOOffice";
 		}
-
-		public string SerializeToString()
-		{
-			var serializedData = SerializedGameData.Serialize(Data);
-			var jsonData = JsonUtility.ToJson(serializedData);
-
-			return jsonData;
-		}
-
+		
 		public void ShowPopup(Popup popup, Action onPopupDone)
 		{
 			hudUiDisplay.ShowPopup(popup, onPopupDone);
