@@ -14,11 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: Compliance Dept
   Name: Compliance Dept
-  UiPosition: {x: 550, y: 450}
-  ClosedOnWeekends: 1
-  Accessible: 1
   Icon: {fileID: 2800000, guid: fa9808b707f6c154e954850f55807669, type: 3}
   BackgroundImage: {fileID: 2800000, guid: e57493b43ba3c55459a7847afdbee19a, type: 3}
+  UiPosition: {x: 550, y: 450}
+  VisibilityInteractions:
+  - {fileID: 11400000, guid: 0b2f94add472b46408953860d092b4cc, type: 2}
+  VisibilityNotCompletedInteractions: []
+  ClosedOnWeekends: 1
+  ControlInteractionReference: {fileID: 0}
   Policies:
   - {fileID: 11400000, guid: 92058b846c95e1744b5c226d884e72bf, type: 2}
   - {fileID: 11400000, guid: 2cd8bbe15946d914bba238fa64ac10a1, type: 2}
