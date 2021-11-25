@@ -22,7 +22,8 @@ MonoBehaviour:
     RequiredAmbition: -1
     RequiresPrideAtOrBelowValue: 0
     RequiredPride: -1
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 32004979ae351dc46a67f7db951d6e51, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -42,8 +43,8 @@ MonoBehaviour:
   InteractionResults:
   - Dialogs:
     - CurrSpeaker: 0
-      CustomSpeakerReference: {fileID: 0}
       Text: Hey there Tiger, come with me...
+      CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions:
@@ -55,8 +56,8 @@ MonoBehaviour:
       - {fileID: 2800000, guid: e9fcf02275c0f8a4687cb4c3f3e5a3cf, type: 3}
       - {fileID: 2800000, guid: 6817b26c968619742ad75f20177870e9, type: 3}
     - CurrSpeaker: 0
-      CustomSpeakerReference: {fileID: 0}
       Text: You know, you're much cuter than the other guys around here.
+      CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions:
@@ -68,8 +69,8 @@ MonoBehaviour:
       - {fileID: 2800000, guid: e9fcf02275c0f8a4687cb4c3f3e5a3cf, type: 3}
       - {fileID: 2800000, guid: 6817b26c968619742ad75f20177870e9, type: 3}
     - CurrSpeaker: 0
-      CustomSpeakerReference: {fileID: 0}
       Text: You should come back again sometime.  We can get to know each other better.
+      CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions:
@@ -85,7 +86,7 @@ MonoBehaviour:
     - ContextualNpcReference: {fileID: 0}
       AmbitionEffect: 0
       PrideEffect: 0
-      EgoEffect: 10
+      EgoEffect: 5
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -97,18 +98,10 @@ MonoBehaviour:
       ControlEffect: 0
       RemoveNpcFromGame: 0
       TrophiesClaimedReferences: []
-      ContextualLocationReference: {fileID: 0}
-      UpdateLocationBackground: {fileID: 0}
-      ShouldUpdateLocationMapPos: 0
-      UpdateLocationMapPosition: {x: -1, y: -1}
-      ShouldUpdateStatusSymbols: 0
-      UpdateStatusSymbols:
-        CarName: 
-        CarImage: {fileID: 0}
-        SuitsName: 
-        SuitsImage: {fileID: 0}
-        JewleryCuffs: {fileID: 0}
-        JewleryPen: {fileID: 0}
-        JewleryRing: {fileID: 0}
-        JewleryWatch: {fileID: 0}
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
     Probability: 1
