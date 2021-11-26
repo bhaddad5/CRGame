@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: sluttySelfie
+  m_Name: Set up account for Britney Bower
   m_EditorClassIdentifier: 
-  Id: sluttySelfie
-  Name: Insist she send you a slutty selfie
-  Category: 5
+  Id: Set up account for Britney BowerAllisonClark
+  Name: Set up account for Britney Bower
+  Category: 1
   Requirements:
     RequiredPower: 0
-    RequiredControl: 1
+    RequiredControl: 0
     RequiresAmbitionAtOrBelowValue: 0
-    RequiredAmbition: -1
+    RequiredAmbition: 0
     RequiresPrideAtOrBelowValue: 0
-    RequiredPride: -1
+    RequiredPride: 0
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
@@ -29,7 +29,7 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 0
+    MoneyCost: 500
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -38,39 +38,47 @@ MonoBehaviour:
     HornicalCost: 0
   Repeatable: 0
   Completed: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   InteractionResults:
   - Dialogs:
     - CurrSpeaker: 1
-      Text: Come on-- I know you like me.  Take a selfie and show me what you've
-        got.
+      Text: I'd like to set up an account for Britney Bowers.
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: It's just that these pix can get you in trouble if they get out.
+      Text: Of course, Sir.  May I ask what relationship she has to you?
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      Text: Yes, but if show loyalty, you get loyalty back.
+      Text: She's my receptionist.
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: Well, when you put it that way...
+      Text: Might I suggest five hundred dollars?  That's more than ample to get
+        her started, given her position.  If you want anything special, there may
+        be additional charges, of course.
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 1
+      Text: Of course.  Here you are.
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     OptionalPopups: []
     Effects:
-    - ContextualNpcReference: {fileID: 0}
+    - ContextualNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
+        type: 2}
       AmbitionEffect: 0
-      PrideEffect: -10
+      PrideEffect: -5
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0

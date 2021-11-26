@@ -22,14 +22,15 @@ MonoBehaviour:
     RequiredAmbition: -1
     RequiresPrideAtOrBelowValue: 1
     RequiredPride: 20
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 654014b90f9a85b4986bf013e4b99171, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 0
+    MoneyCost: 50
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -42,7 +43,8 @@ MonoBehaviour:
   InteractionResults:
   - Dialogs:
     - CurrSpeaker: 1
-      Text: Stop squirming.  You look great.
+      Text: Ah-- shopping from the Vixxxens summer collection, I see!  Stop squirming. 
+        You look great.
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
