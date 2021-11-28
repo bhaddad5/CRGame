@@ -10,28 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: bikiniModeling
+  m_Name: Break Britney
   m_EditorClassIdentifier: 
-  Id: bikiniModeling
-  Name: Bikini Modeling
-  Category: 6
+  Id: Break BritneybritneyBower
+  Name: Break Britney
+  Category: 5
   Requirements:
     RequiredPower: 0
-    RequiredControl: 1
-    RequiresAmbitionAtOrBelowValue: 0
-    RequiredAmbition: -1
-    RequiresPrideAtOrBelowValue: 1
-    RequiredPride: 10
-    RequiredInteractions:
-    - {fileID: 11400000, guid: 654014b90f9a85b4986bf013e4b99171, type: 2}
-    - {fileID: 11400000, guid: cf549e27aaa69844f9603c75e25580ff, type: 2}
+    RequiredControl: 0
+    RequiresAmbitionAtOrBelowValue: 1
+    RequiredAmbition: 0
+    RequiresPrideAtOrBelowValue: 0
+    RequiredPride: 0
+    RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 50
+    MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -44,27 +42,27 @@ MonoBehaviour:
   InteractionResults:
   - Dialogs:
     - CurrSpeaker: 1
-      Text: I approve of your latest Vixxxen's purchase.  You look like a beach bunny
-        cocktease.
+      Text: 'Just to be clear, you''re not impressing me.  '
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
-      CustomNpcImageOptions:
-      - {fileID: 2800000, guid: 371620026cf6d4b4a8e8a07ea4e80761, type: 3}
+      CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: It barely covers me!
+      Text: 'But I thought we had a relationship! '
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      Text: True-- but since you're a "But-her-face", that's the whole idea.
+      Text: You're lucky I even keep you on.  The only reason you've still got a
+        job is because you're so easy.  You continue to pu tout, you'll continue
+        to draw a paycheck.  Got it?
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: That's such a mean thing to say!
+      Text: Yes, I got it.
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
@@ -73,9 +71,9 @@ MonoBehaviour:
     Effects:
     - ContextualNpcReference: {fileID: 0}
       AmbitionEffect: 0
-      PrideEffect: -5
-      EgoEffect: 2
-      FundsEffect: 100
+      PrideEffect: 0
+      EgoEffect: 40
+      FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
       CultureEffect: 0
