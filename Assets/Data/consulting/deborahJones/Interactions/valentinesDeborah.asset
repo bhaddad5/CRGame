@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
   m_Name: valentinesDeborah
   m_EditorClassIdentifier: 
-  Id: valentinesDeborah
+  Id: b23f48a2-db94-45e0-825b-23a9254f4fbb
   Name: "Valentine\u2019s Day"
   Category: 3
   Requirements:
@@ -42,29 +42,29 @@ MonoBehaviour:
   InteractionResults:
   - Dialogs:
     - CurrSpeaker: 1
-      CustomSpeakerReference: {fileID: 0}
       Text: I have a little surprise for you for Valentine's Day.
+      CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
-      NpcImage: 
+      CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      CustomSpeakerReference: {fileID: 0}
       Text: That's not necessary or appropriate!
+      CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
-      NpcImage: 
+      CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      CustomSpeakerReference: {fileID: 0}
       Text: I think you'd look good in something skimpy like this.
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
-      NpcImage: 
-    - CurrSpeaker: 0
       CustomSpeakerReference: {fileID: 0}
-      Text: You can't think I'd accept a gift like that!  I will NOT accept this!
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
-      NpcImage: 
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 0
+      Text: You can't think I'd accept a gift like that!  I will NOT accept this!
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
     OptionalPopups: []
     Effects:
     - ContextualNpcReference: {fileID: 0}
@@ -82,18 +82,10 @@ MonoBehaviour:
       ControlEffect: 0
       RemoveNpcFromGame: 0
       TrophiesClaimedReferences: []
-      ContextualLocationReference: {fileID: 0}
-      UpdateLocationBackground: {fileID: 0}
-      ShouldUpdateLocationMapPos: 0
-      UpdateLocationMapPosition: {x: -1, y: -1}
-      ShouldUpdateStatusSymbols: 0
-      UpdateStatusSymbols:
-        CarName: 
-        CarImage: {fileID: 0}
-        SuitsName: 
-        SuitsImage: {fileID: 0}
-        JewleryCuffs: {fileID: 0}
-        JewleryPen: {fileID: 0}
-        JewleryRing: {fileID: 0}
-        JewleryWatch: {fileID: 0}
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
     Probability: 1

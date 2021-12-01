@@ -9,7 +9,9 @@ namespace Assets.GameModel
 	[Serializable]
 	public class Interaction : ScriptableObject
 	{
+		[HideInInspector]
 		public string Id;
+
 		public string Name;
 
 		public enum InteractionCategory

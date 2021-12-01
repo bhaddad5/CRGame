@@ -9,6 +9,7 @@ namespace Assets.GameModel
 	[Serializable]
 	public class Npc : ScriptableObject
 	{
+		[HideInInspector]
 		public string Id;
 
 		public bool IsControllable;

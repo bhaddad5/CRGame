@@ -49,7 +49,7 @@ public class CreateMissionWindow : EditorWindow
 		foundLoc.Missions.Add(mission);
 		EditorUtility.SetDirty(foundLoc);
 
-		AssetDatabase.CreateAsset(mission, $"Assets/Data/{foundLoc.Id}/_Missions/{mission.MissionName}.asset");
+		AssetDatabase.CreateAsset(mission, $"Assets/Data/{foundLoc.Name}/_Missions/{mission.MissionName}.asset");
 		AssetDatabase.SaveAssets();
 	}
 

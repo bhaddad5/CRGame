@@ -8,7 +8,9 @@ namespace Assets.GameModel
 	[Serializable]
 	public class Location : ScriptableObject
 	{
+		[HideInInspector]
 		public string Id;
+
 		public string Name;
 		public Texture2D Icon;
 		public Texture2D BackgroundImage;

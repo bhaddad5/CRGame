@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
   m_Name: buyHouse8
   m_EditorClassIdentifier: 
-  Id: buyHouse8
+  Id: 3a1a1b52-65b6-40cd-a1bd-f774f5532d29
   Name: Move to Crown Boulevard
   Category: 1
   Requirements:
@@ -43,23 +43,23 @@ MonoBehaviour:
   InteractionResults:
   - Dialogs:
     - CurrSpeaker: 0
-      CustomSpeakerReference: {fileID: 0}
       Text: Hello sir, what can I do for you?
+      CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
-      NpcImage: 
+      CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      CustomSpeakerReference: {fileID: 0}
       Text: I'm thinking of getting a new house.
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
-      NpcImage: 
-    - CurrSpeaker: 0
       CustomSpeakerReference: {fileID: 0}
-      Text: Of course!  I have just the thing and I believe it's in your price range!
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
-      NpcImage: 
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 0
+      Text: Of course!  I have just the thing and I believe it's in your price range!
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
     OptionalPopups: []
     Effects:
     - ContextualNpcReference: {fileID: 0}
@@ -77,20 +77,10 @@ MonoBehaviour:
       ControlEffect: 0
       RemoveNpcFromGame: 0
       TrophiesClaimedReferences: []
-      ContextualLocationReference: {fileID: 11400000, guid: 5a81856f026ff4547a90bf9d6793b2fa,
-        type: 2}
-      UpdateLocationBackground: {fileID: 2800000, guid: 3aeea6b8c91724840b05444c2362dca1,
-        type: 3}
-      ShouldUpdateLocationMapPos: 1
-      UpdateLocationMapPosition: {x: 137, y: 796}
-      ShouldUpdateStatusSymbols: 0
-      UpdateStatusSymbols:
-        CarName: 
-        CarImage: {fileID: 0}
-        SuitsName: 
-        SuitsImage: {fileID: 0}
-        JewleryCuffs: {fileID: 0}
-        JewleryPen: {fileID: 0}
-        JewleryRing: {fileID: 0}
-        JewleryWatch: {fileID: 0}
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
     Probability: 1

@@ -40,7 +40,7 @@ public class CreateInteractionWindow : EditorWindow
 	{
 		Interaction interaction = ScriptableObject.CreateInstance<Interaction>();
 		interaction.Name = interactionName;
-		interaction.Id = interactionName+ npcPicker.NpcId;
+		interaction.Id = Guid.NewGuid().ToString();
 		interaction.InteractionResults = new List<InteractionResult>();
 		interaction.InteractionResults.Add(new InteractionResult(){Probability = 1});
 
@@ -53,7 +53,7 @@ public class CreateInteractionWindow : EditorWindow
 		foundNpc.Item2.Interactions.Add(interaction);
 		EditorUtility.SetDirty(foundNpc.Item2);
 		
-		AssetDatabase.CreateAsset(interaction, $"Assets/Data/{foundNpc.Item1.Id}/{foundNpc.Item2.Id}/Interactions/{interaction.Name}.asset");
+		AssetDatabase.CreateAsset(interaction, $"Assets/Data/{foundNpc.Item1.Name}/{foundNpc.Item2.NpcFileName()}/Interactions/{interaction.Name}.asset");
 		AssetDatabase.SaveAssets();
 	}
 

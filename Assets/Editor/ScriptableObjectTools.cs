@@ -25,4 +25,76 @@ public class ScriptableObjectTools
 
 		Debug.Log("Save Complete");
 	}
+
+	[MenuItem("Tools/Fix IDs")]
+	public static void FixInteractions()
+	{
+		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
+
+		foreach (var location in gameData.Locations)
+		{
+			if (location == null)
+				continue;
+			location.Id = Guid.NewGuid().ToString();
+			EditorUtility.SetDirty(location);
+
+			foreach (var npc in location.Npcs)
+			{
+				if (npc == null)
+					continue;
+				npc.Id = Guid.NewGuid().ToString();
+				EditorUtility.SetDirty(npc);
+
+				foreach (var interaction in npc.Interactions)
+				{
+					if (interaction == null)
+						continue;
+
+					interaction.Id = Guid.NewGuid().ToString();
+					interaction.Completed = false;
+					EditorUtility.SetDirty(interaction);
+				}
+			}
+		}
+
+		AssetDatabase.SaveAssets();
+	}
+
+	[MenuItem("Tools/Fix Folders")]
+	public static void FixFolderNames()
+	{
+		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
+
+		foreach (var location in gameData.Locations)
+		{
+			if (location == null)
+				continue;
+
+			string locFolder = Path.GetDirectoryName(AssetDatabase.GetAssetPath(location));
+			if (Path.GetFileName(locFolder) != location.Name)
+			{
+				string locFolderParent = Path.Combine(locFolder, @"..\");
+				Directory.Move(locFolder, Path.Combine(locFolderParent, location.Name));
+			}
+
+			
+
+			
+
+
+			/*foreach (var npc in location.Npcs)
+			{
+				if (npc == null)
+					continue;
+				
+
+				foreach (var interaction in npc.Interactions)
+				{
+					if (interaction == null)
+						continue;
+					
+				}
+			}*/
+		}
+	}
 }

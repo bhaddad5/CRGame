@@ -36,7 +36,10 @@ public static class CreationWindowHelpers
 		return null;
 	}
 
-	
+	public static string NpcFileName(this Npc npc)
+	{
+		return $"{npc.FirstName} {npc.LastName}";
+	}
 }
 
 public class LocationPicker

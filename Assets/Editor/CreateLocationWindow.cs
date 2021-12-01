@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Assets.GameModel;
@@ -36,7 +37,7 @@ public class CreateLocationWindow : EditorWindow
 	{
 		Location loc = ScriptableObject.CreateInstance<Location>();
 		loc.Name = locName;
-		loc.Id = locName;
+		loc.Id = Guid.NewGuid().ToString();
 
 		data.Locations.Add(loc);
 		EditorUtility.SetDirty(data);
@@ -46,7 +47,7 @@ public class CreateLocationWindow : EditorWindow
 		AssetDatabase.CreateFolder(locFolder, "_Missions");
 		AssetDatabase.CreateFolder(locFolder, "_Policies");
 
-		AssetDatabase.CreateAsset(loc, $"Assets/Data/{loc.Id}/{loc.Id}.asset");
+		AssetDatabase.CreateAsset(loc, $"Assets/Data/{loc.Name}/{loc.Name}.asset");
 		AssetDatabase.SaveAssets();
 	}
 

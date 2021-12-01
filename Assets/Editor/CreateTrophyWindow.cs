@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Assets.GameModel;
@@ -39,7 +40,7 @@ public class CreateTrophyWindow : EditorWindow
 	{
 		Trophy trophy = ScriptableObject.CreateInstance<Trophy>();
 		trophy.Name = trophyName;
-		trophy.Id = trophyName + npcPicker.NpcId;
+		trophy.Id = Guid.NewGuid().ToString();
 
 		var foundNpc = data.FindNpc(npcPicker.NpcId);
 
@@ -50,7 +51,7 @@ public class CreateTrophyWindow : EditorWindow
 		foundNpc.Item2.Trophies.Add(trophy);
 		EditorUtility.SetDirty(foundNpc.Item2);
 
-		AssetDatabase.CreateAsset(trophy, $"Assets/Data/{foundNpc.Item1.Id}/{foundNpc.Item2.Id}/Trophies/{trophy.Name}.asset");
+		AssetDatabase.CreateAsset(trophy, $"Assets/Data/{foundNpc.Item1.Name}/{foundNpc.Item2.NpcFileName()}/Trophies/{trophy.Name}.asset");
 		AssetDatabase.SaveAssets();
 	}
 

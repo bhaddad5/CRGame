@@ -9,7 +9,9 @@ namespace Assets.GameModel
 	[Serializable]
 	public class Trophy : ScriptableObject
 	{
+		[HideInInspector]
 		public string Id;
+
 		public string Name;
 		public Texture2D Image;
 

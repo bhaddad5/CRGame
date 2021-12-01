@@ -96,8 +96,8 @@ public class CreateNpcWindow : EditorWindow
 		Npc npc = ScriptableObject.CreateInstance<Npc>();
 		npc.FirstName = firstName;
 		npc.LastName = lastName;
-		npc.Id = firstName + lastName;
-		
+		npc.Id = Guid.NewGuid().ToString();
+
 		loc.Npcs.Add(npc);
 		EditorUtility.SetDirty(loc);
 		
@@ -113,7 +113,7 @@ public class CreateNpcWindow : EditorWindow
 		npc.ControlledImages = CopyPicsIntoFolder(picsSrcCtrl, $"{npcFolder}/Pics-Controlled");
 		npc.TrainedImages = CopyPicsIntoFolder(picsSrcTrn, $"{npcFolder}/Pics-Trained");
 
-		AssetDatabase.CreateAsset(npc, $"Assets/Data/{loc.Id}/{npc.Id}/{npc.Id}.asset");
+		AssetDatabase.CreateAsset(npc, $"Assets/Data/{loc.Name}/{npc.NpcFileName()}/{npc.NpcFileName()}.asset");
 		AssetDatabase.SaveAssets();
 	}
 

@@ -11,7 +11,9 @@ namespace Assets.GameModel
 	[Serializable]
 	public class Policy : ScriptableObject
 	{
+		[HideInInspector]
 		public string Id;
+
 		public string Name;
 
 		public bool Active;

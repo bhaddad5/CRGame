@@ -40,7 +40,7 @@ public class CreatePolicyWindow : EditorWindow
 	{
 		Policy policy = ScriptableObject.CreateInstance<Policy>();
 		policy.Name = policyName;
-		policy.Id = policyName + locPicker.LocationId;
+		policy.Id = Guid.NewGuid().ToString();
 
 		var foundLoc = data.FindLocation(locPicker.LocationId);
 
@@ -51,7 +51,7 @@ public class CreatePolicyWindow : EditorWindow
 		foundLoc.Policies.Add(policy);
 		EditorUtility.SetDirty(foundLoc);
 
-		AssetDatabase.CreateAsset(policy, $"Assets/Data/{foundLoc.Id}/_Policies/{policy.Name}.asset");
+		AssetDatabase.CreateAsset(policy, $"Assets/Data/{foundLoc.Name}/_Policies/{policy.Name}.asset");
 		AssetDatabase.SaveAssets();
 	}
 
