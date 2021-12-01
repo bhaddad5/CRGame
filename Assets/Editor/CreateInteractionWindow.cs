@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using Assets.GameModel;
 using UnityEditor;
 using UnityEngine;
@@ -50,10 +51,12 @@ public class CreateInteractionWindow : EditorWindow
 			return;
 
 
-		foundNpc.Item2.Interactions.Add(interaction);
-		EditorUtility.SetDirty(foundNpc.Item2);
+		foundNpc.Interactions.Add(interaction);
+		EditorUtility.SetDirty(foundNpc);
+
+		var npcFolder = Path.GetDirectoryName(AssetDatabase.GetAssetPath(foundNpc));
 		
-		AssetDatabase.CreateAsset(interaction, $"Assets/Data/{foundNpc.Item1.Name}/{foundNpc.Item2.NpcFileName()}/Interactions/{interaction.Name}.asset");
+		AssetDatabase.CreateAsset(interaction, $"{npcFolder}/Interactions/{interaction.Name.ToFolderName()}.asset");
 		AssetDatabase.SaveAssets();
 	}
 

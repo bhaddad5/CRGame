@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using Assets.GameModel;
 using UnityEditor;
 using UnityEngine;
@@ -49,7 +50,9 @@ public class CreateMissionWindow : EditorWindow
 		foundLoc.Missions.Add(mission);
 		EditorUtility.SetDirty(foundLoc);
 
-		AssetDatabase.CreateAsset(mission, $"Assets/Data/{foundLoc.Name}/_Missions/{mission.MissionName}.asset");
+		var locFolder = Path.GetDirectoryName(AssetDatabase.GetAssetPath(foundLoc));
+
+		AssetDatabase.CreateAsset(mission, $"{locFolder}/_Missions/{mission.MissionName.ToFolderName()}.asset");
 		AssetDatabase.SaveAssets();
 	}
 

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using Assets.GameModel;
 using UnityEditor;
 using UnityEngine;
@@ -42,12 +43,12 @@ public class CreateLocationWindow : EditorWindow
 		data.Locations.Add(loc);
 		EditorUtility.SetDirty(data);
 
-		AssetDatabase.CreateFolder($"Assets/Data", loc.Id);
-		string locFolder = $"Assets/Data/{loc.Id}";
+		string locFolder = Path.Combine($"Assets/Data", loc.Name.ToFolderName());
+		AssetDatabase.CreateFolder($"Assets/Data", loc.Name.ToFolderName());
 		AssetDatabase.CreateFolder(locFolder, "_Missions");
 		AssetDatabase.CreateFolder(locFolder, "_Policies");
 
-		AssetDatabase.CreateAsset(loc, $"Assets/Data/{loc.Name}/{loc.Name}.asset");
+		AssetDatabase.CreateAsset(loc, $"{locFolder}/{loc.Name.ToFolderName()}.asset");
 		AssetDatabase.SaveAssets();
 	}
 

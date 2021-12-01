@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using Assets.GameModel;
 using UnityEditor;
 using UnityEngine;
@@ -47,11 +48,12 @@ public class CreateTrophyWindow : EditorWindow
 		if (foundNpc == null)
 			return;
 
+		foundNpc.Trophies.Add(trophy);
+		EditorUtility.SetDirty(foundNpc);
 
-		foundNpc.Item2.Trophies.Add(trophy);
-		EditorUtility.SetDirty(foundNpc.Item2);
+		var npcFolder = Path.GetDirectoryName(AssetDatabase.GetAssetPath(foundNpc));
 
-		AssetDatabase.CreateAsset(trophy, $"Assets/Data/{foundNpc.Item1.Name}/{foundNpc.Item2.NpcFileName()}/Trophies/{trophy.Name}.asset");
+		AssetDatabase.CreateAsset(trophy, $"{npcFolder}/Trophies/{trophy.Name.ToFolderName()}.asset");
 		AssetDatabase.SaveAssets();
 	}
 

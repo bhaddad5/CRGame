@@ -1,13 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using Assets.GameModel;
 using UnityEditor;
 using UnityEngine;
 
 public static class CreationWindowHelpers
 {
-	public static Tuple<Location, Npc> FindNpc(this GameData gameData, string npcId)
+	public static Npc FindNpc(this GameData gameData, string npcId)
 	{
 		foreach (var loc in gameData.Locations)
 		{
@@ -15,7 +16,7 @@ public static class CreationWindowHelpers
 			{
 				if (locNpc?.Id == npcId)
 				{
-					return new Tuple<Location, Npc>(loc, locNpc);
+					return locNpc;
 				}
 			}
 		}
@@ -39,6 +40,16 @@ public static class CreationWindowHelpers
 	public static string NpcFileName(this Npc npc)
 	{
 		return $"{npc.FirstName} {npc.LastName}";
+	}
+
+	public static string ToFolderName(this string name)
+	{
+		foreach (var fileNameChar in Path.GetInvalidFileNameChars())
+		{
+			name = name.Replace(fileNameChar.ToString(), "");
+		}
+		name = name.Replace(".", "");
+		return name;
 	}
 }
 
@@ -106,7 +117,7 @@ public class NpcPicker
 			{
 				if (locNpc == null)
 					continue;
-				menu.AddItem(new GUIContent(locNpc.Id), false, handleItemClicked, locNpc);
+				menu.AddItem(new GUIContent(locNpc.NpcFileName()), false, handleItemClicked, locNpc);
 			}
 
 

@@ -71,28 +71,66 @@ public class ScriptableObjectTools
 				continue;
 
 			string locFolder = Path.GetDirectoryName(AssetDatabase.GetAssetPath(location));
-			if (Path.GetFileName(locFolder) != location.Name)
+			var folderName = Path.GetFileName(locFolder);
+			if (folderName != location.Name.ToFolderName())
 			{
-				string locFolderParent = Path.Combine(locFolder, @"..\");
-				Directory.Move(locFolder, Path.Combine(locFolderParent, location.Name));
+				Directory.Move(locFolder, Path.Combine(Path.GetDirectoryName(locFolder), location.Name.ToFolderName()));
 			}
-
 			
+			/*foreach (var npc in location.Npcs)
+			{
+				if (npc == null)
+					continue;
 
+				string npcFolder = Path.GetDirectoryName(AssetDatabase.GetAssetPath(npc));
+				if (Path.GetFileName(npcFolder) != (npc.FirstName + " " + npc.LastName))
+				{
+					Directory.Move(npcFolder, Path.Combine(Path.Combine(npcFolder, @"..\"), (npc.FirstName + " " + npc.LastName) + ".asset"));
+				}
+			}*/
+		}
+	}
+
+	[MenuItem("Tools/Fix Files")]
+	public static void FixFileNames()
+	{
+		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
+
+		foreach (var location in gameData.Locations)
+		{
+			if (location == null)
+				continue;
 			
-
+			string locationFile = AssetDatabase.GetAssetPath(location);
+			if (Path.GetFileNameWithoutExtension(locationFile) != location.Name)
+			{
+				File.Move(locationFile, Path.Combine(Path.GetDirectoryName(locationFile), location.Name + ".asset"));
+			}
 
 			/*foreach (var npc in location.Npcs)
 			{
 				if (npc == null)
 					continue;
 				
+				string npcFile = AssetDatabase.GetAssetPath(npc);
+				if (Path.GetFileNameWithoutExtension(npcFile) != (npc.FirstName + " " + npc.LastName))
+				{
+					File.Move(npcFile, Path.Combine(Path.GetDirectoryName(npcFile), (npc.FirstName + " " + npc.LastName) + ".asset"));
+				}
+
 
 				foreach (var interaction in npc.Interactions)
 				{
 					if (interaction == null)
 						continue;
-					
+
+					string interactionFile = AssetDatabase.GetAssetPath(interaction);
+					if (Path.GetFileNameWithoutExtension(interactionFile) != interaction.Name)
+					{
+						File.Move(interactionFile, Path.Combine(Path.GetDirectoryName(interactionFile), interaction.Name));
+					}
+
+
 				}
 			}*/
 		}

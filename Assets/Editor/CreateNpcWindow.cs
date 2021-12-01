@@ -100,9 +100,11 @@ public class CreateNpcWindow : EditorWindow
 
 		loc.Npcs.Add(npc);
 		EditorUtility.SetDirty(loc);
-		
-		AssetDatabase.CreateFolder($"Assets/Data/{loc.Id}", npc.Id);
-		string npcFolder = $"Assets/Data/{loc.Id}/{npc.Id}";
+
+		var locFolder = Path.GetDirectoryName(AssetDatabase.GetAssetPath(loc));
+
+		AssetDatabase.CreateFolder($"{locFolder}", npc.NpcFileName().ToFolderName());
+		string npcFolder = Path.Combine(locFolder, npc.NpcFileName().ToFolderName());
 		AssetDatabase.CreateFolder(npcFolder, "Interactions");
 		AssetDatabase.CreateFolder(npcFolder, "Pics-Controlled");
 		AssetDatabase.CreateFolder(npcFolder, "Pics-Independent");
@@ -113,7 +115,7 @@ public class CreateNpcWindow : EditorWindow
 		npc.ControlledImages = CopyPicsIntoFolder(picsSrcCtrl, $"{npcFolder}/Pics-Controlled");
 		npc.TrainedImages = CopyPicsIntoFolder(picsSrcTrn, $"{npcFolder}/Pics-Trained");
 
-		AssetDatabase.CreateAsset(npc, $"Assets/Data/{loc.Name}/{npc.NpcFileName()}/{npc.NpcFileName()}.asset");
+		AssetDatabase.CreateAsset(npc, $"{npcFolder}/{npc.NpcFileName().ToFolderName()}.asset");
 		AssetDatabase.SaveAssets();
 	}
 

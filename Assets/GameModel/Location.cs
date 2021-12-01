@@ -23,9 +23,9 @@ namespace Assets.GameModel
 
 		public Interaction ControlInteractionReference;
 
-		public List<Policy> Policies;
-		public List<Mission> Missions;
-		public List<Npc> Npcs;
+		public List<Policy> Policies = new List<Policy>();
+		public List<Mission> Missions = new List<Mission>();
+		public List<Npc> Npcs = new List<Npc>();
 
 		public bool ShowTrophyCase;
 		public bool ShowCar;
