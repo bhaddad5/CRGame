@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: jillOffer
   m_EditorClassIdentifier: 
   Id: b3f45b78-677e-4e09-ab95-1e4dcfa11c84
-  Name: Offer to help her get Overseas ($2k to backstab Susan and Deborah)
+  Name: Help Jill get overseas in exchange for TPS sabotage
   Category: 2
   Requirements:
     RequiredPower: 0
@@ -30,7 +30,7 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 2000
+    MoneyCost: 3000
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -42,28 +42,52 @@ MonoBehaviour:
   PreviewEffect: 1
   InteractionResults:
   - Dialogs:
-    - CurrSpeaker: 1
-      Text: You wanted to ask me for a favour?
-      CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
-      CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: "Here\u2019s the thing\u2014 if you could loan me the money to travel,
-        I\u2019d be out of here in a heartbeat.  "
+      Text: Look, I see what you're doing.  You're running rings around the staff
+        here but if you really want to screw with Susan and Deborah, I can help you.
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      Text: That's a lot of money.  What do I get out of this?
+      Text: Let's say you're right.  How could you help?
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: "If you could help me\u2014 I have a way to really screw with Deborah
-        and Susan\u2019s TPS forms big time!"
+      Text: Their TPS forms.  They contain all kinds of personal data-- from salary
+        to performance metrics to how often they are on company grounds.  It all
+        goes automatically to HR.  I can anter them in a way that will set off all
+        kinds of red flags.  It would take weeks to sort it out and make them look
+        awful until i tgot sorted.
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 1
+      Text: What would you want in exchange?
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 0
+      Text: Three grand.  Enough for me to join Walter overseas, get out of here,
+        whatever.  Three thousand and it's done and I'm out of here.  You never see
+        me again.  Deal?
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 1
+      Text: I think we have a deal, Jill!
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 2
+      Text: 'NOTE: Jill Vander leaves.  Susan and Deborah each take a significant
+        hit to their reputaions (-10 Ambition for each)'
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
@@ -84,7 +108,7 @@ MonoBehaviour:
       RevanueEffect: 0
       HornicalEffect: 0
       ControlEffect: 0
-      RemoveNpcFromGame: 1
+      RemoveNpcFromGame: 0
       TrophiesClaimedReferences: []
       Car: 0
       Suits: 0
@@ -114,9 +138,9 @@ MonoBehaviour:
       JewleryPen: 0
       JewleryRing: 0
       JewleryWatch: 0
-    - ContextualNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+    - ContextualNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
         type: 2}
-      AmbitionEffect: -5
+      AmbitionEffect: 0
       PrideEffect: 0
       EgoEffect: 0
       FundsEffect: 0
@@ -128,7 +152,7 @@ MonoBehaviour:
       RevanueEffect: 0
       HornicalEffect: 0
       ControlEffect: 0
-      RemoveNpcFromGame: 0
+      RemoveNpcFromGame: 1
       TrophiesClaimedReferences: []
       Car: 0
       Suits: 0
@@ -136,4 +160,4 @@ MonoBehaviour:
       JewleryPen: 0
       JewleryRing: 0
       JewleryWatch: 0
-    Probability: 1
+    Probability: 0
