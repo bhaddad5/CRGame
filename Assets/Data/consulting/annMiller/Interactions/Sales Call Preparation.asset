@@ -10,28 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: clientMeetings
+  m_Name: Sales Call Preparation
   m_EditorClassIdentifier: 
-  Id: 2757d52b-9b13-44cb-910d-eb25f548c0b7
-  Name: Client Meetings
-  Category: 4
+  Id: 7246b58a-fdf1-4909-89d0-1d568df1f401
+  Name: Sales Call Preparation
+  Category: 5
   Requirements:
     RequiredPower: 0
-    RequiredControl: 1
+    RequiredControl: 0
     RequiresAmbitionAtOrBelowValue: 0
-    RequiredAmbition: -1
+    RequiredAmbition: 0
     RequiresPrideAtOrBelowValue: 0
-    RequiredPride: -1
+    RequiredPride: 0
     RequiredInteractions:
-    - {fileID: 11400000, guid: 74b667179472ad0488eeb9e1cd780a78, type: 2}
-    - {fileID: 11400000, guid: 64c108dc2ac4a5040b07c1391a27dc2d, type: 2}
     - {fileID: 11400000, guid: 6d4d98897d6d00f498114ad95639cafe, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 0
+    EgoCost: 1
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -39,49 +37,40 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
-  Repeatable: 0
+  Repeatable: 1
   Completed: 0
   PreviewEffect: 1
   InteractionResults:
   - Dialogs:
     - CurrSpeaker: 1
-      Text: You're going to bring home the bacon, right Miller?
+      Text: I need to make sure yhou're properly prepared for your next sales call!
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
-      CustomNpcImageOptions: []
-    - CurrSpeaker: 0
-      Text: I'll do my best.
-      CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
-      CustomNpcImageOptions: []
-    - CurrSpeaker: 1
-      Text: You'll have to do better.  The only reason I'm keeping you around is
-        because you're a moneymaker.
-      CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
-      CustomNpcImageOptions: []
-    - CurrSpeaker: 0
-      Text: Understood.
-      CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
-      CustomNpcImageOptions: []
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 32feb07b8abc34a4ebd85fcc621afefe, type: 3}
+      - {fileID: 2800000, guid: 1bb09597dcb4a874084ebf260cbbd108, type: 3}
+      - {fileID: 2800000, guid: 7d9039e30f33ba845b7eb40ad9d707b6, type: 3}
+      - {fileID: 2800000, guid: b97159e00dc11ae48b27c7b66b825e92, type: 3}
+      - {fileID: 2800000, guid: b66f90f2773a6414e89cce559457e7d2, type: 3}
+      - {fileID: 2800000, guid: b4670f1662178cf4db98f01806faba21, type: 3}
+      - {fileID: 2800000, guid: 10b9852ba4054944681c08d6361525a0, type: 3}
+      - {fileID: 2800000, guid: 9bcb586ff2dea634c9a24e4ad902238a, type: 3}
+      - {fileID: 2800000, guid: f6a2b7281b8541a48873dd571c44e6f3, type: 3}
+      - {fileID: 2800000, guid: d020d0360717b3d4e8790bdb163465a4, type: 3}
     OptionalPopups: []
     Effects:
     - ContextualNpcReference: {fileID: 0}
       AmbitionEffect: 0
-      PrideEffect: 0
+      PrideEffect: -1
       EgoEffect: 0
-      FundsEffect: 1000
+      FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
       CultureEffect: 0
       SpreadsheetsEffect: 0
       BrandEffect: 0
-      RevanueEffect: 1
+      RevanueEffect: 0
       HornicalEffect: 0
       ControlEffect: 0
       RemoveNpcFromGame: 0

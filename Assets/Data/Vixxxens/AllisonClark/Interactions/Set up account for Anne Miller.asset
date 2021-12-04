@@ -10,29 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: clientMeetings
+  m_Name: Set up account for Anne Miller
   m_EditorClassIdentifier: 
-  Id: 2757d52b-9b13-44cb-910d-eb25f548c0b7
-  Name: Client Meetings
-  Category: 4
+  Id: d96c57c1-cab6-48bf-8b17-3fa5e8f18d5c
+  Name: Set up account for Anne Miller
+  Category: 1
   Requirements:
     RequiredPower: 0
-    RequiredControl: 1
+    RequiredControl: 0
     RequiresAmbitionAtOrBelowValue: 0
-    RequiredAmbition: -1
+    RequiredAmbition: 0
     RequiresPrideAtOrBelowValue: 0
-    RequiredPride: -1
+    RequiredPride: 0
     RequiredInteractions:
-    - {fileID: 11400000, guid: 74b667179472ad0488eeb9e1cd780a78, type: 2}
     - {fileID: 11400000, guid: 64c108dc2ac4a5040b07c1391a27dc2d, type: 2}
-    - {fileID: 11400000, guid: 6d4d98897d6d00f498114ad95639cafe, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 0
+    MoneyCost: 2000
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -41,55 +39,29 @@ MonoBehaviour:
     HornicalCost: 0
   Repeatable: 0
   Completed: 0
-  PreviewEffect: 1
+  PreviewEffect: 0
   InteractionResults:
   - Dialogs:
     - CurrSpeaker: 1
-      Text: You're going to bring home the bacon, right Miller?
+      Text: I have a sales rep who is going to be wining and dining our clients HARD. 
+        She needs to look the part.
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: I'll do my best.
+      Text: Of course!  For two thousand, she'll look like a high class pro.  Send
+        her over and I'll take care of everything.
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      Text: You'll have to do better.  The only reason I'm keeping you around is
-        because you're a moneymaker.
-      CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
-      CustomNpcImageOptions: []
-    - CurrSpeaker: 0
-      Text: Understood.
+      Text: I have no doubt about that.  I'll have her over here ASAP.
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     OptionalPopups: []
-    Effects:
-    - ContextualNpcReference: {fileID: 0}
-      AmbitionEffect: 0
-      PrideEffect: 0
-      EgoEffect: 0
-      FundsEffect: 1000
-      PowerEffect: 0
-      PatentsEffect: 0
-      CultureEffect: 0
-      SpreadsheetsEffect: 0
-      BrandEffect: 0
-      RevanueEffect: 1
-      HornicalEffect: 0
-      ControlEffect: 0
-      RemoveNpcFromGame: 0
-      TrophiesClaimedReferences: []
-      Car: 0
-      Suits: 0
-      JewleryCuffs: 0
-      JewleryPen: 0
-      JewleryRing: 0
-      JewleryWatch: 0
+    Effects: []
     Probability: 1
