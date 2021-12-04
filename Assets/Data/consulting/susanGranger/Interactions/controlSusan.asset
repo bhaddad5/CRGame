@@ -42,7 +42,7 @@ MonoBehaviour:
   InteractionResults:
   - Dialogs:
     - CurrSpeaker: 1
-      Text: Given have things are going, I think it is time I stepped up.
+      Text: Given how things are going, I think it is time I stepped up.
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
@@ -66,12 +66,15 @@ MonoBehaviour:
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
-    OptionalPopups:
-    - Title: Now that I'm the boss, you're do as you are told...
-      Videos:
-      - {fileID: 32900000, guid: 04fc8701ea143b0498fc6e32f51ac8aa, type: 3}
-      Texture: {fileID: 0}
-      Text: 
+    - CurrSpeaker: 1
+      Text: Suzie, there are leaders and there are followers.  You're the later. 
+        You've proven to be an absolute incompetent.  That said, I might find other
+        uses for you.  You're a pretty girl, Suzie.  I think we understand each other.
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
+    OptionalPopups: []
     Effects:
     - ContextualNpcReference: {fileID: 0}
       AmbitionEffect: 0
