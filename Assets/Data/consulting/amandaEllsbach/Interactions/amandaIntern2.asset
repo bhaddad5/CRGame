@@ -24,9 +24,10 @@ MonoBehaviour:
     RequiredPride: -1
     RequiredInteractions:
     - {fileID: 11400000, guid: 9572c2a10529ffe489806abd54f5c1da, type: 2}
+    - {fileID: 11400000, guid: 0a2bb246c4657384b9986693a7e19a3f, type: 2}
     RequiredNotCompletedInteractions:
     - {fileID: 11400000, guid: 223f3be501941494a88743f2efc721de, type: 2}
-    - {fileID: 0}
+    - {fileID: 11400000, guid: 735119b1ac2edaf4f92cba0671e2b157, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredTrophies: []
@@ -41,7 +42,7 @@ MonoBehaviour:
     HornicalCost: 0
   Repeatable: 0
   Completed: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   InteractionResults:
   - Dialogs:
     - CurrSpeaker: 1
@@ -69,12 +70,19 @@ MonoBehaviour:
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
+    - CurrSpeaker: 2
+      Text: Your handling of Amanda's internship failure has reinforced your reputation
+        as an executive who is both ruthless and effective.
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
     OptionalPopups: []
     Effects:
     - ContextualNpcReference: {fileID: 0}
-      AmbitionEffect: -30
-      PrideEffect: -30
-      EgoEffect: 0
+      AmbitionEffect: 0
+      PrideEffect: 0
+      EgoEffect: 40
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0

@@ -24,9 +24,10 @@ MonoBehaviour:
     RequiredPride: -1
     RequiredInteractions:
     - {fileID: 11400000, guid: 9572c2a10529ffe489806abd54f5c1da, type: 2}
+    - {fileID: 11400000, guid: 0a2bb246c4657384b9986693a7e19a3f, type: 2}
     RequiredNotCompletedInteractions:
-    - {fileID: 0}
-    - {fileID: 0}
+    - {fileID: 11400000, guid: 3dbf08341c753524e803d7919a624ce7, type: 2}
+    - {fileID: 11400000, guid: 735119b1ac2edaf4f92cba0671e2b157, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredTrophies: []
@@ -41,7 +42,7 @@ MonoBehaviour:
     HornicalCost: 0
   Repeatable: 0
   Completed: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   InteractionResults:
   - Dialogs:
     - CurrSpeaker: 1
@@ -65,6 +66,12 @@ MonoBehaviour:
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: I understand.  Thank you for the recoemmndation-- I'll never forget you!
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 2
+      Text: Amanda Ellsbach leaves Artemis with high praise for you!
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}

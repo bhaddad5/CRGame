@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: susanArrangement
   m_EditorClassIdentifier: 
   Id: 52be0ec7-9813-4733-b10f-0de50dde8b69
-  Name: An Arrangement is negotiated
+  Name: Anne gets immunity, Susan gets a poison pill
   Category: 0
   Requirements:
     RequiredPower: 0
@@ -26,7 +26,8 @@ MonoBehaviour:
     - {fileID: 11400000, guid: fd4c52ecbe15ba24885d8242c4f9ca35, type: 2}
     - {fileID: 11400000, guid: 8b1ff10340c0a8b45a60e980c06b63c0, type: 2}
     - {fileID: 11400000, guid: c951eadfed54276479e8704d51aa3a4f, type: 2}
-    RequiredNotCompletedInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: 66946d6c657872f43b0e20ecaf01e472, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredTrophies: []
@@ -67,6 +68,18 @@ MonoBehaviour:
     - CurrSpeaker: 0
       Text: We have a deal.  Believe me, I've been dying to drop the dirt on how
         incompetent Susan is.  I'm getting married and don't need this job anymore.
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 2
+      Text: 'TO: ALL CSG STAFF
+
+        Anne Miller will be pursuing new opportunities. 
+        Join m ein wishing her all the best!
+
+        (Anne Miller leaves Artemis,
+        but not before forwarding an email to Senior Management regarding Susan Granger) '
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}

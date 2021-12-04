@@ -24,6 +24,7 @@ MonoBehaviour:
     RequiredPride: -1
     RequiredInteractions:
     - {fileID: 11400000, guid: ef20479236fa0494eaf6dfd395c50437, type: 2}
+    - {fileID: 11400000, guid: 0a2bb246c4657384b9986693a7e19a3f, type: 2}
     RequiredNotCompletedInteractions:
     - {fileID: 11400000, guid: 51b0e70d38959754fb5bcfeba1b9cca0, type: 2}
     - {fileID: 11400000, guid: 8165423a674cc4b4abfd07b04ee53501, type: 2}
@@ -41,7 +42,7 @@ MonoBehaviour:
     HornicalCost: 0
   Repeatable: 0
   Completed: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   InteractionResults:
   - Dialogs:
     - CurrSpeaker: 1
@@ -64,8 +65,13 @@ MonoBehaviour:
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: Sounds good to me!  It will take a while though. (Amanda will be unavailable
-        for 18 turns)
+      Text: Sounds good to me!  It will take a while though.
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 2
+      Text: Amanda's hard work earns you +1 Brand!
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}

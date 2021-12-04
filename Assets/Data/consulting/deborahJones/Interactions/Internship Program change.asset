@@ -10,24 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: amandainternshipMarketanalysis
+  m_Name: Internship Program change
   m_EditorClassIdentifier: 
-  Id: 9850de86-1da7-4ce7-b8fe-bd5a44ec3881
-  Name: 'INTERNSHIP FOCUS: Market Analysis'
-  Category: 4
+  Id: f73f424f-18e2-43ce-8b8f-0f566ff55459
+  Name: Internship Program change
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredControl: 0
     RequiresAmbitionAtOrBelowValue: 0
-    RequiredAmbition: -1
+    RequiredAmbition: 0
     RequiresPrideAtOrBelowValue: 0
-    RequiredPride: -1
+    RequiredPride: 0
     RequiredInteractions:
-    - {fileID: 11400000, guid: ef20479236fa0494eaf6dfd395c50437, type: 2}
-    - {fileID: 11400000, guid: 0a2bb246c4657384b9986693a7e19a3f, type: 2}
-    RequiredNotCompletedInteractions:
-    - {fileID: 11400000, guid: 922b352a4b8a3a64e926d6cc5f95957e, type: 2}
-    - {fileID: 11400000, guid: 8165423a674cc4b4abfd07b04ee53501, type: 2}
+    - {fileID: 11400000, guid: 9572c2a10529ffe489806abd54f5c1da, type: 2}
+    RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredTrophies: []
@@ -46,46 +43,58 @@ MonoBehaviour:
   InteractionResults:
   - Dialogs:
     - CurrSpeaker: 1
-      Text: You're a smart kid.  How about taking on a real project?
+      Text: Hi.  We need to talk about the Internship Program and Amanda.
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: Yes, please!  What did you have in mind?
+      Text: That's none of your concern.  I manage the Internship Program.
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      Text: A Market Analysis Study.   Something that will make me look like a genius.
+      Text: 'Not any more.  I''ll be managing the program.  Amanda will be reporting
+        to me.   Susan will be sending a memo out shortly.  '
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: Sounds good to me!  It will take a while though.
+      Text: Why?  I'm doing a great job with Amanda!
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
-    - CurrSpeaker: 2
-      Text: Amanda's hard work earns you +1 Spreadsheet!
+    - CurrSpeaker: 1
+      Text: Deborah, if you haven't noticed, things are taking off for me here at
+        Artemis.  It is simple- I'm succeeding and you're failing.  As a reward,
+        I asked for access to Amanda and I have it.  Get used to losing Debbie. 
+        It's not going to get any better for you.
+      CustomSpeakerReference: {fileID: 0}
+      InPlayerOffice: 0
+      CustomBackground: {fileID: 0}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 0
+      Text: We'll see who the loser is!  We'll see who ends up on top!  And it certainly
+        won't be YOU!
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     OptionalPopups: []
     Effects:
-    - ContextualNpcReference: {fileID: 0}
-      AmbitionEffect: 0
+    - ContextualNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
+      AmbitionEffect: -10
       PrideEffect: 0
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
       CultureEffect: 0
-      SpreadsheetsEffect: 1
+      SpreadsheetsEffect: 0
       BrandEffect: 0
       RevanueEffect: 0
       HornicalEffect: 0
