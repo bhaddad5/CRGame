@@ -22,7 +22,8 @@ MonoBehaviour:
     RequiredAmbition: -1
     RequiresPrideAtOrBelowValue: 0
     RequiredPride: -1
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 1c3f822f55d8bd449945eabff4120250, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -38,7 +39,7 @@ MonoBehaviour:
     HornicalCost: 0
   Repeatable: 1
   Completed: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   InteractionResults:
   - Dialogs:
     - CurrSpeaker: 1
@@ -61,12 +62,17 @@ MonoBehaviour:
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: Oh, just do what you want! You know there's nothing I can say that will
-        mak eyou stop!
+        make you stop!
       CustomSpeakerReference: {fileID: 0}
       InPlayerOffice: 0
       CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
-    OptionalPopups: []
+    OptionalPopups:
+    - Title: Feeling up Suzie feels gooood....
+      Videos:
+      - {fileID: 32900000, guid: a1e50f9008183f845b0583b6a03c1a91, type: 3}
+      Texture: {fileID: 0}
+      Text: 
     Effects:
     - ContextualNpcReference: {fileID: 0}
       AmbitionEffect: 0
