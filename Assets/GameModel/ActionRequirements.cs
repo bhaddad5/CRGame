@@ -50,7 +50,7 @@ namespace Assets.GameModel
 				if(interaction == null)
 					continue;
 
-				if (!interaction.Completed)
+				if (interaction.Completed == 0)
 					return false;
 			}
 
@@ -59,7 +59,7 @@ namespace Assets.GameModel
 				if (interaction == null)
 					continue;
 
-				if (interaction.Completed)
+				if (interaction.Completed > 0)
 					return false;
 			}
 

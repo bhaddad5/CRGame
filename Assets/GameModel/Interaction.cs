@@ -33,7 +33,7 @@ namespace Assets.GameModel
 
 		public bool Repeatable = false;
 		[HideInInspector]
-		public bool Completed = false;
+		public int Completed = 0;
 
 		public bool PreviewEffect = false;
 
@@ -41,7 +41,7 @@ namespace Assets.GameModel
 
 		public bool InteractionVisible(MainGameManager mgm, Npc npc)
 		{
-			if (Completed && !Repeatable)
+			if (Completed > 0 && !Repeatable)
 				return false;
 			if (npc.Controlled && InteractionResults.Any(res => res.Effects.Any(eff => eff.ControlEffect)))
 				return false;
@@ -57,12 +57,8 @@ namespace Assets.GameModel
 			return Cost.CanAffordCost(mgm);
 		}
 
-		public InteractionResult GetInteractionResult(MainGameManager mgm, Npc npc)
+		public InteractionResult GetInteractionResult(MainGameManager mgm)
 		{
-			Cost.SubtractCost(mgm);
-
-			Completed = true;
-
 			int totalProbability = 0;
 			foreach (var result in InteractionResults)
 			{

@@ -167,9 +167,9 @@ namespace Assets.GameModel
 			else return "CEOOffice";
 		}
 		
-		public void ShowPopup(Popup popup, Action onPopupDone)
+		public void ShowPopup(Popup popup, int completionCount, Action onPopupDone)
 		{
-			hudUiDisplay.ShowPopup(popup, onPopupDone);
+			hudUiDisplay.ShowPopup(popup, completionCount, onPopupDone);
 		}
 
 		public void SetTrophyCaseVisibility(bool vis)

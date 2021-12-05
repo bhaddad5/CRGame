@@ -54,7 +54,7 @@ namespace Assets.GameModel
 			if (!Exists)
 				return false;
 
-			return RequiredVisibilityInteractionReference?.Completed ?? true;
+			return (RequiredVisibilityInteractionReference?.Completed ?? 1) > 0;
 		}
 
 		public Texture2D GetCurrentPicture()

@@ -35,12 +35,12 @@ namespace Assets.GameModel
 		{
 			foreach (var interaction in VisibilityInteractions)
 			{
-				if (interaction != null && !interaction.Completed)
+				if (interaction != null && interaction.Completed == 0)
 					return false;
 			}
 			foreach (var interaction in VisibilityNotCompletedInteractions)
 			{
-				if (interaction != null && interaction.Completed)
+				if (interaction != null && interaction.Completed > 0)
 					return false;
 			}
 			return true;
@@ -48,7 +48,7 @@ namespace Assets.GameModel
 
 		public bool Controlled()
 		{
-			return ControlInteractionReference?.Completed ?? false;
+			return (ControlInteractionReference?.Completed ?? 0) > 0;
 		}
 
 		public bool IsAccessible(MainGameManager mgm)

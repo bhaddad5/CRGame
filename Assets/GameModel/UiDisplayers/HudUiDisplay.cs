@@ -107,9 +107,9 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 		Month.text = $"{DateTime:MMMM} {DateTime.Day}";
 	}
 
-	public void ShowPopup(Popup popup, Action onPopupDone)
+	public void ShowPopup(Popup popup, int completionCount, Action onPopupDone)
 	{
-		PopupDisplay.Show(popup, mgm, onPopupDone);
+		PopupDisplay.Show(popup, completionCount, mgm, onPopupDone);
 	}
 	
 	public void ShowMainMenu()

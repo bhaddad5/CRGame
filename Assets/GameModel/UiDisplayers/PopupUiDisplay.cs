@@ -20,7 +20,7 @@ public class PopupUiDisplay : MonoBehaviour, IUiDisplay
 	private Popup popup;
 	private MainGameManager mgm;
 	private Action onPopupDone;
-	public void Show(Popup popup, MainGameManager mgm, Action onPopupDone)
+	public void Show(Popup popup, int completionCount, MainGameManager mgm, Action onPopupDone)
 	{
 		this.popup = popup;
 		this.mgm = mgm;
@@ -37,7 +37,7 @@ public class PopupUiDisplay : MonoBehaviour, IUiDisplay
 		{
 			ImageDisplay.texture = VideoTexture;
 			UnityEngine.Random.InitState(System.DateTime.Now.Millisecond);
-			VideoPlayer.clip = popup.Videos[UnityEngine.Random.Range(0, popup.Videos.Count)];
+			VideoPlayer.clip = popup.Videos[completionCount % popup.Videos.Count];
 		}
 	}
 

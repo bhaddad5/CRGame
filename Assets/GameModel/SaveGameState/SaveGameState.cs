@@ -264,7 +264,7 @@ namespace Assets.GameModel.Save
 	{
 		public string Id;
 
-		public bool Completed;
+		public int Completed;
 
 		public static SavedInteractionState FromData(Interaction data)
 		{

@@ -21,7 +21,7 @@ namespace Assets.GameModel
 
 		public bool IsComplete()
 		{
-			return CompletionInteractionReference?.Completed ?? true;
+			return (CompletionInteractionReference?.Completed ?? 0) > 0;
 		}
 	}
 }

@@ -48,24 +48,24 @@ public class DialogDisplayHandler : MonoBehaviour
 		{
 			runningCoroutine = StartCoroutine(ShowDialog());
 		}
-		else if (popupsToShow.Count > 0)
+		else if (currPopupsToShow.Count > 0)
 		{
 			gameObject.SetActive(false);
-			var popup = popupsToShow[0];
-			popupsToShow.RemoveAt(0);
-			mgm.ShowPopup(popup, () => HandleNextDialog());
+			var popup = currPopupsToShow[0];
+			currPopupsToShow.RemoveAt(0);
+			mgm.ShowPopup(popup, completedCount, () => HandleNextDialog());
 		}
-		else if (missionsToShow.Count > 0)
+		else if (currMissionsToShow.Count > 0)
 		{
 			var missionPopup = new Popup()
 			{
-				Title = $"Mission Complete: {missionsToShow[0].MissionName}",
-				Texture = missionsToShow[0].MissionImage,
-				Text = missionsToShow[0].MissionDescription,
+				Title = $"Mission Complete: {currMissionsToShow[0].MissionName}",
+				Texture = currMissionsToShow[0].MissionImage,
+				Text = currMissionsToShow[0].MissionDescription,
 			};
 			gameObject.SetActive(false);
-			missionsToShow.RemoveAt(0);
-			mgm.ShowPopup(missionPopup, () => HandleNextDialog());
+			currMissionsToShow.RemoveAt(0);
+			mgm.ShowPopup(missionPopup, completedCount, () => HandleNextDialog());
 		}
 		else
 		{
@@ -78,17 +78,19 @@ public class DialogDisplayHandler : MonoBehaviour
 	}
 
 	private List<DialogEntry> currDialogsToShow = new List<DialogEntry>();
-	private List<Popup> popupsToShow = new List<Popup>();
-	private List<Mission> missionsToShow = new List<Mission>();
+	private List<Popup> currPopupsToShow = new List<Popup>();
+	private List<Mission> currMissionsToShow = new List<Mission>();
 	private Coroutine runningCoroutine = null;
 	private Action dialogsComplete = null;
-	public void HandleDisplayDialogs(List<DialogEntry> dialogs, List<Popup> popupsToShow, List<Mission> missionsToShow, Action dialogsComplete)
+	private int completedCount;
+	public void HandleDisplayDialogs(int completedCount, List<DialogEntry> dialogs, List<Popup> popupsToShow, List<Mission> missionsToShow, Action dialogsComplete)
 	{
 		_npcUiDisplay.InteractionsHandler.gameObject.SetActive(false);
 
+		this.completedCount = completedCount;
 		this.dialogsComplete = dialogsComplete;
-		this.popupsToShow = popupsToShow;
-		this.missionsToShow = missionsToShow;
+		currPopupsToShow = new List<Popup>(popupsToShow);
+		currMissionsToShow = new List<Mission>(missionsToShow);
 		currDialogsToShow = new List<DialogEntry>(dialogs);
 		gameObject.SetActive(true);
 		if (runningCoroutine != null)
