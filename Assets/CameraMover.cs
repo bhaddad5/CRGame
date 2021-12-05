@@ -17,6 +17,19 @@ public class CameraMover : MonoBehaviour
 			transform.position = new Vector3(Mathf.Clamp(desiredPos.x, -7.9f, 7.9f), Mathf.Clamp(desiredPos.y, -2.6f, 2.6f), -10f);
 		}
 
+#if UNITY_EDITOR
+		if (Input.GetKeyDown(KeyCode.M))
+		{
+			var map = GameObject.Find("MainMapCanvas");
+
+			var mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+			var mousePosRelativeToMap = map.transform.InverseTransformPoint(mousePos);
+			var halfMapSize = map.GetComponent<RectTransform>().sizeDelta / 2f;
+
+			Debug.Log((mousePosRelativeToMap.x + halfMapSize.x).ToString("F0") + ", " + (mousePosRelativeToMap.y + halfMapSize.y).ToString("F0"));
+		}
+#endif
+
 		prevMousePos = Input.mousePosition;
 	}
 }
