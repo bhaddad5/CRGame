@@ -83,12 +83,21 @@ public class DialogDisplayHandler : MonoBehaviour
 	private Coroutine runningCoroutine = null;
 	private Action dialogsComplete = null;
 	private int completedCount;
-	public void HandleDisplayDialogs(int completedCount, List<DialogEntry> dialogs, List<Popup> popupsToShow, List<Mission> missionsToShow, Action dialogsComplete)
+	private InteractionResult res;
+	public void HandleDisplayDialogs(int completedCount, InteractionResult res, List<DialogEntry> dialogs, List<Popup> popupsToShow, List<Mission> missionsToShow, Action dialogsComplete)
 	{
+		this.completedCount = completedCount;
+		this.res = res;
+		this.dialogsComplete = dialogsComplete;
+
 		_npcUiDisplay.InteractionsHandler.gameObject.SetActive(false);
 
-		this.completedCount = completedCount;
-		this.dialogsComplete = dialogsComplete;
+		if (res.CustomBackground != null)
+		{
+			_npcUiDisplay.SetBackground(res.CustomBackground);
+			_npcUiDisplay.SetCustomLayout(res.CustomBackgroundNpcLayout);
+		}
+
 		currPopupsToShow = new List<Popup>(popupsToShow);
 		currMissionsToShow = new List<Mission>(missionsToShow);
 		currDialogsToShow = new List<DialogEntry>(dialogs);
@@ -115,8 +124,7 @@ public class DialogDisplayHandler : MonoBehaviour
 		NextDialogImage.enabled = false;
 		textToShow = dialog.Text;
 		DialogText.text = "";
-		if (dialog.CustomBackground != null)
-			_npcUiDisplay.SetBackground(dialog.CustomBackground);
+		
 		if (dialog.CustomNpcImageOptions != null && dialog.CustomNpcImageOptions.Count > 0)
 			_npcUiDisplay.SetImage(dialog.CustomNpcImageOptions[UnityEngine.Random.Range(0, dialog.CustomNpcImageOptions.Count)]);
 

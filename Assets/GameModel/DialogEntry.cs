@@ -20,10 +20,7 @@ namespace Assets.GameModel
 		public string Text;
 
 		[Header("Additional Options")]
-		//Should these be up a level in InteractionResult?
 		public Npc CustomSpeakerReference;
-		public bool InPlayerOffice;
-		public Texture2D CustomBackground;
 		public List<Texture2D> CustomNpcImageOptions;
 
 	}

@@ -25,7 +25,7 @@ namespace Assets.GameModel.UiDisplayers
 				var res = interaction.GetInteractionResult(mgm);
 				var missions = interaction.GetRelevantMissions(mgm);
 
-				displayHandler.HandleDisplayDialogs(interaction.Completed, res.Dialogs, res.OptionalPopups, missions,() =>
+				displayHandler.HandleDisplayDialogs(interaction.Completed, res, res.Dialogs, res.OptionalPopups, missions,() =>
 				{
 					interaction.Cost.SubtractCost(mgm);
 					res.Execute(mgm, npc);

@@ -87,5 +87,10 @@ namespace Assets.GameModel.UiDisplayers
 		{
 			return (overridingImage ?? _npc.GetCurrentPicture()).ToSprite();
 		}
+
+		public void SetCustomLayout(NpcLayout layout)
+		{
+			layout.ApplyToRectTransform(Picture.GetComponent<RectTransform>());
+		}
 	}
 }

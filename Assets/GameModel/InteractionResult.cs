@@ -14,6 +14,10 @@ namespace Assets.GameModel
 		public List<Effect> Effects;
 		public int Probability;
 
+		[Header("Additional Options:")]
+		public Texture2D CustomBackground;
+		public NpcLayout CustomBackgroundNpcLayout;
+
 		public void Execute(MainGameManager mgm, Npc npc)
 		{
 			foreach (var effect in Effects)
