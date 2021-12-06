@@ -28,7 +28,7 @@ MonoBehaviour:
     RequiredDepartmentsControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 10
+    EgoCost: 0
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -45,34 +45,19 @@ MonoBehaviour:
       Text: Let's see if I can't turn you into a decent secretary.  Take a letter,
         Britney!
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: I don't know how to take short hand!
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
       Text: Better at least try-- that is if you want to have any chance at staying
         on as a secretary!
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
-      CustomNpcImageOptions: []
-    - CurrSpeaker: 1
-      Text: Better at least try-- that is if you want to have any chance at staying
-        on as a secretary!
-      CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: OK-- I'll try!  Just give me a chance!
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     OptionalPopups:
     - Title: '"Slow down!  You''re going too fast!"'
@@ -83,8 +68,8 @@ MonoBehaviour:
     Effects:
     - ContextualNpcReference: {fileID: 0}
       AmbitionEffect: 0
-      PrideEffect: -5
-      EgoEffect: 0
+      PrideEffect: -2
+      EgoEffect: 3
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -103,3 +88,8 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
     Probability: 1
+    CustomBackground: {fileID: 0}
+    CustomBackgroundNpcLayout:
+      xPos: 0
+      yPos: 0
+      width: 0
