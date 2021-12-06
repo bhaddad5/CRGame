@@ -32,6 +32,7 @@ public class PopupUiDisplay : MonoBehaviour, IUiDisplay
 		if (popup.Texture != null)
 		{
 			ImageDisplay.texture = popup.Texture;
+			ImageDisplay.gameObject.SetActive(true);
 			VideoPlayer.gameObject.SetActive(false);
 		}
 		else if (popup.Videos.Count > 0)
@@ -40,6 +41,7 @@ public class PopupUiDisplay : MonoBehaviour, IUiDisplay
 			UnityEngine.Random.InitState(System.DateTime.Now.Millisecond);
 			VideoPlayer.clip = popup.Videos[completionCount % popup.Videos.Count];
 			ImageDisplay.gameObject.SetActive(false);
+			VideoPlayer.gameObject.SetActive(true);
 		}
 	}
 
