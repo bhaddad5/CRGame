@@ -44,31 +44,28 @@ MonoBehaviour:
     - CurrSpeaker: 1
       Text: You know Deborah Jones, don't you?
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: Sure.  She's seems like a bright spark.  She's a real talent on the rise
         here!
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
       Text: I think a special eval from Compliance will suggest otherwise.  Deb's
         not as special as she thinks she is and she's been cutting corners.  You'll
         need to let Management know that.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: I see.  That's too bad.  I thought she had a bright future here.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
-    OptionalPopups: []
+    OptionalPopups:
+    - Title: '"How unfortunate for Deborah!"'
+      Videos:
+      - {fileID: 32900000, guid: 128ddd9627b01f34a95ac9b8ed7e4c81, type: 3}
+      Texture: {fileID: 0}
+      Text: 
     Effects:
     - ContextualNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
         type: 2}
@@ -93,3 +90,8 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
     Probability: 1
+    CustomBackground: {fileID: 0}
+    CustomBackgroundNpcLayout:
+      xPos: 0
+      yPos: 0
+      width: 0
