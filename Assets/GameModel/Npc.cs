@@ -30,10 +30,7 @@ namespace Assets.GameModel
 		public string Id;
 
 		public bool IsControllable;
-		[HideInInspector]
-		public bool Controlled;
-		[HideInInspector]
-		public bool Exists = true;
+		
 
 		public float Ambition;
 		public float Pride;
@@ -58,6 +55,11 @@ namespace Assets.GameModel
 		public float PersonalLayoutWidth = 200f;
 
 		public Texture2D BackgroundImage;
+
+		[Header("Ensure this is un-checked!")]
+		public bool Controlled;
+		[Header("Ensure this is checked!")]
+		public bool Exists = true;
 
 		public List<Interaction> Interactions = new List<Interaction>();
 		public List<Trophy> Trophies = new List<Trophy>();
