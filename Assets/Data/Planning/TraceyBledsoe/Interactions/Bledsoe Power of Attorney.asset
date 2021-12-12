@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: Bledsoe Power of Attorney
+  m_EditorClassIdentifier: 
+  Id: a2b7d826-df8c-4689-b3e1-c110880d0327
+  Name: Bledsoe Power of Attorney
+  Category: 5
+  Requirements:
+    RequiredPower: 0
+    RequiredControl: 0
+    RequiresAmbitionAtOrBelowValue: 0
+    RequiredAmbition: 0
+    RequiresPrideAtOrBelowValue: 0
+    RequiredPride: 0
+    RequiredInteractions:
+    - {fileID: 11400000, guid: bf1da1c7e36b62e4084c309546517ab7, type: 2}
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 50
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    HornicalCost: 0
+  Repeatable: 0
+  Completed: 0
+  PreviewEffect: 1
+  InteractionResults:
+  - Dialogs:
+    - CurrSpeaker: 1
+      Text: Tracey, by signing this document you grant me full power of attorney
+        over your financial, legal and medical decisions.  You have to sign it before
+        you can leave Pry Clinic.
+      CustomSpeakerReference: {fileID: 0}
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: caf1c13386addeb439277e2f716994cb, type: 3}
+    - CurrSpeaker: 0
+      Text: But why?  I'm better now!  I just want to go home and...  please?
+      CustomSpeakerReference: {fileID: 0}
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: caf1c13386addeb439277e2f716994cb, type: 3}
+    - CurrSpeaker: 1
+      Text: Don't make me repeat myself, Tracey.
+      CustomSpeakerReference: {fileID: 0}
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: caf1c13386addeb439277e2f716994cb, type: 3}
+    - CurrSpeaker: 0
+      Text: Give me the damn paperwork then.  I can't take another minute of this
+        witch docter and her torture!
+      CustomSpeakerReference: {fileID: 0}
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: caf1c13386addeb439277e2f716994cb, type: 3}
+    - CurrSpeaker: 3
+      Text: 'If Tracey persists in proving a discipline problem or any sign of relapse,
+        feel free to return her for an afternoon of training therapy or even shock
+        treatment.  '
+      CustomSpeakerReference: {fileID: 0}
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: caf1c13386addeb439277e2f716994cb, type: 3}
+    OptionalPopups:
+    - Title: You now have legal guardianship of Traecy Bledsoe
+      Videos:
+      - {fileID: 32900000, guid: 5a45b006ff4be54459a8394de16a3ffe, type: 3}
+      Texture: {fileID: 0}
+      Text: 
+    Effects: []
+    Probability: 1
+    CustomBackground: {fileID: 2800000, guid: 1e74745b312b1304c9269980c46c57f9, type: 3}
+    CustomBackgroundNpcLayout:
+      xPos: 0.4
+      yPos: 0.4
+      width: 350

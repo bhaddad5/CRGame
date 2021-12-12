@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: Pry Anger Phase
+  m_EditorClassIdentifier: 
+  Id: e2fca998-f8b2-4592-8dff-7e5c51b3c324
+  Name: Pry Anger Phase
+  Category: 5
+  Requirements:
+    RequiredPower: 0
+    RequiredControl: 0
+    RequiresAmbitionAtOrBelowValue: 0
+    RequiredAmbition: 0
+    RequiresPrideAtOrBelowValue: 0
+    RequiredPride: 0
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 6733db10645447941a3507e3f053c79a, type: 2}
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 25
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    HornicalCost: 0
+  Repeatable: 0
+  Completed: 0
+  PreviewEffect: 1
+  InteractionResults:
+  - Dialogs:
+    - CurrSpeaker: 1
+      Text: Someone looks very cranky today, Doctor!
+      CustomSpeakerReference: {fileID: 0}
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: fe86b9fce2853c4439996598f6a22552, type: 3}
+      - {fileID: 2800000, guid: b352025a687a3e74491a80b99fdcd60c, type: 3}
+      - {fileID: 2800000, guid: fafce51febb71ba49a213247a77af261, type: 3}
+      - {fileID: 2800000, guid: 0c40a7fd0abc42040a65730010b30c6f, type: 3}
+      - {fileID: 2800000, guid: 51835ad12899ef1409509f3a8ed953a6, type: 3}
+      - {fileID: 2800000, guid: 9118979cda9f51c44a7fbe8d419a065e, type: 3}
+      - {fileID: 2800000, guid: 195ce0a40b1623d498752c78b309a5d7, type: 3}
+    - CurrSpeaker: 1
+      Text: 'Yes indeed!  Our patient has been pitching quite the temper tantrum! 
+        You should have heard her screaming your name-- with a lot of very unladlylike
+        curses with it!  '
+      CustomSpeakerReference: {fileID: 11400000, guid: 2dfaec005ac504e4f961f99c537e5805,
+        type: 2}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 1
+      Text: Would you consider this a relapse, Doctor?
+      CustomSpeakerReference: {fileID: 11400000, guid: 2dfaec005ac504e4f961f99c537e5805,
+        type: 2}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 3
+      Text: Not at all.  Just another step down the road to ultimate recovery.  Tracey
+        is simply acting out in a manner symptomatic of the Anger Phase she is feeling
+        right now.
+      CustomSpeakerReference: {fileID: 11400000, guid: 2dfaec005ac504e4f961f99c537e5805,
+        type: 2}
+      CustomNpcImageOptions: []
+    OptionalPopups:
+    - Title: You are the focus of Tracey's restrained fury!
+      Videos:
+      - {fileID: 32900000, guid: cb857a94804c7b04da4f5de495815ac4, type: 3}
+      Texture: {fileID: 0}
+      Text: 
+    Effects:
+    - ContextualNpcReference: {fileID: 0}
+      AmbitionEffect: 0
+      PrideEffect: -20
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      ControlEffect: 0
+      RemoveNpcFromGame: 0
+      TrophiesClaimedReferences: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+    Probability: 1
+    CustomBackground: {fileID: 2800000, guid: cef4c43b046bdb44097b346ba3ae303e, type: 3}
+    CustomBackgroundNpcLayout:
+      xPos: 0.8
+      yPos: 0.4
+      width: 350

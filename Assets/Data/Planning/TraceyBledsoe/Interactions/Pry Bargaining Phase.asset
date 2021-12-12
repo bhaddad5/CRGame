@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: Pry Bargaining Phase
+  m_EditorClassIdentifier: 
+  Id: fdde5bda-3156-4879-aa9a-f58756408c78
+  Name: Pry Bargaining Phase
+  Category: 5
+  Requirements:
+    RequiredPower: 0
+    RequiredControl: 0
+    RequiresAmbitionAtOrBelowValue: 0
+    RequiredAmbition: 0
+    RequiresPrideAtOrBelowValue: 0
+    RequiredPride: 0
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 385b0621b88a3974e8ada5fcdf0b0110, type: 2}
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 25
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    HornicalCost: 0
+  Repeatable: 0
+  Completed: 0
+  PreviewEffect: 1
+  InteractionResults:
+  - Dialogs:
+    - CurrSpeaker: 1
+      Text: What's Tracey's status Doctor?  Is she any nearer to a possible recovery?
+      CustomSpeakerReference: {fileID: 0}
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: fe86b9fce2853c4439996598f6a22552, type: 3}
+      - {fileID: 2800000, guid: b352025a687a3e74491a80b99fdcd60c, type: 3}
+      - {fileID: 2800000, guid: fafce51febb71ba49a213247a77af261, type: 3}
+      - {fileID: 2800000, guid: 0c40a7fd0abc42040a65730010b30c6f, type: 3}
+      - {fileID: 2800000, guid: 51835ad12899ef1409509f3a8ed953a6, type: 3}
+      - {fileID: 2800000, guid: 9118979cda9f51c44a7fbe8d419a065e, type: 3}
+      - {fileID: 2800000, guid: 195ce0a40b1623d498752c78b309a5d7, type: 3}
+    - CurrSpeaker: 3
+      Text: 'It may not seem like it, but we are chipping away at that obnoxious,
+        independent streak of hers.  She''s beginning to understand that she''ll
+        never be returning to her old life, even if she is released.  And she understands
+        that you have something to do with that. '
+      CustomSpeakerReference: {fileID: 11400000, guid: 2dfaec005ac504e4f961f99c537e5805,
+        type: 2}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 1
+      Text: Is that a good thing?
+      CustomSpeakerReference: {fileID: 11400000, guid: 2dfaec005ac504e4f961f99c537e5805,
+        type: 2}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 3
+      Text: 'I believe so.  She''s even asked if she might negotiate terms of her
+        release with you.  She knows she''s here because you want her here.  It''s
+        common in the Bargaining Phase for a girl to request to speak to her sponsor.  '
+      CustomSpeakerReference: {fileID: 11400000, guid: 2dfaec005ac504e4f961f99c537e5805,
+        type: 2}
+      CustomNpcImageOptions: []
+    OptionalPopups:
+    - Title: She's certainly in no position to bargain!
+      Videos:
+      - {fileID: 32900000, guid: 30e67a6979f7653498a414035d822f6a, type: 3}
+      Texture: {fileID: 0}
+      Text: 
+    Effects:
+    - ContextualNpcReference: {fileID: 0}
+      AmbitionEffect: 0
+      PrideEffect: -20
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      ControlEffect: 0
+      RemoveNpcFromGame: 0
+      TrophiesClaimedReferences: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+    Probability: 1
+    CustomBackground: {fileID: 2800000, guid: cef4c43b046bdb44097b346ba3ae303e, type: 3}
+    CustomBackgroundNpcLayout:
+      xPos: 0.8
+      yPos: 0.4
+      width: 350
