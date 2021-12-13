@@ -17,6 +17,8 @@ MonoBehaviour:
   Category: 1
   Requirements:
     RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
     NpcRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 2def4d0454815d641a32da04ff8d7198, type: 2}
@@ -72,16 +74,21 @@ MonoBehaviour:
       CustomSpeakerReference: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: My nephew will be graduating law school shortly.  Some client-side work
+      Text: 'My nephew will be graduating law school shortly.  Some client-side work
         as Corporate Counsel for Artemis would be a fine start to his career before
-        he takes over the firm.  I'm sure he'd be fine with any enlightened policies
+        he takes over the firm.  I''m sure he''d be fine with any enlightened policies
         you wish to put in place.  As for me, since Amber will be looking for a new
         job soon...  I make be persuaded to take her back on here.  On very different
-        terms of course.
+        terms of course. '
       CustomSpeakerReference: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
       Text: I think we have a deal, Malcolm!
+      CustomSpeakerReference: {fileID: 0}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 0
+      Text: Yes, I think we do.  Let's meet again to iron out the details.  I'll
+        need to speak with Jackson of course.
       CustomSpeakerReference: {fileID: 0}
       CustomNpcImageOptions: []
     OptionalPopups:
@@ -113,7 +120,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    Probability: 1
     CustomBackground: {fileID: 0}
     CustomBackgroundNpcLayout:
       xPos: 0
@@ -147,7 +153,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    Probability: 0
     CustomBackground: {fileID: 0}
     CustomBackgroundNpcLayout:
       xPos: 0

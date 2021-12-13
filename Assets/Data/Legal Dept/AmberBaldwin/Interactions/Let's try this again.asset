@@ -17,6 +17,8 @@ MonoBehaviour:
   Category: 1
   Requirements:
     RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
     NpcRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 31896d8f74cc23748bc0f4ab0b72dad1, type: 2}
@@ -55,10 +57,15 @@ MonoBehaviour:
         is on teh level and above board.  '
       CustomSpeakerReference: {fileID: 0}
       CustomNpcImageOptions: []
-    OptionalPopups: []
+    OptionalPopups:
+    - Title: '"I''m sorry about about being so abrupt."'
+      Videos:
+      - {fileID: 32900000, guid: c466afbd501b9a048860f83549c1c3d6, type: 3}
+      Texture: {fileID: 0}
+      Text: 
     Effect:
       NpcEffects: []
-      EgoEffect: 0
+      EgoEffect: -5
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -79,7 +86,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    Probability: 1
     CustomBackground: {fileID: 0}
     CustomBackgroundNpcLayout:
       xPos: 0
@@ -113,7 +119,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    Probability: 0
     CustomBackground: {fileID: 0}
     CustomBackgroundNpcLayout:
       xPos: 0
