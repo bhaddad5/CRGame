@@ -26,6 +26,30 @@ public class ScriptableObjectTools
 
 		Debug.Log("Save Complete");
 	}
+
+	[MenuItem("Tools/Clean Up Data")]
+	public static void CleanUpAnnoyingNulls()
+	{
+		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
+
+		gameData.Locations.RemoveAll(i => i == null);
+		EditorUtility.SetDirty(gameData);
+
+		foreach (var location in gameData.Locations)
+		{
+			location.Npcs.RemoveAll(i => i == null);
+			location.Policies.RemoveAll(i => i == null);
+			location.Missions.RemoveAll(i => i == null);
+			EditorUtility.SetDirty(location);
+
+			foreach (var npc in location.Npcs)
+			{
+				npc.Interactions.RemoveAll(i => i == null);
+				EditorUtility.SetDirty(npc);
+			}
+		}
+	}
+
 	/*
 	[MenuItem("Tools/Upgrade Old Data")]
 	public static void UpgradeOldData()
