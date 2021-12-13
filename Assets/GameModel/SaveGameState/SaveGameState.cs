@@ -96,14 +96,18 @@ namespace Assets.GameModel.Save
 	{
 		public string Id;
 
+		public bool Controlled;
+
 		public List<SavedNpcState> Npcs;
 		public List<SavedPolicyState> Policies;
+		public List<SavedMissionState> Missions;
 
 		public static SavedLocationState FromData(Location data)
 		{
 			var res = new SavedLocationState();
 
 			res.Id = data.Id;
+			res.Controlled = data.Controlled;
 
 			res.Npcs = new List<SavedNpcState>();
 			foreach (var dataNpc in data.Npcs)
@@ -119,6 +123,13 @@ namespace Assets.GameModel.Save
 					res.Policies.Add(SavedPolicyState.FromData(dataPolicy));
 			}
 
+			res.Missions = new List<SavedMissionState>();
+			foreach (var dataMission in data.Missions)
+			{
+				if(dataMission != null)
+					res.Missions.Add(SavedMissionState.FromData(dataMission));
+			}
+
 
 			return res;
 		}
@@ -131,6 +142,8 @@ namespace Assets.GameModel.Save
 				return;
 			}
 
+			Controlled = data.Controlled;
+
 			foreach (var npc in Npcs)
 			{
 				npc.ApplyToData(data.Npcs.FirstOrDefault(d => d?.Id == npc.Id));
@@ -138,6 +151,10 @@ namespace Assets.GameModel.Save
 			foreach (var policy in Policies)
 			{
 				policy.ApplyToData(data.Policies.FirstOrDefault(d => d?.Id == policy.Id));
+			}
+			foreach (var mission in Missions)
+			{
+				mission.ApplyToData(data.Missions.FirstOrDefault(d => d?.Id == mission.Id));
 			}
 		}
 	}
@@ -162,10 +179,37 @@ namespace Assets.GameModel.Save
 		{
 			if (data == null)
 			{
-				Debug.Log($"Could not find interaction with id {Id}");
+				Debug.Log($"Could not find Policy with id {Id}");
 				return;
 			}
 			data.Active = Active;
+		}
+	}
+
+	[Serializable]
+	public struct SavedMissionState
+	{
+		public string Id;
+
+		public bool Completed;
+
+		public static SavedMissionState FromData(Mission data)
+		{
+			var res = new SavedMissionState();
+			res.Id = data.Id;
+			res.Completed = data.Completed;
+
+			return res;
+		}
+
+		public void ApplyToData(Mission data)
+		{
+			if (data == null)
+			{
+				Debug.Log($"Could not find Mission with id {Id}");
+				return;
+			}
+			data.Completed = Completed;
 		}
 	}
 

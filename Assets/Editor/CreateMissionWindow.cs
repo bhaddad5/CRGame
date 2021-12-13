@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -40,6 +41,7 @@ public class CreateMissionWindow : EditorWindow
 	{
 		Mission mission = ScriptableObject.CreateInstance<Mission>();
 		mission.MissionName = missionName;
+		mission.Id = Guid.NewGuid().ToString();
 
 		var foundLoc = data.FindLocation(locPicker.LocationId);
 

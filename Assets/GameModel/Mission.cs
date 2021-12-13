@@ -11,17 +11,17 @@ namespace Assets.GameModel
 	[Serializable]
 	public class Mission : ScriptableObject
 	{
+		[HideInInspector]
+		public string Id;
+
 		public string MissionName;
 		[TextArea(15, 20)]
 		public string MissionDescription;
 		public Texture2D MissionImage;
 
-		public Interaction CompletionInteractionReference;
-		public List<Effect> Rewards;
+		[Header("Ensure this is un-checked!")]
+		public bool Completed = false;
 
-		public bool IsComplete()
-		{
-			return (CompletionInteractionReference?.Completed ?? 0) > 0;
-		}
+		public List<Effect> Rewards;
 	}
 }

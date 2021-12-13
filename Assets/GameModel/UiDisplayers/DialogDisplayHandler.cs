@@ -84,7 +84,7 @@ public class DialogDisplayHandler : MonoBehaviour
 	private Action dialogsComplete = null;
 	private int completedCount;
 	private InteractionResult res;
-	public void HandleDisplayDialogs(int completedCount, InteractionResult res, List<DialogEntry> dialogs, List<Popup> popupsToShow, List<Mission> missionsToShow, Action dialogsComplete)
+	public void HandleDisplayDialogs(int completedCount, InteractionResult res, List<DialogEntry> dialogs, List<Popup> popupsToShow, Action dialogsComplete)
 	{
 		this.completedCount = completedCount;
 		this.res = res;
@@ -98,8 +98,17 @@ public class DialogDisplayHandler : MonoBehaviour
 			_npcUiDisplay.SetCustomLayout(res.CustomBackgroundNpcLayout);
 		}
 
+		List<Mission> missionsToShow = new List<Mission>();
+		foreach (var effect in res.Effects)
+		{
+			foreach (var mission in effect.MissionsToComplete)
+			{
+				missionsToShow.Add(mission);
+			}
+		}
+		currMissionsToShow = missionsToShow;
+
 		currPopupsToShow = new List<Popup>(popupsToShow);
-		currMissionsToShow = new List<Mission>(missionsToShow);
 		currDialogsToShow = new List<DialogEntry>(dialogs);
 		gameObject.SetActive(true);
 		if (runningCoroutine != null)

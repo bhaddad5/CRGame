@@ -30,25 +30,6 @@ namespace Assets.GameModel
 
 		public List<Location> Locations = new List<Location>();
 		
-		public List<Mission> GetMissionsForInteraction(string interactionId)
-		{
-			List<Mission> res = new List<Mission>();
-
-			foreach (var department in Locations)
-			{
-				if (department == null)
-					continue;
-
-				foreach (var mission in department.Missions)
-				{
-					if (mission?.CompletionInteractionReference?.Id == interactionId)
-						res.Add(mission);
-				}
-			}
-
-			return res;
-		}
-		
 		public Location MyOffice
 		{
 			get

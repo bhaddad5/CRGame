@@ -23,14 +23,12 @@ namespace Assets.GameModel.UiDisplayers
 			Button.onClick.AddListener(() =>
 			{
 				var res = interaction.GetInteractionResult(mgm);
-				var missions = interaction.GetRelevantMissions(mgm);
 
-				displayHandler.HandleDisplayDialogs(interaction.Completed, res, res.Dialogs, res.OptionalPopups, missions,() =>
+				displayHandler.HandleDisplayDialogs(interaction.Completed, res, res.Dialogs, res.OptionalPopups,() =>
 				{
 					interaction.Cost.SubtractCost(mgm);
 					res.Execute(mgm, npc);
 					interaction.Completed++;
-					interaction.ExecuteMissionIfRelevant(mgm, npc);
 					mgm.HandleTurnChange();
 				});
 			});

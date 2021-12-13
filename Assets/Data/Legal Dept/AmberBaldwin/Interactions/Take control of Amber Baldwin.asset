@@ -44,15 +44,11 @@ MonoBehaviour:
     - CurrSpeaker: 1
       Text: Counselor, it's time I reigned you in.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: 'Your tone is insufferable!  I''m tired of your bullying and I won''t
         hesitate to--  '
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
       Text: 'Shut up.  Keep still.  You''ll do as you are told from now on.  Your
@@ -60,15 +56,11 @@ MonoBehaviour:
         you fall in line-- or do I have to destroy what is left of your professional
         reputation?  '
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: ...I can do that.  You don't need to threaten me.  I'll be happy to take
         direction from you from now on.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     OptionalPopups: []
     Effects:
@@ -86,7 +78,12 @@ MonoBehaviour:
       HornicalEffect: 0
       ControlEffect: 1
       RemoveNpcFromGame: 0
+      NpcsToControl:
+      - {fileID: 11400000, guid: 3ee00e5eebd58bf4d942df330f12e4e2, type: 2}
+      NpcsToRemoveFromGame: []
       TrophiesClaimedReferences: []
+      MissionsToComplete:
+      - {fileID: 11400000, guid: fadb2508c9963fc409d434122be0590c, type: 2}
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -94,3 +91,8 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
     Probability: 1
+    CustomBackground: {fileID: 0}
+    CustomBackgroundNpcLayout:
+      xPos: 0
+      yPos: 0
+      width: 0

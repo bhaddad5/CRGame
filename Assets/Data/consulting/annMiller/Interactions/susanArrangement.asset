@@ -48,29 +48,21 @@ MonoBehaviour:
     - CurrSpeaker: 1
       Text: Susan's an impediment.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: You mean she's in your way.  Look, I'm planning on leaving soon.  Just
         leave me alone and I'll drop a poison pill on her for you on my way out.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
       Text: I'm a fan.  You have nothing to worry about from me.  But, if we had
         a deal...
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: We have a deal.  Believe me, I've been dying to drop the dirt on how
         incompetent Susan is.  I'm getting married and don't need this job anymore.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 2
       Text: 'TO: ALL CSG STAFF
@@ -81,8 +73,6 @@ MonoBehaviour:
         (Anne Miller leaves Artemis,
         but not before forwarding an email to Senior Management regarding Susan Granger) '
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     OptionalPopups: []
     Effects:
@@ -101,7 +91,10 @@ MonoBehaviour:
       HornicalEffect: 0
       ControlEffect: 0
       RemoveNpcFromGame: 0
+      NpcsToControl: []
+      NpcsToRemoveFromGame: []
       TrophiesClaimedReferences: []
+      MissionsToComplete: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -123,7 +116,11 @@ MonoBehaviour:
       HornicalEffect: 0
       ControlEffect: 0
       RemoveNpcFromGame: 1
+      NpcsToControl: []
+      NpcsToRemoveFromGame:
+      - {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757, type: 2}
       TrophiesClaimedReferences: []
+      MissionsToComplete: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -131,3 +128,8 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
     Probability: 1
+    CustomBackground: {fileID: 0}
+    CustomBackgroundNpcLayout:
+      xPos: 0
+      yPos: 0
+      width: 0

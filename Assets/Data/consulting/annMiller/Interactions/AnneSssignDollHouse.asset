@@ -44,28 +44,20 @@ MonoBehaviour:
     - CurrSpeaker: 1
       Text: You're a natural bitch on wheels, Miller.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: Am I supposed to apologise?
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
       Text: No-- you're suppose to thank me for putting you in charge of the Doll
         House.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: Thank you!  Martinent must be revealed and reward will be the trit applied
         to DHouse rev
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     OptionalPopups: []
     Effects:
@@ -83,7 +75,11 @@ MonoBehaviour:
       HornicalEffect: 0
       ControlEffect: 0
       RemoveNpcFromGame: 1
+      NpcsToControl: []
+      NpcsToRemoveFromGame:
+      - {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757, type: 2}
       TrophiesClaimedReferences: []
+      MissionsToComplete: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -91,3 +87,8 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
     Probability: 1
+    CustomBackground: {fileID: 0}
+    CustomBackgroundNpcLayout:
+      xPos: 0
+      yPos: 0
+      width: 0

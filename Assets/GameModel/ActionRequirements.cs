@@ -35,7 +35,7 @@ namespace Assets.GameModel
 			{
 				if (interactionDept == null)
 					continue;
-				if (!interactionDept.Controlled())
+				if (!interactionDept.Controlled)
 					return false;
 			}
 

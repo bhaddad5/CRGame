@@ -45,27 +45,19 @@ MonoBehaviour:
     - CurrSpeaker: 1
       Text: If you'd like, I'd be happy to draft the department budget.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: That's really something I should be doing.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
       Text: I just thought you had more important things to do.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: It is such a boring task.  Still, I'm not sure I should hand this off...
         But still, you really do have a knack for the numbers.  OK-- give it a shot!
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     OptionalPopups: []
     Effects:
@@ -83,7 +75,11 @@ MonoBehaviour:
       HornicalEffect: 0
       ControlEffect: 0
       RemoveNpcFromGame: 0
+      NpcsToControl: []
+      NpcsToRemoveFromGame: []
       TrophiesClaimedReferences: []
+      MissionsToComplete:
+      - {fileID: 11400000, guid: 50edf1aaacdba9c41b20088fd6eea090, type: 2}
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -91,3 +87,8 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
     Probability: 1
+    CustomBackground: {fileID: 0}
+    CustomBackgroundNpcLayout:
+      xPos: 0
+      yPos: 0
+      width: 0

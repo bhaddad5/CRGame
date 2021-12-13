@@ -45,26 +45,18 @@ MonoBehaviour:
     - CurrSpeaker: 1
       Text: You knew this day would come.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: Wait-- what do you mean??
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
       Text: I mean you're done here.  I have no further use for you.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: You use me-- then toss me away?  Just like that?
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     OptionalPopups: []
     Effects:
@@ -82,7 +74,11 @@ MonoBehaviour:
       HornicalEffect: 0
       ControlEffect: 0
       RemoveNpcFromGame: 1
+      NpcsToControl: []
+      NpcsToRemoveFromGame:
+      - {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757, type: 2}
       TrophiesClaimedReferences: []
+      MissionsToComplete: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -90,3 +86,8 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
     Probability: 1
+    CustomBackground: {fileID: 0}
+    CustomBackgroundNpcLayout:
+      xPos: 0
+      yPos: 0
+      width: 0

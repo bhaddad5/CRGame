@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa11b298061b58f46b47bca868b7837a, type: 3}
   m_Name: Emergency Contact Registration
   m_EditorClassIdentifier: 
+  Id: 64afb6b5-1a8b-4e5e-858e-f9da71bc10bd
   MissionName: Emergency Contact Registration
   MissionDescription: If an emergency arises, the company needs to know who to contact
     in the first instance.
   MissionImage: {fileID: 2800000, guid: fe53197ba094c244780ea9dcff31b217, type: 3}
+  Completed: 0
   CompletionInteractionReference: {fileID: 11400000, guid: 5c6a3982fe7f0c14cb2ba5f86c0c0291,
     type: 2}
   Rewards:
@@ -33,18 +35,13 @@ MonoBehaviour:
     HornicalEffect: 0
     ControlEffect: 0
     RemoveNpcFromGame: 0
+    NpcsToControl: []
+    NpcsToRemoveFromGame: []
     TrophiesClaimedReferences: []
-    ContextualLocationReference: {fileID: 0}
-    UpdateLocationBackground: {fileID: 0}
-    ShouldUpdateLocationMapPos: 0
-    UpdateLocationMapPosition: {x: 0, y: 0}
-    ShouldUpdateStatusSymbols: 0
-    UpdateStatusSymbols:
-      CarName: 
-      CarImage: {fileID: 0}
-      SuitsName: 
-      SuitsImage: {fileID: 0}
-      JewleryCuffs: {fileID: 0}
-      JewleryPen: {fileID: 0}
-      JewleryRing: {fileID: 0}
-      JewleryWatch: {fileID: 0}
+    MissionsToComplete: []
+    Car: 0
+    Suits: 0
+    JewleryCuffs: 0
+    JewleryPen: 0
+    JewleryRing: 0
+    JewleryWatch: 0

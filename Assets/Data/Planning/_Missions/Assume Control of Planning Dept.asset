@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa11b298061b58f46b47bca868b7837a, type: 3}
   m_Name: Assume Control of Planning Dept
   m_EditorClassIdentifier: 
+  Id: 173f7406-1b6c-4866-955a-417ec77858aa
   MissionName: Assume Control of Planning Dept
   MissionDescription: It is time to take over!
   MissionImage: {fileID: 2800000, guid: ac620205c2a6adb40b911301a853ad42, type: 3}
+  Completed: 0
   CompletionInteractionReference: {fileID: 11400000, guid: 4719a17aa56c4d4488a69537bd80d483,
     type: 2}
   Rewards:
@@ -32,7 +34,10 @@ MonoBehaviour:
     HornicalEffect: 0
     ControlEffect: 0
     RemoveNpcFromGame: 0
+    NpcsToControl: []
+    NpcsToRemoveFromGame: []
     TrophiesClaimedReferences: []
+    MissionsToComplete: []
     Car: 0
     Suits: 0
     JewleryCuffs: 0

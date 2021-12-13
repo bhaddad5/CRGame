@@ -21,8 +21,6 @@ namespace Assets.GameModel
 		public List<Interaction> VisibilityNotCompletedInteractions;
 		public bool ClosedOnWeekends;
 
-		public Interaction ControlInteractionReference;
-
 		public List<Policy> Policies = new List<Policy>();
 		public List<Mission> Missions = new List<Mission>();
 		public List<Npc> Npcs = new List<Npc>();
@@ -30,7 +28,9 @@ namespace Assets.GameModel
 		public bool ShowTrophyCase;
 		public bool ShowCar;
 
-
+		[Header("Ensure this is un-checked!")]
+		public bool Controlled;
+		
 		public bool IsVisible(MainGameManager mgm)
 		{
 			foreach (var interaction in VisibilityInteractions)
@@ -44,11 +44,6 @@ namespace Assets.GameModel
 					return false;
 			}
 			return true;
-		}
-
-		public bool Controlled()
-		{
-			return (ControlInteractionReference?.Completed ?? 0) > 0;
 		}
 
 		public bool IsAccessible(MainGameManager mgm)

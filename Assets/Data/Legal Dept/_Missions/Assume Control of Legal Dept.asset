@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa11b298061b58f46b47bca868b7837a, type: 3}
   m_Name: Assume Control of Legal Dept
   m_EditorClassIdentifier: 
+  Id: 6c9c3f3d-c1ac-49d6-8f05-177002819213
   MissionName: Assume Control of Legal Dept
   MissionDescription: It is time to take over!
   MissionImage: {fileID: 2800000, guid: ac50859f22ade5548810372d3890449d, type: 3}
+  Completed: 0
   CompletionInteractionReference: {fileID: 11400000, guid: 12cac407a65496246b30211790e252c5,
     type: 2}
   Rewards:
@@ -32,18 +34,13 @@ MonoBehaviour:
     HornicalEffect: 0
     ControlEffect: 0
     RemoveNpcFromGame: 0
+    NpcsToControl: []
+    NpcsToRemoveFromGame: []
     TrophiesClaimedReferences: []
-    ContextualLocationReference: {fileID: 0}
-    UpdateLocationBackground: {fileID: 0}
-    ShouldUpdateLocationMapPos: 0
-    UpdateLocationMapPosition: {x: 0, y: 0}
-    ShouldUpdateStatusSymbols: 0
-    UpdateStatusSymbols:
-      CarName: 
-      CarImage: {fileID: 0}
-      SuitsName: 
-      SuitsImage: {fileID: 0}
-      JewleryCuffs: {fileID: 0}
-      JewleryPen: {fileID: 0}
-      JewleryRing: {fileID: 0}
-      JewleryWatch: {fileID: 0}
+    MissionsToComplete: []
+    Car: 0
+    Suits: 0
+    JewleryCuffs: 0
+    JewleryPen: 0
+    JewleryRing: 0
+    JewleryWatch: 0

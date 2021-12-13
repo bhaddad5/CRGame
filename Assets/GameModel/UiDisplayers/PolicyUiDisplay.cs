@@ -41,7 +41,7 @@ namespace Assets.GameModel.UiDisplayers
 			Text.text = $"{policy.Name}";
 			Description.text = $"{policy.Description}";
 			Cost.text = $"Cost: {policy.Cost.GetCostString()}";
-			ActivatePolicyButton.interactable = !policy.Active && loc.Controlled() && policy.Requirements.RequirementsAreMet(mgm, new Npc()) && policy.Cost.CanAffordCost(mgm);
+			ActivatePolicyButton.interactable = !policy.Active && loc.Controlled && policy.Requirements.RequirementsAreMet(mgm, new Npc()) && policy.Cost.CanAffordCost(mgm);
 			Image.sprite = policy.Image.ToSprite();
 			ActivatePolicyButton.gameObject.SetActive(!policy.Active);
 			ActiveIndicator.gameObject.SetActive(policy.Active);
@@ -50,7 +50,7 @@ namespace Assets.GameModel.UiDisplayers
 
 		public string GetTooltip(MainGameManager mgm)
 		{
-			if (!loc.Controlled())
+			if (!loc.Controlled)
 				return "You must control a location to implement policies";
 			if (!policy.Requirements.RequirementsAreMet(mgm, new Npc()))
 				return policy.Requirements.GetInvalidTooltip(mgm, new Npc());

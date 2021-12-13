@@ -20,10 +20,12 @@ namespace Assets.GameModel
 		public float BrandEffect;
 		public float RevanueEffect;
 		public int HornicalEffect;
-		public bool ControlEffect;
-		public bool RemoveNpcFromGame;
+		public List<Npc> NpcsToControl;
+		public List<Npc> NpcsToRemoveFromGame;
+		public List<Location> LocationsToControl;
 		public List<Trophy> TrophiesClaimedReferences;
-		
+		public List<Mission> MissionsToComplete;
+
 		public int Car;
 		public int Suits;
 
@@ -38,28 +40,52 @@ namespace Assets.GameModel
 
 			if (npc != null)
 			{
-				if (RemoveNpcFromGame)
-				{
-					npc.Exists = false;
-				}
-
-				mgm.Data.Ego = Mathf.Max(mgm.Data.Ego + EgoEffect, 0);
-				mgm.Data.Funds = Mathf.Max(mgm.Data.Funds + FundsEffect, 0);
-
 				npc.Pride = Mathf.Max(npc.Pride + PrideEffect, 0);
 				npc.Ambition = Mathf.Max(npc.Ambition + AmbitionEffect, 0);
-				npc.Controlled = npc.Controlled || ControlEffect;
-				mgm.Data.Power = Mathf.Max(mgm.Data.Power + PowerEffect, 0);
-				mgm.Data.Patents = Mathf.Max(mgm.Data.Patents + PatentsEffect, 0);
-				mgm.Data.CorporateCulture = Mathf.Max(mgm.Data.CorporateCulture + CultureEffect, 0);
-				mgm.Data.Spreadsheets = Mathf.Max(mgm.Data.Spreadsheets + SpreadsheetsEffect, 0);
-				mgm.Data.Brand = Mathf.Max(mgm.Data.Brand + BrandEffect, 0);
-				mgm.Data.Revenue = Mathf.Max(mgm.Data.Revenue + RevanueEffect, 0);
-				mgm.Data.Hornical = Mathf.Max(mgm.Data.Hornical + HornicalEffect, 0);
+			}
 
-				foreach (var trophy in TrophiesClaimedReferences)
+			mgm.Data.Ego = Mathf.Max(mgm.Data.Ego + EgoEffect, 0);
+			mgm.Data.Funds = Mathf.Max(mgm.Data.Funds + FundsEffect, 0);
+			mgm.Data.Power = Mathf.Max(mgm.Data.Power + PowerEffect, 0);
+			mgm.Data.Patents = Mathf.Max(mgm.Data.Patents + PatentsEffect, 0);
+			mgm.Data.CorporateCulture = Mathf.Max(mgm.Data.CorporateCulture + CultureEffect, 0);
+			mgm.Data.Spreadsheets = Mathf.Max(mgm.Data.Spreadsheets + SpreadsheetsEffect, 0);
+			mgm.Data.Brand = Mathf.Max(mgm.Data.Brand + BrandEffect, 0);
+			mgm.Data.Revenue = Mathf.Max(mgm.Data.Revenue + RevanueEffect, 0);
+			mgm.Data.Hornical = Mathf.Max(mgm.Data.Hornical + HornicalEffect, 0);
+
+			foreach (var trophy in TrophiesClaimedReferences)
+			{
+				trophy.Owned = true;
+			}
+
+			foreach (var controlledNpc in NpcsToControl)
+			{
+				controlledNpc.Controlled = true;
+			}
+
+			foreach (var removedNpc in NpcsToRemoveFromGame)
+			{
+				removedNpc.Exists = false;
+			}
+
+			foreach (var location in LocationsToControl)
+			{
+				location.Controlled = true;
+			}
+
+			foreach (var mission in MissionsToComplete)
+			{
+				if (mission.Completed)
 				{
-					trophy.Owned = true;
+					Debug.LogError($"Trying to complete mission: {mission.MissionName} when it is already complete!");
+					continue;
+				}
+
+				mission.Completed = true;
+				foreach (var effect in mission.Rewards)
+				{
+					effect.ExecuteEffect(mgm, npc);
 				}
 			}
 

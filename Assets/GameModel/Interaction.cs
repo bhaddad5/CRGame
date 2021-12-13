@@ -43,8 +43,6 @@ namespace Assets.GameModel
 		{
 			if (Completed > 0 && !Repeatable)
 				return false;
-			if (npc.Controlled && InteractionResults.Any(res => res.Effects.Any(eff => eff.ControlEffect)))
-				return false;
 
 			return Requirements.RequirementsAreMet(mgm, npc);
 		}
@@ -75,23 +73,6 @@ namespace Assets.GameModel
 			}
 
 			throw new Exception($"Random probabiltiy result not found for {Name}, result = {randValue}");
-		}
-
-		public List<Mission> GetRelevantMissions(MainGameManager mgm)
-		{
-			return mgm.Data.GetMissionsForInteraction(Id);
-		}
-
-		public void ExecuteMissionIfRelevant(MainGameManager mgm, Npc npc)
-		{
-			var missions = GetRelevantMissions(mgm);
-			foreach (var mission in missions)
-			{
-				foreach (var effect in mission.Rewards)
-				{
-					effect.ExecuteEffect(mgm, npc);
-				}
-			}
 		}
 
 		public InteractionResult GetDefaultResult()

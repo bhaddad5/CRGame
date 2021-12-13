@@ -44,42 +44,30 @@ MonoBehaviour:
     - CurrSpeaker: 1
       Text: Given how things are going, I think it is time I stepped up.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: Stepped up to what?
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
       Text: Susan, we both know who's best suited to run CSG. I need to know you're
         prepared to follow.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: I didn't think I was doing such a poor job, but...
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
       Text: Suzie, there are leaders and there are followers.  You're the later. 
         You've proven to be an absolute incompetent.  That said, I might find other
         uses for you.  You're a pretty girl, Suzie.  I think we understand each other.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 2
       Text: 'Note: You''ll need to see Director Bledsoe in order to request formal
         appointment as the new Manager of the Consulting Services Group.  '
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     OptionalPopups: []
     Effects:
@@ -95,9 +83,13 @@ MonoBehaviour:
       BrandEffect: 0
       RevanueEffect: 0
       HornicalEffect: 0
-      ControlEffect: 1
-      RemoveNpcFromGame: 0
+      NpcsToControl:
+      - {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a, type: 2}
+      NpcsToRemoveFromGame: []
+      LocationsToControl:
+      - {fileID: 11400000, guid: 61a8eb709285dc0448c63cbd36baeed2, type: 2}
       TrophiesClaimedReferences: []
+      MissionsToComplete: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -105,3 +97,8 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
     Probability: 1
+    CustomBackground: {fileID: 0}
+    CustomBackgroundNpcLayout:
+      xPos: 0
+      yPos: 0
+      width: 0

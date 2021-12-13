@@ -44,32 +44,22 @@ MonoBehaviour:
     - CurrSpeaker: 1
       Text: From now on, you'll be reporting to me.  Understand?
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: I guess so.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
       Text: Not good enough.  Try again.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: I'll be reporting to you from now on... Sir.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
       Text: And you'll dress the part too.  When I take control, I expect eye candy!
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 2
       Text: You can take control of an Artemis girl when her Ambition is zero or
@@ -77,8 +67,6 @@ MonoBehaviour:
         Once you take control, the girl will dress to impress you more and new options
         are unlocked.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     OptionalPopups: []
     Effects:
@@ -96,7 +84,11 @@ MonoBehaviour:
       HornicalEffect: 0
       ControlEffect: 1
       RemoveNpcFromGame: 0
+      NpcsToControl:
+      - {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8, type: 2}
+      NpcsToRemoveFromGame: []
       TrophiesClaimedReferences: []
+      MissionsToComplete: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -104,3 +96,8 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
     Probability: 1
+    CustomBackground: {fileID: 0}
+    CustomBackgroundNpcLayout:
+      xPos: 0
+      yPos: 0
+      width: 0

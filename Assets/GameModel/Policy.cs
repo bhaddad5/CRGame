@@ -16,7 +16,6 @@ namespace Assets.GameModel
 
 		public string Name;
 
-		public bool Active;
 		public Texture2D Image;
 
 		[TextArea(15, 20)]
@@ -25,5 +24,8 @@ namespace Assets.GameModel
 		public ActionRequirements Requirements;
 		public ActionCost Cost;
 		public List<Effect> Effects;
+
+		[Header("Ensure this is un-checked!")]
+		public bool Active;
 	}
 }

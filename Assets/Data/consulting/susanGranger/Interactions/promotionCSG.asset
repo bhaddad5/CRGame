@@ -45,27 +45,19 @@ MonoBehaviour:
     - CurrSpeaker: 1
       Text: You may be the first to congratulate me on my promotion.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: This is a little awkward-- you in charge and me reporting to you...
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
       Text: Susan, you were never cut out for management.  You're a follower, not
         a leader.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: If you say so.  Congratulations on your promotion to run CSG.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     OptionalPopups: []
     Effects:
@@ -83,7 +75,11 @@ MonoBehaviour:
       HornicalEffect: 0
       ControlEffect: 1
       RemoveNpcFromGame: 0
+      NpcsToControl:
+      - {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a, type: 2}
+      NpcsToRemoveFromGame: []
       TrophiesClaimedReferences: []
+      MissionsToComplete: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -91,3 +87,8 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
     Probability: 1
+    CustomBackground: {fileID: 0}
+    CustomBackgroundNpcLayout:
+      xPos: 0
+      yPos: 0
+      width: 0

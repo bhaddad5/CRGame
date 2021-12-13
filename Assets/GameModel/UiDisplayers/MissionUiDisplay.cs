@@ -27,6 +27,6 @@ public class MissionUiDisplay : MonoBehaviour, IUiDisplay
 		Title.text = $"{mission.MissionName}";
 		Description.text = $"{mission.MissionDescription}";
 		Image.sprite = mission.MissionImage.ToSprite();
-		Complete.SetActive(mission.IsComplete());
+		Complete.SetActive(mission.Completed);
 	}
 }
