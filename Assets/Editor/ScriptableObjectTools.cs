@@ -164,8 +164,8 @@ public class ScriptableObjectTools
 			{
 				foreach (var interaction in npc.Interactions)
 				{
-					if (interaction.InteractionResults.Count > 1)
-						Debug.Log($"Multiple results in {interaction}");
+					//if (interaction.InteractionResults.Count > 1)
+					//	Debug.Log($"Multiple results in {interaction}");
 
 
 					foreach (var interactionResult in interaction.InteractionResults)

@@ -45,10 +45,18 @@ namespace Assets.GameModel.UiDisplayers
 					str += $"+{effect.BrandEffect} Brand, ";
 				if (effect.HornicalEffect > 0)
 					str += $"+{effect.HornicalEffect} Hornical, ";
-				if (effect.AmbitionEffect != 0)
-					str += $"{effect.AmbitionEffect} Ambition, ";
-				if (effect.PrideEffect != 0)
-					str += $"{effect.PrideEffect} Pride, ";
+
+				foreach (var npcEffect in effect.NpcEffects)
+				{
+					if (npcEffect.OptionalNpcReference == null)
+					{
+						if (npcEffect.AmbitionEffect != 0)
+							str += $"{npcEffect.AmbitionEffect} Ambition, ";
+						if (npcEffect.PrideEffect != 0)
+							str += $"{npcEffect.PrideEffect} Pride, ";
+					}
+				}
+				
 			}
 
 			if (str.EndsWith(", "))

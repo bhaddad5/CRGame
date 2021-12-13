@@ -53,8 +53,8 @@ namespace Assets.GameModel
 					continue;
 				}
 
-				effectNpc.Pride = Mathf.Max(effectNpc.Pride + PrideEffect, 0);
-				effectNpc.Ambition = Mathf.Max(effectNpc.Ambition + AmbitionEffect, 0);
+				effectNpc.Pride = Mathf.Max(effectNpc.Pride + effect.PrideEffect, 0);
+				effectNpc.Ambition = Mathf.Max(effectNpc.Ambition + effect.AmbitionEffect, 0);
 
 			}
 
