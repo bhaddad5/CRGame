@@ -72,6 +72,13 @@ namespace Assets.GameModel
 
 		public void HandleTurnChange()
 		{
+			foreach (var endOfTurnInteraction in Data.EndOfTurnInteractions)
+			{
+				if(endOfTurnInteraction.InteractionValid(this, null))
+					endOfTurnInteraction.GetInteractionResult(this).Execute(this, null);
+			}
+
+
 			Data.TurnNumber++;
 			
 			var dateTime = GetDateFromTurnNumber();

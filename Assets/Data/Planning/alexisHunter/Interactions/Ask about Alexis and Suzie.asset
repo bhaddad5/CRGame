@@ -17,17 +17,20 @@ MonoBehaviour:
   Category: 2
   Requirements:
     RequiredPower: 0
-    RequiredControl: 1
-    RequiresAmbitionAtOrBelowValue: 0
-    RequiredAmbition: 0
-    RequiresPrideAtOrBelowValue: 1
-    RequiredPride: 50
+    NpcRequirements:
+    - OptionalNpcReference: {fileID: 0}
+      RequiresAmbitionAtOrBelowValue: 0
+      RequiredAmbition: 0
+      RequiresPrideAtOrBelowValue: 1
+      RequiredPride: 50
     RequiredInteractions:
     - {fileID: 11400000, guid: 0ac8d2b7b4b167843bcae775e401c007, type: 2}
     - {fileID: 11400000, guid: 9af037416fcb310449ac6aeb979c2962, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
+    RequiredNpcsControled:
+    - {fileID: 11400000, guid: 3e388f1db150adc41861a8d778471965, type: 2}
     RequiredTrophies: []
   Cost:
     EgoCost: 25

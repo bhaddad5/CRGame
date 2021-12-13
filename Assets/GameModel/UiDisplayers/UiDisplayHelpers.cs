@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Assets.GameModel;
 using UnityEngine;
 
@@ -99,10 +100,19 @@ namespace Assets.GameModel.UiDisplayers
 		public static string GetInvalidTooltip(this ActionRequirements req, MainGameManager mgm, Npc npc)
 		{
 			List<string> tooltips = new List<string>();
-			if (req.RequiredAmbition >= 0 && req.RequiredAmbition < npc.Ambition)
-				tooltips.Add($"{req.RequiredAmbition} or less Ambition");
-			if (req.RequiredPride >= 0 && req.RequiredPride < npc.Pride)
-				tooltips.Add($"{req.RequiredPride} or less Pride");
+
+			foreach (var npcReq in req.NpcRequirements)
+			{
+				if (npcReq.OptionalNpcReference == null || npcReq.OptionalNpcReference == npc)
+				{
+					if (npcReq.RequiredAmbition >= 0 && npcReq.RequiredAmbition < npc.Ambition)
+						tooltips.Add($"{npcReq.RequiredAmbition} or less Ambition");
+					if (npcReq.RequiredPride >= 0 && npcReq.RequiredPride < npc.Pride)
+						tooltips.Add($"{npcReq.RequiredPride} or less Pride");
+				}
+			}
+
+			
 			if (req.RequiredPower > mgm.Data.Power)
 				tooltips.Add($"{req.RequiredPower} or more Power");
 

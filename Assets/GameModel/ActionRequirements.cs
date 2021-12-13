@@ -1,34 +1,57 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 
 namespace Assets.GameModel
 {
 	[Serializable]
-	public struct ActionRequirements
+	public struct NpcRequirement
 	{
-		public float RequiredPower;
-		//If there is a npc
-		public bool RequiredControl;
+		[Header("Defaults to the parent NPC, if present")]
+		public Npc OptionalNpcReference;
+
 		public bool RequiresAmbitionAtOrBelowValue;
 		public float RequiredAmbition;
 		public bool RequiresPrideAtOrBelowValue;
 		public float RequiredPride;
+	}
+
+	[Serializable]
+	public struct ActionRequirements
+	{
+		public float RequiredPower;
+
+		public List<NpcRequirement> NpcRequirements;
 
 		public List<Interaction> RequiredInteractions;
 		public List<Interaction> RequiredNotCompletedInteractions;
 		public List<Policy> RequiredPolicies;
 		public List<Location> RequiredDepartmentsControled;
+		public List<Npc> RequiredNpcsControled;
 		public List<Trophy> RequiredTrophies;
 		
 		public bool RequirementsAreMet(MainGameManager mgm, Npc npc)
 		{
-			if (RequiredControl && !npc.Controlled)
+			foreach (var npcRequirement in NpcRequirements)
 			{
-				return false;
+				var npcToCheck = npcRequirement.OptionalNpcReference ?? npc;
+				if (npcToCheck == null)
+				{
+					Debug.LogError($"Trying to test ambition/pride on a null npc!");
+					continue;
+				}
+
+				if (npcRequirement.RequiresAmbitionAtOrBelowValue && npcRequirement.RequiredAmbition < npcToCheck.Ambition)
+					return false;
+
+				if (npcRequirement.RequiresPrideAtOrBelowValue && npcRequirement.RequiredPride < npcToCheck.Pride)
+					return false;
+			}
+			
+			foreach (var controlledNpc in RequiredNpcsControled)
+			{
+				if (!controlledNpc.Controlled)
+					return false;
 			}
 
 			foreach (var interactionDept in RequiredDepartmentsControled)
@@ -70,16 +93,6 @@ namespace Assets.GameModel
 
 				if (!policy.Active)
 					return false;
-			}
-
-			if (RequiresAmbitionAtOrBelowValue && RequiredAmbition < npc.Ambition)
-			{
-				return false;
-			}
-
-			if (RequiresPrideAtOrBelowValue && RequiredPride < npc.Pride)
-			{
-				return false;
 			}
 
 			if (mgm.Data.Power < RequiredPower)

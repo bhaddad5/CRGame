@@ -20,6 +20,9 @@ namespace Assets.GameModel
 		public float Revenue = 0;
 		public int Hornical = 0;
 
+		public string PlayerTitle = "";
+		public int PlayerSalary = 0;
+
 		//Status Symbols
 		public int Car;
 		public int Suits;
@@ -29,7 +32,10 @@ namespace Assets.GameModel
 		public bool JewleryWatch;
 
 		public List<Location> Locations = new List<Location>();
-		
+
+		public List<Interaction> EndOfTurnInteractions = new List<Interaction>();
+
+
 		public Location MyOffice
 		{
 			get

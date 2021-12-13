@@ -105,17 +105,8 @@ public class ScriptableObjectTools
 					EditorUtility.SetDirty(interaction);
 				}
 			}
-
-			foreach (var policy in location.Policies)
-			{
-				EditorUtility.SetDirty(policy);
-			}
-
-			foreach (var mission in location.Missions)
-			{
-				EditorUtility.SetDirty(mission);
-			}
 		}
+		Debug.Log("Upgrade Complete!");
 	}
 
 	//TODO: USE THIS AS A TEMPLATE FOR DATA UPGRADES!
