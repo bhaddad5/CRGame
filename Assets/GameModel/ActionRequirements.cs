@@ -20,6 +20,8 @@ namespace Assets.GameModel
 	public struct ActionRequirements
 	{
 		public float RequiredPower;
+		public int RequiredPromotionLevel;
+		public int RequiredTurnNumber;
 
 		public List<NpcRequirement> NpcRequirements;
 
@@ -96,9 +98,13 @@ namespace Assets.GameModel
 			}
 
 			if (mgm.Data.Power < RequiredPower)
-			{
 				return false;
-			}
+
+			if (mgm.Data.Promotion < RequiredPromotionLevel)
+				return false;
+
+			if (mgm.Data.TurnNumber < RequiredTurnNumber)
+				return false;
 
 			return true;
 		}
