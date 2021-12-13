@@ -42,11 +42,13 @@ namespace Assets.GameModel
 		public bool JewleryRing;
 		public bool JewleryWatch;
 
-		public void ExecuteEffect(MainGameManager mgm, Npc npc)
+		public int Promotion;
+
+		public void ExecuteEffect(MainGameManager mgm, Npc contextualNpc = null)
 		{
 			foreach (var effect in NpcEffects)
 			{
-				var effectNpc = effect.OptionalNpcReference ?? npc;
+				var effectNpc = effect.OptionalNpcReference ?? contextualNpc;
 				if (effectNpc == null)
 				{
 					Debug.LogError("Trying to execute an effect on an NPC without referencing one!");
@@ -97,7 +99,7 @@ namespace Assets.GameModel
 				}
 
 				mission.Completed = true;
-				mission.Effect.ExecuteEffect(mgm, npc);
+				mission.Effect.ExecuteEffect(mgm, contextualNpc);
 			}
 
 			if (Car > 0)
@@ -113,6 +115,9 @@ namespace Assets.GameModel
 				mgm.Data.JewleryRing = true;
 			if(JewleryWatch)
 				mgm.Data.JewleryWatch = true;
+
+			if (Promotion > 0)
+				mgm.Data.Promotion = Promotion;
 		}
 	}
 }

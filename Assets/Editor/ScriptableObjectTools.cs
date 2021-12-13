@@ -90,24 +90,7 @@ public class ScriptableObjectTools
 			}
 		}
 	}
-
-	[MenuItem("Tools/Upgrade Old Data")]
-	public static void UpgradeOldData()
-	{
-		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
-
-		foreach (var location in gameData.Locations)
-		{
-			foreach (var npc in location.Npcs)
-			{
-				foreach (var interaction in npc.Interactions)
-				{
-					EditorUtility.SetDirty(interaction);
-				}
-			}
-		}
-		Debug.Log("Upgrade Complete!");
-	}
+	
 
 	//TODO: USE THIS AS A TEMPLATE FOR DATA UPGRADES!
 	/*

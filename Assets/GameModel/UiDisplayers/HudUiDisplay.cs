@@ -86,7 +86,7 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 	public void RefreshUiDisplay(MainGameManager mgm)
 	{
 		PlayerName.text = mgm.Data.PlayerName;
-		PlayerTitle.text = mgm.GetPlayerTitleFromPower();
+		PlayerTitle.text = mgm.Data.PlayerPromotionLevels[mgm.Data.Promotion].Title;
 
 		Ego.RefreshResourceDisplay(mgm.Data.Ego);
 		Funds.RefreshResourceDisplay(mgm.Data.Funds, funds => $"${funds}");

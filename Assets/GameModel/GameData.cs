@@ -20,8 +20,7 @@ namespace Assets.GameModel
 		public float Revenue = 0;
 		public int Hornical = 0;
 
-		public string PlayerTitle = "";
-		public int PlayerSalary = 0;
+		public int Promotion = 0;
 
 		//Status Symbols
 		public int Car;
@@ -30,6 +29,8 @@ namespace Assets.GameModel
 		public bool JewleryPen;
 		public bool JewleryRing;
 		public bool JewleryWatch;
+
+		public List<Promotion> PlayerPromotionLevels = new List<Promotion>();
 
 		public List<Location> Locations = new List<Location>();
 

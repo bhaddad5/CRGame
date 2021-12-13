@@ -19,9 +19,9 @@ namespace Assets.GameModel
 		public Texture2D CustomBackground;
 		public NpcLayout CustomBackgroundNpcLayout;
 
-		public void Execute(MainGameManager mgm, Npc npc)
+		public void Execute(MainGameManager mgm, Npc contextualNpc = null)
 		{
-			Effect.ExecuteEffect(mgm, npc);
+			Effect.ExecuteEffect(mgm, contextualNpc);
 		}
 	}
 }

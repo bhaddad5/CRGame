@@ -47,15 +47,15 @@ namespace Assets.GameModel
 			return Requirements.RequirementsAreMet(mgm, npc);
 		}
 
-		public bool InteractionValid(MainGameManager mgm, Npc npc)
+		public bool InteractionValid(MainGameManager mgm, Npc contextualNpc = null)
 		{
-			if (!InteractionVisible(mgm, npc))
+			if (!InteractionVisible(mgm, contextualNpc))
 				return false;
 
 			return Cost.CanAffordCost(mgm);
 		}
 
-		public InteractionResult GetInteractionResult(MainGameManager mgm)
+		public InteractionResult GetInteractionResult()
 		{
 			int totalProbability = 0;
 			foreach (var result in InteractionResults)

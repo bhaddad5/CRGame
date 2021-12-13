@@ -21,6 +21,8 @@ namespace Assets.GameModel.Save
 		public float Revenue;
 		public int Hornical;
 
+		public int Promotion;
+
 		public int Car;
 		public int Suits;
 		public bool JewleryCuffs;
@@ -45,6 +47,7 @@ namespace Assets.GameModel.Save
 			res.Brand = data.Brand;
 			res.Revenue = data.Revenue;
 			res.Hornical = data.Hornical;
+			res.Promotion = data.Promotion;
 
 			res.Car = data.Car;
 			res.Suits = data.Suits;
@@ -76,6 +79,7 @@ namespace Assets.GameModel.Save
 			data.Brand = Brand;
 			data.Revenue = Revenue;
 			data.Hornical = Hornical;
+			data.Promotion = Promotion;
 
 			data.Car = Car;
 			data.Suits = Suits;

@@ -22,7 +22,7 @@ namespace Assets.GameModel.UiDisplayers
 			Button.onClick.RemoveAllListeners();
 			Button.onClick.AddListener(() =>
 			{
-				var res = interaction.GetInteractionResult(mgm);
+				var res = interaction.GetInteractionResult();
 
 				displayHandler.HandleDisplayDialogs(interaction.Completed, res, res.Dialogs, res.OptionalPopups,() =>
 				{
