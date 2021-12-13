@@ -31,6 +31,7 @@ namespace Assets.GameModel.Save
 		public bool JewleryWatch;
 
 		public List<SavedLocationState> Locations;
+		public List<SavedInteractionState> StartTurnInteractions;
 
 		public static SaveGameState FromData(GameData data)
 		{
@@ -63,6 +64,13 @@ namespace Assets.GameModel.Save
 					res.Locations.Add(SavedLocationState.FromData(dataLocation));
 			}
 
+			res.StartTurnInteractions = new List<SavedInteractionState>();
+			foreach (var startOfTurnInteraction in data.StartOfTurnInteractions)
+			{
+				if(startOfTurnInteraction != null)
+					res.StartTurnInteractions.Add(SavedInteractionState.FromData(startOfTurnInteraction));
+			}
+
 			return res;
 		}
 
@@ -91,6 +99,11 @@ namespace Assets.GameModel.Save
 			foreach (var location in Locations)
 			{
 				location.ApplyToData(data.Locations.FirstOrDefault(d => d?.Id == location.Id));
+			}
+
+			foreach (var startTurnInteraction in StartTurnInteractions)
+			{
+				startTurnInteraction.ApplyToData(data.StartOfTurnInteractions.FirstOrDefault(i => i?.Id == startTurnInteraction.Id));
 			}
 		}
 	}

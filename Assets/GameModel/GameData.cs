@@ -34,7 +34,7 @@ namespace Assets.GameModel
 
 		public List<Location> Locations = new List<Location>();
 
-		public List<Interaction> EndOfTurnInteractions = new List<Interaction>();
+		public List<Interaction> StartOfTurnInteractions = new List<Interaction>();
 
 
 		public Location MyOffice

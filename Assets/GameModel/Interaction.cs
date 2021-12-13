@@ -33,7 +33,7 @@ namespace Assets.GameModel
 		public ActionCost Cost;
 
 		public bool Repeatable = false;
-		[HideInInspector]
+		[Header("Ensure this is set to 0!")]
 		public int Completed = 0;
 
 		public bool PreviewEffect = false;

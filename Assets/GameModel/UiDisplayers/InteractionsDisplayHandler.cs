@@ -26,7 +26,7 @@ public class InteractionsDisplayHandler : MonoBehaviour
 
 	private List<Interaction> allInteractions;
 
-	public void Setup(List<Interaction> interactions, Npc npc, MainGameManager mgm, DialogDisplayHandler dialogDisplay)
+	public void Setup(List<Interaction> interactions, Npc npc, MainGameManager mgm, NpcUiDisplay npcUiDisplay)
 	{
 		allInteractions = new List<Interaction>(interactions);
 		
@@ -39,19 +39,19 @@ public class InteractionsDisplayHandler : MonoBehaviour
 			CategoriesParent.gameObject.SetActive(true);
 		});
 
-		SetupButton(Interaction.InteractionCategory.OfficePolitics, OfficePoliticsParent, npc, mgm, dialogDisplay);
-		SetupButton(Interaction.InteractionCategory.Conversation, ConversationParent, npc, mgm, dialogDisplay);
-		SetupButton(Interaction.InteractionCategory.Challenge, ChallengeParent, npc, mgm, dialogDisplay);
-		SetupButton(Interaction.InteractionCategory.Socialize, SocializeParent, npc, mgm, dialogDisplay);
-		SetupButton(Interaction.InteractionCategory.Projects, ProjectsParent, npc, mgm, dialogDisplay);
-		SetupButton(Interaction.InteractionCategory.Train, TrainParent, npc, mgm, dialogDisplay);
-		SetupButton(Interaction.InteractionCategory.Fun, FunParent, npc, mgm, dialogDisplay);
-		SetupButton(Interaction.InteractionCategory.Surveillance, SurveillanceParent, npc, mgm, dialogDisplay);
+		SetupButton(Interaction.InteractionCategory.OfficePolitics, OfficePoliticsParent, npc, mgm, npcUiDisplay);
+		SetupButton(Interaction.InteractionCategory.Conversation, ConversationParent, npc, mgm, npcUiDisplay);
+		SetupButton(Interaction.InteractionCategory.Challenge, ChallengeParent, npc, mgm, npcUiDisplay);
+		SetupButton(Interaction.InteractionCategory.Socialize, SocializeParent, npc, mgm, npcUiDisplay);
+		SetupButton(Interaction.InteractionCategory.Projects, ProjectsParent, npc, mgm, npcUiDisplay);
+		SetupButton(Interaction.InteractionCategory.Train, TrainParent, npc, mgm, npcUiDisplay);
+		SetupButton(Interaction.InteractionCategory.Fun, FunParent, npc, mgm, npcUiDisplay);
+		SetupButton(Interaction.InteractionCategory.Surveillance, SurveillanceParent, npc, mgm, npcUiDisplay);
 
 		RefreshInteractionVisibilities(npc, mgm);
 	}
 
-	private void SetupButton(Interaction.InteractionCategory cat, Button butt, Npc npc, MainGameManager mgm, DialogDisplayHandler dialogDisplay)
+	private void SetupButton(Interaction.InteractionCategory cat, Button butt, Npc npc, MainGameManager mgm, NpcUiDisplay npcUiDisplay)
 	{
 		butt.onClick.AddListener(() =>
 		{
@@ -63,7 +63,7 @@ public class InteractionsDisplayHandler : MonoBehaviour
 			foreach (var interaction in allInteractions.Where(i => i.Category == cat))
 			{
 				var interactButton = Instantiate(InteractionPrefab);
-				interactButton.Setup(interaction, npc, mgm, dialogDisplay);
+				interactButton.Setup(interaction, npc, mgm, npcUiDisplay);
 				interactButton.transform.SetParent(InteractionsParent);
 			}
 

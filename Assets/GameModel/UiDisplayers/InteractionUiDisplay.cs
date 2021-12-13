@@ -15,22 +15,29 @@ namespace Assets.GameModel.UiDisplayers
 		private Interaction interaction;
 		private Npc _npc;
 
-		public void Setup(Interaction interaction, Npc npc, MainGameManager mgm, DialogDisplayHandler displayHandler)
+		public void Setup(Interaction interaction, Npc npc, MainGameManager mgm, NpcUiDisplay npcUiDisplay)
 		{
 			this.interaction = interaction;
 			this._npc = npc;
 			Button.onClick.RemoveAllListeners();
 			Button.onClick.AddListener(() =>
 			{
-				var res = interaction.GetInteractionResult();
+				npcUiDisplay.InteractionsHandler.gameObject.SetActive(false);
 
-				displayHandler.HandleDisplayDialogs(interaction.Completed, res, res.Dialogs, res.OptionalPopups,() =>
+				var res = interaction.GetInteractionResult();
+				interaction.Cost.SubtractCost(mgm);
+				var displayHandler = new InteractionResultDisplayManager();
+				displayHandler.DisplayInteractionResult(mgm, interaction.Completed, res, () =>
 				{
-					interaction.Cost.SubtractCost(mgm);
 					res.Execute(mgm, npc);
 					interaction.Completed++;
 					mgm.HandleTurnChange();
-				});
+
+
+					npcUiDisplay.UnsetImage();
+					npcUiDisplay.UnsetBackground();
+					npcUiDisplay.InteractionsHandler.gameObject.SetActive(true);
+				}, npc, npcUiDisplay);
 			});
 			RefreshUiDisplay(mgm, npc);
 		}

@@ -32,8 +32,6 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 	[SerializeField] private Button Rest;
 	[SerializeField] private Button MyOffice;
 
-	[SerializeField] private PopupUiDisplay PopupDisplay;
-
 	[SerializeField] private Button MainMenuButton;
 	[SerializeField] private Button SaveGameButton;
 	[SerializeField] private Button LoadGameButton;
@@ -46,6 +44,9 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 	[SerializeField] private PlayerStatusSymbolsDisplay StatusSymbols;
 
 	[SerializeField] private LoadSaveMenuManager LoadSaveMenuManager;
+
+	[SerializeField] private PopupUiDisplay PopupPrefab;
+	[SerializeField] private DialogDisplayHandler DialogPrefab;
 
 	private MainGameManager mgm;
 	public void Setup(MainGameManager mgm, MainMapUiDisplay mapDisplay)
@@ -109,9 +110,16 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 
 	public void ShowPopup(Popup popup, int completionCount, Action onPopupDone)
 	{
-		PopupDisplay.Show(popup, completionCount, mgm, onPopupDone);
+		var popupDisp = GameObject.Instantiate(PopupPrefab);
+		popupDisp.Show(popup, completionCount, mgm, onPopupDone);
 	}
-	
+
+	public void ShowDialog(DialogEntry dialog, Action onDialogsDone, Npc contextualNpc = null, NpcUiDisplay contextualNpcDisplay = null)
+	{
+		var dialogDisp = GameObject.Instantiate(DialogPrefab);
+		dialogDisp.ShowDialog(dialog, onDialogsDone, contextualNpc, contextualNpcDisplay);
+	}
+
 	public void ShowMainMenu()
 	{
 		MainMenu.gameObject.SetActive(true);

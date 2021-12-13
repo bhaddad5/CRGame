@@ -23,7 +23,6 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private Transform InfoBox;
 
 		[SerializeField] public InteractionsDisplayHandler InteractionsHandler;
-		[SerializeField] private DialogDisplayHandler DialogHandler;
 
 		void Start()
 		{
@@ -38,9 +37,7 @@ namespace Assets.GameModel.UiDisplayers
 			if(!npc.IsControllable)
 				InfoBox.gameObject.SetActive(false);
 
-			InteractionsHandler.Setup(npc.Interactions, npc, mgm, DialogHandler);
-
-			DialogHandler.Setup(npc, this, mgm);
+			InteractionsHandler.Setup(npc.Interactions, npc, mgm, this);
 			
 			BackButton.onClick.RemoveAllListeners();
 			BackButton.onClick.AddListener(() => duid.CloseCurrentNpc());

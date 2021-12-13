@@ -6,15 +6,15 @@ using Assets.GameModel;
 using UnityEditor;
 using UnityEngine;
 
-public class CreateEndTurnInteractionWindow : EditorWindow
+public class CreateStartTurnInteractionWindow : EditorWindow
 {
-	private static CreateEndTurnInteractionWindow window;
+	private static CreateStartTurnInteractionWindow window;
 
-	[MenuItem("Company Man/Create Automatic End Turn Event")]
+	[MenuItem("Company Man/Create Automatic Start of Turn Event")]
 
 	static void Init()
 	{
-		window = (CreateEndTurnInteractionWindow)EditorWindow.GetWindow(typeof(CreateEndTurnInteractionWindow));
+		window = (CreateStartTurnInteractionWindow)EditorWindow.GetWindow(typeof(CreateStartTurnInteractionWindow));
 		window.data = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
 		window.Show();
 	}
@@ -40,11 +40,11 @@ public class CreateEndTurnInteractionWindow : EditorWindow
 		interaction.Name = interactionName;
 		interaction.Id = Guid.NewGuid().ToString();
 		
-		data.EndOfTurnInteractions.Add(interaction);
+		data.StartOfTurnInteractions.Add(interaction);
 		EditorUtility.SetDirty(data);
 
 
-		AssetDatabase.CreateAsset(interaction, $"Assets/Data/_EndOfTurnInteractions/{interaction.Name.ToFolderName()}.asset");
+		AssetDatabase.CreateAsset(interaction, $"Assets/Data/_StartOfTurnInteractions/{interaction.Name.ToFolderName()}.asset");
 		AssetDatabase.SaveAssets();
 	}
 

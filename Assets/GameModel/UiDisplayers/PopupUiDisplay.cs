@@ -47,7 +47,7 @@ public class PopupUiDisplay : MonoBehaviour, IUiDisplay
 
 	public void ClosePopup()
 	{
-		gameObject.SetActive(false);
+		GameObject.Destroy(gameObject);
 		onPopupDone?.Invoke();
 	}
 }

@@ -72,13 +72,6 @@ namespace Assets.GameModel
 
 		public void HandleTurnChange()
 		{
-			foreach (var endOfTurnInteraction in Data.EndOfTurnInteractions)
-			{
-				if(endOfTurnInteraction.InteractionValid(this))
-					endOfTurnInteraction.GetInteractionResult().Execute(this);
-			}
-
-
 			Data.TurnNumber++;
 			
 			var dateTime = GetDateFromTurnNumber();
@@ -89,7 +82,25 @@ namespace Assets.GameModel
 			}
 
 			mainMapUiDisplay.CloseCurrentDepartment(true);
+
 			RefreshAllUi();
+
+			foreach (var startOfTurnInteraction in Data.StartOfTurnInteractions)
+			{
+				if (startOfTurnInteraction == null)
+					continue;
+				if (startOfTurnInteraction.InteractionValid(this))
+				{
+					var res = startOfTurnInteraction.GetInteractionResult();
+					var displayHandler = new InteractionResultDisplayManager();
+					displayHandler.DisplayInteractionResult(this, startOfTurnInteraction.Completed, res, () =>
+					{
+						res.Execute(this);
+						startOfTurnInteraction.Completed++;
+						RefreshAllUi();
+					});
+				}
+			}
 		}
 
 		private void HandleBiMonthlyChange()
@@ -108,6 +119,11 @@ namespace Assets.GameModel
 		public void ShowPopup(Popup popup, int completionCount, Action onPopupDone)
 		{
 			hudUiDisplay.ShowPopup(popup, completionCount, onPopupDone);
+		}
+
+		public void ShowDialog(DialogEntry dialog, Action onDialogsDone, Npc contextualNpc = null, NpcUiDisplay contextualNpcDisplay = null)
+		{
+			hudUiDisplay.ShowDialog(dialog, onDialogsDone, contextualNpc, contextualNpcDisplay);
 		}
 
 		public void SetTrophyCaseVisibility(bool vis)
