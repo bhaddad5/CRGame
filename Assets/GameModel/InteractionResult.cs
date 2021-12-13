@@ -13,7 +13,6 @@ namespace Assets.GameModel
 		public List<Popup> OptionalPopups;
 
 		public Effect Effect;
-		public int Probability;
 
 		[Header("Additional Options:")]
 		public Texture2D CustomBackground;
