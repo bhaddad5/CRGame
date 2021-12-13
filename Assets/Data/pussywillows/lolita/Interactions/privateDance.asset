@@ -45,8 +45,6 @@ MonoBehaviour:
     - CurrSpeaker: 0
       Text: This is fun and all, but get us a room and I can show off my real skills...
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: d87a9c8b368d13048bfa4cbe3896d7ca, type: 3}
       - {fileID: 2800000, guid: 007cb4d05cc9a4a479dc837f83babbe0, type: 3}
@@ -57,8 +55,6 @@ MonoBehaviour:
       Text: Today's been a rough day; I can tell.  Why don't you let me take a load
         off your mind?
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: d87a9c8b368d13048bfa4cbe3896d7ca, type: 3}
       - {fileID: 2800000, guid: 007cb4d05cc9a4a479dc837f83babbe0, type: 3}
@@ -68,8 +64,6 @@ MonoBehaviour:
     - CurrSpeaker: 0
       Text: If you really want, I'll even let you put me over your knee.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: d87a9c8b368d13048bfa4cbe3896d7ca, type: 3}
       - {fileID: 2800000, guid: 007cb4d05cc9a4a479dc837f83babbe0, type: 3}
@@ -80,8 +74,6 @@ MonoBehaviour:
       Text: Thanks, you're an absolute stud.  All the other girls here want to be
         me right now.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: d87a9c8b368d13048bfa4cbe3896d7ca, type: 3}
       - {fileID: 2800000, guid: 007cb4d05cc9a4a479dc837f83babbe0, type: 3}
@@ -93,6 +85,7 @@ MonoBehaviour:
     - ContextualNpcReference: {fileID: 0}
       AmbitionEffect: 0
       PrideEffect: 0
+      NpcEffects: []
       EgoEffect: 8
       FundsEffect: 0
       PowerEffect: 0
@@ -102,9 +95,11 @@ MonoBehaviour:
       BrandEffect: 0
       RevanueEffect: 0
       HornicalEffect: 0
-      ControlEffect: 0
-      RemoveNpcFromGame: 0
+      NpcsToControl: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
       TrophiesClaimedReferences: []
+      MissionsToComplete: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -112,3 +107,8 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
     Probability: 1
+    CustomBackground: {fileID: 0}
+    CustomBackgroundNpcLayout:
+      xPos: 0
+      yPos: 0
+      width: 0

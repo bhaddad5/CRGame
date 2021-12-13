@@ -45,32 +45,25 @@ MonoBehaviour:
       Text: I've sent the key on ahead.  When the client is done with you, you'll
         be locked back up and the key will be couriered back.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: But why?
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
       Text: Because I think you'd look better in the Secretarial Pool.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: Please don't turn me into one of those sluts!
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     OptionalPopups: []
     Effects:
     - ContextualNpcReference: {fileID: 0}
       AmbitionEffect: 0
       PrideEffect: 0
+      NpcEffects: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -80,9 +73,11 @@ MonoBehaviour:
       BrandEffect: 0
       RevanueEffect: 0
       HornicalEffect: 0
-      ControlEffect: 0
-      RemoveNpcFromGame: 0
+      NpcsToControl: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
       TrophiesClaimedReferences: []
+      MissionsToComplete: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -90,3 +85,8 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
     Probability: 1
+    CustomBackground: {fileID: 0}
+    CustomBackgroundNpcLayout:
+      xPos: 0
+      yPos: 0
+      width: 0

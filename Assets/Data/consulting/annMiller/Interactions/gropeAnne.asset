@@ -44,26 +44,18 @@ MonoBehaviour:
     - CurrSpeaker: 1
       Text: How's my sales doll doing today?
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: Please don't speak to me that way.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
       Text: Why shouldn't I speak to you any way I wish to?
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: Because it is very unprofessional!
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     OptionalPopups:
     - Title: Feeling up Annie is fun!
@@ -75,6 +67,10 @@ MonoBehaviour:
     - ContextualNpcReference: {fileID: 0}
       AmbitionEffect: 0
       PrideEffect: -5
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: 0
+        PrideEffect: -5
       EgoEffect: 2
       FundsEffect: 0
       PowerEffect: 0
@@ -84,9 +80,11 @@ MonoBehaviour:
       BrandEffect: 0
       RevanueEffect: 0
       HornicalEffect: 0
-      ControlEffect: 0
-      RemoveNpcFromGame: 0
+      NpcsToControl: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
       TrophiesClaimedReferences: []
+      MissionsToComplete: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -94,3 +92,8 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
     Probability: 1
+    CustomBackground: {fileID: 0}
+    CustomBackgroundNpcLayout:
+      xPos: 0
+      yPos: 0
+      width: 0

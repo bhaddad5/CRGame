@@ -44,33 +44,26 @@ MonoBehaviour:
     - CurrSpeaker: 1
       Text: Go and drink up.  This is an office party, right?
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: Shouldn't we be out with everyone else?
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
       Text: A little privacy between the Boss and his Office Girl is perfectly fine. 
         Go on-- drink up.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: I don't really feel like it but...ok.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     OptionalPopups: []
     Effects:
     - ContextualNpcReference: {fileID: 0}
       AmbitionEffect: 0
       PrideEffect: 0
+      NpcEffects: []
       EgoEffect: 5
       FundsEffect: 0
       PowerEffect: 0
@@ -80,9 +73,11 @@ MonoBehaviour:
       BrandEffect: 0
       RevanueEffect: 0
       HornicalEffect: 0
-      ControlEffect: 0
-      RemoveNpcFromGame: 0
+      NpcsToControl: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
       TrophiesClaimedReferences: []
+      MissionsToComplete: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -90,3 +85,8 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
     Probability: 1
+    CustomBackground: {fileID: 0}
+    CustomBackgroundNpcLayout:
+      xPos: 0
+      yPos: 0
+      width: 0

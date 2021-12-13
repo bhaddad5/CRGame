@@ -45,35 +45,31 @@ MonoBehaviour:
     - CurrSpeaker: 1
       Text: Have you been with Artemis for very long?
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: "I\u2019ve been here from the beginning!  Haven\u2019t had even so much
         time for  social life since I started working here!  Do you believe I was
         once paid in company stock when we were going through a tough time?"
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
       Text: Those shares will be worth a lot when the company IPO kicks off!
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: "I hope so!  I was just recently the General Manager, but Jennifer needed
         me to launch this new group, so I\u2019m running Consulting Services now!"
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     OptionalPopups: []
     Effects:
     - ContextualNpcReference: {fileID: 0}
       AmbitionEffect: -5
       PrideEffect: 0
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: -5
+        PrideEffect: 0
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -83,9 +79,11 @@ MonoBehaviour:
       BrandEffect: 0
       RevanueEffect: 0
       HornicalEffect: 0
-      ControlEffect: 0
-      RemoveNpcFromGame: 0
+      NpcsToControl: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
       TrophiesClaimedReferences: []
+      MissionsToComplete: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -93,3 +91,8 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
     Probability: 1
+    CustomBackground: {fileID: 0}
+    CustomBackgroundNpcLayout:
+      xPos: 0
+      yPos: 0
+      width: 0

@@ -45,42 +45,30 @@ MonoBehaviour:
     - CurrSpeaker: 1
       Text: How are you and Donald getting on?
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: It's going well-- as you very well know.  It's getting hard to keep it
         from Carole though.  Donald thinks she's getting suspicious and she's giving
         me the evil eye!
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
       Text: 'That''s because she''s embarassed her husband has found a more pleasing
         partner.  She''s a failure as a wife.  '
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: 'I feel guilty-- you pushed me into this affair.  '
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
       Text: And it's time you stopped pretending you care about what Carole suspects. 
         I want another video-- and this one I intend to email to Carole anonymously.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: My God, she'll be shattered!
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     OptionalPopups:
     - Title: Hey Carole, look who is fucking your husband?
@@ -93,6 +81,11 @@ MonoBehaviour:
         type: 2}
       AmbitionEffect: -15
       PrideEffect: -15
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: f42fb56e29e0b374386530f7e2189a62,
+          type: 2}
+        AmbitionEffect: -15
+        PrideEffect: -15
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -102,9 +95,11 @@ MonoBehaviour:
       BrandEffect: 0
       RevanueEffect: 0
       HornicalEffect: 0
-      ControlEffect: 0
-      RemoveNpcFromGame: 0
+      NpcsToControl: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
       TrophiesClaimedReferences: []
+      MissionsToComplete: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -112,3 +107,8 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
     Probability: 1
+    CustomBackground: {fileID: 0}
+    CustomBackgroundNpcLayout:
+      xPos: 0
+      yPos: 0
+      width: 0

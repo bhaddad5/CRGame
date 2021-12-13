@@ -46,34 +46,30 @@ MonoBehaviour:
     - CurrSpeaker: 1
       Text: I'm sorry about this.  These new rules are just crazy!
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: You damn well better keep it safe.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
       Text: Of course.  Your engagement ring will be kept under lock and key.  No
         one will be able to steal it.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: It just seems over the top but at least the company is trying to protect
         my property.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     OptionalPopups: []
     Effects:
     - ContextualNpcReference: {fileID: 0}
       AmbitionEffect: -15
       PrideEffect: 0
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: -15
+        PrideEffect: 0
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -83,10 +79,12 @@ MonoBehaviour:
       BrandEffect: 0
       RevanueEffect: 0
       HornicalEffect: 0
-      ControlEffect: 0
-      RemoveNpcFromGame: 0
+      NpcsToControl: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
       TrophiesClaimedReferences:
       - {fileID: 11400000, guid: 3e78ad979ae21ee4b958a3858f2043aa, type: 2}
+      MissionsToComplete: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -94,3 +92,8 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
     Probability: 1
+    CustomBackground: {fileID: 0}
+    CustomBackgroundNpcLayout:
+      xPos: 0
+      yPos: 0
+      width: 0

@@ -44,31 +44,23 @@ MonoBehaviour:
     - CurrSpeaker: 1
       Text: I wish to make a complaint but it must be kept confidential.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: Of course!  Please tell me more.  Is it someone who you work closely
         with?
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
       Text: I'm afraid it's your assistant Jada.  I find her very disrespectful,
         especially when she speaks about you.  I find it offensive and think she
         needs a good talking to!
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: Well, that's completely unacceptable!  Yes, I'll have a chat with her
         and let her know her attitude is NOT acceptable.  of course I'll keep your
         name out of it.  Thank you for sharing this with me!
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     OptionalPopups: []
     Effects:
@@ -76,6 +68,11 @@ MonoBehaviour:
         type: 2}
       AmbitionEffect: -10
       PrideEffect: 0
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
+          type: 2}
+        AmbitionEffect: -10
+        PrideEffect: 0
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -85,9 +82,11 @@ MonoBehaviour:
       BrandEffect: 0
       RevanueEffect: 0
       HornicalEffect: 0
-      ControlEffect: 0
-      RemoveNpcFromGame: 0
+      NpcsToControl: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
       TrophiesClaimedReferences: []
+      MissionsToComplete: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -95,3 +94,8 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
     Probability: 1
+    CustomBackground: {fileID: 0}
+    CustomBackgroundNpcLayout:
+      xPos: 0
+      yPos: 0
+      width: 0

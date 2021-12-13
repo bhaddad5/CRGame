@@ -45,34 +45,24 @@ MonoBehaviour:
     - CurrSpeaker: 1
       Text: I have another new customer for you!
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: We're always grateful for your referrals!  How can we help?
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
       Text: She's not a junior.  She's actually an older woman and a manager.  She
         needs to look a lot hotter but she can't cross the line.  So, a hard nudge
         from respectable to semi-respectable.  Maybe even a little desperate.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: Three thousand should handle it.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
       Text: Excellent-- please make sure she's ready for he rnew look debut soon!
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     OptionalPopups: []
     Effects:
@@ -80,6 +70,11 @@ MonoBehaviour:
         type: 2}
       AmbitionEffect: 0
       PrideEffect: -20
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
+          type: 2}
+        AmbitionEffect: 0
+        PrideEffect: -20
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -89,9 +84,11 @@ MonoBehaviour:
       BrandEffect: 0
       RevanueEffect: 0
       HornicalEffect: 0
-      ControlEffect: 0
-      RemoveNpcFromGame: 0
+      NpcsToControl: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
       TrophiesClaimedReferences: []
+      MissionsToComplete: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -99,3 +96,8 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
     Probability: 1
+    CustomBackground: {fileID: 0}
+    CustomBackgroundNpcLayout:
+      xPos: 0
+      yPos: 0
+      width: 0

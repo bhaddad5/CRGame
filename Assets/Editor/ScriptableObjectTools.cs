@@ -152,6 +152,43 @@ public class ScriptableObjectTools
 			}
 		}
 	}
+	
+	[MenuItem("Tools/Count Multi effects & interactions")]
+	public static void CountMultiEffects()
+	{
+		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
+
+		foreach (var location in gameData.Locations)
+		{
+			foreach (var npc in location.Npcs)
+			{
+				foreach (var interaction in npc.Interactions)
+				{
+					if (interaction.InteractionResults.Count > 1)
+						Debug.Log($"Multiple results in {interaction}");
+
+
+					foreach (var interactionResult in interaction.InteractionResults)
+					{
+						if (interactionResult.Effects.Count > 1)
+							Debug.Log($"Multiple effects in {interaction}'s result");
+					}
+				}
+			}
+
+			foreach (var policy in location.Policies)
+			{
+				if(policy.Effects.Count > 1)
+					Debug.Log($"Multiple effects in {policy}");
+			}
+
+			foreach (var mission in location.Missions)
+			{
+				if (mission.Rewards.Count > 1)
+					Debug.Log($"Multiple effects in {mission}");
+			}
+		}
+	}
 
 	//TODO: USE THIS AS A TEMPLATE FOR DATA UPGRADES!
 	/*

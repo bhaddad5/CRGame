@@ -45,8 +45,6 @@ MonoBehaviour:
     - CurrSpeaker: 1
       Text: Let's see your latest purchase at Vixxxens, Jill.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: 2a0d5b0725ff3f0418f352ccf667e0d0, type: 3}
       - {fileID: 2800000, guid: a8686673da674e24ebc253e8721eec82, type: 3}
@@ -58,6 +56,10 @@ MonoBehaviour:
     - ContextualNpcReference: {fileID: 0}
       AmbitionEffect: 0
       PrideEffect: -2
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: 0
+        PrideEffect: -2
       EgoEffect: 2
       FundsEffect: 0
       PowerEffect: 0
@@ -67,9 +69,11 @@ MonoBehaviour:
       BrandEffect: 0
       RevanueEffect: 0
       HornicalEffect: 0
-      ControlEffect: 0
-      RemoveNpcFromGame: 0
+      NpcsToControl: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
       TrophiesClaimedReferences: []
+      MissionsToComplete: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -77,3 +81,8 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
     Probability: 1
+    CustomBackground: {fileID: 0}
+    CustomBackgroundNpcLayout:
+      xPos: 0
+      yPos: 0
+      width: 0

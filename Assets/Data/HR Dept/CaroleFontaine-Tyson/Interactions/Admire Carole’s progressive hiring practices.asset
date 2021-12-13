@@ -45,30 +45,22 @@ MonoBehaviour:
       Text: I really admire your commitment to making Artemis as reflective of the
         real world as possible-- even when it creates more work for you!
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: I'm afraid I don't understand...
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
       Text: Well, Jada for example.  It is obvious she's not terribly competent and
         she's got a bad attitude.  But you chose her anyway, because you wanted a
         woman of colour in the department.  I'd be so resentful if I were you.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: She is a burden at times.  I suppose it is worth it-- though I wish she'd
         be more appreciative, given her situation.  Perhaps I should insist on more
         gratitude from her...
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     OptionalPopups: []
     Effects:
@@ -76,6 +68,11 @@ MonoBehaviour:
         type: 2}
       AmbitionEffect: -10
       PrideEffect: 0
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
+          type: 2}
+        AmbitionEffect: -10
+        PrideEffect: 0
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -85,9 +82,11 @@ MonoBehaviour:
       BrandEffect: 0
       RevanueEffect: 0
       HornicalEffect: 0
-      ControlEffect: 0
-      RemoveNpcFromGame: 0
+      NpcsToControl: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
       TrophiesClaimedReferences: []
+      MissionsToComplete: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -95,3 +94,8 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
     Probability: 1
+    CustomBackground: {fileID: 0}
+    CustomBackgroundNpcLayout:
+      xPos: 0
+      yPos: 0
+      width: 0

@@ -46,8 +46,6 @@ MonoBehaviour:
     - CurrSpeaker: 1
       Text: I love inspecting you right before you make a sales call!
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 1
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: 1bb09597dcb4a874084ebf260cbbd108, type: 3}
       - {fileID: 2800000, guid: 7d9039e30f33ba845b7eb40ad9d707b6, type: 3}
@@ -61,27 +59,25 @@ MonoBehaviour:
     - CurrSpeaker: 0
       Text: Is this outfit ok then?
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
       Text: I think the client will love it.  Let's see you generate lots of customer
         satisfcation.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: Whatever you say.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     OptionalPopups: []
     Effects:
     - ContextualNpcReference: {fileID: 0}
       AmbitionEffect: 0
       PrideEffect: -2
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: 0
+        PrideEffect: -2
       EgoEffect: 2
       FundsEffect: 0
       PowerEffect: 0
@@ -91,9 +87,11 @@ MonoBehaviour:
       BrandEffect: 0
       RevanueEffect: 0
       HornicalEffect: 0
-      ControlEffect: 0
-      RemoveNpcFromGame: 0
+      NpcsToControl: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
       TrophiesClaimedReferences: []
+      MissionsToComplete: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -101,3 +99,8 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
     Probability: 1
+    CustomBackground: {fileID: 0}
+    CustomBackgroundNpcLayout:
+      xPos: 0
+      yPos: 0
+      width: 0

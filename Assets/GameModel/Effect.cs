@@ -6,11 +6,19 @@ using UnityEngine;
 namespace Assets.GameModel
 {
 	[Serializable]
-	public struct Effect
+	public struct NpcEffect
 	{
-		public Npc ContextualNpcReference;
+		[Header("Defaults to the interaction's NPC, if present")]
+		public Npc OptionalNpcReference;
 		public float AmbitionEffect;
 		public float PrideEffect;
+	}
+
+	[Serializable]
+	public struct Effect
+	{
+		public List<NpcEffect> NpcEffects;
+
 		public float EgoEffect;
 		public float FundsEffect;
 		public float PowerEffect;
@@ -36,12 +44,18 @@ namespace Assets.GameModel
 
 		public void ExecuteEffect(MainGameManager mgm, Npc npc)
 		{
-			npc = ContextualNpcReference ?? npc;
-
-			if (npc != null)
+			foreach (var effect in NpcEffects)
 			{
-				npc.Pride = Mathf.Max(npc.Pride + PrideEffect, 0);
-				npc.Ambition = Mathf.Max(npc.Ambition + AmbitionEffect, 0);
+				var effectNpc = effect.OptionalNpcReference ?? npc;
+				if (effectNpc == null)
+				{
+					Debug.LogError("Trying to execute an effect on an NPC without referencing one!");
+					continue;
+				}
+
+				effectNpc.Pride = Mathf.Max(effectNpc.Pride + PrideEffect, 0);
+				effectNpc.Ambition = Mathf.Max(effectNpc.Ambition + AmbitionEffect, 0);
+
 			}
 
 			mgm.Data.Ego = Mathf.Max(mgm.Data.Ego + EgoEffect, 0);

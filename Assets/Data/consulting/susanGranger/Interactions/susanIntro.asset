@@ -48,27 +48,19 @@ MonoBehaviour:
         you. Or maybe it is better for you to meet each individually.  Hmmm\u2014I\u2019m
         not sure!"
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: I'm excited to be here.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
       Text: "Perhaps I should gather all of our team to introduce you. Or maybe it
         is better for you to meet each individually.  Hmmm\u2014I\u2019m not sure!"
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       Text: Well, you're the boss, so whatever you say!
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 2
       Text: 'You''re been taken on as a Management Trainee.  Your day job will consist
@@ -76,8 +68,6 @@ MonoBehaviour:
         paperwork.  You''re smart enough to know how to make it look like you''re
         working-- even while you''re actually focusing on your real assignment! '
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 2
       Text: 'You''ve been inserted into Artemis Systems by your real employer.  Selectacorp
@@ -86,8 +76,6 @@ MonoBehaviour:
         are able and you are certainly allowed to enjoy the growing benefits of your
         upward rise.  '
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 2
       Text: For now, you're at the bottom of the corporate heirarchy, just barely
@@ -95,8 +83,6 @@ MonoBehaviour:
         You'll need to expend EGO in order to ingratiate, charm, bully or otherwise
         insert yourself into the lives of the staff around you.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 2
       Text: By exercising your EGO, you can reduce the natural AMBITION of the staff
@@ -104,8 +90,6 @@ MonoBehaviour:
         take CONTROL of an employee.  Further attacks on her PRIDE will eventually
         allow you to unlock even more possibilities.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 2
       Text: If you take some DOWNTIME, you can recoup your EGO by five points per
@@ -114,8 +98,6 @@ MonoBehaviour:
         BREAK a girl, you earn that girl's initial AMBITION in both instances.  The
         more powerful the woman is, the more EGO you'll need to deal with her.
       CustomSpeakerReference: {fileID: 0}
-      InPlayerOffice: 0
-      CustomBackground: {fileID: 0}
       CustomNpcImageOptions: []
     OptionalPopups:
     - Title: '"Come back in a bit and we can review the org chart!"'
@@ -127,6 +109,7 @@ MonoBehaviour:
     - ContextualNpcReference: {fileID: 0}
       AmbitionEffect: 0
       PrideEffect: 0
+      NpcEffects: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -136,9 +119,11 @@ MonoBehaviour:
       BrandEffect: 0
       RevanueEffect: 0
       HornicalEffect: 0
-      ControlEffect: 0
-      RemoveNpcFromGame: 0
+      NpcsToControl: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
       TrophiesClaimedReferences: []
+      MissionsToComplete: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -146,3 +131,8 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
     Probability: 1
+    CustomBackground: {fileID: 0}
+    CustomBackgroundNpcLayout:
+      xPos: 0
+      yPos: 0
+      width: 0
