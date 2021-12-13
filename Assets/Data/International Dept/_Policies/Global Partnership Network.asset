@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 111ccc2c-b12e-4992-bdc6-1a6e67cbc467
   Name: Global Partnership Network
-  Active: 0
   Image: {fileID: 2800000, guid: 60858606f503e7846a04c7e5684b3248, type: 3}
   Description: "Our company\u2019s future demands a fully functioning presence worldwide. 
     Establishing a network of joint ventures will mean the company has access to
@@ -41,10 +40,8 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
-  Effects:
-  - ContextualNpcReference: {fileID: 0}
-    AmbitionEffect: 0
-    PrideEffect: 0
+  Effect:
+    NpcEffects: []
     EgoEffect: 0
     FundsEffect: 50000
     PowerEffect: 5
@@ -54,12 +51,15 @@ MonoBehaviour:
     BrandEffect: 0
     RevanueEffect: 0
     HornicalEffect: 0
-    ControlEffect: 0
-    RemoveNpcFromGame: 0
+    NpcsToControl: []
+    NpcsToRemoveFromGame: []
+    LocationsToControl: []
     TrophiesClaimedReferences: []
+    MissionsToComplete: []
     Car: 0
     Suits: 0
     JewleryCuffs: 0
     JewleryPen: 0
     JewleryRing: 0
     JewleryWatch: 0
+  Active: 0

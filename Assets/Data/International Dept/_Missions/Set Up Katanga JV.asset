@@ -12,14 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa11b298061b58f46b47bca868b7837a, type: 3}
   m_Name: Set Up Katanga JV
   m_EditorClassIdentifier: 
+  Id: 
   MissionName: Set Up Katanga JV
   MissionDescription: The African opportunity is highly tempting!
   MissionImage: {fileID: 2800000, guid: a716e12e550185141b87d321a612e938, type: 3}
-  CompletionInteractionReference: {fileID: 0}
-  Rewards:
-  - ContextualNpcReference: {fileID: 0}
-    AmbitionEffect: 0
-    PrideEffect: 0
+  Completed: 0
+  Effect:
+    NpcEffects: []
     EgoEffect: 0
     FundsEffect: 10000
     PowerEffect: 0
@@ -29,9 +28,11 @@ MonoBehaviour:
     BrandEffect: 0
     RevanueEffect: 0
     HornicalEffect: 0
-    ControlEffect: 0
-    RemoveNpcFromGame: 0
+    NpcsToControl: []
+    NpcsToRemoveFromGame: []
+    LocationsToControl: []
     TrophiesClaimedReferences: []
+    MissionsToComplete: []
     Car: 0
     Suits: 0
     JewleryCuffs: 0

@@ -49,87 +49,7 @@ public class ScriptableObjectTools
 			}
 		}
 	}
-
-	/*
-	[MenuItem("Tools/Upgrade Old Data")]
-	public static void UpgradeOldData()
-	{
-		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
-
-		foreach (var location in gameData.Locations)
-		{
-			if (location?.ControlInteractionReference == null)
-				continue;
-
-			Debug.Log(location.ControlInteractionReference);
-			
-			if (location.ControlInteractionReference.InteractionResults[0].Effects.Count == 0)
-				location.ControlInteractionReference.InteractionResults[0].Effects.Add(new Effect() { LocationsToControl = new List<Location>() });
-			location.ControlInteractionReference.InteractionResults[0].Effects[0].LocationsToControl.Clear();
-			location.ControlInteractionReference.InteractionResults[0].Effects[0].LocationsToControl.Add(location);
-			EditorUtility.SetDirty(location.ControlInteractionReference);
-		}
-		Debug.Log("Upgrade complete!");
-	}*/
-
-	/*[MenuItem("Tools/Upgrade Old Data")]
-	public static void UpgradeOldData()
-	{
-		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
-
-		foreach (var location in gameData.Locations)
-		{
-			foreach (var npc in location.Npcs)
-			{
-				foreach (var interaction in npc.Interactions)
-				{
-					foreach (var interactionResult in interaction.InteractionResults)
-					{
-						foreach (var effect in interactionResult.Effects)
-						{
-							if (effect.ControlEffect)
-							{
-								effect.NpcsToControl.Clear();
-								effect.NpcsToControl.Add(npc);
-								EditorUtility.SetDirty(interaction);
-							}
-
-							if (effect.RemoveNpcFromGame)
-							{
-								effect.NpcsToRemoveFromGame.Clear();
-								effect.NpcsToRemoveFromGame.Add(npc);
-								EditorUtility.SetDirty(interaction);
-							}
-						}
-					}
-					
-				}
-			}
-
-			foreach (var policy in location.Policies)
-			{
-
-			}
-
-			foreach (var mission in location.Missions)
-			{
-				if (mission?.CompletionInteractionReference == null)
-					continue;
-
-				mission.Id = Guid.NewGuid().ToString();
-				EditorUtility.SetDirty(mission);
-
-				if (mission.CompletionInteractionReference.InteractionResults[0].Effects.Count == 0)
-					mission.CompletionInteractionReference.InteractionResults[0].Effects.Add(new Effect(){MissionsToComplete = new List<Mission>()});
-				mission.CompletionInteractionReference.InteractionResults[0].Effects[0].MissionsToComplete.Clear();
-				mission.CompletionInteractionReference.InteractionResults[0].Effects[0].MissionsToComplete.Add(mission);
-				EditorUtility.SetDirty(mission.CompletionInteractionReference);
-			}
-		}
-		Debug.Log("Upgrade complete!");
-	}*/
-
-
+	
 	[MenuItem("Tools/Detect Bad Data")]
 	public static void DetectBadData()
 	{
@@ -145,7 +65,7 @@ public class ScriptableObjectTools
 				bool hasCompletionInteractions = gameData.Locations.Any(l => l.Npcs.Any(n =>
 					n.Interactions.Any(i =>
 						i.InteractionResults.Any(ir =>
-							ir.Effects.Any(e => e.MissionsToComplete?.Contains(mission) ?? false)))));
+							ir.Effect.MissionsToComplete?.Contains(mission) ?? false))));
 
 				if(!hasCompletionInteractions)
 					Debug.Log($"{mission.MissionName} has no interactions that will complete it.");
@@ -164,28 +84,36 @@ public class ScriptableObjectTools
 			{
 				foreach (var interaction in npc.Interactions)
 				{
-					//if (interaction.InteractionResults.Count > 1)
-					//	Debug.Log($"Multiple results in {interaction}");
+					if (interaction.InteractionResults.Count > 1)
+						Debug.Log($"Multiple results in {interaction}");
+				}
+			}
+		}
+	}
 
+	[MenuItem("Tools/Upgrade Old Data")]
+	public static void UpgradeOldData()
+	{
+		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
 
-					foreach (var interactionResult in interaction.InteractionResults)
-					{
-						if (interactionResult.Effects.Count > 1)
-							Debug.Log($"Multiple effects in {interaction}'s result");
-					}
+		foreach (var location in gameData.Locations)
+		{
+			foreach (var npc in location.Npcs)
+			{
+				foreach (var interaction in npc.Interactions)
+				{
+					EditorUtility.SetDirty(interaction);
 				}
 			}
 
 			foreach (var policy in location.Policies)
 			{
-				if(policy.Effects.Count > 1)
-					Debug.Log($"Multiple effects in {policy}");
+				EditorUtility.SetDirty(policy);
 			}
 
 			foreach (var mission in location.Missions)
 			{
-				if (mission.Rewards.Count > 1)
-					Debug.Log($"Multiple effects in {mission}");
+				EditorUtility.SetDirty(mission);
 			}
 		}
 	}
@@ -224,6 +152,7 @@ public class ScriptableObjectTools
 				
 			}
 		}
+		Debug.Log("Upgrade Complete!");
 	}
 	*/
 }

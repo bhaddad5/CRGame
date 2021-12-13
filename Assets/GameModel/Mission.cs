@@ -22,6 +22,6 @@ namespace Assets.GameModel
 		[Header("Ensure this is un-checked!")]
 		public bool Completed = false;
 
-		public List<Effect> Rewards;
+		public Effect Effect;
 	}
 }

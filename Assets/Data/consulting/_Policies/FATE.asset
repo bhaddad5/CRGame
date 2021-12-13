@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: FATE
   Name: Free Advanced Technology Enterprises (F.A.T.E.)
-  Active: 0
   Image: {fileID: 2800000, guid: e901ef9c903348741ba8f97acc2248d9, type: 3}
   Description: 'With the economy stagnant, recent legislation has been enacted to
     reduce red tape in key sectors in order to spur more growth.  The F.A.T.E. program,
@@ -41,10 +40,17 @@ MonoBehaviour:
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredTrophies: []
-  Effects:
-  - ContextualNpcReference: {fileID: 0}
-    AmbitionEffect: 0
-    PrideEffect: 0
+  Cost:
+    EgoCost: 0
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    HornicalCost: 0
+  Effect:
+    NpcEffects: []
     EgoEffect: 0
     FundsEffect: 0
     PowerEffect: 5
@@ -54,20 +60,15 @@ MonoBehaviour:
     BrandEffect: 0
     RevanueEffect: 0
     HornicalEffect: 0
-    ControlEffect: 0
-    RemoveNpcFromGame: 0
+    NpcsToControl: []
+    NpcsToRemoveFromGame: []
+    LocationsToControl: []
     TrophiesClaimedReferences: []
-    ContextualLocationReference: {fileID: 0}
-    UpdateLocationBackground: {fileID: 0}
-    ShouldUpdateLocationMapPos: 0
-    UpdateLocationMapPosition: {x: -1, y: -1}
-    ShouldUpdateStatusSymbols: 0
-    UpdateStatusSymbols:
-      CarName: 
-      CarImage: {fileID: 0}
-      SuitsName: 
-      SuitsImage: {fileID: 0}
-      JewleryCuffs: {fileID: 0}
-      JewleryPen: {fileID: 0}
-      JewleryRing: {fileID: 0}
-      JewleryWatch: {fileID: 0}
+    MissionsToComplete: []
+    Car: 0
+    Suits: 0
+    JewleryCuffs: 0
+    JewleryPen: 0
+    JewleryRing: 0
+    JewleryWatch: 0
+  Active: 0

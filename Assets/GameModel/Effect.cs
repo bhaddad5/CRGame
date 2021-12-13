@@ -97,10 +97,7 @@ namespace Assets.GameModel
 				}
 
 				mission.Completed = true;
-				foreach (var effect in mission.Rewards)
-				{
-					effect.ExecuteEffect(mgm, npc);
-				}
+				mission.Effect.ExecuteEffect(mgm, npc);
 			}
 
 			if (Car > 0)

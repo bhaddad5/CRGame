@@ -99,12 +99,9 @@ public class DialogDisplayHandler : MonoBehaviour
 		}
 
 		List<Mission> missionsToShow = new List<Mission>();
-		foreach (var effect in res.Effects)
+		foreach (var mission in res.Effect.MissionsToComplete)
 		{
-			foreach (var mission in effect.MissionsToComplete)
-			{
-				missionsToShow.Add(mission);
-			}
+			missionsToShow.Add(mission);
 		}
 		currMissionsToShow = missionsToShow;
 

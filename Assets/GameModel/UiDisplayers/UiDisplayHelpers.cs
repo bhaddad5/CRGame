@@ -32,31 +32,27 @@ namespace Assets.GameModel.UiDisplayers
 			return str;
 		}
 
-		public static string GetEffectsString(this List<Effect> effects)
+		public static string GetEffectsString(this Effect effect)
 		{
 			string str = "";
-			foreach (var effect in effects)
-			{
-				if (effect.PowerEffect > 0)
-					str += $"+{effect.PowerEffect} Power, ";
-				if (effect.EgoEffect > 0)
-					str += $"+{effect.EgoEffect} Ego, ";
-				if (effect.BrandEffect > 0)
-					str += $"+{effect.BrandEffect} Brand, ";
-				if (effect.HornicalEffect > 0)
-					str += $"+{effect.HornicalEffect} Hornical, ";
+			if (effect.PowerEffect > 0)
+				str += $"+{effect.PowerEffect} Power, ";
+			if (effect.EgoEffect > 0)
+				str += $"+{effect.EgoEffect} Ego, ";
+			if (effect.BrandEffect > 0)
+				str += $"+{effect.BrandEffect} Brand, ";
+			if (effect.HornicalEffect > 0)
+				str += $"+{effect.HornicalEffect} Hornical, ";
 
-				foreach (var npcEffect in effect.NpcEffects)
+			foreach (var npcEffect in effect.NpcEffects)
+			{
+				if (npcEffect.OptionalNpcReference == null)
 				{
-					if (npcEffect.OptionalNpcReference == null)
-					{
-						if (npcEffect.AmbitionEffect != 0)
-							str += $"{npcEffect.AmbitionEffect} Ambition, ";
-						if (npcEffect.PrideEffect != 0)
-							str += $"{npcEffect.PrideEffect} Pride, ";
-					}
+					if (npcEffect.AmbitionEffect != 0)
+						str += $"{npcEffect.AmbitionEffect} Ambition, ";
+					if (npcEffect.PrideEffect != 0)
+						str += $"{npcEffect.PrideEffect} Pride, ";
 				}
-				
 			}
 
 			if (str.EndsWith(", "))

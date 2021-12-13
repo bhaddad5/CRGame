@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: antiTheft
   Name: Anti-theft Procedures
-  Active: 0
   Image: {fileID: 2800000, guid: 5a3a954afcfcfce44ae652220a0a5ccb, type: 3}
   Description: "In order to crack down on workplace theft, new preventive measures
     must be taken to ensure the safety of employee property is guaranteed!\nUnder
@@ -34,10 +33,17 @@ MonoBehaviour:
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredTrophies: []
-  Effects:
-  - ContextualNpcReference: {fileID: 0}
-    AmbitionEffect: 0
-    PrideEffect: 0
+  Cost:
+    EgoCost: 0
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    HornicalCost: 0
+  Effect:
+    NpcEffects: []
     EgoEffect: 0
     FundsEffect: 0
     PowerEffect: 0
@@ -47,20 +53,15 @@ MonoBehaviour:
     BrandEffect: 0
     RevanueEffect: 0
     HornicalEffect: 0
-    ControlEffect: 0
-    RemoveNpcFromGame: 0
+    NpcsToControl: []
+    NpcsToRemoveFromGame: []
+    LocationsToControl: []
     TrophiesClaimedReferences: []
-    ContextualLocationReference: {fileID: 0}
-    UpdateLocationBackground: {fileID: 0}
-    ShouldUpdateLocationMapPos: 0
-    UpdateLocationMapPosition: {x: -1, y: -1}
-    ShouldUpdateStatusSymbols: 0
-    UpdateStatusSymbols:
-      CarName: 
-      CarImage: {fileID: 0}
-      SuitsName: 
-      SuitsImage: {fileID: 0}
-      JewleryCuffs: {fileID: 0}
-      JewleryPen: {fileID: 0}
-      JewleryRing: {fileID: 0}
-      JewleryWatch: {fileID: 0}
+    MissionsToComplete: []
+    Car: 0
+    Suits: 0
+    JewleryCuffs: 0
+    JewleryPen: 0
+    JewleryRing: 0
+    JewleryWatch: 0
+  Active: 0

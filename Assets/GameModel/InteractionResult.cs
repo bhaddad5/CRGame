@@ -11,7 +11,8 @@ namespace Assets.GameModel
 	{
 		public List<DialogEntry> Dialogs;
 		public List<Popup> OptionalPopups;
-		public List<Effect> Effects;
+
+		public Effect Effect;
 		public int Probability;
 
 		[Header("Additional Options:")]
@@ -20,10 +21,7 @@ namespace Assets.GameModel
 
 		public void Execute(MainGameManager mgm, Npc npc)
 		{
-			foreach (var effect in Effects)
-			{
-				effect.ExecuteEffect(mgm, npc);
-			}
+			Effect.ExecuteEffect(mgm, npc);
 		}
 	}
 }

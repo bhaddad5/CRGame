@@ -23,7 +23,8 @@ namespace Assets.GameModel
 
 		public ActionRequirements Requirements;
 		public ActionCost Cost;
-		public List<Effect> Effects;
+
+		public Effect Effect;
 
 		[Header("Ensure this is un-checked!")]
 		public bool Active;

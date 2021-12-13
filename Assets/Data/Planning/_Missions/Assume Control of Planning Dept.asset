@@ -17,12 +17,8 @@ MonoBehaviour:
   MissionDescription: It is time to take over!
   MissionImage: {fileID: 2800000, guid: ac620205c2a6adb40b911301a853ad42, type: 3}
   Completed: 0
-  CompletionInteractionReference: {fileID: 11400000, guid: 4719a17aa56c4d4488a69537bd80d483,
-    type: 2}
-  Rewards:
-  - ContextualNpcReference: {fileID: 0}
-    AmbitionEffect: 0
-    PrideEffect: 0
+  Effect:
+    NpcEffects: []
     EgoEffect: 0
     FundsEffect: 0
     PowerEffect: 20
@@ -32,10 +28,9 @@ MonoBehaviour:
     BrandEffect: 0
     RevanueEffect: 0
     HornicalEffect: 0
-    ControlEffect: 0
-    RemoveNpcFromGame: 0
     NpcsToControl: []
     NpcsToRemoveFromGame: []
+    LocationsToControl: []
     TrophiesClaimedReferences: []
     MissionsToComplete: []
     Car: 0

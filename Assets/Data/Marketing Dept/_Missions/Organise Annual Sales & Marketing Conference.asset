@@ -12,15 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa11b298061b58f46b47bca868b7837a, type: 3}
   m_Name: Organise Annual Sales & Marketing Conference
   m_EditorClassIdentifier: 
+  Id: 
   MissionName: Organise Annual Sales & Marketing Conference
   MissionDescription: "Let\u2019s give the whole team something to really remember! 
     Selected junior staff should also be invited to participate as well!"
   MissionImage: {fileID: 0}
-  CompletionInteractionReference: {fileID: 0}
-  Rewards:
-  - ContextualNpcReference: {fileID: 0}
-    AmbitionEffect: 0
-    PrideEffect: 0
+  Completed: 0
+  Effect:
+    NpcEffects: []
     EgoEffect: 0
     FundsEffect: 0
     PowerEffect: 10
@@ -30,9 +29,11 @@ MonoBehaviour:
     BrandEffect: 0
     RevanueEffect: 0
     HornicalEffect: 0
-    ControlEffect: 0
-    RemoveNpcFromGame: 0
+    NpcsToControl: []
+    NpcsToRemoveFromGame: []
+    LocationsToControl: []
     TrophiesClaimedReferences: []
+    MissionsToComplete: []
     Car: 0
     Suits: 0
     JewleryCuffs: 0
