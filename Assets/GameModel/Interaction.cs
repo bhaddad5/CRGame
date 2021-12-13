@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Assets.GameModel
 {
@@ -37,7 +38,15 @@ namespace Assets.GameModel
 
 		public bool PreviewEffect = false;
 
-		public List<InteractionResult> InteractionResults;
+		public InteractionResult Result;
+
+		[Header("")]
+		[Header("")]
+		[Header("RANDOM FAILURE OPTION")]
+		public bool CanFail = false;
+		[Header("(Between 0 and 1)")]
+		public float ProbabilityOfFailureResult = 0;
+		public InteractionResult FailureResult;
 
 		public bool InteractionVisible(MainGameManager mgm, Npc npc)
 		{
@@ -57,33 +66,11 @@ namespace Assets.GameModel
 
 		public InteractionResult GetInteractionResult()
 		{
-			int totalProbability = 0;
-			foreach (var result in InteractionResults)
-			{
-				totalProbability += result.Probability;
-			}
 			UnityEngine.Random.InitState(System.DateTime.Now.Millisecond);
-			var randValue = UnityEngine.Random.Range(0, totalProbability);
-			int checkedProbability = 0;
-			foreach (var result in InteractionResults)
-			{
-				checkedProbability += result.Probability;
-				if (randValue < checkedProbability)
-					return result;
-			}
 
-			throw new Exception($"Random probabiltiy result not found for {Name}, result = {randValue}");
-		}
-
-		public InteractionResult GetDefaultResult()
-		{
-			if(InteractionResults.Count > 0)
-				Debug.Log("You should not preview results for interactions with multiple outcomes!!!");
-
-			var res = InteractionResults[0];
-
-			
-			return res;
+			if (CanFail && Random.Range(0, 1) <= ProbabilityOfFailureResult)
+				return FailureResult;
+			return Result;
 		}
 	}
 }

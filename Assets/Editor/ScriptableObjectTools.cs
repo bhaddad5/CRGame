@@ -63,9 +63,7 @@ public class ScriptableObjectTools
 					continue;
 
 				bool hasCompletionInteractions = gameData.Locations.Any(l => l.Npcs.Any(n =>
-					n.Interactions.Any(i =>
-						i.InteractionResults.Any(ir =>
-							ir.Effect.MissionsToComplete?.Contains(mission) ?? false))));
+					n.Interactions.Any(i => i.Result.Effect.MissionsToComplete?.Contains(mission) ?? false)));
 
 				if(!hasCompletionInteractions)
 					Debug.Log($"{mission.MissionName} has no interactions that will complete it.");
@@ -73,7 +71,7 @@ public class ScriptableObjectTools
 		}
 	}
 	
-	[MenuItem("Tools/Count Multi effects & interactions")]
+	[MenuItem("Tools/Find Randomized Actions")]
 	public static void CountMultiEffects()
 	{
 		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
@@ -84,13 +82,33 @@ public class ScriptableObjectTools
 			{
 				foreach (var interaction in npc.Interactions)
 				{
-					if (interaction.InteractionResults.Count > 1)
-						Debug.Log($"Multiple results in {interaction}");
+					if (interaction.CanFail)
+					{
+						Debug.Log($"Failure is possible for {interaction}");
+					}
 				}
 			}
 		}
 	}
-	
+
+	[MenuItem("Tools/Upgrade Old Data")]
+	public static void UpgradeOldData()
+	{
+		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
+
+		foreach (var location in gameData.Locations)
+		{
+			foreach (var npc in location.Npcs)
+			{
+				foreach (var interaction in npc.Interactions)
+				{
+					EditorUtility.SetDirty(interaction);
+				}
+			}
+		}
+		Debug.Log("Upgrade Complete!");
+	}
+
 
 	//TODO: USE THIS AS A TEMPLATE FOR DATA UPGRADES!
 	/*
