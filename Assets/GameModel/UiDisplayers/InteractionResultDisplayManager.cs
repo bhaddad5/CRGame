@@ -10,6 +10,7 @@ public class InteractionResultDisplayManager
 	private List<DialogEntry> currDialogsToShow = new List<DialogEntry>();
 	private List<Popup> currPopupsToShow = new List<Popup>();
 	private List<Mission> currMissionsToShow = new List<Mission>();
+	private List<Trophy> currTrophiesToShow = new List<Trophy>();
 	private Action resultComplete = null;
 	private int completedCount;
 	private Npc contextualNpc;
@@ -27,6 +28,7 @@ public class InteractionResultDisplayManager
 		currDialogsToShow = new List<DialogEntry>(res.Dialogs);
 		currPopupsToShow = new List<Popup>(res.OptionalPopups);
 		currMissionsToShow = new List<Mission>(res.Effect.MissionsToComplete);
+		currTrophiesToShow = new List<Trophy>(res.Effect.TrophiesClaimedReferences);
 
 		HandleNextDialog();
 	}
@@ -45,16 +47,27 @@ public class InteractionResultDisplayManager
 			currPopupsToShow.RemoveAt(0);
 			mgm.ShowPopup(popup, completedCount, HandleNextDialog);
 		}
+		else if (currTrophiesToShow.Count > 0)
+		{
+			var popup = new Popup()
+			{
+				Title = $"Trophy Claimed: {currTrophiesToShow[0].Name}",
+				Texture = currTrophiesToShow[0].Image,
+				Text = currTrophiesToShow[0].Description,
+			};
+			currTrophiesToShow.RemoveAt(0);
+			mgm.ShowPopup(popup, completedCount, HandleNextDialog);
+		}
 		else if (currMissionsToShow.Count > 0)
 		{
-			var missionPopup = new Popup()
+			var popup = new Popup()
 			{
 				Title = $"Mission Complete: {currMissionsToShow[0].MissionName}",
 				Texture = currMissionsToShow[0].MissionImage,
 				Text = currMissionsToShow[0].MissionDescription,
 			};
 			currMissionsToShow.RemoveAt(0);
-			mgm.ShowPopup(missionPopup, completedCount, HandleNextDialog);
+			mgm.ShowPopup(popup, completedCount, HandleNextDialog);
 		}
 		else
 		{

@@ -15,6 +15,9 @@ namespace Assets.GameModel
 		public string Name;
 		public Texture2D Image;
 
+		[TextArea(3, 10)]
+		public string Description;
+
 		public bool Owned;
 	}
 }
