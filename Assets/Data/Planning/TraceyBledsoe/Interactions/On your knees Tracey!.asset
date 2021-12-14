@@ -10,25 +10,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Bledsoe Power of Attorney
+  m_Name: On your knees Tracey!
   m_EditorClassIdentifier: 
-  Id: a2b7d826-df8c-4689-b3e1-c110880d0327
-  Name: Bledsoe Power of Attorney
-  Category: 5
+  Id: d189d9ad-42c2-47a6-b596-10133caa38b8
+  Name: On your knees Tracey!
+  Category: 6
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcRequirements: []
-    RequiredInteractions:
-    - {fileID: 11400000, guid: bf1da1c7e36b62e4084c309546517ab7, type: 2}
+    NpcRequirements:
+    - OptionalNpcReference: {fileID: 0}
+      RequiresAmbitionAtOrBelowValue: 0
+      RequiredAmbition: 0
+      RequiresPrideAtOrBelowValue: 1
+      RequiredPride: 50
+    RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
-    RequiredNpcsControled: []
+    RequiredNpcsControled:
+    - {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c, type: 2}
     RequiredTrophies: []
   Cost:
-    EgoCost: 50
+    EgoCost: 0
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -36,50 +41,29 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
-  Repeatable: 0
+  Repeatable: 1
   Completed: 0
   PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      Text: Tracey, by signing this document you grant me full power of attorney
-        over your financial, legal and medical decisions.  You have to sign it before
-        you can leave Pry Clinic.
+      Text: There's nothing better than getting a blowjob from your old boss's boss!
       CustomSpeakerReference: {fileID: 0}
-      CustomNpcImageOptions:
-      - {fileID: 2800000, guid: caf1c13386addeb439277e2f716994cb, type: 3}
-    - CurrSpeaker: 0
-      Text: But why?  I'm better now!  I just want to go home and...  please?
-      CustomSpeakerReference: {fileID: 0}
-      CustomNpcImageOptions:
-      - {fileID: 2800000, guid: caf1c13386addeb439277e2f716994cb, type: 3}
-    - CurrSpeaker: 1
-      Text: Don't make me repeat myself, Tracey.
-      CustomSpeakerReference: {fileID: 0}
-      CustomNpcImageOptions:
-      - {fileID: 2800000, guid: caf1c13386addeb439277e2f716994cb, type: 3}
-    - CurrSpeaker: 0
-      Text: Give me the damn paperwork then.  I can't take another minute of this
-        witch docter and her torture!
-      CustomSpeakerReference: {fileID: 0}
-      CustomNpcImageOptions:
-      - {fileID: 2800000, guid: caf1c13386addeb439277e2f716994cb, type: 3}
-    - CurrSpeaker: 3
-      Text: 'If Tracey persists in proving a discipline problem or any sign of relapse,
-        feel free to return her for an afternoon of training therapy or even shock
-        treatment.  '
-      CustomSpeakerReference: {fileID: 0}
-      CustomNpcImageOptions:
-      - {fileID: 2800000, guid: caf1c13386addeb439277e2f716994cb, type: 3}
+      CustomNpcImageOptions: []
     OptionalPopups:
-    - Title: You now have legal guardianship of Traecy Bledsoe
+    - Title: Suck it up, Tracey!
       Videos:
-      - {fileID: 32900000, guid: 5a45b006ff4be54459a8394de16a3ffe, type: 3}
+      - {fileID: 32900000, guid: 6077060e58f7e224ba4ef68d3cfd2bd8, type: 3}
+      - {fileID: 32900000, guid: 613f965d57392e742bc7371014764e01, type: 3}
       Texture: {fileID: 0}
       Text: 
     Effect:
-      NpcEffects: []
-      EgoEffect: 0
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
+          type: 2}
+        AmbitionEffect: 0
+        PrideEffect: -3
+      EgoEffect: 10
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -100,11 +84,11 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 2800000, guid: 1e74745b312b1304c9269980c46c57f9, type: 3}
+    CustomBackground: {fileID: 0}
     CustomBackgroundNpcLayout:
-      xPos: 0.4
-      yPos: 0.4
-      width: 350
+      xPos: 0
+      yPos: 0
+      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
