@@ -10,31 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Ask Jada about her boss
+  m_Name: Collect complaints on Jennifer
   m_EditorClassIdentifier: 
-  Id: 776cc11e-0e9f-4599-8ab2-14a8478572ce
-  Name: Ask Jada about her boss
-  Category: 3
+  Id: ce83ef32-5d81-490e-9c8c-a4a071953e67
+  Name: Collect complaints on Jennifer
+  Category: 4
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcRequirements:
-    - OptionalNpcReference: {fileID: 0}
-      RequiresAmbitionAtOrBelowValue: 0
-      RequiredAmbition: 0
-      RequiresPrideAtOrBelowValue: 0
-      RequiredPride: 0
-    RequiredInteractions:
-    - {fileID: 11400000, guid: 9205354e1c2bced4a8bf89cb0962323f, type: 2}
-    - {fileID: 11400000, guid: 5969713609b5c60478f2f9d5907a7bf9, type: 2}
+    NpcRequirements: []
+    RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
-    RequiredDepartmentsControled: []
+    RequiredDepartmentsControled:
+    - {fileID: 11400000, guid: 157fc1d8d734ca84d8cdcb9c2b5be2df, type: 2}
     RequiredNpcsControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 20
+    EgoCost: 5
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -42,39 +36,35 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
-  Repeatable: 1
+  Repeatable: 0
   Completed: 0
   PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      Text: How's Carole?
+      Text: I'm sure there are complaints against Jennifer Page in the files.  There
+        are always complaints when it come sot a CEO, right?
       CustomSpeakerReference: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: For a woman perpetually on the edge of a nervous breakdown, she's fine.
+      Text: Yes, there are.  All baseless of course, but there are a sprinkling.
       CustomSpeakerReference: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      Text: What's got her on edge?
+      Text: Have another look.  We can't tolerate ANY possible exposure.  Then collect
+        and update evrything and forward on to my office.
       CustomSpeakerReference: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: Let's just say her marraige isn't in the best shape and it is freaking
-        her out.  She'd be horrified if she thought anyone knew, which is why it
-        is so funny that it is common knowledge.
+      Text: Very good.  I'll get on it right away.
       CustomSpeakerReference: {fileID: 0}
       CustomNpcImageOptions: []
     OptionalPopups: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
+      - OptionalNpcReference: {fileID: 11400000, guid: be12a51bf8ae5c343a38ccd5b80d8007,
           type: 2}
-        AmbitionEffect: -4
-        PrideEffect: 0
-      - OptionalNpcReference: {fileID: 11400000, guid: f42fb56e29e0b374386530f7e2189a62,
-          type: 2}
-        AmbitionEffect: -3
+        AmbitionEffect: -15
         PrideEffect: 0
       EgoEffect: 0
       FundsEffect: 0
@@ -105,15 +95,11 @@ MonoBehaviour:
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
-    Dialogs:
-    - CurrSpeaker: 2
-      Text: 
-      CustomSpeakerReference: {fileID: 0}
-      CustomNpcImageOptions: []
+    Dialogs: []
     OptionalPopups: []
     Effect:
       NpcEffects: []
-      EgoEffect: -10
+      EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
