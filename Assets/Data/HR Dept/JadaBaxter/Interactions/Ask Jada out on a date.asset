@@ -1,0 +1,134 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: Ask Jada out on a date
+  m_EditorClassIdentifier: 
+  Id: 5a66331b-b90c-4672-aaf8-d5e506dc2c9c
+  Name: Ask Jada out on a date
+  Category: 3
+  Requirements:
+    RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
+    NpcRequirements: []
+    RequiredInteractions: []
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredNpcsControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 20
+    MoneyCost: 200
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    HornicalCost: 0
+  Repeatable: 1
+  Completed: 0
+  PreviewEffect: 1
+  Result:
+    Dialogs:
+    - CurrSpeaker: 1
+      Text: What do you say to dinner and a movie sometime?
+      CustomSpeakerReference: {fileID: 0}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 0
+      Text: I'd say you're making some big assumptions, buster.
+      CustomSpeakerReference: {fileID: 0}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 1
+      Text: If you don't ask, you don't get.
+      CustomSpeakerReference: {fileID: 0}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 0
+      Text: And what exactly do you think you'll be getting if we go out on a date?
+      CustomSpeakerReference: {fileID: 0}
+      CustomNpcImageOptions: []
+    OptionalPopups:
+    - Title: Jada's suspicious of your motives
+      Videos:
+      - {fileID: 32900000, guid: 362980f055486d24ca8a61f313af3bd6, type: 3}
+      Texture: {fileID: 0}
+      Text: Even if she does say yes, you understand Jada's interest is mor eprofessional
+        than romantic.
+    Effect:
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: -7
+        PrideEffect: 0
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+    CustomBackground: {fileID: 0}
+    CustomBackgroundNpcLayout:
+      xPos: 0
+      yPos: 0
+      width: 0
+  CanFail: 1
+  ProbabilityOfFailureResult: 0.5
+  FailureResult:
+    Dialogs:
+    - CurrSpeaker: 2
+      Text: While you get credit for even daring to ask Jada out, when she knocks
+        you back it is still humiliating.
+      CustomSpeakerReference: {fileID: 0}
+      CustomNpcImageOptions: []
+    OptionalPopups: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: -5
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+    CustomBackground: {fileID: 0}
+    CustomBackgroundNpcLayout:
+      xPos: 0
+      yPos: 0
+      width: 0
