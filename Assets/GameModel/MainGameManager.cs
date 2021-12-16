@@ -56,6 +56,8 @@ namespace Assets.GameModel
 			hudUiDisplay.Setup(this, mainMapUiDisplay);
 			mainMapUiDisplay.Setup(this, Data.Locations);
 			RefreshAllUi();
+
+			TryRunStartOfTurnInteractions();
 		}
 
 		void OnApplicationQuit()
@@ -85,6 +87,11 @@ namespace Assets.GameModel
 
 			RefreshAllUi();
 
+			TryRunStartOfTurnInteractions();
+		}
+
+		private void TryRunStartOfTurnInteractions()
+		{
 			foreach (var startOfTurnInteraction in Data.StartOfTurnInteractions)
 			{
 				if (startOfTurnInteraction == null)
