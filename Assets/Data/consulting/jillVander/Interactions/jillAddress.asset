@@ -17,6 +17,8 @@ MonoBehaviour:
   Category: 1
   Requirements:
     RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
     NpcRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 10f155596f68b504d931680746d77a7a, type: 2}
@@ -58,6 +60,10 @@ MonoBehaviour:
         can afford right now.
       CustomSpeakerReference: {fileID: 0}
       CustomNpcImageOptions: []
+    - CurrSpeaker: 2
+      Text: 'NOTE: You can now give Maxwell a new address to hack.'
+      CustomSpeakerReference: {fileID: 0}
+      CustomNpcImageOptions: []
     OptionalPopups: []
     Effect:
       NpcEffects: []
@@ -82,7 +88,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    Probability: 1
     CustomBackground: {fileID: 0}
     CustomBackgroundNpcLayout:
       xPos: 0
@@ -116,7 +121,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    Probability: 0
     CustomBackground: {fileID: 0}
     CustomBackgroundNpcLayout:
       xPos: 0
