@@ -17,6 +17,8 @@ MonoBehaviour:
   Category: 4
   Requirements:
     RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
     NpcRequirements:
     - OptionalNpcReference: {fileID: 0}
       RequiresAmbitionAtOrBelowValue: 0
@@ -25,7 +27,8 @@ MonoBehaviour:
       RequiredPride: 50
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
-    RequiredPolicies: []
+    RequiredPolicies:
+    - {fileID: 11400000, guid: c27637dc409cf7346a351be4de88af4c, type: 2}
     RequiredDepartmentsControled: []
     RequiredNpcsControled:
     - {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea, type: 2}
@@ -86,7 +89,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    Probability: 1
     CustomBackground: {fileID: 0}
     CustomBackgroundNpcLayout:
       xPos: 0
@@ -120,7 +122,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    Probability: 0
     CustomBackground: {fileID: 0}
     CustomBackgroundNpcLayout:
       xPos: 0

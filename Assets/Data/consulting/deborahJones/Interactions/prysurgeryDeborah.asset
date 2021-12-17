@@ -17,6 +17,8 @@ MonoBehaviour:
   Category: 6
   Requirements:
     RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
     NpcRequirements:
     - OptionalNpcReference: {fileID: 0}
       RequiresAmbitionAtOrBelowValue: 0
@@ -25,7 +27,8 @@ MonoBehaviour:
       RequiredPride: 10
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
-    RequiredPolicies: []
+    RequiredPolicies:
+    - {fileID: 11400000, guid: 92058b846c95e1744b5c226d884e72bf, type: 2}
     RequiredDepartmentsControled: []
     RequiredNpcsControled:
     - {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea, type: 2}
@@ -63,11 +66,12 @@ MonoBehaviour:
       CustomSpeakerReference: {fileID: 0}
       CustomNpcImageOptions: []
     OptionalPopups:
-    - Title: Send her for cosmetic work
+    - Title: Deborah reports for cosmetic surgery
       Videos:
       - {fileID: 32900000, guid: 75a8fb9a4b9c89a4291e651b9e747172, type: 3}
       Texture: {fileID: 0}
-      Text: 
+      Text: It appears her asymetrical breasts have been artificially corrected and
+        enhanced for maximum effect.
     Effect:
       NpcEffects: []
       EgoEffect: 25
@@ -91,7 +95,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    Probability: 1
     CustomBackground: {fileID: 0}
     CustomBackgroundNpcLayout:
       xPos: 0
@@ -125,7 +128,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    Probability: 0
     CustomBackground: {fileID: 0}
     CustomBackgroundNpcLayout:
       xPos: 0
