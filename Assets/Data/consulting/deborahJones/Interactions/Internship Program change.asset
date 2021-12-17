@@ -17,6 +17,8 @@ MonoBehaviour:
   Category: 1
   Requirements:
     RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
     NpcRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 9572c2a10529ffe489806abd54f5c1da, type: 2}
@@ -68,7 +70,12 @@ MonoBehaviour:
         won't be YOU!
       CustomSpeakerReference: {fileID: 0}
       CustomNpcImageOptions: []
-    OptionalPopups: []
+    OptionalPopups:
+    - Title: Deborah takes it in stride
+      Videos:
+      - {fileID: 32900000, guid: e6eb74ce31e208f4b922fcb2ee871a73, type: 3}
+      Texture: {fileID: 0}
+      Text: She's obviously furious but she won't let you she how rattled she is.
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
@@ -97,7 +104,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    Probability: 1
     CustomBackground: {fileID: 0}
     CustomBackgroundNpcLayout:
       xPos: 0
@@ -131,7 +137,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    Probability: 0
     CustomBackground: {fileID: 0}
     CustomBackgroundNpcLayout:
       xPos: 0
