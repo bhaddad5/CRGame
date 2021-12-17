@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: holidayDeborah
+  m_Name: File the IPO
   m_EditorClassIdentifier: 
-  Id: cd0e7572-2e62-4574-a76a-bae0b7371fa9
-  Name: Annual Holiday
-  Category: 3
+  Id: eea47af1-b848-4614-b9c3-72c20082b733
+  Name: File the IPO
+  Category: 4
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -22,22 +22,22 @@ MonoBehaviour:
     NpcRequirements:
     - OptionalNpcReference: {fileID: 0}
       RequiresAmbitionAtOrBelowValue: 0
-      RequiredAmbition: -1
-      RequiresPrideAtOrBelowValue: 1
-      RequiredPride: 20
+      RequiredAmbition: 0
+      RequiresPrideAtOrBelowValue: 0
+      RequiredPride: 0
     RequiredInteractions:
-    - {fileID: 11400000, guid: fc02f17d89ade184bb3a64f5c10348c4, type: 2}
+    - {fileID: 11400000, guid: 48701e41e756af745b9c32664dbd63f7, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled:
-    - {fileID: 11400000, guid: 61a8eb709285dc0448c63cbd36baeed2, type: 2}
+    - {fileID: 11400000, guid: 8a432d3990dd08442a622b0a03538c5e, type: 2}
     RequiredNpcsControled:
-    - {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea, type: 2}
+    - {fileID: 11400000, guid: fe057ea31c7f5db4fa79ebaaba8f2978, type: 2}
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 5000
-    SpreadsheetsCost: 0
+    MoneyCost: 0
+    SpreadsheetsCost: 20
     CultureCost: 0
     PatentsCost: 0
     BrandCost: 0
@@ -45,38 +45,21 @@ MonoBehaviour:
     HornicalCost: 0
   Repeatable: 0
   Completed: 0
-  PreviewEffect: 1
+  PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 1
-      Text: Model your bikini for me.  Do you like it?
-      CustomSpeakerReference: {fileID: 0}
-      CustomNpcImageOptions:
-      - {fileID: 2800000, guid: 948e5c9866a9c8e4e981528dcb1d2547, type: 3}
-      - {fileID: 2800000, guid: 7e4ca3e4365f94d46acb89b7d291fa91, type: 3}
     - CurrSpeaker: 0
-      Text: It's so revealing!
+      Text: We are now ready to officially begin the IPO process!
       CustomSpeakerReference: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      Text: That's the point.  I want to show you off during my vacation.  Are you
-        excited about coming with me?
+      Text: Then file the papers!
       CustomSpeakerReference: {fileID: 0}
       CustomNpcImageOptions: []
-    - CurrSpeaker: 0
-      Text: Yes!  It's been so long since I went anywhere!
-      CustomSpeakerReference: {fileID: 0}
-      CustomNpcImageOptions: []
-    OptionalPopups:
-    - Title: Take Deborah on a getaway
-      Videos:
-      - {fileID: 32900000, guid: 4438eedd383fe6f409b779e0d48efa6e, type: 3}
-      Texture: {fileID: 0}
-      Text: Debbie proves to be a graetful and enthusiastic holiday companion.  Even
-        the short getaway proves  quite refreshing!
+    OptionalPopups: []
     Effect:
       NpcEffects: []
-      EgoEffect: 25
+      EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -88,9 +71,9 @@ MonoBehaviour:
       NpcsToControl: []
       NpcsToRemoveFromGame: []
       LocationsToControl: []
-      TrophiesClaimedReferences:
-      - {fileID: 11400000, guid: 69ea3393a7eb7ea4499f4506ab6237d3, type: 2}
-      MissionsToComplete: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete:
+      - {fileID: 11400000, guid: 29322cb0627c10648b66211279b922c1, type: 2}
       Car: 0
       Suits: 0
       JewleryCuffs: 0

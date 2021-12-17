@@ -10,33 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: holidayDeborah
+  m_Name: Surveil Mackenzie
   m_EditorClassIdentifier: 
-  Id: cd0e7572-2e62-4574-a76a-bae0b7371fa9
-  Name: Annual Holiday
-  Category: 3
+  Id: 24898c55-114a-40d8-80d0-bd45c4d10738
+  Name: Surveil Mackenzie
+  Category: 7
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcRequirements:
-    - OptionalNpcReference: {fileID: 0}
-      RequiresAmbitionAtOrBelowValue: 0
-      RequiredAmbition: -1
-      RequiresPrideAtOrBelowValue: 1
-      RequiredPride: 20
+    NpcRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: fc02f17d89ade184bb3a64f5c10348c4, type: 2}
+    - {fileID: 11400000, guid: 944a5d2485c9c8b4889bfa80541be172, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
-    RequiredDepartmentsControled:
-    - {fileID: 11400000, guid: 61a8eb709285dc0448c63cbd36baeed2, type: 2}
-    RequiredNpcsControled:
-    - {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea, type: 2}
+    RequiredDepartmentsControled: []
+    RequiredNpcsControled: []
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 5000
+    MoneyCost: 500
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -45,38 +38,13 @@ MonoBehaviour:
     HornicalCost: 0
   Repeatable: 0
   Completed: 0
-  PreviewEffect: 1
+  PreviewEffect: 0
   Result:
-    Dialogs:
-    - CurrSpeaker: 1
-      Text: Model your bikini for me.  Do you like it?
-      CustomSpeakerReference: {fileID: 0}
-      CustomNpcImageOptions:
-      - {fileID: 2800000, guid: 948e5c9866a9c8e4e981528dcb1d2547, type: 3}
-      - {fileID: 2800000, guid: 7e4ca3e4365f94d46acb89b7d291fa91, type: 3}
-    - CurrSpeaker: 0
-      Text: It's so revealing!
-      CustomSpeakerReference: {fileID: 0}
-      CustomNpcImageOptions: []
-    - CurrSpeaker: 1
-      Text: That's the point.  I want to show you off during my vacation.  Are you
-        excited about coming with me?
-      CustomSpeakerReference: {fileID: 0}
-      CustomNpcImageOptions: []
-    - CurrSpeaker: 0
-      Text: Yes!  It's been so long since I went anywhere!
-      CustomSpeakerReference: {fileID: 0}
-      CustomNpcImageOptions: []
-    OptionalPopups:
-    - Title: Take Deborah on a getaway
-      Videos:
-      - {fileID: 32900000, guid: 4438eedd383fe6f409b779e0d48efa6e, type: 3}
-      Texture: {fileID: 0}
-      Text: Debbie proves to be a graetful and enthusiastic holiday companion.  Even
-        the short getaway proves  quite refreshing!
+    Dialogs: []
+    OptionalPopups: []
     Effect:
       NpcEffects: []
-      EgoEffect: 25
+      EgoEffect: 10
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -88,8 +56,7 @@ MonoBehaviour:
       NpcsToControl: []
       NpcsToRemoveFromGame: []
       LocationsToControl: []
-      TrophiesClaimedReferences:
-      - {fileID: 11400000, guid: 69ea3393a7eb7ea4499f4506ab6237d3, type: 2}
+      TrophiesClaimedReferences: []
       MissionsToComplete: []
       Car: 0
       Suits: 0

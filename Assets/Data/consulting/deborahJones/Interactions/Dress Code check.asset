@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: holidayDeborah
+  m_Name: Dress Code check
   m_EditorClassIdentifier: 
-  Id: cd0e7572-2e62-4574-a76a-bae0b7371fa9
-  Name: Annual Holiday
-  Category: 3
+  Id: d1ff39b5-0856-4018-bc6a-c875b0476922
+  Name: Dress Code check
+  Category: 6
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -22,11 +22,12 @@ MonoBehaviour:
     NpcRequirements:
     - OptionalNpcReference: {fileID: 0}
       RequiresAmbitionAtOrBelowValue: 0
-      RequiredAmbition: -1
+      RequiredAmbition: 0
       RequiresPrideAtOrBelowValue: 1
-      RequiredPride: 20
+      RequiredPride: 60
     RequiredInteractions:
     - {fileID: 11400000, guid: fc02f17d89ade184bb3a64f5c10348c4, type: 2}
+    - {fileID: 11400000, guid: 09850c81a6b7e1c4f98a8a0feaba5649, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled:
@@ -36,47 +37,56 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 5000
+    MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
-  Repeatable: 0
+  Repeatable: 1
   Completed: 0
-  PreviewEffect: 1
+  PreviewEffect: 0
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      Text: Model your bikini for me.  Do you like it?
+      Text: Show me what pretty things you're wearing today Debbie!
       CustomSpeakerReference: {fileID: 0}
       CustomNpcImageOptions:
-      - {fileID: 2800000, guid: 948e5c9866a9c8e4e981528dcb1d2547, type: 3}
-      - {fileID: 2800000, guid: 7e4ca3e4365f94d46acb89b7d291fa91, type: 3}
-    - CurrSpeaker: 0
-      Text: It's so revealing!
-      CustomSpeakerReference: {fileID: 0}
-      CustomNpcImageOptions: []
+      - {fileID: 2800000, guid: a2e33ea9c17443640b22a33b9d32e18c, type: 3}
+      - {fileID: 2800000, guid: 64e8033ea99390a409f1eac3f704afaf, type: 3}
+      - {fileID: 2800000, guid: 2f569d2960c4dfa4298fef8a244d8935, type: 3}
+      - {fileID: 2800000, guid: 16cca61567ac6f2418b0cbbace2d9fae, type: 3}
+      - {fileID: 2800000, guid: 13765b8f6f950b24e88d68db9bc9411a, type: 3}
+      - {fileID: 2800000, guid: 5711e299d07d2e249a70cdd36a74ce3c, type: 3}
+      - {fileID: 2800000, guid: 70b49bee1857c8c479e2f9638da051b5, type: 3}
+      - {fileID: 2800000, guid: 29f0eefd2b8df3d4f9f4448ea8a395ff, type: 3}
+      - {fileID: 2800000, guid: e83390e98642fb844997240c3f464e25, type: 3}
+      - {fileID: 2800000, guid: 50bfc4e45974ded49bf3bf9ec83a98ac, type: 3}
+      - {fileID: 2800000, guid: 2d7cf9a525f0d144a9549a825fd180a9, type: 3}
+      - {fileID: 2800000, guid: 1e0711c7a43c2aa4abfb194226749846, type: 3}
+      - {fileID: 2800000, guid: 2b57f96b38c8b5d44a7d51ef1a4fe2dc, type: 3}
+      - {fileID: 2800000, guid: 1d25dc9d7fa7b794c9fbb9082be0fa5c, type: 3}
+      - {fileID: 2800000, guid: ba6d59927ec4d9a4ab704c0c8d57fe79, type: 3}
+      - {fileID: 2800000, guid: ccefdc0135822fa4f92495d990d171ec, type: 3}
+      - {fileID: 2800000, guid: 7ebbde50e38988a4597db2ceba48cbc9, type: 3}
+      - {fileID: 2800000, guid: e4ea943e7b5894b409cbf599912ec382, type: 3}
     - CurrSpeaker: 1
-      Text: That's the point.  I want to show you off during my vacation.  Are you
-        excited about coming with me?
+      Text: Show me what pretty things you're wearing today Debbie!
       CustomSpeakerReference: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: Yes!  It's been so long since I went anywhere!
+      Text: Is this ok...Sir?  I mean, do you like it?  Is it ok to wear again? 
+        Can I put it on the Manager Approved List?
       CustomSpeakerReference: {fileID: 0}
       CustomNpcImageOptions: []
-    OptionalPopups:
-    - Title: Take Deborah on a getaway
-      Videos:
-      - {fileID: 32900000, guid: 4438eedd383fe6f409b779e0d48efa6e, type: 3}
-      Texture: {fileID: 0}
-      Text: Debbie proves to be a graetful and enthusiastic holiday companion.  Even
-        the short getaway proves  quite refreshing!
+    OptionalPopups: []
     Effect:
-      NpcEffects: []
-      EgoEffect: 25
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: 0
+        PrideEffect: -3
+      EgoEffect: 7
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -88,8 +98,7 @@ MonoBehaviour:
       NpcsToControl: []
       NpcsToRemoveFromGame: []
       LocationsToControl: []
-      TrophiesClaimedReferences:
-      - {fileID: 11400000, guid: 69ea3393a7eb7ea4499f4506ab6237d3, type: 2}
+      TrophiesClaimedReferences: []
       MissionsToComplete: []
       Car: 0
       Suits: 0

@@ -10,33 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: holidayDeborah
+  m_Name: Set up Doll House
   m_EditorClassIdentifier: 
-  Id: cd0e7572-2e62-4574-a76a-bae0b7371fa9
-  Name: Annual Holiday
-  Category: 3
+  Id: 1976fa4f-82e6-4c99-92cf-0cbb3bace790
+  Name: Set up Doll House
+  Category: 4
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcRequirements:
-    - OptionalNpcReference: {fileID: 0}
-      RequiresAmbitionAtOrBelowValue: 0
-      RequiredAmbition: -1
-      RequiresPrideAtOrBelowValue: 1
-      RequiredPride: 20
-    RequiredInteractions:
-    - {fileID: 11400000, guid: fc02f17d89ade184bb3a64f5c10348c4, type: 2}
+    NpcRequirements: []
+    RequiredInteractions: []
     RequiredNotCompletedInteractions: []
-    RequiredPolicies: []
-    RequiredDepartmentsControled:
-    - {fileID: 11400000, guid: 61a8eb709285dc0448c63cbd36baeed2, type: 2}
+    RequiredPolicies:
+    - {fileID: 11400000, guid: 632f9a1450087dc4c92e37337a74e2ca, type: 2}
+    RequiredDepartmentsControled: []
     RequiredNpcsControled:
-    - {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea, type: 2}
+    - {fileID: 11400000, guid: cce62dcf1e1cc4346a6669063ec206c4, type: 2}
     RequiredTrophies: []
   Cost:
-    EgoCost: 0
-    MoneyCost: 5000
+    EgoCost: 20
+    MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -49,48 +43,44 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      Text: Model your bikini for me.  Do you like it?
+      Text: 'I want to put our corporate assets to work for us.  We have girls who
+        are eager to contribute but are stuck in silly desk jobs.  I want you to
+        take the revenue I''ve been hoarding and use it to set up a discreet facility
+        where our girls can provide hospitality services. '
       CustomSpeakerReference: {fileID: 0}
-      CustomNpcImageOptions:
-      - {fileID: 2800000, guid: 948e5c9866a9c8e4e981528dcb1d2547, type: 3}
-      - {fileID: 2800000, guid: 7e4ca3e4365f94d46acb89b7d291fa91, type: 3}
+      CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: It's so revealing!
+      Text: 'Clients will love it.  What do you want to call it?  The Corporate Hospitality
+        Suite?  '
       CustomSpeakerReference: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      Text: That's the point.  I want to show you off during my vacation.  Are you
-        excited about coming with me?
+      Text: Call it what it is-- the Doll House.  I'll consider what girsl to stock
+        it with.
       CustomSpeakerReference: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: Yes!  It's been so long since I went anywhere!
+      Text: Very well.  I'll start working on it.
       CustomSpeakerReference: {fileID: 0}
       CustomNpcImageOptions: []
-    OptionalPopups:
-    - Title: Take Deborah on a getaway
-      Videos:
-      - {fileID: 32900000, guid: 4438eedd383fe6f409b779e0d48efa6e, type: 3}
-      Texture: {fileID: 0}
-      Text: Debbie proves to be a graetful and enthusiastic holiday companion.  Even
-        the short getaway proves  quite refreshing!
+    OptionalPopups: []
     Effect:
       NpcEffects: []
-      EgoEffect: 25
+      EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
       CultureEffect: 0
       SpreadsheetsEffect: 0
       BrandEffect: 0
-      RevanueEffect: 0
+      RevanueEffect: 5
       HornicalEffect: 0
       NpcsToControl: []
       NpcsToRemoveFromGame: []
       LocationsToControl: []
-      TrophiesClaimedReferences:
-      - {fileID: 11400000, guid: 69ea3393a7eb7ea4499f4506ab6237d3, type: 2}
-      MissionsToComplete: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete:
+      - {fileID: 11400000, guid: 74c1811db8a56c24085f7a58b3a12a7d, type: 2}
       Car: 0
       Suits: 0
       JewleryCuffs: 0
