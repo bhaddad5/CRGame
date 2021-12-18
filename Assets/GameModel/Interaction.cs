@@ -68,7 +68,7 @@ namespace Assets.GameModel
 		{
 			UnityEngine.Random.InitState(System.DateTime.Now.Millisecond);
 
-			if (CanFail && Random.Range(0, 1) <= ProbabilityOfFailureResult)
+			if (CanFail && Random.Range(0f, 1f) <= ProbabilityOfFailureResult)
 				return FailureResult;
 			return Result;
 		}
