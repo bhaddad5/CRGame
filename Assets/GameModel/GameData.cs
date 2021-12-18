@@ -32,35 +32,26 @@ namespace Assets.GameModel
 
 		public List<Promotion> PlayerPromotionLevels = new List<Promotion>();
 
+		public Location MyOffice;
 		public List<Location> Locations = new List<Location>();
 
 		public List<Interaction> StartOfTurnInteractions = new List<Interaction>();
-
-
-		public Location MyOffice
-		{
-			get
-			{
-				foreach (var department in Locations)
-				{
-					if (department.Id == "playerOffice")
-						return department;
-				}
-
-				Debug.LogError($"Could not find myOffice.");
-				return null;
-			}
-		}
-
+		
 		public List<Trophy> GetOwnedTrophies()
 		{
 			List<Trophy> res = new List<Trophy>();
 			foreach (var department in Locations)
 			{
+				if (department == null)
+					continue;
 				foreach (var npc in department.Npcs)
 				{
+					if (npc == null)
+						continue;
 					foreach (var trophy in npc.Trophies)
 					{
+						if (trophy == null)
+							continue;
 						if (trophy.Owned)
 							res.Add(trophy);
 					}
