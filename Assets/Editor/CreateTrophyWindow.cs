@@ -43,7 +43,7 @@ public class CreateTrophyWindow : EditorWindow
 		trophy.Name = trophyName;
 		trophy.Id = Guid.NewGuid().ToString();
 
-		var foundNpc = data.FindNpc(npcPicker.NpcId);
+		var foundNpc = npcPicker.Npc as Npc;
 
 		if (foundNpc == null)
 			return;

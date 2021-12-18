@@ -65,7 +65,7 @@ public class CreateNpcWindow : EditorWindow
 
 		if (GUILayout.Button("Create NPC"))
 		{
-			var loc = data.FindLocation(locPicker.LocationId);
+			var loc = locPicker.Location as Location;
 
 			errorMsg = "";
 

@@ -43,7 +43,7 @@ public class CreatePolicyWindow : EditorWindow
 		policy.Name = policyName;
 		policy.Id = Guid.NewGuid().ToString();
 
-		var foundLoc = data.FindLocation(locPicker.LocationId);
+		var foundLoc = locPicker.Location as Location;
 
 		if (foundLoc == null)
 			return;

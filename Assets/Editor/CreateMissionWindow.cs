@@ -43,7 +43,7 @@ public class CreateMissionWindow : EditorWindow
 		mission.MissionName = missionName;
 		mission.Id = Guid.NewGuid().ToString();
 
-		var foundLoc = data.FindLocation(locPicker.LocationId);
+		var foundLoc = locPicker.Location as Location;
 
 		if (foundLoc == null)
 			return;
