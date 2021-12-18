@@ -17,12 +17,14 @@ MonoBehaviour:
   Category: 4
   Requirements:
     RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
     NpcRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 1c3f822f55d8bd449945eabff4120250, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies:
-    - {fileID: 0}
+    - {fileID: 11400000, guid: 811af2250c7107a4fbf94ed6d06114a4, type: 2}
     RequiredDepartmentsControled: []
     RequiredNpcsControled:
     - {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a, type: 2}
@@ -57,7 +59,12 @@ MonoBehaviour:
       Text: If you insist!
       CustomSpeakerReference: {fileID: 0}
       CustomNpcImageOptions: []
-    OptionalPopups: []
+    OptionalPopups:
+    - Title: Activate Suzie's DormCam
+      Videos:
+      - {fileID: 32900000, guid: f219d6e6551fc1c49923ae83fb16172d, type: 3}
+      Texture: {fileID: 0}
+      Text: It's a manager's perogative to check in 24/7!
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 0}
@@ -84,7 +91,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    Probability: 1
     CustomBackground: {fileID: 0}
     CustomBackgroundNpcLayout:
       xPos: 0
@@ -118,7 +124,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    Probability: 0
     CustomBackground: {fileID: 0}
     CustomBackgroundNpcLayout:
       xPos: 0

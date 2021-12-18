@@ -17,6 +17,8 @@ MonoBehaviour:
   Category: 6
   Requirements:
     RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
     NpcRequirements:
     - OptionalNpcReference: {fileID: 0}
       RequiresAmbitionAtOrBelowValue: 0
@@ -24,7 +26,7 @@ MonoBehaviour:
       RequiresPrideAtOrBelowValue: 1
       RequiredPride: 40
     RequiredInteractions:
-    - {fileID: 0}
+    - {fileID: 11400000, guid: 1c3f822f55d8bd449945eabff4120250, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled:
@@ -58,14 +60,15 @@ MonoBehaviour:
     - Title: Suzie's on her knees whenever you want
       Videos:
       - {fileID: 32900000, guid: 147c8c32f08894149933bbf5841834a8, type: 3}
+      - {fileID: 32900000, guid: 85ecde298ba16a4419d2138eceb80791, type: 3}
       Texture: {fileID: 0}
-      Text: 
+      Text: Your demoted boss is happy to suck up now!
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 0}
         AmbitionEffect: 0
         PrideEffect: -4
-      EgoEffect: 4
+      EgoEffect: 7
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -86,7 +89,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    Probability: 1
     CustomBackground: {fileID: 0}
     CustomBackgroundNpcLayout:
       xPos: 0
@@ -120,7 +122,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    Probability: 0
     CustomBackground: {fileID: 0}
     CustomBackgroundNpcLayout:
       xPos: 0
