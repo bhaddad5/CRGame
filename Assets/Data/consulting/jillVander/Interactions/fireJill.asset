@@ -17,6 +17,8 @@ MonoBehaviour:
   Category: 2
   Requirements:
     RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
     NpcRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
@@ -56,6 +58,10 @@ MonoBehaviour:
       Text: But I don't understand what I did!
       CustomSpeakerReference: {fileID: 0}
       CustomNpcImageOptions: []
+    - CurrSpeaker: 2
+      Text: 'NOTE: There''s every reason to think Jill will land hard in Hump Alley.'
+      CustomSpeakerReference: {fileID: 0}
+      CustomNpcImageOptions: []
     OptionalPopups: []
     Effect:
       NpcEffects: []
@@ -81,7 +87,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    Probability: 1
     CustomBackground: {fileID: 0}
     CustomBackgroundNpcLayout:
       xPos: 0
@@ -115,7 +120,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    Probability: 0
     CustomBackground: {fileID: 0}
     CustomBackgroundNpcLayout:
       xPos: 0
