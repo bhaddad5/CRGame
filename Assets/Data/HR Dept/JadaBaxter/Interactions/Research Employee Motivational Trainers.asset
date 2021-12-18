@@ -14,20 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: f1e9e8e8-8917-4540-915c-3e9cb76d061c
   Name: Research Employee Motivational Trainers
-  Category: 0
+  Category: 4
   Requirements:
-    RequiredPower: 0
+    RequiredPower: 160
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
-    RequiredPolicies: []
-    RequiredDepartmentsControled: []
+    RequiredPolicies:
+    - {fileID: 11400000, guid: 3af7473ef24b831469f3ea39e4d82014, type: 2}
+    RequiredDepartmentsControled:
+    - {fileID: 11400000, guid: 157fc1d8d734ca84d8cdcb9c2b5be2df, type: 2}
     RequiredNpcsControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 0
+    EgoCost: 15
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -37,9 +39,31 @@ MonoBehaviour:
     HornicalCost: 0
   Repeatable: 0
   Completed: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   Result:
-    Dialogs: []
+    Dialogs:
+    - CurrSpeaker: 1
+      Text: I'm finding some of our staff a bit more resistant to change than I had
+        anticipated.  I'd like you to research some training options.
+      CustomSpeakerReference: {fileID: 0}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 0
+      Text: Sure.  Are we looking for skills training?
+      CustomSpeakerReference: {fileID: 0}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 1
+      Text: No.  I think we need to start with the basics-- respect for authority. 
+        Let's keep this confidential for now.
+      CustomSpeakerReference: {fileID: 0}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 0
+      Text: I'll start looking around then.
+      CustomSpeakerReference: {fileID: 0}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 2
+      Text: 'NOTE: Jada recommends OBEIR, which you may now visit.'
+      CustomSpeakerReference: {fileID: 0}
+      CustomNpcImageOptions: []
     OptionalPopups: []
     Effect:
       NpcEffects: []

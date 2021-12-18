@@ -27,6 +27,7 @@ MonoBehaviour:
       RequiredPride: 60
     RequiredInteractions:
     - {fileID: 11400000, guid: fc02f17d89ade184bb3a64f5c10348c4, type: 2}
+    - {fileID: 11400000, guid: 03c1c9685de0a2c4d83ef499fe5b390d, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies:
     - {fileID: 11400000, guid: d91aa674369a61a4eaedfd6abb9711b9, type: 2}
@@ -46,12 +47,14 @@ MonoBehaviour:
     HornicalCost: 0
   Repeatable: 0
   Completed: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      Text: TO DO requires wellness policy  First, I expect her to achieve and maintain
-        her high school graduation weight of 120 pounds.
+      Text: ' Debbie, this is Ms. Jantzen, the owner of Hard Bodies, our new wellness
+        partner.  Part of your new benefits package includes membership.  Now, Lori,
+        here are Debbie''s fitness priorities.  First, I expect her to achieve and
+        maintain her high school graduation weight of 120 pounds.'
       CustomSpeakerReference: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
@@ -67,12 +70,19 @@ MonoBehaviour:
         moves she can show off back in the office.
       CustomSpeakerReference: {fileID: 0}
       CustomNpcImageOptions: []
+    - CurrSpeaker: 3
+      Text: I'm made a note of all your expectations.  I'm sure Debbie won't let
+        you down, will you Deb?
+      CustomSpeakerReference: {fileID: 11400000, guid: f4719d35d414f7449a4a8fa6aa3b3421,
+        type: 2}
+      CustomNpcImageOptions: []
     OptionalPopups:
     - Title: Begin fitness training
       Videos:
       - {fileID: 32900000, guid: ec33b9b1eb2bbd54c8b817a229bdf880, type: 3}
       Texture: {fileID: 0}
-      Text: 
+      Text: You consider going to your own gym.  Too bad you're so busy-- maybe tomorrow. 
+        Besides, you'd rather spend the time watching Debbie work out!
     Effect:
       NpcEffects: []
       EgoEffect: 0

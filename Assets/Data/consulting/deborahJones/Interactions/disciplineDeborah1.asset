@@ -17,8 +17,16 @@ MonoBehaviour:
   Category: 5
   Requirements:
     RequiredPower: 0
-    NpcRequirements: []
-    RequiredInteractions: []
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
+    NpcRequirements:
+    - OptionalNpcReference: {fileID: 0}
+      RequiresAmbitionAtOrBelowValue: 0
+      RequiredAmbition: 0
+      RequiresPrideAtOrBelowValue: 1
+      RequiredPride: 80
+    RequiredInteractions:
+    - {fileID: 11400000, guid: fc02f17d89ade184bb3a64f5c10348c4, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -36,30 +44,36 @@ MonoBehaviour:
     HornicalCost: 0
   Repeatable: 1
   Completed: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      Text: Fetch the paddle so we can begin your Demerits Review.
+      Text: If you don't want to have your pay docked, then you'll have to pay off
+        your demerits by submitting to corporal correction.  It's the only way I'll
+        be convinced you've learned your lesson, Debbie.
       CustomSpeakerReference: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: But I don't think I have any demerits!
+      Text: I barely make a decent day's pay as it is!  I can't afford any more deductions
+        from my pay check!
       CustomSpeakerReference: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      Text: Not according to my list, young lady.  Over my knee while I read off
-        your various failures and errors!
+      Text: Well then you know what you have to do, don't you?
       CustomSpeakerReference: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: Yes, Sir!
+      Text: Yes, Sir.
       CustomSpeakerReference: {fileID: 0}
       CustomNpcImageOptions: []
     OptionalPopups:
     - Title: Discipline Deborah
       Videos:
       - {fileID: 32900000, guid: 7fd644e21b8c72541a4fd21a4d72901f, type: 3}
+      - {fileID: 32900000, guid: 565383fd655cf4f489629577195e6e95, type: 3}
+      - {fileID: 32900000, guid: 530246a6a76b6f44ebc73377a4e9d186, type: 3}
+      - {fileID: 32900000, guid: 96d32648c8ba4a44081f9d681c92b61e, type: 3}
+      - {fileID: 32900000, guid: fe65d0b03a709e743bbb5275bdf4df24, type: 3}
       Texture: {fileID: 0}
       Text: 
     Effect:
@@ -88,7 +102,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    Probability: 1
     CustomBackground: {fileID: 0}
     CustomBackgroundNpcLayout:
       xPos: 0
@@ -122,7 +135,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    Probability: 0
     CustomBackground: {fileID: 0}
     CustomBackgroundNpcLayout:
       xPos: 0
