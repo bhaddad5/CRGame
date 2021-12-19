@@ -32,6 +32,8 @@ public class ScriptableObjectTools
 				EditorUtility.SetDirty(npc);
 			}
 		}
+
+		Debug.Log("Cleanup done!");
 	}
 	
 	[MenuItem("Tools/Detect Bad Data")]
@@ -53,6 +55,8 @@ public class ScriptableObjectTools
 					Debug.Log($"{mission.MissionName} has no interactions that will complete it.");
 			}
 		}
+
+		Debug.Log("Detection Complete!");
 	}
 
 	[MenuItem("Tools/Upgrade Old Data")]
@@ -68,8 +72,27 @@ public class ScriptableObjectTools
 				{
 					EditorUtility.SetDirty(interaction);
 				}
+				EditorUtility.SetDirty(npc);
+			}
+			EditorUtility.SetDirty(location);
+
+			foreach (var mission in location.Missions)
+			{
+				EditorUtility.SetDirty(mission);
+			}
+
+			foreach (var policy in location.Policies)
+			{
+				EditorUtility.SetDirty(policy);
 			}
 		}
+
+		foreach (var startOfTurnInteraction in gameData.StartOfTurnInteractions)
+		{
+			EditorUtility.SetDirty(startOfTurnInteraction);
+		}
+
+		EditorUtility.SetDirty(gameData);
 		Debug.Log("Upgrade Complete!");
 	}
 
