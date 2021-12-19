@@ -36,12 +36,13 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private StatusSymbolsDisplay StatusSymbolsPrefab;
 		private StatusSymbolsDisplay statusSymbols;
 
-		[HideInInspector]
-		public Location Loc;
+		private Location loc;
+		public bool IsAccessible(MainGameManager mgm) => loc.IsAccessible(mgm);
+
 		private MainGameManager mgm;
 		public void Setup(Location loc, MainMapUiDisplay mguid, MainGameManager mgm)
 		{
-			this.Loc = loc;
+			this.loc = loc;
 			this.mgm = mgm;
 			BackButton.onClick.RemoveAllListeners();
 			BackButton.onClick.AddListener(() => mguid.CloseCurrentDepartment(false));
@@ -115,7 +116,7 @@ namespace Assets.GameModel.UiDisplayers
 		public void OpenPolicy(Policy p)
 		{
 			SpecificPolicyPopup.gameObject.SetActive(true);
-			SpecificPolicyPopup.Setup(p, Loc, mgm);
+			SpecificPolicyPopup.Setup(p, loc, mgm);
 		}
 
 		public void ClosePolicy()
@@ -153,13 +154,13 @@ namespace Assets.GameModel.UiDisplayers
 
 		public void RefreshUiDisplay(MainGameManager mgm)
 		{
-			BackgroundImage.sprite = Loc.BackgroundImage.ToSprite();
-			Name.text = Loc.Name;
+			BackgroundImage.sprite = loc.BackgroundImage.ToSprite();
+			Name.text = loc.Name;
 
 			foreach (var npc in NpcOptionsParent.GetComponentsInChildren<NpcSelectionUiDisplay>(true))
 			{
 				//Were they just moved/removed?
-				if(!Loc.Npcs.Contains(npc._npc))
+				if(!loc.Npcs.Contains(npc._npc))
 					GameObject.Destroy(npc.gameObject);
 				else
 					npc.RefreshUiDisplay(mgm);
