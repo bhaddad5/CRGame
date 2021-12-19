@@ -132,15 +132,5 @@ namespace Assets.GameModel
 		{
 			hudUiDisplay.ShowDialog(dialog, onDialogsDone, contextualNpc, contextualNpcDisplay);
 		}
-
-		public void SetTrophyCaseVisibility(bool vis)
-		{
-			hudUiDisplay.SetTrophyCaseVisibility(vis);
-		}
-
-		public void SetStatusSymbolsVisibility(bool vis)
-		{
-			hudUiDisplay.SetStatusSymbolsVisibility(vis);
-		}
 	}
 }

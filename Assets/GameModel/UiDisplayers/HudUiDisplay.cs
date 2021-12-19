@@ -36,9 +36,6 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 	[SerializeField] private MainMenuUiDisplay MainMenuPrefab;
 	private MainMenuUiDisplay mainMenu;
 
-	[SerializeField] private TrophyCaseUiDisplay TrophyCase;
-	[SerializeField] private PlayerStatusSymbolsDisplay StatusSymbols;
-
 	[SerializeField] private PopupUiDisplay PopupPrefab;
 	[SerializeField] private DialogDisplayHandler DialogPrefab;
 
@@ -116,21 +113,5 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 	{
 		var dialogDisp = GameObject.Instantiate(DialogPrefab);
 		dialogDisp.ShowDialog(dialog, onDialogsDone, contextualNpc, contextualNpcDisplay);
-	}
-
-	
-
-	public void SetTrophyCaseVisibility(bool vis)
-	{
-		if (vis)
-			TrophyCase.UpdateVisuals(mgm);
-		TrophyCase.gameObject.SetActive(vis);
-	}
-
-	public void SetStatusSymbolsVisibility(bool vis)
-	{
-		if (vis)
-			StatusSymbols.UpdateVisuals(mgm);
-		StatusSymbols.gameObject.SetActive(vis);
 	}
 }

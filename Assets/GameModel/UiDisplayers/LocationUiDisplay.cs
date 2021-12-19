@@ -30,6 +30,13 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private PolicySelectionUiDisplay policyPrefab;
 		[SerializeField] private MissionUiDisplay misisonPrefab;
 
+		[SerializeField] private TrophyCaseUiDisplay TrophyCasePrefab;
+		private TrophyCaseUiDisplay trophyCase;
+
+		[SerializeField] private StatusSymbolsDisplay StatusSymbolsPrefab;
+		private StatusSymbolsDisplay statusSymbols;
+
+		[HideInInspector]
 		public Location Loc;
 		private MainGameManager mgm;
 		public void Setup(Location loc, MainMapUiDisplay mguid, MainGameManager mgm)
@@ -75,17 +82,24 @@ namespace Assets.GameModel.UiDisplayers
 			ClosePolicy();
 
 			if (loc.ShowTrophyCase)
-				mgm.SetTrophyCaseVisibility(true);
+			{
+				trophyCase = Instantiate(TrophyCasePrefab);
+				trophyCase.UpdateVisuals(mgm);
+			}
+
 			if (loc.ShowCar)
-				mgm.SetStatusSymbolsVisibility(true);
+			{
+				statusSymbols = Instantiate(StatusSymbolsPrefab);
+				statusSymbols.UpdateVisuals(mgm);
+			}
 		}
 
-		public void Shutdown()
+		void OnDestroy()
 		{
-			if (Loc.ShowTrophyCase)
-				mgm.SetTrophyCaseVisibility(false);
-			if(Loc.ShowCar)
-				mgm.SetStatusSymbolsVisibility(false);
+			if (trophyCase != null)
+				GameObject.Destroy(trophyCase.gameObject);
+			if(statusSymbols != null)
+				GameObject.Destroy(statusSymbols.gameObject);
 		}
 
 		public void OpenPolicies()

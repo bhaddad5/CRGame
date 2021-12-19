@@ -7,7 +7,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerStatusSymbolsDisplay : MonoBehaviour
+public class StatusSymbolsDisplay : MonoBehaviour
 {
 
 	[SerializeField] private TMP_Text CarName;
