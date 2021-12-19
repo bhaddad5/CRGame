@@ -15,42 +15,62 @@ public class LoadSaveMenuManager : MonoBehaviour
 	[SerializeField] private TMP_InputField filenameInput;
 	[SerializeField] private Button loadButton;
 	[SerializeField] private Button saveButton;
-	[SerializeField] private Button cancelButton;
 
 	[SerializeField] private Button fileButtonPrefab;
 
+	private MainGameManager mgm;
+	private bool saving;
+
 	string savesDir => Path.Combine(Application.streamingAssetsPath, "Saves");
-	public void Setup(MainGameManager mgm)
+	public void Setup(MainGameManager mgm, bool saving)
 	{
-		loadButton.onClick.RemoveAllListeners();
-		loadButton.onClick.AddListener(() =>
-		{
-			if (!CurrentDesiredFileIsValid())
-				return;
+		this.mgm = mgm;
+		this.saving = saving;
 
-			string path = Path.Combine(savesDir, $"{filenameInput.text}.sav");
-			mgm.InitializeGame(path);
+		loadButton.gameObject.SetActive(!saving);
+		saveButton.gameObject.SetActive(saving);
 
-			gameObject.SetActive(false);
-		});
-		saveButton.onClick.RemoveAllListeners();
-		saveButton.onClick.AddListener(() =>
-		{
-			if (!CurrentDesiredFileIsValid())
-				return;
-			
-			string path = Path.Combine(savesDir, $"{filenameInput.text}.sav");
-			File.WriteAllText(path, SaveLoadHandler.SaveToJson(mgm.Data));
+		ShowSaveGames();
+	}
 
-			gameObject.SetActive(false);
-		});
-		cancelButton.onClick.RemoveAllListeners();
-		cancelButton.onClick.AddListener(() =>
-		{
-			gameObject.SetActive(false);
-		});
+	public void LoadGame()
+	{
+		if (!CurrentDesiredFileIsValid())
+			return;
 
-		gameObject.SetActive(false);
+		string path = Path.Combine(savesDir, $"{filenameInput.text}.sav");
+		mgm.InitializeGame(path);
+
+		GameObject.Destroy(transform.parent.gameObject);
+	}
+
+	public void SaveGame()
+	{
+		if (!CurrentDesiredFileIsValid())
+			return;
+
+		string path = Path.Combine(savesDir, $"{filenameInput.text}.sav");
+		File.WriteAllText(path, SaveLoadHandler.SaveToJson(mgm.Data));
+
+		GameObject.Destroy(gameObject);
+	}
+
+	public void Cancel()
+	{
+		GameObject.Destroy(gameObject);
+	}
+
+	public void DeleteSave()
+	{
+		if (!CurrentDesiredFileIsValid())
+			return;
+
+		string path = Path.Combine(savesDir, $"{filenameInput.text}.sav");
+		File.Delete(path);
+
+		filenameInput.text = "";
+
+		ShowSaveGames();
 	}
 
 	private bool CurrentDesiredFileIsValid()
@@ -68,12 +88,8 @@ public class LoadSaveMenuManager : MonoBehaviour
 		return true;
 	}
 
-	public void Show(bool load)
+	private void ShowSaveGames()
 	{
-		gameObject.SetActive(true);
-		loadButton.gameObject.SetActive(load);
-		saveButton.gameObject.SetActive(!load);
-
 		for (int i = 0; i < filesParent.childCount; i++)
 		{
 			GameObject.Destroy(filesParent.GetChild(i).gameObject);
@@ -92,26 +108,15 @@ public class LoadSaveMenuManager : MonoBehaviour
 				filenameInput.text = Path.GetFileNameWithoutExtension(file);
 			});
 			button.GetComponentInChildren<TMP_Text>(true).text = Path.GetFileNameWithoutExtension(file);
-
 		}
 		
-		if (load)
+		if (saving)
 		{
-			if (files.Length > 0)
-			{
-				var directory = new DirectoryInfo(savesDir);
-				var myFile = (from f in directory.GetFiles()
-					orderby f.LastWriteTime descending
-					select f).First();
-				filenameInput.text = Path.GetFileNameWithoutExtension(myFile.Name);
-			}
-			else
-				filenameInput.text = "";
+			filenameInput.text = $"New Game";
 		}
 		else
 		{
-			string defaultSaveName = $"New Game";
-			filenameInput.text = defaultSaveName;
+			filenameInput.text = "";
 		}
 	}
 }

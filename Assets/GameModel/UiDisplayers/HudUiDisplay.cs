@@ -33,17 +33,11 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 	[SerializeField] private Button MyOffice;
 
 	[SerializeField] private Button MainMenuButton;
-	[SerializeField] private Button SaveGameButton;
-	[SerializeField] private Button LoadGameButton;
-	[SerializeField] private Button ReturnToGameButton;
-	[SerializeField] private Button QuitGameButton;
-
-	[SerializeField] private Transform MainMenu;
+	[SerializeField] private MainMenuUiDisplay MainMenuPrefab;
+	private MainMenuUiDisplay mainMenu;
 
 	[SerializeField] private TrophyCaseUiDisplay TrophyCase;
 	[SerializeField] private PlayerStatusSymbolsDisplay StatusSymbols;
-
-	[SerializeField] private LoadSaveMenuManager LoadSaveMenuManager;
 
 	[SerializeField] private PopupUiDisplay PopupPrefab;
 	[SerializeField] private DialogDisplayHandler DialogPrefab;
@@ -62,26 +56,30 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 			mapDisplay.ShowDepartment(mgm.Data.MyOffice, mgm);
 		});
 
-		MainMenuButton.onClick.AddListener(ShowMainMenu);
-		ReturnToGameButton.onClick.AddListener(HideMainMenu);
-		QuitGameButton.onClick.AddListener(Application.Quit);
-		SaveGameButton.onClick.AddListener(SaveGame);
-		LoadGameButton.onClick.AddListener(LoadGame);
-
-		LoadSaveMenuManager.Setup(mgm);
-
-		HideMainMenu();
+		MainMenuButton.onClick.AddListener(OpenMainMenu);
 	}
 
 	void Update()
 	{
 		if (Input.GetKeyDown(KeyCode.Escape))
 		{
-			if(MainMenu.gameObject.activeSelf)
-				HideMainMenu();
+			if(mainMenu != null)
+				CloseMainMenu();
 			else
-				ShowMainMenu();
+				OpenMainMenu();
 		}
+	}
+
+	public void OpenMainMenu()
+	{
+		mainMenu = Instantiate(MainMenuPrefab);
+		mainMenu.Setup(mgm);
+	}
+
+	public void CloseMainMenu()
+	{
+		GameObject.Destroy(mainMenu.gameObject);
+		mainMenu = null;
 	}
 
 	public void RefreshUiDisplay(MainGameManager mgm)
@@ -120,15 +118,7 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 		dialogDisp.ShowDialog(dialog, onDialogsDone, contextualNpc, contextualNpcDisplay);
 	}
 
-	public void ShowMainMenu()
-	{
-		MainMenu.gameObject.SetActive(true);
-	}
-
-	public void HideMainMenu()
-	{
-		MainMenu.gameObject.SetActive(false);
-	}
+	
 
 	public void SetTrophyCaseVisibility(bool vis)
 	{
@@ -142,15 +132,5 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 		if (vis)
 			StatusSymbols.UpdateVisuals(mgm);
 		StatusSymbols.gameObject.SetActive(vis);
-	}
-
-	private void SaveGame()
-	{
-		LoadSaveMenuManager.Show(false);
-	}
-
-	private void LoadGame()
-	{
-		LoadSaveMenuManager.Show(true);
 	}
 }
