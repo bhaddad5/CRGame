@@ -26,8 +26,6 @@ namespace Assets.GameModel
 		void Start()
 		{
 			Manager = this;
-
-			InitializeGame(null);
 		}
 
 		private SaveGameState startingData;

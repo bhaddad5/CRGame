@@ -148,7 +148,7 @@ namespace Assets.GameModel.UiDisplayers
 			{
 				GameObject.Destroy(_currOpenNpc.gameObject);
 				_currOpenNpc = null;
-				RefreshUiDisplay(MainGameManager.Manager);
+				RefreshUiDisplay(mgm);
 			}
 		}
 
