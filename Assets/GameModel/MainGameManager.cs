@@ -30,6 +30,7 @@ namespace Assets.GameModel
 
 		private SaveGameState startingData;
 
+		private bool initialized = false;
 		public void InitializeGame(string saveDataPath)
 		{
 			if (hudUiDisplay != null)
@@ -56,12 +57,16 @@ namespace Assets.GameModel
 			RefreshAllUi();
 
 			TryRunStartOfTurnInteractions();
+			initialized = true;
 		}
 
 		void OnApplicationQuit()
 		{
-			startingData.ApplyToData(DefaultGameData);
-			Debug.Log("Data reset on quit");
+			if (initialized)
+			{
+				startingData.ApplyToData(DefaultGameData);
+				Debug.Log("Data reset on quit");
+			}
 		}
 
 		private void RefreshAllUi()

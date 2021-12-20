@@ -154,7 +154,10 @@ namespace Assets.GameModel.UiDisplayers
 
 		public void RefreshUiDisplay(MainGameManager mgm)
 		{
-			BackgroundImage.sprite = loc.BackgroundImage.ToSprite();
+			if (loc.ShowMyOfficeCustomBackground)
+				BackgroundImage.sprite = mgm.Data.PlayerPromotionLevels[mgm.Data.Promotion].PlayerOfficeBackground.ToSprite();
+			else
+				BackgroundImage.sprite = loc.BackgroundImage.ToSprite();
 			Name.text = loc.Name;
 
 			foreach (var npc in NpcOptionsParent.GetComponentsInChildren<NpcSelectionUiDisplay>(true))

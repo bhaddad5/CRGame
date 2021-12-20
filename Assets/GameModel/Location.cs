@@ -27,6 +27,7 @@ namespace Assets.GameModel
 
 		public bool ShowTrophyCase;
 		public bool ShowCar;
+		public bool ShowMyOfficeCustomBackground;
 
 		[Header("Ensure this is un-checked!")]
 		public bool Controlled;
