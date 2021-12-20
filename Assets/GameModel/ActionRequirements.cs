@@ -52,6 +52,8 @@ namespace Assets.GameModel
 			
 			foreach (var controlledNpc in RequiredNpcsControled)
 			{
+				if (controlledNpc == null)
+					continue;
 				if (!controlledNpc.Controlled)
 					return false;
 			}
