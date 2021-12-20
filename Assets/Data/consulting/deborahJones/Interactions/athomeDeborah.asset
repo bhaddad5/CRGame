@@ -22,6 +22,7 @@ MonoBehaviour:
     NpcRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: fc02f17d89ade184bb3a64f5c10348c4, type: 2}
+    - {fileID: 11400000, guid: 2db230d162888d842a0a23f4b5a267bd, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled:
@@ -30,7 +31,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea, type: 2}
     RequiredTrophies: []
   Cost:
-    EgoCost: 0
+    EgoCost: 10
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -40,7 +41,7 @@ MonoBehaviour:
     HornicalCost: 0
   Repeatable: 0
   Completed: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 1
@@ -52,15 +53,33 @@ MonoBehaviour:
       CustomSpeakerReference: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
-      Text: As your manager, I have a copy of your key.  Be a good little hostess
-        and mix a cocktail.
+      Text: As your manager, I have a copy of your key.  I was just having a look
+        around.  You have a nice place!
       CustomSpeakerReference: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: But this is my place!  And I didn't invite you over!
+      Text: I thought that policy was just for employee safety!  I'd like you to
+        leave please!
       CustomSpeakerReference: {fileID: 0}
       CustomNpcImageOptions: []
-    OptionalPopups: []
+    - CurrSpeaker: 1
+      Text: Of course!  I didn't mean to frighten you or make you feel uncomfortable. 
+        I'll leave at once.
+      CustomSpeakerReference: {fileID: 0}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 2
+      Text: 'NOTE: You leave Debbie''s apartment, but not empty handed!'
+      CustomSpeakerReference: {fileID: 0}
+      CustomNpcImageOptions: []
+    OptionalPopups:
+    - Title: Debbie Jones High School Yearbook
+      Videos: []
+      Texture: {fileID: 2800000, guid: ffe93912ccaed6e4aa4f343cc7672510, type: 3}
+      Text: Should make for interesting readimg!
+    - Title: Debbie Jones university graduation
+      Videos: []
+      Texture: {fileID: 2800000, guid: f56fe836df03e9b429b0d790d743972f, type: 3}
+      Text: What a proud day for Debbie!  She must have had such high hopes!
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 0}
@@ -87,11 +106,11 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
+    CustomBackground: {fileID: 2800000, guid: 61b64585fd866e24abdb56454bb4236a, type: 3}
     CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      xPos: 500
+      yPos: 500
+      width: 300
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:

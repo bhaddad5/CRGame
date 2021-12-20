@@ -23,8 +23,8 @@ MonoBehaviour:
     - OptionalNpcReference: {fileID: 0}
       RequiresAmbitionAtOrBelowValue: 0
       RequiredAmbition: 0
-      RequiresPrideAtOrBelowValue: 0
-      RequiredPride: 0
+      RequiresPrideAtOrBelowValue: 1
+      RequiredPride: 60
     RequiredInteractions:
     - {fileID: 11400000, guid: fc02f17d89ade184bb3a64f5c10348c4, type: 2}
     RequiredNotCompletedInteractions: []
@@ -36,14 +36,14 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 500
+    MoneyCost: 250
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
-  Repeatable: 0
+  Repeatable: 1
   Completed: 0
   PreviewEffect: 1
   Result:
@@ -73,6 +73,12 @@ MonoBehaviour:
       Text: Very well!
       CustomSpeakerReference: {fileID: 0}
       CustomNpcImageOptions: []
+    - CurrSpeaker: 2
+      Text: 'NOTE: Schoolgirl Fridays would have been unthinkable not so long ago,
+        but you''ve been wearing her down.  Now, for a mere $250 for each uniform,
+        you look forward to Schoolgirl Fridays any day of the week...'
+      CustomSpeakerReference: {fileID: 0}
+      CustomNpcImageOptions: []
     OptionalPopups:
     - Title: Deborah wears a uniform
       Videos:
@@ -80,7 +86,10 @@ MonoBehaviour:
       Texture: {fileID: 0}
       Text: 
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: 0
+        PrideEffect: -1
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0

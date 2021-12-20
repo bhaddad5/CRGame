@@ -20,7 +20,8 @@ MonoBehaviour:
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: fc02f17d89ade184bb3a64f5c10348c4, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -38,11 +39,11 @@ MonoBehaviour:
     HornicalCost: 0
   Repeatable: 0
   Completed: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      Text: So, what has my Office Girl got for her manager for Boss's Day?
+      Text: So, what has my secretary got for her manager for Boss's Day?
       CustomSpeakerReference: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
@@ -57,7 +58,18 @@ MonoBehaviour:
       Text: I thought it was perfect for you.
       CustomSpeakerReference: {fileID: 0}
       CustomNpcImageOptions: []
-    OptionalPopups: []
+    - CurrSpeaker: 2
+      Text: 'NOTE: Of course, you told her what to get and made damn sure it cost
+        more than she could really afford.  Office ritual is critical in such Superior-Inferior
+        work relationships!'
+      CustomSpeakerReference: {fileID: 0}
+      CustomNpcImageOptions: []
+    OptionalPopups:
+    - Title: Gold Lion Lapel Pin
+      Videos: []
+      Texture: {fileID: 2800000, guid: 125bb1a2b72903f4f8294036d1971db1, type: 3}
+      Text: You absently pocket the gift.  It will end up in your top drawer, never
+        to be worn.
     Effect:
       NpcEffects: []
       EgoEffect: 5

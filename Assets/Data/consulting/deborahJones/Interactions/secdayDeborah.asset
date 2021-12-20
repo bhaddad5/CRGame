@@ -38,7 +38,7 @@ MonoBehaviour:
     HornicalCost: 0
   Repeatable: 0
   Completed: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 1
@@ -55,10 +55,18 @@ MonoBehaviour:
       CustomSpeakerReference: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      Text: But I don't like to wear things like this-- especially in the office!
+      Text: But I don't wear things like this-- especially in the office!
       CustomSpeakerReference: {fileID: 0}
       CustomNpcImageOptions: []
-    OptionalPopups: []
+    - CurrSpeaker: 1
+      Text: Then expect to have your pay docked for your little act of rebellion.
+      CustomSpeakerReference: {fileID: 0}
+      CustomNpcImageOptions: []
+    OptionalPopups:
+    - Title: Technically, underwear IS included in the dress code
+      Videos: []
+      Texture: {fileID: 2800000, guid: 6ac53521fa2acf44baf5d9cdc72748af, type: 3}
+      Text: Debbie stares hard at the pushup bra, cheeks flushed.
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 0}
@@ -90,15 +98,40 @@ MonoBehaviour:
       xPos: 0
       yPos: 0
       width: 0
-  CanFail: 0
-  ProbabilityOfFailureResult: 0
+  CanFail: 1
+  ProbabilityOfFailureResult: 0.5
   FailureResult:
-    Dialogs: []
+    Dialogs:
+    - CurrSpeaker: 1
+      Text: Well-- are you wearing your Secretary's Day gift or not?
+      CustomSpeakerReference: {fileID: 0}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 0
+      Text: 'No, I am not!  I told you I wouldn''t wear something like that. '
+      CustomSpeakerReference: {fileID: 0}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 0
+      Text: 'No, I am not!  I told you I wouldn''t wear something like that. '
+      CustomSpeakerReference: {fileID: 0}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 1
+      Text: And I told you your paychaeck would be docked.  Which it will be.  You've
+        just lost a half day's pay for your stubborness, young lady!
+      CustomSpeakerReference: {fileID: 0}
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 2
+      Text: 'NOTE: That news is an unhappy surprise.  As for the docked pay, it goes
+        back into the department budget and... in your pocket.'
+      CustomSpeakerReference: {fileID: 0}
+      CustomNpcImageOptions: []
     OptionalPopups: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: 0
+        PrideEffect: -3
       EgoEffect: 0
-      FundsEffect: 0
+      FundsEffect: 100
       PowerEffect: 0
       PatentsEffect: 0
       CultureEffect: 0
