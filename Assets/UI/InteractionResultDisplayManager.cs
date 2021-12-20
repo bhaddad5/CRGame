@@ -30,6 +30,12 @@ public class InteractionResultDisplayManager
 		currMissionsToShow = new List<Mission>(res.Effect.MissionsToComplete);
 		currTrophiesToShow = new List<Trophy>(res.Effect.TrophiesClaimedReferences);
 
+		if (contextualNpcDisplay != null && res.CustomBackground != null)
+		{
+			contextualNpcDisplay.SetBackground(res.CustomBackground);
+			contextualNpcDisplay.SetCustomLayout(res.CustomBackgroundNpcLayout);
+		}
+
 		HandleNextDialog();
 	}
 
