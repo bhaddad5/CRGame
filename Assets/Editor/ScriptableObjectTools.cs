@@ -96,6 +96,48 @@ public class ScriptableObjectTools
 		Debug.Log("Upgrade Complete!");
 	}
 
+	[MenuItem("Tools/Fix Corrupted Data")]
+	public static void FixCorruptedData()
+	{
+		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
+
+		foreach (var location in gameData.Locations)
+		{
+			foreach (var npc in location.Npcs)
+			{
+				foreach (var interaction in npc.Interactions)
+				{
+					interaction.Completed = 0;
+					EditorUtility.SetDirty(interaction);
+				}
+				npc.Controlled = false;
+				EditorUtility.SetDirty(npc);
+			}
+			location.Controlled = false;
+			EditorUtility.SetDirty(location);
+
+			foreach (var mission in location.Missions)
+			{
+				mission.Completed = false;
+				EditorUtility.SetDirty(mission);
+			}
+
+			foreach (var policy in location.Policies)
+			{
+				policy.Active = false;
+				EditorUtility.SetDirty(policy);
+			}
+		}
+
+		foreach (var startOfTurnInteraction in gameData.StartOfTurnInteractions)
+		{
+			EditorUtility.SetDirty(startOfTurnInteraction);
+		}
+
+		EditorUtility.SetDirty(gameData);
+		Debug.Log("Upgrade Complete!");
+	}
+
 
 	//TODO: USE THIS AS A TEMPLATE FOR DATA UPGRADES!
 	/*
