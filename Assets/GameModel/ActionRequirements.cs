@@ -30,6 +30,7 @@ namespace Assets.GameModel
 		public List<Policy> RequiredPolicies;
 		public List<Location> RequiredDepartmentsControled;
 		public List<Npc> RequiredNpcsControled;
+		public List<Npc> RequiredNpcsNotControled;
 		public List<Trophy> RequiredTrophies;
 		
 		public bool RequirementsAreMet(MainGameManager mgm, Npc npc)
@@ -55,6 +56,14 @@ namespace Assets.GameModel
 				if (controlledNpc == null)
 					continue;
 				if (!controlledNpc.Controlled)
+					return false;
+			}
+
+			foreach (var controlledNpc in RequiredNpcsNotControled)
+			{
+				if (controlledNpc == null)
+					continue;
+				if (controlledNpc.Controlled)
 					return false;
 			}
 
