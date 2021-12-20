@@ -13,22 +13,27 @@ MonoBehaviour:
   m_Name: athomeDeborah
   m_EditorClassIdentifier: 
   Id: e3f05d8c-9a8e-444f-841e-399808f2fcc4
-  Name: Home Inspection
+  Name: Home visit
   Category: 3
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcRequirements: []
+    NpcRequirements:
+    - OptionalNpcReference: {fileID: 0}
+      RequiresAmbitionAtOrBelowValue: 0
+      RequiredAmbition: 0
+      RequiresPrideAtOrBelowValue: 0
+      RequiredPride: 0
     RequiredInteractions:
-    - {fileID: 0}
-    - {fileID: 0}
+    - {fileID: 11400000, guid: fc02f17d89ade184bb3a64f5c10348c4, type: 2}
+    - {fileID: 11400000, guid: 2db230d162888d842a0a23f4b5a267bd, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled:
-    - {fileID: 0}
+    - {fileID: 11400000, guid: 61a8eb709285dc0448c63cbd36baeed2, type: 2}
     RequiredNpcsControled:
-    - {fileID: 0}
+    - {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea, type: 2}
     RequiredTrophies: []
   Cost:
     EgoCost: 10
@@ -47,7 +52,8 @@ MonoBehaviour:
     - CurrSpeaker: 1
       Text: I let myself in.  I hope you don't mind.
       CustomSpeakerReference: {fileID: 0}
-      CustomNpcImageOptions: []
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 70fa95094f9026540a837700d744372e, type: 3}
     - CurrSpeaker: 0
       Text: What are you doing here?
       CustomSpeakerReference: {fileID: 0}
@@ -108,9 +114,9 @@ MonoBehaviour:
       Promotion: 0
     CustomBackground: {fileID: 2800000, guid: 61b64585fd866e24abdb56454bb4236a, type: 3}
     CustomBackgroundNpcLayout:
-      xPos: 500
-      yPos: 500
-      width: 300
+      xPos: 0.6
+      yPos: 0.5
+      width: 275
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
