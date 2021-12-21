@@ -30,9 +30,29 @@ public class ScriptableObjectTools
 			{
 				npc.Interactions.RemoveAll(i => i == null);
 				EditorUtility.SetDirty(npc);
+
+				foreach (var interaction in npc.Interactions)
+				{
+					interaction.Requirements.RequiredDepartmentsControled.RemoveAll(i => i == null);
+					interaction.Requirements.RequiredInteractions.RemoveAll(i => i == null);
+					interaction.Requirements.RequiredNotCompletedInteractions.RemoveAll(i => i == null);
+					interaction.Requirements.RequiredNpcsControled.RemoveAll(i => i == null);
+					interaction.Requirements.RequiredNpcsNotControled.RemoveAll(i => i == null);
+					interaction.Requirements.RequiredNpcsTrained.RemoveAll(i => i == null);
+					interaction.Requirements.RequiredPolicies.RemoveAll(i => i == null);
+					interaction.Requirements.RequiredTrophies.RemoveAll(i => i == null);
+
+					interaction.Result.Effect.LocationsToControl.RemoveAll(i => i == null);
+					interaction.Result.Effect.NpcsToControl.RemoveAll(i => i == null);
+					interaction.Result.Effect.NpcsToRemoveFromGame.RemoveAll(i => i == null);
+					interaction.Result.Effect.NpcsToTrain.RemoveAll(i => i == null);
+					interaction.Result.Effect.MissionsToComplete.RemoveAll(i => i == null);
+					interaction.Result.Effect.TrophiesClaimedReferences.RemoveAll(i => i == null);
+
+					EditorUtility.SetDirty(interaction);
+				}
 			}
 		}
-
 		Debug.Log("Cleanup done!");
 	}
 

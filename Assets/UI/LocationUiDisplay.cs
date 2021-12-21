@@ -159,6 +159,8 @@ namespace Assets.GameModel.UiDisplayers
 			else
 				BackgroundImage.sprite = loc.BackgroundImage.ToSprite();
 			Name.text = loc.Name;
+			if (loc.Controlled)
+				Name.text += $" (Controlled)";
 
 			foreach (var npc in NpcOptionsParent.GetComponentsInChildren<NpcSelectionUiDisplay>(true))
 			{

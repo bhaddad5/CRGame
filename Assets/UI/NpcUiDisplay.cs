@@ -46,6 +46,12 @@ namespace Assets.GameModel.UiDisplayers
 		public void RefreshUiDisplay(MainGameManager mgm)
 		{
 			Name.text = $"{_npc.FirstName} {_npc.LastName}";
+
+			if (_npc.Trained)
+				Name.text += " (Trained)";
+			else if (_npc.Controlled)
+				Name.text += " (Controlled)";
+
 			Age.text = $"{_npc.Age} years old";
 			Ambition.text = $"Ambition: {_npc.Ambition}";
 			Pride.text = $"Pride: {_npc.Pride}";
