@@ -47,5 +47,12 @@ public static class NullCleanupLogic
 		interaction.Result.Effect.NpcsToTrain.RemoveAll(i => i == null);
 		interaction.Result.Effect.MissionsToComplete.RemoveAll(i => i == null);
 		interaction.Result.Effect.TrophiesClaimedReferences.RemoveAll(i => i == null);
+
+		interaction.FailureResult.Effect.LocationsToControl.RemoveAll(i => i == null);
+		interaction.FailureResult.Effect.NpcsToControl.RemoveAll(i => i == null);
+		interaction.FailureResult.Effect.NpcsToRemoveFromGame.RemoveAll(i => i == null);
+		interaction.FailureResult.Effect.NpcsToTrain.RemoveAll(i => i == null);
+		interaction.FailureResult.Effect.MissionsToComplete.RemoveAll(i => i == null);
+		interaction.FailureResult.Effect.TrophiesClaimedReferences.RemoveAll(i => i == null);
 	}
 }
