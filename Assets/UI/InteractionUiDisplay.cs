@@ -46,7 +46,7 @@ namespace Assets.GameModel.UiDisplayers
 
 		public void RefreshUiDisplay(MainGameManager mgm, Npc npc)
 		{
-			Text.text = $"{interaction.Category.ToString().ToUpper()}: {interaction.Name}";
+			Text.text = $"{CategoryToString(interaction.Category)}: {interaction.Name}";
 
 			if (interaction.CanFail)
 				Text.text += $" ({(int)((1f - interaction.ProbabilityOfFailureResult) * 100)}% chance)";
@@ -55,6 +55,31 @@ namespace Assets.GameModel.UiDisplayers
 				Text.text += $" {interaction.Cost.GetCostString()}";
 			Button.interactable = interaction.InteractionValid(mgm, npc);
 			gameObject.SetActive(interaction.InteractionVisible(mgm, npc));
+		}
+
+		private string CategoryToString(Interaction.InteractionCategory category)
+		{
+			switch (category)
+			{
+				case Interaction.InteractionCategory.OfficePolitics:
+					return "OFFICE POLITICS";
+				case Interaction.InteractionCategory.Challenge:
+					return "CHALLENGE";
+				case Interaction.InteractionCategory.Conversation:
+					return "CONVERSATION";
+				case Interaction.InteractionCategory.Fun:
+					return "FUN";
+				case Interaction.InteractionCategory.Projects:
+					return "PROJECT";
+				case Interaction.InteractionCategory.Socialize:
+					return "SOCIALIZE";
+				case Interaction.InteractionCategory.Surveillance:
+					return "SURVEILLANCE";
+				case Interaction.InteractionCategory.Train:
+					return "TRAIN";
+			}
+
+			return "";
 		}
 
 		public string GetTooltip(MainGameManager mgm)
