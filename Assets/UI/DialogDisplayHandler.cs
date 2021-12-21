@@ -11,6 +11,7 @@ using Random = System.Random;
 public class DialogDisplayHandler : MonoBehaviour
 {
 	[SerializeField] private TMP_Text SpeakerName;
+	[SerializeField] private GameObject SpeakerNameBox;
 	[SerializeField] private TMP_Text DialogText;
 	[SerializeField] private Button DialogAreaButton;
 	[SerializeField] private Image NextDialogImage;
@@ -58,6 +59,9 @@ public class DialogDisplayHandler : MonoBehaviour
 			SpeakerName.text = _npc.FirstName;
 		else if (dialog.CurrSpeaker == DialogEntry.Speaker.CustomNpcId)
 			SpeakerName.text = dialog.CustomSpeakerReference.FirstName;
+
+		SpeakerNameBox.SetActive(dialog.CurrSpeaker != DialogEntry.Speaker.Narrator);
+
 		NextDialogImage.enabled = false;
 		textToShow = dialog.Text;
 		DialogText.text = "";
