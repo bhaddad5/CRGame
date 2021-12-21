@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Assets.GameModel;
@@ -17,6 +18,8 @@ public class InteractionsDisplayHandler : MonoBehaviour
 	public void Setup(List<Interaction> interactions, Npc npc, MainGameManager mgm, NpcUiDisplay npcUiDisplay)
 	{
 		allInteractions = new List<Interaction>(interactions);
+		allInteractions.RemoveAll(i => i == null);
+		allInteractions.Sort((i1, i2) => ((int)i1.Category).CompareTo((int)i2.Category));
 		
 		foreach (var interaction in allInteractions)
 		{

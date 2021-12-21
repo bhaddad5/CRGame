@@ -44,13 +44,15 @@ namespace Assets.GameModel.UiDisplayers
 
 		public void RefreshUiDisplay(MainGameManager mgm, Npc npc)
 		{
-			Text.text = $"{interaction.Name}";
+			Text.text = $"{interaction.Category.ToString().ToUpper()}: {interaction.Name}";
+
+			if (interaction.CanFail)
+				Text.text += $" ({(int)((1f - interaction.ProbabilityOfFailureResult) * 100)}% chance)";
+
 			if (!string.IsNullOrEmpty(interaction.Cost.GetCostString()))
 				Text.text += $" {interaction.Cost.GetCostString()}";
 			if (!string.IsNullOrEmpty(interaction.Cost.GetCostString()) && interaction.PreviewEffect && !string.IsNullOrEmpty(interaction.Result.Effect.GetEffectsString()))
 				Text.text += ",";
-			if (interaction.PreviewEffect)
-				Text.text += $" {interaction.Result.Effect.GetEffectsString()}";
 			Button.interactable = interaction.InteractionValid(mgm, npc);
 			gameObject.SetActive(interaction.InteractionVisible(mgm, npc));
 		}

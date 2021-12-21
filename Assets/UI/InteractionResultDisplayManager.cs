@@ -26,6 +26,10 @@ public class InteractionResultDisplayManager
 		this.contextualNpcUiDisplay = contextualNpcDisplay;
 
 		currDialogsToShow = new List<DialogEntry>(res.Dialogs);
+
+		string effectsString = res.Effect.GetEffectsString();
+		if(!String.IsNullOrEmpty(effectsString))
+			currDialogsToShow.Add(new DialogEntry(){CurrSpeaker = DialogEntry.Speaker.Narrator, Text = effectsString });
 		currPopupsToShow = new List<Popup>(res.OptionalPopups);
 		currMissionsToShow = new List<Mission>(res.Effect.MissionsToComplete);
 		currTrophiesToShow = new List<Trophy>(res.Effect.TrophiesClaimedReferences);
