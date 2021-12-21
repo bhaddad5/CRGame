@@ -153,6 +153,7 @@ public class ScriptableObjectTools
 
 		foreach (var startOfTurnInteraction in gameData.StartOfTurnInteractions)
 		{
+			startOfTurnInteraction.Completed = 0;
 			EditorUtility.SetDirty(startOfTurnInteraction);
 		}
 
