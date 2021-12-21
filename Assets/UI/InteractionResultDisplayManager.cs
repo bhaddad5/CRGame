@@ -34,7 +34,7 @@ public class InteractionResultDisplayManager
 			currDialogsToShow[0] = modifiedDialog;
 		}
 
-		string effectsString = res.Effect.GetEffectsString();
+		string effectsString = res.Effect.GetEffectsString(contextualNpc);
 		if(!String.IsNullOrEmpty(effectsString))
 			currDialogsToShow.Add(new DialogEntry(){CurrSpeaker = DialogEntry.Speaker.Narrator, Text = effectsString });
 		currPopupsToShow = new List<Popup>(res.OptionalPopups);

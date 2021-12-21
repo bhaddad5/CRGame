@@ -45,7 +45,7 @@ namespace Assets.GameModel.UiDisplayers
 			Image.sprite = policy.Image.ToSprite();
 			ActivatePolicyButton.gameObject.SetActive(!policy.Active);
 			ActiveIndicator.gameObject.SetActive(policy.Active);
-			RewardsText.text = $"Rewards: {policy.Effect.GetEffectsString()}";
+			RewardsText.text = $"Rewards: {policy.Effect.GetEffectsString(null)}";
 		}
 
 		public string GetTooltip(MainGameManager mgm)

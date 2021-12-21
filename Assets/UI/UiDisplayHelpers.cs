@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,7 +34,7 @@ namespace Assets.GameModel.UiDisplayers
 			return str;
 		}
 
-		public static string GetEffectsString(this Effect effect)
+		public static string GetEffectsString(this Effect effect, Npc contextualNpc)
 		{
 			string str = "";
 			if (effect.PowerEffect > 0)
@@ -42,22 +43,46 @@ namespace Assets.GameModel.UiDisplayers
 				str += $"+{effect.EgoEffect} Ego, ";
 			if (effect.BrandEffect > 0)
 				str += $"+{effect.BrandEffect} Brand, ";
+			if (effect.CultureEffect > 0)
+				str += $"+{effect.CultureEffect} Culture, ";
+			if (effect.SpreadsheetsEffect > 0)
+				str += $"+{effect.SpreadsheetsEffect} Spreadsheets, ";
+			if (effect.RevanueEffect > 0)
+				str += $"+{effect.RevanueEffect} Revenue, ";
+			if (effect.PatentsEffect > 0)
+				str += $"+{effect.PatentsEffect} Patents, ";
 			if (effect.HornicalEffect > 0)
-				str += $"+{effect.HornicalEffect} Hornical, ";
+				str += $"+{effect.HornicalEffect} Hornical";
 
-			foreach (var npcEffect in effect.NpcEffects)
-			{
-				if (npcEffect.OptionalNpcReference == null)
-				{
-					if (npcEffect.AmbitionEffect != 0)
-						str += $"{npcEffect.AmbitionEffect} Ambition, ";
-					if (npcEffect.PrideEffect != 0)
-						str += $"{npcEffect.PrideEffect} Pride, ";
-				}
-			}
+			if (!String.IsNullOrEmpty(str))
+				str = $"Player: {str}";
 
 			if (str.EndsWith(", "))
 				str = str.Substring(0, str.Length - 2);
+
+			foreach (var npcEffect in effect.NpcEffects)
+			{
+				var npc = npcEffect.OptionalNpcReference ?? contextualNpc;
+
+				if (npc == null)
+				{
+					Debug.LogError("Null npc effect!");
+					continue;
+				}
+
+				if (!String.IsNullOrEmpty(str))
+					str += "\n";
+
+				str += $"{npc.FirstName} {npc.LastName}: ";
+
+				if (npcEffect.AmbitionEffect != 0)
+					str += $"{npcEffect.AmbitionEffect} Ambition, ";
+				if (npcEffect.PrideEffect != 0)
+					str += $"{npcEffect.PrideEffect} Pride, ";
+
+				if (str.EndsWith(", "))
+					str = str.Substring(0, str.Length - 2);
+			}
 
 			return str;
 		}
