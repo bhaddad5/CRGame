@@ -54,8 +54,6 @@ namespace Assets.GameModel.UiDisplayers
 			Bio.text = $"Notes: {_npc.Bio}";
 			Education.text = $"Education: {_npc.Education}";
 			BackgroundImage.sprite = _npc.BackgroundImage.ToSprite();
-
-			InteractionsHandler.RefreshInteractionVisibilities(_npc, mgm);
 		}
 
 		private Texture2D overridingImage = null;
