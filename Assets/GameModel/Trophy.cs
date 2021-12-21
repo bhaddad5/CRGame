@@ -18,6 +18,12 @@ namespace Assets.GameModel
 		[TextArea(3, 10)]
 		public string Description;
 
+		[HideInInspector]
 		public bool Owned;
+
+		public void Setup()
+		{
+			Owned = false;
+		}
 	}
 }

@@ -9,33 +9,66 @@ namespace Assets.GameModel
 	public class GameData : ScriptableObject
 	{
 		public string PlayerName = "";
-		public int TurnNumber = 0;
-		public float Ego = 10;
-		public float Funds = 0;
-		public float Power = 0;
-		public float Patents = 0;
-		public float CorporateCulture = 0;
-		public float Spreadsheets = 0;
-		public float Brand = 0;
-		public float Revenue = 0;
-		public int Hornical = 0;
+		public float StartingEgo = 0;
+		public float StartingFunds = 0;
 
-		public int Promotion = 0;
+		[HideInInspector] public int TurnNumber = 0;
+		[HideInInspector] public float Ego = 0;
+		[HideInInspector] public float Funds = 0;
+		[HideInInspector] public float Power = 0;
+		[HideInInspector] public float Patents = 0;
+		[HideInInspector] public float CorporateCulture = 0;
+		[HideInInspector] public float Spreadsheets = 0;
+		[HideInInspector] public float Brand = 0;
+		[HideInInspector] public float Revenue = 0;
+		[HideInInspector] public int Hornical = 0;
+
+		[HideInInspector] public int Promotion = 0;
 
 		//Status Symbols
-		public int Car;
-		public int Suits;
-		public bool JewleryCuffs;
-		public bool JewleryPen;
-		public bool JewleryRing;
-		public bool JewleryWatch;
+		[HideInInspector] public int Car;
+		[HideInInspector] public int Suits;
+		[HideInInspector] public bool JewleryCuffs;
+		[HideInInspector] public bool JewleryPen;
+		[HideInInspector] public bool JewleryRing;
+		[HideInInspector] public bool JewleryWatch;
 
 		public List<Promotion> PlayerPromotionLevels = new List<Promotion>();
 
 		public Location MyOffice;
-		public List<Location> Locations = new List<Location>();
 
+		public List<Location> Locations = new List<Location>();
 		public List<Interaction> StartOfTurnInteractions = new List<Interaction>();
+
+		public void Setup()
+		{
+			TurnNumber = 0;
+			Ego = StartingEgo;
+			Funds = StartingFunds;
+
+			Power = 0;
+			Patents = 0;
+			CorporateCulture = 0;
+			Spreadsheets = 0;
+			Brand = 0;
+			Revenue = 0;
+			Hornical = 0;
+
+			Promotion = 0;
+
+			Car = 0;
+			Suits = 0;
+			JewleryCuffs = false;
+			JewleryPen = false;
+			JewleryRing = false;
+			JewleryWatch = false;
+
+			foreach (var ob in Locations)
+				ob.Setup();
+
+			foreach (var ob in StartOfTurnInteractions)
+				ob.Setup();
+		}
 		
 		public List<Trophy> GetOwnedTrophies()
 		{

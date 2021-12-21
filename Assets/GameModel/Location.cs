@@ -29,8 +29,20 @@ namespace Assets.GameModel
 		public bool ShowCar;
 		public bool ShowMyOfficeCustomBackground;
 
-		[Header("Ensure this is un-checked!")]
+		[HideInInspector]
 		public bool Controlled;
+
+		public void Setup()
+		{
+			Controlled = false;
+
+			foreach (var ob in Npcs)
+				ob.Setup();
+			foreach (var ob in Missions)
+				ob.Setup();
+			foreach (var ob in Policies)
+				ob.Setup();
+		}
 		
 		public bool IsVisible(MainGameManager mgm)
 		{

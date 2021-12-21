@@ -26,7 +26,12 @@ namespace Assets.GameModel
 
 		public Effect Effect;
 
-		[Header("Ensure this is un-checked!")]
+		[HideInInspector]
 		public bool Active;
+
+		public void Setup()
+		{
+			Active = false;
+		}
 	}
 }

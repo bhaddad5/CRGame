@@ -22,6 +22,16 @@ namespace Assets.GameModel
 		}
 	}
 
+	[Serializable]
+	public struct NpcData
+	{
+		public float Ambition;
+		public float Pride;
+		public bool Controlled;
+		public bool Exists;
+		public bool Trained;
+	}
+
 	[CreateAssetMenu(fileName = "New Interaction", menuName = "Company Man Data/NPC", order = 1)]
 	[Serializable]
 	public class Npc : ScriptableObject
@@ -32,8 +42,8 @@ namespace Assets.GameModel
 		public bool IsControllable;
 		
 
-		public float Ambition;
-		public float Pride;
+		public float StartingAmbition;
+		public float StartingPride;
 
 		public string FirstName;
 		public string LastName;
@@ -56,11 +66,16 @@ namespace Assets.GameModel
 
 		public Texture2D BackgroundImage;
 
-		[Header("Ensure this is un-checked!")]
+
+		[HideInInspector]
+		public float Ambition;
+		[HideInInspector]
+		public float Pride;
+		[HideInInspector]
 		public bool Controlled;
-		[Header("Ensure this is un-checked!")]
+		[HideInInspector]
 		public bool Trained;
-		[Header("Ensure this is checked!")]
+		[HideInInspector]
 		public bool Exists = true;
 
 		public List<Interaction> Interactions = new List<Interaction>();
@@ -69,6 +84,20 @@ namespace Assets.GameModel
 		public List<Texture2D> IndependentImages = new List<Texture2D>();
 		public List<Texture2D> ControlledImages = new List<Texture2D>();
 		public List<Texture2D> TrainedImages = new List<Texture2D>();
+
+		public void Setup()
+		{
+			Controlled = false;
+			Trained = false;
+			Exists = true;
+			Ambition = StartingAmbition;
+			Pride = StartingPride;
+
+			foreach (var ob in Interactions)
+				ob.Setup();
+			foreach (var ob in Trophies)
+				ob.Setup();
+		}
 
 		public bool IsVisible(MainGameManager mgm)
 		{

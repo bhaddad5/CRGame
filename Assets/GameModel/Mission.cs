@@ -19,9 +19,14 @@ namespace Assets.GameModel
 		public string MissionDescription;
 		public Texture2D MissionImage;
 
-		[Header("Ensure this is un-checked!")]
+		public Effect Effect;
+
+		[HideInInspector]
 		public bool Completed = false;
 
-		public Effect Effect;
+		public void Setup()
+		{
+			Completed = false;
+		}
 	}
 }

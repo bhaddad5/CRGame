@@ -33,9 +33,7 @@ namespace Assets.GameModel
 		public ActionCost Cost;
 
 		public bool Repeatable = false;
-		[Header("Ensure this is set to 0!")]
-		public int Completed = 0;
-
+		
 		public bool PreviewEffect = false;
 
 		public InteractionResult Result;
@@ -47,6 +45,14 @@ namespace Assets.GameModel
 		[Header("(Between 0 and 1)")]
 		public float ProbabilityOfFailureResult = 0;
 		public InteractionResult FailureResult;
+
+		[HideInInspector]
+		public int Completed = 0;
+
+		public void Setup()
+		{
+			Completed = 0;
+		}
 
 		public bool InteractionVisible(MainGameManager mgm, Npc npc)
 		{

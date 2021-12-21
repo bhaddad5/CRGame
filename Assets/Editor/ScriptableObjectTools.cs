@@ -76,6 +76,9 @@ public class ScriptableObjectTools
 				{
 					EditorUtility.SetDirty(interaction);
 				}
+
+				npc.StartingAmbition = npc.Ambition;
+				npc.StartingPride = npc.Pride;
 				EditorUtility.SetDirty(npc);
 			}
 			EditorUtility.SetDirty(location);
