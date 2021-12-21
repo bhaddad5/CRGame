@@ -30,6 +30,7 @@ namespace Assets.GameModel
 		public List<Policy> RequiredPolicies;
 		public List<Location> RequiredDepartmentsControled;
 		public List<Npc> RequiredNpcsControled;
+		public List<Npc> RequiredNpcsTrained;
 		public List<Npc> RequiredNpcsNotControled;
 		public List<Trophy> RequiredTrophies;
 		
@@ -56,6 +57,14 @@ namespace Assets.GameModel
 				if (controlledNpc == null)
 					continue;
 				if (!controlledNpc.Controlled)
+					return false;
+			}
+
+			foreach (var trainedNpc in RequiredNpcsTrained)
+			{
+				if (trainedNpc == null)
+					continue;
+				if (!trainedNpc.Trained)
 					return false;
 			}
 

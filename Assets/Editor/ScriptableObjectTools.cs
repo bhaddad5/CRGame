@@ -133,6 +133,7 @@ public class ScriptableObjectTools
 					EditorUtility.SetDirty(interaction);
 				}
 				npc.Controlled = false;
+				npc.Trained = false;
 				EditorUtility.SetDirty(npc);
 			}
 			location.Controlled = false;

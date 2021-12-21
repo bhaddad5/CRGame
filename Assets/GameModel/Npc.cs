@@ -58,6 +58,8 @@ namespace Assets.GameModel
 
 		[Header("Ensure this is un-checked!")]
 		public bool Controlled;
+		[Header("Ensure this is un-checked!")]
+		public bool Trained;
 		[Header("Ensure this is checked!")]
 		public bool Exists = true;
 
@@ -78,7 +80,7 @@ namespace Assets.GameModel
 
 		public Texture2D GetCurrentPicture()
 		{
-			if (Controlled && Pride < 1)
+			if (Trained)
 				return TrainedImages[UnityEngine.Random.Range(0, TrainedImages.Count)];
 			else if (Controlled)
 				return ControlledImages[UnityEngine.Random.Range(0, ControlledImages.Count)];

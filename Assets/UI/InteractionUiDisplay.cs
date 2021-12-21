@@ -35,7 +35,6 @@ namespace Assets.GameModel.UiDisplayers
 						interaction.Completed++;
 					mgm.HandleTurnChange();
 
-
 					npcUiDisplay.UnsetImage();
 					npcUiDisplay.UnsetBackground();
 					npcUiDisplay.InteractionsHandler.gameObject.SetActive(true);

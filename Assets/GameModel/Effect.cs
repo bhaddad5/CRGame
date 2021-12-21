@@ -29,6 +29,7 @@ namespace Assets.GameModel
 		public float RevanueEffect;
 		public int HornicalEffect;
 		public List<Npc> NpcsToControl;
+		public List<Npc> NpcsToTrain;
 		public List<Npc> NpcsToRemoveFromGame;
 		public List<Location> LocationsToControl;
 		public List<Trophy> TrophiesClaimedReferences;
@@ -78,6 +79,11 @@ namespace Assets.GameModel
 			foreach (var controlledNpc in NpcsToControl)
 			{
 				controlledNpc.Controlled = true;
+			}
+
+			foreach (var trainedNpc in NpcsToTrain)
+			{
+				trainedNpc.Trained = true;
 			}
 
 			foreach (var removedNpc in NpcsToRemoveFromGame)

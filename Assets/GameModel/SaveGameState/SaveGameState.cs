@@ -239,6 +239,7 @@ namespace Assets.GameModel.Save
 		public float Pride;
 		public bool Controlled;
 		public bool Exists;
+		public bool Trained;
 
 		public List<SavedInteractionState> Interactions;
 		public List<SavedTrophyState> Trophies;
@@ -251,6 +252,7 @@ namespace Assets.GameModel.Save
 			res.Controlled = data.Controlled;
 			res.Pride = data.Pride;
 			res.Exists = data.Exists;
+			res.Trained = data.Trained;
 
 			res.Interactions = new List<SavedInteractionState>();
 			foreach (var dataInteraction in data.Interactions)
@@ -281,6 +283,7 @@ namespace Assets.GameModel.Save
 			data.Controlled = Controlled;
 			data.Pride = Pride;
 			data.Exists = Exists;
+			data.Trained = Trained;
 
 			foreach (var interaction in Interactions)
 			{
