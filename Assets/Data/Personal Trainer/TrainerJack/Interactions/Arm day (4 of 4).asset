@@ -10,28 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: dresstoImpress
+  m_Name: Arm day (4 of 4)
   m_EditorClassIdentifier: 
-  Id: 1bde1578-f1e2-447d-bf1f-da092dabfcc9
-  Name: Dress to Impress
-  Category: 5
+  Id: 823b4fa4-f713-4cdd-8ae0-90ffd4209193
+  Name: Arm day (4 of 4)
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 7bcab40326b7f794a966b375b4e00674, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
-    RequiredNpcsControled:
-    - {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757, type: 2}
+    RequiredNpcsControled: []
     RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 2000
+    MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -39,35 +39,25 @@ MonoBehaviour:
     RevanueCost: 0
     HornicalCost: 0
   Repeatable: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   Result:
     Dialogs:
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: If you're going to meet your goals, you'll need to dress to impress the
-        clients.
-      CustomNpcImageOptions: []
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: What's wrong with the way I dress now?
+      Text: PUMP IT!  AWESOME!  PUT HIS NAME ON THE ALPHA HALL OF FAME-- HE'S AN
+        ALPHA APEX PREDATOR NOW!
       CustomNpcImageOptions: []
-    - CurrSpeaker: 1
+    - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 0}
-      Text: You need to do a bit more teasing.  I'll pick up the cost.
-      CustomNpcImageOptions: []
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: If you're paying, what can I say?
+      Text: 'NOTE: You''ve completed the Trainer Jack Celebrity Alpha Male Workout
+        Program and gained 2 Power!'
       CustomNpcImageOptions: []
     OptionalPopups: []
     Effect:
-      NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
-        AmbitionEffect: 0
-        PrideEffect: -7
+      NpcEffects: []
       EgoEffect: 0
       FundsEffect: 0
-      PowerEffect: 0
+      PowerEffect: 2
       PatentsEffect: 0
       CultureEffect: 0
       SpreadsheetsEffect: 0

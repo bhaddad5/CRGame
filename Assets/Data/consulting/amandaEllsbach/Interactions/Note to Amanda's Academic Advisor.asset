@@ -10,32 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: breakBritney
+  m_Name: Note to Amanda's Academic Advisor
   m_EditorClassIdentifier: 
-  Id: c9004fdb-5890-49d3-8351-ac7f260a3c5a
-  Name: Break Her
-  Category: 5
+  Id: c8244cd8-c81b-4d93-ac2f-ed7b9a502b06
+  Name: Note to Amanda's Academic Advisor
+  Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcRequirements:
-    - OptionalNpcReference: {fileID: 0}
-      RequiresAmbitionAtOrBelowValue: 0
-      RequiredAmbition: -1
-      RequiresPrideAtOrBelowValue: 1
-      RequiredPride: 0
-    RequiredInteractions: []
+    NpcRequirements: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 407b07467be63a546a7c334906bcf25d, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
-    RequiredNpcsControled:
-    - {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8, type: 2}
+    RequiredNpcsControled: []
     RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 0
+    EgoCost: 10
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -44,35 +39,30 @@ MonoBehaviour:
     RevanueCost: 0
     HornicalCost: 0
   Repeatable: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   Result:
     Dialogs:
-    - CurrSpeaker: 1
+    - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 0}
-      Text: I'm pleased with your progress.  You've become a superb 'deceptionist'
-        office spy for me.
+      Text: '"I''ve just recently taken over responsibility for Amanda Ellsbach''s
+        internship here at Artemis.  I feel obliged to alert you confidentially that
+        I have some concerns regarding Amanda''s prospects here.  There is a growing
+        chance that she may not complete her program here successfully..."'
       CustomNpcImageOptions: []
-    - CurrSpeaker: 0
+    - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 0}
-      Text: I'm just doing what you tell me to do.
+      Text: 'NOTE: You''ve set the stage for derailing Amanda''s academic plans. 
+        You retain options to either pass her and allow her to complete the program,
+        to fail her and send her off in disgrace OR fail her but offer her an opportunity
+        to stay on-- as a Temp worker.'
       CustomNpcImageOptions: []
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: Which is exactly the way it is going to be from now on.  You understand?
-      CustomNpcImageOptions: []
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: Yes, I understand.  You're the boss from now on.
-      CustomNpcImageOptions: []
-    OptionalPopups:
-    - Title: Break her!
-      Videos:
-      - {fileID: 32900000, guid: ab4920e275bb528449b1c23c36799b4f, type: 3}
-      Texture: {fileID: 0}
-      Text: 
+    OptionalPopups: []
     Effect:
-      NpcEffects: []
-      EgoEffect: 40
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: -8
+        PrideEffect: 0
+      EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -82,8 +72,7 @@ MonoBehaviour:
       RevanueEffect: 0
       HornicalEffect: 0
       NpcsToControl: []
-      NpcsToTrain:
-      - {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8, type: 2}
+      NpcsToTrain: []
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []

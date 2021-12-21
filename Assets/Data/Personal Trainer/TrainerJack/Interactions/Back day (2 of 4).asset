@@ -10,22 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: amandaIntern2
+  m_Name: Back day (2 of 4)
   m_EditorClassIdentifier: 
-  Id: 7eeeb074-7a73-459c-ae63-17e9142f1e89
-  Name: End of Internship Event- Failed (leaves game)
-  Category: 2
+  Id: 1caff423-a1e0-40ae-b3d0-b7738a73cc36
+  Name: Back day (2 of 4)
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 9572c2a10529ffe489806abd54f5c1da, type: 2}
-    - {fileID: 11400000, guid: 0a2bb246c4657384b9986693a7e19a3f, type: 2}
-    RequiredNotCompletedInteractions:
-    - {fileID: 11400000, guid: 223f3be501941494a88743f2efc721de, type: 2}
-    - {fileID: 11400000, guid: 735119b1ac2edaf4f92cba0671e2b157, type: 2}
+    - {fileID: 11400000, guid: 64bf3ae82bdb859499142709c4b70671, type: 2}
+    RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -33,7 +30,7 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 10
+    EgoCost: 0
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -45,32 +42,14 @@ MonoBehaviour:
   PreviewEffect: 1
   Result:
     Dialogs:
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: There's no way I can give you a passing grade for your internship.
-      CustomNpcImageOptions: []
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: This was the last thing I expected!  I'm going to lose my scholarship!
-      CustomNpcImageOptions: []
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: We all have problems.  I'm sure your's will work out.
-      CustomNpcImageOptions: []
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: You don't understand!  I'm going to have to drop out of university! 
-        What am I going to do?
-      CustomNpcImageOptions: []
-    - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
-      Text: Your handling of Amanda's internship failure has reinforced your reputation
-        as an executive who is both ruthless and effective.
+      Text: Feel the burn!
       CustomNpcImageOptions: []
     OptionalPopups: []
     Effect:
       NpcEffects: []
-      EgoEffect: 40
+      EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -81,8 +60,7 @@ MonoBehaviour:
       HornicalEffect: 0
       NpcsToControl: []
       NpcsToTrain: []
-      NpcsToRemoveFromGame:
-      - {fileID: 11400000, guid: c6fc9aa27a6291a41a2090f2db3a94e1, type: 2}
+      NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
