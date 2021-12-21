@@ -46,6 +46,8 @@ namespace Assets.GameModel
 			hudUiDisplay = Instantiate(HudUiDisplayPrefab);
 			mainMapUiDisplay = Instantiate(MainMapUiDisplayPrefab);
 
+			NullCleanupLogic.CleanUpAnnoyingNulls(DefaultGameData);
+
 			startingData = SaveGameState.FromData(DefaultGameData);
 			Data = DefaultGameData;
 
@@ -97,8 +99,6 @@ namespace Assets.GameModel
 		{
 			foreach (var startOfTurnInteraction in Data.StartOfTurnInteractions)
 			{
-				if (startOfTurnInteraction == null)
-					continue;
 				if (startOfTurnInteraction.InteractionValid(this))
 				{
 					bool succeeded = startOfTurnInteraction.GetInteractionSucceeded();

@@ -54,32 +54,24 @@ namespace Assets.GameModel
 			
 			foreach (var controlledNpc in RequiredNpcsControled)
 			{
-				if (controlledNpc == null)
-					continue;
 				if (!controlledNpc.Controlled)
 					return false;
 			}
 
 			foreach (var trainedNpc in RequiredNpcsTrained)
 			{
-				if (trainedNpc == null)
-					continue;
 				if (!trainedNpc.Trained)
 					return false;
 			}
 
-			foreach (var controlledNpc in RequiredNpcsNotControled)
+			foreach (var notControlledNpc in RequiredNpcsNotControled)
 			{
-				if (controlledNpc == null)
-					continue;
-				if (controlledNpc.Controlled)
+				if (notControlledNpc.Controlled)
 					return false;
 			}
 
 			foreach (var interactionDept in RequiredDepartmentsControled)
 			{
-				if (interactionDept == null)
-					continue;
 				if (!interactionDept.Controlled)
 					return false;
 			}
@@ -92,27 +84,18 @@ namespace Assets.GameModel
 
 			foreach (var interaction in RequiredInteractions)
 			{
-				if(interaction == null)
-					continue;
-
 				if (interaction.Completed == 0)
 					return false;
 			}
 
 			foreach (var interaction in RequiredNotCompletedInteractions)
 			{
-				if (interaction == null)
-					continue;
-
 				if (interaction.Completed > 0)
 					return false;
 			}
 
 			foreach (var policy in RequiredPolicies)
 			{
-				if(policy == null)
-					continue;
-
 				if (!policy.Active)
 					return false;
 			}

@@ -42,16 +42,10 @@ namespace Assets.GameModel
 			List<Trophy> res = new List<Trophy>();
 			foreach (var department in Locations)
 			{
-				if (department == null)
-					continue;
 				foreach (var npc in department.Npcs)
 				{
-					if (npc == null)
-						continue;
 					foreach (var trophy in npc.Trophies)
 					{
-						if (trophy == null)
-							continue;
 						if (trophy.Owned)
 							res.Add(trophy);
 					}
