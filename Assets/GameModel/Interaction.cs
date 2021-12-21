@@ -64,13 +64,16 @@ namespace Assets.GameModel
 			return Cost.CanAffordCost(mgm);
 		}
 
-		public InteractionResult GetInteractionResult()
+		public bool GetInteractionSucceeded()
 		{
 			UnityEngine.Random.InitState(System.DateTime.Now.Millisecond);
 
-			if (CanFail && Random.Range(0f, 1f) <= ProbabilityOfFailureResult)
-				return FailureResult;
-			return Result;
+			return !CanFail || Random.Range(0f, 1f) >= ProbabilityOfFailureResult;
+		}
+
+		public InteractionResult GetInteractionResult(bool succeeded)
+		{
+			return succeeded ? Result : FailureResult;
 		}
 	}
 }

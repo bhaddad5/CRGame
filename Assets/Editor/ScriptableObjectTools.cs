@@ -35,7 +35,29 @@ public class ScriptableObjectTools
 
 		Debug.Log("Cleanup done!");
 	}
-	
+
+	[MenuItem("Tools/Detect Repeatable")]
+	public static void DetectFailable()
+	{
+		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
+
+		foreach (var location in gameData.Locations)
+		{
+			foreach (var npc in location.Npcs)
+			{
+				foreach (var interaction in npc.Interactions)
+				{
+					if (interaction.Repeatable)
+					{
+						Debug.Log(interaction);
+					}
+				}
+			}
+		}
+
+		Debug.Log("Detection Complete!");
+	}
+
 	[MenuItem("Tools/Detect Bad Data")]
 	public static void DetectBadData()
 	{

@@ -24,13 +24,15 @@ namespace Assets.GameModel.UiDisplayers
 			{
 				npcUiDisplay.InteractionsHandler.gameObject.SetActive(false);
 
-				var res = interaction.GetInteractionResult();
+				bool succeeded = interaction.GetInteractionSucceeded();
+				var res = interaction.GetInteractionResult(succeeded);
 				interaction.Cost.SubtractCost(mgm);
 				var displayHandler = new InteractionResultDisplayManager();
-				displayHandler.DisplayInteractionResult(mgm, interaction.Completed, res, () =>
+				displayHandler.DisplayInteractionResult(mgm, interaction.Completed, res, !succeeded, () =>
 				{
 					res.Execute(mgm, npc);
-					interaction.Completed++;
+					if(succeeded)
+						interaction.Completed++;
 					mgm.HandleTurnChange();
 
 

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Assets.GameModel;
 using Assets.GameModel.UiDisplayers;
 using UnityEngine;
@@ -17,7 +18,7 @@ public class InteractionResultDisplayManager
 	private NpcUiDisplay contextualNpcUiDisplay;
 	private MainGameManager mgm;
 
-	public void DisplayInteractionResult(MainGameManager mgm, int completionCount, InteractionResult res, Action resultComplete, Npc contextualNpc = null, NpcUiDisplay contextualNpcDisplay = null)
+	public void DisplayInteractionResult(MainGameManager mgm, int completionCount, InteractionResult res, bool failed, Action resultComplete, Npc contextualNpc = null, NpcUiDisplay contextualNpcDisplay = null)
 	{
 		this.mgm = mgm;
 		this.completedCount = completionCount;
@@ -26,6 +27,12 @@ public class InteractionResultDisplayManager
 		this.contextualNpcUiDisplay = contextualNpcDisplay;
 
 		currDialogsToShow = new List<DialogEntry>(res.Dialogs);
+		if (failed && currDialogsToShow.Count > 0)
+		{
+			var modifiedDialog = currDialogsToShow[0];
+			modifiedDialog.Text = $"FAILED: {modifiedDialog.Text}";
+			currDialogsToShow[0] = modifiedDialog;
+		}
 
 		string effectsString = res.Effect.GetEffectsString();
 		if(!String.IsNullOrEmpty(effectsString))

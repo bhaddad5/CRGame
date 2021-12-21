@@ -101,12 +101,14 @@ namespace Assets.GameModel
 					continue;
 				if (startOfTurnInteraction.InteractionValid(this))
 				{
-					var res = startOfTurnInteraction.GetInteractionResult();
+					bool succeeded = startOfTurnInteraction.GetInteractionSucceeded();
+					var res = startOfTurnInteraction.GetInteractionResult(succeeded);
 					var displayHandler = new InteractionResultDisplayManager();
-					displayHandler.DisplayInteractionResult(this, startOfTurnInteraction.Completed, res, () =>
+					displayHandler.DisplayInteractionResult(this, startOfTurnInteraction.Completed, res, !succeeded, () =>
 					{
 						res.Execute(this);
-						startOfTurnInteraction.Completed++;
+						if(succeeded)
+							startOfTurnInteraction.Completed++;
 						RefreshAllUi();
 					});
 				}
