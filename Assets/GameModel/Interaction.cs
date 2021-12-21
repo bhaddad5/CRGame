@@ -54,17 +54,17 @@ namespace Assets.GameModel
 			Completed = 0;
 		}
 
-		public bool InteractionVisible(MainGameManager mgm, Npc npc)
+		public bool InteractionVisible(MainGameManager mgm)
 		{
 			if (Completed > 0 && !Repeatable)
 				return false;
 
-			return Requirements.RequirementsAreMet(mgm, npc);
+			return Requirements.RequirementsAreMet(mgm);
 		}
 
-		public bool InteractionValid(MainGameManager mgm, Npc contextualNpc = null)
+		public bool InteractionValid(MainGameManager mgm)
 		{
-			if (!InteractionVisible(mgm, contextualNpc))
+			if (!InteractionVisible(mgm))
 				return false;
 
 			return Cost.CanAffordCost(mgm);

@@ -37,7 +37,7 @@ namespace Assets.GameModel.UiDisplayers
 			if(!npc.IsControllable)
 				InfoBox.gameObject.SetActive(false);
 
-			InteractionsHandler.Setup(npc.Interactions, npc, mgm, this);
+			InteractionsHandler.Setup(npc.Interactions, mgm, this);
 			
 			BackButton.onClick.RemoveAllListeners();
 			BackButton.onClick.AddListener(() => duid.CloseCurrentNpc());

@@ -19,12 +19,10 @@ public class DialogDisplayHandler : MonoBehaviour
 	private DialogEntry dialog;
 	private Coroutine runningCoroutine = null;
 	private Action dialogsComplete = null;
-	private Npc _npc;
 	private NpcUiDisplay npcDisplay;
 
-	public void ShowDialog(DialogEntry dialog, Action dialogsComplete, Npc npc = null, NpcUiDisplay npcDisplay = null)
+	public void ShowDialog(DialogEntry dialog, Action dialogsComplete, NpcUiDisplay npcDisplay = null)
 	{
-		this._npc = npc;
 		this.dialogsComplete = dialogsComplete;
 		this.npcDisplay = npcDisplay;
 
@@ -56,9 +54,7 @@ public class DialogDisplayHandler : MonoBehaviour
 		if (dialog.CurrSpeaker == DialogEntry.Speaker.Player)
 			SpeakerName.text = "Player";
 		else if (dialog.CurrSpeaker == DialogEntry.Speaker.Npc)
-			SpeakerName.text = _npc.FirstName;
-		else if (dialog.CurrSpeaker == DialogEntry.Speaker.CustomNpcId)
-			SpeakerName.text = dialog.CustomSpeakerReference.FirstName;
+			SpeakerName.text = dialog.OptionalNpcReference.FirstName;
 
 		SpeakerNameBox.SetActive(dialog.CurrSpeaker != DialogEntry.Speaker.Narrator);
 

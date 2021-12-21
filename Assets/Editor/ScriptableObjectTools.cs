@@ -10,6 +10,61 @@ using UnityEngine;
 
 public class ScriptableObjectTools
 {
+	[MenuItem("Tools/Clean Up Null Data", false, 0)]
+	public static void CleanNullsAndMarkDirty()
+	{
+		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
+		NullCleanupLogic.CleanUpAnnoyingNulls(gameData);
+		MarkAllDirty();
+	}
+
+	//We don't ever actually want to do this
+	/*[MenuItem("Tools/Impose Default Values On Nulls", false, 0)]
+	public static void ImposeDefaultsOnNulls()
+	{
+		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
+		DefaultDataLogic.ImposeDefaultsOnNullFields(gameData);
+		MarkAllDirty();
+	}*/
+
+	[MenuItem("Tools/Mark All Dirty", false, 20)]
+	public static void MarkAllDirty()
+	{
+		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
+
+		foreach (var location in gameData.Locations)
+		{
+			foreach (var npc in location.Npcs)
+			{
+				foreach (var interaction in npc.Interactions)
+				{
+					EditorUtility.SetDirty(interaction);
+				}
+				EditorUtility.SetDirty(npc);
+			}
+			EditorUtility.SetDirty(location);
+
+			foreach (var mission in location.Missions)
+			{
+				EditorUtility.SetDirty(mission);
+			}
+
+			foreach (var policy in location.Policies)
+			{
+				EditorUtility.SetDirty(policy);
+			}
+		}
+
+		foreach (var startOfTurnInteraction in gameData.StartOfTurnInteractions)
+		{
+			EditorUtility.SetDirty(startOfTurnInteraction);
+		}
+
+		EditorUtility.SetDirty(gameData);
+		Debug.Log("Upgrade Complete!");
+	}
+
+
 	[MenuItem("Tools/Detect Repeatable")]
 	public static void DetectFailable()
 	{
@@ -53,54 +108,6 @@ public class ScriptableObjectTools
 		}
 
 		Debug.Log("Detection Complete!");
-	}
-
-	[MenuItem("Tools/Clean Up Null Data")]
-	public static void CleanNullsAndMarkDirty()
-	{
-		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
-		NullCleanupLogic.CleanUpAnnoyingNulls(gameData);
-		MarkAllDirty();
-	}
-
-	[MenuItem("Tools/Mark All Dirty")]
-	public static void MarkAllDirty()
-	{
-		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
-
-		foreach (var location in gameData.Locations)
-		{
-			foreach (var npc in location.Npcs)
-			{
-				foreach (var interaction in npc.Interactions)
-				{
-					EditorUtility.SetDirty(interaction);
-				}
-
-				npc.StartingAmbition = npc.Ambition;
-				npc.StartingPride = npc.Pride;
-				EditorUtility.SetDirty(npc);
-			}
-			EditorUtility.SetDirty(location);
-
-			foreach (var mission in location.Missions)
-			{
-				EditorUtility.SetDirty(mission);
-			}
-
-			foreach (var policy in location.Policies)
-			{
-				EditorUtility.SetDirty(policy);
-			}
-		}
-
-		foreach (var startOfTurnInteraction in gameData.StartOfTurnInteractions)
-		{
-			EditorUtility.SetDirty(startOfTurnInteraction);
-		}
-
-		EditorUtility.SetDirty(gameData);
-		Debug.Log("Upgrade Complete!");
 	}
 
 	[MenuItem("Tools/Fix Corrupted Data")]

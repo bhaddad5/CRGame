@@ -13,12 +13,10 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private TMP_Text Text;
 
 		private Interaction interaction;
-		private Npc _npc;
 
-		public void Setup(Interaction interaction, Npc npc, MainGameManager mgm, NpcUiDisplay npcUiDisplay)
+		public void Setup(Interaction interaction, MainGameManager mgm, NpcUiDisplay npcUiDisplay)
 		{
 			this.interaction = interaction;
-			this._npc = npc;
 			Button.onClick.RemoveAllListeners();
 			Button.onClick.AddListener(() =>
 			{
@@ -30,7 +28,7 @@ namespace Assets.GameModel.UiDisplayers
 				var displayHandler = new InteractionResultDisplayManager();
 				displayHandler.DisplayInteractionResult(mgm, interaction.Completed, res, !succeeded, () =>
 				{
-					res.Execute(mgm, npc);
+					res.Execute(mgm);
 					if(succeeded)
 						interaction.Completed++;
 					mgm.HandleTurnChange();
@@ -38,12 +36,12 @@ namespace Assets.GameModel.UiDisplayers
 					npcUiDisplay.UnsetImage();
 					npcUiDisplay.UnsetBackground();
 					npcUiDisplay.InteractionsHandler.gameObject.SetActive(true);
-				}, npc, npcUiDisplay);
+				}, npcUiDisplay);
 			});
-			RefreshUiDisplay(mgm, npc);
+			RefreshUiDisplay(mgm);
 		}
 
-		public void RefreshUiDisplay(MainGameManager mgm, Npc npc)
+		public void RefreshUiDisplay(MainGameManager mgm)
 		{
 			Text.text = $"{CategoryToString(interaction.Category)}: {interaction.Name}";
 
@@ -52,8 +50,8 @@ namespace Assets.GameModel.UiDisplayers
 
 			if (!string.IsNullOrEmpty(interaction.Cost.GetCostString()))
 				Text.text += $" {interaction.Cost.GetCostString()}";
-			Button.interactable = interaction.InteractionValid(mgm, npc);
-			gameObject.SetActive(interaction.InteractionVisible(mgm, npc));
+			Button.interactable = interaction.InteractionValid(mgm);
+			gameObject.SetActive(interaction.InteractionVisible(mgm));
 		}
 
 		private string CategoryToString(Interaction.InteractionCategory category)
@@ -83,14 +81,14 @@ namespace Assets.GameModel.UiDisplayers
 
 		public string GetTooltip(MainGameManager mgm)
 		{
-			if (interaction.InteractionValid(mgm, _npc))
+			if (interaction.InteractionValid(mgm))
 			{
 				return null;
 			}
 
 			string tooltip = "";
 
-			tooltip += $"{interaction.Requirements.GetInvalidTooltip(mgm, _npc)}";
+			tooltip += $"{interaction.Requirements.GetInvalidTooltip(mgm)}";
 			if (tooltip.Length > 0)
 				tooltip += $"\n"; 
 			tooltip += $"\n{interaction.Cost.GetInvalidTooltip(mgm)}";

@@ -34,7 +34,7 @@ namespace Assets.GameModel.UiDisplayers
 			return str;
 		}
 
-		public static string GetEffectsString(this Effect effect, Npc contextualNpc)
+		public static string GetEffectsString(this Effect effect)
 		{
 			string str = "";
 			if (effect.PowerEffect > 0)
@@ -62,9 +62,7 @@ namespace Assets.GameModel.UiDisplayers
 
 			foreach (var npcEffect in effect.NpcEffects)
 			{
-				var npc = npcEffect.OptionalNpcReference ?? contextualNpc;
-
-				if (npc == null)
+				if (npcEffect.OptionalNpcReference == null)
 				{
 					Debug.LogError("Null npc effect!");
 					continue;
@@ -73,7 +71,7 @@ namespace Assets.GameModel.UiDisplayers
 				if (!String.IsNullOrEmpty(str))
 					str += "\n";
 
-				str += $"{npc.FirstName} {npc.LastName}: ";
+				str += $"{npcEffect.OptionalNpcReference.FirstName} {npcEffect.OptionalNpcReference.LastName}: ";
 
 				if (npcEffect.AmbitionEffect != 0)
 					str += $"{npcEffect.AmbitionEffect} Ambition, ";
@@ -122,19 +120,22 @@ namespace Assets.GameModel.UiDisplayers
 			return finalTooltip;
 		}
 
-		public static string GetInvalidTooltip(this ActionRequirements req, MainGameManager mgm, Npc npc)
+		public static string GetInvalidTooltip(this ActionRequirements req, MainGameManager mgm)
 		{
 			List<string> tooltips = new List<string>();
 
 			foreach (var npcReq in req.NpcRequirements)
 			{
-				if (npcReq.OptionalNpcReference == null || npcReq.OptionalNpcReference == npc)
+				if (npcReq.OptionalNpcReference == null)
 				{
-					if (npcReq.RequiredAmbition >= 0 && npcReq.RequiredAmbition < npc.Ambition)
-						tooltips.Add($"{npcReq.RequiredAmbition} or less Ambition");
-					if (npcReq.RequiredPride >= 0 && npcReq.RequiredPride < npc.Pride)
-						tooltips.Add($"{npcReq.RequiredPride} or less Pride");
+					Debug.LogError("Invalid requirements on null npc");
+					continue;
 				}
+
+				if (npcReq.RequiredAmbition >= 0 && npcReq.RequiredAmbition < npcReq.OptionalNpcReference.Ambition)
+						tooltips.Add($"{npcReq.OptionalNpcReference.FirstName}: {npcReq.RequiredAmbition} or less Ambition");
+				if (npcReq.RequiredPride >= 0 && npcReq.RequiredPride < npcReq.OptionalNpcReference.Pride)
+					tooltips.Add($"{npcReq.OptionalNpcReference.FirstName}: {npcReq.RequiredPride} or less Pride");
 			}
 
 			

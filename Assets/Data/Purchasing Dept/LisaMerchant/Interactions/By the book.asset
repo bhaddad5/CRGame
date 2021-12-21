@@ -43,24 +43,24 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
       Text: I'm afraid those purchase orders you dropped off from Planning-- well,
         they haven't been filled out properly.  I'm sorry, but you'll need to re-submit
         them.
-      CustomSpeakerReference: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
       Text: Can't you just tell me what needs fixing and I can do that now?
-      CustomSpeakerReference: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
       Text: I wish I could but I'm really not supposed to do that.  I know it seems
         silly but if the process isn't followed correctly... Well, I geuss I'm just
         a by the book kind of manager, if you see where I'm coming from!
-      CustomSpeakerReference: {fileID: 0}
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
       Text: Sure, sure.  Let me have another look at them.
-      CustomSpeakerReference: {fileID: 0}
       CustomNpcImageOptions: []
     OptionalPopups:
     - Title: '"I have to be a stickler for the details!"'
@@ -70,8 +70,7 @@ MonoBehaviour:
       Text: 
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 11400000, guid: 7e462278cce38214a924d25dd035e5b8,
-          type: 2}
+      - OptionalNpcReference: {fileID: 0}
         AmbitionEffect: -10
         PrideEffect: 0
       EgoEffect: 0
@@ -106,9 +105,9 @@ MonoBehaviour:
   FailureResult:
     Dialogs:
     - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
       Text: I'm sorry to be such a pain, but these STILL aren't filled out correctly. 
         Until these purchase orders are properly submitted, I can't pocess them!
-      CustomSpeakerReference: {fileID: 0}
       CustomNpcImageOptions: []
     OptionalPopups: []
     Effect:

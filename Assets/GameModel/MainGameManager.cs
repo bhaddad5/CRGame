@@ -44,6 +44,7 @@ namespace Assets.GameModel
 			mainMapUiDisplay = Instantiate(MainMapUiDisplayPrefab);
 
 			NullCleanupLogic.CleanUpAnnoyingNulls(DefaultGameData);
+			DefaultDataLogic.ImposeDefaultsOnNullFields(DefaultGameData);
 			DefaultGameData.Setup();
 
 			Data = DefaultGameData;
@@ -126,9 +127,9 @@ namespace Assets.GameModel
 			hudUiDisplay.ShowPopup(popup, completionCount, onPopupDone);
 		}
 
-		public void ShowDialog(DialogEntry dialog, Action onDialogsDone, Npc contextualNpc = null, NpcUiDisplay contextualNpcDisplay = null)
+		public void ShowDialog(DialogEntry dialog, Action onDialogsDone, NpcUiDisplay contextualNpcDisplay = null)
 		{
-			hudUiDisplay.ShowDialog(dialog, onDialogsDone, contextualNpc, contextualNpcDisplay);
+			hudUiDisplay.ShowDialog(dialog, onDialogsDone, contextualNpcDisplay);
 		}
 	}
 }

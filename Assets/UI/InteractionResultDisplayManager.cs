@@ -14,16 +14,14 @@ public class InteractionResultDisplayManager
 	private List<Trophy> currTrophiesToShow = new List<Trophy>();
 	private Action resultComplete = null;
 	private int completedCount;
-	private Npc contextualNpc;
 	private NpcUiDisplay contextualNpcUiDisplay;
 	private MainGameManager mgm;
 
-	public void DisplayInteractionResult(MainGameManager mgm, int completionCount, InteractionResult res, bool failed, Action resultComplete, Npc contextualNpc = null, NpcUiDisplay contextualNpcDisplay = null)
+	public void DisplayInteractionResult(MainGameManager mgm, int completionCount, InteractionResult res, bool failed, Action resultComplete, NpcUiDisplay contextualNpcDisplay = null)
 	{
 		this.mgm = mgm;
 		this.completedCount = completionCount;
 		this.resultComplete = resultComplete;
-		this.contextualNpc = contextualNpc;
 		this.contextualNpcUiDisplay = contextualNpcDisplay;
 
 		currDialogsToShow = new List<DialogEntry>(res.Dialogs);
@@ -34,7 +32,7 @@ public class InteractionResultDisplayManager
 			currDialogsToShow[0] = modifiedDialog;
 		}
 
-		string effectsString = res.Effect.GetEffectsString(contextualNpc);
+		string effectsString = res.Effect.GetEffectsString();
 		if(!String.IsNullOrEmpty(effectsString))
 			currDialogsToShow.Add(new DialogEntry(){CurrSpeaker = DialogEntry.Speaker.Narrator, Text = effectsString });
 		currPopupsToShow = new List<Popup>(res.OptionalPopups);
@@ -56,7 +54,7 @@ public class InteractionResultDisplayManager
 		{
 			var dialog = currDialogsToShow[0];
 			currDialogsToShow.RemoveAt(0);
-			mgm.ShowDialog(dialog, HandleNextDialog, contextualNpc, contextualNpcUiDisplay);
+			mgm.ShowDialog(dialog, HandleNextDialog, contextualNpcUiDisplay);
 		}
 		else if (currPopupsToShow.Count > 0)
 		{

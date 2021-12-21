@@ -15,7 +15,7 @@ public class InteractionsDisplayHandler : MonoBehaviour
 
 	private List<Interaction> allInteractions;
 
-	public void Setup(List<Interaction> interactions, Npc npc, MainGameManager mgm, NpcUiDisplay npcUiDisplay)
+	public void Setup(List<Interaction> interactions, MainGameManager mgm, NpcUiDisplay npcUiDisplay)
 	{
 		allInteractions = new List<Interaction>(interactions);
 		allInteractions.RemoveAll(i => i == null);
@@ -23,10 +23,10 @@ public class InteractionsDisplayHandler : MonoBehaviour
 		
 		foreach (var interaction in allInteractions)
 		{
-			if (!interaction.InteractionVisible(mgm, npc))
+			if (!interaction.InteractionVisible(mgm))
 				continue;
 			var interactButton = Instantiate(InteractionPrefab);
-			interactButton.Setup(interaction, npc, mgm, npcUiDisplay);
+			interactButton.Setup(interaction, mgm, npcUiDisplay);
 			interactButton.transform.SetParent(InteractionsParent);
 		}
 	}

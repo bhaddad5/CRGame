@@ -109,9 +109,9 @@ public class HudUiDisplay : MonoBehaviour, IUiDisplay
 		popupDisp.Show(popup, completionCount, mgm, onPopupDone);
 	}
 
-	public void ShowDialog(DialogEntry dialog, Action onDialogsDone, Npc contextualNpc = null, NpcUiDisplay contextualNpcDisplay = null)
+	public void ShowDialog(DialogEntry dialog, Action onDialogsDone, NpcUiDisplay contextualNpcDisplay = null)
 	{
 		var dialogDisp = GameObject.Instantiate(DialogPrefab);
-		dialogDisp.ShowDialog(dialog, onDialogsDone, contextualNpc, contextualNpcDisplay);
+		dialogDisp.ShowDialog(dialog, onDialogsDone, contextualNpcDisplay);
 	}
 }

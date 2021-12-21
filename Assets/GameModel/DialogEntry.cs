@@ -13,14 +13,14 @@ namespace Assets.GameModel
 			Npc,
 			Player,
 			Narrator,
-			CustomNpcId,
 		}
 		public Speaker CurrSpeaker;
+		[Header("Null defaults to parent npc")]
+		public Npc OptionalNpcReference;
 		[TextArea(3, 10)]
 		public string Text;
 
 		[Header("Additional Options")]
-		public Npc CustomSpeakerReference;
 		public List<Texture2D> CustomNpcImageOptions;
 
 	}

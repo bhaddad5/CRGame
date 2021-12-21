@@ -34,21 +34,20 @@ namespace Assets.GameModel
 		public List<Npc> RequiredNpcsNotControled;
 		public List<Trophy> RequiredTrophies;
 		
-		public bool RequirementsAreMet(MainGameManager mgm, Npc npc)
+		public bool RequirementsAreMet(MainGameManager mgm)
 		{
 			foreach (var npcRequirement in NpcRequirements)
 			{
-				var npcToCheck = npcRequirement.OptionalNpcReference ?? npc;
-				if (npcToCheck == null)
+				if (npcRequirement.OptionalNpcReference == null)
 				{
 					Debug.LogError($"Trying to test ambition/pride on a null npc!");
 					continue;
 				}
 
-				if (npcRequirement.RequiresAmbitionAtOrBelowValue && npcRequirement.RequiredAmbition < npcToCheck.Ambition)
+				if (npcRequirement.RequiresAmbitionAtOrBelowValue && npcRequirement.RequiredAmbition < npcRequirement.OptionalNpcReference.Ambition)
 					return false;
 
-				if (npcRequirement.RequiresPrideAtOrBelowValue && npcRequirement.RequiredPride < npcToCheck.Pride)
+				if (npcRequirement.RequiresPrideAtOrBelowValue && npcRequirement.RequiredPride < npcRequirement.OptionalNpcReference.Pride)
 					return false;
 			}
 			
