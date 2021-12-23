@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Intro to  Valerie Lyon
   m_EditorClassIdentifier: 
   Id: 94a86a3e-ecb9-4d77-b9c7-8304464ec770
-  Name: Intro to  Valerie Lyon
+  Name: Intro to Valerie Lyon
   Category: 1
   Requirements:
     RequiredPower: 0
@@ -57,7 +57,8 @@ MonoBehaviour:
       Text: Right!  Nice to meet you!  What do you do here in Legal?  Are you a lawyer?
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
+        type: 2}
       Text: The answer to your second question is no.  I'm a mere paralegal, hoping
         to become a lawyer when I pass the bar.  As to your second, between us, let's
         say the short answer is... everything.
@@ -67,11 +68,11 @@ MonoBehaviour:
       Videos:
       - {fileID: 32900000, guid: c13881054d1c02a41a4a0651b4254cf5, type: 3}
       Texture: {fileID: 0}
-      Text: 
+      Text: Her sarcasm is hardly veiled.  You sense she's got a chip on her shoulder.
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 0}
-        AmbitionEffect: 0
+        AmbitionEffect: -5
         PrideEffect: 0
       EgoEffect: 0
       FundsEffect: 0

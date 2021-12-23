@@ -20,7 +20,8 @@ MonoBehaviour:
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 5b5d50b63f00b1045ae5cb824d33a3ed, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -29,7 +30,7 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 0
+    EgoCost: 7
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -38,9 +39,27 @@ MonoBehaviour:
     RevanueCost: 0
     HornicalCost: 0
   Repeatable: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   Result:
-    Dialogs: []
+    Dialogs:
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Is this the International Department?  I'm looking for Ms. Hamilton.
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: Yes, I'm Gemma Hamilton.  How may I help you?
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Ms. Bledsoe asked me to get you this draft for a joint venture.  I'm
+        just dropping the draft off.
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: Thank you!  Some time it is like pulling teeth to get feedback from Tracey! 
+        If you're new with Planning, perhaps we'll be seeing each other again!
+      CustomNpcImageOptions: []
     OptionalPopups: []
     Effect:
       NpcEffects: []

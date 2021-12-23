@@ -20,7 +20,8 @@ MonoBehaviour:
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 9c7eee22a6ca5cd4e8c2d64266298afb, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -46,7 +47,8 @@ MonoBehaviour:
       Text: 'You suggested you''re pretty busy.  What keep you so busy? '
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
+        type: 2}
       Text: Well, for one thing my boss is hardly ever here.  Since she's so busy
         representign her various causes, I'm the one who has to take up the slack. 
         Don't get me wrong-- I think it is great that Amber gets to go to a lot of
@@ -66,7 +68,8 @@ MonoBehaviour:
       Text: TOS?
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
+        type: 2}
       Text: Terms of Service-- those boring dumb thing syou have to click "Yes' to
         all the time to keep us clear from any legal liability.  We have loads of
         them.  Between us, I've just started going through the backlog of TOSs that
@@ -77,7 +80,8 @@ MonoBehaviour:
     OptionalPopups: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
+          type: 2}
         AmbitionEffect: -5
         PrideEffect: 0
       EgoEffect: 0

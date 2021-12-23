@@ -22,7 +22,8 @@ MonoBehaviour:
     NpcRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 2f9f85463f25c1242ad72f322c3cb559, type: 2}
-    RequiredNotCompletedInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: 53f0e8d7b3e7f6749b762eed2e6fa3a4, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -47,7 +48,8 @@ MonoBehaviour:
       Text: You don't look happy.
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757,
+        type: 2}
       Text: Susan just stole half my key clients and decided they were 'house accounts'!
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
@@ -55,13 +57,15 @@ MonoBehaviour:
       Text: That's not fair!  You worked hard to build up those accounts!
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757,
+        type: 2}
       Text: I sure as hell did.  It's just outright theft.
       CustomNpcImageOptions: []
     OptionalPopups: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757,
+          type: 2}
         AmbitionEffect: -30
         PrideEffect: 0
       EgoEffect: 0

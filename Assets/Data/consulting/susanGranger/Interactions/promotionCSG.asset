@@ -48,7 +48,8 @@ MonoBehaviour:
       Text: You may be the first to congratulate me on my promotion.
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
       Text: This is a little awkward-- you in charge and me reporting to you...
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
@@ -57,15 +58,16 @@ MonoBehaviour:
         a leader.
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
       Text: If you say so.  Congratulations on your promotion to run CSG.
       CustomNpcImageOptions: []
     OptionalPopups: []
     Effect:
       NpcEffects: []
-      EgoEffect: 0
+      EgoEffect: 10
       FundsEffect: 0
-      PowerEffect: 30
+      PowerEffect: 0
       PatentsEffect: 0
       CultureEffect: 0
       SpreadsheetsEffect: 0
@@ -78,7 +80,8 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
-      MissionsToComplete: []
+      MissionsToComplete:
+      - {fileID: 0}
       Car: 0
       Suits: 0
       JewleryCuffs: 0
