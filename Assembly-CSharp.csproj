@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -53,9 +53,14 @@
     <UnityVersion>2021.1.19f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Assets\UI\TooltipElementHandler.cs" />
+    <Compile Include="Assets\GameModel\Helpers\NullCleanupLogic.cs" />
     <Compile Include="Assets\CameraMover.cs" />
     <Compile Include="Assets\UI\TrophyCaseUiDisplay.cs" />
+    <Compile Include="Assets\GameModel\Helpers\DefaultDataLogic.cs" />
     <Compile Include="Assets\UI\StatusSymbolsDisplay.cs" />
     <Compile Include="Assets\UI\TooltipProviderBasic.cs" />
     <Compile Include="Assets\GameModel\MainGameManager.cs" />
@@ -98,8 +103,6 @@
     <Compile Include="Assets\UI\NpcSelectionUiDisplay.cs" />
     <Compile Include="Assets\UI\PopupUiDisplay.cs" />
     <Compile Include="Assets\UI\InteractionsDisplayHandler.cs" />
-    <Compile Include="Assets\GameModel\Helpers\NullCleanupLogic.cs" />
-    <Compile Include="Assets\GameModel\Helpers\DefaultDataLogic.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />

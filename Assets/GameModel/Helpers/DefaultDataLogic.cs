@@ -29,6 +29,14 @@ public static class DefaultDataLogic
 						interaction.Result.Dialogs[i] = dialog;
 					}
 
+					for (int i = 0; i < interaction.FailureResult.Dialogs.Count; i++)
+					{
+						var dialog = interaction.FailureResult.Dialogs[i];
+						if (dialog.CurrSpeaker == DialogEntry.Speaker.Npc && dialog.OptionalNpcReference == null)
+							dialog.OptionalNpcReference = npc;
+						interaction.FailureResult.Dialogs[i] = dialog;
+					}
+
 					for (int i = 0; i < interaction.Result.Effect.NpcEffects.Count; i++)
 					{
 						var npcEffect = interaction.Result.Effect.NpcEffects[i];
