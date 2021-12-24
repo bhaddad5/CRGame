@@ -31,7 +31,7 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 0
+    EgoCost: 40
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -43,15 +43,25 @@ MonoBehaviour:
   PreviewEffect: 1
   Result:
     Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: You called me in-- what would you like?  Another coffee?
+      CustomNpcImageOptions: []
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: I've got some data for you to analyze for me.  It's boring as hell so
-        I'm assigning it to you.  You'll make sense of it and produce usable bullet
-        points for me to share with Management.
+      Text: 'No.  Developing spreadsheets is mind numbingly boring work but for now,
+        I''m relying on you to work on all this red tape for me.  Until I get Finance
+        in line, you''ll have to put these files together.  '
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: I like analysis!  I'll begin working on it immediately for you!
+      Text: I don't mind!  I like working on data analysis!  It's much more interesting
+        than just typing and answering the phone and getting you coffee all the time.
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: All of which I'll need you to continue to do!  Still, I'm happy you're
+        excited by the prospect of burying your head in some data analysis.
       CustomNpcImageOptions: []
     OptionalPopups: []
     Effect:
@@ -61,7 +71,7 @@ MonoBehaviour:
       PowerEffect: 0
       PatentsEffect: 0
       CultureEffect: 0
-      SpreadsheetsEffect: 0.25
+      SpreadsheetsEffect: 1
       BrandEffect: 0
       RevanueEffect: 0
       HornicalEffect: 0

@@ -31,7 +31,7 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 0
+    EgoCost: 40
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -45,12 +45,20 @@ MonoBehaviour:
     Dialogs:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: 'I want you to work on a new presentation for me.  I''ll email you the
-        particulars but I want it to look fantastic and I expect it to be persuasive.  '
+      Text: I want you to work on a new presentation for me.  I'll email you the
+        particulars but I want it to look fantastic and I expect it to be persuasive. 
+        Until Marketing plays ball, I'll have to rely on you to handle these projects.
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: I'll begin working on it right away!
+      Text: I'll begin working on it right away!  I love these kinds of projects. 
+        I get so tired of the drudge work.  Branding is so interesting!
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: 'NOTE: You can use Deborah to generate Brand points-- though you have
+        to manage her so much, it takes up a great deal o fher time.  The Marketing
+        Department is better suited to generate Brand...'
       CustomNpcImageOptions: []
     OptionalPopups: []
     Effect:
@@ -61,7 +69,7 @@ MonoBehaviour:
       PatentsEffect: 0
       CultureEffect: 0
       SpreadsheetsEffect: 0
-      BrandEffect: 0.25
+      BrandEffect: 1
       RevanueEffect: 0
       HornicalEffect: 0
       NpcsToControl: []
