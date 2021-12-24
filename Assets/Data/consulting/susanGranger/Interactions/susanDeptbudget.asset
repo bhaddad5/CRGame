@@ -20,7 +20,8 @@ MonoBehaviour:
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcRequirements:
-    - OptionalNpcReference: {fileID: 0}
+    - OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
       RequiresAmbitionAtOrBelowValue: 1
       RequiredAmbition: 35
       RequiresPrideAtOrBelowValue: 0
@@ -52,7 +53,8 @@ MonoBehaviour:
       Text: If you'd like, I'd be happy to draft the department budget.
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
       Text: That's really something I should be doing.
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
@@ -60,11 +62,17 @@ MonoBehaviour:
       Text: I just thought you had more important things to do.
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
       Text: It is such a boring task.  Still, I'm not sure I should hand this off...
         But still, you really do have a knack for the numbers.  OK-- give it a shot!
       CustomNpcImageOptions: []
-    OptionalPopups: []
+    OptionalPopups:
+    - Title: '"I''m better on the creative side, to be honest."'
+      Videos:
+      - {fileID: 32900000, guid: 1143b880e7b1e184e9a146e9bd87d6cf, type: 3}
+      Texture: {fileID: 0}
+      Text: You're happy to take on Susan's responsibilities...
     Effect:
       NpcEffects: []
       EgoEffect: 0

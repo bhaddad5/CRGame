@@ -47,7 +47,8 @@ MonoBehaviour:
       Text: Can I get you something?  You look like you're in shock!
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
       Text: I just got a meeting request from Tracey.
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
@@ -55,14 +56,21 @@ MonoBehaviour:
       Text: Ms. Bledsoe?  For what?
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
       Text: She says she wants to discuss the disparities between the original forecast--
         and the updated forecast.  I think she's highly skeptical.
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
+      Text: 'NOTE: You receive a request to see Tracey Bledsoe in Planning.'
       CustomNpcImageOptions: []
     OptionalPopups: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+          type: 2}
         AmbitionEffect: -20
         PrideEffect: 0
       EgoEffect: 0

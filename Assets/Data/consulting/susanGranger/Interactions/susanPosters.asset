@@ -48,7 +48,8 @@ MonoBehaviour:
       Text: These posters you've chosen for the office are so motivational!
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
       Text: You like them? I know some of the staff think they are a bit cringey,
         but--
       CustomNpcImageOptions: []
@@ -57,13 +58,20 @@ MonoBehaviour:
       Text: No way, Ms. Granger!  They really send a message!
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
       Text: I agree.  You're a very perceptive young man!
       CustomNpcImageOptions: []
-    OptionalPopups: []
+    OptionalPopups:
+    - Title: '"I''m a natural leader.  I always have been, I guess!"'
+      Videos:
+      - {fileID: 32900000, guid: 98ebdfe8ce083aa4a9e4d2cdba806593, type: 3}
+      Texture: {fileID: 0}
+      Text: You're far from convinced...
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+          type: 2}
         AmbitionEffect: -5
         PrideEffect: 0
       EgoEffect: 0
