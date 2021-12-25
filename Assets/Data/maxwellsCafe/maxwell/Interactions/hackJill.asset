@@ -23,7 +23,9 @@ MonoBehaviour:
     RequiredInteractions:
     - {fileID: 11400000, guid: e26d0a30aa069ac47877e40068ca1326, type: 2}
     - {fileID: 11400000, guid: 53cb2fea93cc77d4582f00905bd16bf7, type: 2}
-    RequiredNotCompletedInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: aeadb03926e9f314e8777e2ca627ea31, type: 2}
+    - {fileID: 11400000, guid: 6fe83420d9804e744b9c2efe0d4a3289, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -44,7 +46,8 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: dca0ed3955970e54c921b2067f1fdcfe,
+        type: 2}
       Text: Alright, you can now view surveillance on Jill.
       CustomNpcImageOptions: []
     OptionalPopups: []

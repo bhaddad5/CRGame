@@ -10,21 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Hack Candace
+  m_Name: Is your boyfriend in high tech as well
   m_EditorClassIdentifier: 
-  Id: 1d719bda-0ced-4fe2-a3fc-9226ba8a1f62
-  Name: Hack Candace
+  Id: 742c2eb7-e468-4c6e-9d50-f287c9ac342a
+  Name: Is your boyfriend in high tech as well?
   Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcRequirements: []
-    RequiredInteractions:
-    - {fileID: 11400000, guid: 53cb2fea93cc77d4582f00905bd16bf7, type: 2}
-    - {fileID: 11400000, guid: acbc428150d271b4188a96e29739e8f1, type: 2}
+    RequiredInteractions: []
     RequiredNotCompletedInteractions:
-    - {fileID: 11400000, guid: 22653bbb682a4784089d50d6748a4c0a, type: 2}
+    - {fileID: 11400000, guid: fc02f17d89ade184bb3a64f5c10348c4, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -32,8 +30,8 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 0
-    MoneyCost: 100
+    EgoCost: 5
+    MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -44,14 +42,41 @@ MonoBehaviour:
   PreviewEffect: 1
   Result:
     Dialogs:
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Does your boyfriend work in the business as well?  I'm sorry-- I just
+        assumed you had one.  Unless I have it wrong and you have a girlfriend--
+      CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: dca0ed3955970e54c921b2067f1fdcfe,
+      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
         type: 2}
-      Text: Alright, you can now view surveillance on Candace.
+      Text: Girlfriend?  Do I look like a lesbian to you?  Not that there would be
+        anything wrong with it if I was, mind you!  But I most definitely am not
+        and nor do I have a boyfriend, as if that was any of your business!
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Sorry-- I didn't mean to upset you!  I just assumed... well, never mind.
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
+      Text: For your information, I'm focused totally on my career right now and
+        I don't have time for a 'boyfriend'.  I've only just gotten out of grad school
+        and I probably won't have any time for that until I've made it to a directorship,
+        got it?
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: I got it, I got it!  Sorry I asked!
       CustomNpcImageOptions: []
     OptionalPopups: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+          type: 2}
+        AmbitionEffect: -3
+        PrideEffect: 0
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0

@@ -10,30 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Hack Candace
+  m_Name: NEI Profile for Jones, D
   m_EditorClassIdentifier: 
-  Id: 1d719bda-0ced-4fe2-a3fc-9226ba8a1f62
-  Name: Hack Candace
-  Category: 1
+  Id: c5179d37-5209-4534-b997-3ab6a676a1a7
+  Name: NEI Profile for Jones, D
+  Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 53cb2fea93cc77d4582f00905bd16bf7, type: 2}
-    - {fileID: 11400000, guid: acbc428150d271b4188a96e29739e8f1, type: 2}
-    RequiredNotCompletedInteractions:
-    - {fileID: 11400000, guid: 22653bbb682a4784089d50d6748a4c0a, type: 2}
+    - {fileID: 11400000, guid: 69f9d7b181331d64690c1b7cc4bb51f1, type: 2}
+    RequiredNotCompletedInteractions: []
     RequiredPolicies: []
-    RequiredDepartmentsControled: []
+    RequiredDepartmentsControled:
+    - {fileID: 11400000, guid: 61a8eb709285dc0448c63cbd36baeed2, type: 2}
     RequiredNpcsControled: []
     RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 0
-    MoneyCost: 100
+    EgoCost: 10
+    MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -44,10 +43,28 @@ MonoBehaviour:
   PreviewEffect: 1
   Result:
     Dialogs:
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: dca0ed3955970e54c921b2067f1fdcfe,
-        type: 2}
-      Text: Alright, you can now view surveillance on Candace.
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: 'FR: Jada Bxter/HR
+
+        RE: National Employer Index
+
+        Congratulations
+        on your appointment to CSG!  Now that''re you''re managing the department,
+        you''re responsible for updating the staff Performance Profiles for the NEI.'
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: We don't need profiles for the admin staff and sine Susan just updated
+        Anne Miller's, I just need the profiel for the Management Trainee assigned
+        to CSG.  Could you hop on to the intranet and update Deborah Jones' profile? 
+        Tks! -J
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: 'NOTE: The National Employers Index is a national database used to standardize
+        and rank top executive talent across the country.  You can discuss the matter
+        further with Jada Baxter in Human Resources...'
       CustomNpcImageOptions: []
     OptionalPopups: []
     Effect:

@@ -10,34 +10,35 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: susanKeyaccounts
+  m_Name: Fraternization Policy reminder
   m_EditorClassIdentifier: 
-  Id: ffa0be09-1618-4220-af20-445cb6974e34
-  Name: Suggest a re-assignment of Key Accounts
+  Id: 46970b7d-08c5-4860-ab56-852b5f671bb7
+  Name: Fraternization Policy reminder
   Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcRequirements:
-    - OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
-        type: 2}
+    - OptionalNpcReference: {fileID: 0}
       RequiresAmbitionAtOrBelowValue: 1
-      RequiredAmbition: 35
-      RequiresPrideAtOrBelowValue: 0
-      RequiredPride: -1
+      RequiredAmbition: 0
+      RequiresPrideAtOrBelowValue: 1
+      RequiredPride: 90
     RequiredInteractions:
-    - {fileID: 11400000, guid: 8b1ff10340c0a8b45a60e980c06b63c0, type: 2}
-    RequiredNotCompletedInteractions:
-    - {fileID: 11400000, guid: 1c3f822f55d8bd449945eabff4120250, type: 2}
+    - {fileID: 11400000, guid: fc02f17d89ade184bb3a64f5c10348c4, type: 2}
+    - {fileID: 11400000, guid: acf7e7564853de749a72cfa68068c86c, type: 2}
+    RequiredNotCompletedInteractions: []
     RequiredPolicies: []
-    RequiredDepartmentsControled: []
-    RequiredNpcsControled: []
+    RequiredDepartmentsControled:
+    - {fileID: 11400000, guid: 61a8eb709285dc0448c63cbd36baeed2, type: 2}
+    RequiredNpcsControled:
+    - {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea, type: 2}
     RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 25
+    EgoCost: 15
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -51,36 +52,56 @@ MonoBehaviour:
     Dialogs:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Ms. Granger, it seems crazy that the Key Accounts aren't considered House
-        Accounts.
+      Text: 'Debbie, I''ve been watching the effect your new secretarial wardrobe
+        is havong on visitors to my office, especially the male ones.  '
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
-        type: 2}
-      Text: You may be right, but Anne Miller really did a lot of work to--
+      OptionalNpcReference: {fileID: 0}
+      Text: I'm just following the dress code-- it isn't my fault!
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Re-classifying the acccounts would make the bottom line look much better.
+      Text: 'I''m not sure I buy that.  You seem to enjoy playing quite the tease. 
+        And dressed the way you are, I don''t blame our visitors for assuming you''re
+        one of those office girls that are easy pickings!  '
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
-        type: 2}
-      Text: That's true.  I'm still not convinced it is worth upsetting Anne over
-        this though-- but we need to make the CSG numbers look better.
-      CustomNpcImageOptions: []
-    - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 0}
-      Text: 'NOTE: You''ll need to confirm the Key Accounts have been re-assigned
-        with Anne directly.'
+      Text: But that's not fair!  I'm never anything but professional!  I'm--
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: From now on, if any of our visitors asks for your phone number or out
+        on a date, you're to invoke the departmental Fraternization Policy which
+        states that all requests for out-of-office social interactions be approved
+        by you rmanager.
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: What?  But that's--- you mean if someone asks me out, that--
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: I mean I'm invoking Executive Privilege, Debbie.  You need to stay focused
+        if you're going to keep this job!  And if I get any complaints about you
+        teasing the boys or catch you at it myself, there will be major demerits! 
+        Got it?
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: Yes, yes.  What's the point of arguing?  I got it.  By the way, what
+        is Executive Privilege?  What does that mean exactly?
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Get back to work.  NOW!
       CustomNpcImageOptions: []
     OptionalPopups: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
-          type: 2}
+      - OptionalNpcReference: {fileID: 0}
         AmbitionEffect: 0
-        PrideEffect: 0
+        PrideEffect: -8
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0

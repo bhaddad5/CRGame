@@ -10,34 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: susanKeyaccounts
+  m_Name: Management Trainee Program Suspended
   m_EditorClassIdentifier: 
-  Id: ffa0be09-1618-4220-af20-445cb6974e34
-  Name: Suggest a re-assignment of Key Accounts
+  Id: 0991b283-d4ac-4784-86e1-dce509487d7d
+  Name: Management Trainee Program Suspended
   Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcRequirements:
-    - OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
-        type: 2}
-      RequiresAmbitionAtOrBelowValue: 1
-      RequiredAmbition: 35
-      RequiresPrideAtOrBelowValue: 0
-      RequiredPride: -1
-    RequiredInteractions:
-    - {fileID: 11400000, guid: 8b1ff10340c0a8b45a60e980c06b63c0, type: 2}
+    NpcRequirements: []
+    RequiredInteractions: []
     RequiredNotCompletedInteractions:
-    - {fileID: 11400000, guid: 1c3f822f55d8bd449945eabff4120250, type: 2}
+    - {fileID: 11400000, guid: fc02f17d89ade184bb3a64f5c10348c4, type: 2}
     RequiredPolicies: []
-    RequiredDepartmentsControled: []
+    RequiredDepartmentsControled:
+    - {fileID: 11400000, guid: 61a8eb709285dc0448c63cbd36baeed2, type: 2}
     RequiredNpcsControled: []
     RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 25
+    EgoCost: 50
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -49,37 +43,49 @@ MonoBehaviour:
   PreviewEffect: 1
   Result:
     Dialogs:
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: Ms. Granger, it seems crazy that the Key Accounts aren't considered House
-        Accounts.
-      CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
-        type: 2}
-      Text: You may be right, but Anne Miller really did a lot of work to--
+      OptionalNpcReference: {fileID: 0}
+      Text: You're requesting we suspect the very program you passed with flying
+        colors?  But why?  I'm warning you up front-- this is a VERY big ask.
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Re-classifying the acccounts would make the bottom line look much better.
+      Text: The Management Trainee Program really has proven rather uneven.  Deborah
+        Jones, for instance, isn't really meeting up to expectations.  Susan was
+        mentoring her and... well, what more can I say?
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
-        type: 2}
-      Text: That's true.  I'm still not convinced it is worth upsetting Anne over
-        this though-- but we need to make the CSG numbers look better.
-      CustomNpcImageOptions: []
-    - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 0}
-      Text: 'NOTE: You''ll need to confirm the Key Accounts have been re-assigned
-        with Anne directly.'
+      Text: Well, you're right of course, but the Mangement Trainee Program is one
+        of Jennifer's pet projects.  I'd hate to just shut it down--
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: 'Not shut it down!  Just adjusting it so we get the right candidates
+        and they get the proper mentoring and support.    '
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: So what you're implying is that Deborah Jones just isn't making the grade? 
+        What a shame.  The girl with the Forbes MBA-- we really expected big things
+        from her!  Very well-- this is on YOU if it desn't work out though!
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Anything else?
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: 'Yes-- allow Deborah Jones to finish her individual program.  If she
+        washes out, so be it.  But she deserves the chance to at least complete the
+        program.  I don''t imagine this move with fill her with confidence though.  '
       CustomNpcImageOptions: []
     OptionalPopups: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+      - OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
           type: 2}
-        AmbitionEffect: 0
+        AmbitionEffect: -20
         PrideEffect: 0
       EgoEffect: 0
       FundsEffect: 0
