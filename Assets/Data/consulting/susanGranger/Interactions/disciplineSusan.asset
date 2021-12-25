@@ -19,7 +19,12 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcRequirements: []
+    NpcRequirements:
+    - OptionalNpcReference: {fileID: 0}
+      RequiresAmbitionAtOrBelowValue: 0
+      RequiredAmbition: 0
+      RequiresPrideAtOrBelowValue: 1
+      RequiredPride: 40
     RequiredInteractions:
     - {fileID: 11400000, guid: 1c3f822f55d8bd449945eabff4120250, type: 2}
     RequiredNotCompletedInteractions: []
@@ -40,7 +45,7 @@ MonoBehaviour:
     RevanueCost: 0
     HornicalCost: 0
   Repeatable: 1
-  PreviewEffect: 0
+  PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 1
@@ -48,26 +53,31 @@ MonoBehaviour:
       Text: You'll only improve if I give you feedback.
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
       Text: But why does it always require corporal punishment?
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Because girls like you never seem to learn.
+      Text: 'It is that or I dock your paycheck.  It is entirely up to you.  I have
+        the discretion to allow you off the hook in exchange for an alternative mode
+        of correction. '
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: You're just being mean!
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
+      Text: You know I can't afford any more deductions!
       CustomNpcImageOptions: []
     OptionalPopups:
-    - Title: Susan's been a bad, bad girl!
+    - Title: Susan always opts for corporal correction
       Videos:
       - {fileID: 32900000, guid: 60a7bf7f8dbc03549955c6ff4af82efe, type: 3}
       Texture: {fileID: 0}
-      Text: 
+      Text: It is tough for her to make ends meet these days!
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+          type: 2}
         AmbitionEffect: 0
         PrideEffect: -3
       EgoEffect: 0
