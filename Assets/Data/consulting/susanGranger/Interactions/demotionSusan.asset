@@ -22,6 +22,7 @@ MonoBehaviour:
     NpcRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 1ceb3c5b2e0aac441a7fc25c3cfdc635, type: 2}
+    - {fileID: 11400000, guid: 521ce054819d5ea45bd72f7435e9c3d5, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -48,7 +49,8 @@ MonoBehaviour:
       Text: Susan, it no longer makes sense for you to hold a management title.
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
       Text: But I earned that title!
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
@@ -57,13 +59,15 @@ MonoBehaviour:
         from now on.
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
       Text: Very well-- but I do intend to make a complaint about this unfair demotion!
       CustomNpcImageOptions: []
     OptionalPopups: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+          type: 2}
         AmbitionEffect: 0
         PrideEffect: -10
       EgoEffect: 0
