@@ -99,45 +99,68 @@ namespace Assets.GameModel.UiDisplayers
 			if (cost.HornicalCost > mgm.Data.Hornical)
 				tooltips.Add($"{cost.HornicalCost} Hornical");
 
-			string finalTooltip = "";
-			foreach (var tt in tooltips)
-			{
-				finalTooltip += $", {tt}";
-			}
-
-			if (finalTooltip.Length > 0)
-			{
-				finalTooltip = finalTooltip.Substring(2);
-				finalTooltip = $"Requires {finalTooltip}";
-			}
-
-			return finalTooltip;
+			return TooltipsToString(tooltips);
 		}
 
 		public static string GetInvalidTooltip(this ActionRequirements req, MainGameManager mgm)
 		{
 			List<string> tooltips = new List<string>();
 
-			foreach (var npcReq in req.NpcAmbitionRequirements)
+			foreach (var department in req.RequiredDepartmentsControled)
 			{
-				if (npcReq.RequiresStatBelow < npcReq.OptionalNpcReference.Ambition)
-					tooltips.Add($"{npcReq.OptionalNpcReference.FirstName}: {npcReq.RequiresStatBelow} or less Ambition");
+				if(!department.Controlled)
+					tooltips.Add($"Control of {department.Name}");
 			}
 
-			foreach (var npcReq in req.NpcPrideRequirements)
+			foreach (var npc in req.RequiredNpcsControled)
 			{
-				if (npcReq.RequiresStatBelow < npcReq.OptionalNpcReference.Pride)
-					tooltips.Add($"{npcReq.OptionalNpcReference.FirstName}: {npcReq.RequiresStatBelow} or less Pride");
+				if (!npc.Controlled)
+					tooltips.Add($"Control of {npc.FirstName}");
 			}
 
-			if (req.RequiredPower > mgm.Data.Power)
-				tooltips.Add($"{req.RequiredPower} or more Power");
+			foreach (var ob in req.RequiredNpcsTrained)
+			{
+				if (!ob.Trained)
+					tooltips.Add($"{ob.FirstName} Trained");
+			}
+
+			foreach (var ob in req.RequiredTrophies)
+			{
+				if (!ob.Owned)
+					tooltips.Add($"{ob.Name}");
+			}
 
 			foreach (var requiredPolicy in req.RequiredPolicies)
 			{
 				tooltips.Add($"{requiredPolicy.Name}");
 			}
 
+			foreach (var interaction in req.RequiredInteractions)
+			{
+				if(interaction.Completed == 0)
+					tooltips.Add($"{interaction.Name}");
+			}
+			
+			foreach (var npcReq in req.NpcAmbitionRequirements)
+			{
+				if (npcReq.OptionalNpcReference.Ambition > npcReq.RequiresStatBelow)
+					tooltips.Add($"{npcReq.OptionalNpcReference.FirstName}: {npcReq.RequiresStatBelow} or less Ambition");
+			}
+
+			foreach (var npcReq in req.NpcPrideRequirements)
+			{
+				if (npcReq.OptionalNpcReference.Pride > npcReq.RequiresStatBelow)
+					tooltips.Add($"{npcReq.OptionalNpcReference.FirstName}: {npcReq.RequiresStatBelow} or less Pride");
+			}
+
+			if (req.RequiredPower > mgm.Data.Power)
+				tooltips.Add($"{req.RequiredPower} or more Power");
+
+			return TooltipsToString(tooltips);
+		}
+
+		private static string TooltipsToString(List<string> tooltips)
+		{
 			string finalTooltip = "";
 			foreach (var tt in tooltips)
 			{
@@ -147,7 +170,7 @@ namespace Assets.GameModel.UiDisplayers
 			if (finalTooltip.Length > 0)
 			{
 				finalTooltip = finalTooltip.Substring(2);
-				finalTooltip = $"Requires {finalTooltip}";
+				finalTooltip = $"Requires: {finalTooltip}";
 			}
 
 			return finalTooltip;

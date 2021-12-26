@@ -51,8 +51,6 @@ namespace Assets.GameModel.UiDisplayers
 
 		public string GetTooltip(MainGameManager mgm)
 		{
-			if (!loc.Controlled)
-				return "You must control a location to implement policies";
 			if (!policy.Requirements.RequirementsAreMet(mgm))
 				return policy.Requirements.GetInvalidTooltip(mgm);
 			return null;
