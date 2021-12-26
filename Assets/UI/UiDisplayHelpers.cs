@@ -62,12 +62,6 @@ namespace Assets.GameModel.UiDisplayers
 
 			foreach (var npcEffect in effect.NpcEffects)
 			{
-				if (npcEffect.OptionalNpcReference == null)
-				{
-					Debug.LogError("Null npc effect!");
-					continue;
-				}
-
 				if (!String.IsNullOrEmpty(str))
 					str += "\n";
 
@@ -126,24 +120,12 @@ namespace Assets.GameModel.UiDisplayers
 
 			foreach (var npcReq in req.NpcAmbitionRequirements)
 			{
-				if (npcReq.OptionalNpcReference == null)
-				{
-					Debug.LogError("Invalid requirements on null npc");
-					continue;
-				}
-
 				if (npcReq.RequiresStatBelow < npcReq.OptionalNpcReference.Ambition)
 					tooltips.Add($"{npcReq.OptionalNpcReference.FirstName}: {npcReq.RequiresStatBelow} or less Ambition");
 			}
 
 			foreach (var npcReq in req.NpcPrideRequirements)
 			{
-				if (npcReq.OptionalNpcReference == null)
-				{
-					Debug.LogError("Invalid requirements on null npc");
-					continue;
-				}
-				
 				if (npcReq.RequiresStatBelow < npcReq.OptionalNpcReference.Pride)
 					tooltips.Add($"{npcReq.OptionalNpcReference.FirstName}: {npcReq.RequiresStatBelow} or less Pride");
 			}

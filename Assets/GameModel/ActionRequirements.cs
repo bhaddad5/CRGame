@@ -36,24 +36,12 @@ namespace Assets.GameModel
 		{
 			foreach (var ambitionRequirement in NpcAmbitionRequirements)
 			{
-				if (ambitionRequirement.OptionalNpcReference == null)
-				{
-					Debug.LogError($"Trying to test ambition/pride on a null npc!");
-					continue;
-				}
-
 				if (ambitionRequirement.RequiresStatBelow < ambitionRequirement.OptionalNpcReference.Ambition)
 					return false;
 			}
 
 			foreach (var prideRequirement in NpcPrideRequirements)
 			{
-				if (prideRequirement.OptionalNpcReference == null)
-				{
-					Debug.LogError($"Trying to test ambition/pride on a null npc!");
-					continue;
-				}
-
 				if (prideRequirement.RequiresStatBelow < prideRequirement.OptionalNpcReference.Pride)
 					return false;
 			}

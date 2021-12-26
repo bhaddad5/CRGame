@@ -45,19 +45,12 @@ namespace Assets.GameModel
 
 		public int Promotion;
 
-		public void ExecuteEffect(MainGameManager mgm, Npc contextualNpc = null)
+		public void ExecuteEffect(MainGameManager mgm)
 		{
 			foreach (var effect in NpcEffects)
 			{
-				var effectNpc = effect.OptionalNpcReference ?? contextualNpc;
-				if (effectNpc == null)
-				{
-					Debug.LogError("Trying to execute an effect on an NPC without referencing one!");
-					continue;
-				}
-
-				effectNpc.Pride = Mathf.Max(effectNpc.Pride + effect.PrideEffect, 0);
-				effectNpc.Ambition = Mathf.Max(effectNpc.Ambition + effect.AmbitionEffect, 0);
+				effect.OptionalNpcReference.Pride = Mathf.Max(effect.OptionalNpcReference.Pride + effect.PrideEffect, 0);
+				effect.OptionalNpcReference.Ambition = Mathf.Max(effect.OptionalNpcReference.Ambition + effect.AmbitionEffect, 0);
 
 			}
 
@@ -105,7 +98,7 @@ namespace Assets.GameModel
 				}
 
 				mission.Completed = true;
-				mission.Effect.ExecuteEffect(mgm, contextualNpc);
+				mission.Effect.ExecuteEffect(mgm);
 			}
 
 			if (Car > 0)

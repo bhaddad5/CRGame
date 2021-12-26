@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Assets.GameModel;
@@ -53,6 +54,44 @@ public static class DefaultDataLogic
 						interaction.Result.Effect.NpcEffects[i] = npcEffect;
 					}
 				}
+			}
+		}
+
+		foreach (var interaction in gameData.StartOfTurnInteractions)
+		{
+			for (int i = 0; i < interaction.Requirements.NpcAmbitionRequirements.Count; i++)
+			{
+				var npcReq = interaction.Requirements.NpcAmbitionRequirements[i];
+				if (npcReq.OptionalNpcReference == null)
+					throw new Exception($"No npc reference provided for interaction {interaction}");
+			}
+
+			for (int i = 0; i < interaction.Requirements.NpcPrideRequirements.Count; i++)
+			{
+				var npcReq = interaction.Requirements.NpcPrideRequirements[i];
+				if (npcReq.OptionalNpcReference == null)
+					throw new Exception($"No npc reference provided for interaction {interaction}");
+			}
+
+			for (int i = 0; i < interaction.Result.Dialogs.Count; i++)
+			{
+				var dialog = interaction.Result.Dialogs[i];
+				if (dialog.CurrSpeaker == DialogEntry.Speaker.Npc && dialog.OptionalNpcReference == null)
+					throw new Exception($"No npc reference provided for interaction {interaction}");
+			}
+
+			for (int i = 0; i < interaction.FailureResult.Dialogs.Count; i++)
+			{
+				var dialog = interaction.FailureResult.Dialogs[i];
+				if (dialog.CurrSpeaker == DialogEntry.Speaker.Npc && dialog.OptionalNpcReference == null)
+					throw new Exception($"No npc reference provided for interaction {interaction}");
+			}
+
+			for (int i = 0; i < interaction.Result.Effect.NpcEffects.Count; i++)
+			{
+				var npcEffect = interaction.Result.Effect.NpcEffects[i];
+				if (npcEffect.OptionalNpcReference == null)
+					throw new Exception($"No npc reference provided for interaction {interaction}");
 			}
 		}
 	}
