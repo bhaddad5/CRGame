@@ -9,6 +9,46 @@ using UnityEngine;
 using UnityEngine.UI;
 using Assets.GameModel.Save;
 
+public static class LoadSaveHelpers
+{
+	private static string savesDir => Path.Combine(Application.streamingAssetsPath, "Saves");
+
+	public static void ValidateSaveFolder()
+	{
+		if (!Directory.Exists(savesDir))
+			Directory.CreateDirectory(savesDir);
+	}
+
+	public static List<string> GetOrderedSaveFiles()
+	{
+		ValidateSaveFolder();
+
+		var files = Directory.GetFiles(savesDir, "*.sav");
+		
+		return files.OrderByDescending(File.GetLastWriteTime).ToList();
+
+	}
+
+	public static string FileToValidPath(string file)
+	{
+		if (!Directory.Exists(savesDir))
+			Directory.CreateDirectory(savesDir);
+
+		if (file.EndsWith(".sav"))
+			file = file.Remove(file.Length - 4);
+
+		if (String.IsNullOrEmpty(file) ||
+		    file.IndexOfAny(Path.GetInvalidFileNameChars()) >= 0 ||
+		    file.IndexOfAny(new[] { '.' }) >= 0)
+			return null;
+
+
+		string path = Path.Combine(savesDir, $"{file}.sav");
+
+		return path;
+	}
+}
+
 public class LoadSaveMenuManager : MonoBehaviour
 {
 	[SerializeField] private Transform filesParent;
@@ -21,9 +61,10 @@ public class LoadSaveMenuManager : MonoBehaviour
 	private MainGameManager mgm;
 	private bool saving;
 
-	string savesDir => Path.Combine(Application.streamingAssetsPath, "Saves");
 	public void Setup(MainGameManager mgm, bool saving)
 	{
+		LoadSaveHelpers.ValidateSaveFolder();
+
 		this.mgm = mgm;
 		this.saving = saving;
 
@@ -35,10 +76,9 @@ public class LoadSaveMenuManager : MonoBehaviour
 
 	public void LoadGame()
 	{
-		if (!CurrentDesiredFileIsValid())
+		string path = LoadSaveHelpers.FileToValidPath(filenameInput.text);
+		if (path == null)
 			return;
-
-		string path = Path.Combine(savesDir, $"{filenameInput.text}.sav");
 		mgm.InitializeGame(path);
 
 		GameObject.Destroy(transform.parent.gameObject);
@@ -46,10 +86,9 @@ public class LoadSaveMenuManager : MonoBehaviour
 
 	public void SaveGame()
 	{
-		if (!CurrentDesiredFileIsValid())
+		string path = LoadSaveHelpers.FileToValidPath(filenameInput.text);
+		if (path == null)
 			return;
-
-		string path = Path.Combine(savesDir, $"{filenameInput.text}.sav");
 		File.WriteAllText(path, SaveLoadHandler.SaveToJson(mgm.Data));
 
 		GameObject.Destroy(gameObject);
@@ -62,10 +101,9 @@ public class LoadSaveMenuManager : MonoBehaviour
 
 	public void DeleteSave()
 	{
-		if (!CurrentDesiredFileIsValid())
+		string path = LoadSaveHelpers.FileToValidPath(filenameInput.text);
+		if (path == null)
 			return;
-
-		string path = Path.Combine(savesDir, $"{filenameInput.text}.sav");
 		File.Delete(path);
 
 		filenameInput.text = "";
@@ -73,20 +111,7 @@ public class LoadSaveMenuManager : MonoBehaviour
 		ShowSaveGames();
 	}
 
-	private bool CurrentDesiredFileIsValid()
-	{
-		if (!Directory.Exists(savesDir))
-			Directory.CreateDirectory(savesDir);
-
-		if (filenameInput.text.EndsWith(".sav"))
-			filenameInput.text = filenameInput.text.Remove(filenameInput.text.Length - 4);
-
-		if (String.IsNullOrEmpty(filenameInput.text) ||
-		    filenameInput.text.IndexOfAny(Path.GetInvalidFileNameChars()) >= 0 ||
-		    filenameInput.text.IndexOfAny(new[] { '.' }) >= 0)
-			return false;
-		return true;
-	}
+	
 
 	private void ShowSaveGames()
 	{
@@ -95,9 +120,7 @@ public class LoadSaveMenuManager : MonoBehaviour
 			GameObject.Destroy(filesParent.GetChild(i).gameObject);
 		}
 
-		if (!Directory.Exists(savesDir))
-			Directory.CreateDirectory(savesDir);
-		var files = Directory.GetFiles(savesDir, "*.sav");
+		var files = LoadSaveHelpers.GetOrderedSaveFiles();
 		foreach (var file in files)
 		{
 			var button = Instantiate(fileButtonPrefab);
@@ -107,12 +130,13 @@ public class LoadSaveMenuManager : MonoBehaviour
 			{
 				filenameInput.text = Path.GetFileNameWithoutExtension(file);
 			});
-			button.GetComponentInChildren<TMP_Text>(true).text = Path.GetFileNameWithoutExtension(file);
+			button.GetComponentsInChildren<TMP_Text>(true)[0].text = Path.GetFileNameWithoutExtension(file);
+			button.GetComponentsInChildren<TMP_Text>(true)[1].text = File.GetLastWriteTime(file).ToString("MMM d, yyyy hh:mm tt");
 		}
 		
 		if (saving)
 		{
-			filenameInput.text = $"New Game";
+			filenameInput.text = $"New Save";
 		}
 		else
 		{
