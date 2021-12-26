@@ -10,18 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Hello Jada
+  m_Name: Is that a new suit
   m_EditorClassIdentifier: 
-  Id: 102716a4-35f3-4f1e-8955-1491880d2c19
-  Name: Hello Jada
+  Id: bbeedbd0-73d0-4736-9b43-3c6f8ee8c7e9
+  Name: Is that a new suit?
   Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcRequirements: []
+    NpcRequirements:
+    - OptionalNpcReference: {fileID: 0}
+      RequiresAmbitionAtOrBelowValue: 0
+      RequiredAmbition: 0
+      RequiresPrideAtOrBelowValue: 0
+      RequiredPride: 0
     RequiredInteractions:
-    - {fileID: 11400000, guid: 2c9ddf0828205e249a6f7343d7fdf1db, type: 2}
+    - {fileID: 11400000, guid: bb26ec3ed2976544ca30d3cefb0b5a02, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -42,35 +47,28 @@ MonoBehaviour:
   PreviewEffect: 1
   Result:
     Dialogs:
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: Hi!  You must be Jada Baxter.  Carole said we'd be working together.
-      CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
-        type: 2}
-      Text: I'm Jada.  And I'm sure if you need anything done, it will be me that
-        ends up doing it.
+      OptionalNpcReference: {fileID: 0}
+      Text: Is that a new suit?
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Yes, well-- I understand that Carole is pretty busy working on more strategic
-        HR issues.
+      Text: Yes.  I felt it was time to upgrade my look around here.  What do you
+        think?
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
-        type: 2}
-      Text: Is that what she told you?  Whatever.
+      OptionalNpcReference: {fileID: 0}
+      Text: I think it looks really good!  You look like a real bigshot!  It must
+        have cost you a lot!
       CustomNpcImageOptions: []
-    OptionalPopups:
-    - Title: Jada's seen execs come and go
-      Videos:
-      - {fileID: 32900000, guid: 14d4a4e11a137c84a81b90cc3580bfc6, type: 3}
-      Texture: {fileID: 0}
-      Text: When it comes to newly appointed managers, Jada seems... jaded.
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Nothing I can't afford these days, Britney.
+      CustomNpcImageOptions: []
+    OptionalPopups: []
     Effect:
       NpcEffects: []
-      EgoEffect: 0
+      EgoEffect: 5
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0

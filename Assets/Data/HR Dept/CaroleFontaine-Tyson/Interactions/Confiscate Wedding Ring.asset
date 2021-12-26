@@ -20,7 +20,8 @@ MonoBehaviour:
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 2b744fbf34ee1fd429a0cf513358039c, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies:
     - {fileID: 11400000, guid: efc9578e25e4dad4da735c2b46b5e3b0, type: 2}
@@ -47,17 +48,21 @@ MonoBehaviour:
       Text: I'll take that for you!
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: My wedding ring?  Oh yes, the anti-theft policy.  Here you are.
+      OptionalNpcReference: {fileID: 11400000, guid: f42fb56e29e0b374386530f7e2189a62,
+        type: 2}
+      Text: 'My wedding ring?  Oh yes, the anti-theft policy.  Here you are.  While
+        many consider this an over reaction to these office thefts, I think your
+        new policyt makes sense.   '
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: My collection is growing-- this is an especially nice addition to it!
+      Text: Your collection is growing-- this is an especially nice addition to it!
       CustomNpcImageOptions: []
     OptionalPopups: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: f42fb56e29e0b374386530f7e2189a62,
+          type: 2}
         AmbitionEffect: -10
         PrideEffect: 0
       EgoEffect: 0

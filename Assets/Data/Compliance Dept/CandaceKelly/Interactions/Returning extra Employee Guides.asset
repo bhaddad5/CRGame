@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Hello Jada
+  m_Name: Returning extra Employee Guides
   m_EditorClassIdentifier: 
-  Id: 102716a4-35f3-4f1e-8955-1491880d2c19
-  Name: Hello Jada
+  Id: acd11256-9ffc-4607-b368-cac50fbd1833
+  Name: Returning extra Employee Guides
   Category: 1
   Requirements:
     RequiredPower: 0
@@ -21,7 +21,7 @@ MonoBehaviour:
     RequiredTurnNumber: 0
     NpcRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 2c9ddf0828205e249a6f7343d7fdf1db, type: 2}
+    - {fileID: 11400000, guid: 0b2f94add472b46408953860d092b4cc, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -44,30 +44,19 @@ MonoBehaviour:
     Dialogs:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Hi!  You must be Jada Baxter.  Carole said we'd be working together.
+      Text: Ms. Granger asked me to return these.  We had extras and--
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
-        type: 2}
-      Text: I'm Jada.  And I'm sure if you need anything done, it will be me that
-        ends up doing it.
-      CustomNpcImageOptions: []
-    - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Yes, well-- I understand that Carole is pretty busy working on more strategic
-        HR issues.
+      Text: In the corner please.  Thanks.
       CustomNpcImageOptions: []
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
-        type: 2}
-      Text: Is that what she told you?  Whatever.
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: "NOTE: Ms. Kelly barely glancexs at you as you trundle the extra binders
+        into the corner as instructed.  \n(Hint: You'll need a Power level of 15
+        to engage with her in a meaningful way.)"
       CustomNpcImageOptions: []
-    OptionalPopups:
-    - Title: Jada's seen execs come and go
-      Videos:
-      - {fileID: 32900000, guid: 14d4a4e11a137c84a81b90cc3580bfc6, type: 3}
-      Texture: {fileID: 0}
-      Text: When it comes to newly appointed managers, Jada seems... jaded.
+    OptionalPopups: []
     Effect:
       NpcEffects: []
       EgoEffect: 0

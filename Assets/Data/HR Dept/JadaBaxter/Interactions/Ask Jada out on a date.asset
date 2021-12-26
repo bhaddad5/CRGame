@@ -20,7 +20,8 @@ MonoBehaviour:
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 9fd341824ed186d4ca9f800521a2330d, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -46,7 +47,8 @@ MonoBehaviour:
       Text: What do you say to dinner and a movie sometime?
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
+        type: 2}
       Text: I'd say you're making some big assumptions, buster.
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
@@ -54,7 +56,8 @@ MonoBehaviour:
       Text: If you don't ask, you don't get.
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
+        type: 2}
       Text: And what exactly do you think you'll be getting if we go out on a date?
       CustomNpcImageOptions: []
     OptionalPopups:
@@ -66,7 +69,8 @@ MonoBehaviour:
         than romantic.
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
+          type: 2}
         AmbitionEffect: -7
         PrideEffect: 0
       EgoEffect: 0
