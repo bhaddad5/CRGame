@@ -31,6 +31,7 @@ namespace Assets.GameModel.UiDisplayers
 			{
 				policy.Active = true;
 				policy.Cost.SubtractCost(mgm);
+				policy.Effect.ExecuteEffect(mgm);
 				RefreshUiDisplay(mgm);
 			});
 			RefreshUiDisplay(mgm);

@@ -13,12 +13,20 @@ public static class DefaultDataLogic
 			{
 				foreach (var interaction in npc.Interactions)
 				{
-					for (int i = 0; i < interaction.Requirements.NpcRequirements.Count; i++)
+					for (int i = 0; i < interaction.Requirements.NpcAmbitionRequirements.Count; i++)
 					{
-						var npcReq = interaction.Requirements.NpcRequirements[i];
+						var npcReq = interaction.Requirements.NpcAmbitionRequirements[i];
 						if (npcReq.OptionalNpcReference == null)
 							npcReq.OptionalNpcReference = npc;
-						interaction.Requirements.NpcRequirements[i] = npcReq;
+						interaction.Requirements.NpcAmbitionRequirements[i] = npcReq;
+					}
+
+					for (int i = 0; i < interaction.Requirements.NpcPrideRequirements.Count; i++)
+					{
+						var npcReq = interaction.Requirements.NpcPrideRequirements[i];
+						if (npcReq.OptionalNpcReference == null)
+							npcReq.OptionalNpcReference = npc;
+						interaction.Requirements.NpcPrideRequirements[i] = npcReq;
 					}
 
 					for (int i = 0; i < interaction.Result.Dialogs.Count; i++)

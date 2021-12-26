@@ -153,8 +153,7 @@ public class ScriptableObjectTools
 		EditorUtility.SetDirty(gameData);
 		Debug.Log("Upgrade Complete!");
 	}
-
-
+	
 	//TODO: USE THIS AS A TEMPLATE FOR DATA UPGRADES!
 	/*
 	[MenuItem("Tools/Upgrade Old Data")]

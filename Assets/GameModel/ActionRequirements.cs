@@ -5,16 +5,13 @@ using UnityEngine;
 namespace Assets.GameModel
 {
 	[Serializable]
-	public struct NpcRequirement
+	public struct NpcStatRequirement
 	{
 		[Header("Defaults to the parent NPC, if present")]
 		public Npc OptionalNpcReference;
-
-		public bool RequiresAmbitionAtOrBelowValue;
-		public float RequiredAmbition;
-		public bool RequiresPrideAtOrBelowValue;
-		public float RequiredPride;
+		public float RequiresStatBelow;
 	}
+	
 
 	[Serializable]
 	public struct ActionRequirements
@@ -23,7 +20,8 @@ namespace Assets.GameModel
 		public int RequiredPromotionLevel;
 		public int RequiredTurnNumber;
 
-		public List<NpcRequirement> NpcRequirements;
+		public List<NpcStatRequirement> NpcAmbitionRequirements;
+		public List<NpcStatRequirement> NpcPrideRequirements;
 
 		public List<Interaction> RequiredInteractions;
 		public List<Interaction> RequiredNotCompletedInteractions;
@@ -36,21 +34,30 @@ namespace Assets.GameModel
 		
 		public bool RequirementsAreMet(MainGameManager mgm)
 		{
-			foreach (var npcRequirement in NpcRequirements)
+			foreach (var ambitionRequirement in NpcAmbitionRequirements)
 			{
-				if (npcRequirement.OptionalNpcReference == null)
+				if (ambitionRequirement.OptionalNpcReference == null)
 				{
 					Debug.LogError($"Trying to test ambition/pride on a null npc!");
 					continue;
 				}
 
-				if (npcRequirement.RequiresAmbitionAtOrBelowValue && npcRequirement.RequiredAmbition < npcRequirement.OptionalNpcReference.Ambition)
-					return false;
-
-				if (npcRequirement.RequiresPrideAtOrBelowValue && npcRequirement.RequiredPride < npcRequirement.OptionalNpcReference.Pride)
+				if (ambitionRequirement.RequiresStatBelow < ambitionRequirement.OptionalNpcReference.Ambition)
 					return false;
 			}
-			
+
+			foreach (var prideRequirement in NpcPrideRequirements)
+			{
+				if (prideRequirement.OptionalNpcReference == null)
+				{
+					Debug.LogError($"Trying to test ambition/pride on a null npc!");
+					continue;
+				}
+
+				if (prideRequirement.RequiresStatBelow < prideRequirement.OptionalNpcReference.Pride)
+					return false;
+			}
+
 			foreach (var controlledNpc in RequiredNpcsControled)
 			{
 				if (!controlledNpc.Controlled)

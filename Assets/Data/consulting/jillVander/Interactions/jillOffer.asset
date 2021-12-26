@@ -19,13 +19,11 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcRequirements:
+    NpcAmbitionRequirements:
     - OptionalNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
         type: 2}
-      RequiresAmbitionAtOrBelowValue: 1
-      RequiredAmbition: 20
-      RequiresPrideAtOrBelowValue: 0
-      RequiredPride: 0
+      RequiresStatBelow: 20
+    NpcPrideRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 043dae9e7a59dc743bf5d40471473290, type: 2}
     RequiredNotCompletedInteractions:

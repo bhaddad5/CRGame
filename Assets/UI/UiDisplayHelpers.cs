@@ -124,7 +124,7 @@ namespace Assets.GameModel.UiDisplayers
 		{
 			List<string> tooltips = new List<string>();
 
-			foreach (var npcReq in req.NpcRequirements)
+			foreach (var npcReq in req.NpcAmbitionRequirements)
 			{
 				if (npcReq.OptionalNpcReference == null)
 				{
@@ -132,13 +132,22 @@ namespace Assets.GameModel.UiDisplayers
 					continue;
 				}
 
-				if (npcReq.RequiredAmbition >= 0 && npcReq.RequiredAmbition < npcReq.OptionalNpcReference.Ambition)
-						tooltips.Add($"{npcReq.OptionalNpcReference.FirstName}: {npcReq.RequiredAmbition} or less Ambition");
-				if (npcReq.RequiredPride >= 0 && npcReq.RequiredPride < npcReq.OptionalNpcReference.Pride)
-					tooltips.Add($"{npcReq.OptionalNpcReference.FirstName}: {npcReq.RequiredPride} or less Pride");
+				if (npcReq.RequiresStatBelow < npcReq.OptionalNpcReference.Ambition)
+					tooltips.Add($"{npcReq.OptionalNpcReference.FirstName}: {npcReq.RequiresStatBelow} or less Ambition");
 			}
 
-			
+			foreach (var npcReq in req.NpcPrideRequirements)
+			{
+				if (npcReq.OptionalNpcReference == null)
+				{
+					Debug.LogError("Invalid requirements on null npc");
+					continue;
+				}
+				
+				if (npcReq.RequiresStatBelow < npcReq.OptionalNpcReference.Pride)
+					tooltips.Add($"{npcReq.OptionalNpcReference.FirstName}: {npcReq.RequiresStatBelow} or less Pride");
+			}
+
 			if (req.RequiredPower > mgm.Data.Power)
 				tooltips.Add($"{req.RequiredPower} or more Power");
 
