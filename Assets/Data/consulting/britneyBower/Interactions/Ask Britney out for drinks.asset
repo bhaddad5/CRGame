@@ -20,7 +20,8 @@ MonoBehaviour:
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcAmbitionRequirements:
-    - OptionalNpcReference: {fileID: 0}
+    - OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
+        type: 2}
       RequiresStatBelow: 20
     NpcPrideRequirements: []
     RequiredInteractions: []
@@ -29,7 +30,8 @@ MonoBehaviour:
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
     RequiredNpcsTrained: []
-    RequiredNpcsNotControled: []
+    RequiredNpcsNotControled:
+    - {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8, type: 2}
     RequiredTrophies: []
   Cost:
     EgoCost: 20
@@ -40,8 +42,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
-  Repeatable: 1
-  PreviewEffect: 1
+  Repeatable: 0
   Result:
     Dialogs:
     - CurrSpeaker: 1
@@ -49,7 +50,8 @@ MonoBehaviour:
       Text: How about we have a drink after work?
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
+        type: 2}
       Text: Just one?
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
@@ -57,7 +59,8 @@ MonoBehaviour:
       Text: Hey- as many as you like!
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
+        type: 2}
       Text: That sounds good to me!  As long as you're paying...
       CustomNpcImageOptions: []
     OptionalPopups:
@@ -68,7 +71,8 @@ MonoBehaviour:
       Text: 
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
+          type: 2}
         AmbitionEffect: -10
         PrideEffect: 0
       EgoEffect: 5
