@@ -100,7 +100,7 @@ namespace Assets.GameModel
 					var displayHandler = new InteractionResultDisplayManager();
 					displayHandler.DisplayInteractionResult(this, startOfTurnInteraction.Completed, res, !succeeded, () =>
 					{
-						res.Execute(this);
+						res.ExecuteEffect(this);
 						if(succeeded)
 							startOfTurnInteraction.Completed++;
 						RefreshAllUi();

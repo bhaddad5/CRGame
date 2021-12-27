@@ -76,7 +76,7 @@ public class ScriptableObjectTools
 			{
 				foreach (var interaction in npc.Interactions)
 				{
-					if (interaction.Repeatable)
+					if (interaction.Repeatable && interaction.Result.OptionalPopups.Count == 0)
 					{
 						Debug.Log(interaction);
 					}
@@ -153,6 +153,40 @@ public class ScriptableObjectTools
 		EditorUtility.SetDirty(gameData);
 		Debug.Log("Upgrade Complete!");
 	}
+
+	[MenuItem("Tools/Rename Assets")]
+	public static void RenameAssets()
+	{
+		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
+
+		foreach (var location in gameData.Locations)
+		{
+			foreach (var npc in location.Npcs)
+			{
+				foreach (var interaction in npc.Interactions)
+				{
+					AssetDatabase.RenameAsset(AssetDatabase.GetAssetPath(interaction), RemoveInvalidChars(interaction.Name));
+				}
+			}
+
+			foreach (var policy in location.Policies)
+			{
+				
+			}
+
+			foreach (var mission in location.Missions)
+			{
+				
+			}
+		}
+		Debug.Log("Upgrade Complete!");
+	}
+
+	public static string RemoveInvalidChars(string filename)
+	{
+		return string.Concat(filename.Split(Path.GetInvalidFileNameChars()));
+	}
+
 
 	//TODO: USE THIS AS A TEMPLATE FOR DATA UPGRADES!
 	/*

@@ -28,7 +28,8 @@ namespace Assets.GameModel.UiDisplayers
 				var displayHandler = new InteractionResultDisplayManager();
 				displayHandler.DisplayInteractionResult(mgm, interaction.Completed, res, !succeeded, () =>
 				{
-					res.Execute(mgm);
+					if(interaction.Completed == 0)
+						res.ExecuteEffect(mgm);
 					if(succeeded)
 						interaction.Completed++;
 					mgm.HandleTurnChange();
@@ -44,6 +45,9 @@ namespace Assets.GameModel.UiDisplayers
 		public void RefreshUiDisplay(MainGameManager mgm)
 		{
 			Text.text = $"{CategoryToString(interaction.Category)}: {interaction.Name}";
+
+			if (interaction.Completed > 0)
+				Text.text += " (Repeat)";
 
 			if (interaction.CanFail)
 				Text.text += $" ({(int)((1f - interaction.ProbabilityOfFailureResult) * 100)}% chance)";

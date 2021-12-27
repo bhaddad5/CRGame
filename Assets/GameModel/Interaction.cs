@@ -34,8 +34,6 @@ namespace Assets.GameModel
 
 		public bool Repeatable = false;
 		
-		public bool PreviewEffect = false;
-
 		public InteractionResult Result;
 
 		[Header("")]

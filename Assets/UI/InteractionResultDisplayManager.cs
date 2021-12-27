@@ -32,9 +32,14 @@ public class InteractionResultDisplayManager
 			currDialogsToShow[0] = modifiedDialog;
 		}
 
-		string effectsString = res.Effect.GetEffectsString();
-		if(!String.IsNullOrEmpty(effectsString))
-			currDialogsToShow.Add(new DialogEntry(){CurrSpeaker = DialogEntry.Speaker.Narrator, Text = effectsString });
+		//Effect only takes place on first execute
+		if (completionCount == 0)
+		{
+			string effectsString = res.Effect.GetEffectsString();
+			if (!String.IsNullOrEmpty(effectsString))
+				currDialogsToShow.Add(new DialogEntry() { CurrSpeaker = DialogEntry.Speaker.Narrator, Text = effectsString });
+		}
+
 		currPopupsToShow = new List<Popup>(res.OptionalPopups);
 		currMissionsToShow = new List<Mission>(res.Effect.MissionsToComplete);
 		currTrophiesToShow = new List<Trophy>(res.Effect.TrophiesClaimedReferences);
