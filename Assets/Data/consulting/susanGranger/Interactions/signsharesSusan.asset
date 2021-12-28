@@ -22,11 +22,14 @@ MonoBehaviour:
     NpcAmbitionRequirements: []
     NpcPrideRequirements:
     - OptionalNpcReference: {fileID: 0}
-      RequiresStatBelow: 20
-    RequiredInteractions: []
+      RequiresStatBelow: 60
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 8b1ff10340c0a8b45a60e980c06b63c0, type: 2}
+    - {fileID: 11400000, guid: 1c3f822f55d8bd449945eabff4120250, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
-    RequiredDepartmentsControled: []
+    RequiredDepartmentsControled:
+    - {fileID: 11400000, guid: 61a8eb709285dc0448c63cbd36baeed2, type: 2}
     RequiredNpcsControled:
     - {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a, type: 2}
     RequiredNpcsTrained: []
@@ -42,12 +45,14 @@ MonoBehaviour:
     RevanueCost: 0
     HornicalCost: 0
   Repeatable: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: I think my offer is extremely generous.
+      Text: I think my offer for your Artemis shares is extremely generous.  Now
+        that you're living on a considerably smaller paycheck, I'd have thought you
+        would be happy to cash in the shares now.
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
@@ -62,9 +67,18 @@ MonoBehaviour:
       Text: I don't have any choice.  I'm falling behind so much, I have to take
         what I can get.
       CustomNpcImageOptions: []
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: 'NOTE: Now that you''ve secured the Artemis shares, you can cash them
+        in for considerably more than the pittance you''ve paid Susan when the IPO
+        occurs.'
+      CustomNpcImageOptions: []
     OptionalPopups: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: 0
+        PrideEffect: -20
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
