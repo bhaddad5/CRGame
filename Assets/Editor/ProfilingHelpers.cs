@@ -65,6 +65,59 @@ public static class ProfilingHelpers
 		Debug.Log("Upgrade Complete!");
 	}
 
+	[MenuItem("Company Man Debugging/Copy All Text")]
+	public static void UpgradeOldData()
+	{
+		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
+
+		string AllText = "";
+
+		foreach (var location in gameData.Locations)
+		{
+			foreach (var npc in location.Npcs)
+			{
+				AllText += $"NPC BIO - {npc.name}: {npc.Bio}\n\n";
+
+				foreach (var interaction in npc.Interactions)
+				{
+					string interactionText = $"INTERACTION - {interaction.name}:\n";
+					foreach (var dialog in interaction.Result.Dialogs)
+					{
+						interactionText += $"{dialog.Text}\n";
+					}
+
+					foreach (var popup in interaction.Result.OptionalPopups)
+					{
+						interactionText += $"POPUP: {popup.Text}";
+					}
+
+					if (interaction.CanFail)
+						interactionText += $"Fail Result:\n";
+					foreach (var dialog in interaction.FailureResult.Dialogs)
+					{
+						interactionText += $"{dialog.Text}\n";
+					}
+
+
+
+					AllText += $"{interactionText}\n\n";
+				}
+			}
+
+			foreach (var policy in location.Policies)
+			{
+				AllText += $"POLICY - {policy.name}: {policy.Description}\n\n";
+			}
+
+			foreach (var mission in location.Missions)
+			{
+				AllText += $"MISSION - {mission.name}: {mission.MissionDescription}\n\n";
+			}
+		}
+
+		GUIUtility.systemCopyBuffer = AllText;
+		Debug.Log("Copy Complete!  Paste it anywhere");
+	}
 
 	[MenuItem("Company Man Debugging/Calculate Power Totals")]
 	public static void CalculatePowerTotals()
