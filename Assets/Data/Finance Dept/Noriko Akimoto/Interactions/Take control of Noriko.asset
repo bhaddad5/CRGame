@@ -20,7 +20,8 @@ MonoBehaviour:
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcAmbitionRequirements:
-    - OptionalNpcReference: {fileID: 0}
+    - OptionalNpcReference: {fileID: 11400000, guid: fe057ea31c7f5db4fa79ebaaba8f2978,
+        type: 2}
       RequiresStatBelow: 0
     NpcPrideRequirements: []
     RequiredInteractions: []
@@ -60,10 +61,12 @@ MonoBehaviour:
       BrandEffect: 0
       RevanueEffect: 0
       HornicalEffect: 0
-      NpcsToControl: []
+      NpcsToControl:
+      - {fileID: 11400000, guid: fe057ea31c7f5db4fa79ebaaba8f2978, type: 2}
       NpcsToTrain: []
       NpcsToRemoveFromGame: []
-      LocationsToControl: []
+      LocationsToControl:
+      - {fileID: 11400000, guid: 8a432d3990dd08442a622b0a03538c5e, type: 2}
       TrophiesClaimedReferences: []
       MissionsToComplete:
       - {fileID: 11400000, guid: c09e02abbdf823d44be79acc9e6ee113, type: 2}

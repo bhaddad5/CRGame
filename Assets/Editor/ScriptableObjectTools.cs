@@ -153,7 +153,7 @@ public class ScriptableObjectTools
 		EditorUtility.SetDirty(gameData);
 		Debug.Log("Upgrade Complete!");
 	}
-
+	
 	//TODO: USE THIS AS A TEMPLATE FOR DATA UPGRADES!
 	/*
 	[MenuItem("Tools/Upgrade Old Data")]
@@ -167,14 +167,7 @@ public class ScriptableObjectTools
 			{
 				foreach (var interaction in npc.Interactions)
 				{
-					foreach (var interactionResult in interaction.InteractionResults)
-					{
-						foreach (var effect in interactionResult.Effects)
-						{
-							
-						}
-					}
-					EditorUtility.SetDirty(interaction);
+					
 				}
 			}
 

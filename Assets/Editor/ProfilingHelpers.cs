@@ -6,6 +6,66 @@ using UnityEngine;
 
 public static class ProfilingHelpers
 {
+	[MenuItem("Company Man Debugging/Get Control Interactions Of Selected Object")]
+	public static void GetLocationInteractions()
+	{
+		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
+
+		var loc = Selection.activeObject as Location;
+
+		var selectedNpc = Selection.activeObject as Npc;
+		
+		foreach (var location in gameData.Locations)
+		{
+			foreach (var npc in location.Npcs)
+			{
+				foreach (var interaction in npc.Interactions)
+				{
+					if(interaction.Result.Effect.LocationsToControl.Contains(loc))
+						Debug.Log($"Controlled by: {interaction}");
+
+					if (interaction.Result.Effect.NpcsToControl.Contains(selectedNpc))
+						Debug.Log($"Controlled by: {interaction}");
+
+					if (interaction.Result.Effect.NpcsToRemoveFromGame.Contains(selectedNpc))
+						Debug.Log($"Removed From Game by: {interaction}");
+				}
+
+			}
+		}
+	}
+
+
+	[MenuItem("Company Man Debugging/Print Control and Completion Interactions")]
+	public static void PrintControlInteractions()
+	{
+		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
+
+		foreach (var location in gameData.Locations)
+		{
+			foreach (var npc in location.Npcs)
+			{
+				foreach (var interaction in npc.Interactions)
+				{
+					foreach (var ob in interaction.Result.Effect.NpcsToControl)
+						Debug.Log($"{ob} controlled by {interaction}");
+					foreach (var ob in interaction.Result.Effect.NpcsToTrain)
+						Debug.Log($"{ob} trained by {interaction}");
+					foreach (var ob in interaction.Result.Effect.NpcsToRemoveFromGame)
+						Debug.Log($"{ob} removed from game by {interaction}");
+					foreach (var ob in interaction.Result.Effect.LocationsToControl)
+						Debug.Log($"{ob} controlled by {interaction}");
+					foreach (var ob in interaction.Result.Effect.TrophiesClaimedReferences)
+						Debug.Log($"{ob} claimed by {interaction}");
+					foreach (var ob in interaction.Result.Effect.MissionsToComplete)
+						Debug.Log($"{ob} completed by {interaction}");
+				}
+			}
+		}
+		Debug.Log("Upgrade Complete!");
+	}
+
+
 	[MenuItem("Company Man Debugging/Calculate Power Totals")]
 	public static void CalculatePowerTotals()
 	{
