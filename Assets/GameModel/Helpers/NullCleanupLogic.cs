@@ -54,5 +54,12 @@ public static class NullCleanupLogic
 		interaction.FailureResult.Effect.NpcsToTrain.RemoveAll(i => i == null);
 		interaction.FailureResult.Effect.MissionsToComplete.RemoveAll(i => i == null);
 		interaction.FailureResult.Effect.TrophiesClaimedReferences.RemoveAll(i => i == null);
+
+		for (int i = 0; i < interaction.Result.Dialogs.Count; i++)
+		{
+			var dialog = interaction.Result.Dialogs[i];
+			dialog.CustomNpcImageOptions.RemoveAll(opt => opt == null);
+			interaction.Result.Dialogs[i] = dialog;
+		}
 	}
 }
