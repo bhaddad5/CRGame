@@ -159,7 +159,7 @@ namespace Assets.GameModel.Save
 				return;
 			}
 
-			Controlled = data.Controlled;
+			data.Controlled = Controlled;
 
 			foreach (var npc in Npcs)
 			{
