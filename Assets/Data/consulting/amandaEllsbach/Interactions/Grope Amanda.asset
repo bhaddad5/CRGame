@@ -21,7 +21,8 @@ MonoBehaviour:
     RequiredTurnNumber: 0
     NpcAmbitionRequirements: []
     NpcPrideRequirements:
-    - OptionalNpcReference: {fileID: 0}
+    - OptionalNpcReference: {fileID: 11400000, guid: c6fc9aa27a6291a41a2090f2db3a94e1,
+        type: 2}
       RequiresStatBelow: 20
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
@@ -50,7 +51,8 @@ MonoBehaviour:
       Text: Stop struggling. You're company property, Amanda.
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: c6fc9aa27a6291a41a2090f2db3a94e1,
+        type: 2}
       Text: This is wrong!  Stop it!
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
@@ -67,9 +69,10 @@ MonoBehaviour:
       Text: 
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
-        AmbitionEffect: 3
-        PrideEffect: 0
+      - OptionalNpcReference: {fileID: 11400000, guid: c6fc9aa27a6291a41a2090f2db3a94e1,
+          type: 2}
+        AmbitionEffect: 0
+        PrideEffect: -3
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
