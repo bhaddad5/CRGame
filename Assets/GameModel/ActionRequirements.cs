@@ -40,10 +40,37 @@ namespace Assets.GameModel
 					return false;
 			}
 
+			foreach (var controlledNpc in RequiredNpcsControled)
+			{
+				if (!controlledNpc.Controlled)
+					return false;
+			}
+
+			foreach (var trainedNpc in RequiredNpcsTrained)
+			{
+				if (!trainedNpc.Trained)
+					return false;
+			}
+
 			foreach (var interaction in RequiredNotCompletedInteractions)
 			{
 				if (interaction.Completed > 0)
 					return false;
+			}
+
+			foreach (var notControlledNpc in RequiredNpcsNotControled)
+			{
+				if (notControlledNpc.Controlled)
+					return false;
+			}
+
+			//This is a weird hack.  Basically we don't wanna display the interaction if it is based on pride and you don't control them yet
+			foreach (var prideRequirement in NpcPrideRequirements)
+			{
+				if (prideRequirement.RequiresStatBelow < prideRequirement.OptionalNpcReference.Pride && !prideRequirement.OptionalNpcReference.Controlled)
+				{
+					return false;
+				}
 			}
 
 			return true;
@@ -63,24 +90,6 @@ namespace Assets.GameModel
 			foreach (var prideRequirement in NpcPrideRequirements)
 			{
 				if (prideRequirement.RequiresStatBelow < prideRequirement.OptionalNpcReference.Pride)
-					return false;
-			}
-
-			foreach (var controlledNpc in RequiredNpcsControled)
-			{
-				if (!controlledNpc.Controlled)
-					return false;
-			}
-
-			foreach (var trainedNpc in RequiredNpcsTrained)
-			{
-				if (!trainedNpc.Trained)
-					return false;
-			}
-
-			foreach (var notControlledNpc in RequiredNpcsNotControled)
-			{
-				if (notControlledNpc.Controlled)
 					return false;
 			}
 

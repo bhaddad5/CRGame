@@ -21,13 +21,15 @@ MonoBehaviour:
     RequiredTurnNumber: 0
     NpcAmbitionRequirements: []
     NpcPrideRequirements:
-    - OptionalNpcReference: {fileID: 0}
+    - OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
+        type: 2}
       RequiresStatBelow: 50
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
-    RequiredNpcsControled: []
+    RequiredNpcsControled:
+    - {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c, type: 2}
     RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
     RequiredTrophies: []
@@ -49,7 +51,8 @@ MonoBehaviour:
       Text: You're too stiff, Tracey.  Let's limber you up with some dance lessons.
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
+        type: 2}
       Text: You mean ballet?  Or ballroom dancing?
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
