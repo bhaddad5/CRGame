@@ -31,9 +31,29 @@ namespace Assets.GameModel
 		public List<Npc> RequiredNpcsTrained;
 		public List<Npc> RequiredNpcsNotControled;
 		public List<Trophy> RequiredTrophies;
-		
+
+		public bool VisRequirementsAreMet()
+		{
+			foreach (var interaction in RequiredInteractions)
+			{
+				if (interaction.Completed == 0)
+					return false;
+			}
+
+			foreach (var interaction in RequiredNotCompletedInteractions)
+			{
+				if (interaction.Completed > 0)
+					return false;
+			}
+
+			return true;
+		}
+
 		public bool RequirementsAreMet(MainGameManager mgm)
 		{
+			if (!VisRequirementsAreMet())
+				return false;
+
 			foreach (var ambitionRequirement in NpcAmbitionRequirements)
 			{
 				if (ambitionRequirement.RequiresStatBelow < ambitionRequirement.OptionalNpcReference.Ambition)
@@ -73,18 +93,6 @@ namespace Assets.GameModel
 			foreach (var trophy in RequiredTrophies)
 			{
 				if (!mgm.Data.GetOwnedTrophies().Contains(trophy))
-					return false;
-			}
-
-			foreach (var interaction in RequiredInteractions)
-			{
-				if (interaction.Completed == 0)
-					return false;
-			}
-
-			foreach (var interaction in RequiredNotCompletedInteractions)
-			{
-				if (interaction.Completed > 0)
 					return false;
 			}
 

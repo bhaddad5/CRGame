@@ -82,18 +82,19 @@ namespace Assets.GameModel.UiDisplayers
 		public string GetTooltip(MainGameManager mgm)
 		{
 			if (interaction.InteractionValid(mgm))
-			{
 				return null;
-			}
-
-			string tooltip = "";
-
-			tooltip += $"{interaction.Requirements.GetInvalidTooltip(mgm)}";
-			if (tooltip.Length > 0)
-				tooltip += $"\n"; 
-			tooltip += $"\n{interaction.Cost.GetInvalidTooltip(mgm)}";
 			
-			return "Interaction invalid";
+			var reqTooltip = interaction.Requirements.GetInvalidTooltip(mgm);
+			var costTooltip = interaction.Cost.GetInvalidTooltip(mgm);
+
+			var tooltip = $"{reqTooltip}\n{costTooltip}";
+
+			if (tooltip.StartsWith("\n"))
+				tooltip = tooltip.Substring(1);
+			if (tooltip.EndsWith("\n"))
+				tooltip = tooltip.Substring(0, tooltip.Length - 1);
+
+			return tooltip;
 		}
 	}
 }

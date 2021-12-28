@@ -59,12 +59,15 @@ namespace Assets.GameModel
 			if (Completed > 0 && !Repeatable)
 				return false;
 
-			return Requirements.RequirementsAreMet(mgm);
+			return Requirements.VisRequirementsAreMet();
 		}
 
 		public bool InteractionValid(MainGameManager mgm)
 		{
 			if (!InteractionVisible(mgm))
+				return false;
+
+			if (!Requirements.RequirementsAreMet(mgm))
 				return false;
 
 			return Cost.CanAffordCost(mgm);
