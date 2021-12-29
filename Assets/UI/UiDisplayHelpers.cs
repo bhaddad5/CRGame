@@ -132,7 +132,8 @@ namespace Assets.GameModel.UiDisplayers
 
 			foreach (var requiredPolicy in req.RequiredPolicies)
 			{
-				tooltips.Add($"{requiredPolicy.Name}");
+				if (!requiredPolicy.Active)
+					tooltips.Add($"{requiredPolicy.Name}");
 			}
 
 			foreach (var interaction in req.RequiredInteractions)

@@ -27,6 +27,8 @@ namespace Assets.GameModel.UiDisplayers
 		public void RefreshUiDisplay(MainGameManager mgm)
 		{
 			Text.text = $"{policy.Name}";
+			if (policy.Active)
+				Text.text += $" (Active)";
 		}
 	}
 }
