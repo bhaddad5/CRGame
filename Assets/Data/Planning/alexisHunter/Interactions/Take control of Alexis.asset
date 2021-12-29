@@ -44,10 +44,6 @@ MonoBehaviour:
   PreviewEffect: 1
   Result:
     Dialogs:
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: 
-      CustomNpcImageOptions: []
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
       Text: I've had my eye on you since we met.  You've proven useful-- and I expect
@@ -79,7 +75,8 @@ MonoBehaviour:
       BrandEffect: 0
       RevanueEffect: 0
       HornicalEffect: 0
-      NpcsToControl: []
+      NpcsToControl:
+      - {fileID: 11400000, guid: 3e388f1db150adc41861a8d778471965, type: 2}
       NpcsToTrain: []
       NpcsToRemoveFromGame: []
       LocationsToControl: []

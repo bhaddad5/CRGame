@@ -153,7 +153,36 @@ public class ScriptableObjectTools
 		EditorUtility.SetDirty(gameData);
 		Debug.Log("Upgrade Complete!");
 	}
-	
+
+	[MenuItem("Tools/Find uncontrollable npcs")]
+	public static void findUncontrollableNpcs()
+	{
+		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
+
+		foreach (var location in gameData.Locations)
+		{
+			foreach (var npc in location.Npcs)
+			{
+				if(!npc.Interactions.Any(i => i.Result.Effect.NpcsToControl.Count > 0) && npc.Interactions.Any(i => i.Name.ToLowerInvariant().Contains("control")))
+					Debug.Log("No control interaction for " + npc);
+
+				if (!npc.Interactions.Any(i => i.Result.Effect.NpcsToTrain.Count > 0) && npc.Interactions.Any(i => i.Name.ToLowerInvariant().Contains("break")))
+					Debug.Log("No train interaction for " + npc);
+			}
+
+			foreach (var policy in location.Policies)
+			{
+
+			}
+
+			foreach (var mission in location.Missions)
+			{
+
+			}
+		}
+		Debug.Log("Upgrade Complete!");
+	}
+
 	//TODO: USE THIS AS A TEMPLATE FOR DATA UPGRADES!
 	/*
 	[MenuItem("Tools/Upgrade Old Data")]
