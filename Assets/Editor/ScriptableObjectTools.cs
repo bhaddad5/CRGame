@@ -169,18 +169,8 @@ public class ScriptableObjectTools
 				if (!npc.Interactions.Any(i => i.Result.Effect.NpcsToTrain.Count > 0) && npc.Interactions.Any(i => i.Name.ToLowerInvariant().Contains("break")))
 					Debug.Log("No train interaction for " + npc);
 			}
-
-			foreach (var policy in location.Policies)
-			{
-
-			}
-
-			foreach (var mission in location.Missions)
-			{
-
-			}
 		}
-		Debug.Log("Upgrade Complete!");
+		Debug.Log("Search Complete!");
 	}
 
 	//TODO: USE THIS AS A TEMPLATE FOR DATA UPGRADES!
