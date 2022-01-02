@@ -10,22 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Pepper pick-up
+  m_Name: Thanks for the drink
   m_EditorClassIdentifier: 
-  Id: eca31d5b-a67d-482e-a2f3-987c2e9d786b
-  Name: Pepper pick-up
+  Id: 5c583fa8-7b70-4ab7-90f2-9da19bb0e844
+  Name: Thanks for the drink
   Category: 1
   Requirements:
-    RequiredPower: 20
+    RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcAmbitionRequirements: []
     NpcPrideRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: a8a1ae6b26b9fdb42a1d8540c4d41498, type: 2}
-    - {fileID: 11400000, guid: 9735bc02a3e50c84a8d216b4785664fe, type: 2}
-    - {fileID: 11400000, guid: 31794c8dd26b54e4ab652945c3b4226c, type: 2}
-    - {fileID: 11400000, guid: 1046a2d73bc48564baa18c8ff2b7039e, type: 2}
+    - {fileID: 11400000, guid: 2964b6219ddfbe0419d34df262c40efa, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -35,35 +32,46 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 200
+    MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
-  Repeatable: 1
-  PreviewEffect: 1
+  Repeatable: 0
+  PreviewEffect: 0
   Result:
     Dialogs:
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: I understand I have you to thank for this round.
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: You do indeed.  You're new around here.  I'm Ashley by the way.  Ashley
+        Goodchild.  I thought this place was fished out so you're a nice surprise. 
+        You work in Zenith?
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: 'At Artemis.  It''s a high tech company.  I''m an executive over there.  '
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: I know Artemis.  When you're in management, maybe you can buy me a drink. 
+        Got to go.  Nothing personal but I only deal with senior management types. 
+        Sorry-- life's too short, right?
+      CustomNpcImageOptions: []
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 0}
-      Text: Pepper's not a whore but she appreciates a nice tipper and she's selective
-        with what customers she sleeps with.  A high class exec like you suits her
-        just fine!  College is expensive-- so you can be sure that the cash you leave
-        on her dresser is going to a good cause!
+      Text: 'When you hit a Power level of 40, Ashley Goodchild will deem you worthy
+        of another look.  Until then, at least you know you''re on her radar... '
       CustomNpcImageOptions: []
-    OptionalPopups:
-    - Title: '"I''m not that kind of girl!"'
-      Videos:
-      - {fileID: 32900000, guid: 00119bc538e30f74ea4e6affd033f81e, type: 3}
-      - {fileID: 32900000, guid: c099db6dcdf224f42b79a68b61575f57, type: 3}
-      - {fileID: 32900000, guid: 7ec38f6601dc15f4186b7589e591a19a, type: 3}
-      Texture: {fileID: 0}
-      Text: Being able to bang a waitress when you want is certainly convenient!
+    OptionalPopups: []
     Effect:
       NpcEffects: []
-      EgoEffect: 10
+      EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
