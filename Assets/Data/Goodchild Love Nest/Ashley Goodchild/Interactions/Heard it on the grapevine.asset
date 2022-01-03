@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Come to Daddy
+  m_Name: Heard it on the grapevine
   m_EditorClassIdentifier: 
-  Id: 3f60beb4-79e4-4bcd-ad52-8690d42cb9ba
-  Name: Come to Daddy
+  Id: e38dce77-f882-473a-82de-c07c1cec133c
+  Name: Heard it on the grapevine
   Category: 1
   Requirements:
     RequiredPower: 0
@@ -21,8 +21,7 @@ MonoBehaviour:
     RequiredTurnNumber: 0
     NpcAmbitionRequirements: []
     NpcPrideRequirements: []
-    RequiredInteractions:
-    - {fileID: 11400000, guid: a59ddcd3cc0f0f94e81854038b0981c8, type: 2}
+    RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -31,8 +30,8 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 0
-    MoneyCost: 10000
+    EgoCost: 10
+    MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -43,44 +42,14 @@ MonoBehaviour:
   PreviewEffect: 1
   Result:
     Dialogs:
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: I think your arrangement would work for me.  Just a few questions...
-      CustomNpcImageOptions: []
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Ok.
+      Text: 'Hey, I heard from a girl in my yoga class-- she was temping at Perkins
+        Geary--  that Malcolm Perkins had a thing going on with some lawyer chick. 
+        It all ended real badly and she kind of blackmailed him or something.  Chick''s
+        name is Amber something? '
       CustomNpcImageOptions: []
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: This would have to be an exclusive arrangement.  I don't share.
-      CustomNpcImageOptions: []
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: I swear you'd be the only one.  BUT I don't do nasty stuff.  You can
-        use your office girls for the real dirty stuff, agreed?  And you'll help
-        me break into entertainment?  Help me start a new career?
-      CustomNpcImageOptions: []
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: Yes, I'll help you do that.  And I'm sure you'll want presents.
-      CustomNpcImageOptions: []
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: Which you'll want me to wear on all our public outings!  I can be of
-        help tp you too.  I know lots of celebs around here.  OK-- we have a deal. 
-        Here's the key to my place, Sugar Daddy.  You come over whenever you want!
-      CustomNpcImageOptions: []
-    - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
-      Text: 'NOTE: You''ll meet with Ashley Goodchild in the Love Next from now on,
-        now revealed on the map!'
-      CustomNpcImageOptions: []
-    OptionalPopups:
-    - Title: Key to Ashley's place
-      Videos: []
-      Texture: {fileID: 2800000, guid: 2b0330b422e55174fb7dff312358f803, type: 3}
-      Text: '"Mi casa su casa, right?"'
+    OptionalPopups: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -96,8 +65,7 @@ MonoBehaviour:
       NpcsToTrain: []
       NpcsToRemoveFromGame: []
       LocationsToControl: []
-      TrophiesClaimedReferences:
-      - {fileID: 11400000, guid: 30e283bda4bf0f3449f7bcd65519a5e4, type: 2}
+      TrophiesClaimedReferences: []
       MissionsToComplete: []
       Car: 0
       Suits: 0
@@ -120,7 +88,7 @@ MonoBehaviour:
       NpcEffects: []
       EgoEffect: 0
       FundsEffect: 0
-      PowerEffect: 10
+      PowerEffect: 0
       PatentsEffect: 0
       CultureEffect: 0
       SpreadsheetsEffect: 0
@@ -129,8 +97,7 @@ MonoBehaviour:
       HornicalEffect: 0
       NpcsToControl: []
       NpcsToTrain: []
-      NpcsToRemoveFromGame:
-      - {fileID: 11400000, guid: c52c5c13d30e4a54eb4cb0da911e31e2, type: 2}
+      NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []

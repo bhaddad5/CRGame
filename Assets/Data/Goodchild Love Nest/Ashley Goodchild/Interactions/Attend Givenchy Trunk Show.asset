@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Come to Daddy
+  m_Name: Attend Givenchy Trunk Show
   m_EditorClassIdentifier: 
-  Id: 3f60beb4-79e4-4bcd-ad52-8690d42cb9ba
-  Name: Come to Daddy
+  Id: 698ccf3b-79c5-4184-95b3-f7566ea9cfc0
+  Name: Attend Givenchy Trunk Show
   Category: 1
   Requirements:
     RequiredPower: 0
@@ -21,8 +21,7 @@ MonoBehaviour:
     RequiredTurnNumber: 0
     NpcAmbitionRequirements: []
     NpcPrideRequirements: []
-    RequiredInteractions:
-    - {fileID: 11400000, guid: a59ddcd3cc0f0f94e81854038b0981c8, type: 2}
+    RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -32,7 +31,7 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 10000
+    MoneyCost: 5000
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -43,46 +42,39 @@ MonoBehaviour:
   PreviewEffect: 1
   Result:
     Dialogs:
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: I think your arrangement would work for me.  Just a few questions...
-      CustomNpcImageOptions: []
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Ok.
+      Text: Trunk shows are very seasonal.  If I'm to look my best for you, I really
+        need to attend this one.  It's Givenchy, for God's sakes!
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: This would have to be an exclusive arrangement.  I don't share.
+      Text: Can't you shop at Vixxxens though?  It is much more affordable and...
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: I swear you'd be the only one.  BUT I don't do nasty stuff.  You can
-        use your office girls for the real dirty stuff, agreed?  And you'll help
-        me break into entertainment?  Help me start a new career?
+      Text: Vixxxens?  That place is Slut Central!  I wouldn't buy pantyhose there! 
+        God-- how tacky can you get!
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Yes, I'll help you do that.  And I'm sure you'll want presents.
+      Text: Fine, fine.  This should cover it.
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Which you'll want me to wear on all our public outings!  I can be of
-        help tp you too.  I know lots of celebs around here.  OK-- we have a deal. 
-        Here's the key to my place, Sugar Daddy.  You come over whenever you want!
+      Text: Thank you, Sugar Daddy!  Kisses!
       CustomNpcImageOptions: []
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 0}
-      Text: 'NOTE: You''ll meet with Ashley Goodchild in the Love Next from now on,
-        now revealed on the map!'
+      Text: 'NOTE: You can lower Ashley''s Ambition by meeting her demands.  The
+        more you give, the more pliable she''ll become.'
       CustomNpcImageOptions: []
-    OptionalPopups:
-    - Title: Key to Ashley's place
-      Videos: []
-      Texture: {fileID: 2800000, guid: 2b0330b422e55174fb7dff312358f803, type: 3}
-      Text: '"Mi casa su casa, right?"'
+    OptionalPopups: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: -40
+        PrideEffect: 0
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -96,8 +88,7 @@ MonoBehaviour:
       NpcsToTrain: []
       NpcsToRemoveFromGame: []
       LocationsToControl: []
-      TrophiesClaimedReferences:
-      - {fileID: 11400000, guid: 30e283bda4bf0f3449f7bcd65519a5e4, type: 2}
+      TrophiesClaimedReferences: []
       MissionsToComplete: []
       Car: 0
       Suits: 0
@@ -120,7 +111,7 @@ MonoBehaviour:
       NpcEffects: []
       EgoEffect: 0
       FundsEffect: 0
-      PowerEffect: 10
+      PowerEffect: 0
       PatentsEffect: 0
       CultureEffect: 0
       SpreadsheetsEffect: 0
@@ -129,8 +120,7 @@ MonoBehaviour:
       HornicalEffect: 0
       NpcsToControl: []
       NpcsToTrain: []
-      NpcsToRemoveFromGame:
-      - {fileID: 11400000, guid: c52c5c13d30e4a54eb4cb0da911e31e2, type: 2}
+      NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []

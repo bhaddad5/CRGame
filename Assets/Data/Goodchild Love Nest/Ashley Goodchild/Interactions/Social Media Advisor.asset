@@ -10,29 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Come to Daddy
+  m_Name: Social Media Advisor
   m_EditorClassIdentifier: 
-  Id: 3f60beb4-79e4-4bcd-ad52-8690d42cb9ba
-  Name: Come to Daddy
-  Category: 1
+  Id: a9437385-c955-42cc-8492-ee117553cb3c
+  Name: Social Media Advisor
+  Category: 3
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcAmbitionRequirements: []
     NpcPrideRequirements: []
-    RequiredInteractions:
-    - {fileID: 11400000, guid: a59ddcd3cc0f0f94e81854038b0981c8, type: 2}
+    RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
-    RequiredNpcsControled: []
+    RequiredNpcsControled:
+    - {fileID: 11400000, guid: d6a66ac714b2b6143974e140f5c91609, type: 2}
     RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 10000
+    MoneyCost: 5000
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -43,46 +43,33 @@ MonoBehaviour:
   PreviewEffect: 1
   Result:
     Dialogs:
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: I think your arrangement would work for me.  Just a few questions...
-      CustomNpcImageOptions: []
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Ok.
+      Text: How am I supposed to gro wmy followers unless I bring on a proper social
+        media expert?  You have to let me get one!
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: This would have to be an exclusive arrangement.  I don't share.
+      Text: This sounds expensive.
       CustomNpcImageOptions: []
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: I swear you'd be the only one.  BUT I don't do nasty stuff.  You can
-        use your office girls for the real dirty stuff, agreed?  And you'll help
-        me break into entertainment?  Help me start a new career?
-      CustomNpcImageOptions: []
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: Yes, I'll help you do that.  And I'm sure you'll want presents.
-      CustomNpcImageOptions: []
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: Which you'll want me to wear on all our public outings!  I can be of
-        help tp you too.  I know lots of celebs around here.  OK-- we have a deal. 
-        Here's the key to my place, Sugar Daddy.  You come over whenever you want!
+      Text: I can get Greta!  She's very reasonable and only needs a retainer of
+        five thousand!  Please let me-- this will really help me get in front of
+        entertainment execs!
       CustomNpcImageOptions: []
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 0}
-      Text: 'NOTE: You''ll meet with Ashley Goodchild in the Love Next from now on,
-        now revealed on the map!'
+      Text: 'NOTE: By funding her efforts to break into entertainment, Ashley will
+        becoem even more dependent on you.  If you groom her properly, she''ll be
+        ready to be a proper Mistress-- one you can show off publiclly.'
       CustomNpcImageOptions: []
-    OptionalPopups:
-    - Title: Key to Ashley's place
-      Videos: []
-      Texture: {fileID: 2800000, guid: 2b0330b422e55174fb7dff312358f803, type: 3}
-      Text: '"Mi casa su casa, right?"'
+    OptionalPopups: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: 0
+        PrideEffect: -40
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -96,8 +83,7 @@ MonoBehaviour:
       NpcsToTrain: []
       NpcsToRemoveFromGame: []
       LocationsToControl: []
-      TrophiesClaimedReferences:
-      - {fileID: 11400000, guid: 30e283bda4bf0f3449f7bcd65519a5e4, type: 2}
+      TrophiesClaimedReferences: []
       MissionsToComplete: []
       Car: 0
       Suits: 0
@@ -120,7 +106,7 @@ MonoBehaviour:
       NpcEffects: []
       EgoEffect: 0
       FundsEffect: 0
-      PowerEffect: 10
+      PowerEffect: 0
       PatentsEffect: 0
       CultureEffect: 0
       SpreadsheetsEffect: 0
@@ -129,8 +115,7 @@ MonoBehaviour:
       HornicalEffect: 0
       NpcsToControl: []
       NpcsToTrain: []
-      NpcsToRemoveFromGame:
-      - {fileID: 11400000, guid: c52c5c13d30e4a54eb4cb0da911e31e2, type: 2}
+      NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
