@@ -33,7 +33,7 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 0
+    EgoCost: 5
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -42,7 +42,7 @@ MonoBehaviour:
     RevanueCost: 0
     HornicalCost: 0
   Repeatable: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 1
@@ -119,7 +119,11 @@ MonoBehaviour:
       OptionalNpcReference: {fileID: 0}
       Text: You're bullying me and I intend to report you to HR!
       CustomNpcImageOptions: []
-    OptionalPopups: []
+    OptionalPopups:
+    - Title: 
+      Videos: []
+      Texture: {fileID: 0}
+      Text: 
     Effect:
       NpcEffects: []
       EgoEffect: -5

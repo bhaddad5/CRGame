@@ -19,9 +19,7 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements:
-    - OptionalNpcReference: {fileID: 0}
-      RequiresStatBelow: 80
+    NpcAmbitionRequirements: []
     NpcPrideRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: d087b4b747ce9c947a103524f9c9cff3, type: 2}
@@ -42,13 +40,13 @@ MonoBehaviour:
     RevanueCost: 0
     HornicalCost: 0
   Repeatable: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Oh!  Sorry-- just let me take my pills.  I forgot and I really can't
-        miss a day.
+      Text: Oh!  Sorry-- just let me take my pill.  I forgot and I really can't miss
+        a day.
       CustomNpcImageOptions: []
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
@@ -68,7 +66,7 @@ MonoBehaviour:
       Videos:
       - {fileID: 32900000, guid: 10494ba331eceee43b5762dd8e9bd652, type: 3}
       Texture: {fileID: 0}
-      Text: 
+      Text: Interesting to know!
     Effect:
       NpcEffects: []
       EgoEffect: 0
