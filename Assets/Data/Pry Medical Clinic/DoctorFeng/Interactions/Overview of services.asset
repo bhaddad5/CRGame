@@ -39,7 +39,7 @@ MonoBehaviour:
     RevanueCost: 0
     HornicalCost: 0
   Repeatable: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 0
@@ -48,7 +48,13 @@ MonoBehaviour:
         of your subordinates.  We offer a wide range of services-- from mental health
         to cosmetic surgery to ensure your employee meets your expectations!
       CustomNpcImageOptions: []
-    OptionalPopups: []
+    OptionalPopups:
+    - Title: Perhaps you've seen our latest ad?
+      Videos:
+      - {fileID: 32900000, guid: 7250fa237765d2e4c9933b5a09c39fee, type: 3}
+      Texture: {fileID: 0}
+      Text: If you are interested in learning about specific services, please return
+        for a more in-depth discussion!
     Effect:
       NpcEffects: []
       EgoEffect: 0
