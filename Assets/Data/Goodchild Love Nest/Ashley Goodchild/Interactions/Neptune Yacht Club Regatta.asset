@@ -49,9 +49,18 @@ MonoBehaviour:
         community elite.  You''re a player to contend with, a man with real juice!
         (+1 Power)'
       CustomNpcImageOptions: []
-    OptionalPopups: []
+    OptionalPopups:
+    - Title: Yachting is a gentlemen's pastime...
+      Videos:
+      - {fileID: 32900000, guid: 99e077a6274893f499e4ef4de555acb5, type: 3}
+      Texture: {fileID: 0}
+      Text: ...as well as a wonderful way to network with the powerful men who run
+        things in Zenith!
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: 0
+        PrideEffect: 0
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 1
