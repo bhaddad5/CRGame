@@ -1,0 +1,146 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: Dress Code Footwear Policy
+  m_EditorClassIdentifier: 
+  Id: eb2b05dd-125f-4d7e-8382-deef30c0727e
+  Name: Dress Code Footwear Policy
+  Category: 5
+  Requirements:
+    RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
+    NpcAmbitionRequirements: []
+    NpcPrideRequirements: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: fc02f17d89ade184bb3a64f5c10348c4, type: 2}
+    - {fileID: 11400000, guid: acf7e7564853de749a72cfa68068c86c, type: 2}
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled:
+    - {fileID: 11400000, guid: 61a8eb709285dc0448c63cbd36baeed2, type: 2}
+    RequiredNpcsControled:
+    - {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea, type: 2}
+    RequiredNpcsTrained: []
+    RequiredNpcsNotControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 15
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    HornicalCost: 0
+  Repeatable: 0
+  PreviewEffect: 1
+  Result:
+    Dialogs:
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: 'NOTE: It might seem petty, but the first time Deborah enters the office
+        in those horrible running shoes, you feel compelled to point out that the
+        Admin Dress Code requires heels and her ugly walk-to-work shoes are not allowed.'
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: Of course she tries to debate the point until you overrule her by leaving
+        no doubt that once she leaves her home, she's expected to project the right
+        image.  This includes the appropriate footwear.
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: 'You end the debate by telling her she''s just received a warning.  If
+        she wears the ugly shoes into work tomorrow-- even if she does change into
+        her high heels right away-- that she''ll be docked pay. '
+      CustomNpcImageOptions: []
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: The next day, you find her rubbing her aching feet-- but wearing the
+        appropriate minimum three inch heels.  How nice is it when Deborah takes
+        direction properly!
+      CustomNpcImageOptions: []
+    OptionalPopups:
+    - Title: Watching her prance into the office in those heels...
+      Videos:
+      - {fileID: 32900000, guid: ba59ec8f6d013344f8a20b18e39cade6, type: 3}
+      Texture: {fileID: 0}
+      Text: is a pleasure.  Sure, she might suffer from aching arches, but is that
+        really your problem?
+    Effect:
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: 0
+        PrideEffect: -3
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+    CustomBackground: {fileID: 0}
+    CustomBackgroundNpcLayout:
+      xPos: 0
+      yPos: 0
+      width: 0
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
+  FailureResult:
+    Dialogs: []
+    OptionalPopups: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+    CustomBackground: {fileID: 0}
+    CustomBackgroundNpcLayout:
+      xPos: 0
+      yPos: 0
+      width: 0
+  Completed: 0
