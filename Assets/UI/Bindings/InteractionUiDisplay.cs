@@ -14,35 +14,15 @@ namespace Assets.GameModel.UiDisplayers
 
 		private Interaction interaction;
 
+		private NpcUiDisplay npcUiDisplay;
+		private MainGameManager mgm;
+
 		public void Setup(Interaction interaction, MainGameManager mgm, NpcUiDisplay npcUiDisplay)
 		{
 			this.interaction = interaction;
-			Button.onClick.RemoveAllListeners();
-			Button.onClick.AddListener(() =>
-			{
-				npcUiDisplay.InteractionsHandler.gameObject.SetActive(false);
+			this.npcUiDisplay = npcUiDisplay;
+			this.mgm = mgm;
 
-				bool succeeded = interaction.GetInteractionSucceeded();
-				var res = interaction.GetInteractionResult(succeeded);
-				interaction.Cost.SubtractCost(mgm);
-				var displayHandler = new InteractionResultDisplayManager();
-				displayHandler.DisplayInteractionResult(mgm, interaction.Completed, res, !succeeded, () =>
-				{
-					res.Execute(mgm);
-					if(succeeded)
-						interaction.Completed++;
-					mgm.HandleTurnChange();
-
-					npcUiDisplay.UnsetImage();
-					npcUiDisplay.UnsetBackground();
-					npcUiDisplay.InteractionsHandler.gameObject.SetActive(true);
-				}, npcUiDisplay);
-			});
-			RefreshUiDisplay(mgm);
-		}
-
-		public void RefreshUiDisplay(MainGameManager mgm)
-		{
 			Text.text = $"{CategoryToString(interaction.Category)}: {interaction.Name}";
 
 			if (interaction.CanFail)
@@ -52,6 +32,28 @@ namespace Assets.GameModel.UiDisplayers
 				Text.text += $" {interaction.Cost.GetCostString()}";
 			Button.interactable = interaction.InteractionValid(mgm);
 			gameObject.SetActive(interaction.InteractionVisible(mgm));
+
+		}
+
+		public void ExecuteInteraction()
+		{
+			npcUiDisplay.InteractionsHandler.gameObject.SetActive(false);
+
+			bool succeeded = interaction.GetInteractionSucceeded();
+			var res = interaction.GetInteractionResult(succeeded);
+			interaction.Cost.SubtractCost(mgm);
+			var displayHandler = new InteractionResultDisplayManager();
+			displayHandler.DisplayInteractionResult(mgm, interaction.Completed, res, !succeeded, () =>
+			{
+				res.Execute(mgm);
+				if (succeeded)
+					interaction.Completed++;
+				mgm.HandleTurnChange();
+
+				npcUiDisplay.UnsetImage();
+				npcUiDisplay.UnsetBackground();
+				npcUiDisplay.InteractionsHandler.gameObject.SetActive(true);
+			}, npcUiDisplay);
 		}
 
 		private string CategoryToString(Interaction.InteractionCategory category)
