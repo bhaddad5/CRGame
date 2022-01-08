@@ -35,7 +35,7 @@ namespace Assets.GameModel.UiDisplayers
 		{
 			CloseCurrentDepartment(false);
 			_currOpenLocation = Instantiate(_locationUiPrefab);
-			_currOpenLocation.Setup(dept, this, mgm);
+			_currOpenLocation.Setup(dept, mgm);
 			_currOpenLocation.RefreshUiDisplay(mgm);
 		}
 

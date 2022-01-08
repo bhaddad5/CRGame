@@ -34,12 +34,10 @@ namespace Assets.GameModel.UiDisplayers
 		public bool IsAccessible(MainGameManager mgm) => loc.IsAccessible(mgm);
 
 		private MainGameManager mgm;
-		private MainMapScreenBindings mguid;
-		public void Setup(Location loc, MainMapScreenBindings mguid, MainGameManager mgm)
+		public void Setup(Location loc, MainGameManager mgm)
 		{
 			this.loc = loc;
 			this.mgm = mgm;
-			this.mguid = mguid;
 
 			foreach (Npc npc in loc.Npcs)
 			{
@@ -69,7 +67,7 @@ namespace Assets.GameModel.UiDisplayers
 
 		public void CloseCurrentLocation()
 		{
-			mguid.CloseCurrentDepartment(false);
+			GameObject.Destroy(gameObject);
 		}
 
 		void OnDestroy()
@@ -78,6 +76,8 @@ namespace Assets.GameModel.UiDisplayers
 				GameObject.Destroy(trophyCase.gameObject);
 			if(statusSymbols != null)
 				GameObject.Destroy(statusSymbols.gameObject);
+			if(currNpc != null)
+				GameObject.Destroy(currNpc);
 		}
 
 		public void OpenPolicies()
