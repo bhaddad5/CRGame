@@ -12,6 +12,9 @@ namespace Assets.GameModel
 		public string Id;
 
 		public string Name;
+		[TextArea(15, 20)]
+		public string Description;
+
 		public Texture2D Icon;
 		public Texture2D BackgroundImage;
 

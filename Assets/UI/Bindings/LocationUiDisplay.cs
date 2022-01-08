@@ -11,9 +11,9 @@ namespace Assets.GameModel.UiDisplayers
 	public class LocationUiDisplay : MonoBehaviour, IUiDisplay
 	{
 		[SerializeField] private TMP_Text Name;
+		[SerializeField] private TMP_Text Description;
 		[SerializeField] private Image BackgroundImage;
 		[SerializeField] private Transform NpcOptionsParent;
-		[SerializeField] private Button BackButton;
 
 		[SerializeField] private Transform PoliciesButton;
 		[SerializeField] private PoliciesPopupBindings PoliciesPopupPrefab;
@@ -119,6 +119,7 @@ namespace Assets.GameModel.UiDisplayers
 			else
 				BackgroundImage.sprite = loc.BackgroundImage.ToSprite();
 			Name.text = loc.Name;
+			Description.text = loc.Description;
 			if (loc.Controlled)
 				Name.text += $" (Controlled)";
 
