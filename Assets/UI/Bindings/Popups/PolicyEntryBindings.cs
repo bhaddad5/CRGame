@@ -45,7 +45,7 @@ namespace Assets.GameModel.UiDisplayers
 			RewardsText.text = $"Rewards: {policy.Effect.GetEffectsString()}";
 		}
 
-		public string GetTooltip(MainGameManager mgm)
+		public string GetTooltip()
 		{
 			if (!policy.Requirements.RequirementsAreMet(mgm))
 				return policy.Requirements.GetInvalidTooltip(mgm);

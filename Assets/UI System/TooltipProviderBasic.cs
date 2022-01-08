@@ -6,7 +6,7 @@ using UnityEngine;
 public class TooltipProviderBasic : MonoBehaviour, ITooltipProvider
 {
 	public string Tooltip = null;
-	public string GetTooltip(MainGameManager mgm)
+	public string GetTooltip()
 	{
 		return Tooltip;
 	}

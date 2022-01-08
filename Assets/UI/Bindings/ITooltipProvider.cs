@@ -5,5 +5,5 @@ using UnityEngine;
 
 public interface ITooltipProvider
 {
-	string GetTooltip(MainGameManager mgm);
+	string GetTooltip();
 }

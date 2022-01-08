@@ -45,7 +45,7 @@ namespace Assets.GameModel.UiDisplayers
 			return new Vector3(mapPos.x, mapPos.y, 0) - new Vector3(mainMapSize.x/2f, mainMapSize.y/2f, 0);
 		}
 
-		public string GetTooltip(MainGameManager mgm)
+		public string GetTooltip()
 		{
 			if (!Button.interactable)
 				return "Office locations are closed on weekends";

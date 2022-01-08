@@ -81,7 +81,7 @@ namespace Assets.GameModel.UiDisplayers
 			return "";
 		}
 
-		public string GetTooltip(MainGameManager mgm)
+		public string GetTooltip()
 		{
 			if (interaction.InteractionValid(mgm))
 				return null;

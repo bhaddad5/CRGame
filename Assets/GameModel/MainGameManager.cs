@@ -10,8 +10,6 @@ namespace Assets.GameModel
 {
 	public class MainGameManager : MonoBehaviour
 	{
-		public static MainGameManager Manager = null;
-
 		[SerializeField]
 		private GameData DefaultGameData;
 		[HideInInspector]
@@ -22,12 +20,7 @@ namespace Assets.GameModel
 
 		private HudBindings hudUiDisplay;
 		private MainMapUiDisplay mainMapUiDisplay;
-
-		void Start()
-		{
-			Manager = this;
-		}
-
+		
 		public void InitializeGame(string saveDataPath)
 		{
 			if (hudUiDisplay != null)

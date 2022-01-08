@@ -15,20 +15,28 @@ public class TooltipElementHandler : MonoBehaviour, IPointerEnterHandler, IPoint
 	public void OnPointerExit(PointerEventData eventData)
 	{
 		isPointedAt = false;
-		TooltipDisplayer.CurrentTooltip = null;
+		tooltipIsCreated = false;
+		TooltipCanvas.Instance.ClearTooltip();
 	}
 
 	private bool isPointedAt = false;
+	private bool tooltipIsCreated = false;
 	private float enteredTime = 0;
 	void Update()
 	{
+		if (tooltipIsCreated)
+			return;
+
 		if (isPointedAt)
 		{
 			if (Time.time - enteredTime > .2f)
 			{
-				string tooltip = GetComponentInParent<ITooltipProvider>()?.GetTooltip(MainGameManager.Manager);
+				string tooltip = GetComponentInParent<ITooltipProvider>()?.GetTooltip();
 				if (tooltip != null)
-					TooltipDisplayer.CurrentTooltip = tooltip;
+				{
+					TooltipCanvas.Instance.CreateTooltip(tooltip);
+					tooltipIsCreated = true;
+				}
 			}
 		}
 	}
