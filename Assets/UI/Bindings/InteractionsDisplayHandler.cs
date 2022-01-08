@@ -15,7 +15,7 @@ public class InteractionsDisplayHandler : MonoBehaviour
 
 	private List<Interaction> allInteractions;
 
-	public void Setup(List<Interaction> interactions, MainGameManager mgm, NpcUiDisplay npcUiDisplay)
+	public void Setup(List<Interaction> interactions, MainGameManager mgm, NpcScreenBindings npcUiDisplay)
 	{
 		allInteractions = new List<Interaction>(interactions);
 		allInteractions.RemoveAll(i => i == null);

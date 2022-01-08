@@ -14,10 +14,10 @@ public class InteractionResultDisplayManager
 	private List<Trophy> currTrophiesToShow = new List<Trophy>();
 	private Action resultComplete = null;
 	private int completedCount;
-	private NpcUiDisplay contextualNpcUiDisplay;
+	private NpcScreenBindings contextualNpcUiDisplay;
 	private MainGameManager mgm;
 
-	public void DisplayInteractionResult(MainGameManager mgm, int completionCount, InteractionResult res, bool failed, Action resultComplete, NpcUiDisplay contextualNpcDisplay = null)
+	public void DisplayInteractionResult(MainGameManager mgm, int completionCount, InteractionResult res, bool failed, Action resultComplete, NpcScreenBindings contextualNpcDisplay = null)
 	{
 		this.mgm = mgm;
 		this.completedCount = completionCount;

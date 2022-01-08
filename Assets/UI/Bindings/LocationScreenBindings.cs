@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 namespace Assets.GameModel.UiDisplayers
 {
-	public class LocationUiDisplay : MonoBehaviour, IUiDisplay
+	public class LocationScreenBindings : MonoBehaviour, IUiDisplay
 	{
 		[SerializeField] private TMP_Text Name;
 		[SerializeField] private TMP_Text Description;
@@ -22,7 +22,7 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private MissionsPopupBindings MissionsPopupPrefab;
 
 		[SerializeField] private NpcSelectionUiDisplay _npcButtonPrefab;
-		[SerializeField] private NpcUiDisplay _npcUiPrefab;
+		[SerializeField] private NpcScreenBindings _npcUiPrefab;
 		
 		[SerializeField] private TrophyCaseBindings TrophyCasePrefab;
 		private TrophyCaseBindings trophyCase;
@@ -34,8 +34,8 @@ namespace Assets.GameModel.UiDisplayers
 		public bool IsAccessible(MainGameManager mgm) => loc.IsAccessible(mgm);
 
 		private MainGameManager mgm;
-		private MainMapUiDisplay mguid;
-		public void Setup(Location loc, MainMapUiDisplay mguid, MainGameManager mgm)
+		private MainMapScreenBindings mguid;
+		public void Setup(Location loc, MainMapScreenBindings mguid, MainGameManager mgm)
 		{
 			this.loc = loc;
 			this.mgm = mgm;
@@ -94,7 +94,7 @@ namespace Assets.GameModel.UiDisplayers
 			missionsPopup.Setup(loc);
 		}
 
-		private NpcUiDisplay _currOpenNpc;
+		private NpcScreenBindings _currOpenNpc;
 		public void ShowNpc(Npc npc, MainGameManager mgm)
 		{
 			_currOpenNpc = Instantiate(_npcUiPrefab);

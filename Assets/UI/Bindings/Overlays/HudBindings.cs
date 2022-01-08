@@ -37,10 +37,10 @@ public class HudBindings : MonoBehaviour, IUiDisplay
 	private MainMenuUiDisplay mainMenu;
 
 	[SerializeField] private PopupUiDisplay PopupPrefab;
-	[SerializeField] private DialogDisplayHandler DialogPrefab;
+	[SerializeField] private DialogScreenBindings DialogPrefab;
 
 	private MainGameManager mgm;
-	public void Setup(MainGameManager mgm, MainMapUiDisplay mapDisplay)
+	public void Setup(MainGameManager mgm, MainMapScreenBindings mapDisplay)
 	{
 		this.mgm = mgm;
 		Rest.onClick.AddListener(() =>
@@ -109,7 +109,7 @@ public class HudBindings : MonoBehaviour, IUiDisplay
 		popupDisp.Show(popup, completionCount, onPopupDone);
 	}
 
-	public void ShowDialog(DialogEntry dialog, Action onDialogsDone, NpcUiDisplay contextualNpcDisplay = null)
+	public void ShowDialog(DialogEntry dialog, Action onDialogsDone, NpcScreenBindings contextualNpcDisplay = null)
 	{
 		var dialogDisp = GameObject.Instantiate(DialogPrefab);
 		dialogDisp.ShowDialog(dialog, onDialogsDone, contextualNpcDisplay);

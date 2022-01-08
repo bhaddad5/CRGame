@@ -9,7 +9,7 @@ using UnityEngine.UI;
 
 namespace Assets.GameModel.UiDisplayers
 {
-	public class NpcUiDisplay : MonoBehaviour, IUiDisplay
+	public class NpcScreenBindings : MonoBehaviour, IUiDisplay
 	{
 		[SerializeField] private TMP_Text Name;
 		[SerializeField] private TMP_Text Age;
@@ -30,7 +30,7 @@ namespace Assets.GameModel.UiDisplayers
 		}
 
 		private Npc _npc;
-		public void Setup(Npc npc, MainGameManager mgm, LocationUiDisplay duid)
+		public void Setup(Npc npc, MainGameManager mgm, LocationScreenBindings duid)
 		{
 			this._npc = npc;
 

@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 namespace Assets.GameModel.UiDisplayers
 {
-	public class MainMapUiDisplay : MonoBehaviour, IUiDisplay
+	public class MainMapScreenBindings : MonoBehaviour, IUiDisplay
 	{
 		[SerializeField] private Color MorningTint;
 		[SerializeField] private Color AfternoonTint;
@@ -16,7 +16,7 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private Transform DepartmentsParent;
 
 		[SerializeField] private LocationSelectionUiDisplay _locationButtonPrefab;
-		[SerializeField] private LocationUiDisplay _locationUiPrefab;
+		[SerializeField] private LocationScreenBindings _locationUiPrefab;
 
 		private MainGameManager mgm;
 		public void Setup(MainGameManager mgm, List<Location> locations)
@@ -30,7 +30,7 @@ namespace Assets.GameModel.UiDisplayers
 			}
 		}
 
-		private LocationUiDisplay _currOpenLocation = null;
+		private LocationScreenBindings _currOpenLocation = null;
 		public void ShowDepartment(Location dept, MainGameManager mgm)
 		{
 			CloseCurrentDepartment(false);

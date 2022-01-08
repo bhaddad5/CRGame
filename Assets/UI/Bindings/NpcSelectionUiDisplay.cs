@@ -20,7 +20,7 @@ namespace Assets.GameModel.UiDisplayers
 			_npc.ApplyLocationLayout(GetComponent<RectTransform>());
 		}
 
-		public void Setup(Npc npc, LocationUiDisplay deptUi, MainGameManager mgm)
+		public void Setup(Npc npc, LocationScreenBindings deptUi, MainGameManager mgm)
 		{
 			this._npc = npc;
 			Button.onClick.AddListener(() =>

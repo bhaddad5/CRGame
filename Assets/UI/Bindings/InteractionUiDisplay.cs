@@ -14,10 +14,10 @@ namespace Assets.GameModel.UiDisplayers
 
 		private Interaction interaction;
 
-		private NpcUiDisplay npcUiDisplay;
+		private NpcScreenBindings npcUiDisplay;
 		private MainGameManager mgm;
 
-		public void Setup(Interaction interaction, MainGameManager mgm, NpcUiDisplay npcUiDisplay)
+		public void Setup(Interaction interaction, MainGameManager mgm, NpcScreenBindings npcUiDisplay)
 		{
 			this.interaction = interaction;
 			this.npcUiDisplay = npcUiDisplay;

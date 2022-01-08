@@ -8,7 +8,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Random = System.Random;
 
-public class DialogDisplayHandler : MonoBehaviour
+public class DialogScreenBindings : MonoBehaviour
 {
 	[SerializeField] private TMP_Text SpeakerName;
 	[SerializeField] private GameObject SpeakerNameBox;
@@ -19,9 +19,9 @@ public class DialogDisplayHandler : MonoBehaviour
 	private DialogEntry dialog;
 	private Coroutine runningCoroutine = null;
 	private Action dialogsComplete = null;
-	private NpcUiDisplay npcDisplay;
+	private NpcScreenBindings npcDisplay;
 
-	public void ShowDialog(DialogEntry dialog, Action dialogsComplete, NpcUiDisplay npcDisplay = null)
+	public void ShowDialog(DialogEntry dialog, Action dialogsComplete, NpcScreenBindings npcDisplay = null)
 	{
 		this.dialogsComplete = dialogsComplete;
 		this.npcDisplay = npcDisplay;

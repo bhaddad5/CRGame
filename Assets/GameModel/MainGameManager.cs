@@ -16,10 +16,10 @@ namespace Assets.GameModel
 		public GameData Data;
 
 		[SerializeField] private HudBindings HudUiDisplayPrefab;
-		[SerializeField] private MainMapUiDisplay MainMapUiDisplayPrefab;
+		[SerializeField] private MainMapScreenBindings MainMapUiDisplayPrefab;
 
 		private HudBindings hudUiDisplay;
-		private MainMapUiDisplay mainMapUiDisplay;
+		private MainMapScreenBindings mainMapUiDisplay;
 		
 		public void InitializeGame(string saveDataPath)
 		{
@@ -120,7 +120,7 @@ namespace Assets.GameModel
 			hudUiDisplay.ShowPopup(popup, completionCount, onPopupDone);
 		}
 
-		public void ShowDialog(DialogEntry dialog, Action onDialogsDone, NpcUiDisplay contextualNpcDisplay = null)
+		public void ShowDialog(DialogEntry dialog, Action onDialogsDone, NpcScreenBindings contextualNpcDisplay = null)
 		{
 			hudUiDisplay.ShowDialog(dialog, onDialogsDone, contextualNpcDisplay);
 		}

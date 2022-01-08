@@ -19,7 +19,7 @@ namespace Assets.GameModel.UiDisplayers
 		private Location dept;
 		private Vector2 mainMapSize;
 
-		public void Setup(Location dept, MainMapUiDisplay mainMapUi, MainGameManager mgm)
+		public void Setup(Location dept, MainMapScreenBindings mainMapUi, MainGameManager mgm)
 		{
 			this.dept = dept;
 			Button.onClick.RemoveAllListeners();
