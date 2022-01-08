@@ -29,7 +29,7 @@ public class MainMenuBindings : MonoBehaviour
 
 	public void CloseMenu()
 	{
-		GameObject.Destroy(gameObject);
+		GameObject.Destroy(transform.parent.gameObject);
 	}
 
 	public void QuitGame()
