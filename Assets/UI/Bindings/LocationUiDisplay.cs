@@ -40,12 +40,12 @@ namespace Assets.GameModel.UiDisplayers
 		public bool IsAccessible(MainGameManager mgm) => loc.IsAccessible(mgm);
 
 		private MainGameManager mgm;
+		private MainMapUiDisplay mguid;
 		public void Setup(Location loc, MainMapUiDisplay mguid, MainGameManager mgm)
 		{
 			this.loc = loc;
 			this.mgm = mgm;
-			BackButton.onClick.RemoveAllListeners();
-			BackButton.onClick.AddListener(() => mguid.CloseCurrentDepartment(false));
+			this.mguid = mguid;
 
 			foreach (Npc npc in loc.Npcs)
 			{
@@ -87,6 +87,11 @@ namespace Assets.GameModel.UiDisplayers
 				statusSymbols = Instantiate(StatusSymbolsPrefab);
 				statusSymbols.UpdateVisuals(mgm);
 			}
+		}
+
+		public void CloseCurrentLocation()
+		{
+			mguid.CloseCurrentDepartment(false);
 		}
 
 		void OnDestroy()
