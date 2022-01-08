@@ -17,7 +17,7 @@ namespace Assets.GameModel.UiDisplayers
 		//Dumb, but this doesn't work when called from Setup()
 		void Start()
 		{
-			_npc.ApplyLocationLayout(GetComponent<RectTransform>());
+			_npc.LocationLayout.ApplyToRectTransform(GetComponent<RectTransform>());
 		}
 
 		public void Setup(Npc npc, LocationScreenBindings deptUi, MainGameManager mgm)

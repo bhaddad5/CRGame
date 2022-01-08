@@ -154,8 +154,8 @@ public class ScriptableObjectTools
 		Debug.Log("Upgrade Complete!");
 	}
 
-	[MenuItem("Tools/Find uncontrollable npcs")]
-	public static void findUncontrollableNpcs()
+	[MenuItem("Tools/Find Uncontrollable NPCs")]
+	public static void FindUncontrollableNpcs()
 	{
 		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
 
@@ -172,7 +172,7 @@ public class ScriptableObjectTools
 		}
 		Debug.Log("Search Complete!");
 	}
-
+	
 	//TODO: USE THIS AS A TEMPLATE FOR DATA UPGRADES!
 	/*
 	[MenuItem("Tools/Upgrade Old Data")]

@@ -55,18 +55,13 @@ namespace Assets.GameModel
 		public Interaction RequiredVisibilityInteractionReference;
 
 		[Header("Screen Position in Department/Location")]
-		public float LocationLayoutXPos = 0.5f;
-		public float LocationLayoutYPos = 0.5f;
-		public float LocationLayoutWidth = 200f;
+		public NpcLayout LocationLayout = new NpcLayout() { width = 200, xPos = .5f, yPos = .5f };
 
 		[Header("Screen Position when talking to her")]
-		public float PersonalLayoutXPos = 0.5f;
-		public float PersonalLayoutYPos = 0.5f;
-		public float PersonalLayoutWidth = 200f;
+		public NpcLayout PersonalLayout = new NpcLayout() { width = 200, xPos = .5f, yPos = .5f };
 
 		public Texture2D BackgroundImage;
-
-
+		
 		[HideInInspector]
 		public float Ambition;
 		[HideInInspector]
@@ -115,24 +110,6 @@ namespace Assets.GameModel
 				return ControlledImages[UnityEngine.Random.Range(0, ControlledImages.Count)];
 			else
 				return IndependentImages[UnityEngine.Random.Range(0, IndependentImages.Count)];
-		}
-
-		public void ApplyLocationLayout(RectTransform transform)
-		{
-			var ratio = 2;
-			transform.anchorMin = new Vector2(LocationLayoutXPos, LocationLayoutYPos);
-			transform.anchorMax = new Vector2(LocationLayoutXPos, LocationLayoutYPos);
-			transform.sizeDelta = new Vector2(LocationLayoutWidth, LocationLayoutWidth * ratio);
-			transform.anchoredPosition = Vector2.zero;
-		}
-
-		public void ApplyPersonalLayout(RectTransform transform)
-		{
-			var ratio = 2;
-			transform.anchorMin = new Vector2(PersonalLayoutXPos, PersonalLayoutYPos);
-			transform.anchorMax = new Vector2(PersonalLayoutXPos, PersonalLayoutYPos);
-			transform.sizeDelta = new Vector2(PersonalLayoutWidth, PersonalLayoutWidth * ratio);
-			transform.anchoredPosition = Vector2.zero;
 		}
 
 		public override string ToString()

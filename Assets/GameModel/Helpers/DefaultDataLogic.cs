@@ -27,6 +27,11 @@ public static class DefaultDataLogic
 						var dialog = interaction.Result.Dialogs[i];
 						if (dialog.CurrSpeaker == DialogEntry.Speaker.Npc && dialog.OptionalNpcReference == null)
 							dialog.OptionalNpcReference = npc;
+						if (dialog.OptionalBackgroundImage == null)
+						{
+							dialog.OptionalBackgroundImage = npc.BackgroundImage;
+							dialog.OptionalBackgroundNpcLayout = npc.LocationLayout;
+						}
 						interaction.Result.Dialogs[i] = dialog;
 					}
 
@@ -35,6 +40,11 @@ public static class DefaultDataLogic
 						var dialog = interaction.FailureResult.Dialogs[i];
 						if (dialog.CurrSpeaker == DialogEntry.Speaker.Npc && dialog.OptionalNpcReference == null)
 							dialog.OptionalNpcReference = npc;
+						if (dialog.OptionalBackgroundImage == null)
+						{
+							dialog.OptionalBackgroundImage = npc.BackgroundImage;
+							dialog.OptionalBackgroundNpcLayout = npc.PersonalLayout;
+						}
 						interaction.FailureResult.Dialogs[i] = dialog;
 					}
 
@@ -63,6 +73,9 @@ public static class DefaultDataLogic
 				var dialog = interaction.Result.Dialogs[i];
 				if (dialog.CurrSpeaker == DialogEntry.Speaker.Npc && dialog.OptionalNpcReference == null)
 					throw new Exception($"No npc reference provided for interaction {interaction}");
+
+				if (dialog.OptionalBackgroundImage == null)
+					throw new Exception($"No dialog background image provided for interaction {interaction}");
 			}
 
 			for (int i = 0; i < interaction.FailureResult.Dialogs.Count; i++)
@@ -70,6 +83,9 @@ public static class DefaultDataLogic
 				var dialog = interaction.FailureResult.Dialogs[i];
 				if (dialog.CurrSpeaker == DialogEntry.Speaker.Npc && dialog.OptionalNpcReference == null)
 					throw new Exception($"No npc reference provided for interaction {interaction}");
+
+				if (dialog.OptionalBackgroundImage == null)
+					throw new Exception($"No dialog background image provided for interaction {interaction}");
 			}
 
 			for (int i = 0; i < interaction.Result.Effect.NpcEffects.Count; i++)

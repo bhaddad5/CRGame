@@ -29,7 +29,7 @@ namespace Assets.GameModel.UiDisplayers
 
 		void Start()
 		{
-			_npc.ApplyPersonalLayout(Picture.GetComponent<RectTransform>());
+			_npc.PersonalLayout.ApplyToRectTransform(Picture.GetComponent<RectTransform>());
 		}
 
 		private Npc _npc;

@@ -13,7 +13,6 @@ public class DialogScreenBindings : MonoBehaviour
 	[SerializeField] private TMP_Text SpeakerName;
 	[SerializeField] private GameObject SpeakerNameBox;
 	[SerializeField] private TMP_Text DialogText;
-	[SerializeField] private Button DialogAreaButton;
 	[SerializeField] private Image NextDialogImage;
 
 	private DialogEntry dialog;
