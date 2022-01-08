@@ -17,29 +17,21 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private TMP_Text Pride;
 		[SerializeField] private TMP_Text Education;
 		[SerializeField] private TMP_Text Bio;
-		[SerializeField] private Button BackButton;
 		[SerializeField] private Image Picture;
 		[SerializeField] private Image BackgroundImage;
 		[SerializeField] private Transform InfoBox;
-
-		//TODO: MAKE PRIVATE AGAIN!
-		[SerializeField] public Transform InteractionsParent;
+		[SerializeField] private Transform InteractionsParent;
 
 		[SerializeField] private NpcInteractionEntryBindings InteractionEntryPrefab;
 
-		[SerializeField] private DialogScreenBindings DialogPrefab;
-
-		void Start()
-		{
-			_npc.PersonalLayout.ApplyToRectTransform(Picture.GetComponent<RectTransform>());
-		}
-
 		private Npc _npc;
-		public void Setup(Npc npc, MainGameManager mgm, LocationScreenBindings duid)
+		public void Setup(Npc npc, MainGameManager mgm)
 		{
 			this._npc = npc;
 
-			if(!npc.IsControllable)
+			_npc.PersonalLayout.ApplyToRectTransform(Picture.GetComponent<RectTransform>());
+
+			if (!npc.IsControllable)
 				InfoBox.gameObject.SetActive(false);
 
 			var allInteractions = new List<Interaction>(npc.Interactions);
@@ -55,12 +47,6 @@ namespace Assets.GameModel.UiDisplayers
 				interactButton.transform.SetParent(InteractionsParent);
 			}
 
-			BackButton.onClick.RemoveAllListeners();
-			BackButton.onClick.AddListener(() => duid.CloseCurrentNpc());
-		}
-
-		public void RefreshUiDisplay(MainGameManager mgm)
-		{
 			Name.text = $"{_npc.FirstName} {_npc.LastName}";
 
 			if (_npc.Trained)
@@ -71,43 +57,11 @@ namespace Assets.GameModel.UiDisplayers
 			Age.text = $"{_npc.Age} years old";
 			Ambition.text = $"Ambition: {_npc.Ambition}";
 			Pride.text = $"Pride: {_npc.Pride}";
-			Picture.sprite = LoadNpcPicture();
+			Picture.sprite = _npc.GetCurrentPicture().ToSprite();
 			Picture.preserveAspect = true;
 			Bio.text = $"Notes: {_npc.Bio}";
 			Education.text = $"Education: {_npc.Education}";
 			BackgroundImage.sprite = _npc.BackgroundImage.ToSprite();
-		}
-
-		private Texture2D overridingImage = null;
-		public void SetImage(Texture2D image)
-		{
-			overridingImage = image;
-			Picture.sprite = LoadNpcPicture();
-		}
-
-		public void UnsetImage()
-		{
-			overridingImage = null;
-		}
-
-		public void SetBackground(Texture2D background)
-		{
-			BackgroundImage.sprite = background.ToSprite();
-		}
-
-		public void UnsetBackground()
-		{
-			BackgroundImage.sprite = _npc.BackgroundImage.ToSprite();
-		}
-		
-		private Sprite LoadNpcPicture()
-		{
-			return (overridingImage ?? _npc.GetCurrentPicture()).ToSprite();
-		}
-
-		public void SetCustomLayout(NpcLayout layout)
-		{
-			layout.ApplyToRectTransform(Picture.GetComponent<RectTransform>());
 		}
 	}
 }

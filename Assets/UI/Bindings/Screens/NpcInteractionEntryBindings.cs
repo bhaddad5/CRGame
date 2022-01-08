@@ -37,7 +37,7 @@ namespace Assets.GameModel.UiDisplayers
 
 		public void ExecuteInteraction()
 		{
-			npcUiDisplay.InteractionsParent.parent.parent.gameObject.SetActive(false);
+			GameObject.Destroy(npcUiDisplay.gameObject);
 
 			bool succeeded = interaction.GetInteractionSucceeded();
 			var res = interaction.GetInteractionResult(succeeded);
@@ -49,10 +49,6 @@ namespace Assets.GameModel.UiDisplayers
 				if (succeeded)
 					interaction.Completed++;
 				mgm.HandleTurnChange();
-
-				npcUiDisplay.UnsetImage();
-				npcUiDisplay.UnsetBackground();
-				npcUiDisplay.InteractionsParent.parent.parent.gameObject.SetActive(true);
 			});
 		}
 

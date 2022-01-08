@@ -94,22 +94,18 @@ namespace Assets.GameModel.UiDisplayers
 			missionsPopup.Setup(loc);
 		}
 
-		private NpcScreenBindings _currOpenNpc;
+		private GameObject currNpc;
 		public void ShowNpc(Npc npc, MainGameManager mgm)
 		{
-			_currOpenNpc = Instantiate(_npcUiPrefab);
-			_currOpenNpc.Setup(npc, mgm, this);
-			_currOpenNpc.RefreshUiDisplay(mgm);
+			currNpc = Instantiate(_npcUiPrefab).gameObject;
+			currNpc.GetComponent<NpcScreenBindings>().Setup(npc, mgm);
+
 		}
 
 		public void CloseCurrentNpc()
 		{
-			if (_currOpenNpc != null)
-			{
-				GameObject.Destroy(_currOpenNpc.gameObject);
-				_currOpenNpc = null;
-				RefreshUiDisplay(mgm);
-			}
+			if (currNpc != null)
+				GameObject.Destroy(currNpc);
 		}
 
 		public void RefreshUiDisplay(MainGameManager mgm)
@@ -131,9 +127,6 @@ namespace Assets.GameModel.UiDisplayers
 				else
 					npc.RefreshUiDisplay(mgm);
 			}
-			
-			if (_currOpenNpc != null)
-				_currOpenNpc.RefreshUiDisplay(mgm);
 		}
 	}
 }
