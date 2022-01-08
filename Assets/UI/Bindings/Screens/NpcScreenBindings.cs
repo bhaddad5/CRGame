@@ -63,5 +63,10 @@ namespace Assets.GameModel.UiDisplayers
 			Education.text = $"Education: {_npc.Education}";
 			BackgroundImage.sprite = _npc.BackgroundImage.ToSprite();
 		}
+
+		public void CloseNpc()
+		{
+			GameObject.Destroy(gameObject);
+		}
 	}
 }
