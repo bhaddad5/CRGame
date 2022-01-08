@@ -8,7 +8,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HudUiDisplay : MonoBehaviour, IUiDisplay
+public class HudBindings : MonoBehaviour, IUiDisplay
 {
 	[SerializeField] private TMP_Text PlayerName;
 	[SerializeField] private TMP_Text PlayerTitle;

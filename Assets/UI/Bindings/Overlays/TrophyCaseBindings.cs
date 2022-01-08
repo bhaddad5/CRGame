@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using Assets.GameModel;
 using UnityEngine;
 
-public class TrophyCaseUiDisplay : MonoBehaviour
+public class TrophyCaseBindings : MonoBehaviour
 {
 	[SerializeField] private Transform TrophyCaseParent;
-	[SerializeField] private TrophyDisplay TrophyDisplayPrefab;
+	[SerializeField] private TrophyEntryBindings TrophyDisplayPrefab;
 
 	public void UpdateVisuals(MainGameManager mgm)
 	{

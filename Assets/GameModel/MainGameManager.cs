@@ -17,10 +17,10 @@ namespace Assets.GameModel
 		[HideInInspector]
 		public GameData Data;
 
-		[SerializeField] private HudUiDisplay HudUiDisplayPrefab;
+		[SerializeField] private HudBindings HudUiDisplayPrefab;
 		[SerializeField] private MainMapUiDisplay MainMapUiDisplayPrefab;
 
-		private HudUiDisplay hudUiDisplay;
+		private HudBindings hudUiDisplay;
 		private MainMapUiDisplay mainMapUiDisplay;
 
 		void Start()

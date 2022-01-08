@@ -6,7 +6,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TrophyDisplay : MonoBehaviour
+public class TrophyEntryBindings : MonoBehaviour
 {
 	[SerializeField] private Image TrophyImage;
 	[SerializeField] private TMP_Text TrophyName;

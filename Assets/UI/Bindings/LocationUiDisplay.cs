@@ -24,11 +24,11 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private NpcSelectionUiDisplay _npcButtonPrefab;
 		[SerializeField] private NpcUiDisplay _npcUiPrefab;
 		
-		[SerializeField] private TrophyCaseUiDisplay TrophyCasePrefab;
-		private TrophyCaseUiDisplay trophyCase;
+		[SerializeField] private TrophyCaseBindings TrophyCasePrefab;
+		private TrophyCaseBindings trophyCase;
 
-		[SerializeField] private StatusSymbolsDisplay StatusSymbolsPrefab;
-		private StatusSymbolsDisplay statusSymbols;
+		[SerializeField] private StatusSymbolsBindings StatusSymbolsPrefab;
+		private StatusSymbolsBindings statusSymbols;
 
 		private Location loc;
 		public bool IsAccessible(MainGameManager mgm) => loc.IsAccessible(mgm);

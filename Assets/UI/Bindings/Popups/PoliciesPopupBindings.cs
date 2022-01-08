@@ -4,7 +4,7 @@ namespace Assets.GameModel.UiDisplayers
 {
 	public class PoliciesPopupBindings : MonoBehaviour
 	{
-		[SerializeField] private PolicyUiDisplay PolicyPopupPrefab;
+		[SerializeField] private PolicyEntryBindings PolicyPopupPrefab;
 		[SerializeField] private Transform EntriesParent;
 
 		public void Setup(Location location, MainGameManager mgm)

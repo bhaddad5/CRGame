@@ -4,7 +4,7 @@ namespace Assets.GameModel.UiDisplayers
 {
 	public class MissionsPopupBindings : MonoBehaviour
 	{
-		[SerializeField] private MissionUiDisplay MissionPopupPrefab;
+		[SerializeField] private MissionEntryBindings MissionPopupPrefab;
 		[SerializeField] private Transform EntriesParent;
 
 		public void Setup(Location location)
