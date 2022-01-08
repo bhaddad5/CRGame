@@ -66,7 +66,8 @@ public class HudBindings : MonoBehaviour
 
 	public void OpenMainMenu()
 	{
-		mainMenu = Instantiate(MainMenuPrefab);
+		var popupParent = GameObject.Instantiate(UiPrefabReferences.Instance.PopupOverlayParent);
+		var mainMenu = GameObject.Instantiate(MainMenuPrefab, popupParent.transform);
 		mainMenu.Setup(mgm);
 	}
 
