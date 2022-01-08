@@ -1,7 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Security.Cryptography;
-using Assets.GameModel;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -19,21 +15,21 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private Button ActivatePolicyButton;
 
 		private Policy policy;
-		private Location loc;
+		private MainGameManager mgm;
 
-		public void Setup(Policy policy, Location loc, MainGameManager mgm)
+		public void Setup(Policy policy, MainGameManager mgm)
 		{
 			this.policy = policy;
-			this.loc = loc;
+			this.mgm = mgm;
+			
+			RefreshUiDisplay(mgm);
+		}
 
-			ActivatePolicyButton.onClick.RemoveAllListeners();
-			ActivatePolicyButton.onClick.AddListener(() =>
-			{
-				policy.Active = true;
-				policy.Cost.SubtractCost(mgm);
-				policy.Effect.ExecuteEffect(mgm);
-				RefreshUiDisplay(mgm);
-			});
+		public void ActivatePolicy()
+		{
+			policy.Active = true;
+			policy.Cost.SubtractCost(mgm);
+			policy.Effect.ExecuteEffect(mgm);
 			RefreshUiDisplay(mgm);
 		}
 
@@ -42,7 +38,7 @@ namespace Assets.GameModel.UiDisplayers
 			Text.text = $"{policy.Name}";
 			Description.text = $"{policy.Description}";
 			Cost.text = $"Cost: {policy.Cost.GetCostString()}";
-			ActivatePolicyButton.interactable = !policy.Active && loc.Controlled && policy.Requirements.RequirementsAreMet(mgm) && policy.Cost.CanAffordCost(mgm);
+			ActivatePolicyButton.interactable = !policy.Active && policy.Requirements.RequirementsAreMet(mgm) && policy.Cost.CanAffordCost(mgm);
 			Image.sprite = policy.Image.ToSprite();
 			ActivatePolicyButton.gameObject.SetActive(!policy.Active);
 			ActiveIndicator.gameObject.SetActive(policy.Active);

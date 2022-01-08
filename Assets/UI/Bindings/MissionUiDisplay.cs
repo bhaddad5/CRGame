@@ -12,17 +12,8 @@ public class MissionUiDisplay : MonoBehaviour, IUiDisplay
 	[SerializeField] private TMP_Text Description;
 	[SerializeField] private Image Image;
 	[SerializeField] private GameObject Complete;
-
-	private Mission mission;
-	private Location dept;
-
-	public void Setup(Mission mission, Location dept, MainGameManager mgm)
-	{
-		this.mission = mission;
-		this.dept = dept;
-	}
-
-	public void RefreshUiDisplay(MainGameManager mgm)
+	
+	public void Setup(Mission mission)
 	{
 		Title.text = $"{mission.MissionName}";
 		Description.text = $"{mission.MissionDescription}";
