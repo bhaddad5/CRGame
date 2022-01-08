@@ -14,20 +14,12 @@ public static class DefaultDataLogic
 			{
 				foreach (var interaction in npc.Interactions)
 				{
-					for (int i = 0; i < interaction.Requirements.NpcAmbitionRequirements.Count; i++)
+					for (int i = 0; i < interaction.Requirements.NpcStatRequirements.Count; i++)
 					{
-						var npcReq = interaction.Requirements.NpcAmbitionRequirements[i];
+						var npcReq = interaction.Requirements.NpcStatRequirements[i];
 						if (npcReq.OptionalNpcReference == null)
 							npcReq.OptionalNpcReference = npc;
-						interaction.Requirements.NpcAmbitionRequirements[i] = npcReq;
-					}
-
-					for (int i = 0; i < interaction.Requirements.NpcPrideRequirements.Count; i++)
-					{
-						var npcReq = interaction.Requirements.NpcPrideRequirements[i];
-						if (npcReq.OptionalNpcReference == null)
-							npcReq.OptionalNpcReference = npc;
-						interaction.Requirements.NpcPrideRequirements[i] = npcReq;
+						interaction.Requirements.NpcStatRequirements[i] = npcReq;
 					}
 
 					for (int i = 0; i < interaction.Result.Dialogs.Count; i++)
@@ -59,20 +51,13 @@ public static class DefaultDataLogic
 
 		foreach (var interaction in gameData.StartOfTurnInteractions)
 		{
-			for (int i = 0; i < interaction.Requirements.NpcAmbitionRequirements.Count; i++)
+			for (int i = 0; i < interaction.Requirements.NpcStatRequirements.Count; i++)
 			{
-				var npcReq = interaction.Requirements.NpcAmbitionRequirements[i];
+				var npcReq = interaction.Requirements.NpcStatRequirements[i];
 				if (npcReq.OptionalNpcReference == null)
 					throw new Exception($"No npc reference provided for interaction {interaction}");
 			}
-
-			for (int i = 0; i < interaction.Requirements.NpcPrideRequirements.Count; i++)
-			{
-				var npcReq = interaction.Requirements.NpcPrideRequirements[i];
-				if (npcReq.OptionalNpcReference == null)
-					throw new Exception($"No npc reference provided for interaction {interaction}");
-			}
-
+			
 			for (int i = 0; i < interaction.Result.Dialogs.Count; i++)
 			{
 				var dialog = interaction.Result.Dialogs[i];

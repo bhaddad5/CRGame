@@ -22,7 +22,16 @@ MonoBehaviour:
     NpcAmbitionRequirements: []
     NpcPrideRequirements:
     - OptionalNpcReference: {fileID: 0}
+      Stat: 0
+      Is: 0
+      Value: 0
       RequiresStatBelow: 25
+    NpcStatRequirements:
+    - OptionalNpcReference: {fileID: 0}
+      Stat: 1
+      Is: 0
+      Value: 25
+      RequiresStatBelow: 0
     RequiredInteractions:
     - {fileID: 11400000, guid: 043dae9e7a59dc743bf5d40471473290, type: 2}
     RequiredNotCompletedInteractions: []

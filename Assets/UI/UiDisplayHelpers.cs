@@ -142,18 +142,14 @@ namespace Assets.GameModel.UiDisplayers
 					tooltips.Add($"{interaction.Name}");
 			}
 			
-			foreach (var npcReq in req.NpcAmbitionRequirements)
+			foreach (var npcReq in req.NpcStatRequirements)
 			{
-				if (npcReq.OptionalNpcReference.Ambition > npcReq.RequiresStatBelow)
-					tooltips.Add($"{npcReq.OptionalNpcReference.FirstName}: {npcReq.RequiresStatBelow} or less Ambition");
+				if (npcReq.Stat == NpcStatRequirement.NpcStat.Ambition && !npcReq.CheckStat(npcReq.OptionalNpcReference.Ambition))
+					tooltips.Add($"{npcReq.OptionalNpcReference.FirstName}: {npcReq.Value} or less Ambition");
+				if (npcReq.Stat == NpcStatRequirement.NpcStat.Pride && !npcReq.CheckStat(npcReq.OptionalNpcReference.Pride))
+					tooltips.Add($"{npcReq.OptionalNpcReference.FirstName}: {npcReq.Value} or less Pride");
 			}
-
-			foreach (var npcReq in req.NpcPrideRequirements)
-			{
-				if (npcReq.OptionalNpcReference.Pride > npcReq.RequiresStatBelow)
-					tooltips.Add($"{npcReq.OptionalNpcReference.FirstName}: {npcReq.RequiresStatBelow} or less Pride");
-			}
-
+			
 			if (req.RequiredPower > mgm.Data.Power)
 				tooltips.Add($"{req.RequiredPower} or more Power");
 

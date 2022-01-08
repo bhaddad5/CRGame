@@ -7,9 +7,35 @@ namespace Assets.GameModel
 	[Serializable]
 	public struct NpcStatRequirement
 	{
+		public enum NpcStat
+		{
+			Ambition,
+			Pride,
+		}
+
+		public enum Comparison
+		{
+			LessThanOrEqualTo = 0,
+			EqualTo = 1,
+			GreaterOrEqualTo = 2,
+		}
+
 		[Header("Defaults to the parent NPC, if present")]
 		public Npc OptionalNpcReference;
-		public float RequiresStatBelow;
+
+		public NpcStat Stat;
+		public Comparison Is;
+		public float Value;
+		
+		public bool CheckStat(float val)
+		{
+			if (Is == Comparison.LessThanOrEqualTo)
+				return val <= Value;
+			else if (Is == Comparison.GreaterOrEqualTo)
+				return val >= Value;
+			else
+				return val.Equals(Value);
+		}
 	}
 	
 
@@ -19,10 +45,9 @@ namespace Assets.GameModel
 		public float RequiredPower;
 		public int RequiredPromotionLevel;
 		public int RequiredTurnNumber;
-
-		public List<NpcStatRequirement> NpcAmbitionRequirements;
-		public List<NpcStatRequirement> NpcPrideRequirements;
-
+		
+		public List<NpcStatRequirement> NpcStatRequirements;
+		
 		public List<Interaction> RequiredInteractions;
 		public List<Interaction> RequiredNotCompletedInteractions;
 		public List<Policy> RequiredPolicies;
@@ -65,12 +90,10 @@ namespace Assets.GameModel
 			}
 
 			//This is a weird hack.  Basically we don't wanna display the interaction if it is based on pride and you don't control them yet
-			foreach (var prideRequirement in NpcPrideRequirements)
+			foreach (var req in NpcStatRequirements)
 			{
-				if (prideRequirement.RequiresStatBelow < prideRequirement.OptionalNpcReference.Pride && !prideRequirement.OptionalNpcReference.Controlled)
-				{
+				if (req.Stat == NpcStatRequirement.NpcStat.Pride && !req.CheckStat(req.OptionalNpcReference.Pride) && !req.OptionalNpcReference.Controlled)
 					return false;
-				}
 			}
 
 			return true;
@@ -81,15 +104,11 @@ namespace Assets.GameModel
 			if (!VisRequirementsAreMet())
 				return false;
 
-			foreach (var ambitionRequirement in NpcAmbitionRequirements)
+			foreach (var req in NpcStatRequirements)
 			{
-				if (ambitionRequirement.RequiresStatBelow < ambitionRequirement.OptionalNpcReference.Ambition)
+				if (req.Stat == NpcStatRequirement.NpcStat.Ambition && !req.CheckStat(req.OptionalNpcReference.Ambition))
 					return false;
-			}
-
-			foreach (var prideRequirement in NpcPrideRequirements)
-			{
-				if (prideRequirement.RequiresStatBelow < prideRequirement.OptionalNpcReference.Pride)
+				if (req.Stat == NpcStatRequirement.NpcStat.Pride && !req.CheckStat(req.OptionalNpcReference.Pride))
 					return false;
 			}
 
