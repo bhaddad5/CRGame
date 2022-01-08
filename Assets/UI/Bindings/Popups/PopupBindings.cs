@@ -17,7 +17,7 @@ public class PopupBindings : MonoBehaviour
 	[SerializeField] private VideoPlayer VideoPlayer;
 
 	private Action onPopupDone;
-	public void Show(Popup popup, int completionCount, Action onPopupDone)
+	public void Setup(Popup popup, int completionCount, Action onPopupDone)
 	{
 		this.onPopupDone = onPopupDone;
 		gameObject.SetActive(true);
@@ -46,7 +46,7 @@ public class PopupBindings : MonoBehaviour
 
 	public void ClosePopup()
 	{
-		GameObject.Destroy(gameObject);
+		GameObject.Destroy(transform.parent.gameObject);
 		onPopupDone?.Invoke();
 	}
 }

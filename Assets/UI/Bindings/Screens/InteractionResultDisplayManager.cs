@@ -14,15 +14,11 @@ public class InteractionResultDisplayManager
 	private List<Trophy> currTrophiesToShow = new List<Trophy>();
 	private Action resultComplete = null;
 	private int completedCount;
-	private NpcScreenBindings contextualNpcUiDisplay;
-	private MainGameManager mgm;
 
-	public void DisplayInteractionResult(MainGameManager mgm, int completionCount, InteractionResult res, bool failed, Action resultComplete, NpcScreenBindings contextualNpcDisplay = null)
+	public void DisplayInteractionResult(int completionCount, InteractionResult res, bool failed, Action resultComplete)
 	{
-		this.mgm = mgm;
 		this.completedCount = completionCount;
 		this.resultComplete = resultComplete;
-		this.contextualNpcUiDisplay = contextualNpcDisplay;
 
 		currDialogsToShow = new List<DialogEntry>(res.Dialogs);
 		if (failed && currDialogsToShow.Count > 0)
@@ -33,17 +29,13 @@ public class InteractionResultDisplayManager
 		}
 
 		string effectsString = res.Effect.GetEffectsString();
-		if(!String.IsNullOrEmpty(effectsString))
+		if (!String.IsNullOrEmpty(effectsString))
+		{
 			currDialogsToShow.Add(new DialogEntry(){CurrSpeaker = DialogEntry.Speaker.Narrator, Text = effectsString });
+		}
 		currPopupsToShow = new List<Popup>(res.OptionalPopups);
 		currMissionsToShow = new List<Mission>(res.Effect.MissionsToComplete);
 		currTrophiesToShow = new List<Trophy>(res.Effect.TrophiesClaimedReferences);
-
-		if (contextualNpcDisplay != null && res.CustomBackground != null)
-		{
-			contextualNpcDisplay.SetBackground(res.CustomBackground);
-			contextualNpcDisplay.SetCustomLayout(res.CustomBackgroundNpcLayout);
-		}
 
 		HandleNextDialog();
 	}
@@ -54,13 +46,15 @@ public class InteractionResultDisplayManager
 		{
 			var dialog = currDialogsToShow[0];
 			currDialogsToShow.RemoveAt(0);
-			mgm.ShowDialog(dialog, HandleNextDialog, contextualNpcUiDisplay);
+			GameObject.Instantiate(UiPrefabReferences.Instance.GetPrefabByName("Dialog Screen")).GetComponent<DialogScreenBindings>().Setup(dialog, HandleNextDialog);
 		}
 		else if (currPopupsToShow.Count > 0)
 		{
 			var popup = currPopupsToShow[0];
 			currPopupsToShow.RemoveAt(0);
-			mgm.ShowPopup(popup, completedCount, HandleNextDialog);
+
+			var popupParent = GameObject.Instantiate(UiPrefabReferences.Instance.PopupOverlayParent);
+			GameObject.Instantiate(UiPrefabReferences.Instance.GetPrefabByName("Popup Display"), popupParent.transform).GetComponent<PopupBindings>().Setup(popup, completedCount, HandleNextDialog);
 		}
 		else if (currTrophiesToShow.Count > 0)
 		{
@@ -71,7 +65,9 @@ public class InteractionResultDisplayManager
 				Text = currTrophiesToShow[0].Description,
 			};
 			currTrophiesToShow.RemoveAt(0);
-			mgm.ShowPopup(popup, completedCount, HandleNextDialog);
+
+			var popupParent = GameObject.Instantiate(UiPrefabReferences.Instance.PopupOverlayParent);
+			GameObject.Instantiate(UiPrefabReferences.Instance.GetPrefabByName("Popup Display"), popupParent.transform).GetComponent<PopupBindings>().Setup(popup, completedCount, HandleNextDialog);
 		}
 		else if (currMissionsToShow.Count > 0)
 		{
@@ -82,7 +78,9 @@ public class InteractionResultDisplayManager
 				Text = currMissionsToShow[0].MissionDescription,
 			};
 			currMissionsToShow.RemoveAt(0);
-			mgm.ShowPopup(popup, completedCount, HandleNextDialog);
+
+			var popupParent = GameObject.Instantiate(UiPrefabReferences.Instance.PopupOverlayParent);
+			GameObject.Instantiate(UiPrefabReferences.Instance.GetPrefabByName("Popup Display"), popupParent.transform).GetComponent<PopupBindings>().Setup(popup, completedCount, HandleNextDialog);
 		}
 		else
 		{

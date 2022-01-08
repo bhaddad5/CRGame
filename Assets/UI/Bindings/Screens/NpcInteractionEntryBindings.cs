@@ -43,7 +43,7 @@ namespace Assets.GameModel.UiDisplayers
 			var res = interaction.GetInteractionResult(succeeded);
 			interaction.Cost.SubtractCost(mgm);
 			var displayHandler = new InteractionResultDisplayManager();
-			displayHandler.DisplayInteractionResult(mgm, interaction.Completed, res, !succeeded, () =>
+			displayHandler.DisplayInteractionResult(interaction.Completed, res, !succeeded, () =>
 			{
 				res.Execute(mgm);
 				if (succeeded)
@@ -53,7 +53,7 @@ namespace Assets.GameModel.UiDisplayers
 				npcUiDisplay.UnsetImage();
 				npcUiDisplay.UnsetBackground();
 				npcUiDisplay.InteractionsParent.parent.parent.gameObject.SetActive(true);
-			}, npcUiDisplay);
+			});
 		}
 
 		private string CategoryToString(Interaction.InteractionCategory category)

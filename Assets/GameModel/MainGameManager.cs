@@ -91,7 +91,7 @@ namespace Assets.GameModel
 					bool succeeded = startOfTurnInteraction.GetInteractionSucceeded();
 					var res = startOfTurnInteraction.GetInteractionResult(succeeded);
 					var displayHandler = new InteractionResultDisplayManager();
-					displayHandler.DisplayInteractionResult(this, startOfTurnInteraction.Completed, res, !succeeded, () =>
+					displayHandler.DisplayInteractionResult(startOfTurnInteraction.Completed, res, !succeeded, () =>
 					{
 						res.Execute(this);
 						if(succeeded)
@@ -113,16 +113,6 @@ namespace Assets.GameModel
 			currentDate += new TimeSpan(Data.TurnNumber/2, 0, 0, 0);
 
 			return currentDate;
-		}
-		
-		public void ShowPopup(Popup popup, int completionCount, Action onPopupDone)
-		{
-			hudUiDisplay.ShowPopup(popup, completionCount, onPopupDone);
-		}
-
-		public void ShowDialog(DialogEntry dialog, Action onDialogsDone, NpcScreenBindings contextualNpcDisplay = null)
-		{
-			hudUiDisplay.ShowDialog(dialog, onDialogsDone, contextualNpcDisplay);
 		}
 	}
 }

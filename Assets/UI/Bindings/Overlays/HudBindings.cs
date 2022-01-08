@@ -36,9 +36,6 @@ public class HudBindings : MonoBehaviour
 	[SerializeField] private MainMenuBindings MainMenuPrefab;
 	private MainMenuBindings mainMenu;
 
-	[SerializeField] private PopupBindings PopupPrefab;
-	[SerializeField] private DialogScreenBindings DialogPrefab;
-
 	private MainGameManager mgm;
 	public void Setup(MainGameManager mgm, MainMapScreenBindings mapDisplay)
 	{
@@ -101,17 +98,5 @@ public class HudBindings : MonoBehaviour
 		Time.text = $"{timeOfDay}";
 		Day.text = $"{DateTime.DayOfWeek}";
 		Month.text = $"{DateTime:MMMM} {DateTime.Day}";
-	}
-
-	public void ShowPopup(Popup popup, int completionCount, Action onPopupDone)
-	{
-		var popupDisp = GameObject.Instantiate(PopupPrefab);
-		popupDisp.Show(popup, completionCount, onPopupDone);
-	}
-
-	public void ShowDialog(DialogEntry dialog, Action onDialogsDone, NpcScreenBindings contextualNpcDisplay = null)
-	{
-		var dialogDisp = GameObject.Instantiate(DialogPrefab);
-		dialogDisp.ShowDialog(dialog, onDialogsDone, contextualNpcDisplay);
 	}
 }

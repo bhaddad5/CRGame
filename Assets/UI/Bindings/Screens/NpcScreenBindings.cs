@@ -27,6 +27,8 @@ namespace Assets.GameModel.UiDisplayers
 
 		[SerializeField] private NpcInteractionEntryBindings InteractionEntryPrefab;
 
+		[SerializeField] private DialogScreenBindings DialogPrefab;
+
 		void Start()
 		{
 			_npc.PersonalLayout.ApplyToRectTransform(Picture.GetComponent<RectTransform>());

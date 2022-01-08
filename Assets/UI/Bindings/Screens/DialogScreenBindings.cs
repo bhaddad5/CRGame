@@ -10,6 +10,10 @@ using Random = System.Random;
 
 public class DialogScreenBindings : MonoBehaviour
 {
+	[SerializeField] private Image NpcImage;
+	[SerializeField] private Image NpcBackground;
+	[SerializeField] private GameObject BlackBackground;
+
 	[SerializeField] private TMP_Text SpeakerName;
 	[SerializeField] private GameObject SpeakerNameBox;
 	[SerializeField] private TMP_Text DialogText;
@@ -18,13 +22,10 @@ public class DialogScreenBindings : MonoBehaviour
 	private DialogEntry dialog;
 	private Coroutine runningCoroutine = null;
 	private Action dialogsComplete = null;
-	private NpcScreenBindings npcDisplay;
 
-	public void ShowDialog(DialogEntry dialog, Action dialogsComplete, NpcScreenBindings npcDisplay = null)
+	public void Setup(DialogEntry dialog, Action dialogsComplete)
 	{
 		this.dialogsComplete = dialogsComplete;
-		this.npcDisplay = npcDisplay;
-
 		this.dialog = dialog;
 
 		runningCoroutine = StartCoroutine(TypeOutDialog());
@@ -60,9 +61,28 @@ public class DialogScreenBindings : MonoBehaviour
 		NextDialogImage.enabled = false;
 		textToShow = dialog.Text;
 		DialogText.text = "";
-		
-		if (npcDisplay != null && dialog.CustomNpcImageOptions != null && dialog.CustomNpcImageOptions.Count > 0)
-			npcDisplay.SetImage(dialog.CustomNpcImageOptions[UnityEngine.Random.Range(0, dialog.CustomNpcImageOptions.Count)]);
+
+		if (dialog.OptionalNpcReference != null)
+		{
+			NpcImage.sprite = dialog.OptionalNpcReference.GetCurrentPicture().ToSprite();
+			if (dialog.CustomNpcImageOptions != null && dialog.CustomNpcImageOptions.Count > 0)
+				NpcImage.sprite = dialog.CustomNpcImageOptions[UnityEngine.Random.Range(0, dialog.CustomNpcImageOptions.Count)].ToSprite();
+		}
+		else
+		{
+			NpcImage.gameObject.SetActive(false);
+		}
+
+		if (dialog.CustomBackground != null)
+		{
+			NpcBackground.sprite = dialog.CustomBackground.ToSprite();
+			dialog.CustomBackgroundNpcLayout.ApplyToRectTransform(NpcImage.GetComponent<RectTransform>());
+		}
+		else
+		{
+			NpcBackground.gameObject.SetActive(false);
+			BlackBackground.gameObject.SetActive(false);
+		}
 
 		foreach (var c in dialog.Text)
 		{

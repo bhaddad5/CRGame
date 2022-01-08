@@ -172,7 +172,47 @@ public class ScriptableObjectTools
 		}
 		Debug.Log("Search Complete!");
 	}
-	
+
+	/*[MenuItem("Tools/Upgrade Old Data")]
+	public static void UpgradeOldData()
+	{
+		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
+
+		foreach (var location in gameData.Locations)
+		{
+			foreach (var npc in location.Npcs)
+			{
+				foreach (var interaction in npc.Interactions)
+				{
+					if (interaction.Result.CustomBackground != null)
+					{
+						for (int i = 0; i < interaction.Result.Dialogs.Count; i++)
+						{
+							var dialog = interaction.Result.Dialogs[i];
+							dialog.CustomBackground = interaction.Result.CustomBackground;
+							dialog.CustomBackgroundNpcLayout = interaction.Result.CustomBackgroundNpcLayout;
+							interaction.Result.Dialogs[i] = dialog;
+						}
+						EditorUtility.SetDirty(interaction);
+					}
+
+					if (interaction.FailureResult.CustomBackground != null)
+					{
+						for (int i = 0; i < interaction.FailureResult.Dialogs.Count; i++)
+						{
+							var dialog = interaction.FailureResult.Dialogs[i];
+							dialog.CustomBackground = interaction.FailureResult.CustomBackground;
+							dialog.CustomBackgroundNpcLayout = interaction.FailureResult.CustomBackgroundNpcLayout;
+							interaction.FailureResult.Dialogs[i] = dialog;
+						}
+						EditorUtility.SetDirty(interaction);
+					}
+				}
+			}
+		}
+		Debug.Log("Upgrade Complete!");
+	}*/
+
 	//TODO: USE THIS AS A TEMPLATE FOR DATA UPGRADES!
 	/*
 	[MenuItem("Tools/Upgrade Old Data")]

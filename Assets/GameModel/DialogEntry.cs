@@ -22,6 +22,8 @@ namespace Assets.GameModel
 
 		[Header("Additional Options")]
 		public List<Texture2D> CustomNpcImageOptions;
+		public Texture2D CustomBackground;
+		public NpcLayout CustomBackgroundNpcLayout;
 
 	}
 }
