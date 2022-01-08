@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 namespace Assets.GameModel.UiDisplayers
 {
-	public class InteractionUiDisplay : MonoBehaviour, IUiDisplay, ITooltipProvider
+	public class NpcInteractionEntryBindings : MonoBehaviour, ITooltipProvider
 	{
 		[SerializeField] private Button Button;
 		[SerializeField] private TMP_Text Text;
@@ -37,7 +37,7 @@ namespace Assets.GameModel.UiDisplayers
 
 		public void ExecuteInteraction()
 		{
-			npcUiDisplay.InteractionsHandler.gameObject.SetActive(false);
+			npcUiDisplay.InteractionsParent.parent.parent.gameObject.SetActive(false);
 
 			bool succeeded = interaction.GetInteractionSucceeded();
 			var res = interaction.GetInteractionResult(succeeded);
@@ -52,7 +52,7 @@ namespace Assets.GameModel.UiDisplayers
 
 				npcUiDisplay.UnsetImage();
 				npcUiDisplay.UnsetBackground();
-				npcUiDisplay.InteractionsHandler.gameObject.SetActive(true);
+				npcUiDisplay.InteractionsParent.parent.parent.gameObject.SetActive(true);
 			}, npcUiDisplay);
 		}
 

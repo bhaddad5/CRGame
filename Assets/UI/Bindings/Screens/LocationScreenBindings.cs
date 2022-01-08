@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 namespace Assets.GameModel.UiDisplayers
 {
-	public class LocationScreenBindings : MonoBehaviour, IUiDisplay
+	public class LocationScreenBindings : MonoBehaviour
 	{
 		[SerializeField] private TMP_Text Name;
 		[SerializeField] private TMP_Text Description;
@@ -21,7 +21,7 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private Transform MissionsButton;
 		[SerializeField] private MissionsPopupBindings MissionsPopupPrefab;
 
-		[SerializeField] private NpcSelectionUiDisplay _npcButtonPrefab;
+		[SerializeField] private LocationNpcEntryBindings _npcButtonPrefab;
 		[SerializeField] private NpcScreenBindings _npcUiPrefab;
 		
 		[SerializeField] private TrophyCaseBindings TrophyCasePrefab;
@@ -123,7 +123,7 @@ namespace Assets.GameModel.UiDisplayers
 			if (loc.Controlled)
 				Name.text += $" (Controlled)";
 
-			foreach (var npc in NpcOptionsParent.GetComponentsInChildren<NpcSelectionUiDisplay>(true))
+			foreach (var npc in NpcOptionsParent.GetComponentsInChildren<LocationNpcEntryBindings>(true))
 			{
 				//Were they just moved/removed?
 				if(!loc.Npcs.Contains(npc._npc))

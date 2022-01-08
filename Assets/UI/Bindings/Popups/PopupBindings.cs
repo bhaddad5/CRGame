@@ -8,7 +8,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Video;
 
-public class PopupUiDisplay : MonoBehaviour, IUiDisplay
+public class PopupBindings : MonoBehaviour
 {
 	[SerializeField] private TMP_Text Title;
 	[SerializeField] private RawImage ImageDisplay;

@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 namespace Assets.GameModel.UiDisplayers
 {
-	public class MainMapScreenBindings : MonoBehaviour, IUiDisplay
+	public class MainMapScreenBindings : MonoBehaviour
 	{
 		[SerializeField] private Color MorningTint;
 		[SerializeField] private Color AfternoonTint;
@@ -15,7 +15,7 @@ namespace Assets.GameModel.UiDisplayers
 
 		[SerializeField] private Transform DepartmentsParent;
 
-		[SerializeField] private LocationSelectionUiDisplay _locationButtonPrefab;
+		[SerializeField] private MainMapLocationEntryBindings _locationButtonPrefab;
 		[SerializeField] private LocationScreenBindings _locationUiPrefab;
 
 		private MainGameManager mgm;
@@ -54,7 +54,7 @@ namespace Assets.GameModel.UiDisplayers
 
 		public void RefreshUiDisplay(MainGameManager mgm)
 		{
-			foreach (var button in DepartmentsParent.GetComponentsInChildren<LocationSelectionUiDisplay>(true))
+			foreach (var button in DepartmentsParent.GetComponentsInChildren<MainMapLocationEntryBindings>(true))
 				button.RefreshUiDisplay(mgm);
 
 			if(_currOpenLocation != null)

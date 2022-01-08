@@ -8,7 +8,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HudBindings : MonoBehaviour, IUiDisplay
+public class HudBindings : MonoBehaviour
 {
 	[SerializeField] private TMP_Text PlayerName;
 	[SerializeField] private TMP_Text PlayerTitle;
@@ -33,10 +33,10 @@ public class HudBindings : MonoBehaviour, IUiDisplay
 	[SerializeField] private Button MyOffice;
 
 	[SerializeField] private Button MainMenuButton;
-	[SerializeField] private MainMenuUiDisplay MainMenuPrefab;
-	private MainMenuUiDisplay mainMenu;
+	[SerializeField] private MainMenuBindings MainMenuPrefab;
+	private MainMenuBindings mainMenu;
 
-	[SerializeField] private PopupUiDisplay PopupPrefab;
+	[SerializeField] private PopupBindings PopupPrefab;
 	[SerializeField] private DialogScreenBindings DialogPrefab;
 
 	private MainGameManager mgm;

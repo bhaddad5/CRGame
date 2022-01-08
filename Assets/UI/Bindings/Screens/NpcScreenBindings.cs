@@ -9,7 +9,7 @@ using UnityEngine.UI;
 
 namespace Assets.GameModel.UiDisplayers
 {
-	public class NpcScreenBindings : MonoBehaviour, IUiDisplay
+	public class NpcScreenBindings : MonoBehaviour
 	{
 		[SerializeField] private TMP_Text Name;
 		[SerializeField] private TMP_Text Age;
@@ -22,7 +22,10 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private Image BackgroundImage;
 		[SerializeField] private Transform InfoBox;
 
-		[SerializeField] public InteractionsDisplayHandler InteractionsHandler;
+		//TODO: MAKE PRIVATE AGAIN!
+		[SerializeField] public Transform InteractionsParent;
+
+		[SerializeField] private NpcInteractionEntryBindings InteractionEntryPrefab;
 
 		void Start()
 		{
@@ -37,8 +40,19 @@ namespace Assets.GameModel.UiDisplayers
 			if(!npc.IsControllable)
 				InfoBox.gameObject.SetActive(false);
 
-			InteractionsHandler.Setup(npc.Interactions, mgm, this);
-			
+			var allInteractions = new List<Interaction>(npc.Interactions);
+			allInteractions.RemoveAll(i => i == null);
+			allInteractions.Sort((i1, i2) => ((int)i1.Category).CompareTo((int)i2.Category));
+
+			foreach (var interaction in allInteractions)
+			{
+				if (!interaction.InteractionVisible(mgm))
+					continue;
+				var interactButton = Instantiate(InteractionEntryPrefab);
+				interactButton.Setup(interaction, mgm, this);
+				interactButton.transform.SetParent(InteractionsParent);
+			}
+
 			BackButton.onClick.RemoveAllListeners();
 			BackButton.onClick.AddListener(() => duid.CloseCurrentNpc());
 		}

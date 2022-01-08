@@ -10,7 +10,7 @@ using UnityEngine.UI;
 
 namespace Assets.GameModel.UiDisplayers
 {
-	public class LocationSelectionUiDisplay : MonoBehaviour, IUiDisplay, ITooltipProvider
+	public class MainMapLocationEntryBindings : MonoBehaviour, ITooltipProvider
 	{
 		[SerializeField] private Button Button;
 		[SerializeField] private Image Icon;

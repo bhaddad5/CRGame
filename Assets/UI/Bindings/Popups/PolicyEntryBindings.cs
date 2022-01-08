@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 namespace Assets.GameModel.UiDisplayers
 {
-	public class PolicyEntryBindings : MonoBehaviour, IUiDisplay, ITooltipProvider
+	public class PolicyEntryBindings : MonoBehaviour, ITooltipProvider
 	{
 		[SerializeField] private TMP_Text Text;
 		[SerializeField] private Image Image;

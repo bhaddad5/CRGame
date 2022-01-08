@@ -4,10 +4,10 @@ using Assets.GameModel;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MainMenuUiDisplay : MonoBehaviour
+public class MainMenuBindings : MonoBehaviour
 {
-	[SerializeField] private LoadSaveMenuManager LoadSavePrefab;
-	private LoadSaveMenuManager loadSavePrefab;
+	[SerializeField] private LoadSaveMenuBindings LoadSavePrefab;
+	private LoadSaveMenuBindings loadSavePrefab;
 
 	private MainGameManager mgm;
 	public void Setup(MainGameManager mgm)

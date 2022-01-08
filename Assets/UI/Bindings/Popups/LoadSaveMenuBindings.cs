@@ -49,7 +49,7 @@ public static class LoadSaveHelpers
 	}
 }
 
-public class LoadSaveMenuManager : MonoBehaviour
+public class LoadSaveMenuBindings : MonoBehaviour
 {
 	[SerializeField] private Transform filesParent;
 	[SerializeField] private TMP_InputField filenameInput;

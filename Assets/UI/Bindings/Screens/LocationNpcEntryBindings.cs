@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 namespace Assets.GameModel.UiDisplayers
 {
-	public class NpcSelectionUiDisplay : MonoBehaviour, IUiDisplay
+	public class LocationNpcEntryBindings : MonoBehaviour
 	{
 		[SerializeField] private Button Button;
 		[SerializeField] private TMP_Text Text;

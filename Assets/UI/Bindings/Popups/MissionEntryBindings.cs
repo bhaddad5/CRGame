@@ -6,7 +6,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MissionEntryBindings : MonoBehaviour, IUiDisplay
+public class MissionEntryBindings : MonoBehaviour
 {
 	[SerializeField] private TMP_Text Title;
 	[SerializeField] private TMP_Text Description;

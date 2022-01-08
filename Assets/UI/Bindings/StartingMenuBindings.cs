@@ -5,12 +5,12 @@ using Assets.GameModel;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class StartingMenu : MonoBehaviour
+public class StartingMenuBindings : MonoBehaviour
 {
 	[SerializeField] private MainGameManager MainGameManager;
 
-	[SerializeField] private LoadSaveMenuManager LoadSavePrefab;
-	private LoadSaveMenuManager loadSavePrefab;
+	[SerializeField] private LoadSaveMenuBindings LoadSavePrefab;
+	private LoadSaveMenuBindings loadSavePrefab;
 
 	[SerializeField] private Button ContinueGameButton;
 	private string latestSave = null;
