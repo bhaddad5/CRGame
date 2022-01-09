@@ -21,7 +21,7 @@ namespace Assets.GameModel
 		private HudBindings hudUiDisplay;
 		private MainMapScreenBindings mainMapUiDisplay;
 		
-		public void InitializeGame(string saveDataPath)
+		public void InitializeGame(string saveDataPath, string playerName)
 		{
 			if (hudUiDisplay != null)
 			{
@@ -44,6 +44,8 @@ namespace Assets.GameModel
 
 			if (saveDataPath != null)
 				SaveLoadHandler.LoadAndApplyToGameData(saveDataPath, Data);
+			else
+				Data.PlayerName = playerName;
 
 			hudUiDisplay.Setup(this, mainMapUiDisplay);
 			mainMapUiDisplay.Setup(this, Data.Locations);

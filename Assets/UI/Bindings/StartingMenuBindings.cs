@@ -10,7 +10,7 @@ public class StartingMenuBindings : MonoBehaviour
 	[SerializeField] private MainGameManager MainGameManager;
 
 	[SerializeField] private LoadSaveMenuBindings LoadSavePrefab;
-	private LoadSaveMenuBindings loadSavePrefab;
+	[SerializeField] private PlayerNamePickerBindings NamePickerPrefab;
 
 	[SerializeField] private Button ContinueGameButton;
 	private string latestSave = null;
@@ -22,19 +22,25 @@ public class StartingMenuBindings : MonoBehaviour
 
 	public void NewGame()
 	{
-		MainGameManager.InitializeGame(null);
-		GameObject.Destroy(gameObject);
+		var popupParent = GameObject.Instantiate(UiPrefabReferences.Instance.PopupOverlayParent);
+		var namePicker = GameObject.Instantiate(NamePickerPrefab, popupParent.transform);
+		namePicker.Setup(MainGameManager.Data.PlayerName, (playerName) =>
+		{
+			MainGameManager.InitializeGame(null, playerName);
+			GameObject.Destroy(gameObject);
+		});
 	}
 
 	public void LoadGame()
 	{
-		loadSavePrefab = GameObject.Instantiate(LoadSavePrefab, transform);
+		//var popupParent = GameObject.Instantiate(UiPrefabReferences.Instance.PopupOverlayParent);
+		var loadSavePrefab = GameObject.Instantiate(LoadSavePrefab, transform);
 		loadSavePrefab.Setup(MainGameManager, false);
 	}
 
 	public void ContinueGame()
 	{
-		MainGameManager.InitializeGame(latestSave);
+		MainGameManager.InitializeGame(latestSave, null);
 		GameObject.Destroy(gameObject);
 	}
 

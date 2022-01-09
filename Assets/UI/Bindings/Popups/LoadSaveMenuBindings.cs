@@ -79,7 +79,7 @@ public class LoadSaveMenuBindings : MonoBehaviour
 		string path = LoadSaveHelpers.FileToValidPath(filenameInput.text);
 		if (path == null)
 			return;
-		mgm.InitializeGame(path);
+		mgm.InitializeGame(path, null);
 
 		GameObject.Destroy(transform.parent.gameObject);
 	}
