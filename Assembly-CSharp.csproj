@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -53,15 +53,21 @@
     <UnityVersion>2021.1.19f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Assets\UI System\TooltipElementHandler.cs" />
     <Compile Include="Assets\GameModel\Helpers\NullCleanupLogic.cs" />
     <Compile Include="Assets\CameraMover.cs" />
     <Compile Include="Assets\UI\Bindings\Overlays\TrophyCaseBindings.cs" />
+    <Compile Include="Assets\UI System\TooltipCanvas.cs" />
     <Compile Include="Assets\GameModel\Helpers\DefaultDataLogic.cs" />
     <Compile Include="Assets\UI\Bindings\Overlays\StatusSymbolsBindings.cs" />
     <Compile Include="Assets\UI System\TooltipProviderBasic.cs" />
     <Compile Include="Assets\GameModel\MainGameManager.cs" />
     <Compile Include="Assets\GameModel\Trophy.cs" />
+    <Compile Include="Assets\UI\Bindings\Popups\PoliciesPopupBindings.cs" />
+    <Compile Include="Assets\UI\Bindings\Popups\MissionsPopupBindings.cs" />
     <Compile Include="Assets\GameModel\Mission.cs" />
     <Compile Include="Assets\GameModel\Promotion.cs" />
     <Compile Include="Assets\UI\Bindings\Overlays\TrophyEntryBindings.cs" />
@@ -75,7 +81,11 @@
     <Compile Include="Assets\UI System\ITooltipProvider.cs" />
     <Compile Include="Assets\UI\Bindings\Overlays\HudBindings.cs" />
     <Compile Include="Assets\UI\Bindings\Popups\LoadSaveMenuBindings.cs" />
+    <Compile Include="Assets\UI\Bindings\Popups\PlayerNamePickerBindings.cs" />
     <Compile Include="Assets\UI\Bindings\StartingMenuBindings.cs" />
+    <Compile Include="Assets\UI System\UiPrefabReferences.cs" />
+    <Compile Include="Assets\UI System\ColorSchemesReference.cs" />
+    <Compile Include="Assets\UI System\UiColorSchemeHandler.cs" />
     <Compile Include="Assets\GameModel\SaveGameState\SaveGameState.cs" />
     <Compile Include="Assets\UI\Bindings\Screens\LocationScreenBindings.cs" />
     <Compile Include="Assets\UI\Bindings\Popups\MissionEntryBindings.cs" />
@@ -96,13 +106,6 @@
     <Compile Include="Assets\GameModel\GameData.cs" />
     <Compile Include="Assets\UI\Bindings\Screens\LocationNpcEntryBindings.cs" />
     <Compile Include="Assets\UI\Bindings\Popups\PopupBindings.cs" />
-    <Compile Include="Assets\UI System\UiColorSchemeHandler.cs" />
-    <Compile Include="Assets\UI System\ColorSchemesReference.cs" />
-    <Compile Include="Assets\UI\Bindings\Popups\MissionsPopupBindings.cs" />
-    <Compile Include="Assets\UI System\UiPrefabReferences.cs" />
-    <Compile Include="Assets\UI\Bindings\Popups\PoliciesPopupBindings.cs" />
-    <Compile Include="Assets\UI System\TooltipCanvas.cs" />
-    <Compile Include="Assets\UI\Bindings\Popups\PlayerNamePickerBindings.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
