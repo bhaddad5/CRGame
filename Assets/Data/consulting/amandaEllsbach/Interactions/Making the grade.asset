@@ -10,18 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: What are you working on
+  m_Name: Making the grade
   m_EditorClassIdentifier: 
-  Id: 257a2cf6-d7be-4802-b91f-77395a242bc2
-  Name: What are you working on?
-  Category: 4
+  Id: c0a7dd31-fc2d-4400-ba09-8e9081e6622b
+  Name: Pass or Fail
+  Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
-    RequiredNotCompletedInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 0a2bb246c4657384b9986693a7e19a3f, type: 2}
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: fe92b004c541de2459afd2a9df88324f, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -42,77 +44,64 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+      OptionalNpcReference: {fileID: 11400000, guid: c6fc9aa27a6291a41a2090f2db3a94e1,
         type: 2}
-      Text: Hey, that looks pretty interesting...
+      Text: Listen, I'm in a tough spot.  I know that you're trying but you're failing
+        to meet my expectations.  Help me so I can help you.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+      CustomBackground: {fileID: 2800000, guid: 8e1cbf74d2a04e048b84691cc5c485e0,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.65
-        yPos: 0.45
-        width: 400
-    - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
-        type: 2}
-      Text: At the sound  of your voice, Deborah quickly minimizes the spreadsheet
-        on her screen before turning around to face you.  She's obviously irritated
-        at your interruption though she tries to present an air of indifference.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.65
-        yPos: 0.45
+        xPos: 0.5
+        yPos: 0.35
         width: 400
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+      OptionalNpcReference: {fileID: 11400000, guid: c6fc9aa27a6291a41a2090f2db3a94e1,
         type: 2}
-      Text: "It's something Susan asked me to do.  I'm afraid I can't say anything
-        more\u2014strictly a need-to-know basis."
+      Text: What do you need?  I'm willing to do anything.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+      CustomBackground: {fileID: 2800000, guid: 8e1cbf74d2a04e048b84691cc5c485e0,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.65
-        yPos: 0.45
+        xPos: 0.5
+        yPos: 0.35
         width: 400
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+      OptionalNpcReference: {fileID: 11400000, guid: c6fc9aa27a6291a41a2090f2db3a94e1,
         type: 2}
-      Text: Did you want any help?  From what I could see, it looked pretty complicated. 
-        I know I'd want someone double-checking my work to make sure there weren't
-        any mistakes.
+      Text: Find out what Deborah Jones has been so busy working on and report back
+        to me.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+      CustomBackground: {fileID: 2800000, guid: 8e1cbf74d2a04e048b84691cc5c485e0,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.65
-        yPos: 0.45
+        xPos: 0.5
+        yPos: 0.35
         width: 400
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+      OptionalNpcReference: {fileID: 11400000, guid: c6fc9aa27a6291a41a2090f2db3a94e1,
         type: 2}
-      Text: No, I'll be all right.  I did graduate with honors, you know!  Now, if
-        you'll excuse me?
+      Text: Okay, she trusts me so it shouldn't be a problem.  Thank you so much
+        for giving me a second chance!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+      CustomBackground: {fileID: 2800000, guid: 8e1cbf74d2a04e048b84691cc5c485e0,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.65
-        yPos: 0.45
+        xPos: 0.5
+        yPos: 0.35
         width: 400
-    - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: c6fc9aa27a6291a41a2090f2db3a94e1,
         type: 2}
-      Text: 'HINT: Deborah won''t tell you anything else.  But perhaps Britney or
-        Amanda can help you find out what Deborah is up to once they are CONTROLLED?'
+      Text: Deborah's been busy putting together the quarterly projection for the
+        CSG.  Apparently, Director Bledsoe is stopping by and she'll present her
+        findings.  It's a big opportunity for her!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+      CustomBackground: {fileID: 2800000, guid: 8e1cbf74d2a04e048b84691cc5c485e0,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.65
-        yPos: 0.45
+        xPos: 0.5
+        yPos: 0.35
         width: 400
     OptionalPopups: []
     Effect:
