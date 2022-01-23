@@ -77,6 +77,11 @@ namespace Assets.GameModel
 				HandleBiMonthlyChange();
 			}
 
+			string path = LoadSaveHelpers.FileToValidPath("Autosave");
+			if (path == null)
+				return;
+			File.WriteAllText(path, SaveLoadHandler.SaveToJson(Data));
+
 			mainMapUiDisplay.CloseCurrentDepartment(true);
 
 			RefreshAllUi();
