@@ -19,10 +19,9 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 2c9ddf0828205e249a6f7343d7fdf1db, type: 2}
+    - {fileID: 11400000, guid: 4a4c232ffa05dd54eaf15897e72bce76, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -45,30 +44,63 @@ MonoBehaviour:
     Dialogs:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Hi!  You must be Jada Baxter.  Carole said we'd be working together.
+      Text: Hi!  You must be Jada Baxter.  My manager Ms. Granger said I needed to
+        see you about the Corporate Values Seminar?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
         type: 2}
-      Text: I'm Jada.  And I'm sure if you need anything done, it will be me that
-        ends up doing it.
+      Text: Ah-- the new guy!  Yes, you're required to attend three sessions to complete
+        you ronboarding.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Yes, well-- I understand that Carole is pretty busy working on more strategic
-        HR issues.
+      Text: Sure.  What are they like?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
         type: 2}
-      Text: Is that what she told you?  Whatever.
+      Text: They are three and a half hours-- it is mostly learning about the corporate
+        values we share here at Artemis.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
+        type: 2}
+      Text: 'NOTE: You can return to Jada''s desk to begin the Corporate Values Seminars. 
+        You won''t be considered for promotion to Executive until you complete all
+        three.'
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     OptionalPopups:
     - Title: Jada's seen execs come and go
       Videos:
       - {fileID: 32900000, guid: 14d4a4e11a137c84a81b90cc3580bfc6, type: 3}
       Texture: {fileID: 0}
-      Text: When it comes to newly appointed managers, Jada seems... jaded.
+      Text: When it comes to corporate values, you sense that Jada is... jaded.
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -93,11 +125,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -127,9 +154,4 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0
