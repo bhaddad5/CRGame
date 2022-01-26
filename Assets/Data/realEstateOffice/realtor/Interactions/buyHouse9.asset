@@ -19,8 +19,7 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 783e0f2002f9cf143af8f7dcfc348179, type: 2}
     RequiredNotCompletedInteractions: []
@@ -45,17 +44,39 @@ MonoBehaviour:
     Dialogs:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Hello sir, what can I do for you?
+      Text: Juniper House isn't just a home.  It's a local landmark.  It hasn't been
+        on the market in decades-- but you can buy it now, if you make a move.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: I'm thinking of getting a new mansion.
+      Text: I know the property and I'm interested.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Of course!  I have just the thing and I believe it's in your price range!
+      Text: I'll begin making confidential inquiries at once!
       CustomNpcImageOptions: []
-    OptionalPopups: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    OptionalPopups:
+    - Title: Home to Zenith's founding family
+      Videos:
+      - {fileID: 32900000, guid: 7a49350be8633654bb392ee3dca9cdf9, type: 3}
+      Texture: {fileID: 0}
+      Text: It is more than an address- it is a piece of history that instantly bestows
+        the highest degrees of respect and admiration.
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -80,11 +101,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -114,9 +130,4 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0
