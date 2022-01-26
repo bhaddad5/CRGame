@@ -19,8 +19,7 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 138f1e1b9b69ee6478b28fa2cad396fc, type: 2}
     RequiredNotCompletedInteractions: []
@@ -45,17 +44,39 @@ MonoBehaviour:
     Dialogs:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Hello sir, what can I do for you?
+      Text: I'm so glad you dropped by!  I've just received some Italian serge which
+        is practically like silk.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: I'm thinking of upgrading my wardrobe.
+      Text: Really?  Let's have a look!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Of course sir!  I have just the thing that should fit your style.
+      Text: Let me design a power suit that will silence a board room for you!
       CustomNpcImageOptions: []
-    OptionalPopups: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    OptionalPopups:
+    - Title: It's more art than clothing
+      Videos:
+      - {fileID: 32900000, guid: 6766b0546a7b23945b94ed77e0ddd949, type: 3}
+      Texture: {fileID: 0}
+      Text: The suit is an investment.  There's no mistaking you for some junior
+        manager.  The suit is a sign of a man who has made it!
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -80,11 +101,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -114,9 +130,4 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0

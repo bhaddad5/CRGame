@@ -19,8 +19,7 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: ad8e6a49c9f8b2640962ea024a433446, type: 2}
     RequiredNotCompletedInteractions: []
@@ -45,17 +44,40 @@ MonoBehaviour:
     Dialogs:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Hello sir, what can I do for you?
+      Text: I have new ties in as well-- from the Borgia collection.  Also, can you
+        fit you for hand made shoes as well?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: I'm thinking of upgrading my wardrobe.
+      Text: Of course.  I trust your taste.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Of course sir!  I have just the thing that should fit your style.
+      Text: You'll never wear store bought shoes again.  And these ties-- you'll
+        need a dozen at least.  All the power players are wearing Borgia ties now.
       CustomNpcImageOptions: []
-    OptionalPopups: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    OptionalPopups:
+    - Title: As you look into the mirror...
+      Videos:
+      - {fileID: 32900000, guid: 74ee895d583c8224bb78e9496c7ceaa9, type: 3}
+      Texture: {fileID: 0}
+      Text: ...you see a powerful man that is no longer following fashion.  You're
+        looking at a man who sets the bar for men's business fashion.
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -80,11 +102,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -114,9 +131,4 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0
