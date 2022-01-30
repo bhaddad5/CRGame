@@ -40,7 +40,7 @@ namespace Assets.GameModel
 		public List<Location> Locations = new List<Location>();
 		public List<Interaction> StartOfTurnInteractions = new List<Interaction>();
 
-		public void Setup()
+		public void Setup(MainGameManager mgm)
 		{
 			TurnNumber = 0;
 			Ego = StartingEgo;
@@ -64,7 +64,7 @@ namespace Assets.GameModel
 			JewleryWatch = false;
 
 			foreach (var ob in Locations)
-				ob.Setup();
+				ob.Setup(mgm);
 
 			foreach (var ob in StartOfTurnInteractions)
 				ob.Setup();

@@ -79,9 +79,12 @@ namespace Assets.GameModel
 		public List<Texture2D> IndependentImages = new List<Texture2D>();
 		public List<Texture2D> ControlledImages = new List<Texture2D>();
 		public List<Texture2D> TrainedImages = new List<Texture2D>();
+		private MainGameManager mgm;
 
-		public void Setup()
+		public void Setup(MainGameManager mgm)
 		{
+			this.mgm = mgm;
+
 			Controlled = false;
 			Trained = false;
 			Exists = true;
@@ -104,12 +107,13 @@ namespace Assets.GameModel
 
 		public Texture2D GetCurrentPicture()
 		{
+			Random r = new Random(mgm.Data.TurnNumber);
 			if (Trained)
-				return TrainedImages[UnityEngine.Random.Range(0, TrainedImages.Count)];
+				return TrainedImages[r.Next(0, TrainedImages.Count)];
 			else if (Controlled)
-				return ControlledImages[UnityEngine.Random.Range(0, ControlledImages.Count)];
+				return ControlledImages[r.Next(0, ControlledImages.Count)];
 			else
-				return IndependentImages[UnityEngine.Random.Range(0, IndependentImages.Count)];
+				return IndependentImages[r.Next(0, IndependentImages.Count)];
 		}
 
 		public override string ToString()

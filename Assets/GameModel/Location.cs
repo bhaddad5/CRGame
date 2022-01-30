@@ -35,12 +35,12 @@ namespace Assets.GameModel
 		[HideInInspector]
 		public bool Controlled;
 
-		public void Setup()
+		public void Setup(MainGameManager mgm)
 		{
 			Controlled = false;
 
 			foreach (var ob in Npcs)
-				ob.Setup();
+				ob.Setup(mgm);
 			foreach (var ob in Missions)
 				ob.Setup();
 			foreach (var ob in Policies)

@@ -38,7 +38,7 @@ namespace Assets.GameModel
 
 			NullCleanupLogic.CleanUpAnnoyingNulls(DefaultGameData);
 			DefaultDataLogic.ImposeDefaultsOnNullFields(DefaultGameData);
-			DefaultGameData.Setup();
+			DefaultGameData.Setup(this);
 
 			Data = DefaultGameData;
 
@@ -56,7 +56,7 @@ namespace Assets.GameModel
 
 		void OnApplicationQuit()
 		{
-			DefaultGameData.Setup();
+			DefaultGameData.Setup(this);
 			Debug.Log("Data reset on quit");
 		}
 
