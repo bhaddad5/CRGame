@@ -17,13 +17,13 @@ public class MainMenuBindings : MonoBehaviour
 
 	public void SaveGame()
 	{
-		loadSavePrefab = GameObject.Instantiate(LoadSavePrefab, transform);
+		loadSavePrefab = GameObject.Instantiate(LoadSavePrefab, transform.parent);
 		loadSavePrefab.Setup(mgm, true);
 	}
 
 	public void LoadGame()
 	{
-		loadSavePrefab = GameObject.Instantiate(LoadSavePrefab, transform);
+		loadSavePrefab = GameObject.Instantiate(LoadSavePrefab, transform.parent);
 		loadSavePrefab.Setup(mgm, false);
 	}
 
