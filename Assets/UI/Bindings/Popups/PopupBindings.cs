@@ -29,14 +29,14 @@ public class PopupBindings : MonoBehaviour
 		Text.gameObject.SetActive(!String.IsNullOrEmpty(popup.Text));
 
 		ImageDisplay.gameObject.SetActive(popup.Texture != null);
-		VideoPlayer.gameObject.SetActive(popup.Videos.Count > 0);
+		VideoPlayer.gameObject.SetActive(popup.Videos?.Count > 0);
 
 		if (popup.Texture != null)
 		{
 			ImageDisplay.texture = popup.Texture;
 		}
 		
-		if (popup.Videos.Count > 0)
+		if (popup.Videos?.Count > 0)
 		{
 			VideoPlayer.GetComponent<RawImage>().texture = VideoTexture;
 			UnityEngine.Random.InitState(System.DateTime.Now.Millisecond);
