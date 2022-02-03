@@ -19,8 +19,7 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: b6a4b6675f219704d90a071dc6177229, type: 2}
     RequiredNotCompletedInteractions: []
@@ -44,30 +43,71 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757,
+        type: 2}
       Text: Are you ok?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 55141d9bbfb6a184191303af7a279900,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.35
+        width: 400
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757,
+        type: 2}
       Text: Please leave me alone.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 55141d9bbfb6a184191303af7a279900,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.35
+        width: 400
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757,
+        type: 2}
       Text: What's the matter?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 55141d9bbfb6a184191303af7a279900,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.35
+        width: 400
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757,
+        type: 2}
       Text: I don't feel right!  Something's wrong!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 55141d9bbfb6a184191303af7a279900,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.35
+        width: 400
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757,
+        type: 2}
       Text: The effect of the Hornical on Anne Miller is obvious.  She's unsteady,
         distracted and very vulnerable.
       CustomNpcImageOptions: []
-    OptionalPopups: []
+      CustomBackground: {fileID: 2800000, guid: 55141d9bbfb6a184191303af7a279900,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.35
+        width: 400
+    OptionalPopups:
+    - Title: As you look over your shoulder...
+      Videos:
+      - {fileID: 32900000, guid: 692cb0a6a77d17e42bb8161ce265c66d, type: 3}
+      Texture: {fileID: 0}
+      Text: ...you can see Anne's usual confidence suddenly desert her.
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757,
+          type: 2}
         AmbitionEffect: -20
         PrideEffect: -20
       EgoEffect: 0
@@ -92,11 +132,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -126,9 +161,4 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0
