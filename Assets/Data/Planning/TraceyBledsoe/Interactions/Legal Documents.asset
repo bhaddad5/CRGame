@@ -19,8 +19,7 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 613963ec3da3339429105f26682ae74d, type: 2}
     RequiredNotCompletedInteractions: []
@@ -49,10 +48,23 @@ MonoBehaviour:
       Text: 'I need you to do an errand for me.  These contracts need to be dropped
         off with Legal.  '
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 1ff9ec7b19ed8564f83c2e483f5d71a3,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.37
+        yPos: 0.44
+        width: 400
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
+        type: 2}
       Text: We have a Legal Department?  Where is it?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 1ff9ec7b19ed8564f83c2e483f5d71a3,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.37
+        yPos: 0.44
+        width: 400
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
         type: 2}
@@ -60,21 +72,41 @@ MonoBehaviour:
         and have offices scattered all over town.  Now, if you could handle that,
         I won't need to organize a courier.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 1ff9ec7b19ed8564f83c2e483f5d71a3,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.37
+        yPos: 0.44
+        width: 400
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
+        type: 2}
       Text: I'll take care of it for you!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 1ff9ec7b19ed8564f83c2e483f5d71a3,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.37
+        yPos: 0.44
+        width: 400
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
+        type: 2}
       Text: 'NOTE: You should now be able to access the Legal Department'
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 1ff9ec7b19ed8564f83c2e483f5d71a3,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.37
+        yPos: 0.44
+        width: 400
     OptionalPopups:
     - Title: '"Thank you.  I have more important work to do right now."'
       Videos:
       - {fileID: 32900000, guid: 444bcbb029cc9e04e9976756ada4f8fc, type: 3}
       Texture: {fileID: 0}
       Text: You notice that Tracey seems more insistent on telling you how important
-        she is that actually doing any work.
+        she is than actually doing any visible work.
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
@@ -103,11 +135,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -137,9 +164,4 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0

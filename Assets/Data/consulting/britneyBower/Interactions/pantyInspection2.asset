@@ -19,21 +19,15 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements:
-    - OptionalNpcReference: {fileID: 0}
-      Stat: 0
-      Is: 0
-      Value: 0
-      RequiresStatBelow: 0
     NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
+    - OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
+        type: 2}
       Stat: 1
       Is: 0
       Value: 0
-      RequiresStatBelow: 0
     RequiredInteractions:
     - {fileID: 11400000, guid: f1602b8bcf4a04c418bf566986f68b25, type: 2}
+    - {fileID: 11400000, guid: 3fffffcc15265a04c955044e72270d34, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -56,26 +50,72 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: Let's go.  Flip up that skirt and show me something sexy.
+      OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
+        type: 2}
+      Text: Here's my bad little schoolgirl.  Show my your panties, Brit.
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: a62a86cbd80be9e4594e75e1079134c9, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 9715a38e3a6cbee4384507990b5c1ad9,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.45
+        width: 380
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: What if someone sees me?
-      CustomNpcImageOptions: []
+      OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
+        type: 2}
+      Text: Not here!  Let's go in yoru office!
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: a62a86cbd80be9e4594e75e1079134c9, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 9715a38e3a6cbee4384507990b5c1ad9,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.45
+        width: 380
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: I guess they'll just think the receptionist is being a slut, as usual.
-      CustomNpcImageOptions: []
+      OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
+        type: 2}
+      Text: Yes, here-- now!  Or you can head right out that door and earn your living
+        on Hump Alley!
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: a62a86cbd80be9e4594e75e1079134c9, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 9715a38e3a6cbee4384507990b5c1ad9,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.45
+        width: 380
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: But I'm really not!
-      CustomNpcImageOptions: []
+      OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
+        type: 2}
+      Text: Ok, ok!  You don't need to threaten me!
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: a62a86cbd80be9e4594e75e1079134c9, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 9715a38e3a6cbee4384507990b5c1ad9,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.45
+        width: 380
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
+        type: 2}
+      Text: 'NOTE: There is a good chance that if/when you fire some female employees,
+        some may end up as working girls on Hump Alley.'
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: a62a86cbd80be9e4594e75e1079134c9, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 9715a38e3a6cbee4384507990b5c1ad9,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.45
+        width: 380
     OptionalPopups: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
+          type: 2}
         AmbitionEffect: 0
         PrideEffect: -2
       EgoEffect: 1
@@ -100,11 +140,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -134,9 +169,4 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0

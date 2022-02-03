@@ -19,19 +19,12 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements:
-    - OptionalNpcReference: {fileID: 0}
-      Stat: 0
-      Is: 0
-      Value: 0
-      RequiresStatBelow: 10
     NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
+    - OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
+        type: 2}
       Stat: 1
       Is: 0
       Value: 10
-      RequiresStatBelow: 0
     RequiredInteractions:
     - {fileID: 11400000, guid: 654014b90f9a85b4986bf013e4b99171, type: 2}
     RequiredNotCompletedInteractions: []
@@ -52,31 +45,63 @@ MonoBehaviour:
     RevanueCost: 0
     HornicalCost: 0
   Repeatable: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
+        type: 2}
       Text: I approve of your latest Vixxxen's purchase.  You look like a beach bunny
         cocktease.
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: 371620026cf6d4b4a8e8a07ea4e80761, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 9715a38e3a6cbee4384507990b5c1ad9,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.45
+        width: 380
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
+        type: 2}
       Text: It barely covers me!
-      CustomNpcImageOptions: []
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 371620026cf6d4b4a8e8a07ea4e80761, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 9715a38e3a6cbee4384507990b5c1ad9,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.45
+        width: 380
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
+        type: 2}
       Text: True-- but since you're a "But-her-face", that's the whole idea.
-      CustomNpcImageOptions: []
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 371620026cf6d4b4a8e8a07ea4e80761, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 9715a38e3a6cbee4384507990b5c1ad9,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.45
+        width: 380
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
+        type: 2}
       Text: That's such a mean thing to say!
-      CustomNpcImageOptions: []
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 371620026cf6d4b4a8e8a07ea4e80761, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 9715a38e3a6cbee4384507990b5c1ad9,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.45
+        width: 380
     OptionalPopups: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
+          type: 2}
         AmbitionEffect: 0
         PrideEffect: -5
       EgoEffect: 2
@@ -101,11 +126,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -135,9 +155,4 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0
