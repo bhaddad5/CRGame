@@ -19,8 +19,7 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: acbc428150d271b4188a96e29739e8f1, type: 2}
     - {fileID: 11400000, guid: 2a433509fabf4934db8641b58afc4b41, type: 2}
@@ -45,31 +44,67 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 8468daf25d821974a8b3b9c729b1d180,
+        type: 2}
       Text: Hello.  You must be Deirdre.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 0bd4b03b475c1a54ea79442410153405,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.4
+        width: 325
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 8468daf25d821974a8b3b9c729b1d180,
+        type: 2}
       Text: Hey-- you can't just come into my house!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 0bd4b03b475c1a54ea79442410153405,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.4
+        width: 325
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 8468daf25d821974a8b3b9c729b1d180,
+        type: 2}
       Text: Relax-- I work with your mom.  Is Candace around?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 0bd4b03b475c1a54ea79442410153405,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.4
+        width: 325
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 8468daf25d821974a8b3b9c729b1d180,
+        type: 2}
       Text: No, she is NOT and you should leave!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 0bd4b03b475c1a54ea79442410153405,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.4
+        width: 325
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 8468daf25d821974a8b3b9c729b1d180,
+        type: 2}
       Text: That's fine.  Just tell her I dropped by, ok?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 0bd4b03b475c1a54ea79442410153405,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.4
+        width: 325
     OptionalPopups:
     - Title: Hello Deirdre!
       Videos:
       - {fileID: 32900000, guid: c01f554ecd70dea4f895d3f17de346f8, type: 3}
       Texture: {fileID: 0}
-      Text: 
+      Text: She's a skittish colt of a girl; she's at the perfect age for proper
+        male training too.
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -94,11 +129,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -128,9 +158,4 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0
