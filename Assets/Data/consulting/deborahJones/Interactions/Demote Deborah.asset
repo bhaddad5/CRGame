@@ -19,19 +19,12 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements:
-    - OptionalNpcReference: {fileID: 0}
-      Stat: 0
-      Is: 0
-      Value: 0
-      RequiresStatBelow: 0
-    NpcPrideRequirements: []
     NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
+    - OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
       Stat: 0
       Is: 0
       Value: 0
-      RequiresStatBelow: 0
     RequiredInteractions:
     - {fileID: 11400000, guid: 69f9d7b181331d64690c1b7cc4bb51f1, type: 2}
     - {fileID: 11400000, guid: 3275fee1b7afa1a4e9de4c0c30451f20, type: 2}
@@ -57,39 +50,95 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
       Text: 'I have some good news and some bad news for you.  The bad news is you
         have washed out of the Management Trainee Program.  You simply aren''t up
         to company standards.  '
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.65
+        yPos: 0.45
+        width: 400
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
       Text: But I have an MBA!  I'm a honours graduate!  This is impossible!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.65
+        yPos: 0.45
+        width: 400
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
       Text: 'I''m afraid it is, Debbie.  The good news is that I do think you have
         secretarial potential.  Which is why I''m pleased to offer you a position
         as my secretary, on a probationary basis initially.  I''d urge you to take
         it.  I have to be honest-- your profile in the National Employers Index is
         NOT flattering!  '
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.65
+        yPos: 0.45
+        width: 400
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
       Text: That's because you---
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.65
+        yPos: 0.45
+        width: 400
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
       Text: I did what Debbie?  Is this once again another instance of your failures
         being blamed on others?  I'm waiting.  Do you accept the job offer or not?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.65
+        yPos: 0.45
+        width: 400
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
       Text: 'NOTE: Despite her demotion, Deborah will still maintain a high level
         of professionalism and independence.  One way to begin helping her settle
         into her new junior status might be to direct Candace Kelly to help guide
         her.'
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.65
+        yPos: 0.45
+        width: 400
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
+      Text: 'NOTE: You may now access Deborah at her new location- in a desk outside
+        your office.  While she will adjust her ambitions and pride to her new status,
+        she will remain an independent and professional employee-- until shaped into
+        something else!'
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.65
+        yPos: 0.45
+        width: 400
     OptionalPopups:
     - Title: From Management Trainee to Secretary
       Videos:
@@ -99,7 +148,8 @@ MonoBehaviour:
         as she's escaped your office, you can hear her burst into tears
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+          type: 2}
         AmbitionEffect: 0
         PrideEffect: -10
       EgoEffect: 0
@@ -114,7 +164,8 @@ MonoBehaviour:
       NpcsToControl:
       - {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea, type: 2}
       NpcsToTrain: []
-      NpcsToRemoveFromGame: []
+      NpcsToRemoveFromGame:
+      - {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea, type: 2}
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
@@ -125,11 +176,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -159,9 +205,4 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0

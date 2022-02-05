@@ -19,8 +19,7 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: fc02f17d89ade184bb3a64f5c10348c4, type: 2}
     RequiredNotCompletedInteractions: []
@@ -45,42 +44,81 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
+        type: 2}
       Text: You know Debbie Jones, don't you?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 015acc2fd3767b24a9d137be3d709390,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.45
+        width: 410
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
         type: 2}
       Text: Yes, I know her.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 015acc2fd3767b24a9d137be3d709390,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.45
+        width: 410
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
+        type: 2}
       Text: I think she really needs some help in complying with her new admin position. 
         Would you mind auditing her wardrobe to make sure she's dressing according
         to her new dress code norms?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 015acc2fd3767b24a9d137be3d709390,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.45
+        width: 410
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
         type: 2}
       Text: If you say so.  I would need to see what she owns.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 015acc2fd3767b24a9d137be3d709390,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.45
+        width: 410
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
+        type: 2}
       Text: Set up a time to visit her apartment at your convenience after work hours. 
         Anything that doesn't meet the dress code goes to charity.  Got it?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 015acc2fd3767b24a9d137be3d709390,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.45
+        width: 410
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
         type: 2}
       Text: I understand.  She won't be happy, but...
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 015acc2fd3767b24a9d137be3d709390,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.45
+        width: 410
     OptionalPopups: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+      - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
           type: 2}
         AmbitionEffect: 0
-        PrideEffect: -10
+        PrideEffect: -5
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -103,11 +141,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -137,9 +170,4 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0
