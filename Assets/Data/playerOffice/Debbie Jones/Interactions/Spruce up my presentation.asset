@@ -20,7 +20,8 @@ MonoBehaviour:
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 2378a84496e68ff4c93896ef48642f0c, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -40,8 +41,53 @@ MonoBehaviour:
   Repeatable: 0
   PreviewEffect: 1
   Result:
-    Dialogs: []
-    OptionalPopups: []
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: 'Are you asking me to give this presentation?  I think I could do a great
+        job with this, Mr. {LastName}!  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: I'm asking you to format the presentation.  I understand you're quite
+        talented with presentation programs.  Just make it pretty, ok Debbie?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: I'd be happy to do the whole thing-- to research it, write it up, design
+        it, deliver it--
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: 'You''ll focus on making it look fantastic.  I''ll be the one delivering
+        it, Debbie.  Leave the thinking stuff to me, ok?  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    OptionalPopups:
+    - Title: You add it to her official job description
+      Videos:
+      - {fileID: 32900000, guid: 3fa5f408a307bfe45bc72d5cb704edb7, type: 3}
+      Texture: {fileID: 0}
+      Text: Moving forward, Deborah will format and finalize all your presentations.
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 0}
