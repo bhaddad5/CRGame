@@ -83,7 +83,7 @@ public class HudBindings : MonoBehaviour
 		PlayerTitle.text = mgm.Data.PlayerPromotionLevels[mgm.Data.Promotion].Title;
 
 		Ego.RefreshResourceDisplay(mgm.Data.Ego);
-		Funds.RefreshResourceDisplay(mgm.Data.Funds, funds => $"${funds}");
+		Funds.RefreshResourceDisplay(mgm.Data.Funds);
 		Power.RefreshResourceDisplay(mgm.Data.Power);
 
 		Culture.RefreshResourceDisplay(mgm.Data.CorporateCulture);

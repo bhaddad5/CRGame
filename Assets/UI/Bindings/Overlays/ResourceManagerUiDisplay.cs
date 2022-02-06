@@ -10,18 +10,15 @@ public class ResourceManagerUiDisplay : MonoBehaviour
 	[SerializeField] private AudioSource audioSource;
 
 	private float lastResourceValue = -1;
-	private Func<float, string> resourceValDisplayConverter = null;
-	public void RefreshResourceDisplay(float resourceValue, Func<float, string> resourceValDisplayConverter = null)
+	public void RefreshResourceDisplay(float resourceValue)
 	{
-		this.resourceValDisplayConverter = resourceValDisplayConverter ?? new Func<float, string>(v => v.ToString());
-
 		if (lastResourceValue >= 0 && lastResourceValue < resourceValue)
 		{
 			StartCoroutine(UpdateResourceValue(lastResourceValue, resourceValue));
 		}
 		else
 		{
-			ValueText.text = this.resourceValDisplayConverter(resourceValue);
+			ValueText.text = $"{(int)resourceValue}";
 		}
 
 		lastResourceValue = resourceValue;
@@ -33,12 +30,12 @@ public class ResourceManagerUiDisplay : MonoBehaviour
 		var tick = (endingValue - currValue) * .3f;
 		while (currValue < endingValue)
 		{
-			currValue = currValue + tick;
-			ValueText.text = resourceValDisplayConverter((int)currValue);
+			currValue = Mathf.Clamp(currValue + tick, currValue, endingValue);
+			ValueText.text = $"{(int)currValue}";
 			yield return new WaitForSeconds(0.1f);
 		}
 
-		ValueText.text = resourceValDisplayConverter(endingValue);
+		ValueText.text = $"{(int)endingValue}";
 		audioSource.Stop();
 	}
 }
