@@ -49,6 +49,8 @@ namespace Assets.GameModel.UiDisplayers
 		{
 			if (!policy.Requirements.RequirementsAreMet(mgm))
 				return policy.Requirements.GetInvalidTooltip(mgm);
+			if (!policy.Cost.CanAffordCost(mgm))
+				return policy.Cost.GetInvalidTooltip(mgm);
 			return null;
 		}
 	}
