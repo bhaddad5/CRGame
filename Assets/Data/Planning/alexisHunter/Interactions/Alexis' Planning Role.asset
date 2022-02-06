@@ -19,8 +19,7 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 190798a57716e67428b60d605439787e, type: 2}
     RequiredNotCompletedInteractions: []
@@ -44,30 +43,59 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3e388f1db150adc41861a8d778471965,
+        type: 2}
       Text: Ms. Bledsoe said you were an analytics expert.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e57493b43ba3c55459a7847afdbee19a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3e388f1db150adc41861a8d778471965,
+        type: 2}
       Text: Tracey gives me the broad strokes.  I just fill them in.  I'll admit
         it-- I'm a geek girl.  I always have been.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e57493b43ba3c55459a7847afdbee19a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3e388f1db150adc41861a8d778471965,
+        type: 2}
       Text: Based on the strategy docs I've seen, it is clear who the real author
         is.  Ms. Bledsoe presents the strategy-- but she's just presenting your work. 
         Am I right?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e57493b43ba3c55459a7847afdbee19a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3e388f1db150adc41861a8d778471965,
+        type: 2}
       Text: You might say that-- I couldn't possibly.  If you know what I mean.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e57493b43ba3c55459a7847afdbee19a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     OptionalPopups:
     - Title: '"I won''t disagree."'
       Videos:
       - {fileID: 32900000, guid: 1670142dd52ae7d418b6febf8ecf1f99, type: 3}
       Texture: {fileID: 0}
-      Text: 
+      Text: She feels secure in her position because it is obvious that anything
+        useful coming out of Planning is her work, even if it is under Tracey's name.
     Effect:
       NpcEffects: []
       EgoEffect: -3
@@ -92,11 +120,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -126,9 +149,4 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0

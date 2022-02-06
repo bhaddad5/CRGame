@@ -19,8 +19,7 @@ MonoBehaviour:
     RequiredPower: 160
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies:
@@ -49,24 +48,55 @@ MonoBehaviour:
       Text: I'm finding some of our staff a bit more resistant to change than I had
         anticipated.  I'd like you to research some training options.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
       Text: Sure.  Are we looking for skills training?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
       Text: No.  I think we need to start with the basics-- respect for authority. 
         Let's keep this confidential for now.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
       Text: I'll start looking around then.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 0}
       Text: 'NOTE: Jada recommends OBEIR, which you may now visit.'
       CustomNpcImageOptions: []
-    OptionalPopups: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    OptionalPopups:
+    - Title: Jada's a bright girl who has...
+      Videos:
+      - {fileID: 32900000, guid: 0234b7344a022444eb760a340f7f92ba, type: 3}
+      Texture: {fileID: 0}
+      Text: ...just helped you discover a partner capable of instilling the kind
+        of fear female employees require ot extract the most out of them!
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -91,11 +121,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -125,9 +150,4 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0

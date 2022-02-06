@@ -19,8 +19,7 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 9fd341824ed186d4ca9f800521a2330d, type: 2}
     RequiredNotCompletedInteractions: []
@@ -47,25 +46,55 @@ MonoBehaviour:
       OptionalNpcReference: {fileID: 0}
       Text: So how did you wind up at Artemis?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
       Text: Have you taken a look around?  They needed to meet a quota.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
       Text: I'm sure you're more than just that.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
       Text: 'Of course I am!  But that''s not why I was hired.  Carole needed a face
         that wasn''t lily white in HR-- otherwise, what kind of a hypocrite would
         she look like?  I don''t care- I like my job.  '
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
       Text: Well, I should get back to my desk...
       CustomNpcImageOptions: []
-    OptionalPopups: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    OptionalPopups:
+    - Title: She turns back to her pc, already...
+      Videos:
+      - {fileID: 32900000, guid: 878769a621c2b6f4ab84b24fe0649864, type: 3}
+      Texture: {fileID: 0}
+      Text: ...bored with the conversation.
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -90,11 +119,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -124,9 +148,4 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0

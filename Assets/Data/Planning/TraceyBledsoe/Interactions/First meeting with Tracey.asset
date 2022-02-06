@@ -19,8 +19,7 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: ce3f6f43e4a9dd4418dddf1fc78c2f8b, type: 2}
     RequiredNotCompletedInteractions: []
@@ -44,38 +43,84 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
+        type: 2}
       Text: 'I''m so pleased to finally meet you!  '
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 1ff9ec7b19ed8564f83c2e483f5d71a3,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.37
+        yPos: 0.44
+        width: 400
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
         type: 2}
-      Text: Susan's been sending me reports on your work.  I'm impressed.  I like
-        hard workers in my department.
+      Text: Susan's been sending me reports on your work, {FirstName}.  I'm impressed. 
+        I like hard workers in my department.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 1ff9ec7b19ed8564f83c2e483f5d71a3,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.37
+        yPos: 0.44
+        width: 400
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
+        type: 2}
       Text: I like to think I work smart, not hard.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 1ff9ec7b19ed8564f83c2e483f5d71a3,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.37
+        yPos: 0.44
+        width: 400
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
         type: 2}
       Text: If you expect to go anywhere in my department, you'll make sure you do
         both BOTH.  It's been nice meeting you, but I have a busy day.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 1ff9ec7b19ed8564f83c2e483f5d71a3,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.37
+        yPos: 0.44
+        width: 400
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
+        type: 2}
       Text: Of course!  Thank you again for your time!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 1ff9ec7b19ed8564f83c2e483f5d71a3,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.37
+        yPos: 0.44
+        width: 400
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
         type: 2}
       Text: One more thing...
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 1ff9ec7b19ed8564f83c2e483f5d71a3,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.37
+        yPos: 0.44
+        width: 400
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
+        type: 2}
       Text: Yes, Ma'am?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 1ff9ec7b19ed8564f83c2e483f5d71a3,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.37
+        yPos: 0.44
+        width: 400
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
         type: 2}
@@ -85,22 +130,49 @@ MonoBehaviour:
         some things down in CSG, I MAY find time to meet with you more often.  Otherwise,
         I expect you to keep your nose to the grindstone.  Is that clear? '
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 1ff9ec7b19ed8564f83c2e483f5d71a3,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.37
+        yPos: 0.44
+        width: 400
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
+        type: 2}
       Text: Crystal clear, Ma'am!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 1ff9ec7b19ed8564f83c2e483f5d71a3,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.37
+        yPos: 0.44
+        width: 400
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
+        type: 2}
       Text: Of course, if you think there are things going on in the CSG that I should
         know about, perhaps information Susan may not be sharing with me...   I suppose
         I might be available to take a short meeting with you.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 1ff9ec7b19ed8564f83c2e483f5d71a3,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.37
+        yPos: 0.44
+        width: 400
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
+        type: 2}
       Text: 'NOTE: The more senior the executive, the higher power level you''ll
         need in order to engage with them.  Gain power to earn access and the ability
         to interact with more important corporate execs.'
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 1ff9ec7b19ed8564f83c2e483f5d71a3,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.37
+        yPos: 0.44
+        width: 400
     OptionalPopups:
     - Title: '"I like to meet all of my reports."'
       Videos:
@@ -132,11 +204,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -166,9 +233,4 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0

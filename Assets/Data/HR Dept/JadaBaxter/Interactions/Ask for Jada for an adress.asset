@@ -19,19 +19,11 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements:
-    - OptionalNpcReference: {fileID: 0}
-      Stat: 0
-      Is: 0
-      Value: 0
-      RequiresStatBelow: 75
-    NpcPrideRequirements: []
     NpcStatRequirements:
     - OptionalNpcReference: {fileID: 0}
       Stat: 0
       Is: 0
       Value: 75
-      RequiresStatBelow: 0
     RequiredInteractions:
     - {fileID: 11400000, guid: 86e6d76855886e64e8d07472735f92ce, type: 2}
     RequiredNotCompletedInteractions: []
@@ -58,26 +50,56 @@ MonoBehaviour:
       OptionalNpcReference: {fileID: 0}
       Text: I understand our Social Media Manager--
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
       Text: Jayme Keller?  She's an excellent operator.  And yes, it is no secret
         she's a lesbian, if that's what you were going to ask.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
       Text: I understand that.  No, I was just wondering who her partner is?  I'm
         thinking of having a party and just need the name--- and Jayme's postal address.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
       Text: Sure-- I have that in her personnel file.  Her partner is Lesley Dibble
         and they live on Crown Boulevard.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 0}
       Text: 'NOTE: You may now set up surveillance on Jayme.'
       CustomNpcImageOptions: []
-    OptionalPopups: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    OptionalPopups:
+    - Title: Jada's a useful HR tool...
+      Videos:
+      - {fileID: 32900000, guid: 536b485bfe7ca694a86f384c37248dc9, type: 3}
+      Texture: {fileID: 0}
+      Text: ...but this department works best under a man's thumb.
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -102,11 +124,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -136,9 +153,4 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0
