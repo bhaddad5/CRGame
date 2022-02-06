@@ -9,7 +9,8 @@ namespace Assets.GameModel.Save
 	[Serializable]
 	public struct SaveGameState
 	{
-		public string PlayerName;
+		public string FirstName;
+		public string LastName;
 		public int TurnNumber;
 		public float Ego;
 		public float Funds;
@@ -37,7 +38,8 @@ namespace Assets.GameModel.Save
 		{
 			var res = new SaveGameState();
 
-			res.PlayerName = data.PlayerName;
+			res.FirstName = data.FirstName ?? "Hunter";
+			res.LastName = data.LastName ?? "Downe";
 			res.TurnNumber = data.TurnNumber;
 			res.Ego = data.Ego;
 			res.Funds = data.Funds;
@@ -76,7 +78,8 @@ namespace Assets.GameModel.Save
 
 		public void ApplyToData(GameData data)
 		{
-			data.PlayerName = PlayerName;
+			data.FirstName = FirstName ?? "Hunter";
+			data.LastName = LastName ?? "Downe";
 			data.TurnNumber = TurnNumber;
 			data.Ego = Ego;
 			data.Funds = Funds;

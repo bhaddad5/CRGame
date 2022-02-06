@@ -14,9 +14,11 @@ public class InteractionResultDisplayManager
 	private List<Trophy> currTrophiesToShow = new List<Trophy>();
 	private Action resultComplete = null;
 	private int completedCount;
+	private MainGameManager mgm;
 
-	public void DisplayInteractionResult(int completionCount, InteractionResult res, bool failed, Action resultComplete)
+	public void DisplayInteractionResult(int completionCount, InteractionResult res, bool failed, MainGameManager mgm, Action resultComplete)
 	{
+		this.mgm = mgm;
 		this.completedCount = completionCount;
 		this.resultComplete = resultComplete;
 
@@ -46,7 +48,7 @@ public class InteractionResultDisplayManager
 		{
 			var dialog = currDialogsToShow[0];
 			currDialogsToShow.RemoveAt(0);
-			GameObject.Instantiate(UiPrefabReferences.Instance.GetPrefabByName("Dialog Screen")).GetComponent<DialogScreenBindings>().Setup(dialog, HandleNextDialog);
+			GameObject.Instantiate(UiPrefabReferences.Instance.GetPrefabByName("Dialog Screen")).GetComponent<DialogScreenBindings>().Setup(dialog, mgm, HandleNextDialog);
 		}
 		else if (currPopupsToShow.Count > 0)
 		{
@@ -54,7 +56,7 @@ public class InteractionResultDisplayManager
 			currPopupsToShow.RemoveAt(0);
 
 			var popupParent = GameObject.Instantiate(UiPrefabReferences.Instance.PopupOverlayParent);
-			GameObject.Instantiate(UiPrefabReferences.Instance.GetPrefabByName("Popup Display"), popupParent.transform).GetComponent<PopupBindings>().Setup(popup, completedCount, HandleNextDialog);
+			GameObject.Instantiate(UiPrefabReferences.Instance.GetPrefabByName("Popup Display"), popupParent.transform).GetComponent<PopupBindings>().Setup(popup, completedCount, mgm, HandleNextDialog);
 		}
 		else if (currTrophiesToShow.Count > 0)
 		{
@@ -67,7 +69,7 @@ public class InteractionResultDisplayManager
 			currTrophiesToShow.RemoveAt(0);
 
 			var popupParent = GameObject.Instantiate(UiPrefabReferences.Instance.PopupOverlayParent);
-			GameObject.Instantiate(UiPrefabReferences.Instance.GetPrefabByName("Popup Display"), popupParent.transform).GetComponent<PopupBindings>().Setup(popup, completedCount, HandleNextDialog);
+			GameObject.Instantiate(UiPrefabReferences.Instance.GetPrefabByName("Popup Display"), popupParent.transform).GetComponent<PopupBindings>().Setup(popup, completedCount, mgm, HandleNextDialog);
 		}
 		else if (currMissionsToShow.Count > 0)
 		{
@@ -80,7 +82,7 @@ public class InteractionResultDisplayManager
 			currMissionsToShow.RemoveAt(0);
 
 			var popupParent = GameObject.Instantiate(UiPrefabReferences.Instance.PopupOverlayParent);
-			GameObject.Instantiate(UiPrefabReferences.Instance.GetPrefabByName("Popup Display"), popupParent.transform).GetComponent<PopupBindings>().Setup(popup, completedCount, HandleNextDialog);
+			GameObject.Instantiate(UiPrefabReferences.Instance.GetPrefabByName("Popup Display"), popupParent.transform).GetComponent<PopupBindings>().Setup(popup, completedCount, mgm, HandleNextDialog);
 		}
 		else
 		{

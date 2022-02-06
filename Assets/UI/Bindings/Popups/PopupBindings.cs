@@ -17,15 +17,15 @@ public class PopupBindings : MonoBehaviour
 	[SerializeField] private VideoPlayer VideoPlayer;
 
 	private Action onPopupDone;
-	public void Setup(Popup popup, int completionCount, Action onPopupDone)
+	public void Setup(Popup popup, int completionCount, MainGameManager mgm, Action onPopupDone)
 	{
 		this.onPopupDone = onPopupDone;
 		gameObject.SetActive(true);
 
-		Title.text = $"{popup.Title}";
+		Title.text = $"{UiDisplayHelpers.ApplyDynamicValuesToString(popup.Title, mgm)}";
 		Title.gameObject.SetActive(!String.IsNullOrEmpty(popup.Title));
 
-		Text.text = $"{popup.Text}";
+		Text.text = $"{UiDisplayHelpers.ApplyDynamicValuesToString(popup.Text, mgm)}";
 		Text.gameObject.SetActive(!String.IsNullOrEmpty(popup.Text));
 
 		ImageDisplay.gameObject.SetActive(popup.Texture != null);

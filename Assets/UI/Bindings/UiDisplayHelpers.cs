@@ -9,6 +9,18 @@ namespace Assets.GameModel.UiDisplayers
 {
 	public static class UiDisplayHelpers
 	{
+		public static string ApplyDynamicValuesToString(string str, MainGameManager mgm)
+		{
+			if (str == null)
+				return null;
+
+			var res = str;
+			res = res.Replace("{FirstName}", mgm.Data.FirstName);
+			res = res.Replace("{LastName}", mgm.Data.LastName);
+
+			return res;
+		}
+
 		public static string GetCostString(this ActionCost cost)
 		{
 			string str = "";

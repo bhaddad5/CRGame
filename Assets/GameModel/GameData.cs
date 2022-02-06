@@ -8,7 +8,8 @@ namespace Assets.GameModel
 	[Serializable]
 	public class GameData : ScriptableObject
 	{
-		public string PlayerName = "";
+		public string FirstName = "";
+		public string LastName = "";
 		public float StartingEgo = 0;
 		public float StartingFunds = 0;
 

@@ -22,9 +22,11 @@ public class DialogScreenBindings : MonoBehaviour
 	private DialogEntry dialog;
 	private Coroutine runningCoroutine = null;
 	private Action dialogsComplete = null;
+	private MainGameManager mgm;
 
-	public void Setup(DialogEntry dialog, Action dialogsComplete)
+	public void Setup(DialogEntry dialog, MainGameManager mgm, Action dialogsComplete)
 	{
+		this.mgm = mgm;
 		this.dialogsComplete = dialogsComplete;
 		this.dialog = dialog;
 
@@ -52,14 +54,14 @@ public class DialogScreenBindings : MonoBehaviour
 	{
 		SpeakerName.text = "";
 		if (dialog.CurrSpeaker == DialogEntry.Speaker.Player)
-			SpeakerName.text = "Player";
+			SpeakerName.text = $"{mgm.Data.FirstName}";
 		else if (dialog.CurrSpeaker == DialogEntry.Speaker.Npc)
 			SpeakerName.text = dialog.OptionalNpcReference.FirstName;
 
 		SpeakerNameBox.SetActive(dialog.CurrSpeaker != DialogEntry.Speaker.Narrator);
 
 		NextDialogImage.enabled = false;
-		textToShow = dialog.Text;
+		textToShow = UiDisplayHelpers.ApplyDynamicValuesToString(dialog.Text, mgm);
 		DialogText.text = "";
 
 		if (dialog.OptionalNpcReference != null)
@@ -84,7 +86,7 @@ public class DialogScreenBindings : MonoBehaviour
 			BlackBackground.gameObject.SetActive(false);
 		}
 
-		foreach (var c in dialog.Text)
+		foreach (var c in textToShow)
 		{
 			DialogText.text += c;
 			yield return new WaitForSeconds(.02f);

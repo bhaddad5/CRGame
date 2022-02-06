@@ -43,7 +43,7 @@ namespace Assets.GameModel.UiDisplayers
 			var res = interaction.GetInteractionResult(succeeded);
 			interaction.Cost.SubtractCost(mgm);
 			var displayHandler = new InteractionResultDisplayManager();
-			displayHandler.DisplayInteractionResult(interaction.Completed, res, !succeeded, () =>
+			displayHandler.DisplayInteractionResult(interaction.Completed, res, !succeeded, mgm, () =>
 			{
 				res.Execute(mgm);
 				if (succeeded)

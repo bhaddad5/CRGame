@@ -6,21 +6,26 @@ using UnityEngine;
 
 public class PlayerNamePickerBindings : MonoBehaviour
 {
-	private Action<string> startGame;
-	public void Setup(string defaultPlayerName, Action<string> startGame)
+	private Action<string, string> startGame;
+	[SerializeField] private TMP_InputField FirstName;
+	[SerializeField] private TMP_InputField LastName;
+
+	public void Setup(string defaultFirstName, string defaultLastName, Action<string, string> startGame)
 	{
 		this.startGame = startGame;
-		GetComponentInChildren<TMP_InputField>().text = defaultPlayerName;
+		FirstName.text = defaultFirstName;
+		LastName.text = defaultLastName;
 	}
 
 	public void StartGame()
 	{
-		string name = GetComponentInChildren<TMP_InputField>().text;
+		string fn = FirstName.text;
+		string ln = LastName.text;
 
-		if (!String.IsNullOrEmpty(name))
+		if (!String.IsNullOrEmpty(fn) && !String.IsNullOrEmpty(ln))
 		{
 			ClosePopup();
-			startGame?.Invoke(name);
+			startGame?.Invoke(fn, ln);
 		}
 	}
 

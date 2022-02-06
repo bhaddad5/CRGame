@@ -79,7 +79,7 @@ public class HudBindings : MonoBehaviour
 
 	public void RefreshUiDisplay(MainGameManager mgm)
 	{
-		PlayerName.text = mgm.Data.PlayerName;
+		PlayerName.text = $"{mgm.Data.FirstName} {mgm.Data.LastName}";
 		PlayerTitle.text = mgm.Data.PlayerPromotionLevels[mgm.Data.Promotion].Title;
 
 		Ego.RefreshResourceDisplay(mgm.Data.Ego);

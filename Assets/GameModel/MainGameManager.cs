@@ -21,7 +21,7 @@ namespace Assets.GameModel
 		private HudBindings hudUiDisplay;
 		private MainMapScreenBindings mainMapUiDisplay;
 		
-		public void InitializeGame(string saveDataPath, string playerName)
+		public void InitializeGame(string saveDataPath, string firstName, string lastName)
 		{
 			if (hudUiDisplay != null)
 			{
@@ -43,9 +43,14 @@ namespace Assets.GameModel
 			Data = DefaultGameData;
 
 			if (saveDataPath != null)
+			{
 				SaveLoadHandler.LoadAndApplyToGameData(saveDataPath, Data);
+			}
 			else
-				Data.PlayerName = playerName;
+			{
+				Data.FirstName = firstName;
+				Data.LastName = lastName;
+			}
 
 			hudUiDisplay.Setup(this, mainMapUiDisplay);
 			mainMapUiDisplay.Setup(this, Data.Locations);
@@ -98,7 +103,7 @@ namespace Assets.GameModel
 					bool succeeded = startOfTurnInteraction.GetInteractionSucceeded();
 					var res = startOfTurnInteraction.GetInteractionResult(succeeded);
 					var displayHandler = new InteractionResultDisplayManager();
-					displayHandler.DisplayInteractionResult(startOfTurnInteraction.Completed, res, !succeeded, () =>
+					displayHandler.DisplayInteractionResult(startOfTurnInteraction.Completed, res, !succeeded, this, () =>
 					{
 						res.Execute(this);
 						if(succeeded)
