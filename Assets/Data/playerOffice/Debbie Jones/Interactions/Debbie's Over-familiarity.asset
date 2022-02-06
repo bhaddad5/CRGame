@@ -117,7 +117,10 @@ MonoBehaviour:
       Text: Debbie seems to be realizing how far her star has fallen.  Despite her
         resentment, she'll address you with the respect you deserve from now on.
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: -5
+        PrideEffect: 0
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0

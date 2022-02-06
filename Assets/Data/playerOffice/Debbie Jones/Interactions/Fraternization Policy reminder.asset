@@ -142,7 +142,10 @@ MonoBehaviour:
       Text: ...has enraged Debbie.  Making her deny the accusation has amused you
         to no end!
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: -7
+        PrideEffect: 0
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
