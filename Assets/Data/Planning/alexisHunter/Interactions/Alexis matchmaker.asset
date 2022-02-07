@@ -19,8 +19,7 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 4b6be974f4b569f4e9c50fcc75459df1, type: 2}
     RequiredNotCompletedInteractions: []
@@ -44,46 +43,96 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3e388f1db150adc41861a8d778471965,
+        type: 2}
       Text: Remember what you said at the pub?  About Susan?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e57493b43ba3c55459a7847afdbee19a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3e388f1db150adc41861a8d778471965,
+        type: 2}
       Text: Look, whatever I said doesn't count.  I was two Cosmos in by then, right?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e57493b43ba3c55459a7847afdbee19a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3e388f1db150adc41861a8d778471965,
+        type: 2}
       Text: I know.  It's cool-- just between us, I promise!  I was just thinking
         though.  I know you said you liked Deborah but what if we made a deal?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e57493b43ba3c55459a7847afdbee19a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3e388f1db150adc41861a8d778471965,
+        type: 2}
       Text: What kind of deal?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e57493b43ba3c55459a7847afdbee19a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3e388f1db150adc41861a8d778471965,
+        type: 2}
       Text: Let's say you leave Deborah to me and in exchange I help you with Susan. 
         You said you thought she might be more open than Deb anyway-- right?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e57493b43ba3c55459a7847afdbee19a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3e388f1db150adc41861a8d778471965,
+        type: 2}
       Text: This is silly but as long as we're just talking, let's say I agree. 
         I think I could do some breaking in of Susan myself... in my dreams, anyway.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e57493b43ba3c55459a7847afdbee19a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3e388f1db150adc41861a8d778471965,
+        type: 2}
       Text: 'NOTE: Control of Susan Granger would allow you to help Alexis make her
         dreams come true!'
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e57493b43ba3c55459a7847afdbee19a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     OptionalPopups:
     - Title: '"Since we''re just talking, yeah- totally!"'
       Videos:
       - {fileID: 32900000, guid: a156a5cdf00db2a4db3bae354130f04b, type: 3}
       Texture: {fileID: 0}
-      Text: 
+      Text: You can tell the idea of acquiring Susan as a lover thrills her.
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 3e388f1db150adc41861a8d778471965,
+          type: 2}
         AmbitionEffect: -10
         PrideEffect: 0
       EgoEffect: 0
@@ -108,11 +157,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -142,9 +186,4 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0

@@ -19,21 +19,12 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements:
-    - OptionalNpcReference: {fileID: 11400000, guid: 7e462278cce38214a924d25dd035e5b8,
-        type: 2}
-      Stat: 0
-      Is: 0
-      Value: 0
-      RequiresStatBelow: 0
-    NpcPrideRequirements: []
     NpcStatRequirements:
     - OptionalNpcReference: {fileID: 11400000, guid: 7e462278cce38214a924d25dd035e5b8,
         type: 2}
       Stat: 0
       Is: 0
       Value: 0
-      RequiresStatBelow: 0
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
@@ -53,7 +44,7 @@ MonoBehaviour:
     RevanueCost: 0
     HornicalCost: 0
   Repeatable: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 0
@@ -62,21 +53,47 @@ MonoBehaviour:
       Text: You've put me in an impossible position.  Everyone knows the situation
         between us.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 403ae2e6934b11346b2cd6dfa85a5211,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.36
+        yPos: 0.45
+        width: 415
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7e462278cce38214a924d25dd035e5b8,
+        type: 2}
       Text: Then let's just make it official.  From now on, follow my lead and there
         won't be any issues.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 403ae2e6934b11346b2cd6dfa85a5211,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.36
+        yPos: 0.45
+        width: 415
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 7e462278cce38214a924d25dd035e5b8,
         type: 2}
       Text: So you can put another department in your pocket?  I suppose there's
         no other option?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 403ae2e6934b11346b2cd6dfa85a5211,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.36
+        yPos: 0.45
+        width: 415
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7e462278cce38214a924d25dd035e5b8,
+        type: 2}
       Text: I'm afraid not, Lisa.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 403ae2e6934b11346b2cd6dfa85a5211,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.36
+        yPos: 0.45
+        width: 415
     OptionalPopups: []
     Effect:
       NpcEffects: []
@@ -105,11 +122,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -139,9 +151,4 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0

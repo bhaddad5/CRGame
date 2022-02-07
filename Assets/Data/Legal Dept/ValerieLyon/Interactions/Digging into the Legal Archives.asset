@@ -19,22 +19,15 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements:
-    - OptionalNpcReference: {fileID: 0}
-      Stat: 0
-      Is: 0
-      Value: 0
-      RequiresStatBelow: 50
-    NpcPrideRequirements: []
     NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
+    - OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
+        type: 2}
       Stat: 0
       Is: 0
-      Value: 50
-      RequiresStatBelow: 0
+      Value: 55
     RequiredInteractions:
     - {fileID: 11400000, guid: 9c7eee22a6ca5cd4e8c2d64266298afb, type: 2}
-    - {fileID: 11400000, guid: d211797fd5bfc9543819165e1c1d17ca, type: 2}
+    - {fileID: 11400000, guid: 108aa3b4621042c448ea3c73639f7b69, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -51,36 +44,65 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
-  Repeatable: 1
-  PreviewEffect: 0
+  Repeatable: 0
+  PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: This is a big ask.  You want me to scour the Legal Archives for any fuckups
-        Amber made in any of our Terms of Service or tech publications or contracts
-        or even patents?
+      OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
+        type: 2}
+      Text: This is a bigger ask than you may have thought.  I've been scouring the
+        Legal Archives for any fuckups Amber made in any of our Terms of Service
+        or tech publications or contracts or even patents... nothing yet.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: edfe5a8c966778f48bee8b34e3566c9b,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
+        type: 2}
       Text: If there IS a problem-- and I've been led to believe there is-- then
         we have to get on top of it.  And I don't have access to the archives-- you
         do.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: edfe5a8c966778f48bee8b34e3566c9b,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
+        type: 2}
       Text: I'd be working behind Amber's back though.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: edfe5a8c966778f48bee8b34e3566c9b,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
+        type: 2}
       Text: And wouldn't it be great to see her caught out as the fake she is?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: edfe5a8c966778f48bee8b34e3566c9b,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
     OptionalPopups:
     - Title: Start digging Val!
       Videos:
       - {fileID: 32900000, guid: f5bb2e378c6fe68449cab91fa12a2b73, type: 3}
       Texture: {fileID: 0}
-      Text: 
+      Text: She seems to re-double her efforts in the hope of bringing down her own
+        boss!
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -105,11 +127,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -139,9 +156,4 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0
