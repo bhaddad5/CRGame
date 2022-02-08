@@ -19,10 +19,9 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 3448e0317d38f4248b1cb5bc0452336a, type: 2}
+    - {fileID: 11400000, guid: 0c68e31496550924fa5c755f17436596, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -44,9 +43,16 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: f9219735fd98fc744bd1e0f5a2c3529f,
+        type: 2}
       Text: In the chair, Debbie.  This man's a busy professional!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 4efb13b7b53c2df46b445eaa3f65a89a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 420
     OptionalPopups:
     - Title: Ouch!  Looks like that hurts!
       Videos:
@@ -63,10 +69,9 @@ MonoBehaviour:
         the 'sexretary' look you prefer.
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
-          type: 2}
+      - OptionalNpcReference: {fileID: 0}
         AmbitionEffect: 0
-        PrideEffect: -5
+        PrideEffect: -3
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -89,11 +94,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -127,9 +127,4 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0

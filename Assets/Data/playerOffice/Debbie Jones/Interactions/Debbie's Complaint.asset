@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Debbie's Complaint
+  m_Name: Debbie's complaint
   m_EditorClassIdentifier: 
-  Id: 53f83e20-c47e-4e41-96d4-910613cab8bf
-  Name: Debbie's Complaint
+  Id: 48a86fec-a146-4147-be10-4aa46bffd7e3
+  Name: Debbie's complaint
   Category: 0
   Requirements:
     RequiredPower: 0
@@ -21,7 +21,7 @@ MonoBehaviour:
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: b3b3d4e132ac76c42b7905f682fd7347, type: 2}
+    - {fileID: 11400000, guid: 2b840faba5318444aa508c46d66d5aa7, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -39,22 +39,90 @@ MonoBehaviour:
     RevanueCost: 0
     HornicalCost: 0
   Repeatable: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   Result:
     Dialogs:
-    - CurrSpeaker: 0
+    - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: 
-      CustomNpcImageOptions:
-      - {fileID: 2800000, guid: 9482e4092b9544e4c9b85355af607cda, type: 3}
+      Text: Yes, what's the matter with you?
+      CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
         xPos: 0
         yPos: 0
         width: 0
-    OptionalPopups: []
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: It is one of these new male hires of your's!  He's just some Management
+        Trainee but he had the audacity to actually pinch me!  I want him reprimanded
+        and I demand an apology!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: You do?  Do I have to remind you of our Fraternization Policy?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: But Mr. {LastName}, THIS WAS NOT MY FAULT!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: You will calm down right now!  As for your fault, maybe not intentionally
+        but you certainly caused it.  Unless you apolgize for behaving like a child
+        to the executive in question, you'll be docked a half day's pay.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: ME apologize?  Fine!  I just want it known for the record tha this is
+        so unfair!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Whatever.  Also, let the young man know you're my secretary and considered
+        Executive Privilege.  It won't happen again.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    OptionalPopups:
+    - Title: As Debbie indignantly struts out...
+      Videos:
+      - {fileID: 32900000, guid: 3d17c685115bb954b907d01eb643e958, type: 3}
+      Texture: {fileID: 0}
+      Text: ...you let out a chuckle.  As more men join the company, this is only
+        going to happen more frequently.
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: 0
+        PrideEffect: -5
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
