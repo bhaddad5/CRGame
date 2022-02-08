@@ -19,8 +19,7 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 7b8738e26aad00b4082b417d928cdc2c, type: 2}
     RequiredNotCompletedInteractions: []
@@ -44,15 +43,29 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: f4719d35d414f7449a4a8fa6aa3b3421,
+        type: 2}
       Text: I'm pleased to approve your proposal.  I'd like to begin getting our
         girls over her as soon as possible.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ae9697172c63f91499a5c58282a8b939,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.3
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: f4719d35d414f7449a4a8fa6aa3b3421,
+        type: 2}
       Text: We can begin enrolling the ladies right away.  Hard Bodies is pleased
         to be your Corporate Wellness Program Partner!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ae9697172c63f91499a5c58282a8b939,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.3
+        yPos: 0.4
+        width: 350
     OptionalPopups:
     - Title: Welcome to Hard Bodies, your new home for fitness!
       Videos:
@@ -83,11 +96,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -117,9 +125,4 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0
