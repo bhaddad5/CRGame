@@ -19,8 +19,7 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 1ceb3c5b2e0aac441a7fc25c3cfdc635, type: 2}
     RequiredNotCompletedInteractions: []
@@ -45,24 +44,63 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
       Text: You may be the first to congratulate me on my promotion.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
         type: 2}
       Text: This is a little awkward-- you in charge and me reporting to you...
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
       Text: Susan, you were never cut out for management.  You're a follower, not
         a leader.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
         type: 2}
       Text: If you say so.  Congratulations on your promotion to run CSG.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
+      Text: 'NOTE: Here''s a suggestion.  Make it official by demoting Susan as your
+        first official decision as the new Head of the Consulting Group, then you
+        can deal with Deborah Jones! '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
     OptionalPopups: []
     Effect:
       NpcEffects: []
@@ -81,8 +119,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
-      MissionsToComplete:
-      - {fileID: 0}
+      MissionsToComplete: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -90,11 +127,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -124,9 +156,4 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0
