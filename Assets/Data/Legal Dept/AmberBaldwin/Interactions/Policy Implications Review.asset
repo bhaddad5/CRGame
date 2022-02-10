@@ -19,8 +19,7 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies:
@@ -45,38 +44,83 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3ee00e5eebd58bf4d942df330f12e4e2,
+        type: 2}
       Text: Now that the Qualifications Enrichment Policy has been put into place,
         I'd like you to review all staff who might fall under the purview of the
         new policy.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef25c0dc25e5afe4b9ce257cbbd7b6d8,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.4
+        width: 300
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3ee00e5eebd58bf4d942df330f12e4e2,
+        type: 2}
       Text: 'You want me to review all the credentials for every staff member and
         if they have degrees that either aren''t relevant or fall into the new "superfluous
         degrees" category, then they are subject to role and salary adjustment. '
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef25c0dc25e5afe4b9ce257cbbd7b6d8,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.4
+        width: 300
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3ee00e5eebd58bf4d942df330f12e4e2,
+        type: 2}
       Text: Correct-- and those 'superfluous degrees' including any nonsense such
         as Women's Studies and the like.  And just executives.  Forget the juniors
         and admin.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef25c0dc25e5afe4b9ce257cbbd7b6d8,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.4
+        width: 300
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3ee00e5eebd58bf4d942df330f12e4e2,
+        type: 2}
       Text: 'LATER>>>
 
         I have a list for you.  It includes Carole Tyson-Fontaine-
-        she has a Women''s Study degree.  Susan Granger- she has an education degree. 
-        Cynthia Fitzgerald only has an Associates degree, so she technically falls
-        under the threshold and... Jennifer Page.  She has an admin skills certificate,
-        so the CEO technically isn''t qualified for her current position.'
+        she has a Women''s Study degree.  Susan Granger- she has an education degree.  '
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef25c0dc25e5afe4b9ce257cbbd7b6d8,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.4
+        width: 300
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 3ee00e5eebd58bf4d942df330f12e4e2,
+        type: 2}
+      Text: Cynthia Fitzgerald only has an Associates degree, so she technically
+        falls under the threshold and... Jennifer Page.  She has an admin skills
+        certificate, so the CEO technically isn't qualified for her current position.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef25c0dc25e5afe4b9ce257cbbd7b6d8,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.4
+        width: 300
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3ee00e5eebd58bf4d942df330f12e4e2,
+        type: 2}
       Text: 'NOTE: You may approach all of those on the list and inform them of the
         impact of the new policy.'
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef25c0dc25e5afe4b9ce257cbbd7b6d8,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.4
+        width: 300
     OptionalPopups: []
     Effect:
       NpcEffects: []
@@ -102,11 +146,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -136,9 +175,4 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0

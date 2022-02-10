@@ -19,13 +19,9 @@ MonoBehaviour:
     RequiredPower: 20
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: a8a1ae6b26b9fdb42a1d8540c4d41498, type: 2}
-    - {fileID: 11400000, guid: 9735bc02a3e50c84a8d216b4785664fe, type: 2}
-    - {fileID: 11400000, guid: 31794c8dd26b54e4ab652945c3b4226c, type: 2}
-    - {fileID: 11400000, guid: 1046a2d73bc48564baa18c8ff2b7039e, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -47,12 +43,19 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 9463ce860690f0f40952f492b665fc7e,
+        type: 2}
       Text: Pepper's not a whore but she appreciates a nice tipper and she's selective
         with what customers she sleeps with.  A high class exec like you suits her
         just fine!  College is expensive-- so you can be sure that the cash you leave
         on her dresser is going to a good cause!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 8fd12060e4ad257438e284c314d8b69d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
     OptionalPopups:
     - Title: '"I''m not that kind of girl!"'
       Videos:
@@ -85,11 +88,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -119,9 +117,4 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0

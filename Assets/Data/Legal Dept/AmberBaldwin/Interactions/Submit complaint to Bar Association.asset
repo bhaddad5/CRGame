@@ -1,0 +1,152 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: Submit complaint to Bar Association
+  m_EditorClassIdentifier: 
+  Id: 5d5ccc80-d63c-4a18-bdac-d46058109163
+  Name: Submit complaint to Bar Association
+  Category: 2
+  Requirements:
+    RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
+    NpcStatRequirements: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 8e37311766c8a2a45b93247eacf6dda2, type: 2}
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredNpcsControled: []
+    RequiredNpcsTrained: []
+    RequiredNpcsNotControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 10
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    HornicalCost: 0
+  Repeatable: 0
+  PreviewEffect: 1
+  Result:
+    Dialogs:
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 3ee00e5eebd58bf4d942df330f12e4e2,
+        type: 2}
+      Text: 'TO: Whom It May Concern
+
+        RE: Legal Malfeasance Claim
+
+        Please
+        find the attached information regarding Amber Baldwin.  While my complaint
+        is anonymous, you will find the enclosed material of interest...'
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef25c0dc25e5afe4b9ce257cbbd7b6d8,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.4
+        width: 300
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 3ee00e5eebd58bf4d942df330f12e4e2,
+        type: 2}
+      Text: "BALDWIN FRAUD HEARING, 10:00 AM \nSub-committee on Professional Conduct\nState
+        Bar Association"
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef25c0dc25e5afe4b9ce257cbbd7b6d8,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.4
+        width: 300
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 3ee00e5eebd58bf4d942df330f12e4e2,
+        type: 2}
+      Text: 'INITIAL RULING
+
+        The committee hereby recommends Ms. Amber Baldwin
+        shall be disabrred from the practice of law in this state by reason of dishonesty
+        as detailed in the enclosed findings'
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef25c0dc25e5afe4b9ce257cbbd7b6d8,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.4
+        width: 300
+    OptionalPopups:
+    - Title: After a formal review...
+      Videos:
+      - {fileID: 32900000, guid: 9815632b14c05bd4997eb99de3bebff1, type: 3}
+      Texture: {fileID: 0}
+      Text: ...the State Bar Association votes to disbar Amber Baldwin.
+    Effect:
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: 3ee00e5eebd58bf4d942df330f12e4e2,
+          type: 2}
+        AmbitionEffect: 0
+        PrideEffect: -40
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
+  FailureResult:
+    Dialogs: []
+    OptionalPopups: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+  Completed: 0

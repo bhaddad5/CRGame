@@ -95,7 +95,7 @@ MonoBehaviour:
       OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
         type: 2}
       Text: He's Malcolm's nephew.  Just passed the bar and I think he saw you in
-        teh hallway.  He's kind of shy but... he asked me if you were seeing anyone.
+        the hallway.  He's kind of shy but... he asked me if you were seeing anyone.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: edfe5a8c966778f48bee8b34e3566c9b,
         type: 3}
@@ -137,10 +137,24 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 350
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
+        type: 2}
+      Text: 'NOTE: Giving Valerie a push into Jackson''s arm is your part-- the young
+        lawyer can handle the rest.  You''ll need to keep nudging the romance along
+        though...'
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: edfe5a8c966778f48bee8b34e3566c9b,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
     OptionalPopups: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
+          type: 2}
         AmbitionEffect: -10
         PrideEffect: 0
       EgoEffect: 0

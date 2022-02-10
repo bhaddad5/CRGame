@@ -23,8 +23,7 @@ MonoBehaviour:
     RequiredInteractions:
     - {fileID: 11400000, guid: c3f21101baafc0244a0e117aa24d025d, type: 2}
     RequiredNotCompletedInteractions: []
-    RequiredPolicies:
-    - {fileID: 0}
+    RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled:
     - {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06, type: 2}
@@ -32,7 +31,7 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 10
+    EgoCost: 6
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -124,7 +123,8 @@ MonoBehaviour:
       Text: What a proud day for Debbie!  She must have had such high hopes!
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+          type: 2}
         AmbitionEffect: 0
         PrideEffect: -3
       EgoEffect: 0

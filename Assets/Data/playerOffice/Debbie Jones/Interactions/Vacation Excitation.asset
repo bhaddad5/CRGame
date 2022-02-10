@@ -20,8 +20,7 @@ MonoBehaviour:
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
-    RequiredInteractions:
-    - {fileID: 11400000, guid: fcdf09a7b786e7c478db66c1abba899d, type: 2}
+    RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -31,8 +30,8 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 5000
-    MoneyCost: 0
+    EgoCost: 0
+    MoneyCost: 5000
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -44,56 +43,65 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: Model your bikini for me.  Do you like it?
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: 45349896d8a27224788a30386fdcbeb9, type: 3}
       - {fileID: 2800000, guid: b086701c10f610843955f2d1b97acd5f, type: 3}
       - {fileID: 2800000, guid: e94fdafacf575994796e9cd309d20ae1, type: 3}
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: "Mr. {LastName}, it's way too revealing!  I can\u2019t wear this in public!"
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: 45349896d8a27224788a30386fdcbeb9, type: 3}
       - {fileID: 2800000, guid: b086701c10f610843955f2d1b97acd5f, type: 3}
       - {fileID: 2800000, guid: e94fdafacf575994796e9cd309d20ae1, type: 3}
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: That's the point, Miss Jones.  I want to show my personal secretary off
         during my vacation.  Are you excited about coming with me?
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: 45349896d8a27224788a30386fdcbeb9, type: 3}
       - {fileID: 2800000, guid: b086701c10f610843955f2d1b97acd5f, type: 3}
       - {fileID: 2800000, guid: e94fdafacf575994796e9cd309d20ae1, type: 3}
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: Oh, yes, Sir!  It's been so long since I went anywhere!
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: 45349896d8a27224788a30386fdcbeb9, type: 3}
       - {fileID: 2800000, guid: b086701c10f610843955f2d1b97acd5f, type: 3}
       - {fileID: 2800000, guid: e94fdafacf575994796e9cd309d20ae1, type: 3}
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: 'NOTE: You''ve managed Debbie so well that she''s actually excited at
         being ''invited'' to join you on holiday.  It is a great treat for her, but
         as far as you''re concerned, it is part and parcel of her job these days...  '
@@ -101,11 +109,12 @@ MonoBehaviour:
       - {fileID: 2800000, guid: 45349896d8a27224788a30386fdcbeb9, type: 3}
       - {fileID: 2800000, guid: b086701c10f610843955f2d1b97acd5f, type: 3}
       - {fileID: 2800000, guid: e94fdafacf575994796e9cd309d20ae1, type: 3}
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
     OptionalPopups:
     - Title: Take Deborah on a vacation
       Videos:

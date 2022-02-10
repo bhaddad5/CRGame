@@ -20,10 +20,11 @@ MonoBehaviour:
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
+    - OptionalNpcReference: {fileID: 11400000, guid: 3ee00e5eebd58bf4d942df330f12e4e2,
+        type: 2}
       Stat: 1
       Is: 0
-      Value: 0
+      Value: 30
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
@@ -47,7 +48,8 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3ee00e5eebd58bf4d942df330f12e4e2,
+        type: 2}
       Text: 'TO: ALL STAFF
 
         RE: BALDWIN RESIGNATION AND REPLACEMENT
@@ -58,19 +60,23 @@ MonoBehaviour:
         We wish her the best and welcome our new Corporate Counsel- Jackson Perkins. 
         Jackson will assume the role immediately.'
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: ef25c0dc25e5afe4b9ce257cbbd7b6d8,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.35
+        yPos: 0.4
+        width: 300
     OptionalPopups:
     - Title: Congratulations on your new position!
       Videos:
       - {fileID: 32900000, guid: a5db6c21e6f0a8542a937f37daa706fb, type: 3}
       Texture: {fileID: 0}
-      Text: 
+      Text: Amber returns to work for her old boss... but things have changed.
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: 0
+        PrideEffect: -30
       EgoEffect: 140
       FundsEffect: 0
       PowerEffect: 0
