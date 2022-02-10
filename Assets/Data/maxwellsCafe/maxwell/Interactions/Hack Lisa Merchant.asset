@@ -19,10 +19,10 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 0a3efbf8eec2cbc4b9b82142db274afc, type: 2}
+    - {fileID: 11400000, guid: 53cb2fea93cc77d4582f00905bd16bf7, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -48,6 +48,12 @@ MonoBehaviour:
         type: 2}
       Text: OK.  You can now surveil Lisa Merchant.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e8e650c737c3e4844836771a2cbd6d15,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.3
+        width: 380
     OptionalPopups: []
     Effect:
       NpcEffects: []
@@ -73,11 +79,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -107,9 +108,4 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0

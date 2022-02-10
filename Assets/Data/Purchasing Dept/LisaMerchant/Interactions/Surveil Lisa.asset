@@ -13,14 +13,13 @@ MonoBehaviour:
   m_Name: Surveil Lisa
   m_EditorClassIdentifier: 
   Id: b9754fa9-1cde-4a7f-9564-ceccc76fda24
-  Name: Surveil Lisa
+  Name: Plant spycam
   Category: 7
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 99b9a926ce3e8d249a20d01461f29cb6, type: 2}
     RequiredNotCompletedInteractions: []
@@ -39,8 +38,8 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
-  Repeatable: 0
-  PreviewEffect: 0
+  Repeatable: 1
+  PreviewEffect: 1
   Result:
     Dialogs: []
     OptionalPopups:
@@ -56,10 +55,10 @@ MonoBehaviour:
       - {fileID: 32900000, guid: 082622027bd87804dba36806e0294c86, type: 3}
       - {fileID: 32900000, guid: 17ac65255ed924049b751cad86423cba, type: 3}
       Texture: {fileID: 0}
-      Text: 
+      Text: She's as boring in private as she is in public!
     Effect:
       NpcEffects: []
-      EgoEffect: 0
+      EgoEffect: 10
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -81,11 +80,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -115,9 +109,4 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0
