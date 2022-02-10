@@ -19,8 +19,7 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 39d9261df683c184ab2501f3cc2148f9, type: 2}
     RequiredNotCompletedInteractions: []
@@ -31,7 +30,7 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 0
+    EgoCost: 5
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -40,13 +39,55 @@ MonoBehaviour:
     RevanueCost: 0
     HornicalCost: 0
   Repeatable: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: ADD JAYME KELLER NPC
+      OptionalNpcReference: {fileID: 11400000, guid: 7e462278cce38214a924d25dd035e5b8,
+        type: 2}
+      Text: I had no idea that the girl was gay!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 403ae2e6934b11346b2cd6dfa85a5211,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.36
+        yPos: 0.45
+        width: 415
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 7e462278cce38214a924d25dd035e5b8,
+        type: 2}
+      Text: What girl?  Alexis Hunter?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 403ae2e6934b11346b2cd6dfa85a5211,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.36
+        yPos: 0.45
+        width: 415
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 7e462278cce38214a924d25dd035e5b8,
+        type: 2}
+      Text: 'No, everyone knows SHE''S gay!  No, that girl in Marketing that does
+        all the social media- Jayme Keller.  She''s so cute too!  You''d think she
+        could get a boyfriend if she wanted!  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 403ae2e6934b11346b2cd6dfa85a5211,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.36
+        yPos: 0.45
+        width: 415
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 7e462278cce38214a924d25dd035e5b8,
+        type: 2}
+      Text: Cute?  Hmmm... I'll have to have a look.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 403ae2e6934b11346b2cd6dfa85a5211,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.36
+        yPos: 0.45
+        width: 415
     OptionalPopups: []
     Effect:
       NpcEffects: []
@@ -72,11 +113,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -106,9 +142,4 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0

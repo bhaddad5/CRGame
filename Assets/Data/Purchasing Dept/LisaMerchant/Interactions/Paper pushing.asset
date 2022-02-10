@@ -19,8 +19,7 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 68e8e40c0824b2f429247ecb428cb98d, type: 2}
     RequiredNotCompletedInteractions: []
@@ -44,41 +43,78 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7e462278cce38214a924d25dd035e5b8,
+        type: 2}
       Text: I know all these forms must be confusing.  Perhaps if I can just walk
         you through the reasons for each of them, that might be helpful.  I think
         all new executives, even the most junior ones, need to know how to request
         corporate resources.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 403ae2e6934b11346b2cd6dfa85a5211,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.36
+        yPos: 0.45
+        width: 415
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7e462278cce38214a924d25dd035e5b8,
+        type: 2}
       Text: Yes, I suppose so.   Let's get on with it then.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 403ae2e6934b11346b2cd6dfa85a5211,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.36
+        yPos: 0.45
+        width: 415
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7e462278cce38214a924d25dd035e5b8,
+        type: 2}
       Text: You're interested!  That's fantastic!  Most staff think this is all just
         paper pushing but unless you know how to follow our processes, you never
         really understand how to operate here at Artemis.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 403ae2e6934b11346b2cd6dfa85a5211,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.36
+        yPos: 0.45
+        width: 415
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7e462278cce38214a924d25dd035e5b8,
+        type: 2}
       Text: You are correct.  It's all in the details, isn't it?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 403ae2e6934b11346b2cd6dfa85a5211,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.36
+        yPos: 0.45
+        width: 415
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7e462278cce38214a924d25dd035e5b8,
+        type: 2}
       Text: 'Exactly!  Now, if you''ll pay attention and follow along please.  When
         you wish to submit your purchasing request, you need assign a twelve digit
         code that you can access from this coding schedule.  '
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 403ae2e6934b11346b2cd6dfa85a5211,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.36
+        yPos: 0.45
+        width: 415
     OptionalPopups:
     - Title: '"Everyone usually finds all this all so boring."'
       Videos:
       - {fileID: 32900000, guid: 4f1fce9680ffe7248a3539b2abe2a2e1, type: 3}
       Texture: {fileID: 0}
-      Text: 
+      Text: As do you.  Dealing with this woman is like watching paint dry.  What
+        would help moving things along with Lisa might be a quick hit of Hornical...
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 7e462278cce38214a924d25dd035e5b8,
+          type: 2}
         AmbitionEffect: -10
         PrideEffect: 0
       EgoEffect: 0
@@ -103,11 +139,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -137,9 +168,4 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0

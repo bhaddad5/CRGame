@@ -19,8 +19,7 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 46dd4d6e82575da42b92925dd368c149, type: 2}
     RequiredNotCompletedInteractions: []
@@ -44,46 +43,95 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
+        type: 2}
       Text: And it is you again, along with...
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f59a68988b745b64485aeeb4b5d28cbb,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 250
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
+        type: 2}
       Text: A box of Cohiba Exquisitos.  Smuggled, I understand.  I was hoping we
         could continue our discussion regarding Amber Baldwin, Sir?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f59a68988b745b64485aeeb4b5d28cbb,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 250
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
+        type: 2}
       Text: 'Make it Malcolm, please.  I''ve made some calls of my own.  You really
         are the bright come on the rise at Artemis from what I''ve been told.  And
         thank God you''re not one of these male feminists either.  '
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f59a68988b745b64485aeeb4b5d28cbb,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 250
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
+        type: 2}
       Text: Far from it, Malcolm.  Far from it.  About Amber... you said she worked
         for you?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f59a68988b745b64485aeeb4b5d28cbb,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 250
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
+        type: 2}
       Text: She did.  And I may have mislead you regarding her promise the last time
         we spoke.  In face, Amber's not exactly the talent I may have suggested. 
         Did you know it took her four times to pass the bar exam?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f59a68988b745b64485aeeb4b5d28cbb,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 250
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
+        type: 2}
       Text: I did not.  I'm confused then.  Why did you hire her?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f59a68988b745b64485aeeb4b5d28cbb,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 250
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
+        type: 2}
       Text: An interesting question.  Why would a man hire a girl of otherwise below
         average intelligence and drive to work for him?  I'll let you consider that
         question and we can talk more after you've given it some thought.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f59a68988b745b64485aeeb4b5d28cbb,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 250
     OptionalPopups:
-    - Title: 
+    - Title: His tastes are expensive...
       Videos: []
       Texture: {fileID: 2800000, guid: af9028e3a8cb4a749b8e2900bfecee19, type: 3}
-      Text: 
+      Text: ...but he seems t have valuable information.
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -108,11 +156,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -142,9 +185,4 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0

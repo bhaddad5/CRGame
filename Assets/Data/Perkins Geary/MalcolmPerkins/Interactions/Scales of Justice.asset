@@ -19,8 +19,7 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 557ab2b4c418d4a4e848d0191223266e, type: 2}
     RequiredNotCompletedInteractions: []
@@ -44,49 +43,98 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
+        type: 2}
       Text: Oh!  I hate to say, I'm a bit disappointed.  I think I've got about three
         of these in my closet.  And you were on such a winning streak!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f59a68988b745b64485aeeb4b5d28cbb,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 250
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
+        type: 2}
       Text: Look under the base.  There's an inscription I believe.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f59a68988b745b64485aeeb4b5d28cbb,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 250
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
+        type: 2}
       Text: 'There is.  "From the Fifth Federal Circuit Court of Judge Jebediah Perkins,
         1867".  My great, great, great grandfather.  My God.  '
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f59a68988b745b64485aeeb4b5d28cbb,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 250
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
+        type: 2}
       Text: 'Back to Amber then.  There''s more to it.  You had unplayed cards. 
         You allowed to let her think she''d beaten you. '
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f59a68988b745b64485aeeb4b5d28cbb,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 250
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
+        type: 2}
       Text: Of course I did.  When I told her she'd be getting the Artemis job, I
         had her on video.  She was so triumphant, she didn't deny it when I accused
         her of blackmail.  It is here-- on this drive.  To be honest, I was done
         with her and confronting her wouldn't have made me look good.  I was happy
         to be done with Amber and the whole mess.  So now you know the whole story.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f59a68988b745b64485aeeb4b5d28cbb,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 250
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
+        type: 2}
       Text: 'Malcolm, Amber''s in my way.  I need her to put some corporate policies
         in place I know she''ll never agree to.  How would you deal with her?   '
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f59a68988b745b64485aeeb4b5d28cbb,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 250
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
+        type: 2}
       Text: I'll need to think on it.  Come back and we'll discuss.  And we're beyond
         token gifts.  If we go any further, I'll be looking for bigger stakes than
         mementos.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f59a68988b745b64485aeeb4b5d28cbb,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 250
     OptionalPopups:
-    - Title: 
+    - Title: He thought he was finally done with you...
       Videos:
       - {fileID: 0}
       Texture: {fileID: 2800000, guid: f755c9dd6951eb24eb110238711b6721, type: 3}
-      Text: 
+      Text: ...until he read the inscription!
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -111,11 +159,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -145,9 +188,4 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0
