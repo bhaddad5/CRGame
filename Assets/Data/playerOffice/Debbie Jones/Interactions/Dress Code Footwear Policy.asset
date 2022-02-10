@@ -42,11 +42,53 @@ MonoBehaviour:
   Repeatable: 0
   PreviewEffect: 1
   Result:
-    Dialogs: []
-    OptionalPopups: []
+    Dialogs:
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: 'NOTE: It might seem petty, but the first time Deborah enters the office
+        in those horrible running shoes, you feel compelled to point out that the
+        Admin Dress Code requires heels and her ugly walk-to-work shoes are not allowed.'
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: Of course she tries to debate the point until you overrule her by leaving
+        no doubt that once she leaves her home, she's expected to project the right
+        image.  This includes the appropriate footwear.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: The next day, you find her rubbing her aching feet-- but wearing the
+        appropriate minimum three inch heels.  How nice is it when Deborah takes
+        direction properly!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    OptionalPopups:
+    - Title: Watching her prance into the office in those heels...
+      Videos:
+      - {fileID: 32900000, guid: ba59ec8f6d013344f8a20b18e39cade6, type: 3}
+      Texture: {fileID: 0}
+      Text: ...is a pleasure.  Sure, she might suffer from aching arches, but is
+        that really your problem?
     Effect:
-      NpcEffects: []
-      EgoEffect: 0
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: 0
+        PrideEffect: -3
+      EgoEffect: 10
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -75,9 +117,7 @@ MonoBehaviour:
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: 'NOTE: It might seem petty, but the first time Deborah enters the office
-        in those horrible running shoes, you feel compelled to point out that the
-        Admin Dress Code requires heels and her ugly walk-to-work shoes are not allowed.'
+      Text: 
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
         type: 3}
@@ -88,9 +128,7 @@ MonoBehaviour:
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: Of course she tries to debate the point until you overrule her by leaving
-        no doubt that once she leaves her home, she's expected to project the right
-        image.  This includes the appropriate footwear.
+      Text: 
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
         type: 3}
@@ -101,9 +139,7 @@ MonoBehaviour:
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: You end the debate by telling her she's just received a warning.  If
-        she wears the ugly shoes into work tomorrow-- even if she does change into
-        her high heels right away-- that she'll be docked pay.
+      Text: 
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
         type: 3}
@@ -114,9 +150,7 @@ MonoBehaviour:
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: The next day, you find her rubbing her aching feet-- but wearing the
-        appropriate minimum three inch heels.  How nice is it when Deborah takes
-        direction properly!
+      Text: 
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
         type: 3}
@@ -125,12 +159,11 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
     OptionalPopups:
-    - Title: Watching her prance into the office in those heels...
+    - Title: 
       Videos:
       - {fileID: 32900000, guid: ba59ec8f6d013344f8a20b18e39cade6, type: 3}
       Texture: {fileID: 0}
-      Text: is a pleasure.  Sure, she might suffer from aching arches, but is that
-        really your problem?
+      Text: 
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 0}

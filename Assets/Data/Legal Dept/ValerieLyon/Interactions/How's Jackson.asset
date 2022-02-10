@@ -19,8 +19,7 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 8916f55abf60aeb46b314b40a5bec758, type: 2}
     RequiredNotCompletedInteractions: []
@@ -39,30 +38,61 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
-  Repeatable: 1
-  PreviewEffect: 0
+  Repeatable: 0
+  PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
+        type: 2}
       Text: How'd the date with Jackson go?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: edfe5a8c966778f48bee8b34e3566c9b,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
+        type: 2}
       Text: It was fun.  He's a bit arrogant but he's also funny.  And charming.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: edfe5a8c966778f48bee8b34e3566c9b,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
+        type: 2}
       Text: The famous Perkins charm!  Will you see him again?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: edfe5a8c966778f48bee8b34e3566c9b,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
+        type: 2}
       Text: Yes, I think I will!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: edfe5a8c966778f48bee8b34e3566c9b,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
     OptionalPopups: []
     Effect:
-      NpcEffects: []
-      EgoEffect: -10
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: -20
+        PrideEffect: 0
+      EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -84,11 +114,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -118,9 +143,4 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0

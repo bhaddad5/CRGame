@@ -19,8 +19,7 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: c100a2206307df44d8a5f6485f601098, type: 2}
     RequiredNotCompletedInteractions: []
@@ -31,7 +30,7 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 5
+    EgoCost: 0
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -40,37 +39,72 @@ MonoBehaviour:
     RevanueCost: 0
     HornicalCost: 0
   Repeatable: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
+        type: 2}
       Text: The Metropolitan is the city's most influential and selective social
         club.  We only invite those who have accomplished great things.  Occasionally,
         we offer entry to those with extraordinary talent.  You fall in the second
         category.  I've decided to personally nominate you for membership.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f59a68988b745b64485aeeb4b5d28cbb,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 250
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
+        type: 2}
       Text: I'm honored!  What does membership entail?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f59a68988b745b64485aeeb4b5d28cbb,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 250
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
+        type: 2}
       Text: You'd have access to the club facilities-- the finest in town, trust
         me.  Even better, you'd be able to network with other members-- very powerful
         men in different fields.  There's an annual fee-- fifty thousand.  When you're
         ready to join us, simply announce yourself at the clubhouse.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f59a68988b745b64485aeeb4b5d28cbb,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 250
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
+        type: 2}
       Text: I'm speechless really.  You're too kind.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f59a68988b745b64485aeeb4b5d28cbb,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 250
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
+        type: 2}
       Text: Having Amber Baldwin back under my thumb is more than I ever hoped possible. 
         And returned with such a different attitude.  No, you're a remarkable and
         capable young fellow-- you deserve the honor!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f59a68988b745b64485aeeb4b5d28cbb,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 250
     OptionalPopups: []
     Effect:
       NpcEffects: []
@@ -96,11 +130,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -130,9 +159,4 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0
