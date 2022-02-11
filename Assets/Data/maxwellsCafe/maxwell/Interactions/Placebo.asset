@@ -13,17 +13,15 @@ MonoBehaviour:
   m_Name: Placebo
   m_EditorClassIdentifier: 
   Id: 8b1da1c8-3ed3-46d3-8632-9dd12d4bf676
-  Name: Placebo
+  Name: Placebo for Tracey Bledsoe
   Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: c7c752038ae53414fa55a9b58f68c584, type: 2}
-    - {fileID: 11400000, guid: bca6964bbdb4e204193192b8c4bdebb0, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -33,7 +31,7 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 5000
+    MoneyCost: 2000
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -45,11 +43,18 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: dca0ed3955970e54c921b2067f1fdcfe,
+        type: 2}
       Text: I've developed a placebo for Tracey Bledsoe.  If you can exchange these
         for her regular pills, she'll begin to experience panic attacks like she's
         never had before.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e8e650c737c3e4844836771a2cbd6d15,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.3
+        width: 380
     OptionalPopups:
     - Title: If Maxwell's right about the placebo switch...
       Videos:
@@ -81,11 +86,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -115,9 +115,4 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0
