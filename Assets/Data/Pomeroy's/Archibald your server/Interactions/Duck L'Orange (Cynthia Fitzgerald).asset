@@ -1,0 +1,151 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: Duck L'Orange (Cynthia Fitzgerald)
+  m_EditorClassIdentifier: 
+  Id: 1496a06d-a9f5-42f1-baf5-a7b149e5dd53
+  Name: Duck L'Orange (Cynthia Fitzgerald)
+  Category: 3
+  Requirements:
+    RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
+    NpcStatRequirements: []
+    RequiredInteractions: []
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredNpcsControled: []
+    RequiredNpcsTrained: []
+    RequiredNpcsNotControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 0
+    MoneyCost: 500
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    HornicalCost: 0
+  Repeatable: 1
+  PreviewEffect: 1
+  Result:
+    Dialogs:
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: It is difficult not to hear what's going on.  Pomeroy's has lost Cynthia's
+        reservation and she's furious!  The manager is scrambling to accommodate
+        but...
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: when you ask the Artemis Sales Chief to join you, her temper disappears
+        and she gladly takes you up on the inviation.  It is a most informative dinner!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    OptionalPopups:
+    - Title: Cynthia's temper is well known...
+      Videos:
+      - {fileID: 32900000, guid: ca03b02398bc0b94a96acefbde6c4d63, type: 3}
+      Texture: {fileID: 0}
+      Text: ...especially by her own sales force who fear the revenue diva!  You're
+        pleased for a chance to get her onside.
+    Effect:
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: cce62dcf1e1cc4346a6669063ec206c4,
+          type: 2}
+        AmbitionEffect: -10
+        PrideEffect: 0
+      EgoEffect: 12
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+  CanFail: 1
+  ProbabilityOfFailureResult: 0.5
+  FailureResult:
+    Dialogs:
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: It is clear that they've lost her reservation or that she never had one. 
+        Regardless, you see the chance to play white knight and ask Cynthia, the
+        Artemis Sales Chief, to join you...
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: But it is clear she's too affronted and furious to remain and she stomps
+        out before you can intervene.  You force yourself to finish your duck and
+        leave.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    OptionalPopups: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 2
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+  Completed: 0
