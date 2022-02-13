@@ -19,8 +19,7 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: ef3a415ec1368ce4e934ad7180533da9, type: 2}
     RequiredNotCompletedInteractions: []
@@ -40,35 +39,76 @@ MonoBehaviour:
     RevanueCost: 0
     HornicalCost: 0
   Repeatable: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 8468daf25d821974a8b3b9c729b1d180,
+        type: 2}
       Text: Hi there, cute stuff!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 0bd4b03b475c1a54ea79442410153405,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.4
+        width: 325
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 8468daf25d821974a8b3b9c729b1d180,
+        type: 2}
       Text: Oh, hi!  You here to see Mom?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 0bd4b03b475c1a54ea79442410153405,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.4
+        width: 325
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 8468daf25d821974a8b3b9c729b1d180,
+        type: 2}
       Text: Actually, I'm just dropping off more paperwork.  Are you here alone or
         do you have a boyfriend hiding somewhere?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 0bd4b03b475c1a54ea79442410153405,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.4
+        width: 325
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 8468daf25d821974a8b3b9c729b1d180,
+        type: 2}
       Text: You're teasing!  I don't have a boyfriend!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 0bd4b03b475c1a54ea79442410153405,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.4
+        width: 325
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 8468daf25d821974a8b3b9c729b1d180,
+        type: 2}
       Text: A pretty girl like you?  That's very hard to believe... and a kind of
         a waste.
       CustomNpcImageOptions: []
-    OptionalPopups: []
+      CustomBackground: {fileID: 2800000, guid: 0bd4b03b475c1a54ea79442410153405,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.4
+        width: 325
+    OptionalPopups:
+    - Title: She feels uncomfortable answering...
+      Videos:
+      - {fileID: 32900000, guid: 6c47aadac6e796e47ab69112835494a2, type: 3}
+      Texture: {fileID: 0}
+      Text: ...such personal questions!
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 8468daf25d821974a8b3b9c729b1d180,
+          type: 2}
         AmbitionEffect: -10
         PrideEffect: 0
       EgoEffect: 0
@@ -93,11 +133,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -127,9 +162,4 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0

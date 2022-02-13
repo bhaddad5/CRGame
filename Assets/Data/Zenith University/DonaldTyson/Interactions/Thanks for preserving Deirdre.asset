@@ -19,8 +19,7 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 351e0adc833356143aacf4bc20fa29f3, type: 2}
     - {fileID: 11400000, guid: 0856be536b100844c8734815e76eaa69, type: 2}
@@ -29,7 +28,8 @@ MonoBehaviour:
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
-    RequiredNpcsTrained: []
+    RequiredNpcsTrained:
+    - {fileID: 11400000, guid: 8468daf25d821974a8b3b9c729b1d180, type: 2}
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
@@ -46,45 +46,101 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 49c059802b4b2a842be5a5c55f4435f6,
+        type: 2}
       Text: You wanted to see me, Donald?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7f239f2c1dffed941ad3536b63160463,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 270
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 49c059802b4b2a842be5a5c55f4435f6,
+        type: 2}
       Text: I did. I just wanted to thank you for everything-- for introducing me
         to Candace and everything that has happened since!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7f239f2c1dffed941ad3536b63160463,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 270
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 49c059802b4b2a842be5a5c55f4435f6,
+        type: 2}
       Text: My pleasure entirely!  I understand Kevin is doing great work and doing
         you proud in his internship.  And how is Deirdre doing?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7f239f2c1dffed941ad3536b63160463,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 270
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 49c059802b4b2a842be5a5c55f4435f6,
+        type: 2}
       Text: That's what I really wanted to thank you for.  I can't believe you had
         the self-discipline to keep yourself from taking her virginity.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7f239f2c1dffed941ad3536b63160463,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 270
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 49c059802b4b2a842be5a5c55f4435f6,
+        type: 2}
       Text: You deserve that honor, Donald.  I hope it was a pleasure worth waiting
         for!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7f239f2c1dffed941ad3536b63160463,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 270
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 49c059802b4b2a842be5a5c55f4435f6,
+        type: 2}
       Text: It was indeed!  That's why I wanted you to have this-- the final piece
         of the Artemis IP puzzle.  Go on-- take it.  There's no charge.  Accept it
         as a gesture of my gratitude.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7f239f2c1dffed941ad3536b63160463,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 270
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 49c059802b4b2a842be5a5c55f4435f6,
+        type: 2}
       Text: These are the original patents-- the ones Jennifer tried to disappear! 
         They prove her complicity in industrial sabotage!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7f239f2c1dffed941ad3536b63160463,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 270
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 49c059802b4b2a842be5a5c55f4435f6,
+        type: 2}
       Text: Enjoy your own fortune my friend.  With that, you can do more damage
         to Jennifer Page!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7f239f2c1dffed941ad3536b63160463,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 270
     OptionalPopups:
     - Title: Step-dad's little secret
       Videos:
@@ -115,11 +171,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -149,9 +200,4 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0
