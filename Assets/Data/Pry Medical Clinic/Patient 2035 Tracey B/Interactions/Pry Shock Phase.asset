@@ -14,13 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 1d3b9ed9-428e-4966-bf7d-62792d10ebed
   Name: Pry Shock Phase
-  Category: 0
+  Category: 5
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 7a3ca7b2fec3e9a42923f272892f18f1, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -29,7 +30,7 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 0
+    EgoCost: 25
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -38,13 +39,13 @@ MonoBehaviour:
     RevanueCost: 0
     HornicalCost: 0
   Repeatable: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   Result:
     Dialogs:
-    - CurrSpeaker: 0
+    - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 688eee32fa3ac404ca925c42e0e17c55,
         type: 2}
-      Text: hi it is me
+      Text: 'Tracey-- look who''s come to visit!  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: cef4c43b046bdb44097b346ba3ae303e,
         type: 3}
@@ -52,9 +53,66 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 300
-    OptionalPopups: []
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 688eee32fa3ac404ca925c42e0e17c55,
+        type: 2}
+      Text: Is she still behaving in a dangerous manner, Doctor Feng?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: cef4c43b046bdb44097b346ba3ae303e,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 688eee32fa3ac404ca925c42e0e17c55,
+        type: 2}
+      Text: I'm afraid so.  As you can see, we've had to keep her restrained.  She's
+        still quite psychotic.  She even claims she's here because of some conspiracy
+        having to do with you!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: cef4c43b046bdb44097b346ba3ae303e,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 688eee32fa3ac404ca925c42e0e17c55,
+        type: 2}
+      Text: Amazing!  Me, you say?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: cef4c43b046bdb44097b346ba3ae303e,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 688eee32fa3ac404ca925c42e0e17c55,
+        type: 2}
+      Text: Yes, indeed Mr. {LastName}.  It's alright though.  Tracey's in the Shock
+        Phase of her treatment.  She's still refusing to acknowledge the real reasons
+        she's under care.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: cef4c43b046bdb44097b346ba3ae303e,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
+    OptionalPopups:
+    - Title: Typical patient response at this early stage
+      Videos:
+      - {fileID: 32900000, guid: 90c6efb6475989b449d52ed282235781, type: 3}
+      Texture: {fileID: 0}
+      Text: Nothing to be concerned about.  As the song goes, we've only  just begun!
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: 688eee32fa3ac404ca925c42e0e17c55,
+          type: 2}
+        AmbitionEffect: 0
+        PrideEffect: -10
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
