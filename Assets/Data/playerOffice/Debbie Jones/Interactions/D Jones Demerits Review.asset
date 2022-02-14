@@ -20,12 +20,13 @@ MonoBehaviour:
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
+    - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Stat: 1
       Is: 0
       Value: 75
     RequiredInteractions:
-    - {fileID: 11400000, guid: c1f58bd9f852a08408285372c22932e6, type: 2}
+    - {fileID: 11400000, guid: ad29c9153e0f84b459003c01e120aea2, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -48,16 +49,46 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
-      Text: 'NOTE: Debbie''s proclivity for accumulating demerits finally came to
-        a head.  When you offered to substitute paddlings instead of having her paycheck
-        docked, she reluctantly agreed.  '
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: 'NOTE: Debbie soon realizes her birthday gift was no joke.  The paddle
+        was meant to send a message.  As she racks up demerit after demerit, they
+        begin to eat away at her paycheck like piranhas.  Petty infractions, all
+        resulting in paycheck deductions, begin to whittle away at her take hoem
+        pay.'
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: Your kind offer to 'compromise' by allowing her to work off demerits
+        with corporal punishment horrifies her at first.  But Debbie is a practical
+        girl and after due consideration, she agrees to the discipline option.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: While resenting the option, it does preserve her paycheck.  She submits
+        as stoically as possible, when required, to your corrective measures with
+        as much professionalism as she can muster.  But it still hurts!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
     OptionalPopups:
     - Title: Discipline Debbie
       Videos:
@@ -72,7 +103,8 @@ MonoBehaviour:
         in exchange for not having her pay docked.  Well done!
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+          type: 2}
         AmbitionEffect: 0
         PrideEffect: -1
       EgoEffect: 0

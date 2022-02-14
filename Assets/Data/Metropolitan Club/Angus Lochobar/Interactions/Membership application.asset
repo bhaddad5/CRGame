@@ -10,18 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Company Gold Outing
+  m_Name: Membership application
   m_EditorClassIdentifier: 
-  Id: e758b0bf-97eb-41cd-9801-1158fc40afc3
-  Name: Company Golf Outing
-  Category: 3
+  Id: 7f3989f2-39b5-4122-8428-29794e597efb
+  Name: Membership application
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
-    RequiredInteractions:
-    - {fileID: 11400000, guid: 1b97564adbfb3aa4ab49f9f8da6e4763, type: 2}
+    RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -31,7 +30,7 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 1000
+    MoneyCost: 10000
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -43,65 +42,70 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: f42fb56e29e0b374386530f7e2189a62,
+      OptionalNpcReference: {fileID: 11400000, guid: 524c352db1c37b24fa4df8930133125e,
         type: 2}
-      Text: Donald asked me if you'd like to join his team for the Company Gold Day. 
-        He really enjoyed your company at the Exec thing!
+      Text: Mr. {LastName}-- so glad to meet you!  Malcolm is a big fan!  Says you're
+        a bit of a miracle worker when it comes to solving certain kinds of problems!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 793d3fec56c01544bbb8a217b63e918a,
+      CustomBackground: {fileID: 2800000, guid: 61d5c60fc2d8d2743bf89ac2ee391663,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.6
+        xPos: 0.5
         yPos: 0.4
-        width: 300
+        width: 375
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: f42fb56e29e0b374386530f7e2189a62,
+      OptionalNpcReference: {fileID: 11400000, guid: 524c352db1c37b24fa4df8930133125e,
         type: 2}
-      Text: I guess I better get myself some golf clubs then!
+      Text: Please-- it is {FirstName}!  I was told to bring my Letter of Recommendation
+        from Malcolm.  I'm very honored to have been invited to join the Metropolitan
+        Club!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 793d3fec56c01544bbb8a217b63e918a,
+      CustomBackground: {fileID: 2800000, guid: 61d5c60fc2d8d2743bf89ac2ee391663,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.6
+        xPos: 0.5
         yPos: 0.4
-        width: 300
+        width: 375
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: f42fb56e29e0b374386530f7e2189a62,
+      OptionalNpcReference: {fileID: 11400000, guid: 524c352db1c37b24fa4df8930133125e,
         type: 2}
-      Text: We can organize them for you.  Just sign this-- it IS a thousand bucks
-        though.  For charity and all.
+      Text: You are here because you deserve to be here.  And if we may dispense
+        of the matter of your annual fee...
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 793d3fec56c01544bbb8a217b63e918a,
+      CustomBackground: {fileID: 2800000, guid: 61d5c60fc2d8d2743bf89ac2ee391663,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.6
+        xPos: 0.5
         yPos: 0.4
-        width: 300
+        width: 375
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: f42fb56e29e0b374386530f7e2189a62,
+      OptionalNpcReference: {fileID: 11400000, guid: 524c352db1c37b24fa4df8930133125e,
         type: 2}
-      Text: Of course.  I look forward to it!
+      Text: This should take care of that, Mr. Lochobar.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 793d3fec56c01544bbb8a217b63e918a,
+      CustomBackground: {fileID: 2800000, guid: 61d5c60fc2d8d2743bf89ac2ee391663,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.6
+        xPos: 0.5
         yPos: 0.4
-        width: 300
-    OptionalPopups:
-    - Title: For a corporate charity event...
-      Videos:
-      - {fileID: 32900000, guid: 7759ecf952d229c43b9a8600c0999821, type: 3}
-      Texture: {fileID: 0}
-      Text: ...it is actually quite pleasurable.  You enjoy socializing with both
-        Carole and her husband Donald and get a bit of bracing exercise.
+        width: 375
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 524c352db1c37b24fa4df8930133125e,
+        type: 2}
+      Text: Excellent!  And make that Angus, young man.  There's no formaility among
+        members.  It's a small, exclusive club-- and you are now in it!  Welcome
+        to the Metropolitan!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 61d5c60fc2d8d2743bf89ac2ee391663,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+    OptionalPopups: []
     Effect:
-      NpcEffects:
-      - OptionalNpcReference: {fileID: 11400000, guid: f42fb56e29e0b374386530f7e2189a62,
-          type: 2}
-        AmbitionEffect: -10
-        PrideEffect: 0
-      EgoEffect: 20
+      NpcEffects: []
+      EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0

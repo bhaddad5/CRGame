@@ -10,21 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Reformative Action Program
+  m_Name: Change in HR management
   m_EditorClassIdentifier: 
-  Id: 880f3c22-0117-4cc8-9c34-03b6f9aeb4d3
-  Name: Reformative Action Program
-  Category: 4
+  Id: dbd294c4-4474-4062-bd9e-acf340d7534e
+  Name: Change in HR management
+  Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 6089b1575ae1a6343bcf9dff7a1d3ae9, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
-    RequiredDepartmentsControled:
-    - {fileID: 11400000, guid: 157fc1d8d734ca84d8cdcb9c2b5be2df, type: 2}
+    RequiredDepartmentsControled: []
     RequiredNpcsControled: []
     RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
@@ -45,9 +45,9 @@ MonoBehaviour:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
         type: 2}
-      Text: It is obvious our Affirmative Action hiring practices have been flawed. 
-        From now on, we'll be introducing a Reformative Action Program to correct
-        the mistakes of the past.
+      Text: 'I''m sure you know what''s happenned.  As an adjacent senior manager,
+        I feel compelled to take on running HR, at least in the interim.  A shame
+        about Carole, but her personal life seems to have become too much of a distraction.  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 793d3fec56c01544bbb8a217b63e918a,
         type: 3}
@@ -58,7 +58,8 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
         type: 2}
-      Text: I disagree but I'm sure that's irrelevant.  What do you want me to do?
+      Text: She was always very brittle.  I had thought I'd be in a position to take
+        on running Human Resources though.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 793d3fec56c01544bbb8a217b63e918a,
         type: 3}
@@ -69,9 +70,10 @@ MonoBehaviour:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
         type: 2}
-      Text: Prepare a list of all minority employees for me to review.  In order
-        to address the situation, I'll be recommending demotions, terminations and
-        paycuts where I see fit-- beginning with yourself Jada.
+      Text: That's to be determined but I will definitely need your help in running
+        HR.  We need to begin to recruit to fill senior positions, as well as research
+        for partners we can work with.  I have a number of policies I think we need
+        to enact as well.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 793d3fec56c01544bbb8a217b63e918a,
         type: 3}
@@ -82,7 +84,9 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
         type: 2}
-      Text: You're going to fire me?
+      Text: 'I see no reason to leave Artemis now.  I''ll help you.  Once you''ve
+        had your fun with HR, we all know I''m going to get the job full time.  If
+        not, I hate to think about the lawsuit coming your way.    '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 793d3fec56c01544bbb8a217b63e918a,
         type: 3}
@@ -93,8 +97,8 @@ MonoBehaviour:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
         type: 2}
-      Text: No-- but you will have to get by on a thirty percent salary cut.  You've
-        been paid a lot more than you're worth.
+      Text: 'I''m sure we can discuss your future at some point.  For now, I need
+        your help, not your demands.    '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 793d3fec56c01544bbb8a217b63e918a,
         type: 3}
@@ -102,23 +106,43 @@ MonoBehaviour:
         xPos: 0.6
         yPos: 0.43
         width: 300
-    OptionalPopups:
-    - Title: Jada won't give you the satisfaction...
-      Videos:
-      - {fileID: 32900000, guid: 7e312d5ebab37cd429723c4719e00a9f, type: 3}
-      Texture: {fileID: 0}
-      Text: ...of showing any emotion but you know she's gutted.
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
+        type: 2}
+      Text: As long as you understand that you need me a lot more than I need you.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 793d3fec56c01544bbb8a217b63e918a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.43
+        width: 300
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
+        type: 2}
+      Text: 'NOTE: In Carole''s absence, Jada''s ambition actually grows.  She''ll
+        be willing to assist you, but she''s expecting to het the top job too.  Getting
+        Jada under control will be tricky, if you hope to avoid an unfair dismissal
+        suit-- or even charges of racial discrimination!'
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 793d3fec56c01544bbb8a217b63e918a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.43
+        width: 300
+    OptionalPopups: []
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
           type: 2}
-        AmbitionEffect: -20
+        AmbitionEffect: 50
         PrideEffect: 0
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
-      CultureEffect: 1
+      CultureEffect: 0
       SpreadsheetsEffect: 0
       BrandEffect: 0
       RevanueEffect: 0

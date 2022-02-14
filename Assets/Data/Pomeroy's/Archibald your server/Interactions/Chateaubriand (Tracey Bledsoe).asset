@@ -21,7 +21,8 @@ MonoBehaviour:
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions: []
-    RequiredNotCompletedInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: 54512c59c3e72be44aa1c1ce158b0702, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -42,26 +43,30 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7ced58efaf3c1fd4eba0e1c367fe7144,
+        type: 2}
       Text: '"Ms. Bledsoe!" you call out, loudly nough to catch her attention.  She
         seems to consider, then nods.'
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 45bb0c6cfb6839f4b86e32ec586cca8e,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.3
+        width: 350
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7ced58efaf3c1fd4eba0e1c367fe7144,
+        type: 2}
       Text: 'While you don''t share a table, the opportunity to chat and be seen
         chatting in such an exclusive venue buys you some credibility with the class-conscious
         Tracey.  Well done! '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 45bb0c6cfb6839f4b86e32ec586cca8e,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.3
+        width: 350
     OptionalPopups:
     - Title: Tracey's demeanour outside the office is...
       Videos:
@@ -98,26 +103,30 @@ MonoBehaviour:
   FailureResult:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7ced58efaf3c1fd4eba0e1c367fe7144,
+        type: 2}
       Text: 'You spot Tracey, the Queen of Planning, in a rare moment outside the
         office.  You smile and begin walking towards her... '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 45bb0c6cfb6839f4b86e32ec586cca8e,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.3
+        width: 350
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7ced58efaf3c1fd4eba0e1c367fe7144,
+        type: 2}
       Text: ...until she recieves a call.  Whether genuine or a dodge, she shrugs
         apologetically and you return to yoru seat as she moves on, the moment lost. 
         You eat and leave-- what a wasted opportunity!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 45bb0c6cfb6839f4b86e32ec586cca8e,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.3
+        width: 350
     OptionalPopups: []
     Effect:
       NpcEffects: []
