@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: buyCar2
+  m_Name: Fried Honey Chicken
   m_EditorClassIdentifier: 
-  Id: e64aed82-8fb1-46c0-9bab-77376d5e39b8
-  Name: Upgrade to a Sedan
+  Id: 53bf01af-f2df-477c-a0ae-da726d42f997
+  Name: Fried Honey Chicken
   Category: 1
   Requirements:
     RequiredPower: 0
@@ -30,7 +30,7 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 10000
+    MoneyCost: 20
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -41,63 +41,23 @@ MonoBehaviour:
   PreviewEffect: 1
   Result:
     Dialogs:
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: ef4b0087e723c99488086716b5def3ff,
-        type: 2}
-      Text: What can I do for you sir?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 30e60f97bd06b024e80d60a1f03635d9,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.65
-        yPos: 0.5
-        width: 280
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: ef4b0087e723c99488086716b5def3ff,
-        type: 2}
-      Text: I'd like to see something with a little bit more style.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 30e60f97bd06b024e80d60a1f03635d9,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.65
-        yPos: 0.5
-        width: 280
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: ef4b0087e723c99488086716b5def3ff,
-        type: 2}
-      Text: Of course sir!  Let me show you what we have!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 30e60f97bd06b024e80d60a1f03635d9,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.65
-        yPos: 0.5
-        width: 280
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 11400000, guid: ef4b0087e723c99488086716b5def3ff,
-        type: 2}
-      Text: 'NOTE: Now that you have ditched that tin can and bought yourself a real
-        car, you can enjoy your new purchase by taking a drive.  Look for Your Car
-        on the map and enjoy racking up some mileage!'
+      OptionalNpcReference: {fileID: 0}
+      Text: '...boss actually was invited.  I''d never heard of it-- Metropolitan
+        Club?  Supposed to be some big deal members only club.  They only let bigshots
+        in-- and my boss said it cost him ten grand a year just to step inside!  '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 30e60f97bd06b024e80d60a1f03635d9,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.65
-        yPos: 0.5
-        width: 280
-    OptionalPopups:
-    - Title: No more dings and scratches!
-      Videos:
-      - {fileID: 32900000, guid: f310dd8163fde4643ac165339052e393, type: 3}
-      Texture: {fileID: 0}
-      Text: You have a bit more leg room and the new car smell is very satisfying.
+        xPos: 0
+        yPos: 0
+        width: 0
+    OptionalPopups: []
     Effect:
       NpcEffects: []
-      EgoEffect: 10
+      EgoEffect: 0
       FundsEffect: 0
-      PowerEffect: 4
+      PowerEffect: 0
       PatentsEffect: 0
       CultureEffect: 0
       SpreadsheetsEffect: 0
@@ -110,7 +70,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      Car: 1
+      Car: 0
       Suits: 0
       JewleryCuffs: 0
       JewleryPen: 0
