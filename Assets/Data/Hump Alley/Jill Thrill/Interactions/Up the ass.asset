@@ -19,8 +19,7 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
@@ -30,8 +29,8 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 300
-    MoneyCost: 0
+    EgoCost: 0
+    MoneyCost: 300
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -43,12 +42,19 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 8b6341a4aad36014084da428a94a4e1e,
+        type: 2}
       Text: 'Her first question is always is there an opening at Artemis?  There
         is-- but you could never re-hire this slag.  It would be embarrassing to
         admit you ever fucked this little bitch.  She''s better off working for the
         Dogcatcher-- he''s really seemed to motivate her!  '
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 865a7d1fca3454945bfe595747ccd600,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.34
+        width: 300
     OptionalPopups:
     - Title: No lube for you, Jill!
       Videos:
@@ -58,7 +64,7 @@ MonoBehaviour:
         she refused you when she worked for you!
     Effect:
       NpcEffects: []
-      EgoEffect: 8
+      EgoEffect: 14
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -80,11 +86,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -114,9 +115,4 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0

@@ -19,8 +19,7 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
@@ -43,7 +42,8 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: f176584d58baadb47a9790123773f7e8,
+        type: 2}
       Text: 'Britney''s smile is as fake as her costume jewellery.  You can tell
         she still blames you for losing her normie job.  Your only interest in her
         now is being able to do things to her for money that she''d never have allowed
@@ -51,6 +51,12 @@ MonoBehaviour:
         you can indulge yourself all you like in something you know Brit really,
         really hates.  '
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 865a7d1fca3454945bfe595747ccd600,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.32
+        width: 300
     OptionalPopups:
     - Title: '"You like your new job Brit?"'
       Videos:
@@ -59,7 +65,7 @@ MonoBehaviour:
       Text: She's gotten better at fucking since you fired her.  She's had to!
     Effect:
       NpcEffects: []
-      EgoEffect: 7
+      EgoEffect: 13
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -81,11 +87,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -115,9 +116,4 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0
