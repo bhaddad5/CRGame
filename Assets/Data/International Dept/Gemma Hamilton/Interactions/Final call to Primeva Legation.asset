@@ -20,7 +20,8 @@ MonoBehaviour:
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 2887c3eca10ed534cb23288e18e19451, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -42,26 +43,30 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: d248b00fc853b4845a5da195f269d404,
+        type: 2}
       Text: 'NOTE: A short call is made, the only message conveyed being a residential
         address.  The Hamiltons'' decision to "move'' was precipitated by a family
         ''situation'' back in the UK, a short email explains afterwards.'
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 9ef55447bce818949932d5e32e92a35c,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.45
+        yPos: 0.36
+        width: 340
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: d248b00fc853b4845a5da195f269d404,
+        type: 2}
       Text: 'The prompt arrival of monies in your bank account from a Southwest Pacific
         Trading Company is the only remaining evidence that they ever existed.  '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 9ef55447bce818949932d5e32e92a35c,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.45
+        yPos: 0.36
+        width: 340
     OptionalPopups: []
     Effect:
       NpcEffects: []

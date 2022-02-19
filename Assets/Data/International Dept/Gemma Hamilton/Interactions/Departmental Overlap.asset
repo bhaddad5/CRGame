@@ -20,7 +20,8 @@ MonoBehaviour:
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 67e7e44185a9a9944b452d33a33e2ede, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled:
@@ -43,56 +44,66 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: d248b00fc853b4845a5da195f269d404,
+        type: 2}
       Text: Now that I'm running the Consulting Services Group, I was hoping to discuss
         how we might grow CSG business in the international markets.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 9ef55447bce818949932d5e32e92a35c,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.45
+        yPos: 0.36
+        width: 340
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: d248b00fc853b4845a5da195f269d404,
+        type: 2}
       Text: 'Yes, well I appreciate your interest and your ambition!  Of course,
         we''re still trying to land some core business and... well, it''s been a
         challenge, to be honest. '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 9ef55447bce818949932d5e32e92a35c,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.45
+        yPos: 0.36
+        width: 340
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: d248b00fc853b4845a5da195f269d404,
+        type: 2}
       Text: I see!  Perhaps my group could be of help?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 9ef55447bce818949932d5e32e92a35c,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.45
+        yPos: 0.36
+        width: 340
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: d248b00fc853b4845a5da195f269d404,
+        type: 2}
       Text: 'I wish you could!  No, each makret is quite different and it all requires
         a great deal of patience to grow these relationships.  I think, in another
         six months, we might have more positive developments to discuss. '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 9ef55447bce818949932d5e32e92a35c,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.45
+        yPos: 0.36
+        width: 340
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: d248b00fc853b4845a5da195f269d404,
+        type: 2}
       Text: 'NOTE: You get a strong sense that Gemma is extremely territorial regarding
         her corporate area of responsibility.'
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 9ef55447bce818949932d5e32e92a35c,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.45
+        yPos: 0.36
+        width: 340
     OptionalPopups:
     - Title: There seems to be a...
       Videos:
@@ -101,7 +112,8 @@ MonoBehaviour:
       Text: ...bit of the survivor underneath the expensive suit.
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: d248b00fc853b4845a5da195f269d404,
+          type: 2}
         AmbitionEffect: -5
         PrideEffect: 0
       EgoEffect: 0
