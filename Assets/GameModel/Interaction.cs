@@ -48,9 +48,12 @@ namespace Assets.GameModel
 
 		[HideInInspector]
 		public int Completed = 0;
+		[HideInInspector]
+		public bool New = true;
 
 		public void Setup()
 		{
+			New = true;
 			Completed = 0;
 		}
 
@@ -71,6 +74,11 @@ namespace Assets.GameModel
 				return false;
 
 			return Cost.CanAffordCost(mgm);
+		}
+
+		public bool IsNew(MainGameManager mgm)
+		{
+			return New && InteractionValid(mgm);
 		}
 
 		public bool GetInteractionSucceeded()

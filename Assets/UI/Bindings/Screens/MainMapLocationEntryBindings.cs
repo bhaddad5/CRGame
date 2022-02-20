@@ -15,13 +15,14 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private Button Button;
 		[SerializeField] private Image Icon;
 		[SerializeField] private TMP_Text Text;
+		[SerializeField] private GameObject NewIndicator;
 
-		private Location dept;
+		private Location loc;
 		private Vector2 mainMapSize;
 
 		public void Setup(Location dept, MainMapScreenBindings mainMapUi, MainGameManager mgm)
 		{
-			this.dept = dept;
+			this.loc = dept;
 			Button.onClick.RemoveAllListeners();
 			Button.onClick.AddListener(() =>
 			{
@@ -32,12 +33,13 @@ namespace Assets.GameModel.UiDisplayers
 
 		public void RefreshUiDisplay(MainGameManager mgm)
 		{
-			Icon.sprite = dept.Icon.ToSprite();
-			Text.text = $"{dept.Name}";
+			Icon.sprite = loc.Icon.ToSprite();
+			Text.text = $"{loc.Name}";
 			var dayOfWeek = mgm.GetDateFromTurnNumber().DayOfWeek;
-			Button.interactable = !dept.ClosedOnWeekends || (dayOfWeek != DayOfWeek.Saturday && dayOfWeek != DayOfWeek.Sunday);
-			Button.gameObject.SetActive(dept.IsVisible(mgm));
-			Button.transform.localPosition = ConvertMapPos(dept.UiPosition);
+			Button.interactable = !loc.ClosedOnWeekends || (dayOfWeek != DayOfWeek.Saturday && dayOfWeek != DayOfWeek.Sunday);
+			Button.gameObject.SetActive(loc.IsVisible(mgm));
+			Button.transform.localPosition = ConvertMapPos(loc.UiPosition);
+			NewIndicator.SetActive(loc.HasNewInteractions(mgm));
 		}
 
 		private Vector3 ConvertMapPos(Vector2 mapPos)

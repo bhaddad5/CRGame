@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using Random = System.Random;
 
@@ -103,6 +104,11 @@ namespace Assets.GameModel
 				return false;
 
 			return (RequiredVisibilityInteractionReference?.Completed ?? 1) > 0;
+		}
+
+		public bool HasNewInteractions(MainGameManager mgm)
+		{
+			return Interactions.Any(i => i.IsNew(mgm));
 		}
 
 		public Texture2D GetCurrentPicture()

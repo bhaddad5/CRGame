@@ -332,12 +332,14 @@ namespace Assets.GameModel.Save
 		public string Id;
 
 		public int Completed;
+		public bool New;
 
 		public static SavedInteractionState FromData(Interaction data)
 		{
 			var res = new SavedInteractionState();
 			res.Id = data.Id;
 			res.Completed = data.Completed;
+			res.New = data.New;
 
 			return res;
 		}
@@ -350,6 +352,7 @@ namespace Assets.GameModel.Save
 				return;
 			}
 			data.Completed = Completed;
+			data.New = New;
 		}
 	}
 }
