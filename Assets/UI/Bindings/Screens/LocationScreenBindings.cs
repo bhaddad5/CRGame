@@ -34,10 +34,12 @@ namespace Assets.GameModel.UiDisplayers
 		public bool IsAccessible(MainGameManager mgm) => loc.IsAccessible(mgm);
 
 		private MainGameManager mgm;
-		public void Setup(Location loc, MainGameManager mgm)
+		private Action onClose;
+		public void Setup(Location loc, MainGameManager mgm, Action onClose)
 		{
 			this.loc = loc;
 			this.mgm = mgm;
+			this.onClose = onClose;
 
 			foreach (Npc npc in loc.Npcs)
 			{
@@ -68,6 +70,7 @@ namespace Assets.GameModel.UiDisplayers
 		public void CloseCurrentLocation()
 		{
 			GameObject.Destroy(gameObject);
+			onClose();
 		}
 
 		void OnDestroy()
@@ -98,14 +101,17 @@ namespace Assets.GameModel.UiDisplayers
 		public void ShowNpc(Npc npc, MainGameManager mgm)
 		{
 			currNpc = Instantiate(_npcUiPrefab).gameObject;
-			currNpc.GetComponent<NpcScreenBindings>().Setup(npc, mgm);
+			currNpc.GetComponent<NpcScreenBindings>().Setup(npc, mgm, () => RefreshUiDisplay(mgm));
 
 		}
 
 		public void CloseCurrentNpc()
 		{
 			if (currNpc != null)
+			{
 				GameObject.Destroy(currNpc);
+				RefreshUiDisplay(mgm);
+			}
 		}
 
 		public void RefreshUiDisplay(MainGameManager mgm)
@@ -122,7 +128,7 @@ namespace Assets.GameModel.UiDisplayers
 			foreach (var npc in NpcOptionsParent.GetComponentsInChildren<LocationNpcEntryBindings>(true))
 			{
 				//Were they just moved/removed?
-				if(!loc.Npcs.Contains(npc._npc))
+				if(!loc.Npcs.Contains(npc.npc))
 					GameObject.Destroy(npc.gameObject);
 				else
 					npc.RefreshUiDisplay(mgm);

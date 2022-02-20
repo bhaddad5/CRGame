@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using Assets.GameModel;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 namespace Assets.GameModel.UiDisplayers
 {
-	public class NpcInteractionEntryBindings : MonoBehaviour, ITooltipProvider
+	public class NpcInteractionEntryBindings : MonoBehaviour, ITooltipProvider, IPointerEnterHandler
 	{
 		[SerializeField] private Button Button;
 		[SerializeField] private TMP_Text Text;
+		[SerializeField] private GameObject NewIndicator;
 
 		private Interaction interaction;
 
@@ -32,6 +34,7 @@ namespace Assets.GameModel.UiDisplayers
 				Text.text += $" {interaction.Cost.GetCostString()}";
 			Button.interactable = interaction.InteractionValid(mgm);
 			gameObject.SetActive(interaction.InteractionVisible(mgm));
+			NewIndicator.SetActive(interaction.IsNew(mgm));
 
 		}
 
@@ -93,6 +96,15 @@ namespace Assets.GameModel.UiDisplayers
 				tooltip = tooltip.Substring(0, tooltip.Length - 1);
 
 			return tooltip;
+		}
+
+		public void OnPointerEnter(PointerEventData eventData)
+		{
+			if (interaction.InteractionValid(mgm))
+			{
+				interaction.New = false;
+				NewIndicator.SetActive(false);
+			}
 		}
 	}
 }

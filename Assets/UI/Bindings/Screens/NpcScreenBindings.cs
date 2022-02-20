@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -24,12 +25,14 @@ namespace Assets.GameModel.UiDisplayers
 
 		[SerializeField] private NpcInteractionEntryBindings InteractionEntryPrefab;
 
-		private Npc _npc;
-		public void Setup(Npc npc, MainGameManager mgm)
+		private Npc npc;
+		private Action onClose;
+		public void Setup(Npc npc, MainGameManager mgm, Action onClose)
 		{
-			this._npc = npc;
+			this.npc = npc;
+			this.onClose = onClose;
 
-			_npc.PersonalLayout.ApplyToRectTransform(Picture.GetComponent<RectTransform>());
+			this.npc.PersonalLayout.ApplyToRectTransform(Picture.GetComponent<RectTransform>());
 
 			if (!npc.IsControllable)
 				InfoBox.gameObject.SetActive(false);
@@ -47,26 +50,27 @@ namespace Assets.GameModel.UiDisplayers
 				interactButton.transform.SetParent(InteractionsParent);
 			}
 
-			Name.text = $"{_npc.FirstName} {_npc.LastName}";
+			Name.text = $"{this.npc.FirstName} {this.npc.LastName}";
 
-			if (_npc.Trained)
+			if (this.npc.Trained)
 				Name.text += " (Trained)";
-			else if (_npc.Controlled)
+			else if (this.npc.Controlled)
 				Name.text += " (Controlled)";
 
-			Age.text = $"{_npc.Age} years old";
-			Ambition.text = $"Ambition: {_npc.Ambition}";
-			Pride.text = $"Pride: {_npc.Pride}";
-			Picture.sprite = _npc.GetCurrentPicture().ToSprite();
+			Age.text = $"{this.npc.Age} years old";
+			Ambition.text = $"Ambition: {this.npc.Ambition}";
+			Pride.text = $"Pride: {this.npc.Pride}";
+			Picture.sprite = this.npc.GetCurrentPicture().ToSprite();
 			Picture.preserveAspect = true;
-			Bio.text = $"Notes: {_npc.Bio}";
-			Education.text = $"Education: {_npc.Education}";
-			BackgroundImage.sprite = _npc.BackgroundImage.ToSprite();
+			Bio.text = $"Notes: {this.npc.Bio}";
+			Education.text = $"Education: {this.npc.Education}";
+			BackgroundImage.sprite = this.npc.BackgroundImage.ToSprite();
 		}
 
 		public void CloseNpc()
 		{
 			GameObject.Destroy(gameObject);
+			onClose();
 		}
 	}
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Assets.GameModel
@@ -60,6 +61,11 @@ namespace Assets.GameModel
 					return false;
 			}
 			return true;
+		}
+
+		public bool HasNewInteractions(MainGameManager mgm)
+		{
+			return Npcs.Any(n => n.HasNewInteractions(mgm));
 		}
 
 		public bool IsAccessible(MainGameManager mgm)
