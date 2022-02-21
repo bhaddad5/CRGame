@@ -89,6 +89,17 @@ MonoBehaviour:
         xPos: 0.35
         yPos: 0.55
         width: 400
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
+      Text: 'NOTE: You''ve now officially taken control of Susan Granger!'
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
     OptionalPopups: []
     Effect:
       NpcEffects:
@@ -96,7 +107,7 @@ MonoBehaviour:
           type: 2}
         AmbitionEffect: 0
         PrideEffect: -10
-      EgoEffect: 0
+      EgoEffect: 65
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -105,7 +116,8 @@ MonoBehaviour:
       BrandEffect: 0
       RevanueEffect: 0
       HornicalEffect: 0
-      NpcsToControl: []
+      NpcsToControl:
+      - {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a, type: 2}
       NpcsToTrain: []
       NpcsToRemoveFromGame: []
       LocationsToControl: []
@@ -148,3 +160,4 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
   Completed: 0
+  New: 1

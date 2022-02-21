@@ -13,25 +13,18 @@ MonoBehaviour:
   m_Name: controlSusan
   m_EditorClassIdentifier: 
   Id: acb555e9-7bd5-464d-9bcd-8128298c1ab0
-  Name: Take control of Susan Granger
+  Name: 'Confront Susan Granger over her incompetence '
   Category: 2
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements:
-    - OptionalNpcReference: {fileID: 0}
-      Stat: 0
-      Is: 0
-      Value: 0
-      RequiresStatBelow: 0
-    NpcPrideRequirements: []
     NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
+    - OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
       Stat: 0
       Is: 0
       Value: 0
-      RequiresStatBelow: 0
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
@@ -54,33 +47,89 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
       Text: Given how things are going, I think it is time I stepped up.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
       Text: Stepped up to what?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
       Text: Susan, we both know who's best suited to run CSG. I need to know you're
         prepared to follow.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
       Text: I didn't think I was doing such a poor job, but...
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
       Text: Suzie, there are leaders and there are followers.  You're the later. 
-        You've proven to be an absolute incompetent.  That said, I might find other
-        uses for you.  You're a pretty girl, Suzie.  I think we understand each other.
+        You've proven to be an absolute incompetent.  I intend to meet with Tracey
+        Bledsoe and demand she gives me your job-- before the department completely
+        falls apart.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
       Text: 'Note: You''ll need to see Director Bledsoe in order to request formal
-        appointment as the new Manager of the Consulting Services Group.  '
+        appointment as the new Manager of the Consulting Services Group.'
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
+      Text: 'ALSO: You aren''t eligible to take control of Consulting Services Group
+        until you complete your Manager Training Modules-- so check with Jada in
+        HR to make sure you''ve completed all three of them!'
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
     OptionalPopups: []
     Effect:
       NpcEffects: []
@@ -93,8 +142,7 @@ MonoBehaviour:
       BrandEffect: 0
       RevanueEffect: 0
       HornicalEffect: 0
-      NpcsToControl:
-      - {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a, type: 2}
+      NpcsToControl: []
       NpcsToTrain: []
       NpcsToRemoveFromGame: []
       LocationsToControl: []
@@ -107,11 +155,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -141,9 +184,5 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0
+  New: 1
