@@ -25,7 +25,7 @@ MonoBehaviour:
     RequiredPolicies:
     - {fileID: 11400000, guid: e2a34d579509d1c4dade6c8686391b53, type: 2}
     RequiredDepartmentsControled:
-    - {fileID: 11400000, guid: 4f1b2176a2890e74a8118436e0f4e0f7, type: 2}
+    - {fileID: 11400000, guid: 8305bbc52b682a44cb8a5ecd37e1f16a, type: 2}
     RequiredNpcsControled: []
     RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
@@ -44,55 +44,65 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
+        type: 2}
       Text: I wanted to tell you personally.  I've been given Planning so you'll
         be reporting in to me from now on.  I hope that's alright.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 015acc2fd3767b24a9d137be3d709390,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.45
+        width: 410
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
+        type: 2}
       Text: Absolutely!  Congratulations on your new position!  Planning-- that's
         a very big role!  May I ask what happened to Tracey Bledsoe?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 015acc2fd3767b24a9d137be3d709390,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.45
+        width: 410
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
+        type: 2}
       Text: Between us, Tracey wasn't up to the job.  It's a sensitive subject.. 
         I'm sure you're concerned about your own situation.  You'll report in to
         me.  Look, I don't have any immediate plans to change anything.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 015acc2fd3767b24a9d137be3d709390,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.45
+        width: 410
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
+        type: 2}
       Text: That's a relief!  Thank you!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 015acc2fd3767b24a9d137be3d709390,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.45
+        width: 410
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
+        type: 2}
       Text: That's ok.  I'm sure we'll work well together.  In fact, I look forward
         to it!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 015acc2fd3767b24a9d137be3d709390,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.45
+        width: 410
     OptionalPopups:
     - Title: You notice Candace is now only...
       Videos:
@@ -103,7 +113,8 @@ MonoBehaviour:
         her.
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
+          type: 2}
         AmbitionEffect: -15
         PrideEffect: 0
       EgoEffect: 0
@@ -158,3 +169,4 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
   Completed: 0
+  New: 1
