@@ -10,17 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: britneyIntroduction
+  m_Name: britneyReadingCompanyMan
   m_EditorClassIdentifier: 
-  Id: dd9a06d4-3726-469d-a1d4-bf80fe4ee8a3
-  Name: Introduction
+  Id: edd7092e-b909-4ac0-9a23-a582f396e490
+  Name: What are you reading?
   Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 0a21c074c55172948a6101abc647c2f7, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -41,10 +42,10 @@ MonoBehaviour:
   PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 1
+    - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
         type: 2}
-      Text: Hi!  I'm {FirstName} {LastName}, the new guy.
+      Text: Britney jumps a bit in her seat, looking guilty at being caught.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 9715a38e3a6cbee4384507990b5c1ad9,
         type: 3}
@@ -55,18 +56,8 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
         type: 2}
-      Text: "I'm Britney\u2014Britney Bower.  I'm the Receptionist."
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 9715a38e3a6cbee4384507990b5c1ad9,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.35
-        yPos: 0.45
-        width: 380
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
-        type: 2}
-      Text: I look forward to working with you.
+      Text: Don't sneak up on me like that.  It's been a slow day, okay?  No one's
+        even called in the last hour or so.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 9715a38e3a6cbee4384507990b5c1ad9,
         type: 3}
@@ -77,8 +68,7 @@ MonoBehaviour:
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
         type: 2}
-      Text: Rather than acknowledge your pleasantry, Britney looks furtively off
-        to the side.
+      Text: She gives you a worried look.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 9715a38e3a6cbee4384507990b5c1ad9,
         type: 3}
@@ -89,7 +79,31 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
         type: 2}
-      Text: You better go to Ms. Granger's office.  She's been expecting you.
+      Text: You're not going to tell Susan about this, right?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 9715a38e3a6cbee4384507990b5c1ad9,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.45
+        width: 380
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
+        type: 2}
+      Text: I won't say a word.   But only on the condition that you show me what's
+        got you so engrossed.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 9715a38e3a6cbee4384507990b5c1ad9,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.45
+        width: 380
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
+        type: 2}
+      Text: Deal.  Don't laugh, okay?  It's a lot better than I thought it would
+        be.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 9715a38e3a6cbee4384507990b5c1ad9,
         type: 3}
@@ -98,13 +112,11 @@ MonoBehaviour:
         yPos: 0.45
         width: 380
     OptionalPopups:
-    - Title: First day at work
-      Videos:
-      - {fileID: 32900000, guid: 4771cb2552c0c7144a802c00a3c4e581, type: 3}
-      Texture: {fileID: 0}
-      Text: 'You feel the receptionist give you the once over after you turn to leave. 
-        Being the first male to be hired by Artemis because of the unfair employment
-        court case means you''ll be under the microscope... '
+    - Title: She flashes you the cover...
+      Videos: []
+      Texture: {fileID: 2800000, guid: 369bbe4f75758bf4bb54020c6145a420, type: 3}
+      Text: 'And you quietly suppress a laugh.  It looks like someone enjoys trashy
+        romance dime novels featuring powerful bosses and their slutty secretaries.  '
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -128,7 +140,7 @@ MonoBehaviour:
       JewleryPen: 0
       JewleryRing: 0
       JewleryWatch: 0
-      Promotion: 1
+      Promotion: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
