@@ -19,8 +19,7 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: d087b4b747ce9c947a103524f9c9cff3, type: 2}
     RequiredNotCompletedInteractions: []
@@ -44,17 +43,25 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
+        type: 2}
       Text: While Tracey Bledsoe takes a call, you manage to drop a Hornical into
         her coffee.  After taking a sip, she ends the meeting abruptly and leaves
         the office after claiming to 'feeling a cold coming on.'
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 1ff9ec7b19ed8564f83c2e483f5d71a3,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.37
+        yPos: 0.44
+        width: 400
     OptionalPopups: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
+          type: 2}
         AmbitionEffect: -35
-        PrideEffect: 0
+        PrideEffect: -90
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -77,11 +84,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -111,9 +113,5 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0
+  New: 1
