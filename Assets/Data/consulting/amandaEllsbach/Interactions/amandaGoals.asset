@@ -20,7 +20,8 @@ MonoBehaviour:
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: c136954d817c5e444a656f81c2cf01c1, type: 2}
     RequiredNotCompletedInteractions:
     - {fileID: 11400000, guid: 407b07467be63a546a7c334906bcf25d, type: 2}
     RequiredPolicies: []
@@ -99,7 +100,8 @@ MonoBehaviour:
         away from Deborah Jones...
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: c6fc9aa27a6291a41a2090f2db3a94e1,
+          type: 2}
         AmbitionEffect: -4
         PrideEffect: 0
       EgoEffect: 0
