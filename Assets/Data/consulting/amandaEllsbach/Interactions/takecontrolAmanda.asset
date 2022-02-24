@@ -19,19 +19,12 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements:
-    - OptionalNpcReference: {fileID: 0}
-      Stat: 0
-      Is: 0
-      Value: 0
-      RequiresStatBelow: 0
-    NpcPrideRequirements: []
     NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
+    - OptionalNpcReference: {fileID: 11400000, guid: c6fc9aa27a6291a41a2090f2db3a94e1,
+        type: 2}
       Stat: 0
       Is: 0
       Value: 0
-      RequiresStatBelow: 0
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
@@ -54,28 +47,59 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: c6fc9aa27a6291a41a2090f2db3a94e1,
+        type: 2}
       Text: Looks like I've got you where I want you.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 8e1cbf74d2a04e048b84691cc5c485e0,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 400
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: c6fc9aa27a6291a41a2090f2db3a94e1,
+        type: 2}
       Text: I don't understand!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 8e1cbf74d2a04e048b84691cc5c485e0,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 400
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: c6fc9aa27a6291a41a2090f2db3a94e1,
+        type: 2}
       Text: Let me make it clear-- you do what I say, when I say and how I say from
         now on.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 8e1cbf74d2a04e048b84691cc5c485e0,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 400
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: c6fc9aa27a6291a41a2090f2db3a94e1,
+        type: 2}
       Text: Of course!  Whatever you say!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 8e1cbf74d2a04e048b84691cc5c485e0,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 400
     OptionalPopups:
     - Title: Take Control of Amanda
       Videos:
       - {fileID: 32900000, guid: aa26aa77e4038d24eb1fe8194348fc5a, type: 3}
       Texture: {fileID: 0}
-      Text: 
+      Text: The kid is dazed and sort of swoons as the implications of what's happened
+        to her sink in.  She's a bright girl, if nothing else, and she's experiencing
+        a rush of anxiety as you now intrude on her life plans like an occupying
+        army.
     Effect:
       NpcEffects: []
       EgoEffect: 40
@@ -101,11 +125,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -135,9 +154,5 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0
+  New: 1
