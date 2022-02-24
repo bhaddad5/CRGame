@@ -19,8 +19,7 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: c951eadfed54276479e8704d51aa3a4f, type: 2}
     RequiredNotCompletedInteractions: []
@@ -43,32 +42,94 @@ MonoBehaviour:
   PreviewEffect: 0
   Result:
     Dialogs:
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
+        type: 2}
+      Text: You blink as you're stopped in the hall with a paper form thrust rudely
+        into your face.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e84fa28c9b2465d4da4b8d52244709d2,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.35
+        width: 380
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
+        type: 2}
       Text: Sorry, who are you and what do you need?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e84fa28c9b2465d4da4b8d52244709d2,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.35
+        width: 380
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
         type: 2}
-      Text: I'm Jill-- Jill Vander.  I'm temping here.  HR needs your TPS form filled
-        out.
+      Text: "I'm Jill\u2014Jill Vander.  I'm temping here.  HR needs your TPS form
+        filled out."
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e84fa28c9b2465d4da4b8d52244709d2,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.35
+        width: 380
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
+        type: 2}
+      Text: Her disinterest regarding her job is plain to the naked eye.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e84fa28c9b2465d4da4b8d52244709d2,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.35
+        width: 380
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
+        type: 2}
       Text: Oh, sure.  Here it is.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e84fa28c9b2465d4da4b8d52244709d2,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.35
+        width: 380
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
+        type: 2}
+      Text: She takes the signed form without a single thanks or acknowledgement.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e84fa28c9b2465d4da4b8d52244709d2,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.35
+        width: 380
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
         type: 2}
-      Text: Thanks.  See you around, I guess.
+      Text: See you around, I guess.  Then again, maybe not.  Hard to say who gets
+        to stay and who is let go around here.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e84fa28c9b2465d4da4b8d52244709d2,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.35
+        width: 380
     OptionalPopups:
-    - Title: For a temp, she seems to have a lot of attitude
+    - Title: For a temp, she seems to have a lot of attitude..
       Videos:
       - {fileID: 32900000, guid: c3851512eef537a4f889160b63ef5c72, type: 3}
       Texture: {fileID: 0}
-      Text: No doubt she thinks she's not paid enough, worked too hard and not treated
-        with enough respect.  She has no idea what's in store for her...
+      Text: No doubt she thinks she's not paid enough, worked too hard, and not treated
+        with enough respect.  You almost pity her.  She has no idea what's in store
+        for her...
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -93,11 +154,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -127,9 +183,5 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0
+  New: 1
