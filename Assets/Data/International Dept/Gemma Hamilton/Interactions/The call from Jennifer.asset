@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Lollipop for a good girl
+  m_Name: The call from Jennifer
   m_EditorClassIdentifier: 
-  Id: d35d8d2b-6e56-4527-b4fc-70a1eb97bc9b
-  Name: Lollipop for a good girl
-  Category: 6
+  Id: a311afc0-d782-4557-a50f-785c7d5e4bb7
+  Name: The call from Jennifer
+  Category: 2
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -24,13 +24,12 @@ MonoBehaviour:
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
-    RequiredNpcsControled:
-    - {fileID: 11400000, guid: 8d9f38aa47f1c4f48b97afffaa769f0d, type: 2}
+    RequiredNpcsControled: []
     RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 0
+    EgoCost: 25
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -42,64 +41,73 @@ MonoBehaviour:
   PreviewEffect: 1
   Result:
     Dialogs:
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 8d9f38aa47f1c4f48b97afffaa769f0d,
-        type: 2}
-      Text: I've been thinking about something nice you can do for me, Holly.  You
-        want to keep me happy, don't you?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 85b8dd32509540d4faf282e6b4772bff,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.6
-        yPos: 0.35
-        width: 300
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 8d9f38aa47f1c4f48b97afffaa769f0d,
-        type: 2}
-      Text: Of course!  I'll do anything!
+      OptionalNpcReference: {fileID: 0}
+      Text: I can guess why you're here.  Jennifer called.  It appears International
+        has been added to your corporate portfolio.  Before you say anything, let
+        me say that I'm happy to take your lead.  I can be useful to you.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 85b8dd32509540d4faf282e6b4772bff,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.6
-        yPos: 0.35
-        width: 300
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 8d9f38aa47f1c4f48b97afffaa769f0d,
-        type: 2}
-      Text: Have you done this before?
+      OptionalNpcReference: {fileID: 0}
+      Text: How?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 85b8dd32509540d4faf282e6b4772bff,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.6
-        yPos: 0.35
-        width: 300
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 8d9f38aa47f1c4f48b97afffaa769f0d,
-        type: 2}
-      Text: No-- but... I'll give it a try.
+      OptionalNpcReference: {fileID: 0}
+      Text: 'You don''t want to be bothered with all the minutiae.  Let me handle
+        that for you.  Wouldn''t it be useful for you to start getting a lot of wins
+        from International-- right after you''ve taken over? '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 85b8dd32509540d4faf282e6b4772bff,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.6
-        yPos: 0.35
-        width: 300
-    OptionalPopups:
-    - Title: And so Holly gives her first blowjob...
-      Videos:
-      - {fileID: 32900000, guid: d1af97fbaabd10c42a68034559887343, type: 3}
-      Texture: {fileID: 0}
-      Text: ...she gags and seems intimidated by your member, but eventually accepts
-        it.  No harm done though-- she's still a virgin.
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: That would be most useful.  But wouldn't that make you look bad?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: 'I already look bad.  All I want is a stable, safe position that offers
+        a working visa.  If you keep me on, I''ll make you look like an expert at
+        International. '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: 'NOTE: You agree to keep Gemma on-- for now.  When she stops performing,
+        you''ll consider a different outcome for her-- and her daughter Holly.'
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    OptionalPopups: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 11400000, guid: 8d9f38aa47f1c4f48b97afffaa769f0d,
-          type: 2}
-        AmbitionEffect: 0
-        PrideEffect: -15
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: -30
+        PrideEffect: 0
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0

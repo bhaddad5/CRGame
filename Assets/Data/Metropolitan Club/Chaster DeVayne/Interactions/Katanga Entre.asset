@@ -20,7 +20,8 @@ MonoBehaviour:
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: a3e922e4b46c6264ba9023d4f76115fc, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -42,16 +43,18 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: c0796ec1273c4044c909192668fdd801,
+        type: 2}
       Text: 'It is a messy place to do business. not to mention crooked as hell. 
         Luckily, I have kept in touch with a colonel who''s been appointed Minister
         for Trade.  That should smooth the way for a profitable relationship there. '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 61d5c60fc2d8d2743bf89ac2ee391663,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.3
+        yPos: 0.4
+        width: 375
     OptionalPopups:
     - Title: A connection with Africa...
       Videos:
@@ -113,3 +116,4 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
   Completed: 0
+  New: 1
