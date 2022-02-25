@@ -19,7 +19,11 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcStatRequirements: []
+    NpcStatRequirements:
+    - OptionalNpcReference: {fileID: 0}
+      Stat: 1
+      Is: 0
+      Value: 0
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
@@ -43,41 +47,49 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 8468daf25d821974a8b3b9c729b1d180,
+        type: 2}
       Text: Are you going to give me any more backtalk?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 0bd4b03b475c1a54ea79442410153405,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.6
+        yPos: 0.4
+        width: 325
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 8468daf25d821974a8b3b9c729b1d180,
+        type: 2}
       Text: No!  I promise!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 0bd4b03b475c1a54ea79442410153405,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.6
+        yPos: 0.4
+        width: 325
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 8468daf25d821974a8b3b9c729b1d180,
+        type: 2}
       Text: And what are you going to be from now on, Deirdre?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 0bd4b03b475c1a54ea79442410153405,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.6
+        yPos: 0.4
+        width: 325
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 8468daf25d821974a8b3b9c729b1d180,
+        type: 2}
       Text: A good little girl!  I promise I'll be a good little girl!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 0bd4b03b475c1a54ea79442410153405,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.6
+        yPos: 0.4
+        width: 325
     OptionalPopups:
     - Title: And she will too.
       Videos:
@@ -141,3 +153,4 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
   Completed: 0
+  New: 1
