@@ -19,8 +19,7 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: a59ddcd3cc0f0f94e81854038b0981c8, type: 2}
     RequiredNotCompletedInteractions: []
@@ -44,38 +43,87 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: c52c5c13d30e4a54eb4cb0da911e31e2,
+        type: 2}
       Text: I think your arrangement would work for me.  Just a few questions...
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 8fd12060e4ad257438e284c314d8b69d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: c52c5c13d30e4a54eb4cb0da911e31e2,
+        type: 2}
       Text: Ok.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 8fd12060e4ad257438e284c314d8b69d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: c52c5c13d30e4a54eb4cb0da911e31e2,
+        type: 2}
       Text: This would have to be an exclusive arrangement.  I don't share.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 8fd12060e4ad257438e284c314d8b69d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: c52c5c13d30e4a54eb4cb0da911e31e2,
+        type: 2}
       Text: I swear you'd be the only one.  BUT I don't do nasty stuff.  You can
         use your office girls for the real dirty stuff, agreed?  And you'll help
         me break into entertainment?  Help me start a new career?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 8fd12060e4ad257438e284c314d8b69d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: c52c5c13d30e4a54eb4cb0da911e31e2,
+        type: 2}
       Text: Yes, I'll help you do that.  And I'm sure you'll want presents.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 8fd12060e4ad257438e284c314d8b69d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: c52c5c13d30e4a54eb4cb0da911e31e2,
+        type: 2}
       Text: Which you'll want me to wear on all our public outings!  I can be of
         help tp you too.  I know lots of celebs around here.  OK-- we have a deal. 
         Here's the key to my place, Sugar Daddy.  You come over whenever you want!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 8fd12060e4ad257438e284c314d8b69d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
-      Text: 'NOTE: You''ll meet with Ashley Goodchild in the Love Next from now on,
+      OptionalNpcReference: {fileID: 11400000, guid: c52c5c13d30e4a54eb4cb0da911e31e2,
+        type: 2}
+      Text: 'NOTE: You''ll meet with Ashley Goodchild in the Love Nest from now on,
         now revealed on the map!'
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 8fd12060e4ad257438e284c314d8b69d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
     OptionalPopups:
     - Title: Key to Ashley's place
       Videos: []
@@ -106,11 +154,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -141,9 +184,5 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0
+  New: 1

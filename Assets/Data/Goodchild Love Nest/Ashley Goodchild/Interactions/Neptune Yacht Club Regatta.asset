@@ -20,7 +20,8 @@ MonoBehaviour:
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 7fe4557469fb74b43a4b89d350657149, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -43,7 +44,8 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: d6a66ac714b2b6143974e140f5c91609,
+        type: 2}
       Text: 'NOTE: Having your stylish mistress by your side sends a signal to the
         community elite.  You''re a player to contend with, a man with real juice!
         (+1 Power)'
@@ -63,12 +65,13 @@ MonoBehaviour:
         things in Zenith!
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: d6a66ac714b2b6143974e140f5c91609,
+          type: 2}
         AmbitionEffect: 0
         PrideEffect: 0
       EgoEffect: 0
       FundsEffect: 0
-      PowerEffect: 1
+      PowerEffect: 3
       PatentsEffect: 0
       CultureEffect: 0
       SpreadsheetsEffect: 0
@@ -88,11 +91,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -122,9 +120,5 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 2800000, guid: 6f2dd00bbf15c4b44b283c0a6341d1f8, type: 3}
-    CustomBackgroundNpcLayout:
-      xPos: 0.5
-      yPos: 0.5
-      width: 300
   Completed: 0
+  New: 1

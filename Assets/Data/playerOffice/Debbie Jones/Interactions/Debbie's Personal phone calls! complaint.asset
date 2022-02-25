@@ -154,18 +154,6 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: And now you have new lunch plans.  And your apology better be well received
-        or you'll hear about it tomorrow.  Do you understand, young lady?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
       Text: Yes, Mr. {LastName}.  I'll call her-- Ms. Goodchild-- right now.  I didn't
         know about your... relationship.
       CustomNpcImageOptions: []
@@ -175,19 +163,25 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
-    OptionalPopups:
-    - Title: You've also earned a demerit for your thoughtlessness.
-      Videos:
-      - {fileID: 32900000, guid: 3b2dab6f814c15045962250a30aebad1, type: 3}
-      Texture: {fileID: 0}
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: Debbie begins to argue but quickly remembers her place and shuts her
         mouth with prim outrage.  She knows it is pointless arguing with her superior.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+    OptionalPopups: []
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
           type: 2}
-        AmbitionEffect: -3
-        PrideEffect: 0
+        AmbitionEffect: 0
+        PrideEffect: -2
       EgoEffect: 10
       FundsEffect: 0
       PowerEffect: 0
@@ -240,3 +234,4 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
   Completed: 0
+  New: 1
