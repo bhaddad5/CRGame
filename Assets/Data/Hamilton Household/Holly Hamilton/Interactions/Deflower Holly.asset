@@ -24,7 +24,8 @@ MonoBehaviour:
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
-    RequiredNpcsControled: []
+    RequiredNpcsControled:
+    - {fileID: 11400000, guid: 8d9f38aa47f1c4f48b97afffaa769f0d, type: 2}
     RequiredNpcsTrained: []
     RequiredNpcsNotControled:
     - {fileID: 11400000, guid: 8d9f38aa47f1c4f48b97afffaa769f0d, type: 2}
@@ -43,33 +44,39 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 8d9f38aa47f1c4f48b97afffaa769f0d,
+        type: 2}
       Text: I've decided to treat myself, Holly.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 85b8dd32509540d4faf282e6b4772bff,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.6
+        yPos: 0.35
+        width: 300
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 8d9f38aa47f1c4f48b97afffaa769f0d,
+        type: 2}
       Text: How so, Mr. {LastName}?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 85b8dd32509540d4faf282e6b4772bff,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.6
+        yPos: 0.35
+        width: 300
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 8d9f38aa47f1c4f48b97afffaa769f0d,
+        type: 2}
       Text: I've decided not to deprive myself.  You're going to lose your virginity,
         Holly.  I'm going to take it.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 85b8dd32509540d4faf282e6b4772bff,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.6
+        yPos: 0.35
+        width: 300
     OptionalPopups:
     - Title: You take her doggy style.
       Videos:
@@ -80,7 +87,8 @@ MonoBehaviour:
         manages to achieve a small orgasm and she lets fly a small, surprised moan.  '
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 8d9f38aa47f1c4f48b97afffaa769f0d,
+          type: 2}
         AmbitionEffect: 0
         PrideEffect: -20
       EgoEffect: 35
@@ -135,3 +143,4 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
   Completed: 0
+  New: 1
