@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: susanOffice
+  m_Name: susanFirstMissionComplete
   m_EditorClassIdentifier: 
-  Id: f32f323d-334a-4489-8fce-7b31070d82b3
-  Name: The Office Location
-  Category: 1
+  Id: 418e0c5f-4b47-45df-ab36-9055a3ad78cd
+  Name: Mission Complete
+  Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 9a0c065f05fc2e04ca50e7c1b1a1be45, type: 2}
+    - {fileID: 11400000, guid: e952c9f79f15a6147913a7d799098c10, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -45,7 +45,7 @@ MonoBehaviour:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
         type: 2}
-      Text: I noticed we're not in the bigger office complexes.
+      Text: Did you see my email, Ms. Granger?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
         type: 3}
@@ -56,8 +56,9 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
         type: 2}
-      Text: Susan tucks a strand of blonde hair back behind her ear, keeping a neutral
-        facial expression.
+      Text: Oh!  No, I haven't yet.  Was there something else you needed?  It's okay
+        if you're having a little bit of trouble; I know it's a dense document. 
+        I designed it to be very thorough!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
         type: 3}
@@ -65,14 +66,10 @@ MonoBehaviour:
         xPos: 0.35
         yPos: 0.55
         width: 400
-    - CurrSpeaker: 0
+    - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
         type: 2}
-      Text: "Well, we\u2019re separate from the corporate campus and the Planning
-        Department, which we\u2019re a subsidiary of.  That gives us some breathing
-        space to be honest!  We never anticipated such growth; it just goes to show
-        that the Artemis brand is ever stronger than we imagined.  That's why our
-        offices are scattered all over the city!"
+      Text: Susan seems more than surprised to see you so soon.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
         type: 3}
@@ -83,7 +80,7 @@ MonoBehaviour:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
         type: 2}
-      Text: Do you live close to the office?
+      Text: Well, I finished already.  I was hoping I could have your feedback.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
         type: 3}
@@ -94,10 +91,33 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
         type: 2}
-      Text: "I live halfway between the main office and here\u2014over in Tempo Townhouses. 
-        Ann was nice enough to give me a hot tip when the units began to sell so
-        I got in at a good price.  I'll have you over with everyone else when I host
-        my annual housewarming party and we can get to know one another better then!"
+      Text: You what?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
+      Text: Susan seems shell-shocked.  It was obvious that this was meant to occupy
+        you for the foreseeable future.  Frantically, you hear the mouse clicks as
+        she seems to be pulling up the file Maxwell provided you and is scanning
+        through it.  A lengthy silence ensues.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
+      Text: I...I...don't know what to say.  That was very quick, {FirstName}!  Everything
+        looks to be in order.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
         type: 3}
@@ -108,7 +128,7 @@ MonoBehaviour:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
         type: 2}
-      Text: Don't you ever miss the way things used to be?
+      Text: Is there anything else you need to me to do?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
         type: 3}
@@ -119,9 +139,68 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
         type: 2}
-      Text: I mean...sure!  It was nice when we all used to work side-by-side in
-        the big towers but, like I said, I'm appreciating having our own space. 
-        It's a real growth opportunity for us here at the CSG!
+      Text: Um, no.  I can't think anything of anything at the moment.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
+      Text: That's not problem.  Why don't I check in with the others to see how
+        I can help?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
+      Text: ...yes.  Yes, you should do that, {FirstName}.  That's the kind of team
+        spirit we value here at Artemis.  It's good to see you already applying what
+        you read.  Uh, I'll let you do that.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
+      Text: "Meanwhile, I'll be here\u2014doing my job.  Managing.  Very important
+        stuff.  But let me know if you need any help.  I've got a lot of experience."
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
+      Text: For the first time since you've met her, Susan seems a bit cowed in your
+        presence.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
+      Text: 'NOTE: Congratulations, you''ve dealt the first blow (of many) against
+        Susan Granger.  Feel free to explore and enjoy the game!'
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
         type: 3}
@@ -131,7 +210,11 @@ MonoBehaviour:
         width: 400
     OptionalPopups: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+          type: 2}
+        AmbitionEffect: -5
+        PrideEffect: 0
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
