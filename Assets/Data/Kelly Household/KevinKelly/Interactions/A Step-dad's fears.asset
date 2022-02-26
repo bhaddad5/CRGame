@@ -19,8 +19,7 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 050826a513bc95b40b0ea2441e729bca, type: 2}
     RequiredNotCompletedInteractions: []
@@ -44,37 +43,79 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: fa1076b1698cb75439943b545976ce7d,
+        type: 2}
       Text: You said Dad was worried about something?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 9b4f6ecb9a68e124fbc2baedff7d3f5b,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.43
+        yPos: 0.4
+        width: 270
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: fa1076b1698cb75439943b545976ce7d,
+        type: 2}
       Text: Yes, but he would never want to burden you with his problems.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 9b4f6ecb9a68e124fbc2baedff7d3f5b,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.43
+        yPos: 0.4
+        width: 270
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: fa1076b1698cb75439943b545976ce7d,
+        type: 2}
       Text: That's crazy!  What's he worried about?  Maybe I can help!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 9b4f6ecb9a68e124fbc2baedff7d3f5b,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.43
+        yPos: 0.4
+        width: 270
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: fa1076b1698cb75439943b545976ce7d,
+        type: 2}
       Text: He's worried that Dierdre is misbehaving.  He thinks she may be a bit
         boy crazy.  He thinks she may even be buying and wearing sexy underwear just
         to get the attention of some boy!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 9b4f6ecb9a68e124fbc2baedff7d3f5b,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.43
+        yPos: 0.4
+        width: 270
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: fa1076b1698cb75439943b545976ce7d,
+        type: 2}
       Text: Let me check it out!  If she's got anything in her drawers that looks
         real slutty...
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 9b4f6ecb9a68e124fbc2baedff7d3f5b,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.43
+        yPos: 0.4
+        width: 270
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: fa1076b1698cb75439943b545976ce7d,
+        type: 2}
       Text: You better bring me whatever you find.  I KNEW I could count on you Kevin! 
         This will mean a lot to your dad!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 9b4f6ecb9a68e124fbc2baedff7d3f5b,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.43
+        yPos: 0.4
+        width: 270
     OptionalPopups:
-    - Title: 
+    - Title: You'll want to get these to Donald!
       Videos: []
-      Texture: {fileID: 2800000, guid: 86b45451ad8e7384c9aba3e1c4ad7175, type: 3}
+      Texture: {fileID: 2800000, guid: afd9533ab95033a41a497ea513a7b217, type: 3}
       Text: A troubling discovery!
     Effect:
       NpcEffects: []
@@ -100,11 +141,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -134,9 +170,5 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0
+  New: 1

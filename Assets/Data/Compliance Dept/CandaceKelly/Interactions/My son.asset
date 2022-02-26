@@ -19,8 +19,7 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 83ef468d7d0dbf44c8671753b3ce310b, type: 2}
     - {fileID: 11400000, guid: 03441a39826f6fd4ebc9c75821929d92, type: 2}
@@ -45,35 +44,71 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
+        type: 2}
       Text: Who's this handsome fellow? (looking at framed photo on desk)
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 015acc2fd3767b24a9d137be3d709390,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.45
+        width: 410
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
+        type: 2}
       Text: That's my son Kevin!  He's my star soccer player!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 015acc2fd3767b24a9d137be3d709390,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.45
+        width: 410
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
+        type: 2}
       Text: Good looking boy-- looks like he came by it naturally, if you don't mind
         me saying so Candace.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 015acc2fd3767b24a9d137be3d709390,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.45
+        width: 410
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
+        type: 2}
       Text: He does take after my side.  He's a great kid and very easy going.  I
         feel awful that he's caught between his sister and me so much these days.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 015acc2fd3767b24a9d137be3d709390,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.45
+        width: 410
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
+        type: 2}
       Text: It must be tough without a male authority figure around.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 015acc2fd3767b24a9d137be3d709390,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.45
+        width: 410
     OptionalPopups:
-    - Title: 
+    - Title: Kevin's a fine boy!
       Videos: []
-      Texture: {fileID: 2800000, guid: 022fffa9aca39df4fa162aa2fe0bc7c7, type: 3}
-      Text: Looks like a normal kid
+      Texture: {fileID: 2800000, guid: 1c49a36de2bc8364d9ed2ff04ae39081, type: 3}
+      Text: Looks like a normal kid.
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
+          type: 2}
         AmbitionEffect: -3
         PrideEffect: 0
       EgoEffect: 0
@@ -98,11 +133,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -132,9 +162,5 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0
+  New: 1

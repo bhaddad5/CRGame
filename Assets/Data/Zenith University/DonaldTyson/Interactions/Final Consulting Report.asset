@@ -19,8 +19,7 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 6af45a8b5dec3d64ba8c1c4f979eb6b8, type: 2}
     RequiredNotCompletedInteractions: []
@@ -44,47 +43,103 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 49c059802b4b2a842be5a5c55f4435f6,
+        type: 2}
       Text: You've completed your investigation?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7f239f2c1dffed941ad3536b63160463,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 270
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 49c059802b4b2a842be5a5c55f4435f6,
+        type: 2}
       Text: Yes-- it's all here.  And it is dynamite.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7f239f2c1dffed941ad3536b63160463,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 270
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 49c059802b4b2a842be5a5c55f4435f6,
+        type: 2}
       Text: Explain.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7f239f2c1dffed941ad3536b63160463,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 270
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 49c059802b4b2a842be5a5c55f4435f6,
+        type: 2}
       Text: It is all in here, but I'll cut to the chase.  Jennifer Page is a fraud. 
         She didn't develop anything.  In fact, Artemis probably doesn't even have
         the rights to hold the IP it claims is it's own.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7f239f2c1dffed941ad3536b63160463,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 270
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 49c059802b4b2a842be5a5c55f4435f6,
+        type: 2}
       Text: How is this possible?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7f239f2c1dffed941ad3536b63160463,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 270
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 49c059802b4b2a842be5a5c55f4435f6,
+        type: 2}
       Text: She used shell companies to cover her tracks but she basically scavenged
         other people's work, made slight changes and re-submitted it to get the patent
         in her own name.  It is a complete fraud.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7f239f2c1dffed941ad3536b63160463,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 270
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 49c059802b4b2a842be5a5c55f4435f6,
+        type: 2}
       Text: If this becomes public, she'll be destroyed professionally and Artemis
         would be reduced to a penny stock.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7f239f2c1dffed941ad3536b63160463,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 270
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 49c059802b4b2a842be5a5c55f4435f6,
+        type: 2}
       Text: Exactly-- like I said-- dynamite.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7f239f2c1dffed941ad3536b63160463,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 270
     OptionalPopups:
-    - Title: 
+    - Title: This report will help you wrest control...
       Videos: []
-      Texture: {fileID: 2800000, guid: 7977ce0e00b0a344aaa7cc397ac81d0b, type: 3}
-      Text: Tyson Consulting Report
+      Texture: {fileID: 2800000, guid: e09d62b72300e71448104d3aa2bd280a, type: 3}
+      Text: ...of Artemis from Jennifer Page!
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -109,11 +164,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -143,9 +193,5 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0
+  New: 1

@@ -19,19 +19,12 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements:
-    - OptionalNpcReference: {fileID: 0}
-      Stat: 0
-      Is: 0
-      Value: 0
-      RequiresStatBelow: 25
     NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
+    - OptionalNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
+        type: 2}
       Stat: 1
       Is: 0
       Value: 25
-      RequiresStatBelow: 0
     RequiredInteractions:
     - {fileID: 11400000, guid: 043dae9e7a59dc743bf5d40471473290, type: 2}
     RequiredNotCompletedInteractions: []
@@ -56,21 +49,49 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
+        type: 2}
       Text: TO WALTER FROM A FRIEND
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e84fa28c9b2465d4da4b8d52244709d2,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.35
+        width: 380
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
+        type: 2}
       Text: I THOUGHT YOU DESERVED
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e84fa28c9b2465d4da4b8d52244709d2,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.35
+        width: 380
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
+        type: 2}
       Text: TO KNOW THAT JILL
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e84fa28c9b2465d4da4b8d52244709d2,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.35
+        width: 380
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
+        type: 2}
       Text: IS CHEATING ON YOU
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e84fa28c9b2465d4da4b8d52244709d2,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.35
+        width: 380
     OptionalPopups:
     - Title: SHE'S CRAZY FOR NEW COCK
       Videos:
@@ -78,9 +99,14 @@ MonoBehaviour:
       Texture: {fileID: 0}
       Text: Goodbye boyfriend!  From now on, sex with Jill will be an 'on demand'
         proposition-- or she can peddle her ass down on Hump Alley...
+    - Title: No doubt he'll forwArd to Jill's...
+      Videos: []
+      Texture: {fileID: 2800000, guid: 43fa113f74249d547b0d199518f60e2d, type: 3}
+      Text: ...friends and family!
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
+          type: 2}
         AmbitionEffect: 0
         PrideEffect: -10
       EgoEffect: 10
@@ -105,11 +131,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -139,9 +160,5 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0
+  New: 1

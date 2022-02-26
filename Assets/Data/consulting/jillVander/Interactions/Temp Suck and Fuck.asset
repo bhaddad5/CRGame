@@ -19,19 +19,12 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements:
-    - OptionalNpcReference: {fileID: 0}
-      Stat: 0
-      Is: 0
-      Value: 0
-      RequiresStatBelow: 0
     NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
+    - OptionalNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
+        type: 2}
       Stat: 1
       Is: 0
       Value: 0
-      RequiresStatBelow: 0
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
@@ -55,9 +48,16 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
+        type: 2}
       Text: 'No words are required.  Jill Vander will suck and fuck on command.  '
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e84fa28c9b2465d4da4b8d52244709d2,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.35
+        width: 380
     OptionalPopups:
     - Title: Rough is better than nothing, right Jill?
       Videos:
@@ -68,7 +68,7 @@ MonoBehaviour:
       - {fileID: 32900000, guid: 978fe545c1c1a2f48b1569ab028fb605, type: 3}
       - {fileID: 32900000, guid: 4125a35566496c84992006092e57bdf7, type: 3}
       Texture: {fileID: 0}
-      Text: 
+      Text: You can tell she really loves it!
     Effect:
       NpcEffects: []
       EgoEffect: 15
@@ -93,11 +93,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -127,9 +122,5 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0
+  New: 1
