@@ -25,6 +25,7 @@ namespace Assets.GameModel
 		[HideInInspector] public int Hornical = 0;
 
 		[HideInInspector] public int Promotion = 0;
+		[HideInInspector] public int Home = 0;
 
 		//Status Symbols
 		[HideInInspector] public int Car;
@@ -35,8 +36,10 @@ namespace Assets.GameModel
 		[HideInInspector] public bool JewleryWatch;
 
 		public List<Promotion> PlayerPromotionLevels = new List<Promotion>();
+		public List<Home> PlayerHomeLevels = new List<Home>();
 
 		public Location MyOffice;
+		public Location MyHome;
 
 		public List<Location> Locations = new List<Location>();
 		public List<Interaction> StartOfTurnInteractions = new List<Interaction>();
@@ -56,6 +59,7 @@ namespace Assets.GameModel
 			Hornical = 0;
 
 			Promotion = 0;
+			Home = 0;
 
 			Car = 0;
 			Suits = 0;

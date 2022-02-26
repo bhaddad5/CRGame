@@ -32,6 +32,7 @@ namespace Assets.GameModel
 		public bool ShowTrophyCase;
 		public bool ShowCar;
 		public bool ShowMyOfficeCustomBackground;
+		public bool ShowMyHome;
 
 		[HideInInspector]
 		public bool Controlled;

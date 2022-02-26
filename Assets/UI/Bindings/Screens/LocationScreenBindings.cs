@@ -118,9 +118,15 @@ namespace Assets.GameModel.UiDisplayers
 		{
 			if (loc.ShowMyOfficeCustomBackground)
 				BackgroundImage.sprite = mgm.Data.PlayerPromotionLevels[mgm.Data.Promotion].PlayerOfficeBackground.ToSprite();
+			else if (loc.ShowMyHome)
+				BackgroundImage.sprite = mgm.Data.PlayerHomeLevels[mgm.Data.Home].BackgroundImage.ToSprite();
 			else
 				BackgroundImage.sprite = loc.BackgroundImage.ToSprite();
-			Name.text = loc.Name;
+
+			if (loc.ShowMyHome)
+				Name.text = $"My Home - {mgm.Data.PlayerHomeLevels[mgm.Data.Home].HomeName}";
+			else
+				Name.text = loc.Name;
 			Description.text = loc.Description;
 			if (loc.Controlled)
 				Name.text += $" (Controlled)";

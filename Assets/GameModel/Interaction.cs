@@ -15,6 +15,8 @@ namespace Assets.GameModel
 
 		public string Name;
 
+		public bool AlertNew = true;
+
 		public enum InteractionCategory
 		{
 			Conversation = 1,
@@ -78,7 +80,7 @@ namespace Assets.GameModel
 
 		public bool IsNew(MainGameManager mgm)
 		{
-			return New && InteractionValid(mgm);
+			return AlertNew && New && InteractionValid(mgm);
 		}
 
 		public bool GetInteractionSucceeded()

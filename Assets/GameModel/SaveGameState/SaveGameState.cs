@@ -23,6 +23,7 @@ namespace Assets.GameModel.Save
 		public int Hornical;
 
 		public int Promotion;
+		public int Home;
 
 		public int Car;
 		public int Suits;
@@ -51,6 +52,7 @@ namespace Assets.GameModel.Save
 			res.Revenue = data.Revenue;
 			res.Hornical = data.Hornical;
 			res.Promotion = data.Promotion;
+			res.Home = data.Home;
 
 			res.Car = data.Car;
 			res.Suits = data.Suits;
@@ -91,6 +93,7 @@ namespace Assets.GameModel.Save
 			data.Revenue = Revenue;
 			data.Hornical = Hornical;
 			data.Promotion = Promotion;
+			data.Home = Home;
 
 			data.Car = Car;
 			data.Suits = Suits;

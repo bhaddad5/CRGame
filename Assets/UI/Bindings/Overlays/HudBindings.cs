@@ -29,7 +29,6 @@ public class HudBindings : MonoBehaviour
 	[SerializeField] private TMP_Text Time;
 	[SerializeField] private TMP_Text Month;
 
-	[SerializeField] private Button Rest;
 	[SerializeField] private Button MyOffice;
 
 	[SerializeField] private Button MainMenuButton;
@@ -37,20 +36,29 @@ public class HudBindings : MonoBehaviour
 	private MainMenuBindings mainMenu;
 
 	private MainGameManager mgm;
+	private MainMapScreenBindings mapDisplay;
 	public void Setup(MainGameManager mgm, MainMapScreenBindings mapDisplay)
 	{
+		this.mapDisplay = mapDisplay;
 		this.mgm = mgm;
-		Rest.onClick.AddListener(() =>
-		{
-			mgm.Data.Ego += 5;
-			mgm.HandleTurnChange();
-		});
-		MyOffice.onClick.AddListener(() =>
-		{
-			mapDisplay.ShowDepartment(mgm.Data.MyOffice, mgm);
-		});
-
+		
 		MainMenuButton.onClick.AddListener(OpenMainMenu);
+	}
+
+	public void Rest()
+	{
+		mgm.Data.Ego += 5;
+		mgm.HandleTurnChange();
+	}
+
+	public void OpenMyOffice()
+	{
+		mapDisplay.ShowDepartment(mgm.Data.MyOffice, mgm);
+	}
+
+	public void OpenMyHome()
+	{
+		mapDisplay.ShowDepartment(mgm.Data.MyHome, mgm);
 	}
 
 	void Update()

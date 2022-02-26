@@ -44,6 +44,7 @@ namespace Assets.GameModel
 		public bool JewleryWatch;
 
 		public int Promotion;
+		public int Home;
 
 		public void ExecuteEffect(MainGameManager mgm)
 		{
@@ -117,6 +118,9 @@ namespace Assets.GameModel
 
 			if (Promotion > 0)
 				mgm.Data.Promotion = Promotion;
+
+			if(Home > 0)
+				mgm.Data.Home = Home;
 		}
 	}
 }
