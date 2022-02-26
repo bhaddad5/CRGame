@@ -19,8 +19,7 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
@@ -43,9 +42,16 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: fe2ba3a00089ffe47992a25ec8994976,
+        type: 2}
       Text: I'm a lady on the street but a freak in the gym!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: be21e6997c986d346bb3b1ed10e5b5ae,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.7
+        yPos: 0.43
+        width: 390
     OptionalPopups:
     - Title: '"You''re my favourite client!"'
       Videos:
@@ -80,11 +86,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -114,9 +115,5 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
   Completed: 0
+  New: 1

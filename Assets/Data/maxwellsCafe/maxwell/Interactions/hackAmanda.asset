@@ -14,16 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: c1bd9f61-b028-40fa-9ad6-178b550f7326
   Name: Hack Amanda
+  AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: b9a47d8093583124eb651dafa3106e7e, type: 2}
-    - {fileID: 11400000, guid: 53cb2fea93cc77d4582f00905bd16bf7, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -33,7 +32,7 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 500
+    MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -47,8 +46,26 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: dca0ed3955970e54c921b2067f1fdcfe,
         type: 2}
-      Text: Alright, you can now view surveillance on Amanda.
+      Text: "Alright, all done.  You now have surveillance on Amanda.  She's a tasty
+        treat\u2014easy, low lying fruit.  Have fun watching."
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e8e650c737c3e4844836771a2cbd6d15,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.3
+        width: 380
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: dca0ed3955970e54c921b2067f1fdcfe,
+        type: 2}
+      Text: 'NOTE: Surveillance on Amanda is now unlocked'
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e8e650c737c3e4844836771a2cbd6d15,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.3
+        width: 380
     OptionalPopups: []
     Effect:
       NpcEffects: []
@@ -74,11 +91,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -108,9 +121,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   Completed: 0
+  New: 1

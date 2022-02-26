@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 1c941af6-a790-4574-b686-7297f2a81144
   Name: Buy Hornical
+  AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 4ac7d97e7d94eb44eb729587cc0c7ca1, type: 2}
     RequiredNotCompletedInteractions: []
@@ -46,11 +46,17 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: dca0ed3955970e54c921b2067f1fdcfe,
         type: 2}
-      Text: You know what this stuff does?  Drives 'em crazy!  Dose a coffee, a glass
-        of wine, even water-- and just stand back and watch.  If that's what you're
-        here for, you're lucky.  I have a dose-- but let's see the cash first.  That'll
-        do it!  Nice doing business with you.
+      Text: "You know what this stuff does?  Drives 'em crazy!  Dose a coffee, a
+        glass of wine, even water\u2014and just stand back and watch.  If that's
+        what you're here for, you're lucky.  I have a dose but let's see the cash
+        first.  That'll do it!  Nice doing business with you."
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e8e650c737c3e4844836771a2cbd6d15,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.3
+        width: 380
     OptionalPopups:
     - Title: Too bad it is so damn expensive...
       Videos:
@@ -82,11 +88,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -116,9 +118,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   Completed: 0
+  New: 1

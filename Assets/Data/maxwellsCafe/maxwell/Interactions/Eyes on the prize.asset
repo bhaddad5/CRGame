@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 7d11c879-ead0-41a6-b7dc-e1efb48d497a
   Name: Eyes on the prize
+  AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
@@ -45,11 +46,25 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: dca0ed3955970e54c921b2067f1fdcfe,
         type: 2}
-      Text: OK, you check out.  And if you're talking to me, you want someone hacked. 
-        I can do it BUT I'll need $500 upfront and every time you want to take a
-        peek in, it will be another $100.  Plus you need to give me a name and an
-        address.  For that, I can give you eyes on your prize.  You'll be able to
-        watch the subject on webcam whenever you like.
+      Text: "So you're back\u2014that means you want someone hacked.  Child's play
+        but I'll want my entire fee in cash upfront first to give you eyes on your
+        prize.  Once I have the money in hand all I'll need from you is the name
+        and address of your target.  Then, you'll be able to peek in whenever you
+        like for a nominal fee."
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e8e650c737c3e4844836771a2cbd6d15,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.3
+        width: 380
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: dca0ed3955970e54c921b2067f1fdcfe,
+        type: 2}
+      Text: "To show you just what I'm capable of, why don't you go ahead and offer
+        that intern at the CSG a ride home to find out exactly where she lives? 
+        Don't worry about the cost\u2014the first bite of the apple will be free
+        of charge."
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: e8e650c737c3e4844836771a2cbd6d15,
         type: 3}
@@ -87,6 +102,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -116,5 +132,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
   New: 1

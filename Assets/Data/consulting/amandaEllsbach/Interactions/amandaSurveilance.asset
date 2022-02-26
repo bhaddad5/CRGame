@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 17400378-b1bf-4165-8132-3cca262eef74
   Name: Plant Spycam
+  AlertNew: 1
   Category: 7
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 78840002bd027f644897ac327582a056, type: 2}
     RequiredNotCompletedInteractions: []
@@ -32,7 +32,7 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 25
+    MoneyCost: 5
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -56,7 +56,7 @@ MonoBehaviour:
       Text: You much prefer your own reality tv programming to what's on cable...
     Effect:
       NpcEffects: []
-      EgoEffect: 10
+      EgoEffect: 6
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -78,11 +78,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -112,9 +108,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   Completed: 0
+  New: 1

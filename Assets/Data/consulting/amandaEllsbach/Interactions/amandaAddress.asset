@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: amandaAddress
   m_EditorClassIdentifier: 
   Id: 68e89ab8-9544-4512-952a-ef9f607b7c12
-  Name: Where do you live?
+  Name: Provide a ride back home
+  AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
@@ -21,7 +22,7 @@ MonoBehaviour:
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 9a0c065f05fc2e04ca50e7c1b1a1be45, type: 2}
+    - {fileID: 11400000, guid: 53cb2fea93cc77d4582f00905bd16bf7, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -45,7 +46,7 @@ MonoBehaviour:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: c6fc9aa27a6291a41a2090f2db3a94e1,
         type: 2}
-      Text: Are you close to the office?
+      Text: Do you need  a ride?  I'm getting ready to head out for the day.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 8e1cbf74d2a04e048b84691cc5c485e0,
         type: 3}
@@ -56,7 +57,41 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: c6fc9aa27a6291a41a2090f2db3a94e1,
         type: 2}
-      Text: I live on campus.  I have a single dorm room.
+      Text: Amanda looks reluctant to take you up on your offer but nods.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 8e1cbf74d2a04e048b84691cc5c485e0,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 400
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: c6fc9aa27a6291a41a2090f2db3a94e1,
+        type: 2}
+      Text: Thanks, I do.  I've got an exam coming up that I need to do some serious
+        cramming for.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 8e1cbf74d2a04e048b84691cc5c485e0,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 400
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: c6fc9aa27a6291a41a2090f2db3a94e1,
+        type: 2}
+      Text: Where do you live anways?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 8e1cbf74d2a04e048b84691cc5c485e0,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 400
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: c6fc9aa27a6291a41a2090f2db3a94e1,
+        type: 2}
+      Text: Oh, nothing too fancy.  I'm in a single dorm room on campus.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 8e1cbf74d2a04e048b84691cc5c485e0,
         type: 3}
@@ -78,7 +113,9 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: c6fc9aa27a6291a41a2090f2db3a94e1,
         type: 2}
-      Text: Not really-- but I can't afford anything off campus.
+      Text: "Not really\u2014it's small and too cramped.  But I can't afford anything
+        off campus.  Maybe if this internship works out, I can start getting paid
+        and be able to go somewhere like the Grey Apartments or something."
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 8e1cbf74d2a04e048b84691cc5c485e0,
         type: 3}
@@ -91,9 +128,9 @@ MonoBehaviour:
       Videos:
       - {fileID: 32900000, guid: 8051fff4269b8fa4fab9b6ade55771cf, type: 3}
       Texture: {fileID: 0}
-      Text: Now that you know where Amanda lives, there's an operator who works out
-        of Maxwell's.  You've heard he's a hacker who can organize everything from
-        organizing surveillance to much more illegal services-- for a price.
+      Text: It's as easy as taking candy from a baby.  You give the unsuspecting
+        intern a friendly wave as you watch her go into the building.  Time to return
+        to Max and collect your reward...
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -118,6 +155,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -147,5 +185,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
   New: 1
