@@ -65,7 +65,7 @@ namespace Assets.GameModel
 
 		public bool HasNewInteractions(MainGameManager mgm)
 		{
-			return Npcs.Any(n => n.HasNewInteractions(mgm));
+			return Npcs.Any(n => n.IsVisible(mgm) && n.HasNewInteractions(mgm));
 		}
 
 		public bool IsAccessible(MainGameManager mgm)

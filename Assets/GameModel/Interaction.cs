@@ -17,14 +17,14 @@ namespace Assets.GameModel
 
 		public enum InteractionCategory
 		{
-			OfficePolitics,
-			Conversation,
-			Challenge,
-			Socialize,
-			Projects,
-			Train,
-			Fun,
-			Surveillance,
+			Conversation = 1,
+			OfficePolitics = 0,
+			Socialize = 3,
+			Challenge = 2,
+			Projects = 4,
+			Train = 5,
+			Fun = 6,
+			Surveillance = 7,
 		}
 
 		public InteractionCategory Category;

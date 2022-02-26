@@ -99,5 +99,7 @@ public class HudBindings : MonoBehaviour
 		Time.text = $"{timeOfDay}";
 		Day.text = $"{DateTime.DayOfWeek}";
 		Month.text = $"{DateTime:MMMM} {DateTime.Day}";
+
+		MyOffice.interactable = mgm.Data.MyOffice.IsAccessible(mgm);
 	}
 }

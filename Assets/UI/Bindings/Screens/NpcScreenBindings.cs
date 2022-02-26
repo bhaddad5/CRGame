@@ -39,7 +39,10 @@ namespace Assets.GameModel.UiDisplayers
 
 			var allInteractions = new List<Interaction>(npc.Interactions);
 			allInteractions.RemoveAll(i => i == null);
-			allInteractions.Sort((i1, i2) => ((int)i1.Category).CompareTo((int)i2.Category));
+			allInteractions.Sort((i1, i2) =>
+			{
+				return ((int)i1.Category).CompareTo((int)i2.Category);
+			});
 
 			foreach (var interaction in allInteractions)
 			{
