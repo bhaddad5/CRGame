@@ -10,6 +10,11 @@ namespace Assets.GameModel
 {
 	public class MainGameManager : MonoBehaviour
 	{
+		public int MajorVersion;
+		public int MinorVersion;
+		public int Patch;
+		public string VersionName;
+
 		[SerializeField]
 		private GameData DefaultGameData;
 		[HideInInspector]

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Assets.GameModel;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,11 +14,15 @@ public class StartingMenuBindings : MonoBehaviour
 	[SerializeField] private PlayerNamePickerBindings NamePickerPrefab;
 
 	[SerializeField] private Button ContinueGameButton;
+
+	[SerializeField] private TMP_Text VersionText;
+
 	private string latestSave = null;
 	void Awake()
 	{
 		latestSave = LoadSaveHelpers.GetOrderedSaveFiles().FirstOrDefault();
 		ContinueGameButton.interactable = latestSave != null;
+		VersionText.text = $"Company Man v{MainGameManager.MajorVersion}.{MainGameManager.MinorVersion}.{MainGameManager.Patch} \"{MainGameManager.VersionName}\"";
 	}
 
 	public void NewGame()
