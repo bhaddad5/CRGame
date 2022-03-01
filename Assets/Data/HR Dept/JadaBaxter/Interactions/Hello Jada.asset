@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 102716a4-35f3-4f1e-8955-1491880d2c19
   Name: Hello Jada
+  AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
@@ -54,11 +55,58 @@ MonoBehaviour:
         xPos: 0.6
         yPos: 0.43
         width: 300
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
+        type: 2}
+      Text: There's a moment of blank incomprehension from the sharply dressed black
+        woman followed by a dawning recognition.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 793d3fec56c01544bbb8a217b63e918a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.43
+        width: 300
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
         type: 2}
-      Text: Ah-- the new bpy!  {FirstName} {LastName}, obviously.  Yes, you're required
-        to attend three sessions to complete your onboarding.
+      Text: "Ah\u2014the new boy!  {FirstName} {LastName}, obviously.  You've caused
+        quite a stir in our hallowed halls of late."
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 793d3fec56c01544bbb8a217b63e918a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.43
+        width: 300
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
+        type: 2}
+      Text: She gives you a measured look, seemingly sizing you up.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 793d3fec56c01544bbb8a217b63e918a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.43
+        width: 300
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
+        type: 2}
+      Text: The first guy through the wall always gets bloody. Always.  But anways,
+        enough about that!  You're here to complete your onboarding, correct?  Three
+        sessions and you'll be all done.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 793d3fec56c01544bbb8a217b63e918a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.43
+        width: 300
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
+        type: 2}
+      Text: Sure.  What are they like?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 793d3fec56c01544bbb8a217b63e918a,
         type: 3}
@@ -80,8 +128,46 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
         type: 2}
-      Text: They are three and a half hours-- it is mostly learning about the corporate
-        values we share here at Artemis.
+      Text: They are mostly learning about the corporate values we share here at
+        Artemis.  Each one's three and half a hours in length so it all clocks in
+        a little over ten hours.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 793d3fec56c01544bbb8a217b63e918a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.43
+        width: 300
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
+        type: 2}
+      Text: Wait, I'm confused.  Didn't I already cover this topic with my manager,
+        Susan?  She had me go through an Artemis Policies and Procedures Manual.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 793d3fec56c01544bbb8a217b63e918a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.43
+        width: 300
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
+        type: 2}
+      Text: Jada's lips twitch in clear amusement.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 793d3fec56c01544bbb8a217b63e918a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.43
+        width: 300
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
+        type: 2}
+      Text: Susan's contributions are...appreciated.  But I'm afraid all of that
+        material you learned is quite outdated.  It's for the best if you forget
+        whatever it is that you read.  What you'll be receiving is an up-to-date
+        training in line with modern day sensiblities!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 793d3fec56c01544bbb8a217b63e918a,
         type: 3}
@@ -132,6 +218,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -161,4 +248,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1
