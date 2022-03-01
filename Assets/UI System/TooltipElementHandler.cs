@@ -40,4 +40,14 @@ public class TooltipElementHandler : MonoBehaviour, IPointerEnterHandler, IPoint
 			}
 		}
 	}
+
+	void OnDestroy()
+	{
+		if (tooltipIsCreated)
+		{
+			isPointedAt = false;
+			tooltipIsCreated = false;
+			TooltipCanvas.Instance.ClearTooltip();
+		}
+	}
 }
