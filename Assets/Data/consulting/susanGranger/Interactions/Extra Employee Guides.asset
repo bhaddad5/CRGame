@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: d78c9ca3-2d65-4e22-9fc8-ac4a802e10a7
   Name: Extra Employee Guides
+  AlertNew: 1
   Category: 0
   Requirements:
     RequiredPower: 0
@@ -45,7 +46,30 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
         type: 2}
-      Text: Come here for a minute.  I have a little project for you.
+      Text: "{FirstName}!  Do you have a minute?  Come over here\u2014please! "
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
+      Text: Susan has her arms crossed imperiously across her chest but beams widely
+        when you stand before her.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
+      Text: You're such a darling.  I have a little project for you.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
         type: 3}
@@ -69,7 +93,20 @@ MonoBehaviour:
         type: 2}
       Text: Do you see that stack of binders over there?  They are Employee Guide
         binders and they sent over too many.  I need you to return them to Candace
-        Kelly.  Compliance is located a building near here.
+        Kelly in the Compliance Department.  Waste not, want not as they always say.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
+      Text: Susan insists that you hold your arms out while she stacks the binders
+        on them one at a time.  The pile is almost to your chin when the time she's
+        done.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
         type: 3}
@@ -91,10 +128,55 @@ MonoBehaviour:
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
         type: 2}
-      Text: 'NOTE: You may now visit the Compliance Department.  However, Compliance
-        falls under Director Bledsoe.  In order to gain any traction there, you''ll
-        have to get the Inter-departmental Alignment Policy (Planning Dept.) enacted
-        first.'
+      Text: But as you turn to leave her office...
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
+      Text: 'Oh, one more thing!  I almost forgot!  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
+      Text: Susan walks around to your front and drops two even larger-looking binders
+        on top of the already oversized pile you're holding onto.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
+      Text: Bring her those two copies of the Artemis Policies and Procedures Manual
+        as well.  After the great job you did with the digital remaster, I had them
+        printed out.  Candace likely will appreciate having such a resource at her
+        fingertips!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
+      Text: 'NOTE: Compliance Department now unlocked on the city map.'
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
         type: 3}
@@ -127,6 +209,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -156,5 +239,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
   New: 1
