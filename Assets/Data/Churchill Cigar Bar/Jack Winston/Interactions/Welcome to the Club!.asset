@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: f15c8b3b-2ea5-4479-9dc0-3954b8a27c08
   Name: Welcome to the Club!
+  AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 30
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
@@ -45,11 +45,16 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
       Text: 'I see you''ve finally decided to drop by.  It was a pleasure to extend
-        you an invitation to join us.  The Club is restricted to Director-level individuals
-        for obvious reasons-- our cigars are the finest.  Drop in anytime to enjoy
-        one.  Charges apply of course but these are pleasures available only to high
-        fliers like yourself!  '
+        you an invitation to join us.  The Club is restricted to senior-level individuals
+        and managers for obvious reasons-- our cigars are the finest.  Drop in anytime
+        to enjoy one.  Charges apply of course but these are pleasures available
+        only to high fliers like yourself!  '
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     OptionalPopups: []
     Effect:
       NpcEffects: []
@@ -75,11 +80,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -109,9 +110,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   Completed: 0
+  New: 1
