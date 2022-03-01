@@ -29,7 +29,7 @@ public class StartingMenuBindings : MonoBehaviour
 	{
 		var popupParent = GameObject.Instantiate(UiPrefabReferences.Instance.PopupOverlayParent);
 		var namePicker = GameObject.Instantiate(NamePickerPrefab, popupParent.transform);
-		namePicker.Setup(MainGameManager.Data.FirstName, MainGameManager.Data.LastName, (firstName, lastName) =>
+		namePicker.Setup(MainGameManager.DefaultFirstName, MainGameManager.DefaultLastName, (firstName, lastName) =>
 		{
 			MainGameManager.InitializeGame(null, firstName, lastName);
 			GameObject.Destroy(gameObject);

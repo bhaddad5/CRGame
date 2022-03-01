@@ -124,9 +124,9 @@ namespace Assets.GameModel.UiDisplayers
 				BackgroundImage.sprite = loc.BackgroundImage.ToSprite();
 
 			if (loc.ShowMyHome)
-				Name.text = $"My Home - {mgm.Data.PlayerHomeLevels[mgm.Data.Home].HomeName}";
+				Name.text = $"My Home - {UiDisplayHelpers.ApplyDynamicValuesToString(mgm.Data.PlayerHomeLevels[mgm.Data.Home].HomeName, mgm)}";
 			else
-				Name.text = loc.Name;
+				Name.text = UiDisplayHelpers.ApplyDynamicValuesToString(loc.Name, mgm);
 			Description.text = loc.Description;
 			if (loc.Controlled)
 				Name.text += $" (Controlled)";

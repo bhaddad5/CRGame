@@ -20,6 +20,9 @@ namespace Assets.GameModel
 		[HideInInspector]
 		public GameData Data;
 
+		public string DefaultFirstName => DefaultGameData.FirstName;
+		public string DefaultLastName => DefaultGameData.LastName;
+
 		[SerializeField] private HudBindings HudUiDisplayPrefab;
 		[SerializeField] private MainMapScreenBindings MainMapUiDisplayPrefab;
 

@@ -67,7 +67,7 @@ public class HudBindings : MonoBehaviour
 		{
 			if(mainMenu != null)
 				CloseMainMenu();
-			else
+			else if (mainMenu == null)
 				OpenMainMenu();
 		}
 	}
@@ -75,13 +75,13 @@ public class HudBindings : MonoBehaviour
 	public void OpenMainMenu()
 	{
 		var popupParent = GameObject.Instantiate(UiPrefabReferences.Instance.PopupOverlayParent);
-		var mainMenu = GameObject.Instantiate(MainMenuPrefab, popupParent.transform);
+		mainMenu = GameObject.Instantiate(MainMenuPrefab, popupParent.transform);
 		mainMenu.Setup(mgm);
 	}
 
 	public void CloseMainMenu()
 	{
-		GameObject.Destroy(mainMenu.gameObject);
+		GameObject.Destroy(mainMenu.transform.parent.gameObject);
 		mainMenu = null;
 	}
 
