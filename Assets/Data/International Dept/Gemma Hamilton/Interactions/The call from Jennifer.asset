@@ -14,13 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: a311afc0-d782-4557-a50f-785c7d5e4bb7
   Name: The call from Jennifer
+  AlertNew: 1
   Category: 2
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 5fb717652caace5408949ba4ce0bc598, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -42,70 +44,83 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: d248b00fc853b4845a5da195f269d404,
+        type: 2}
       Text: I can guess why you're here.  Jennifer called.  It appears International
         has been added to your corporate portfolio.  Before you say anything, let
         me say that I'm happy to take your lead.  I can be useful to you.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 9ef55447bce818949932d5e32e92a35c,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.45
+        yPos: 0.36
+        width: 340
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: d248b00fc853b4845a5da195f269d404,
+        type: 2}
       Text: How?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 9ef55447bce818949932d5e32e92a35c,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.45
+        yPos: 0.36
+        width: 340
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: d248b00fc853b4845a5da195f269d404,
+        type: 2}
       Text: 'You don''t want to be bothered with all the minutiae.  Let me handle
         that for you.  Wouldn''t it be useful for you to start getting a lot of wins
         from International-- right after you''ve taken over? '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 9ef55447bce818949932d5e32e92a35c,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.45
+        yPos: 0.36
+        width: 340
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: d248b00fc853b4845a5da195f269d404,
+        type: 2}
       Text: That would be most useful.  But wouldn't that make you look bad?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 9ef55447bce818949932d5e32e92a35c,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.45
+        yPos: 0.36
+        width: 340
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: d248b00fc853b4845a5da195f269d404,
+        type: 2}
       Text: 'I already look bad.  All I want is a stable, safe position that offers
         a working visa.  If you keep me on, I''ll make you look like an expert at
         International. '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 9ef55447bce818949932d5e32e92a35c,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.45
+        yPos: 0.36
+        width: 340
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: d248b00fc853b4845a5da195f269d404,
+        type: 2}
       Text: 'NOTE: You agree to keep Gemma on-- for now.  When she stops performing,
         you''ll consider a different outcome for her-- and her daughter Holly.'
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 9ef55447bce818949932d5e32e92a35c,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.45
+        yPos: 0.36
+        width: 340
     OptionalPopups: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: d248b00fc853b4845a5da195f269d404,
+          type: 2}
         AmbitionEffect: -30
         PrideEffect: 0
       EgoEffect: 0
@@ -130,6 +145,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -159,5 +175,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
   New: 1

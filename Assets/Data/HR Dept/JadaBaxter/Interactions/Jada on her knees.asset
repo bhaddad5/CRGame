@@ -14,13 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 7f0d40b1-0396-456c-92cf-9a3bff829dcf
   Name: Jada on her knees
+  AlertNew: 1
   Category: 6
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
+    - OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
+        type: 2}
       Stat: 0
       Is: 0
       Value: 0
@@ -30,7 +32,8 @@ MonoBehaviour:
     RequiredPolicies: []
     RequiredDepartmentsControled:
     - {fileID: 11400000, guid: 157fc1d8d734ca84d8cdcb9c2b5be2df, type: 2}
-    RequiredNpcsControled: []
+    RequiredNpcsControled:
+    - {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7, type: 2}
     RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
     RequiredTrophies: []
@@ -48,41 +51,49 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
+        type: 2}
       Text: How's my little ghetto girl?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 793d3fec56c01544bbb8a217b63e918a,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.6
+        yPos: 0.43
+        width: 300
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
+        type: 2}
       Text: Please don't call me that!  I'm a professional!  I have a college de--
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 793d3fec56c01544bbb8a217b63e918a,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.6
+        yPos: 0.43
+        width: 300
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
+        type: 2}
       Text: On your knees, fly girl.  Show me why I keep you employed here.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 793d3fec56c01544bbb8a217b63e918a,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.6
+        yPos: 0.43
+        width: 300
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
+        type: 2}
       Text: Yes, Sir.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 793d3fec56c01544bbb8a217b63e918a,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.6
+        yPos: 0.43
+        width: 300
     OptionalPopups:
     - Title: As soon as she sees you in HR...
       Videos:
@@ -114,6 +125,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -143,4 +155,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1
