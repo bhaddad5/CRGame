@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text.RegularExpressions;
 using Assets.GameModel;
 using Assets.GameModel.Save;
 using UnityEditor;
@@ -64,7 +65,68 @@ public class ScriptableObjectTools
 		Debug.Log("Upgrade Complete!");
 	}
 
+	[MenuItem("Tools/Fix String Newlines", false, 0)]
+	public static void FixStringNewlines()
+	{
+		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
 
+		foreach (var location in gameData.Locations)
+		{
+			foreach (var policy in location.Policies)
+			{
+				if (policy == null)
+					continue;
+
+				policy.Description = Fix(policy.Description);
+				EditorUtility.SetDirty(policy);
+			}
+			foreach (var mission in location.Missions)
+			{
+				if (mission == null)
+					continue;
+
+				mission.MissionDescription = Fix(mission.MissionDescription);
+				EditorUtility.SetDirty(mission);
+			}
+
+			foreach (var npc in location.Npcs)
+			{
+				npc.Bio = Fix(npc.Bio);
+				EditorUtility.SetDirty(npc);
+
+				foreach (var interaction in npc.Interactions)
+				{
+					for (int i = 0; i < interaction.Result.Dialogs.Count; i++)
+					{
+						var dialog = interaction.Result.Dialogs[i];
+						dialog.Text = Fix(dialog.Text);
+						interaction.Result.Dialogs[i] = dialog;
+					}
+					for (int i = 0; i < interaction.FailureResult.Dialogs.Count; i++)
+					{
+						var dialog = interaction.FailureResult.Dialogs[i];
+						dialog.Text = Fix(dialog.Text);
+						interaction.FailureResult.Dialogs[i] = dialog;
+					}
+					for (int i = 0; i < interaction.Result.OptionalPopups.Count; i++)
+					{
+						var dialog = interaction.Result.OptionalPopups[i];
+						dialog.Text = Fix(dialog.Text);
+						interaction.Result.OptionalPopups[i] = dialog;
+					}
+				}
+			}
+		}
+
+		Debug.Log("Detection Complete!");
+	}
+
+	private static string Fix(string str)
+	{
+		var s = Regex.Replace(str, "\r", "\r\n");
+		return Regex.Replace(s, "\r\n\n", "\r\n");
+	}
+	
 	[MenuItem("Tools/Detect Repeatable")]
 	public static void DetectFailable()
 	{
@@ -94,16 +156,10 @@ public class ScriptableObjectTools
 
 		foreach (var location in gameData.Locations)
 		{
-			foreach (var mission in location.Missions)
+			foreach (var mission in location.Policies)
 			{
 				if (mission == null)
 					continue;
-
-				bool hasCompletionInteractions = gameData.Locations.Any(l => l.Npcs.Any(n =>
-					n.Interactions.Any(i => i.Result.Effect.MissionsToComplete?.Contains(mission) ?? false)));
-
-				if(!hasCompletionInteractions)
-					Debug.Log($"{mission.MissionName} has no interactions that will complete it.");
 			}
 		}
 
