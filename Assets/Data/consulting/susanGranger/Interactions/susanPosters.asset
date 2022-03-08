@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 1ba8ad96-1166-4aa1-bdf4-f56358b93c4c
   Name: Compliment Susan's Posters
+  AlertNew: 1
   Category: 3
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 69ca5a2875c2ec54bb21ae99498f1596, type: 2}
     RequiredNotCompletedInteractions:
@@ -45,25 +45,109 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
       Text: These posters you've chosen for the office are so motivational!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
+      Text: Susan looks surprised, but pleased, by the unprompted praise.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
         type: 2}
-      Text: You like them? I know some of the staff think they are a bit cringey,
-        but--
+      Text: "You like them? Tracey once expressed to me that they're excessive and
+        I heard some of the staff think they are a bit cringey, but\u2014"
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
+      Text: This time you decide to cut in before Susan can go off on another one
+        of her long-winded speeches.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
       Text: No way, Ms. Granger!  They really send a message!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
+      Text: She swells with confidence at your transparent flattery.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
         type: 2}
-      Text: I agree.  You're a very perceptive young man!
+      Text: Yes, I agree.  You're a very perceptive young man!  In fact, I've bought
+        a few more that I hadn't put up yet.  I was feeling a bit self-conscious
+        before until your unabashed show of support.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
+      Text: "Follow after me\u2014{FirstName}.  We'll find the perfect spot to hang
+        these!"
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
     OptionalPopups:
+    - Title: '"I just love this one.  Don''t you?"'
+      Videos: []
+      Texture: {fileID: 2800000, guid: 267a4fb3c97ceea42964715627f51bf7, type: 3}
+      Text: You politely bite your tongue and quietly wonder if this pain will all
+        be worth it in the end.
+    - Title: '"Everyone needs the occasional reminder, right?"'
+      Videos: []
+      Texture: {fileID: 2800000, guid: 2a72585daf7bee649a17ae3a07c1bc16, type: 3}
+      Text: You resist the urge to roll your eyes.   Talk about reinfocing the echo
+        chamber.
     - Title: '"I''m a natural leader.  I always have been, I guess!"'
       Videos:
       - {fileID: 32900000, guid: 98ebdfe8ce083aa4a9e4d2cdba806593, type: 3}
@@ -97,11 +181,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -131,9 +211,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   Completed: 0
+  New: 1

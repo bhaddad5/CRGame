@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 228ddd95-000d-4ae7-9feb-4088831f6681
   Name: Compliment Susan's Management
+  AlertNew: 1
   Category: 3
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 69ca5a2875c2ec54bb21ae99498f1596, type: 2}
     RequiredNotCompletedInteractions:
@@ -45,25 +45,54 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: They way you lead staff meetings is so inspirational!
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
+      Text: The way you lead staff meetings is so inspirational!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: Thank you!  Sometimes I think I waffle on too much, but--
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
+      Text: "Thank you!  Sometimes I think I waffle on too much, but\u2014"
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
       Text: Not at all, Ms. Granger!  Everyone leaves excited and motivated.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
       Text: Of course, that's what I hope to do.  Thanks for noticing!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
     OptionalPopups: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+          type: 2}
         AmbitionEffect: -5
         PrideEffect: 0
       EgoEffect: 0
@@ -88,11 +117,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -122,9 +147,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   Completed: 0
+  New: 1
