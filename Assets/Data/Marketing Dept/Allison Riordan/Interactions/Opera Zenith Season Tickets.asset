@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Allison Introduction
+  m_Name: Opera Zenith Season Tickets
   m_EditorClassIdentifier: 
-  Id: 101d9ecc-318b-4b3f-9e9a-dd8d9979df1a
-  Name: Allison Introduction
+  Id: 0782c058-8d21-4fc2-abb7-f05e4c4ac230
+  Name: Zenith Ballet Company Season Tickets
   AlertNew: 1
-  Category: 1
+  Category: 4
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 2df95ac6811f20943882b6e3a904a043, type: 2}
+    - {fileID: 11400000, guid: 1669504239a66624f948e75dcd0d8204, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -32,7 +32,7 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 30
-    MoneyCost: 0
+    MoneyCost: 2000
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -42,68 +42,24 @@ MonoBehaviour:
   Repeatable: 0
   PreviewEffect: 1
   Result:
-    Dialogs:
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: I'm Allison.  Nice to put a face with the name.  {FirstName} {LastName},
-        right?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: Correct.  Nice to meet you.  I've seen the work you're doing.  Impressive.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: 'That''s kind.  I''ve heard you''re shaking things up yourself.  Good
-        for you-- Artemis needs new thinking.  '
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: Thanks.  I'm still finding my way though.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: Well, if I can be any help, just let me know.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+    Dialogs: []
     OptionalPopups:
-    - Title: Unlike the typical Artemis poser...
+    - Title: Swan Lake
       Videos:
-      - {fileID: 32900000, guid: 6d0af49fef132fe4fa7a4eaee09230fe, type: 3}
+      - {fileID: 32900000, guid: 4b099b182ceb3594d99be01fdf33b1c3, type: 3}
       Texture: {fileID: 0}
-      Text: ...you sense a real professional when you see one.
+      Text: 'While you endure it, Allison seems enthralled with the performance. 
+        When you find yourself beginning to enjoy the production as well, you note
+        Allison''s approval.  You even actually discuss the performance the next
+        day in teh office!   '
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 0}
-        AmbitionEffect: -10
+        AmbitionEffect: -25
         PrideEffect: 0
       EgoEffect: 0
       FundsEffect: 0
-      PowerEffect: 0
+      PowerEffect: 1
       PatentsEffect: 0
       CultureEffect: 0
       SpreadsheetsEffect: 0

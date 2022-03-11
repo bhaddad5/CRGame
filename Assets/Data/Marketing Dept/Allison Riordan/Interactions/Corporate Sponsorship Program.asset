@@ -10,19 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Allison Introduction
+  m_Name: Corporate Sponsorship Program
   m_EditorClassIdentifier: 
-  Id: 101d9ecc-318b-4b3f-9e9a-dd8d9979df1a
-  Name: Allison Introduction
+  Id: 008f0098-0c4f-4f33-bbf1-adb72c9cacec
+  Name: Corporate Sponsorship Program
   AlertNew: 1
-  Category: 1
+  Category: 4
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcStatRequirements: []
+    NpcStatRequirements:
+    - OptionalNpcReference: {fileID: 0}
+      Stat: 0
+      Is: 0
+      Value: 170
     RequiredInteractions:
-    - {fileID: 11400000, guid: 2df95ac6811f20943882b6e3a904a043, type: 2}
+    - {fileID: 11400000, guid: c2c2e3849b305144aa6b062be29c2ac0, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -45,8 +49,8 @@ MonoBehaviour:
     Dialogs:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: I'm Allison.  Nice to put a face with the name.  {FirstName} {LastName},
-        right?
+      Text: 'I had an idea.  Since I''ve gotten to know you a bit more, I thought
+        I''d put it to you and see what you think. '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -55,7 +59,7 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Correct.  Nice to meet you.  I've seen the work you're doing.  Impressive.
+      Text: Please do!  You have my full attention!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -64,8 +68,9 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: 'That''s kind.  I''ve heard you''re shaking things up yourself.  Good
-        for you-- Artemis needs new thinking.  '
+      Text: 'Well, I''ve been pushing for more support and sponsorship of cultural
+        events and organizations-- but Jennifer, being a hopeless Philistine, has
+        refused to approve them.   '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -74,7 +79,7 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Thanks.  I'm still finding my way though.
+      Text: You're asking for me to provide support?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -83,7 +88,21 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Well, if I can be any help, just let me know.
+      Text: 'Yes.  I actually think it might be a pleasant way for us to get more
+        acquainted as well.  You might benefit from some exposure to the arts.  I
+        could be your cultural guide.  Don''t say yes or no now-- just give it some
+        thought.  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: 'NOTE: By agreeing to support Allison''s programs, you''ll have to dig
+        deep into your pockets-- but you''ll also grow closer to Allison as well
+        as earn a reputation as a patron of the arts (more Power!).'
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -91,11 +110,12 @@ MonoBehaviour:
         yPos: 0
         width: 0
     OptionalPopups:
-    - Title: Unlike the typical Artemis poser...
+    - Title: Allison's a real culture vulture...
       Videos:
-      - {fileID: 32900000, guid: 6d0af49fef132fe4fa7a4eaee09230fe, type: 3}
+      - {fileID: 32900000, guid: 7c8a838cc4dfdd143b5df83e23ff151a, type: 3}
       Texture: {fileID: 0}
-      Text: ...you sense a real professional when you see one.
+      Text: ...she seems to light up when talking about the arts programs she wants
+        to support!
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 0}
