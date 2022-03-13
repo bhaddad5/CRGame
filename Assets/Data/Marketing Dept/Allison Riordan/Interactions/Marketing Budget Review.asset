@@ -10,32 +10,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Take the next step with Allison (take control)
+  m_Name: Marketing Budget Review
   m_EditorClassIdentifier: 
-  Id: b284c61f-f181-47ef-9003-e1744ab6451e
-  Name: Take the next step with Allison (take control)
+  Id: 80a632ac-5c32-45a3-a7d1-502c45b00f46
+  Name: Marketing Budget Review
   AlertNew: 1
-  Category: 2
+  Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
-      Stat: 0
-      Is: 0
-      Value: 0
+    NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
-    RequiredDepartmentsControled: []
-    RequiredNpcsControled: []
+    RequiredDepartmentsControled:
+    - {fileID: 11400000, guid: a2eed55d8869d46418cd50386d7de275, type: 2}
+    RequiredNpcsControled:
+    - {fileID: 11400000, guid: d5da105764ee21941942e88a7651e80e, type: 2}
     RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
     EgoCost: 30
-    MoneyCost: 3000
+    MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -46,9 +44,18 @@ MonoBehaviour:
   PreviewEffect: 1
   Result:
     Dialogs:
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: May I make a suggestion regarding your marketing budget?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: It's gorgeous!  Put it on me!
+      Text: You know you can.  What are you thinking, {FirstName}?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -57,7 +64,9 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: With pleasure.  It suits a woman of you rtaste an dsophistication, Allison.
+      Text: I think the company may need a shift.  Until I work out where we need
+        to go, it might make sense to put a freeze on further spending-- keep our
+        powder dry, so to speak.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -66,20 +75,24 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Oh, {FirstName} -- I'm so happy!
+      Text: 'If that''s what you think, I''ll put a hold on all existing plans.  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
         xPos: 0
         yPos: 0
         width: 0
-    OptionalPopups:
-    - Title: It's a symbol of a major commitment...
-      Videos:
-      - {fileID: 32900000, guid: 3e833864e0bac9d499a0d8dea824d4bd, type: 3}
-      Texture: {fileID: 0}
-      Text: ...you never thought you'd be ready to make.  But everything about Allison
-        has made you throw caution to the wind!
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: 'NOTE: Allison''s decision gives you access to 5 BRAND resources you
+        can now allocate as you see fit.'
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    OptionalPopups: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -88,17 +101,15 @@ MonoBehaviour:
       PatentsEffect: 0
       CultureEffect: 0
       SpreadsheetsEffect: 0
-      BrandEffect: 0
+      BrandEffect: 5
       RevanueEffect: 0
       HornicalEffect: 0
-      NpcsToControl:
-      - {fileID: 11400000, guid: d5da105764ee21941942e88a7651e80e, type: 2}
+      NpcsToControl: []
       NpcsToTrain: []
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
-      MissionsToComplete:
-      - {fileID: 11400000, guid: 05f8214db44b3c447a5c34f10ed5296d, type: 2}
+      MissionsToComplete: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0

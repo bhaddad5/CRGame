@@ -10,22 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Take the next step with Allison (take control)
+  m_Name: Puffing up Page
   m_EditorClassIdentifier: 
-  Id: b284c61f-f181-47ef-9003-e1744ab6451e
-  Name: Take the next step with Allison (take control)
+  Id: a0cc75e2-c82f-4014-b0c7-52877d89acd8
+  Name: Puffing up Page
   AlertNew: 1
-  Category: 2
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
-      Stat: 0
-      Is: 0
-      Value: 0
-    RequiredInteractions: []
+    NpcStatRequirements: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 4a2fff68fd9903d43a3b4ce05e29596a, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -34,8 +31,8 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 30
-    MoneyCost: 3000
+    EgoCost: 0
+    MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -46,9 +43,19 @@ MonoBehaviour:
   PreviewEffect: 1
   Result:
     Dialogs:
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: The cover story was brilliant.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: It's gorgeous!  Put it on me!
+      Text: 'Your CEO like it?  We sent over a framed copy of the cover, not to mention
+        pushing it hard on our online network and social media channels.  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -57,7 +64,8 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: With pleasure.  It suits a woman of you rtaste an dsophistication, Allison.
+      Text: She loved it.  If we wanted to do more-- and were prepared to continue
+        to book ad campaigns with HotTake of course-- what would be involved?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -66,20 +74,27 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Oh, {FirstName} -- I'm so happy!
+      Text: We have a CEO of the Year Award program.  I see no reason why Jennnifer
+        shoudl be considered.  I'd encourage you rmarketing girl to nominate her. 
+        Who knows-- she might make it to be a Finalist?  Perhaps Jennifer might even
+        win our prestigious award!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
         xPos: 0
         yPos: 0
         width: 0
-    OptionalPopups:
-    - Title: It's a symbol of a major commitment...
-      Videos:
-      - {fileID: 32900000, guid: 3e833864e0bac9d499a0d8dea824d4bd, type: 3}
-      Texture: {fileID: 0}
-      Text: ...you never thought you'd be ready to make.  But everything about Allison
-        has made you throw caution to the wind!
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: 'NOTE: For 1 Brand, you can boost Jennifer''s chances through each phase
+        of the process.  You''ll need to use Allison to organize the effort though.'
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    OptionalPopups: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -91,14 +106,12 @@ MonoBehaviour:
       BrandEffect: 0
       RevanueEffect: 0
       HornicalEffect: 0
-      NpcsToControl:
-      - {fileID: 11400000, guid: d5da105764ee21941942e88a7651e80e, type: 2}
+      NpcsToControl: []
       NpcsToTrain: []
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
-      MissionsToComplete:
-      - {fileID: 11400000, guid: 05f8214db44b3c447a5c34f10ed5296d, type: 2}
+      MissionsToComplete: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
