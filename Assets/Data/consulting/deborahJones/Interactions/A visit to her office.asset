@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 905dafba-eed5-4c4c-9171-f8345551489a
   Name: A visit to her office
+  AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
@@ -42,62 +43,205 @@ MonoBehaviour:
   PreviewEffect: 1
   Result:
     Dialogs:
-    - CurrSpeaker: 1
+    - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
         type: 2}
-      Text: You were voted 'Most Likely to Succeed'?  Looks like your classmates
-        weren't wrong, based on where you are now.
+      Text: Can you come back in about five minutes?  I'm right in the middle of
+        something...
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.65
-        yPos: 0.45
+        xPos: 0.68
+        yPos: 0.4
+        width: 400
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
+      Text: You ignore Deborah and circle around the room, taking in the hung plaques
+        and displayed awards.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.68
+        yPos: 0.4
+        width: 400
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
+      Text: Oh, you were voted 'Most Likely to Succeed'?  Based on where you're sitting
+        right now, it looks like your classmates knew what they were talking about!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.68
+        yPos: 0.4
+        width: 400
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
+      Text: Your words find their mark; even a girl like Deborah Jones isn't above
+        a bit of flattery.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.68
+        yPos: 0.4
         width: 400
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
         type: 2}
-      Text: Well, you said it, not me!  I don't brag-- it isn't my style.
+      Text: Well, you said it, not me.  I don't like to brag; it just isn't my style.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.65
-        yPos: 0.45
+        xPos: 0.68
+        yPos: 0.4
+        width: 400
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
+      Text: Inwardly, you're amused at how proud she is about her humbleness even
+        as she tries to downplay what you just said.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.68
+        yPos: 0.4
         width: 400
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
         type: 2}
-      Text: I bet you were straight As, captain of one of the school teams, student
-        politics-- am I right?
+      Text: "Wait\u2014give me a second.  I'm starting to get a picture in my mind..."
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.65
-        yPos: 0.45
+        xPos: 0.68
+        yPos: 0.4
+        width: 400
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
+      Text: You press two fingers against your temple, half-close your eyes, and
+        point in her general direction as if you were peering into the past or invoking
+        psychic powers.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.68
+        yPos: 0.4
+        width: 400
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
+      Text: "I bet you had straight As, served as a captain for one of the school
+        teams, snd also were involved heavily with student politics\u2014am I right?"
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.68
+        yPos: 0.4
+        width: 400
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
+      Text: A thin, self-pleased, and self-important, smile frames Deborah's lips.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.68
+        yPos: 0.4
         width: 400
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
         type: 2}
-      Text: 'Since you asked, I was Honor Society, Captain of the Cheerleading Squad,
-        Vice President of my class and President of the Student Council and the class
-        Valedictorian.  But only since you asked. '
+      Text: Well, since you asked...
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.65
-        yPos: 0.45
+        xPos: 0.68
+        yPos: 0.4
+        width: 400
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
+      Text: She takes a deep breath before launching into a well-rehearsed elevator
+        speech that she must have practiced in front of a mirror hundreds of times.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.68
+        yPos: 0.4
+        width: 400
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
+      Text: "I was a member of the Honor Society, Vice President of my class, President
+        of the Student Council, Captain of the Cheerleading Squad, and I didn't have
+        just straight As\u2014I was the class Valedictorian."
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.68
+        yPos: 0.4
+        width: 400
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
+      Text: Deborah preens for a few seconds before she seems to remember where she
+        is and her expression retreats back in a professional, and distant, mask.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.68
+        yPos: 0.4
+        width: 400
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
+      Text: But only because you asked.  Anyways, thanks for stopping by but I need
+        to get back to what I was doing.  Plus I'm sure you've also got work that
+        you need to do.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.68
+        yPos: 0.4
+        width: 400
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
+      Text: She dismisses you with a pointed look.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.68
+        yPos: 0.4
         width: 400
     OptionalPopups:
-    - Title: She loves recognition
+    - Title: Deborah loves recognition...
       Videos: []
       Texture: {fileID: 2800000, guid: aec35e832b19ab040ba40921fda838c9, type: 3}
       Text: She likes surrounding herself with reminders of her relentless success
         in life.  The 'Most Likely to Succeed' award sits next to her college degree
-        and her MBA, but there are others like the Black Diamond Ski certificate,
-        the scuba diving certification and so on.  She's a driven young woman.
+        along with her MBA as the most prominent accolades in the room, but there
+        are others like the Black Diamond Ski certificate, the scuba diving certification
+        and so on.  She's a driven young woman.
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -122,6 +266,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -151,5 +296,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
   New: 1
