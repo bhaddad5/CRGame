@@ -47,8 +47,20 @@ MonoBehaviour:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
         type: 2}
-      Text: Lovely day, isn't it?  Is the nice weather supposed to last throughout
+      Text: What an absolutely gorgeous day!  Do you think it'll last throughout
         the week?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.68
+        yPos: 0.4
+        width: 400
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
+      Text: Deborah arches an eyebrow, clearly unsure why you're talking to her about
+        the weather.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
         type: 3}
@@ -59,8 +71,20 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
         type: 2}
-      Text: 'I really couldn''t say-- I''ve just been too busy to even catch the
-        weather report. '
+      Text: "I really couldn't say\u2014I've recently been too busy to even catch
+        the weather forecast.  But I agree that it's been rather nice. "
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.68
+        yPos: 0.4
+        width: 400
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
+      Text: Her head tilts quizzically to the side, silently asking you to hurry
+        up and get to the point.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
         type: 3}
@@ -80,10 +104,12 @@ MonoBehaviour:
         xPos: 0.68
         yPos: 0.4
         width: 400
-    - CurrSpeaker: 0
+    - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
         type: 2}
-      Text: Yes, well I better get back to work, ok?
+      Text: Your eyes greedily trace her form.  While you don't say anything else
+        out loud, you hope to see more of Deborah's legs and if the warm weather
+        allows for that, the hotter the better!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
         type: 3}
@@ -94,14 +120,38 @@ MonoBehaviour:
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
         type: 2}
-      Text: 'NOTE: You don''t say so but you do hope to see more of Deborah''s legs
-        and if the warm weather allows for that, the hotter the better!'
+      Text: Deborah's face stiffens as you catch a flash of disgust in her eyes towards
+        you.  She's undoubtedly read between the lines.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.65
-        yPos: 0.45
+        xPos: 0.68
+        yPos: 0.4
+        width: 400
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
+      Text: "Yes\u2014well, I better get back to work, ok?  You should do the same. 
+        We aren't being paid for idle chit-chat."
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.68
+        yPos: 0.4
+        width: 400
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
+      Text: She closes the door to her office in your face with a polite, but firm,
+        slam.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.68
+        yPos: 0.4
         width: 400
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
@@ -125,11 +175,7 @@ MonoBehaviour:
       Texture: {fileID: 0}
       Text: It seems as if she thinks she's the center of the universe sometimes.
     Effect:
-      NpcEffects:
-      - OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
-          type: 2}
-        AmbitionEffect: -1
-        PrideEffect: 0
+      NpcEffects: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
