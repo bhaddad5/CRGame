@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Recruiter call (Allison leaves game)
+  m_Name: Invite Jayme to after work drinks
   m_EditorClassIdentifier: 
-  Id: 88b0462a-e124-4a4a-a2d7-09dbdbd429a6
-  Name: Recruiter call (Allison leaves game)
+  Id: 8be94b78-2f0a-43aa-a6fb-5d75a26dd022
+  Name: Invite Jayme to after work drinks
   AlertNew: 1
-  Category: 2
+  Category: 3
   Requirements:
-    RequiredPower: 0
+    RequiredPower: 100
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 3c5940d66b74003458f861dbe45209e9, type: 2}
+    - {fileID: 11400000, guid: 57d4a294d354e1e48ade162d932a8620, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -31,7 +31,7 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 30
+    EgoCost: 15
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -43,10 +43,19 @@ MonoBehaviour:
   PreviewEffect: 1
   Result:
     Dialogs:
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: How about you and I grab a drink after work and then... see what happens?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: What should I do?  CEO of Prime Mover Technologies!  It's a HUGE job! 
-        Am I ready for it?  And it is across the country-- what about us?
+      Text: What?  No!  I mean, I can't!  I'm married!  And... aren't you kind of
+        seeing my boss anyway?  And... well, you know I'm gay!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -55,43 +64,51 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: 'You already know what to do.  You deserve it, Allison.  You have to
-        follow your dream.  Angus Lochobar says it is a solid bet.  Go on-- you''re
-        ready for it.  I can''t and won''t stand in your way.  '
+      Text: 'Important things first.  Allison doesn''t need to know about this, does
+        she?  As for your being married, well...  It''s just a lezzie thing, isn''t
+        it?  It''s not like it''s a real marriage.  I would think you''d jump at
+        the chance for a real date with a man.    '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
         xPos: 0
         yPos: 0
         width: 0
-    - CurrSpeaker: 2
+    - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: 'NOTE: Allison takes on the new role where you hear from Lochobar she
-        thrives on the startup experience.  You are now free to recruit a replacement
-        to lead Artemis Marketing-- but first you''ll need to get Jennifer Page''s
-        approval to proceed.'
+      Text: I find this conversation very offensive!  No, I'm not interested in having
+        anything to do with you!  And if Allison wasn't involved with you, I'd report
+        you for this!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
         xPos: 0
         yPos: 0
         width: 0
-    OptionalPopups: []
+    OptionalPopups:
+    - Title: Jayme is taken aback...
+      Videos:
+      - {fileID: 32900000, guid: 0372c32d90d95b242963a0e1140c7267, type: 3}
+      Texture: {fileID: 0}
+      Text: ...by your frankness.  She's unnerved by your unexpected interest in
+        her.
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: -15
+        PrideEffect: 0
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
       CultureEffect: 0
       SpreadsheetsEffect: 0
-      BrandEffect: 2
+      BrandEffect: 0
       RevanueEffect: 0
       HornicalEffect: 0
       NpcsToControl: []
       NpcsToTrain: []
-      NpcsToRemoveFromGame:
-      - {fileID: 11400000, guid: d5da105764ee21941942e88a7651e80e, type: 2}
+      NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []

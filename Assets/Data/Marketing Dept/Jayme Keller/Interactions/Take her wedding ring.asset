@@ -10,28 +10,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Recruiter call (Allison leaves game)
+  m_Name: Take her wedding ring
   m_EditorClassIdentifier: 
-  Id: 88b0462a-e124-4a4a-a2d7-09dbdbd429a6
-  Name: Recruiter call (Allison leaves game)
+  Id: 30bcf88c-971e-491b-aba5-b5ef1aff3e26
+  Name: Take her wedding ring
   AlertNew: 1
-  Category: 2
+  Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 3c5940d66b74003458f861dbe45209e9, type: 2}
+    - {fileID: 11400000, guid: 57d4a294d354e1e48ade162d932a8620, type: 2}
     RequiredNotCompletedInteractions: []
-    RequiredPolicies: []
-    RequiredDepartmentsControled: []
+    RequiredPolicies:
+    - {fileID: 11400000, guid: efc9578e25e4dad4da735c2b46b5e3b0, type: 2}
+    RequiredDepartmentsControled:
+    - {fileID: 11400000, guid: a2eed55d8869d46418cd50386d7de275, type: 2}
     RequiredNpcsControled: []
     RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 30
+    EgoCost: 15
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -45,8 +47,8 @@ MonoBehaviour:
     Dialogs:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: What should I do?  CEO of Prime Mover Technologies!  It's a HUGE job! 
-        Am I ready for it?  And it is across the country-- what about us?
+      Text: Couldn't we just ignore the policy?  Leslie won't be happy and she won't
+        understand--
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -55,45 +57,61 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: 'You already know what to do.  You deserve it, Allison.  You have to
-        follow your dream.  Angus Lochobar says it is a solid bet.  Go on-- you''re
-        ready for it.  I can''t and won''t stand in your way.  '
+      Text: No, we can't Jayme.  There's a reason for the anti-theft policy.  And
+        I could care less what your 'wife' thinks about the way we do things here
+        at Artemis.  I'll take your wedding ring-- now.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
         xPos: 0
         yPos: 0
         width: 0
-    - CurrSpeaker: 2
+    - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: 'NOTE: Allison takes on the new role where you hear from Lochobar she
-        thrives on the startup experience.  You are now free to recruit a replacement
-        to lead Artemis Marketing-- but first you''ll need to get Jennifer Page''s
-        approval to proceed.'
+      Text: Of course!  No problem.  I mean, you're keeping it safe and I can retreive
+        it whenever I like-- right?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
         xPos: 0
         yPos: 0
         width: 0
-    OptionalPopups: []
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: We'll see.  The ring-- now.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    OptionalPopups:
+    - Title: Jayme's in a corner...
+      Videos:
+      - {fileID: 32900000, guid: e3db9085aeb15d04188740b6b6e1b512, type: 3}
+      Texture: {fileID: 0}
+      Text: ...but she doesn't have much choice.  She hands the ring over to you. 
+        She tries to conceal how upset she is.
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: -25
+        PrideEffect: 0
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
       CultureEffect: 0
       SpreadsheetsEffect: 0
-      BrandEffect: 2
+      BrandEffect: 0
       RevanueEffect: 0
       HornicalEffect: 0
       NpcsToControl: []
       NpcsToTrain: []
-      NpcsToRemoveFromGame:
-      - {fileID: 11400000, guid: d5da105764ee21941942e88a7651e80e, type: 2}
+      NpcsToRemoveFromGame: []
       LocationsToControl: []
-      TrophiesClaimedReferences: []
+      TrophiesClaimedReferences:
+      - {fileID: 11400000, guid: 10bee104b2a26a7468659db47cf40359, type: 2}
       MissionsToComplete: []
       Car: 0
       Suits: 0
