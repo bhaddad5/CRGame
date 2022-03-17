@@ -26,7 +26,8 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 65183d07174e5c14a8c7d49ce4847327, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
-    RequiredDepartmentsControled: []
+    RequiredDepartmentsControled:
+    - {fileID: 11400000, guid: a2eed55d8869d46418cd50386d7de275, type: 2}
     RequiredNpcsControled: []
     RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
@@ -41,9 +42,64 @@ MonoBehaviour:
     RevanueCost: 0
     HornicalCost: 0
   Repeatable: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   Result:
-    Dialogs: []
+    Dialogs:
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: 'I love what Allison''s achieved but I think a new direction is what''s
+        needed now in Marketing.  Our dear CEO agrees-- she''s given me the go-ahead
+        to recruit for a Chief Marketing Officer.  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: I know-- I got the memo.  It's a big step up.  Once I got the word, I
+        started the search.  I may have the kind of candidate you're looking for. 
+        Amit Reuben.  He's a data science maven who's itching to get on the client
+        side. However...
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: He sounds great!  What's the issue?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: 'He runs his own shop- Solomon Data.  If you want him, you''ll have to
+        lay on the charm AND buy his company.  I''ll set up a meeting over in Marketing
+        and you can take it from there.  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: 'Amit Reuben will appear in the Marketing Department to meet.  If you
+        want to recruit him, you''ll need 2 Revenue (to buy his company), 1 Spreadsheet
+        (to handle the legal paperwork) and 3 Corporate Culture... not to mention
+        200 EGO to seal the deal! '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     OptionalPopups: []
     Effect:
       NpcEffects: []
