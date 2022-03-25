@@ -1,0 +1,161 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: Buy out contract (leaves game)
+  m_EditorClassIdentifier: 
+  Id: 9a0736f6-9383-410a-b065-7f8e667012ca
+  Name: Buy out contract (leaves game)
+  AlertNew: 1
+  Category: 2
+  Requirements:
+    RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
+    NpcStatRequirements:
+    - OptionalNpcReference: {fileID: 0}
+      Stat: 0
+      Is: 0
+      Value: 0
+    RequiredInteractions:
+    - {fileID: 11400000, guid: c0d914a52d81de34c9f4e4a4adb446ee, type: 2}
+    - {fileID: 11400000, guid: 651f5e2845ae89242b7f73e3c4b1d07f, type: 2}
+    - {fileID: 11400000, guid: 0c1251b3f16640b44b287bfd587cc2be, type: 2}
+    - {fileID: 11400000, guid: 66b6bf2db12889848a450edec1eca7e0, type: 2}
+    - {fileID: 11400000, guid: 265f7e8864eb7904dbf1a88e7124cfba, type: 2}
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredNpcsControled: []
+    RequiredNpcsTrained: []
+    RequiredNpcsNotControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 40
+    MoneyCost: 100000
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    HornicalCost: 0
+  Repeatable: 0
+  PreviewEffect: 1
+  Result:
+    Dialogs:
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Isn't it time for you to pursue other opportunities?  I've got the Board
+        stocked with my boys-- there's zero chance you could ever be named as CEO
+        in the future.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: Perhaps.  Perhaps you've got the upper hand for now.  Perhaps I underestimated
+        your boundless ambition.  But that doesn't mean I'm about to turn tail and
+        disappear.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: I wouldn't let that happen.  I can organize a generous separation package. 
+        I'll even put my money where my mouth is.  Consider this a bonus for your
+        fine work here at Artemis.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: 'NOTE: Stephanie takes the check and shrugs.  She''s been outmaneuvered
+        and she knows it.  The COO office is now yours.'
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    OptionalPopups:
+    - Title: Stephanie's resignation leads...
+      Videos:
+      - {fileID: 32900000, guid: a9d7a4092e917b9489f26c8b5e2795e5, type: 3}
+      Texture: {fileID: 0}
+      Text: ...the business news the next day!
+    Effect:
+      NpcEffects: []
+      EgoEffect: 250
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame:
+      - {fileID: 11400000, guid: ebaaad10ed98bd74d816bdeeb69716c5, type: 2}
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete:
+      - {fileID: 11400000, guid: d4617e42942cac74e9aa888a0ee9f56f, type: 2}
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
+  FailureResult:
+    Dialogs: []
+    OptionalPopups: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+  Completed: 0
+  New: 1
