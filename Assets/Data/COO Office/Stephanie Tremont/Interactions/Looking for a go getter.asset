@@ -10,28 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Recruit a CMO
+  m_Name: Looking for a go getter
   m_EditorClassIdentifier: 
-  Id: 420e258a-612e-4094-835c-eae9337bbbf9
-  Name: Recruit a CMO
+  Id: d60cd6d7-7f03-45f8-9abd-e781b50f2c86
+  Name: Looking for a go getter
   AlertNew: 1
-  Category: 0
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 1f89399409d8fa749a157e1fb5a51535, type: 2}
+    - {fileID: 11400000, guid: 9e78e3f1c75b5aa4197886ebf59aac5f, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
-    RequiredNpcsControled: []
+    RequiredNpcsControled:
+    - {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06, type: 2}
     RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 40
+    EgoCost: 30
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -43,10 +44,20 @@ MonoBehaviour:
   PreviewEffect: 1
   Result:
     Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: I'm looking for a good number two in my department and I understand there's
+        a Forbes alumna in your office.  I'd like to offer her the job of Operations
+        Manager, if you're willing to let her come over.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: I wish I was here under more pleasant circumstances.  You've heard the
-        news about Allison, I assume?
+      Text: Who are you referring to?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -55,8 +66,10 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: I can't believe she didn't even give me a chance to make a counter-offer! 
-        You didn't have anything to do with this, did you?
+      Text: Deborah Jones, of course.  I understand there was some sort of problem
+        with her coming out of the Management Training Program.  Somehow she wound
+        up in an admin psotion, which is a ridiculous waste of her talent.  I'm a
+        Forbes MBA too.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -65,9 +78,10 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: 'Of course I didn''t-- but I had to give her honest advice.  A counter-offer? 
-        They offered her the CEO positoon.  There really wasn''t anyway she was going
-        to turn that down.  '
+      Text: Debbie?  My secretary?  But she's just an admin-- you can't possibly
+        mean you want to promote her to a management position!  No, I'm sorry.  As
+        her direct line manager, you need my permission to recruit her internally
+        and I think it would be a mistake.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -76,30 +90,11 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: No, I guess not.  I'm just glad you've been so involved in Marketing
-        lately.  I know you're getting overloaded but can you deal with the recruitment
-        for a new Marketing Director?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: Of course.  But may I suggest we upgrade the position?  Allison was terrific
-        but what we really need now in front of the IPO is a CMO-- a real heavy. 
-        Let's bump the package and go for it.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-    - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
-      Text: 'NOTE: Jennifer approves your suggestion.  You can now have Human Resources
-        begin recruiting for a new Chief Marketing Officer!'
+      Text: 'That''s your perogative, {LastName}.  But I will tell you-- off the
+        record-- that everyone knows what you''ve done to that poor woman.  What
+        you''ve reduced her to.  You may think it is funny, but I don''t.  When I
+        become CEO, lots of things are going to change-- and you won''t be in any
+        position to refuse my requests.  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:

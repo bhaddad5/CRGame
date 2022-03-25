@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Recruit a CMO
+  m_Name: Board of Directors Search
   m_EditorClassIdentifier: 
-  Id: 420e258a-612e-4094-835c-eae9337bbbf9
-  Name: Recruit a CMO
+  Id: 482a9589-4314-47ac-b65c-9ce1280db1a2
+  Name: Board of Directors Search
   AlertNew: 1
   Category: 0
   Requirements:
@@ -22,7 +22,7 @@ MonoBehaviour:
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 1f89399409d8fa749a157e1fb5a51535, type: 2}
+    - {fileID: 11400000, guid: 6d18e6d5b89443d4d8e6f6a685f3ea84, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -31,7 +31,7 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 40
+    EgoCost: 30
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -43,10 +43,19 @@ MonoBehaviour:
   PreviewEffect: 1
   Result:
     Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: Have you had a chance to review the updated Exec Comm agenda?  You need
+        to stay current if you're going to be of any use to me, {LastName}!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: I wish I was here under more pleasant circumstances.  You've heard the
-        news about Allison, I assume?
+      Text: I'm sorry-- I've had my hands full. Can you enlightened me please?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -55,8 +64,9 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: I can't believe she didn't even give me a chance to make a counter-offer! 
-        You didn't have anything to do with this, did you?
+      Text: 'In preparation for the IPO, we''re going to need a proper Board of Directors. 
+        I''ve suggested five board members and Jen''s approved this number.  I''ll
+        be doing the search-- I just wanted Exec Comm to know what was going on.   '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -65,9 +75,8 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: 'Of course I didn''t-- but I had to give her honest advice.  A counter-offer? 
-        They offered her the CEO positoon.  There really wasn''t anyway she was going
-        to turn that down.  '
+      Text: I might have some good candidates for the Board.  I've come across a
+        number of high profile--
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -76,30 +85,8 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: No, I guess not.  I'm just glad you've been so involved in Marketing
-        lately.  I know you're getting overloaded but can you deal with the recruitment
-        for a new Marketing Director?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: Of course.  But may I suggest we upgrade the position?  Allison was terrific
-        but what we really need now in front of the IPO is a CMO-- a real heavy. 
-        Let's bump the package and go for it.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-    - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
-      Text: 'NOTE: Jennifer approves your suggestion.  You can now have Human Resources
-        begin recruiting for a new Chief Marketing Officer!'
+      Text: I'll be taking care of the search and nomination process.  Stick to your
+        lane, {LastName}-- ok?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:

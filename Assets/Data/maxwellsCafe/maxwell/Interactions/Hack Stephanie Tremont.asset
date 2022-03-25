@@ -10,19 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Recruit a CMO
+  m_Name: Hack Stephanie Tremont
   m_EditorClassIdentifier: 
-  Id: 420e258a-612e-4094-835c-eae9337bbbf9
-  Name: Recruit a CMO
+  Id: 7ac7190b-88a5-43e7-83d5-b7847423f894
+  Name: Hack Stephanie Tremont
   AlertNew: 1
-  Category: 0
+  Category: 7
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 1f89399409d8fa749a157e1fb5a51535, type: 2}
+    - {fileID: 11400000, guid: 53cb2fea93cc77d4582f00905bd16bf7, type: 2}
+    - {fileID: 11400000, guid: 31e4329c2ba487649b2c6559ca3c8c58, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -31,8 +32,8 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 40
-    MoneyCost: 0
+    EgoCost: 0
+    MoneyCost: 500
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -43,10 +44,18 @@ MonoBehaviour:
   PreviewEffect: 1
   Result:
     Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: Forget it.  Here's your money back.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: I wish I was here under more pleasant circumstances.  You've heard the
-        news about Allison, I assume?
+      Text: What?  Didn't you hack her?  What's the issue?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -55,51 +64,10 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: I can't believe she didn't even give me a chance to make a counter-offer! 
-        You didn't have anything to do with this, did you?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: 'Of course I didn''t-- but I had to give her honest advice.  A counter-offer? 
-        They offered her the CEO positoon.  There really wasn''t anyway she was going
-        to turn that down.  '
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: No, I guess not.  I'm just glad you've been so involved in Marketing
-        lately.  I know you're getting overloaded but can you deal with the recruitment
-        for a new Marketing Director?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: Of course.  But may I suggest we upgrade the position?  Allison was terrific
-        but what we really need now in front of the IPO is a CMO-- a real heavy. 
-        Let's bump the package and go for it.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-    - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
-      Text: 'NOTE: Jennifer approves your suggestion.  You can now have Human Resources
-        begin recruiting for a new Chief Marketing Officer!'
+      Text: No, I didn't.  She's got damn good opsec for a normie.  You run into
+        it when you're dealing with very high level top end corporate types.  She's
+        got a triple redundancy home IT set-up-- Stephanie Tremont can't be hacked-
+        at least not by me.  Sorry dude.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -110,7 +78,7 @@ MonoBehaviour:
     Effect:
       NpcEffects: []
       EgoEffect: 0
-      FundsEffect: 0
+      FundsEffect: 500
       PowerEffect: 0
       PatentsEffect: 0
       CultureEffect: 0

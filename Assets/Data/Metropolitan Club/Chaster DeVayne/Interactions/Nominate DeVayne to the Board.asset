@@ -10,19 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Recruit a CMO
+  m_Name: Nominate DeVayne to the Board
   m_EditorClassIdentifier: 
-  Id: 420e258a-612e-4094-835c-eae9337bbbf9
-  Name: Recruit a CMO
+  Id: e3e2088b-69cb-4122-8504-07534b6b97ce
+  Name: Nominate DeVayne to the Board
   AlertNew: 1
-  Category: 0
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 1f89399409d8fa749a157e1fb5a51535, type: 2}
+    - {fileID: 11400000, guid: 4d720a733f63f2e43bc8bd46ebe138ec, type: 2}
+    - {fileID: 11400000, guid: 0b06f9d7774d3084399dd8586ff39f9a, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -31,7 +32,7 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 40
+    EgoCost: 0
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -43,20 +44,10 @@ MonoBehaviour:
   PreviewEffect: 1
   Result:
     Dialogs:
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: I wish I was here under more pleasant circumstances.  You've heard the
-        news about Allison, I assume?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: I can't believe she didn't even give me a chance to make a counter-offer! 
-        You didn't have anything to do with this, did you?
+      Text: You want a broken down old fool liek me?  Well, if you insist-- how can
+        I turn you down?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -65,31 +56,8 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: 'Of course I didn''t-- but I had to give her honest advice.  A counter-offer? 
-        They offered her the CEO positoon.  There really wasn''t anyway she was going
-        to turn that down.  '
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: No, I guess not.  I'm just glad you've been so involved in Marketing
-        lately.  I know you're getting overloaded but can you deal with the recruitment
-        for a new Marketing Director?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: Of course.  But may I suggest we upgrade the position?  Allison was terrific
-        but what we really need now in front of the IPO is a CMO-- a real heavy. 
-        Let's bump the package and go for it.
+      Text: No one knows the capital markets better than you, Chester-- you're a
+        brilliant add to my slate for the Artemis Board of Directors!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -98,8 +66,8 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 0}
-      Text: 'NOTE: Jennifer approves your suggestion.  You can now have Human Resources
-        begin recruiting for a new Chief Marketing Officer!'
+      Text: 'NOTE: Tremont boils as one of the five board seats is occupied by an
+        ally of yours!'
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -108,7 +76,11 @@ MonoBehaviour:
         width: 0
     OptionalPopups: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: ebaaad10ed98bd74d816bdeeb69716c5,
+          type: 2}
+        AmbitionEffect: -30
+        PrideEffect: 0
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
