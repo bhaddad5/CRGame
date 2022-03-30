@@ -44,10 +44,60 @@ MonoBehaviour:
   Repeatable: 0
   PreviewEffect: 1
   Result:
-    Dialogs: []
-    OptionalPopups: []
+    Dialogs:
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: You may not know this but I've been given responsibility for the International
+        Department.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: Oh!  Well, good for you!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: I don't think you understand.  Part of my remit includes managing our
+        VIsa sponsorship program.  I'm conducting a review of all Artemis work visas. 
+        I understand we sponsor you, Jocelyn.  May I have your passport for a review? 
+        I'll return it shortly.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: 'NOTE: Given the squirrely way she''s responding to this request, you
+        think an Interpol check might be in order here, just in case.  You''d need
+        to discuss this with the District Attorney and he''s usually easy to find
+        having a cocktail at the Metro... '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    OptionalPopups:
+    - Title: You casually claim...
+      Videos: []
+      Texture: {fileID: 2800000, guid: fdc99da9c3eda4d45a615d3d28a75a88, type: 3}
+      Text: ...the passport, noting Jocelyn Wong's extreme discomfort.
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: -30
+        PrideEffect: 0
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -61,7 +111,8 @@ MonoBehaviour:
       NpcsToTrain: []
       NpcsToRemoveFromGame: []
       LocationsToControl: []
-      TrophiesClaimedReferences: []
+      TrophiesClaimedReferences:
+      - {fileID: 11400000, guid: 92f14fcbd7f472945907b5590b050e88, type: 2}
       MissionsToComplete: []
       Car: 0
       Suits: 0
