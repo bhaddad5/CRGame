@@ -14,17 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: ebe689f6-dfde-4a2d-a433-faff8b33d4d4
   Name: Flirt with Jill
+  AlertNew: 1
   Category: 3
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 10f155596f68b504d931680746d77a7a, type: 2}
     - {fileID: 11400000, guid: 0267a58cfd112944c9890f78c8142ae7, type: 2}
-    RequiredNotCompletedInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: 397d68fc829516648b9f68a55e31e5e7, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -45,24 +46,50 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
+        type: 2}
       Text: What about drinks after work?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e84fa28c9b2465d4da4b8d52244709d2,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.35
+        width: 380
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
         type: 2}
       Text: Sorry-- I'm taken already.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e84fa28c9b2465d4da4b8d52244709d2,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.35
+        width: 380
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
+        type: 2}
       Text: I never see you with anyone.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e84fa28c9b2465d4da4b8d52244709d2,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.35
+        width: 380
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
         type: 2}
       Text: "Look, I kind of have a boyfriend. Walter\u2019s amazing\u2014he\u2019s
         doing charity work in Central America. I wish I could have gone with him."
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e84fa28c9b2465d4da4b8d52244709d2,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.35
+        width: 380
     OptionalPopups:
     - Title: '"Look, stop asking me out!"'
       Videos:
@@ -97,11 +124,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -131,9 +154,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   Completed: 0
+  New: 1
