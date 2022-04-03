@@ -24,6 +24,7 @@ namespace Assets.GameModel
 		public List<Interaction> VisibilityInteractions;
 		public List<Interaction> VisibilityNotCompletedInteractions;
 		public bool ClosedOnWeekends;
+		public bool ClosedOnWeekdays;
 
 		public List<Policy> Policies = new List<Policy>();
 		public List<Mission> Missions = new List<Mission>();
@@ -72,7 +73,14 @@ namespace Assets.GameModel
 		public bool IsAccessible(MainGameManager mgm)
 		{
 			var dayOfWeek = mgm.GetDateFromTurnNumber().DayOfWeek;
-			return !ClosedOnWeekends || (dayOfWeek != DayOfWeek.Saturday && dayOfWeek != DayOfWeek.Sunday);
+			bool isWeekend = dayOfWeek == DayOfWeek.Saturday || dayOfWeek == DayOfWeek.Sunday;
+
+			if (ClosedOnWeekdays && !isWeekend)
+				return false;
+			if (ClosedOnWeekends && isWeekend)
+				return false;
+
+			return true;
 		}
 	}
 }

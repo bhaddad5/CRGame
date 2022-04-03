@@ -12,6 +12,7 @@ public class StartingMenuBindings : MonoBehaviour
 
 	[SerializeField] private LoadSaveMenuBindings LoadSavePrefab;
 	[SerializeField] private PlayerNamePickerBindings NamePickerPrefab;
+	[SerializeField] private GameObject CreditsPrefab;
 
 	[SerializeField] private Button ContinueGameButton;
 
@@ -41,6 +42,12 @@ public class StartingMenuBindings : MonoBehaviour
 		//var popupParent = GameObject.Instantiate(UiPrefabReferences.Instance.PopupOverlayParent);
 		var loadSavePrefab = GameObject.Instantiate(LoadSavePrefab, transform);
 		loadSavePrefab.Setup(MainGameManager, false);
+	}
+
+	public void OpenCredits()
+	{
+		var popupParent = GameObject.Instantiate(UiPrefabReferences.Instance.PopupOverlayParent);
+		GameObject.Instantiate(CreditsPrefab, popupParent.transform);
 	}
 
 	public void ContinueGame()
