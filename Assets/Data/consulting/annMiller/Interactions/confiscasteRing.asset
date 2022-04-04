@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 0437852a-433e-4ba0-9baf-a546a8c485cb
   Name: Confiscate Engagement Ring
+  AlertNew: 1
   Category: 2
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 3890a82c1ad28d34e884a68e8ceddfe5, type: 2}
     RequiredNotCompletedInteractions: []
@@ -45,29 +45,58 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757,
+        type: 2}
       Text: I'm sorry about this.  These new rules are just crazy!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 55141d9bbfb6a184191303af7a279900,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 400
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757,
+        type: 2}
       Text: You damn well better keep it safe.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 55141d9bbfb6a184191303af7a279900,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 400
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757,
+        type: 2}
       Text: Of course.  Your engagement ring will be kept under lock and key.  No
         one will be able to steal it.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 55141d9bbfb6a184191303af7a279900,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 400
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757,
+        type: 2}
       Text: It just seems over the top but at least the company is trying to protect
         my property.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 55141d9bbfb6a184191303af7a279900,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 400
     OptionalPopups: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
-        AmbitionEffect: -15
-        PrideEffect: 0
+      - OptionalNpcReference: {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757,
+          type: 2}
+        AmbitionEffect: 0
+        PrideEffect: -15
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -91,11 +120,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -125,9 +150,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   Completed: 0
+  New: 1

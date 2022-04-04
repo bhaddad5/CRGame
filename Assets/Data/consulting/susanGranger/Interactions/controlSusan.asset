@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: acb555e9-7bd5-464d-9bcd-8128298c1ab0
   Name: 'Confront Susan Granger over her incompetence '
+  AlertNew: 1
   Category: 2
   Requirements:
     RequiredPower: 0
@@ -143,7 +144,8 @@ MonoBehaviour:
       BrandEffect: 0
       RevanueEffect: 0
       HornicalEffect: 0
-      NpcsToControl: []
+      NpcsToControl:
+      - {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a, type: 2}
       NpcsToTrain: []
       NpcsToRemoveFromGame: []
       LocationsToControl: []
@@ -156,6 +158,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -185,5 +188,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
   New: 1
