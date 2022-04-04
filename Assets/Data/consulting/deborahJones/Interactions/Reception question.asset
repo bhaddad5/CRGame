@@ -10,21 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Ask about the weather
+  m_Name: Reception question
   m_EditorClassIdentifier: 
-  Id: cf1f58e0-99b5-47cb-a782-ea1086a111b0
-  Name: Ask about the weather
+  Id: be95c452-3a55-4d6d-9bde-f3225ffb88eb
+  Name: Reception question
   AlertNew: 1
-  Category: 1
+  Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 9a0c065f05fc2e04ca50e7c1b1a1be45, type: 2}
+    - {fileID: 11400000, guid: 303c1cd1a81b3b347b4c9f9ef3a5af27, type: 2}
     RequiredNotCompletedInteractions:
-    - {fileID: 11400000, guid: fc02f17d89ade184bb3a64f5c10348c4, type: 2}
+    - {fileID: 11400000, guid: 1ceb3c5b2e0aac441a7fc25c3cfdc635, type: 2}
+    - {fileID: 11400000, guid: 69f9d7b181331d64690c1b7cc4bb51f1, type: 2}
+    - {fileID: 11400000, guid: 97adf71906b5d314395e4cfbba0eac96, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -32,7 +34,7 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 1
+    EgoCost: 5
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -47,20 +49,7 @@ MonoBehaviour:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
         type: 2}
-      Text: What an absolutely gorgeous day!  Do you think it'll last throughout
-        the week?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.68
-        yPos: 0.4
-        width: 400
-    - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
-        type: 2}
-      Text: Deborah arches an eyebrow, clearly unsure why you're talking to her about
-        the weather.
+      Text: Are you having any problems getting calls forwarded from Reception?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
         type: 3}
@@ -71,20 +60,8 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
         type: 2}
-      Text: "I really couldn't say\u2014I've recently been too busy to even catch
-        the weather forecast.  But I agree that it's been rather nice. "
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.68
-        yPos: 0.4
-        width: 400
-    - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
-        type: 2}
-      Text: Her head tilts quizzically to the side, silently asking you to hurry
-        up and get to the point.
+      Text: No.  She may be a bit of an airhead but she seems to handle Reception
+        ok-- not that it's a very hard job.  Why do you ask?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
         type: 3}
@@ -95,33 +72,7 @@ MonoBehaviour:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
         type: 2}
-      Text: 'Well, I hope it stays nice.  I really enjoy the effect warm weather
-        has on people. '
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.68
-        yPos: 0.4
-        width: 400
-    - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
-        type: 2}
-      Text: Your eyes greedily trace her form.  While you don't say anything else
-        out loud, you hope to see more of Deborah's legs and if the warm weather
-        allows for that, the hotter the better!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.68
-        yPos: 0.4
-        width: 400
-    - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
-        type: 2}
-      Text: Deborah's face stiffens as you catch a flash of disgust in her eyes towards
-        you.  She's undoubtedly read between the lines.
+      Text: I'm not sure I should say anything.  I don't want to get her into trouble.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
         type: 3}
@@ -132,8 +83,9 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
         type: 2}
-      Text: "Yes\u2014well, I better get back to work, ok?  You should do the same. 
-        We aren't being paid for idle chit-chat."
+      Text: Look {LastName}, I'm afraid I'm going to pull rank on you.  I'm senior
+        to you in the Management Trainee Program and I'm ordering you to tell me
+        what you're talking about!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
         type: 3}
@@ -141,12 +93,12 @@ MonoBehaviour:
         xPos: 0.68
         yPos: 0.4
         width: 400
-    - CurrSpeaker: 2
+    - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
         type: 2}
-      Text: She closes the door to her office in your face with a polite, but firm,
-        slam.  Why does she rate an office with a door and you are stuck in a crummy,
-        crampt little cubicle with no privacy?
+      Text: 'Ok, ok!  I caught her reading some trashy romance novel-- one of those
+        ''secretary horny for the boss'' type of things.  It wasn''t during a break
+        either.  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
         type: 3}
@@ -154,14 +106,13 @@ MonoBehaviour:
         xPos: 0.68
         yPos: 0.4
         width: 400
-    - CurrSpeaker: 2
+    - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
         type: 2}
-      Text: 'NOTE: As much as you hate to admit it, Deborah is one of the hottest
-        girls in the office.  You could flirt with her and press your luck.  On the
-        other hand, she might make trouble for you if you do.  You figure it''s a
-        fifty-fifty proposition.  Manage to warm her up and you''ll score some major
-        cred.  Fail and you might get called into HR with a sexual harassment complaint...         '
+      Text: What?  Reading sexist trash like that just rots what passes for her brain! 
+        We don't want visitors seeing her reading nonsense like that!  You did the
+        right thing.  I'll speak to Susan at once.  Britney's in for a severe reprimand! 
+        Don't worry-- your name won't come up!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
         type: 3}
@@ -169,14 +120,13 @@ MonoBehaviour:
         xPos: 0.68
         yPos: 0.4
         width: 400
-    OptionalPopups:
-    - Title: Deborah seems very self-absorbed...
-      Videos:
-      - {fileID: 32900000, guid: 78164ebac36fe714189ef0dd11d4116f, type: 3}
-      Texture: {fileID: 0}
-      Text: It seems as if she thinks she's the center of the universe sometimes.
+    OptionalPopups: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
+          type: 2}
+        AmbitionEffect: -6
+        PrideEffect: -6
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0

@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: clientEntertainment
+  m_Name: Lose Anne's TPS
   m_EditorClassIdentifier: 
-  Id: 61b12596-8465-458d-b64c-260dc12535be
-  Name: Client Entertainment
+  Id: 530fd24c-cb8e-4638-a9ca-c49c0960c982
+  Name: Lose Anne's TPS
   AlertNew: 1
   Category: 4
   Requirements:
@@ -21,15 +21,12 @@ MonoBehaviour:
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
-    RequiredInteractions:
-    - {fileID: 11400000, guid: 64c108dc2ac4a5040b07c1391a27dc2d, type: 2}
-    - {fileID: 11400000, guid: 6d4d98897d6d00f498114ad95639cafe, type: 2}
-    - {fileID: 11400000, guid: 1a4464e75b2f2d04abdebb7bdf5e2078, type: 2}
+    RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled:
-    - {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757, type: 2}
+    - {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954, type: 2}
     RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
     RequiredTrophies: []
@@ -47,60 +44,32 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757,
-        type: 2}
-      Text: You're certainly dressed for the part, aren't you?
+      OptionalNpcReference: {fileID: 0}
+      Text: I predict Anne's TPS is going to mysteriously disappear.  Maybe it ends
+        up in the circular file by accident.  What do you think?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 55141d9bbfb6a184191303af7a279900,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.37
-        width: 400
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757,
-        type: 2}
-      Text: Whatever brings the deals in, right?
+      OptionalNpcReference: {fileID: 0}
+      Text: Whatever you say.  I don't care about that bitch one way or the other. 
+        Consider it disappeared.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 55141d9bbfb6a184191303af7a279900,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.37
-        width: 400
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757,
-        type: 2}
-      Text: Absolutely correct Miller.  Good luck!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 55141d9bbfb6a184191303af7a279900,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.37
-        width: 400
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757,
-        type: 2}
-      Text: 'Thanks-- I think. '
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 55141d9bbfb6a184191303af7a279900,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.37
-        width: 400
-    OptionalPopups:
-    - Title: She makes an excellent oral pitch!
-      Videos:
-      - {fileID: 32900000, guid: c1d4620d71e9bad429640f92d0c3f05e, type: 3}
-      Texture: {fileID: 0}
-      Text: Revenue is starting to come in as a result of Anne's new sales approach!
+        xPos: 0
+        yPos: 0
+        width: 0
+    OptionalPopups: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
-        AmbitionEffect: 0
-        PrideEffect: -10
+      - OptionalNpcReference: {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757,
+          type: 2}
+        AmbitionEffect: -4
+        PrideEffect: 0
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -108,7 +77,7 @@ MonoBehaviour:
       CultureEffect: 0
       SpreadsheetsEffect: 0
       BrandEffect: 0
-      RevanueEffect: 1
+      RevanueEffect: 0
       HornicalEffect: 0
       NpcsToControl: []
       NpcsToTrain: []

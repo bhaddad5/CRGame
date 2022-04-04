@@ -10,31 +10,34 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: clientEntertainment
+  m_Name: Ask advice about Sales
   m_EditorClassIdentifier: 
-  Id: 61b12596-8465-458d-b64c-260dc12535be
-  Name: Client Entertainment
+  Id: 89c76ef1-c4cd-462f-97ca-09eb5c1f9208
+  Name: Ask advice about Sales
   AlertNew: 1
-  Category: 4
+  Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcStatRequirements: []
-    RequiredInteractions:
-    - {fileID: 11400000, guid: 64c108dc2ac4a5040b07c1391a27dc2d, type: 2}
-    - {fileID: 11400000, guid: 6d4d98897d6d00f498114ad95639cafe, type: 2}
-    - {fileID: 11400000, guid: 1a4464e75b2f2d04abdebb7bdf5e2078, type: 2}
-    RequiredNotCompletedInteractions: []
+    NpcStatRequirements:
+    - OptionalNpcReference: {fileID: 0}
+      Stat: 0
+      Is: 0
+      Value: 110
+    RequiredInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: 1ceb3c5b2e0aac441a7fc25c3cfdc635, type: 2}
+    - {fileID: 11400000, guid: 69f9d7b181331d64690c1b7cc4bb51f1, type: 2}
+    - {fileID: 11400000, guid: 97adf71906b5d314395e4cfbba0eac96, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
-    RequiredNpcsControled:
-    - {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757, type: 2}
+    RequiredNpcsControled: []
     RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 0
+    EgoCost: 10
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -47,60 +50,64 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757,
-        type: 2}
-      Text: You're certainly dressed for the part, aren't you?
+      OptionalNpcReference: {fileID: 0}
+      Text: I hope you don't mind.  I could really use some adice and since you've
+        been here longer--
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 55141d9bbfb6a184191303af7a279900,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.37
-        width: 400
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757,
-        type: 2}
-      Text: Whatever brings the deals in, right?
+      OptionalNpcReference: {fileID: 0}
+      Text: Sure- I'm senior to you.  If I can help, I might.  What's the situation?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 55141d9bbfb6a184191303af7a279900,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.37
-        width: 400
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757,
-        type: 2}
-      Text: Absolutely correct Miller.  Good luck!
+      OptionalNpcReference: {fileID: 0}
+      Text: Well, it's Anne Miller.  My understanding was that I was placed in this
+        department to larn and she seems so stand-offish.  I get the impression she
+        thinks the department is a joke and doesn't think she needs to explain herself
+        to a mere Management Trainee!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 55141d9bbfb6a184191303af7a279900,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.37
-        width: 400
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757,
-        type: 2}
-      Text: 'Thanks-- I think. '
+      OptionalNpcReference: {fileID: 0}
+      Text: 'If Miller thinks she''s above cooperating with a Management Trainee,
+        she better be reminded that she''s just a sales rep.  I''ll speak to Susan. 
+        I''m glad you brought this to me.  You may be worth keeping on.  How would
+        you like working for me someday? '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 55141d9bbfb6a184191303af7a279900,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.37
-        width: 400
-    OptionalPopups:
-    - Title: She makes an excellent oral pitch!
-      Videos:
-      - {fileID: 32900000, guid: c1d4620d71e9bad429640f92d0c3f05e, type: 3}
-      Texture: {fileID: 0}
-      Text: Revenue is starting to come in as a result of Anne's new sales approach!
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: I suppose that would be ok.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    OptionalPopups: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
-        AmbitionEffect: 0
-        PrideEffect: -10
+      - OptionalNpcReference: {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757,
+          type: 2}
+        AmbitionEffect: -6
+        PrideEffect: 0
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -108,7 +115,7 @@ MonoBehaviour:
       CultureEffect: 0
       SpreadsheetsEffect: 0
       BrandEffect: 0
-      RevanueEffect: 1
+      RevanueEffect: 0
       HornicalEffect: 0
       NpcsToControl: []
       NpcsToTrain: []
