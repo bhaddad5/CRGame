@@ -14,16 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 1554fc2a-5da2-49c6-96a9-5d48863ef9ce
   Name: Show off a new purchase
+  AlertNew: 1
   Category: 5
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 0ee47b53008d0f7478c9c09b72deb538, type: 2}
-    RequiredNotCompletedInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: c100a2206307df44d8a5f6485f601098, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -53,6 +54,11 @@ MonoBehaviour:
       - {fileID: 2800000, guid: 073fb341714f51c4e92f07f0806f1117, type: 3}
       - {fileID: 2800000, guid: af240d589989dd243bf30057c1e2761f, type: 3}
       - {fileID: 2800000, guid: af564c0f74b94b04eb51e0f9ebfb84d1, type: 3}
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     OptionalPopups: []
     Effect:
       NpcEffects:
@@ -81,11 +87,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -115,9 +117,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   Completed: 0
+  New: 1
