@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: df6954c6-c10c-4389-832e-b3b7a5740c11
   Name: Jones Wardrobe compliance
+  AlertNew: 1
   Category: 4
   Requirements:
     RequiredPower: 0
@@ -116,6 +117,19 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.45
         width: 410
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
+        type: 2}
+      Text: 'NOTE: Debbie won''t have enough money to replace her old clothes with
+        new "position appropriate".  She''ll be forced to ask for an adavnce of $3000--
+        but the results will be well worth it.'
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 015acc2fd3767b24a9d137be3d709390,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.45
+        width: 410
     OptionalPopups: []
     Effect:
       NpcEffects:
@@ -145,6 +159,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -174,4 +189,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1

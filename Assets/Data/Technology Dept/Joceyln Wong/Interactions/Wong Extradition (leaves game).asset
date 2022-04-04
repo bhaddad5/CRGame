@@ -21,7 +21,8 @@ MonoBehaviour:
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: fd4ccf5f57a9f6748a7d66e6bdc43165, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -43,17 +44,19 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: a41d8fa3ed6f76a44b0814daec2c238f,
+        type: 2}
       Text: 'NOTE: The surprise arrest of the suspected industrial spy shocked everyone. 
         Your own role in uncovering her and aiding wth her extradition allowed Jennifer
         Page to avoid embarassment by immediately placing you in control of the Technology
         Department. '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 30cbfea0afa8ff34caee8bce830502c7,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.4
+        yPos: 0.4
+        width: 300
     OptionalPopups:
     - Title: Major Xiao Zihao's thank you note...
       Videos:
