@@ -14,31 +14,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 1e35566a-997e-4018-b7fc-e8f115d4b7b1
   Name: Fuck Tracey Bledsoe
+  AlertNew: 1
   Category: 6
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements:
-    - OptionalNpcReference: {fileID: 0}
-      Stat: 0
-      Is: 0
-      Value: 0
-      RequiresStatBelow: 20
     NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
+    - OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
+        type: 2}
       Stat: 1
       Is: 0
       Value: 20
-      RequiresStatBelow: 0
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
-    RequiredNpcsControled:
+    RequiredNpcsControled: []
+    RequiredNpcsTrained:
     - {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c, type: 2}
-    RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
@@ -55,11 +49,18 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
+        type: 2}
       Text: See how nice life can be once you've let all that silly pride go?  Aren't
         you happier now than you ever have been?  Just lay back and enjoy, like a
         good girl.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 1ff9ec7b19ed8564f83c2e483f5d71a3,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.37
+        yPos: 0.44
+        width: 400
     OptionalPopups:
     - Title: Tell me how much you like it!
       Videos:
@@ -90,11 +91,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -124,9 +121,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   Completed: 0
+  New: 1

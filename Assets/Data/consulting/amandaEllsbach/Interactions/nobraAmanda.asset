@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 991b4b68-c39a-4ddd-b59d-979ae426881f
   Name: No Bra Club
+  AlertNew: 1
   Category: 5
   Requirements:
     RequiredPower: 0
@@ -90,7 +91,7 @@ MonoBehaviour:
     OptionalPopups:
     - Title: You jam it in your pocket.
       Videos: []
-      Texture: {fileID: 2800000, guid: 4559758efd529694ba6bde5acb2b4fc7, type: 3}
+      Texture: {fileID: 2800000, guid: 86bd4884e2cd0f84aaa05ca04e8ca0b1, type: 3}
       Text: Flatsy's favourite bra!
     Effect:
       NpcEffects:
@@ -111,7 +112,8 @@ MonoBehaviour:
       NpcsToTrain: []
       NpcsToRemoveFromGame: []
       LocationsToControl: []
-      TrophiesClaimedReferences: []
+      TrophiesClaimedReferences:
+      - {fileID: 11400000, guid: 34625e40005c27e4cb64184b230d97cc, type: 2}
       MissionsToComplete: []
       Car: 0
       Suits: 0
@@ -120,6 +122,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -149,5 +152,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
   New: 1

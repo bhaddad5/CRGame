@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 6c4bd0eb-801c-4ffb-bca9-f162ce3eb9d2
   Name: Resource Mis-allocation Report
+  AlertNew: 1
   Category: 2
   Requirements:
     RequiredPower: 0
@@ -26,7 +27,8 @@ MonoBehaviour:
       Is: 0
       Value: 90
     RequiredInteractions: []
-    RequiredNotCompletedInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: 54512c59c3e72be44aa1c1ce158b0702, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -111,6 +113,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -140,4 +143,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1

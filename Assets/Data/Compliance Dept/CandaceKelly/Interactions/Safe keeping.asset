@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 54244504-a5da-4cea-87fd-8f184ba26927
   Name: Safe keeping
+  AlertNew: 1
   Category: 2
   Requirements:
     RequiredPower: 0
@@ -114,7 +115,7 @@ MonoBehaviour:
     OptionalPopups:
     - Title: Office theft is a serious problem!
       Videos: []
-      Texture: {fileID: 2800000, guid: e07d077b9c086e3468cf4aae53f5389b, type: 3}
+      Texture: {fileID: 2800000, guid: f6fa7a205cba94546bd21ceba1714b80, type: 3}
       Text: Candace Kelly's wedding ring
     Effect:
       NpcEffects:
@@ -135,7 +136,8 @@ MonoBehaviour:
       NpcsToTrain: []
       NpcsToRemoveFromGame: []
       LocationsToControl: []
-      TrophiesClaimedReferences: []
+      TrophiesClaimedReferences:
+      - {fileID: 11400000, guid: 15d893b4e7696c247b92dd2bb2116dd0, type: 2}
       MissionsToComplete: []
       Car: 0
       Suits: 0
@@ -144,6 +146,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -173,5 +176,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
   New: 1

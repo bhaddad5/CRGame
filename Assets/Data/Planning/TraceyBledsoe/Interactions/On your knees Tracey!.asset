@@ -14,31 +14,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: d189d9ad-42c2-47a6-b596-10133caa38b8
   Name: On your knees Tracey!
+  AlertNew: 1
   Category: 6
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements:
-    - OptionalNpcReference: {fileID: 0}
-      Stat: 0
-      Is: 0
-      Value: 0
-      RequiresStatBelow: 50
     NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
+    - OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
+        type: 2}
       Stat: 1
       Is: 0
       Value: 50
-      RequiresStatBelow: 0
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
-    RequiredNpcsControled:
+    RequiredNpcsControled: []
+    RequiredNpcsTrained:
     - {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c, type: 2}
-    RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
@@ -55,9 +49,16 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
+        type: 2}
       Text: There's nothing better than getting a blowjob from your old boss's boss!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 1ff9ec7b19ed8564f83c2e483f5d71a3,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.37
+        yPos: 0.44
+        width: 400
     OptionalPopups:
     - Title: Suck it up, Tracey!
       Videos:
@@ -67,7 +68,8 @@ MonoBehaviour:
       Text: 
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
+          type: 2}
         AmbitionEffect: 0
         PrideEffect: -3
       EgoEffect: 10
@@ -92,11 +94,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -126,9 +124,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   Completed: 0
+  New: 1

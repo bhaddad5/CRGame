@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 23e7bd32-0d2b-4718-bf19-a26b25533a20
   Name: Daily pill
+  AlertNew: 1
   Category: 3
   Requirements:
     RequiredPower: 0
@@ -22,7 +23,8 @@ MonoBehaviour:
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: d087b4b747ce9c947a103524f9c9cff3, type: 2}
-    RequiredNotCompletedInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: 54512c59c3e72be44aa1c1ce158b0702, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -119,6 +121,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -148,4 +151,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1
