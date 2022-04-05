@@ -1,0 +1,211 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: A bottom line issue
+  m_EditorClassIdentifier: 
+  Id: 69483dfc-80bb-4106-b19c-9304d8d627ac
+  Name: A bottom line issue
+  AlertNew: 1
+  Category: 5
+  Requirements:
+    RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
+    NpcStatRequirements:
+    - OptionalNpcReference: {fileID: 0}
+      Stat: 1
+      Is: 0
+      Value: 75
+    RequiredInteractions:
+    - {fileID: 11400000, guid: ad29c9153e0f84b459003c01e120aea2, type: 2}
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredNpcsControled:
+    - {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06, type: 2}
+    RequiredNpcsTrained: []
+    RequiredNpcsNotControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 0
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    HornicalCost: 0
+  Repeatable: 0
+  PreviewEffect: 1
+  Result:
+    Dialogs:
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: 'Debbie, we have a problem.  You seem like a bright, clever girl but
+        time after time you need correction!  Your failure to learn from your mistakes
+        is becoming a bottom line issue.  I''m beginning to think you require more
+        strict correction and oversight.   '
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: c87be18aa92428d4f9cb0e2a703ad9dd, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: '{FirstName}-- sorry, Mr. {LastName}-- I''m tired of being treated like
+        a schoolgirl.  I''m a professional.  You''re so damned picky about everything
+        I do and the way I do it!  It''s like I can''t do anything right!  Can''t
+        you just give me some breathing space-- please?'
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: c87be18aa92428d4f9cb0e2a703ad9dd, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: 'What I can give you young lady is a pink slip!  Even the way you''re
+        talking back now is just another sign I''ve been to lenient with you.  I
+        have no choice but to give you ten demerits for this juvenile display of
+        disrespect!   '
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: c87be18aa92428d4f9cb0e2a703ad9dd, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: Ten?  Ten?  That's a whole week's pay!  I can't afford to lose a week's
+        worth of salary!
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: c87be18aa92428d4f9cb0e2a703ad9dd, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: 'There might be an alternative.  Other than demerits, I have no other
+        way of disciplining you-- and you dearly need it if you''re ever to become
+        a proficient secretary.  Unless you allow me another unofficial method of
+        correcting you-- but I doubt you''ll like it.    '
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: c87be18aa92428d4f9cb0e2a703ad9dd, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: 'What is it?  Mr. {LastName}, you know how much I need this job.  I''d
+        be... open to suggestions.    '
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: c87be18aa92428d4f9cb0e2a703ad9dd, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Well, if you were to accept corporal correction in lieu of official demerits,
+        I think we'd both achieve our goals.  I'd be confident you were learning
+        your lesson and you'd avoid the paycheck deductions.
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: c87be18aa92428d4f9cb0e2a703ad9dd, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+    OptionalPopups:
+    - Title: Debbie's final acquiesence...
+      Videos:
+      - {fileID: 32900000, guid: 6745e2d5a835e094882dfa0e6dbe4555, type: 3}
+      Texture: {fileID: 0}
+      Text: ...hurts her pride more than the over the knee spanking you administer. 
+        She even manages to keep from bursting into tears-- this time.  That won't
+        be true in the future though!
+    Effect:
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: 0
+        PrideEffect: -5
+      EgoEffect: 15
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
+  FailureResult:
+    Dialogs: []
+    OptionalPopups: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+  Completed: 0
+  New: 1

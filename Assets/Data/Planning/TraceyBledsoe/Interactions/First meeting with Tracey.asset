@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 649a58cd-3d1f-4832-9eb5-0920073772a7
   Name: First meeting with Tracey
+  AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
@@ -173,6 +174,19 @@ MonoBehaviour:
         xPos: 0.37
         yPos: 0.44
         width: 400
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
+        type: 2}
+      Text: 'ALSO: Ms. Bledsoe can introduce you to department heads throughout the
+        rest of the company.  Take advantage of these introductions so you can begin
+        interacting with other managers in the company!'
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 1ff9ec7b19ed8564f83c2e483f5d71a3,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.37
+        yPos: 0.44
+        width: 400
     OptionalPopups:
     - Title: '"I like to meet all of my reports."'
       Videos:
@@ -204,6 +218,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -233,4 +248,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1

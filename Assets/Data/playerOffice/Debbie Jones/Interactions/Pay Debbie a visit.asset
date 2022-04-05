@@ -23,6 +23,7 @@ MonoBehaviour:
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: c3f21101baafc0244a0e117aa24d025d, type: 2}
+    - {fileID: 11400000, guid: a78b7f71166b86b41a7d572f413a1e1e, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -71,10 +72,12 @@ MonoBehaviour:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: As your manager, I have a copy of your key.  I was just having a look
-        around.  You have a nice place!
+      Text: 'Do I have to remind you that as your manager, I have a copy of your
+        key?  I was just having a look around.  So this is the place you had to move
+        to after your demotion!  It''s small but at least it is affordable  And look
+        how cozy you''ve made it!  '
       CustomNpcImageOptions:
-      - {fileID: 2800000, guid: 2a6ca242a5b5ec6429e14333da197408, type: 3}
+      - {fileID: 2800000, guid: b3e0eb5173a03f645a2b56187db6e135, type: 3}
       CustomBackground: {fileID: 2800000, guid: 61b64585fd866e24abdb56454bb4236a,
         type: 3}
       CustomBackgroundNpcLayout:
@@ -84,8 +87,9 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: I thought that policy was just for employee safety!  I'd like you to
-        leave please!
+      Text: I thought that policy was just for employee safety!  I didn't think you
+        could just take my key!  I'd like you to leave please!  This is my home. 
+        With respect, but you just can't drop by when you like, Mr. {LastName}!
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: b3e0eb5173a03f645a2b56187db6e135, type: 3}
       CustomBackground: {fileID: 2800000, guid: 61b64585fd866e24abdb56454bb4236a,
@@ -110,7 +114,10 @@ MonoBehaviour:
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: 'NOTE: You leave Debbie''s apartment, but not empty handed!'
+      Text: 'NOTE: You can''t imagine yourself living in such a crummy little dump
+        like this these days.  But for a secretary barely clinging to an office job,
+        you suppose it is more than adequate for a lower class girl like Debbie. 
+        You leave her apartment, but not empty handed!'
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: b3e0eb5173a03f645a2b56187db6e135, type: 3}
       CustomBackground: {fileID: 2800000, guid: 61b64585fd866e24abdb56454bb4236a,
@@ -147,7 +154,8 @@ MonoBehaviour:
       NpcsToTrain: []
       NpcsToRemoveFromGame: []
       LocationsToControl: []
-      TrophiesClaimedReferences: []
+      TrophiesClaimedReferences:
+      - {fileID: 11400000, guid: a6007ec588ac4bc43becd701c6b75cd1, type: 2}
       MissionsToComplete: []
       Car: 0
       Suits: 0

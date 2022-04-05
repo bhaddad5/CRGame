@@ -14,15 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: e382881d-5b5b-42fc-8b82-682af8269a53
   Name: Crisis in Planning
+  AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: c61e3f17bafbacc4d84307df6336376d, type: 2}
+    - {fileID: 11400000, guid: 5df064a524845654a9d5272eaea2149d, type: 2}
     RequiredNotCompletedInteractions:
     - {fileID: 11400000, guid: 54512c59c3e72be44aa1c1ce158b0702, type: 2}
     RequiredPolicies: []
@@ -50,11 +51,24 @@ MonoBehaviour:
       Text: Tracey's mental breakdown is extremely distressing!  I understand she's
         been collected by the clinic?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.7
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: be12a51bf8ae5c343a38ccd5b80d8007,
+        type: 2}
       Text: Yes.  She's currently in the care of Pry Medical.  Tracey's in good hands. 
         Let's hope she makes a speedy recovery.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.7
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: be12a51bf8ae5c343a38ccd5b80d8007,
         type: 2}
@@ -63,11 +77,24 @@ MonoBehaviour:
         While you've only been with Artemis for a short time, you have demonstrated
         that kind of leadership.  I want you to take over, effective immediately.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.7
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: be12a51bf8ae5c343a38ccd5b80d8007,
+        type: 2}
       Text: It would be an honour to take on such responsibility.  Thank you for
         your confidence in me!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.7
+        yPos: 0.4
+        width: 350
     OptionalPopups: []
     Effect:
       NpcEffects: []
@@ -95,11 +122,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -129,9 +152,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   Completed: 0
+  New: 1
