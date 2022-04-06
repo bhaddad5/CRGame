@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 57629297-171a-4433-9731-424f74592554
   Name: Val mounts the pole
+  AlertNew: 1
   Category: 5
   Requirements:
     RequiredPower: 0
@@ -23,7 +24,8 @@ MonoBehaviour:
     RequiredInteractions:
     - {fileID: 11400000, guid: 31537bc8527b31748945be063fc1384a, type: 2}
     - {fileID: 11400000, guid: c974028dfdf798e41856a6bf0e7e4ce0, type: 2}
-    RequiredNotCompletedInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: f3a4aff1b107f4948b9c6d53a1aa324d, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -77,6 +79,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -106,4 +109,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1

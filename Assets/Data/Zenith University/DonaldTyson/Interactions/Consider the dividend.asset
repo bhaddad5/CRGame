@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: b62f8ae8-e904-4fb2-83f8-214c07763755
   Name: Consider the dividend
+  AlertNew: 1
   Category: 3
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: ba54dced750464e4dbb4db3d8d79ec34, type: 2}
     RequiredNotCompletedInteractions: []
@@ -40,37 +40,81 @@ MonoBehaviour:
     RevanueCost: 0
     HornicalCost: 0
   Repeatable: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 49c059802b4b2a842be5a5c55f4435f6,
+        type: 2}
       Text: 'Candace isn''t exactly keeping your affair very secret around the office.  '
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7f239f2c1dffed941ad3536b63160463,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 270
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 49c059802b4b2a842be5a5c55f4435f6,
         type: 2}
       Text: I don't care.  It is nice to have Carole on the back foot.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7f239f2c1dffed941ad3536b63160463,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 270
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 49c059802b4b2a842be5a5c55f4435f6,
+        type: 2}
       Text: Did you know there's a dividend waiting?  Candace has a daughter-- Dierdre.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7f239f2c1dffed941ad3536b63160463,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 270
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 49c059802b4b2a842be5a5c55f4435f6,
         type: 2}
       Text: Does she?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7f239f2c1dffed941ad3536b63160463,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 270
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 49c059802b4b2a842be5a5c55f4435f6,
+        type: 2}
       Text: 'You should drop in and introduce yourself.  She''s a real cutie.  '
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7f239f2c1dffed941ad3536b63160463,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 270
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 49c059802b4b2a842be5a5c55f4435f6,
         type: 2}
       Text: I think I shall!
       CustomNpcImageOptions: []
-    OptionalPopups: []
+      CustomBackground: {fileID: 2800000, guid: 7f239f2c1dffed941ad3536b63160463,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 270
+    OptionalPopups:
+    - Title: You share a school photo of Deirdre...
+      Videos:
+      - {fileID: 32900000, guid: 7eaeee6f76cea2046b3546827389e803, type: 3}
+      Texture: {fileID: 0}
+      Text: ...to plant a seed with Professor Tyson.
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -95,11 +139,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -129,9 +169,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   Completed: 0
+  New: 1

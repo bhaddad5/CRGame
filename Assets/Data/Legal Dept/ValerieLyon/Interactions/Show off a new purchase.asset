@@ -24,7 +24,7 @@ MonoBehaviour:
     RequiredInteractions:
     - {fileID: 11400000, guid: 0ee47b53008d0f7478c9c09b72deb538, type: 2}
     RequiredNotCompletedInteractions:
-    - {fileID: 11400000, guid: c100a2206307df44d8a5f6485f601098, type: 2}
+    - {fileID: 11400000, guid: f3a4aff1b107f4948b9c6d53a1aa324d, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -45,7 +45,8 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
+        type: 2}
       Text: Jackson will, I daresay, approve!
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: 3b513cff007992c45bdafbd2ed00e1b6, type: 3}
@@ -54,15 +55,17 @@ MonoBehaviour:
       - {fileID: 2800000, guid: 073fb341714f51c4e92f07f0806f1117, type: 3}
       - {fileID: 2800000, guid: af240d589989dd243bf30057c1e2761f, type: 3}
       - {fileID: 2800000, guid: af564c0f74b94b04eb51e0f9ebfb84d1, type: 3}
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: edfe5a8c966778f48bee8b34e3566c9b,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
     OptionalPopups: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
+          type: 2}
         AmbitionEffect: 0
         PrideEffect: -3
       EgoEffect: 0
