@@ -14,28 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: d9033a66-1fe9-4475-95a9-19fc8360b770
   Name: Suggest a temporary hiring freeze
+  AlertNew: 1
   Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements:
-    - OptionalNpcReference: {fileID: 11400000, guid: f42fb56e29e0b374386530f7e2189a62,
-        type: 2}
-      Stat: 0
-      Is: 0
-      Value: 0
-      RequiresStatBelow: 90
-    NpcPrideRequirements: []
     NpcStatRequirements:
     - OptionalNpcReference: {fileID: 11400000, guid: f42fb56e29e0b374386530f7e2189a62,
         type: 2}
       Stat: 0
       Is: 0
       Value: 90
-      RequiresStatBelow: 0
     RequiredInteractions: []
-    RequiredNotCompletedInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: 6089b1575ae1a6343bcf9dff7a1d3ae9, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -60,23 +53,49 @@ MonoBehaviour:
         type: 2}
       Text: You said you wanted to discuss a hiring freeze?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 793d3fec56c01544bbb8a217b63e918a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.4
+        width: 300
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: f42fb56e29e0b374386530f7e2189a62,
+        type: 2}
       Text: Just a temporary one. I think it might send a message to current staff
         that they might want to up their game.  A little uncertainty goes a long
         way in shaking things up.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 793d3fec56c01544bbb8a217b63e918a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.4
+        width: 300
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: f42fb56e29e0b374386530f7e2189a62,
         type: 2}
       Text: I see.  Well, I might bounce the idea around, based on your suggestion.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 793d3fec56c01544bbb8a217b63e918a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.4
+        width: 300
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: f42fb56e29e0b374386530f7e2189a62,
+        type: 2}
       Text: 'I think it would help us shore up the corporate culture a bit.  A temporary
         hiring freeze would inject a little fear that could prove quite salutary
         on productivity.  '
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 793d3fec56c01544bbb8a217b63e918a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.4
+        width: 300
     OptionalPopups: []
     Effect:
       NpcEffects: []
@@ -102,11 +121,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -136,9 +151,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   Completed: 0
+  New: 1

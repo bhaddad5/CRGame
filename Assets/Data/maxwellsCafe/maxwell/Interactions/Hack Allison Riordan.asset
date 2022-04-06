@@ -25,6 +25,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 5c6a3982fe7f0c14cb2ba5f86c0c0291, type: 2}
     - {fileID: 11400000, guid: 69d345b6bf7ed5c478bd3120368020dd, type: 2}
     - {fileID: 11400000, guid: 53cb2fea93cc77d4582f00905bd16bf7, type: 2}
+    - {fileID: 11400000, guid: bc3d1a6f5ed75f445a24180ded77cb66, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -33,8 +34,8 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 500
-    MoneyCost: 0
+    EgoCost: 0
+    MoneyCost: 500
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -46,14 +47,16 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: dca0ed3955970e54c921b2067f1fdcfe,
+        type: 2}
       Text: OK- you can plant a spycam and surveil Allison now.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: e8e650c737c3e4844836771a2cbd6d15,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.6
+        yPos: 0.3
+        width: 380
     OptionalPopups: []
     Effect:
       NpcEffects: []

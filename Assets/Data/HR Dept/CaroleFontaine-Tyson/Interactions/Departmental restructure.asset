@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: f334c761-59c5-4496-b0c7-742a7cef3068
   Name: Departmental restructure
+  AlertNew: 1
   Category: 2
   Requirements:
     RequiredPower: 0
@@ -43,59 +44,83 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: f42fb56e29e0b374386530f7e2189a62,
+        type: 2}
       Text: I've been considering your value to the company and since I no longer
         place much value in your weak executive skills, that you'd be better suited
         to another role.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 793d3fec56c01544bbb8a217b63e918a,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.6
+        yPos: 0.4
+        width: 300
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: f42fb56e29e0b374386530f7e2189a62,
+        type: 2}
       Text: I see.  What did you have in mind-- and who will carry out my current
         duties?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 793d3fec56c01544bbb8a217b63e918a,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.6
+        yPos: 0.4
+        width: 300
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: f42fb56e29e0b374386530f7e2189a62,
+        type: 2}
       Text: I think Jada Baxter will do just fine for the time being-- until I can
         recruit a proper HR Director.  As for you, I suppose some trainer job might
         be found for you.  How's that?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 793d3fec56c01544bbb8a217b63e918a,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.6
+        yPos: 0.4
+        width: 300
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: f42fb56e29e0b374386530f7e2189a62,
+        type: 2}
       Text: I'd be grateful for that.  Thank you for keeping me on.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 793d3fec56c01544bbb8a217b63e918a,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.6
+        yPos: 0.4
+        width: 300
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: f42fb56e29e0b374386530f7e2189a62,
+        type: 2}
+      Text: Excellent.  I'd like you to begin working on a rev-vamped Diversity program
+        for our admin staff.  I have some specific ideas I'll share with you and
+        you can turn it all into a proper training program for us.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 793d3fec56c01544bbb8a217b63e918a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.4
+        width: 300
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: f42fb56e29e0b374386530f7e2189a62,
+        type: 2}
       Text: 'NOTE: You may now instruct Jada to begin recruiting for a new HR Director.'
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 793d3fec56c01544bbb8a217b63e918a,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.6
+        yPos: 0.4
+        width: 300
     OptionalPopups: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: f42fb56e29e0b374386530f7e2189a62,
+          type: 2}
         AmbitionEffect: 0
         PrideEffect: -50
       EgoEffect: 50
@@ -120,6 +145,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -149,4 +175,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1

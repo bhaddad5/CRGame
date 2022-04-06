@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Diversity Certification
   m_EditorClassIdentifier: 
   Id: 4757fb18-31d2-46ee-aeba-16e8ee7398ae
-  Name: Diversity Certification
+  Name: Sign Debbie up for Diversity Training
   AlertNew: 1
   Category: 5
   Requirements:
@@ -21,7 +21,8 @@ MonoBehaviour:
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 381d484ff8acb614f8df836c8b1db9a6, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies:
     - {fileID: 11400000, guid: c269ad114599cad449cc092066909217, type: 2}
@@ -82,7 +83,9 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: Sure.  Whatever.  I mean I'm very open-minded already, Sir.
+      Text: Sure.  Very much so!  I mean I'm very open-minded already, Sir.  I'm
+        a proud feminist!  And I mean I did the Corporate Values training when I
+        started-- just like you did.  Is this a new HR program?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
         type: 3}
@@ -93,7 +96,9 @@ MonoBehaviour:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: That's good because you'll have to be, young lady.
+      Text: It is.  Carole has put together a more... comprehensive program at my
+        instruction.  One I'm sure you'll benefit from.  Here's a ribbon identifying
+        you as having been signed up for the Diversity Training Program!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
         type: 3}
@@ -102,20 +107,18 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
     OptionalPopups:
-    - Title: Begin Debbie's Diversity Training
+    - Title: Debbie eagerly pins on the ribbon.
       Videos:
-      - {fileID: 32900000, guid: d1a3388b7c1e9424eba8e0539fe124d3, type: 3}
+      - {fileID: 32900000, guid: 99134571d75b35c4bbb1aa3a384a4b71, type: 3}
       Texture: {fileID: 0}
-      Text: It seems appropriate to pair her with Susan Granger for her Introduction
-        to Performative Lesbianism.  Neither are sapphic by inclination, which makes
-        it all the more bittersweet for them.
-    - Title: Debbie's Diversity Certification
-      Videos: []
-      Texture: {fileID: 2800000, guid: ff7533f6bb905ae4b998b6e093650020, type: 3}
-      Text: She seems happy only because she thinks her training is behind her. 
-        Little does she know she still has Gold Star training to look forward to!
+      Text: You can tell she's pleased that the company will be doubling down on
+        its commitment to equity and tolerance and her pride swells for the first
+        time in a long time!
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: 0
+        PrideEffect: 5
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0

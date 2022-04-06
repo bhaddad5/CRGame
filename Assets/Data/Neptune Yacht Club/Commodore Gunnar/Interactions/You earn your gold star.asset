@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 3fd2d20f-350e-4d21-ac1c-873af3c2316f
   Name: You earn your gold star
+  AlertNew: 1
   Category: 5
   Requirements:
     RequiredPower: 0
@@ -43,16 +44,18 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: dd92b72fbbf543240b5386911fb57826,
+        type: 2}
       Text: The club ceremony brings a lump to your throat.  Earning your captaincy
         grading is the highest honor the Neptune Yacht Club can confer.  Hails rise
         from your mates as the Commodore pins the gold star on your lapel.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 22a251b4dca66d743a990f694827ad16,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.4
+        yPos: 0.35
+        width: 250
     OptionalPopups:
     - Title: You're now free to take a boat out...
       Videos:
@@ -75,7 +78,8 @@ MonoBehaviour:
       NpcsToTrain: []
       NpcsToRemoveFromGame: []
       LocationsToControl: []
-      TrophiesClaimedReferences: []
+      TrophiesClaimedReferences:
+      - {fileID: 11400000, guid: 39a0808b065c0584bb1379fa4ab09ec0, type: 2}
       MissionsToComplete: []
       Car: 0
       Suits: 0
@@ -84,6 +88,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -113,5 +118,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
   New: 1
