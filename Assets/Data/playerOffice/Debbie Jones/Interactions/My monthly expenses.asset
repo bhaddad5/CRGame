@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 2ac9fa45-6db8-46ec-81d6-c90afa1ac75e
   Name: My monthly expenses
+  AlertNew: 1
   Category: 4
   Requirements:
     RequiredPower: 0
@@ -98,7 +99,10 @@ MonoBehaviour:
         out of pocket-- and more.  By using creative math, she manages to squeeze
         out another $500 for you!  Well done, Debbie!
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: 5
+        PrideEffect: 0
       EgoEffect: 5
       FundsEffect: 500
       PowerEffect: 0
@@ -121,6 +125,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -150,4 +155,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1
