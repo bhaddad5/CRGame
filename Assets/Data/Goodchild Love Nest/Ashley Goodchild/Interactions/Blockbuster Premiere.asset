@@ -32,7 +32,7 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 0
+    MoneyCost: 1000
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -44,7 +44,8 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: d6a66ac714b2b6143974e140f5c91609,
+        type: 2}
       Text: 'NOTE: Ashley is on the list for everything and as you enter the theater,
         you''re greeted by Lochobar, the HotTake Media mogul.  His eyes are glued
         on the lovely Ashley, even as he invited you to his office to discuss potential
@@ -65,9 +66,9 @@ MonoBehaviour:
         is the power of beauty and a luxury lifestyle!
     Effect:
       NpcEffects: []
-      EgoEffect: 0
+      EgoEffect: 10
       FundsEffect: 0
-      PowerEffect: 0
+      PowerEffect: 1
       PatentsEffect: 0
       CultureEffect: 0
       SpreadsheetsEffect: 0

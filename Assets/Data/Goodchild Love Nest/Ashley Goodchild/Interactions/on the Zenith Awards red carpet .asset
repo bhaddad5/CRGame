@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 79bebca2-7820-465e-b92e-62b7395355d5
   Name: 'on the Zenith Awards red carpet '
+  AlertNew: 1
   Category: 6
   Requirements:
     RequiredPower: 0
@@ -31,7 +32,7 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 0
+    MoneyCost: 1000
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -43,7 +44,8 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: d6a66ac714b2b6143974e140f5c91609,
+        type: 2}
       Text: 'NOTE:  Ashley''s been invited to the Annual Awards program and you are
         naturally her "+ 1".  The event is widely covered and the two of you wind
         up all over the net.  It''s a huge rush to be seen next to such a beautiful
@@ -55,7 +57,12 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 350
-    OptionalPopups: []
+    OptionalPopups:
+    - Title: It is amazing how hot...
+      Videos:
+      - {fileID: 32900000, guid: 92c3bd764316729488b5573609633588, type: 3}
+      Texture: {fileID: 0}
+      Text: ...Ashley's been getting in the gossip circuit!
     Effect:
       NpcEffects: []
       EgoEffect: 30
@@ -80,11 +87,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -114,9 +117,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 2800000, guid: 6f4c07e1861b1cc40a249f759ad4026f, type: 3}
-    CustomBackgroundNpcLayout:
-      xPos: 0.5
-      yPos: 0.5
-      width: 300
+      Home: 0
   Completed: 0
+  New: 1

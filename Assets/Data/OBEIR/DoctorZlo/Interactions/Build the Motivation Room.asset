@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: d21001c2-ab7d-4571-a71e-8fa6ad30df44
   Name: Build the Motivation Room
+  AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: e721c1cdcb8b86c478d30afb62b89092, type: 2}
     RequiredNotCompletedInteractions: []
@@ -44,22 +44,51 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ec9b6c5c6ec62c149bdd6a90fe5272e8,
+        type: 2}
       Text: I've considered your proposal and would like to proceed.  You may bill
         us for the work upfront, as per your requirements.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: d56786eb4e676e44fafa1c56c305f973,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.5
+        width: 200
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ec9b6c5c6ec62c149bdd6a90fe5272e8,
+        type: 2}
       Text: Excellent!  Your investment will ensure more docile and respectful employees. 
         Many customers find that merely having a Motivation Room has a calming--
         or chilling-- effect on their most difficult staff!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: d56786eb4e676e44fafa1c56c305f973,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.5
+        width: 200
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ec9b6c5c6ec62c149bdd6a90fe5272e8,
+        type: 2}
       Text: 'NOTE: Some staff are now eligible to be booked for an appointment in
         your new Motivation Room'
       CustomNpcImageOptions: []
-    OptionalPopups: []
+      CustomBackground: {fileID: 2800000, guid: d56786eb4e676e44fafa1c56c305f973,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.5
+        width: 200
+    OptionalPopups:
+    - Title: The actual location...
+      Videos:
+      - {fileID: 32900000, guid: 2646a28f4cee45049ab822d56e158c5c, type: 3}
+      Texture: {fileID: 0}
+      Text: ...of the chamber is known only to a handful.  Likewise, access to limited
+        to even fewer.  But rumours of the existence of the Motivation Room soon
+        spread throughout the company... by traumatized admin girls who have had
+        the misfortune to be summoned there!
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -84,11 +113,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -118,9 +143,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   Completed: 0
+  New: 1

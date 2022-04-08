@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: b2e7522d-4c76-42e7-8e83-47470d5b915c
   Name: Neptune Yacht Club Regatta
+  AlertNew: 1
   Category: 6
   Requirements:
     RequiredPower: 0
@@ -32,7 +33,7 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 0
+    MoneyCost: 1000
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -64,11 +65,7 @@ MonoBehaviour:
       Text: ...as well as a wonderful way to network with the powerful men who run
         things in Zenith!
     Effect:
-      NpcEffects:
-      - OptionalNpcReference: {fileID: 11400000, guid: d6a66ac714b2b6143974e140f5c91609,
-          type: 2}
-        AmbitionEffect: 0
-        PrideEffect: 0
+      NpcEffects: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 3
@@ -91,6 +88,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -120,5 +118,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
   New: 1

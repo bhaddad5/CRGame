@@ -14,24 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: ee75f1a3-954d-4f76-8dc6-dfcb2e3212eb
   Name: Hire Publicist
+  AlertNew: 1
   Category: 3
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements:
-    - OptionalNpcReference: {fileID: 0}
-      Stat: 0
-      Is: 0
-      Value: 0
-      RequiresStatBelow: 0
-    NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
-      Stat: 1
-      Is: 0
-      Value: 0
-      RequiresStatBelow: 0
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: f4195d5ffdfcbd64db9cf0d50fabca9c, type: 2}
     RequiredNotCompletedInteractions: []
@@ -56,16 +45,30 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: d6a66ac714b2b6143974e140f5c91609,
+        type: 2}
       Text: 'A publicist would be worth her weight in gold!  She would make sure
         I was in the media constantly!  That will grab the attention of casting execs
         and directors!  '
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 3671f67a83155fb4291146e0562685e9,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: d6a66ac714b2b6143974e140f5c91609,
+        type: 2}
       Text: 'NOTE:  You''re one step away from molding a grateful Ashley into a perfect
         Mistress...'
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 3671f67a83155fb4291146e0562685e9,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
     OptionalPopups:
     - Title: '"Don''t you want me to become a big star?"'
       Videos:
@@ -74,7 +77,10 @@ MonoBehaviour:
       Text: You actually see some value in having such a high profile mistress...
         but you'll still make her beg for your support!
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: 0
+        PrideEffect: -40
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -97,11 +103,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -134,9 +136,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   Completed: 0
+  New: 1
