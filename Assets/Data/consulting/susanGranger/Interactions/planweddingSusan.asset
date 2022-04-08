@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: efbab31e-4ccc-47b0-8020-136bc238adcc
   Name: Have Susan plan her wedding to Alexis
+  AlertNew: 1
   Category: 6
   Requirements:
     RequiredPower: 0
@@ -27,6 +28,7 @@ MonoBehaviour:
       Value: 20
     RequiredInteractions:
     - {fileID: 11400000, guid: 0ac8d2b7b4b167843bcae775e401c007, type: 2}
+    - {fileID: 11400000, guid: b614f97e615aa0f409a1f93879018dad, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -45,7 +47,7 @@ MonoBehaviour:
     RevanueCost: 0
     HornicalCost: 0
   Repeatable: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 1
@@ -95,7 +97,7 @@ MonoBehaviour:
     OptionalPopups: []
     Effect:
       NpcEffects: []
-      EgoEffect: 0
+      EgoEffect: 15
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -117,6 +119,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -146,4 +149,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1

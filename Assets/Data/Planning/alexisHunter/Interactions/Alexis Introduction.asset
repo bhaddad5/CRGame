@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: ce1f2351-1663-4958-80e7-79c676ce1891
   Name: Alexis Introduction
+  AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 91286c02ecdfbc244880c553ce3f616e, type: 2}
     RequiredNotCompletedInteractions: []
@@ -44,33 +44,74 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3e388f1db150adc41861a8d778471965,
+        type: 2}
       Text: Tracey said you needed some help?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e57493b43ba3c55459a7847afdbee19a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3e388f1db150adc41861a8d778471965,
+        type: 2}
       Text: It was a lie.  I just wanted an excuse to meet you actually.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e57493b43ba3c55459a7847afdbee19a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3e388f1db150adc41861a8d778471965,
+        type: 2}
       Text: I see.  So you're a liar?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e57493b43ba3c55459a7847afdbee19a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3e388f1db150adc41861a8d778471965,
+        type: 2}
       Text: I think we've gotten off on the wrong foot.  I merely wanted to say hello
         and I'll leave it at that!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e57493b43ba3c55459a7847afdbee19a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3e388f1db150adc41861a8d778471965,
+        type: 2}
       Text: There's no need to lie.  Tracey treats me like an easter egg but I'm
         here to help if I can.  There's no need to play games.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e57493b43ba3c55459a7847afdbee19a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     OptionalPopups:
     - Title: '"I''m Alexis Hunter, Senior Analyst for Planning."'
       Videos:
       - {fileID: 32900000, guid: bf3e8d3f6efad944da3fb04d3edbca37, type: 3}
       Texture: {fileID: 0}
       Text: She's cute and capable-- a sexy combination!
+    - Title: You note the award on her desk...
+      Videos: []
+      Texture: {fileID: 2800000, guid: bcae317c92b75544b81d5173ecdeef1a, type: 3}
+      Text: ...that holds pride of place.  Her Mathlete award suggests an intellect
+        that stands out above the credentialed  arrogance of most of the women at
+        Artemis.
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -95,11 +136,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -129,9 +166,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   Completed: 0
+  New: 1
