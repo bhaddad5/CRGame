@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 614ff996-a907-4e1c-a38e-56a39baf6287
   Name: Vacation Excitation
+  AlertNew: 1
   Category: 3
   Requirements:
     RequiredPower: 0
@@ -81,8 +82,8 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: OK.  Just give me a minute.  There.  What do you think?  Is this one
-        acceptable enough for the business trip, Sir?
+      Text: 'OK.  Just give me a minute.  There.  What do you think?  You like this
+        one, Mr. {LastName}?   '
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: 45349896d8a27224788a30386fdcbeb9, type: 3}
       - {fileID: 2800000, guid: b086701c10f610843955f2d1b97acd5f, type: 3}
@@ -141,6 +142,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -170,5 +172,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
   New: 1

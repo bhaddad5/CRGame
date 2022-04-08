@@ -21,7 +21,8 @@ MonoBehaviour:
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
+    - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Stat: 1
       Is: 0
       Value: 30
@@ -48,7 +49,8 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: I think a panty check is in order.  Show me what pretty things you're
         wearing today, Miss Jones!
       CustomNpcImageOptions:
@@ -67,13 +69,15 @@ MonoBehaviour:
       - {fileID: 2800000, guid: b4190c774f2755c40910ade283ca1c6c, type: 3}
       - {fileID: 2800000, guid: 367f214bed6f69b4395860a2f7bd9ac0, type: 3}
       - {fileID: 2800000, guid: a60c9ee6d14570d42b804857f8eabbd5, type: 3}
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: Is this ok...Sir?  I mean, do you like it?  Is it ok to wear again? 
         Can I put it on the Manager Approved List?
       CustomNpcImageOptions:
@@ -92,13 +96,15 @@ MonoBehaviour:
       - {fileID: 2800000, guid: b4190c774f2755c40910ade283ca1c6c, type: 3}
       - {fileID: 2800000, guid: 367f214bed6f69b4395860a2f7bd9ac0, type: 3}
       - {fileID: 2800000, guid: a60c9ee6d14570d42b804857f8eabbd5, type: 3}
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: 'NOTE: The Manager Approved List includes all Debbie''s clothes-- including
         her underthings-- she''s permitted to wear in the office, as well as a schedule
         to ensure her selections are varied and don''t repeat to often.'
@@ -118,15 +124,28 @@ MonoBehaviour:
       - {fileID: 2800000, guid: b4190c774f2755c40910ade283ca1c6c, type: 3}
       - {fileID: 2800000, guid: 367f214bed6f69b4395860a2f7bd9ac0, type: 3}
       - {fileID: 2800000, guid: a60c9ee6d14570d42b804857f8eabbd5, type: 3}
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-    OptionalPopups: []
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+    OptionalPopups:
+    - Title: The wardrobe planner ensures...
+      Videos: []
+      Texture: {fileID: 2800000, guid: dbdfe36bdd437254b87423276191cbc6, type: 3}
+      Text: ...sufficient variety in Debbie's fashion choices.  She updates it regularly,
+        depending on your feedback.
+    - Title: Approving or rejecting...
+      Videos:
+      - {fileID: 32900000, guid: 08e457a4a3a2c6d4f9132038b881d56d, type: 3}
+      Texture: {fileID: 0}
+      Text: ...Debbie's fashion choices is a most satisfying, if small pleasure,
+        of your job.
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+          type: 2}
         AmbitionEffect: 0
         PrideEffect: -1
       EgoEffect: 0

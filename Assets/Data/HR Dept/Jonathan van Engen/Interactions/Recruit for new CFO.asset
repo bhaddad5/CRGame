@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: ba664bf0-6c0f-403d-b058-4448c1508e2d
   Name: Recruit for new CFO
+  AlertNew: 1
   Category: 4
   Requirements:
     RequiredPower: 0
@@ -25,7 +26,7 @@ MonoBehaviour:
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled:
-    - {fileID: 11400000, guid: a2eed55d8869d46418cd50386d7de275, type: 2}
+    - {fileID: 11400000, guid: 8a432d3990dd08442a622b0a03538c5e, type: 2}
     RequiredNpcsControled: []
     RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
@@ -44,24 +45,28 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3ed340b130310bb4abddc437bf706b8a,
+        type: 2}
       Text: Marketing is a mess.  We'll need an experienced pro to clean up the mess
         over there.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 793d3fec56c01544bbb8a217b63e918a,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.52
+        yPos: 0.38
+        width: 310
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3ed340b130310bb4abddc437bf706b8a,
+        type: 2}
       Text: Leave it with me.  I'll start putting feelers out right away!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 793d3fec56c01544bbb8a217b63e918a,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.52
+        yPos: 0.38
+        width: 310
     OptionalPopups: []
     Effect:
       NpcEffects: []
@@ -87,6 +92,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -116,4 +122,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1
