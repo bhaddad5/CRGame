@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: be108a7c-f394-4429-aec4-4ab15ff8c4ad
   Name: Alexis Susan update
+  AlertNew: 1
   Category: 3
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: c14080cf11ae1a3498498f40543a7038, type: 2}
     RequiredNotCompletedInteractions: []
@@ -44,37 +44,92 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3e388f1db150adc41861a8d778471965,
+        type: 2}
       Text: How are you and Susan getting along?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e57493b43ba3c55459a7847afdbee19a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3e388f1db150adc41861a8d778471965,
+        type: 2}
       Text: Not great.  She's nice and all but I don't think she's interested in
         a relationship-- not with another woman, anyway.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e57493b43ba3c55459a7847afdbee19a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3e388f1db150adc41861a8d778471965,
+        type: 2}
       Text: That's a shame.  What if I were to have a chat with her?  I can be very
         persuasive.  As in, she'll be fired if she doesn't start to warm up to you. 
         Would you like that?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e57493b43ba3c55459a7847afdbee19a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3e388f1db150adc41861a8d778471965,
+        type: 2}
       Text: Yes!  Please!  If you could do that...
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e57493b43ba3c55459a7847afdbee19a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3e388f1db150adc41861a8d778471965,
+        type: 2}
       Text: I'd like to see you girls get closer.  It would be very entertaining. 
         But if I do, I expect a lot more cooperation from you from now on.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e57493b43ba3c55459a7847afdbee19a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3e388f1db150adc41861a8d778471965,
+        type: 2}
       Text: I'll do whatever you want!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e57493b43ba3c55459a7847afdbee19a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 3e388f1db150adc41861a8d778471965,
+        type: 2}
+      Text: 'NOTE: You''ll need to break Susan Granger before she agrees to go along
+        with this little whimsy of yours... '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e57493b43ba3c55459a7847afdbee19a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     OptionalPopups: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 3e388f1db150adc41861a8d778471965,
+          type: 2}
         AmbitionEffect: -20
         PrideEffect: 0
       EgoEffect: 0
@@ -99,11 +154,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -133,9 +184,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   Completed: 0
+  New: 1

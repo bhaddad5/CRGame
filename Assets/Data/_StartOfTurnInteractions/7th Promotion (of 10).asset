@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: d27760e2-f984-4ecc-8d93-40257cd9988a
   Name: 7th Promotion (of 10)
+  AlertNew: 1
   Category: 0
   Requirements:
     RequiredPower: 120
     RequiredPromotionLevel: 5
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
@@ -39,16 +39,19 @@ MonoBehaviour:
     RevanueCost: 0
     HornicalCost: 0
   Repeatable: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   Result:
     Dialogs: []
     OptionalPopups:
     - Title: 'You''ve been promoted to: Vice President'
       Videos: []
       Texture: {fileID: 2800000, guid: aeb70dd8ac6049048a311f31f37b5d90, type: 3}
-      Text: A VP is a vested 'member of the club' and enjoy the entire range of Senior
-        Management perks such as special bonus plans, stock options and access to
-        special management-only events and facilities.
+      Text: 'A VP is a vested ''member of the club'' and enjoy the entire range of
+        Senior Management perks such as special bonus plans, stock options and access
+        to special management-only events and facilities.
+
+        YOUR FORTNIGHTLY
+        SALARY: $18,000'
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -73,11 +76,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 6
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -107,9 +106,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   Completed: 0
+  New: 1
