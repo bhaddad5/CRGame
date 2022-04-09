@@ -170,6 +170,27 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
+      Text: No.  I can't.  I could never do that to-- Even as much as I want this
+        job, I'll have to say no.  If that means I'm fired, so be it.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: I forgot.  This come swith the job.  I'd fully expect you to employ it
+        as often as you see fit.  It's a symbol of the authority of the Office Manager. 
+        I expect you to wield it mercilessly.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
       Text: Susan will get used to it.  She'll be md at first but...   Yes, {FirstName}-
         I accept the promotion to Office Manager.
       CustomNpcImageOptions: []
@@ -178,7 +199,7 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
-    - CurrSpeaker: 1
+    - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 0}
       Text: Technically a demotion, but I'm pleased.  And Lexi-  from now on, it
         will have to be Mr. {LastName}.
@@ -198,7 +219,13 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
-    OptionalPopups: []
+    OptionalPopups:
+    - Title: Alexis' eyes are locked hungrily on...
+      Videos:
+      - {fileID: 0}
+      Texture: {fileID: 2800000, guid: 302ac9c64415cc743984dd1d5db4a3e8, type: 3}
+      Text: ...the new office tool you hand her.  You never doubted she'd accept
+        your offer.
     Effect:
       NpcEffects: []
       EgoEffect: 50
