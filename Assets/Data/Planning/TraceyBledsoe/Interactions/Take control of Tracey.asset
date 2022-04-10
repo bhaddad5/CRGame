@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 191a960b-ec6d-435d-b05f-4bbbfc858788
   Name: Take control of Tracey
+  AlertNew: 1
   Category: 2
   Requirements:
     RequiredPower: 0
@@ -25,7 +26,16 @@ MonoBehaviour:
       Stat: 0
       Is: 0
       Value: 0
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 5df064a524845654a9d5272eaea2149d, type: 2}
+    - {fileID: 11400000, guid: 9e78e3f1c75b5aa4197886ebf59aac5f, type: 2}
+    - {fileID: 11400000, guid: a1eb786405e219242a602f72162394c1, type: 2}
+    - {fileID: 11400000, guid: 1e4cd11dd8bec85438d6dcaef2bedfa0, type: 2}
+    - {fileID: 11400000, guid: c2c2e3849b305144aa6b062be29c2ac0, type: 2}
+    - {fileID: 11400000, guid: a5274bc452564f546b21db512230cbc5, type: 2}
+    - {fileID: 11400000, guid: 31896d8f74cc23748bc0f4ab0b72dad1, type: 2}
+    - {fileID: 11400000, guid: 68e8e40c0824b2f429247ecb428cb98d, type: 2}
+    - {fileID: 11400000, guid: 67e7e44185a9a9944b452d33a33e2ede, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -108,7 +118,8 @@ MonoBehaviour:
     OptionalPopups: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
+          type: 2}
         AmbitionEffect: 0
         PrideEffect: -50
       EgoEffect: 150
@@ -134,6 +145,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -163,5 +175,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
   New: 1
