@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 6243b346-412d-4ba7-b9da-12c412965d36
   Name: Final Consulting Report
+  AlertNew: 1
   Category: 4
   Requirements:
     RequiredPower: 0
@@ -31,7 +32,7 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 25000
+    MoneyCost: 5000
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -155,7 +156,8 @@ MonoBehaviour:
       NpcsToTrain: []
       NpcsToRemoveFromGame: []
       LocationsToControl: []
-      TrophiesClaimedReferences: []
+      TrophiesClaimedReferences:
+      - {fileID: 11400000, guid: 006df438e8b65924d967fcccc0796fd2, type: 2}
       MissionsToComplete: []
       Car: 0
       Suits: 0
@@ -164,6 +166,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -193,5 +196,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
   New: 1

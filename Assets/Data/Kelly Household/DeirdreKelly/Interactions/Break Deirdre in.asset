@@ -14,13 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 805fad15-eee7-482a-b760-373d08baa0e8
   Name: Break Deirdre in
+  AlertNew: 1
   Category: 2
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
+    - OptionalNpcReference: {fileID: 11400000, guid: 8468daf25d821974a8b3b9c729b1d180,
+        type: 2}
       Stat: 1
       Is: 0
       Value: 0
@@ -95,9 +97,9 @@ MonoBehaviour:
       Videos:
       - {fileID: 32900000, guid: b230491e9155e1e4b8cf05eec3bb9133, type: 3}
       Texture: {fileID: 0}
-      Text: 'No more teenage drama queen antics.  Deirdre''s broken.  She''ll look
-        to Professor Tyson as her white knight hero after this-- precisely your intent
-        the entire time!. '
+      Text: No more teenage drama queen antics.  Deirdre's broken.  She'll look to
+        Professor Tyson as her white knight hero after this-- precisely your intent
+        the entire time!
     Effect:
       NpcEffects: []
       EgoEffect: 40
@@ -123,6 +125,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -152,5 +155,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
   New: 1

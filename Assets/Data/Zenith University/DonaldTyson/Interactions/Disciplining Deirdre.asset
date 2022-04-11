@@ -14,16 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 381a0839-0a56-4393-8c84-eb8df81e7f02
   Name: Disciplining Deirdre
+  AlertNew: 1
   Category: 5
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 351e0adc833356143aacf4bc20fa29f3, type: 2}
     - {fileID: 11400000, guid: 1e58f51650bd76945a7d1740a35fb0b3, type: 2}
+    - {fileID: 11400000, guid: 807981fe55090f64b90125f243d4ac01, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -45,26 +46,47 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 49c059802b4b2a842be5a5c55f4435f6,
+        type: 2}
       Text: Deirdre, when your brother showed me the kind of underwear you've been
         wearing under your school clothes, I was shocked!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7f239f2c1dffed941ad3536b63160463,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 270
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 49c059802b4b2a842be5a5c55f4435f6,
+        type: 2}
       Text: Only a slut would wear these kinds of things!  From now on, I'll be policing
         your wardrobe.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7f239f2c1dffed941ad3536b63160463,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 270
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 49c059802b4b2a842be5a5c55f4435f6,
+        type: 2}
       Text: And never mind whining to your mother!  I've already told her I'll be
         correcting you when and how I like from now on!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7f239f2c1dffed941ad3536b63160463,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 270
     OptionalPopups:
-    - Title: Over my knee, you little cocktease!
+    - Title: '"Fetch the cane, Deirdre."'
       Videos:
-      - {fileID: 32900000, guid: 9d660c416d002a84983ae4782cd1daa9, type: 3}
+      - {fileID: 32900000, guid: 092da76e43d6da7439354ecad28ef02b, type: 3}
       Texture: {fileID: 0}
-      Text: 
+      Text: The Professor is an even stricter disciplinarian than you are!
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -89,11 +111,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -123,9 +141,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   Completed: 0
+  New: 1
