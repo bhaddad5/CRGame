@@ -14,13 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 600ae137-7086-4d55-8975-edfb7a25dd6d
   Name: Alexis conversion opportunity
+  AlertNew: 1
   Category: 2
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
+    - OptionalNpcReference: {fileID: 11400000, guid: 3e388f1db150adc41861a8d778471965,
+        type: 2}
       Stat: 0
       Is: 0
       Value: 40
@@ -99,7 +101,7 @@ MonoBehaviour:
       - OptionalNpcReference: {fileID: 11400000, guid: 3e388f1db150adc41861a8d778471965,
           type: 2}
         AmbitionEffect: 0
-        PrideEffect: -10
+        PrideEffect: -25
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -122,6 +124,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -151,4 +154,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1
