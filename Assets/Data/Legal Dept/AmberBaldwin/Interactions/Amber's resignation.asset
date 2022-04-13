@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 094f81f7-4c9e-43aa-a136-41fe5ed18cd9
   Name: Amber's resignation
+  AlertNew: 1
   Category: 5
   Requirements:
     RequiredPower: 0
@@ -25,7 +26,11 @@ MonoBehaviour:
       Stat: 1
       Is: 0
       Value: 30
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: b8d95d0accdbdc947a2674de2e713e8e, type: 2}
+    - {fileID: 11400000, guid: e974dbe933002ca45b32a85de0dece52, type: 2}
+    - {fileID: 11400000, guid: 244535bbafc6a0a49ba4bef9595a9432, type: 2}
+    - {fileID: 11400000, guid: 88dedf6216463294fa2ac371443a826c, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -74,7 +79,8 @@ MonoBehaviour:
       Text: Amber returns to work for her old boss... but things have changed.
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 3ee00e5eebd58bf4d942df330f12e4e2,
+          type: 2}
         AmbitionEffect: 0
         PrideEffect: -30
       EgoEffect: 140
@@ -100,6 +106,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -129,4 +136,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1
