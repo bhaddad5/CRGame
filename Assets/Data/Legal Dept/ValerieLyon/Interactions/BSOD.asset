@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BSOD
   m_EditorClassIdentifier: 
   Id: fd62e865-f813-41a9-8034-9c755b887953
-  Name: BSOD
+  Name: BSOD (infect Amber's PC with a virus)
   AlertNew: 1
   Category: 4
   Requirements:
@@ -21,7 +21,8 @@ MonoBehaviour:
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
+    - OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
+        type: 2}
       Stat: 0
       Is: 0
       Value: 0
@@ -48,54 +49,64 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
+        type: 2}
       Text: You have access to Amber's PC, right?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: edfe5a8c966778f48bee8b34e3566c9b,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
+        type: 2}
       Text: Sure.  In case she's out of the office and she needs me to...
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: edfe5a8c966778f48bee8b34e3566c9b,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
+        type: 2}
       Text: I need you to give me access-- then leave the office.  You don't want
         to know what happens next.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: edfe5a8c966778f48bee8b34e3566c9b,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
+        type: 2}
       Text: You're right-- I don't. OK, let me type in her password...
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: edfe5a8c966778f48bee8b34e3566c9b,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
+        type: 2}
       Text: 'NOTE: The virus you install will spawn the dreaded Blue Screen of Death
         when Amber next boots up.  It won''t just delete her local files; her cloud
         files will also be wiped as well.  The loss of thousands of documents will
         set her back for weeks...'
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: edfe5a8c966778f48bee8b34e3566c9b,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
     OptionalPopups:
     - Title: You watch the virus eat all Amber's...
       Videos:

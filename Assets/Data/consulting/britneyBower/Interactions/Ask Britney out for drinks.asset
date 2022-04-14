@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 2d4d0e99-271b-49ab-bae8-ad10967d2ce8
   Name: Ask Britney out for drinks
+  AlertNew: 1
   Category: 3
   Requirements:
     RequiredPower: 0
@@ -45,7 +46,7 @@ MonoBehaviour:
     RevanueCost: 0
     HornicalCost: 0
   Repeatable: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 1
@@ -97,14 +98,21 @@ MonoBehaviour:
       Videos:
       - {fileID: 32900000, guid: 12fa9262894583b4598c52593422b475, type: 3}
       Texture: {fileID: 0}
-      Text: 
+      Text: You go back to her place, a dismal little hole in Botany Bay Housing
+        Project.
+    - Title: A trashed Britney blows you...
+      Videos:
+      - {fileID: 32900000, guid: eccc2bb1bddf23244863abce6cdb9fa1, type: 3}
+      Texture: {fileID: 0}
+      Text: ...as a way to thank you for such a fun time.  While she cleans herself
+        up, you decide to take a trophy and leave.
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
           type: 2}
         AmbitionEffect: -10
         PrideEffect: 0
-      EgoEffect: 5
+      EgoEffect: 15
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -117,7 +125,8 @@ MonoBehaviour:
       NpcsToTrain: []
       NpcsToRemoveFromGame: []
       LocationsToControl: []
-      TrophiesClaimedReferences: []
+      TrophiesClaimedReferences:
+      - {fileID: 11400000, guid: 38d985a02b240e04298d79c1c734c16e, type: 2}
       MissionsToComplete: []
       Car: 0
       Suits: 0
@@ -126,6 +135,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -155,5 +165,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
   New: 1

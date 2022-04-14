@@ -45,9 +45,30 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 0b1c698aa7383d04aa770a7f38902f80,
         type: 2}
-      Text: Mr. {LastName}!  So nice to see you!  I'm sorry but Mr. Perkins is away
-        at the moment.  Would you like to leave a note for him?  Shall I fetch some
-        stationery, Sir?
+      Text: 'Mr. {LastName}!  So nice to see you!  You must be here to see Mr. Perkins! 
+        May I bring you a coffee or some sparkling water? '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f59a68988b745b64485aeeb4b5d28cbb,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 250
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 0b1c698aa7383d04aa770a7f38902f80,
+        type: 2}
+      Text: Are you keeping Malcolm happy these days, Amber?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f59a68988b745b64485aeeb4b5d28cbb,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 250
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 0b1c698aa7383d04aa770a7f38902f80,
+        type: 2}
+      Text: I should hope so-- my employment depends upon it!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: f59a68988b745b64485aeeb4b5d28cbb,
         type: 3}
@@ -111,5 +132,5 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
-  Completed: 3
-  New: 0
+  Completed: 0
+  New: 1
