@@ -14,16 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 3eab7054-064c-4623-8ff0-393be51e1fc7
   Name: Valerie Lyon new wardrobe
+  AlertNew: 1
   Category: 5
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 31537bc8527b31748945be063fc1384a, type: 2}
-    RequiredNotCompletedInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: f3a4aff1b107f4948b9c6d53a1aa324d, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -40,20 +41,34 @@ MonoBehaviour:
     RevanueCost: 0
     HornicalCost: 0
   Repeatable: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
+        type: 2}
       Text: 'If you are going to present the appropriate image, you''ll need to start
         wearing things that will please your new boss.  I''ll set up an account for
         you at Vixxxens, which is where you''ll be shopping from now on. '
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: edfe5a8c966778f48bee8b34e3566c9b,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
+        type: 2}
       Text: 'NOTE: You''ll need to visit Vixxxens to deposit funds for Valerie''s
         new wardrobe in order for this wardrobe shift to take effect.'
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: edfe5a8c966778f48bee8b34e3566c9b,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
     OptionalPopups: []
     Effect:
       NpcEffects: []
@@ -79,11 +94,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -113,9 +124,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   Completed: 0
+  New: 1
