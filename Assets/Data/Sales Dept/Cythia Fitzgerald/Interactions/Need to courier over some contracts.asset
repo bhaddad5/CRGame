@@ -14,14 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 04d14044-7232-4980-a292-38fd6277119c
   Name: Need to courier over some contracts
+  AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
-    RequiredInteractions: []
+    NpcStatRequirements: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 1e4cd11dd8bec85438d6dcaef2bedfa0, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -43,18 +44,39 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: cce62dcf1e1cc4346a6669063ec206c4,
+        type: 2}
       Text: I have some sales contracts from my area I need to get to you.  Would
         it be ok if I courier them over to your place?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: c3317039ba414a74db4cb38b15cea8de,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: cce62dcf1e1cc4346a6669063ec206c4,
+        type: 2}
       Text: Sure.  We're at Stonegate Estates.  I'll text you the address.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: c3317039ba414a74db4cb38b15cea8de,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: cce62dcf1e1cc4346a6669063ec206c4,
+        type: 2}
       Text: 'NOTE: You can now visit the Fitzgerald Household!'
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: c3317039ba414a74db4cb38b15cea8de,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     OptionalPopups: []
     Effect:
       NpcEffects: []
@@ -80,11 +102,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -114,9 +132,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   Completed: 0
+  New: 1

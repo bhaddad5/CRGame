@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 2bacbd19-61e0-4d01-9a57-e9e8466afa6d
   Name: Dictation training for Debbie
+  AlertNew: 1
   Category: 4
   Requirements:
     RequiredPower: 0
@@ -133,7 +134,10 @@ MonoBehaviour:
       Texture: {fileID: 0}
       Text: Debbie needs constant training and upskilling!
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: -1
+        PrideEffect: 0
       EgoEffect: 10
       FundsEffect: 0
       PowerEffect: 0
@@ -156,6 +160,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -185,4 +190,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1

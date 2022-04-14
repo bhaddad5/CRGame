@@ -100,7 +100,10 @@ MonoBehaviour:
       Text: ...for the barista skills of your talented secretary.  You enjoy the
         pinched little frown Debbie makes when she hears them!
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: -1
+        PrideEffect: 0
       EgoEffect: 20
       FundsEffect: 0
       PowerEffect: 2

@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 92a73fdb-23c9-4dc4-887c-acc27885b5ab
   Name: Corporate Calendar Casting
+  AlertNew: 1
   Category: 0
   Requirements:
     RequiredPower: 0
@@ -101,7 +102,10 @@ MonoBehaviour:
         is featured as "Debbie Jones, Personal Secretary, an Artemis Solutions Systems
         Angel!"
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: -3
+        PrideEffect: -3
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -124,6 +128,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -153,4 +158,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1

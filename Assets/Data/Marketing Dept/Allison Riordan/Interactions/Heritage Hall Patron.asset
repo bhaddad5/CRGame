@@ -20,11 +20,7 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
-      Stat: 0
-      Is: 0
-      Value: 0
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 1669504239a66624f948e75dcd0d8204, type: 2}
     RequiredNotCompletedInteractions: []
@@ -57,7 +53,8 @@ MonoBehaviour:
         respond to the tunes with unexpected enjoyment.  '
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: d5da105764ee21941942e88a7651e80e,
+          type: 2}
         AmbitionEffect: -20
         PrideEffect: 0
       EgoEffect: 0

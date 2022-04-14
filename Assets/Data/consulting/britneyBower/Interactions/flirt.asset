@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 1c7566f7-6878-4a01-b2fd-7009f33bf0d9
   Name: 'Flirt '
+  AlertNew: 1
   Category: 3
   Requirements:
     RequiredPower: 0
@@ -28,7 +29,8 @@ MonoBehaviour:
     RequiredInteractions:
     - {fileID: 11400000, guid: 303c1cd1a81b3b347b4c9f9ef3a5af27, type: 2}
     - {fileID: 11400000, guid: bc0ec0808a929ad459fca39629f83fbe, type: 2}
-    RequiredNotCompletedInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: adb360e624e22084eafe4d8668b26043, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -151,6 +153,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 1
   ProbabilityOfFailureResult: 0.25
   FailureResult:
@@ -248,5 +251,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
   New: 1
