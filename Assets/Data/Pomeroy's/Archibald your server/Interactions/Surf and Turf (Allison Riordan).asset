@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 135ff29d-daff-47a2-b8c5-88bf7b76d099
   Name: Surf and Turf (Allison Riordan)
+  AlertNew: 1
   Category: 3
   Requirements:
     RequiredPower: 0
@@ -21,7 +22,8 @@ MonoBehaviour:
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions: []
-    RequiredNotCompletedInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: 274853249e4d8744da8ef187cbb86d3d, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -42,26 +44,30 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7ced58efaf3c1fd4eba0e1c367fe7144,
+        type: 2}
       Text: 'You can''t believe your luck but it would appear that Allison Riordan,
         the Marketing Maven of Artemis, has been stood up! '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 45bb0c6cfb6839f4b86e32ec586cca8e,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.3
+        width: 350
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7ced58efaf3c1fd4eba0e1c367fe7144,
+        type: 2}
       Text: 'Once you delicately confirm your assessment from an annoyed Allison,
         you ask her to join you at your own table.  She accepts your invitation and
         the dinner is most enjoyable. '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 45bb0c6cfb6839f4b86e32ec586cca8e,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.3
+        width: 350
     OptionalPopups:
     - Title: Having been forsaken by her date...
       Videos:
@@ -96,29 +102,34 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 1
   ProbabilityOfFailureResult: 0.5
   FailureResult:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7ced58efaf3c1fd4eba0e1c367fe7144,
+        type: 2}
       Text: While it is clear she's furious at being stood up at the last minute...
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 45bb0c6cfb6839f4b86e32ec586cca8e,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.3
+        width: 350
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7ced58efaf3c1fd4eba0e1c367fe7144,
+        type: 2}
       Text: 'Allison makes it equally clear she''s in no mood for company right now. 
         You pick through your surf and turf and leave despondently. '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 45bb0c6cfb6839f4b86e32ec586cca8e,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.3
+        width: 350
     OptionalPopups: []
     Effect:
       NpcEffects: []
@@ -144,4 +155,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1
