@@ -25,7 +25,8 @@ MonoBehaviour:
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
-    RequiredNpcsControled: []
+    RequiredNpcsControled:
+    - {fileID: 11400000, guid: 4f5b0cef4033d884badd26e5c47e6af2, type: 2}
     RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
     RequiredTrophies: []
@@ -52,7 +53,8 @@ MonoBehaviour:
       Text: Maybe you ought to have her spend time tutoring Debbie!
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 4f5b0cef4033d884badd26e5c47e6af2,
+          type: 2}
         AmbitionEffect: 0
         PrideEffect: -5
       EgoEffect: 10
