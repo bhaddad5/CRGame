@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: c6ac44a4-afa5-47c4-8a98-0bc322e616ab
   Name: Watch the SciFi epic
+  AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
@@ -42,23 +43,27 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 606fcda51bb272e4b947c3c87d34bb4b,
+        type: 2}
       Text: The trailer looks great!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 6a2dde48a80a84345ba84923fe1b3fd9,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.3
+        width: 350
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 606fcda51bb272e4b947c3c87d34bb4b,
+        type: 2}
       Text: Yeah-- the battle scenes are awesome!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 6a2dde48a80a84345ba84923fe1b3fd9,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.3
+        width: 350
     OptionalPopups:
     - Title: Pirates battle a galactic empire and...
       Videos:
@@ -67,7 +72,7 @@ MonoBehaviour:
       Text: ...it's good old fashioned fun!
     Effect:
       NpcEffects: []
-      EgoEffect: 0
+      EgoEffect: 7
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -89,6 +94,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -118,4 +124,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1
