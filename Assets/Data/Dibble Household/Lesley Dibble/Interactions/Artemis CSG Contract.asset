@@ -20,11 +20,7 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
-      Stat: 0
-      Is: 0
-      Value: 0
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 070b936934209754fb7ed614b360bc2d, type: 2}
     RequiredNotCompletedInteractions: []
@@ -48,58 +44,68 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 9123f628b7530f14da3258a0f7d808ee,
+        type: 2}
       Text: Thank you for this opportunity, Mr. {LastName}.  Dykon will provide you
         with exactly the kind of services you need.  I look forward to putting together
         a program for your Consulting Services Group!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 24491712e739f0846947e56dcfb265e9,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 9123f628b7530f14da3258a0f7d808ee,
+        type: 2}
       Text: Now that we'll be working more closely, please call me {FirstName}. 
         I imagine this home office of yours will become very busy now!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 24491712e739f0846947e56dcfb265e9,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 9123f628b7530f14da3258a0f7d808ee,
+        type: 2}
       Text: We bought this house because of the large and separate home office. 
         It was a bit of a financial stretch but if Dykon was going to grow from a
         brand influencer to a professional consultancy, it was a move we had to make. 
         Jayme's dependable salary helped a lot!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 24491712e739f0846947e56dcfb265e9,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 9123f628b7530f14da3258a0f7d808ee,
+        type: 2}
       Text: 'She''s a lovely girl.  You''re a lucky woman, Leslie.  '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 24491712e739f0846947e56dcfb265e9,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 9123f628b7530f14da3258a0f7d808ee,
+        type: 2}
       Text: Luck... and some neuro-linguistic programming.  She's pretty but very
         impressionable.  I think it is why she's such a natural at social media. 
         My Jayme's a pleaser, which makes me a very happy top!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 24491712e739f0846947e56dcfb265e9,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     OptionalPopups:
     - Title: '"I look forward to doing business together!"'
       Videos:
@@ -111,7 +117,8 @@ MonoBehaviour:
         is why she is finally warming up to you.
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 9123f628b7530f14da3258a0f7d808ee,
+          type: 2}
         AmbitionEffect: -25
         PrideEffect: 0
       EgoEffect: 0

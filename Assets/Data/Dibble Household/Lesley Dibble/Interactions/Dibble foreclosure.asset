@@ -45,26 +45,30 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 9123f628b7530f14da3258a0f7d808ee,
+        type: 2}
       Text: I was driving by and saw the moving trucks.  Is everything alright?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 24491712e739f0846947e56dcfb265e9,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 9123f628b7530f14da3258a0f7d808ee,
+        type: 2}
       Text: When everything happened, I didn't have much choice.  I had re-mortgaged
         and...  Well, it's over.  The bank foreclosed and...  They're letting us
         stay for the tiem being but they want it all cleared out to show to prospective
         buyers.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 24491712e739f0846947e56dcfb265e9,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     OptionalPopups:
     - Title: You make sympathetic noises even as...
       Videos:
@@ -72,7 +76,10 @@ MonoBehaviour:
       Texture: {fileID: 0}
       Text: ...the Dibble household effects are carted away.
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: 0
+        PrideEffect: -30
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
