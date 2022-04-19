@@ -21,7 +21,8 @@ MonoBehaviour:
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
+    - OptionalNpcReference: {fileID: 11400000, guid: 9123f628b7530f14da3258a0f7d808ee,
+        type: 2}
       Stat: 0
       Is: 0
       Value: 75
@@ -50,59 +51,69 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 9123f628b7530f14da3258a0f7d808ee,
+        type: 2}
       Text: 'I know this strictly isn''t my business, but I am protective of my little
         wifey.  Jayme mentioned that her boss has left Artemis for a new company. 
         Now she says she''s at a sort of fork in the career road.  '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 24491712e739f0846947e56dcfb265e9,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 9123f628b7530f14da3258a0f7d808ee,
+        type: 2}
       Text: I see!  What is Jayme thinking of doing next?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 24491712e739f0846947e56dcfb265e9,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 9123f628b7530f14da3258a0f7d808ee,
+        type: 2}
       Text: Well, she asked if she could work for me as part of Dykon actually! 
         I think it might make sense but before I told her yes, I thought  I'd discuss
         it with you.  I mean, the new Artemis contract could more than cover her
         salary.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 24491712e739f0846947e56dcfb265e9,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 9123f628b7530f14da3258a0f7d808ee,
+        type: 2}
       Text: As a courtesy, would you mind advising her to remain at Artemis?  With
         Allison gone, I'd hate to lost another pro.  Marketing's been given to me
         until we find a new CMO.  I'd hate to lose her until that's sorted.  Do you
         think you can persuade her to stay?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 24491712e739f0846947e56dcfb265e9,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 9123f628b7530f14da3258a0f7d808ee,
+        type: 2}
       Text: Oh, don't worry!  Jayme will stay.  I'll have a chat.  My wife always
         does as she's told.  I can wait until your new CMO is on board.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 24491712e739f0846947e56dcfb265e9,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     OptionalPopups:
     - Title: You like the confident way Leslie...
       Videos:
@@ -111,8 +122,13 @@ MonoBehaviour:
       Text: ...manages her impressionable and compliant young wife!
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 9123f628b7530f14da3258a0f7d808ee,
+          type: 2}
         AmbitionEffect: -20
+        PrideEffect: 0
+      - OptionalNpcReference: {fileID: 11400000, guid: 02285d513a8a80346bd5fceb01f05d8b,
+          type: 2}
+        AmbitionEffect: -10
         PrideEffect: 0
       EgoEffect: 0
       FundsEffect: 0

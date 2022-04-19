@@ -21,7 +21,8 @@ MonoBehaviour:
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
+    - OptionalNpcReference: {fileID: 11400000, guid: 9123f628b7530f14da3258a0f7d808ee,
+        type: 2}
       Stat: 0
       Is: 0
       Value: 50
@@ -51,62 +52,72 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 9123f628b7530f14da3258a0f7d808ee,
+        type: 2}
       Text: 'I know we discussed the possibility of Jayme moving on from Artemis. 
         I hate to bring it up again but she seems very unhappy.  She really would
         like to leave Artemis now.  '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 24491712e739f0846947e56dcfb265e9,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 9123f628b7530f14da3258a0f7d808ee,
+        type: 2}
       Text: How upsetting!  Has she said why she is so upset?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 24491712e739f0846947e56dcfb265e9,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 9123f628b7530f14da3258a0f7d808ee,
+        type: 2}
       Text: 'No.  She can get emotional at times but...  Jayme said she actually
         wanted to give up her career and become a full time housewife for me!  With
         the Artemis contract growing so large, I no longer need Jayme''s salary and
         I really like the idea of her focusing on mhy needs all the time.   '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 24491712e739f0846947e56dcfb265e9,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 9123f628b7530f14da3258a0f7d808ee,
+        type: 2}
       Text: 'I can understand that, Leslie.  However, I simply can''t do without
         Jayme right now.  She''s too important to our social media efforts, especially
         as we ramp up some new product launches.  I know how much you appreciate
         the business I''ve given you.  I''m sure you can explain to Jayme why she
         needs to stick it out-- just for a bit longer, ok?   '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 24491712e739f0846947e56dcfb265e9,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 9123f628b7530f14da3258a0f7d808ee,
+        type: 2}
       Text: 'I do understand.  Yes, I''ll talk to Jayme.  I''ll also make sur eshe
         understands how important the right attitude is, especially towards the company
         that''s been so responsible for turning Dykon into a leader in corporate
         consulting! '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 24491712e739f0846947e56dcfb265e9,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     OptionalPopups:
     - Title: Your implied threat spooked Leslie...
       Videos:
@@ -116,7 +127,12 @@ MonoBehaviour:
         long as you like.
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 9123f628b7530f14da3258a0f7d808ee,
+          type: 2}
+        AmbitionEffect: -20
+        PrideEffect: 0
+      - OptionalNpcReference: {fileID: 11400000, guid: 02285d513a8a80346bd5fceb01f05d8b,
+          type: 2}
         AmbitionEffect: -20
         PrideEffect: 0
       EgoEffect: 0
