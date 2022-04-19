@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 0a775eef-9f8c-47b6-aab9-0b51c802497c
   Name: Order a physical exam of Holly Hamilton
+  AlertNew: 1
   Category: 4
   Requirements:
     RequiredPower: 0
@@ -25,7 +26,8 @@ MonoBehaviour:
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
-    RequiredNpcsControled: []
+    RequiredNpcsControled:
+    - {fileID: 11400000, guid: 8d9f38aa47f1c4f48b97afffaa769f0d, type: 2}
     RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
     RequiredTrophies: []
@@ -43,38 +45,44 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 8d9f38aa47f1c4f48b97afffaa769f0d,
+        type: 2}
       Text: 'NOTE: You have Debbie organize an annual physical exam for Holly Hamilton. 
         Under the new Pry Healthcare plan, such exams are mandatory to ensure continuous
         coverage.'
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 85b8dd32509540d4faf282e6b4772bff,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.6
+        yPos: 0.35
+        width: 300
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 8d9f38aa47f1c4f48b97afffaa769f0d,
+        type: 2}
       Text: After a delay of a day, Gemma confirms the appointment on behalf of her
         daughter-- no doubt not wishing to draw any additional attention to either
         of them.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 85b8dd32509540d4faf282e6b4772bff,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.6
+        yPos: 0.35
+        width: 300
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 8d9f38aa47f1c4f48b97afffaa769f0d,
+        type: 2}
       Text: A chat with Dr. Feng ensures she'll report back with the real reason
         for the exam.  Holly will be interrogated thoroughly regarding her sexual
         activity and a full Personal Sexual History file compiled on her.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 85b8dd32509540d4faf282e6b4772bff,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.6
+        yPos: 0.35
+        width: 300
     OptionalPopups:
     - Title: You view the exam remotely...
       Videos:
@@ -89,7 +97,8 @@ MonoBehaviour:
         her sexual state of purity!
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 8d9f38aa47f1c4f48b97afffaa769f0d,
+          type: 2}
         AmbitionEffect: -20
         PrideEffect: 0
       EgoEffect: 0
@@ -114,6 +123,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -143,4 +153,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1

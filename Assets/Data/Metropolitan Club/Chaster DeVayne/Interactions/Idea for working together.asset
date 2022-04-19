@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: fdf57163-c5bf-4b70-8d0b-bee885044f7c
   Name: Idea for working together
+  AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
@@ -43,68 +44,80 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: c0796ec1273c4044c909192668fdd801,
+        type: 2}
       Text: I'm so glad you're here!  I've been thinking of how we get your company
         to crack those pesky international markets-- despite that incapable International
         Director you have over there!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 61d5c60fc2d8d2743bf89ac2ee391663,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.3
+        yPos: 0.4
+        width: 375
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: c0796ec1273c4044c909192668fdd801,
+        type: 2}
       Text: I'm open to anything.  What were you thinking?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 61d5c60fc2d8d2743bf89ac2ee391663,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.3
+        yPos: 0.4
+        width: 375
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: c0796ec1273c4044c909192668fdd801,
+        type: 2}
       Text: Let me put together an overview of your best overseas prospects.  I'll
         write it up and you can show it to your CEO.  It might open her eyes to the
         opportunity and how it is getting away from Artemis.  It will certainly make
         you look good.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 61d5c60fc2d8d2743bf89ac2ee391663,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.3
+        yPos: 0.4
+        width: 375
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: c0796ec1273c4044c909192668fdd801,
+        type: 2}
       Text: I like this!  Of course, I can't ask you to work for nothing...
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 61d5c60fc2d8d2743bf89ac2ee391663,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.3
+        yPos: 0.4
+        width: 375
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: c0796ec1273c4044c909192668fdd801,
+        type: 2}
       Text: Tell you what-- pay my bar tab at the Club this month and we'll call
         it even.  If things move forward, perhaps it might grow into a consultancy
         opportunity for me!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 61d5c60fc2d8d2743bf89ac2ee391663,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.3
+        yPos: 0.4
+        width: 375
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: c0796ec1273c4044c909192668fdd801,
+        type: 2}
       Text: 'NOTE: The tab is two thousand!  However, the report DeVayne submits
         is also as detailed and eye opening as he promised.  You should get it in
         front of Jennifer Page as soon as possible!'
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 61d5c60fc2d8d2743bf89ac2ee391663,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.3
+        yPos: 0.4
+        width: 375
     OptionalPopups: []
     Effect:
       NpcEffects: []
@@ -121,7 +134,8 @@ MonoBehaviour:
       NpcsToTrain: []
       NpcsToRemoveFromGame: []
       LocationsToControl: []
-      TrophiesClaimedReferences: []
+      TrophiesClaimedReferences:
+      - {fileID: 11400000, guid: b9e5e9ccc373ebb489b664aebf282a93, type: 2}
       MissionsToComplete: []
       Car: 0
       Suits: 0
@@ -130,6 +144,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -159,4 +174,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1
