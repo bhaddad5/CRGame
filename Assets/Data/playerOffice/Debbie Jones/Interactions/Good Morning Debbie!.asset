@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 5bf4436f-52d1-41c8-918f-0bc1bf1fcd84
   Name: Good Morning Debbie!
+  AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
@@ -68,7 +69,7 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
-    - CurrSpeaker: 0
+    - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
       Text: And that means there will be no more pants?  And a higher hemline?
@@ -79,12 +80,39 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
-    - CurrSpeaker: 1
+    - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
       Text: "Yes to both, actually.  In accordance with the guidelines.  I never
         realized the company was so\u2026 prescriptive when it came to Admin wardrobe. 
-        I'd like to get back to work {FirstName}, if that's alright."
+        The girl at the shop was helpful.  She seemed to know what clothes would
+        pass muster and what wouldn't."
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: 'At Vixxxens?  I think some of the other girls here shop there.  You''re
+        frowning.  What''s wrong?  You don''t like the selection at Vixxxens?  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: 'It''s... just so...  No, it''s fine.  The company discount really helped
+        me stretch my budget. so that''s good.  I think I found some outfits that
+        look quite professional and still comply with the Dress Code.  I want to
+        look my best.  I''m going to be taken seriously!        '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
         type: 3}
@@ -96,8 +124,9 @@ MonoBehaviour:
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
       Text: "Of course.  As for the policy, I\u2019m pleased to have helped author
-        most of it myself.  And it is a pleasure to see those legs on parade-- at
-        last.  You may return to your desk."
+        most of it myself.  An Admin girl should dress both for her job-- and for
+        her superior.  And it is a pleasure to finally see those legs on parade--
+        at last.  You may return to your desk."
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
         type: 3}
@@ -136,6 +165,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -165,4 +195,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1
