@@ -14,15 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 15d2d09d-e912-41e4-b950-3af6a6e9d458
   Name: Adoption
+  AlertNew: 1
   Category: 3
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: d9a43405c99d9ba4bbeeb57eddf9b6a8, type: 2}
+    - {fileID: 11400000, guid: 004b67a4136786e4a974daa9be0e24ef, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -44,29 +45,64 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: fa1076b1698cb75439943b545976ce7d,
+        type: 2}
       Text: Kevin, congratulations!  I understand Donald is going to officially adopt
         you as his son!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 9b4f6ecb9a68e124fbc2baedff7d3f5b,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.43
+        yPos: 0.4
+        width: 270
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: fa1076b1698cb75439943b545976ce7d,
+        type: 2}
       Text: Isn't it awesome?  I'm going to get a new last name and everything! 
         You know what's best of all?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 9b4f6ecb9a68e124fbc2baedff7d3f5b,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.43
+        yPos: 0.4
+        width: 270
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: fa1076b1698cb75439943b545976ce7d,
+        type: 2}
       Text: What's that?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 9b4f6ecb9a68e124fbc2baedff7d3f5b,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.43
+        yPos: 0.4
+        width: 270
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: fa1076b1698cb75439943b545976ce7d,
+        type: 2}
       Text: He's NOT adopting Deirdre-- he's only going to be her foster dad!  Serves
         her right for being such a bitch to him!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 9b4f6ecb9a68e124fbc2baedff7d3f5b,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.43
+        yPos: 0.4
+        width: 270
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: fa1076b1698cb75439943b545976ce7d,
+        type: 2}
       Text: I'm happy for you!  I think a lot of things are going to be changing
         around here!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 9b4f6ecb9a68e124fbc2baedff7d3f5b,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.43
+        yPos: 0.4
+        width: 270
     OptionalPopups: []
     Effect:
       NpcEffects: []
@@ -92,11 +128,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -126,9 +158,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   Completed: 0
+  New: 1

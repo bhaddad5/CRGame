@@ -14,16 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: cfb5716d-8197-4fd0-8c51-0019980ca4ca
   Name: Professor Tyson
+  AlertNew: 1
   Category: 3
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 1054aff1b95eb024c88711b527cd02f2, type: 2}
     - {fileID: 11400000, guid: ea8ec59832782e44985db2c79ee4aed8, type: 2}
+    - {fileID: 11400000, guid: 004b67a4136786e4a974daa9be0e24ef, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -45,29 +46,71 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: fa1076b1698cb75439943b545976ce7d,
+        type: 2}
       Text: Hi Kev!  Hey, what do you think of your mom's new friend?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 9b4f6ecb9a68e124fbc2baedff7d3f5b,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.43
+        yPos: 0.4
+        width: 270
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: fa1076b1698cb75439943b545976ce7d,
+        type: 2}
       Text: Professor Tyson?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 9b4f6ecb9a68e124fbc2baedff7d3f5b,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.43
+        yPos: 0.4
+        width: 270
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: fa1076b1698cb75439943b545976ce7d,
+        type: 2}
       Text: Exactly.  What do you think of him?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 9b4f6ecb9a68e124fbc2baedff7d3f5b,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.43
+        yPos: 0.4
+        width: 270
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: fa1076b1698cb75439943b545976ce7d,
+        type: 2}
       Text: I like him!  Of course, Deirdre HATES him.  But I think he's cool.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 9b4f6ecb9a68e124fbc2baedff7d3f5b,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.43
+        yPos: 0.4
+        width: 270
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: fa1076b1698cb75439943b545976ce7d,
+        type: 2}
       Text: So you're ok with him seeing your mom?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 9b4f6ecb9a68e124fbc2baedff7d3f5b,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.43
+        yPos: 0.4
+        width: 270
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: fa1076b1698cb75439943b545976ce7d,
+        type: 2}
       Text: Yeah- I think it is great.  She seems really happy!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 9b4f6ecb9a68e124fbc2baedff7d3f5b,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.43
+        yPos: 0.4
+        width: 270
     OptionalPopups: []
     Effect:
       NpcEffects: []
@@ -93,11 +136,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -127,9 +166,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   Completed: 0
+  New: 1

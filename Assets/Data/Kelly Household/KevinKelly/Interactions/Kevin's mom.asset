@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 3693499d-48e1-4fcd-b472-7e3e3a163cb3
   Name: Kevin's mom
+  AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 004b67a4136786e4a974daa9be0e24ef, type: 2}
     RequiredNotCompletedInteractions: []
@@ -40,32 +40,67 @@ MonoBehaviour:
     RevanueCost: 0
     HornicalCost: 0
   Repeatable: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: fa1076b1698cb75439943b545976ce7d,
+        type: 2}
       Text: Hey Kevin!  How's it going?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 9b4f6ecb9a68e124fbc2baedff7d3f5b,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.43
+        yPos: 0.4
+        width: 270
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: fa1076b1698cb75439943b545976ce7d,
+        type: 2}
       Text: Oh, hey!  Yeah, it's going great!  You want my Mom?  She's out shopping
         right now.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 9b4f6ecb9a68e124fbc2baedff7d3f5b,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.43
+        yPos: 0.4
+        width: 270
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: fa1076b1698cb75439943b545976ce7d,
+        type: 2}
       Text: No problem.  I can catch her later.  It is great working with such a
         super lady.  You're a lucky guy to have such a terrific mom.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 9b4f6ecb9a68e124fbc2baedff7d3f5b,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.43
+        yPos: 0.4
+        width: 270
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: fa1076b1698cb75439943b545976ce7d,
+        type: 2}
       Text: Yeah, I am.  Mom is fantastic.  I just wish my sister wasn't such a bitch
         to her.  They are always arguing.  It drives me nuts, you know?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 9b4f6ecb9a68e124fbc2baedff7d3f5b,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.43
+        yPos: 0.4
+        width: 270
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: fa1076b1698cb75439943b545976ce7d,
+        type: 2}
       Text: I bet!  We'll have to talk about that sometime.  See you later!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 9b4f6ecb9a68e124fbc2baedff7d3f5b,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.43
+        yPos: 0.4
+        width: 270
     OptionalPopups: []
     Effect:
       NpcEffects: []
@@ -91,11 +126,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -125,9 +156,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   Completed: 0
+  New: 1

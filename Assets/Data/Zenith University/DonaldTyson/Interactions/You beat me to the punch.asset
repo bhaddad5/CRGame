@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 094c2aed-0399-4406-a655-21596708801f
   Name: You beat me to the punch
+  AlertNew: 1
   Category: 3
   Requirements:
     RequiredPower: 0
@@ -124,9 +125,9 @@ MonoBehaviour:
       NpcsToTrain: []
       NpcsToRemoveFromGame:
       - {fileID: 11400000, guid: 8468daf25d821974a8b3b9c729b1d180, type: 2}
-      - {fileID: 11400000, guid: fa1076b1698cb75439943b545976ce7d, type: 2}
       LocationsToControl: []
-      TrophiesClaimedReferences: []
+      TrophiesClaimedReferences:
+      - {fileID: 11400000, guid: 30a74065ebbb034438f83f53440bda89, type: 2}
       MissionsToComplete: []
       Car: 0
       Suits: 0
@@ -135,6 +136,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -164,5 +166,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
   New: 1
