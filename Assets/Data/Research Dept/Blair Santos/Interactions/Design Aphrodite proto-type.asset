@@ -20,14 +20,10 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
-      Stat: 0
-      Is: 0
-      Value: 0
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 25deea830f29a4d4a831e7c37df9fa47, type: 2}
-    - {fileID: 11400000, guid: 6d5cf99a506a45e4183a3eed276ff84b, type: 2}
+    - {fileID: 11400000, guid: cf2b520aaa8172046a9b03fbeeafc936, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -49,67 +45,81 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 4f5b0cef4033d884badd26e5c47e6af2,
+        type: 2}
       Text: Damn it, damn it, damn it!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 0cfc0bf2b9b5fe8418cc4c3bd0caceb4,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.65
+        yPos: 0.42
+        width: 375
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 4f5b0cef4033d884badd26e5c47e6af2,
+        type: 2}
       Text: Blair, calm down!  What's the problem?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 0cfc0bf2b9b5fe8418cc4c3bd0caceb4,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.65
+        yPos: 0.42
+        width: 375
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 4f5b0cef4033d884badd26e5c47e6af2,
+        type: 2}
       Text: I'm sorry!  It's Aphrodite.  You've seen the potential in the briefing,
-        right?  And now Management can't approve my request for resources to produce
+        right?  And now Purchasing won't approve my request for resources to produce
         a proper proto-type!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 0cfc0bf2b9b5fe8418cc4c3bd0caceb4,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.65
+        yPos: 0.42
+        width: 375
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: What exactly do you need to produce your proto-type and why is it so
-        important?
+      OptionalNpcReference: {fileID: 11400000, guid: 4f5b0cef4033d884badd26e5c47e6af2,
+        type: 2}
+      Text: That's my Corporate Accounts policy.  I put an auto-freeze on lots of
+        departments.  There's been too much unaccountable spending.  What exactly
+        do you need to produce your proto-type and why is it so important?  Perhaps
+        I can get your request approved.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 0cfc0bf2b9b5fe8418cc4c3bd0caceb4,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.65
+        yPos: 0.42
+        width: 375
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 4f5b0cef4033d884badd26e5c47e6af2,
+        type: 2}
       Text: It's just more corner cutting and I'm sick of it.  Aphrodite is the future
         and all I need is some money and tech support.  They never want to invest
         in things!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 0cfc0bf2b9b5fe8418cc4c3bd0caceb4,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.65
+        yPos: 0.42
+        width: 375
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 4f5b0cef4033d884badd26e5c47e6af2,
+        type: 2}
       Text: 'NOTE: Blair''s making a big ask.  She''ll need three PATENTS and three
         REVENUE in order to produce the proto-type.  However, the proto-type could
         be important to channeling Artemis technology in a direction you approve
         of...'
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 0cfc0bf2b9b5fe8418cc4c3bd0caceb4,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.65
+        yPos: 0.42
+        width: 375
     OptionalPopups:
     - Title: She's so passionate about her work...
       Videos:
@@ -118,8 +128,9 @@ MonoBehaviour:
       Text: ...it is a passion you believe could be harnessed.
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
-        AmbitionEffect: -10
+      - OptionalNpcReference: {fileID: 11400000, guid: 4f5b0cef4033d884badd26e5c47e6af2,
+          type: 2}
+        AmbitionEffect: -20
         PrideEffect: 0
       EgoEffect: 0
       FundsEffect: 0
