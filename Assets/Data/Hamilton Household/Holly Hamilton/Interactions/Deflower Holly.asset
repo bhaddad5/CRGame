@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 391a17a0-3061-4585-81fa-f27948c3271f
   Name: Deflower Holly
+  AlertNew: 1
   Category: 6
   Requirements:
     RequiredPower: 0
@@ -21,14 +22,14 @@ MonoBehaviour:
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions: []
-    RequiredNotCompletedInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: 1ba470c3f8b6f0345bc8cdd7ece48ae5, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
-    RequiredNpcsControled:
+    RequiredNpcsControled: []
+    RequiredNpcsTrained:
     - {fileID: 11400000, guid: 8d9f38aa47f1c4f48b97afffaa769f0d, type: 2}
-    RequiredNpcsTrained: []
-    RequiredNpcsNotControled:
-    - {fileID: 11400000, guid: 8d9f38aa47f1c4f48b97afffaa769f0d, type: 2}
+    RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
     EgoCost: 5
@@ -113,6 +114,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -142,5 +144,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
   New: 1

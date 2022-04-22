@@ -10,24 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Fuck Blair Hard
+  m_Name: control research
   m_EditorClassIdentifier: 
-  Id: 87be8a36-a9ed-4f5a-bfa5-68ecf28f6806
-  Name: Fuck Blair Hard
+  Id: 38068ec7-1562-49d7-965c-a8d4700c4c64
+  Name: control research
   AlertNew: 1
-  Category: 6
+  Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions: []
-    RequiredNotCompletedInteractions:
-    - {fileID: 11400000, guid: 226d49fe4df7b904b9d530c1beb59904, type: 2}
+    RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
-    RequiredNpcsControled:
-    - {fileID: 11400000, guid: 4f5b0cef4033d884badd26e5c47e6af2, type: 2}
+    RequiredNpcsControled: []
     RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
     RequiredTrophies: []
@@ -40,24 +38,14 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
-  Repeatable: 1
-  PreviewEffect: 1
+  Repeatable: 0
+  PreviewEffect: 0
   Result:
     Dialogs: []
-    OptionalPopups:
-    - Title: No foreplay required!
-      Videos:
-      - {fileID: 32900000, guid: 012067db33b03f44483912c374cbef12, type: 3}
-      Texture: {fileID: 0}
-      Text: Your little research pok-pok gets on her back and spreads her legs. 
-        It will be good for her to get back in touch with her old bar girl skills!
+    OptionalPopups: []
     Effect:
-      NpcEffects:
-      - OptionalNpcReference: {fileID: 11400000, guid: 4f5b0cef4033d884badd26e5c47e6af2,
-          type: 2}
-        AmbitionEffect: 0
-        PrideEffect: -10
-      EgoEffect: 13
+      NpcEffects: []
+      EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -69,7 +57,8 @@ MonoBehaviour:
       NpcsToControl: []
       NpcsToTrain: []
       NpcsToRemoveFromGame: []
-      LocationsToControl: []
+      LocationsToControl:
+      - {fileID: 11400000, guid: 38f9577d7773b8940808490d919881db, type: 2}
       TrophiesClaimedReferences: []
       MissionsToComplete: []
       Car: 0

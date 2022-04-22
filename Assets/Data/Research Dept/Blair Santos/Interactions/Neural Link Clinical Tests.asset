@@ -44,33 +44,51 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 4f5b0cef4033d884badd26e5c47e6af2,
+        type: 2}
       Text: We need to accelerate the development schedule.  We proceed to clinical
         trials of the neural link tech immediately.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 0cfc0bf2b9b5fe8418cc4c3bd0caceb4,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.65
+        yPos: 0.42
+        width: 375
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 4f5b0cef4033d884badd26e5c47e6af2,
+        type: 2}
       Text: It's too soon!  The proto-type is too fragile to withstand--
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 0cfc0bf2b9b5fe8418cc4c3bd0caceb4,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.65
+        yPos: 0.42
+        width: 375
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 4f5b0cef4033d884badd26e5c47e6af2,
+        type: 2}
       Text: Don't argue with me.  See to it!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 0cfc0bf2b9b5fe8418cc4c3bd0caceb4,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.65
+        yPos: 0.42
+        width: 375
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 4f5b0cef4033d884badd26e5c47e6af2,
+        type: 2}
+      Text: 'NOTE: Blair has taken the research as far as she is capable.  You''ll
+        need to recruit a new CTO to lead the research effort to the next level!'
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 0cfc0bf2b9b5fe8418cc4c3bd0caceb4,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.65
+        yPos: 0.42
+        width: 375
     OptionalPopups:
     - Title: Blair's furious and tries to reason...
       Videos:
@@ -80,7 +98,8 @@ MonoBehaviour:
         positive results come through, your decision, much to her surprise, is validated.
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 4f5b0cef4033d884badd26e5c47e6af2,
+          type: 2}
         AmbitionEffect: -20
         PrideEffect: 0
       EgoEffect: 0
@@ -111,22 +130,24 @@ MonoBehaviour:
   FailureResult:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 4f5b0cef4033d884badd26e5c47e6af2,
+        type: 2}
       Text: 'NOTE: Blair''s lack of success is affecting your overall schedule and
         you aren''t happy with her...'
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 0cfc0bf2b9b5fe8418cc4c3bd0caceb4,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.65
+        yPos: 0.42
+        width: 375
     OptionalPopups:
     - Title: Blair, your failure is unacceptable.
       Videos:
       - {fileID: 32900000, guid: 043e7adbc37bc054faf9dc2201c5fa20, type: 3}
       Texture: {fileID: 0}
       Text: She's defensive, furious and as angry and frustrated as you've ever seen
-        tthe usually serene cheerful researcher.
+        the usually serene and cheerful researcher.
     Effect:
       NpcEffects: []
       EgoEffect: 0
