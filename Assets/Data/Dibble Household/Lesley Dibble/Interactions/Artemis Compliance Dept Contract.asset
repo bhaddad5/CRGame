@@ -23,7 +23,8 @@ MonoBehaviour:
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: e073ad403c6e7624e90934fea7e7cc24, type: 2}
-    RequiredNotCompletedInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: 550c4df11ea675c489aef4004457bf49, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled:
     - {fileID: 11400000, guid: a467ecebab11ffc43b115328d4339aa7, type: 2}
@@ -45,31 +46,36 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 9123f628b7530f14da3258a0f7d808ee,
+        type: 2}
       Text: It occurred to me that if Compliance isn't part of all this, my diversity
         and inclusion plans won't have much teeth.  We need to get them trained up
         as a priority!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 24491712e739f0846947e56dcfb265e9,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 9123f628b7530f14da3258a0f7d808ee,
+        type: 2}
       Text: Of course.  I was going to ask you about Compliance.  There will be an
         extra charge but I can totally get a program set up for Compliance.  We can
         even ,make them first cab off the rank!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 24491712e739f0846947e56dcfb265e9,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
     OptionalPopups: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 9123f628b7530f14da3258a0f7d808ee,
+          type: 2}
         AmbitionEffect: -10
         PrideEffect: 0
       EgoEffect: 0
