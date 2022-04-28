@@ -35,8 +35,7 @@ namespace Assets.GameModel.UiDisplayers
 		{
 			Icon.sprite = loc.Icon.ToSprite();
 			Text.text = $"{loc.Name}";
-			var dayOfWeek = mgm.GetDateFromTurnNumber().DayOfWeek;
-			Button.interactable = !loc.ClosedOnWeekends || (dayOfWeek != DayOfWeek.Saturday && dayOfWeek != DayOfWeek.Sunday);
+			Button.interactable = loc.IsAccessible(mgm);
 			Button.gameObject.SetActive(loc.IsVisible(mgm));
 			Button.transform.localPosition = ConvertMapPos(loc.UiPosition);
 			NewIndicator.SetActive(loc.HasNewInteractions(mgm));
@@ -50,7 +49,7 @@ namespace Assets.GameModel.UiDisplayers
 		public string GetTooltip()
 		{
 			if (!Button.interactable)
-				return "Office locations are closed on weekends";
+				return "Location currently closed";
 			return null;
 		}
 	}
