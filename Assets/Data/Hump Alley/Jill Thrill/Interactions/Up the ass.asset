@@ -14,13 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 17135abc-7225-43f5-a7b0-fce40556f0a1
   Name: Up the ass
+  AlertNew: 1
   Category: 6
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 37832324fd78b4941aefd2b25f8c9de7, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -59,6 +61,8 @@ MonoBehaviour:
     - Title: No lube for you, Jill!
       Videos:
       - {fileID: 32900000, guid: ce0c471489b8fee42ac34753c4859bb0, type: 3}
+      - {fileID: 32900000, guid: 2089577d51eda9049b3a01581832abd9, type: 3}
+      - {fileID: 32900000, guid: 486be8c58c0da2c44aab5eddade44259, type: 3}
       Texture: {fileID: 0}
       Text: Sure, she tells you how much she likes it now-- but it was the one thing
         she refused you when she worked for you!
@@ -86,6 +90,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -115,5 +120,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
   New: 1

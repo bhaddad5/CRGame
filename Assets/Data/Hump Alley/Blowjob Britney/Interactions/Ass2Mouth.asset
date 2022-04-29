@@ -14,13 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 1f9da76c-ea2c-418f-9a3a-bf9226baeafc
   Name: Ass2Mouth
+  AlertNew: 1
   Category: 6
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: f46e858564134af4aa6987ea52aea897, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -61,6 +63,9 @@ MonoBehaviour:
     - Title: '"You like your new job Brit?"'
       Videos:
       - {fileID: 32900000, guid: 325d67709f1f45a438a48ff754909d7a, type: 3}
+      - {fileID: 32900000, guid: 6fbfe2d03ff5f8a4aad0917811d909ca, type: 3}
+      - {fileID: 32900000, guid: faac59bc25b2bb74aa9ae710ff2d4db2, type: 3}
+      - {fileID: 32900000, guid: 2b34ee42830488a4f950169ca8a76019, type: 3}
       Texture: {fileID: 0}
       Text: She's gotten better at fucking since you fired her.  She's had to!
     Effect:
@@ -87,6 +92,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -116,5 +122,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
   New: 1
