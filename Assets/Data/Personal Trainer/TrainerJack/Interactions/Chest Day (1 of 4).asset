@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: eb0a77c9-6dc5-4fc7-8f02-0cb836128b33
   Name: Chest Day (1 of 4)
+  AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
@@ -53,7 +54,12 @@ MonoBehaviour:
         xPos: 0.45
         yPos: 0.44
         width: 450
-    OptionalPopups: []
+    OptionalPopups:
+    - Title: Jack may be a cuck...
+      Videos:
+      - {fileID: 32900000, guid: d6e983119795a774188c384c6939e575, type: 3}
+      Texture: {fileID: 0}
+      Text: ...but he knows his routines!
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -78,6 +84,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -107,5 +114,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
   New: 1

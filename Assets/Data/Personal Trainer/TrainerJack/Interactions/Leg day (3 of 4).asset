@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: fe06bd35-b945-4441-ba5e-f45009519c4c
   Name: Leg day (3 of 4)
+  AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
@@ -53,7 +54,12 @@ MonoBehaviour:
         xPos: 0.45
         yPos: 0.44
         width: 450
-    OptionalPopups: []
+    OptionalPopups:
+    - Title: Jack notes your progress...
+      Videos:
+      - {fileID: 32900000, guid: 47f41dc382950f341968d5eef8b46098, type: 3}
+      Texture: {fileID: 0}
+      Text: ...with approval!
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -78,6 +84,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -107,5 +114,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
   New: 1

@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 4dbf9fa5-8fd9-4b1b-bab4-993339b0c0dc
   Name: Selectacorp Referral (Sell her for $5k)
+  AlertNew: 1
   Category: 2
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: af7c6de05e0437b4bab052ff29e92086, type: 2}
     RequiredNotCompletedInteractions: []
@@ -44,26 +44,53 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
+        type: 2}
       Text: I'm referring you for a new position.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e84fa28c9b2465d4da4b8d52244709d2,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.35
+        width: 380
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
         type: 2}
       Text: What department?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e84fa28c9b2465d4da4b8d52244709d2,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.35
+        width: 380
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
+        type: 2}
       Text: Not here at Artemis.  It's with a company called Selectacorp.  I've scheduled
         an interview for you.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e84fa28c9b2465d4da4b8d52244709d2,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.35
+        width: 380
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
         type: 2}
       Text: Wow!  That's fantastic!  Thank you so much!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e84fa28c9b2465d4da4b8d52244709d2,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.35
+        width: 380
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
+        type: 2}
       Text: 'THE NEXT DAY:  Jill''s failure to make it to work isn''t considered
         unusual.  She''s never been 100% reliable.
 
@@ -71,14 +98,27 @@ MonoBehaviour:
         agency reports that Jill Vander seems to have moved.  She''s left no forwarding
         address. '
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e84fa28c9b2465d4da4b8d52244709d2,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.35
+        width: 380
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
+        type: 2}
       Text: 'FR: SELECTACORP
 
         THANKS FOR THE TIP!  YOUR REFERRAL BONUS HAS
-        BEEN DEPOSITED TO YOUR ACCOUT.  JILL FINALLY GETS HER WISH TO TRAVEL ANMD
+        BEEN DEPOSITED TO YOUR ACCOUT.  JILL FINALLY GETS HER WISH TO TRAVEL AND
         WORK OVERSEAS AFTER ALL! '
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e84fa28c9b2465d4da4b8d52244709d2,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.35
+        width: 380
     OptionalPopups:
     - Title: Jill's Overseas Job Placement
       Videos:
@@ -111,11 +151,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -145,9 +181,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   Completed: 0
+  New: 1

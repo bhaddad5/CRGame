@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 1caff423-a1e0-40ae-b3d0-b7738a73cc36
   Name: Back day (2 of 4)
+  AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
@@ -53,7 +54,12 @@ MonoBehaviour:
         xPos: 0.45
         yPos: 0.44
         width: 450
-    OptionalPopups: []
+    OptionalPopups:
+    - Title: You start to feel muscles...
+      Videos:
+      - {fileID: 32900000, guid: 55e2d9365aebbde468ff8811d6a98184, type: 3}
+      Texture: {fileID: 0}
+      Text: ...you've never felt before!
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -78,6 +84,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -107,5 +114,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
   New: 1

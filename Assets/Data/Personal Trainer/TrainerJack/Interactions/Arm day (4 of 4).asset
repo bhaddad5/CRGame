@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 823b4fa4-f713-4cdd-8ae0-90ffd4209193
   Name: Arm day (4 of 4)
+  AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
@@ -66,7 +67,12 @@ MonoBehaviour:
         xPos: 0.27
         yPos: 0.44
         width: 450
-    OptionalPopups: []
+    OptionalPopups:
+    - Title: You feel better than...
+      Videos:
+      - {fileID: 32900000, guid: 011fddb246adea14fac514d5f6a42c51, type: 3}
+      Texture: {fileID: 0}
+      Text: ...you have since you were a kid.  Feels good, man!
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -91,6 +97,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -120,5 +127,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
   New: 1
