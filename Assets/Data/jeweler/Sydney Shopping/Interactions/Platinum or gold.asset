@@ -1,0 +1,168 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: Platinum or gold
+  m_EditorClassIdentifier: 
+  Id: 375ae764-2970-448f-84d0-79282e836a8e
+  Name: Platinum or gold?
+  AlertNew: 1
+  Category: 1
+  Requirements:
+    RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
+    NpcStatRequirements: []
+    RequiredInteractions: []
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredNpcsControled: []
+    RequiredNpcsTrained: []
+    RequiredNpcsNotControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 0
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    HornicalCost: 0
+  Repeatable: 0
+  PreviewEffect: 1
+  Result:
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: e964701ec45d61a438973a047911fce2,
+        type: 2}
+      Text: What do you think?  The platinum or the gold tennis bracelet?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 415c70fe36b25d941ba2edfcc68664d3,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 300
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: e964701ec45d61a438973a047911fce2,
+        type: 2}
+      Text: You're speaking to me?  Ah, well-- what's the occaision and who is the
+        gift for?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 415c70fe36b25d941ba2edfcc68664d3,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 300
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: e964701ec45d61a438973a047911fce2,
+        type: 2}
+      Text: It's for me.  There's no occaision.  I just feel like buying something.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 415c70fe36b25d941ba2edfcc68664d3,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 300
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: e964701ec45d61a438973a047911fce2,
+        type: 2}
+      Text: That's a pretty expensive gift for a girl your age.  Are you sure your
+        parents know you're shopping at such a pricey shop?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 415c70fe36b25d941ba2edfcc68664d3,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 300
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: e964701ec45d61a438973a047911fce2,
+        type: 2}
+      Text: Oh God, you're so old!  Nevermind.  Felicia, I can't decide-- I'll just
+        take both.  Box them up for me, will you?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 415c70fe36b25d941ba2edfcc68664d3,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 300
+    OptionalPopups:
+    - Title: The shop girl gushes with delight...
+      Videos:
+      - {fileID: 32900000, guid: 55dba588a33f1ff428386bbd745945cc, type: 3}
+      Texture: {fileID: 0}
+      Text: ...as the bored teen hands her a credit card.  You watch with amazement
+        as the bored blonde teen impatiently snatches up her purchases and leaves
+        you behind, as if you were never even there.
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame:
+      - {fileID: 11400000, guid: e964701ec45d61a438973a047911fce2, type: 2}
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
+  FailureResult:
+    Dialogs: []
+    OptionalPopups: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+  Completed: 0
+  New: 1
