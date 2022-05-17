@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Recruit CRO role
   m_EditorClassIdentifier: 
   Id: 71a4174f-433e-4f50-894f-6d8e3dbebb24
-  Name: Recruit CRO role
+  Name: We need a rainmaker!
+  AlertNew: 1
   Category: 4
   Requirements:
     RequiredPower: 0
@@ -22,6 +23,7 @@ MonoBehaviour:
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 2eecb66e471ff9b4e811cd0f39968f77, type: 2}
+    - {fileID: 11400000, guid: 4c8f307d27306f743aa0d0c7acd910fe, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled:
@@ -46,7 +48,8 @@ MonoBehaviour:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
       Text: Without a power player driving our sales efforts, we're in trouble. 
-        Do you think we'll have problems recruiting for a Chief Revenue Officer?
+        Do you think we'll have problems recruiting for a consultant to jumpstart
+        the Sales Department?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -56,14 +59,50 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
       Text: Not at all.  We've developed a corporate culture that's second to none. 
-        I already know who I'm going to approach for this position.
+        I already know who I'm going to approach for this position.  He's already
+        doing work for some big brands and he covers the gamut-- from revenue analysis
+        to sales training.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
         xPos: 0
         yPos: 0
         width: 0
-    OptionalPopups: []
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: I like what I'm hearing.  Can you get him in here for a chat?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: Will do.  I'll set it up with your girl Debbie.  Since Jennifer's approved
+        it, I can cover the contract out of my consultancy budget.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: 'NOTE: Debbie will greet the visitor and bring him to your office on
+        the day of the appointment!'
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    OptionalPopups:
+    - Title: van Engen's nose for talent...
+      Videos:
+      - {fileID: 32900000, guid: 56f05e7febbc80f418e846cdc1ebf59f, type: 3}
+      Texture: {fileID: 0}
+      Text: ...once again reaffirms the value he brings to an effective HR department!
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -88,6 +127,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -117,4 +157,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1
