@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Seeking relief from Family Court
+  m_Name: A Family matter
   m_EditorClassIdentifier: 
-  Id: 485a7c70-a18e-4645-8077-b42f1c8f7187
-  Name: Seeking relief from Perkins Geary
+  Id: 571f7990-5021-4924-a2de-b9cd06a3e553
+  Name: A Family matter
   AlertNew: 1
   Category: 1
   Requirements:
@@ -22,7 +22,8 @@ MonoBehaviour:
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 4eb7b9d7cdcc2c54888f9d06ba045aff, type: 2}
+    - {fileID: 11400000, guid: 57d081cb5b4f13b4b890e62d08dc22b0, type: 2}
+    - {fileID: 11400000, guid: 455476f825141b24389aba9658d28bf9, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -31,7 +32,7 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 35
+    EgoCost: 50
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -45,7 +46,8 @@ MonoBehaviour:
     Dialogs:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Fuck!  Oh-- excuse me!  I didn't see you standing there!
+      Text: Malcolm mentioned you'd spoken with him recently about a probate matter. 
+        Something involving a trust fund.  Is that right?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -54,7 +56,8 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: It's fine!  You seem upset-- what's happened, Cynthia?
+      Text: It is, District Attorney!  Perhaps he mentioned the details?  I was hoping
+        you might put a word in when the time is right.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -63,10 +66,9 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Oh, it's... personal.  Well, to be honest, I was just on the phone with
-        Perkins Geary, the law firm that administers the trust fund.  I'm trying
-        to get some relief-- the mortgage rate has just gone up and--  Never mind. 
-        It's just so damned unfair!
+      Text: Malcolm indicated you weren't interested in the trust fund account itself--
+        that you were happy to leave that for Malcolm and myself to handle.  That's
+        generous.  What then are you getting out of this?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -75,8 +77,8 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Lawyers?  Trust fund?  Relief?  What's going on?  Cynthia, please.  You
-        can tell me.  Maybe I can help?
+      Text: There's the daughter-- Sydney.  When Cynthia fails to meet her obligations
+        as the Trustee, Perkins Geary is obligated to nominate a new conservator.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -85,12 +87,8 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: 'I doubt that-- but thanks anyway.  I was hoping to get the firm to authorize
-        a disbrusement from Sydney''s trust fund to cover our living expensives and
-        rising cost of living.  Technically, I''m the Trustee for Sydney''s trust
-        fund and I get a stipend that goes along with it to cover living expenses. 
-        It isn''t covering the gaps though.  Simon insisted on a pre nup but I assumed
-        he''d leave me more than just the house!    '
+      Text: I see!  The mystery is revealed.  She must be a pretty young thing to
+        prompt you to such complicated maneuvering!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -99,75 +97,25 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: When does Sydney get access to her trust fund?
+      Text: She is-- but this isn't about me, District Attorney.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
         xPos: 0
         yPos: 0
         width: 0
-    - CurrSpeaker: 0
+    - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 0}
-      Text: Not until twenty-five.  I was surprised-- I thought it would be a lot
-        more than thirty million.  But it turned out Simon was overleveraged everywhere
-        and Fitzgerald Capital took a big hit with the Zenith Lions fiasco.  I can't
-        even sell the house until Sydney gets her trust fund either!  That tightwad
-        Malcolm Geary won't give me a dime more!
+      Text: 'NOTE: Having set up the dominoes, you may now put your play in play. 
+        You now have a compelling job offer that includes a bonus that DeShawn won''t
+        be able to resist!'
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
         xPos: 0
         yPos: 0
         width: 0
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: What happened with the Zenith Lions anyway?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: 'Well, to be honest, Simon had such an ego-- he wanted to own a sports
-        franchise.  When the Lions went on the market, he snapped them up and began
-        medddling.  he forced out the existing management-- which was all black. 
-        So naturally it got legal. '
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: Was Simon... a racist?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: 'Let''s just say he wasn''t a very nice man and leave it at that, ok? 
-        I mean he is dead after all.  Anyway, when the court went against him, he
-        was forced to divest himself of the Lions but the damage was done.  It was
-        a mess.  '
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-    OptionalPopups:
-    - Title: What you don't say about her...
-      Videos:
-      - {fileID: 32900000, guid: 35cb78335c9038943a006435956dd5fd, type: 3}
-      Texture: {fileID: 0}
-      Text: ...predicament is that Cynthia herself is just a gold digger.  Thirty
-        million.  That's still a lot of money.
+    OptionalPopups: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
