@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 59b331ff-0dbd-484f-82d8-ad40b51d0482
   Name: Game Day
+  AlertNew: 1
   Category: 6
   Requirements:
     RequiredPower: 0
@@ -46,7 +47,8 @@ MonoBehaviour:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
         type: 2}
-      Text: Ready for Game Day?
+      Text: Ready for Game Day?  Isn't it great?  The Zenith Lions are in the play
+        offs!
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: c2e2c64cae991264e92819c9d0c34aed, type: 3}
       CustomBackground: {fileID: 2800000, guid: 9715a38e3a6cbee4384507990b5c1ad9,
@@ -70,8 +72,9 @@ MonoBehaviour:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
         type: 2}
-      Text: No, you just look like you are very excited about the Championship game. 
-        You buy that at Vixxxxens?
+      Text: No, you just look like you are very excited about the big game.  We all
+        want the Lions to win big, right?  You're just showing your support, that's
+        all!  You buy that at Vixxxxens?
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: c2e2c64cae991264e92819c9d0c34aed, type: 3}
       CustomBackground: {fileID: 2800000, guid: 9715a38e3a6cbee4384507990b5c1ad9,
@@ -122,6 +125,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -151,4 +155,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1
