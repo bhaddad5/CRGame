@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: d486b166-20a2-4a6b-8ff8-e657adc8a8e0
   Name: Blameshifting
+  AlertNew: 1
   Category: 2
   Requirements:
     RequiredPower: 0
@@ -47,49 +48,58 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7e462278cce38214a924d25dd035e5b8,
+        type: 2}
       Text: After an extensive review of the way you run Purchasing, I've decided
         to recommend major changes.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 403ae2e6934b11346b2cd6dfa85a5211,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.36
+        yPos: 0.45
+        width: 415
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7e462278cce38214a924d25dd035e5b8,
+        type: 2}
       Text: But why?  I have Purchasing running very smoothly!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 403ae2e6934b11346b2cd6dfa85a5211,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.36
+        yPos: 0.45
+        width: 415
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7e462278cce38214a924d25dd035e5b8,
+        type: 2}
       Text: Lisa, I'm sorry but your whole approach is stuck in the past.  Be prepared
         for a LOT of questions about the way you run this department!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 403ae2e6934b11346b2cd6dfa85a5211,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.36
+        yPos: 0.45
+        width: 415
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7e462278cce38214a924d25dd035e5b8,
+        type: 2}
       Text: 'NOTE: Your review, which puts your professional reputation very much
-        on the line,  puts major pressure on Management to have a long look at Lisa
+        on the line, puts major pressure on Management to have a long look at Lisa
         and her performance.'
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 403ae2e6934b11346b2cd6dfa85a5211,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.36
+        yPos: 0.45
+        width: 415
     OptionalPopups: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 7e462278cce38214a924d25dd035e5b8,
+          type: 2}
         AmbitionEffect: -20
         PrideEffect: 0
       EgoEffect: 0
@@ -114,6 +124,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -143,4 +154,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1

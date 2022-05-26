@@ -26,8 +26,7 @@ MonoBehaviour:
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
-    RequiredNpcsControled:
-    - {fileID: 0}
+    RequiredNpcsControled: []
     RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
     RequiredTrophies: []
@@ -45,26 +44,29 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 6affcc7af4c14d34a9b976af0e468a1e,
+        type: 2}
       Text: What have we here?  Lexi, what's Traci done now?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: ad91f859a37b1f6499909a7d9ac22261,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.5
+        width: 300
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
         type: 2}
       Text: Traci seems to think she's still the Director of Planning-- instead of
-        an Office Girl, Mr. {LastName}.  I thought a coupel of hours in the corner,
+        an Office Girl, Mr. {LastName}.  I thought a couple of hours in the corner,
         thinking about her new place in the org chart might help improve her attitude!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: ad91f859a37b1f6499909a7d9ac22261,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.5
+        width: 300
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
         type: 2}
@@ -72,11 +74,12 @@ MonoBehaviour:
         you, Lexi.  It's almost she's your little sister.  If she's as smart as we
         both think she is, she'll start trying to impress her Big Sis.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: ad91f859a37b1f6499909a7d9ac22261,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.5
+        width: 300
     OptionalPopups:
     - Title: Traci's eyes well with tears...
       Videos:
@@ -85,7 +88,8 @@ MonoBehaviour:
       Text: ...as she takes the conversation in, mute and forbidden to speak.
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 6affcc7af4c14d34a9b976af0e468a1e,
+          type: 2}
         AmbitionEffect: 0
         PrideEffect: -5
       EgoEffect: 0
