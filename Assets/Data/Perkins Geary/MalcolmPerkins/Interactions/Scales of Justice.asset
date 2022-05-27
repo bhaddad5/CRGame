@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 2c31b98c-59f6-4028-b30c-c82eb0d7105b
   Name: Scales of Justice
+  AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
@@ -129,7 +130,12 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.3
         width: 250
-    OptionalPopups: []
+    OptionalPopups:
+    - Title: You can tell Perkins is truly...
+      Videos:
+      - {fileID: 0}
+      Texture: {fileID: 2800000, guid: 5231ef5fbdc2c0b45a3771b962bc2b41, type: 3}
+      Text: ...touched by this reminder of his family's honored legal ancestry!
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -154,6 +160,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -183,4 +190,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1

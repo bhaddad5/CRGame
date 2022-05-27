@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: d98c797d-bfed-4d20-b041-d10adde1cd5a
   Name: Our law firm
+  AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: ead5a5e7687e92949bd7dec8985987d9, type: 2}
     RequiredNotCompletedInteractions: []
@@ -44,12 +44,20 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
+        type: 2}
       Text: What can you tell me about our law firm, Perkins Geary?  Is it a female-run
         shop?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: edfe5a8c966778f48bee8b34e3566c9b,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
+        type: 2}
       Text: Hardly.  Perkins Geary is about as old school as you can get.  Probably
         the most influential firm in the city, with tentacles to the state house
         and the capital.  It's been around forever.  That's why Jen hired them- they
@@ -57,19 +65,51 @@ MonoBehaviour:
         Sorry-- that's Intellectual Property.  Amber used to work there before she
         came over to Artemis.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: edfe5a8c966778f48bee8b34e3566c9b,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
+        type: 2}
       Text: Who is our contact there?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: edfe5a8c966778f48bee8b34e3566c9b,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
+        type: 2}
       Text: Malcolm Perkins.  The old man himself is our contact.  We're an important
         client.  He knows where the bodies are buried, believe you me!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: edfe5a8c966778f48bee8b34e3566c9b,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
+        type: 2}
+      Text: 'NOTE: You can now visit the Perkins Geary law firm!'
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: edfe5a8c966778f48bee8b34e3566c9b,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
     OptionalPopups: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
+          type: 2}
         AmbitionEffect: -5
         PrideEffect: 0
       EgoEffect: 0
@@ -94,11 +134,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -128,9 +164,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   Completed: 0
+  New: 1
