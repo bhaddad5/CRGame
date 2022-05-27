@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 17c36c0c-7bbd-4eb0-b49d-4a21e6dfb374
   Name: Belly ring for Debbie
+  AlertNew: 1
   Category: 6
   Requirements:
     RequiredPower: 0
@@ -118,7 +119,16 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
-    OptionalPopups: []
+    OptionalPopups:
+    - Title: Debbie makes it as obvious as she can...
+      Videos:
+      - {fileID: 32900000, guid: 8330c788f7ec53c47ab129f83168dd1b, type: 3}
+      Texture: {fileID: 0}
+      Text: '...that she does NOT want this ''gift''.  She pouts, gives you accusing
+        looks.  You sense she even considers refusing to go through with what she
+        considers a totally inappropriate imposition.  In the end, she sullenly gathers
+        her purse when you tell her it is time for her to go to her appointment at
+        the shop.  '
     Effect:
       NpcEffects: []
       EgoEffect: 20
@@ -143,6 +153,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -172,4 +183,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1
