@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 9e20ede9-8718-4a3e-8dae-1a9a3c2e9147
   Name: Neptune Regatta
+  AlertNew: 1
   Category: 6
   Requirements:
     RequiredPower: 0
@@ -30,7 +31,7 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 0
+    EgoCost: 35
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -43,15 +44,17 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: dd92b72fbbf543240b5386911fb57826,
+        type: 2}
       Text: As a ship Captain, you can participate in the regatta whenever you like! 
         The only stake is for a bit of a brag.  It's all good fun.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 22a251b4dca66d743a990f694827ad16,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.4
+        yPos: 0.35
+        width: 250
     OptionalPopups:
     - Title: You managed to pull it out...
       Videos:
@@ -82,19 +85,22 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 1
   ProbabilityOfFailureResult: 0.5
   FailureResult:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: dd92b72fbbf543240b5386911fb57826,
+        type: 2}
       Text: It is a competitive race, but this isn't your day.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 22a251b4dca66d743a990f694827ad16,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.4
+        yPos: 0.35
+        width: 250
     OptionalPopups:
     - Title: Win or lose, you still...
       Videos:
@@ -125,5 +131,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
   New: 1
