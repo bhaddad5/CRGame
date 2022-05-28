@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: a062067a-d897-4389-91fe-450755594445
   Name: Personal Sexual History File Review
+  AlertNew: 1
   Category: 6
   Requirements:
     RequiredPower: 0
@@ -94,7 +95,22 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: Mr. {LastName}!  With respect, that's none of your business!
+      Text: Mr. {LastName}!  With respect, that's none of your business!  That file
+        is confidential!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: 'NOTE: Your expression betrays a growing impatience.  Debbie''s high
+        dudgeon regaridng this breach of her supposed privacy melts in the silence
+        you pointedly allow to fill the space bwteen you.  When you see her outrage
+        gradually melt into humiliation, you begin the review of her file.'
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
         type: 3}
@@ -107,13 +123,40 @@ MonoBehaviour:
       Videos:
       - {fileID: 32900000, guid: 395222948fcb03f419d19c6b1d2387ac, type: 3}
       Texture: {fileID: 0}
-      Text: ...metaphorically speaking of course, on all her old boyfriends, starting
+      Text: ...metaphorically speaking of course, on her sexual maturation, starting
         in middle school.
-    - Title: Although forced to answer you, Debbie...
+    - Title: You ask about the happy summer before...
+      Videos:
+      - {fileID: 32900000, guid: f849e1e5d12550b498162393c210374c, type: 3}
+      Texture: {fileID: 0}
+      Text: ...eighth grade when she finally begins developing a figure and the exciting
+        transition from training bras to real ones.  You insist she relate the story
+        of her first bra fitting at the local shopping mall and the brands, materials
+        and colors of her first bras.  Debbie does so as unemotionally as she can.
+    - Title: Next, you delve into Debbie's adolescent milestones...
+      Videos:
+      - {fileID: 32900000, guid: 57f816fa87e12944c8f48de487e6f5b0, type: 3}
+      Texture: {fileID: 0}
+      Text: ...her her first kiss (Billy Hays, 8th Grade) and the first hand under
+        her blouse (Brad Torvald, Sophomore Homecoming Dance).  She admits, under
+        your direct questioning, blushing, to have begun touching herself regulary
+        beginning at the age of sixteen.
+    - Title: Finally, you discuss Debbie's limited sexual experience...
+      Videos:
+      - {fileID: 32900000, guid: b70567e6ef1ed9a43a15398edd0a4986, type: 3}
+      Texture: {fileID: 0}
+      Text: '...her first handjob (Brad Torvald, Junior Prom) and the loss of her
+        virginity (Brad Torvald, Senior Prom), her college fling (Tony Bishop) and
+        the affair in B School with the Irish teaching assistant (Liam Devlin). 
+        You conclude by assuring her that this is all in aid of a more fruitful manager-subordinate
+        working relationship and that you will keep all her responses confidential. '
+    - Title: Although forced to answer you in detail, Debbie...
       Videos:
       - {fileID: 32900000, guid: 738a5c61260b7ae48917110d0455fd16, type: 3}
       Texture: {fileID: 0}
-      Text: ...later returns to her desk shocked by the invasion of her privacy.
+      Text: ...later returns to her desk shell shocked by the invasion of her privacy. 
+        Such a dry, clinical discussion of her most intimate relationships still
+        makes her feel exposed and vulnerable.  This is, of course, exactly the point.
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
@@ -142,6 +185,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -171,4 +215,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1
