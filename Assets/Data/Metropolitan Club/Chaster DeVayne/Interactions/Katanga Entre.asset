@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 0e7c14ef-0ac1-4900-b3a3-19b486a53e59
   Name: Katanga Entre
+  AlertNew: 1
   Category: 4
   Requirements:
     RequiredPower: 0
@@ -24,7 +25,8 @@ MonoBehaviour:
     - {fileID: 11400000, guid: a3e922e4b46c6264ba9023d4f76115fc, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
-    RequiredDepartmentsControled: []
+    RequiredDepartmentsControled:
+    - {fileID: 11400000, guid: ae731e30f2ebc5f4aa4846ccb5cd7788, type: 2}
     RequiredNpcsControled: []
     RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
@@ -86,6 +88,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -115,5 +118,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
   New: 1

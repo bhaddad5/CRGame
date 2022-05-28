@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 68ef1447-4ff1-4cb9-b785-bb5f9263cc4e
   Name: Singapore Entre
+  AlertNew: 1
   Category: 4
   Requirements:
     RequiredPower: 0
@@ -24,7 +25,8 @@ MonoBehaviour:
     - {fileID: 11400000, guid: a3e922e4b46c6264ba9023d4f76115fc, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
-    RequiredDepartmentsControled: []
+    RequiredDepartmentsControled:
+    - {fileID: 11400000, guid: ae731e30f2ebc5f4aa4846ccb5cd7788, type: 2}
     RequiredNpcsControled: []
     RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
@@ -43,17 +45,19 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: c0796ec1273c4044c909192668fdd801,
+        type: 2}
       Text: I have an extensive network in Singapore.  I'll need to make a few phone
         calls but you'll soon have a joint venture in Singapore that will set up
         your company nicely in the region.  You were smart to let me handle this
         for you!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 61d5c60fc2d8d2743bf89ac2ee391663,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.3
+        yPos: 0.4
+        width: 375
     OptionalPopups:
     - Title: Linking Singapore to the Artemis network...
       Videos:
@@ -85,6 +89,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -114,4 +119,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1
