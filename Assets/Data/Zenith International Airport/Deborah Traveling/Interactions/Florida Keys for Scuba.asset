@@ -63,7 +63,7 @@ MonoBehaviour:
       OptionalNpcReference: {fileID: 11400000, guid: 04a7b7a3afd76dc4d8b46f2b031a67d4,
         type: 2}
       Text: '{FirstName}.  {FirstName} {LastName}- your fellow Management Trainee? 
-        Look like you''re off to someplace warm.'
+        Look like you''re off to some place warm.'
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: 604e1b4eb6b164441a36ccdb55ed0dc6, type: 3}
       CustomBackground: {fileID: 2800000, guid: c301318f42b865947a67b0bb3c6006f7,
@@ -102,7 +102,38 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 04a7b7a3afd76dc4d8b46f2b031a67d4,
         type: 2}
-      Text: 
+      Text: Susan said I could borrow it in advance.  It has been six months and
+        I've practically completed the MTP.  Anyway, I've got a night dive booked
+        and my flight's been called.  See you back at the office, uh, sorry--
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 604e1b4eb6b164441a36ccdb55ed0dc6, type: 3}
+      CustomBackground: {fileID: 2800000, guid: c301318f42b865947a67b0bb3c6006f7,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 04a7b7a3afd76dc4d8b46f2b031a67d4,
+        type: 2}
+      Text: It {FirstName}.  {FirstName} {LastName}.  Well, enjoy your holiday I
+        guess.
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 604e1b4eb6b164441a36ccdb55ed0dc6, type: 3}
+      CustomBackground: {fileID: 2800000, guid: c301318f42b865947a67b0bb3c6006f7,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 04a7b7a3afd76dc4d8b46f2b031a67d4,
+        type: 2}
+      Text: 'NOTE: You''re sure she knows your name.  It''s just her way of making
+        you know she doesn''t think your name is worth remembering.  That you''re
+        a nobody.  You won''t forget any of this... but when will you be in any position
+        to do anything about it?  You feel frustrated even as you watch the blonde
+        head towards her gate...'
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: 604e1b4eb6b164441a36ccdb55ed0dc6, type: 3}
       CustomBackground: {fileID: 2800000, guid: c301318f42b865947a67b0bb3c6006f7,
@@ -118,7 +149,7 @@ MonoBehaviour:
       Texture: {fileID: 0}
       Text: '...in a bikini, you have other ideas of how to spend time in the sun. 
         You daydream briefly of banging the imperious blonde silly in some beach
-        resort then drop it.  Like that''s going to ever happen! '
+        resort, but then let it fade.  Like that''s going to ever happen! '
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: 04a7b7a3afd76dc4d8b46f2b031a67d4,
@@ -136,7 +167,8 @@ MonoBehaviour:
       HornicalEffect: 0
       NpcsToControl: []
       NpcsToTrain: []
-      NpcsToRemoveFromGame: []
+      NpcsToRemoveFromGame:
+      - {fileID: 11400000, guid: 04a7b7a3afd76dc4d8b46f2b031a67d4, type: 2}
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
