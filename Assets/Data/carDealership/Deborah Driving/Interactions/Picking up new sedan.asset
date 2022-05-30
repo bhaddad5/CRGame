@@ -1,0 +1,156 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: Picking up new sedan
+  m_EditorClassIdentifier: 
+  Id: 9c51929b-b992-479a-be08-d6dd33cf95de
+  Name: Picking up new sedan
+  AlertNew: 1
+  Category: 0
+  Requirements:
+    RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
+    NpcStatRequirements: []
+    RequiredInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: fc02f17d89ade184bb3a64f5c10348c4, type: 2}
+    - {fileID: 11400000, guid: 1c3f822f55d8bd449945eabff4120250, type: 2}
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredNpcsControled: []
+    RequiredNpcsTrained: []
+    RequiredNpcsNotControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 0
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    HornicalCost: 0
+  Repeatable: 0
+  PreviewEffect: 1
+  Result:
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 4d3743d35f797914aaaf678a95570a6d,
+        type: 2}
+      Text: Oh.  Hi!  You're from the office?  Sorry- my bad but I forget your name! 
+        Are you doing a little window shopping?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 30e60f97bd06b024e80d60a1f03635d9,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.65
+        yPos: 0.5
+        width: 280
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 4d3743d35f797914aaaf678a95570a6d,
+        type: 2}
+      Text: The name is {FirstName} {LastName}.  I'm just looking around.  Are you
+        window shopping?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 30e60f97bd06b024e80d60a1f03635d9,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.65
+        yPos: 0.5
+        width: 280
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 4d3743d35f797914aaaf678a95570a6d,
+        type: 2}
+      Text: Oh no!  I've come to pick up my new car!  It was finally time to get
+        rid of that dinky econo box I've been driving since I was at State University. 
+        Time to get myself behind the wheels of a proper executive car.  You know
+        it is so important when rocking up to business meetings to be seen driving
+        something special!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 30e60f97bd06b024e80d60a1f03635d9,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.65
+        yPos: 0.5
+        width: 280
+    OptionalPopups:
+    - Title: You watch in envy as Deborah...
+      Videos:
+      - {fileID: 32900000, guid: 135939524f5350444b25a8c82b8a9900, type: 3}
+      Texture: {fileID: 0}
+      Text: '...fills out the paperwork and takes the keys of her brand new sedan. 
+        As she drives off the lot, she waves back at you with a triumphant smile,
+        the car soon gliding down the highway as she accelerates, leaving you in
+        the dust.  '
+    Effect:
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: 4d3743d35f797914aaaf678a95570a6d,
+          type: 2}
+        AmbitionEffect: 10
+        PrideEffect: 0
+      EgoEffect: -10
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame:
+      - {fileID: 11400000, guid: 4d3743d35f797914aaaf678a95570a6d, type: 2}
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
+  FailureResult:
+    Dialogs: []
+    OptionalPopups: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+  Completed: 0
+  New: 1
