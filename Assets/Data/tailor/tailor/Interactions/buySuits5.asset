@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: c3ee2b07-06b2-4561-877b-e90791910ec2
   Name: Upgrade to Grey Flannel
+  AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
@@ -43,33 +44,39 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 1ac2e2d7fdcd46f4d89a6eae0d73789c,
+        type: 2}
       Text: I'm so glad you dropped by!  I've just received some Italian serge which
         is practically like silk.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 8db5a8cb6386f094fbc84fe868d37d69,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.55
+        yPos: 0.4
+        width: 300
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 1ac2e2d7fdcd46f4d89a6eae0d73789c,
+        type: 2}
       Text: Really?  Let's have a look!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 8db5a8cb6386f094fbc84fe868d37d69,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.55
+        yPos: 0.4
+        width: 300
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 1ac2e2d7fdcd46f4d89a6eae0d73789c,
+        type: 2}
       Text: Let me design a power suit that will silence a board room for you!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 8db5a8cb6386f094fbc84fe868d37d69,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.55
+        yPos: 0.4
+        width: 300
     OptionalPopups:
     - Title: It's more art than clothing
       Videos:
@@ -81,7 +88,7 @@ MonoBehaviour:
       NpcEffects: []
       EgoEffect: 0
       FundsEffect: 0
-      PowerEffect: 1
+      PowerEffect: 3
       PatentsEffect: 0
       CultureEffect: 0
       SpreadsheetsEffect: 0
@@ -101,6 +108,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -130,4 +138,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1

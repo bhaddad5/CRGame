@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 5019fb7a-a5da-4a09-b7b7-7e9aaa09fe9d
   Name: Upgrade to a Pinstriped Power Suit
+  AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
@@ -43,33 +44,39 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 1ac2e2d7fdcd46f4d89a6eae0d73789c,
+        type: 2}
       Text: Sir, might I suggest something bespoke?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 8db5a8cb6386f094fbc84fe868d37d69,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.55
+        yPos: 0.4
+        width: 300
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 1ac2e2d7fdcd46f4d89a6eae0d73789c,
+        type: 2}
       Text: What does that mean?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 8db5a8cb6386f094fbc84fe868d37d69,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.55
+        yPos: 0.4
+        width: 300
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 1ac2e2d7fdcd46f4d89a6eae0d73789c,
+        type: 2}
       Text: Sir, it it obvious you're an executive on the rise.  It is time for you
         to move from off the rack to something designed just for you.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 8db5a8cb6386f094fbc84fe868d37d69,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.55
+        yPos: 0.4
+        width: 300
     OptionalPopups:
     - Title: Like a second skin
       Videos:
@@ -81,7 +88,7 @@ MonoBehaviour:
       NpcEffects: []
       EgoEffect: 0
       FundsEffect: 0
-      PowerEffect: 1
+      PowerEffect: 2
       PatentsEffect: 0
       CultureEffect: 0
       SpreadsheetsEffect: 0
@@ -101,6 +108,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -130,4 +138,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1

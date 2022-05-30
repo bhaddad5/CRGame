@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 23281410-c74a-4929-8615-01e62b9abf93
   Name: Upgrade to a Beau Brummel
+  AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
@@ -43,34 +44,40 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 1ac2e2d7fdcd46f4d89a6eae0d73789c,
+        type: 2}
       Text: I have new ties in as well-- from the Borgia collection.  Also, can you
         fit you for hand made shoes as well?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 8db5a8cb6386f094fbc84fe868d37d69,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.55
+        yPos: 0.4
+        width: 300
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 1ac2e2d7fdcd46f4d89a6eae0d73789c,
+        type: 2}
       Text: Of course.  I trust your taste.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 8db5a8cb6386f094fbc84fe868d37d69,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.55
+        yPos: 0.4
+        width: 300
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 1ac2e2d7fdcd46f4d89a6eae0d73789c,
+        type: 2}
       Text: You'll never wear store bought shoes again.  And these ties-- you'll
         need a dozen at least.  All the power players are wearing Borgia ties now.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 8db5a8cb6386f094fbc84fe868d37d69,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.55
+        yPos: 0.4
+        width: 300
     OptionalPopups:
     - Title: As you look into the mirror...
       Videos:
@@ -82,7 +89,7 @@ MonoBehaviour:
       NpcEffects: []
       EgoEffect: 0
       FundsEffect: 0
-      PowerEffect: 1
+      PowerEffect: 3
       PatentsEffect: 0
       CultureEffect: 0
       SpreadsheetsEffect: 0
@@ -102,6 +109,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -131,4 +139,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1

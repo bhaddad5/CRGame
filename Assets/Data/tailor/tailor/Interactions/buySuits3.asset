@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: c3843144-0e1a-413c-b52b-6cd343a1571a
   Name: Upgrade to a Corporate Three Piecer
+  AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
@@ -43,32 +44,38 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 1ac2e2d7fdcd46f4d89a6eae0d73789c,
+        type: 2}
       Text: What are we looking at today?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 8db5a8cb6386f094fbc84fe868d37d69,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.55
+        yPos: 0.4
+        width: 300
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 1ac2e2d7fdcd46f4d89a6eae0d73789c,
+        type: 2}
       Text: Something with a bit more flair-- but not flashy!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 8db5a8cb6386f094fbc84fe868d37d69,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.55
+        yPos: 0.4
+        width: 300
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 1ac2e2d7fdcd46f4d89a6eae0d73789c,
+        type: 2}
       Text: I just received some new suits in from London you might like.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 8db5a8cb6386f094fbc84fe868d37d69,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.55
+        yPos: 0.4
+        width: 300
     OptionalPopups:
     - Title: Imported material makes all the difference
       Videos:
@@ -80,7 +87,7 @@ MonoBehaviour:
       NpcEffects: []
       EgoEffect: 0
       FundsEffect: 0
-      PowerEffect: 1
+      PowerEffect: 2
       PatentsEffect: 0
       CultureEffect: 0
       SpreadsheetsEffect: 0
@@ -100,6 +107,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -129,4 +137,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1
