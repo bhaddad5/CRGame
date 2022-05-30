@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
   m_Name: Request for salary advance
   m_EditorClassIdentifier: 
-  Id: 62dabab3-eab3-4da9-81bf-f00a0b0dab99
+  Id: f94f9c97-afb6-4682-b722-2127731121e1
   Name: Request for salary advance
   AlertNew: 1
   Category: 1
@@ -22,8 +22,8 @@ MonoBehaviour:
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 7077e560b022a8f44ab03ef693c78e99, type: 2}
-    - {fileID: 11400000, guid: cd91f4305c1202b4492e80dc0eec5f4c, type: 2}
+    - {fileID: 11400000, guid: 8d12ba6c3309f7f4c89706d85cc16a69, type: 2}
+    - {fileID: 11400000, guid: 0f55c1e39b084b54cb47725cf12a66f3, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -33,7 +33,7 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 3000
+    MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -45,168 +45,81 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: '{FirstName}, may I speak with you about something?  I have a favour
-        to ask.'
-      CustomNpcImageOptions:
-      - {fileID: 2800000, guid: 2a6ca242a5b5ec6429e14333da197408, type: 3}
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
-        type: 3}
+      OptionalNpcReference: {fileID: 0}
+      Text: Mr. {LastName}, Sir?  Is there any way I might get an advance on my salary?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: Go on, Debbie.
-      CustomNpcImageOptions:
-      - {fileID: 2800000, guid: 2a6ca242a5b5ec6429e14333da197408, type: 3}
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
-        type: 3}
+      OptionalNpcReference: {fileID: 0}
+      Text: Well, tell me what this is all about.  And didn't I just approve a salary
+        advance to allow you to purchase a new wordrobe?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: 'I was hoping I might get a salary advance.  Ms. Kelly walked me through
-        the new dress code for... admin staff.  Most of my clothes don''t meet the
-        new requirements and I''m going to need a whole new wardrobe to be able to
-        conform to the new rules.  '
-      CustomNpcImageOptions:
-      - {fileID: 2800000, guid: 2a6ca242a5b5ec6429e14333da197408, type: 3}
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
-        type: 3}
+      OptionalNpcReference: {fileID: 0}
+      Text: You did and I really appreciated it!  But, well, it's my car.  I'm two
+        months behind on my payments and I just need time to sell it so I don't take
+        a total loss on it.  Maybe just a week's advance then?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: How much of an advance?
-      CustomNpcImageOptions:
-      - {fileID: 2800000, guid: 2a6ca242a5b5ec6429e14333da197408, type: 3}
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
-        type: 3}
+      OptionalNpcReference: {fileID: 0}
+      Text: 'Typical!  This is why girls of your station never rise beyond what you
+        are.  You go out and buy a fancy car you can''t afford and now I''m expected
+        to rescue you from your own poor judgement?  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: Three thousand!  But before you say no, it's for everything-- I need
-        new shoes, new skirts, new tops, new...
-      CustomNpcImageOptions:
-      - {fileID: 2800000, guid: 2a6ca242a5b5ec6429e14333da197408, type: 3}
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
-        type: 3}
+      OptionalNpcReference: {fileID: 0}
+      Text: 'Please, Sir!  It was when I was dead sure I would pass the Management
+        Trainee Program!  Even now, if I could just have a month to sell it and take
+        some loss, it wouldn''t totally destroy my credit rating!  I''m just trying
+        to do the responsible thing here, Mr. {LastName}! '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: New what, Debbie?
-      CustomNpcImageOptions:
-      - {fileID: 2800000, guid: 2a6ca242a5b5ec6429e14333da197408, type: 3}
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
-        type: 3}
+      OptionalNpcReference: {fileID: 0}
+      Text: Yes, well you'll have to sort it out yourself.  We're not a bank, Miss
+        Jones!  The answer is no-- and that's final!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: Well, underwear actually.  The admin dress code is extremely detailed
-        and I've never worn that kind of... stuff.
-      CustomNpcImageOptions:
-      - {fileID: 2800000, guid: 2a6ca242a5b5ec6429e14333da197408, type: 3}
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: I'm sure you'll get used to wearing more appropriate lingerie.  Secretaries
-        really must look their best and I'm sure Ms. Kelly has given you a comprehensive
-        guide.  You'll be shopping at Vixxxens, I assume?
-      CustomNpcImageOptions:
-      - {fileID: 2800000, guid: 2a6ca242a5b5ec6429e14333da197408, type: 3}
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: Yes, {FirstName}.  Ms. Kelly said we have a corporate discount there
-        so...
-      CustomNpcImageOptions:
-      - {fileID: 2800000, guid: 2a6ca242a5b5ec6429e14333da197408, type: 3}
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: I'll arrange for the salary advance.  I do look forward to your new look,
-        Debbie!
-      CustomNpcImageOptions:
-      - {fileID: 2800000, guid: 2a6ca242a5b5ec6429e14333da197408, type: 3}
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-    - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: 'NOTE: You''ll need to cover the salary advance yourself but you can
-        now make snap inspections of Deborah''s wardrobe!  You won''t need to visit
-        Vixxxens-- Debbie can see to all this herself.'
-      CustomNpcImageOptions:
-      - {fileID: 2800000, guid: 2a6ca242a5b5ec6429e14333da197408, type: 3}
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
+        xPos: 0
+        yPos: 0
+        width: 0
     OptionalPopups:
-    - Title: You make a note to call Allison at Vixxxens
+    - Title: That Debbie's in a hole is no surprise...
       Videos:
-      - {fileID: 32900000, guid: d99dfde97bc52a84392064a0d05bae89, type: 3}
+      - {fileID: 32900000, guid: ebf29437a64551a46b430586fa7667d9, type: 3}
       Texture: {fileID: 0}
-      Text: The shopgirl will be happy to steer the new customer to more 'boss pleasing'
-        options.  Debbie doesn't realize how important her underwear purchasing decisions
-        will be to her new career prospects!
-    - Title: The idea of Debbie going 'down brand'...
-      Videos:
-      - {fileID: 32900000, guid: 5d94b6f7d3a9a3642aa1a5dba69053f3, type: 3}
-      Texture: {fileID: 0}
-      Text: '...seems perfectly appropriate.  Even with store sales and her new corporate
-        discount, she''ll still be forced to shop on a tight budget.  Vixxxen''s
-        boss pleasing merchandise promotes the kind of secretarial fashion ''look''
-        Debbie will have to adopt if she''s to comply with her new Corporate Dress
-        Code.     '
+      Text: ...but then a secretary shouldn't go squandering her meager pay like
+        this.  That sedan of hers is a luxury she can't afford and she needs to learn
+        a lesson about financial responsibility!
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: 0
+        PrideEffect: -5
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0

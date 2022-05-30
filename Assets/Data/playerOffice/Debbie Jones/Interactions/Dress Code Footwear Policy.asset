@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: c4b95019-ddff-48f7-a44b-3e633eebbaea
   Name: Dress Code Footwear Policy
+  AlertNew: 1
   Category: 5
   Requirements:
     RequiredPower: 0
@@ -44,38 +45,44 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: 'NOTE: It might seem petty, but the first time Deborah enters the office
         in those horrible running shoes, you feel compelled to point out that the
         Admin Dress Code requires heels and her ugly walk-to-work shoes are not allowed.'
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: Of course she tries to debate the point until you overrule her by leaving
         no doubt that once she leaves her home, she's expected to project the right
         image.  This includes the appropriate footwear.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: The next day, you find her rubbing her aching feet-- but wearing the
         appropriate minimum three inch heels.  How nice is it when Deborah takes
         direction properly!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
     OptionalPopups:
     - Title: Watching her prance into the office in those heels...
       Videos:
@@ -83,9 +90,16 @@ MonoBehaviour:
       Texture: {fileID: 0}
       Text: ...is a pleasure.  Sure, she might suffer from aching arches, but is
         that really your problem?
+    - Title: It's just one more thing Debbie...
+      Videos:
+      - {fileID: 32900000, guid: a8e267da2a67da840bf426e2d75bbc18, type: 3}
+      Texture: {fileID: 0}
+      Text: ...no longer has to think about, another decision taken from her.  In
+        a way, you're making her life a lot simpler!
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+          type: 2}
         AmbitionEffect: 0
         PrideEffect: -3
       EgoEffect: 10
@@ -110,6 +124,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -191,4 +206,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1
