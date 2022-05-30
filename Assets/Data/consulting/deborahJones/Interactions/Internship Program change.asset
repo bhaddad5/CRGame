@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: f73f424f-18e2-43ce-8b8f-0f566ff55459
   Name: Internship Program change
+  AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 9572c2a10529ffe489806abd54f5c1da, type: 2}
     RequiredNotCompletedInteractions:
@@ -45,43 +45,83 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
       Text: Hi.  We need to talk about the Internship Program and Amanda.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.68
+        yPos: 0.4
+        width: 400
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
         type: 2}
-      Text: That's none of your concern.  I manage the Internship Program.
+      Text: That's none of your concern, {LastName}.  I manage the Internship Program.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.68
+        yPos: 0.4
+        width: 400
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
       Text: 'Not anymore.  I''ll be managing the program.  Amanda will be reporting
         to me.   Susan will be sending a memo out shortly.  '
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.68
+        yPos: 0.4
+        width: 400
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
         type: 2}
       Text: Why?  I'm doing a great job with Amanda!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.68
+        yPos: 0.4
+        width: 400
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
       Text: Deborah, if you haven't noticed, things are taking off for me here at
         Artemis.  It is simple- I'm succeeding and you're failing.  As a reward,
         I asked for access to Amanda and I have it.  Get used to losing Debbie. 
         It's not going to get any better for you.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.68
+        yPos: 0.4
+        width: 400
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
         type: 2}
-      Text: We'll see who the loser is!  We'll see who ends up on top!  And it certainly
-        won't be YOU!
+      Text: 'We''ll see who the loser is!  We''ll see who ends up on top!  And it
+        certainly won''t be YOU!  And one more thing: DO NOT CALL ME DEBBIE!  EVER!'
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.68
+        yPos: 0.4
+        width: 400
     OptionalPopups:
     - Title: Deborah takes it in stride
       Videos:
       - {fileID: 32900000, guid: e6eb74ce31e208f4b922fcb2ee871a73, type: 3}
       Texture: {fileID: 0}
-      Text: She's obviously furious but she won't let you she how rattled she is.
+      Text: She's obviously furious but she won't let you she how rattled she is. 
+        Underneath, you sense an unfamiliar panic begin to enfold her.
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
@@ -111,11 +151,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -145,9 +181,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   Completed: 0
+  New: 1
