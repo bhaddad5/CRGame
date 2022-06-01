@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 26d622e0-45f7-445c-9eb8-bea55e58a2a1
   Name: Artemis Senior Exec Party
+  AlertNew: 1
   Category: 3
   Requirements:
     RequiredPower: 70
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 2b744fbf34ee1fd429a0cf513358039c, type: 2}
     - {fileID: 11400000, guid: cb5bee6c18d31cf4eaf87221693b7ec8, type: 2}
@@ -42,27 +42,55 @@ MonoBehaviour:
     RevanueCost: 0
     HornicalCost: 0
   Repeatable: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: f42fb56e29e0b374386530f7e2189a62,
+        type: 2}
       Text: Will you and Donald be attending the Executive get together?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: b7b33b95b8ec3ac45bc1c380af567ee4,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.4
+        width: 300
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: f42fb56e29e0b374386530f7e2189a62,
+        type: 2}
       Text: I suppose so.  Yourself?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: b7b33b95b8ec3ac45bc1c380af567ee4,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.4
+        width: 300
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: f42fb56e29e0b374386530f7e2189a62,
+        type: 2}
       Text: Oh, yes!  Looking forward to it-- mostly to get to know your husband
         better!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: b7b33b95b8ec3ac45bc1c380af567ee4,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.4
+        width: 300
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: f42fb56e29e0b374386530f7e2189a62,
+        type: 2}
       Text: I will let him know!  He usually hates these corporate social things
         but if he has someone to talk to, it is a lot less painful.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: b7b33b95b8ec3ac45bc1c380af567ee4,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.4
+        width: 300
     OptionalPopups: []
     Effect:
       NpcEffects: []
@@ -88,11 +116,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -122,9 +146,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   Completed: 0
+  New: 1

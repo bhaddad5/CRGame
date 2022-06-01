@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 69da629c-f1f5-4b13-ab44-693456ccc098
   Name: Increase headhunter fees
+  AlertNew: 1
   Category: 4
   Requirements:
     RequiredPower: 0
@@ -43,24 +44,28 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3ed340b130310bb4abddc437bf706b8a,
+        type: 2}
       Text: 'If you could authorize higher fees for the headhunters we use, we could
         get the jump on any talent they may be in touch with. '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: b7b33b95b8ec3ac45bc1c380af567ee4,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.52
+        yPos: 0.38
+        width: 310
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3ed340b130310bb4abddc437bf706b8a,
+        type: 2}
       Text: If that's what's required, I'll give you the go ahead.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: b7b33b95b8ec3ac45bc1c380af567ee4,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.52
+        yPos: 0.38
+        width: 310
     OptionalPopups: []
     Effect:
       NpcEffects: []
@@ -86,6 +91,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -115,4 +121,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1

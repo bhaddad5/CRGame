@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 4984d8be-72b7-49cd-ba3c-3af7055905c9
   Name: Promote Best Workplace Campaign
+  AlertNew: 1
   Category: 0
   Requirements:
     RequiredPower: 0
@@ -43,25 +44,29 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3ed340b130310bb4abddc437bf706b8a,
+        type: 2}
       Text: 'We really ought to show the industry what a wonderful place this is
         to work.  If we could work with Marketing to get a full spectrum campaign
         out there, it would boost recruitment efforts tremendously. '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: b7b33b95b8ec3ac45bc1c380af567ee4,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.52
+        yPos: 0.38
+        width: 310
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3ed340b130310bb4abddc437bf706b8a,
+        type: 2}
       Text: Do it then.  Let Marketing know I consider this a priority.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: b7b33b95b8ec3ac45bc1c380af567ee4,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.52
+        yPos: 0.38
+        width: 310
     OptionalPopups: []
     Effect:
       NpcEffects: []
@@ -87,6 +92,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -116,4 +122,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1

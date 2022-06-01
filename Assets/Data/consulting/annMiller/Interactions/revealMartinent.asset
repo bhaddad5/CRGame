@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 0a8cf070-bc2c-41fd-9cd9-3be4650dd6a1
   Name: Do you think this office is as dysfunctional as I do?
+  AlertNew: 1
   Category: 3
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 29e038d35126f7042a12d585beb152de, type: 2}
     RequiredNotCompletedInteractions: []
@@ -40,35 +40,71 @@ MonoBehaviour:
     RevanueCost: 0
     HornicalCost: 0
   Repeatable: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757,
+        type: 2}
       Text: This place is nuts!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 55141d9bbfb6a184191303af7a279900,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 400
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: You're not wrong, new boy.
+      OptionalNpcReference: {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757,
+        type: 2}
+      Text: You're not wrong, {FirstName}.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 55141d9bbfb6a184191303af7a279900,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 400
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757,
+        type: 2}
       Text: I can't believe how poorly run this company is.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 55141d9bbfb6a184191303af7a279900,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 400
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757,
+        type: 2}
       Text: "If I ran things, these lazy bitches would have no idea what hit them. 
         No one wants to whip this place into shape\u2014and it badly needs it!"
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 55141d9bbfb6a184191303af7a279900,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 400
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757,
+        type: 2}
       Text: There might be a place in the organization in the future for a ballbuster
         like this...
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 55141d9bbfb6a184191303af7a279900,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 400
     OptionalPopups: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757,
+          type: 2}
         AmbitionEffect: -1
         PrideEffect: 0
       EgoEffect: 0
@@ -93,11 +129,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -127,9 +159,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   Completed: 0
+  New: 1
