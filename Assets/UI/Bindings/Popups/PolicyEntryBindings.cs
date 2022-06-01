@@ -31,6 +31,7 @@ namespace Assets.GameModel.UiDisplayers
 			policy.Cost.SubtractCost(mgm);
 			policy.Effect.ExecuteEffect(mgm);
 			RefreshUiDisplay(mgm);
+			mgm.HandleTurnChange();
 		}
 
 		public void RefreshUiDisplay(MainGameManager mgm)
