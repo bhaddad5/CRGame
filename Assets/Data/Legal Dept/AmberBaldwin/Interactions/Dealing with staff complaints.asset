@@ -14,16 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 979ab6e5-9aae-46b6-a205-7378d79d3120
   Name: Dealing with staff complaints
+  AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: c1fc89e64b1274647978d1a242419beb, type: 2}
-    RequiredNotCompletedInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: 07be109429086ff46a9c3b088b1c9ab2, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -44,34 +45,70 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3ee00e5eebd58bf4d942df330f12e4e2,
+        type: 2}
       Text: I'm wondering-- what should I do if I have staff coming to me with complaints? 
         I'm concerned that since more men may be joining the company soon that we
         have a solid process for dealing with sexual harassment.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef25c0dc25e5afe4b9ce257cbbd7b6d8,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.4
+        width: 300
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3ee00e5eebd58bf4d942df330f12e4e2,
+        type: 2}
       Text: 'I like your attitude and you''re right!  Normally these complaints start
         with HR but they always end up in Legal.  For the record, we have a zero
         tolerance policy for ANY perceived act of sexual harassment!    '
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef25c0dc25e5afe4b9ce257cbbd7b6d8,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.4
+        width: 300
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3ee00e5eebd58bf4d942df330f12e4e2,
+        type: 2}
       Text: What if there is a mistake or a misperception?  A "She said, He said"
         kind of situation?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef25c0dc25e5afe4b9ce257cbbd7b6d8,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.4
+        width: 300
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3ee00e5eebd58bf4d942df330f12e4e2,
+        type: 2}
       Text: Under my watch, there's ONLY a "She said" side to the argument  Got it?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef25c0dc25e5afe4b9ce257cbbd7b6d8,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.4
+        width: 300
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3ee00e5eebd58bf4d942df330f12e4e2,
+        type: 2}
       Text: You bet, Ms. Baldwin!  Yes Ma'am!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef25c0dc25e5afe4b9ce257cbbd7b6d8,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.4
+        width: 300
     OptionalPopups: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 3ee00e5eebd58bf4d942df330f12e4e2,
+          type: 2}
         AmbitionEffect: -5
         PrideEffect: 0
       EgoEffect: 0
@@ -96,11 +133,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -130,9 +163,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   Completed: 0
+  New: 1
