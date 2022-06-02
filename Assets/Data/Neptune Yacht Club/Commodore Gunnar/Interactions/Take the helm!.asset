@@ -95,10 +95,22 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
-  CanFail: 0
-  ProbabilityOfFailureResult: 0
+  CanFail: 1
+  ProbabilityOfFailureResult: 0.5
   FailureResult:
-    Dialogs: []
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: 'The Commodore''s order for you to take the helm catches you by surprise. 
+        You''re a bit shakey as you lose the wind by cutting starbaord.  As a more
+        experienced sailor jumps in to take the helm, the Commodore winks.  "It will
+        come in time," he notes. '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     OptionalPopups: []
     Effect:
       NpcEffects: []

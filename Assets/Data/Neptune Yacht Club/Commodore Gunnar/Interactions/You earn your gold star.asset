@@ -89,10 +89,22 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
-  CanFail: 0
-  ProbabilityOfFailureResult: 0
+  CanFail: 1
+  ProbabilityOfFailureResult: 0.25
   FailureResult:
-    Dialogs: []
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: '"There''s no shame in not earning your captaincy when you''re not ready
+        for it.  When you are, it will be all the more reason to celebrate.  I''m
+        confident you''ll make it, {FirstName}, and I''ll be proud to present you
+        your patch when you''re earned it-- and you will!"'
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     OptionalPopups: []
     Effect:
       NpcEffects: []

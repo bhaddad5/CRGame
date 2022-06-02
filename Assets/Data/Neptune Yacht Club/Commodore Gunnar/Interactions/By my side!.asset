@@ -95,10 +95,20 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
-  CanFail: 0
-  ProbabilityOfFailureResult: 0
+  CanFail: 1
+  ProbabilityOfFailureResult: 0.33
   FailureResult:
-    Dialogs: []
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: '"You''re showing promise, but there''s no rush.  When you are ready
+        to be a First Mate, you''ll earn it, I promise!"'
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     OptionalPopups: []
     Effect:
       NpcEffects: []
