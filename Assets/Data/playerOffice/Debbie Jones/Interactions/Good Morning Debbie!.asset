@@ -140,9 +140,14 @@ MonoBehaviour:
       - {fileID: 32900000, guid: cbb47e88c2e73d04ba1445f23e1da198, type: 3}
       Texture: {fileID: 0}
       Text: ...having to comply with a dress code designed by you has got to be gnawing
-        at her.
+        at her.  In fact, her expression betrays how traumatic the entire transition
+        process from Management Trainee to Junior Secretary has been for Ms. Deborah
+        Jones.
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: -15
+        PrideEffect: 0
       EgoEffect: 10
       FundsEffect: 0
       PowerEffect: 0
