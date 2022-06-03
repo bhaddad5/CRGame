@@ -14,26 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: d5bd4081-0920-4a4e-871f-2556857d42a7
   Name: Ask to manage Internship Program
+  AlertNew: 1
   Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements:
-    - OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
-        type: 2}
-      Stat: 0
-      Is: 0
-      Value: 0
-      RequiresStatBelow: 35
-    NpcPrideRequirements: []
     NpcStatRequirements:
     - OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
         type: 2}
       Stat: 0
       Is: 0
       Value: 35
-      RequiresStatBelow: 0
     RequiredInteractions:
     - {fileID: 11400000, guid: 8b1ff10340c0a8b45a60e980c06b63c0, type: 2}
     RequiredNotCompletedInteractions:
@@ -58,35 +50,83 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
       Text: Ms. Granger, I really think I could do a far better job running the internship
         program than Deborah.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
         type: 2}
-      Text: "I know Deborah\u2019s not going to like this.  Let me think about it."
+      Text: "I know Deborah\u2019s not going to like this.  Let me think about it,
+        ok?  Perhaps there's some other area you'd like to get more involved with? 
+        I could suggest a number of other--"
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: The longer she mismanages things, the more work it will be to fix the
-        program.
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
+      Text: No.  The longer she mismanages things, the more work it will be to fix
+        the program.  I think it is time to acknowledge that your little protege
+        isn't the Super Girl she pretends to be.  Who has actually accomplished more
+        in this department-- myself or Deborah?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
         type: 2}
-      Text: If I do this, Deborah will be very demotivated. I'd better have a chat
-        with her before I make any announcement.
+      Text: I'm not denying you've made significant contributions to this department,
+        {FirstName}.  Look, if I do this, Deborah will be very demotivated. I'd better
+        have a chat with her before I make any announcement.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: Let me.  We get along well enough.  I'll have a chat with her.
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
+      Text: Let me.  We get along well enough.  I'll have a chat with her.  It is
+        time Deborah had her balloon burst anyway.  She's been given far too much
+        slack as it is.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
-      Text: 'Note: In order to complete Internship Program Mission, you''ll need
-        to talk to Deborah Jones.'
+      OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
+        type: 2}
+      Text: 'Note: In a clear sign things have shifted, Susan yields to your demand. 
+        In order to complete Internship Program Mission, you''ll need to talk to
+        Deborah Jones.'
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.55
+        width: 400
     OptionalPopups:
     - Title: '"Deborah will be so disappointed."'
       Videos:
@@ -120,11 +160,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -154,9 +190,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   Completed: 0
+  New: 1
