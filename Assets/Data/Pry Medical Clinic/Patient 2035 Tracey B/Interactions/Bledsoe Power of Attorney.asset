@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 8534af43-c1c5-4ccd-b66c-707063972604
   Name: Bledsoe Power of Attorney
+  AlertNew: 1
   Category: 5
   Requirements:
     RequiredPower: 0
@@ -106,8 +107,9 @@ MonoBehaviour:
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 688eee32fa3ac404ca925c42e0e17c55,
         type: 2}
-      Text: 'NOTE: TRAACEY''s FINAL PATHS WILL BE DEVELOPED IN THE DEBORAH RELEASE--
-        FOR NOW, THIS IS AS FAR AS PLAYER CAN INTERACT WITH HER'
+      Text: 'NOTE: Tracey Bledsoe has been ''cured'' and may now be released into
+        your custody.  You''ll have two paths to consider putting her on-- reintegration
+        into the Artemis work force or the ultimate honor of becoming your wife!'
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: cef4c43b046bdb44097b346ba3ae303e,
         type: 3}
@@ -116,12 +118,21 @@ MonoBehaviour:
         yPos: 0.3
         width: 300
     OptionalPopups:
-    - Title: You now have legal guardianship of Tracey Bledsoe
+    - Title: 'Tracey Bledsoe: Back to work!'
       Videos:
       - {fileID: 32900000, guid: 8da095af31fe2bb49a9e5b809a4d708d, type: 3}
       Texture: {fileID: 0}
-      Text: She'll re-appear in Planning Office, ready to take up new duties as a
-        compliant, respectful new Office Girl!
+      Text: 'NOTE: If you wish, you may immediately send her back to Artemis IF you
+        have established both the Secretarial Pool AND constructed the Secretarial
+        Dormitory.  If not, she will remain at Pry until you have done so. '
+    - Title: 'Tracey Bledsoe: Your new wife!'
+      Videos:
+      - {fileID: 32900000, guid: 8da095af31fe2bb49a9e5b809a4d708d, type: 3}
+      Texture: {fileID: 0}
+      Text: 'NOTE: Alternately, you may choose to marry Tracey IF you have purchased
+        the Zenith Hills Estate at Eclipse Real Esate AND saved $50,000 for a proper
+        wedding.  If you have not yet done so, Tracey may remain at Pry until you
+        have managed these accomplishments.'
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: 688eee32fa3ac404ca925c42e0e17c55,
@@ -151,6 +162,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -180,4 +192,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1
