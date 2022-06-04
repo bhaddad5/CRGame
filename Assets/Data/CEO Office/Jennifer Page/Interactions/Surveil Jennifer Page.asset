@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: a0652d9b-dd43-466a-90bf-d711aaa99528
   Name: Surveil Jennifer Page
+  AlertNew: 1
   Category: 7
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 944a5d2485c9c8b4889bfa80541be172, type: 2}
     RequiredNotCompletedInteractions: []
@@ -40,10 +40,29 @@ MonoBehaviour:
     RevanueCost: 0
     HornicalCost: 0
   Repeatable: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   Result:
     Dialogs: []
-    OptionalPopups: []
+    OptionalPopups:
+    - Title: The CEO of Artemis Solution Systems...
+      Videos:
+      - {fileID: 32900000, guid: e04e9c91b0ae242438645655eeddbc9d, type: 3}
+      - {fileID: 32900000, guid: b827c1540e8370949a7fbbbc26fd18b2, type: 3}
+      - {fileID: 32900000, guid: 747794f735e7e1c4fbedd580b392351f, type: 3}
+      - {fileID: 32900000, guid: 437e083cac6e9c14abe92e2245b00f0a, type: 3}
+      - {fileID: 32900000, guid: cee9ecd4f5f47a34b818fc5be098e2b3, type: 3}
+      - {fileID: 32900000, guid: edc8d7d3b50cd284a9a676b11f11e18e, type: 3}
+      - {fileID: 32900000, guid: d1780214abab3e84ea60805fab954d38, type: 3}
+      - {fileID: 32900000, guid: 05ed785a321ff2f419359b3318737afd, type: 3}
+      - {fileID: 32900000, guid: b5410e477f09ac1438f69cb23f04beab, type: 3}
+      - {fileID: 32900000, guid: c0ffcfa49787ac746872c50d8c070788, type: 3}
+      - {fileID: 32900000, guid: 87a9030ba3d4df54e95bec80532685a1, type: 3}
+      - {fileID: 32900000, guid: 3f03d26cffb2c57499cc9c4f1404f76f, type: 3}
+      - {fileID: 32900000, guid: b915928fd23e48740acc30d6eeceff5a, type: 3}
+      - {fileID: 32900000, guid: 2fd3369617975d04da44cd69c3f6ee88, type: 3}
+      Texture: {fileID: 0}
+      Text: ...is available to you whenever you like- no appointment is ever required
+        with your high end spycams!
     Effect:
       NpcEffects: []
       EgoEffect: 15
@@ -68,11 +87,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -102,9 +117,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   Completed: 0
+  New: 1
