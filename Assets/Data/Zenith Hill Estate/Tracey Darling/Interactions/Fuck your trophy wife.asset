@@ -44,16 +44,19 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 953fdaa61df0d874096f67b62bdff83f,
+        type: 2}
       Text: Let's go, Tracey.  Show me how much my little wifey adores me!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 2eab091c1b8903840ae9023cf8e9d6cd,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 953fdaa61df0d874096f67b62bdff83f,
+        type: 2}
       Text: Of course, my Dearest-- I'm ready!
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: feb82ea66f7757e4f885464dfdda2aed, type: 3}
@@ -63,11 +66,12 @@ MonoBehaviour:
       - {fileID: 2800000, guid: 6579fd57ff9a7ac4db27a05a080832a3, type: 3}
       - {fileID: 2800000, guid: cd24b8e6a96b5ad4cbfed54e7a11ecce, type: 3}
       - {fileID: 2800000, guid: f4e17645af62139449d68dbf903fad41, type: 3}
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 2eab091c1b8903840ae9023cf8e9d6cd,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
     OptionalPopups:
     - Title: Despite the fact that the marriage...
       Videos:
@@ -81,7 +85,10 @@ MonoBehaviour:
         in bed as you''d like but the fact that she will spread on her husband''s
         command is a consolation you can live with. '
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: 0
+        PrideEffect: -3
       EgoEffect: 20
       FundsEffect: 0
       PowerEffect: 0
