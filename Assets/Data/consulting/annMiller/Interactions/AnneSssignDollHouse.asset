@@ -14,26 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 4321dd57-a599-466c-9df4-c87281e4580f
   Name: Assign to the Doll House
-  Category: 4
+  AlertNew: 1
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 84789f1058fad294a8d2915095a597ea, type: 2}
+    - {fileID: 11400000, guid: 557ae8b52a74f234bb2dc4c566453a64, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
-    RequiredNpcsControled:
+    RequiredNpcsControled: []
+    RequiredNpcsTrained:
     - {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757, type: 2}
-    RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 0
-    MoneyCost: 0
+    EgoCost: 25
+    MoneyCost: 2000
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -41,26 +41,103 @@ MonoBehaviour:
     RevanueCost: 0
     HornicalCost: 0
   Repeatable: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: You're a natural bitch on wheels, Miller.
+      Text: If I were to let you go, what would you do next, professionally I mean?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Am I supposed to apologise?
+      Text: I don't have have much of a profession let, do I?  My reputation is in
+        tatters.  Are you telling me I'm fired?  Is that why you're asking-- to twist
+        the knife and get me to cry?  I won't give you the satisfaction.  I'll get
+        my things and leave.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: No-- you're suppose to thank me for putting you in charge of the Doll
-        House.
+      Text: 'Hold on!  First, I''m not firing you.  You''ve done what I''ve asked
+        you to do for the business-- and I reward loyalty.  You once told me how
+        slack you felt this whole operation was.  How''d you like to change that?  '
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Thank you!
+      Text: 'Oh!  I... I would.  I could do it too.  I know how to make things work. 
+        I''ve made a lot fo money for this company, haven''t I?  And I have been
+        loyal.  '
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Which is why I'm offering you a promotion.  Mr. Owen needs a top rate
+        Manager for his new Client Services team.  I'd like to recommend you.  You'd
+        be based in the new quarters for this team and you'd be running the show.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: I've heard about it.  Thy're calling it the Doll House-- is that right? 
+        Tht's what you want me to run?  A whorehouse for Artemis clients?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: You have the right attitude and you know the score.  You'd be given wide
+        latitude, Miller.   I'm even kicking you a $2k for a signing bonus out of
+        my own pocket.  Well-- do you want it?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: You're damn right I do!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: 'NOTE: Anne Miller will manage The Doll House for you now and be referd
+        to as Madam Anne.  You can now find her at The Doll House!'
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     OptionalPopups: []
     Effect:
       NpcEffects: []
@@ -87,11 +164,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -121,9 +194,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   Completed: 0
+  New: 1
