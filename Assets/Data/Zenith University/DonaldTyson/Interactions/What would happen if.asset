@@ -15,13 +15,14 @@ MonoBehaviour:
   Id: 7269f295-b262-4589-babb-988f562c0bd6
   Name: What would happen if...
   AlertNew: 1
-  Category: 0
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 8a1c0a33d34e8f94cb55a6ed80525be9, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -43,26 +44,92 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 49c059802b4b2a842be5a5c55f4435f6,
+        type: 2}
       Text: A certain Feminist doctoral candidate turned out to be more involved
         in the sex industry that just reporting on it?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 7f239f2c1dffed941ad3536b63160463,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.37
+        width: 270
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: You're talking about Meghan Quinn?  You can't be though.  She's an ardetn
+      OptionalNpcReference: {fileID: 11400000, guid: 49c059802b4b2a842be5a5c55f4435f6,
+        type: 2}
+      Text: You're talking about Meghan Quinn?  You can't be though.  She's an ardent
         Feminist- a real hardcore type!  She'd never... wait...
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 7f239f2c1dffed941ad3536b63160463,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-    OptionalPopups: []
+        xPos: 0.5
+        yPos: 0.37
+        width: 270
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 49c059802b4b2a842be5a5c55f4435f6,
+        type: 2}
+      Text: It just seems liek everyone may be jumping the gun with Meghan.  She's
+        claiming an PhD she hasn't even been awarded yet.  She's got a book deal. 
+        And yet... she may not be all she claims to be.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7f239f2c1dffed941ad3536b63160463,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 270
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 49c059802b4b2a842be5a5c55f4435f6,
+        type: 2}
+      Text: 'Look, I don''t like her.  She''s a sceechy academic attention whore
+        of the type I despise.  But she''s a Feminist who went undercover to expose
+        exploitation-- '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7f239f2c1dffed941ad3536b63160463,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 270
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 49c059802b4b2a842be5a5c55f4435f6,
+        type: 2}
+      Text: Is she, Professor?  If she turned tricks while she was writing her little
+        expose, is she still a Feminist heroine?  Or just another whore cashing in?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7f239f2c1dffed941ad3536b63160463,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 270
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 49c059802b4b2a842be5a5c55f4435f6,
+        type: 2}
+      Text: Well, she'd be disgraced.  Her PhD would be refused and her thesis rejected. 
+        Her reputation would be left in tatters.  But there's no way you can prove...
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7f239f2c1dffed941ad3536b63160463,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 270
+    OptionalPopups:
+    - Title: You hand Professor Tyson a USB...
+      Videos:
+      - {fileID: 32900000, guid: 4c96f75e12f0bdd49bfe434ec7ab7e3e, type: 3}
+      Texture: {fileID: 0}
+      Text: ...and advise him to do what he thinks best for the reputation of Zenith
+        University with what he learns from it.
+    - Title: What he views...
+      Videos:
+      - {fileID: 32900000, guid: f1805e0c76ca43644a6b62a12e512202, type: 3}
+      Texture: {fileID: 0}
+      Text: ...prompts an immediate investigate by the Provost pf the University,
+        you learn later on.
     Effect:
       NpcEffects: []
       EgoEffect: 0

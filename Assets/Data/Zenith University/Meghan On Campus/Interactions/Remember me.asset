@@ -22,7 +22,7 @@ MonoBehaviour:
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 6a4940bef6927344fba62f92e158cb69, type: 2}
+    - {fileID: 11400000, guid: 298b1100441b7a84cb64c387b92dc39d, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -44,7 +44,8 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: e57cefa07b6baff489df1685bec9e285,
+        type: 2}
       Text: Meghan?  Remember me?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 546b758e41e728a48bd8c86518560359,
@@ -52,9 +53,10 @@ MonoBehaviour:
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.4
-        width: 200
+        width: 250
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: e57cefa07b6baff489df1685bec9e285,
+        type: 2}
       Text: 'Yes, I''m, Meghan-- but I''m sorry, I don''t think we''ve met before. 
         Or perhaps you''ve mistaken me for another Meghan.  I''m sorry-- I''m late
         for a meeting with my doctoral advisor. '
@@ -64,9 +66,10 @@ MonoBehaviour:
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.4
-        width: 200
+        width: 250
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: e57cefa07b6baff489df1685bec9e285,
+        type: 2}
       Text: 'NOTE: After the brief surprise, you note dthe recognition in her yes. 
         Yes, she recalls you and she''s not pleased by the recollection.  It is obvious
         she prefers to keep her campus and club lives quite separate!'
@@ -76,7 +79,7 @@ MonoBehaviour:
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.4
-        width: 200
+        width: 250
     OptionalPopups: []
     Effect:
       NpcEffects: []
