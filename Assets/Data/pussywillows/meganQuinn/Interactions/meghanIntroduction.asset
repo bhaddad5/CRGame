@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 5359a5b5-8546-4d37-a0ba-3b9f10c85b40
   Name: Introduction
+  AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
@@ -39,28 +39,62 @@ MonoBehaviour:
     RevanueCost: 0
     HornicalCost: 0
   Repeatable: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 6f87fcbaf7d676540bda939081a4ece3,
+        type: 2}
       Text: A blonde shimmies up to the table with an obvious fake smile plastered
         across her lips.  Her fingers fidget with the striped hem of her uniform.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 247adf15d0884854c9e020b8c8b4bb90,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.3
+        width: 400
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 6f87fcbaf7d676540bda939081a4ece3,
+        type: 2}
       Text: Welcome to Pussywillows, Sir.  My name is Megan and I'll be your server
         tonight.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 247adf15d0884854c9e020b8c8b4bb90,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.3
+        width: 400
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 6f87fcbaf7d676540bda939081a4ece3,
+        type: 2}
       Text: Leaning forward, she provides a brief downblouse.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 247adf15d0884854c9e020b8c8b4bb90,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.3
+        width: 400
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 6f87fcbaf7d676540bda939081a4ece3,
+        type: 2}
       Text: What would you like to drink?
       CustomNpcImageOptions: []
-    OptionalPopups: []
+      CustomBackground: {fileID: 2800000, guid: 247adf15d0884854c9e020b8c8b4bb90,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.3
+        width: 400
+    OptionalPopups:
+    - Title: She's extremely well spoken...
+      Videos:
+      - {fileID: 32900000, guid: 2fa9374913f1e6a489eb6faea935e144, type: 3}
+      Texture: {fileID: 0}
+      Text: ...for a strip club hostess.  What would tempt a bright woman to work
+        at a place like this?
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -85,11 +119,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -119,9 +149,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   Completed: 0
+  New: 1
