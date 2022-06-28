@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 1ad7887e-6b23-43e6-89e5-3639c819227d
   Name: Hack Debbie
+  AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
@@ -23,7 +24,8 @@ MonoBehaviour:
     RequiredInteractions:
     - {fileID: 11400000, guid: c3f21101baafc0244a0e117aa24d025d, type: 2}
     - {fileID: 11400000, guid: 53cb2fea93cc77d4582f00905bd16bf7, type: 2}
-    RequiredNotCompletedInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: 7145bb3284653c346b6edbdb44800b66, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -79,6 +81,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -108,4 +111,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1
