@@ -22,7 +22,8 @@ MonoBehaviour:
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions: []
-    RequiredNotCompletedInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: 8fab827277dfb474e8610a8ba24f48a2, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -43,36 +44,42 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 5a0513872efba4e4fad402a2a2eae63a,
+        type: 2}
       Text: 'Hey there!  You''re on the road too?  Everyone thinks business travel
         is so glamourous when it is just hanging around airports and just wanted
         to get home, right? '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: c301318f42b865947a67b0bb3c6006f7,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 5a0513872efba4e4fad402a2a2eae63a,
+        type: 2}
       Text: You're 100% right!  Where are you off to today?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: c301318f42b865947a67b0bb3c6006f7,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 5a0513872efba4e4fad402a2a2eae63a,
+        type: 2}
       Text: I'm doing an East Coast swing.  I'm trying to convert some prospects
         there so it will be a long couple of days.  Capital Trust, Glidepath and
         Konnect are the biggies.  Wish me luck!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: c301318f42b865947a67b0bb3c6006f7,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
     OptionalPopups:
     - Title: You do just that as...
       Videos:

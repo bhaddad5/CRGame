@@ -23,7 +23,8 @@ MonoBehaviour:
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: ec159605fc396da4e8092517099f765f, type: 2}
-    RequiredNotCompletedInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: 8fab827277dfb474e8610a8ba24f48a2, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -44,60 +45,70 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 5a0513872efba4e4fad402a2a2eae63a,
+        type: 2}
       Text: You again!  Do you live here at the airport?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: c301318f42b865947a67b0bb3c6006f7,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 5a0513872efba4e4fad402a2a2eae63a,
+        type: 2}
       Text: Sometimes it feels like it!  Another day, another flight to some client. 
         One of these days I'd like to pass off this travel to somebody else but for
         now, it is just me!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: c301318f42b865947a67b0bb3c6006f7,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 5a0513872efba4e4fad402a2a2eae63a,
+        type: 2}
       Text: Where to today?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: c301318f42b865947a67b0bb3c6006f7,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 5a0513872efba4e4fad402a2a2eae63a,
+        type: 2}
       Text: Red Star Motors.  They have an annual summit where they invite key suppliers
         and potential vendors.  All this bother for a fifteen minute pitch-- but
         it is to their Strategic Vendors Committee so it is well worth it.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: c301318f42b865947a67b0bb3c6006f7,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 5a0513872efba4e4fad402a2a2eae63a,
+        type: 2}
       Text: Sounds like your gate just got called.  Safe travels!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: c301318f42b865947a67b0bb3c6006f7,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
     OptionalPopups:
     - Title: There's no doubt that...
       Videos:
       - {fileID: 32900000, guid: 5642b99f6d03ca74cb50d4db31b2aa8f, type: 3}
       Texture: {fileID: 0}
-      Text: ...heather is one of the hardest working women at Artemis!
+      Text: ...Heather is one of the hardest working women at Artemis!
     Effect:
       NpcEffects: []
       EgoEffect: 0
