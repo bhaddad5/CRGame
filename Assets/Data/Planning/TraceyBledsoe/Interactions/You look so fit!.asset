@@ -10,19 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Arm day (4 of 4)
+  m_Name: You look so fit!
   m_EditorClassIdentifier: 
-  Id: 823b4fa4-f713-4cdd-8ae0-90ffd4209193
-  Name: Arm day (4 of 4)
+  Id: 551c25ac-ac95-4171-a03e-f91641f248cb
+  Name: You look so fit!
   AlertNew: 1
-  Category: 1
+  Category: 3
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 7bcab40326b7f794a966b375b4e00674, type: 2}
+    - {fileID: 11400000, guid: 613963ec3da3339429105f26682ae74d, type: 2}
+    - {fileID: 11400000, guid: 3e47f0883ff2ca340b8975702fb28595, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -44,40 +45,56 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 8efb7f3595726404bbf63bf97a9b8bfb,
-        type: 2}
-      Text: "PUMP IT!  AWESOME!  PUT HIS NAME ON THE ALPHA HALL OF FAME\u2014HE'S
-        AN ALPHA APEX PREDATOR NOW!"
+      OptionalNpcReference: {fileID: 0}
+      Text: '{FirstName}, pardon me if this is a bit forward, but...  well, you,
+        uh, look so...  Have you been... working out?'
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: be21e6997c986d346bb3b1ed10e5b5ae,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.45
-        yPos: 0.44
-        width: 450
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: 'Actually, I just completed a program my personal trainer put together
+        for me.  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: 'Ah!  I see!  I wish I had more time to get to the gym myself.  Well,
+        whatever your personal trainer is doing, it is working.  The results are... 
+        well, good for you!  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 11400000, guid: 8efb7f3595726404bbf63bf97a9b8bfb,
-        type: 2}
-      Text: 'NOTE: You''ve completed the Trainer Jack Celebrity Alpha Male Workout
-        Program and gained 2 Power!'
+      OptionalNpcReference: {fileID: 0}
+      Text: 'NOTE: The normally "all business" Tracey Bledsoe seems almost girlish. 
+        Is that a blush on her normally dour face?  Perhaps there is a woman behind
+        the icy facade after all!'
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: be21e6997c986d346bb3b1ed10e5b5ae,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.27
-        yPos: 0.44
-        width: 450
-    OptionalPopups:
-    - Title: You feel better than...
-      Videos:
-      - {fileID: 32900000, guid: 011fddb246adea14fac514d5f6a42c51, type: 3}
-      Texture: {fileID: 0}
-      Text: ...you have since you were a kid.  Feels good, man!
+        xPos: 0
+        yPos: 0
+        width: 0
+    OptionalPopups: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: -7
+        PrideEffect: 0
       EgoEffect: 20
       FundsEffect: 0
-      PowerEffect: 2
+      PowerEffect: 0
       PatentsEffect: 0
       CultureEffect: 0
       SpreadsheetsEffect: 0

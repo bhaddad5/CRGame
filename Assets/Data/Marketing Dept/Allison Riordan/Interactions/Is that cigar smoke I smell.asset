@@ -10,19 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Arm day (4 of 4)
+  m_Name: Is that cigar smoke I smell
   m_EditorClassIdentifier: 
-  Id: 823b4fa4-f713-4cdd-8ae0-90ffd4209193
-  Name: Arm day (4 of 4)
+  Id: b7e1c4ef-b4a8-4a3e-92bd-95a074be283c
+  Name: Is that cigar smoke I smell?
   AlertNew: 1
-  Category: 1
+  Category: 3
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 7bcab40326b7f794a966b375b4e00674, type: 2}
+    - {fileID: 11400000, guid: c2c2e3849b305144aa6b062be29c2ac0, type: 2}
+    - {fileID: 11400000, guid: e6c40df739b0c984a8ed321c92212a9a, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -44,40 +45,72 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 8efb7f3595726404bbf63bf97a9b8bfb,
-        type: 2}
-      Text: "PUMP IT!  AWESOME!  PUT HIS NAME ON THE ALPHA HALL OF FAME\u2014HE'S
-        AN ALPHA APEX PREDATOR NOW!"
+      OptionalNpcReference: {fileID: 0}
+      Text: What is that smell-- a cigar?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: be21e6997c986d346bb3b1ed10e5b5ae,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.45
-        yPos: 0.44
-        width: 450
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: 'Yes, that''s me.  I smoked a cigar recently-- must still be on the suit. 
+        Sorry about that!  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: No, no, no!   Don't apologize!  I LOVE the smell of cigars!  My dad and
+        brothers all smoke cigars.  It's a very manly smell.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: I belong to the Churchill- it's a private cigar bar club.  Perhaps you'd
+        like to join me sometime.  I'd be happy to introduce you to smoe fine smokes.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: That sounds... interesting.  Perhaps I'll take you up on that!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 11400000, guid: 8efb7f3595726404bbf63bf97a9b8bfb,
-        type: 2}
-      Text: 'NOTE: You''ve completed the Trainer Jack Celebrity Alpha Male Workout
-        Program and gained 2 Power!'
+      OptionalNpcReference: {fileID: 0}
+      Text: 'NOTE: You sense Allison is one of those "man''s kind of woman"-- it
+        makes her very appealing.'
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: be21e6997c986d346bb3b1ed10e5b5ae,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.27
-        yPos: 0.44
-        width: 450
-    OptionalPopups:
-    - Title: You feel better than...
-      Videos:
-      - {fileID: 32900000, guid: 011fddb246adea14fac514d5f6a42c51, type: 3}
-      Texture: {fileID: 0}
-      Text: ...you have since you were a kid.  Feels good, man!
+        xPos: 0
+        yPos: 0
+        width: 0
+    OptionalPopups: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: -6
+        PrideEffect: 0
       EgoEffect: 20
       FundsEffect: 0
-      PowerEffect: 2
+      PowerEffect: 0
       PatentsEffect: 0
       CultureEffect: 0
       SpreadsheetsEffect: 0

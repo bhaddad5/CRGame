@@ -10,19 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Arm day (4 of 4)
+  m_Name: Your sailing prowess
   m_EditorClassIdentifier: 
-  Id: 823b4fa4-f713-4cdd-8ae0-90ffd4209193
-  Name: Arm day (4 of 4)
+  Id: 208beab5-785d-4cf8-851f-ea3c24afa61f
+  Name: Your sailing prowess
   AlertNew: 1
-  Category: 1
+  Category: 3
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 7bcab40326b7f794a966b375b4e00674, type: 2}
+    - {fileID: 11400000, guid: 5df064a524845654a9d5272eaea2149d, type: 2}
+    - {fileID: 11400000, guid: 807f14e65be8789469dcc4119c95e61d, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -44,40 +45,65 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 8efb7f3595726404bbf63bf97a9b8bfb,
-        type: 2}
-      Text: "PUMP IT!  AWESOME!  PUT HIS NAME ON THE ALPHA HALL OF FAME\u2014HE'S
-        AN ALPHA APEX PREDATOR NOW!"
+      OptionalNpcReference: {fileID: 0}
+      Text: '{FirstName}, I understand congratulations are in order.  I understand
+        from friends at the Neptune that you''re quite the sailor!'
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: be21e6997c986d346bb3b1ed10e5b5ae,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.45
-        yPos: 0.44
-        width: 450
-    - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 11400000, guid: 8efb7f3595726404bbf63bf97a9b8bfb,
-        type: 2}
-      Text: 'NOTE: You''ve completed the Trainer Jack Celebrity Alpha Male Workout
-        Program and gained 2 Power!'
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Oh, yes!  I've been learning the ropes, so to speak.  The Commodore is
+        an excellent teacher.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: be21e6997c986d346bb3b1ed10e5b5ae,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.27
-        yPos: 0.44
-        width: 450
-    OptionalPopups:
-    - Title: You feel better than...
-      Videos:
-      - {fileID: 32900000, guid: 011fddb246adea14fac514d5f6a42c51, type: 3}
-      Texture: {fileID: 0}
-      Text: ...you have since you were a kid.  Feels good, man!
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: I understand you've earned your captaincy already!  I suppose you'll
+        expect me to salute you from now on?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: That won't be necessary!  But if you're ever interested, I'd love to
+        have you be my guest at the Neptune Yacht Club.  We could take one of the
+        boats out.  I bet you'd really enjoy the salt water and fresh air!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: Yes, well, I know I'd be in good hands.  I'll think aboit it, ok?  Good
+        for you-- I like executives who are so multi-talented!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    OptionalPopups: []
     Effect:
-      NpcEffects: []
-      EgoEffect: 20
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: -10
+        PrideEffect: 0
+      EgoEffect: 25
       FundsEffect: 0
-      PowerEffect: 2
+      PowerEffect: 0
       PatentsEffect: 0
       CultureEffect: 0
       SpreadsheetsEffect: 0
