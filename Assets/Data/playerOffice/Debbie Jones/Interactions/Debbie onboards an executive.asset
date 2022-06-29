@@ -24,6 +24,7 @@ MonoBehaviour:
     RequiredInteractions:
     - {fileID: 11400000, guid: 819ea41e07e659d498464a279323debf, type: 2}
     - {fileID: 11400000, guid: 88dedf6216463294fa2ac371443a826c, type: 2}
+    - {fileID: 11400000, guid: bd537620ef241f947bd57d70e28ba0aa, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -64,7 +65,7 @@ MonoBehaviour:
         new Manager of the Operations Department, you're entitled to select any of
         these girls as your new secretary.  May I make a suggestion?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+      CustomBackground: {fileID: 2800000, guid: ad91f859a37b1f6499909a7d9ac22261,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.52
@@ -75,7 +76,7 @@ MonoBehaviour:
         type: 2}
       Text: Yeah, sure-- go ahead.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+      CustomBackground: {fileID: 2800000, guid: ad91f859a37b1f6499909a7d9ac22261,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.52
@@ -84,11 +85,12 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: Well, Marcie Wells, the brunette on the end. has been with us for three
-        weeks.  She was the Manager of the Commodities Trading Desk at Apollo Investments
-        but was let go because of the economy.  She's bright, quite eager and--
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+      Text: Well, Marcie Wells has been with us for three months.  She was the Manager
+        of the Commodities Trading Desk at Apollo Investments but was let go because
+        of the economy.  She's bright, quite eager and--
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 6dbf861f65e6ad44eb1d352ec2fb3660, type: 3}
+      CustomBackground: {fileID: 2800000, guid: ad91f859a37b1f6499909a7d9ac22261,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.52
@@ -97,10 +99,11 @@ MonoBehaviour:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: --and old.  She's got to be in her thirties.  Who's that one-- the blonde--
-        and what's her cup size?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+      Text: --and old.  She's got to be in her late thirties.  I assumed my role
+        rated more than this skank.
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 6dbf861f65e6ad44eb1d352ec2fb3660, type: 3}
+      CustomBackground: {fileID: 2800000, guid: ad91f859a37b1f6499909a7d9ac22261,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.52
@@ -109,10 +112,12 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: Ah!  Yes, Sir.  That's Holly Davis,  She just graduated from Zenith High
-        School.  She's 36 D.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+      Text: 'Mr. Stevens, an important executive like yourself will want a smart,
+        hard working and dedicated secretary.  Marcie''s been hoping to work for
+        a manager like you-- like I say, she''s a brilliant girl who-- '
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 6dbf861f65e6ad44eb1d352ec2fb3660, type: 3}
+      CustomBackground: {fileID: 2800000, guid: ad91f859a37b1f6499909a7d9ac22261,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.52
@@ -121,9 +126,65 @@ MonoBehaviour:
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: I'll try her out then.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+      Text: Sweetie, I really doubt Mr. {LastName} took you on because of your brains,
+        right?  I mean, no offence intended, but show me something in a blonde--
+        and younger, got it?
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 6dbf861f65e6ad44eb1d352ec2fb3660, type: 3}
+      CustomBackground: {fileID: 2800000, guid: ad91f859a37b1f6499909a7d9ac22261,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: Marcie, you're dimissed.  Please send in... Holly.  Yes, send in Holly
+        Davis.  I think Holly will be more to your taste, Mr. Stevens!
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 6dbf861f65e6ad44eb1d352ec2fb3660, type: 3}
+      CustomBackground: {fileID: 2800000, guid: ad91f859a37b1f6499909a7d9ac22261,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: Now that's more like it!  Tell me what I'm looking at here, Debbie.
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: c6347c7e79f23334292140343ade857c, type: 3}
+      CustomBackground: {fileID: 2800000, guid: ad91f859a37b1f6499909a7d9ac22261,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: Holly has just joined us.  She's freshly graduated from Zenith High School. 
+        No useful experience really but she's quite trainable and very grateful to
+        have a full time position in our Secretarial Pool.  It would be a real jump
+        for her to go from a Junior Office Girl to a Junior Secretary!  Would you
+        like to interview Holly?
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: c6347c7e79f23334292140343ade857c, type: 3}
+      CustomBackground: {fileID: 2800000, guid: ad91f859a37b1f6499909a7d9ac22261,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: Yes, I think an interview is in order.  Some place quiet would be nice.
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: c6347c7e79f23334292140343ade857c, type: 3}
+      CustomBackground: {fileID: 2800000, guid: ad91f859a37b1f6499909a7d9ac22261,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.52
@@ -137,8 +198,9 @@ MonoBehaviour:
         of her mandatory Pry Physical examination.  If she passes her interview,
         there's a thirty day return policy, so if fails to please, you can always
         send her back and pick another girl!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: c6347c7e79f23334292140343ade857c, type: 3}
+      CustomBackground: {fileID: 2800000, guid: ad91f859a37b1f6499909a7d9ac22261,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.52
