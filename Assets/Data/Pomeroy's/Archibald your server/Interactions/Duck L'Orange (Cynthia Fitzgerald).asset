@@ -22,7 +22,8 @@ MonoBehaviour:
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions: []
-    RequiredNotCompletedInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: 8dddff4b3c31ed5459d21a1301f7bf99, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -43,27 +44,31 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7ced58efaf3c1fd4eba0e1c367fe7144,
+        type: 2}
       Text: It is difficult not to hear what's going on.  Pomeroy's has lost Cynthia's
         reservation and she's furious!  The manager is scrambling to accommodate
         but...
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 45bb0c6cfb6839f4b86e32ec586cca8e,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.3
+        width: 350
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7ced58efaf3c1fd4eba0e1c367fe7144,
+        type: 2}
       Text: when you ask the Artemis Sales Chief to join you, her temper disappears
         and she gladly takes you up on the invitation.  It is a most informative
         dinner!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 45bb0c6cfb6839f4b86e32ec586cca8e,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.3
+        width: 350
     OptionalPopups:
     - Title: Cynthia's temper is well known...
       Videos:
@@ -105,27 +110,31 @@ MonoBehaviour:
   FailureResult:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7ced58efaf3c1fd4eba0e1c367fe7144,
+        type: 2}
       Text: It is clear that they've lost her reservation or that she never had one. 
         Regardless, you see the chance to play white knight and ask Cynthia, the
         Artemis Sales Chief, to join you...
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 45bb0c6cfb6839f4b86e32ec586cca8e,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.3
+        width: 350
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7ced58efaf3c1fd4eba0e1c367fe7144,
+        type: 2}
       Text: But it is clear she's too affronted and furious to remain and she stomps
         out before you can intervene.  You force yourself to finish your duck and
         leave.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 45bb0c6cfb6839f4b86e32ec586cca8e,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.3
+        width: 350
     OptionalPopups: []
     Effect:
       NpcEffects: []
