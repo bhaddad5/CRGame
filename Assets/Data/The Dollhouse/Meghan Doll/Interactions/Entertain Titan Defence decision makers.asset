@@ -15,13 +15,14 @@ MonoBehaviour:
   Id: e84048cd-8b1d-43fe-9eca-9f3775f4aba7
   Name: Entertain Titan Defence decision makers
   AlertNew: 1
-  Category: 0
+  Category: 3
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 6793981437c6fea41a4c4d6a2f66fd37, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -51,7 +52,8 @@ MonoBehaviour:
         when we start presenting our proposal!
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 19e06f779bcbbf94e9ead1addb06092f,
+          type: 2}
         AmbitionEffect: -10
         PrideEffect: 0
       EgoEffect: 0
