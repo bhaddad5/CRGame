@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: So you worked for Tomo Industries
+  m_Name: Request Noriko's file
   m_EditorClassIdentifier: 
-  Id: 67a9f1dd-58f0-4dd0-9c56-bdefc449cb80
-  Name: So you worked for Tomo Industries?
+  Id: b423766a-2700-4ae0-9f3b-a99ec4a3d4df
+  Name: Request Noriko's file
   AlertNew: 1
   Category: 0
   Requirements:
@@ -22,7 +22,8 @@ MonoBehaviour:
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 06d24dae22dcf9f4598515f80e0a8d4e, type: 2}
+    - {fileID: 11400000, guid: 2eecb66e471ff9b4e811cd0f39968f77, type: 2}
+    - {fileID: 11400000, guid: e0c9a3b49ecf11f489a01c61f5bcf8cc, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -31,7 +32,7 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 30
+    EgoCost: 0
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -43,19 +44,9 @@ MonoBehaviour:
   PreviewEffect: 1
   Result:
     Dialogs:
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: Working for Tomo-- wow!  What an amazing company!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: What?  No, no-- who told you I work for Tomo?  I'm an Artemis employee! 
-        Where did you hear I work for Tomo?
+      Text: You want our CFO's personal file?  What are you looking for?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -64,8 +55,10 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Whoa-- easy!  I just meant when you worked for them.  You were with Tomo
-        before you came to Artemis-- right?
+      Text: I'm not sure.  She said she worked as a Management Accountant for Tomo
+        before Jennifer lured her over here.  It sounds liekea typical Jennifer hire--
+        just sort of based on instinct and the moment.  It sounds like it was a verbal
+        offer.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -74,10 +67,22 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Oh!  Yes!  Right!  Of course!  Sorry-- I'm just a bit rattled with all
-        the IPO craziness!  Yeah, I worked for Tomo but... oh, that was awhile ago,
-        right?  Oh, and I HATED it there!  Just so traditional and patriarchal and
-        all!  I was smothered there.  I'm so happy to be here now!
+      Text: Let me pull the file.  Yes, it looks like it was all done after the fact. 
+        Yes, her employment history doesn't say anything about her being a Managment
+        Accountant.  It says she was employed as an Account Manager by Tomo.  Maybe
+        it was a translation thing.  Oh, wait...
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: 'Well, her file DOES say she has an Accounting degree from Stanford and
+        then got her Financial Management MBA from there too.  Wow-- she''s a Kappa
+        Phi too!  So, she''s no dummy.  Funny that Tomo didn''t put her in a financial
+        management role and stuck her in some marketing role instead.  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -86,8 +91,9 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Sure, sure.  Understandable!  Sorry to have misspoken.  Are you ok? 
-        You look like you need to sit down.  Can I get you some water?
+      Text: She made an amazing jump-- she must have really impressed Jennifer. 
+        Our CEO was under the impression she was a Management Accountant, not some
+        marketing type.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -96,19 +102,21 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Oh, I'm fine, fine.  Maybe it was the memory of Tomo that freaked me
-        out!  Did I tell you how much I hated it there?  What an awful, awful company!
+      Text: 'Well, there''s no doubt she''s got the financial chops, regardless of
+        where she came from.  Maybe it was just a happy coincidence that we wound
+        up with a high powered Tomo-trained exec as a CFO.  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
         xPos: 0
         yPos: 0
         width: 0
-    - CurrSpeaker: 2
+    - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: 'NOTE: The CFO''s unexpected response deserves additional digging.  Her
-        HR personnel file might provide some information, as well as a trusted Metropolitan
-        Club contact with experience dealing with Tomo. '
+      Text: Only if you believe in coincidences.  It would be interesting to know
+        if she's still in touch with her old Tomo colleagues.  She seems so touchy
+        about her old employer though.  Maybe IT might have some ideas about helping
+        me learn more about our lovely CFO...
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:

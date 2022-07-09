@@ -10,19 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: So you worked for Tomo Industries
+  m_Name: Ever done business with Tomo
   m_EditorClassIdentifier: 
-  Id: 67a9f1dd-58f0-4dd0-9c56-bdefc449cb80
-  Name: So you worked for Tomo Industries?
+  Id: d1187567-a793-4c94-ab5d-83a90737e19d
+  Name: Ever done business with Tomo?
   AlertNew: 1
-  Category: 0
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 06d24dae22dcf9f4598515f80e0a8d4e, type: 2}
+    - {fileID: 11400000, guid: e0c9a3b49ecf11f489a01c61f5bcf8cc, type: 2}
+    - {fileID: 11400000, guid: 4d720a733f63f2e43bc8bd46ebe138ec, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -31,7 +32,7 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 30
+    EgoCost: 0
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -45,7 +46,7 @@ MonoBehaviour:
     Dialogs:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Working for Tomo-- wow!  What an amazing company!
+      Text: Dean, what do you know about Tomo Industries?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -54,8 +55,10 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: What?  No, no-- who told you I work for Tomo?  I'm an Artemis employee! 
-        Where did you hear I work for Tomo?
+      Text: Tomo!  Well, it would be hard not to have done business with them.  They
+        are in shipping, steel, chemicals and in the last few years, they pushed
+        into semiconductors and software.  Artemis must have some relationship with
+        them.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -64,8 +67,7 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Whoa-- easy!  I just meant when you worked for them.  You were with Tomo
-        before you came to Artemis-- right?
+      Text: We do.  And our CFO used to work there as well.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -74,10 +76,7 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Oh!  Yes!  Right!  Of course!  Sorry-- I'm just a bit rattled with all
-        the IPO craziness!  Yeah, I worked for Tomo but... oh, that was awhile ago,
-        right?  Oh, and I HATED it there!  Just so traditional and patriarchal and
-        all!  I was smothered there.  I'm so happy to be here now!
+      Text: Really?  I doubt it.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -86,8 +85,8 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Sure, sure.  Understandable!  Sorry to have misspoken.  Are you ok? 
-        You look like you need to sit down.  Can I get you some water?
+      Text: Well, she did.  Jennifer Page told me herself.  She recruited her while
+        she was here on contract negotiations with Artemis.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -96,19 +95,29 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Oh, I'm fine, fine.  Maybe it was the memory of Tomo that freaked me
-        out!  Did I tell you how much I hated it there?  What an awful, awful company!
+      Text: Really?  That's highly unusual.  Tomo demands lifetime loyalty-- wait,
+        you said 'she'-- your CFO is a woman who used to work for Tomo?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
         xPos: 0
         yPos: 0
         width: 0
-    - CurrSpeaker: 2
+    - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: 'NOTE: The CFO''s unexpected response deserves additional digging.  Her
-        HR personnel file might provide some information, as well as a trusted Metropolitan
-        Club contact with experience dealing with Tomo. '
+      Text: Yes, that's right.  What's so unusual about that?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: Ha!  You don't know much about Japanese keiretsus, do you?  The idea
+        that a woman would be sent over to represent Tomo is crazy.  They don't appoint
+        women to anything more senior than Tea Girls at Tomo.  Well, maybe some minor
+        PR jobs these days.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
