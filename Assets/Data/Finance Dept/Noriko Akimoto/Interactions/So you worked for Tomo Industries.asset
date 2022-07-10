@@ -115,9 +115,17 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
-    OptionalPopups: []
+    OptionalPopups:
+    - Title: 'Noriko seems a bit... '
+      Videos:
+      - {fileID: 32900000, guid: ee3690d9173a2bf488dbdb5cb72821d6, type: 3}
+      Texture: {fileID: 0}
+      Text: ...defensive and evasive.  What's there to be defensive about?
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: -25
+        PrideEffect: 0
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
