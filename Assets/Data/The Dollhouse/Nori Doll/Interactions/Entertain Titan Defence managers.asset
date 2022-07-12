@@ -10,22 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Konnect Telecomm CTO demand
+  m_Name: Entertain Titan Defence managers
   m_EditorClassIdentifier: 
-  Id: e4c693c4-c5d4-4a30-837e-8515b1ed5137
-  Name: Konnect Telecomm CTO demand
+  Id: bc966576-991a-4fe1-9085-66ecbc938185
+  Name: Entertain Titan Defence managers
   AlertNew: 1
-  Category: 6
+  Category: 3
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
-      Stat: 0
-      Is: 0
-      Value: 0
-    RequiredInteractions: []
+    NpcStatRequirements: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 6793981437c6fea41a4c4d6a2f66fd37, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -47,17 +44,16 @@ MonoBehaviour:
   Result:
     Dialogs: []
     OptionalPopups:
-    - Title: The telecomm boss...
+    - Title: Noriko conceals her...
       Videos:
-      - {fileID: 32900000, guid: 323b95a651506874e8f99b96cd7991c1, type: 3}
+      - {fileID: 32900000, guid: 313630e35d087ec49a0151f77e68811f, type: 3}
       Texture: {fileID: 0}
-      Text: ...wants his dick sucked if he's going to consider doing a deal.  That's
-        exactly what Meghan's for!
+      Text: ...shame behind demure smiles and a seeming willlingness to please!
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 0}
-        AmbitionEffect: 0
-        PrideEffect: -10
+        AmbitionEffect: -10
+        PrideEffect: 0
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -65,7 +61,7 @@ MonoBehaviour:
       CultureEffect: 0
       SpreadsheetsEffect: 0
       BrandEffect: 0
-      RevanueEffect: 1
+      RevanueEffect: 0
       HornicalEffect: 0
       NpcsToControl: []
       NpcsToTrain: []
