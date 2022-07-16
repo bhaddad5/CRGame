@@ -10,29 +10,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Our CFO is really something!
+  m_Name: Noriko's replacement
   m_EditorClassIdentifier: 
-  Id: d75afa5a-8b35-4e7e-aa0a-05d3b16c2bbe
-  Name: Our CFO is really something!
+  Id: 4d0423f0-29d7-4fb3-b858-56a52b9dc710
+  Name: Noriko's replacement
   AlertNew: 1
-  Category: 0
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: a1eb786405e219242a602f72162394c1, type: 2}
+    - {fileID: 11400000, guid: beaee280755af5a42a6d8239f97b09ed, type: 2}
     - {fileID: 11400000, guid: 5df064a524845654a9d5272eaea2149d, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
-    RequiredDepartmentsControled: []
+    RequiredDepartmentsControled:
+    - {fileID: 11400000, guid: 8a432d3990dd08442a622b0a03538c5e, type: 2}
     RequiredNpcsControled: []
     RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 30
+    EgoCost: 0
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -44,10 +45,22 @@ MonoBehaviour:
   PreviewEffect: 1
   Result:
     Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: '{FirstName}, I would have liked a bit more time to consider Noriko''s
+        replacement.  I think this promotion may have been a bit, well, rushed. 
+        CFO is a very critical role, after all!'
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: I've had the chance to meet her and I was deeply impressed!  May I ask
-        where you where are to find such a brilliant mind for corporate finance?
+      Text: If you'd had more time, perhaps you'd have found someone better than
+        Chase?  Do you really believe that?  I go out of my way to recruiting the
+        top talent and you secong guess me on this?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -56,10 +69,8 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: 'You may!  We actually do a lot of business with Tomo Industries.  It
-        is one of the huge Japanese conglomerates that are in everything.  Anyway,
-        she was sent over to negotiate a contract on their behalf.  She was a Management
-        Accountant for Tomo Technology.  '
+      Text: No, no!  I'm sorry-- I just wish you had consulted with me and we had
+        perhaps--
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -68,7 +79,8 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: I just assumed she was a local.  Noriko doesn't have an accent or anything!
+      Text: 'Fine.  You can fine do your own recruiting from now on.  I have too
+        many other things to be working on. '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -77,39 +89,10 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Exactly!  Same here.  It turns out she was sent over to be educated here
-        since she was a teenager.  She's related to a minor branch of the Tomo family. 
-        Anyway, we sort of bonded and she told me after going to school here, she
-        just hated working back in Japan.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: So you were able to recruit her for Artemis?  I see.  Makes sense-- but
-        Tomo must have been furious to lose such a valuable and talented executive!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: Oh, they were, trust me!  I paid for it too-- they really bumped up pur
-        annual fees.  I still figure we got the best of the deal though, didn't we?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: Oh, absolutely!  Noriko is amazing!
+      Text: I didn't mean that!  Look, I apologize alright?  Of course Chase is a
+        great successor.  Please... I don't want to seem ungrateful.  I'm not questioning
+        your judgement.  Let's just chalk it up to the IPO jitters and forget I said
+        anything, ok?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -118,7 +101,10 @@ MonoBehaviour:
         width: 0
     OptionalPopups: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: -10
+        PrideEffect: 0
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
