@@ -18,6 +18,7 @@ namespace Assets.GameModel
 
 		public Texture2D Icon;
 		public Texture2D BackgroundImage;
+		public AudioClip OptionalBackgroundAudio;
 
 		public Vector2 UiPosition;
 

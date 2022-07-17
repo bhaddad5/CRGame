@@ -24,6 +24,6 @@ namespace Assets.GameModel
 		public List<Texture2D> CustomNpcImageOptions;
 		public Texture2D CustomBackground;
 		public NpcLayout CustomBackgroundNpcLayout;
-
+		public AudioClip OptionalAudioClip;
 	}
 }

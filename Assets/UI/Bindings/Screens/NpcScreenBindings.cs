@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using Assets.GameModel;
+using Assets.UI_System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -68,6 +69,9 @@ namespace Assets.GameModel.UiDisplayers
 			Bio.text = $"Notes: {this.npc.Bio}";
 			Education.text = $"Education: {this.npc.Education}";
 			BackgroundImage.sprite = this.npc.BackgroundImage.ToSprite();
+
+			if (npc.OptionalDialogClip != null)
+				AudioHandler.Instance.PlayForegroundClip(npc.OptionalDialogClip);
 		}
 
 		public void CloseNpc()

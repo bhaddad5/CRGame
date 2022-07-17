@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Assets.GameModel;
+using Assets.UI_System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -18,12 +19,17 @@ public class StartingMenuBindings : MonoBehaviour
 
 	[SerializeField] private TMP_Text VersionText;
 
+	[SerializeField] private AudioClip MenuMusic;
+
 	private string latestSave = null;
 	void Awake()
 	{
 		latestSave = LoadSaveHelpers.GetOrderedSaveFiles().FirstOrDefault();
 		ContinueGameButton.interactable = latestSave != null;
 		VersionText.text = $"Company Man v{MainGameManager.MajorVersion}.{MainGameManager.MinorVersion}.{MainGameManager.Patch} \"{MainGameManager.VersionName}\"";
+
+		if(MenuMusic != null)
+			AudioHandler.Instance.PlayBackgroundClip(MenuMusic);
 	}
 
 	public void NewGame()

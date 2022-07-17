@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Assets.GameModel;
 using Assets.GameModel.UiDisplayers;
+using Assets.UI_System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -85,6 +86,9 @@ public class DialogScreenBindings : MonoBehaviour
 			NpcBackground.gameObject.SetActive(false);
 			BlackBackground.gameObject.SetActive(false);
 		}
+
+		if(dialog.OptionalAudioClip != null)
+			AudioHandler.Instance.PlayForegroundClip(dialog.OptionalAudioClip);
 
 		foreach (var c in textToShow)
 		{

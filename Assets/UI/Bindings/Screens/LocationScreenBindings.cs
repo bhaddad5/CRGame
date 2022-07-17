@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Assets.GameModel;
+using Assets.UI_System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -65,6 +66,9 @@ namespace Assets.GameModel.UiDisplayers
 				statusSymbols = Instantiate(StatusSymbolsPrefab);
 				statusSymbols.UpdateVisuals(mgm);
 			}
+
+			if (loc.OptionalBackgroundAudio != null)
+				AudioHandler.Instance.PlayBackgroundClip(loc.OptionalBackgroundAudio);
 		}
 
 		public void CloseCurrentLocation()

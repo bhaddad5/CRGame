@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Assets.GameModel;
+using Assets.UI_System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -18,6 +19,8 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private MainMapLocationEntryBindings _locationButtonPrefab;
 		[SerializeField] private LocationScreenBindings _locationUiPrefab;
 
+		[SerializeField] private AudioClip OptionalBackgroundAudio;
+
 		private MainGameManager mgm;
 		public void Setup(MainGameManager mgm, List<Location> locations)
 		{
@@ -28,6 +31,9 @@ namespace Assets.GameModel.UiDisplayers
 				d.Setup(dept, this, mgm);
 				d.transform.SetParent(DepartmentsParent, false);
 			}
+
+			if (OptionalBackgroundAudio != null)
+				AudioHandler.Instance.PlayBackgroundClip(OptionalBackgroundAudio);
 		}
 
 		private LocationScreenBindings _currOpenLocation = null;
@@ -50,6 +56,9 @@ namespace Assets.GameModel.UiDisplayers
 					_currOpenLocation = null;
 				}
 			}
+
+			if (OptionalBackgroundAudio != null)
+				AudioHandler.Instance.PlayBackgroundClip(OptionalBackgroundAudio);
 		}
 
 		public void RefreshUiDisplay(MainGameManager mgm)
