@@ -10,31 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: The CTO is a bit full of himself!
+  m_Name: Open Doors Privilege
   m_EditorClassIdentifier: 
-  Id: c35abb97-d0fd-42dd-88b0-8ec017d5c27f
-  Name: The CTO is a bit full of himself!
+  Id: 2286964c-94f9-4d05-9d08-ad2a320a531c
+  Name: Open Doors Privilege
   AlertNew: 1
-  Category: 1
+  Category: 0
   Requirements:
-    RequiredPower: 0
+    RequiredPower: 250
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 226d49fe4df7b904b9d530c1beb59904, type: 2}
-    - {fileID: 11400000, guid: 5df064a524845654a9d5272eaea2149d, type: 2}
-    - {fileID: 11400000, guid: b33ef105c9656ba45866f018fb50a729, type: 2}
+    - {fileID: 11400000, guid: 2b1f9a8c0e41a0b4a88455ab61926e02, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
-    RequiredDepartmentsControled:
-    - {fileID: 11400000, guid: 873ea29cb7125654da9c75025e8cf5e9, type: 2}
+    RequiredDepartmentsControled: []
     RequiredNpcsControled: []
     RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 0
+    EgoCost: 50
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -46,11 +43,18 @@ MonoBehaviour:
   PreviewEffect: 1
   Result:
     Dialogs:
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Your secretary is quite the pit bull!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: 'My God, your CTO certainly thinks he''s something special!  Eckstein
-        barely gave me the time of day when I dropped by to say hello!  It was as
-        if he didn''t think I should even be in the research lab!  '
+      Text: It is what she's paid for-- among other things.  What's the problem?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -59,7 +63,10 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Typical genius, I'm afraid. I'll have a word with him if you like.
+      Text: I really don't have the luxury of being able to hang around until she
+        allows me in.  And the way things are moving, I can't do this 'request a
+        meeting' nonsnse.  Can you let your girl know I'm on your 'Open Doors' list
+        and can see you whenever I need to?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -68,33 +75,18 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: 'No, it''s fine.  I don''t want him ticked off at me.  He''s clearly
-        doing excellent work based on the patents alone that have been generated. 
-        I''m embarrassed now by trying to run Tech on the cheap with all those visa
-        girls. '
+      Text: Oh!  I see.  Well, things are moving fast and I wouldn't want-- yes,
+        yes, that's fine.  I'll let Luciana know she's to allow you through whenever
+        you need to see me.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
         xPos: 0
         yPos: 0
         width: 0
-    - CurrSpeaker: 1
+    - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 0}
-      Text: As long as you can see the errors of your recruiting, there's no danger
-        of repeating that mess.  David has the department humming along now and all
-        we have to do is step back and let him do his thing!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: 'You''re right, {FirstName}.  I''m not embarrassed to admit you''re a
-        much better talent recruiter than I''ve been!  I was right to give you so
-        much leeway in filling this position after all!  Yes, let''s leave the brainiac
-        to his own devices and I won''t worry about his manners so much! '
+      Text: 'NOTE: You will now have much more access to Jennifer Page now!'
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -103,10 +95,7 @@ MonoBehaviour:
         width: 0
     OptionalPopups: []
     Effect:
-      NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
-        AmbitionEffect: -10
-        PrideEffect: 0
+      NpcEffects: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0

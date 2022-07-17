@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: The CTO is a bit full of himself!
+  m_Name: Rumors regarding your assistant
   m_EditorClassIdentifier: 
-  Id: c35abb97-d0fd-42dd-88b0-8ec017d5c27f
-  Name: The CTO is a bit full of himself!
+  Id: 700f2e28-73a6-44a0-b5b9-60a89263a1f9
+  Name: Rumors regarding your assistant
   AlertNew: 1
   Category: 1
   Requirements:
@@ -22,15 +22,14 @@ MonoBehaviour:
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 226d49fe4df7b904b9d530c1beb59904, type: 2}
-    - {fileID: 11400000, guid: 5df064a524845654a9d5272eaea2149d, type: 2}
     - {fileID: 11400000, guid: b33ef105c9656ba45866f018fb50a729, type: 2}
+    - {fileID: 11400000, guid: 5df064a524845654a9d5272eaea2149d, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
-    RequiredDepartmentsControled:
-    - {fileID: 11400000, guid: 873ea29cb7125654da9c75025e8cf5e9, type: 2}
+    RequiredDepartmentsControled: []
     RequiredNpcsControled: []
-    RequiredNpcsTrained: []
+    RequiredNpcsTrained:
+    - {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06, type: 2}
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
@@ -48,9 +47,10 @@ MonoBehaviour:
     Dialogs:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: 'My God, your CTO certainly thinks he''s something special!  Eckstein
-        barely gave me the time of day when I dropped by to say hello!  It was as
-        if he didn''t think I should even be in the research lab!  '
+      Text: Look, this is delicate but I'm hearing things about you and your admin. 
+        I'm no prude and I'm no hypocrite, but would you mind keeping your... affairs
+        a bit more discreet?  My God, {LastName}, she's barely respectable in those
+        outfits she wears!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -59,7 +59,8 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Typical genius, I'm afraid. I'll have a word with him if you like.
+      Text: Of course.  Obviously Debbie's been telling tales out of school.  As
+        for her wardrobe, I'll ask her to tone it down.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -68,10 +69,9 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: 'No, it''s fine.  I don''t want him ticked off at me.  He''s clearly
-        doing excellent work based on the patents alone that have been generated. 
-        I''m embarrassed now by trying to run Tech on the cheap with all those visa
-        girls. '
+      Text: She's obviously got a thing for her boss!  No self respecting woman would
+        ever dress that way for work unless she was trying to get some attention. 
+        Debbie's her name?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -80,9 +80,8 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: As long as you can see the errors of your recruiting, there's no danger
-        of repeating that mess.  David has the department humming along now and all
-        we have to do is step back and let him do his thing!
+      Text: Her name is Debbie Jones and yes, I'm afraid she may have a bit of a
+        crush on me- and is probably maing up stories that aren't exactly true.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -91,10 +90,31 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: 'You''re right, {FirstName}.  I''m not embarrassed to admit you''re a
-        much better talent recruiter than I''ve been!  I was right to give you so
-        much leeway in filling this position after all!  Yes, let''s leave the brainiac
-        to his own devices and I won''t worry about his manners so much! '
+      Text: Didn't we have a Management Trainee named Deborah Jones?  It can't be
+        the same one-- Jones was a Forbes MBA and a sharp cookie as I recall!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: The one and only.  She failed out of the MTP.  It was devastating for
+        her so I took her on as my secretary.  She's competent enough-- in that role
+        anyway.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: No wonder she's hot for you.  You're her white knight, {LastName}!  Thank
+        God she washed out then.  What a disaster that would hav ebeen-- she's clearly
+        not executive material!  Well, I hope you two... have fun.  Just keep it
+        on the down low!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -105,9 +125,9 @@ MonoBehaviour:
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 0}
-        AmbitionEffect: -10
+        AmbitionEffect: -5
         PrideEffect: 0
-      EgoEffect: 0
+      EgoEffect: -5
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0

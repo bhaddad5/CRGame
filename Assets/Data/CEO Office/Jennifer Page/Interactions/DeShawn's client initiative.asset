@@ -10,31 +10,34 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: The CTO is a bit full of himself!
+  m_Name: DeShawn's client initiative
   m_EditorClassIdentifier: 
-  Id: c35abb97-d0fd-42dd-88b0-8ec017d5c27f
-  Name: The CTO is a bit full of himself!
+  Id: 7d1de56c-357f-4449-aacc-ac2a79893db5
+  Name: DeShawn's client initiative
   AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcStatRequirements: []
+    NpcStatRequirements:
+    - OptionalNpcReference: {fileID: 0}
+      Stat: 0
+      Is: 0
+      Value: 0
     RequiredInteractions:
-    - {fileID: 11400000, guid: 226d49fe4df7b904b9d530c1beb59904, type: 2}
     - {fileID: 11400000, guid: 5df064a524845654a9d5272eaea2149d, type: 2}
     - {fileID: 11400000, guid: b33ef105c9656ba45866f018fb50a729, type: 2}
+    - {fileID: 11400000, guid: 557ae8b52a74f234bb2dc4c566453a64, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
-    RequiredDepartmentsControled:
-    - {fileID: 11400000, guid: 873ea29cb7125654da9c75025e8cf5e9, type: 2}
+    RequiredDepartmentsControled: []
     RequiredNpcsControled: []
     RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 0
+    EgoCost: 50
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -48,9 +51,8 @@ MonoBehaviour:
     Dialogs:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: 'My God, your CTO certainly thinks he''s something special!  Eckstein
-        barely gave me the time of day when I dropped by to say hello!  It was as
-        if he didn''t think I should even be in the research lab!  '
+      Text: I got a note from a client the other day thanking us for our new Client
+        Hospitality Program.  What's he talking about?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -59,7 +61,8 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Typical genius, I'm afraid. I'll have a word with him if you like.
+      Text: DeShawn's put together a fantastic outreach effort directed at key clients. 
+        There's no doubt it will pay off in increased contract outlays.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -68,10 +71,8 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: 'No, it''s fine.  I don''t want him ticked off at me.  He''s clearly
-        doing excellent work based on the patents alone that have been generated. 
-        I''m embarrassed now by trying to run Tech on the cheap with all those visa
-        girls. '
+      Text: That's great!  I should show the flag.  How should I get involved?  Perhaps
+        I should take this up with DeShawn--
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -80,9 +81,9 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: As long as you can see the errors of your recruiting, there's no danger
-        of repeating that mess.  David has the department humming along now and all
-        we have to do is step back and let him do his thing!
+      Text: I can definitely see you getting involved on some level, but since it
+        has just kicked off, I might leave it with DeShawn until he sends you an
+        invitation-- ok?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -91,10 +92,8 @@ MonoBehaviour:
         width: 0
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: 'You''re right, {FirstName}.  I''m not embarrassed to admit you''re a
-        much better talent recruiter than I''ve been!  I was right to give you so
-        much leeway in filling this position after all!  Yes, let''s leave the brainiac
-        to his own devices and I won''t worry about his manners so much! '
+      Text: Fine!  I don't see why my employees get to have all the fun but I get
+        your point.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
