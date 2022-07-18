@@ -1,0 +1,210 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: Annual General Meeting
+  m_EditorClassIdentifier: 
+  Id: b9206c18-4557-40a2-9190-51ffb85bccf5
+  Name: Annual General Meeting
+  AlertNew: 1
+  Category: 2
+  Requirements:
+    RequiredPower: 500
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
+    NpcStatRequirements:
+    - OptionalNpcReference: {fileID: 0}
+      Stat: 0
+      Is: 0
+      Value: 100
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 5df064a524845654a9d5272eaea2149d, type: 2}
+    - {fileID: 11400000, guid: b33ef105c9656ba45866f018fb50a729, type: 2}
+    - {fileID: 11400000, guid: 42b9344d2a7da47479e426d25494b594, type: 2}
+    - {fileID: 11400000, guid: c0d914a52d81de34c9f4e4a4adb446ee, type: 2}
+    - {fileID: 11400000, guid: 651f5e2845ae89242b7f73e3c4b1d07f, type: 2}
+    - {fileID: 11400000, guid: 66b6bf2db12889848a450edec1eca7e0, type: 2}
+    - {fileID: 11400000, guid: 0c1251b3f16640b44b287bfd587cc2be, type: 2}
+    - {fileID: 11400000, guid: 265f7e8864eb7904dbf1a88e7124cfba, type: 2}
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredNpcsControled: []
+    RequiredNpcsTrained: []
+    RequiredNpcsNotControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 300
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    HornicalCost: 0
+  Repeatable: 0
+  PreviewEffect: 1
+  Result:
+    Dialogs:
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: be12a51bf8ae5c343a38ccd5b80d8007,
+        type: 2}
+      Text: 'NOTE: Jennifer takes the stage to address the Artemis Annual General
+        Meeting, as is her perogrative as Chief Executive Officer.  This year there''s
+        a noticeable tension amongst the attendees.  As Jennifer begins to speak,
+        she finds her microphone muted.'
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 6ab59da05cbb5fe4a9e2c2a76d51031d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.5
+        width: 300
+      OptionalAudioClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: be12a51bf8ae5c343a38ccd5b80d8007,
+        type: 2}
+      Text: Welcome friends!  Jennifer, if I may?  As we prepare to enter into an
+        exciting new era for Artemis Solutions Systems, I have been authorized by
+        the Board of Directors to make a very important announcement.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 6ab59da05cbb5fe4a9e2c2a76d51031d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: be12a51bf8ae5c343a38ccd5b80d8007,
+        type: 2}
+      Text: Uh, {FirstName}, I wasn't informed of any--
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 6ab59da05cbb5fe4a9e2c2a76d51031d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: be12a51bf8ae5c343a38ccd5b80d8007,
+        type: 2}
+      Text: By a unanimous vote of confidence, I'm honored to have been appointed
+        Co-CEO of Artemis by the Board of Directors-- an offer I have humbly accepted.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 6ab59da05cbb5fe4a9e2c2a76d51031d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: be12a51bf8ae5c343a38ccd5b80d8007,
+        type: 2}
+      Text: What?!?!?!?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 6ab59da05cbb5fe4a9e2c2a76d51031d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: be12a51bf8ae5c343a38ccd5b80d8007,
+        type: 2}
+      Text: Per the Board's request, I've been asked to work with Jennifer to ensure
+        a timely initial public offering and a steady transition to our new status
+        as a publiclly traded corporation.  I'd like to thank Jennifer for her contributions
+        and her recognition that new skills are needed to help Artemis thrive and
+        survive!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 6ab59da05cbb5fe4a9e2c2a76d51031d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+    OptionalPopups:
+    - Title: Applause drowns out...
+      Videos:
+      - {fileID: 32900000, guid: 27fe6d94e6ea87a4b999f28b29fd5496, type: 3}
+      Texture: {fileID: 0}
+      Text: ...Jennifer's attempt to regain control of the meeting, but finally slinks
+        off in defeat.  You are now the Co CEO of Artemis-- congratulations!  Jennifer
+        Page is now CONTROLLED.
+    Effect:
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: be12a51bf8ae5c343a38ccd5b80d8007,
+          type: 2}
+        AmbitionEffect: -75
+        PrideEffect: 0
+      EgoEffect: 500
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl:
+      - {fileID: 11400000, guid: be12a51bf8ae5c343a38ccd5b80d8007, type: 2}
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl:
+      - {fileID: 11400000, guid: 8fb9b8b9ae371f54da4c7d868b9e1dac, type: 2}
+      TrophiesClaimedReferences: []
+      MissionsToComplete:
+      - {fileID: 11400000, guid: 0b5985a115547f3429d9198cadf71fc2, type: 2}
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
+  FailureResult:
+    Dialogs: []
+    OptionalPopups: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 250
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+  Completed: 0
+  New: 1
