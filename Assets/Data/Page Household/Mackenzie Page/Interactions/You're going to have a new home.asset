@@ -23,7 +23,9 @@ MonoBehaviour:
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: b4d64e6604f754a4481abf058370cef8, type: 2}
-    RequiredNotCompletedInteractions: []
+    - {fileID: 11400000, guid: 16f6f52401ace6244ae81b4b33eb9ade, type: 2}
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: e986c599e6cd1574da1de4fa8007dadf, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -55,10 +57,99 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 350
-    OptionalPopups: []
+      OptionalAudioClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 0953b95bde8ae5747a4cb25d3630de98,
+        type: 2}
+      Text: Where?  Where am I going?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 543a2d110e6e4044a94cb811aff3f18d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
+      OptionalAudioClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 0953b95bde8ae5747a4cb25d3630de98,
+        type: 2}
+      Text: This property has been seized.  You can't stay here.  Jennifer has problems
+        of her own and she can't help you.  Luckily, there's a lovely place willing
+        to take you in and give you your first job.  It's that or... I just leave
+        and you find your own way in the world.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 543a2d110e6e4044a94cb811aff3f18d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
+      OptionalAudioClip: {fileID: 0}
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 0953b95bde8ae5747a4cb25d3630de98,
+        type: 2}
+      Text: 'NOTE: As strangers now walk through her home, cataloguing furntiure
+        and carting away appliances, Mackenzie realizes she''s been abandoned.  She
+        looks to you now with more desperation than hatred.'
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 543a2d110e6e4044a94cb811aff3f18d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
+      OptionalAudioClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 0953b95bde8ae5747a4cb25d3630de98,
+        type: 2}
+      Text: Uh...what is thsi place?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 543a2d110e6e4044a94cb811aff3f18d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
+      OptionalAudioClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 0953b95bde8ae5747a4cb25d3630de98,
+        type: 2}
+      Text: It's called The Doll House.  I think you'll get used it to in time. 
+        Get some clothes-- one suitcase only!- and we'll go.  Come on, Mackenzie--
+        I don't have all day!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 543a2d110e6e4044a94cb811aff3f18d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
+      OptionalAudioClip: {fileID: 0}
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 0953b95bde8ae5747a4cb25d3630de98,
+        type: 2}
+      Text: It's called The Doll House.  I think you'll get used it to in time. 
+        Get some clothes-- one suitcase only!- and we'll go.  Come on, Mackenzie--
+        I don't have all day!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 543a2d110e6e4044a94cb811aff3f18d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
+      OptionalAudioClip: {fileID: 0}
+    OptionalPopups:
+    - Title: As Mackenzie hurriedly...
+      Videos:
+      - {fileID: 32900000, guid: cca9ccd2d6548534393124f0316a10d3, type: 3}
+      Texture: {fileID: 0}
+      Text: '...packs some things, you let Anne know you''re on the way.  She''s
+        excited to have a new girl in her stable!  NOTE: Mackenzie is now available
+        in The Doll House!'
     Effect:
       NpcEffects: []
-      EgoEffect: 0
+      EgoEffect: 90
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -69,7 +160,8 @@ MonoBehaviour:
       HornicalEffect: 0
       NpcsToControl: []
       NpcsToTrain: []
-      NpcsToRemoveFromGame: []
+      NpcsToRemoveFromGame:
+      - {fileID: 11400000, guid: 0953b95bde8ae5747a4cb25d3630de98, type: 2}
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
