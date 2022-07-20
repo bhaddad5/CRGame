@@ -55,7 +55,10 @@ MonoBehaviour:
       Text: ...to service her Legal Guardian!  She wishes you dropped by more often--
         or so she says.
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: -10
+        PrideEffect: 0
       EgoEffect: 11
       FundsEffect: 0
       PowerEffect: 0

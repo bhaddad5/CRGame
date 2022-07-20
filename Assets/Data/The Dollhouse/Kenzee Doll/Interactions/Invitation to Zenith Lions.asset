@@ -54,7 +54,10 @@ MonoBehaviour:
       Text: ...the local team with events like this, the team owner is happy to make
         Artemis Solutions Systems an official sponsor of the Zenith Lions!
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: -10
+        PrideEffect: 0
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
