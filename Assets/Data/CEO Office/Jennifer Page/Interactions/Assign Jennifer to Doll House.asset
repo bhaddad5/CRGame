@@ -23,7 +23,8 @@ MonoBehaviour:
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: b4d64e6604f754a4481abf058370cef8, type: 2}
-    RequiredNotCompletedInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: 1871e055874afc549bfbce28b8eee26f, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -47,7 +48,8 @@ MonoBehaviour:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: be12a51bf8ae5c343a38ccd5b80d8007,
         type: 2}
-      Text: I'm sending you to The Doll House.  You'll whore for me there.
+      Text: We both know your current situation is unsustainable.  You're a loose
+        end that needs cleaning up, Jen.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
         type: 3}
@@ -55,7 +57,28 @@ MonoBehaviour:
         xPos: 0.7
         yPos: 0.4
         width: 350
-    OptionalPopups: []
+      OptionalAudioClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: be12a51bf8ae5c343a38ccd5b80d8007,
+        type: 2}
+      Text: And what do you propose?  I have no doubt you've consider how to deal
+        with the 'Jennifer Problem'-- haven't you?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.7
+        yPos: 0.4
+        width: 350
+      OptionalAudioClip: {fileID: 0}
+    OptionalPopups:
+    - Title: When you describe...
+      Videos:
+      - {fileID: 32900000, guid: 82d2ed52968bdae4e98ba1a416a1a355, type: 3}
+      Texture: {fileID: 0}
+      Text: ...her new role as a Corporate Hostess, she finally succumbs.  Disgraced,
+        her fortune seized and even her home taken from her, Jennifer Page is out
+        of options.  You may now find her at The Doll House!
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -69,7 +92,8 @@ MonoBehaviour:
       HornicalEffect: 0
       NpcsToControl: []
       NpcsToTrain: []
-      NpcsToRemoveFromGame: []
+      NpcsToRemoveFromGame:
+      - {fileID: 11400000, guid: be12a51bf8ae5c343a38ccd5b80d8007, type: 2}
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
@@ -81,11 +105,17 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
-  CanFail: 0
-  ProbabilityOfFailureResult: 0
+  CanFail: 1
+  ProbabilityOfFailureResult: 0.5
   FailureResult:
     Dialogs: []
-    OptionalPopups: []
+    OptionalPopups:
+    - Title: Jennifer cooly rejects...
+      Videos:
+      - {fileID: 32900000, guid: 7a3191b6cbbb0e14db1a4c210b2fd95d, type: 3}
+      Texture: {fileID: 0}
+      Text: ...your 'offer'.  "I'll be damned if I'm going to play Corporate Hostess
+        for you, {LastName}.  It's not going to happen."
     Effect:
       NpcEffects: []
       EgoEffect: 0

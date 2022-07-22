@@ -57,6 +57,7 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
       Text: Typical genius, I'm afraid. I'll have a word with him if you like.
@@ -66,6 +67,7 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
       Text: 'No, it''s fine.  I don''t want him ticked off at me.  He''s clearly
@@ -78,6 +80,7 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
       Text: As long as you can see the errors of your recruiting, there's no danger
@@ -89,6 +92,7 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
       Text: 'You''re right, {FirstName}.  I''m not embarrassed to admit you''re a
@@ -101,7 +105,14 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
-    OptionalPopups: []
+      OptionalAudioClip: {fileID: 0}
+    OptionalPopups:
+    - Title: Jennifer has conceded...
+      Videos:
+      - {fileID: 32900000, guid: 0e8f66acf2c0c194385b4d2a893a6575, type: 3}
+      Texture: {fileID: 0}
+      Text: ...that your judgement, when it comes to executive recruitment, far exceeds
+        her own.  It is a significant milestone.
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 0}
