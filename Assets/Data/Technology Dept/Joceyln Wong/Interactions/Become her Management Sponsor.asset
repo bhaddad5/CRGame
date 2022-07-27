@@ -57,6 +57,7 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
       Text: Yes, well if that's what you think is best, {FirstName}.
@@ -66,6 +67,7 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
       Text: I do.  I also think you would benefit from more senior management support. 
@@ -78,6 +80,7 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
       Text: 'It''s an excellent idea!  I''ll do that right away.  I really need your
@@ -88,6 +91,7 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
     OptionalPopups:
     - Title: You might even believe her if...
       Videos:
@@ -95,7 +99,10 @@ MonoBehaviour:
       Texture: {fileID: 0}
       Text: ...she weren't crying while she said it!
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: -15
+        PrideEffect: 0
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
