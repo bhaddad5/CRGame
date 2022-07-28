@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Wiat till your foster father gets home!
   m_EditorClassIdentifier: 
   Id: 9b41f73a-8543-469b-95db-e20ec2c6dbe4
-  Name: Wiat till your foster father gets home!
+  Name: Wait till your foster father gets home!
   AlertNew: 1
   Category: 5
   Requirements:
@@ -44,30 +44,34 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 8dff1f07f4971ef4a8c33a3e95657c17,
+        type: 2}
       Text: 'NOTE: These days, after a passionate greeting kiss from your trophy
         wife, the first issue to deal when upon returning home is: "What''s she done
         now?".  The answer is usually plenty.  Tracey''s Punishment Notebook has
         filled up rapidly.'
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 26af887ce2611244e8504d6437577c96,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
       OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 8dff1f07f4971ef4a8c33a3e95657c17,
+        type: 2}
       Text: From talking back to unmade beds to poorly carried out household chores,
         Mackenzie has usually failed to satisfy her step-mother in some way.  This
-        is why the warning that haunts her modt these days is "Wait till your foster
+        is why the warning that haunts her most these days is "Wait till your foster
         father gets home!"
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 26af887ce2611244e8504d6437577c96,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
       OptionalAudioClip: {fileID: 0}
     OptionalPopups:
     - Title: As the Master of the House...
@@ -84,7 +88,8 @@ MonoBehaviour:
         it's a little household task you don't mind at all!
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 8dff1f07f4971ef4a8c33a3e95657c17,
+          type: 2}
         AmbitionEffect: -4
         PrideEffect: 0
       EgoEffect: 0
