@@ -41,7 +41,12 @@ namespace Assets.GameModel.UiDisplayers
 		{
 			CloseCurrentDepartment(false);
 			_currOpenLocation = Instantiate(_locationUiPrefab);
-			_currOpenLocation.Setup(dept, mgm, () => RefreshUiDisplay(mgm));
+			_currOpenLocation.Setup(dept, mgm, () =>
+			{
+				if (OptionalBackgroundAudio != null)
+					AudioHandler.Instance.PlayBackgroundClip(OptionalBackgroundAudio);
+				RefreshUiDisplay(mgm);
+			});
 			_currOpenLocation.RefreshUiDisplay(mgm);
 		}
 
