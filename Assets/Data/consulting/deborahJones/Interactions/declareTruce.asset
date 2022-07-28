@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: b15954f1-1f03-4729-ab2f-e092acc922e5
   Name: Declare a Truce
+  AlertNew: 1
   Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 30ead1b1a357a35428af2abbb018328e, type: 2}
     RequiredNotCompletedInteractions:
@@ -45,22 +45,54 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
       Text: There's no reason we can't BOTH make it through Management Training together.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.68
+        yPos: 0.4
+        width: 400
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
       Text: We both know there's only one open Management spot!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.68
+        yPos: 0.4
+        width: 400
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
       Text: Well, if you land the spot, maybe you'll recommend me when the next one
         comes up.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.68
+        yPos: 0.4
+        width: 400
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
       Text: I must say, I like your attitude!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.68
+        yPos: 0.4
+        width: 400
+      OptionalAudioClip: {fileID: 0}
     OptionalPopups:
     - Title: Deborah is confident, bordering on arrogant
       Videos:
@@ -69,7 +101,8 @@ MonoBehaviour:
       Text: 'It is obvious she''s used to being a ''golden girl'' deserving of success. '
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+          type: 2}
         AmbitionEffect: -3
         PrideEffect: 0
       EgoEffect: 0
@@ -94,32 +127,67 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 1
   ProbabilityOfFailureResult: 0.3
   FailureResult:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
       Text: There's no reason we can't BOTH make it through Management Training together.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.68
+        yPos: 0.4
+        width: 400
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
       Text: I think it is obvious I'm going to get the spot.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.68
+        yPos: 0.4
+        width: 400
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
       Text: You don't know that for sure.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.68
+        yPos: 0.4
+        width: 400
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
       Text: Oh, I think I've pretty much got a lock on it!
       CustomNpcImageOptions: []
-    OptionalPopups: []
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.68
+        yPos: 0.4
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+    OptionalPopups:
+    - Title: Based on her rising profile...
+      Videos:
+      - {fileID: 32900000, guid: c7e07983794c6de4fbd138d59a8a8bb1, type: 3}
+      Texture: {fileID: 0}
+      Text: '...in the department, you can''t really disagree.  Things are looking
+        grim.  Unless you manage to win this corporate tug of war, Deborah Jones
+        is going to make your life miserable. '
     Effect:
       NpcEffects: []
       EgoEffect: -5
@@ -144,9 +212,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   Completed: 0
+  New: 1
