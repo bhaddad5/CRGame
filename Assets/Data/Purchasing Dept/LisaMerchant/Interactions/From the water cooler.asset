@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: ee1f5497-8e24-422f-b4f9-02af57de55af
   Name: From the water cooler
+  AlertNew: 1
   Category: 0
   Requirements:
     RequiredPower: 0
@@ -53,6 +54,7 @@ MonoBehaviour:
         xPos: 0.36
         yPos: 0.45
         width: 415
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 7e462278cce38214a924d25dd035e5b8,
         type: 2}
@@ -64,6 +66,7 @@ MonoBehaviour:
         xPos: 0.36
         yPos: 0.45
         width: 415
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 7e462278cce38214a924d25dd035e5b8,
         type: 2}
@@ -77,6 +80,7 @@ MonoBehaviour:
         xPos: 0.36
         yPos: 0.45
         width: 415
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 7e462278cce38214a924d25dd035e5b8,
         type: 2}
@@ -88,7 +92,13 @@ MonoBehaviour:
         xPos: 0.36
         yPos: 0.45
         width: 415
-    OptionalPopups: []
+      OptionalAudioClip: {fileID: 0}
+    OptionalPopups:
+    - Title: Lisa's such a gossip!
+      Videos:
+      - {fileID: 32900000, guid: 7ee4457d1d66b02469116f6eb943dd33, type: 3}
+      Texture: {fileID: 0}
+      Text: All it takes is a little attention and she's an open book!
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -113,6 +123,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -142,4 +153,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1
