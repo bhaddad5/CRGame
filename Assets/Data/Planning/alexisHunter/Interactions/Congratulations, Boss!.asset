@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 85a8a6ea-03be-4d1b-9dfd-2717254ea2d0
   Name: Congratulations, Boss!
+  AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
@@ -43,54 +44,68 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3e388f1db150adc41861a8d778471965,
+        type: 2}
       Text: So I guess I'm reporting to you now that you're running Planning?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: e57493b43ba3c55459a7847afdbee19a,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3e388f1db150adc41861a8d778471965,
+        type: 2}
       Text: 'That''s correct.  I''m going to rely on you to handle the day to day
         work.  '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: e57493b43ba3c55459a7847afdbee19a,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3e388f1db150adc41861a8d778471965,
+        type: 2}
       Text: What's happening with Tracey then?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: e57493b43ba3c55459a7847afdbee19a,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3e388f1db150adc41861a8d778471965,
+        type: 2}
       Text: She's obviously no longer going to have any management responsibility. 
-        Consider her an equal.  I intend on having her focus on les strategic type
-        duties.
+        Consider her an equal.  I intend to have her focusing on less strategic duties.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: e57493b43ba3c55459a7847afdbee19a,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3e388f1db150adc41861a8d778471965,
+        type: 2}
       Text: Understood.  Well, congratulations.  If you need anything, just let me
         know.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: e57493b43ba3c55459a7847afdbee19a,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
+      OptionalAudioClip: {fileID: 0}
     OptionalPopups: []
     Effect:
       NpcEffects: []
@@ -116,6 +131,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -145,4 +161,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1
