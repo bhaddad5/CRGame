@@ -20,8 +20,13 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcStatRequirements: []
-    RequiredInteractions: []
+    NpcStatRequirements:
+    - OptionalNpcReference: {fileID: 0}
+      Stat: 0
+      Is: 0
+      Value: 0
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 7f82478288619c34294050dfaa25c6f3, type: 2}
     RequiredNotCompletedInteractions:
     - {fileID: 11400000, guid: c8260e1837d196b41ba7d0c298d818cb, type: 2}
     RequiredPolicies: []

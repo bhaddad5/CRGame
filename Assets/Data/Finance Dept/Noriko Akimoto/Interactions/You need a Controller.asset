@@ -25,7 +25,8 @@ MonoBehaviour:
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
-    RequiredNpcsControled: []
+    RequiredNpcsControled:
+    - {fileID: 11400000, guid: fe057ea31c7f5db4fa79ebaaba8f2978, type: 2}
     RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
     RequiredTrophies: []
@@ -43,36 +44,45 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: fe057ea31c7f5db4fa79ebaaba8f2978,
+        type: 2}
       Text: You're going to ask Jennifer permission to hire on a proper Controller
         for this department.  Since Madison's not suitable and all.  You'll tell
         her your hands are full with the IPO and Madison is a hopeless little drone
         without any leadership ability to fill the gap.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 371197f8242f61c40a9a0ccedaeb75ab,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: fe057ea31c7f5db4fa79ebaaba8f2978,
+        type: 2}
       Text: I'm still the CFO!  I'll decide if--
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 371197f8242f61c40a9a0ccedaeb75ab,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: fe057ea31c7f5db4fa79ebaaba8f2978,
+        type: 2}
       Text: You'll do as you are told or I'll expose you.  No more talk.  I need
         to recruit a Controller I can trust.  You'll see Jennifer right now.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 371197f8242f61c40a9a0ccedaeb75ab,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
+      OptionalAudioClip: {fileID: 0}
     OptionalPopups:
     - Title: Noriko braces herself...
       Videos:
@@ -82,7 +92,8 @@ MonoBehaviour:
         You can now have HR begin to recruit for a Controller you can trust!
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: fe057ea31c7f5db4fa79ebaaba8f2978,
+          type: 2}
         AmbitionEffect: 0
         PrideEffect: -15
       EgoEffect: 0
