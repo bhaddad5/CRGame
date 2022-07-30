@@ -21,7 +21,8 @@ MonoBehaviour:
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 7077e560b022a8f44ab03ef693c78e99, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled:
@@ -41,14 +42,16 @@ MonoBehaviour:
     RevanueCost: 0
     HornicalCost: 0
   Repeatable: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
         type: 2}
       Text: 'Candace, I want you to write up a new policy regarding a corporate dress
-        code.  I''m tired of seeing staff dressing like lazy slobs. '
+        code.  I''m tired of seeing staff dressing like lazy slobs. There''s no need
+        to reinvent the wheel.  You can pretty use what we developed for Debbie Jones,
+        my secretary.  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 015acc2fd3767b24a9d137be3d709390,
         type: 3}
@@ -56,6 +59,7 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.45
         width: 410
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
         type: 2}
@@ -67,6 +71,7 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.45
         width: 410
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
         type: 2}
@@ -79,6 +84,7 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.45
         width: 410
+      OptionalAudioClip: {fileID: 0}
     OptionalPopups: []
     Effect:
       NpcEffects: []
