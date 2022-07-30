@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 94a86a3e-ecb9-4d77-b9c7-8304464ec770
   Name: Intro to Valerie Lyon
+  AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
@@ -53,7 +54,8 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 350
-    - CurrSpeaker: 1
+      OptionalAudioClip: {fileID: 0}
+    - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
         type: 2}
       Text: Yes, I'll log them.  Just sign this and I'll take receipt.  We're always
@@ -66,6 +68,7 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 350
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
         type: 2}
@@ -77,6 +80,7 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 350
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
         type: 2}
@@ -90,6 +94,7 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 350
+      OptionalAudioClip: {fileID: 0}
     OptionalPopups:
     - Title: '"I''m just a paralegal.  What do I know?"'
       Videos:
@@ -124,6 +129,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -153,4 +159,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1
