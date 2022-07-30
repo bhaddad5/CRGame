@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: ae516a90-4a82-4bcb-9483-e870d762dba0
   Name: Tech vendor approval process
+  AlertNew: 1
   Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 39d9261df683c184ab2501f3cc2148f9, type: 2}
     RequiredNotCompletedInteractions: []
@@ -44,20 +44,49 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7e462278cce38214a924d25dd035e5b8,
+        type: 2}
       Text: I love our pillow talk.  Have you heard anything juicy?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 403ae2e6934b11346b2cd6dfa85a5211,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.36
+        yPos: 0.45
+        width: 415
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7e462278cce38214a924d25dd035e5b8,
+        type: 2}
       Text: Oh you!  Well, it will seem boring to you but Josie Wong totally screwed
         up her vendor approval process so much that it looks like they will have
         to allocate another ten percent to her dev budget!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 403ae2e6934b11346b2cd6dfa85a5211,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.36
+        yPos: 0.45
+        width: 415
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7e462278cce38214a924d25dd035e5b8,
+        type: 2}
       Text: That's an interesting tidbit!
       CustomNpcImageOptions: []
-    OptionalPopups: []
+      CustomBackground: {fileID: 2800000, guid: 403ae2e6934b11346b2cd6dfa85a5211,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.36
+        yPos: 0.45
+        width: 415
+      OptionalAudioClip: {fileID: 0}
+    OptionalPopups:
+    - Title: All she needs...
+      Videos:
+      - {fileID: 32900000, guid: 94f1b6678c39ec844a88a48edb165886, type: 3}
+      Texture: {fileID: 0}
+      Text: ...is a little love and she spills all the beans!
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: a41d8fa3ed6f76a44b0814daec2c238f,
@@ -86,11 +115,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -120,9 +145,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   Completed: 0
+  New: 1

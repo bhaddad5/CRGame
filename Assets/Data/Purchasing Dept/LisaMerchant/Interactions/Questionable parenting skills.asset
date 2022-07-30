@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: dd08bb69-e932-4654-afe6-e0f16d15d4f0
   Name: Questionable parenting skills
+  AlertNew: 1
   Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 39d9261df683c184ab2501f3cc2148f9, type: 2}
     RequiredNotCompletedInteractions: []
@@ -44,19 +44,48 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7e462278cce38214a924d25dd035e5b8,
+        type: 2}
       Text: I swear the snuggling is better than the sex!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 403ae2e6934b11346b2cd6dfa85a5211,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.36
+        yPos: 0.45
+        width: 415
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7e462278cce38214a924d25dd035e5b8,
+        type: 2}
       Text: 'For me too!  Did you hear about Gemma Hamilton''s kid, Holly?  I heard
         she got a call from the school again.  They found some marijuana in her locker!  '
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 403ae2e6934b11346b2cd6dfa85a5211,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.36
+        yPos: 0.45
+        width: 415
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7e462278cce38214a924d25dd035e5b8,
+        type: 2}
       Text: Sounds like Gemma's got a wild one for a daughter!
       CustomNpcImageOptions: []
-    OptionalPopups: []
+      CustomBackground: {fileID: 2800000, guid: 403ae2e6934b11346b2cd6dfa85a5211,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.36
+        yPos: 0.45
+        width: 415
+      OptionalAudioClip: {fileID: 0}
+    OptionalPopups:
+    - Title: Lisa's such a gossip!
+      Videos:
+      - {fileID: 32900000, guid: 7ee4457d1d66b02469116f6eb943dd33, type: 3}
+      Texture: {fileID: 0}
+      Text: All it takes is a little attention and she's an open book!
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: d248b00fc853b4845a5da195f269d404,
@@ -85,11 +114,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -119,9 +144,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   Completed: 0
+  New: 1
