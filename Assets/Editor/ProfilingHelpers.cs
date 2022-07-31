@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Assets.GameModel;
+using NUnit.Framework;
 using UnityEditor;
 using UnityEngine;
 
@@ -9,6 +10,23 @@ public static class ProfilingHelpers
 	#region Helpers
 
 	private static GameData LoadGameData() => AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
+
+	private static List<Npc> GetAllNpcs()
+	{
+		var gameData = LoadGameData();
+		List<Npc> res = new List<Npc>();
+
+		foreach (var location in gameData.Locations)
+		{
+			foreach (var npc in location.Npcs)
+			{
+				if(npc != null)
+					res.Add(npc);
+			}
+		}
+
+		return res;
+	}
 
 	private static List<KeyValuePair<string, Effect>> GetAllEffects()
 	{
@@ -51,8 +69,85 @@ public static class ProfilingHelpers
 
 	#endregion
 
+	[MenuItem("Company Man Debugging/Print Npc Control Interactions")]
+	public static void PrintNpcControlInteractions()
+	{
+		var effects = GetAllEffects();
+		var npcs = GetAllNpcs();
+
+		Dictionary<Npc, List<string>> npcControllers = new Dictionary<Npc, List<string>>();
+
+		foreach (var effect in effects)
+		{
+			foreach (var npc in effect.Value.NpcsToControl)
+			{
+				if (!npcControllers.ContainsKey(npc))
+					npcControllers[npc] = new List<string>();
+			}
+		}
+
+		foreach (var npc in npcs)
+		{
+			if(npc.IsControllable && !npcControllers.ContainsKey(npc))
+				Debug.LogError($"{npc.FirstName} {npc.LastName} has no Control effect!");
+		}
+
+		foreach (var npcController in npcControllers)
+		{
+			string res = $"{npcController.Key.FirstName} {npcController.Key.LastName} controlled by:";
+			foreach (var completer in npcController.Value)
+			{
+				res += $"{completer}, or";
+			}
+
+			res = res.Substring(0, res.Length - 4);
+			Debug.Log(res);
+		}
+	}
+
+	[MenuItem("Company Man Debugging/Print Mission Completion Interactions")]
+	public static void PrintMissionCompletionInteractions()
+	{
+		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
+
+		Dictionary<Mission, List<string>> missionCompleters = new Dictionary<Mission, List<string>>();
+
+		var effects = GetAllEffects();
+		foreach (var effect in effects)
+		{
+			foreach (var mission in effect.Value.MissionsToComplete)
+			{
+				if (mission == null)
+					continue;
+
+				if (!missionCompleters.ContainsKey(mission))
+					missionCompleters[mission] = new List<string>();
+				missionCompleters[mission].Add(effect.Key);
+			}
+		}
 
 
+		foreach (var location in gameData.Locations)
+		{
+			foreach (var mission in location.Missions)
+			{
+				if (!missionCompleters.ContainsKey(mission))
+					Debug.LogError($"{mission.MissionName} has no completion effect!");
+			}
+		}
+
+		foreach (var missionCompleter in missionCompleters)
+		{
+			string res = $"{missionCompleter.Key.MissionName} completed by:";
+			foreach (var completer in missionCompleter.Value)
+			{
+				res += $"{completer}, or";
+			}
+
+			res = res.Substring(0, res.Length - 4);
+			Debug.Log(res);
+		}
+	}
 
 
 	[MenuItem("Company Man Debugging/Get Control Interactions Of Selected Object")]
@@ -86,49 +181,7 @@ public static class ProfilingHelpers
 
 	
 
-	[MenuItem("Company Man Debugging/Print Mission Completion Interactions")]
-	public static void PrintMissionCompletionInteractions()
-	{
-		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
-
-		Dictionary<Mission, List<string>> missionCompleters = new Dictionary<Mission, List<string>>();
-
-		var effects = GetAllEffects();
-		foreach (var effect in effects)
-		{
-			foreach (var mission in effect.Value.MissionsToComplete)
-			{
-				if (mission == null)
-					continue;
-
-				if (!missionCompleters.ContainsKey(mission))
-					missionCompleters[mission] = new List<string>();
-				missionCompleters[mission].Add(effect.Key);
-			}
-		}
-
-
-		foreach (var location in gameData.Locations)
-		{
-			foreach (var mission in location.Missions)
-			{
-				if(!missionCompleters.ContainsKey(mission))
-					Debug.LogError($"{mission.MissionName} has no completion effect!");
-			}
-		}
-
-		foreach (var missionCompleter in missionCompleters)
-		{
-			string res = $"{missionCompleter.Key.MissionName} completed by:";
-			foreach (var completer in missionCompleter.Value)
-			{
-				res += $"{completer}, or";
-			}
-
-			res = res.Substring(0, res.Length - 4);
-			Debug.Log(res);
-		}
-	}
+	
 
 
 	[MenuItem("Company Man Debugging/Print Control and Completion Interactions")]
@@ -157,7 +210,6 @@ public static class ProfilingHelpers
 				}
 			}
 		}
-		Debug.Log("Upgrade Complete!");
 	}
 
 	[MenuItem("Company Man Debugging/Copy All Text")]
