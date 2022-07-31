@@ -15,13 +15,14 @@ MonoBehaviour:
   Id: 8b879f3c-8e4e-41fd-a183-e102da0ff6ca
   Name: Appearance Policy breach!
   AlertNew: 1
-  Category: 0
+  Category: 5
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 8d12ba6c3309f7f4c89706d85cc16a69, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -38,13 +39,78 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
-  Repeatable: 0
-  PreviewEffect: 0
+  Repeatable: 1
+  PreviewEffect: 1
   Result:
-    Dialogs: []
-    OptionalPopups: []
+    Dialogs:
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Debbie, you know that the Admin Dress Code incorporates more than just
+        your hemline, don't you?  You have studied the Appearance Policy guidelines
+        as well, haven't you?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: Yes, of course I have, Mr. {LastName}.  Loo-- is there a problem?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: 'NOTE: It''s a bit of a cat and mouse game you enjoy playing with her. 
+        Any flaw in her appearance is always a pretext to give her a demerit.  Admins,
+        per official company guidelines, are expected to present themsleves as flawless
+        and there are no exceptions for...'
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: 'NOTE: ...chipped nails, smudged lipstick, a run in her stockings, poorly
+        applied makeup or even, God forbid!, the occaisional pimple!'
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+    OptionalPopups:
+    - Title: As you point out...
+      Videos:
+      - {fileID: 32900000, guid: 1d0e255284f09c746be8be86c1793c24, type: 3}
+      - {fileID: 32900000, guid: d200999432c6b8542849a19de9a2fe37, type: 3}
+      - {fileID: 32900000, guid: 17c08b8e295c0e040876bb40cda0bf3a, type: 3}
+      - {fileID: 32900000, guid: 763ee674b9ccd5b4eaa6a499af8dd541, type: 3}
+      - {fileID: 32900000, guid: 188de7807fa08904c9a70b6516039f91, type: 3}
+      - {fileID: 32900000, guid: bac87df8c84c3ef4387f64b82d365c31, type: 3}
+      - {fileID: 32900000, guid: 579217a4302a04c4b81d10931fe1878c, type: 3}
+      - {fileID: 32900000, guid: 5aa821f6f62421648b5cd1fe503672cc, type: 3}
+      - {fileID: 32900000, guid: 40675039995038f40a97bef28896f640, type: 3}
+      - {fileID: 32900000, guid: 5870be6255a1cc142b3b67c30392d222, type: 3}
+      Texture: {fileID: 0}
+      Text: ...her Appearance Policy lapse and the demerit that accompanies it, Debbie
+        stews in impotent frustration, forced to finally acknowledge her breach and
+        promise that "it won't happen again, Mr. {LastName}-- I promise!."
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: -1
+        PrideEffect: 0
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -68,14 +134,41 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
-  CanFail: 0
-  ProbabilityOfFailureResult: 0
+  CanFail: 1
+  ProbabilityOfFailureResult: 0.5
   FailureResult:
-    Dialogs: []
-    OptionalPopups: []
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: Yes, Mr. {LastName}?  Something I can do for you?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: I-- thought I saw-- you had a-- never mind.  Clever girl- you must have
+        attended to it already.  You look in order.  You're dismissed, Debbie.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+    OptionalPopups:
+    - Title: You sense Debbie is...
+      Videos:
+      - {fileID: 0}
+      Texture: {fileID: 0}
+      Text: '...smirking at having avoided an Appearance Policy infraction.  She
+        was too quick for you this time! '
     Effect:
       NpcEffects: []
-      EgoEffect: 0
+      EgoEffect: -1
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
