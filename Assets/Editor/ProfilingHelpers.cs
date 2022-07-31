@@ -6,6 +6,55 @@ using UnityEngine;
 
 public static class ProfilingHelpers
 {
+	#region Helpers
+
+	private static GameData LoadGameData() => AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
+
+	private static List<KeyValuePair<string, Effect>> GetAllEffects()
+	{
+		var gameData = LoadGameData();
+
+		List<KeyValuePair<string, Effect>> effects = new List<KeyValuePair<string, Effect>>();
+
+		foreach (var startOfTurnInteraction in gameData.StartOfTurnInteractions)
+		{
+			effects.Add(new KeyValuePair<string, Effect>($"Interaction(\"{startOfTurnInteraction.Name}\")", startOfTurnInteraction.Result.Effect));
+		}
+
+		foreach (var location in gameData.Locations)
+		{
+			foreach (var mission in location.Missions)
+			{
+				effects.Add(new KeyValuePair<string, Effect>($"Mission(\"{mission.MissionName}\")", mission.Effect));
+			}
+
+			foreach (var policy in location.Policies)
+			{
+				effects.Add(new KeyValuePair<string, Effect>($"Policy(\"{policy.Name}\")", policy.Effect));
+			}
+
+			foreach (var npc in location.Npcs)
+			{
+				foreach (var interaction in npc.Interactions)
+				{
+					if (interaction == null)
+						continue;
+					effects.Add(new KeyValuePair<string, Effect>($"Interaction(\"{interaction.Name}\")", interaction.Result.Effect));
+					if(interaction.CanFail)
+						effects.Add(new KeyValuePair<string, Effect>($"InteractionFailed(\"{interaction.Name}\")", interaction.FailureResult.Effect));
+				}
+			}
+		}
+
+		return effects;
+	}
+
+	#endregion
+
+
+
+
+
 	[MenuItem("Company Man Debugging/Get Control Interactions Of Selected Object")]
 	public static void GetLocationInteractions()
 	{
@@ -32,6 +81,52 @@ public static class ProfilingHelpers
 				}
 
 			}
+		}
+	}
+
+	
+
+	[MenuItem("Company Man Debugging/Print Mission Completion Interactions")]
+	public static void PrintMissionCompletionInteractions()
+	{
+		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
+
+		Dictionary<Mission, List<string>> missionCompleters = new Dictionary<Mission, List<string>>();
+
+		var effects = GetAllEffects();
+		foreach (var effect in effects)
+		{
+			foreach (var mission in effect.Value.MissionsToComplete)
+			{
+				if (mission == null)
+					continue;
+
+				if (!missionCompleters.ContainsKey(mission))
+					missionCompleters[mission] = new List<string>();
+				missionCompleters[mission].Add(effect.Key);
+			}
+		}
+
+
+		foreach (var location in gameData.Locations)
+		{
+			foreach (var mission in location.Missions)
+			{
+				if(!missionCompleters.ContainsKey(mission))
+					Debug.LogError($"{mission.MissionName} has no completion effect!");
+			}
+		}
+
+		foreach (var missionCompleter in missionCompleters)
+		{
+			string res = $"{missionCompleter.Key.MissionName} completed by:";
+			foreach (var completer in missionCompleter.Value)
+			{
+				res += $"{completer}, or";
+			}
+
+			res = res.Substring(0, res.Length - 4);
+			Debug.Log(res);
 		}
 	}
 
