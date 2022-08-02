@@ -23,6 +23,7 @@ MonoBehaviour:
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 3455a8139dcfa1a4f812c1f76bbe823f, type: 2}
+    - {fileID: 11400000, guid: 127ba7fe86a554647b0dc7f85cc160df, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -44,46 +45,58 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: a41d8fa3ed6f76a44b0814daec2c238f,
+        type: 2}
       Text: I think we may have resolved this visa issue of yours!  There was a request
         in the system that popped up when your visa was run through clearance.  Nothing
         serious-- just a request for confirmation of identity and location.  Pretty
         standard stuff!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 30cbfea0afa8ff34caee8bce830502c7,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.4
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: a41d8fa3ed6f76a44b0814daec2c238f,
+        type: 2}
       Text: Oh- that's good news!  I'm relieved!  Can I have my passport back then?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 30cbfea0afa8ff34caee8bce830502c7,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.4
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: a41d8fa3ed6f76a44b0814daec2c238f,
+        type: 2}
       Text: Of course.  One question first.  Do you know a Major Xiao Zihao?   From
         the Chinese State Security Ministry?  He's the contact listed on the diplomatic
         request.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 30cbfea0afa8ff34caee8bce830502c7,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.4
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: a41d8fa3ed6f76a44b0814daec2c238f,
+        type: 2}
       Text: N-no!  I don't know who that is!  I-- I have to go!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 30cbfea0afa8ff34caee8bce830502c7,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.4
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
     OptionalPopups:
     - Title: Jocelyn seems shaken...
       Videos:
@@ -92,7 +105,8 @@ MonoBehaviour:
       Text: ...to her core at the mention of the name!
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: a41d8fa3ed6f76a44b0814daec2c238f,
+          type: 2}
         AmbitionEffect: -30
         PrideEffect: 0
       EgoEffect: 0
