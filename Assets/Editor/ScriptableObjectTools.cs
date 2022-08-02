@@ -166,6 +166,70 @@ public class ScriptableObjectTools
 		Debug.Log("Detection Complete!");
 	}
 
+	[MenuItem("Tools/Fix Missing IDs")]
+	public static void FixMissingIds()
+	{
+		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
+
+		foreach (var location in gameData.Locations)
+		{
+			if (String.IsNullOrEmpty(location.Id))
+			{
+				location.Id = Guid.NewGuid().ToString();
+				EditorUtility.SetDirty(location);
+			}
+
+
+			foreach (var npc in location.Npcs)
+			{
+				if (String.IsNullOrEmpty(npc.Id))
+				{
+					npc.Id = Guid.NewGuid().ToString();
+					EditorUtility.SetDirty(npc);
+				}
+
+				foreach (var interaction in npc.Interactions)
+				{
+					if (String.IsNullOrEmpty(interaction.Id))
+					{
+						interaction.Id = Guid.NewGuid().ToString();
+						EditorUtility.SetDirty(interaction);
+					}
+				}
+			}
+
+			foreach (var mission in location.Missions)
+			{
+				if (String.IsNullOrEmpty(mission.Id))
+				{
+					mission.Id = Guid.NewGuid().ToString();
+					EditorUtility.SetDirty(mission);
+				}
+			}
+
+			foreach (var policy in location.Policies)
+			{
+				if (String.IsNullOrEmpty(policy.Id))
+				{
+					policy.Id = Guid.NewGuid().ToString();
+					EditorUtility.SetDirty(policy);
+				}
+			}
+		}
+
+		foreach (var startOfTurnInteraction in gameData.StartOfTurnInteractions)
+		{
+			if (String.IsNullOrEmpty(startOfTurnInteraction.Id))
+			{
+				startOfTurnInteraction.Id = Guid.NewGuid().ToString();
+				EditorUtility.SetDirty(startOfTurnInteraction);
+			}
+		}
+
+		EditorUtility.SetDirty(gameData);
+		Debug.Log("Upgrade Complete!");
+	}
+
 	[MenuItem("Tools/Fix Corrupted Data")]
 	public static void FixCorruptedData()
 	{
