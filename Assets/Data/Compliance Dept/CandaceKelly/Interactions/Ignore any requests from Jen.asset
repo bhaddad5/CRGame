@@ -24,10 +24,11 @@ MonoBehaviour:
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
-    RequiredDepartmentsControled: []
-    RequiredNpcsControled: []
-    RequiredNpcsTrained:
+    RequiredDepartmentsControled:
+    - {fileID: 11400000, guid: a467ecebab11ffc43b115328d4339aa7, type: 2}
+    RequiredNpcsControled:
     - {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e, type: 2}
+    RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
@@ -44,45 +45,53 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
+        type: 2}
       Text: If you get any requests from Jen Page's office, I'd like you to inform
         me and then... ignore them.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 015acc2fd3767b24a9d137be3d709390,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.45
+        width: 410
       OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
+        type: 2}
       Text: Ignore Jennifer Page?  But she's the CEO!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 015acc2fd3767b24a9d137be3d709390,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.45
+        width: 410
       OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
+        type: 2}
       Text: Not for very much longer.  Any questions?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 015acc2fd3767b24a9d137be3d709390,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.45
+        width: 410
       OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
+        type: 2}
       Text: None, Sir.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 015acc2fd3767b24a9d137be3d709390,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.45
+        width: 410
       OptionalAudioClip: {fileID: 0}
     OptionalPopups: []
     Effect:
