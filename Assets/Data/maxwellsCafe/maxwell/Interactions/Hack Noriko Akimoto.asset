@@ -24,7 +24,8 @@ MonoBehaviour:
     RequiredInteractions:
     - {fileID: 11400000, guid: b96e3edd0bae2854f8bf1ff607ab16da, type: 2}
     - {fileID: 11400000, guid: 53cb2fea93cc77d4582f00905bd16bf7, type: 2}
-    RequiredNotCompletedInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: 519582911127bb64b835f5e38da034f0, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -45,14 +46,17 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: dca0ed3955970e54c921b2067f1fdcfe,
+        type: 2}
       Text: Miss Akimoto's world is now yours, bud-- have fun!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: e8e650c737c3e4844836771a2cbd6d15,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.6
+        yPos: 0.3
+        width: 380
+      OptionalAudioClip: {fileID: 0}
     OptionalPopups: []
     Effect:
       NpcEffects: []

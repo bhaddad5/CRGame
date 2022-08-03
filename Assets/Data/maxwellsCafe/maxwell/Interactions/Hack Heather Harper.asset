@@ -24,7 +24,8 @@ MonoBehaviour:
     RequiredInteractions:
     - {fileID: 11400000, guid: f27f91eb886887642b4789849772b89c, type: 2}
     - {fileID: 11400000, guid: 53cb2fea93cc77d4582f00905bd16bf7, type: 2}
-    RequiredNotCompletedInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: d3d2c26db5a76b44b8cad45da2850ab8, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -45,14 +46,17 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: dca0ed3955970e54c921b2067f1fdcfe,
+        type: 2}
       Text: It's a done deal-- have fun peeking at Heather Harper!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: e8e650c737c3e4844836771a2cbd6d15,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.6
+        yPos: 0.3
+        width: 380
+      OptionalAudioClip: {fileID: 0}
     OptionalPopups: []
     Effect:
       NpcEffects: []
