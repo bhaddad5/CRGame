@@ -24,7 +24,8 @@ MonoBehaviour:
     RequiredInteractions:
     - {fileID: 11400000, guid: 226d49fe4df7b904b9d530c1beb59904, type: 2}
     - {fileID: 11400000, guid: 50c2ef9cad3c8f34f8bf9a7511850d52, type: 2}
-    RequiredNotCompletedInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: dbeff7a983e5dd546867ad86285418af, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled:
@@ -46,25 +47,31 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: e824e839d0b9719409dc7942822791c4,
+        type: 2}
       Text: You seem to be in a good mood.  Dare I ask?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 0cfc0bf2b9b5fe8418cc4c3bd0caceb4,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.4
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: e824e839d0b9719409dc7942822791c4,
+        type: 2}
       Text: Just so happy to be working for an organization where I can have the
         cutest little Chinese chick blow me whenever I like-- wearing a schoolgirl's
         uniform no less!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 0cfc0bf2b9b5fe8418cc4c3bd0caceb4,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.4
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
     OptionalPopups:
     - Title: You're happy your CTO...
       Videos:

@@ -24,9 +24,9 @@ MonoBehaviour:
     RequiredInteractions:
     - {fileID: 11400000, guid: 5c6a3982fe7f0c14cb2ba5f86c0c0291, type: 2}
     - {fileID: 11400000, guid: 53cb2fea93cc77d4582f00905bd16bf7, type: 2}
+    - {fileID: 11400000, guid: b636a8e98bb235140bca54d846e7c169, type: 2}
     RequiredNotCompletedInteractions: []
-    RequiredPolicies:
-    - {fileID: 0}
+    RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled:
     - {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06, type: 2}
@@ -47,16 +47,19 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 02285d513a8a80346bd5fceb01f05d8b,
+        type: 2}
       Text: 'NOTE: You instruct Debbie to get Jayme Keller''s home address from the
         corporate emergency contact database.  Minutes later, you have what you need
         to give Maxwell in order to begin peeking into her personal life.'
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: c610e6c1edf21c24bb89e05553d0eae7,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.3
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
     OptionalPopups: []
     Effect:
       NpcEffects: []

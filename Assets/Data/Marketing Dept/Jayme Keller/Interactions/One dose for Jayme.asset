@@ -20,8 +20,13 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcStatRequirements: []
-    RequiredInteractions: []
+    NpcStatRequirements:
+    - OptionalNpcReference: {fileID: 0}
+      Stat: 0
+      Is: 0
+      Value: 0
+    RequiredInteractions:
+    - {fileID: 11400000, guid: b636a8e98bb235140bca54d846e7c169, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled:
@@ -56,6 +61,7 @@ MonoBehaviour:
         xPos: 0.3
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 02285d513a8a80346bd5fceb01f05d8b,
         type: 2}
@@ -67,6 +73,7 @@ MonoBehaviour:
         xPos: 0.3
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
     OptionalPopups:
     - Title: You can tell when the Hornical kicks in...
       Videos:
