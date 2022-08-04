@@ -21,7 +21,8 @@ MonoBehaviour:
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
+    - OptionalNpcReference: {fileID: 11400000, guid: 953fdaa61df0d874096f67b62bdff83f,
+        type: 2}
       Stat: 0
       Is: 0
       Value: 0
@@ -49,31 +50,38 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 953fdaa61df0d874096f67b62bdff83f,
+        type: 2}
       Text: 'NOTE: You assign Tracey lots of training videos, tame at first, then
         increasingly more explicit and touching on the taboo.  Instead of housewife
         reality shows, she begins absorbing the kind of content that will prove more
         useful to her wifely duties.'
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 2eab091c1b8903840ae9023cf8e9d6cd,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
     OptionalPopups:
     - Title: Your selection of source material...
       Videos: []
+      Textures:
+      - {fileID: 2800000, guid: 8a1eb0f340804474d94ef7832c558721, type: 3}
       Texture: {fileID: 2800000, guid: 8a1eb0f340804474d94ef7832c558721, type: 3}
       Text: '...obviously distresses Tracey.  They suggest scenarios she finds particularly
         nauseating, much to your own amusement. '
     - Title: She'll never get better at...
       Videos:
       - {fileID: 32900000, guid: 3f90067be307ad74fb43f774262269c7, type: 3}
+      Textures: []
       Texture: {fileID: 0}
       Text: ...being a trophy wife until she puts in the study time required!
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 953fdaa61df0d874096f67b62bdff83f,
+          type: 2}
         AmbitionEffect: 0
         PrideEffect: -20
       EgoEffect: 0

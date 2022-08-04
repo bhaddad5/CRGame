@@ -94,9 +94,14 @@ namespace Assets.GameModel
 			Pride = StartingPride;
 
 			foreach (var ob in Interactions)
+			{
 				ob.Setup();
+			}
+
 			foreach (var ob in Trophies)
+			{
 				ob.Setup();
+			}
 		}
 
 		public bool IsVisible(MainGameManager mgm)

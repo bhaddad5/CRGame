@@ -11,7 +11,7 @@ namespace Assets.GameModel
 	{
 		public string Title;
 		public List<VideoClip> Videos;
-		public Texture2D Texture;
+		public List<Texture2D> Textures;
 		[TextArea(3, 10)]
 		public string Text;
 	}

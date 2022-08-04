@@ -28,12 +28,12 @@ public class PopupBindings : MonoBehaviour
 		Text.text = $"{UiDisplayHelpers.ApplyDynamicValuesToString(popup.Text, mgm)}";
 		Text.gameObject.SetActive(!String.IsNullOrEmpty(popup.Text));
 
-		ImageDisplay.gameObject.SetActive(popup.Texture != null);
+		ImageDisplay.gameObject.SetActive(popup.Textures?.Count > 0);
 		VideoPlayer.gameObject.SetActive(popup.Videos?.Count > 0);
 
-		if (popup.Texture != null)
+		if (popup.Textures?.Count > 0)
 		{
-			ImageDisplay.texture = popup.Texture;
+			ImageDisplay.texture = popup.Textures[completionCount % popup.Textures.Count];
 		}
 		
 		if (popup.Videos?.Count > 0)

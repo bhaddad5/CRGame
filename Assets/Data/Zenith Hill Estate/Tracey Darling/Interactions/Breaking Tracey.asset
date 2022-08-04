@@ -21,7 +21,8 @@ MonoBehaviour:
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
+    - OptionalNpcReference: {fileID: 11400000, guid: 953fdaa61df0d874096f67b62bdff83f,
+        type: 2}
       Stat: 1
       Is: 0
       Value: 0
@@ -48,26 +49,34 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 953fdaa61df0d874096f67b62bdff83f,
+        type: 2}
       Text: T-thank you, my Dearest!  How kind of you!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 2eab091c1b8903840ae9023cf8e9d6cd,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 953fdaa61df0d874096f67b62bdff83f,
+        type: 2}
       Text: You are most welcome.  I love to spoil my little trophy wife.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 2eab091c1b8903840ae9023cf8e9d6cd,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
     OptionalPopups:
     - Title: Tracey eyes the tacky panties...
       Videos: []
+      Textures:
+      - {fileID: 2800000, guid: 7c215538b27a911408ae54cd578a9265, type: 3}
       Texture: {fileID: 2800000, guid: 7c215538b27a911408ae54cd578a9265, type: 3}
       Text: ...with resentment even as she promises to think of nothing but you while
         wearing them.  She's learned to express the most fulsome gratitude now when
@@ -75,6 +84,7 @@ MonoBehaviour:
     - Title: The old Tracey Bledsoe is gone.
       Videos:
       - {fileID: 32900000, guid: c1129dc649d7e3242892ddf710587094, type: 3}
+      Textures: []
       Texture: {fileID: 0}
       Text: Mrs. Tracey {LastName}, the perfectly trained trophy wife, has taken
         her place.  Congratulations on training up such an obedient little wife!

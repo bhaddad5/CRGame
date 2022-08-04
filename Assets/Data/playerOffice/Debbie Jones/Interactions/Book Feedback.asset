@@ -21,7 +21,8 @@ MonoBehaviour:
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
+    - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Stat: 1
       Is: 0
       Value: 0
@@ -31,8 +32,7 @@ MonoBehaviour:
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
-    RequiredNpcsTrained:
-    - {fileID: 0}
+    RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
@@ -49,54 +49,69 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: What did you make of that book, Debbie?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: Mr. {LastName}, it was ridiculous!  Two dimensional characters, a stupid
         plot and the most boring setting-- to be honest, it sucked!  It's the kind
         of thing only stupid airheads would ever read!  It's all fantasy and bad
         fantasy at that!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: I see!  I appreciate your frankness!  It seems like copies of this new
         one have already been ordered.  Since I have this copy handy, would you mind
         having a skim through?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: Whatever you want.  You're the boss!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
     OptionalPopups:
     - Title: Despite her protestations...
       Videos: []
+      Textures:
+      - {fileID: 2800000, guid: 43ffc3b8e4c01f54eaa9aea47a853cec, type: 3}
       Texture: {fileID: 2800000, guid: 43ffc3b8e4c01f54eaa9aea47a853cec, type: 3}
       Text: ...Debbie eyes the next book with a little more interest than before.
     - Title: She seems more absorbed in this title.
       Videos:
       - {fileID: 32900000, guid: 84f2ae2651cb5734384609befcc5bdbc, type: 3}
+      Textures: []
       Texture: {fileID: 0}
       Text: "AGATHA DATA TRANSMISSION... \nSUBJECT'S CURRENT CONTENT AVERSION/AROUSAL
         RATIO: 89/37 "

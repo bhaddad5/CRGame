@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 1a1960d2-5064-4a15-b7c0-d809e4255fa4
   Name: A Step-dad's fears
+  AlertNew: 1
   Category: 4
   Requirements:
     RequiredPower: 0
@@ -53,6 +54,7 @@ MonoBehaviour:
         xPos: 0.43
         yPos: 0.4
         width: 270
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: fa1076b1698cb75439943b545976ce7d,
         type: 2}
@@ -64,6 +66,7 @@ MonoBehaviour:
         xPos: 0.43
         yPos: 0.4
         width: 270
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: fa1076b1698cb75439943b545976ce7d,
         type: 2}
@@ -75,6 +78,7 @@ MonoBehaviour:
         xPos: 0.43
         yPos: 0.4
         width: 270
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: fa1076b1698cb75439943b545976ce7d,
         type: 2}
@@ -88,6 +92,7 @@ MonoBehaviour:
         xPos: 0.43
         yPos: 0.4
         width: 270
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: fa1076b1698cb75439943b545976ce7d,
         type: 2}
@@ -100,6 +105,7 @@ MonoBehaviour:
         xPos: 0.43
         yPos: 0.4
         width: 270
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: fa1076b1698cb75439943b545976ce7d,
         type: 2}
@@ -112,9 +118,12 @@ MonoBehaviour:
         xPos: 0.43
         yPos: 0.4
         width: 270
+      OptionalAudioClip: {fileID: 0}
     OptionalPopups:
     - Title: You'll want to get these to Donald!
       Videos: []
+      Textures:
+      - {fileID: 2800000, guid: afd9533ab95033a41a497ea513a7b217, type: 3}
       Texture: {fileID: 2800000, guid: afd9533ab95033a41a497ea513a7b217, type: 3}
       Text: A troubling discovery!
     Effect:
@@ -141,6 +150,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -170,5 +180,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
   New: 1

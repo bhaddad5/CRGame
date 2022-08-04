@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: c5ac2654-63bf-44fb-963b-4d9b383a2bcf
   Name: Employee Personal Safety Measures
+  AlertNew: 1
   Category: 5
   Requirements:
     RequiredPower: 0
@@ -55,6 +56,7 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -67,6 +69,7 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -80,6 +83,7 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -92,15 +96,19 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
+      OptionalAudioClip: {fileID: 0}
     OptionalPopups:
     - Title: A new addition to your keychain
       Videos:
       - {fileID: 0}
+      Textures:
+      - {fileID: 2800000, guid: a1b3d1fc1318a9444bd1f55bc9d3cd86, type: 3}
       Texture: {fileID: 2800000, guid: a1b3d1fc1318a9444bd1f55bc9d3cd86, type: 3}
       Text: Debbie's safely under lock and key now.
     - Title: You already anticipate the whining...
       Videos:
       - {fileID: 32900000, guid: 4e8fb3ad524483749856d3cd5213e498, type: 3}
+      Textures: []
       Texture: {fileID: 2800000, guid: e60245a5bd387a3459478cf0d86af74f, type: 3}
       Text: ...and lots 'reasons' Debbie needs a release from her belt!  Your resolution
         will be tested often, if unsuccessfully.  She'll earn release from now on.
@@ -128,6 +136,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -157,5 +166,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
   New: 1

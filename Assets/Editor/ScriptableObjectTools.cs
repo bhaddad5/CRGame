@@ -230,6 +230,24 @@ public class ScriptableObjectTools
 		Debug.Log("Upgrade Complete!");
 	}
 
+	/*[MenuItem("Tools/Update Popup Textures")]
+	public static void UpdatePopupTextures()
+	{
+		foreach (var interaction in ProfilingHelpers.GetAllInteractions())
+		{
+			for (int i = 0; i < interaction.Result.OptionalPopups.Count; i++)
+			{
+				var popup = interaction.Result.OptionalPopups[i];
+				if (popup.Texture == null)
+					continue;
+
+				popup.Textures = new List<Texture2D>() { popup.Texture };
+				interaction.Result.OptionalPopups[i] = popup;
+				EditorUtility.SetDirty(interaction);
+			}
+		}
+	}*/
+
 	[MenuItem("Tools/Fix Corrupted Data")]
 	public static void FixCorruptedData()
 	{

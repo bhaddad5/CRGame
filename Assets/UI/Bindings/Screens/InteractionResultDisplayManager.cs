@@ -63,7 +63,7 @@ public class InteractionResultDisplayManager
 			var popup = new Popup()
 			{
 				Title = $"Trophy Claimed: {currTrophiesToShow[0].Name}",
-				Texture = currTrophiesToShow[0].Image,
+				Textures = new List<Texture2D>(){ currTrophiesToShow[0].Image },
 				Text = currTrophiesToShow[0].Description,
 			};
 			currTrophiesToShow.RemoveAt(0);
@@ -76,7 +76,7 @@ public class InteractionResultDisplayManager
 			var popup = new Popup()
 			{
 				Title = $"Mission Complete: {currMissionsToShow[0].MissionName}",
-				Texture = currMissionsToShow[0].MissionImage,
+				Textures = new List<Texture2D>() { currMissionsToShow[0].MissionImage },
 				Text = currMissionsToShow[0].MissionDescription,
 			};
 			currMissionsToShow.RemoveAt(0);

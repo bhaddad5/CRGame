@@ -27,8 +27,7 @@ MonoBehaviour:
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
-    RequiredNpcsTrained:
-    - {fileID: 0}
+    RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
@@ -45,38 +44,49 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: 'Debbie, I have a little treat for you!    '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: What is it Mr. {LastName}?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: You've probably been afraid to ask, but I'm going to allow you to enjoy
         this while you're working.  Of course, when you're summoned into my office,
         you'll leave it behind.  And when I have visitors, of course.  But otherwise,
         it's fine.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
     OptionalPopups:
     - Title: Debbie hides her frown quickly...
       Videos: []
+      Textures:
+      - {fileID: 2800000, guid: 41298f836684a6043811ffb3bf30bb54, type: 3}
       Texture: {fileID: 2800000, guid: 41298f836684a6043811ffb3bf30bb54, type: 3}
       Text: ...as she accepts the bubble gum and thanks you with zero excitement. 
         As usual, it is less a gift for her than one for you.  She's never been a
@@ -84,6 +94,7 @@ MonoBehaviour:
     - Title: Debbie's seducitve bubble blowing...
       Videos:
       - {fileID: 32900000, guid: 4e1b8cf9f7e2ac24d974fa763c1a8c2b, type: 3}
+      Textures: []
       Texture: {fileID: 0}
       Text: ...triggers lot of questions from your senior execs.  Soon, they too
         are 'treating' their secretaries with the same brand of gum.

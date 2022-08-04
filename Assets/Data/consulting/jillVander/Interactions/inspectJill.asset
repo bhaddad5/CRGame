@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 36fb3e74-1429-4ad6-900a-c2d24b9f948a
   Name: Intimates Snap Check
+  AlertNew: 1
   Category: 6
   Requirements:
     RequiredPower: 0
@@ -58,6 +59,7 @@ MonoBehaviour:
         xPos: 0.6
         yPos: 0.35
         width: 380
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
         type: 2}
@@ -69,6 +71,7 @@ MonoBehaviour:
         xPos: 0.6
         yPos: 0.35
         width: 380
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
         type: 2}
@@ -80,6 +83,7 @@ MonoBehaviour:
         xPos: 0.6
         yPos: 0.35
         width: 380
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
         type: 2}
@@ -91,9 +95,12 @@ MonoBehaviour:
         xPos: 0.6
         yPos: 0.35
         width: 380
+      OptionalAudioClip: {fileID: 0}
     OptionalPopups:
     - Title: Later, you post to an imageboard for laughs...
       Videos: []
+      Textures:
+      - {fileID: 2800000, guid: 8971ddfa367a3394d9fd9c0e21f7c0b3, type: 3}
       Texture: {fileID: 2800000, guid: 8971ddfa367a3394d9fd9c0e21f7c0b3, type: 3}
       Text: Jill is your slut now!
     Effect:
@@ -124,6 +131,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -153,5 +161,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
   New: 1

@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 00528cb5-7176-46b3-adff-e997f7cf5560
   Name: My son
+  AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
@@ -54,6 +55,7 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.45
         width: 410
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
         type: 2}
@@ -65,6 +67,7 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.45
         width: 410
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
         type: 2}
@@ -77,6 +80,7 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.45
         width: 410
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
         type: 2}
@@ -89,6 +93,7 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.45
         width: 410
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
         type: 2}
@@ -100,9 +105,12 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.45
         width: 410
+      OptionalAudioClip: {fileID: 0}
     OptionalPopups:
     - Title: Kevin's a fine boy!
       Videos: []
+      Textures:
+      - {fileID: 2800000, guid: 1c49a36de2bc8364d9ed2ff04ae39081, type: 3}
       Texture: {fileID: 2800000, guid: 1c49a36de2bc8364d9ed2ff04ae39081, type: 3}
       Text: Looks like a normal kid.
     Effect:
@@ -133,6 +141,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -162,5 +171,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
   New: 1

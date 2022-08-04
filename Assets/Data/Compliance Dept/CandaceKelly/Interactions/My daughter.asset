@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 90fb9e9f-cf6d-4071-ba73-e9417451746d
   Name: My daughter
+  AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
@@ -54,6 +55,7 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.45
         width: 410
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
         type: 2}
@@ -65,6 +67,7 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.45
         width: 410
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
         type: 2}
@@ -76,6 +79,7 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.45
         width: 410
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
         type: 2}
@@ -88,6 +92,7 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.45
         width: 410
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
         type: 2}
@@ -99,9 +104,12 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.45
         width: 410
+      OptionalAudioClip: {fileID: 0}
     OptionalPopups:
     - Title: What an interesting development...
       Videos: []
+      Textures:
+      - {fileID: 2800000, guid: 064b80bb24962cf49b8e40cda2aa60ea, type: 3}
       Texture: {fileID: 2800000, guid: 064b80bb24962cf49b8e40cda2aa60ea, type: 3}
       Text: This is a bonus!
     Effect:
@@ -132,6 +140,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -161,5 +170,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
   New: 1

@@ -28,15 +28,46 @@ public static class ProfilingHelpers
 		return res;
 	}
 
-	private static List<KeyValuePair<string, Effect>> GetAllEffects()
+	public static List<Interaction> GetAllInteractions()
+	{
+		var gameData = LoadGameData();
+
+		var interactions = new List<Interaction>();
+
+		foreach (var startOfTurnInteraction in gameData.StartOfTurnInteractions)
+		{
+			if (startOfTurnInteraction == null)
+				continue;
+			interactions.Add(startOfTurnInteraction);
+		}
+
+		foreach (var location in gameData.Locations)
+		{
+			foreach (var npc in location.Npcs)
+			{
+				foreach (var interaction in npc.Interactions)
+				{
+					if (interaction == null)
+						continue;
+					interactions.Add(interaction);
+				}
+			}
+		}
+
+		return interactions;
+	}
+
+	public static List<KeyValuePair<string, Effect>> GetAllEffects()
 	{
 		var gameData = LoadGameData();
 
 		List<KeyValuePair<string, Effect>> effects = new List<KeyValuePair<string, Effect>>();
 
-		foreach (var startOfTurnInteraction in gameData.StartOfTurnInteractions)
+		foreach (var interaction in GetAllInteractions())
 		{
-			effects.Add(new KeyValuePair<string, Effect>($"Interaction(\"{startOfTurnInteraction.Name}\")", startOfTurnInteraction.Result.Effect));
+			effects.Add(new KeyValuePair<string, Effect>($"Interaction(\"{interaction.Name}\")", interaction.Result.Effect));
+			if (interaction.CanFail)
+				effects.Add(new KeyValuePair<string, Effect>($"InteractionFailed(\"{interaction.Name}\")", interaction.FailureResult.Effect));
 		}
 
 		foreach (var location in gameData.Locations)
@@ -49,18 +80,6 @@ public static class ProfilingHelpers
 			foreach (var policy in location.Policies)
 			{
 				effects.Add(new KeyValuePair<string, Effect>($"Policy(\"{policy.Name}\")", policy.Effect));
-			}
-
-			foreach (var npc in location.Npcs)
-			{
-				foreach (var interaction in npc.Interactions)
-				{
-					if (interaction == null)
-						continue;
-					effects.Add(new KeyValuePair<string, Effect>($"Interaction(\"{interaction.Name}\")", interaction.Result.Effect));
-					if(interaction.CanFail)
-						effects.Add(new KeyValuePair<string, Effect>($"InteractionFailed(\"{interaction.Name}\")", interaction.FailureResult.Effect));
-				}
 			}
 		}
 
@@ -81,6 +100,9 @@ public static class ProfilingHelpers
 		{
 			foreach (var npc in effect.Value.NpcsToControl)
 			{
+				if(npc == null)
+					continue;
+
 				if (!npcControllers.ContainsKey(npc))
 					npcControllers[npc] = new List<string>();
 			}
