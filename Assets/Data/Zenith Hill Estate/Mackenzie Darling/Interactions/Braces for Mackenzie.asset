@@ -21,7 +21,9 @@ MonoBehaviour:
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 4a58b3ec35a687f46b71d7d4f2d44c9e, type: 2}
+    - {fileID: 11400000, guid: 198eb06813873e14dbfd3de30d1cf5b1, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -52,9 +54,10 @@ MonoBehaviour:
         she claimed.  You suspect it is just a spiteful cruelty that amuses her. '
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
-        AmbitionEffect: 0
-        PrideEffect: -15
+      - OptionalNpcReference: {fileID: 11400000, guid: 8dff1f07f4971ef4a8c33a3e95657c17,
+          type: 2}
+        AmbitionEffect: -15
+        PrideEffect: -5
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0

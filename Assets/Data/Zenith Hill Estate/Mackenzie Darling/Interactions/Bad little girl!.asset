@@ -26,9 +26,9 @@ MonoBehaviour:
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
-    RequiredNpcsControled: []
-    RequiredNpcsTrained:
+    RequiredNpcsControled:
     - {fileID: 11400000, guid: 8dff1f07f4971ef4a8c33a3e95657c17, type: 2}
+    RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
@@ -55,7 +55,10 @@ MonoBehaviour:
         and pitiful appeals for mercy.  Nothing the girl does seems to mollify her
         demanding step-mother!
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: 0
+        PrideEffect: -7
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0

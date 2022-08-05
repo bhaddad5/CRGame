@@ -13,20 +13,17 @@ MonoBehaviour:
   m_Name: Welcome to your new home!
   m_EditorClassIdentifier: 
   Id: b805fe6a-ff54-42fc-bd26-ffd41aa2bef6
-  Name: Welcome to your new home!
+  Name: Mackenzie, welcome to your new home!
   AlertNew: 1
   Category: 3
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
-      Stat: 0
-      Is: 0
-      Value: 0
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: e986c599e6cd1574da1de4fa8007dadf, type: 2}
+    - {fileID: 11400000, guid: 43aad1028f232724ebba7224ea15fc57, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -47,37 +44,6 @@ MonoBehaviour:
   PreviewEffect: 1
   Result:
     Dialogs:
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: Say hello to your new stepmother, Mackenzie.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: Say hello to your new stepmother, Mackenzie.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 8dff1f07f4971ef4a8c33a3e95657c17,
-        type: 2}
-      Text: Hello, Ms. {LastName}.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 953fdaa61df0d874096f67b62bdff83f,
         type: 2}
@@ -86,45 +52,38 @@ MonoBehaviour:
         in your life.  A bedroom has been prepared for you.  I expected you'd like
         some time to reflect on your new situation.  You are dismissed, Mackenzie.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 2eab091c1b8903840ae9023cf8e9d6cd,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 953fdaa61df0d874096f67b62bdff83f,
-        type: 2}
-      Text: Now, now Mackenzie!  You shall address me as 'Step-mother'.  {FirstName}
-        has given me complete responsibility for you and you must accept my role
-        in your life.  A bedroom has been prepared for you.  I expected you'd like
-        some time to reflect on your new situation.  You are dismissed, Mackenzie.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
       OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 8dff1f07f4971ef4a8c33a3e95657c17,
         type: 2}
       Text: Uh, ok, Step-mother.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 2eab091c1b8903840ae9023cf8e9d6cd,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
       OptionalAudioClip: {fileID: 0}
     OptionalPopups:
+    - Title: Tracey's prepared a comfortable...
+      Videos:
+      - {fileID: 32900000, guid: b8d5d5a343de5084cbed14da01bf5626, type: 3}
+      Texture: {fileID: 0}
+      Text: ...bedroom for the newest addition to the {LastName} Estate.
     - Title: Tracey suddenly seems...
       Videos:
       - {fileID: 32900000, guid: e547cff3aa1360c46a48a747599485de, type: 3}
       Texture: {fileID: 0}
       Text: ...as imperious as she once was when she was addressed as a senior corporate
         executive.  She seems to relish the taste of power again.  Mackenzie better
-        mind her manners aroudn her new step-mother!
+        mind her manners around her new step-mother!
     Effect:
       NpcEffects: []
       EgoEffect: 0

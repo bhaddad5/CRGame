@@ -25,7 +25,8 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 5df064a524845654a9d5272eaea2149d, type: 2}
     - {fileID: 11400000, guid: b33ef105c9656ba45866f018fb50a729, type: 2}
     - {fileID: 11400000, guid: bce435905eda62f4d99d0f5b098528b0, type: 2}
-    RequiredNotCompletedInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: 90f3457f781a6d945a1c3ecf4becd03f, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -46,39 +47,45 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: be12a51bf8ae5c343a38ccd5b80d8007,
+        type: 2}
       Text: '{FirstName}, what is AGATHA?  I saw some memo from Technology referring
         to it and it doesn''t sound familiar at all.  Is it some new product?'
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.4
+        width: 350
       OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: be12a51bf8ae5c343a38ccd5b80d8007,
+        type: 2}
       Text: Just a research project that looks quite promising.  I'll let you know
         when it has achieved a bit more stability and we're ready to put the spotlight
         on it.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.4
+        width: 350
       OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: be12a51bf8ae5c343a38ccd5b80d8007,
+        type: 2}
       Text: OK.  I'm not sure why my security clearance isn't high enough for Technology
         to answer my questions about this AGATHA thing-- but I'll play along and
         you boys can have your little secrets.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.4
+        width: 350
       OptionalAudioClip: {fileID: 0}
     OptionalPopups:
     - Title: She doesn't like being...
@@ -89,7 +96,8 @@ MonoBehaviour:
         to know what's going on in her own company!
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: be12a51bf8ae5c343a38ccd5b80d8007,
+          type: 2}
         AmbitionEffect: -10
         PrideEffect: 0
       EgoEffect: 0

@@ -22,12 +22,12 @@ MonoBehaviour:
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: f9864d931e8b868429125fc70e262fea, type: 2}
     - {fileID: 11400000, guid: 9b0182a365121544f8fd1cc299c77c89, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
-    RequiredNpcsControled: []
+    RequiredNpcsControled:
+    - {fileID: 11400000, guid: 8dff1f07f4971ef4a8c33a3e95657c17, type: 2}
     RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
     RequiredTrophies: []
@@ -135,9 +135,13 @@ MonoBehaviour:
       - {fileID: 32900000, guid: e0639fabfd816d14182c9b0b0d150aa3, type: 3}
       Texture: {fileID: 0}
       Text: ...tearful promises to never disobey her step-mother ever again.  Tracey
-        sems assuaged.  It appears the lesson has been learned.
+        seems mollified.  It appears the lesson has been learned.
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: 8dff1f07f4971ef4a8c33a3e95657c17,
+          type: 2}
+        AmbitionEffect: 0
+        PrideEffect: -10
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
