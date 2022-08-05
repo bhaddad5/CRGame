@@ -53,7 +53,15 @@ MonoBehaviour:
         daughter together.  It's a pleasure you reserve to yourself-- let others
         find and train their own mother-daughter teams!
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: 141b44f8872c8974d952509691bede0f,
+          type: 2}
+        AmbitionEffect: -10
+        PrideEffect: 0
+      - OptionalNpcReference: {fileID: 11400000, guid: 141b44f8872c8974d952509691bede0f,
+          type: 2}
+        AmbitionEffect: 0
+        PrideEffect: -5
       EgoEffect: 25
       FundsEffect: 0
       PowerEffect: 0

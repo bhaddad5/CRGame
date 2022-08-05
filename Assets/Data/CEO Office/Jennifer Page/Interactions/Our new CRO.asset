@@ -25,7 +25,8 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 8dddff4b3c31ed5459d21a1301f7bf99, type: 2}
     - {fileID: 11400000, guid: 5df064a524845654a9d5272eaea2149d, type: 2}
     - {fileID: 11400000, guid: b33ef105c9656ba45866f018fb50a729, type: 2}
-    RequiredNotCompletedInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: 90f3457f781a6d945a1c3ecf4becd03f, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled:
     - {fileID: 11400000, guid: 7b965886ff5d9a349b8b7f98022b9f1f, type: 2}
@@ -47,52 +48,65 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: be12a51bf8ae5c343a38ccd5b80d8007,
+        type: 2}
       Text: 'Where did you find DeShawn Owen?  He''s making miracles happen in Sales! 
         I''m really impressed!  '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.4
+        width: 350
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: be12a51bf8ae5c343a38ccd5b80d8007,
+        type: 2}
       Text: He is shaking things up.  It is very clear now that Cynthia was probably
         not the right person in the right job.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.4
+        width: 350
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: be12a51bf8ae5c343a38ccd5b80d8007,
+        type: 2}
       Text: Yes, well that's on me.  I'll admit to being not the keenest judge of
         character, {FirstName}.  I did the best I could but when you're running a
         company like Artemis, you're bound to make mistakes.  At least now I can
         count on your assistance in this area.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.4
+        width: 350
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: be12a51bf8ae5c343a38ccd5b80d8007,
+        type: 2}
       Text: We can't all be great at everything.  I'm very happy to help recruit
         the kind of leadership Artemis needs.  We sure need it if we're going to
         hit our IPO goals!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.4
+        width: 350
+      OptionalAudioClip: {fileID: 0}
     OptionalPopups: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: be12a51bf8ae5c343a38ccd5b80d8007,
+          type: 2}
         AmbitionEffect: -10
         PrideEffect: 0
       EgoEffect: 0

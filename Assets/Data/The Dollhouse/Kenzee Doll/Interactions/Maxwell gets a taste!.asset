@@ -20,13 +20,11 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
-      Stat: 1
-      Is: 0
-      Value: 0
-    RequiredInteractions: []
-    RequiredNotCompletedInteractions: []
+    NpcStatRequirements: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 6cd3c2c6f31c3d048be916d1f729c952, type: 2}
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: 86fe7e30f436b0546bad7cf17c3dba47, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -54,7 +52,10 @@ MonoBehaviour:
       Text: ...perved on, Mackenzie seems to be the one Maxwell is willing to offer
         up some of his precious Hornical-- in exchange for a taste of the teenager!
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: 0
+        PrideEffect: -5
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0

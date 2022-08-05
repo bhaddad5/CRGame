@@ -26,7 +26,9 @@ MonoBehaviour:
       Stat: 0
       Is: 0
       Value: 0
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 98887d9c930fe0f4c91cf4b9bdae3170, type: 2}
+    - {fileID: 11400000, guid: 2b8abc816f401844e98373bb772d08e6, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -58,8 +60,8 @@ MonoBehaviour:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: 141b44f8872c8974d952509691bede0f,
           type: 2}
-        AmbitionEffect: -10
-        PrideEffect: 0
+        AmbitionEffect: 0
+        PrideEffect: -10
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0

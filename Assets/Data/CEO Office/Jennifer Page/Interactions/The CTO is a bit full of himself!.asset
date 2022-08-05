@@ -25,7 +25,8 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 226d49fe4df7b904b9d530c1beb59904, type: 2}
     - {fileID: 11400000, guid: 5df064a524845654a9d5272eaea2149d, type: 2}
     - {fileID: 11400000, guid: b33ef105c9656ba45866f018fb50a729, type: 2}
-    RequiredNotCompletedInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: 90f3457f781a6d945a1c3ecf4becd03f, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled:
     - {fileID: 11400000, guid: 873ea29cb7125654da9c75025e8cf5e9, type: 2}
@@ -47,64 +48,74 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: be12a51bf8ae5c343a38ccd5b80d8007,
+        type: 2}
       Text: 'My God, your CTO certainly thinks he''s something special!  Eckstein
         barely gave me the time of day when I dropped by to say hello!  It was as
         if he didn''t think I should even be in the research lab!  '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.4
+        width: 350
       OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: be12a51bf8ae5c343a38ccd5b80d8007,
+        type: 2}
       Text: Typical genius, I'm afraid. I'll have a word with him if you like.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.4
+        width: 350
       OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: be12a51bf8ae5c343a38ccd5b80d8007,
+        type: 2}
       Text: 'No, it''s fine.  I don''t want him ticked off at me.  He''s clearly
         doing excellent work based on the patents alone that have been generated. 
         I''m embarrassed now by trying to run Tech on the cheap with all those visa
         girls. '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.4
+        width: 350
       OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: be12a51bf8ae5c343a38ccd5b80d8007,
+        type: 2}
       Text: As long as you can see the errors of your recruiting, there's no danger
         of repeating that mess.  David has the department humming along now and all
         we have to do is step back and let him do his thing!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.4
+        width: 350
       OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: be12a51bf8ae5c343a38ccd5b80d8007,
+        type: 2}
       Text: 'You''re right, {FirstName}.  I''m not embarrassed to admit you''re a
         much better talent recruiter than I''ve been!  I was right to give you so
         much leeway in filling this position after all!  Yes, let''s leave the brainiac
         to his own devices and I won''t worry about his manners so much! '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.4
+        width: 350
       OptionalAudioClip: {fileID: 0}
     OptionalPopups:
     - Title: Jennifer has conceded...
@@ -115,7 +126,8 @@ MonoBehaviour:
         her own.  It is a significant milestone.
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: be12a51bf8ae5c343a38ccd5b80d8007,
+          type: 2}
         AmbitionEffect: -10
         PrideEffect: 0
       EgoEffect: 0
