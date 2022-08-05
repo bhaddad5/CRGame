@@ -38,7 +38,7 @@ namespace Assets.GameModel.UiDisplayers
 			Button.interactable = loc.IsAccessible(mgm);
 			Button.gameObject.SetActive(loc.IsVisible(mgm));
 			Button.transform.localPosition = ConvertMapPos(loc.UiPosition);
-			NewIndicator.SetActive(loc.HasNewInteractions(mgm));
+			NewIndicator.SetActive(loc.HasNewInteractions(mgm) && loc.IsAccessible(mgm));
 		}
 
 		private Vector3 ConvertMapPos(Vector2 mapPos)
