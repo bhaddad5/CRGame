@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Assets.GameModel;
@@ -288,49 +289,86 @@ public static class ProfilingHelpers
 		Debug.Log("Copy Complete!  Paste it anywhere");
 	}
 
-	[MenuItem("Company Man Debugging/Calculate Power Totals")]
+	[MenuItem("Company Man Debugging/Resource Calculators/Calculate Power Totals")]
 	public static void CalculatePowerTotals()
 	{
-		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
+		CalculateResourceTotals("Power", effect => effect.PowerEffect);
+	}
 
-		float totalPowerInGame = 0f;
+	[MenuItem("Company Man Debugging/Resource Calculators/Calculate Revanue Totals")]
+	public static void CalculateRevanueTotals()
+	{
+		CalculateResourceTotals("Revanue", effect => effect.RevanueEffect);
+	}
+
+	[MenuItem("Company Man Debugging/Resource Calculators/Calculate Brand Totals")]
+	public static void CalculateBrandTotals()
+	{
+		CalculateResourceTotals("Brand", effect => effect.BrandEffect);
+	}
+
+	[MenuItem("Company Man Debugging/Resource Calculators/Calculate Culture Totals")]
+	public static void CalculateCultureTotals()
+	{
+		CalculateResourceTotals("Culture", effect => effect.CultureEffect);
+	}
+
+	[MenuItem("Company Man Debugging/Resource Calculators/Calculate Patents Totals")]
+	public static void CalculatePatentsTotals()
+	{
+		CalculateResourceTotals("Patents", effect => effect.PatentsEffect);
+	}
+
+	[MenuItem("Company Man Debugging/Resource Calculators/Calculate Spreadsheets Totals")]
+	public static void CalculateSpreadsheetsTotals()
+	{
+		CalculateResourceTotals("Spreadsheets", effect => effect.SpreadsheetsEffect);
+	}
+
+	private static void CalculateResourceTotals(string resourceName, Func<Effect, float> resourceGetter)
+	{
+		var gameData = LoadGameData();
+
+		float totalInGame = 0f;
 		foreach (var location in gameData.Locations)
 		{
-			float locationTotalPower = 0f;
+			float locationTotalResource = 0f;
 			string npcsString = "";
-			float allNpcsPower = 0f;
+			float allNpcsResource = 0f;
 			foreach (var npc in location.Npcs)
 			{
 				float npcTotalPower = 0f;
 				foreach (var interaction in npc.Interactions)
 				{
-					npcTotalPower += interaction.Result.Effect.PowerEffect;
+					if (interaction == null)
+						continue;
+					npcTotalPower += resourceGetter(interaction.Result.Effect);
 				}
 
-				locationTotalPower += npcTotalPower;
-				allNpcsPower += npcTotalPower;
-				npcsString += $" ({npc.FirstName} {npc.LastName} - Power: {npcTotalPower})";
+				locationTotalResource += npcTotalPower;
+				allNpcsResource += npcTotalPower;
+				npcsString += $" ({npc.FirstName} {npc.LastName} - {resourceName}: {npcTotalPower})";
 			}
 
-			float missionsPowerTotal = 0;
+			float missionsTotal = 0;
 			foreach (var mission in location.Missions)
 			{
-				locationTotalPower += mission.Effect.PowerEffect;
-				missionsPowerTotal += mission.Effect.PowerEffect;
+				locationTotalResource += resourceGetter(mission.Effect);
+				missionsTotal += resourceGetter(mission.Effect);
 			}
-			float policiesPowerTotal = 0;
+			float policiesTotal = 0;
 			foreach (var policy in location.Policies)
 			{
-				locationTotalPower += policy.Effect.PowerEffect;
-				policiesPowerTotal += policy.Effect.PowerEffect;
+				locationTotalResource += resourceGetter(policy.Effect);
+				policiesTotal += resourceGetter(policy.Effect);
 			}
 
-			totalPowerInGame += locationTotalPower;
+			totalInGame += locationTotalResource;
 
-			if (locationTotalPower != 0)
-				Debug.Log($"{location.Name}: Total Power = {locationTotalPower}, From Missions: {missionsPowerTotal}, From Policies {policiesPowerTotal}, From NPCs: {allNpcsPower} {npcsString}");
+			if (locationTotalResource != 0)
+				Debug.Log($"{location.Name}: Total {resourceName} = {locationTotalResource}, From Missions: {missionsTotal}, From Policies {policiesTotal}, From NPCs: {allNpcsResource} {npcsString}");
 		}
 
-		Debug.Log($"Total Power In Game = {totalPowerInGame}");
+		Debug.Log($"Total {resourceName} In Game = {totalInGame}");
 	}
 }
