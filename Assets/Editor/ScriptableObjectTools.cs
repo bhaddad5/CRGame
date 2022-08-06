@@ -11,23 +11,6 @@ using UnityEngine;
 
 public class ScriptableObjectTools
 {
-	[MenuItem("Tools/Clean Up Null Data", false, 0)]
-	public static void CleanNullsAndMarkDirty()
-	{
-		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
-		NullCleanupLogic.CleanUpAnnoyingNulls(gameData);
-		MarkAllDirty();
-	}
-
-	//We don't ever actually want to do this
-	/*[MenuItem("Tools/Impose Default Values On Nulls", false, 0)]
-	public static void ImposeDefaultsOnNulls()
-	{
-		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
-		DefaultDataLogic.ImposeDefaultsOnNullFields(gameData);
-		MarkAllDirty();
-	}*/
-
 	[MenuItem("Tools/Mark All Dirty", false, 20)]
 	public static void MarkAllDirty()
 	{
@@ -311,45 +294,34 @@ public class ScriptableObjectTools
 		Debug.Log("Search Complete!");
 	}
 
-	/*[MenuItem("Tools/Upgrade Old Data")]
+	[MenuItem("Tools/Remove Nulls")]
 	public static void UpgradeOldData()
 	{
 		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
 
 		foreach (var location in gameData.Locations)
 		{
+			if (location.Npcs.Contains(null))
+				EditorUtility.SetDirty(location);
+			location.Npcs.RemoveAll(v => v == null);
+
 			foreach (var npc in location.Npcs)
 			{
-				foreach (var interaction in npc.Interactions)
-				{
-					if (interaction.Result.CustomBackground != null)
-					{
-						for (int i = 0; i < interaction.Result.Dialogs.Count; i++)
-						{
-							var dialog = interaction.Result.Dialogs[i];
-							dialog.CustomBackground = interaction.Result.CustomBackground;
-							dialog.CustomBackgroundNpcLayout = interaction.Result.CustomBackgroundNpcLayout;
-							interaction.Result.Dialogs[i] = dialog;
-						}
-						EditorUtility.SetDirty(interaction);
-					}
-
-					if (interaction.FailureResult.CustomBackground != null)
-					{
-						for (int i = 0; i < interaction.FailureResult.Dialogs.Count; i++)
-						{
-							var dialog = interaction.FailureResult.Dialogs[i];
-							dialog.CustomBackground = interaction.FailureResult.CustomBackground;
-							dialog.CustomBackgroundNpcLayout = interaction.FailureResult.CustomBackgroundNpcLayout;
-							interaction.FailureResult.Dialogs[i] = dialog;
-						}
-						EditorUtility.SetDirty(interaction);
-					}
-				}
+				if(npc.Interactions.Contains(null))
+					EditorUtility.SetDirty(npc);
+				npc.Interactions.RemoveAll(v => v == null);
 			}
+
+			if (location.Policies.Contains(null))
+				EditorUtility.SetDirty(location);
+			location.Policies.RemoveAll(v => v == null);
+
+			if (location.Missions.Contains(null))
+				EditorUtility.SetDirty(location);
+			location.Missions.RemoveAll(v => v == null);
 		}
 		Debug.Log("Upgrade Complete!");
-	}*/
+	}
 
 	//TODO: USE THIS AS A TEMPLATE FOR DATA UPGRADES!
 	/*
