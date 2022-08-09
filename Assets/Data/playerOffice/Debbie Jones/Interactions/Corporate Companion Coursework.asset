@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 323a2588-5b16-4dfc-8a64-bb9e98e59160
   Name: Corporate Companion Coursework
+  AlertNew: 1
   Category: 5
   Requirements:
     RequiredPower: 0
@@ -52,6 +53,7 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
       Text: What's that, Mr. {LastName}?
@@ -61,6 +63,7 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
       Text: "It\u2019s a new training program that includes a course for training
@@ -72,6 +75,7 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
       Text: I'll try my hardest, Sir.  I want to be more than just an ordinary secretary.
@@ -81,14 +85,22 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
     OptionalPopups:
     - Title: You're beginning to suspect Debbie is...
       Videos:
       - {fileID: 32900000, guid: 802153a438d91de4995ba24c82d1cdde, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
       Text: '...being quite sincere.  The coursework focuses on skill sets required
         of "The Other Woman" in a powerful executive''s entourage.  From the way
         she''s begun behaving, you almost think she''s embracing the idea. '
+    - Title: It is hard to imagine...
+      Videos: []
+      Textures:
+      - {fileID: 2800000, guid: 10aadd9f7cb35594d81d328d4abadc00, type: 3}
+      Text: ...the proud young woman with an MBA that the ink had hardly dried on
+        reading these kinds of books, especially under the tutelage of a man she
+        deeply despised-- that man being you.
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -113,6 +125,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -142,4 +155,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1
