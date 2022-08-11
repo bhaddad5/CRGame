@@ -13,27 +13,19 @@ MonoBehaviour:
   m_Name: susanArrangement
   m_EditorClassIdentifier: 
   Id: 52be0ec7-9813-4733-b10f-0de50dde8b69
-  Name: Anne gets immunity, Susan gets a poison pill
+  Name: Make a deal with Anne (leaves game)
+  AlertNew: 1
   Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements:
-    - OptionalNpcReference: {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757,
-        type: 2}
-      Stat: 0
-      Is: 0
-      Value: 0
-      RequiresStatBelow: 60
-    NpcPrideRequirements: []
     NpcStatRequirements:
     - OptionalNpcReference: {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757,
         type: 2}
       Stat: 0
       Is: 0
       Value: 60
-      RequiresStatBelow: 0
     RequiredInteractions:
     - {fileID: 11400000, guid: fd4c52ecbe15ba24885d8242c4f9ca35, type: 2}
     - {fileID: 11400000, guid: 8b1ff10340c0a8b45a60e980c06b63c0, type: 2}
@@ -60,28 +52,59 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757,
+        type: 2}
       Text: Susan's an impediment.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 55141d9bbfb6a184191303af7a279900,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 400
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757,
         type: 2}
       Text: You mean she's in your way.  Look, I'm planning on leaving soon.  Just
         leave me alone and I'll drop a poison pill on her for you on my way out.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 55141d9bbfb6a184191303af7a279900,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 400
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757,
+        type: 2}
       Text: I'm a fan.  You have nothing to worry about from me.  But, if we had
         a deal...
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 55141d9bbfb6a184191303af7a279900,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 400
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757,
         type: 2}
       Text: We have a deal.  Believe me, I've been dying to drop the dirt on how
         incompetent Susan is.  I'm getting married and don't need this job anymore.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 55141d9bbfb6a184191303af7a279900,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 400
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757,
+        type: 2}
       Text: 'TO: ALL CSG STAFF
 
         Anne Miller will be pursuing new opportunities. 
@@ -90,6 +113,13 @@ MonoBehaviour:
         (Anne Miller leaves Artemis,
         but not before forwarding an email to Senior Management regarding Susan Granger) '
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 55141d9bbfb6a184191303af7a279900,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.37
+        width: 400
+      OptionalAudioClip: {fileID: 0}
     OptionalPopups: []
     Effect:
       NpcEffects:
@@ -120,11 +150,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -154,9 +180,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   Completed: 0
+  New: 1
