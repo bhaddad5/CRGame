@@ -20,9 +20,14 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcStatRequirements: []
+    NpcStatRequirements:
+    - OptionalNpcReference: {fileID: 0}
+      Stat: 1
+      Is: 0
+      Value: 50
     RequiredInteractions:
     - {fileID: 11400000, guid: 3ff6f42a25c04134db236544734cd37b, type: 2}
+    - {fileID: 11400000, guid: 8ee224207f1ecb149a24928310ba070a, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -56,6 +61,7 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -68,6 +74,7 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -79,6 +86,7 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
+      OptionalAudioClip: {fileID: 0}
     OptionalPopups:
     - Title: A sad but necessary process...
       Videos:
@@ -93,7 +101,7 @@ MonoBehaviour:
       - {fileID: 32900000, guid: 40174867e1d6df34da0dacbebb0071e1, type: 3}
       - {fileID: 32900000, guid: 2dddba3666ecaa348a2cf1f5e2d0ba7e, type: 3}
       - {fileID: 32900000, guid: f53dd0576aadb484b8c74532a2703ab5, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
       Text: ...to inspire the required employee motivation required!  You take this
         step with the utmost gravity!  It always ruins your day to be forced to resort
         to these measures!
