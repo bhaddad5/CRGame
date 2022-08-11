@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: bbeedbd0-73d0-4736-9b43-3c6f8ee8c7e9
   Name: Is that a new suit?
+  AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: bb26ec3ed2976544ca30d3cefb0b5a02, type: 2}
     RequiredNotCompletedInteractions: []
@@ -44,24 +44,61 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
+        type: 2}
       Text: Is that a new suit?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 9715a38e3a6cbee4384507990b5c1ad9,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.45
+        width: 380
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
+        type: 2}
       Text: Yes.  I felt it was time to upgrade my look around here.  What do you
         think?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 9715a38e3a6cbee4384507990b5c1ad9,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.45
+        width: 380
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
+        type: 2}
       Text: I think it looks really good!  You look like a real bigshot!  It must
         have cost you a lot!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 9715a38e3a6cbee4384507990b5c1ad9,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.45
+        width: 380
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
+        type: 2}
       Text: Nothing I can't afford these days, Britney.
       CustomNpcImageOptions: []
-    OptionalPopups: []
+      CustomBackground: {fileID: 2800000, guid: 9715a38e3a6cbee4384507990b5c1ad9,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.45
+        width: 380
+      OptionalAudioClip: {fileID: 0}
+    OptionalPopups:
+    - Title: Liek the song says...
+      Videos:
+      - {fileID: 32900000, guid: a718f78162417304593233d6194aa54c, type: 3}
+      Textures: []
+      Text: ...every girl's crazy 'bout a sharp dressed man!
     Effect:
       NpcEffects: []
       EgoEffect: 5
@@ -86,11 +123,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -120,9 +153,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   Completed: 0
+  New: 1
