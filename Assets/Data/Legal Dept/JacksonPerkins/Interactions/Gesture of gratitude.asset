@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: e3ca3c36-8450-4492-9afe-a211077a3eda
   Name: Gesture of gratitude
+  AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
@@ -53,6 +54,7 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
       Text: There's no need for that.
@@ -62,17 +64,20 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Yes there is.  As soon as my uncle told me he'd got you into the Metro,
-        I thought of another club that might actually have you breaking a sweat. 
-        I prefer it to the Metro myself.  I've got you into the Neptune Yacht Club.
+      Text: Yes there is.  As soon as my uncle told me he'd got you accepted into
+        the Metro, I thought of another club that might actually have you breaking
+        a sweat.  I prefer it to the Metro myself.  I've got you into the Neptune
+        Yacht Club.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
       Text: Me?  But I don't sail-- I don't have a boat--
@@ -82,6 +87,7 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
       Text: You don't need one.  The club has loads of boats.  Just see Commodore
@@ -93,6 +99,7 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
     OptionalPopups: []
     Effect:
       NpcEffects: []
@@ -118,6 +125,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -147,5 +155,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
   New: 1
