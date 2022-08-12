@@ -16,6 +16,7 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private Image Icon;
 		[SerializeField] private TMP_Text Text;
 		[SerializeField] private GameObject NewIndicator;
+		[SerializeField] private Image TextBackground;
 
 		private Location loc;
 		private Vector2 mainMapSize;
@@ -39,6 +40,11 @@ namespace Assets.GameModel.UiDisplayers
 			Button.gameObject.SetActive(loc.IsVisible(mgm));
 			Button.transform.localPosition = ConvertMapPos(loc.UiPosition);
 			NewIndicator.SetActive(loc.HasNewInteractions(mgm) && loc.IsAccessible(mgm));
+
+			if (loc.IsAccessible(mgm))
+				TextBackground.color = Button.colors.normalColor;
+			else
+				TextBackground.color = Button.colors.disabledColor;
 		}
 
 		private Vector3 ConvertMapPos(Vector2 mapPos)

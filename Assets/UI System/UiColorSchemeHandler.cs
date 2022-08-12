@@ -7,7 +7,7 @@ public class UiColorSchemeHandler : MonoBehaviour
 {
 	public ColorSchemesReference.ColorType Color;
 
-	void Start()
+	void Awake()
 	{
 		var colors = ColorSchemesReference.Instance.GetColorBlockFromType(Color);
 		colors.colorMultiplier = 1f;
