@@ -42,6 +42,8 @@ namespace Assets.GameModel
 		public Location MyHome;
 
 		public List<Location> Locations = new List<Location>();
+		public List<Region> Regions = new List<Region>();
+
 		public List<Interaction> StartOfTurnInteractions = new List<Interaction>();
 
 		public void Setup(MainGameManager mgm)

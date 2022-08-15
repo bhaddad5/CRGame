@@ -5,7 +5,6 @@ using UnityEngine;
 
 namespace Assets.GameModel
 {
-	[CreateAssetMenu(fileName = "New Interaction", menuName = "Company Man Data/Location", order = 0)]
 	[Serializable]
 	public class Location : ScriptableObject
 	{

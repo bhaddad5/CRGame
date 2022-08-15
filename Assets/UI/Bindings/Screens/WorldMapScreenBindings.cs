@@ -1,0 +1,71 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using Assets.GameModel;
+using Assets.UI_System;
+using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
+
+namespace Assets.GameModel.UiDisplayers
+{
+	public class WorldMapScreenBindings : MonoBehaviour
+	{
+		[SerializeField] private Color MorningTint;
+		[SerializeField] private Color AfternoonTint;
+		[SerializeField] private Image MapImage;
+
+		[SerializeField] private Transform RegionsParent;
+
+		[SerializeField] private WorldMapRegionEntryBindings _regionEntryPrefab;
+		[SerializeField] private RegionMapScreenBindings _regionUiPrefab;
+
+		[SerializeField] private AudioClip OptionalBackgroundAudio;
+
+		private MainGameManager mgm;
+		public void Setup(MainGameManager mgm, List<Region> regions)
+		{
+			this.mgm = mgm;
+			foreach (Region reg in regions)
+			{
+				var d = Instantiate(_regionEntryPrefab);
+				d.Setup(reg, this, mgm);
+				d.transform.SetParent(RegionsParent, false);
+			}
+
+			if (OptionalBackgroundAudio != null)
+				AudioHandler.Instance.PlayBackgroundClip(OptionalBackgroundAudio);
+		}
+
+		private RegionMapScreenBindings _currOpenRegion = null;
+		public void ShowRegion(Region region, MainGameManager mgm)
+		{
+			_currOpenRegion = Instantiate(_regionUiPrefab);
+			_currOpenRegion.Setup(mgm, region, () =>
+			{
+				if (OptionalBackgroundAudio != null)
+					AudioHandler.Instance.PlayBackgroundClip(OptionalBackgroundAudio);
+				RefreshUiDisplay(mgm);
+			});
+			_currOpenRegion.RefreshUiDisplay(mgm);
+		}
+
+		public void RefreshUiDisplay(MainGameManager mgm)
+		{
+			foreach (var button in RegionsParent.GetComponentsInChildren<WorldMapRegionEntryBindings>(true))
+				button.RefreshUiDisplay(mgm);
+
+			if (_currOpenRegion != null)
+				_currOpenRegion.RefreshUiDisplay(mgm);
+
+			ShowTimeOfDay(mgm.Data.TurnNumber % 2 == 1);
+		}
+
+		public void ShowTimeOfDay(bool afternoon)
+		{
+			if (afternoon)
+				MapImage.color = AfternoonTint;
+			else
+				MapImage.color = MorningTint;
+		}
+	}
+}

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Assets.GameModel;
 using Assets.UI_System;
@@ -8,28 +9,28 @@ using UnityEngine.UI;
 
 namespace Assets.GameModel.UiDisplayers
 {
-	public class MainMapScreenBindings : MonoBehaviour
+	public class RegionMapScreenBindings : MonoBehaviour
 	{
 		[SerializeField] private Color MorningTint;
 		[SerializeField] private Color AfternoonTint;
 		[SerializeField] private Image MapImage;
 
-		[SerializeField] private Transform DepartmentsParent;
+		[SerializeField] private Transform LocationsParent;
 
-		[SerializeField] private MainMapLocationEntryBindings _locationButtonPrefab;
+		[SerializeField] private RegionMapLocationEntryBindings _locationButtonPrefab;
 		[SerializeField] private LocationScreenBindings _locationUiPrefab;
 
 		[SerializeField] private AudioClip OptionalBackgroundAudio;
 
 		private MainGameManager mgm;
-		public void Setup(MainGameManager mgm, List<Location> locations)
+		public void Setup(MainGameManager mgm, Region region, Action onClose)
 		{
 			this.mgm = mgm;
-			foreach (Location dept in locations)
+			foreach (Location loc in region.Locations)
 			{
 				var d = Instantiate(_locationButtonPrefab);
-				d.Setup(dept, this, mgm);
-				d.transform.SetParent(DepartmentsParent, false);
+				d.Setup(loc, this, mgm);
+				d.transform.SetParent(LocationsParent, false);
 			}
 
 			if (OptionalBackgroundAudio != null)
@@ -68,7 +69,7 @@ namespace Assets.GameModel.UiDisplayers
 
 		public void RefreshUiDisplay(MainGameManager mgm)
 		{
-			foreach (var button in DepartmentsParent.GetComponentsInChildren<MainMapLocationEntryBindings>(true))
+			foreach (var button in LocationsParent.GetComponentsInChildren<RegionMapLocationEntryBindings>(true))
 				button.RefreshUiDisplay(mgm);
 
 			if(_currOpenLocation != null)

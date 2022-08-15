@@ -24,17 +24,6 @@ namespace Assets.GameModel
 	}
 
 	[Serializable]
-	public struct NpcData
-	{
-		public float Ambition;
-		public float Pride;
-		public bool Controlled;
-		public bool Exists;
-		public bool Trained;
-	}
-
-	[CreateAssetMenu(fileName = "New Interaction", menuName = "Company Man Data/NPC", order = 1)]
-	[Serializable]
 	public class Npc : ScriptableObject
 	{
 		[HideInInspector]

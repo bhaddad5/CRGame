@@ -40,8 +40,8 @@ public class HudBindings : MonoBehaviour
 	private MainMenuBindings mainMenu;
 
 	private MainGameManager mgm;
-	private MainMapScreenBindings mapDisplay;
-	public void Setup(MainGameManager mgm, MainMapScreenBindings mapDisplay)
+	private RegionMapScreenBindings mapDisplay;
+	public void Setup(MainGameManager mgm, RegionMapScreenBindings mapDisplay)
 	{
 		this.mapDisplay = mapDisplay;
 		this.mgm = mgm;

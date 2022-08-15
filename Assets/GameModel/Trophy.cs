@@ -5,7 +5,6 @@ using UnityEngine;
 
 namespace Assets.GameModel
 {
-	[CreateAssetMenu(fileName = "New Interaction", menuName = "Company Man Data/Trophy", order = 3)]
 	[Serializable]
 	public class Trophy : ScriptableObject
 	{

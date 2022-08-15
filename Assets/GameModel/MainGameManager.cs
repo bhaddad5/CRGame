@@ -24,10 +24,10 @@ namespace Assets.GameModel
 		public string DefaultLastName => DefaultGameData.LastName;
 
 		[SerializeField] private HudBindings HudUiDisplayPrefab;
-		[SerializeField] private MainMapScreenBindings MainMapUiDisplayPrefab;
+		[SerializeField] private WorldMapScreenBindings MainMapUiDisplayPrefab;
 
 		private HudBindings hudUiDisplay;
-		private MainMapScreenBindings mainMapUiDisplay;
+		private WorldMapScreenBindings mainMapUiDisplay;
 		
 		public void InitializeGame(string saveDataPath, string firstName, string lastName)
 		{
@@ -37,7 +37,6 @@ namespace Assets.GameModel
 			}
 			if (mainMapUiDisplay != null)
 			{
-				mainMapUiDisplay.CloseCurrentDepartment(false);
 				GameObject.Destroy(mainMapUiDisplay.gameObject);
 			}
 
@@ -60,8 +59,8 @@ namespace Assets.GameModel
 				Data.LastName = lastName;
 			}
 
-			hudUiDisplay.Setup(this, mainMapUiDisplay);
-			mainMapUiDisplay.Setup(this, Data.Locations);
+			//hudUiDisplay.Setup(this, mainMapUiDisplay);
+			mainMapUiDisplay.Setup(this, Data.Regions);
 			RefreshAllUi();
 
 			TryRunStartOfTurnInteractions();
@@ -95,7 +94,7 @@ namespace Assets.GameModel
 				return;
 			File.WriteAllText(path, SaveLoadHandler.SaveToJson(Data));
 
-			mainMapUiDisplay.CloseCurrentDepartment(true);
+			//mainMapUiDisplay.HandleTurnChange();
 
 			RefreshAllUi();
 

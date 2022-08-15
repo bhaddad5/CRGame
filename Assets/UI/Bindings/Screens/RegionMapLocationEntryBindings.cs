@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using Assets.GameModel;
-using Assets.GameModel.UiDisplayers;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 namespace Assets.GameModel.UiDisplayers
 {
-	public class MainMapLocationEntryBindings : MonoBehaviour, ITooltipProvider
+	public class RegionMapLocationEntryBindings : MonoBehaviour, ITooltipProvider
 	{
 		[SerializeField] private Button Button;
 		[SerializeField] private Image Icon;
@@ -21,7 +15,7 @@ namespace Assets.GameModel.UiDisplayers
 		private Location loc;
 		private Vector2 mainMapSize;
 
-		public void Setup(Location dept, MainMapScreenBindings mainMapUi, MainGameManager mgm)
+		public void Setup(Location dept, RegionMapScreenBindings mainMapUi, MainGameManager mgm)
 		{
 			this.loc = dept;
 			Button.onClick.RemoveAllListeners();

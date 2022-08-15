@@ -7,7 +7,6 @@ using UnityEngine;
 
 namespace Assets.GameModel
 {
-	[CreateAssetMenu(fileName = "New Interaction", menuName = "Company Man Data/Mission", order = 10)]
 	[Serializable]
 	public class Mission : ScriptableObject
 	{

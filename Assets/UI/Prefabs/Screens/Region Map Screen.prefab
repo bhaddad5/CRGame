@@ -296,9 +296,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6231090554043898969}
-  - component: {fileID: 6231090554043898964}
+  - component: {fileID: 6551359952577627765}
   m_Layer: 0
-  m_Name: Main Map Screen
+  m_Name: Region Map Screen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -319,7 +319,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6231090554043898964
+--- !u!114 &6551359952577627765
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -328,16 +328,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 6231090554043898971}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12c19990411f16845920c335323883e6, type: 3}
+  m_Script: {fileID: 11500000, guid: b3dcda2ae8a72eb4f82b6f8e9ab0abdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   MorningTint: {r: 0.84104663, g: 0.8742411, b: 0.9433962, a: 1}
   AfternoonTint: {r: 0.9245283, g: 0.88175714, b: 0.8503916, a: 1}
   MapImage: {fileID: 5377297756735892995}
-  DepartmentsParent: {fileID: 5377297757105657077}
+  LocationsParent: {fileID: 5377297757105657077}
   _locationButtonPrefab: {fileID: 4990158496178552730, guid: 95d90ae7ff7f7bf4fba58142146cbfc6,
     type: 3}
   _locationUiPrefab: {fileID: 8790881352909802722, guid: fef322424b105b84ca645e84037c2ad9,
     type: 3}
-  OptionalBackgroundAudio: {fileID: 8300000, guid: 39333cd576815194987e85882c995716,
-    type: 3}
+  OptionalBackgroundAudio: {fileID: 0}
