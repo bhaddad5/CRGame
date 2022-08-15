@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: c5fd8f70-1bae-41c2-9043-a7bee39f4df8
   Name: By the book
+  AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
@@ -54,6 +55,7 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
       Text: Can't you just tell me what needs fixing and I can do that now?
@@ -63,6 +65,7 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 7e462278cce38214a924d25dd035e5b8,
         type: 2}
@@ -75,6 +78,7 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
       Text: Sure, sure.  Let me have another look at them.
@@ -84,6 +88,7 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 0}
       Text: 'NOTE: You''re starting to get a feel for this woman.  She''s a mousy
@@ -94,12 +99,18 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
     OptionalPopups:
     - Title: '"I have to be a stickler for the details!"'
       Videos:
       - {fileID: 32900000, guid: a669cff78bb7deb4d971c0c6e4ef5ae7, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
       Text: Of course she does-- this one's going to be a headache to deal with.
+    - Title: There might be...
+      Videos:
+      - {fileID: 32900000, guid: b45a61b8e3a00aa4ea51b9e4b6be9c38, type: 3}
+      Textures: []
+      Text: ...some power in those boring files of hers.
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: 7e462278cce38214a924d25dd035e5b8,
@@ -128,6 +139,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 1
   ProbabilityOfFailureResult: 0.25
   FailureResult:
@@ -142,6 +154,7 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
     OptionalPopups: []
     Effect:
       NpcEffects: []
@@ -167,4 +180,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1
