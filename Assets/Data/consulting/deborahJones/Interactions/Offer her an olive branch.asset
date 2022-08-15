@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: c7b9fd8b-de82-4f9e-b7be-e5ed01610569
   Name: Offer her an olive branch
+  AlertNew: 1
   Category: 0
   Requirements:
     RequiredPower: 0
@@ -43,59 +44,80 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
       Text: Look, Susan is concerned that our bickering is becoming a distraction
         in the office.  Why don't we just try to get along?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.68
+        yPos: 0.4
+        width: 400
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
       Text: Sure!  I'm sure you're a nice guy and it isn't personal.  I've always
         been focused on getting what I want.  As long as you're willing to stay out
         of my way, I have no dramas with you.  But I am getting the first exec slot
         that opens up, ok?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.68
+        yPos: 0.4
+        width: 400
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
       Text: 'Well, I''m not just going to step back and let you claim the first job
         opening that comes up here.  I''m not going to spend a second longer as a
         Trainee than I have to! '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.68
+        yPos: 0.4
+        width: 400
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
       Text: Then I guess we know where we stand because the first executive spot
         that opens up is MINE.  You'll just have to wait your turn, {LastName}. 
         That's the way it is.  And I NEVER lose, ok?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.68
+        yPos: 0.4
+        width: 400
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
+        type: 2}
       Text: Until now.  I'm going to enjoy it too, Deborah.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: ef3ac7eb9e9e37e42bf2cf4d3a94c479,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-    OptionalPopups: []
+        xPos: 0.68
+        yPos: 0.4
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+    OptionalPopups:
+    - Title: She doesn't even bother...
+      Videos:
+      - {fileID: 32900000, guid: 1ed90744134ed3d4ba58fc4e590fb13c, type: 3}
+      Textures: []
+      Text: ...to respond.  As you walk out of her office, your determination to
+        humble this proud rival only burns hotter!
     Effect:
       NpcEffects: []
       EgoEffect: 15
@@ -120,6 +142,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -149,4 +172,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1
