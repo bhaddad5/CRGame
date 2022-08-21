@@ -45,6 +45,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 1
   PreviewEffect: 1
   Result:
@@ -62,6 +63,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -75,6 +77,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -87,6 +90,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: A sad but necessary process...
       Videos:
@@ -102,6 +106,13 @@ MonoBehaviour:
       - {fileID: 32900000, guid: 2dddba3666ecaa348a2cf1f5e2d0ba7e, type: 3}
       - {fileID: 32900000, guid: f53dd0576aadb484b8c74532a2703ab5, type: 3}
       Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: ba74f60b0b7f55741a8abdcaa0fd53a1, type: 3}
+      - {fileID: 8300000, guid: e101c76991de0ac4eb4ab84da0889872, type: 3}
+      - {fileID: 8300000, guid: 4b6d24eb1c67af64dbbe99a3a575dc79, type: 3}
+      - {fileID: 8300000, guid: 354d0877ee058f34cae7d58d719549e9, type: 3}
+      - {fileID: 8300000, guid: e611acf1f9b5aa04fa052ad0abf3611b, type: 3}
+      - {fileID: 8300000, guid: 3dfba1275e79b1f43b7899b133aa3576, type: 3}
       Text: ...to inspire the required employee motivation required!  You take this
         step with the utmost gravity!  It always ruins your day to be forced to resort
         to these measures!
@@ -126,6 +137,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -156,6 +169,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0

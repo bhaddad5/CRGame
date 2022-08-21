@@ -42,6 +42,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 1
   PreviewEffect: 1
   Result:
@@ -58,6 +59,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -70,6 +72,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -84,6 +87,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -113,6 +117,7 @@ MonoBehaviour:
         width: 375
       OptionalAudioClip: {fileID: 8300000, guid: bfe6a5dfc30a2df438fe837beb3bc34a,
         type: 3}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -127,6 +132,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Take Deborah on a vacation
       Videos:
@@ -138,29 +144,37 @@ MonoBehaviour:
       - {fileID: 32900000, guid: b54e2d31526dc0748ac9230e210675d3, type: 3}
       - {fileID: 32900000, guid: ef519a89038ad3b468a948a7841d0c7a, type: 3}
       Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: 883530dd13268804b8b9fa853e21f946, type: 3}
       Text: Debbie proves to be a grateful and enthusiastic holiday companion.  Even
         the short getaway proves quite refreshing!
     - Title: You're a fan of tan lines...
       Videos:
       - {fileID: 32900000, guid: 40a0f3b5d191f05429958c3413c90587, type: 3}
       Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: 46eb96e7881daac40b9bf719d6c176d1, type: 3}
       Text: ...even if Debbie is most definitely not!
     - Title: You enjoy watching her...
       Videos:
       - {fileID: 32900000, guid: c0b95cb2bcabdba41a58bf14aa01bd2b, type: 3}
       Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: b7fdb9e17483e354cb70e45b7ed4a0e9, type: 3}
       Text: ...enjoy her time in paradise.  The sun on her skin, the salt water lapping
         at her legs and the whisper of the tide seem to entrance her.
     - Title: When you remind her...
       Videos:
       - {fileID: 32900000, guid: f5086bda35408ab438917960f7a31dff, type: 3}
       Textures: []
+      DialogClips: []
       Text: ...you expect her to earn some tan lines, she stretches on the beach
         like a blonde angel who has fallen in disgrace from the heavens.
     - Title: When she's done enough...
       Videos:
       - {fileID: 32900000, guid: 25240308ee581924cbd0a0fc259ec967, type: 3}
       Textures: []
+      DialogClips: []
       Text: '...time in the sun and her pale skin is pleasingly golden edged, you
         take her hard.  She knows it is the price she must pay for her brief escape
         from her dreary little life and it is a price these days she''s more than
@@ -169,6 +183,7 @@ MonoBehaviour:
       Videos:
       - {fileID: 32900000, guid: b2ffe17ac3237d14f9e17c51ca72ba5e, type: 3}
       Textures: []
+      DialogClips: []
       Text: ...is ravenous and you allow her to order up and devour an enormous room
         service order with pleasure.  She's earned it.
     - Title: Upon your return...
@@ -181,6 +196,8 @@ MonoBehaviour:
       - {fileID: 2800000, guid: 978ba980286e9d14a95b8a2b7ce31c22, type: 3}
       - {fileID: 2800000, guid: 9cbea92f4f757fe4083e6f04d22434e6, type: 3}
       - {fileID: 2800000, guid: fbe878fa626b9d24eaf60050ac75b49a, type: 3}
+      DialogClips:
+      - {fileID: 8300000, guid: 0cc05c9c36a82d245834065fa98c5d0c, type: 3}
       Text: ...Debbie frames the trip photo and places it proudly on her desk!
     Effect:
       NpcEffects:
@@ -203,6 +220,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -233,6 +252,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
