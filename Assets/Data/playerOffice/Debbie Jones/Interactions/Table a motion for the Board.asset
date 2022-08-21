@@ -18,10 +18,11 @@ MonoBehaviour:
   Category: 0
   Requirements:
     RequiredPower: 0
-    RequiredPromotionLevel: 9
+    RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: b33bf1a2271194a4d993c2624fe15506, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled:
@@ -67,7 +68,8 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
-      OptionalAudioClip: {fileID: 0}
+      OptionalAudioClip: {fileID: 8300000, guid: c7b952cc4b756b44a9ace4966c2f411d,
+        type: 3}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -87,7 +89,7 @@ MonoBehaviour:
     - Title: Debbie wants to ask...
       Videos:
       - {fileID: 32900000, guid: 043aaa04cf427144e80c512fc99d1598, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
       Text: ...what's motivating the proposal but she'll know soon enough.  By bedding
         down your supportive Board members as a reward for their support, you are
         now virtually assured the Chairmanship when you're ready to ask for it!

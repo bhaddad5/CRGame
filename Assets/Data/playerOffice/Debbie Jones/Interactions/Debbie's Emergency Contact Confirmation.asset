@@ -56,6 +56,7 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -67,6 +68,7 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -78,6 +80,7 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -89,6 +92,7 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -100,6 +104,8 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
+      OptionalAudioClip: {fileID: 8300000, guid: c0f04b388b147244da3aab0da839deee,
+        type: 3}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -112,17 +118,19 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
+      OptionalAudioClip: {fileID: 0}
     OptionalPopups:
     - Title: It irks Deborah to no end that...
       Videos:
       - {fileID: 32900000, guid: ecb0dc4d0835b494a937d59fa6967b8c, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
       Text: ...you have access to her personnel file and all her personal information. 
         There's no doubt that she'll have to get used to being under your microscope
         from now on.
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+          type: 2}
         AmbitionEffect: -1
         PrideEffect: 0
       EgoEffect: 0

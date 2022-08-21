@@ -14,17 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 66473f5d-b7a2-4693-947f-ee6f7a877707
   Name: Vixxxens Gift Card
+  AlertNew: 1
   Category: 6
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
+    - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Stat: 1
       Is: 0
       Value: 50
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 4359a46e093487c46b8d3d3ea925e1b2, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -47,45 +50,56 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: I always love to see what you've bought with your gift card at Vixxxens.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: I thought you might like me in this, Mr. {LastName}.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: I do!  Very much so.  Not very corner office is it, Miss MBA?  But quite
         appropriate to your new role, which is...
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 8300000, guid: 35f34bd5f008c0d4781a7d8c35d66397,
+        type: 3}
     OptionalPopups:
     - Title: Behold your personal assistant!
       Videos:
       - {fileID: 32900000, guid: 7f319f8ec41f03340b2fcf92d7aef95b, type: 3}
       - {fileID: 32900000, guid: f1cb883c6facdda4fa1795fc1c7a3578, type: 3}
       - {fileID: 32900000, guid: a991647d1a5c7a747b68c3fee2b52814, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
       Text: Deborah's clinging to what's left of her pride, but it is eroding every
         time you force her to participate in her own humiliation...
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+          type: 2}
         AmbitionEffect: 0
         PrideEffect: -1
       EgoEffect: 0
@@ -110,6 +124,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -139,4 +154,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1

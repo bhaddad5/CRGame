@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 98b1576e-cd27-4773-a189-18d77e008645
   Name: Coffee orders for the team
+  AlertNew: 1
   Category: 4
   Requirements:
     RequiredPower: 0
@@ -53,6 +54,7 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -65,6 +67,7 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -78,6 +81,7 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -90,11 +94,13 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
+      OptionalAudioClip: {fileID: 8300000, guid: 1e81c79576269d64c881c209dfbf7e8f,
+        type: 3}
     OptionalPopups:
     - Title: Coffee Service
       Videos:
       - {fileID: 32900000, guid: 8179c3857dce544488a053a3d788963c, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
       Text: "Deborah's first daily duty is to serve you your morning coffee-- and
         then to take the coffee orders of any other execs you tell her to attend
         to.  It\u2019s part of her job."
@@ -126,6 +132,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -155,5 +162,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
   New: 1
