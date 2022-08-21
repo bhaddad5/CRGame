@@ -108,6 +108,17 @@ namespace Assets.GameModel.UiDisplayers
 				tooltips.Add($"{cost.RevanueCost} Revenue");
 			if (cost.PatentsCost > mgm.Data.Patents)
 				tooltips.Add($"{cost.PatentsCost} Patents");
+
+			foreach (var item in cost.Items)
+			{
+				var numRequired = cost.Items.Count(i => i == item);
+				var numInInventory = mgm.Data.Inventory.Count(i => i == item);
+
+				//TODO: Duplicates will show here
+				if (numRequired > numInInventory)
+					tooltips.Add($"{numRequired} {item}");
+			}
+
 			if (cost.HornicalCost > mgm.Data.Hornical)
 				tooltips.Add($"{cost.HornicalCost} Hornical");
 

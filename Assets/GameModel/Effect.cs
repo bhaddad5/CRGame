@@ -35,6 +35,9 @@ namespace Assets.GameModel
 		public List<Trophy> TrophiesClaimedReferences;
 		public List<Mission> MissionsToComplete;
 
+		public List<InventoryItem> ItemsToAdd;
+		public List<InventoryItem> ItemsToRemove;
+
 		public int Car;
 		public int Suits;
 
@@ -63,7 +66,16 @@ namespace Assets.GameModel
 			mgm.Data.Spreadsheets = Mathf.Max(mgm.Data.Spreadsheets + SpreadsheetsEffect, 0);
 			mgm.Data.Brand = Mathf.Max(mgm.Data.Brand + BrandEffect, 0);
 			mgm.Data.Revenue = Mathf.Max(mgm.Data.Revenue + RevanueEffect, 0);
-			mgm.Data.Hornical = Mathf.Max(mgm.Data.Hornical + HornicalEffect, 0);
+
+			foreach (var inventoryItem in ItemsToAdd)
+			{
+				mgm.Data.Inventory.Add(inventoryItem);
+			}
+
+			foreach (var item in ItemsToRemove)
+			{
+				mgm.Data.Inventory.Remove(item);
+			}
 
 			foreach (var trophy in TrophiesClaimedReferences)
 			{

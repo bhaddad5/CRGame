@@ -22,7 +22,12 @@ namespace Assets.GameModel
 		[HideInInspector] public float Spreadsheets = 0;
 		[HideInInspector] public float Brand = 0;
 		[HideInInspector] public float Revenue = 0;
+
+		[HideInInspector] public List<InventoryItem> Inventory = new List<InventoryItem>();
+
+		//LEGACY
 		[HideInInspector] public int Hornical = 0;
+		//END LEGACY
 
 		[HideInInspector] public int Promotion = 0;
 		[HideInInspector] public int Home = 0;
@@ -55,7 +60,8 @@ namespace Assets.GameModel
 			Spreadsheets = 0;
 			Brand = 0;
 			Revenue = 0;
-			Hornical = 0;
+			
+			Inventory = new List<InventoryItem>();
 
 			Promotion = 0;
 			Home = 0;
@@ -72,6 +78,10 @@ namespace Assets.GameModel
 
 			foreach (var ob in StartOfTurnInteractions)
 				ob.Setup();
+
+			//LEGACY
+			Hornical = 0;
+			//END LEGACY
 		}
 		
 		public List<Trophy> GetOwnedTrophies()

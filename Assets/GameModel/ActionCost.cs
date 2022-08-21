@@ -17,30 +17,45 @@ namespace Assets.GameModel
 		public float PatentsCost;
 		public float BrandCost;
 		public float RevanueCost;
+
 		public int HornicalCost;
+
+		public List<InventoryItem> Items;
 
 		public bool CanAffordCost(MainGameManager mgm)
 		{
+			foreach (var item in Items)
+			{
+				var numRequired = Items.Count(i => i == item);
+				var numInInventory = mgm.Data.Inventory.Count(i => i == item);
+
+				if (numRequired > numInInventory)
+					return false;
+			}
+
 			return EgoCost <= mgm.Data.Ego &&
 			       MoneyCost <= mgm.Data.Funds &&
 			       CultureCost <= mgm.Data.CorporateCulture &&
 			       BrandCost <= mgm.Data.Brand &&
 			       SpreadsheetsCost <= mgm.Data.Spreadsheets &&
 			       RevanueCost <= mgm.Data.Revenue &&
-			       PatentsCost <= mgm.Data.Patents &&
-			       HornicalCost <= mgm.Data.Hornical;
+			       PatentsCost <= mgm.Data.Patents;
 		}
 
 		public void SubtractCost(MainGameManager mgm)
 		{
 			mgm.Data.Ego -= EgoCost;
 			mgm.Data.Funds -= MoneyCost;
-			mgm.Data.Hornical -= HornicalCost;
 			mgm.Data.CorporateCulture -= CultureCost;
 			mgm.Data.Brand -= BrandCost;
 			mgm.Data.Spreadsheets -= SpreadsheetsCost;
 			mgm.Data.Revenue -= RevanueCost;
 			mgm.Data.Patents -= PatentsCost;
+
+			foreach (var item in Items)
+			{
+				mgm.Data.Inventory.Remove(item);
+			}
 		}
 	}
 }

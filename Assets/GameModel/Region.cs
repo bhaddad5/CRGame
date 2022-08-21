@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Assets.GameModel
@@ -38,6 +39,11 @@ namespace Assets.GameModel
 		public bool IsVisible(MainGameManager mgm)
 		{
 			return true;
+		}
+
+		public bool HasNewInteractions(MainGameManager mgm)
+		{
+			return Locations.Any(l => l.IsVisible(mgm) && l.HasNewInteractions(mgm) && l.IsAccessible(mgm));
 		}
 	}
 }

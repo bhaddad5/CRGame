@@ -26,7 +26,15 @@ namespace Assets.GameModel.UiDisplayers
 
 		[SerializeField] private TMP_Text RegionName;
 
-		[SerializeField] private GameObject RegionHud;
+		[SerializeField] private List<GameObject> RegionUiToHide;
+
+
+		[SerializeField] private ResourceManagerUiDisplay Power;
+		[SerializeField] private ResourceManagerUiDisplay Spreadsheets;
+		[SerializeField] private ResourceManagerUiDisplay Culture;
+		[SerializeField] private ResourceManagerUiDisplay Brand;
+		[SerializeField] private ResourceManagerUiDisplay Revanue;
+		[SerializeField] private ResourceManagerUiDisplay Patents;
 
 		private MainGameManager mgm;
 		private Action onClose;
@@ -62,11 +70,13 @@ namespace Assets.GameModel.UiDisplayers
 		public void ShowLocation(Location dept, MainGameManager mgm)
 		{
 			CloseCurrentDepartment(false);
-			RegionHud.SetActive(false);
+			foreach (var ui in RegionUiToHide)
+				ui.SetActive(false);
 			_currOpenLocation = Instantiate(_locationUiPrefab);
 			_currOpenLocation.Setup(dept, mgm, () =>
 			{
-				RegionHud.SetActive(true);
+				foreach (var ui in RegionUiToHide)
+					ui.SetActive(true);
 				if (OptionalBackgroundAudio != null)
 					AudioHandler.Instance.PlayBackgroundClip(OptionalBackgroundAudio);
 				RefreshUiDisplay(mgm);
@@ -109,6 +119,13 @@ namespace Assets.GameModel.UiDisplayers
 				_currOpenLocation.RefreshUiDisplay(mgm);
 
 			ShowTimeOfDay(mgm.Data.TurnNumber % 2 == 1);
+
+			Power.RefreshResourceDisplay(mgm.Data.Power);
+			Culture.RefreshResourceDisplay(mgm.Data.CorporateCulture);
+			Spreadsheets.RefreshResourceDisplay(mgm.Data.Spreadsheets);
+			Patents.RefreshResourceDisplay(mgm.Data.Patents);
+			Brand.RefreshResourceDisplay(mgm.Data.Brand);
+			Revanue.RefreshResourceDisplay(mgm.Data.Revenue);
 		}
 
 		public void ShowTimeOfDay(bool afternoon)

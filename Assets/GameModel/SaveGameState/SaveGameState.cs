@@ -20,7 +20,12 @@ namespace Assets.GameModel.Save
 		public float Spreadsheets;
 		public float Brand;
 		public float Revenue;
+
+		//LEGACY
 		public int Hornical;
+		//END LEGACY
+
+		public List<InventoryItem> Inventory;
 
 		public int Promotion;
 		public int Home;
@@ -50,9 +55,15 @@ namespace Assets.GameModel.Save
 			res.Spreadsheets = data.Spreadsheets;
 			res.Brand = data.Brand;
 			res.Revenue = data.Revenue;
-			res.Hornical = data.Hornical;
+			
 			res.Promotion = data.Promotion;
 			res.Home = data.Home;
+			res.Inventory = data.Inventory;
+
+			//UPGRADE LEGACY DATA
+			for (int i = 0; i < data.Hornical; i++)
+				data.Inventory.Add(InventoryItem.Hornical);
+			//END UPGRADE LEGACY DATA
 
 			res.Car = data.Car;
 			res.Suits = data.Suits;
@@ -91,9 +102,10 @@ namespace Assets.GameModel.Save
 			data.Spreadsheets = Spreadsheets;
 			data.Brand = Brand;
 			data.Revenue = Revenue;
-			data.Hornical = Hornical;
 			data.Promotion = Promotion;
 			data.Home = Home;
+
+			data.Inventory = Inventory;
 
 			data.Car = Car;
 			data.Suits = Suits;

@@ -15,16 +15,7 @@ public class HudBindings : MonoBehaviour
 
 	[SerializeField] private ResourceManagerUiDisplay Ego;
 	[SerializeField] private ResourceManagerUiDisplay Funds;
-	[SerializeField] private ResourceManagerUiDisplay Power;
-
-	[SerializeField] private ResourceManagerUiDisplay Spreadsheets;
-	[SerializeField] private ResourceManagerUiDisplay Culture;
-	[SerializeField] private ResourceManagerUiDisplay Brand;
-	[SerializeField] private ResourceManagerUiDisplay Revanue;
-	[SerializeField] private ResourceManagerUiDisplay Patents;
-
-	[SerializeField] private ResourceManagerUiDisplay Hornical;
-
+	
 	[SerializeField] private TMP_Text Day;
 	[SerializeField] private TMP_Text Time;
 	[SerializeField] private TMP_Text Month;
@@ -85,21 +76,12 @@ public class HudBindings : MonoBehaviour
 
 		Ego.RefreshResourceDisplay(mgm.Data.Ego);
 		Funds.RefreshResourceDisplay(mgm.Data.Funds);
-		Power.RefreshResourceDisplay(mgm.Data.Power);
-
-		Culture.RefreshResourceDisplay(mgm.Data.CorporateCulture);
-		Spreadsheets.RefreshResourceDisplay(mgm.Data.Spreadsheets);
-		Patents.RefreshResourceDisplay(mgm.Data.Patents);
-		Brand.RefreshResourceDisplay(mgm.Data.Brand);
-		Revanue.RefreshResourceDisplay(mgm.Data.Revenue);
-
-		Hornical.RefreshResourceDisplay(mgm.Data.Hornical);
 
 		string timeOfDay = mgm.Data.TurnNumber % 2 == 1 ? "Afternoon" : "Morning";
-		var DateTime = mgm.GetDateFromTurnNumber();
+		var dateTime = mgm.GetDateFromTurnNumber();
 		Time.text = $"{timeOfDay}";
-		Day.text = $"{DateTime.DayOfWeek}";
-		Month.text = $"{DateTime:MMMM} {DateTime.Day}";
+		Day.text = $"{dateTime.DayOfWeek}";
+		Month.text = $"{dateTime:MMMM} {dateTime.Day}";
 		
 		DowntimeButton.gameObject.SetActive(DowntimeTutorialCompleteInteraction.Completed > 0);
 	}
