@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 4f585966-9c8f-4a71-9adb-71662c443bf6
   Name: Eavesdropping on Debbie
+  AlertNew: 1
   Category: 0
   Requirements:
     RequiredPower: 0
@@ -57,6 +58,7 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -70,6 +72,7 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -83,6 +86,7 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
+      OptionalAudioClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -96,11 +100,13 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
+      OptionalAudioClip: {fileID: 8300000, guid: 1b40420f6be8d2c4dae3463809518ed7,
+        type: 3}
     OptionalPopups:
     - Title: Debbie laughing at you behind your back...
       Videos:
       - {fileID: 32900000, guid: bfb39c3870a025b40aa0b63b323aa593, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
       Text: ...makes your blood boil but you also take the point.  You make a mental
         note to have a look at a new car and trading in your 'tin can'.
     Effect:
@@ -127,6 +133,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -156,4 +163,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1
