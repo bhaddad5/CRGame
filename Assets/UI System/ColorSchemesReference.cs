@@ -25,11 +25,17 @@ public class ColorSchemesReference : MonoBehaviour
 
 	[SerializeField] private List<ColorTypeDefinition> ColorTypeDefinitions = new List<ColorTypeDefinition>();
 
-	public static ColorSchemesReference Instance;
-	void Awake()
+	public static ColorSchemesReference Instance
 	{
-		Instance = this;
+		get
+		{
+			if (instance == null)
+				instance = Resources.Load<ColorSchemesReference>("UiDefinitions");
+			return instance;
+		}
 	}
+
+	private static ColorSchemesReference instance;
 
 	public ColorBlock GetColorBlockFromType(ColorType colorType)
 	{

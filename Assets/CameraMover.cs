@@ -7,6 +7,23 @@ public class CameraMover : MonoBehaviour
 	[SerializeField] private float moveScaler = .5f;
 	private Vector3 prevMousePos = Vector3.zero;
 
+	public static CameraMover Instance;
+	void Awake()
+	{
+		Instance = this;
+	}
+
+	public void ResetCameraPos()
+	{
+		transform.position = new Vector3(0, 0, -10f);
+	}
+
+	private Vector2 currScreenSize;
+	public void SetScreenSize(Vector2 screenSize)
+	{
+		currScreenSize = screenSize;
+	}
+
 	// Update is called once per frame
 	void Update()
 	{
@@ -31,5 +48,12 @@ public class CameraMover : MonoBehaviour
 #endif
 
 		prevMousePos = Input.mousePosition;
+	}
+
+	private Vector3 ClampPos(Vector3 desiredPos)
+	{
+		var camRange = currScreenSize / 500f;
+
+		return new Vector3(Mathf.Clamp(desiredPos.x, -camRange.x/2f, camRange.x / 2f), Mathf.Clamp(desiredPos.y, -camRange.y/2f, camRange.y/2f), -10f);
 	}
 }

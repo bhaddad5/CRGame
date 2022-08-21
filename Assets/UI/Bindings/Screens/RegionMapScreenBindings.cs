@@ -22,10 +22,22 @@ namespace Assets.GameModel.UiDisplayers
 
 		[SerializeField] private AudioClip OptionalBackgroundAudio;
 
+		[SerializeField] private TMP_Text RegionName;
+
+		[SerializeField] private GameObject RegionHud;
+
 		private MainGameManager mgm;
+		private Action onClose;
+		private Region region;
 		public void Setup(MainGameManager mgm, Region region, Action onClose)
 		{
+			this.onClose = onClose;
 			this.mgm = mgm;
+			this.region = region;
+
+			CameraMover.Instance.ResetCameraPos();
+			CameraMover.Instance.SetScreenSize(new Vector2(MapImage.mainTexture.width, MapImage.mainTexture.height));
+
 			foreach (Location loc in region.Locations)
 			{
 				var d = Instantiate(_locationButtonPrefab);
@@ -38,9 +50,10 @@ namespace Assets.GameModel.UiDisplayers
 		}
 
 		private LocationScreenBindings _currOpenLocation = null;
-		public void ShowDepartment(Location dept, MainGameManager mgm)
+		public void ShowLocation(Location dept, MainGameManager mgm)
 		{
 			CloseCurrentDepartment(false);
+			RegionHud.SetActive(false);
 			_currOpenLocation = Instantiate(_locationUiPrefab);
 			_currOpenLocation.Setup(dept, mgm, () =>
 			{
@@ -67,8 +80,16 @@ namespace Assets.GameModel.UiDisplayers
 				AudioHandler.Instance.PlayBackgroundClip(OptionalBackgroundAudio);
 		}
 
+		public void CloseRegion()
+		{
+			GameObject.Destroy(gameObject);
+			onClose?.Invoke();
+		}
+
 		public void RefreshUiDisplay(MainGameManager mgm)
 		{
+			RegionName.text = region.Name;
+
 			foreach (var button in LocationsParent.GetComponentsInChildren<RegionMapLocationEntryBindings>(true))
 				button.RefreshUiDisplay(mgm);
 

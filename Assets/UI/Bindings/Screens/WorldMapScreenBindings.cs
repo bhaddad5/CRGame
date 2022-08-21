@@ -24,6 +24,9 @@ namespace Assets.GameModel.UiDisplayers
 		private MainGameManager mgm;
 		public void Setup(MainGameManager mgm, List<Region> regions)
 		{
+			CameraMover.Instance.ResetCameraPos();
+			CameraMover.Instance.SetScreenSize(new Vector2(MapImage.mainTexture.width, MapImage.mainTexture.height));
+
 			this.mgm = mgm;
 			foreach (Region reg in regions)
 			{
@@ -39,9 +42,13 @@ namespace Assets.GameModel.UiDisplayers
 		private RegionMapScreenBindings _currOpenRegion = null;
 		public void ShowRegion(Region region, MainGameManager mgm)
 		{
+			gameObject.SetActive(false);
 			_currOpenRegion = Instantiate(_regionUiPrefab);
 			_currOpenRegion.Setup(mgm, region, () =>
 			{
+				CameraMover.Instance.ResetCameraPos();
+				CameraMover.Instance.SetScreenSize(new Vector2(MapImage.mainTexture.width, MapImage.mainTexture.height));
+				gameObject.SetActive(true);
 				if (OptionalBackgroundAudio != null)
 					AudioHandler.Instance.PlayBackgroundClip(OptionalBackgroundAudio);
 				RefreshUiDisplay(mgm);

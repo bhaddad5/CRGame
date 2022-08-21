@@ -29,6 +29,40 @@ public static class ProfilingHelpers
 		return res;
 	}
 
+	public static List<Mission> GetAllMissions()
+	{
+		var gameData = LoadGameData();
+
+		var res = new List<Mission>();
+
+		foreach (var location in gameData.Locations)
+		{
+			foreach (var m in location.Missions)
+			{
+				res.Add(m);
+			}
+		}
+
+		return res;
+	}
+
+	public static List<Policy> GetAllPolicies()
+	{
+		var gameData = LoadGameData();
+
+		var res = new List<Policy>();
+
+		foreach (var location in gameData.Locations)
+		{
+			foreach (var p in location.Policies)
+			{
+				res.Add(p);
+			}
+		}
+
+		return res;
+	}
+
 	public static List<Interaction> GetAllInteractions()
 	{
 		var gameData = LoadGameData();
@@ -88,6 +122,34 @@ public static class ProfilingHelpers
 	}
 
 	#endregion
+
+	[MenuItem("Company Man Debugging/Print Video Lengths")]
+	public static void PrintVideoLengths()
+	{
+		int numOfVideos = 0;
+		double totalVideoLength = 0;
+		double videoLengthCapped = 0;
+		foreach (var interaction in GetAllInteractions())
+		{
+			foreach (var popup in interaction.Result.OptionalPopups)
+			{
+				foreach (var videoClip in popup.Videos)
+				{
+					if (videoClip == null)
+						continue;
+					numOfVideos++;
+					totalVideoLength += videoClip.length;
+					videoLengthCapped += Mathf.Min((float)videoClip.length, 20f);
+					//if(videoClip.length > 20)
+					//	Debug.Log($"{videoClip}: {videoClip.length} seconds, frame size {videoClip.width} {videoClip.height}");
+				}
+			}
+		}
+
+		Debug.Log($"Number of videos: {numOfVideos}");
+		Debug.Log($"Total length of all videos: {totalVideoLength}");
+		Debug.Log($"Total length of all videos if capped: {videoLengthCapped}");
+	}
 
 	[MenuItem("Company Man Debugging/Print Npc Control Interactions")]
 	public static void PrintNpcControlInteractions()
@@ -201,12 +263,7 @@ public static class ProfilingHelpers
 			}
 		}
 	}
-
 	
-
-	
-
-
 	[MenuItem("Company Man Debugging/Print Control and Completion Interactions")]
 	public static void PrintControlInteractions()
 	{
@@ -236,7 +293,7 @@ public static class ProfilingHelpers
 	}
 
 	[MenuItem("Company Man Debugging/Copy All Text")]
-	public static void UpgradeOldData()
+	public static void CopyAllText()
 	{
 		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
 

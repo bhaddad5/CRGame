@@ -21,7 +21,7 @@ namespace Assets.GameModel.UiDisplayers
 			Button.onClick.RemoveAllListeners();
 			Button.onClick.AddListener(() =>
 			{
-				mainMapUi.ShowDepartment(dept, mgm);
+				mainMapUi.ShowLocation(dept, mgm);
 			});
 			mainMapSize = mainMapUi.GetComponentInChildren<RectTransform>().sizeDelta;
 		}

@@ -6,6 +6,18 @@ using UnityEngine;
 namespace Assets.GameModel
 {
 	[Serializable]
+	public struct RegionResources
+	{
+		public bool HasAnyResources;
+		public bool HasPower;
+		public bool HasSpreadsheets;
+		public bool HasBrand;
+		public bool HasRevanue;
+		public bool HasPatents;
+		public bool HasCulture;
+	}
+
+	[Serializable]
 	public class Region : ScriptableObject
 	{
 		[HideInInspector]
@@ -17,6 +29,8 @@ namespace Assets.GameModel
 		public Texture2D MapImage;
 
 		public Vector2 UiPosition;
+
+		public RegionResources RegionResources;
 
 		public List<Location> QuickAccessLocations = new List<Location>();
 		public List<Location> Locations = new List<Location>();

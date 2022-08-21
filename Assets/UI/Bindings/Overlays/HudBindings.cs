@@ -57,12 +57,12 @@ public class HudBindings : MonoBehaviour
 
 	public void OpenMyOffice()
 	{
-		mapDisplay.ShowDepartment(mgm.Data.MyOffice, mgm);
+		mapDisplay.ShowLocation(mgm.Data.MyOffice, mgm);
 	}
 
 	public void OpenMyHome()
 	{
-		mapDisplay.ShowDepartment(mgm.Data.MyHome, mgm);
+		mapDisplay.ShowLocation(mgm.Data.MyHome, mgm);
 	}
 
 	void Update()
