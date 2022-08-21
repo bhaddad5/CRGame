@@ -37,10 +37,7 @@ namespace Assets.GameModel
 
 		public List<Promotion> PlayerPromotionLevels = new List<Promotion>();
 		public List<Home> PlayerHomeLevels = new List<Home>();
-
-		public Location MyOffice;
-		public Location MyHome;
-
+		
 		public List<Location> Locations = new List<Location>();
 		public List<Region> Regions = new List<Region>();
 

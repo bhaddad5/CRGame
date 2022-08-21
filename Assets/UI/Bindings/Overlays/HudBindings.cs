@@ -29,7 +29,6 @@ public class HudBindings : MonoBehaviour
 	[SerializeField] private TMP_Text Time;
 	[SerializeField] private TMP_Text Month;
 
-	[SerializeField] private Button MyOffice;
 	[SerializeField] private Button DowntimeButton;
 
 	[SerializeField] private Button MainMenuButton;
@@ -53,16 +52,6 @@ public class HudBindings : MonoBehaviour
 	{
 		mgm.Data.Ego += 5;
 		mgm.HandleTurnChange();
-	}
-
-	public void OpenMyOffice()
-	{
-		mapDisplay.ShowLocation(mgm.Data.MyOffice, mgm);
-	}
-
-	public void OpenMyHome()
-	{
-		mapDisplay.ShowLocation(mgm.Data.MyHome, mgm);
 	}
 
 	void Update()
@@ -111,10 +100,7 @@ public class HudBindings : MonoBehaviour
 		Time.text = $"{timeOfDay}";
 		Day.text = $"{DateTime.DayOfWeek}";
 		Month.text = $"{DateTime:MMMM} {DateTime.Day}";
-
-		MyOffice.gameObject.SetActive(MyOfficeTutorialCompleteInteraction.Completed > 0);
-		MyOffice.interactable = mgm.Data.MyOffice.IsAccessible(mgm);
-
+		
 		DowntimeButton.gameObject.SetActive(DowntimeTutorialCompleteInteraction.Completed > 0);
 	}
 }

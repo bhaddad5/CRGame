@@ -16,8 +16,10 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private Image MapImage;
 
 		[SerializeField] private Transform LocationsParent;
+		[SerializeField] private Transform QuickAccessLocationsParent;
 
 		[SerializeField] private RegionMapLocationEntryBindings _locationButtonPrefab;
+		[SerializeField] private RegionMapLocationEntryBindings _quickAccessButtonPrefab;
 		[SerializeField] private LocationScreenBindings _locationUiPrefab;
 
 		[SerializeField] private AudioClip OptionalBackgroundAudio;
@@ -45,6 +47,13 @@ namespace Assets.GameModel.UiDisplayers
 				d.transform.SetParent(LocationsParent, false);
 			}
 
+			foreach (var loc in region.QuickAccessLocations)
+			{
+				var d = Instantiate(_quickAccessButtonPrefab);
+				d.Setup(loc, this, mgm);
+				d.transform.SetParent(QuickAccessLocationsParent, false);
+			}
+
 			if (OptionalBackgroundAudio != null)
 				AudioHandler.Instance.PlayBackgroundClip(OptionalBackgroundAudio);
 		}
@@ -57,6 +66,7 @@ namespace Assets.GameModel.UiDisplayers
 			_currOpenLocation = Instantiate(_locationUiPrefab);
 			_currOpenLocation.Setup(dept, mgm, () =>
 			{
+				RegionHud.SetActive(true);
 				if (OptionalBackgroundAudio != null)
 					AudioHandler.Instance.PlayBackgroundClip(OptionalBackgroundAudio);
 				RefreshUiDisplay(mgm);
@@ -92,8 +102,10 @@ namespace Assets.GameModel.UiDisplayers
 
 			foreach (var button in LocationsParent.GetComponentsInChildren<RegionMapLocationEntryBindings>(true))
 				button.RefreshUiDisplay(mgm);
+			foreach (var button in QuickAccessLocationsParent.GetComponentsInChildren<RegionMapLocationEntryBindings>(true))
+				button.RefreshUiDisplay(mgm);
 
-			if(_currOpenLocation != null)
+			if (_currOpenLocation != null)
 				_currOpenLocation.RefreshUiDisplay(mgm);
 
 			ShowTimeOfDay(mgm.Data.TurnNumber % 2 == 1);
