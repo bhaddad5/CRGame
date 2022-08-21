@@ -19,7 +19,7 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private WorldMapRegionEntryBindings _regionEntryPrefab;
 		[SerializeField] private RegionMapScreenBindings _regionUiPrefab;
 
-		[SerializeField] private AudioClip OptionalBackgroundAudio;
+		[SerializeField] private AudioClip WorldMapAudio;
 
 		private MainGameManager mgm;
 		public void Setup(MainGameManager mgm, List<Region> regions)
@@ -35,8 +35,8 @@ namespace Assets.GameModel.UiDisplayers
 				d.transform.SetParent(RegionsParent, false);
 			}
 
-			if (OptionalBackgroundAudio != null)
-				AudioHandler.Instance.PlayBackgroundClip(OptionalBackgroundAudio);
+			if (WorldMapAudio != null)
+				AudioHandler.Instance.SetMusicTracks(new List<AudioClip>() { WorldMapAudio });
 		}
 
 		private RegionMapScreenBindings _currOpenRegion = null;
@@ -49,8 +49,8 @@ namespace Assets.GameModel.UiDisplayers
 				CameraMover.Instance.ResetCameraPos();
 				CameraMover.Instance.SetScreenSize(new Vector2(MapImage.mainTexture.width, MapImage.mainTexture.height));
 				gameObject.SetActive(true);
-				if (OptionalBackgroundAudio != null)
-					AudioHandler.Instance.PlayBackgroundClip(OptionalBackgroundAudio);
+				if (WorldMapAudio != null)
+					AudioHandler.Instance.SetMusicTracks(new List<AudioClip>() { WorldMapAudio });
 				RefreshUiDisplay(mgm);
 			});
 			_currOpenRegion.RefreshUiDisplay(mgm);

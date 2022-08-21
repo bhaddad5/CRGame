@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Assets.GameModel;
 using Assets.GameModel.UiDisplayers;
+using Assets.UI_System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -41,6 +42,12 @@ public class PopupBindings : MonoBehaviour
 			VideoPlayer.GetComponent<RawImage>().texture = VideoTexture;
 			UnityEngine.Random.InitState(System.DateTime.Now.Millisecond);
 			VideoPlayer.clip = popup.Videos[completionCount % popup.Videos.Count];
+		}
+
+		if (popup.DialogClips?.Count > 0)
+		{
+			var clip = popup.DialogClips[completionCount % popup.DialogClips.Count];
+			AudioHandler.Instance.PlayDialogClip(clip);
 		}
 	}
 

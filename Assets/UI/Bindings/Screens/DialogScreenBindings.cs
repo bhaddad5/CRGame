@@ -88,7 +88,7 @@ public class DialogScreenBindings : MonoBehaviour
 		}
 
 		if(dialog.OptionalAudioClip != null)
-			AudioHandler.Instance.PlayForegroundClip(dialog.OptionalAudioClip);
+			AudioHandler.Instance.PlayDialogClip(dialog.OptionalAudioClip);
 
 		foreach (var c in textToShow)
 		{

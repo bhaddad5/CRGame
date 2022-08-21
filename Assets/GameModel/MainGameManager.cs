@@ -133,5 +133,11 @@ namespace Assets.GameModel
 
 			return currentDate;
 		}
+
+		public bool IsWeekend()
+		{
+			var dayOfWeek = GetDateFromTurnNumber().DayOfWeek;
+			return dayOfWeek == DayOfWeek.Saturday || dayOfWeek == DayOfWeek.Sunday;
+		}
 	}
 }

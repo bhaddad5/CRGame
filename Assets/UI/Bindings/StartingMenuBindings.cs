@@ -29,7 +29,7 @@ public class StartingMenuBindings : MonoBehaviour
 		VersionText.text = $"Company Man v{MainGameManager.MajorVersion}.{MainGameManager.MinorVersion}.{MainGameManager.Patch} \"{MainGameManager.VersionName}\"";
 
 		if(MenuMusic != null)
-			AudioHandler.Instance.PlayBackgroundClip(MenuMusic);
+			AudioHandler.Instance.SetMusicTracks(new List<AudioClip>(){ MenuMusic });
 	}
 
 	public void NewGame()

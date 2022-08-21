@@ -67,8 +67,7 @@ namespace Assets.GameModel.UiDisplayers
 				statusSymbols.UpdateVisuals(mgm);
 			}
 
-			if (loc.OptionalBackgroundAudio != null)
-				AudioHandler.Instance.PlayBackgroundClip(loc.OptionalBackgroundAudio);
+			AudioHandler.Instance.SetBackgroundAmbiance(loc.OptionalBackgroundAudio);
 		}
 
 		public void CloseCurrentLocation()

@@ -14,61 +14,95 @@ namespace Assets.UI_System
 
 		private static AudioHandler instance;
 
+		[SerializeField] private AudioSource SourcePrefab;
+
+		private AudioSource DialogSource;
+		private AudioSource AmbientSource;
+		private AudioSource MusicSource;
+
 		void Awake()
 		{
 			instance = this;
+			DialogSource = Instantiate(SourcePrefab);
+			DialogSource.volume = 1f;
+
+			AmbientSource = Instantiate(SourcePrefab);
+			AmbientSource.volume = .3f;
+			AmbientSource.loop = true;
+
+			MusicSource = Instantiate(SourcePrefab);
+			MusicSource.volume = .6f;
+			MusicSource.loop = true;
 		}
 
-		[SerializeField] private AudioSource ForegroundSource;
-		[SerializeField] private AudioSource BackgroundSource;
-
-		public void PlayForegroundClip(AudioClip clip)
+		public void PlayDialogClip(AudioClip clip)
 		{
 			if (clip != null)
 			{
-				ForegroundSource.clip = clip;
-				ForegroundSource.Play();
+				DialogSource.clip = clip;
+				DialogSource.Play();
 			}
 			
 		}
 
-		private Coroutine fadeCoroutine = null;
-		public void PlayBackgroundClip(AudioClip clip)
+		private Coroutine playNextAudioClip = null;
+		private List<AudioClip> currMainTracks = new List<AudioClip>();
+		public void SetMusicTracks(List<AudioClip> tracks)
 		{
-			if (clip != null && BackgroundSource.clip != clip)
+			if (tracks.Equals(currMainTracks))
+				return;
+
+			FadeToNewClip(tracks.FirstOrDefault(), MusicSource);
+		}
+
+		public void PlayOverridingMusicTrack(AudioClip clip)
+		{
+			FadeToNewClip(clip, MusicSource);
+		}
+
+		public void SetBackgroundAmbiance(AudioClip clip)
+		{
+			FadeToNewClip(clip, AmbientSource);
+		}
+
+		private Dictionary<AudioSource, Coroutine> fadeCoroutines = new Dictionary<AudioSource, Coroutine>();
+		public void FadeToNewClip(AudioClip clip, AudioSource currPlayer)
+		{
+			if (fadeCoroutines.ContainsKey(currPlayer))
 			{
-				if(fadeCoroutine != null)
-					StopCoroutine(fadeCoroutine);
-				fadeCoroutine = StartCoroutine(FadeOutAudio(clip));
+				StopCoroutine(fadeCoroutines[currPlayer]);
+				fadeCoroutines.Remove(currPlayer);
 			}
+
+			fadeCoroutines[currPlayer] = StartCoroutine(FadeToClip(clip, currPlayer));
 		}
 
 		private const float fadeDuration = .5f;
-		private IEnumerator FadeOutAudio(AudioClip clip)
+		private IEnumerator FadeToClip(AudioClip clip, AudioSource currPlayer)
 		{
 			float startTime = Time.time;
-			
+
 			while (Time.time < startTime + fadeDuration)
 			{
 				var fadePercent = (Time.time - startTime) / fadeDuration;
-				BackgroundSource.volume = 1-fadePercent;
+				MusicSource.volume = 1 - fadePercent;
 
 				yield return null;
 			}
 
-			BackgroundSource.clip = clip;
-			BackgroundSource.Play();
+			MusicSource.clip = clip;
+			MusicSource.Play();
 
 			startTime = Time.time;
 			while (Time.time < startTime + fadeDuration)
 			{
 				var fadePercent = (Time.time - startTime) / fadeDuration;
-				BackgroundSource.volume = fadePercent;
+				MusicSource.volume = fadePercent;
 
 				yield return null;
 			}
 
-			fadeCoroutine = null;
+			fadeCoroutines.Remove(currPlayer);
 		}
 	}
 }

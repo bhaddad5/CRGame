@@ -72,12 +72,9 @@ namespace Assets.GameModel
 
 		public bool IsAccessible(MainGameManager mgm)
 		{
-			var dayOfWeek = mgm.GetDateFromTurnNumber().DayOfWeek;
-			bool isWeekend = dayOfWeek == DayOfWeek.Saturday || dayOfWeek == DayOfWeek.Sunday;
-
-			if (ClosedOnWeekdays && !isWeekend)
+			if (ClosedOnWeekdays && !mgm.IsWeekend())
 				return false;
-			if (ClosedOnWeekends && isWeekend)
+			if (ClosedOnWeekends && mgm.IsWeekend())
 				return false;
 
 			return true;

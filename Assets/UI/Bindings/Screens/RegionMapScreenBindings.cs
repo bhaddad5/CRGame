@@ -22,8 +22,6 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private RegionMapLocationEntryBindings _quickAccessButtonPrefab;
 		[SerializeField] private LocationScreenBindings _locationUiPrefab;
 
-		[SerializeField] private AudioClip OptionalBackgroundAudio;
-
 		[SerializeField] private TMP_Text RegionName;
 
 		[SerializeField] private List<GameObject> RegionUiToHide;
@@ -62,8 +60,9 @@ namespace Assets.GameModel.UiDisplayers
 				d.transform.SetParent(QuickAccessLocationsParent, false);
 			}
 
-			if (OptionalBackgroundAudio != null)
-				AudioHandler.Instance.PlayBackgroundClip(OptionalBackgroundAudio);
+			AudioHandler.Instance.SetBackgroundAmbiance(region.BackgroundAmbience);
+
+			AudioHandler.Instance.SetMusicTracks(region.GetCurrMusicTracks(mgm));
 		}
 
 		private LocationScreenBindings _currOpenLocation = null;
@@ -77,8 +76,7 @@ namespace Assets.GameModel.UiDisplayers
 			{
 				foreach (var ui in RegionUiToHide)
 					ui.SetActive(true);
-				if (OptionalBackgroundAudio != null)
-					AudioHandler.Instance.PlayBackgroundClip(OptionalBackgroundAudio);
+				AudioHandler.Instance.SetBackgroundAmbiance(region.BackgroundAmbience);
 				RefreshUiDisplay(mgm);
 			});
 			_currOpenLocation.RefreshUiDisplay(mgm);
@@ -95,9 +93,6 @@ namespace Assets.GameModel.UiDisplayers
 					_currOpenLocation = null;
 				}
 			}
-
-			if (OptionalBackgroundAudio != null)
-				AudioHandler.Instance.PlayBackgroundClip(OptionalBackgroundAudio);
 		}
 
 		public void CloseRegion()
@@ -126,6 +121,8 @@ namespace Assets.GameModel.UiDisplayers
 			Patents.RefreshResourceDisplay(mgm.Data.Patents);
 			Brand.RefreshResourceDisplay(mgm.Data.Brand);
 			Revanue.RefreshResourceDisplay(mgm.Data.Revenue);
+
+			AudioHandler.Instance.SetMusicTracks(region.GetCurrMusicTracks(mgm));
 		}
 
 		public void ShowTimeOfDay(bool afternoon)

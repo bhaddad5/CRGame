@@ -36,6 +36,15 @@ namespace Assets.GameModel
 		public List<Location> QuickAccessLocations = new List<Location>();
 		public List<Location> Locations = new List<Location>();
 
+		public AudioClip BackgroundAmbience;
+		public List<AudioClip> WeekMusicTracks = new List<AudioClip>();
+		public List<AudioClip> WeekendMusicTracks = new List<AudioClip>();
+
+		public List<AudioClip> GetCurrMusicTracks(MainGameManager mgm)
+		{
+			return mgm.IsWeekend() ? WeekendMusicTracks : WeekMusicTracks;
+		}
+
 		public bool IsVisible(MainGameManager mgm)
 		{
 			return true;
