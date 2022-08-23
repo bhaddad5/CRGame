@@ -39,6 +39,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 0
   PreviewEffect: 0
   Result:
@@ -55,6 +56,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 400
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
         type: 2}
@@ -67,6 +69,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 400
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
         type: 2}
@@ -78,8 +81,8 @@ MonoBehaviour:
         xPos: 0.68
         yPos: 0.4
         width: 400
-      OptionalAudioClip: {fileID: 8300000, guid: 03900bc3c8b700d49aa6a8a304dd4da9,
-        type: 3}
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
         type: 2}
@@ -92,6 +95,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 400
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
         type: 2}
@@ -104,6 +108,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 400
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
         type: 2}
@@ -117,13 +122,16 @@ MonoBehaviour:
         xPos: 0.68
         yPos: 0.4
         width: 400
-      OptionalAudioClip: {fileID: 8300000, guid: 68a5ca1fda891784d9298c86fa00d788,
+      OptionalAudioClip: {fileID: 8300000, guid: 03900bc3c8b700d49aa6a8a304dd4da9,
         type: 3}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: '"I might end up being your future boss!"'
       Videos:
       - {fileID: 32900000, guid: 2bf67df375eba974c81f9d383e225663, type: 3}
       Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: 68a5ca1fda891784d9298c86fa00d788, type: 3}
       Text: 'You smile, politely ignoring her obnoxious suggestion.  She seems to
         be trying to wind you up, but of course you won''t allow that to happen. 
         But you won''t forget this rudeness.  Deborah needs to be taught a lesson. 
@@ -145,6 +153,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -175,6 +185,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0

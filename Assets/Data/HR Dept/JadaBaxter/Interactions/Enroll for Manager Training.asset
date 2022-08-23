@@ -39,6 +39,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -56,11 +57,15 @@ MonoBehaviour:
         xPos: 0.6
         yPos: 0.43
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: DIVERSITY INCLUSION MODULE
       Videos:
       - {fileID: 32900000, guid: 505f0aef6d3b664448d3fe68c79f1989, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: e0c91224e8b5a7741aef935bf2110711, type: 3}
       Text: 'After a video, you workshop ideas with other management candidates on
         how to mandate more diversity and inclusion in your business unit. '
     Effect:
@@ -80,6 +85,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -110,6 +117,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0

@@ -15,7 +15,7 @@ MonoBehaviour:
   Id: 9c51929b-b992-479a-be08-d6dd33cf95de
   Name: Picking up new sedan
   AlertNew: 1
-  Category: 0
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -40,6 +40,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -57,6 +58,7 @@ MonoBehaviour:
         yPos: 0.5
         width: 280
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 4d3743d35f797914aaaf678a95570a6d,
         type: 2}
@@ -70,6 +72,7 @@ MonoBehaviour:
         yPos: 0.5
         width: 280
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 4d3743d35f797914aaaf678a95570a6d,
         type: 2}
@@ -87,11 +90,14 @@ MonoBehaviour:
         width: 280
       OptionalAudioClip: {fileID: 8300000, guid: b372d1ef7d468c24b96b67260d4ba683,
         type: 3}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: You watch in envy as Deborah...
       Videos:
       - {fileID: 32900000, guid: 135939524f5350444b25a8c82b8a9900, type: 3}
       Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: b9dadcee1802a054fa1e723ee34de61c, type: 3}
       Text: '...fills out the paperwork and takes the keys of her brand new sedan. 
         As she drives off the lot, she waves back at you with a triumphant smile,
         the car soon gliding down the highway as she accelerates, leaving you in
@@ -118,6 +124,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -148,6 +156,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -156,5 +166,5 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
-  Completed: 1
-  New: 0
+  Completed: 0
+  New: 1

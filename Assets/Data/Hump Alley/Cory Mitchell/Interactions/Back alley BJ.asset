@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: cf6b8097-1bb1-443e-8220-0d75556199ff
   Name: Back alley BJ
+  AlertNew: 1
   Category: 6
   Requirements:
     RequiredPower: 0
@@ -38,6 +39,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 1
   PreviewEffect: 1
   Result:
@@ -56,13 +58,17 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.34
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: There's a desperation in her eyes...
       Videos:
       - {fileID: 32900000, guid: 9f04b10cc9208ad4eba551b5b55b13f5, type: 3}
       - {fileID: 32900000, guid: 6334ceda5a4324b40b5290bc27570e13, type: 3}
       - {fileID: 32900000, guid: 0252396b89841134b847f12ee6428660, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: e217da7adcea7624898aaa3b3ab3d8ed, type: 3}
       Text: Twenty bucks seems to be a lot bigger deal to her than it does to you!
     Effect:
       NpcEffects: []
@@ -81,6 +87,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -88,6 +96,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -110,6 +119,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -117,5 +128,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
   New: 1

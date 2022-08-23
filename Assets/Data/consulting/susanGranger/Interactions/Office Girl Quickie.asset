@@ -46,6 +46,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 1
   PreviewEffect: 1
   Result:
@@ -60,8 +61,10 @@ MonoBehaviour:
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.35
-        yPos: 0.55
+        yPos: 0.4
         width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
         type: 2}
@@ -71,13 +74,16 @@ MonoBehaviour:
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.35
-        yPos: 0.55
+        yPos: 0.4
         width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Doing Suzie makes her day!
       Videos:
       - {fileID: 32900000, guid: cd5f51b721b58c948b04ce3c7957ec2d, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: 
     Effect:
       NpcEffects:
@@ -100,6 +106,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -130,6 +138,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
