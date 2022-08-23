@@ -5,12 +5,17 @@ using UnityEngine;
 
 public class UiPrefabReferences : MonoBehaviour
 {
-	public static UiPrefabReferences Instance;
-	void Awake()
+	public static UiPrefabReferences Instance
 	{
-		Instance = this;
+		get
+		{
+			if (instance == null)
+				instance = Resources.Load<UiPrefabReferences>("UiPrefabReferences");
+			return instance;
+		}
 	}
-
+	private static UiPrefabReferences instance;
+	
 	public GameObject PopupOverlayParent;
 	public List<GameObject> UiPrefabs;
 

@@ -30,7 +30,7 @@ public class ColorSchemesReference : MonoBehaviour
 		get
 		{
 			if (instance == null)
-				instance = Resources.Load<ColorSchemesReference>("UiDefinitions");
+				instance = Resources.Load<ColorSchemesReference>("UiColorSchemesReference");
 			return instance;
 		}
 	}
