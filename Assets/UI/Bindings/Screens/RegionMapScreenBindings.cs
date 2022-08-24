@@ -56,7 +56,7 @@ namespace Assets.GameModel.UiDisplayers
 			foreach (var loc in region.QuickAccessLocations)
 			{
 				var d = Instantiate(_quickAccessButtonPrefab);
-				d.Setup(loc, this, mgm);
+				d.Setup(loc, this, mgm, true);
 				d.transform.SetParent(QuickAccessLocationsParent, false);
 			}
 

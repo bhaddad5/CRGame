@@ -14,9 +14,11 @@ namespace Assets.GameModel.UiDisplayers
 
 		private Location loc;
 		private Vector2 mainMapSize;
+		private bool isQuickAccess;
 
-		public void Setup(Location dept, RegionMapScreenBindings mainMapUi, MainGameManager mgm)
+		public void Setup(Location dept, RegionMapScreenBindings mainMapUi, MainGameManager mgm, bool isQuickAccess = false)
 		{
+			this.isQuickAccess = isQuickAccess;
 			this.loc = dept;
 			Button.onClick.RemoveAllListeners();
 			Button.onClick.AddListener(() =>
@@ -32,7 +34,8 @@ namespace Assets.GameModel.UiDisplayers
 			Text.text = $"{loc.Name}";
 			Button.interactable = loc.IsAccessible(mgm);
 			Button.gameObject.SetActive(loc.IsVisible(mgm));
-			Button.transform.localPosition = ConvertMapPos(loc.UiPosition);
+			if(!isQuickAccess)
+				Button.transform.localPosition = ConvertMapPos(loc.UiPosition);
 			NewIndicator.SetActive(loc.HasNewInteractions(mgm) && loc.IsAccessible(mgm));
 
 			if (loc.IsAccessible(mgm))
