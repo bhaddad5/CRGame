@@ -59,7 +59,7 @@ namespace Assets.GameModel
 				Data.LastName = lastName;
 			}
 
-			//hudUiDisplay.Setup(this, mainMapUiDisplay);
+			hudUiDisplay.Setup(this);
 			mainMapUiDisplay.Setup(this, Data.Regions);
 			RefreshAllUi();
 
@@ -94,7 +94,7 @@ namespace Assets.GameModel
 				return;
 			File.WriteAllText(path, SaveLoadHandler.SaveToJson(Data));
 
-			//mainMapUiDisplay.HandleTurnChange();
+			mainMapUiDisplay.HandleTurnChange();
 
 			RefreshAllUi();
 

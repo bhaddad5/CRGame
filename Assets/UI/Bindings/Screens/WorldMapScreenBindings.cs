@@ -56,6 +56,12 @@ namespace Assets.GameModel.UiDisplayers
 			_currOpenRegion.RefreshUiDisplay(mgm);
 		}
 
+		public void HandleTurnChange()
+		{
+			if(_currOpenRegion != null)
+				_currOpenRegion.CloseCurrentDepartment(true);
+		}
+
 		public void RefreshUiDisplay(MainGameManager mgm)
 		{
 			foreach (var button in RegionsParent.GetComponentsInChildren<WorldMapRegionEntryBindings>(true))
