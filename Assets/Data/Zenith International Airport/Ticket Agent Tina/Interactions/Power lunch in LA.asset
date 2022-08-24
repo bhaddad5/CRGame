@@ -38,6 +38,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 1
   PreviewEffect: 1
   Result:
@@ -54,11 +55,15 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.48
         width: 200
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: You earn some juice!
       Videos:
       - {fileID: 32900000, guid: 4c5652d5fda9d334aaac94b0f6cc3198, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: b3a9dfaad62b7004f99cbba0d3b7087c, type: 3}
       Text: You snag a producer credit on a small production you can brag about!  
         +1 Power
     Effect:
@@ -78,6 +83,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -101,6 +108,8 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.48
         width: 200
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
     Effect:
       NpcEffects: []
@@ -119,6 +128,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
