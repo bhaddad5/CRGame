@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: fca4a27a-ac96-4712-ba2b-be7b6071a94a
   Name: Head for the slopes
+  AlertNew: 1
   Category: 6
   Requirements:
     RequiredPower: 0
@@ -37,6 +38,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 1
   PreviewEffect: 1
   Result:
@@ -54,11 +56,15 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.5
         width: 200
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: As you fly downhill, you feel free...
       Videos:
       - {fileID: 32900000, guid: 52f4d602a8a036f4c9190b565231e3f9, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: 30f0fcb6fe774c04597b82b09cb7a41d, type: 3}
       Text: ...until you think of all those stacked up meetings.  Perhaps one day
         it might be worth buying a ski chalet, but for now, the ski party's over.
     Effect:
@@ -78,6 +84,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -85,6 +93,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -107,6 +116,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -114,5 +125,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
   New: 1

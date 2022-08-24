@@ -38,6 +38,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 1
   PreviewEffect: 1
   Result:
@@ -54,11 +55,14 @@ MonoBehaviour:
         yPos: 0.48
         width: 200
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: What you win in Vegas...
       Videos:
       - {fileID: 32900000, guid: 0157da088888924428496a3035fda852, type: 3}
       Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: 46e7213b5555bf5409c48018f7c2447f, type: 3}
       Text: ..comes back with you!  You bring back $5,000!
     Effect:
       NpcEffects: []
@@ -77,6 +81,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -101,6 +107,7 @@ MonoBehaviour:
         yPos: 0.48
         width: 200
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
     Effect:
       NpcEffects: []
@@ -119,6 +126,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0

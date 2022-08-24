@@ -45,6 +45,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -60,6 +61,8 @@ MonoBehaviour:
         xPos: 0.35
         yPos: 0.45
         width: 380
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
         type: 2}
@@ -71,6 +74,8 @@ MonoBehaviour:
         xPos: 0.35
         yPos: 0.45
         width: 380
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
         type: 2}
@@ -82,6 +87,8 @@ MonoBehaviour:
         xPos: 0.35
         yPos: 0.45
         width: 380
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
         type: 2}
@@ -93,24 +100,30 @@ MonoBehaviour:
         xPos: 0.35
         yPos: 0.45
         width: 380
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: '"I feel kind of dizzy!"'
       Videos:
       - {fileID: 32900000, guid: 12fa9262894583b4598c52593422b475, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: 4366b2056bbdac44cb256cae026cb5af, type: 3}
       Text: You go back to her place, a dismal little hole in Botany Bay Housing
         Project.
     - Title: Her apartment is disgusting.
       Videos:
       - {fileID: 32900000, guid: 2b2b229bd36ccbc4094df38535b817c8, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: There's no way you're spending any more time here than you need to. 
         But then, she is pretty drunk and awkwardly coming on to you.  You may as
         well take advantage of the situation.
     - Title: A trashed Britney blows you...
       Videos:
       - {fileID: 32900000, guid: eccc2bb1bddf23244863abce6cdb9fa1, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: ...as a way to thank you for such a fun time, and yes, it was your suggestion. 
         While she cleans herself up, you decide to look through her drawers, select
         a trophy and leave- before you have to have a conversation with her.
@@ -136,6 +149,8 @@ MonoBehaviour:
       TrophiesClaimedReferences:
       - {fileID: 11400000, guid: 38d985a02b240e04298d79c1c734c16e, type: 2}
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -166,6 +181,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0

@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 4b98727e-c6ab-4c0b-a460-b0f968335cc7
   Name: Slip off to the beach
+  AlertNew: 1
   Category: 6
   Requirements:
     RequiredPower: 0
@@ -37,26 +38,33 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 1
   PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: a7f6d8d9c4a926b4f8ebec3d6520adc3,
+        type: 2}
       Text: Balmy weather, golden sands, crystal blue water and lots and lots of
         rum drinks make the hustle and bustle of your office seem like a distant
         memory!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: c301318f42b865947a67b0bb3c6006f7,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.48
+        width: 200
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: This might be a nice...
       Videos:
       - {fileID: 32900000, guid: 2e4df9f929a7edc40a369ae657858ec5, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: 4eccc1e32023de04f8566a1cfbfcb4b5, type: 3}
       Text: ...retirement option.  But for now, you're already thinking of the work
         piling up on your desk!  Still, it was a nice break.
     Effect:
@@ -76,6 +84,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -83,6 +93,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -105,6 +116,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -112,5 +125,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
   New: 1
