@@ -39,6 +39,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -56,6 +57,7 @@ MonoBehaviour:
         yPos: 0.45
         width: 380
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
         type: 2}
@@ -68,6 +70,7 @@ MonoBehaviour:
         yPos: 0.45
         width: 380
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
         type: 2}
@@ -80,6 +83,7 @@ MonoBehaviour:
         yPos: 0.45
         width: 380
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
         type: 2}
@@ -92,12 +96,14 @@ MonoBehaviour:
         yPos: 0.45
         width: 380
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Brit's so desperate...
       Videos: []
       Textures:
       - {fileID: 2800000, guid: 301bafed1777d134f95a725d562a437a, type: 3}
-      Texture: {fileID: 2800000, guid: 301bafed1777d134f95a725d562a437a, type: 3}
+      DialogClips:
+      - {fileID: 8300000, guid: f819296747826654baf49e49399ecc7e, type: 3}
       Text: She's like a dog who needs a master, whether he is kind to her or not.
     Effect:
       NpcEffects:
@@ -120,6 +126,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -150,6 +158,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
