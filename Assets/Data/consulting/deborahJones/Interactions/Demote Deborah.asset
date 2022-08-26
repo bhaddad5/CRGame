@@ -41,6 +41,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -60,6 +61,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 400
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
         type: 2}
@@ -72,8 +74,9 @@ MonoBehaviour:
         xPos: 0.68
         yPos: 0.4
         width: 400
-      OptionalAudioClip: {fileID: 8300000, guid: a1481b4339654a14f869cd3d81bf1541,
+      OptionalAudioClip: {fileID: 8300000, guid: a8b877410fe71574eb2a5a2637a3230c,
         type: 3}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
         type: 2}
@@ -91,6 +94,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 400
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
         type: 2}
@@ -104,6 +108,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 400
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
         type: 2}
@@ -118,6 +123,7 @@ MonoBehaviour:
         yPos: 0.45
         width: 400
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
         type: 2}
@@ -133,8 +139,9 @@ MonoBehaviour:
         xPos: 0.65
         yPos: 0.45
         width: 400
-      OptionalAudioClip: {fileID: 8300000, guid: 5d936adbbd4e7d447a885eb28604ced8,
+      OptionalAudioClip: {fileID: 8300000, guid: 81774ff570efcc440b3ade94a8bbb67b,
         type: 3}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
         type: 2}
@@ -150,6 +157,7 @@ MonoBehaviour:
         yPos: 0.45
         width: 400
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
         type: 2}
@@ -166,6 +174,7 @@ MonoBehaviour:
         yPos: 0.45
         width: 400
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
         type: 2}
@@ -182,13 +191,25 @@ MonoBehaviour:
         yPos: 0.45
         width: 400
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: From Management Trainee to Secretary
       Videos:
       - {fileID: 32900000, guid: 7379f199eec8a124ea481e05dd595027, type: 3}
       Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: 2df276c3b12f4b340a1c2746a00e8387, type: 3}
       Text: Deborah shows a brave face as she accepts the job offer, but as soon
         as she's escaped your office, you can hear her burst into tears
+    - Title: Deborah's demotion...
+      Videos:
+      - {fileID: 32900000, guid: 2aa2b1ab2ff2385458963f6fcfc49e46, type: 3}
+      Textures: []
+      DialogClips:
+      - {fileID: 0}
+      Text: '...is the watercooler gossip of choice for the next few weeks.  The
+        Fall of the Golden Girl generates more satisfaction than sympathy from her
+        fellow employees!  '
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
@@ -214,6 +235,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -244,6 +267,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0

@@ -42,6 +42,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -59,6 +60,7 @@ MonoBehaviour:
         yPos: 0.43
         width: 300
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
         type: 2}
@@ -72,6 +74,7 @@ MonoBehaviour:
         yPos: 0.43
         width: 300
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
         type: 2}
@@ -86,6 +89,7 @@ MonoBehaviour:
         yPos: 0.43
         width: 300
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
         type: 2}
@@ -98,6 +102,7 @@ MonoBehaviour:
         yPos: 0.43
         width: 300
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
         type: 2}
@@ -111,6 +116,7 @@ MonoBehaviour:
         yPos: 0.43
         width: 300
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
         type: 2}
@@ -124,6 +130,7 @@ MonoBehaviour:
         yPos: 0.43
         width: 300
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
         type: 2}
@@ -139,6 +146,7 @@ MonoBehaviour:
         yPos: 0.43
         width: 300
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
         type: 2}
@@ -154,6 +162,7 @@ MonoBehaviour:
         yPos: 0.43
         width: 300
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
         type: 2}
@@ -167,6 +176,7 @@ MonoBehaviour:
         yPos: 0.43
         width: 300
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
         type: 2}
@@ -182,6 +192,7 @@ MonoBehaviour:
         yPos: 0.43
         width: 300
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
         type: 2}
@@ -195,6 +206,7 @@ MonoBehaviour:
         yPos: 0.43
         width: 300
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
         type: 2}
@@ -210,6 +222,7 @@ MonoBehaviour:
         yPos: 0.43
         width: 300
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
         type: 2}
@@ -225,6 +238,7 @@ MonoBehaviour:
         yPos: 0.43
         width: 300
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
         type: 2}
@@ -240,12 +254,14 @@ MonoBehaviour:
         yPos: 0.43
         width: 300
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: 'NEI PROFILE: Deborah Jones'
       Videos: []
       Textures:
       - {fileID: 2800000, guid: ed17d020ad1cc634db22cea7e7258b27, type: 3}
-      Texture: {fileID: 2800000, guid: ed17d020ad1cc634db22cea7e7258b27, type: 3}
+      DialogClips:
+      - {fileID: 8300000, guid: c0a489014cc34494bbb268457e5cce22, type: 3}
       Text: Your review damns her with faint praise and hints Deb has major issues
         with authority figures.  It suggests she'd be a high risk hire, especially
         for a position of any kind involving exercising corporate responsibility...
@@ -253,7 +269,8 @@ MonoBehaviour:
       Videos:
       - {fileID: 32900000, guid: 3132a6a047098f249a634f0b6f48a596, type: 3}
       Textures: []
-      Texture: {fileID: 0}
+      DialogClips:
+      - {fileID: 8300000, guid: 26d26d2f384ee644bb291c8391b6b157, type: 3}
       Text: ...Deborah left HR reeling, unable to comprehend the first negative feedback
         she's ever been given in her adult life.
     Effect:
@@ -277,6 +294,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -307,6 +326,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
