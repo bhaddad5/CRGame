@@ -44,6 +44,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -60,6 +61,8 @@ MonoBehaviour:
         yPos: 0.4
         width: 300
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 8300000, guid: 2bd3914a6fef65c40a40e22a131a6184,
+        type: 3}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 953fdaa61df0d874096f67b62bdff83f,
         type: 2}
@@ -72,12 +75,13 @@ MonoBehaviour:
         yPos: 0.4
         width: 300
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Tracey eyes the tacky panties...
       Videos: []
       Textures:
       - {fileID: 2800000, guid: 7c215538b27a911408ae54cd578a9265, type: 3}
-      Texture: {fileID: 2800000, guid: 7c215538b27a911408ae54cd578a9265, type: 3}
+      DialogClips: []
       Text: ...with resentment even as she promises to think of nothing but you while
         wearing them.  She's learned to express the most fulsome gratitude now when
         presented with such humiliating gifts.
@@ -85,7 +89,7 @@ MonoBehaviour:
       Videos:
       - {fileID: 32900000, guid: c1129dc649d7e3242892ddf710587094, type: 3}
       Textures: []
-      Texture: {fileID: 0}
+      DialogClips: []
       Text: Mrs. Tracey {LastName}, the perfectly trained trophy wife, has taken
         her place.  Congratulations on training up such an obedient little wife!
     Effect:
@@ -106,6 +110,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -136,6 +142,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0

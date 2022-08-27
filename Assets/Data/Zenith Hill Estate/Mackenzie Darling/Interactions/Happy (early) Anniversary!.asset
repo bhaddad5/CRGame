@@ -40,6 +40,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -57,6 +58,8 @@ MonoBehaviour:
         yPos: 0.4
         width: 300
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 8300000, guid: f6f1bb6f53955bb48a82163279266a68,
+        type: 3}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 8dff1f07f4971ef4a8c33a3e95657c17,
         type: 2}
@@ -69,24 +72,25 @@ MonoBehaviour:
         yPos: 0.4
         width: 300
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: As Tracey winks and leaves...
       Videos: []
       Textures:
       - {fileID: 2800000, guid: 2f72b33b34ffdda41b5694685f8034bd, type: 3}
-      Texture: {fileID: 2800000, guid: 2f72b33b34ffdda41b5694685f8034bd, type: 3}
+      DialogClips: []
       Text: ...Mackenzie hands you a card.
     - Title: '"Daddy?  Step-mother told me...'
       Videos:
       - {fileID: 32900000, guid: f46d372873736504ca00b1766896220e, type: 3}
       Textures: []
-      Texture: {fileID: 0}
+      DialogClips: []
       Text: ...to remind you that the age of consent is..."
     - Title: It is all you need.
       Videos:
       - {fileID: 32900000, guid: d0703504b8fccd34386e105140858e56, type: 3}
       Textures: []
-      Texture: {fileID: 0}
+      DialogClips: []
       Text: 'As you claim this prize, you are as pleased with the cooperation of
         your trophy wife as you are with the submission of the now deflowered teenage
         daughter of your defeated rival.  It is a sublime kind of pleasure that is
@@ -108,6 +112,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -138,6 +144,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0

@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 18456f67-427c-467a-97a4-6204058b323f
   Name: Take control of Holly
+  AlertNew: 1
   Category: 2
   Requirements:
     RequiredPower: 0
@@ -41,6 +42,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -54,6 +56,9 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 8300000, guid: b52e3e9d3b960a34eab59790d72ac79d,
+        type: 3}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
       Text: I think so.
@@ -63,6 +68,8 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
       Text: Tell me why?
@@ -72,6 +79,8 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
       Text: You want to do things to me and if I don't say yes, you'll fire my mum.
@@ -81,6 +90,8 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
       Text: What a bright girl!  And your answer?
@@ -90,6 +101,8 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
       Text: Yes-- I'll do what you say.  Please don't fire my mum and please don't
@@ -100,11 +113,14 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Like her mother, you sense...
       Videos:
       - {fileID: 32900000, guid: 8bdbb39a766a73c4c8f262859af4c07a, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: ...a tough survivor behind that angry little frown!
     Effect:
       NpcEffects: []
@@ -124,6 +140,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -131,6 +149,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -153,6 +172,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -160,4 +181,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1
