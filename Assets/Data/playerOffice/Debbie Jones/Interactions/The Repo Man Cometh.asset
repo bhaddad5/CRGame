@@ -39,6 +39,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -55,6 +56,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -68,6 +70,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -80,6 +83,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -96,17 +100,21 @@ MonoBehaviour:
         width: 375
       OptionalAudioClip: {fileID: 8300000, guid: 9296bd1ad1e3a624eb574e1049a86273,
         type: 3}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: What a shame.  You remember...
       Videos:
       - {fileID: 32900000, guid: 42a53ccabb5138c4ebf9f00442f97f32, type: 3}
       Textures: []
+      DialogClips: []
       Text: ...how proud she was when she drove it off the lot.  At least she'll
         have the memories!
     - Title: With her poor credit rating...
       Videos:
       - {fileID: 32900000, guid: 564083f30027dfb44b3bfc7e33c6759e, type: 3}
       Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: bb17454d695b668488e11cd7feb2f53b, type: 3}
       Text: '...there''s no business or institution that will ever give Debbie a
         loan again.    '
     Effect:
@@ -130,6 +138,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -160,6 +170,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
