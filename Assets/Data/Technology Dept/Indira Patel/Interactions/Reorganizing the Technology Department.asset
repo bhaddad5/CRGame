@@ -39,6 +39,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -55,6 +56,8 @@ MonoBehaviour:
         yPos: 0
         width: 0
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 8300000, guid: b9b6d9f746d392d4698c60e410fa81c8,
+        type: 3}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
       Text: Well... what's the issue with Josie?  She's been a great boss.  Why was
@@ -66,6 +69,7 @@ MonoBehaviour:
         yPos: 0
         width: 0
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
       Text: 'Josie hasn''t been demoted per se.  But we were falling behind in terms
@@ -78,6 +82,7 @@ MonoBehaviour:
         yPos: 0
         width: 0
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
       Text: I didn't say that.  I was just asking a question.  I don't have any problem
@@ -89,6 +94,7 @@ MonoBehaviour:
         yPos: 0
         width: 0
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 0}
       Text: 'NOTE: Indira falls in line and is now CONTROLLED.'
@@ -99,11 +105,13 @@ MonoBehaviour:
         yPos: 0
         width: 0
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: She's not phased...
       Videos:
       - {fileID: 32900000, guid: f3f81237a7c3881488fdc19f2c64d600, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: ...by this change in corporate weather.  She'll prove useful.
     Effect:
       NpcEffects: []
@@ -123,6 +131,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -153,6 +163,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0

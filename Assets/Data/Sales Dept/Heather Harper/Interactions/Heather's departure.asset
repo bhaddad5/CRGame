@@ -40,6 +40,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -55,6 +56,9 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 8300000, guid: de04e51bc2f162f418f0bbc1954fcbce,
+        type: 3}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
       Text: All packed?  Ready to go?
@@ -64,6 +68,8 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
       Text: Yes-- and thank you.  Booking me First Class was an unexpected but very
@@ -75,6 +81,8 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
       Text: What possible regret could you have?  Your life is about to change in
@@ -86,6 +94,8 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
       Text: And I have you to thank for all that.  No, it's just-- well, I thought
@@ -97,11 +107,14 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: You're touched by Heather's...
       Videos:
       - {fileID: 32900000, guid: cce08ce14e7cdf64b80d43a249766a01, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: ...unexpected hint of a revelation.  A pity she waited so long, but she's
         a proud girl-- something her new owner will no doubt enjoy breaking her of!
     Effect:
@@ -121,6 +134,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -151,6 +166,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0

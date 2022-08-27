@@ -39,6 +39,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -55,6 +56,8 @@ MonoBehaviour:
         yPos: 0.4
         width: 310
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 8300000, guid: b9b6d9f746d392d4698c60e410fa81c8,
+        type: 3}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 887ea77e488dfe645ac479235976bdd4,
         type: 2}
@@ -67,6 +70,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 310
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 887ea77e488dfe645ac479235976bdd4,
         type: 2}
@@ -80,6 +84,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 310
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 887ea77e488dfe645ac479235976bdd4,
         type: 2}
@@ -92,6 +97,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 310
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 887ea77e488dfe645ac479235976bdd4,
         type: 2}
@@ -105,11 +111,13 @@ MonoBehaviour:
         yPos: 0.4
         width: 310
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: You're jealous of...
       Videos:
       - {fileID: 32900000, guid: bd99722012688bb4686716e7a74d9a8f, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: ...the hacker Maxwell.  She's a hell of a woman.
     Effect:
       NpcEffects: []
@@ -128,6 +136,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -158,6 +168,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0

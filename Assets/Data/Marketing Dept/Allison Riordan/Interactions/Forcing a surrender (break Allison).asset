@@ -44,6 +44,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -61,6 +62,9 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 8300000, guid: a4bb614939efec14c98b5e7937c3973e,
+        type: 3}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: d5da105764ee21941942e88a7651e80e,
         type: 2}
@@ -73,6 +77,8 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: d5da105764ee21941942e88a7651e80e,
         type: 2}
@@ -85,6 +91,8 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: d5da105764ee21941942e88a7651e80e,
         type: 2}
@@ -97,11 +105,14 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: You can tell that as much as...
       Videos:
       - {fileID: 32900000, guid: e723be6f4942a9145900116244036c00, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: '...Allison says she hates these new rules, she actually loves the security
         they wrap her in.  '
     Effect:
@@ -122,6 +133,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -152,6 +165,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
