@@ -40,6 +40,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 1
   PreviewEffect: 1
   Result:
@@ -57,8 +58,8 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
-      OptionalAudioClip: {fileID: 8300000, guid: 211876b058d6bd240b1085af92a66120,
-        type: 3}
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -70,7 +71,9 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
-      OptionalAudioClip: {fileID: 0}
+      OptionalAudioClip: {fileID: 8300000, guid: 211876b058d6bd240b1085af92a66120,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -86,6 +89,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -98,8 +102,8 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
-      OptionalAudioClip: {fileID: 8300000, guid: a257c203ad72e944aa90c9db7ced30f9,
-        type: 3}
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: As you point out...
       Videos:
@@ -114,6 +118,8 @@ MonoBehaviour:
       - {fileID: 32900000, guid: 40675039995038f40a97bef28896f640, type: 3}
       - {fileID: 32900000, guid: 5870be6255a1cc142b3b67c30392d222, type: 3}
       Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: a257c203ad72e944aa90c9db7ced30f9, type: 3}
       Text: ...her Appearance Policy lapse and the demerit that accompanies it, Debbie
         stews in impotent frustration, forced to finally acknowledge her breach and
         promise that "it won't happen again, Mr. {LastName}-- I promise!"
@@ -126,6 +132,7 @@ MonoBehaviour:
       - {fileID: 32900000, guid: 3d86dbcbd41ecd340ac3a3ddefcf9da7, type: 3}
       - {fileID: 32900000, guid: 71fc5b701b920d84a918e1870fd8cea0, type: 3}
       Textures: []
+      DialogClips: []
       Text: '...and the paycheck deductions they impose, Debbie is forced to draw
         on her savings to make ends meet.  It is quickly becoming a losing battle!  '
     Effect:
@@ -149,6 +156,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -173,6 +182,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -186,11 +196,14 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: You sense Debbie is...
       Videos:
       - {fileID: 32900000, guid: 18888b635b3f117499d30603ca0bd734, type: 3}
       Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: 2500650050f0f2948a142c6c14a13b10, type: 3}
       Text: '...smirking at having avoided an Appearance Policy infraction.  She
         was too quick for you this time! '
     Effect:
@@ -210,6 +223,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
