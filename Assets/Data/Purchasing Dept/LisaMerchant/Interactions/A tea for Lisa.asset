@@ -21,7 +21,8 @@ MonoBehaviour:
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 68e8e40c0824b2f429247ecb428cb98d, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -38,40 +39,51 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 1
+    Items: 
   Repeatable: 0
   PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7e462278cce38214a924d25dd035e5b8,
+        type: 2}
       Text: Can I get you something from the kitchen?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 403ae2e6934b11346b2cd6dfa85a5211,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.36
+        yPos: 0.45
+        width: 415
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7e462278cce38214a924d25dd035e5b8,
+        type: 2}
       Text: Oh, would you?  Some tea-- peppermint-- would be lovely!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 403ae2e6934b11346b2cd6dfa85a5211,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.36
+        yPos: 0.45
+        width: 415
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: You dump the Hornical in and...
       Videos:
       - {fileID: 32900000, guid: 5fe21ce082b36a14abf6322f0e7eca5a, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: ...it seems to have an immediate effect.  After a few sips, Lisa is flushed
         and looks at you in a combination of alarm and arousal.  It has hit her harder
         than usual, but each target responds differently.  She'll be more malleable
         now.
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 7e462278cce38214a924d25dd035e5b8,
+          type: 2}
         AmbitionEffect: -30
         PrideEffect: 0
       EgoEffect: 0
@@ -89,6 +101,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -119,6 +133,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
