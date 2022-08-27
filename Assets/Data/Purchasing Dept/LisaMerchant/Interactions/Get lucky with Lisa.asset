@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: c785729d-24f0-44c9-af11-f55c7f3be8ff
   Name: Get lucky with Lisa
+  AlertNew: 1
   Category: 3
   Requirements:
     RequiredPower: 0
@@ -38,6 +39,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -54,6 +56,8 @@ MonoBehaviour:
         xPos: 0.36
         yPos: 0.45
         width: 415
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 7e462278cce38214a924d25dd035e5b8,
         type: 2}
@@ -65,6 +69,8 @@ MonoBehaviour:
         xPos: 0.36
         yPos: 0.45
         width: 415
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 7e462278cce38214a924d25dd035e5b8,
         type: 2}
@@ -76,11 +82,15 @@ MonoBehaviour:
         xPos: 0.36
         yPos: 0.45
         width: 415
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Lisa practically melts in your arms!
       Videos:
       - {fileID: 32900000, guid: a4f8250b7db8fb44f93a872bf656f020, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: 730238bd89ecaf247861432aaf157c38, type: 3}
       Text: It is obvious she's been alone for a loooong time.
     Effect:
       NpcEffects:
@@ -103,6 +113,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -110,6 +122,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 1
   ProbabilityOfFailureResult: 0.33
   FailureResult:
@@ -125,6 +138,8 @@ MonoBehaviour:
         xPos: 0.36
         yPos: 0.45
         width: 415
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 7e462278cce38214a924d25dd035e5b8,
         type: 2}
@@ -137,6 +152,8 @@ MonoBehaviour:
         xPos: 0.36
         yPos: 0.45
         width: 415
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
     Effect:
       NpcEffects: []
@@ -155,6 +172,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -162,4 +181,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1
