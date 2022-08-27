@@ -39,6 +39,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -56,6 +57,7 @@ MonoBehaviour:
         width: 375
       OptionalAudioClip: {fileID: 8300000, guid: 507318232978c53499ca477a475fb8e9,
         type: 3}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 0041cc9001d9b5e46817e841349ddd12,
         type: 2}
@@ -70,6 +72,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 0041cc9001d9b5e46817e841349ddd12,
         type: 2}
@@ -85,6 +88,7 @@ MonoBehaviour:
         width: 375
       OptionalAudioClip: {fileID: 8300000, guid: 3f4e9278ec6268346a0bc1270fcab16a,
         type: 3}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 0041cc9001d9b5e46817e841349ddd12,
         type: 2}
@@ -99,6 +103,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 0041cc9001d9b5e46817e841349ddd12,
         type: 2}
@@ -113,6 +118,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 0041cc9001d9b5e46817e841349ddd12,
         type: 2}
@@ -126,6 +132,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 0041cc9001d9b5e46817e841349ddd12,
         type: 2}
@@ -139,16 +146,21 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: You won't insist she wear it for a day or so.
       Videos: []
       Textures:
       - {fileID: 2800000, guid: 1d2c4828362c07047be8438aef92404a, type: 3}
+      DialogClips:
+      - {fileID: 8300000, guid: d071f4fe92c2ea7438df54d2b52a849b, type: 3}
       Text: 'After that, you''ll remind her she''s expected to wear it at all times. '
     - Title: NEI profile activity suggests that Debbie...
       Videos:
       - {fileID: 32900000, guid: df9b4c215a2e70244ab49542d133afae, type: 3}
       Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: 3252551c2f0db60439c5be132bbc63fc, type: 3}
       Text: '...has applied for numerous executive jobs since being demoted.  She''s
         been rejected in every instance.  Your rating has destroyed any chance she
         might have had at securing a new executive job. '
@@ -169,6 +181,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -199,6 +213,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0

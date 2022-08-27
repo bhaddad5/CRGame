@@ -39,6 +39,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -56,6 +57,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -72,6 +74,7 @@ MonoBehaviour:
         width: 375
       OptionalAudioClip: {fileID: 8300000, guid: 6504675ae15dfbd4cae0003e2cf8d6bf,
         type: 3}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -84,6 +87,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -99,6 +103,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -112,6 +117,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -128,7 +134,8 @@ MonoBehaviour:
         width: 375
       OptionalAudioClip: {fileID: 8300000, guid: ad7d546703b062e4daf4ba93946e1841,
         type: 3}
-    - CurrSpeaker: 0
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
       Text: "Of course.  As for the policy, I\u2019m pleased to have helped author
@@ -142,13 +149,15 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
-      OptionalAudioClip: {fileID: 8300000, guid: 36538ab5d86c143438d189cd0ce11775,
-        type: 3}
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: She's pretending not to be bothered, BUT
       Videos:
       - {fileID: 32900000, guid: cbb47e88c2e73d04ba1445f23e1da198, type: 3}
       Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: 36538ab5d86c143438d189cd0ce11775, type: 3}
       Text: ...having to comply with a dress code designed by you has got to be gnawing
         at her.  In fact, her expression betrays how traumatic the entire transition
         process from Management Trainee to Junior Secretary has been for Ms. Deborah
@@ -174,6 +183,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -204,6 +215,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0

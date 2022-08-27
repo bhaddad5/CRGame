@@ -39,6 +39,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -55,6 +56,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 0041cc9001d9b5e46817e841349ddd12,
         type: 2}
@@ -68,13 +70,14 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
-      OptionalAudioClip: {fileID: 8300000, guid: efba5367c7781e041a876a23bcee0db5,
-        type: 3}
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Deborah then begins to describe...
       Videos:
       - {fileID: 32900000, guid: b3eae93ea306a5847b2d31c45be0adc1, type: 3}
       Textures: []
+      DialogClips: []
       Text: ...how she will effectively take on consulting management covering half
         the company, leaving you with the other half to deal with.  She is assuming
         the role will be more of a job sharing proposition than anything else.
@@ -82,30 +85,35 @@ MonoBehaviour:
       Videos:
       - {fileID: 32900000, guid: b478cb656999d264aa4e945e713a55f9, type: 3}
       Textures: []
+      DialogClips: []
       Text: '"You''ll be covering my inbound calls and fielding any questions you
         can answer in my absence."'
     - Title: '"You''ll be handling all my correspondence."'
       Videos:
       - {fileID: 32900000, guid: 4163982843243df418cd628951df8391, type: 3}
       Textures: []
+      DialogClips: []
       Text: '"Do you know short hand?  I think it will come in handy, especially
         for dictation."'
     - Title: '"I want the filing system redone."'
       Videos:
       - {fileID: 32900000, guid: 2c056dbabcba1d34d827acbe66e4e848, type: 3}
       Textures: []
+      DialogClips: []
       Text: '"Susan was a hopeless organizer.  I want to be able for you to find
         any file I need within minutes."'
     - Title: '"Of course, once you''ve proven...'
       Videos:
       - {fileID: 32900000, guid: df424672f58dbca4ebd8adb22826a585, type: 3}
       Textures: []
+      DialogClips: []
       Text: '"...you are able to carry out basic duties, I may assign you something
         a bit more interesting."'
     - Title: '"I''d advise spending...'
       Videos: []
       Textures:
       - {fileID: 2800000, guid: 951b1a9ac522f4f4caad2aa4e822e0e5, type: 3}
+      DialogClips: []
       Text: '"...a lot of time familiarizing yourself with basic secretarial requirements. 
         This handbook should prove invaluable to you in your new role. I expect before
         too long you''ll have it memorized from beginning to end."'
@@ -113,6 +121,8 @@ MonoBehaviour:
       Videos:
       - {fileID: 32900000, guid: ad919496a220e4544bdbaadfb35bb9b6, type: 3}
       Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: efba5367c7781e041a876a23bcee0db5, type: 3}
       Text: ...visibly deflate as she begins to understand her own ideas have been
         completely discounted and that her new duties will be far more mundane that
         she had initially hoped.  She's used to setting the agenda- not following
@@ -134,6 +144,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -164,6 +176,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
