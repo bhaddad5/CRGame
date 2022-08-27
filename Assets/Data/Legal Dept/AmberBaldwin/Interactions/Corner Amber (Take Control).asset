@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 3af94cfb-b68a-4b64-a5c4-d2c3d7bdbce7
   Name: Corner Amber (Take Control)
+  AlertNew: 1
   Category: 2
   Requirements:
     RequiredPower: 0
@@ -42,6 +43,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -58,6 +60,9 @@ MonoBehaviour:
         xPos: 0.35
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 8300000, guid: 3c67bd9c07fa12f4ea1616c3904a7608,
+        type: 3}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 3ee00e5eebd58bf4d942df330f12e4e2,
         type: 2}
@@ -69,6 +74,8 @@ MonoBehaviour:
         xPos: 0.35
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 3ee00e5eebd58bf4d942df330f12e4e2,
         type: 2}
@@ -83,6 +90,8 @@ MonoBehaviour:
         xPos: 0.35
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 3ee00e5eebd58bf4d942df330f12e4e2,
         type: 2}
@@ -95,11 +104,14 @@ MonoBehaviour:
         xPos: 0.35
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: As she breaks down into tears...
       Videos:
       - {fileID: 32900000, guid: 28ece64f42db8e44784b2a78f9ef6814, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: ...you watch impassively.  She'd do well to save her tears for what is
         to come!
     Effect:
@@ -121,6 +133,8 @@ MonoBehaviour:
       TrophiesClaimedReferences: []
       MissionsToComplete:
       - {fileID: 11400000, guid: fadb2508c9963fc409d434122be0590c, type: 2}
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -128,6 +142,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -150,6 +165,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -157,5 +174,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
   New: 1

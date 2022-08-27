@@ -44,6 +44,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -60,6 +61,9 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 8300000, guid: 29793c82940f21f48b6206002dc5fe1b,
+        type: 3}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
         type: 2}
@@ -75,11 +79,14 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Your new boss will be here shortly!
       Videos:
       - {fileID: 32900000, guid: 5c43b0c701e7f814dab1e54945294b74, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: 
     Effect:
       NpcEffects: []
@@ -99,6 +106,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -129,6 +138,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0

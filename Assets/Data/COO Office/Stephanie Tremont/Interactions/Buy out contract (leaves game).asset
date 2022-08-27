@@ -49,6 +49,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -67,6 +68,8 @@ MonoBehaviour:
         yPos: 0.4
         width: 320
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 8300000, guid: 31cdf1789d53ceb48a7498bd1b7f41d0,
+        type: 3}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ebaaad10ed98bd74d816bdeeb69716c5,
         type: 2}
@@ -81,6 +84,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 320
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ebaaad10ed98bd74d816bdeeb69716c5,
         type: 2}
@@ -95,6 +99,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 320
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: ebaaad10ed98bd74d816bdeeb69716c5,
         type: 2}
@@ -108,16 +113,19 @@ MonoBehaviour:
         yPos: 0.4
         width: 320
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Stephanie's resignation leads...
       Videos:
       - {fileID: 32900000, guid: a9d7a4092e917b9489f26c8b5e2795e5, type: 3}
       Textures: []
+      DialogClips: []
       Text: ...the business news the next day!
     - Title: By removing one of...
       Videos:
       - {fileID: 32900000, guid: b325b7153520ef94fa4172185f9bff00, type: 3}
       Textures: []
+      DialogClips: []
       Text: ...the most powerful pieces on the board, you've entered the end game.
     Effect:
       NpcEffects: []
@@ -139,6 +147,8 @@ MonoBehaviour:
       TrophiesClaimedReferences: []
       MissionsToComplete:
       - {fileID: 11400000, guid: d4617e42942cac74e9aa888a0ee9f56f, type: 2}
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -169,6 +179,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0

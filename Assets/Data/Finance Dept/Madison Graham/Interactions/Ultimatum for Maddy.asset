@@ -45,6 +45,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -61,6 +62,8 @@ MonoBehaviour:
         yPos: 0.4
         width: 350
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 8300000, guid: fbb3ae99aaa32ea42994be7e97679007,
+        type: 3}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 2447b5794cc10d448b75441484c22173,
         type: 2}
@@ -76,11 +79,13 @@ MonoBehaviour:
         yPos: 0.4
         width: 350
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Poor Madison!  Her boss is...
       Videos:
       - {fileID: 32900000, guid: 8070926a07af0b94aa5322c2e0685a1e, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: ...implacable and she's just run out of options!  She prays for a solution,
         for all that will help her!
     Effect:
@@ -104,6 +109,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -134,6 +141,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0

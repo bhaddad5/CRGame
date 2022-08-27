@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: c4bd7dfa-7425-4af5-a4d7-384e84bcb4b8
   Name: Take control of Gemma Hamilton
+  AlertNew: 1
   Category: 2
   Requirements:
     RequiredPower: 0
@@ -42,6 +43,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -57,6 +59,9 @@ MonoBehaviour:
         xPos: 0.45
         yPos: 0.36
         width: 340
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 8300000, guid: 07c59146ef07e2d4fa8696fe4a76f2c0,
+        type: 3}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: d248b00fc853b4845a5da195f269d404,
         type: 2}
@@ -68,6 +73,8 @@ MonoBehaviour:
         xPos: 0.45
         yPos: 0.36
         width: 340
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: d248b00fc853b4845a5da195f269d404,
         type: 2}
@@ -79,6 +86,8 @@ MonoBehaviour:
         xPos: 0.45
         yPos: 0.36
         width: 340
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: d248b00fc853b4845a5da195f269d404,
         type: 2}
@@ -91,6 +100,8 @@ MonoBehaviour:
         xPos: 0.45
         yPos: 0.36
         width: 340
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: d248b00fc853b4845a5da195f269d404,
         type: 2}
@@ -104,6 +115,8 @@ MonoBehaviour:
         xPos: 0.45
         yPos: 0.36
         width: 340
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: d248b00fc853b4845a5da195f269d404,
         type: 2}
@@ -116,6 +129,8 @@ MonoBehaviour:
         xPos: 0.45
         yPos: 0.36
         width: 340
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
     Effect:
       NpcEffects: []
@@ -135,6 +150,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -142,6 +159,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -164,6 +182,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -171,5 +191,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
   New: 1
