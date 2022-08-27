@@ -39,6 +39,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -56,6 +57,7 @@ MonoBehaviour:
         yPos: 0.44
         width: 400
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
         type: 2}
@@ -69,6 +71,7 @@ MonoBehaviour:
         yPos: 0.44
         width: 400
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
         type: 2}
@@ -82,19 +85,29 @@ MonoBehaviour:
         yPos: 0.44
         width: 400
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: '"I''ll be out of the office for a bit, but I''ll be back this afternoon."'
       Videos:
       - {fileID: 32900000, guid: 3bf3452dddb339a49b7a28209c766e4e, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: You really ought to communicate this with Carole in HR.  Tracey may become
         a danger to herself and others!
     - Title: As her meds fail...
       Videos:
       - {fileID: 32900000, guid: 1f7ac8503d06f1c469dee9011b60e3e7, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: ...to help her control her inner demons, you suspect Tracey's behavior
         to become more and more erratic in the coming days.
+    - Title: Tracey's brain...
+      Videos:
+      - {fileID: 32900000, guid: 0d5dd40553f8b914a95f0d42a8631946, type: 3}
+      Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: 254dc281fcad5da41bda0885f17d67bd, type: 3}
+      Text: ...begins to betray her, as neurons pop and synapses fail to connect!
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
@@ -116,6 +129,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -146,6 +161,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
