@@ -41,6 +41,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -56,6 +57,8 @@ MonoBehaviour:
         xPos: 0.6
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: f42fb56e29e0b374386530f7e2189a62,
         type: 2}
@@ -67,6 +70,8 @@ MonoBehaviour:
         xPos: 0.6
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: f42fb56e29e0b374386530f7e2189a62,
         type: 2}
@@ -79,6 +84,8 @@ MonoBehaviour:
         xPos: 0.6
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: f42fb56e29e0b374386530f7e2189a62,
         type: 2}
@@ -91,7 +98,16 @@ MonoBehaviour:
         xPos: 0.6
         yPos: 0.4
         width: 300
-    OptionalPopups: []
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: Now that you've made it...
+      Videos:
+      - {fileID: 32900000, guid: 36112f96cf029494d990c4c725f070c5, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: ...into the ranks of Artemis management, you see first hand the perks
+        of corporate entitlements!
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -109,6 +125,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -139,6 +157,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
