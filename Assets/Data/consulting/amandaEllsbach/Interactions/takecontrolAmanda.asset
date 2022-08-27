@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: c6c53a3b-0284-4625-b364-a3305468f81f
   Name: Take Control of Amanda Ellsbach
+  AlertNew: 1
   Category: 2
   Requirements:
     RequiredPower: 0
@@ -42,6 +43,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 0
   PreviewEffect: 0
   Result:
@@ -57,6 +59,9 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.37
         width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 8300000, guid: 79a3e37069ad026448d913b577279ff1,
+        type: 3}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: c6fc9aa27a6291a41a2090f2db3a94e1,
         type: 2}
@@ -68,6 +73,8 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.37
         width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: c6fc9aa27a6291a41a2090f2db3a94e1,
         type: 2}
@@ -80,6 +87,8 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.37
         width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: c6fc9aa27a6291a41a2090f2db3a94e1,
         type: 2}
@@ -91,11 +100,14 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.37
         width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Take Control of Amanda
       Videos:
       - {fileID: 32900000, guid: aa26aa77e4038d24eb1fe8194348fc5a, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: The kid is dazed and sort of swoons as the implications of what's happened
         to her sink in.  She's a bright girl, if nothing else, and she's experiencing
         a rush of anxiety as you now intrude on her life plans like an occupying
@@ -118,6 +130,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -125,6 +139,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -147,6 +162,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -154,5 +171,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
   New: 1

@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 89bf2ab7-29a9-40f1-8682-6f34902410f0
   Name: Reveal Donald Fairchild Video
+  AlertNew: 1
   Category: 2
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 3b3da77ab117479488d9fea95c4b047f, type: 2}
     RequiredNotCompletedInteractions: []
@@ -39,6 +39,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 0
   PreviewEffect: 0
   Result:
@@ -47,26 +48,56 @@ MonoBehaviour:
       OptionalNpcReference: {fileID: 0}
       Text: I thought I'd better let you know about this before the word gets out.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 8300000, guid: 8c421e92dd2e4a54d9ed3b793986c5dd,
+        type: 3}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757,
         type: 2}
       Text: This is so humiliating.  You have to keep this between us.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
       Text: I'll try.  What will you do now?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 7b9d5e7d5ad624a4592f3aaff240a757,
         type: 2}
       Text: The engagement is over.  Beyond that, I don't know what to do.  This
         changes everything.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Found on SecretHookups.com
       Videos:
       - {fileID: 32900000, guid: b9656e51cdb640541ae58bdb49dd5fa4, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: "Anne's utterly crushed.  With the discovery of the video of her cheating
         fianc\xE9 public, she's soon to become a laughingstock.  She's as vulnerable
         as a turtle on its back.  She's close to a collapse and is ripe for exploitation."
@@ -91,6 +122,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -98,11 +131,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -125,6 +154,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -132,9 +163,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
   Completed: 0
+  New: 1
