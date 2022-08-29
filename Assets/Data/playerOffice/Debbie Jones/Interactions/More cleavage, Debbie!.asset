@@ -39,7 +39,8 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
-  Repeatable: 0
+    Items: 
+  Repeatable: 1
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -55,6 +56,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -67,6 +69,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -79,21 +82,25 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
-      OptionalAudioClip: {fileID: 8300000, guid: 1b1452ae5b702de4288ebd731debdd88,
-        type: 3}
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: '"How many buttons, Mr. {LastName}?"'
       Videos:
+      - {fileID: 32900000, guid: c9d98594c525f1042a0aafc21fa18ad3, type: 3}
       - {fileID: 32900000, guid: 64dfa5bc59998a84eb72b70e3e9821fd, type: 3}
+      - {fileID: 32900000, guid: 3fd7e0541d70c144c956e5e81a88ab98, type: 3}
+      - {fileID: 32900000, guid: 45180db959efcf74c8f3bed3e951a661, type: 3}
+      - {fileID: 32900000, guid: 3d199647445726a4dafb2373ca35d642, type: 3}
+      - {fileID: 32900000, guid: 14b9bbf64ef2a044eac73d9fdbe78063, type: 3}
+      - {fileID: 32900000, guid: b3223e8abcfe4b54296e5cf526f57bfa, type: 3}
       Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: 1b1452ae5b702de4288ebd731debdd88, type: 3}
       Text: One more-- no, two should do it.  Nice...
     Effect:
-      NpcEffects:
-      - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-          type: 2}
-        AmbitionEffect: 0
-        PrideEffect: -2
-      EgoEffect: 0
+      NpcEffects: []
+      EgoEffect: 10
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -108,6 +115,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -138,6 +147,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
