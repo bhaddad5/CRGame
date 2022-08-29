@@ -11,6 +11,7 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private TMP_Text Text;
 		[SerializeField] private GameObject NewIndicator;
 		[SerializeField] private Image TextBackground;
+		[SerializeField] private Image ControlledImage;
 
 		private Location loc;
 		private Vector2 mainMapSize;
@@ -42,6 +43,9 @@ namespace Assets.GameModel.UiDisplayers
 				TextBackground.color = Button.colors.normalColor;
 			else
 				TextBackground.color = Button.colors.disabledColor;
+
+			if(ControlledImage != null)
+				ControlledImage.gameObject.SetActive(loc.Controlled);
 		}
 
 		private Vector3 ConvertMapPos(Vector2 mapPos)

@@ -19,6 +19,9 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private Transform QuickAccessLocationsParent;
 
 		[SerializeField] private RegionMapLocationEntryBindings _locationButtonPrefab;
+		[SerializeField] private RegionMapLocationEntryBindings _locationShopButtonPrefab;
+		[SerializeField] private RegionMapLocationEntryBindings _locationHouseButtonPrefab;
+		[SerializeField] private RegionMapLocationEntryBindings _locationOfficeButtonPrefab;
 		[SerializeField] private RegionMapLocationEntryBindings _quickAccessButtonPrefab;
 		[SerializeField] private LocationScreenBindings _locationUiPrefab;
 
@@ -48,7 +51,15 @@ namespace Assets.GameModel.UiDisplayers
 
 			foreach (Location loc in region.Locations)
 			{
-				var d = Instantiate(_locationButtonPrefab);
+				var prefab = _locationButtonPrefab;
+				if (loc.locationType == Location.LocationType.Store)
+					prefab = _locationShopButtonPrefab;
+				else if (loc.locationType == Location.LocationType.Office)
+					prefab = _locationOfficeButtonPrefab;
+				else if (loc.locationType == Location.LocationType.Home)
+					prefab = _locationHouseButtonPrefab;
+
+				var d = Instantiate(prefab);
 				d.Setup(loc, this, mgm);
 				d.transform.SetParent(LocationsParent, false);
 			}

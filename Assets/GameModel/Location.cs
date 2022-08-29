@@ -19,6 +19,17 @@ namespace Assets.GameModel
 		public Texture2D BackgroundImage;
 		public AudioClip OptionalBackgroundAudio;
 
+		public enum LocationType
+		{
+			Misc,
+			Office,
+			Store,
+			Home,
+			Fun
+		}
+
+		public LocationType locationType;
+
 		public Vector2 UiPosition;
 
 		public List<Interaction> VisibilityInteractions;
