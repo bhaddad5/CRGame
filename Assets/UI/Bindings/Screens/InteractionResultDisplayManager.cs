@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Assets.GameModel;
 using Assets.GameModel.UiDisplayers;
+using Assets.UI_System;
 using UnityEngine;
 
 public class InteractionResultDisplayManager
@@ -47,6 +48,11 @@ public class InteractionResultDisplayManager
 		if (currDialogsToShow.Count > 0)
 		{
 			var dialog = currDialogsToShow[0];
+
+			AudioHandler.Instance.PlayDialogClip(dialog.OptionalAudioClip);
+			if (dialog.OptionalStartMusicClip != null)
+				AudioHandler.Instance.PlayOverridingMusicTrack(dialog.OptionalStartMusicClip);
+
 			currDialogsToShow.RemoveAt(0);
 			GameObject.Instantiate(UiPrefabReferences.Instance.GetPrefabByName("Dialog Screen")).GetComponent<DialogScreenBindings>().Setup(dialog, mgm, HandleNextDialog);
 		}
@@ -68,6 +74,7 @@ public class InteractionResultDisplayManager
 			};
 			currTrophiesToShow.RemoveAt(0);
 
+			AudioHandler.Instance.PlayOverridingMusicTrack(mgm.TrophyAudioClip);
 			var popupParent = GameObject.Instantiate(UiPrefabReferences.Instance.PopupOverlayParent);
 			GameObject.Instantiate(UiPrefabReferences.Instance.GetPrefabByName("Popup Display"), popupParent.transform).GetComponent<PopupBindings>().Setup(popup, completedCount, mgm, HandleNextDialog);
 		}
@@ -81,6 +88,7 @@ public class InteractionResultDisplayManager
 			};
 			currMissionsToShow.RemoveAt(0);
 
+			AudioHandler.Instance.PlayOverridingMusicTrack(mgm.MissionAudioClip);
 			var popupParent = GameObject.Instantiate(UiPrefabReferences.Instance.PopupOverlayParent);
 			GameObject.Instantiate(UiPrefabReferences.Instance.GetPrefabByName("Popup Display"), popupParent.transform).GetComponent<PopupBindings>().Setup(popup, completedCount, mgm, HandleNextDialog);
 		}

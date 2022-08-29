@@ -86,10 +86,7 @@ public class DialogScreenBindings : MonoBehaviour
 			NpcBackground.gameObject.SetActive(false);
 			BlackBackground.gameObject.SetActive(false);
 		}
-
-		if(dialog.OptionalAudioClip != null)
-			AudioHandler.Instance.PlayDialogClip(dialog.OptionalAudioClip);
-
+		
 		foreach (var c in textToShow)
 		{
 			DialogText.text += c;

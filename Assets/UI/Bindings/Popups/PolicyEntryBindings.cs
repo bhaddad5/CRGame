@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using Assets.UI_System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -27,6 +29,7 @@ namespace Assets.GameModel.UiDisplayers
 
 		public void ActivatePolicy()
 		{
+			AudioHandler.Instance.PlayOverridingMusicTrack(mgm.PolicyAudioClip);
 			policy.Active = true;
 			policy.Cost.SubtractCost(mgm);
 			policy.Effect.ExecuteEffect(mgm);

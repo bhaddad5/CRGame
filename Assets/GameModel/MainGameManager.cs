@@ -15,10 +15,15 @@ namespace Assets.GameModel
 		public int Patch;
 		public string VersionName;
 
-		[SerializeField]
-		private GameData DefaultGameData;
-		[HideInInspector]
-		public GameData Data;
+		[SerializeField] private GameData DefaultGameData;
+		[HideInInspector] public GameData Data;
+
+		[SerializeField] private AudioClip missionAudioClip;
+		public AudioClip MissionAudioClip => missionAudioClip;
+		[SerializeField] private AudioClip trophyAudioClip;
+		public AudioClip TrophyAudioClip => trophyAudioClip;
+		[SerializeField] private AudioClip policyAudioClip;
+		public AudioClip PolicyAudioClip => policyAudioClip;
 
 		public string DefaultFirstName => DefaultGameData.FirstName;
 		public string DefaultLastName => DefaultGameData.LastName;

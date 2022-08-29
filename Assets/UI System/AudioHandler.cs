@@ -5,11 +5,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Assets.UI_System
 {
 	public class AudioHandler : MonoBehaviour
 	{
+		#region Setup
 		public static AudioHandler Instance => instance;
 
 		private static AudioHandler instance;
@@ -31,9 +33,12 @@ namespace Assets.UI_System
 			AmbientSource.loop = true;
 
 			MusicSource = Instantiate(SourcePrefab);
-			MusicSource.volume = .6f;
-			MusicSource.loop = true;
+			MusicSource.volume = musicVolume;
 		}
+
+		#endregion
+
+		#region Dialog
 
 		public void PlayDialogClip(AudioClip clip)
 		{
@@ -42,67 +47,95 @@ namespace Assets.UI_System
 				DialogSource.clip = clip;
 				DialogSource.Play();
 			}
-			
+
 		}
 
-		private Coroutine playNextAudioClip = null;
-		private List<AudioClip> currMainTracks = new List<AudioClip>();
-		public void SetMusicTracks(List<AudioClip> tracks)
-		{
-			if (tracks.Equals(currMainTracks))
-				return;
+		#endregion
 
-			FadeToNewClip(tracks.FirstOrDefault(), MusicSource);
-		}
-
-		public void PlayOverridingMusicTrack(AudioClip clip)
-		{
-			FadeToNewClip(clip, MusicSource);
-		}
+		#region Ambience
 
 		public void SetBackgroundAmbiance(AudioClip clip)
 		{
-			FadeToNewClip(clip, AmbientSource);
+			
 		}
 
-		private Dictionary<AudioSource, Coroutine> fadeCoroutines = new Dictionary<AudioSource, Coroutine>();
-		public void FadeToNewClip(AudioClip clip, AudioSource currPlayer)
-		{
-			if (fadeCoroutines.ContainsKey(currPlayer))
-			{
-				StopCoroutine(fadeCoroutines[currPlayer]);
-				fadeCoroutines.Remove(currPlayer);
-			}
+		#endregion
 
-			fadeCoroutines[currPlayer] = StartCoroutine(FadeToClip(clip, currPlayer));
+		#region Music
+
+		private const float fadeTime = 1f;
+		private const float musicVolume = .4f;
+
+		private List<AudioClip> currAudioClips = new List<AudioClip>();
+		private bool fadeToNew = false;
+		private float fadeToNewStartTime = 0f;
+		public void SetMusicTracks(List<AudioClip> tracks)
+		{
+			if (tracks.Equals(currAudioClips))
+				return;
+
+
+			Debug.Log("Setting new Tracks " + tracks.Count);
+
+
+			currAudioClips = tracks;
+			if (MusicSource.isPlaying)
+			{
+				fadeToNew = true;
+				fadeToNewStartTime = Time.time;
+			}
 		}
 
-		private const float fadeDuration = .5f;
-		private IEnumerator FadeToClip(AudioClip clip, AudioSource currPlayer)
+
+		private bool isOverriding = false;
+		public void PlayOverridingMusicTrack(AudioClip clip)
 		{
-			float startTime = Time.time;
-
-			while (Time.time < startTime + fadeDuration)
-			{
-				var fadePercent = (Time.time - startTime) / fadeDuration;
-				MusicSource.volume = 1 - fadePercent;
-
-				yield return null;
-			}
+			Debug.Log("Play Overriding!");
 
 			MusicSource.clip = clip;
 			MusicSource.Play();
+			MusicSource.volume = musicVolume;
+			isOverriding = true;
+		}
 
-			startTime = Time.time;
-			while (Time.time < startTime + fadeDuration)
+		void Update()
+		{
+			if (!MusicSource.isPlaying)
 			{
-				var fadePercent = (Time.time - startTime) / fadeDuration;
-				MusicSource.volume = fadePercent;
-
-				yield return null;
+				isOverriding = false;
+				MusicSource.clip = currAudioClips[Random.Range(0, currAudioClips.Count)];
+				MusicSource.Play();
 			}
 
-			fadeCoroutines.Remove(currPlayer);
+			if (!isOverriding)
+			{
+				var timeSinceStart = MusicSource.time;
+				var timeTillEnd = MusicSource.clip.length - MusicSource.time;
+				if (timeTillEnd < fadeTime)
+				{
+					float newVolume = Mathf.Max(0f, 1f - (timeTillEnd / fadeTime)) * musicVolume;
+					MusicSource.volume = newVolume;
+				}
+				else if (timeSinceStart < fadeTime)
+				{
+					float newVolume = Mathf.Max(0f, (timeSinceStart / fadeTime)) * musicVolume;
+					MusicSource.volume = newVolume;
+				}
+				else if (fadeToNew)
+				{
+					var timeSinceFadeToNew = Time.time - fadeToNewStartTime;
+					float newVolume = Mathf.Max(0f, 1f - (timeSinceFadeToNew / fadeTime)) * musicVolume;
+					MusicSource.volume = newVolume;
+					if (Time.time - fadeToNewStartTime > fadeTime)
+					{
+						fadeToNew = false;
+						MusicSource.Pause();
+						return;
+					}
+				}
+			}
 		}
+
+		#endregion
 	}
 }
