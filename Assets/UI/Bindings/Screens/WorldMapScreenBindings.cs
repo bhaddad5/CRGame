@@ -18,9 +18,7 @@ namespace Assets.GameModel.UiDisplayers
 
 		[SerializeField] private WorldMapRegionEntryBindings _regionEntryPrefab;
 		[SerializeField] private RegionMapScreenBindings _regionUiPrefab;
-
-		[SerializeField] private List<AudioClip> WorldMapAudio;
-
+		
 		private MainGameManager mgm;
 		public void Setup(MainGameManager mgm, List<Region> regions)
 		{
@@ -35,8 +33,7 @@ namespace Assets.GameModel.UiDisplayers
 				d.transform.SetParent(RegionsParent, false);
 			}
 
-			if (WorldMapAudio != null)
-				AudioHandler.Instance.SetMusicTracks(WorldMapAudio);
+			AudioHandler.Instance.SetMusicTracks(mgm.IsWeekend() ? mgm.WorldWeekendAudio : mgm.WorldWeekdayAudio);
 		}
 
 		private RegionMapScreenBindings _currOpenRegion = null;
@@ -49,8 +46,6 @@ namespace Assets.GameModel.UiDisplayers
 				CameraMover.Instance.ResetCameraPos();
 				CameraMover.Instance.SetScreenSize(new Vector2(MapImage.mainTexture.width, MapImage.mainTexture.height));
 				gameObject.SetActive(true);
-				if (WorldMapAudio != null)
-					AudioHandler.Instance.SetMusicTracks(WorldMapAudio);
 				RefreshUiDisplay(mgm);
 			});
 			_currOpenRegion.RefreshUiDisplay(mgm);
@@ -69,6 +64,9 @@ namespace Assets.GameModel.UiDisplayers
 
 			if (_currOpenRegion != null)
 				_currOpenRegion.RefreshUiDisplay(mgm);
+
+			if(gameObject.activeInHierarchy)
+				AudioHandler.Instance.SetMusicTracks(mgm.IsWeekend() ? mgm.WorldWeekendAudio : mgm.WorldWeekdayAudio);
 
 			ShowTimeOfDay(mgm.Data.TurnNumber % 2 == 1);
 		}

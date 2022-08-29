@@ -25,6 +25,15 @@ namespace Assets.GameModel
 		[SerializeField] private AudioClip policyAudioClip;
 		public AudioClip PolicyAudioClip => policyAudioClip;
 
+		[SerializeField] private List<AudioClip> mainMenuAudio;
+		public List<AudioClip> MainMenuAudio => mainMenuAudio;
+
+		[SerializeField] private List<AudioClip> worldWeekdayAudio;
+		public List<AudioClip> WorldWeekdayAudio => worldWeekdayAudio;
+
+		[SerializeField] private List<AudioClip> worldWeekendAudio;
+		public List<AudioClip> WorldWeekendAudio => worldWeekendAudio;
+
 		public string DefaultFirstName => DefaultGameData.FirstName;
 		public string DefaultLastName => DefaultGameData.LastName;
 

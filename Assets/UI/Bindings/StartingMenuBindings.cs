@@ -19,8 +19,6 @@ public class StartingMenuBindings : MonoBehaviour
 
 	[SerializeField] private TMP_Text VersionText;
 
-	[SerializeField] private AudioClip MenuMusic;
-
 	private string latestSave = null;
 	void Awake()
 	{
@@ -28,8 +26,7 @@ public class StartingMenuBindings : MonoBehaviour
 		ContinueGameButton.interactable = latestSave != null;
 		VersionText.text = $"Company Man v{MainGameManager.MajorVersion}.{MainGameManager.MinorVersion}.{MainGameManager.Patch} \"{MainGameManager.VersionName}\"";
 
-		if(MenuMusic != null)
-			AudioHandler.Instance.SetMusicTracks(new List<AudioClip>(){ MenuMusic });
+		AudioHandler.Instance.SetMusicTracks(MainGameManager.MainMenuAudio);
 	}
 
 	public void NewGame()

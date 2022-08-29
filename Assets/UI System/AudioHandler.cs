@@ -71,8 +71,18 @@ namespace Assets.UI_System
 		private float fadeToNewStartTime = 0f;
 		public void SetMusicTracks(List<AudioClip> tracks)
 		{
-			if (tracks.Equals(currAudioClips))
-				return;
+			//If it's all just the same clips we don't wanna swap the list and trigger a track restart
+			if (tracks.Count == currAudioClips.Count)
+			{
+				bool sameList = true;
+				foreach (var clip in tracks)
+				{
+					if (!currAudioClips.Contains(clip))
+						sameList = false;
+				}
+				if (sameList)
+					return;
+			}
 
 
 			Debug.Log("Setting new Tracks " + tracks.Count);
@@ -103,7 +113,11 @@ namespace Assets.UI_System
 			if (!MusicSource.isPlaying)
 			{
 				isOverriding = false;
-				MusicSource.clip = currAudioClips[Random.Range(0, currAudioClips.Count)];
+				var newClip = currAudioClips[Random.Range(0, currAudioClips.Count)];
+				//Try not to repeat if we can avoid it
+				if (currAudioClips.Count > 1 && newClip == MusicSource.clip)
+					newClip = currAudioClips.First(c => c != MusicSource.clip);
+				MusicSource.clip = newClip;
 				MusicSource.Play();
 			}
 
@@ -132,6 +146,10 @@ namespace Assets.UI_System
 						MusicSource.Pause();
 						return;
 					}
+				}
+				else
+				{
+					MusicSource.volume = musicVolume;
 				}
 			}
 		}
