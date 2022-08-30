@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 9fd63f48-e739-46c9-ba9a-5487bf04a46b
   Name: How's Jackson?
+  AlertNew: 1
   Category: 0
   Requirements:
     RequiredPower: 0
@@ -38,6 +39,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -53,6 +55,8 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
         type: 2}
@@ -64,6 +68,8 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
         type: 2}
@@ -75,6 +81,8 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
         type: 2}
@@ -86,10 +94,19 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 350
-    OptionalPopups: []
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: From back channels...
+      Videos:
+      - {fileID: 32900000, guid: ec7355d08a759724c837d5bb807bcac2, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: ...you understand Jackson is an absolute gentleman around the paralegal.
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
+          type: 2}
         AmbitionEffect: -20
         PrideEffect: 0
       EgoEffect: 0
@@ -107,6 +124,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -114,6 +133,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -136,6 +156,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -143,4 +165,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1

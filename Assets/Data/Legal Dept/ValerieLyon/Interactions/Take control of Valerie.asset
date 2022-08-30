@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: ae7b411a-11ed-4411-b0a9-8e34d16dbcd5
   Name: Take control of Valerie
+  AlertNew: 1
   Category: 2
   Requirements:
     RequiredPower: 0
@@ -42,6 +43,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -59,10 +61,13 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 8300000, guid: d809181b79bd522428298243a95ffb85,
+        type: 3}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
         type: 2}
-      Text: But what about Amber?  She's my boss!  I just can't ignore her.
+      Text: But that's not how the Legal Department works!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: edfe5a8c966778f48bee8b34e3566c9b,
         type: 3}
@@ -70,11 +75,14 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
         type: 2}
-      Text: You'll pretend to take orders from her-- but you'll actually do what
-        I tell you to do.  Are there any problems?
+      Text: Your old boss Amber is no longer a factor and someone needs to take charge. 
+        From now on,  that will be me.  Unless you wish to question my orders, in
+        which case there will be... problems.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: edfe5a8c966778f48bee8b34e3566c9b,
         type: 3}
@@ -82,10 +90,12 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: cd2332e3b4e12834196ffb3ddc1d8a83,
         type: 2}
-      Text: No-- no problems here.
+      Text: No-- no problems here.  I won't be a... problem.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: edfe5a8c966778f48bee8b34e3566c9b,
         type: 3}
@@ -93,7 +103,16 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 350
-    OptionalPopups: []
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: Valerie is no fool.
+      Videos:
+      - {fileID: 32900000, guid: fb061f271ebc6324698dd99ea77b2848, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: She senses there are forces at work under the surface she doesn't quite
+        have a handle on!
     Effect:
       NpcEffects: []
       EgoEffect: 80
@@ -112,6 +131,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -119,6 +140,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -141,6 +163,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -148,4 +172,6 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
   Completed: 0
+  New: 1
