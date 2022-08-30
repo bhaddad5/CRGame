@@ -39,6 +39,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -55,10 +56,11 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: Thank you for noticing, Sir!  Ms. Jantz says I'm meeting all my goals
+      Text: Thank you for noticing, Sir!  Ms. Jantzen says I'm meeting all my goals
         so far!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
@@ -68,6 +70,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -80,19 +83,22 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
-      OptionalAudioClip: {fileID: 8300000, guid: 45ae7d8b05749e6499e61676679d2bc3,
-        type: 3}
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Debbie's smile is forced...
       Videos: []
       Textures:
       - {fileID: 2800000, guid: fe52058e178a1e547b11a10a534cd641, type: 3}
+      DialogClips:
+      - {fileID: 8300000, guid: 45ae7d8b05749e6499e61676679d2bc3, type: 3}
       Text: ...but you both know she'll wear the sports bra that so humiliatingly
         labels her a gymbo whose job depends on her looks.
     - Title: Lori is pleased with...
       Videos:
       - {fileID: 32900000, guid: c59791565b2d2784d96d5dc2ffe1f5e8, type: 3}
       Textures: []
+      DialogClips: []
       Text: ...Debbie's progress.  "She's turning into quite the little hardbody,
         Mr. {LastName}-- and she's an excellent example for the other Artemis admin
         girls here!"
@@ -117,6 +123,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -147,6 +155,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0

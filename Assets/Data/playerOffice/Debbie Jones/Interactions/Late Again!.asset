@@ -39,6 +39,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 1
   PreviewEffect: 1
   Result:
@@ -58,6 +59,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -72,8 +74,8 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
-      OptionalAudioClip: {fileID: 8300000, guid: 78cee6856971a5145b23e7e3c209b108,
-        type: 3}
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: The only thing on her mind most...
       Videos:
@@ -83,6 +85,8 @@ MonoBehaviour:
       - {fileID: 32900000, guid: 46820be947c312b42b4366bc67fe6f78, type: 3}
       - {fileID: 32900000, guid: bf1b56ad468682d46819180977fbf00d, type: 3}
       Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: 78cee6856971a5145b23e7e3c209b108, type: 3}
       Text: '...mornings is making it to her desk on time. As you enjoy another leisurely
         morning shower, It is a thought that you find most satisfying.  Will her
         first work smile reveal relief or guilt, knowing she''s missed her start
@@ -108,6 +112,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -138,6 +144,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
