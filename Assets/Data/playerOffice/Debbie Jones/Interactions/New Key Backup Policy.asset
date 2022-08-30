@@ -45,6 +45,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -61,6 +62,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -75,6 +77,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -87,6 +90,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -100,13 +104,15 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
-      OptionalAudioClip: {fileID: 8300000, guid: 66855cf57d2dd674b9327810bd879a13,
-        type: 3}
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: She hands over a newly cut copy of the key...
       Videos:
       - {fileID: 32900000, guid: 40c81cb718d0aef42b1b58659f9ec61c, type: 3}
       Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: 66855cf57d2dd674b9327810bd879a13, type: 3}
       Text: ...along with confirmation of her home address.  You may now visit Debbie's
         place!
     Effect:
@@ -127,6 +133,8 @@ MonoBehaviour:
       TrophiesClaimedReferences:
       - {fileID: 11400000, guid: f2eb8dc84b280f54bbb53c8952b2af20, type: 2}
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -158,6 +166,8 @@ MonoBehaviour:
       TrophiesClaimedReferences:
       - {fileID: 11400000, guid: f2eb8dc84b280f54bbb53c8952b2af20, type: 2}
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0

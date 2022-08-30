@@ -40,6 +40,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -56,6 +57,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 325
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 8468daf25d821974a8b3b9c729b1d180,
         type: 2}
@@ -69,6 +71,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 325
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 8468daf25d821974a8b3b9c729b1d180,
         type: 2}
@@ -81,6 +84,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 325
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 8468daf25d821974a8b3b9c729b1d180,
         type: 2}
@@ -94,6 +98,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 325
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 8468daf25d821974a8b3b9c729b1d180,
         type: 2}
@@ -106,6 +111,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 325
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 8468daf25d821974a8b3b9c729b1d180,
         type: 2}
@@ -119,25 +125,27 @@ MonoBehaviour:
         yPos: 0.4
         width: 325
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: You can guess why her grades have plummeted...
       Videos: []
       Textures:
       - {fileID: 2800000, guid: 177865bf455a20148863d19b94a49b36, type: 3}
-      Texture: {fileID: 2800000, guid: 177865bf455a20148863d19b94a49b36, type: 3}
+      DialogClips: []
       Text: ...but that's neither here nor there.
     - Title: The only test she really has to worry about...
       Videos:
       - {fileID: 32900000, guid: a4da95fcc81e9ec42852a4cb4d675bbd, type: 3}
       Textures: []
-      Texture: {fileID: 0}
+      DialogClips: []
       Text: ...is whether you give her a pass on her blow jobs.  Still, that's no
         reason to let an academic crisis go to waste, right?
     - Title: She meekly places herself over your lap and...
       Videos:
       - {fileID: 32900000, guid: 9d660c416d002a84983ae4782cd1daa9, type: 3}
       Textures: []
-      Texture: {fileID: 0}
+      DialogClips:
+      - {fileID: 8300000, guid: 00617a7fd64b03e4f93f84be0719fabf, type: 3}
       Text: ...soon there are real tears and please for mercy.
     Effect:
       NpcEffects:
@@ -160,6 +168,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -190,6 +200,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
