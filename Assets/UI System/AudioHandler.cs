@@ -64,7 +64,7 @@ namespace Assets.UI_System
 		#region Music
 
 		private const float fadeTime = 1f;
-		private const float musicVolume = .3f;
+		private const float musicVolume = .25f;
 
 		private List<AudioClip> currAudioClips = new List<AudioClip>();
 		private bool fadeToNew = false;
