@@ -90,7 +90,7 @@ public class DialogScreenBindings : MonoBehaviour
 		foreach (var c in textToShow)
 		{
 			DialogText.text += c;
-			yield return new WaitForSeconds(.02f);
+			yield return new WaitForSeconds(.01f);
 		}
 
 		NextDialogImage.enabled = true;
