@@ -39,6 +39,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -55,6 +56,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -67,6 +69,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -81,20 +84,24 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
-      OptionalAudioClip: {fileID: 8300000, guid: 90ac61fb0c07d31438f2bf667ed07b95,
-        type: 3}
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Debbie hides her frown quickly...
       Videos: []
       Textures:
       - {fileID: 2800000, guid: 41298f836684a6043811ffb3bf30bb54, type: 3}
+      DialogClips:
+      - {fileID: 8300000, guid: 90ac61fb0c07d31438f2bf667ed07b95, type: 3}
       Text: ...as she accepts the bubble gum and thanks you with zero excitement. 
         As usual, it is less a gift for her than one for you.  She's never been a
         gum chewer, but she'll become one now!
-    - Title: Debbie's seducitve bubble blowing...
+    - Title: Debbie's seductive bubble blowing...
       Videos:
       - {fileID: 32900000, guid: 4e1b8cf9f7e2ac24d974fa763c1a8c2b, type: 3}
       Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: 4fcefe13fec42ab43b64370c5d6c4059, type: 3}
       Text: ...triggers lot of questions from your senior execs.  Soon, they too
         are 'treating' their secretaries with the same brand of gum.
     Effect:
@@ -114,6 +121,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -144,6 +153,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
