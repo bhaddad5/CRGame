@@ -40,6 +40,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -58,6 +59,7 @@ MonoBehaviour:
         yPos: 0.35
         width: 300
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 8d9f38aa47f1c4f48b97afffaa769f0d,
         type: 2}
@@ -72,6 +74,7 @@ MonoBehaviour:
         yPos: 0.35
         width: 300
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 8d9f38aa47f1c4f48b97afffaa769f0d,
         type: 2}
@@ -86,18 +89,20 @@ MonoBehaviour:
         yPos: 0.35
         width: 300
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: You view the exam remotely...
       Videos:
       - {fileID: 32900000, guid: 44222c8a007f4cf41952285849e84ecc, type: 3}
       Textures: []
-      Texture: {fileID: 0}
+      DialogClips:
+      - {fileID: 8300000, guid: f7950bf874c1d354089870be75994aa0, type: 3}
       Text: ...and it is clear Holly has never been so exposed or examined so intimately.
     - Title: Dr. Feng reports good news...
       Videos: []
       Textures:
       - {fileID: 2800000, guid: cac4b88688b2be849a20bae011752478, type: 3}
-      Texture: {fileID: 2800000, guid: cac4b88688b2be849a20bae011752478, type: 3}
+      DialogClips: []
       Text: Despite some self exploration and harmless interactions with boys her
         own age, Holly's virginity is completely intact, with a Pry Certificate confirming
         her sexual state of purity!
@@ -122,6 +127,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -152,6 +159,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
