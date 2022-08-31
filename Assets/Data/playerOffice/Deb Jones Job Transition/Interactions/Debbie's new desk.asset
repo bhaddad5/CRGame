@@ -39,6 +39,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -56,6 +57,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 0041cc9001d9b5e46817e841349ddd12,
         type: 2}
@@ -70,6 +72,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 0041cc9001d9b5e46817e841349ddd12,
         type: 2}
@@ -84,6 +87,7 @@ MonoBehaviour:
         width: 375
       OptionalAudioClip: {fileID: 8300000, guid: e81d70059e6d7df43b02ad6d0b23d2ee,
         type: 3}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 0041cc9001d9b5e46817e841349ddd12,
         type: 2}
@@ -98,6 +102,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 0041cc9001d9b5e46817e841349ddd12,
         type: 2}
@@ -110,6 +115,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 0041cc9001d9b5e46817e841349ddd12,
         type: 2}
@@ -123,12 +129,20 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: From now on, Debbie will...
       Videos:
       - {fileID: 32900000, guid: ccbdb7baedd70fb49bb5a1ed9ffd175f, type: 3}
       Textures: []
+      DialogClips: []
       Text: '...adorn the outside of your office like a blonde bauble!  '
+    - Title: Now you can keep an eye...
+      Videos:
+      - {fileID: 32900000, guid: d2ecdee1c4d88c1479dda4b302e32c56, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: ...on her at all times!
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -146,6 +160,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -176,6 +192,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0

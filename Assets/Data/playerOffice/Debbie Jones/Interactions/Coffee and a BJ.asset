@@ -48,6 +48,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 1
   PreviewEffect: 1
   Result:
@@ -65,11 +66,12 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
       Text: You don't need to ask.  The signal is a wink and a smile.  You've trained
-        her well enough to comply with the need for any crude demand.
+        her well enough to comply without the need for any crude demand.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
         type: 3}
@@ -78,6 +80,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -91,18 +94,21 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
-      OptionalAudioClip: {fileID: 8300000, guid: 1f48af7e35640d948896181df6448f1c,
-        type: 3}
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: You've never regretted the investment in...
       Videos:
       - {fileID: 32900000, guid: 7271156d8c66c1f4ca4907a1e5f1fbc4, type: 3}
       Textures: []
+      DialogClips: []
       Text: ...Debbie's superb coffee prep training.
     - Title: Sometimes you even kindly help...
       Videos:
       - {fileID: 32900000, guid: 4e333a4041bd7484d8584bb164e1f0fd, type: 3}
       Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: dc723132e1e5b0e42ae13b342ea18ff7, type: 3}
       Text: ...although at others, you're already busy at your desk and leave that
         chore to her.
     - Title: She always performs in focused silence...
@@ -128,6 +134,8 @@ MonoBehaviour:
       - {fileID: 32900000, guid: f496ab8dfee6e7c4db2f174fc5492636, type: 3}
       - {fileID: 32900000, guid: 959a48f61a4030e43927be66f34bb998, type: 3}
       Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: 42288f79b303bc54b94a0378a775e7ff, type: 3}
       Text: '...and unless you offer her any compliment or critique, she completes
         her assignment with perfect professionalism.  At last, she accepts her reward,
         swallowing hard to convey her respect, cleans up and returns to her desk. '
@@ -148,6 +156,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -178,6 +188,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
