@@ -40,6 +40,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -55,6 +56,8 @@ MonoBehaviour:
         xPos: 0.65
         yPos: 0.42
         width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 4f5b0cef4033d884badd26e5c47e6af2,
         type: 2}
@@ -66,6 +69,8 @@ MonoBehaviour:
         xPos: 0.65
         yPos: 0.42
         width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 4f5b0cef4033d884badd26e5c47e6af2,
         type: 2}
@@ -79,6 +84,8 @@ MonoBehaviour:
         xPos: 0.65
         yPos: 0.42
         width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 4f5b0cef4033d884badd26e5c47e6af2,
         type: 2}
@@ -93,6 +100,8 @@ MonoBehaviour:
         xPos: 0.65
         yPos: 0.42
         width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 4f5b0cef4033d884badd26e5c47e6af2,
         type: 2}
@@ -106,6 +115,8 @@ MonoBehaviour:
         xPos: 0.65
         yPos: 0.42
         width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 4f5b0cef4033d884badd26e5c47e6af2,
         type: 2}
@@ -120,12 +131,22 @@ MonoBehaviour:
         xPos: 0.65
         yPos: 0.42
         width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: She's so passionate about her work...
       Videos:
       - {fileID: 32900000, guid: 74cf02f3e245a9141b7fc3b7f63d3140, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: ...it is a passion you believe could be harnessed.
+    - Title: You understand Blair's frustration.
+      Videos:
+      - {fileID: 32900000, guid: 43e46e0efc2315344b5469b5d2ee5a32, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: She's been starved of resources by senior management that don't understand
+        the promise of her research!
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: 4f5b0cef4033d884badd26e5c47e6af2,
@@ -147,6 +168,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -177,6 +200,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0

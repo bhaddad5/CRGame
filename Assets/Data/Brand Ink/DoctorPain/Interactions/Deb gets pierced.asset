@@ -39,6 +39,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -55,19 +56,21 @@ MonoBehaviour:
         yPos: 0.37
         width: 420
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Ouch!  Looks like that hurts!
       Videos:
       - {fileID: 32900000, guid: 1079eb98fe5552f4f8a75966ea5d1c55, type: 3}
       Textures: []
-      Texture: {fileID: 0}
+      DialogClips:
+      - {fileID: 8300000, guid: 5ad0d157c5d600145b55b8bb897ccced, type: 3}
       Text: You look forward to having Debbie collect belly rings like earrings to
         go with every mood and outfit...
     - Title: As much as she hates it...
       Videos: []
       Textures:
       - {fileID: 2800000, guid: ce4896734899d6d41bac1cf6f30ae461, type: 3}
-      Texture: {fileID: 2800000, guid: ce4896734899d6d41bac1cf6f30ae461, type: 3}
+      DialogClips: []
       Text: ...she's getting used to answering to 'Debbie'.  No one thinks of her
         as a 'Deborah' any more!  It will be the first of many she'll wear to project
         the 'sexretary' look you prefer.
@@ -92,6 +95,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -126,6 +131,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
