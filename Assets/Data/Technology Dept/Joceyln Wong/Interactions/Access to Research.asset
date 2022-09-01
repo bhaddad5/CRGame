@@ -39,6 +39,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -55,6 +56,8 @@ MonoBehaviour:
         xPos: 0.4
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: a41d8fa3ed6f76a44b0814daec2c238f,
         type: 2}
@@ -66,6 +69,8 @@ MonoBehaviour:
         xPos: 0.4
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: a41d8fa3ed6f76a44b0814daec2c238f,
         type: 2}
@@ -77,6 +82,8 @@ MonoBehaviour:
         xPos: 0.4
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: a41d8fa3ed6f76a44b0814daec2c238f,
         type: 2}
@@ -89,6 +96,8 @@ MonoBehaviour:
         xPos: 0.4
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: a41d8fa3ed6f76a44b0814daec2c238f,
         type: 2}
@@ -100,7 +109,16 @@ MonoBehaviour:
         xPos: 0.4
         yPos: 0.4
         width: 300
-    OptionalPopups: []
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: Access to Research is...
+      Videos:
+      - {fileID: 32900000, guid: 8e5d614508fcf5343b3e52274aa6fc24, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: ...highly restricted and is another sign of your growing power within
+        the corporation.
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -118,6 +136,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -148,6 +168,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
