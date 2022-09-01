@@ -39,6 +39,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -54,11 +55,13 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
-      OptionalAudioClip: {fileID: 0}
+      OptionalAudioClip: {fileID: 8300000, guid: c45705df3ba970c4897b91ff2cf7d8c0,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: Whatever you say, Mr. {LastName}!
+      Text: Sure, fine, Mr. {LastName}.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
         type: 3}
@@ -68,11 +71,14 @@ MonoBehaviour:
         width: 375
       OptionalAudioClip: {fileID: 8300000, guid: a78d8d1f43dc4c848b08001151cc72cc,
         type: 3}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: You were right...
       Videos:
       - {fileID: 32900000, guid: f72f10966c39d38459aa27784a4e13ae, type: 3}
       Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: 816bd0ca327d6ae4eba6734674b531f8, type: 3}
       Text: ...Debbie's blowjobs really are better, now that she's rocking a slutty
         tongue stud she uses to service you with!
     Effect:
@@ -96,6 +102,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -126,6 +134,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
