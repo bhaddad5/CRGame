@@ -45,6 +45,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 1
   PreviewEffect: 1
   Result:
@@ -61,6 +62,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -73,6 +75,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -86,6 +89,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -98,6 +102,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -110,6 +115,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -122,27 +128,50 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
-      OptionalAudioClip: {fileID: 8300000, guid: 05db83a7a8975924690b74bc44f4b1b1,
-        type: 3}
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
+    - Title: Debbie always blushes a bit...
+      Videos:
+      - {fileID: 32900000, guid: 7710ff80c908ee64eb193d61019b1bd8, type: 3}
+      Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: 4b01a06996150474cb45527d5d405504, type: 3}
+      Text: ...when you tell the receptionist that she's your secretary-- and no,
+        you only have need of one room.
+    - Title: Part of her job...
+      Videos:
+      - {fileID: 32900000, guid: 2f95c3a3f52947041ad855dbb791e509, type: 3}
+      Textures: []
+      DialogClips:
+      - {fileID: 0}
+      Text: ...is to unpack you both, then to lock the door and finally present herself!
     - Title: Debbie loves being on the road...
       Videos:
       - {fileID: 32900000, guid: c2071303f7030e543a90ce6f0128df77, type: 3}
-      - {fileID: 32900000, guid: f03cbd8edafa471449787683fd1e1322, type: 3}
+      - {fileID: 32900000, guid: 333c502374085c946a81c0cf389ed71a, type: 3}
       - {fileID: 32900000, guid: 5ac35ea7f51027f418ba38fb29c24dfc, type: 3}
-      - {fileID: 32900000, guid: de2d6aae62a73dc4584463b72db5a98e, type: 3}
+      - {fileID: 32900000, guid: 71b69ed9b22dfa747895f65966c4af6c, type: 3}
       - {fileID: 32900000, guid: 452132ddb09e20d429e3c61d5cdcaa29, type: 3}
       - {fileID: 32900000, guid: d3605d5339b94ab4593749b7ad22a4d0, type: 3}
       - {fileID: 32900000, guid: 323023f5f8b182842af3f640c7b1c638, type: 3}
+      - {fileID: 32900000, guid: f03cbd8edafa471449787683fd1e1322, type: 3}
+      - {fileID: 32900000, guid: 323023f5f8b182842af3f640c7b1c638, type: 3}
+      - {fileID: 32900000, guid: de2d6aae62a73dc4584463b72db5a98e, type: 3}
+      - {fileID: 32900000, guid: eb5a145e8c0aba04aa53cfb274ca227a, type: 3}
       Textures: []
-      Text: ...she's already wet by the time you check into your room!
+      DialogClips:
+      - {fileID: 8300000, guid: 05db83a7a8975924690b74bc44f4b1b1, type: 3}
+      Text: ...she's already wet by the time you check into your room!  The once
+        haughty MBA offers herself up like a call girl, except this one's on salary
+        and she's got corporate health insurance.
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
           type: 2}
         AmbitionEffect: 0
-        PrideEffect: 4
-      EgoEffect: 16
+        PrideEffect: 3
+      EgoEffect: 18
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -157,6 +186,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -187,6 +218,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
