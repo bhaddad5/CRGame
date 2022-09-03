@@ -44,6 +44,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 1
   PreviewEffect: 1
   Result:
@@ -76,6 +77,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -88,7 +90,9 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
-      OptionalAudioClip: {fileID: 0}
+      OptionalAudioClip: {fileID: 8300000, guid: 7dfa730ba6cc4774e82b70db9ebc4261,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -102,19 +106,21 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
-      OptionalAudioClip: {fileID: 8300000, guid: 7dfa730ba6cc4774e82b70db9ebc4261,
-        type: 3}
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: The wardrobe planner ensures...
       Videos: []
       Textures:
       - {fileID: 2800000, guid: dbdfe36bdd437254b87423276191cbc6, type: 3}
+      DialogClips: []
       Text: ...sufficient variety in Debbie's fashion choices.  She updates it regularly,
         depending on your feedback.
     - Title: Approving or rejecting...
       Videos:
       - {fileID: 32900000, guid: 08e457a4a3a2c6d4f9132038b881d56d, type: 3}
       Textures: []
+      DialogClips: []
       Text: ...Debbie's fashion choices is a most satisfying, if small pleasure,
         of your job.
     Effect:
@@ -138,6 +144,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -168,6 +176,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
