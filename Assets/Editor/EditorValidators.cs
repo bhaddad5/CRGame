@@ -226,6 +226,34 @@ public class EditorValidators
 		Debug.Log("Null values removed!");
 	}
 
+	[MenuItem("Company Man Validators/UpgradeOldData", false, 200)]
+	public static void UpgradeOldData()
+	{
+		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
+		
+		foreach (var location in gameData.Locations)
+		{
+			foreach (var npc in location.Npcs)
+			{
+				foreach (var interaction in npc.Interactions)
+				{
+					if (interaction.Cost.HornicalCost > 0)
+					{
+						interaction.Cost.Items.Add(DataUpgradeRefs.Instance.Hornical);
+						EditorUtility.SetDirty(interaction);
+					}
+					if (interaction.Result.Effect.HornicalEffect > 0)
+					{
+						interaction.Result.Effect.ItemsToAdd.Add(DataUpgradeRefs.Instance.Hornical);
+						EditorUtility.SetDirty(interaction);
+					}
+				}
+			}
+			location.Missions.RemoveAll(v => v == null);
+		}
+		Debug.Log("Null values removed!");
+	}
+
 	//TODO: USE THIS AS A TEMPLATE FOR DATA UPGRADES!
 	/*
 	[MenuItem("Company Man Validators/Upgrade Old Data")]

@@ -40,6 +40,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: []
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -48,12 +49,14 @@ MonoBehaviour:
     - Title: Of all the girls he's...
       Videos:
       - {fileID: 32900000, guid: 09c37c3738a1ae448a5bfa77ff95fd10, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: ...perved on, Mackenzie seems to be the one Maxwell is willing to offer
         up some of his precious Hornical-- in exchange for a taste of the teenager!
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 141b44f8872c8974d952509691bede0f,
+          type: 2}
         AmbitionEffect: 0
         PrideEffect: -5
       EgoEffect: 0
@@ -71,6 +74,9 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd:
+      - {fileID: 11400000, guid: 3ff5cfaad1c119d4ca9230878fa2fac1, type: 2}
+      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -101,6 +107,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
+      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0

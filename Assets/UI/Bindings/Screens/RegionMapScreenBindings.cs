@@ -100,7 +100,7 @@ namespace Assets.GameModel.UiDisplayers
 				_currOpenLocation.CloseCurrentNpc();
 				if (!onlyCloseIfInaccessable || !_currOpenLocation.IsAccessible(mgm))
 				{
-					GameObject.Destroy(_currOpenLocation.gameObject);
+					_currOpenLocation.CloseCurrentLocation();
 					_currOpenLocation = null;
 				}
 			}
@@ -108,6 +108,7 @@ namespace Assets.GameModel.UiDisplayers
 
 		public void CloseRegion()
 		{
+			CloseCurrentDepartment(false);
 			GameObject.Destroy(gameObject);
 			onClose?.Invoke();
 		}

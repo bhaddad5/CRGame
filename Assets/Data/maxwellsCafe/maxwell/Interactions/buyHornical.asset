@@ -39,6 +39,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: []
   Repeatable: 1
   PreviewEffect: 1
   Result:
@@ -57,11 +58,14 @@ MonoBehaviour:
         xPos: 0.6
         yPos: 0.3
         width: 380
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Too bad it is so damn expensive...
       Videos:
       - {fileID: 32900000, guid: 65a4f9b05e8a9074d8e32aa0932357cb, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: 'If you only had a few more doses, the progress you could make in your
         current mission! '
     Effect:
@@ -81,6 +85,9 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd:
+      - {fileID: 11400000, guid: 3ff5cfaad1c119d4ca9230878fa2fac1, type: 2}
+      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -111,6 +118,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
+      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0

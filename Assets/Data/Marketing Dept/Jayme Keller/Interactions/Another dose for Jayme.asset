@@ -40,6 +40,8 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 1
+    Items:
+    - {fileID: 11400000, guid: 3ff5cfaad1c119d4ca9230878fa2fac1, type: 2}
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -55,6 +57,8 @@ MonoBehaviour:
         xPos: 0.3
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 02285d513a8a80346bd5fceb01f05d8b,
         type: 2}
@@ -66,6 +70,8 @@ MonoBehaviour:
         xPos: 0.3
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 02285d513a8a80346bd5fceb01f05d8b,
         type: 2}
@@ -77,11 +83,14 @@ MonoBehaviour:
         xPos: 0.3
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Jayme seems less defensive...
       Videos:
       - {fileID: 32900000, guid: 520b971b78df61043a9f8c50d7998d95, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: '...and friendlier than normal.  She''s not quite flirting but she''s
         warming up to you. She''s close now... very close! '
     Effect:
@@ -105,6 +114,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
+      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -135,6 +146,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
+      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0

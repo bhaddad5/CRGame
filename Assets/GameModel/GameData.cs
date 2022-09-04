@@ -23,7 +23,7 @@ namespace Assets.GameModel
 		[HideInInspector] public float Brand = 0;
 		[HideInInspector] public float Revenue = 0;
 
-		[HideInInspector] public List<InventoryItem> Inventory = new List<InventoryItem>();
+		[HideInInspector] public Dictionary<InventoryItem, int> Inventory = new Dictionary<InventoryItem, int>();
 
 		//LEGACY
 		[HideInInspector] public int Hornical = 0;
@@ -42,7 +42,8 @@ namespace Assets.GameModel
 
 		public List<Promotion> PlayerPromotionLevels = new List<Promotion>();
 		public List<Home> PlayerHomeLevels = new List<Home>();
-		
+
+		public List<InventoryItem> InventoryItemOptions = new List<InventoryItem>();
 		public List<Location> Locations = new List<Location>();
 		public List<Region> Regions = new List<Region>();
 
@@ -61,7 +62,7 @@ namespace Assets.GameModel
 			Brand = 0;
 			Revenue = 0;
 			
-			Inventory = new List<InventoryItem>();
+			Inventory = new Dictionary<InventoryItem, int>();
 
 			Promotion = 0;
 			Home = 0;
@@ -100,6 +101,28 @@ namespace Assets.GameModel
 			}
 
 			return res;
+		}
+
+		public int GetInventoryItemCount(InventoryItem item)
+		{
+			if (!Inventory.ContainsKey(item))
+				return 0;
+			return Inventory[item];
+		}
+
+		public void AddItemToInventory(InventoryItem item)
+		{
+			if (!Inventory.ContainsKey(item))
+				Inventory[item] = 0;
+			Inventory[item] = Inventory[item] + 1;
+		}
+
+		public void RemoveItemFromInventory(InventoryItem item)
+		{
+			if (!Inventory.ContainsKey(item) || Inventory[item] == 0)
+				throw new Exception("Trying to remove an inventory item you don't possess!!!");
+
+			Inventory[item] = Inventory[item] - 1;
 		}
 	}
 }

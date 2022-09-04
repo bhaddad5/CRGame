@@ -69,12 +69,12 @@ namespace Assets.GameModel
 
 			foreach (var inventoryItem in ItemsToAdd)
 			{
-				mgm.Data.Inventory.Add(inventoryItem);
+				mgm.Data.AddItemToInventory(inventoryItem);
 			}
 
 			foreach (var item in ItemsToRemove)
 			{
-				mgm.Data.Inventory.Remove(item);
+				mgm.Data.RemoveItemFromInventory(item);
 			}
 
 			foreach (var trophy in TrophiesClaimedReferences)

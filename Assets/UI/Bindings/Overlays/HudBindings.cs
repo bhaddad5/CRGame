@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using Assets.GameModel;
 using Assets.GameModel.UiDisplayers;
 using TMPro;
@@ -15,7 +16,11 @@ public class HudBindings : MonoBehaviour
 
 	[SerializeField] private ResourceManagerUiDisplay Ego;
 	[SerializeField] private ResourceManagerUiDisplay Funds;
-	
+
+	[SerializeField] private Transform InventoryMenu;
+	[SerializeField] private Transform InventoryParent;
+	[SerializeField] private InventoryItemBindings InventoryItemPrefab;
+
 	[SerializeField] private TMP_Text Day;
 	[SerializeField] private TMP_Text Time;
 	[SerializeField] private TMP_Text Month;
@@ -33,6 +38,14 @@ public class HudBindings : MonoBehaviour
 	public void Setup(MainGameManager mgm)
 	{
 		this.mgm = mgm;
+
+		foreach (var itemOption in mgm.Data.InventoryItemOptions)
+		{
+			var item = Instantiate(InventoryItemPrefab);
+			item.Setup(itemOption);
+			item.transform.SetParent(InventoryParent);
+			item.RefreshUiDisplay(mgm);
+		}
 	}
 
 	public void Rest()
@@ -80,5 +93,12 @@ public class HudBindings : MonoBehaviour
 		Month.text = $"{dateTime:MMMM} {dateTime.Day}";
 		
 		DowntimeButton.gameObject.SetActive(DowntimeTutorialCompleteInteraction.Completed > 0);
+
+		InventoryMenu.gameObject.SetActive(mgm.Data.Inventory.Any(inv => inv.Value > 0));
+
+		foreach (var inventoryItemVis in InventoryParent.GetComponentsInChildren<InventoryItemBindings>(true))
+		{
+			inventoryItemVis.RefreshUiDisplay(mgm);
+		}
 	}
 }

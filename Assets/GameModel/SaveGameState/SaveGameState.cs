@@ -25,8 +25,6 @@ namespace Assets.GameModel.Save
 		public int Hornical;
 		//END LEGACY
 
-		public List<InventoryItem> Inventory;
-
 		public int Promotion;
 		public int Home;
 
@@ -37,6 +35,7 @@ namespace Assets.GameModel.Save
 		public bool JewleryRing;
 		public bool JewleryWatch;
 
+		public List<SavedInventoryItemState> Inventory;
 		public List<SavedLocationState> Locations;
 		public List<SavedInteractionState> StartTurnInteractions;
 
@@ -55,22 +54,23 @@ namespace Assets.GameModel.Save
 			res.Spreadsheets = data.Spreadsheets;
 			res.Brand = data.Brand;
 			res.Revenue = data.Revenue;
-			
 			res.Promotion = data.Promotion;
 			res.Home = data.Home;
-			res.Inventory = data.Inventory;
-
-			//UPGRADE LEGACY DATA
-			for (int i = 0; i < data.Hornical; i++)
-				data.Inventory.Add(InventoryItem.Hornical);
-			//END UPGRADE LEGACY DATA
-
 			res.Car = data.Car;
 			res.Suits = data.Suits;
 			res.JewleryCuffs = data.JewleryCuffs;
 			res.JewleryPen = data.JewleryPen;
 			res.JewleryRing = data.JewleryRing;
 			res.JewleryWatch = data.JewleryWatch;
+
+			res.Inventory = new List<SavedInventoryItemState>();
+			foreach (var inventoryItemType in data.Inventory)
+			{
+				for (int i = 0; i < inventoryItemType.Value; i++)
+				{
+					res.Inventory.Add(SavedInventoryItemState.FromData(inventoryItemType.Key));
+				}
+			}
 
 			res.Locations = new List<SavedLocationState>();
 			foreach (var dataLocation in data.Locations)
@@ -105,7 +105,10 @@ namespace Assets.GameModel.Save
 			data.Promotion = Promotion;
 			data.Home = Home;
 
-			data.Inventory = Inventory;
+			//UPGRADE LEGACY DATA
+			for (int i = 0; i < Hornical; i++)
+				data.AddItemToInventory(DataUpgradeRefs.Instance.Hornical);
+			//END UPGRADE LEGACY DATA
 
 			data.Car = Car;
 			data.Suits = Suits;
@@ -113,6 +116,15 @@ namespace Assets.GameModel.Save
 			data.JewleryPen = JewleryPen;
 			data.JewleryRing = JewleryRing;
 			data.JewleryWatch = JewleryWatch;
+
+			data.Inventory = new Dictionary<InventoryItem, int>();
+			foreach (var item in Inventory)
+			{
+				var foundItem = data.InventoryItemOptions.FirstOrDefault(d => d?.Id == item.Id);
+				if(foundItem == null)
+					Debug.LogError($"Failed to find item with id {item.Id}");
+				data.AddItemToInventory(foundItem);
+			}
 
 			foreach (var location in Locations)
 			{
@@ -123,6 +135,20 @@ namespace Assets.GameModel.Save
 			{
 				startTurnInteraction.ApplyToData(data.StartOfTurnInteractions.FirstOrDefault(i => i?.Id == startTurnInteraction.Id));
 			}
+		}
+	}
+
+	[Serializable]
+	public struct SavedInventoryItemState
+	{
+		public string Id;
+
+		public static SavedInventoryItemState FromData(InventoryItem data)
+		{
+			var res = new SavedInventoryItemState();
+			res.Id = data.Id;
+
+			return res;
 		}
 	}
 

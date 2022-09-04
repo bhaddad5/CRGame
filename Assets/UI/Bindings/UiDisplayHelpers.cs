@@ -112,15 +112,12 @@ namespace Assets.GameModel.UiDisplayers
 			foreach (var item in cost.Items)
 			{
 				var numRequired = cost.Items.Count(i => i == item);
-				var numInInventory = mgm.Data.Inventory.Count(i => i == item);
+				var numInInventory = mgm.Data.GetInventoryItemCount(item);
 
 				//TODO: Duplicates will show here
 				if (numRequired > numInInventory)
-					tooltips.Add($"{numRequired} {item}");
+					tooltips.Add($"{numRequired} {item.Name}");
 			}
-
-			if (cost.HornicalCost > mgm.Data.Hornical)
-				tooltips.Add($"{cost.HornicalCost} Hornical");
 
 			return TooltipsToString(tooltips);
 		}

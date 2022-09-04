@@ -27,7 +27,7 @@ namespace Assets.GameModel
 			foreach (var item in Items)
 			{
 				var numRequired = Items.Count(i => i == item);
-				var numInInventory = mgm.Data.Inventory.Count(i => i == item);
+				var numInInventory = mgm.Data.GetInventoryItemCount(item);
 
 				if (numRequired > numInInventory)
 					return false;
@@ -54,7 +54,7 @@ namespace Assets.GameModel
 
 			foreach (var item in Items)
 			{
-				mgm.Data.Inventory.Remove(item);
+				mgm.Data.RemoveItemFromInventory(item);
 			}
 		}
 	}
