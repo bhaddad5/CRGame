@@ -39,6 +39,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: []
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -56,6 +57,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: e824e839d0b9719409dc7942822791c4,
         type: 2}
@@ -68,6 +70,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: e824e839d0b9719409dc7942822791c4,
         type: 2}
@@ -83,6 +86,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: e824e839d0b9719409dc7942822791c4,
         type: 2}
@@ -96,6 +100,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: e824e839d0b9719409dc7942822791c4,
         type: 2}
@@ -109,16 +114,20 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: AGATHA is a smashing success!
       Videos:
       - {fileID: 32900000, guid: b42b4268cb222c5438e29dbb2e4ef07e, type: 3}
       Textures: []
+      DialogClips: []
       Text: The data collected allows you to accelerate your plans for the IPO!
     - Title: What Debbie doesn't realize...
       Videos:
       - {fileID: 32900000, guid: 36fd12cda902e9842957ae9ee8371628, type: 3}
       Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: aac8f0044a6d3ea42bb03447c1fd584c, type: 3}
       Text: ...is that AGATHA is now a permanent part of her decision making process,
         whether she knows it or not!
     Effect:
@@ -138,6 +147,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
+      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -168,6 +179,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
+      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
