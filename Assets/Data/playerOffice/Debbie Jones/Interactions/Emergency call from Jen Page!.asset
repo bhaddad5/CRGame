@@ -40,6 +40,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: []
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -57,6 +58,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -69,6 +71,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -80,7 +83,9 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
-      OptionalAudioClip: {fileID: 0}
+      OptionalAudioClip: {fileID: 8300000, guid: 056e915afbbdab24baa0474fa4829e52,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -92,13 +97,14 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
-      OptionalAudioClip: {fileID: 8300000, guid: 056e915afbbdab24baa0474fa4829e52,
-        type: 3}
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Maxwell's pulled it off.
       Videos:
       - {fileID: 32900000, guid: ce23221e2a8c4e84583d55ae7eade4ce, type: 3}
       Textures: []
+      DialogClips: []
       Text: No one will ask how the hack occurred until later.  For now, all the
         buzz will be about the faces on the screen.  You hardly finish watching before
         Debbie's got another call for you.
@@ -123,6 +129,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
+      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -153,6 +161,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
+      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0

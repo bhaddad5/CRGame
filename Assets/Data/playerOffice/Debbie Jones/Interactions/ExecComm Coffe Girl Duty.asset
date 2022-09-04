@@ -40,6 +40,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: []
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -56,6 +57,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -69,6 +71,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -81,6 +84,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -94,13 +98,15 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
-      OptionalAudioClip: {fileID: 8300000, guid: 2f753e1319995af449d6bc748bad4466,
-        type: 3}
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: To her credit, Debbie...
       Videos:
       - {fileID: 32900000, guid: 807f943c82b58c24abfd0631b656736c, type: 3}
       Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: 2f753e1319995af449d6bc748bad4466, type: 3}
       Text: '...in a very attentive Coffee Girl!  There''s no reason not to employ
         her in this capacity in future exec gatherings. '
     Effect:
@@ -124,6 +130,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
+      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -154,6 +162,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
+      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
