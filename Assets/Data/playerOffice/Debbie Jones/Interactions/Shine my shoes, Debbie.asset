@@ -39,6 +39,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: []
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -55,6 +56,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -68,6 +70,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -80,6 +83,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -94,18 +98,22 @@ MonoBehaviour:
         width: 375
       OptionalAudioClip: {fileID: 8300000, guid: 564418d661674da45a6280cf3bacb3e6,
         type: 3}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: There would have been a time...
       Videos: []
       Textures:
       - {fileID: 2800000, guid: 9356a4dd4251a5748a953111e5b5c81b, type: 3}
+      DialogClips: []
       Text: ...when Debbie might have thrown that shoe shine kit at you, job be damned! 
-        But those days are long past and what's the point of paying for a show shine
+        But those days are long past and what's the point of paying for a shoe shine
         when your personal secretary can see to the task?
     - Title: After she returns your shoes...
       Videos:
       - {fileID: 32900000, guid: 2f327d2d5c207154dbca251a8c1f74eb, type: 3}
       Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: 469c3eeed9c0240408463e7db2bfb42f, type: 3}
       Text: ...they shine as if they were brand new.  You thank her.  She merely
         shrugs as she hands them back to you.
     Effect:
@@ -125,6 +133,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
+      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -155,6 +165,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
+      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
