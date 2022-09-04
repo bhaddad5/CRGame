@@ -41,6 +41,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: 
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -60,6 +61,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -73,6 +75,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -86,8 +89,8 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
-      OptionalAudioClip: {fileID: 8300000, guid: 3375c5eebbf26164b8edb33294e58f71,
-        type: 3}
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -99,13 +102,15 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
-      OptionalAudioClip: {fileID: 8300000, guid: 18a3710c7c176914e9b2070dbfbbc53b,
-        type: 3}
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: '"After some initial hesitation...'
       Videos:
       - {fileID: 32900000, guid: 172127957f4f88547aff10cb5010e253, type: 3}
       Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: 3375c5eebbf26164b8edb33294e58f71, type: 3}
       Text: ...Deborah began to open up.  Of course, that was only after she confirmed
         the sessions would be kept confidential.  She has no idea you receive the
         therapist notes immediately afterwards."
@@ -113,6 +118,8 @@ MonoBehaviour:
       Videos:
       - {fileID: 32900000, guid: 7a98a95c6705cef4b99dc6b51b2f30a0, type: 3}
       Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: 18a3710c7c176914e9b2070dbfbbc53b, type: 3}
       Text: '"It is common amongst girls whose careers have failed to launch.  She
         harbours enormous enmity towards you and believes you are personally responsible
         for her current lowly status.  You can use all this to better manage her
@@ -138,6 +145,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -168,6 +177,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: 
+      ItemsToRemove: 
       Car: 0
       Suits: 0
       JewleryCuffs: 0
