@@ -40,12 +40,14 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: []
   Repeatable: 0
   PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 02285d513a8a80346bd5fceb01f05d8b,
+        type: 2}
       Text: 'Therapy Notes: Following collection, our first task was to purge Jayme
         of the Hornical in her system.  Her response must be ''clean'' if we are
         to measure her progress from lesbian to bi-sexual orientation.'
@@ -57,8 +59,11 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 02285d513a8a80346bd5fceb01f05d8b,
+        type: 2}
       Text: 'Therapy Notes: Of course she protested her unplanned absence from work,
         but our orderlies are quite persuasive with such patients.  She was told
         her superior had ordered a re-sequencing of her orientation- one allowed
@@ -71,8 +76,11 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 02285d513a8a80346bd5fceb01f05d8b,
+        type: 2}
       Text: 'Therapy Notes: Jayme''s Orgasm Frequency and Response Index (OFRI) towards
         males was determined to be a very weak 1.8-- fairly expected considering
         her preference for lesbian partners.   For women, it was 8.4.'
@@ -84,8 +92,11 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 02285d513a8a80346bd5fceb01f05d8b,
+        type: 2}
       Text: 'Therapy Notes: Jayme''s resistance to covering was instinctive, if pointless. 
         Her initial introduction to male penetrative sex centered around her vagina
         and she was lucky to enjoy the attentions of Orderly Thad, a thorough and
@@ -98,16 +109,21 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Lesbians must first lose...
       Videos:
       - {fileID: 32900000, guid: b1a3477434df0b74a893dd50dc8c1cdd, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: af3786c5c9de39c408085e7402b9769a, type: 3}
       Text: ...any concept of voluntary partner selection.  Jayme's initial therapy
         introduced her to multiple male lovers from amongst our eager team of orderlies!
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 02285d513a8a80346bd5fceb01f05d8b,
+          type: 2}
         AmbitionEffect: 0
         PrideEffect: -25
       EgoEffect: 0
@@ -125,6 +141,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
+      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -155,6 +173,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
+      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
