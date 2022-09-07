@@ -19,12 +19,17 @@ namespace Assets.UI_System
 		[SerializeField] private AudioSource SourcePrefab;
 
 		private AudioSource DialogSource;
+		private AudioSource EffectSource;
 		private AudioSource AmbientSource;
 		private AudioSource MusicSource;
 
 		void Awake()
 		{
 			instance = this;
+
+			EffectSource = Instantiate(SourcePrefab);
+			EffectSource.volume = 1f;
+
 			DialogSource = Instantiate(SourcePrefab);
 			DialogSource.volume = 1f;
 
@@ -34,6 +39,20 @@ namespace Assets.UI_System
 
 			MusicSource = Instantiate(SourcePrefab);
 			MusicSource.volume = musicVolume;
+		}
+
+		#endregion
+
+		#region Effect
+
+		public void PlayEffectClip(AudioClip clip)
+		{
+			if (clip != null)
+			{
+				EffectSource.clip = clip;
+				EffectSource.Play();
+			}
+
 		}
 
 		#endregion

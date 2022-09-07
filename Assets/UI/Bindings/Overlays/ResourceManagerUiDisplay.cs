@@ -1,20 +1,21 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Assets.GameModel;
+using Assets.UI_System;
 using TMPro;
 using UnityEngine;
 
 public class ResourceManagerUiDisplay : MonoBehaviour
 {
 	[SerializeField] private TMP_Text ValueText;
-	[SerializeField] private AudioSource audioSource;
 
 	private float lastResourceValue = -1;
-	public void RefreshResourceDisplay(float resourceValue)
+	public void RefreshResourceDisplay(float resourceValue, MainGameManager mgm)
 	{
 		if (lastResourceValue >= 0 && lastResourceValue < resourceValue)
 		{
-			StartCoroutine(UpdateResourceValue(lastResourceValue, resourceValue));
+			StartCoroutine(UpdateResourceValue(lastResourceValue, resourceValue, mgm));
 		}
 		else
 		{
@@ -24,18 +25,16 @@ public class ResourceManagerUiDisplay : MonoBehaviour
 		lastResourceValue = resourceValue;
 	}
 
-	private IEnumerator UpdateResourceValue(float currValue, float endingValue)
+	private IEnumerator UpdateResourceValue(float currValue, float endingValue, MainGameManager mgm)
 	{
-		audioSource.Play();
 		var tick = (endingValue - currValue) * .3f;
 		while (currValue < endingValue)
 		{
 			currValue = Mathf.Clamp(currValue + tick, currValue, endingValue);
 			ValueText.text = $"{(int)currValue}";
+			AudioHandler.Instance.PlayEffectClip(mgm.ResourceTickAudio);
 			yield return new WaitForSeconds(0.1f);
 		}
-
 		ValueText.text = $"{(int)endingValue}";
-		audioSource.Stop();
 	}
 }

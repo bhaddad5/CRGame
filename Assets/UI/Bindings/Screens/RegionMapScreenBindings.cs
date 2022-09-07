@@ -127,12 +127,12 @@ namespace Assets.GameModel.UiDisplayers
 
 			ShowTimeOfDay(mgm.Data.TurnNumber % 2 == 1);
 
-			Power.RefreshResourceDisplay(mgm.Data.Power);
-			Culture.RefreshResourceDisplay(mgm.Data.CorporateCulture);
-			Spreadsheets.RefreshResourceDisplay(mgm.Data.Spreadsheets);
-			Patents.RefreshResourceDisplay(mgm.Data.Patents);
-			Brand.RefreshResourceDisplay(mgm.Data.Brand);
-			Revanue.RefreshResourceDisplay(mgm.Data.Revenue);
+			Power.RefreshResourceDisplay(mgm.Data.Power, mgm);
+			Culture.RefreshResourceDisplay(mgm.Data.CorporateCulture, mgm);
+			Spreadsheets.RefreshResourceDisplay(mgm.Data.Spreadsheets, mgm);
+			Patents.RefreshResourceDisplay(mgm.Data.Patents, mgm);
+			Brand.RefreshResourceDisplay(mgm.Data.Brand, mgm);
+			Revanue.RefreshResourceDisplay(mgm.Data.Revenue, mgm);
 
 			AudioHandler.Instance.SetMusicTracks(region.GetCurrMusicTracks(mgm));
 		}

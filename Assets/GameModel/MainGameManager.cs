@@ -25,9 +25,12 @@ namespace Assets.GameModel
 		[SerializeField] private AudioClip policyAudioClip;
 		public AudioClip PolicyAudioClip => policyAudioClip;
 
+		[SerializeField] private AudioClip resourceTickAudio;
+		public AudioClip ResourceTickAudio => resourceTickAudio;
+
 		[SerializeField] private List<AudioClip> mainMenuAudio;
 		public List<AudioClip> MainMenuAudio => mainMenuAudio;
-
+		
 		[SerializeField] private List<AudioClip> worldWeekdayAudio;
 		public List<AudioClip> WorldWeekdayAudio => worldWeekdayAudio;
 

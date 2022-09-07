@@ -83,8 +83,8 @@ public class HudBindings : MonoBehaviour
 		PlayerName.text = $"{mgm.Data.FirstName} {mgm.Data.LastName}";
 		PlayerTitle.text = mgm.Data.PlayerPromotionLevels[mgm.Data.Promotion].Title;
 
-		Ego.RefreshResourceDisplay(mgm.Data.Ego);
-		Funds.RefreshResourceDisplay(mgm.Data.Funds);
+		Ego.RefreshResourceDisplay(mgm.Data.Ego, mgm);
+		Funds.RefreshResourceDisplay(mgm.Data.Funds, mgm);
 
 		string timeOfDay = mgm.Data.TurnNumber % 2 == 1 ? "Afternoon" : "Morning";
 		var dateTime = mgm.GetDateFromTurnNumber();
