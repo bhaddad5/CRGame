@@ -4,25 +4,30 @@ public static class NullCleanupLogic
 {
 	public static void CleanUpAnnoyingNulls(GameData gameData)
 	{
-		gameData.Locations.RemoveAll(i => i == null);
+		gameData.Regions.RemoveAll(i => i == null);
 		gameData.StartOfTurnInteractions.RemoveAll(i => i == null);
 
-		foreach (var location in gameData.Locations)
+		foreach (var region in gameData.Regions)
 		{
-			location.Npcs.RemoveAll(i => i == null);
-			location.Policies.RemoveAll(i => i == null);
-			location.Missions.RemoveAll(i => i == null);
-
-			foreach (var npc in location.Npcs)
+			region.Locations.RemoveAll(i => i == null);
+			foreach (var location in region.Locations)
 			{
-				npc.Interactions.RemoveAll(i => i == null);
+				location.Npcs.RemoveAll(i => i == null);
+				location.Policies.RemoveAll(i => i == null);
+				location.Missions.RemoveAll(i => i == null);
 
-				foreach (var interaction in npc.Interactions)
+				foreach (var npc in location.Npcs)
 				{
-					CleanUpInteractionNulls(interaction);
+					npc.Interactions.RemoveAll(i => i == null);
+
+					foreach (var interaction in npc.Interactions)
+					{
+						CleanUpInteractionNulls(interaction);
+					}
 				}
 			}
 		}
+		
 
 		foreach (var interaction in gameData.StartOfTurnInteractions)
 		{

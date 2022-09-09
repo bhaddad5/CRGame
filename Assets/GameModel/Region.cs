@@ -40,6 +40,12 @@ namespace Assets.GameModel
 		public List<AudioClip> WeekMusicTracks = new List<AudioClip>();
 		public List<AudioClip> WeekendMusicTracks = new List<AudioClip>();
 
+		public void Setup(MainGameManager mgm)
+		{
+			foreach (var ob in Locations)
+				ob.Setup(mgm);
+		}
+
 		public List<AudioClip> GetCurrMusicTracks(MainGameManager mgm)
 		{
 			return mgm.IsWeekend() ? WeekendMusicTracks : WeekMusicTracks;

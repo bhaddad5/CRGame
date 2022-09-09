@@ -73,10 +73,13 @@ namespace Assets.GameModel.Save
 			}
 
 			res.Locations = new List<SavedLocationState>();
-			foreach (var dataLocation in data.Locations)
+			foreach (var dataRegion in data.Regions)
 			{
-				if (dataLocation != null)
-					res.Locations.Add(SavedLocationState.FromData(dataLocation));
+				foreach (var dataLocation in dataRegion.Locations)
+				{
+					if (dataLocation != null)
+						res.Locations.Add(SavedLocationState.FromData(dataLocation));
+				}
 			}
 
 			res.StartTurnInteractions = new List<SavedInteractionState>();
@@ -126,11 +129,19 @@ namespace Assets.GameModel.Save
 				data.AddItemToInventory(foundItem);
 			}
 
-			foreach (var location in Locations)
+			foreach (var resRegion in data.Regions)
 			{
-				location.ApplyToData(data.Locations.FirstOrDefault(d => d?.Id == location.Id));
+				foreach (var resLocation in resRegion.Locations)
+				{
+					if (Locations.Any(d => d.Id == resLocation?.Id))
+					{
+						var dataLocation = Locations.FirstOrDefault(d => d.Id == resLocation?.Id);
+						dataLocation.ApplyToData(resLocation);
+					}
+					
+				}
 			}
-
+			
 			foreach (var startTurnInteraction in StartTurnInteractions)
 			{
 				startTurnInteraction.ApplyToData(data.StartOfTurnInteractions.FirstOrDefault(i => i?.Id == startTurnInteraction.Id));

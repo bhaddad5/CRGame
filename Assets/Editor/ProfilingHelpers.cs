@@ -17,12 +17,15 @@ public static class ProfilingHelpers
 		var gameData = LoadGameData();
 		List<Npc> res = new List<Npc>();
 
-		foreach (var location in gameData.Locations)
+		foreach (var region in gameData.Regions)
 		{
-			foreach (var npc in location.Npcs)
+			foreach (var location in region.Locations)
 			{
-				if(npc != null)
-					res.Add(npc);
+				foreach (var npc in location.Npcs)
+				{
+					if (npc != null)
+						res.Add(npc);
+				}
 			}
 		}
 
@@ -34,14 +37,17 @@ public static class ProfilingHelpers
 		var gameData = LoadGameData();
 
 		var res = new List<Mission>();
-
-		foreach (var location in gameData.Locations)
+		foreach (var region in gameData.Regions)
 		{
-			foreach (var m in location.Missions)
+			foreach (var location in region.Locations)
 			{
-				res.Add(m);
+				foreach (var m in location.Missions)
+				{
+					res.Add(m);
+				}
 			}
 		}
+			
 
 		return res;
 	}
@@ -52,11 +58,14 @@ public static class ProfilingHelpers
 
 		var res = new List<Policy>();
 
-		foreach (var location in gameData.Locations)
+		foreach (var region in gameData.Regions)
 		{
-			foreach (var p in location.Policies)
+			foreach (var location in region.Locations)
 			{
-				res.Add(p);
+				foreach (var p in location.Policies)
+				{
+					res.Add(p);
+				}
 			}
 		}
 
@@ -76,18 +85,22 @@ public static class ProfilingHelpers
 			interactions.Add(startOfTurnInteraction);
 		}
 
-		foreach (var location in gameData.Locations)
+		foreach (var region in gameData.Regions)
 		{
-			foreach (var npc in location.Npcs)
+			foreach (var location in region.Locations)
 			{
-				foreach (var interaction in npc.Interactions)
+				foreach (var npc in location.Npcs)
 				{
-					if (interaction == null)
-						continue;
-					interactions.Add(interaction);
+					foreach (var interaction in npc.Interactions)
+					{
+						if (interaction == null)
+							continue;
+						interactions.Add(interaction);
+					}
 				}
 			}
 		}
+			
 
 		return interactions;
 	}
@@ -105,16 +118,19 @@ public static class ProfilingHelpers
 				effects.Add(new KeyValuePair<string, Effect>($"InteractionFailed(\"{interaction.Name}\")", interaction.FailureResult.Effect));
 		}
 
-		foreach (var location in gameData.Locations)
+		foreach (var region in gameData.Regions)
 		{
-			foreach (var mission in location.Missions)
+			foreach (var location in region.Locations)
 			{
-				effects.Add(new KeyValuePair<string, Effect>($"Mission(\"{mission.MissionName}\")", mission.Effect));
-			}
+				foreach (var mission in location.Missions)
+				{
+					effects.Add(new KeyValuePair<string, Effect>($"Mission(\"{mission.MissionName}\")", mission.Effect));
+				}
 
-			foreach (var policy in location.Policies)
-			{
-				effects.Add(new KeyValuePair<string, Effect>($"Policy(\"{policy.Name}\")", policy.Effect));
+				foreach (var policy in location.Policies)
+				{
+					effects.Add(new KeyValuePair<string, Effect>($"Policy(\"{policy.Name}\")", policy.Effect));
+				}
 			}
 		}
 
@@ -212,14 +228,18 @@ public static class ProfilingHelpers
 		}
 
 
-		foreach (var location in gameData.Locations)
+		foreach (var region in gameData.Regions)
 		{
-			foreach (var mission in location.Missions)
+			foreach (var location in region.Locations)
 			{
-				if (!missionCompleters.ContainsKey(mission))
-					Debug.LogError($"{mission.MissionName} has no completion effect!");
+				foreach (var mission in location.Missions)
+				{
+					if (!missionCompleters.ContainsKey(mission))
+						Debug.LogError($"{mission.MissionName} has no completion effect!");
+				}
 			}
 		}
+			
 
 		foreach (var missionCompleter in missionCompleters)
 		{
@@ -243,25 +263,29 @@ public static class ProfilingHelpers
 		var loc = Selection.activeObject as Location;
 
 		var selectedNpc = Selection.activeObject as Npc;
-		
-		foreach (var location in gameData.Locations)
+
+		foreach (var region in gameData.Regions)
 		{
-			foreach (var npc in location.Npcs)
+			foreach (var location in region.Locations)
 			{
-				foreach (var interaction in npc.Interactions)
+				foreach (var npc in location.Npcs)
 				{
-					if(interaction.Result.Effect.LocationsToControl.Contains(loc))
-						Debug.Log($"Controlled by: {interaction}");
+					foreach (var interaction in npc.Interactions)
+					{
+						if (interaction.Result.Effect.LocationsToControl.Contains(loc))
+							Debug.Log($"Controlled by: {interaction}");
 
-					if (interaction.Result.Effect.NpcsToControl.Contains(selectedNpc))
-						Debug.Log($"Controlled by: {interaction}");
+						if (interaction.Result.Effect.NpcsToControl.Contains(selectedNpc))
+							Debug.Log($"Controlled by: {interaction}");
 
-					if (interaction.Result.Effect.NpcsToRemoveFromGame.Contains(selectedNpc))
-						Debug.Log($"Removed From Game by: {interaction}");
+						if (interaction.Result.Effect.NpcsToRemoveFromGame.Contains(selectedNpc))
+							Debug.Log($"Removed From Game by: {interaction}");
+					}
+
 				}
-
 			}
 		}
+			
 	}
 	
 	[MenuItem("Company Man Debugging/Print Control and Completion Interactions")]
@@ -269,27 +293,31 @@ public static class ProfilingHelpers
 	{
 		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
 
-		foreach (var location in gameData.Locations)
+		foreach (var region in gameData.Regions)
 		{
-			foreach (var npc in location.Npcs)
+			foreach (var location in region.Locations)
 			{
-				foreach (var interaction in npc.Interactions)
+				foreach (var npc in location.Npcs)
 				{
-					foreach (var ob in interaction.Result.Effect.NpcsToControl)
-						Debug.Log($"{ob} controlled by {interaction}");
-					foreach (var ob in interaction.Result.Effect.NpcsToTrain)
-						Debug.Log($"{ob} trained by {interaction}");
-					foreach (var ob in interaction.Result.Effect.NpcsToRemoveFromGame)
-						Debug.Log($"{ob} removed from game by {interaction}");
-					foreach (var ob in interaction.Result.Effect.LocationsToControl)
-						Debug.Log($"{ob} controlled by {interaction}");
-					foreach (var ob in interaction.Result.Effect.TrophiesClaimedReferences)
-						Debug.Log($"{ob} claimed by {interaction}");
-					foreach (var ob in interaction.Result.Effect.MissionsToComplete)
-						Debug.Log($"{ob} completed by {interaction}");
+					foreach (var interaction in npc.Interactions)
+					{
+						foreach (var ob in interaction.Result.Effect.NpcsToControl)
+							Debug.Log($"{ob} controlled by {interaction}");
+						foreach (var ob in interaction.Result.Effect.NpcsToTrain)
+							Debug.Log($"{ob} trained by {interaction}");
+						foreach (var ob in interaction.Result.Effect.NpcsToRemoveFromGame)
+							Debug.Log($"{ob} removed from game by {interaction}");
+						foreach (var ob in interaction.Result.Effect.LocationsToControl)
+							Debug.Log($"{ob} controlled by {interaction}");
+						foreach (var ob in interaction.Result.Effect.TrophiesClaimedReferences)
+							Debug.Log($"{ob} claimed by {interaction}");
+						foreach (var ob in interaction.Result.Effect.MissionsToComplete)
+							Debug.Log($"{ob} completed by {interaction}");
+					}
 				}
 			}
 		}
+			
 	}
 
 	[MenuItem("Company Man Debugging/Copy All Text")]
@@ -299,48 +327,52 @@ public static class ProfilingHelpers
 
 		string AllText = "";
 
-		foreach (var location in gameData.Locations)
+		foreach (var region in gameData.Regions)
 		{
-			foreach (var npc in location.Npcs)
+			foreach (var location in region.Locations)
 			{
-				AllText += $"NPC BIO - {npc.name}: {npc.Bio}\n\n";
-
-				foreach (var interaction in npc.Interactions)
+				foreach (var npc in location.Npcs)
 				{
-					string interactionText = $"INTERACTION - {interaction.name}:\n";
-					foreach (var dialog in interaction.Result.Dialogs)
+					AllText += $"NPC BIO - {npc.name}: {npc.Bio}\n\n";
+
+					foreach (var interaction in npc.Interactions)
 					{
-						interactionText += $"{dialog.Text}\n";
+						string interactionText = $"INTERACTION - {interaction.name}:\n";
+						foreach (var dialog in interaction.Result.Dialogs)
+						{
+							interactionText += $"{dialog.Text}\n";
+						}
+
+						foreach (var popup in interaction.Result.OptionalPopups)
+						{
+							interactionText += $"POPUP: {popup.Text}";
+						}
+
+						if (interaction.CanFail)
+							interactionText += $"Fail Result:\n";
+						foreach (var dialog in interaction.FailureResult.Dialogs)
+						{
+							interactionText += $"{dialog.Text}\n";
+						}
+
+
+
+						AllText += $"{interactionText}\n\n";
 					}
+				}
 
-					foreach (var popup in interaction.Result.OptionalPopups)
-					{
-						interactionText += $"POPUP: {popup.Text}";
-					}
+				foreach (var policy in location.Policies)
+				{
+					AllText += $"POLICY - {policy.name}: {policy.Description}\n\n";
+				}
 
-					if (interaction.CanFail)
-						interactionText += $"Fail Result:\n";
-					foreach (var dialog in interaction.FailureResult.Dialogs)
-					{
-						interactionText += $"{dialog.Text}\n";
-					}
-
-
-
-					AllText += $"{interactionText}\n\n";
+				foreach (var mission in location.Missions)
+				{
+					AllText += $"MISSION - {mission.name}: {mission.MissionDescription}\n\n";
 				}
 			}
-
-			foreach (var policy in location.Policies)
-			{
-				AllText += $"POLICY - {policy.name}: {policy.Description}\n\n";
-			}
-
-			foreach (var mission in location.Missions)
-			{
-				AllText += $"MISSION - {mission.name}: {mission.MissionDescription}\n\n";
-			}
 		}
+			
 
 		GUIUtility.systemCopyBuffer = AllText;
 		Debug.Log("Copy Complete!  Paste it anywhere");
@@ -387,44 +419,49 @@ public static class ProfilingHelpers
 		var gameData = LoadGameData();
 
 		float totalInGame = 0f;
-		foreach (var location in gameData.Locations)
+
+		foreach (var region in gameData.Regions)
 		{
-			float locationTotalResource = 0f;
-			string npcsString = "";
-			float allNpcsResource = 0f;
-			foreach (var npc in location.Npcs)
+			foreach (var location in region.Locations)
 			{
-				float npcTotalPower = 0f;
-				foreach (var interaction in npc.Interactions)
+				float locationTotalResource = 0f;
+				string npcsString = "";
+				float allNpcsResource = 0f;
+				foreach (var npc in location.Npcs)
 				{
-					if (interaction == null)
-						continue;
-					npcTotalPower += resourceGetter(interaction.Result.Effect);
+					float npcTotalPower = 0f;
+					foreach (var interaction in npc.Interactions)
+					{
+						if (interaction == null)
+							continue;
+						npcTotalPower += resourceGetter(interaction.Result.Effect);
+					}
+
+					locationTotalResource += npcTotalPower;
+					allNpcsResource += npcTotalPower;
+					npcsString += $" ({npc.FirstName} {npc.LastName} - {resourceName}: {npcTotalPower})";
 				}
 
-				locationTotalResource += npcTotalPower;
-				allNpcsResource += npcTotalPower;
-				npcsString += $" ({npc.FirstName} {npc.LastName} - {resourceName}: {npcTotalPower})";
-			}
+				float missionsTotal = 0;
+				foreach (var mission in location.Missions)
+				{
+					locationTotalResource += resourceGetter(mission.Effect);
+					missionsTotal += resourceGetter(mission.Effect);
+				}
+				float policiesTotal = 0;
+				foreach (var policy in location.Policies)
+				{
+					locationTotalResource += resourceGetter(policy.Effect);
+					policiesTotal += resourceGetter(policy.Effect);
+				}
 
-			float missionsTotal = 0;
-			foreach (var mission in location.Missions)
-			{
-				locationTotalResource += resourceGetter(mission.Effect);
-				missionsTotal += resourceGetter(mission.Effect);
-			}
-			float policiesTotal = 0;
-			foreach (var policy in location.Policies)
-			{
-				locationTotalResource += resourceGetter(policy.Effect);
-				policiesTotal += resourceGetter(policy.Effect);
-			}
+				totalInGame += locationTotalResource;
 
-			totalInGame += locationTotalResource;
-
-			if (locationTotalResource != 0)
-				Debug.Log($"{location.Name}: Total {resourceName} = {locationTotalResource}, From Missions: {missionsTotal}, From Policies {policiesTotal}, From NPCs: {allNpcsResource} {npcsString}");
+				if (locationTotalResource != 0)
+					Debug.Log($"{location.Name}: Total {resourceName} = {locationTotalResource}, From Missions: {missionsTotal}, From Policies {policiesTotal}, From NPCs: {allNpcsResource} {npcsString}");
+			}
 		}
+			
 
 		Debug.Log($"Total {resourceName} In Game = {totalInGame}");
 	}

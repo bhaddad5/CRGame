@@ -40,7 +40,7 @@ public class CreateLocationWindow : EditorWindow
 		loc.Name = locName;
 		loc.Id = Guid.NewGuid().ToString();
 
-		data.Locations.Add(loc);
+		data.Regions[0].Locations.Add(loc);
 		EditorUtility.SetDirty(data);
 
 		string locFolder = Path.Combine($"Assets/Data", loc.Name.ToFolderName());

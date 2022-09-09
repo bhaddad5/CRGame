@@ -44,7 +44,6 @@ namespace Assets.GameModel
 		public List<Home> PlayerHomeLevels = new List<Home>();
 
 		public List<InventoryItem> InventoryItemOptions = new List<InventoryItem>();
-		public List<Location> Locations = new List<Location>();
 		public List<Region> Regions = new List<Region>();
 
 		public List<Interaction> StartOfTurnInteractions = new List<Interaction>();
@@ -74,7 +73,7 @@ namespace Assets.GameModel
 			JewleryRing = false;
 			JewleryWatch = false;
 
-			foreach (var ob in Locations)
+			foreach (var ob in Regions)
 				ob.Setup(mgm);
 
 			foreach (var ob in StartOfTurnInteractions)
@@ -88,14 +87,17 @@ namespace Assets.GameModel
 		public List<Trophy> GetOwnedTrophies()
 		{
 			List<Trophy> res = new List<Trophy>();
-			foreach (var department in Locations)
+			foreach (var region in Regions)
 			{
-				foreach (var npc in department.Npcs)
+				foreach (var department in region.Locations)
 				{
-					foreach (var trophy in npc.Trophies)
+					foreach (var npc in department.Npcs)
 					{
-						if (trophy.Owned)
-							res.Add(trophy);
+						foreach (var trophy in npc.Trophies)
+						{
+							if (trophy.Owned)
+								res.Add(trophy);
+						}
 					}
 				}
 			}
