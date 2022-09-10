@@ -327,11 +327,16 @@ public class EditorValidators
 	public static void ReduceVideoClips()
 	{
 		var vids = AssetDatabase.FindAssets("t:videoClip");
-		
+
+		int count = 0;
+
 		foreach (var vidGuid in vids)
 		{
+			if (count > 10)
+				break;
+
 			var vid = AssetDatabase.GUIDToAssetPath(vidGuid);
-			if (!vid.Contains("bbowers_intro"))
+			if (vid.EndsWith("-reduced.mp4"))
 				continue;
 
 			vid = vid.Remove(0, "Assets/".Length);
@@ -339,7 +344,13 @@ public class EditorValidators
 			var vidDest = vid.Replace(".mp4", "-reduced.mp4");
 			ProcessStartInfo startInfo = new ProcessStartInfo($"{Application.dataPath}/Editor/VideoConverter/VideoConverter.exe");
 			startInfo.Arguments = $"\"{vid}\" \"{vidDest}\" 20";
-			Process.Start(startInfo);
+			var p = Process.Start(startInfo);
+			p.WaitForExit();
+
+			File.Move($"{vid}.meta", $"{vidDest}.meta");
+			File.Delete(vid);
+
+			count++;
 
 			//Rename old .meta file to move asset ref?
 		}
