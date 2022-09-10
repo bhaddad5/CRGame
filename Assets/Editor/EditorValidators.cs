@@ -340,6 +340,8 @@ public class EditorValidators
 			ProcessStartInfo startInfo = new ProcessStartInfo($"{Application.dataPath}/Editor/VideoConverter/VideoConverter.exe");
 			startInfo.Arguments = $"\"{vid}\" \"{vidDest}\" 20";
 			Process.Start(startInfo);
+
+			//Rename old .meta file to move asset ref?
 		}
 
 		Debug.Log("Done!");
