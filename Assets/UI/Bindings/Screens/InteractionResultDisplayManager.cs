@@ -49,9 +49,9 @@ public class InteractionResultDisplayManager
 		{
 			var dialog = currDialogsToShow[0];
 
-			AudioHandler.Instance.PlayDialogClip(dialog.OptionalAudioClip);
+			AudioHandler.Instance.PlayDialogClip(dialog.OptionalAudioClipTmp);
 			if (dialog.OptionalStartMusicClip != null)
-				AudioHandler.Instance.PlayOverridingMusicTrack(dialog.OptionalStartMusicClip);
+				AudioHandler.Instance.PlayOverridingMusicTrack(dialog.OptionalStartMusicClipTmp);
 
 			currDialogsToShow.RemoveAt(0);
 			GameObject.Instantiate(UiPrefabReferences.Instance.GetPrefabByName("Dialog Screen")).GetComponent<DialogScreenBindings>().Setup(dialog, mgm, HandleNextDialog);

@@ -51,7 +51,17 @@ namespace Assets.GameModel
 		public NpcLayout PersonalLayout = new NpcLayout() { width = 200, xPos = .5f, yPos = .5f };
 
 		public Texture2D BackgroundImage;
-		public AudioClip OptionalDialogClip;
+		public AudioClip OptionalDialogClip = null;
+		public string OptionalDialogClipTmp
+		{
+			get
+			{
+				if (OptionalDialogClip)
+					return OptionalDialogClip?.name;
+				else
+					return null;
+			}
+		}
 
 		[HideInInspector]
 		public float Ambition;

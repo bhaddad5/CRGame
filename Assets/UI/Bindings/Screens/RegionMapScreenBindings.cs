@@ -71,7 +71,7 @@ namespace Assets.GameModel.UiDisplayers
 				d.transform.SetParent(QuickAccessLocationsParent, false);
 			}
 
-			AudioHandler.Instance.SetBackgroundAmbiance(region.BackgroundAmbience);
+			AudioHandler.Instance.SetBackgroundAmbiance(region.BackgroundAmbienceTmp);
 
 			AudioHandler.Instance.SetMusicTracks(region.GetCurrMusicTracks(mgm));
 		}
@@ -87,7 +87,7 @@ namespace Assets.GameModel.UiDisplayers
 			{
 				foreach (var ui in RegionUiToHide)
 					ui.SetActive(true);
-				AudioHandler.Instance.SetBackgroundAmbiance(region.BackgroundAmbience);
+				AudioHandler.Instance.SetBackgroundAmbiance(region.BackgroundAmbienceTmp);
 				RefreshUiDisplay(mgm);
 			});
 			_currOpenLocation.RefreshUiDisplay(mgm);

@@ -45,8 +45,9 @@ namespace Assets.UI_System
 
 		#region Effect
 
-		public void PlayEffectClip(AudioClip clip)
+		public void PlayEffectClip(string clipTmp)
 		{
+			var clip = Resources.Load<AudioClip>($"Audio/{clipTmp}");
 			if (clip != null)
 			{
 				EffectSource.clip = clip;
@@ -59,8 +60,9 @@ namespace Assets.UI_System
 
 		#region Dialog
 
-		public void PlayDialogClip(AudioClip clip)
+		public void PlayDialogClip(string clipTmp)
 		{
+			var clip = Resources.Load<AudioClip>($"Audio/{clipTmp}");
 			if (clip != null)
 			{
 				DialogSource.clip = clip;
@@ -73,7 +75,7 @@ namespace Assets.UI_System
 
 		#region Ambience
 
-		public void SetBackgroundAmbiance(AudioClip clip)
+		public void SetBackgroundAmbiance(string clip)
 		{
 			
 		}
@@ -88,8 +90,14 @@ namespace Assets.UI_System
 		private List<AudioClip> currAudioClips = new List<AudioClip>();
 		private bool fadeToNew = false;
 		private float fadeToNewStartTime = 0f;
-		public void SetMusicTracks(List<AudioClip> tracks)
+		public void SetMusicTracks(List<string> tracksTmp)
 		{
+			List<AudioClip> tracks = new List<AudioClip>();
+			foreach (var tmpTrack in tracksTmp)
+			{
+				tracks.Add(Resources.Load<AudioClip>($"Audio/{tmpTrack}"));
+			}
+
 			//If it's all just the same clips we don't wanna swap the list and trigger a track restart
 			if (tracks.Count == currAudioClips.Count)
 			{
@@ -117,8 +125,10 @@ namespace Assets.UI_System
 
 
 		private bool isOverriding = false;
-		public void PlayOverridingMusicTrack(AudioClip clip)
+		public void PlayOverridingMusicTrack(string clipTmp)
 		{
+			var clip = Resources.Load<AudioClip>($"Audio/{clipTmp}");
+
 			Debug.Log("Play Overriding!");
 
 			MusicSource.clip = clip;
@@ -137,6 +147,7 @@ namespace Assets.UI_System
 				if (currAudioClips.Count > 1 && newClip == MusicSource.clip)
 					newClip = currAudioClips.First(c => c != MusicSource.clip);
 				MusicSource.clip = newClip;
+				Debug.Log($"Setting clip to {MusicSource.clip}, clips count = {currAudioClips.Count}");
 				MusicSource.Play();
 			}
 

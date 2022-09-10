@@ -86,7 +86,11 @@ namespace Assets.GameModel
 		{
 			UnityEngine.Random.InitState(System.DateTime.Now.Millisecond);
 
-			return !CanFail || Random.Range(0f, 1f) >= ProbabilityOfFailureResult;
+			var val = Random.Range(0f, 1f);
+
+			Debug.Log($"{val} >= {ProbabilityOfFailureResult}?");
+
+			return !CanFail || val >= ProbabilityOfFailureResult;
 		}
 
 		public InteractionResult GetInteractionResult(bool succeeded)

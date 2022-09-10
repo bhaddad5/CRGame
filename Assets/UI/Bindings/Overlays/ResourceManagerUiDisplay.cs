@@ -27,13 +27,13 @@ public class ResourceManagerUiDisplay : MonoBehaviour
 
 	private IEnumerator UpdateResourceValue(float currValue, float endingValue, MainGameManager mgm)
 	{
-		var tick = (endingValue - currValue) * .3f;
+		var tick = (endingValue - currValue) * .15f;
 		while (currValue < endingValue)
 		{
 			currValue = Mathf.Clamp(currValue + tick, currValue, endingValue);
 			ValueText.text = $"{(int)currValue}";
 			AudioHandler.Instance.PlayEffectClip(mgm.ResourceTickAudio);
-			yield return new WaitForSeconds(0.1f);
+			yield return new WaitForSeconds(0.05f);
 		}
 		ValueText.text = $"{(int)endingValue}";
 	}

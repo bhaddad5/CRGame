@@ -36,9 +36,46 @@ namespace Assets.GameModel
 		public List<Location> QuickAccessLocations = new List<Location>();
 		public List<Location> Locations = new List<Location>();
 
-		public AudioClip BackgroundAmbience;
+		public AudioClip BackgroundAmbience = null;
+		public string BackgroundAmbienceTmp
+		{
+			get
+			{
+				if (BackgroundAmbience)
+					return BackgroundAmbience?.name;
+				else
+					return null;
+			}
+		}
+
 		public List<AudioClip> WeekMusicTracks = new List<AudioClip>();
+
+		public List<string> WeekMusicTracksTmp
+		{
+			get
+			{
+				var res = new List<string>();
+				foreach (var track in WeekMusicTracks)
+				{
+					res.Add(track.name);
+				}
+				return res;
+			}
+		}
+
 		public List<AudioClip> WeekendMusicTracks = new List<AudioClip>();
+		public List<string> WeekendMusicTracksTmp
+		{
+			get
+			{
+				var res = new List<string>();
+				foreach (var track in WeekendMusicTracks)
+				{
+					res.Add(track.name);
+				}
+				return res;
+			}
+		}
 
 		public void Setup(MainGameManager mgm)
 		{
@@ -46,9 +83,9 @@ namespace Assets.GameModel
 				ob.Setup(mgm);
 		}
 
-		public List<AudioClip> GetCurrMusicTracks(MainGameManager mgm)
+		public List<string> GetCurrMusicTracks(MainGameManager mgm)
 		{
-			return mgm.IsWeekend() ? WeekendMusicTracks : WeekMusicTracks;
+			return mgm.IsWeekend() ? WeekendMusicTracksTmp : WeekMusicTracksTmp;
 		}
 
 		public bool IsVisible(MainGameManager mgm)

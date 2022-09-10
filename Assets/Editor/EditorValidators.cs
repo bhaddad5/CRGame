@@ -241,8 +241,8 @@ public class EditorValidators
 		Debug.Log("Null values removed!");
 	}
 
-	[MenuItem("Company Man Validators/UpgradeOldData", false, 200)]
-	public static void UpgradeOldData()
+	[MenuItem("Company Man Validators/Update Audio Clip Names", false, 200)]
+	public static void UpdateAudioClipNames()
 	{
 		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
 
@@ -252,25 +252,73 @@ public class EditorValidators
 			{
 				foreach (var npc in location.Npcs)
 				{
+					if (npc.OptionalDialogClip != null)
+					{
+						var newClipName = $"{npc.FirstName} {npc.LastName} Screen Dialog";
+						newClipName = newClipName.Replace("'", "");
+						AssetDatabase.MoveAsset(AssetDatabase.GetAssetPath(npc.OptionalDialogClip), $"Assets/Resources/Audio/{newClipName}.wav");
+					}
+
 					foreach (var interaction in npc.Interactions)
 					{
-						if (interaction.Cost.HornicalCost > 0)
+						int i = 0;
+						foreach (var dialogEntry in interaction.Result.Dialogs)
 						{
-							interaction.Cost.Items.Add(DataUpgradeRefs.Instance.Hornical);
-							EditorUtility.SetDirty(interaction);
+							if (dialogEntry.OptionalAudioClip != null)
+							{
+								string newClipName = $"{npc.FirstName} {npc.LastName} {interaction.Name} {i}";
+								newClipName = newClipName.Replace("'", "");
+								AssetDatabase.MoveAsset(AssetDatabase.GetAssetPath(dialogEntry.OptionalAudioClip), $"Assets/Resources/Audio/{newClipName}.wav");
+							}
+
+							i++;
 						}
-						if (interaction.Result.Effect.HornicalEffect > 0)
+
+						i = 0;
+						foreach (var popup in interaction.Result.OptionalPopups)
 						{
-							interaction.Result.Effect.ItemsToAdd.Add(DataUpgradeRefs.Instance.Hornical);
-							EditorUtility.SetDirty(interaction);
+							int j = 0;
+							foreach (var clip in popup.DialogClips)
+							{
+								if(clip == null)
+									continue;
+								string newClipName = $"{npc.FirstName} {npc.LastName} {interaction.Name} Popup {i} - {j}";
+								newClipName = newClipName.Replace("'", "");
+								AssetDatabase.MoveAsset(AssetDatabase.GetAssetPath(clip), $"Assets/Resources/Audio/{newClipName}.wav");
+							}
+						}
+
+						i = 0;
+						foreach (var dialogEntry in interaction.FailureResult.Dialogs)
+						{
+							if (dialogEntry.OptionalAudioClip != null)
+							{
+								string newClipName = $"{npc.FirstName} {npc.LastName} {interaction.Name} FAILED {i}";
+								newClipName = newClipName.Replace("'", "");
+								AssetDatabase.MoveAsset(AssetDatabase.GetAssetPath(dialogEntry.OptionalAudioClip), $"Assets/Resources/Audio/{newClipName}.wav");
+							}
+
+							i++;
+						}
+
+						i = 0;
+						foreach (var popup in interaction.FailureResult.OptionalPopups)
+						{
+							int j = 0;
+							foreach (var clip in popup.DialogClips)
+							{
+								if (clip == null)
+									continue;
+								string newClipName = $"{npc.FirstName} {npc.LastName} {interaction.Name} FAILED Popup {i} - {j}";
+								newClipName = newClipName.Replace("'", "");
+								AssetDatabase.MoveAsset(AssetDatabase.GetAssetPath(clip), $"Assets/Resources/Audio/{newClipName}.wav");
+							}
 						}
 					}
 				}
-				location.Missions.RemoveAll(v => v == null);
 			}
 		}
-			
-		Debug.Log("Null values removed!");
+		Debug.Log("Done!");
 	}
 
 	//TODO: USE THIS AS A TEMPLATE FOR DATA UPGRADES!

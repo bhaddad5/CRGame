@@ -46,7 +46,8 @@ public class PopupBindings : MonoBehaviour
 
 		if (popup.DialogClips?.Count > 0)
 		{
-			var clip = popup.DialogClips[completionCount % popup.DialogClips.Count];
+			var index = completionCount % popup.DialogClips.Count;
+			var clip = popup.DialogClipsTmp[index];
 			AudioHandler.Instance.PlayDialogClip(clip);
 		}
 	}
