@@ -39,9 +39,9 @@ public class PopupBindings : MonoBehaviour
 		
 		if (popup.Videos?.Count > 0)
 		{
-			VideoPlayer.GetComponent<RawImage>().texture = VideoTexture;
 			UnityEngine.Random.InitState(System.DateTime.Now.Millisecond);
 			VideoPlayer.clip = popup.Videos[completionCount % popup.Videos.Count];
+			VideoPlayer.GetComponent<RawImage>().texture = VideoTexture;
 		}
 
 		if (popup.DialogClips?.Count > 0)

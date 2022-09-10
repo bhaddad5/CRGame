@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -8,6 +9,7 @@ using Assets.GameModel;
 using Assets.GameModel.Save;
 using UnityEditor;
 using UnityEngine;
+using Debug = UnityEngine.Debug;
 using Object = System.Object;
 
 public class EditorValidators
@@ -318,6 +320,28 @@ public class EditorValidators
 				}
 			}
 		}
+		Debug.Log("Done!");
+	}
+
+	[MenuItem("Company Man Validators/Reduce Video Clips", false, 200)]
+	public static void ReduceVideoClips()
+	{
+		var vids = AssetDatabase.FindAssets("t:videoClip");
+		
+		foreach (var vidGuid in vids)
+		{
+			var vid = AssetDatabase.GUIDToAssetPath(vidGuid);
+			if (!vid.Contains("bbowers_intro"))
+				continue;
+
+			vid = vid.Remove(0, "Assets/".Length);
+			vid = $"{Application.dataPath}/{vid}";
+			var vidDest = vid.Replace(".mp4", "-reduced.mp4");
+			ProcessStartInfo startInfo = new ProcessStartInfo($"{Application.dataPath}/Editor/VideoConverter/VideoConverter.exe");
+			startInfo.Arguments = $"\"{vid}\" \"{vidDest}\" 20";
+			Process.Start(startInfo);
+		}
+
 		Debug.Log("Done!");
 	}
 
