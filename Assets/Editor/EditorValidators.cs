@@ -254,11 +254,13 @@ public class EditorValidators
 			{
 				foreach (var npc in location.Npcs)
 				{
+					var destFolder = $"{Path.GetDirectoryName(AssetDatabase.GetAssetPath(npc))}/Interactions";
+					
 					if (npc.OptionalDialogClip != null)
 					{
 						var newClipName = $"{npc.FirstName} {npc.LastName} Screen Dialog";
 						newClipName = newClipName.Replace("'", "");
-						AssetDatabase.MoveAsset(AssetDatabase.GetAssetPath(npc.OptionalDialogClip), $"Assets/Resources/Audio/{newClipName}.wav");
+						AssetDatabase.MoveAsset(AssetDatabase.GetAssetPath(npc.OptionalDialogClip), $"{destFolder}/{Path.GetFileName(newClipName)}.wav");
 					}
 
 					foreach (var interaction in npc.Interactions)
@@ -270,7 +272,7 @@ public class EditorValidators
 							{
 								string newClipName = $"{npc.FirstName} {npc.LastName} {interaction.Name} {i}";
 								newClipName = newClipName.Replace("'", "");
-								AssetDatabase.MoveAsset(AssetDatabase.GetAssetPath(dialogEntry.OptionalAudioClip), $"Assets/Resources/Audio/{newClipName}.wav");
+								AssetDatabase.MoveAsset(AssetDatabase.GetAssetPath(dialogEntry.OptionalAudioClip), $"{destFolder}/{Path.GetFileName(newClipName)}.wav");
 							}
 
 							i++;
@@ -286,7 +288,7 @@ public class EditorValidators
 									continue;
 								string newClipName = $"{npc.FirstName} {npc.LastName} {interaction.Name} Popup {i} - {j}";
 								newClipName = newClipName.Replace("'", "");
-								AssetDatabase.MoveAsset(AssetDatabase.GetAssetPath(clip), $"Assets/Resources/Audio/{newClipName}.wav");
+								AssetDatabase.MoveAsset(AssetDatabase.GetAssetPath(clip), $"{destFolder}/{Path.GetFileName(newClipName)}.wav");
 							}
 						}
 
@@ -297,7 +299,7 @@ public class EditorValidators
 							{
 								string newClipName = $"{npc.FirstName} {npc.LastName} {interaction.Name} FAILED {i}";
 								newClipName = newClipName.Replace("'", "");
-								AssetDatabase.MoveAsset(AssetDatabase.GetAssetPath(dialogEntry.OptionalAudioClip), $"Assets/Resources/Audio/{newClipName}.wav");
+								AssetDatabase.MoveAsset(AssetDatabase.GetAssetPath(dialogEntry.OptionalAudioClip), $"{destFolder}/{Path.GetFileName(newClipName)}.wav");
 							}
 
 							i++;
@@ -313,7 +315,7 @@ public class EditorValidators
 									continue;
 								string newClipName = $"{npc.FirstName} {npc.LastName} {interaction.Name} FAILED Popup {i} - {j}";
 								newClipName = newClipName.Replace("'", "");
-								AssetDatabase.MoveAsset(AssetDatabase.GetAssetPath(clip), $"Assets/Resources/Audio/{newClipName}.wav");
+								AssetDatabase.MoveAsset(AssetDatabase.GetAssetPath(clip), $"{destFolder}/{Path.GetFileName(newClipName)}.wav");
 							}
 						}
 					}
