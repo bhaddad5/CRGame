@@ -327,14 +327,9 @@ public class EditorValidators
 	public static void ReduceVideoClips()
 	{
 		var vids = AssetDatabase.FindAssets("t:videoClip");
-
-		int count = 0;
-
+		
 		foreach (var vidGuid in vids)
 		{
-			if (count > 10)
-				break;
-
 			var vid = AssetDatabase.GUIDToAssetPath(vidGuid);
 			if (vid.EndsWith("-reduced.mp4"))
 				continue;
@@ -349,10 +344,6 @@ public class EditorValidators
 
 			File.Move($"{vid}.meta", $"{vidDest}.meta");
 			File.Delete(vid);
-
-			count++;
-
-			//Rename old .meta file to move asset ref?
 		}
 
 		Debug.Log("Done!");
