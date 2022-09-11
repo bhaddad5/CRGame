@@ -84,7 +84,7 @@ namespace Assets.GameModel
 
 		public bool GetInteractionSucceeded()
 		{
-			UnityEngine.Random.InitState(System.DateTime.Now.Millisecond);
+			UnityEngine.Random.InitState((int)Time.time);
 
 			var val = Random.Range(0f, 1f);
 

@@ -18,16 +18,6 @@ namespace Assets.GameModel
 		public Texture2D Icon;
 		public Texture2D BackgroundImage;
 		public AudioClip OptionalBackgroundAudio = null;
-		public string OptionalBackgroundAudioTmp
-		{
-			get
-			{
-				if (OptionalBackgroundAudio)
-					return OptionalBackgroundAudio?.name;
-				else
-					return null;
-			}
-		}
 
 		public enum LocationType
 		{

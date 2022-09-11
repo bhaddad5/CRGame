@@ -45,9 +45,8 @@ namespace Assets.UI_System
 
 		#region Effect
 
-		public void PlayEffectClip(string clipTmp)
+		public void PlayEffectClip(AudioClip clip)
 		{
-			var clip = Resources.Load<AudioClip>($"Audio/{clipTmp}");
 			if (clip != null)
 			{
 				EffectSource.clip = clip;
@@ -60,9 +59,8 @@ namespace Assets.UI_System
 
 		#region Dialog
 
-		public void PlayDialogClip(string clipTmp)
+		public void PlayDialogClip(AudioClip clip)
 		{
-			var clip = Resources.Load<AudioClip>($"Audio/{clipTmp}");
 			if (clip != null)
 			{
 				DialogSource.clip = clip;
@@ -75,7 +73,7 @@ namespace Assets.UI_System
 
 		#region Ambience
 
-		public void SetBackgroundAmbiance(string clip)
+		public void SetBackgroundAmbiance(AudioClip clip)
 		{
 			
 		}
@@ -90,14 +88,8 @@ namespace Assets.UI_System
 		private List<AudioClip> currAudioClips = new List<AudioClip>();
 		private bool fadeToNew = false;
 		private float fadeToNewStartTime = 0f;
-		public void SetMusicTracks(List<string> tracksTmp)
+		public void SetMusicTracks(List<AudioClip> tracks)
 		{
-			List<AudioClip> tracks = new List<AudioClip>();
-			foreach (var tmpTrack in tracksTmp)
-			{
-				tracks.Add(Resources.Load<AudioClip>($"Audio/{tmpTrack}"));
-			}
-
 			//If it's all just the same clips we don't wanna swap the list and trigger a track restart
 			if (tracks.Count == currAudioClips.Count)
 			{
@@ -110,11 +102,7 @@ namespace Assets.UI_System
 				if (sameList)
 					return;
 			}
-
-
-			Debug.Log("Setting new Tracks " + tracks.Count);
-
-
+			
 			currAudioClips = tracks;
 			if (MusicSource.isPlaying)
 			{
@@ -125,12 +113,8 @@ namespace Assets.UI_System
 
 
 		private bool isOverriding = false;
-		public void PlayOverridingMusicTrack(string clipTmp)
+		public void PlayOverridingMusicTrack(AudioClip clip)
 		{
-			var clip = Resources.Load<AudioClip>($"Audio/{clipTmp}");
-
-			Debug.Log("Play Overriding!");
-
 			MusicSource.clip = clip;
 			MusicSource.Play();
 			MusicSource.volume = musicVolume;

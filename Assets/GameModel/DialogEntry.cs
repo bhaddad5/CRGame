@@ -26,27 +26,6 @@ namespace Assets.GameModel
 		public NpcLayout CustomBackgroundNpcLayout;
 
 		public AudioClip OptionalAudioClip;
-		public string OptionalAudioClipTmp
-		{
-			get
-			{
-				if (OptionalAudioClip)
-					return OptionalAudioClip?.name;
-				else
-					return null;
-			}
-		}
-
 		public AudioClip OptionalStartMusicClip;
-		public string OptionalStartMusicClipTmp
-		{
-			get
-			{
-				if (OptionalStartMusicClip)
-					return OptionalStartMusicClip?.name;
-				else
-					return null;
-			}
-		}
 	}
 }

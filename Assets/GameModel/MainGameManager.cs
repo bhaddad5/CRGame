@@ -19,57 +19,24 @@ namespace Assets.GameModel
 		[HideInInspector] public GameData Data;
 
 		[SerializeField] private AudioClip missionAudioClip;
-		public string MissionAudioClip => missionAudioClip.name;
+		public AudioClip MissionAudioClip => missionAudioClip;
 		[SerializeField] private AudioClip trophyAudioClip;
-		public string TrophyAudioClip => trophyAudioClip.name;
+		public AudioClip TrophyAudioClip => trophyAudioClip;
 		[SerializeField] private AudioClip policyAudioClip;
-		public string PolicyAudioClip => policyAudioClip.name;
+		public AudioClip PolicyAudioClip => policyAudioClip;
 
 		[SerializeField] private AudioClip resourceTickAudio;
-		public string ResourceTickAudio => resourceTickAudio.name;
+		public AudioClip ResourceTickAudio => resourceTickAudio;
 
 		[SerializeField] private List<AudioClip> mainMenuAudio;
-		public List<string> MainMenuAudio
-		{
-			get
-			{
-				var res = new List<string>();
-				foreach (var track in mainMenuAudio)
-				{
-					res.Add(track.name);
-				}
-				return res;
-			}
-		}
+		public List<AudioClip> MainMenuAudio => mainMenuAudio;
 
 		[SerializeField] private List<AudioClip> worldWeekdayAudio;
-		public List<string> WorldWeekdayAudio
-		{
-			get
-			{
-				var res = new List<string>();
-				foreach (var track in worldWeekdayAudio)
-				{
-					res.Add(track.name);
-				}
-				return res;
-			}
-		}
+		public List<AudioClip> WorldWeekdayAudio => worldWeekdayAudio;
 
 		[SerializeField] private List<AudioClip> worldWeekendAudio;
-		public List<string> WorldWeekendAudio
-		{
-			get
-			{
-				var res = new List<string>();
-				foreach (var track in worldWeekendAudio)
-				{
-					res.Add(track.name);
-				}
-				return res;
-			}
-		}
-
+		public List<AudioClip> WorldWeekendAudio => worldWeekendAudio;
+	
 		public string DefaultFirstName => DefaultGameData.FirstName;
 		public string DefaultLastName => DefaultGameData.LastName;
 

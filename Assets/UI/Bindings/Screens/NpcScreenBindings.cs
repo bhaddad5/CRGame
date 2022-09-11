@@ -71,7 +71,7 @@ namespace Assets.GameModel.UiDisplayers
 			BackgroundImage.sprite = this.npc.BackgroundImage.ToSprite();
 
 			if (npc.OptionalDialogClip != null)
-				AudioHandler.Instance.PlayDialogClip(npc.OptionalDialogClipTmp);
+				AudioHandler.Instance.PlayDialogClip(npc.OptionalDialogClip);
 		}
 
 		public void CloseNpc()

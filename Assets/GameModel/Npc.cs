@@ -52,16 +52,6 @@ namespace Assets.GameModel
 
 		public Texture2D BackgroundImage;
 		public AudioClip OptionalDialogClip = null;
-		public string OptionalDialogClipTmp
-		{
-			get
-			{
-				if (OptionalDialogClip)
-					return OptionalDialogClip?.name;
-				else
-					return null;
-			}
-		}
 
 		[HideInInspector]
 		public float Ambition;
