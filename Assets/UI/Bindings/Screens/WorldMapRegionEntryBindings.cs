@@ -21,15 +21,15 @@ namespace Assets.GameModel.UiDisplayers
 		private Region region;
 		private Vector2 mainMapSize;
 
-		public void Setup(Region region, WorldMapScreenBindings mainMapUi, MainGameManager mgm)
+		public void Setup(Region region, WorldMapScreenBindings mainMapUi, Vector2 mainMapSize, MainGameManager mgm)
 		{
 			this.region = region;
+			this.mainMapSize = mainMapSize;
 			Button.onClick.RemoveAllListeners();
 			Button.onClick.AddListener(() =>
 			{
 				mainMapUi.ShowRegion(region, mgm);
 			});
-			mainMapSize = mainMapUi.GetComponentInChildren<RectTransform>().sizeDelta;
 		}
 
 		public void RefreshUiDisplay(MainGameManager mgm)

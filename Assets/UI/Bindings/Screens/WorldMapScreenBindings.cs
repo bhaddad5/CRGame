@@ -14,6 +14,7 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private Color AfternoonTint;
 		[SerializeField] private Image MapImage;
 
+		[SerializeField] private RectTransform WorldMapCanvas;
 		[SerializeField] private Transform RegionsParent;
 
 		[SerializeField] private WorldMapRegionEntryBindings _regionEntryPrefab;
@@ -22,14 +23,18 @@ namespace Assets.GameModel.UiDisplayers
 		private MainGameManager mgm;
 		public void Setup(MainGameManager mgm, List<Region> regions)
 		{
+			Vector2 mapSize = new Vector2(MapImage.mainTexture.width, MapImage.mainTexture.height);
+
 			CameraMover.Instance.ResetCameraPos();
-			CameraMover.Instance.SetScreenSize(new Vector2(MapImage.mainTexture.width, MapImage.mainTexture.height));
+			CameraMover.Instance.SetScreenSize(mapSize);
+
+			WorldMapCanvas.sizeDelta = mapSize;
 
 			this.mgm = mgm;
 			foreach (Region reg in regions)
 			{
 				var d = Instantiate(_regionEntryPrefab);
-				d.Setup(reg, this, mgm);
+				d.Setup(reg, this, mapSize, mgm);
 				d.transform.SetParent(RegionsParent, false);
 			}
 

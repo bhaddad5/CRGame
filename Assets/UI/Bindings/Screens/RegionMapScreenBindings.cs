@@ -15,6 +15,7 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private Color AfternoonTint;
 		[SerializeField] private Image MapImage;
 
+		[SerializeField] private RectTransform RegionMapCanvas;
 		[SerializeField] private Transform LocationsParent;
 		[SerializeField] private Transform QuickAccessLocationsParent;
 
@@ -46,8 +47,12 @@ namespace Assets.GameModel.UiDisplayers
 			this.mgm = mgm;
 			this.region = region;
 
+			var mapSize = new Vector2(MapImage.mainTexture.width, MapImage.mainTexture.height);
+			
 			CameraMover.Instance.ResetCameraPos();
-			CameraMover.Instance.SetScreenSize(new Vector2(MapImage.mainTexture.width, MapImage.mainTexture.height));
+			CameraMover.Instance.SetScreenSize(mapSize);
+
+			RegionMapCanvas.sizeDelta = mapSize;
 
 			foreach (Location loc in region.Locations)
 			{
@@ -60,14 +65,14 @@ namespace Assets.GameModel.UiDisplayers
 					prefab = _locationHouseButtonPrefab;
 
 				var d = Instantiate(prefab);
-				d.Setup(loc, this, mgm);
+				d.Setup(loc, this, mapSize, mgm);
 				d.transform.SetParent(LocationsParent, false);
 			}
 
 			foreach (var loc in region.QuickAccessLocations)
 			{
 				var d = Instantiate(_quickAccessButtonPrefab);
-				d.Setup(loc, this, mgm, true);
+				d.Setup(loc, this, mapSize, mgm, true);
 				d.transform.SetParent(QuickAccessLocationsParent, false);
 			}
 

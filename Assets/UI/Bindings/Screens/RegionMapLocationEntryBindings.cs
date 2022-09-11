@@ -17,16 +17,16 @@ namespace Assets.GameModel.UiDisplayers
 		private Vector2 mainMapSize;
 		private bool isQuickAccess;
 
-		public void Setup(Location dept, RegionMapScreenBindings mainMapUi, MainGameManager mgm, bool isQuickAccess = false)
+		public void Setup(Location dept, RegionMapScreenBindings mainMapUi, Vector2 mainMapSize, MainGameManager mgm, bool isQuickAccess = false)
 		{
 			this.isQuickAccess = isQuickAccess;
 			this.loc = dept;
+			this.mainMapSize = mainMapSize;
 			Button.onClick.RemoveAllListeners();
 			Button.onClick.AddListener(() =>
 			{
 				mainMapUi.ShowLocation(dept, mgm);
 			});
-			mainMapSize = mainMapUi.GetComponentInChildren<RectTransform>().sizeDelta;
 		}
 
 		public void RefreshUiDisplay(MainGameManager mgm)
