@@ -23,6 +23,10 @@ namespace Assets.GameModel
 		[SerializeField] private AudioClip trophyAudioClip;
 		public AudioClip TrophyAudioClip => trophyAudioClip;
 		[SerializeField] private AudioClip policyAudioClip;
+
+		public AudioClip GreivousModeClip => greivousModeClip;
+		[SerializeField] private AudioClip greivousModeClip;
+
 		public AudioClip PolicyAudioClip => policyAudioClip;
 
 		[SerializeField] private AudioClip resourceTickAudio;

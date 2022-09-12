@@ -22,6 +22,15 @@ namespace Assets.UI_System
 		private AudioSource EffectSource;
 		private AudioSource AmbientSource;
 		private AudioSource MusicSource;
+
+		public bool GreivousMode = false;
+
+		public void SetGreivousMode(bool val)
+		{
+			GreivousMode = val;
+			PlayerPrefs.SetInt("GreivousMode", val ? 1 : 0);
+			PlayerPrefs.Save();
+		}
 		
 		private float masterVolumeMult;
 		public float MasterVolumeMult => masterVolumeMult;
@@ -85,6 +94,8 @@ namespace Assets.UI_System
 		void Awake()
 		{
 			instance = this;
+
+			GreivousMode = PlayerPrefs.GetInt("GreivousMode", 0) > 0;
 
 			masterVolumeMult = PlayerPrefs.GetFloat("MasterVolume", 1f);
 			musicVolumeMult = PlayerPrefs.GetFloat("MusicVolume", 1f);

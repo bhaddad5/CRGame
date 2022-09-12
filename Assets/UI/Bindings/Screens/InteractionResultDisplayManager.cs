@@ -75,6 +75,9 @@ public class InteractionResultDisplayManager
 			currTrophiesToShow.RemoveAt(0);
 
 			AudioHandler.Instance.PlayOverridingMusicTrack(mgm.TrophyAudioClip);
+			if(AudioHandler.Instance.GreivousMode)
+				AudioHandler.Instance.PlayEffectClip(mgm.GreivousModeClip);
+
 			var popupParent = GameObject.Instantiate(UiPrefabReferences.Instance.PopupOverlayParent);
 			GameObject.Instantiate(UiPrefabReferences.Instance.GetPrefabByName("Popup Display"), popupParent.transform).GetComponent<PopupBindings>().Setup(popup, completedCount, mgm, HandleNextDialog);
 		}

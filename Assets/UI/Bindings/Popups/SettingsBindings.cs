@@ -11,6 +11,7 @@ public class SettingsBindings : MonoBehaviour
 	[SerializeField] private Slider ambientVolumeSlider;
 	[SerializeField] private Slider effectsVolumeSlider;
 	[SerializeField] private Slider musicVolumeSlider;
+	[SerializeField] private Toggle greivousModeToggle;
 	private GameObject parentToNuke;
 
 	public void Setup(GameObject parentToNuke = null)
@@ -23,6 +24,8 @@ public class SettingsBindings : MonoBehaviour
 		effectsVolumeSlider.value = AudioHandler.Instance.EffectsVolumeMult;
 		dialogVolumeSlider.value = AudioHandler.Instance.DialogVolumeMult;
 		musicVolumeSlider.value = AudioHandler.Instance.MusicVolumeMult;
+
+		greivousModeToggle.isOn = AudioHandler.Instance.GreivousMode;
 	}
 
 	public void MasterVolumeChanged(float volume)
@@ -48,6 +51,11 @@ public class SettingsBindings : MonoBehaviour
 	public void MusicVolumeChanged(float volume)
 	{
 		AudioHandler.Instance.SetMusicVolume(volume);
+	}
+
+	public void GreivousModeChanged(bool val)
+	{
+		AudioHandler.Instance.SetGreivousMode(val);
 	}
 
 	public void Cancel()
