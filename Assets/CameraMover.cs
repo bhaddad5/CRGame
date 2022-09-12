@@ -24,9 +24,14 @@ public class CameraMover : MonoBehaviour
 		currScreenSize = screenSize;
 	}
 
+	public static bool CanMove = true;
+
 	// Update is called once per frame
 	void Update()
 	{
+		if (!CanMove)
+			return;
+
 		if (Input.GetMouseButton(0))
 		{
 			Vector3 dragChange = Input.mousePosition - prevMousePos;

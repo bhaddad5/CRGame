@@ -15,6 +15,7 @@ public class SettingsBindings : MonoBehaviour
 
 	public void Setup(GameObject parentToNuke = null)
 	{
+		CameraMover.CanMove = false;
 		this.parentToNuke = parentToNuke;
 
 		masterVolumeSlider.value = AudioHandler.Instance.MasterVolumeMult;
@@ -51,8 +52,14 @@ public class SettingsBindings : MonoBehaviour
 
 	public void Cancel()
 	{
+		CameraMover.CanMove = true;
 		if (parentToNuke != null)
 			GameObject.Destroy(parentToNuke);
 		GameObject.Destroy(gameObject);
+	}
+
+	void OnDestroy()
+	{
+		CameraMover.CanMove = true;
 	}
 }
