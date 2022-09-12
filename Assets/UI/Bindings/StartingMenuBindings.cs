@@ -19,6 +19,8 @@ public class StartingMenuBindings : MonoBehaviour
 
 	[SerializeField] private TMP_Text VersionText;
 
+	[SerializeField] private SettingsBindings SettingsPrefab;
+
 	private string latestSave = null;
 	void Awake()
 	{
@@ -42,9 +44,16 @@ public class StartingMenuBindings : MonoBehaviour
 
 	public void LoadGame()
 	{
-		//var popupParent = GameObject.Instantiate(UiPrefabReferences.Instance.PopupOverlayParent);
-		var loadSavePrefab = GameObject.Instantiate(LoadSavePrefab, transform);
-		loadSavePrefab.Setup(MainGameManager, false);
+		var popupParent = GameObject.Instantiate(UiPrefabReferences.Instance.PopupOverlayParent);
+		var loadSavePrefab = GameObject.Instantiate(LoadSavePrefab, popupParent.transform);
+		loadSavePrefab.Setup(MainGameManager, false, popupParent);
+	}
+
+	public void OpenSettings()
+	{
+		var popupParent = GameObject.Instantiate(UiPrefabReferences.Instance.PopupOverlayParent);
+		var settings = GameObject.Instantiate(SettingsPrefab, popupParent.transform);
+		settings.Setup(popupParent);
 	}
 
 	public void OpenCredits()

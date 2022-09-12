@@ -60,13 +60,15 @@ public class LoadSaveMenuBindings : MonoBehaviour
 
 	private MainGameManager mgm;
 	private bool saving;
+	private GameObject parentToNuke;
 
-	public void Setup(MainGameManager mgm, bool saving)
+	public void Setup(MainGameManager mgm, bool saving, GameObject parentToNuke = null)
 	{
 		LoadSaveHelpers.ValidateSaveFolder();
 
 		this.mgm = mgm;
 		this.saving = saving;
+		this.parentToNuke = parentToNuke;
 
 		loadButton.gameObject.SetActive(!saving);
 		saveButton.gameObject.SetActive(saving);
@@ -81,7 +83,10 @@ public class LoadSaveMenuBindings : MonoBehaviour
 			return;
 		mgm.InitializeGame(path, null, null);
 
-		GameObject.Destroy(transform.parent.gameObject);
+		if (parentToNuke != null)
+			GameObject.Destroy(transform.parent.parent.gameObject);
+		else
+			GameObject.Destroy(transform.parent.gameObject);
 	}
 
 	public void SaveGame()
@@ -91,11 +96,15 @@ public class LoadSaveMenuBindings : MonoBehaviour
 			return;
 		File.WriteAllText(path, SaveLoadHandler.SaveToJson(mgm.Data));
 
+		if (parentToNuke != null)
+			GameObject.Destroy(parentToNuke);
 		GameObject.Destroy(gameObject);
 	}
 
 	public void Cancel()
 	{
+		if(parentToNuke != null)
+			GameObject.Destroy(parentToNuke);
 		GameObject.Destroy(gameObject);
 	}
 

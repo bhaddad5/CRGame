@@ -22,23 +22,88 @@ namespace Assets.UI_System
 		private AudioSource EffectSource;
 		private AudioSource AmbientSource;
 		private AudioSource MusicSource;
+		
+		private float masterVolumeMult;
+		public float MasterVolumeMult => masterVolumeMult;
+		public void SetMasterVolume(float volume)
+		{
+			masterVolumeMult = volume;
+			PlayerPrefs.SetFloat("MasterVolume", volume);
+			PlayerPrefs.Save();
+
+			EffectSource.volume = baseEffectsVolume * effectsVolumeMult * masterVolumeMult;
+			AmbientSource.volume = baseAmbientVolume * ambientVolumeMult * masterVolumeMult;
+			DialogSource.volume = baseDialogVolume * dialogVolumeMult * masterVolumeMult;
+			MusicSource.volume = baseMusicVolume * musicFadeMult * musicVolumeMult * masterVolumeMult;
+		}
+
+		private float effectsVolumeMult;
+		private const float baseEffectsVolume = 1f;
+		public float EffectsVolumeMult => effectsVolumeMult;
+		public void SetEffectsVolume(float volume)
+		{
+			effectsVolumeMult = volume;
+			PlayerPrefs.SetFloat("EffectVolume", volume);
+			PlayerPrefs.Save();
+			EffectSource.volume = baseEffectsVolume * effectsVolumeMult * masterVolumeMult;
+		}
+
+		private float ambientVolumeMult;
+		private const float baseAmbientVolume = .3f;
+		public float AmbientVolumeMult => ambientVolumeMult;
+		public void SetAmbientVolume(float volume)
+		{
+			ambientVolumeMult = volume;
+			PlayerPrefs.SetFloat("AmbientVolume", volume);
+			PlayerPrefs.Save();
+			AmbientSource.volume = baseAmbientVolume * ambientVolumeMult * masterVolumeMult;
+		}
+
+		private float dialogVolumeMult;
+		private const float baseDialogVolume = 1f;
+		public float DialogVolumeMult => dialogVolumeMult;
+		public void SetDialogVolume(float volume)
+		{
+			dialogVolumeMult = volume;
+			PlayerPrefs.SetFloat("DialogVolume", volume);
+			PlayerPrefs.Save();
+			DialogSource.volume = baseDialogVolume * dialogVolumeMult * masterVolumeMult;
+		}
+
+		private float musicVolumeMult;
+		private const float baseMusicVolume = .25f;
+		private float musicFadeMult = 1f;
+		public float MusicVolumeMult => musicVolumeMult;
+		public void SetMusicVolume(float volume)
+		{
+			musicVolumeMult = volume;
+			PlayerPrefs.SetFloat("MusicVolume", volume);
+			PlayerPrefs.Save();
+			MusicSource.volume = baseMusicVolume * musicFadeMult * musicVolumeMult * masterVolumeMult;
+		}
 
 		void Awake()
 		{
 			instance = this;
 
+			masterVolumeMult = PlayerPrefs.GetFloat("MasterVolume", 1f);
+			musicVolumeMult = PlayerPrefs.GetFloat("MusicVolume", 1f);
+			dialogVolumeMult = PlayerPrefs.GetFloat("DialogVolume", 1f);
+			effectsVolumeMult = PlayerPrefs.GetFloat("EffectVolume", 1f);
+			ambientVolumeMult = PlayerPrefs.GetFloat("AmbientVolume", 1f);
+
 			EffectSource = Instantiate(SourcePrefab);
-			EffectSource.volume = 1f;
+			EffectSource.volume = baseEffectsVolume * effectsVolumeMult * masterVolumeMult;
 
 			DialogSource = Instantiate(SourcePrefab);
-			DialogSource.volume = 1f;
+			DialogSource.volume = baseDialogVolume * dialogVolumeMult * masterVolumeMult;
 
 			AmbientSource = Instantiate(SourcePrefab);
-			AmbientSource.volume = .3f;
+			AmbientSource.volume = baseAmbientVolume * ambientVolumeMult * masterVolumeMult;
 			AmbientSource.loop = true;
 
 			MusicSource = Instantiate(SourcePrefab);
-			MusicSource.volume = musicVolume;
+			MusicSource.volume = baseMusicVolume * musicFadeMult * MusicVolumeMult * masterVolumeMult;
 		}
 
 		#endregion
@@ -83,7 +148,7 @@ namespace Assets.UI_System
 		#region Music
 
 		private const float fadeTime = 1f;
-		private const float musicVolume = .25f;
+		
 
 		private List<AudioClip> currAudioClips = new List<AudioClip>();
 		private bool fadeToNew = false;
@@ -117,7 +182,8 @@ namespace Assets.UI_System
 		{
 			MusicSource.clip = clip;
 			MusicSource.Play();
-			MusicSource.volume = musicVolume;
+			musicFadeMult = 1f;
+			MusicSource.volume = baseMusicVolume * musicFadeMult * MusicVolumeMult * masterVolumeMult;
 			isOverriding = true;
 		}
 
@@ -141,19 +207,19 @@ namespace Assets.UI_System
 				var timeTillEnd = MusicSource.clip.length - MusicSource.time;
 				if (timeTillEnd < fadeTime)
 				{
-					float newVolume = Mathf.Max(0f, 1f - (timeTillEnd / fadeTime)) * musicVolume;
-					MusicSource.volume = newVolume;
+					musicFadeMult = Mathf.Max(0f, 1f - (timeTillEnd / fadeTime)) * baseMusicVolume;
+					MusicSource.volume = baseMusicVolume * musicFadeMult * MusicVolumeMult * masterVolumeMult;
 				}
 				else if (timeSinceStart < fadeTime)
 				{
-					float newVolume = Mathf.Max(0f, (timeSinceStart / fadeTime)) * musicVolume;
-					MusicSource.volume = newVolume;
+					musicFadeMult = Mathf.Max(0f, (timeSinceStart / fadeTime)) * baseMusicVolume;
+					MusicSource.volume = baseMusicVolume * musicFadeMult * MusicVolumeMult * masterVolumeMult;
 				}
 				else if (fadeToNew)
 				{
 					var timeSinceFadeToNew = Time.time - fadeToNewStartTime;
-					float newVolume = Mathf.Max(0f, 1f - (timeSinceFadeToNew / fadeTime)) * musicVolume;
-					MusicSource.volume = newVolume;
+					musicFadeMult = Mathf.Max(0f, 1f - (timeSinceFadeToNew / fadeTime)) * baseMusicVolume;
+					MusicSource.volume = baseMusicVolume * musicFadeMult * MusicVolumeMult * masterVolumeMult;
 					if (Time.time - fadeToNewStartTime > fadeTime)
 					{
 						fadeToNew = false;
@@ -163,7 +229,8 @@ namespace Assets.UI_System
 				}
 				else
 				{
-					MusicSource.volume = musicVolume;
+					musicFadeMult = 1f;
+					MusicSource.volume = baseMusicVolume * musicFadeMult * MusicVolumeMult * masterVolumeMult;
 				}
 			}
 		}
