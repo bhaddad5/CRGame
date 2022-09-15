@@ -21,13 +21,13 @@ public class MainMenuBindings : MonoBehaviour
 	public void SaveGame()
 	{
 		loadSaveMenu = GameObject.Instantiate(LoadSavePrefab, transform.parent);
-		loadSaveMenu.Setup(mgm, true);
+		loadSaveMenu.Setup(mgm, true, gameObject, null);
 	}
 
 	public void LoadGame()
 	{
 		loadSaveMenu = GameObject.Instantiate(LoadSavePrefab, transform.parent);
-		loadSaveMenu.Setup(mgm, false);
+		loadSaveMenu.Setup(mgm, false, gameObject, null);
 	}
 
 	public void SettingsMenu()

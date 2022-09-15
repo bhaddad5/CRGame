@@ -46,7 +46,7 @@ public class StartingMenuBindings : MonoBehaviour
 	{
 		var popupParent = GameObject.Instantiate(UiPrefabReferences.Instance.PopupOverlayParent);
 		var loadSavePrefab = GameObject.Instantiate(LoadSavePrefab, popupParent.transform);
-		loadSavePrefab.Setup(MainGameManager, false, popupParent);
+		loadSavePrefab.Setup(MainGameManager, false, gameObject, popupParent);
 	}
 
 	public void OpenSettings()
