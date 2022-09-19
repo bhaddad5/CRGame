@@ -22,7 +22,8 @@ MonoBehaviour:
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions: []
-    RequiredNotCompletedInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: 0f242ef402d3c4d46b5b41c432a9398c, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -38,6 +39,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: []
   Repeatable: 1
   PreviewEffect: 1
   Result:
@@ -53,11 +55,14 @@ MonoBehaviour:
         xPos: 0.7
         yPos: 0.3
         width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Jennifer Page is surprised but delighted...
       Videos:
       - {fileID: 32900000, guid: 7eac4b9b74ac8c044bf3ce0082880f7e, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: '...and you share a moment that makes the evening significant! '
     Effect:
       NpcEffects:
@@ -80,6 +85,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
+      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -104,6 +111,8 @@ MonoBehaviour:
         xPos: 0.7
         yPos: 0.3
         width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 7ced58efaf3c1fd4eba0e1c367fe7144,
         type: 2}
@@ -117,6 +126,8 @@ MonoBehaviour:
         xPos: 0.7
         yPos: 0.3
         width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
     Effect:
       NpcEffects: []
@@ -135,6 +146,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
+      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
