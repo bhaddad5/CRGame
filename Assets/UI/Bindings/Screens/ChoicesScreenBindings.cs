@@ -25,7 +25,7 @@ public class ChoicesScreenBindings : MonoBehaviour
 
 		foreach(var choice in choices)
 		{
-			Instantiate(ChoicePrefab, ChoicesParent).Setup(choice, currDisplayInfo, mgm);
+			Instantiate(ChoicePrefab, ChoicesParent).Setup(choice, currDisplayInfo, gameObject, mgm, dialogsComplete);
 			Debug.Log("Choice " + choice);
 		}
 	}

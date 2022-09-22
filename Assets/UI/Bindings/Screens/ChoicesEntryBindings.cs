@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using System;
 
 namespace Assets.GameModel.UiDisplayers
 {
@@ -18,12 +19,16 @@ namespace Assets.GameModel.UiDisplayers
 		private MainGameManager mgm;
 
 		private NpcDisplayInfo currDisplayInfo;
+		private GameObject choicesScreen;
+		private Action choiceCompleted;
 
-		public void Setup(Interaction interaction, NpcDisplayInfo currDisplayInfo, MainGameManager mgm)
+		public void Setup(Interaction interaction, NpcDisplayInfo currDisplayInfo, GameObject choicesScreen, MainGameManager mgm, Action choiceCompleted)
 		{
 			this.currDisplayInfo = currDisplayInfo;
 			this.interaction = interaction;
+			this.choicesScreen = choicesScreen;
 			this.mgm = mgm;
+			this.choiceCompleted = choiceCompleted;
 
 			Text.text = $"{interaction.Name}";
 
@@ -38,7 +43,7 @@ namespace Assets.GameModel.UiDisplayers
 
 		public void ExecuteInteraction()
 		{
-			GameObject.Destroy(gameObject);
+			GameObject.Destroy(choicesScreen);
 
 			bool succeeded = interaction.GetInteractionSucceeded();
 			var res = interaction.GetInteractionResult(succeeded);
@@ -49,7 +54,7 @@ namespace Assets.GameModel.UiDisplayers
 				res.Execute(mgm);
 				if (succeeded)
 					interaction.Completed++;
-				mgm.HandleTurnChange();
+				choiceCompleted();
 			});
 		}
 
