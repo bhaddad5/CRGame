@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Assets.GameModel;
@@ -11,9 +11,7 @@ using Random = System.Random;
 
 public class DialogScreenBindings : MonoBehaviour
 {
-	[SerializeField] private Image NpcImage;
-	[SerializeField] private Image NpcBackground;
-	[SerializeField] private GameObject BlackBackground;
+	[SerializeField] private NpcVisualDisplay NpcDisplay;
 
 	[SerializeField] private TMP_Text SpeakerName;
 	[SerializeField] private GameObject SpeakerNameBox;
@@ -25,11 +23,26 @@ public class DialogScreenBindings : MonoBehaviour
 	private Action dialogsComplete = null;
 	private MainGameManager mgm;
 
-	public void Setup(DialogEntry dialog, MainGameManager mgm, Action dialogsComplete)
+	public void Setup(DialogEntry dialog, NpcDisplayInfo currDisplayInfo, MainGameManager mgm, Action dialogsComplete)
 	{
 		this.mgm = mgm;
 		this.dialogsComplete = dialogsComplete;
 		this.dialog = dialog;
+
+		if (dialog.OptionalNpcReference != null)
+		{
+			currDisplayInfo.Picture = dialog.OptionalNpcReference.GetCurrentPicture();
+			if (dialog.CustomNpcImageOptions != null && dialog.CustomNpcImageOptions.Count > 0)
+				currDisplayInfo.Picture = dialog.CustomNpcImageOptions[UnityEngine.Random.Range(0, dialog.CustomNpcImageOptions.Count)];
+		}
+
+		if (dialog.CustomBackground != null)
+		{
+			currDisplayInfo.Background = dialog.CustomBackground;
+			currDisplayInfo.Layout = dialog.CustomBackgroundNpcLayout;
+		}
+
+		NpcDisplay.DisplayNpcInfo(currDisplayInfo);
 
 		runningCoroutine = StartCoroutine(TypeOutDialog());
 	}
@@ -64,28 +77,6 @@ public class DialogScreenBindings : MonoBehaviour
 		NextDialogImage.enabled = false;
 		textToShow = UiDisplayHelpers.ApplyDynamicValuesToString(dialog.Text, mgm);
 		DialogText.text = "";
-
-		if (dialog.OptionalNpcReference != null)
-		{
-			NpcImage.sprite = dialog.OptionalNpcReference.GetCurrentPicture().ToSprite();
-			if (dialog.CustomNpcImageOptions != null && dialog.CustomNpcImageOptions.Count > 0)
-				NpcImage.sprite = dialog.CustomNpcImageOptions[UnityEngine.Random.Range(0, dialog.CustomNpcImageOptions.Count)].ToSprite();
-		}
-		else
-		{
-			NpcImage.gameObject.SetActive(false);
-		}
-
-		if (dialog.CustomBackground != null)
-		{
-			NpcBackground.sprite = dialog.CustomBackground.ToSprite();
-			dialog.CustomBackgroundNpcLayout.ApplyToRectTransform(NpcImage.GetComponent<RectTransform>());
-		}
-		else
-		{
-			NpcBackground.gameObject.SetActive(false);
-			BlackBackground.gameObject.SetActive(false);
-		}
 		
 		foreach (var c in textToShow)
 		{

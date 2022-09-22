@@ -19,12 +19,13 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private TMP_Text Pride;
 		[SerializeField] private TMP_Text Education;
 		[SerializeField] private TMP_Text Bio;
-		[SerializeField] private Image Picture;
-		[SerializeField] private Image BackgroundImage;
 		[SerializeField] private Transform InfoBox;
 		[SerializeField] private Transform InteractionsParent;
+		[SerializeField] private NpcVisualDisplay NpcDisplay;
 
 		[SerializeField] private NpcInteractionEntryBindings InteractionEntryPrefab;
+
+		public NpcDisplayInfo currDisplayInfo = new NpcDisplayInfo();
 
 		private Npc npc;
 		private Action onClose;
@@ -33,7 +34,10 @@ namespace Assets.GameModel.UiDisplayers
 			this.npc = npc;
 			this.onClose = onClose;
 
-			this.npc.PersonalLayout.ApplyToRectTransform(Picture.GetComponent<RectTransform>());
+			currDisplayInfo.Layout = this.npc.PersonalLayout;
+			currDisplayInfo.Background = this.npc.BackgroundImage;
+			currDisplayInfo.Picture = this.npc.GetCurrentPicture();
+			NpcDisplay.DisplayNpcInfo(currDisplayInfo);
 
 			if (!npc.IsControllable)
 				InfoBox.gameObject.SetActive(false);
@@ -64,11 +68,8 @@ namespace Assets.GameModel.UiDisplayers
 			Age.text = $"{this.npc.Age} years old";
 			Ambition.text = $"Ambition: {this.npc.Ambition}";
 			Pride.text = $"Pride: {this.npc.Pride}";
-			Picture.sprite = this.npc.GetCurrentPicture().ToSprite();
-			Picture.preserveAspect = true;
 			Bio.text = $"Notes: {this.npc.Bio}";
 			Education.text = $"Education: {this.npc.Education}";
-			BackgroundImage.sprite = this.npc.BackgroundImage.ToSprite();
 
 			if (npc.OptionalDialogClip != null)
 				AudioHandler.Instance.PlayDialogClip(npc.OptionalDialogClip);

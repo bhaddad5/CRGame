@@ -597,6 +597,7 @@ GameObject:
   - component: {fileID: 8726004219279465000}
   - component: {fileID: 5183797039060358426}
   - component: {fileID: 2428176180909155475}
+  - component: {fileID: 111762661073139247}
   m_Layer: 5
   m_Name: Dialog Screen
   m_TagString: Untagged
@@ -701,13 +702,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82611a1d86c4af748a9a9b765487eb86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NpcImage: {fileID: 3562536681816027784}
-  NpcBackground: {fileID: 1061822693271156998}
-  BlackBackground: {fileID: 7696656294613834705}
+  NpcDisplay: {fileID: 111762661073139247}
   SpeakerName: {fileID: 4160153522815702510}
   SpeakerNameBox: {fileID: 1050015940837179177}
   DialogText: {fileID: 1342148924231753708}
   NextDialogImage: {fileID: 855979735755207074}
+--- !u!114 &111762661073139247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6205641149655563951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71d78c1c5449346adba2067196450669, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Picture: {fileID: 3562536681816027784}
+  BackgroundImage: {fileID: 1061822693271156998}
 --- !u!1 &6519514167826112565
 GameObject:
   m_ObjectHideFlags: 0

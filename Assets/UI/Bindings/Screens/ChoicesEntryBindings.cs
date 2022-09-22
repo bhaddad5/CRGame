@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using Assets.GameModel;
 using TMPro;
@@ -8,24 +8,24 @@ using UnityEngine.UI;
 
 namespace Assets.GameModel.UiDisplayers
 {
-	public class NpcInteractionEntryBindings : MonoBehaviour, ITooltipProvider, IPointerEnterHandler
+	public class ChoicesEntryBindings : MonoBehaviour, ITooltipProvider
 	{
 		[SerializeField] private Button Button;
 		[SerializeField] private TMP_Text Text;
-		[SerializeField] private GameObject NewIndicator;
 
 		private Interaction interaction;
 
-		private NpcScreenBindings npcUiDisplay;
 		private MainGameManager mgm;
 
-		public void Setup(Interaction interaction, MainGameManager mgm, NpcScreenBindings npcUiDisplay)
+		private NpcDisplayInfo currDisplayInfo;
+
+		public void Setup(Interaction interaction, NpcDisplayInfo currDisplayInfo, MainGameManager mgm)
 		{
+			this.currDisplayInfo = currDisplayInfo;
 			this.interaction = interaction;
-			this.npcUiDisplay = npcUiDisplay;
 			this.mgm = mgm;
 
-			Text.text = $"{CategoryToString(interaction.Category)}: {interaction.Name}";
+			Text.text = $"{interaction.Name}";
 
 			if (interaction.CanFail)
 				Text.text += $" ({(int)((1f - interaction.ProbabilityOfFailureResult) * 100)}% chance)";
@@ -34,50 +34,23 @@ namespace Assets.GameModel.UiDisplayers
 				Text.text += $" {interaction.Cost.GetCostString()}";
 			Button.interactable = interaction.InteractionValid(mgm);
 			gameObject.SetActive(interaction.InteractionVisible(mgm));
-			NewIndicator.SetActive(interaction.IsNew(mgm));
-
 		}
 
 		public void ExecuteInteraction()
 		{
-			GameObject.Destroy(npcUiDisplay.gameObject);
+			GameObject.Destroy(gameObject);
 
 			bool succeeded = interaction.GetInteractionSucceeded();
 			var res = interaction.GetInteractionResult(succeeded);
 			interaction.Cost.SubtractCost(mgm);
 			var displayHandler = new InteractionResultDisplayManager();
-			displayHandler.DisplayInteractionResult(interaction.Completed, res, !succeeded, npcUiDisplay.currDisplayInfo, mgm, () =>
+			displayHandler.DisplayInteractionResult(interaction.Completed, res, !succeeded, currDisplayInfo, mgm, () =>
 			{
 				res.Execute(mgm);
 				if (succeeded)
 					interaction.Completed++;
 				mgm.HandleTurnChange();
 			});
-		}
-
-		private string CategoryToString(Interaction.InteractionCategory category)
-		{
-			switch (category)
-			{
-				case Interaction.InteractionCategory.OfficePolitics:
-					return "OFFICE POLITICS";
-				case Interaction.InteractionCategory.Challenge:
-					return "CHALLENGE";
-				case Interaction.InteractionCategory.Conversation:
-					return "CONVERSATION";
-				case Interaction.InteractionCategory.Fun:
-					return "FUN";
-				case Interaction.InteractionCategory.Projects:
-					return "PROJECT";
-				case Interaction.InteractionCategory.Socialize:
-					return "SOCIALIZE";
-				case Interaction.InteractionCategory.Surveillance:
-					return "SURVEILLANCE";
-				case Interaction.InteractionCategory.Train:
-					return "TRAIN";
-			}
-
-			return "";
 		}
 
 		public string GetTooltip()
@@ -96,15 +69,6 @@ namespace Assets.GameModel.UiDisplayers
 				tooltip = tooltip.Substring(0, tooltip.Length - 1);
 
 			return tooltip;
-		}
-
-		public void OnPointerEnter(PointerEventData eventData)
-		{
-			if (interaction.InteractionValid(mgm))
-			{
-				interaction.New = false;
-				NewIndicator.SetActive(false);
-			}
 		}
 	}
 }

@@ -1429,6 +1429,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7869364957020369840}
   - component: {fileID: 7869364957020369843}
+  - component: {fileID: 3244389550527610830}
   m_Layer: 0
   m_Name: Npc Screen
   m_TagString: Untagged
@@ -1469,12 +1470,32 @@ MonoBehaviour:
   Pride: {fileID: 7869364958586015766}
   Education: {fileID: 7625731088098163268}
   Bio: {fileID: 3239189652484354527}
-  Picture: {fileID: 4374110837976299326}
-  BackgroundImage: {fileID: 251920655620127920}
   InfoBox: {fileID: 6414748730409030928}
   InteractionsParent: {fileID: 3739990182560482451}
+  NpcDisplay: {fileID: 3244389550527610830}
   InteractionEntryPrefab: {fileID: 8704334078420646492, guid: 065bdcb3b91755548b4f896f8eac0fa3,
     type: 3}
+  currDisplayInfo:
+    Picture: {fileID: 0}
+    Background: {fileID: 0}
+    Layout:
+      xPos: 0
+      yPos: 0
+      width: 0
+--- !u!114 &3244389550527610830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7869364957020369842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71d78c1c5449346adba2067196450669, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Picture: {fileID: 4374110837976299326}
+  BackgroundImage: {fileID: 251920655620127920}
 --- !u!1 &7869364957423762314
 GameObject:
   m_ObjectHideFlags: 0

@@ -131,7 +131,7 @@ namespace Assets.GameModel
 					bool succeeded = startOfTurnInteraction.GetInteractionSucceeded();
 					var res = startOfTurnInteraction.GetInteractionResult(succeeded);
 					var displayHandler = new InteractionResultDisplayManager();
-					displayHandler.DisplayInteractionResult(startOfTurnInteraction.Completed, res, !succeeded, this, () =>
+					displayHandler.DisplayInteractionResult(startOfTurnInteraction.Completed, res, !succeeded, new NpcDisplayInfo(), this, () =>
 					{
 						res.Execute(this);
 						if(succeeded)

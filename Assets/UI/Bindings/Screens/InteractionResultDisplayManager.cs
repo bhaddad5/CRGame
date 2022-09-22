@@ -10,6 +10,7 @@ using UnityEngine;
 public class InteractionResultDisplayManager
 {
 	private List<DialogEntry> currDialogsToShow = new List<DialogEntry>();
+	private List<Interaction> choices = new List<Interaction>();
 	private List<Popup> currPopupsToShow = new List<Popup>();
 	private List<Mission> currMissionsToShow = new List<Mission>();
 	private List<Trophy> currTrophiesToShow = new List<Trophy>();
@@ -17,11 +18,14 @@ public class InteractionResultDisplayManager
 	private int completedCount;
 	private MainGameManager mgm;
 
-	public void DisplayInteractionResult(int completionCount, InteractionResult res, bool failed, MainGameManager mgm, Action resultComplete)
+	private NpcDisplayInfo currDisplayInfo;
+
+	public void DisplayInteractionResult(int completionCount, InteractionResult res, bool failed, NpcDisplayInfo currDisplayInfo, MainGameManager mgm, Action resultComplete)
 	{
 		this.mgm = mgm;
 		this.completedCount = completionCount;
 		this.resultComplete = resultComplete;
+		this.currDisplayInfo = currDisplayInfo;
 
 		currDialogsToShow = new List<DialogEntry>(res.Dialogs);
 		if (failed && currDialogsToShow.Count > 0)
@@ -36,6 +40,7 @@ public class InteractionResultDisplayManager
 		{
 			currDialogsToShow.Add(new DialogEntry(){CurrSpeaker = DialogEntry.Speaker.Narrator, Text = effectsString });
 		}
+		choices = new List<Interaction>(res.Choices);
 		currPopupsToShow = new List<Popup>(res.OptionalPopups);
 		currMissionsToShow = new List<Mission>(res.Effect.MissionsToComplete);
 		currTrophiesToShow = new List<Trophy>(res.Effect.TrophiesClaimedReferences);
@@ -54,7 +59,13 @@ public class InteractionResultDisplayManager
 				AudioHandler.Instance.PlayOverridingMusicTrack(dialog.OptionalStartMusicClip);
 
 			currDialogsToShow.RemoveAt(0);
-			GameObject.Instantiate(UiPrefabReferences.Instance.GetPrefabByName("Dialog Screen")).GetComponent<DialogScreenBindings>().Setup(dialog, mgm, HandleNextDialog);
+			GameObject.Instantiate(UiPrefabReferences.Instance.GetPrefabByName("Dialog Screen")).GetComponent<DialogScreenBindings>().Setup(dialog, currDisplayInfo, mgm, HandleNextDialog);
+		}
+		else if (choices != null && choices.Count > 0)
+		{
+			var tmp = new List<Interaction>(choices);
+			choices = null;
+			GameObject.Instantiate(UiPrefabReferences.Instance.GetPrefabByName("Choices Screen")).GetComponent<ChoicesScreenBindings>().Setup(tmp, currDisplayInfo, mgm, HandleNextDialog);
 		}
 		else if (currPopupsToShow.Count > 0)
 		{

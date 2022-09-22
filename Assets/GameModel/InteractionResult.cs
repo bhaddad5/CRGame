@@ -12,6 +12,8 @@ namespace Assets.GameModel
 		public List<DialogEntry> Dialogs;
 		public List<Popup> OptionalPopups;
 
+		public List<Interaction> Choices;
+
 		public Effect Effect;
 
 		public void Execute(MainGameManager mgm)
