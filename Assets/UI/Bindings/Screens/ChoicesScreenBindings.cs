@@ -23,9 +23,15 @@ public class ChoicesScreenBindings : MonoBehaviour
 
 		NpcDisplay.DisplayNpcInfo(currDisplayInfo);
 
-		for (int i = 0; i < choices.Count; i++)
+		int i = 0;
+		foreach (var choice in choices)
 		{
-			Instantiate(ChoicePrefab, ChoicesParent).Setup(choices[i], currDisplayInfo, gameObject, mgm, dialogsComplete, i);
+			if (!choice.InteractionVisible(mgm))
+				continue;
+
+			Instantiate(ChoicePrefab, ChoicesParent).Setup(choice, currDisplayInfo, gameObject, mgm, dialogsComplete, i);
+
+			i++;
 		}
 	}
 }

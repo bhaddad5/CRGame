@@ -44,3 +44,13 @@ public class NpcPicker
 		Npc = EditorGUILayout.ObjectField("NPC: ", Npc, typeof(Npc), false);
 	}
 }
+
+public class InteractionPicker
+{
+	public Object Interaction;
+
+	public void DrawInteractionDropdown(GameData gameData)
+	{
+		Interaction = EditorGUILayout.ObjectField("Optional Parent Interaction: ", Interaction, typeof(Interaction), false);
+	}
+}

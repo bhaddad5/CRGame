@@ -22,12 +22,15 @@ public class CreateInteractionWindow : EditorWindow
 	private GameData data;
 	private string interactionName;
 	private NpcPicker npcPicker = new NpcPicker();
+	private InteractionPicker interactionPicker = new InteractionPicker();
 
 	void OnGUI()
 	{
 		interactionName = EditorGUILayout.TextField("Name:", interactionName);
 
 		npcPicker.DrawNpcDropdown(data);
+
+		interactionPicker.DrawInteractionDropdown(data);
 
 		if (GUILayout.Button("Create!"))
 		{
@@ -48,6 +51,13 @@ public class CreateInteractionWindow : EditorWindow
 		if (foundNpc == null)
 			return;
 
+		var foundParentInteraction = interactionPicker.Interaction as Interaction;
+
+		if (foundParentInteraction != null)
+		{
+			interaction.SubInteraction = true;
+			foundParentInteraction.Result.Choices.Add(interaction);
+		}
 
 		foundNpc.Interactions.Add(interaction);
 		EditorUtility.SetDirty(foundNpc);
