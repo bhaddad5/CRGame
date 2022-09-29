@@ -14,6 +14,7 @@ public class ColorSchemesReference : MonoBehaviour
 		ButtonContent,
 		TransPanelBacking,
 		TransPanelContent,
+		DialogChoice
 	}
 
 	[Serializable]

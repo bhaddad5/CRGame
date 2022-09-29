@@ -14,6 +14,7 @@ namespace Assets.GameModel
 
 		public string Name;
 
+		public bool SubInteraction;
 		public bool AlertNew = true;
 
 		public enum InteractionCategory

@@ -22,7 +22,7 @@ namespace Assets.GameModel.UiDisplayers
 		private GameObject choicesScreen;
 		private Action choiceCompleted;
 
-		public void Setup(Interaction interaction, NpcDisplayInfo currDisplayInfo, GameObject choicesScreen, MainGameManager mgm, Action choiceCompleted)
+		public void Setup(Interaction interaction, NpcDisplayInfo currDisplayInfo, GameObject choicesScreen, MainGameManager mgm, Action choiceCompleted, int index)
 		{
 			this.currDisplayInfo = currDisplayInfo;
 			this.interaction = interaction;
@@ -30,7 +30,7 @@ namespace Assets.GameModel.UiDisplayers
 			this.mgm = mgm;
 			this.choiceCompleted = choiceCompleted;
 
-			Text.text = $"{interaction.Name}";
+			Text.text = $"{index+1}: {interaction.Name}";
 
 			if (interaction.CanFail)
 				Text.text += $" ({(int)((1f - interaction.ProbabilityOfFailureResult) * 100)}% chance)";

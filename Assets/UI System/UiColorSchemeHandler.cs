@@ -14,6 +14,8 @@ public class UiColorSchemeHandler : MonoBehaviour
 
 		if (gameObject.GetComponent<Selectable>() != null)
 		{
+			Debug.Log(colors);
+
 			gameObject.GetComponent<Selectable>().colors = colors;
 		}
 		else
