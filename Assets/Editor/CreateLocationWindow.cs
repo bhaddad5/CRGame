@@ -22,29 +22,49 @@ public class CreateLocationWindow : EditorWindow
 	private GameData data;
 	private string locName;
 
+	private RegionPicker regionPicker = new RegionPicker();
+
+	private string errorMsg;
+
 	void OnGUI()
 	{
 		locName = EditorGUILayout.TextField("Name:", locName);
 
+		regionPicker.DrawRegionDropdown(data);
+
 		if (GUILayout.Button("Create!"))
 		{
-			CreateLocation();
+			errorMsg = "";
+
+			var reg = regionPicker.Region as Region;
+
+			if (reg == null)
+			{
+				errorMsg = $"ERROR: YOU MUST SELECT A REGION";
+			}
+
+			CreateLocation(reg);
 
 			window.Close();
 		}
+
+		if (!String.IsNullOrEmpty(errorMsg))
+			GUILayout.Label(errorMsg, EditorStyles.boldLabel);
 	}
 
-	private void CreateLocation()
+	private void CreateLocation(Region region)
 	{
+		var regFolder = Path.GetDirectoryName(AssetDatabase.GetAssetPath(region));
+
 		Location loc = ScriptableObject.CreateInstance<Location>();
 		loc.Name = locName;
 		loc.Id = Guid.NewGuid().ToString();
 
-		data.Regions[0].Locations.Add(loc);
-		EditorUtility.SetDirty(data);
+		region.Locations.Add(loc);
+		EditorUtility.SetDirty(region);
 
-		string locFolder = Path.Combine($"Assets/Data", loc.Name.ToFolderName());
-		AssetDatabase.CreateFolder($"Assets/Data", loc.Name.ToFolderName());
+		string locFolder = Path.Combine($"{regFolder}", loc.Name.ToFolderName());
+		AssetDatabase.CreateFolder($"{regFolder}", loc.Name.ToFolderName());
 		AssetDatabase.CreateFolder(locFolder, "_Missions");
 		AssetDatabase.CreateFolder(locFolder, "_Policies");
 

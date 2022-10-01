@@ -25,6 +25,16 @@ public static class CreationWindowHelpers
 	}
 }
 
+public class RegionPicker
+{
+	public Object Region;
+
+	public void DrawRegionDropdown(GameData gameData)
+	{
+		Region = EditorGUILayout.ObjectField("Region: ", Region, typeof(Region), false);
+	}
+}
+
 public class LocationPicker
 {
 	public Object Location;
