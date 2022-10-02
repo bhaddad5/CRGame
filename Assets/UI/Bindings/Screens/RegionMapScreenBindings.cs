@@ -47,6 +47,7 @@ namespace Assets.GameModel.UiDisplayers
 			this.mgm = mgm;
 			this.region = region;
 
+			MapImage.sprite = region.MapImage.ToSprite();
 			var mapSize = new Vector2(MapImage.mainTexture.width, MapImage.mainTexture.height);
 			
 			CameraMover.Instance.ResetCameraPos();
