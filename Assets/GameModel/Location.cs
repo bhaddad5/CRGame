@@ -63,8 +63,6 @@ namespace Assets.GameModel
 		
 		public bool IsVisible(MainGameManager mgm)
 		{
-			return true;
-
 			foreach (var interaction in VisibilityInteractions)
 			{
 				if (interaction != null && interaction.Completed == 0)
@@ -85,8 +83,6 @@ namespace Assets.GameModel
 
 		public bool IsAccessible(MainGameManager mgm)
 		{
-			return true;
-
 			if (ClosedOnWeekdays && !mgm.IsWeekend())
 				return false;
 			if (ClosedOnWeekends && mgm.IsWeekend())
