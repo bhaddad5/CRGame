@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 5d6913ab-5c0d-4a46-8d30-fabeb4e59d75
   Name: Her new compensation package
+  SubInteraction: 0
   AlertNew: 1
   Category: 1
   Requirements:
@@ -39,7 +40,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
-    Items: 
+    Items: []
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -108,9 +109,9 @@ MonoBehaviour:
       OptionalNpcReference: {fileID: 11400000, guid: 0041cc9001d9b5e46817e841349ddd12,
         type: 2}
       Text: Well, of course it is going to change.  For one, you're now an Admin,
-        which means you're paid on an hourly basis and rate.  You're salary is no
-        longer being paid out of the MTP budget-- you're a line item on my P&L. 
-        So, you were on $2,000 a fortnight--
+        which means you're paid on an hourly basis and rate.  Your salary is no longer
+        being paid out of the MTP budget-- you're a line item on my P&L.  So, you
+        were on $2,000 a fortnight--
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 936c9fbc30a60ab47a10e29d15a3682d,
         type: 3}
@@ -187,6 +188,7 @@ MonoBehaviour:
         her lifestyle, at least for now.  She'll have a lot of tough decisions to
         make and what she used to take for granted will soon become infrequent luxuries
         at best.
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -204,8 +206,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
+      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -219,6 +221,7 @@ MonoBehaviour:
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -236,8 +239,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
+      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
