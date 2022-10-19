@@ -42,7 +42,7 @@ public class CameraMover : MonoBehaviour
 #if UNITY_EDITOR
 		if (Input.GetKeyDown(KeyCode.M))
 		{
-			var map = GameObject.Find("MainMapCanvas");
+			var map = GameObject.Find("MainMapCanvas") ?? GameObject.Find("RegionMapCanvas");
 
 			var mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 			var mousePosRelativeToMap = map.transform.InverseTransformPoint(mousePos);

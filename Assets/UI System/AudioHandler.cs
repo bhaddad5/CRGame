@@ -166,6 +166,9 @@ namespace Assets.UI_System
 		private float fadeToNewStartTime = 0f;
 		public void SetMusicTracks(List<AudioClip> tracks)
 		{
+			if (tracks.Count == 0)
+				return;
+
 			//If it's all just the same clips we don't wanna swap the list and trigger a track restart
 			if (tracks.Count == currAudioClips.Count)
 			{
