@@ -33,6 +33,9 @@ namespace Assets.GameModel
 
 		public RegionResources RegionResources;
 
+		public List<Interaction> VisibilityInteractions;
+		public List<Interaction> VisibilityNotCompletedInteractions;
+
 		public List<Location> QuickAccessLocations = new List<Location>();
 		public List<Location> Locations = new List<Location>();
 
@@ -54,6 +57,16 @@ namespace Assets.GameModel
 
 		public bool IsVisible(MainGameManager mgm)
 		{
+			foreach (var interaction in VisibilityInteractions)
+			{
+				if (interaction != null && interaction.Completed == 0)
+					return false;
+			}
+			foreach (var interaction in VisibilityNotCompletedInteractions)
+			{
+				if (interaction != null && interaction.Completed > 0)
+					return false;
+			}
 			return true;
 		}
 
