@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: I need a private jet to do my job
+  m_Name: Recruit a stewardess for my new jet
   m_EditorClassIdentifier: 
-  Id: 9f11f20a-9ff8-48fb-91cc-f6dc0046c3b2
-  Name: I need a private jet to do my job. ($500k req)
-  SubInteraction: 1
+  Id: ebe4da3d-7450-4529-8037-c3740acb469b
+  Name: Recruit a stewardess for my new jet
+  SubInteraction: 0
   AlertNew: 1
   Category: 1
   Requirements:
@@ -23,7 +23,9 @@ MonoBehaviour:
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 0}
+    - {fileID: 11400000, guid: e2d07fd745527844b919a3a496890af1, type: 2}
+    - {fileID: 11400000, guid: 38e17ea88d17bdb499395f28c5105094, type: 2}
+    - {fileID: 11400000, guid: b4d64e6604f754a4481abf058370cef8, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -33,7 +35,7 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 500000
+    MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -46,89 +48,87 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: a7f6d8d9c4a926b4f8ebec3d6520adc3,
-        type: 2}
-      Text: 'I''ll make all the arrangements, Mr. {LastName}.  The next time you
-        need to travel, I''ll escort you to our VIP Lounge.  Our ground staff will
-        lodge the manifest and our pilot will take you whereever you need to be--
-        in style and relaxation. '
+      OptionalNpcReference: {fileID: 0}
+      Text: How can I make your day better, Mr. {LastName}?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: c301318f42b865947a67b0bb3c6006f7,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.48
-        width: 200
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: a7f6d8d9c4a926b4f8ebec3d6520adc3,
-        type: 2}
-      Text: Very good.  What about onboard servces?
+      OptionalNpcReference: {fileID: 0}
+      Text: 'Now that I have the company jet, I may as well treat myself.  Did you
+        ever consider a career as a flight attendent, Debbie?  '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: c301318f42b865947a67b0bb3c6006f7,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.48
-        width: 200
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: a7f6d8d9c4a926b4f8ebec3d6520adc3,
-        type: 2}
-      Text: Well-- we provide top notch crew but...
+      OptionalNpcReference: {fileID: 0}
+      Text: 'Well, uh, no... <gulp> May I ask why you want to know... Sir? '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: c301318f42b865947a67b0bb3c6006f7,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.48
-        width: 200
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: a7f6d8d9c4a926b4f8ebec3d6520adc3,
-        type: 2}
-      Text: Yes?
+      OptionalNpcReference: {fileID: 0}
+      Text: Never mind.  I need you here.  I didn't spend all that time breaking
+        you in just to pour drinks on a plane-- although I do think the uniform would
+        flatter you.  Check with Annie at The Doll House-- tell her I need a stewie. 
+        Let's see who she recommends.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: c301318f42b865947a67b0bb3c6006f7,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.48
-        width: 200
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: a7f6d8d9c4a926b4f8ebec3d6520adc3,
-        type: 2}
-      Text: 'Well, many VIP clients choose to recruit their own flight attendants. 
-        If that''s the case, we''ll be happy to arrange for the required safety training
-        and licensing and all. '
+      OptionalNpcReference: {fileID: 0}
+      Text: '(5 minutes later)
+
+        Ms. Miller has recommended a Meghan Quinn,
+        Sir.  Is she acceptable?'
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: c301318f42b865947a67b0bb3c6006f7,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.48
-        width: 200
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 11400000, guid: a7f6d8d9c4a926b4f8ebec3d6520adc3,
-        type: 2}
-      Text: 'NOTE: You may now access the VIP Lounge and travel to new global destinations!'
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Hmmm.  Interesting choice!  Yes, she'll do.  Have her report to ExecuJet
+        immediately.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: c301318f42b865947a67b0bb3c6006f7,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.48
-        width: 200
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups: []
+    OptionalPopups:
+    - Title: Mr. {LastName}?
+      Videos:
+      - {fileID: 32900000, guid: 591a93c101b858548841902b79b1c524, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: Thanks for, uh, not reassigning me.  I think I can contribute more here
+        than on a plane!
     Choices: []
     Effect:
       NpcEffects: []
