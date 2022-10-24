@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: BJ from the Sewie
+  m_Name: Greetings and welcome to Singapore
   m_EditorClassIdentifier: 
-  Id: cec5e9c8-d00f-4ca5-8761-cee6f38d067b
-  Name: BJ from the Stewie
+  Id: 684a7d21-9d27-43b9-9cb7-218ea56e4abe
+  Name: Greetings and welcome to Singapore
   SubInteraction: 0
   AlertNew: 1
-  Category: 6
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -40,26 +40,59 @@ MonoBehaviour:
     RevanueCost: 0
     HornicalCost: 0
     Items: []
-  Repeatable: 1
-  PreviewEffect: 1
+  Repeatable: 0
+  PreviewEffect: 0
   Result:
-    Dialogs: []
-    OptionalPopups:
-    - Title: Coffee, tea or me, Mr. {LastName}?
-      Videos:
-      - {fileID: 32900000, guid: 336fe5f7a11582f42ae5129dcafe468d, type: 3}
-      - {fileID: 32900000, guid: 117101b7e9635d645a31d3acad330341, type: 3}
-      - {fileID: 32900000, guid: a6e60d643b4caac4395418268e1fde97, type: 3}
-      - {fileID: 32900000, guid: 78a939ab3398bdd42ab3ca2f5c6e441b, type: 3}
-      - {fileID: 32900000, guid: 6fe07e798ef138d4bb1476373298e287, type: 3}
-      Textures: []
-      DialogClips: []
-      Text: Meg's midflight bjs are professionally performed to your always high
-        standards!
-    Choices: []
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 2125c507efa16134184758d4a68efe3b,
+        type: 2}
+      Text: My name is Miss Chan, your VIP Liaison.  I hope your flight was a pleasant
+        one, Mr. Mr. {LastName}.  I'm responsible for help you with your transportation
+        and lodging needs while in Singapore.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f733a138f2c3b0f41a078b5ec1430661,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 2125c507efa16134184758d4a68efe3b,
+        type: 2}
+      Text: I can arrange for a taxi to be placed at your disposal for $5,000.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f733a138f2c3b0f41a078b5ec1430661,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 2125c507efa16134184758d4a68efe3b,
+        type: 2}
+      Text: Or we can have a limousine service on 24/7 availability reserved for
+        your needs at $10,000.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f733a138f2c3b0f41a078b5ec1430661,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups: []
+    Choices:
+    - {fileID: 11400000, guid: d78d8b21a24f85d48ab9d434d52ceb93, type: 2}
+    - {fileID: 11400000, guid: f49b353a9b2325e418be6eba8030f169, type: 2}
     Effect:
       NpcEffects: []
-      EgoEffect: 10
+      EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
