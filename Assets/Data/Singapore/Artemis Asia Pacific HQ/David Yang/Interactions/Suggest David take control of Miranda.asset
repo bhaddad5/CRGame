@@ -1,0 +1,214 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: Suggest David take control of Miranda
+  m_EditorClassIdentifier: 
+  Id: 6dbd2122-104c-4ee9-b96e-eaf7fde92077
+  Name: Suggest David take control of Miranda
+  SubInteraction: 0
+  AlertNew: 1
+  Category: 2
+  Requirements:
+    RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
+    NpcStatRequirements:
+    - OptionalNpcReference: {fileID: 11400000, guid: 9fc7f810eb3503f44a56e215ed266849,
+        type: 2}
+      Stat: 0
+      Is: 0
+      Value: 0
+    RequiredInteractions: []
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredNpcsControled: []
+    RequiredNpcsTrained: []
+    RequiredNpcsNotControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 20
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    HornicalCost: 0
+    Items: []
+  Repeatable: 0
+  PreviewEffect: 0
+  Result:
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: '{FirstName}, I agree.  It is time for me to take Miranda in hand.  If
+        she''s to be useful to me, it is time she lost this misconception about her
+        performing some executive role.  That isn''t why she was sent here, was it? '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Not at all, David.  As Managing Director of Artemis Asia Pacific, thiis
+        is entirely your perogative.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: c87534d57e4416445bce3fc68ed6d9f3,
+        type: 2}
+      Text: Miranda-- in here, now!  I've made a decision.  Effective immediately,
+        you're to assume the role of Personal Assistant to the Managing Director
+        of Artemis Asia Pacific.  Is that understood?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 9fc7f810eb3503f44a56e215ed266849,
+        type: 2}
+      Text: That's not the job I was promised!  That's not why I came all the way
+        to Singapore!  Mr. {LastName}-- do something!
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: ee87562d30fc02948b8a8febe8ecf0db, type: 3}
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 9fc7f810eb3503f44a56e215ed266849,
+        type: 2}
+      Text: Mr. Yang has made his decision-- I suggest you get with the program,
+        Miranda.
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: ee87562d30fc02948b8a8febe8ecf0db, type: 3}
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: c87534d57e4416445bce3fc68ed6d9f3,
+        type: 2}
+      Text: And part of that program is adopting a more feminine wardrobe, Miranda. 
+        I expect my PA to look the part.
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: ee87562d30fc02948b8a8febe8ecf0db, type: 3}
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: Miranda is stunned by the news.
+      Videos:
+      - {fileID: 32900000, guid: 24d2f3b123b63514390852fb1ed686fd, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: She glares at you resentfully, even as you see Yang smile.
+    - Title: Later, Miranda will wonder...
+      Videos:
+      - {fileID: 32900000, guid: d26c728aaf8f82e409d5983fa6ebcc57, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: ...why and how she's buckled to Yang's orders.  She's come to hate him
+        but even still, she can't gather the will to refuse his orders.
+    Choices: []
+    Effect:
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: e824e839d0b9719409dc7942822791c4,
+          type: 2}
+        AmbitionEffect: 30
+        PrideEffect: 0
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl:
+      - {fileID: 11400000, guid: 9fc7f810eb3503f44a56e215ed266849, type: 2}
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      ItemsToRemove: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
+  FailureResult:
+    Dialogs: []
+    OptionalPopups: []
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      ItemsToRemove: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+  Completed: 0
+  New: 1

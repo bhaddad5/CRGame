@@ -1,0 +1,204 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: Legal Waiver
+  m_EditorClassIdentifier: 
+  Id: 3f875396-41e9-4264-b131-b62995eb09e8
+  Name: Legal Waiver
+  SubInteraction: 0
+  AlertNew: 1
+  Category: 0
+  Requirements:
+    RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
+    NpcStatRequirements:
+    - OptionalNpcReference: {fileID: 11400000, guid: 9fc7f810eb3503f44a56e215ed266849,
+        type: 2}
+      Stat: 0
+      Is: 0
+      Value: 80
+    RequiredInteractions: []
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredNpcsControled: []
+    RequiredNpcsTrained: []
+    RequiredNpcsNotControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 0
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    HornicalCost: 0
+    Items: []
+  Repeatable: 0
+  PreviewEffect: 0
+  Result:
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: 'Mr. {LastName} wants our Asia Pac polcies to align with corporate headquarters. 
+        One of these is the legal waiver document, isn''t that right {FirstName}?  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: It is David.  We've saved the company millions by implementing a waiver
+        protecting the company and its executives from frivolous claims, including
+        sexual harassment.  I'm sure Miranda will have no qualms about signing such
+        a document, especially if her boss asks her to do so.  Isn't that right Miranda?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 9fc7f810eb3503f44a56e215ed266849,
+        type: 2}
+      Text: Look, Mr. {LastName}, I'm not going to sign away my legal rights.  I'm
+        a staunch feminist and there's no way I woudl ever agree to--
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: c87534d57e4416445bce3fc68ed6d9f3,
+        type: 2}
+      Text: Miranda, you will sign the document right now!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: '"Yes, Mr. Yang."'
+      Videos:
+      - {fileID: 32900000, guid: 55feaaffa9e6c6b489ffd0a61c05f45f, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: Miranda's resistance crumbles under Yang's firm insistence.
+    Choices: []
+    Effect:
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: 9fc7f810eb3503f44a56e215ed266849,
+          type: 2}
+        AmbitionEffect: -20
+        PrideEffect: 0
+      - OptionalNpcReference: {fileID: 11400000, guid: c87534d57e4416445bce3fc68ed6d9f3,
+          type: 2}
+        AmbitionEffect: 20
+        PrideEffect: 0
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      ItemsToRemove: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+  CanFail: 1
+  ProbabilityOfFailureResult: 60
+  FailureResult:
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: c87534d57e4416445bce3fc68ed6d9f3,
+        type: 2}
+      Text: 'I understand this policy is in effect at Artemis HQ.  Something to do
+        with waiving frivoulous sexual harassment claims.  I''ll need you to sign
+        it. Miranda.  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: '"I''m not giving up my rights!"'
+      Videos:
+      - {fileID: 32900000, guid: 24a1b27f8f0897f499298f740c7bd50b, type: 3}
+      - {fileID: 32900000, guid: e1a05d395ecdc6044b6fee23991ae78b, type: 3}
+      - {fileID: 32900000, guid: 9a9c1be482fc9794ba2eb0c39d3f9bcd, type: 3}
+      - {fileID: 32900000, guid: ec77f0f8d4a59d44e94d6dd2b407a408, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: Miranda's proud refusal to sign comes at a cost.  She struggles with
+        intense headaches brought on by her internal battle with the AGATHA implant!
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      ItemsToRemove: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+  Completed: 0
+  New: 1
