@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Good news for Miranda
+  m_Name: Kudos on your launch
   m_EditorClassIdentifier: 
-  Id: f370dda1-1fdd-4940-a7b1-7fb98a480a05
-  Name: Good news for Miranda
+  Id: 5d8b0e4d-16ca-4e87-8243-84af895d2678
+  Name: Kudos on your launch
   SubInteraction: 0
   AlertNew: 1
   Category: 1
@@ -23,9 +23,8 @@ MonoBehaviour:
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 03fc18c43ba50fa4cb1afe2047ca9fa5, type: 2}
-    RequiredNotCompletedInteractions:
-    - {fileID: 11400000}
+    - {fileID: 11400000, guid: 5a0a1e8c625b0734ab1981c3491b715a, type: 2}
+    RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -41,28 +40,16 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
-    Items:
-    - {fileID: 11400000, guid: e5648fbbecc108a4daee508b6d979b5d, type: 2}
+    Items: []
   Repeatable: 0
   PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: I have some good news!  I've spoken with Mr. Yang.  After reviewing your
-        qualifications and discussing our own interviews here, he'd be interested
-        in interviewing you-- in Singapore.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Thanks fantastic!  I'm very excited!
+      Text: Well, well!  You did it!  You have an Aretmis outpost in Asia now, led
+        by a man held in high regard by the Singapore Establishment.  It's a good
+        start.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -73,9 +60,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: I'll have Debbie make the arrangements.  I'm afraid Singapore does require
-        a shot of some kind.  We can arrange that at no charge to you with our own
-        healtcare provider, Pry Medical.  Will that be a problem?
+      Text: Only a start?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -86,7 +71,11 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Oh, no!  That's perfectly fine!
+      Text: 'Herr Kempler would have me remind you that the most effective leadership
+        is one demonstrated by example.  David Yang is a good man-- a highly capable
+        leader with all the right connections.  But if you hope to establish an opening
+        here for Selectacorp, you''ll need Yang to do it visibly and in a dramatic
+        way. '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -97,10 +86,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: 'Look, Mr. Yang speaks perfect English but you might do yourself some
-        favors by learning some basic Chinese phrases.  It would go a long way to
-        impressing the key decision-maker here.  I have an audiobook here that might
-        help. '
+      Text: Go on please.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -111,8 +97,11 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: That's very thoughtful!  Of course, I'll do nothing but be listening
-        between now and my interview with Mr. Yang!
+      Text: 'Singapore is still a bit intimidated by the West, much to the irriration
+        of... let''s say other powers in the region.  Yang went to school in the
+        US.  No doubt he has a thing for American girls.  Many Singaporean men do. 
+        If he were to  act on this desire in a public and assertive way, it would
+        impress The Powers That Be.    '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -121,36 +110,41 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups:
-    - Title: Miranda accepts the CD and...
-      Videos: []
-      Textures:
-      - {fileID: 2800000, guid: 7f1243db37428b24da1928453eb87f04, type: 3}
-      DialogClips: []
-      Text: '...promises to pick up enough Chinese to impress Mr. Yang. '
-    - Title: Given how ambitious she is...
-      Videos:
-      - {fileID: 32900000, guid: 1481f7179075b714aba762f725875494, type: 3}
-      Textures: []
-      DialogClips: []
-      Text: ...you are fairly confident she will indeed be listening to it, as well
-        as the subluminal voice imprinting embedded in it.
-    - Title: A notification confirms...
-      Videos:
-      - {fileID: 32900000, guid: de65fe70c676a8248b5569794e364d4f, type: 3}
-      Textures: []
-      DialogClips: []
-      Text: ...Miranda receives the vacination containing the AGATHA nano-chip shortly
-        thereafter.
-    - Title: You have Debbie book here...
-      Videos:
-      - {fileID: 32900000, guid: d41a26db3197ca3439e9bd5fa9fed808, type: 3}
-      Textures: []
-      DialogClips: []
-      Text: ...a First Class flight and organize accommodations.  David Yang looks
-        forward to meeting Miranda on the other end of the flight.  After that, Miranda
-        will begin the process of bending herself to Yang's will, under the pressure
-        of the AGATHA technology.
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: And that would help us strengthen our bonds with Triple 8?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: 'And open other doors in the city as well.  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: 'NOTE: Raise David Yang''s PRIDE up to at least 100 and Jet will pull
+        some strings on your behalf!'
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups: []
     Choices: []
     Effect:
       NpcEffects: []
@@ -165,8 +159,7 @@ MonoBehaviour:
       HornicalEffect: 0
       NpcsToControl: []
       NpcsToTrain: []
-      NpcsToRemoveFromGame:
-      - {fileID: 11400000, guid: 93a91a2c96e555f45b3cfb7bad6291e7, type: 2}
+      NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []

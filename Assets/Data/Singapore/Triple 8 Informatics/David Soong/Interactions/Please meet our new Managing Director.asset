@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Good news for Miranda
+  m_Name: Please meet our new Managing Director
   m_EditorClassIdentifier: 
-  Id: f370dda1-1fdd-4940-a7b1-7fb98a480a05
-  Name: Good news for Miranda
+  Id: dc6bf7b8-a850-43d4-aa6f-4b69db4337aa
+  Name: Please meet our new Managing Director
   SubInteraction: 0
   AlertNew: 1
   Category: 1
@@ -23,9 +23,8 @@ MonoBehaviour:
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 03fc18c43ba50fa4cb1afe2047ca9fa5, type: 2}
-    RequiredNotCompletedInteractions:
-    - {fileID: 11400000}
+    - {fileID: 11400000, guid: 873965c3b6d7d694ca8fc3c6734d6b6b, type: 2}
+    RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -41,17 +40,16 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
-    Items:
-    - {fileID: 11400000, guid: e5648fbbecc108a4daee508b6d979b5d, type: 2}
+    Items: []
   Repeatable: 0
   PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 1
+    - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: I have some good news!  I've spoken with Mr. Yang.  After reviewing your
-        qualifications and discussing our own interviews here, he'd be interested
-        in interviewing you-- in Singapore.
+      Text: Gentlemen, I am so pleased to receive you both!  David, congratulations
+        on your appointment.  As your joint venture partner, we are delighted with
+        the commitment Artemis has made to our market.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -61,21 +59,11 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: Thanks fantastic!  I'm very excited!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: I'll have Debbie make the arrangements.  I'm afraid Singapore does require
-        a shot of some kind.  We can arrange that at no charge to you with our own
-        healtcare provider, Pry Medical.  Will that be a problem?
+      OptionalNpcReference: {fileID: 11400000, guid: c87534d57e4416445bce3fc68ed6d9f3,
+        type: 2}
+      Text: '{FirstName} and I are committed to growing the business here.  I''m
+        hoping we will see Triple 8 more active in generating more revenue now--
+        we have a window for massive growth, don''t we? '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -85,22 +73,10 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: Oh, no!  That's perfectly fine!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: 'Look, Mr. Yang speaks perfect English but you might do yourself some
-        favors by learning some basic Chinese phrases.  It would go a long way to
-        impressing the key decision-maker here.  I have an audiobook here that might
-        help. '
+      OptionalNpcReference: {fileID: 11400000, guid: 9ec84f606f2726942814971d176c3aed,
+        type: 2}
+      Text: We do, we do!  {FirstName}, your new MD is quite aggressive!  I understand
+        you've staffed up as well.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -110,9 +86,39 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: That's very thoughtful!  Of course, I'll do nothing but be listening
-        between now and my interview with Mr. Yang!
+      OptionalNpcReference: {fileID: 11400000, guid: c87534d57e4416445bce3fc68ed6d9f3,
+        type: 2}
+      Text: Ah, yes!  My new girl Miranda really brightens up the office.  Miranda
+        really is a walking, talking advert for Artemis.  She represents the kind
+        of working girl who's potential is unleashed by our new product lines.  Surely
+        there's a talent market for these kinds of girls here in Singapore, yes?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: c87534d57e4416445bce3fc68ed6d9f3,
+        type: 2}
+      Text: David, do you think we might be able to jumpstart a sales push for Artemis 
+        now?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 9ec84f606f2726942814971d176c3aed,
+        type: 2}
+      Text: I should think so, {FirstName}.  Yes, I think with your support, we can
+        allocate more resources to representing your interests here in Singapore. 
+        The timing is perfect-- our other partner offerings are lagging.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -122,35 +128,12 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: Miranda accepts the CD and...
-      Videos: []
-      Textures:
-      - {fileID: 2800000, guid: 7f1243db37428b24da1928453eb87f04, type: 3}
-      DialogClips: []
-      Text: '...promises to pick up enough Chinese to impress Mr. Yang. '
-    - Title: Given how ambitious she is...
+    - Title: You'll now be able to generate...
       Videos:
-      - {fileID: 32900000, guid: 1481f7179075b714aba762f725875494, type: 3}
+      - {fileID: 32900000, guid: fc9cbc750eec63d41aa67f4c602461bf, type: 3}
       Textures: []
       DialogClips: []
-      Text: ...you are fairly confident she will indeed be listening to it, as well
-        as the subluminal voice imprinting embedded in it.
-    - Title: A notification confirms...
-      Videos:
-      - {fileID: 32900000, guid: de65fe70c676a8248b5569794e364d4f, type: 3}
-      Textures: []
-      DialogClips: []
-      Text: ...Miranda receives the vacination containing the AGATHA nano-chip shortly
-        thereafter.
-    - Title: You have Debbie book here...
-      Videos:
-      - {fileID: 32900000, guid: d41a26db3197ca3439e9bd5fa9fed808, type: 3}
-      Textures: []
-      DialogClips: []
-      Text: ...a First Class flight and organize accommodations.  David Yang looks
-        forward to meeting Miranda on the other end of the flight.  After that, Miranda
-        will begin the process of bending herself to Yang's will, under the pressure
-        of the AGATHA technology.
+      Text: ...revenue from your joint venture partner!
     Choices: []
     Effect:
       NpcEffects: []
@@ -165,8 +148,7 @@ MonoBehaviour:
       HornicalEffect: 0
       NpcsToControl: []
       NpcsToTrain: []
-      NpcsToRemoveFromGame:
-      - {fileID: 11400000, guid: 93a91a2c96e555f45b3cfb7bad6291e7, type: 2}
+      NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
