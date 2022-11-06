@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: A request regarding another guest
+  m_Name: Drinks at the hotel
   m_EditorClassIdentifier: 
-  Id: 4ab46611-5168-4f20-95a5-f327faef9a42
-  Name: A request regarding another guest
+  Id: 4fcb6233-49be-4ae2-ac67-12c36650ca9f
+  Name: Drinks at the hotel?
   SubInteraction: 0
   AlertNew: 1
   Category: 1
@@ -32,7 +32,7 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 0
+    EgoCost: 20
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -45,10 +45,23 @@ MonoBehaviour:
   PreviewEffect: 0
   Result:
     Dialogs:
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Since we're both at Raffles, I was wondering if we might have drinks
+        sometime.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Mr. {LastName}!  I trust your stay with us has been a pleasurable one? 
-        If not, how may I make it so?
+      Text: I'm afraid not.  I'm very much engaged to be married and I don't think
+        Rupert would approve!  He'd not very pleased with the fact that I need to
+        travel for business as it is.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -59,8 +72,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Miss Tang, I understand you have a Miss Matilda Campbell staying with
-        ou as well.
+      Text: 'I quite understand.  Rupert is a very lucky man.  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -71,9 +83,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: We do.  Miss Campbell is a regular-- she stays with us at least once
-        a month.  She's a very senior executive with a consulting firm in Sydney,
-        Australia.
+      Text: 'He feels that way, thank goodness-- unlike his family.  I have to worry
+        about them more than my dear Rupert!  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -84,10 +95,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: It would be of great value to me to be able to monitor her comings and
-        goings here at the hotel.  I was wondering, just between us, if that might
-        be possible.  I understand this is irregular but I was hoping this payment
-        might help faciliate my request.
+      Text: I don't understand.  I assume they are overly protective?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -98,9 +106,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: You are very generous, Mr. {LastName}.  Singapore is a place where information
-        is valued.  I shall attend to this at once.  I'll make a cloakroom available
-        to review the security video.
+      Text: 'The Amberleys are very concerned with appearences.  It''s an Eastern
+        Suburbs things.  You''d think I was some desperate slag from Western Sydney! '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -109,18 +116,38 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups:
-    - Title: You may now surveil...
-      Videos:
-      - {fileID: 32900000, guid: f4eeaf7ca75791e42a7f23c24f5fdd63, type: 3}
-      Textures: []
-      DialogClips: []
-      Text: ...Matilda's video feed at your convenience.
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Yet you're clearly on the Partner track at PriceMillhouseKoopers.  They
+        wouldn't put some junior up at Raffles.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: 'Perceptive!  You''re quite right-- I AM going to make partner, if not
+        this year, next year for sure.  And my father was a Member of Parliament
+        for Ridely AND my mother is a pediatrician who was awarded the Order of Australia
+        for her work three years ago!  And yet I''m a some sort of golddigger! '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups: []
     Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
-      FundsEffect: 5000
+      FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
       CultureEffect: 0

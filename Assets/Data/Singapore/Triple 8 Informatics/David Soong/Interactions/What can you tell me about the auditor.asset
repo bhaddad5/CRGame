@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: A request regarding another guest
+  m_Name: What can you tell me about the auditor
   m_EditorClassIdentifier: 
-  Id: 4ab46611-5168-4f20-95a5-f327faef9a42
-  Name: A request regarding another guest
+  Id: 93f82f6e-6d8b-43ad-8dab-38fb955c44c3
+  Name: What can you tell me about the auditor?
   SubInteraction: 0
   AlertNew: 1
   Category: 1
@@ -23,7 +23,7 @@ MonoBehaviour:
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: bc5aa18a2aa8c3344a769719a6f0babe, type: 2}
+    - {fileID: 11400000, guid: 06338cb44888db7448da5b2880a926f4, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -32,7 +32,7 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 0
+    EgoCost: 10
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -45,10 +45,23 @@ MonoBehaviour:
   PreviewEffect: 0
   Result:
     Dialogs:
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Matilda Campbell seems quite professional.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Mr. {LastName}!  I trust your stay with us has been a pleasurable one? 
-        If not, how may I make it so?
+      Text: 'I suppose.  I find her a touch arrogant and unnecessarily adversarial. 
+        We''ve been compeltely transparent but she insists on making her audits onerous
+        affairs.  Australians in Singapore are often a bit abrasive.  Rose finds
+        her spirit infectious, but that''s women for you.    '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -59,8 +72,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Miss Tang, I understand you have a Miss Matilda Campbell staying with
-        ou as well.
+      Text: Perhaps I'll see if I can soften her up a bit-- two business travelers
+        in an enchanting Asian city and all?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -71,9 +84,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: We do.  Miss Campbell is a regular-- she stays with us at least once
-        a month.  She's a very senior executive with a consulting firm in Sydney,
-        Australia.
+      Text: I wouldn't waste your time.  Matilda Campbell never tires of reminding
+        us her fiance is one of the Amberleys.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -84,10 +96,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: It would be of great value to me to be able to monitor her comings and
-        goings here at the hotel.  I was wondering, just between us, if that might
-        be possible.  I understand this is irregular but I was hoping this payment
-        might help faciliate my request.
+      Text: Who are the Amberleys?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -98,9 +107,10 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: You are very generous, Mr. {LastName}.  Singapore is a place where information
-        is valued.  I shall attend to this at once.  I'll make a cloakroom available
-        to review the security video.
+      Text: 'Only one of the most influential families in Sydney.  Old money.  Rupert,
+        the fiance, runs their media division.  Campbell is just counting the days
+        until her wedding.  Hopefully after that, she''ll be content to become a
+        society wife and we''ll get a more reasonable replacement assigned.  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -109,18 +119,12 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups:
-    - Title: You may now surveil...
-      Videos:
-      - {fileID: 32900000, guid: f4eeaf7ca75791e42a7f23c24f5fdd63, type: 3}
-      Textures: []
-      DialogClips: []
-      Text: ...Matilda's video feed at your convenience.
+    OptionalPopups: []
     Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
-      FundsEffect: 5000
+      FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
       CultureEffect: 0

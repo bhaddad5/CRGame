@@ -10,24 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Check in on Matilda Campbell
+  m_Name: Matilda at the pool
   m_EditorClassIdentifier: 
-  Id: 84d3fa9a-75dc-4d2f-848f-71c5306daf4d
-  Name: Check in on Matilda Campbell
+  Id: c7368fd4-271d-49a3-bb30-ccc2d445d179
+  Name: Matilda at the pool
   SubInteraction: 0
   AlertNew: 1
-  Category: 7
+  Category: 6
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
-      Stat: 0
-      Is: 0
-      Value: 0
+    NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 61dec17819711bc429462d51130839cd, type: 2}
+    - {fileID: 11400000, guid: 285968c13df8d5446b42f4dd3da7e5cf, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -48,27 +44,37 @@ MonoBehaviour:
   Repeatable: 1
   PreviewEffect: 1
   Result:
-    Dialogs: []
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: The water is th eperfect temperature and the sun is wonderful!
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: dc12e2eac5bdd1b40934755fb0876d35, type: 3}
+      - {fileID: 2800000, guid: 03a57b82639dc314c8015fe2cea503b1, type: 3}
+      - {fileID: 2800000, guid: f4adef60468c46e4bb39894d8ed942b5, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 025e3121dab6c0740bdcdae17fccac05,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: The Australian consultant...
+    - Title: Matilda's pool visits...
       Videos:
-      - {fileID: 32900000, guid: 9bb80d7bf8220874e9598c6987dcf26d, type: 3}
-      - {fileID: 32900000, guid: 9428283dac2cf094c82323456925d5a5, type: 3}
-      - {fileID: 32900000, guid: 0e206a76727f03f43911a89524f52ee4, type: 3}
-      - {fileID: 32900000, guid: e6c9de8254e933245b8e2937668847ed, type: 3}
-      - {fileID: 32900000, guid: 9a982074d4427954fa02d58fbe4b06e7, type: 3}
-      - {fileID: 32900000, guid: ded2e3003b2bf584d9b70b05c001dcf1, type: 3}
-      - {fileID: 32900000, guid: 9686bef11318c284ab59017fc3d3e0e6, type: 3}
-      - {fileID: 32900000, guid: ea4b1335ff9b518468efb29cdb5f149b, type: 3}
-      - {fileID: 32900000, guid: 7e48050e01dc4534495291534c1d4332, type: 3}
-      - {fileID: 32900000, guid: cd309ee3bed5da54d87e862e9fd3b309, type: 3}
+      - {fileID: 32900000, guid: 4820c3b87c83e6648a02f7581b0a8c19, type: 3}
+      - {fileID: 32900000, guid: 345753740a4caf54aaa80888dc3facbc, type: 3}
+      - {fileID: 32900000, guid: 5dbdba71c5952704080135a74a278fd8, type: 3}
+      - {fileID: 32900000, guid: 574aec4a1f38c534595921fbab2c48d2, type: 3}
+      - {fileID: 32900000, guid: 28939ef9f5575154faa3fd8430292bd1, type: 3}
       Textures: []
       DialogClips: []
-      Text: ...reveals herself in private to be a fetching young woman.
+      Text: ...provide you with a preview of the delights to come.
     Choices: []
     Effect:
       NpcEffects: []
-      EgoEffect: 12
+      EgoEffect: 20
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
