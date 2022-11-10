@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Book an appointment with MTI
+  m_Name: Honeymoon Rehearsal
   m_EditorClassIdentifier: 
-  Id: 7ff6f6a5-82fc-4499-8400-8ee418364b87
-  Name: Book an appointment with MTI
+  Id: 7c4b7a54-1963-46f3-98f1-4f7c1804ee04
+  Name: Honeymoon Rehearsal
   SubInteraction: 0
   AlertNew: 1
-  Category: 1
+  Category: 6
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -26,7 +26,8 @@ MonoBehaviour:
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
-    RequiredNpcsControled: []
+    RequiredNpcsControled:
+    - {fileID: 11400000, guid: 62acd047d45c70044b6d51d7a4d4446a, type: 2}
     RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
     RequiredTrophies: []
@@ -40,15 +41,26 @@ MonoBehaviour:
     RevanueCost: 0
     HornicalCost: 0
     Items: []
-  Repeatable: 0
-  PreviewEffect: 0
+  Repeatable: 1
+  PreviewEffect: 1
   Result:
     Dialogs:
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: I was wondering how I might help with your upcoming nuptials and I had
+        an idea.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: I am Officer Christine Ling of the MTI.  I don't believe we requested
-        your presence, Mr. {LastName}.  Nevertheless, since you have come, what do
-        you wish?
+      Text: I'd rather we don't discuss my wedding plans.  It's nothing to do with
+        you!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -59,9 +71,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: I merely wished to pay my respects, Officer Ling.  Artemis Solution Systems
-        is fortunate to be growing in Asia Pacific and we've recently built up our
-        presence here.
+      Text: Nonsense.  You want to be ready for your wedding night, don't you?  I
+        assume you're ordered your weding gown.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -72,10 +83,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Yes, I read about the appointment of David Yang.  The ministry was pleased
-        to see such a talented and well regarded Singaporean take charge of Artemis
-        Asia Pacific.  We don't look kindly on outsiders taking on management roles
-        here.  We're well beyond that stage of our development.
+      Text: Of course I have-- from DiCenza's in Sydney.  Why?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -86,9 +94,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: I understand perfectly.  We will rely on the leadership of Mr. Yang to
-        grow our company here-- and we would be grateful for the guidance of the
-        MTI as well.
+      Text: Have it sent up here.  Tell them you need to have alterations done or
+        something.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -99,9 +106,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Interesting.  Your respect, Mr. {LastName}, for Singapore's institutions
-        is noted most positively.  Artemis Asia Pacific may have a very bright future
-        here.  May I make a suggestion?
+      Text: But... why?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -112,7 +117,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Please, Officer Ling!  I'm most eager to hear it.
+      Text: Because we're going to do some honeymoon night rehearsals.  I'll play
+        th epart of your wimpy husband to be Rupert and we'll see how you do!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -121,37 +127,38 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
+    - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: I was only going to suggest that Artemis Asia Pacific might consider
-        applying for MTI Approved Vendor Certification.  Such an application might
-        be considered with favor, given our discussion and your obvious respect for
-        Singapore.  It would also allow Artemis to participate in the MTI's Public-Private
-        Partnership Programs.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      Text: Very nice.  Shall we begin?  Why don't you call me 'Rupert' while we
+        practice!
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 12bc2fd76398d1d4099d0800045722f5, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 7f90fbc2057a25e409a1485bc9fd4246,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 300
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
-      Text: 'NOTE: In exchange for technology sharing, you may complete the MTI Preferred
-        Vendor Program Mission!'
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups: []
+    OptionalPopups:
+    - Title: The multiple angle placement...
+      Videos:
+      - {fileID: 32900000, guid: 002f85989a53ef246acb2fce6779aad9, type: 3}
+      - {fileID: 32900000, guid: d55df063fb58bc149877fa9100e3e347, type: 3}
+      - {fileID: 32900000, guid: aae271b896311b446a18d41de1584e64, type: 3}
+      - {fileID: 32900000, guid: ad2c4944c8824e44c8ef492a2cb72c21, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: ...of the concealed video cameras ensure there will never be any question
+        of the woman's identity.  Anyone who knows her will recognize Matilda Campbell
+        instantly from these videos-- while your own face will be obscured.
     Choices: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: 0
+        PrideEffect: -25
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0

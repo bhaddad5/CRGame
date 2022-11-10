@@ -10,18 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Book an appointment with MTI
+  m_Name: Take control of Matilda Campbell
   m_EditorClassIdentifier: 
-  Id: 7ff6f6a5-82fc-4499-8400-8ee418364b87
-  Name: Book an appointment with MTI
+  Id: dd32f572-7320-4b18-9e49-f4da7637a911
+  Name: Take control of Matilda Campbell
   SubInteraction: 0
   AlertNew: 1
-  Category: 1
+  Category: 2
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcStatRequirements: []
+    NpcStatRequirements:
+    - OptionalNpcReference: {fileID: 11400000, guid: 5352dc040d0e305479c1e1e7306cfead,
+        type: 2}
+      Stat: 0
+      Is: 0
+      Value: 0
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
@@ -31,7 +36,7 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 50
+    EgoCost: 0
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -46,9 +51,8 @@ MonoBehaviour:
     Dialogs:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: I am Officer Christine Ling of the MTI.  I don't believe we requested
-        your presence, Mr. {LastName}.  Nevertheless, since you have come, what do
-        you wish?
+      Text: 'I think we should end this-- whatever it is that is going on between
+        us.  It''s not appropriate.  I''m getting married!  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -59,9 +63,9 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: I merely wished to pay my respects, Officer Ling.  Artemis Solution Systems
-        is fortunate to be growing in Asia Pacific and we've recently built up our
-        presence here.
+      Text: 'Funny- I was thinking we ought to normalize things.  I quite like having
+        a local peice of ass to tap whenever I''m in town.  Why not just make it
+        a regular thing?    '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -72,10 +76,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Yes, I read about the appointment of David Yang.  The ministry was pleased
-        to see such a talented and well regarded Singaporean take charge of Artemis
-        Asia Pacific.  We don't look kindly on outsiders taking on management roles
-        here.  We're well beyond that stage of our development.
+      Text: No!  This is over!  As of now!  Done!  No more!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -86,9 +87,10 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: I understand perfectly.  We will rely on the leadership of Mr. Yang to
-        grow our company here-- and we would be grateful for the guidance of the
-        MTI as well.
+      Text: Tell you what.  I understand you're getting married.  I'm sure as long
+        as we keep it lowkey, there's no reason Rupert or any of the Amberley family
+        would ever find out what you're up to.  I promise to keep your fucking around
+        on the side our secret-- as long as you behave yourself.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -99,9 +101,9 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Interesting.  Your respect, Mr. {LastName}, for Singapore's institutions
-        is noted most positively.  Artemis Asia Pacific may have a very bright future
-        here.  May I make a suggestion?
+      Text: Please-- you can't say anything!  All they want is an excuse to...to... 
+        OK, fine.  But you have promised not to say anything!  And it will only be
+        for as long as I'm in Singapore!  After I get married, this is over-- ok?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -112,7 +114,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Please, Officer Ling!  I'm most eager to hear it.
+      Text: You have yourself a deal, Matilda Campbell.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -121,38 +123,18 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: I was only going to suggest that Artemis Asia Pacific might consider
-        applying for MTI Approved Vendor Certification.  Such an application might
-        be considered with favor, given our discussion and your obvious respect for
-        Singapore.  It would also allow Artemis to participate in the MTI's Public-Private
-        Partnership Programs.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
-      Text: 'NOTE: In exchange for technology sharing, you may complete the MTI Preferred
-        Vendor Program Mission!'
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups: []
+    OptionalPopups:
+    - Title: '"Please don''t-- not in public!"'
+      Videos:
+      - {fileID: 32900000, guid: 08d83e3055829a44b81f7c448e138224, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: You can ignore her pleas for more discretion- you've got Matilda under
+        your thumb now!
     Choices: []
     Effect:
       NpcEffects: []
-      EgoEffect: 0
+      EgoEffect: 220
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -161,7 +143,8 @@ MonoBehaviour:
       BrandEffect: 0
       RevanueEffect: 0
       HornicalEffect: 0
-      NpcsToControl: []
+      NpcsToControl:
+      - {fileID: 11400000, guid: 5352dc040d0e305479c1e1e7306cfead, type: 2}
       NpcsToTrain: []
       NpcsToRemoveFromGame: []
       LocationsToControl: []

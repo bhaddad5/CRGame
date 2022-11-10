@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Book an appointment with MTI
+  m_Name: Amberley-Campbell wedding canceled
   m_EditorClassIdentifier: 
-  Id: 7ff6f6a5-82fc-4499-8400-8ee418364b87
-  Name: Book an appointment with MTI
+  Id: 466c6555-08cb-4902-a429-86f8625d83cf
+  Name: Amberley-Campbell wedding canceled
   SubInteraction: 0
   AlertNew: 1
   Category: 1
@@ -22,7 +22,8 @@ MonoBehaviour:
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 7b008d56dd9eed545832bdfac928ff37, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -31,7 +32,7 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 50
+    EgoCost: 0
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -44,11 +45,21 @@ MonoBehaviour:
   PreviewEffect: 0
   Result:
     Dialogs:
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Matilda, what's wrong?  What's happened?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: I am Officer Christine Ling of the MTI.  I don't believe we requested
-        your presence, Mr. {LastName}.  Nevertheless, since you have come, what do
-        you wish?
+      Text: Rupert's not coming to Singapore.  He...he called me.  He got a video. 
+        Did you send him a, a video of...us?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -59,9 +70,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: I merely wished to pay my respects, Officer Ling.  Artemis Solution Systems
-        is fortunate to be growing in Asia Pacific and we've recently built up our
-        presence here.
+      Text: Did I ever have a video camera when we were together?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -72,10 +81,11 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Yes, I read about the appointment of David Yang.  The ministry was pleased
-        to see such a talented and well regarded Singaporean take charge of Artemis
-        Asia Pacific.  We don't look kindly on outsiders taking on management roles
-        here.  We're well beyond that stage of our development.
+      Text: Then... it must have been his family. They...did something.  Anyway,
+        it is over.  He doesn't want to see me ever again.  He called me things...
+        I never thought he could... And I've been fired.  PriceMillhouseKoopers said
+        they didn't want the kind of attention I was generating.  I don't know what
+        to do.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -86,9 +96,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: I understand perfectly.  We will rely on the leadership of Mr. Yang to
-        grow our company here-- and we would be grateful for the guidance of the
-        MTI as well.
+      Text: Matilda, I don't know what to say.  Surely you can go back to Sydney
+        and--
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -99,9 +108,10 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Interesting.  Your respect, Mr. {LastName}, for Singapore's institutions
-        is noted most positively.  Artemis Asia Pacific may have a very bright future
-        here.  May I make a suggestion?
+      Text: That's the last place I want to go!  I'd be humiliated to go back to
+        all that!  At least here I can hide!  I have to wait until all this craziness
+        burns itself out-- then maybe I can go back and try to fix things with Rupert. 
+        But in the meantime...
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -112,22 +122,9 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Please, Officer Ling!  I'm most eager to hear it.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: I was only going to suggest that Artemis Asia Pacific might consider
-        applying for MTI Approved Vendor Certification.  Such an application might
-        be considered with favor, given our discussion and your obvious respect for
-        Singapore.  It would also allow Artemis to participate in the MTI's Public-Private
-        Partnership Programs.
+      Text: Perhaps I can help.  You can no longer remain here at Triple 8-- that
+        assignment is over now I assume.  Why don't we meet at my office and we can
+        discuss an interim opportunity?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -138,8 +135,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 0}
-      Text: 'NOTE: In exchange for technology sharing, you may complete the MTI Preferred
-        Vendor Program Mission!'
+      Text: 'NOTE: Without any other options, Matilda agrees.  She''ll appear at
+        your office.'
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -148,10 +145,21 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups: []
+    OptionalPopups:
+    - Title: Watching her wedding plans...
+      Videos:
+      - {fileID: 32900000, guid: a1df4ed8486102848a6aaeeee1cfa758, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: '...and her career both implode at the same time has shaken the normally
+        confident Australian executive to her her core.  Time to rebuild her using
+        a new design... '
     Choices: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: 0
+        PrideEffect: -100
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
