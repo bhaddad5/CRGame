@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Amberley-Campbell wedding canceled
+  m_Name: Matty's Interview
   m_EditorClassIdentifier: 
-  Id: 466c6555-08cb-4902-a429-86f8625d83cf
-  Name: Amberley-Campbell wedding canceled
+  Id: 112178b2-fdc0-428d-9979-0b4da141cf4d
+  Name: Matty's Interview
   SubInteraction: 0
   AlertNew: 1
-  Category: 1
+  Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 7b008d56dd9eed545832bdfac928ff37, type: 2}
+    - {fileID: 11400000, guid: 4857804b30d0b9d41868f0b2ea95d2d1, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -47,7 +47,10 @@ MonoBehaviour:
     Dialogs:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Matilda, what's wrong?  What's happened?
+      Text: I can't help but feel in some way our... relationship... was the cause
+        for your unplanned leaving from PriceMillhouseKoopers.  It is just all so
+        unfortunate.  But let's move forward in a positive direction, shall we? 
+        One door closes and another opens, right Matty?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -58,8 +61,11 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Rupert's not coming to Singapore.  He...he called me.  He got a video. 
-        Did you send him a, a video of...us?
+      Text: It's Matilda- as you well know, {FirstName}.  Only Rupert ever called
+        me that.  No, I don't blame you.  The Amberleys were behind it, I'm sure
+        of it.  They used their resources to besmirch my reputation.  And while we
+        did have an affair, I never stopped being loyal, at least in my heart, to
+        Rupert.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -70,7 +76,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Did I ever have a video camera when we were together?
+      Text: 'Of course.  It was just one of those things.  And here we are, in a
+        job interview-- mostly because of that ''affair'' as you put it.  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -81,11 +88,10 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Then... it must have been his family. They...did something.  Anyway,
-        it is over.  He doesn't want to see me ever again.  He called me things...
-        I never thought he could... And I've been fired.  PriceMillhouseKoopers said
-        they didn't want the kind of attention I was generating.  I don't know what
-        to do.
+      Text: Look, you know I can't go back to Australia.  And you know I'm extremely
+        professional and able to make major contributions here.  I'm sure I'd have
+        no problems taking on a senior role here.  You and Yang could use a top notch
+        strategy person and my financial nonse isn't up for debate.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -96,8 +102,10 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Matilda, I don't know what to say.  Surely you can go back to Sydney
-        and--
+      Text: 'I think before we get ahead of ourselves, we''d need to secure you the
+        right paperwork.  According to the MTI, you''d be eligible for a Business
+        Services class visa.  Artemsi Asia PAcific could organize that for you- assuming
+        that''s acceptable to you?  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -108,10 +116,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: That's the last place I want to go!  I'd be humiliated to go back to
-        all that!  At least here I can hide!  I have to wait until all this craziness
-        burns itself out-- then maybe I can go back and try to fix things with Rupert. 
-        But in the meantime...
+      Text: Of course!  I'd be grateful!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -122,9 +127,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Perhaps I can help.  You can no longer remain here at Triple 8-- that
-        assignment is over now I assume.  Why don't we meet at my office and we can
-        discuss an interim opportunity?
+      Text: I'll need your pasport then please.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -133,10 +136,60 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 2
+    - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: 'NOTE: Without any other options, Matilda agrees.  She''ll appear at
-        your office.'
+      Text: 'Fine.  I''ll drop it off for you.  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: You'll also need to get your medicals sorted.  We have an arrangement
+        with Orchard Hill Clinic.  They can give you the innoculations needed so
+        you're cleared for the public health authorities, assuming we can get you
+        this new visa.  Until then, let's worry about the specific job position details
+        later, shall we?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: 'Well, under the circumstances, I don''t see why not.  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: By the way, have you been continuing with your business Chinese language
+        lessons?  That would be a real advantage in any role we'd put you in.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: I was making progress with it.  I'll get back into it again.  Can we
+        move all this along?  I'm going to have to leave Raffles pretty soon-- PMK
+        has only given me a few more days before I have to find new lodgings?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -146,21 +199,25 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: Watching her wedding plans...
+    - Title: Matilda is reassured...
       Videos:
-      - {fileID: 32900000, guid: a1df4ed8486102848a6aaeeee1cfa758, type: 3}
+      - {fileID: 32900000, guid: adfe8d9c23119a7459d55814fe5bd043, type: 3}
       Textures: []
       DialogClips: []
-      Text: '...and her career both implode at the same time has shaken the normally
-        confident Australian executive to her her core.  Time to rebuild her using
-        a new design... '
+      Text: ...now that it appears she'll have a soft landing.
+    - Title: The Chinese language CD...
+      Videos:
+      - {fileID: 32900000, guid: 0ccb828575cba4a479450a935cd6009e, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: ...contains the aural imprinting required to bend Matilda, but it won't
+        trigger until she recieves the AGATHA implant at Orchard Hill Clinic.  After
+        that, your voice will sound like the very will of God to this very independent
+        Australian woman.
     Choices: []
     Effect:
-      NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
-        AmbitionEffect: 0
-        PrideEffect: -100
-      EgoEffect: 220
+      NpcEffects: []
+      EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -171,10 +228,7 @@ MonoBehaviour:
       HornicalEffect: 0
       NpcsToControl: []
       NpcsToTrain: []
-      NpcsToRemoveFromGame:
-      - {fileID: 11400000, guid: 62acd047d45c70044b6d51d7a4d4446a, type: 2}
-      - {fileID: 11400000, guid: 895c2f81262f7644cb424988eca39fab, type: 2}
-      - {fileID: 11400000, guid: 5352dc040d0e305479c1e1e7306cfead, type: 2}
+      NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []

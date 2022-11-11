@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Amberley-Campbell wedding canceled
+  m_Name: Follow-up interview with Matty
   m_EditorClassIdentifier: 
-  Id: 466c6555-08cb-4902-a429-86f8625d83cf
-  Name: Amberley-Campbell wedding canceled
+  Id: 571caa31-1789-4d54-aa13-3cea633797b0
+  Name: Follow-up interview with Matty
   SubInteraction: 0
   AlertNew: 1
   Category: 1
@@ -23,9 +23,10 @@ MonoBehaviour:
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 7b008d56dd9eed545832bdfac928ff37, type: 2}
+    - {fileID: 11400000, guid: 17f82c1d20d273443a9a6bb3719c7965, type: 2}
     RequiredNotCompletedInteractions: []
-    RequiredPolicies: []
+    RequiredPolicies:
+    - {fileID: 11400000, guid: 76bad2ab14308bf4bab7971bff6b3ab3, type: 2}
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
     RequiredNpcsTrained: []
@@ -47,7 +48,7 @@ MonoBehaviour:
     Dialogs:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Matilda, what's wrong?  What's happened?
+      Text: Well, Matty, have you attended to your medicals with Dr. Ang?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -58,8 +59,9 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Rupert's not coming to Singapore.  He...he called me.  He got a video. 
-        Did you send him a, a video of...us?
+      Text: 'There were a couple of shots, but yes-- I have the medical certificate
+        you required.  Again, I have to insist on Matilda.  And shouldn''t we now
+        be talking about the job-- the title-- the salary and bonus scheme?  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -70,7 +72,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Did I ever have a video camera when we were together?
+      Text: And you've been practicing Chinese with the CD-- as you promised?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -81,11 +83,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Then... it must have been his family. They...did something.  Anyway,
-        it is over.  He doesn't want to see me ever again.  He called me things...
-        I never thought he could... And I've been fired.  PriceMillhouseKoopers said
-        they didn't want the kind of attention I was generating.  I don't know what
-        to do.
+      Text: Yes, {FirstName}!  I said I would, didn't I?  You're really irritating
+        me now.  It is time to talk about the job, {FirstName}.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -96,47 +95,10 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Matilda, I don't know what to say.  Surely you can go back to Sydney
-        and--
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: That's the last place I want to go!  I'd be humiliated to go back to
-        all that!  At least here I can hide!  I have to wait until all this craziness
-        burns itself out-- then maybe I can go back and try to fix things with Rupert. 
-        But in the meantime...
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: Perhaps I can help.  You can no longer remain here at Triple 8-- that
-        assignment is over now I assume.  Why don't we meet at my office and we can
-        discuss an interim opportunity?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
-      Text: 'NOTE: Without any other options, Matilda agrees.  She''ll appear at
-        your office.'
+      Text: Yes, well I still need to confirm your visa status with Ms. Ling at the
+        MTI.  These things take time, Matty-- you should know better than most what
+        kind of paperwork Singapore requires before anything can happen.  Let me
+        see Ms. Ling first-- then we can meet and finalize the details, alright?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -146,21 +108,18 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: Watching her wedding plans...
+    - Title: Matty rubs her aching arrm...
       Videos:
-      - {fileID: 32900000, guid: a1df4ed8486102848a6aaeeee1cfa758, type: 3}
+      - {fileID: 32900000, guid: b5a6235edf518bf4bacdb6b1a249b7ed, type: 3}
       Textures: []
       DialogClips: []
-      Text: '...and her career both implode at the same time has shaken the normally
-        confident Australian executive to her her core.  Time to rebuild her using
-        a new design... '
+      Text: '...even as she sullenly nods in agreement.  You''ll need to see Officer
+        Ling at the MTI before you can formalize Matilda''s Campbell''s new role
+        with Artemis Asia Pacific! '
     Choices: []
     Effect:
-      NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
-        AmbitionEffect: 0
-        PrideEffect: -100
-      EgoEffect: 220
+      NpcEffects: []
+      EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -171,10 +130,7 @@ MonoBehaviour:
       HornicalEffect: 0
       NpcsToControl: []
       NpcsToTrain: []
-      NpcsToRemoveFromGame:
-      - {fileID: 11400000, guid: 62acd047d45c70044b6d51d7a4d4446a, type: 2}
-      - {fileID: 11400000, guid: 895c2f81262f7644cb424988eca39fab, type: 2}
-      - {fileID: 11400000, guid: 5352dc040d0e305479c1e1e7306cfead, type: 2}
+      NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
