@@ -10,25 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Proposal for additional work visas
+  m_Name: Apply for Campbell's Visa
   m_EditorClassIdentifier: 
-  Id: 85febc7b-9967-4eed-9a22-ccff1641eafd
-  Name: Proposal for additional work visas
+  Id: 5de3227a-e07b-4f72-b8e7-a4ac65ecfce5
+  Name: Apply for Campbell's Visa
   SubInteraction: 0
   AlertNew: 1
-  Category: 4
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: a3df23a3b25641948b9b28983d5ff0a1, type: 2}
+    - {fileID: 11400000, guid: d6b09f965b5233e4e9c7e99e87e77630, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
-    RequiredNpcsControled:
-    - {fileID: 11400000, guid: 9fc7f810eb3503f44a56e215ed266849, type: 2}
+    RequiredNpcsControled: []
     RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
     RequiredTrophies: []
@@ -46,27 +45,9 @@ MonoBehaviour:
   PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: Mr. {LastName}, I understand Artemis Asia Pacific is expanding and that
-        you require additional visas for new staff.  Please understand that you are
-        required to fill all executive positions with Singaporeans, unless none are
-        available after a lengthy recruitment campaign.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Yes, Officer Ling.  I intend to fill all such positions with Singaporeans. 
-        However, I do have need of adminstrative staff.  Such positions are so menial
-        that I can't imagine any Singaporean lady being interested in applying. 
-        I also wish to provide the Singaporean executives with such admin girls to
-        support them.
+      Text: Officer Ling, I am grateful for your time.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -77,11 +58,11 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: 'I begin to see the nature of your request.  I also see a larger issue
-        emerging.  I understand, based on your technology, that Artemis is all about
-        squeezing the most productivity out of female office workers-- through ''empowerment''
-        supposedly.  The ministry sees scope for providing local executives with
-        well trained Western girls. '
+      Text: 'It is my pleasure, Mr. {LastName}.  Your technology has become of particular
+        interest to myself and other parties.  We see potential paths for possible
+        collaboration, especially in light of the new Business Services Visa Program. 
+        You have a candidate to pilot this program I understand.  This Australian
+        woman-- Matilda Campbell?    '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -92,11 +73,9 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: 'Officer Ling, perhaps the ministry might consider introducing a new
-        visa which would allow for the importation fo such talent for local market
-        requirements.  Perhaps a visa with more restrictive and explicit limitations
-        might be in order.  I''m also aware of Singapore''s commitment to public
-        health.  Might I make an additional suggestion? '
+      Text: Yes, Ma'am.  I admit- I'm a bit taken with her.  There was a dalliance
+        and... well, I hardly need to bore you.  May I have a Business Servives Visa
+        for her?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -107,7 +86,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: You may, Mr. {FirstName}.
+      Text: Yes.  I have approved it myself.  You're quite sure she's prepared to
+        abide by the conditions of her new visa?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -118,8 +98,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Given that a new Business Services type of visa would require a complete
-        and regualry confirmed complete bill of health from such imported girls-
+      Text: Oh, yes.  She'll find the position offered quite irresistable, Officer
+        Ling.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -130,25 +110,9 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: The females in question would have to be non-Asian, Mr. {FirstName}--
-        in accord with our National Dignity Protocols.  The MTI would never all any
-        Asian woman- Singaporean or not-- to ever be exposed to the kind of demands
-        such a visa would require of them.  That would be left to the Western imports
-        exclusively I think.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: 'Of course, Officer Ling.  All I was going to suggest was an initial
-        mandatory innoculation and a monthly venereal disease test-- to protct Singaporean
-        executives.  I understand Orchard Hill Clinic might be well suited to handle
-        such a discreet consultation? '
+      Text: Very well.  We will consider this a bit of a pilot program and will be
+        observing.  If Matilda Campbell responds as you suggest, we will have more
+        to discuss.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -158,13 +122,13 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: '"I think your ideas merit...'
-      Videos:
-      - {fileID: 32900000, guid: cc26df06ac8a4664db628b4934a992fc, type: 3}
-      Textures: []
+    - Title: Officer Ling hands you a...
+      Videos: []
+      Textures:
+      - {fileID: 2800000, guid: c8bbdd8f05c1dc24a834e121c2d29e33, type: 3}
       DialogClips: []
-      Text: "...consideration.\"   \nNOTE: You may now activate the MTI Business
-        Services Visa Policy!"
+      Text: ...freshly approved Singaporean ID card for Matilda Campbell, one that
+        clearly classifies her as a Business Services Visa worker.
     Choices: []
     Effect:
       NpcEffects: []

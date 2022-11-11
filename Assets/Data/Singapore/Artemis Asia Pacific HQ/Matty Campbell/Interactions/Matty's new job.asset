@@ -10,30 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Proposal for additional work visas
+  m_Name: Matty's new job
   m_EditorClassIdentifier: 
-  Id: 85febc7b-9967-4eed-9a22-ccff1641eafd
-  Name: Proposal for additional work visas
+  Id: eda25cfd-d1d4-41da-adc3-e056991fb028
+  Name: Matty's new job
   SubInteraction: 0
   AlertNew: 1
-  Category: 4
+  Category: 2
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: a3df23a3b25641948b9b28983d5ff0a1, type: 2}
+    - {fileID: 11400000, guid: 77849c19b40d4c34ea88c97814173b29, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
-    RequiredNpcsControled:
-    - {fileID: 11400000, guid: 9fc7f810eb3503f44a56e215ed266849, type: 2}
+    RequiredNpcsControled: []
     RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 50
+    EgoCost: 0
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -46,27 +45,11 @@ MonoBehaviour:
   PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: Mr. {LastName}, I understand Artemis Asia Pacific is expanding and that
-        you require additional visas for new staff.  Please understand that you are
-        required to fill all executive positions with Singaporeans, unless none are
-        available after a lengthy recruitment campaign.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Yes, Officer Ling.  I intend to fill all such positions with Singaporeans. 
-        However, I do have need of adminstrative staff.  Such positions are so menial
-        that I can't imagine any Singaporean lady being interested in applying. 
-        I also wish to provide the Singaporean executives with such admin girls to
-        support them.
+      Text: 'Well, Matty-- I think that''s all.  You have a new job, a new title,
+        a new salary, a new home and a new set of duties.  What do you think of all
+        that?  And do be honest, Matty.  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -77,11 +60,9 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: 'I begin to see the nature of your request.  I also see a larger issue
-        emerging.  I understand, based on your technology, that Artemis is all about
-        squeezing the most productivity out of female office workers-- through ''empowerment''
-        supposedly.  The ministry sees scope for providing local executives with
-        well trained Western girls. '
+      Text: 'I feel like all I''m going to be is your office whore.  I hate it. 
+        And I don''t know why I don''t feel like I have any choice in the matter. 
+        Mr. {LastName}.  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -92,11 +73,26 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: 'Officer Ling, perhaps the ministry might consider introducing a new
-        visa which would allow for the importation fo such talent for local market
-        requirements.  Perhaps a visa with more restrictive and explicit limitations
-        might be in order.  I''m also aware of Singapore''s commitment to public
-        health.  Might I make an additional suggestion? '
+      Text: Let me help you Matty.  You're a dirty little tramp who cheated on her
+        fiance because she couldn't keep her legs closed.  You only got as far at
+        PriceMillhouseKoopers because your fiance got you the job and you're a little
+        cocktease.  You're not as intelligent as you pretend and you knew you'd be
+        found out sooner or later.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: 'You resent that you''ve been found out but you''re also secretly relieved. 
+        You hate having to assume such a menial position but you also are already
+        thinking about how you can do it very, very well.  You are also ashamed that
+        sex is going to be part of the role but also excited that you''re considered
+        fuckable enough by me for such a role.      '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -107,7 +103,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: You may, Mr. {FirstName}.
+      Text: N-- n--  Ah... I don't feel well.  I didn't think this would happen to
+        me.  I was going to be married.  Mr. {LastName}.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -118,37 +115,11 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Given that a new Business Services type of visa would require a complete
-        and regualry confirmed complete bill of health from such imported girls-
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: The females in question would have to be non-Asian, Mr. {FirstName}--
-        in accord with our National Dignity Protocols.  The MTI would never all any
-        Asian woman- Singaporean or not-- to ever be exposed to the kind of demands
-        such a visa would require of them.  That would be left to the Western imports
-        exclusively I think.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: 'Of course, Officer Ling.  All I was going to suggest was an initial
-        mandatory innoculation and a monthly venereal disease test-- to protct Singaporean
-        executives.  I understand Orchard Hill Clinic might be well suited to handle
-        such a discreet consultation? '
+      Text: Matty, that's all behind you.  Your marriage would have been over as
+        soon as you spread your legs for some random friend of your husband's.  Under
+        me, there will be no such temptations.  As your boss, I'll be the focus of
+        whatever romantic aspirations you have.  Over time, you'll stop fighting
+        it.  This is the way it has to be.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -158,17 +129,22 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: '"I think your ideas merit...'
+    - Title: And when your boss puts his...
       Videos:
-      - {fileID: 32900000, guid: cc26df06ac8a4664db628b4934a992fc, type: 3}
+      - {fileID: 32900000, guid: 7cb73de9b87625b449e6739cf26f05ec, type: 3}
       Textures: []
       DialogClips: []
-      Text: "...consideration.\"   \nNOTE: You may now activate the MTI Business
-        Services Visa Policy!"
+      Text: '...hands on you, you feel special-- don''t you Matty?
+
+        Matty
+        is now CONTROLLED.'
     Choices: []
     Effect:
-      NpcEffects: []
-      EgoEffect: 0
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: -30
+        PrideEffect: 0
+      EgoEffect: 90
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -177,7 +153,8 @@ MonoBehaviour:
       BrandEffect: 0
       RevanueEffect: 0
       HornicalEffect: 0
-      NpcsToControl: []
+      NpcsToControl:
+      - {fileID: 11400000, guid: 135575f1fe4c85c4e88c9642a3793f98, type: 2}
       NpcsToTrain: []
       NpcsToRemoveFromGame: []
       LocationsToControl: []
