@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Miss Rose has requested you
+  m_Name: Meeting request from Ms Ling
   m_EditorClassIdentifier: 
-  Id: 7f4711d2-d360-453c-a662-78bb55299338
-  Name: Miss Rose has requested you
+  Id: fc3bf0ae-6704-49c2-9835-cacfc164ff32
+  Name: Meeting request from Ms. Ling
   SubInteraction: 0
   AlertNew: 1
-  Category: 6
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 167dd4292f429f64283c9445a26666b0, type: 2}
+    - {fileID: 11400000, guid: ba01146de74eb3348b6a62729832e59c, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -42,13 +42,13 @@ MonoBehaviour:
     RevanueCost: 0
     HornicalCost: 0
     Items: []
-  Repeatable: 1
+  Repeatable: 0
   PreviewEffect: 0
   Result:
     Dialogs:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Miss Rose would like you to visit her later.  Are you excited Matty?
+      Text: Have you finsihed up that filing, Matty?  And I'll have a coffee.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -59,7 +59,57 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Thrilled, Mr. {LastName}.  I'm just thrilled.
+      Text: Not yet Sir, but I'll stay late until the filing is completed!  Another
+        coffee, Mr. {LastName}?  Very good!  Uh, Ms. Ling from the MTI has requested
+        a meeting with you at her office?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Good!  Confirm the meeting.  You look tired, Matty.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: Oh!  Ah, um-- I had a sleepover at Miss Chao's?  Remember, I asked you
+        about that?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: 'I''m sure you-- ah, let me correct that-- I''m sure Miss Chao enjoyed
+        herself.  Matty, lose the bra for the rest of the day.  Let''s give the rest
+        of the office some Aussie girl jiggle.  For the record, Rupert would NEVER
+        have been satisfied with those disappointing bumps.  When did they stop growing?  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: <sigh>  When I was fourteen, Sir.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -69,24 +119,19 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: After the lesbian lovefest...
+    - Title: Matty tried to shield...
       Videos:
-      - {fileID: 32900000, guid: c4f8fa01515634f42810149b77fbed6f, type: 3}
-      - {fileID: 32900000, guid: 0e700b384025f7d4eaf7cc98e5399960, type: 3}
-      - {fileID: 32900000, guid: 2309ffd323d19d0428388ed90ce07ec3, type: 3}
-      - {fileID: 32900000, guid: 7052deda850bad049bf49a208f777196, type: 3}
+      - {fileID: 32900000, guid: f6657ecab16209a4bac43d27f1ee8095, type: 3}
       Textures: []
       DialogClips: []
-      Text: ...Matty waits anxiously for Miss Rose to pass on satisfactory feedback
-        on her performance, one that might earn her the good, hard fucking she really
-        yearns for.  When Miss Rose does finally send you a smiley face emoji, Matty
-        grows hopeful for release!
+      Text: ...her modesty but her constant interactions with staff make that quite
+        impossible.
     Choices: []
     Effect:
       NpcEffects: []
-      EgoEffect: 0
+      EgoEffect: 20
       FundsEffect: 0
-      PowerEffect: 2
+      PowerEffect: 0
       PatentsEffect: 0
       CultureEffect: 0
       SpreadsheetsEffect: 0
@@ -109,45 +154,11 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
-  CanFail: 1
-  ProbabilityOfFailureResult: 0.25
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
   FailureResult:
-    Dialogs:
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: Miss Rose would like you to visit her later.  Are you excited Matty?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: Thrilled, Mr. {LastName}.  I'm just thrilled.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups:
-    - Title: After the lesbian lovefest...
-      Videos:
-      - {fileID: 32900000, guid: c4f8fa01515634f42810149b77fbed6f, type: 3}
-      - {fileID: 32900000, guid: 0e700b384025f7d4eaf7cc98e5399960, type: 3}
-      - {fileID: 32900000, guid: 2309ffd323d19d0428388ed90ce07ec3, type: 3}
-      - {fileID: 32900000, guid: 7052deda850bad049bf49a208f777196, type: 3}
-      Textures: []
-      DialogClips: []
-      Text: '...Matty waits anxiously for Miss Rose to pass on satisfactory feedback
-        on her performance, one that might earn her the good, hard fucking she really
-        yearns for.  Alas, Miss Rose makes no comment on Matty''s performance and
-        the secretary will have to wait to earn the release she seeks. '
+    Dialogs: []
+    OptionalPopups: []
     Choices: []
     Effect:
       NpcEffects: []

@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Matty's lesbian crush
+  m_Name: Have you ever been attracted to another woman
   m_EditorClassIdentifier: 
-  Id: f6f6d8a2-c3b9-4d59-b401-9cc90e5d04cc
-  Name: Matty's lesbian crush
+  Id: a35fd1c4-0298-4c92-bd95-6f7f331dad01
+  Name: Have you ever been attracted to another woman?
   SubInteraction: 0
   AlertNew: 1
   Category: 5
@@ -23,7 +23,7 @@ MonoBehaviour:
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: ba01146de74eb3348b6a62729832e59c, type: 2}
+    - {fileID: 11400000, guid: bb3b9106d32a789408688d00a1ad4842, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -32,7 +32,7 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 0
+    EgoCost: 20
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -40,15 +40,15 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
-    Items: []
-  Repeatable: 1
-  PreviewEffect: 1
+    Items:
+    - {fileID: 11400000, guid: aea150d68b41794479e7d04c7aa437ed, type: 2}
+  Repeatable: 0
+  PreviewEffect: 0
   Result:
     Dialogs:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Matty, out of sight, out of mind!  Have you sent Miss Rose a declaration
-        of your adoration for her today?
+      Text: Matty, have you ever been attracted to another girl-- in a sexual way?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -59,8 +59,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: No, but... do I really have to pretend like that?  I mean I'm doing everything
-        she wants but I'd much rather be with... you, Sir.
+      Text: My God, NO!  Never!  The thought disgusts me!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -71,10 +70,65 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: That's very sweet Matty-- but your side hustle is being Miss Rose's infatuated
-        lezzie girlfriend.  Be a sweet little rugmuncher and send her a romantic
-        love note.  Whi knows-- maybe you'll even earn a good fuck if Miss Rose likes
-        it enough!
+      Text: I thought that might be the case.  Look, it seems you have had a secret
+        admirer- a member of your own sex.  She's a beautiful. highly accomplished
+        woman so it could be worse.  I've agreed for you to become her lover.  It
+        will be an affair conducted with the discretion her standing requires, but
+        it will bcome a major focus for you.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: No!  I won't!  I can't, {FirstName}!  I mean Mr. {LastName}!  It happened
+        once-- a girl in my class-- she tried to-- I was physcically ill-- it was
+        horrible!  And messy!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: 'Yes, that''s the problem.  You''d follow my instructions but the involuntary
+        response might be quite embarrassing.  Make no mistake, this IS something
+        you''ll have to do.  It took poor Debbie sometime to become ''biflexible''
+        as she puts it now and even still, I don''t think she enjots the reciprocal
+        aspect of lesbian lovemaking.  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: Debbie-- your Debbie in Zenith-- you make her--
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: 'Don''t be a little fool, Matty.  Pretty girls in our employ all are
+        required to perform with other girls!  But I can''t take the chance you''ll
+        disgrace yourself with Miss Rose.  I have something for you to take.  It
+        will help you, if not enjoy, at least endure your new intimate duties.  Here. 
+        Swallow.  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -84,22 +138,19 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: Matty composes a humiliating message...
+    - Title: '"What did I just take?"'
       Videos:
-      - {fileID: 32900000, guid: c9c37220114a1fe4299e895640747fbc, type: 3}
-      - {fileID: 32900000, guid: dd03e545e4c9f2840b086a697899ed34, type: 3}
-      - {fileID: 32900000, guid: e0cc96b16424dc34ca3dab3134a0fb2e, type: 3}
-      - {fileID: 32900000, guid: 196b31b6d381acd49a15e56345f9609b, type: 3}
+      - {fileID: 32900000, guid: d52dc3b7b2293474c86d91b70b39e16e, type: 3}
       Textures: []
       DialogClips: []
-      Text: ...and when Miss Rose responds positively, she rushes in to show it to
-        you!  She's frantic with repressed frustration for male attention!
+      Text: It's called Lesbinitol.  Believe me, when you're down betweern Miss Rose's
+        thighs for hours on end, you'll be glad you've taken it!
     Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
       FundsEffect: 0
-      PowerEffect: 2
+      PowerEffect: 0
       PatentsEffect: 0
       CultureEffect: 0
       SpreadsheetsEffect: 0
@@ -113,7 +164,8 @@ MonoBehaviour:
       TrophiesClaimedReferences: []
       MissionsToComplete: []
       ItemsToAdd: []
-      ItemsToRemove: []
+      ItemsToRemove:
+      - {fileID: 11400000, guid: aea150d68b41794479e7d04c7aa437ed, type: 2}
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -122,59 +174,11 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
-  CanFail: 1
-  ProbabilityOfFailureResult: 0.25
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
   FailureResult:
-    Dialogs:
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: Matty, out of sight, out of mind!  Have you sent Miss Rose a declaration
-        of your adoration for her today?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: No, but... do I really have to pretend like that?  I mean I'm doing everything
-        she wants but I'd much rather be with... you, Sir.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: That's very sweet Matty-- but your side hustle is being Miss Rose's infatuated
-        lezzie girlfriend.  Be a sweet little rugmuncher and send her a romantic
-        love note.  Whi knows-- maybe you'll even earn a good fuck if Miss Rose likes
-        it enough!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups:
-    - Title: Matty composes a humiliating message...
-      Videos:
-      - {fileID: 32900000, guid: c9c37220114a1fe4299e895640747fbc, type: 3}
-      - {fileID: 32900000, guid: dd03e545e4c9f2840b086a697899ed34, type: 3}
-      - {fileID: 32900000, guid: e0cc96b16424dc34ca3dab3134a0fb2e, type: 3}
-      - {fileID: 32900000, guid: 196b31b6d381acd49a15e56345f9609b, type: 3}
-      Textures: []
-      DialogClips: []
-      Text: ...but when Miss Rose fails to respond, she pouts sullenly.  She's frantic
-        with repressed frustration for male attention!
+    Dialogs: []
+    OptionalPopups: []
     Choices: []
     Effect:
       NpcEffects: []
