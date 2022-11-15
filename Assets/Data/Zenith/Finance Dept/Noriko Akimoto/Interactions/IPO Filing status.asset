@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 3e2ef00c-238b-4a70-88da-c0e226ad253f
   Name: IPO Filing status
+  SubInteraction: 0
   AlertNew: 1
   Category: 0
   Requirements:
@@ -40,6 +41,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: []
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -58,6 +60,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 350
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: fe057ea31c7f5db4fa79ebaaba8f2978,
         type: 2}
@@ -71,6 +74,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 350
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: fe057ea31c7f5db4fa79ebaaba8f2978,
         type: 2}
@@ -85,6 +89,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 350
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: fe057ea31c7f5db4fa79ebaaba8f2978,
         type: 2}
@@ -97,6 +102,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 350
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: fe057ea31c7f5db4fa79ebaaba8f2978,
         type: 2}
@@ -111,6 +117,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 350
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: fe057ea31c7f5db4fa79ebaaba8f2978,
         type: 2}
@@ -125,13 +132,16 @@ MonoBehaviour:
         yPos: 0.4
         width: 350
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Together, you've managed...
       Videos:
       - {fileID: 32900000, guid: aa9464536e689964593132f4be1cb2a1, type: 3}
-      Texture: {fileID: 0}
-      Text: ...to begin the path to the Artemis IPO.  The IPO Filing Mission i snow
+      Textures: []
+      DialogClips: []
+      Text: ...to begin the path to the Artemis IPO.  The IPO Filing Mission is now
         completed!
+    Choices: []
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: fe057ea31c7f5db4fa79ebaaba8f2978,
@@ -154,6 +164,8 @@ MonoBehaviour:
       TrophiesClaimedReferences: []
       MissionsToComplete:
       - {fileID: 11400000, guid: 29322cb0627c10648b66211279b922c1, type: 2}
+      ItemsToAdd: []
+      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -167,6 +179,7 @@ MonoBehaviour:
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -184,6 +197,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
+      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
