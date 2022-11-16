@@ -10,25 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Request a blowjob from Matty
+  m_Name: A Lauren Wenham called
   m_EditorClassIdentifier: 
-  Id: 5a43a7d3-9707-4e4b-8f38-620d7fcc27e4
-  Name: Request a blowjob from Matty
+  Id: 5df06f66-c0e4-4c88-9820-7463483a1147
+  Name: A Lauren Wenham called
   SubInteraction: 0
   AlertNew: 1
-  Category: 6
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 605ebe11b6861704c9da3b0b16e2354f, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
-    RequiredDepartmentsControled:
-    - {fileID: 0}
-    RequiredNpcsControled:
-    - {fileID: 11400000, guid: 135575f1fe4c85c4e88c9642a3793f98, type: 2}
+    RequiredDepartmentsControled: []
+    RequiredNpcsControled: []
     RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
     RequiredTrophies: []
@@ -46,21 +45,9 @@ MonoBehaviour:
   PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: 'Matty, I odn''t believe I''ve ever enjoyed that smart mouth of yours!  '
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Look, {FirstName}-- I mean Mr. {LastName}-- I, uh, I don't do that. 
-        I mean, I didn't even do that for Rupert.
+      Text: Sir, a Lauren Wenham called for you?  She wanted to see you rather urgently.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -71,9 +58,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Matty, need I remind you part of your job description is to provide sexual
-        servicing for your superior?  You could lose your visa for this.  Then what
-        would you do?
+      Text: Oh?  Did you say why?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -84,7 +69,10 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Uh- return to Australia?
+      Text: Only that she sounded very upset and really wanted to speak with you. 
+        She mentioned something about a departure flight and nightmares and-- it
+        was all a bit confusing.  Is this I can handle for you, Mr. {LastName}? 
+        Honestly, she sounded like a nutter!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -95,7 +83,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Without a passport?
+      Text: It's fine Matty.  It sounds like the Mnemosyne sub-routines have engaged. 
+        Poor Lauren is experiencing some long repressed memories.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -106,8 +95,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Mr. {LastName}-- can't we just do what we did before?  Just normal kind
-        of fun?  I mean, you enjoyed that with me, right?
+      Text: Sir?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -116,14 +104,18 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups:
-    - Title: You could force her...
-      Videos:
-      - {fileID: 32900000, guid: 67bc71f004c361b4b8e130f09cce12af, type: 3}
-      Textures: []
-      DialogClips: []
-      Text: ...but then you might break the conditioning too soon.  You'll allow
-        Matty this scrap of dignity-- for now.
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Never mind, Matty.  I'll see to this myself.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups: []
     Choices: []
     Effect:
       NpcEffects: []

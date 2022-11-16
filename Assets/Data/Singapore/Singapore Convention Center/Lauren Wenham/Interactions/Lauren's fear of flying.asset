@@ -10,30 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Request a blowjob from Matty
+  m_Name: Lauren's fear of flying
   m_EditorClassIdentifier: 
-  Id: 5a43a7d3-9707-4e4b-8f38-620d7fcc27e4
-  Name: Request a blowjob from Matty
+  Id: ba2187dd-5815-4183-bc1c-e1814e38c85d
+  Name: Lauren's fear of flying
   SubInteraction: 0
   AlertNew: 1
-  Category: 6
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 14c50201b361fbb47900681d759433d5, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
-    RequiredDepartmentsControled:
-    - {fileID: 0}
-    RequiredNpcsControled:
-    - {fileID: 11400000, guid: 135575f1fe4c85c4e88c9642a3793f98, type: 2}
+    RequiredDepartmentsControled: []
+    RequiredNpcsControled: []
     RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 0
+    EgoCost: 25
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -48,7 +47,10 @@ MonoBehaviour:
     Dialogs:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: 'Matty, I odn''t believe I''ve ever enjoyed that smart mouth of yours!  '
+      Text: Lauren!  Everything OK?  I got your call!  My secretary said you sounded
+        very upset!  Is there a problem with your flight?  Are you packed?  And I'm
+        happy to give you a ride to the airport when it is time for you to leave
+        Singapore!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -59,8 +61,9 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Look, {FirstName}-- I mean Mr. {LastName}-- I, uh, I don't do that. 
-        I mean, I didn't even do that for Rupert.
+      Text: Mr. {LastName}!  Oh, thank you so much for coming!  I need to talk to
+        someone desperately and you're such a good listener!  I honestly don't know
+        what to do!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -71,9 +74,9 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Matty, need I remind you part of your job description is to provide sexual
-        servicing for your superior?  You could lose your visa for this.  Then what
-        would you do?
+      Text: Calm down, Lauren!  Everything's going to be alright!  What in the world
+        is making you so upset?  Surely you must be looking forward to getting back
+        to Christchurch!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -84,30 +87,9 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Uh- return to Australia?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: Without a passport?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: Mr. {LastName}-- can't we just do what we did before?  Just normal kind
-        of fun?  I mean, you enjoyed that with me, right?
+      Text: 'That''s the thing, Mr. {LastName}!  I don''t want to go back-- I can''t
+        go back!  It''s like it hit me like a flood all of a sudden!  I know now
+        that I''ve been trying to forget things-- pretend they aren''t happenning! '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -117,13 +99,43 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: You could force her...
+    - Title: '"It started when we moved to the farm...'
       Videos:
-      - {fileID: 32900000, guid: 67bc71f004c361b4b8e130f09cce12af, type: 3}
+      - {fileID: 32900000, guid: b01abbea213e8af4ea870b564ee33b5b, type: 3}
       Textures: []
       DialogClips: []
-      Text: ...but then you might break the conditioning too soon.  You'll allow
-        Matty this scrap of dignity-- for now.
+      Text: ...Uncle Isaacs' farm.  He was my dad's brother-in-law.  He took Mum
+        and I when Dad died in the earthquake.  I hate it there-- so far away from
+        everything!"
+    - Title: '"I just thought Uncle Isaac... '
+      Videos:
+      - {fileID: 32900000, guid: dadf8a9f2e16ae64ebcd20c0fabcea30, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: ....was just over protective.  That was why he stopped any boys from
+        coming over.  Mum, of course, just took his side."
+    - Title: '"But it was more than that."'
+      Videos:
+      - {fileID: 32900000, guid: 1b3593bea053ccf42b3c19716d69fc76, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: '"I started to feel his eyes on me all the time.  I just started remembering
+        all this in the last few days!"'
+    - Title: '"Mum let Uncle Isaac...'
+      Videos:
+      - {fileID: 32900000, guid: 57d7b48b249a238439c2e71c8727c398, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: '...start making all kinds of decisions about my life.  My schedule,
+        my activities, even what I was allowed to wear outside the house.  And he
+        never put up with any backtalk."  '
+    - Title: '"Once I turned eighteen...'
+      Videos:
+      - {fileID: 32900000, guid: 4647213284b21b644a8eda06fa648043, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: ...he decided I needed more discipline than ever.  Mr. {LastName}, I
+        can't go back to that hell!  You have to help me!"
     Choices: []
     Effect:
       NpcEffects: []
