@@ -10,19 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Take a picture please
+  m_Name: A birthday gift
   m_EditorClassIdentifier: 
-  Id: b465a440-e181-4256-b9ff-efb111e8d4ea
-  Name: Take a picture please?
+  Id: 9ac35c7d-a568-4a16-8d92-98bcc879139a
+  Name: A birthday gift
   SubInteraction: 0
   AlertNew: 1
-  Category: 1
+  Category: 3
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 799a61468b2496f4f8f6c3bedf209b50, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -44,20 +45,10 @@ MonoBehaviour:
   PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: Hey!  Hey Mister!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Yes?  What's the problem?
+      Text: Rose, what a pleasure!  Matty told me you needed to see me.  What's going
+        on?  Is there any problem with Matty?  If she's failing to please--
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -68,8 +59,11 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: No problem Mister!  Just was hoping you could take a picture-- with my
-        phone!  For my mum back home?
+      Text: 'She does... her best.  And I really do appreciate your sharing of her. 
+        But Matty is a half-hearted lesbian at best, I''m afraid.  Not that she doesn''t
+        try-- but...  In any case, I''m returning your gift.  Matty can and should
+        concentrate on her primary role- pleasing her boss in order to keep her job. 
+        That''s just as it should be.  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -80,7 +74,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Oh!  Certainly.  Where's home, young lady?
+      Text: That's most magnanimous of you, Rose.  And I dare say Matty will probably
+        be the better off for it.  But where does that leave you?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -91,8 +86,10 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Christchurch-- in New Zeland.  You been to New Zealnd, Mister?  Thanks
-        for the pic!  You're American?
+      Text: 'That''s the real reason I wanted to see you, {FirstName}.  One of the
+        issues with Matty was I couldn''t share her with my dear David.  It was selfish
+        of me.  David''s birthday is coming up and I was hoping to give him something
+        special.  Your own services came to mind immediately.  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -103,9 +100,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Yes, I am.  No, I've never been to New Zealnd.  Are you visiting with
-        your family?  On holiday in Singapore?  Mr. I'm {LastName}- {FirstName} {LastName}. 
-        No 'Mister' please-- I'm not that old!
+      Text: I assumed you didn't want David tempted by anther woman.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -116,10 +111,9 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: No Mister-- sorry {FirstName}.  No, I'm here for the Asia Pacific Academic
-        Decathalon!  Staying with that group but it gets a bit too cozy.  I wanted
-        to get out on my own to do some sightseeing.  I AM eighteen, you know!  Lauren--
-        I'm Lauren Wenham.
+      Text: 'My time with Matty has convinced me otherwise.  Besides, David would
+        never leave me for a white woman-- which is why I''d like to give him one
+        of his own-- one that I''m sure he''d be happy to share with myself.  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -130,9 +124,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: And very mature for your age.  I took you for twenty two or so.  Niced
-        to meet you Lauren!  Same here-- I'm just out doing some sightseeing too. 
-        If you're in town for awhile, perhaps we'll run into each other again!
+      Text: It' a very expensive proposition, Rose.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -141,10 +133,50 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 2
+    - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: 'NOTE: Life is filled with unplanned introductions.  You rather doubt
-        you''ll see the cute Kiwi schoolgirl again.'
+      Text: 'I invested my acting fees well enough and I''m sure you''ve give your
+        joint venture partner a generous discount?  Here''s the thing-- I want as
+        young a girl as you could give me.  A naive girl who''d be easy enough to
+        mold-- but a bright one.  A pretty, fresh and undamaged one that could be
+        used as an office girl as well as a domestic. '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: 'We don''t ''place'' girls under the age of eighteen.  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: I'm sure that would be fine.  That's a nice age.  A virgin would be nice
+        too.  I think David would enjoy that.  Is that enough information for you,
+        {FirstName}?  And the price of course.  What would the 'placement fee' be
+        for such a girl?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: A million dollars-- but for you Rose, we could do it for cost.  Say half
+        a million?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -154,18 +186,19 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: You vaguely recall that...
+    - Title: '"Thank you, {FirstName}."'
       Videos:
-      - {fileID: 32900000, guid: bce3ac1249a41884aa654ec259272bf8, type: 3}
+      - {fileID: 32900000, guid: 715df73ff7bb0ac4291ff52b0c892159, type: 3}
       Textures: []
       DialogClips: []
-      Text: ...the small New Zealand city of Christchurch has suffered from recurrent
-        earthquakes in recent times.
+      Text: '"I do look forward to seeing the expression on David''s face when I
+        present his gift to him.  Please consider the job order lodged.  I assume
+        a fifty percent advance will get things moving?'
     Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
-      FundsEffect: 0
+      FundsEffect: 250000
       PowerEffect: 0
       PatentsEffect: 0
       CultureEffect: 0

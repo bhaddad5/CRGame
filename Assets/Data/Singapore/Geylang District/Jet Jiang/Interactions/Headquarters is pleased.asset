@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Check out Old Chinatown
+  m_Name: Headquarters is pleased
   m_EditorClassIdentifier: 
-  Id: 3511a8b4-ac01-4b1a-adb5-9642cc403e3c
-  Name: Check out Old Chinatown
+  Id: 45ec0879-5797-4de3-b00b-bc2f109bdd84
+  Name: Headquarters is pleased
   SubInteraction: 0
   AlertNew: 1
-  Category: 3
+  Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: d398315e5ba7efc4ba5c69319f503816, type: 2}
+    - {fileID: 11400000, guid: 8c2d8aa5235b57148aa1b8c5fe713bf7, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -32,7 +32,7 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 15
+    EgoCost: 0
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -45,22 +45,9 @@ MonoBehaviour:
   PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: Lauren?  Hey!  What are you up to!  Is the Decathalon still on?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: 'Mr. {LastName}!  It''s still going on-- just without me!  I made it
-        as far as I could but I washed out in the last round.  At least I''ll always
-        know what Leibniz Principle of Sufficient Reason is all about now! '
+      Text: Well, since you dropped by, I guess I'll have to give it to you.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -71,9 +58,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: That's a shame!  I think by now you should just call me {FirstName} by
-        now.  What are you doing with yourself, now that you're out of the Academic
-        Decathalon?
+      Text: What are you going to give me- a hard time?  A tip on the horses?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -84,34 +69,9 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Ha-- my Unclae Isaac would whoop me good if I called an adult by their
-        first name!  Uh, well, the competition is still going on for a bit.  Until
-        then, I have all free time.   I was thinking about sighteeing in Old Chinatown.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: That sounds fantastic-- ming if I tag along with you?  You're so knowledgeable
-        about all these landmarks, Lauren.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: 'Sure thing, {LastName}!  Hey, I just like studying stuff!  I''m just
-        one of those nerd girls who loves doing homework!  Yes, I can tell you all
-        about Old Chinatown-- I was just reading a tourist guidebook about it!  '
+      Text: Try a bonus.  HQ is very, very pleased with your success securing the
+        MOU with the Chinese.  Mr. Kempler sends his regards on a job-- and I quote--
+        'very well done'.  That's high praise from the old man!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -121,26 +81,17 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: As you both take in the sights...
+    - Title: '"Here you go, sport."'
       Videos:
-      - {fileID: 32900000, guid: b7774d0eee34a8a44b34e5025dc8c43f, type: 3}
+      - {fileID: 32900000, guid: 58f74ede8f9eb7746b83b5bc3f288e04, type: 3}
       Textures: []
       DialogClips: []
-      Text: ...Lauren proudly admits that right before leaving for the Asia Pacific
-        Academic Decathalon that she was accepted to the The University of Auckland,
-        probably New Zealnd's finest university!
-    - Title: There's no doubt that Lauren...
-      Videos:
-      - {fileID: 32900000, guid: bada39bcaaa25bc4c98a6c7d3ba066b9, type: 3}
-      Textures: []
-      DialogClips: []
-      Text: ...has a bright future.  She's got a fine brain with the grades to prove
-        it!
+      Text: Twenty grand out of the blue!
     Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
-      FundsEffect: 0
+      FundsEffect: 20000
       PowerEffect: 0
       PatentsEffect: 0
       CultureEffect: 0

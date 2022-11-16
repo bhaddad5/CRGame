@@ -10,20 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: You again!
+  m_Name: Fulfilling the Chao order
   m_EditorClassIdentifier: 
-  Id: a0a4c172-3604-4dfd-81b0-e3ef0f299bfb
-  Name: You again!
+  Id: 1c6ee495-4c3f-428b-a4f3-47d5c65f811f
+  Name: Fulfilling the Chao order
   SubInteraction: 0
   AlertNew: 1
-  Category: 3
+  Category: 4
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcStatRequirements: []
+    NpcStatRequirements:
+    - OptionalNpcReference: {fileID: 0}
+      Stat: 0
+      Is: 0
+      Value: 0
     RequiredInteractions:
-    - {fileID: 11400000, guid: f1928eee520baf346aae0f3bf0caffae, type: 2}
+    - {fileID: 11400000, guid: ede9cd9c5a4bb4c4b811726df973f8a1, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -32,7 +36,7 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 15
+    EgoCost: 25
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -40,14 +44,15 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
-    Items: []
+    Items:
+    - {fileID: 11400000, guid: e5648fbbecc108a4daee508b6d979b5d, type: 2}
   Repeatable: 0
   PreviewEffect: 0
   Result:
     Dialogs:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Lauren?  Hey remember me?  {FirstName} {LastName}?
+      Text: Lauren, you're still here in Singapore!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -58,56 +63,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: The yank!  Hey Mr. {LastName}!  Having fun in Singapore?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: It has been more work than fun.  How goes the Academic Decathalon you're
-        competing in?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: OK-- it is a lot of pressure but they gave us the day off.  I was going
-        to do some sightseeing.  I've never been anywhere but Christchurch so I want
-        to see soem sights before I have to go back to boring old New Zealand.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: I wouldn't mind joining you-- if that's alright.  I don't want to come
-        off as a creeper or anything, Lauren.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: Nah, you seem ok.  Sure, why not?  I'm sure Mum and Uncle Isaac would
-        be ok with you.
+      Text: 'Mr. {LastName}!  Yes, but not for much longer!  I''m just having a last
+        bit of fun before it is time to leave.  The competition is almost over.  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -117,14 +74,23 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: As you tour the Gardens By The Bay...
+    - Title: Before she can say more...
       Videos:
-      - {fileID: 32900000, guid: aa1e9c3cf44c8d5408acfdcf50651168, type: 3}
+      - {fileID: 32900000, guid: f25895bcb73002240a6e30d31a2a98b6, type: 3}
       Textures: []
       DialogClips: []
-      Text: '...Lauren shares with you that her academic expertise is in mathematics
-        and she''s very interested in pursuing a degree and a career in data science. 
-        Her straight talking style is endearingly naive. '
+      Text: ...a Chinese skateboarder careens into Lauren, who loses her grip on
+        her phone.  The young man sheepishly apologizes and skates off.  He winks
+        at you as he does.
+    - Title: Calming the agitated teen...
+      Videos:
+      - {fileID: 32900000, guid: 11b4a78074f3ed3498c7c94e6dbf5581, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: ...you sit her down and buy her a drink to calm her.  As she injests
+        the smoothie, all the while cursing the rude and clumsy skateboader, she
+        also begins to feel more relaxed.  You bring her back to her hotel, promising
+        to provide her with a replacement phone.
     Choices: []
     Effect:
       NpcEffects: []
