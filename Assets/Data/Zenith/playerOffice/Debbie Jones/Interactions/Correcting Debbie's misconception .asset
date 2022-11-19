@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 9a9ffa7c-4e10-45ea-89a9-cd8639668af1
   Name: 'Correcting Debbie''s misconception '
+  SubInteraction: 0
   AlertNew: 1
   Category: 1
   Requirements:
@@ -39,6 +40,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: []
   Repeatable: 0
   PreviewEffect: 0
   Result:
@@ -48,7 +50,7 @@ MonoBehaviour:
         type: 2}
       Text: 'Debbie, please come in here.  I need a word with you.  I happened to
         overhear you chatting with one of the secretaries in the Break Room.  Did
-        I actually hear you refer to yourself as me ''work wife''?  Could you have
+        I actually hear you refer to yourself as my ''work wife''?  Could you have
         actually said that-- to another Office Girl?  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
@@ -58,6 +60,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -72,6 +75,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -87,6 +91,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -100,6 +105,7 @@ MonoBehaviour:
         width: 375
       OptionalAudioClip: {fileID: 8300000, guid: 77b20339ac040784e9dce05fcb82cee3,
         type: 3}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -115,16 +121,19 @@ MonoBehaviour:
         width: 375
       OptionalAudioClip: {fileID: 8300000, guid: a624b8ebab967f04f8cdb4fdc3df9c46,
         type: 3}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Debbie accepts the rebuke...
       Videos:
       - {fileID: 32900000, guid: 5157ba98516362d4c80e65dae3949f4e, type: 3}
       Textures: []
+      DialogClips: []
       Text: ...tight lipped and seemingly penitent.
     - Title: Back at her desk though...
       Videos:
       - {fileID: 32900000, guid: 507a74ddd85d1ee41bc2bba510df1973, type: 3}
       Textures: []
+      DialogClips: []
       Text: ...it looks like she's on the edge of tears!  Considering how lenient
         you've been-- you didn't even give her a demerit- she seems quite upset! 
         It matters not at all, as long she takes the warning to heart!
@@ -132,8 +141,10 @@ MonoBehaviour:
       Videos: []
       Textures:
       - {fileID: 2800000, guid: e922fb56fb9fe89418e56c64011ab072, type: 3}
+      DialogClips: []
       Text: ...desk drawers and find the books she doesn't want you to see her reading. 
         It seems she has a very rich fantasy life!
+    Choices: []
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
@@ -155,6 +166,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
+      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -168,6 +181,7 @@ MonoBehaviour:
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -185,6 +199,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
+      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
