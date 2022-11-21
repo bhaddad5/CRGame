@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: I need a private jet to do my job
+  m_Name: I can't be limited to commercial travel
   m_EditorClassIdentifier: 
-  Id: 9f11f20a-9ff8-48fb-91cc-f6dc0046c3b2
-  Name: I need a private jet to do my job. ($500k req)
-  SubInteraction: 1
+  Id: 8c643071-0631-4f4a-9520-7a0463f53656
+  Name: I can't be limited to commercial travel
+  SubInteraction: 0
   AlertNew: 1
   Category: 1
   Requirements:
@@ -32,7 +32,7 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 500000
+    MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -40,17 +40,28 @@ MonoBehaviour:
     RevanueCost: 0
     HornicalCost: 0
     Items: []
-  Repeatable: 0
-  PreviewEffect: 1
+  Repeatable: 1
+  PreviewEffect: 0
   Result:
     Dialogs:
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: a7f6d8d9c4a926b4f8ebec3d6520adc3,
+        type: 2}
+      Text: My flight's been delayed again?  But I have a very important meeting--
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: c301318f42b865947a67b0bb3c6006f7,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.48
+        width: 200
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: a7f6d8d9c4a926b4f8ebec3d6520adc3,
         type: 2}
-      Text: 'I''ll make all the arrangements, Mr. {LastName}.  The next time you
-        need to travel, simply go to the ExecuJet private airport nearby.  Our ground
-        staff will lodge the manifest and our pilot will take you whereever you need
-        to be-- in style and relaxation. '
+      Text: I'm very sorry, Mr. {LastName}!  We're waiting for a late connector flight. 
+        There's nothing I can do.  Perhaps you might wait in the Business Lounge?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: c301318f42b865947a67b0bb3c6006f7,
         type: 3}
@@ -63,7 +74,7 @@ MonoBehaviour:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: a7f6d8d9c4a926b4f8ebec3d6520adc3,
         type: 2}
-      Text: Very good.  What about onboard servces?
+      Text: I understand this isn't your fault.  it is just so frustrating!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: c301318f42b865947a67b0bb3c6006f7,
         type: 3}
@@ -76,7 +87,9 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: a7f6d8d9c4a926b4f8ebec3d6520adc3,
         type: 2}
-      Text: Well-- we provide top notch crew but...
+      Text: Well, forgive me for presuming, but you might consider our private jet
+        service.  I only suggest this because many senior corporate executives opt
+        to avoid the delays of commercial travel.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: c301318f42b865947a67b0bb3c6006f7,
         type: 3}
@@ -89,7 +102,7 @@ MonoBehaviour:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: a7f6d8d9c4a926b4f8ebec3d6520adc3,
         type: 2}
-      Text: Yes?
+      Text: Go on-- tell me more.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: c301318f42b865947a67b0bb3c6006f7,
         type: 3}
@@ -102,9 +115,10 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: a7f6d8d9c4a926b4f8ebec3d6520adc3,
         type: 2}
-      Text: 'Well, many VIP clients choose to recruit their own flight attendants. 
-        If that''s the case, we''ll be happy to arrange for the required safety training
-        and licensing and all. '
+      Text: 'Well, Phoenix sells private jets and provides the pilots and maintenance
+        to get you where you want to go whenever you need to travel.  You''d be able
+        to avoid commercial travel dramas when traveling.  And of course, there are
+        many destinations only accessible via private jet. '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: c301318f42b865947a67b0bb3c6006f7,
         type: 3}
@@ -114,11 +128,25 @@ MonoBehaviour:
         width: 200
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 2
+    - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: a7f6d8d9c4a926b4f8ebec3d6520adc3,
         type: 2}
-      Text: 'NOTE: You may now access the Zenith ExecuJet VIP Lounge and travel to
-        new global destinations!'
+      Text: That all sounds very attractive.  What are we talking about in terms
+        of cost here?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: c301318f42b865947a67b0bb3c6006f7,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.48
+        width: 200
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: a7f6d8d9c4a926b4f8ebec3d6520adc3,
+        type: 2}
+      Text: We'd be able to provide you private jet contract service for five hundred
+        thousand.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: c301318f42b865947a67b0bb3c6006f7,
         type: 3}
@@ -129,7 +157,9 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
-    Choices: []
+    Choices:
+    - {fileID: 11400000, guid: 199c7a8a487a61e41a838af5575d8bee, type: 2}
+    - {fileID: 11400000, guid: 547f39992032d68459634ca2eec59ba8, type: 2}
     Effect:
       NpcEffects: []
       EgoEffect: 0

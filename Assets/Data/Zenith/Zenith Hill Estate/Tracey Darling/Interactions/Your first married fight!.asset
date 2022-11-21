@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: efd15032-54eb-4edc-bf51-35eb89c60242
   Name: Your first married fight!
+  SubInteraction: 0
   AlertNew: 1
   Category: 1
   Requirements:
@@ -40,6 +41,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: []
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -56,6 +58,8 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 953fdaa61df0d874096f67b62bdff83f,
         type: 2}
@@ -67,6 +71,8 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 953fdaa61df0d874096f67b62bdff83f,
         type: 2}
@@ -79,6 +85,8 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 953fdaa61df0d874096f67b62bdff83f,
         type: 2}
@@ -91,6 +99,8 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 953fdaa61df0d874096f67b62bdff83f,
         type: 2}
@@ -102,6 +112,8 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 953fdaa61df0d874096f67b62bdff83f,
         type: 2}
@@ -113,6 +125,8 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 953fdaa61df0d874096f67b62bdff83f,
         type: 2}
@@ -124,6 +138,8 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 953fdaa61df0d874096f67b62bdff83f,
         type: 2}
@@ -136,6 +152,8 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 953fdaa61df0d874096f67b62bdff83f,
         type: 2}
@@ -149,6 +167,8 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 953fdaa61df0d874096f67b62bdff83f,
         type: 2}
@@ -163,30 +183,31 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: You knew your wife would spot the...
       Videos:
       - {fileID: 32900000, guid: 0122b45c4427d5447886e37c118925d1, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: ...incriminating lipstick Debbie left on your shirt.  Tracey needs to
         accept she's just one of the girls in your harem, albeit the one at the top
         of the pecking order.
     - Title: Tracey pouts and sulks...
       Videos:
       - {fileID: 32900000, guid: 2748168ff7c463e4ca22e59369af81d2, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: ...for the rest of the day.  You ignore her, which only enrages her that
         much more!
+    Choices: []
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: 953fdaa61df0d874096f67b62bdff83f,
           type: 2}
         AmbitionEffect: 0
-        PrideEffect: 0
-      - OptionalNpcReference: {fileID: 11400000, guid: 953fdaa61df0d874096f67b62bdff83f,
-          type: 2}
-        AmbitionEffect: 0
-        PrideEffect: 10
+        PrideEffect: -10
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -202,6 +223,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
+      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -215,6 +238,7 @@ MonoBehaviour:
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -232,6 +256,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
+      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0

@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: I'd prefer the limousine
+  m_Name: It is something I'll need to consider
   m_EditorClassIdentifier: 
-  Id: fc2c251f-9167-4d8d-bad3-e5eb74625b16
-  Name: I'd prefer the limousine
+  Id: 64b8e2ed-2fa5-4f3b-94a4-3b1990350234
+  Name: It is something I'll need to consider
   SubInteraction: 1
   AlertNew: 1
   Category: 1
@@ -22,8 +22,7 @@ MonoBehaviour:
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
-    RequiredInteractions:
-    - {fileID: 11400000, guid: 5dd565a37982fe04ca7147fa2bc97e45, type: 2}
+    RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -33,7 +32,7 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 10000
+    MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -42,22 +41,44 @@ MonoBehaviour:
     HornicalCost: 0
     Items: []
   Repeatable: 0
-  PreviewEffect: 1
+  PreviewEffect: 0
   Result:
-    Dialogs: []
-    OptionalPopups:
-    - Title: The local elites approve...
-      Videos:
-      - {fileID: 32900000, guid: 9027358bfbeeab54cb49e7fd2b2144b3, type: 3}
-      Textures: []
-      DialogClips: []
-      Text: ...of your apppreciation for a smooth ride.
+    Dialogs:
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: a7f6d8d9c4a926b4f8ebec3d6520adc3,
+        type: 2}
+      Text: Five hundred thousand?  That's a bit of a commitment.  For now, I think
+        I'll stick with commercial flight-- but thanks for the information!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: c301318f42b865947a67b0bb3c6006f7,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.48
+        width: 200
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: a7f6d8d9c4a926b4f8ebec3d6520adc3,
+        type: 2}
+      Text: Of course, Mr. {LastName}.  If you change your mind, we're always here
+        to help!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: c301318f42b865947a67b0bb3c6006f7,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.48
+        width: 200
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups: []
     Choices: []
     Effect:
       NpcEffects: []
-      EgoEffect: 20
+      EgoEffect: 0
       FundsEffect: 0
-      PowerEffect: 1
+      PowerEffect: 0
       PatentsEffect: 0
       CultureEffect: 0
       SpreadsheetsEffect: 0

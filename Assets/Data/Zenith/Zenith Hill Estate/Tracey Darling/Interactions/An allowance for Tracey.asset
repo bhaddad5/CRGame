@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 082889a9-2f5d-4176-933a-e877fa46278a
   Name: An allowance for Tracey
+  SubInteraction: 0
   AlertNew: 1
   Category: 5
   Requirements:
@@ -41,6 +42,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: []
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -56,12 +58,14 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 953fdaa61df0d874096f67b62bdff83f,
         type: 2}
       Text: Well, Honeybunch, you know I DID ask you if I could go back to work and
         you said no, so now if I want to buy something... what am I supposed to do? 
-        Come to you every time I need to but some new shoes?
+        Come to you every time I need to buy some new shoes?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 2eab091c1b8903840ae9023cf8e9d6cd,
         type: 3}
@@ -69,6 +73,8 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 953fdaa61df0d874096f67b62bdff83f,
         type: 2}
@@ -80,6 +86,8 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 953fdaa61df0d874096f67b62bdff83f,
         type: 2}
@@ -92,6 +100,8 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 953fdaa61df0d874096f67b62bdff83f,
         type: 2}
@@ -104,6 +114,8 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 953fdaa61df0d874096f67b62bdff83f,
         type: 2}
@@ -116,13 +128,17 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: The allowance both irks her...
       Videos:
       - {fileID: 32900000, guid: 9af1d794684a48e448dd6f3bbcd976e2, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: ...and empowers her.  She accepts the cash excitedly, just like a high
         class escort just getting started in her new career.
+    Choices: []
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: 953fdaa61df0d874096f67b62bdff83f,
@@ -144,6 +160,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
+      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -157,6 +175,7 @@ MonoBehaviour:
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -174,6 +193,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
+      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
