@@ -59,17 +59,20 @@ namespace Assets.GameModel
 			Completed = 0;
 		}
 
-		public bool InteractionVisible(MainGameManager mgm)
+		public bool IsVisible(MainGameManager mgm)
 		{
 			if (Completed > 0 && !Repeatable)
 				return false;
+
+			if (mgm.DebugAll)
+				return true;
 
 			return Requirements.VisRequirementsAreMet();
 		}
 
 		public bool InteractionValid(MainGameManager mgm)
 		{
-			if (!InteractionVisible(mgm))
+			if (!IsVisible(mgm))
 				return false;
 
 			if (!Requirements.RequirementsAreMet(mgm))

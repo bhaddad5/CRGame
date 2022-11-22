@@ -33,7 +33,7 @@ namespace Assets.GameModel.UiDisplayers
 			if (!string.IsNullOrEmpty(interaction.Cost.GetCostString()))
 				Text.text += $" {interaction.Cost.GetCostString()}";
 			Button.interactable = interaction.InteractionValid(mgm);
-			gameObject.SetActive(interaction.InteractionVisible(mgm));
+			gameObject.SetActive(interaction.IsVisible(mgm));
 			NewIndicator.SetActive(interaction.IsNew(mgm));
 
 		}

@@ -51,7 +51,7 @@ namespace Assets.GameModel.UiDisplayers
 
 			foreach (var interaction in allInteractions)
 			{
-				if (!interaction.InteractionVisible(mgm) || interaction.SubInteraction)
+				if (!interaction.IsVisible(mgm) || interaction.SubInteraction)
 					continue;
 				var interactButton = Instantiate(InteractionEntryPrefab);
 				interactButton.Setup(interaction, mgm, this);

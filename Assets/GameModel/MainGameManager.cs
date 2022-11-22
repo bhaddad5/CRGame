@@ -10,6 +10,8 @@ namespace Assets.GameModel
 {
 	public class MainGameManager : MonoBehaviour
 	{
+		public bool DebugAll;
+
 		public int MajorVersion;
 		public int MinorVersion;
 		public int Patch;

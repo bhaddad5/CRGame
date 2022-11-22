@@ -83,6 +83,9 @@ namespace Assets.GameModel
 			if (!Exists)
 				return false;
 
+			if (mgm.DebugAll)
+				return true;
+
 			return (RequiredVisibilityInteractionReference?.Completed ?? 1) > 0;
 		}
 

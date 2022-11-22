@@ -63,6 +63,9 @@ namespace Assets.GameModel
 		
 		public bool IsVisible(MainGameManager mgm)
 		{
+			if (mgm.DebugAll)
+				return true;
+
 			foreach (var interaction in VisibilityInteractions)
 			{
 				if (interaction != null && interaction.Completed == 0)

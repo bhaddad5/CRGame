@@ -26,7 +26,7 @@ public class ChoicesScreenBindings : MonoBehaviour
 		int i = 0;
 		foreach (var choice in choices)
 		{
-			if (!choice.InteractionVisible(mgm))
+			if (!choice.IsVisible(mgm))
 				continue;
 
 			Instantiate(ChoicePrefab, ChoicesParent).Setup(choice, currDisplayInfo, gameObject, mgm, dialogsComplete, i);
