@@ -73,6 +73,18 @@ namespace Assets.GameModel
 			JewleryRing = false;
 			JewleryWatch = false;
 
+			if (mgm.DebugAll)
+			{
+				Funds = 5000000;
+				Ego = 5000000;
+				Power = 10000;
+				Patents = 100;
+				CorporateCulture = 100;
+				Spreadsheets = 100;
+				Brand = 100;
+				Revenue = 100;
+			}
+
 			foreach (var ob in Regions)
 				ob.Setup(mgm);
 
