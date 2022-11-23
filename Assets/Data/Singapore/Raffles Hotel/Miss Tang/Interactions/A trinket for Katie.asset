@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 73af21d0-f515-45da-bce3-124a09af01a6
   Name: A trinket for Katie
-  SubInteraction: 0
+  SubInteraction: 1
   AlertNew: 1
   Category: 6
   Requirements:
@@ -24,6 +24,7 @@ MonoBehaviour:
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 1bcf74eb55655064197df1a9d826994a, type: 2}
+    - {fileID: 11400000, guid: 636e58d54923a6a4d96caaf6257da939, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -46,16 +47,18 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 309360b9a7c730747a997d16770e5615,
+        type: 2}
       Text: 'Miss Tang, I just remembered.  I need a souvenir trinket.  I have an
         office girl who''s starved for attention these days, but a little gift would
         have her on Cloud Nine for days.  '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 4a434114e66b9f64085c3c8149e89fac,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:

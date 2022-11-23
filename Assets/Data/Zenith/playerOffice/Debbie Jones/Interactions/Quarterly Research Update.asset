@@ -22,7 +22,8 @@ MonoBehaviour:
     RequiredPromotionLevel: 9
     RequiredTurnNumber: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: bce435905eda62f4d99d0f5b098528b0, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -45,17 +46,141 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: 
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: Dr. Eckstein is here for the quarterly research update, Mr. {LastName}.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups: []
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: Very good, Debbie.  Don't keep the good doctor waiting.  Wait-- what's
+        that smell?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: Oh!  It's my new perfume.  It's called Beguile.  Do you... like it, Sir?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: It isn't exactly subtle.  Send in Dr. E.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 8300000, guid: ebe22f1c3885c8341a2c1202a1ae699b,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: e824e839d0b9719409dc7942822791c4,
+        type: 2}
+      Text: Chairman!  How's life in the fast lane?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: e824e839d0b9719409dc7942822791c4,
+        type: 2}
+      Text: I could ask you the same, Mr. CTO!  I gather you've been busy, although
+        I doubt you could top yourself.  AGATHA is a marvelous success.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: e824e839d0b9719409dc7942822791c4,
+        type: 2}
+      Text: But limited in scope.  It's a start, nothing more.  In fact, AGATHA version
+        one is almost primitive compared to the enhancements I've been playing with. 
+        Let me show you.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: '"AGATHA 1.0 is proof of concept."'
+      Videos:
+      - {fileID: 32900000, guid: ed041de28b782264fb4c3aa2522d0751, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: '"Simple delivery implant system, some dynamic algo calcs and voila-
+        Deborah Jones, MBA is now a productive little office drone, half focused
+        on her menial tasks and half wondering when her boring daily routine will
+        be interrupted by a request for a blow job from her boss." '
+    - Title: '"Now behold the Mnemosyne Subroutine"'
+      Videos:
+      - {fileID: 32900000, guid: fb3e554c669c73341892f2e338e22506, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: '"First, a more unobstrsive delivery system for the nano-scale agent. 
+        Then, a machine learning AI subroutine I''ve called Mnemosyne- the Goddess
+        of Memory.  Then a subtle re-scuplting of existing personal history and drivers
+        to establish new memories that are indistinguishable from the originals." '
+    - Title: '"The UI is the real cherry on top."'
+      Videos:
+      - {fileID: 32900000, guid: c46c65e4de659b04999381d66a0518bd, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: '"The operator transmits the subject data from the field and our supercomputers
+        do the rest.  Forget impulse control-- we''ll be able to alter target motivations. 
+        The commercial appeal will be off the charts.  Just keep in mind, AGATHA
+        2.0 will still require a LOT of resources and time to produce.  It''s not
+        a commodity item."     '
+    - Title: '"The costs will be enormous BUT..."'
+      Videos:
+      - {fileID: 32900000, guid: 63b8861132b3ec5409d61fe960d686e7, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: '"...I dare say we both know there''s a market out there."
+
+        NOTE:
+        You may now commission the production of the AGATHA v2.0 chip enhanced with
+        the Mnemosyyne Subroutine from your office at the cost of: 5 Culture, 5 Brand,
+        5 Spreadsheets, 5 Patents and 5 Revenue.    '
     Choices: []
     Effect:
       NpcEffects: []
@@ -87,132 +212,8 @@ MonoBehaviour:
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
-    Dialogs:
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: Dr. Eckstein is here for the quarterly research update, Mr. {LastName}.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: Very good, Debbie.  Don't keep the good doctor waiting.  Wait-- what's
-        that smell?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: Oh!  It's my new perfume.  It's called Beguile.  Do you... like it, Sir?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: It isn't exactly subtle.  Send in Dr. E.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 8300000, guid: ebe22f1c3885c8341a2c1202a1ae699b,
-        type: 3}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: e824e839d0b9719409dc7942822791c4,
-        type: 2}
-      Text: Chairman!  How's life in the fast lane?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: e824e839d0b9719409dc7942822791c4,
-        type: 2}
-      Text: I could ask you the same, Mr. CTO!  I gather you've been busy, although
-        I doubt you could top yourself.  AGATHA is a marvelous success.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: e824e839d0b9719409dc7942822791c4,
-        type: 2}
-      Text: But limited in scope.  It's a start, nothing more.  In fact, AGATHA version
-        one is almost primitive compared to the enhancements I've been playing with. 
-        Let me show you.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups:
-    - Title: '"AGATHA 1.0 is proof of concept."'
-      Videos:
-      - {fileID: 32900000, guid: ed041de28b782264fb4c3aa2522d0751, type: 3}
-      Textures: []
-      DialogClips: []
-      Text: '"Simple delivery implant system, some dynamic algo calcs and voila-
-        Deborah Jones, MBA is now a productive little office drone, half focused
-        on her menial tasks and half wondering when her boring daily routine will
-        be interrupted by a request for a blow job from her boss." '
-    - Title: '"Now behold the Mnemosyne Subroutine"'
-      Videos:
-      - {fileID: 32900000, guid: fb3e554c669c73341892f2e338e22506, type: 3}
-      Textures: []
-      DialogClips: []
-      Text: '"First,a more unobstrsive delivery system for the nano-scale agent. 
-        Then, a machine learning AI subroutine I''ve called Mnemosyne- the Goddess
-        of Memory.  Then a subtle re-scuplting of existing personal history and drivers
-        to establish new memories that are indistinguishable from the originals." '
-    - Title: '"The UI is the real cherry on top."'
-      Videos:
-      - {fileID: 32900000, guid: c46c65e4de659b04999381d66a0518bd, type: 3}
-      Textures: []
-      DialogClips: []
-      Text: '"The operator transmits the subject data from the field and our supercomputers
-        do the rest.  Forget impulse control-- we''ll be able to alter target motivations. 
-        The commercial appeal will be off the charts.  Just keep in mind, AGATHA
-        2.0 will still require a LOT of resources and time to produce.  It''s not
-        a commodity item."     '
-    - Title: '"The costs will be enormous BUT..."'
-      Videos:
-      - {fileID: 32900000, guid: 63b8861132b3ec5409d61fe960d686e7, type: 3}
-      Textures: []
-      DialogClips: []
-      Text: '"...I dare say we both know there''s a market out there."
-
-        NOTE:
-        You may now commission the production of the AGATHA v2.0 chip enhanced with
-        the Mnemosyyne Subroutine from your office at the cost of: 5 Culture, 5 Brand,
-        5 Spreadsheets, 5 Patents and 5 Revenue.    '
+    Dialogs: []
+    OptionalPopups: []
     Choices: []
     Effect:
       NpcEffects: []
