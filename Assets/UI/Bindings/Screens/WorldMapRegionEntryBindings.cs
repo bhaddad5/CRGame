@@ -20,11 +20,15 @@ namespace Assets.GameModel.UiDisplayers
 
 		private Region region;
 		private Vector2 mainMapSize;
+		private MainGameManager mgm;
+
+		public bool IsNew => region.HasNewInteractions(mgm);
 
 		public void Setup(Region region, WorldMapScreenBindings mainMapUi, Vector2 mainMapSize, MainGameManager mgm)
 		{
 			this.region = region;
 			this.mainMapSize = mainMapSize;
+			this.mgm = mgm;
 			Button.onClick.RemoveAllListeners();
 			Button.onClick.AddListener(() =>
 			{

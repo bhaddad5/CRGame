@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class TesterAI : MonoBehaviour
 {
-	public void Play()
+	/*public void Play()
 	{
 		StartCoroutine(PlayGame());
 	}
@@ -16,9 +16,14 @@ public class TesterAI : MonoBehaviour
 	{
 		while (true)
 		{
-			TakeAction();
+			
 			yield return new WaitForSeconds(.05f);
 		}
+	}*/
+
+	void Update()
+	{
+		TakeAction();
 	}
 
 	private void TakeAction()
@@ -144,11 +149,32 @@ public class TesterAI : MonoBehaviour
 		}
 
 		var worldMapParent = GameObject.Find("World Map Screen(Clone)");
+
+		//We haven't started yet.
+		if (worldMapParent == null)
+			return;
+		
 		var regions = worldMapParent.GetComponentsInChildren<WorldMapRegionEntryBindings>().Where(e => e.GetComponent<Button>().IsInteractable()).ToArray();
 		if (regions.Length > 0)
 		{
-			var regionToUse = TakeRandom(regions);
-			regionToUse.GetComponent<Button>().onClick.Invoke();
+			
+
+			var newRegions = regions.Where(i => i.IsNew).ToArray();
+			if (newRegions.Length > 0)
+			{
+				var regionToUse = TakeRandom(newRegions);
+				regionToUse.GetComponent<Button>().onClick.Invoke();
+			}
+			else if (GoBackUp(.9f))
+			{
+				GameObject.Find("Hud(Clone)").transform.Find("Hud Canvas").Find("Bottom Right").Find("Downtime").GetComponent<Button>().onClick.Invoke();
+			}
+			else
+			{
+				var regionToUse = TakeRandom(regions);
+				regionToUse.GetComponent<Button>().onClick.Invoke();
+			}
+
 			return;
 		}
 	}

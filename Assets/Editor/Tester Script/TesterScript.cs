@@ -23,9 +23,7 @@ namespace Assets.Editor.Tester_Script
 				return;
 			}
 
-			var aiGo = new GameObject("AI");
-			var ai = aiGo.AddComponent<TesterAI>();
-			ai.Play();
+			new GameObject("AI").AddComponent<TesterAI>();
 		}
 
 		[MenuItem("Company Man Tester AI/Stop Tester AI", false, 0)]
@@ -37,7 +35,10 @@ namespace Assets.Editor.Tester_Script
 				return;
 			}
 
-			GameObject.Destroy(GameObject.Find("AI"));
+			if(Application.isPlaying)
+				GameObject.Destroy(GameObject.Find("AI"));
+			else
+				GameObject.DestroyImmediate(GameObject.Find("AI"));
 		}
 	}
 }
