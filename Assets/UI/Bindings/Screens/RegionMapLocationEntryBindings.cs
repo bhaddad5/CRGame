@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using System.Linq;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,12 +17,17 @@ namespace Assets.GameModel.UiDisplayers
 		private Location loc;
 		private Vector2 mainMapSize;
 		private bool isQuickAccess;
+		private MainGameManager mgm;
+
+		public bool IsNew => loc.HasNewInteractions(mgm) && loc.IsAccessible(mgm);
+		public bool HasNpcs => loc.Npcs.Any(npc => npc.IsVisible(mgm));
 
 		public void Setup(Location dept, RegionMapScreenBindings mainMapUi, Vector2 mainMapSize, MainGameManager mgm, bool isQuickAccess = false)
 		{
 			this.isQuickAccess = isQuickAccess;
 			this.loc = dept;
 			this.mainMapSize = mainMapSize;
+			this.mgm = mgm;
 			Button.onClick.RemoveAllListeners();
 			Button.onClick.AddListener(() =>
 			{

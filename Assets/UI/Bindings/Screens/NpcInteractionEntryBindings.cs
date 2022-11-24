@@ -19,6 +19,8 @@ namespace Assets.GameModel.UiDisplayers
 		private NpcScreenBindings npcUiDisplay;
 		private MainGameManager mgm;
 
+		public bool IsNew => interaction.IsNew(mgm);
+
 		public void Setup(Interaction interaction, MainGameManager mgm, NpcScreenBindings npcUiDisplay)
 		{
 			this.interaction = interaction;

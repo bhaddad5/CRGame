@@ -18,6 +18,8 @@ namespace Assets.GameModel.UiDisplayers
 		private MainGameManager mgm;
 		private LocationScreenBindings deptUi;
 
+		public bool IsNew => npc.HasNewInteractions(mgm);
+
 		//Dumb, but this doesn't work when called from Setup()
 		void Start()
 		{

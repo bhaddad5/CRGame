@@ -44,6 +44,9 @@ public class StartingMenuBindings : MonoBehaviour
 
 	public void LoadGame()
 	{
+		if (MainGameManager.DebugAll)
+			return;
+
 		var popupParent = GameObject.Instantiate(UiPrefabReferences.Instance.PopupOverlayParent);
 		var loadSavePrefab = GameObject.Instantiate(LoadSavePrefab, popupParent.transform);
 		loadSavePrefab.Setup(MainGameManager, false, gameObject, popupParent);
@@ -64,6 +67,9 @@ public class StartingMenuBindings : MonoBehaviour
 
 	public void ContinueGame()
 	{
+		if (MainGameManager.DebugAll)
+			return;
+
 		MainGameManager.InitializeGame(latestSave, null, null);
 		GameObject.Destroy(gameObject);
 	}
