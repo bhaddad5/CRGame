@@ -44,6 +44,8 @@ namespace Assets.GameModel.UiDisplayers
 		{
 			GameObject.Destroy(npcUiDisplay.gameObject);
 
+			interaction.New = false;
+
 			bool succeeded = interaction.GetInteractionSucceeded();
 			var res = interaction.GetInteractionResult(succeeded);
 			interaction.Cost.SubtractCost(mgm);
