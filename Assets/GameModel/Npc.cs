@@ -91,7 +91,7 @@ namespace Assets.GameModel
 
 		public bool HasNewInteractions(MainGameManager mgm)
 		{
-			return Interactions.Any(i => i.IsNew(mgm));
+			return Interactions.Any(i => i.IsNew(mgm) && !i.SubInteraction);
 		}
 
 		public Texture2D GetCurrentPicture()

@@ -69,7 +69,7 @@ public class TesterAI : MonoBehaviour
 				var interactionToDo = TakeRandom(newInteractions);
 				interactionToDo.GetComponent<Button>().onClick.Invoke();
 			}
-			else if (GoBackUp(.5f))
+			else if (GoBackUp(.9f))
 			{
 				npcParent.GetComponent<NpcScreenBindings>().CloseNpc();
 			}
@@ -99,7 +99,7 @@ public class TesterAI : MonoBehaviour
 				var npcToTalkTo = TakeRandom(newNpcs);
 				npcToTalkTo.GetComponent<Button>().onClick.Invoke();
 			}
-			else if (GoBackUp(.5f))
+			else if (GoBackUp(.9f))
 			{
 				locationMapParent.GetComponent<LocationScreenBindings>().CloseCurrentLocation();
 			}
@@ -130,7 +130,7 @@ public class TesterAI : MonoBehaviour
 				var locationToEnter = TakeRandom(newLocations);
 				locationToEnter.GetComponent<Button>().onClick.Invoke();
 			}
-			else if (GoBackUp(.5f))
+			else if (GoBackUp(.9f))
 			{
 				regionMapParent.GetComponent<RegionMapScreenBindings>().CloseRegion();
 			}
