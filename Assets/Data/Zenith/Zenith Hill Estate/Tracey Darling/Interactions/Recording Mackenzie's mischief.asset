@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 2f406504-b31d-4188-b8b3-0c4062d3af7e
   Name: Recording Mackenzie's mischief
+  SubInteraction: 0
   AlertNew: 1
   Category: 1
   Requirements:
@@ -39,77 +40,95 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: []
   Repeatable: 0
   PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 953fdaa61df0d874096f67b62bdff83f,
+        type: 2}
       Text: Dearest, Mackenzie needs to learn how things work around here.  I sense
         she's a very independent girl who's former mother spoiled, indulged or most
         likely ignored.  She needs much more oversight if she's to be a foster daughter
         that meets your standards.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 2eab091c1b8903840ae9023cf8e9d6cd,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 953fdaa61df0d874096f67b62bdff83f,
+        type: 2}
       Text: Go on, you minx.  You have an agenda.  What are you asking for here?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 2eab091c1b8903840ae9023cf8e9d6cd,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 953fdaa61df0d874096f67b62bdff83f,
+        type: 2}
       Text: 'Oh, Dearest, you know me too well!  I guess I''m asking... well, may
         I take a firm hand with young Mackenzie?  She''s far too sassy for her own
         good and I''d like to keep a record of all her failings so she can be disciplined
         accordingly.  '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 2eab091c1b8903840ae9023cf8e9d6cd,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: I have no objections.  That said, you will NOT be discipling her yourself. 
+      OptionalNpcReference: {fileID: 11400000, guid: 953fdaa61df0d874096f67b62bdff83f,
+        type: 2}
+      Text: I have no objections.  That said, you will NOT be disciplining her yourself. 
         You'll come to me with Mackenzie's latest naughtiness and I'll correct her,
-        if I think  she deserves it, myself.
+        if I think she deserves it, myself.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 2eab091c1b8903840ae9023cf8e9d6cd,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 953fdaa61df0d874096f67b62bdff83f,
+        type: 2}
       Text: Well, of course Darling!  If that's how you'd prefer to handle Mackenzie's
         corrections... if you think that's best... I will of course comply with your
         wishes.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 2eab091c1b8903840ae9023cf8e9d6cd,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Mackenzie soon learns...
       Videos:
       - {fileID: 32900000, guid: ae6e2bae9f1a36a42929fe9434ee7fc0, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: '...the price of her disobedience, with each domestic infraction lovingly
         detailed in her Punishment Notebook.  You may now discipline Mackenzie yourself! '
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -127,6 +146,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
+      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -140,6 +161,7 @@ MonoBehaviour:
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -157,6 +179,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
+      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0

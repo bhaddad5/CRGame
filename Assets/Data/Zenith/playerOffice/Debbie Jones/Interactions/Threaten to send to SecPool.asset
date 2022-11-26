@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 98bfc89f-b520-40a1-8f97-7c81ab2e23e2
   Name: Threaten to send to SecPool (Break Debbie)
+  SubInteraction: 0
   AlertNew: 1
   Category: 2
   Requirements:
@@ -44,7 +45,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
-    Items: 
+    Items: []
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -212,9 +213,10 @@ MonoBehaviour:
       Textures: []
       DialogClips: []
       Text: '...enjoying the glow of your own reflected power.  Exile to the Secretarial
-        Pool would be a humiliation she could hardly bear atthis point.  She''ll
+        Pool would be a humiliation she could hardly bear at this point.  She''ll
         try her best to avoid that fate at any cost, even to the detriment of what''s
         left of her own dignity! '
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 100
@@ -233,8 +235,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
+      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -248,6 +250,7 @@ MonoBehaviour:
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -265,8 +268,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
+      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0

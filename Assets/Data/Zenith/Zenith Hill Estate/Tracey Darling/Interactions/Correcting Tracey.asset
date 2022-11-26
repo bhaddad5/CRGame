@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 7b41885f-0c8a-48b1-9d6d-4bcbf41514df
   Name: Correcting Tracey
+  SubInteraction: 0
   AlertNew: 1
   Category: 5
   Requirements:
@@ -40,6 +41,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: []
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -48,7 +50,7 @@ MonoBehaviour:
       OptionalNpcReference: {fileID: 11400000, guid: 953fdaa61df0d874096f67b62bdff83f,
         type: 2}
       Text: There you go again!  I see you're in need of a reminder of what happens
-        when a trophy wife displease her husband!
+        when a trophy wife displeases her husband!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 2eab091c1b8903840ae9023cf8e9d6cd,
         type: 3}
@@ -56,16 +58,20 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: You fear you've spoiled her...
       Videos:
       - {fileID: 32900000, guid: 7a980e4d7ab53b04dbf9a38c0e58fb48, type: 3}
       - {fileID: 32900000, guid: b0b2fe0816251ae4a8c00c1ca50038b7, type: 3}
       - {fileID: 32900000, guid: 6d29a181c4ccab548bb250ef309cec37, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: ...and at this rate, Tracey may have an attitude problem for the foreseeable
         future, discipline notwithstanding.  If only you had a playroom designed
         for the training of a naughty little housewife like Tracey!
+    Choices: []
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: 953fdaa61df0d874096f67b62bdff83f,
@@ -87,6 +93,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
+      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -100,6 +108,7 @@ MonoBehaviour:
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -117,6 +126,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
+      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
