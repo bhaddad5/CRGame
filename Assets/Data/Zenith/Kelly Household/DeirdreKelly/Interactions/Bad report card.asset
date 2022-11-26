@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 2a491839-5f54-46c0-91e5-dac6bc950218
   Name: Bad report card
+  SubInteraction: 0
   AlertNew: 1
   Category: 6
   Requirements:
@@ -40,7 +41,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
-    Items: 
+    Items: []
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -116,7 +117,7 @@ MonoBehaviour:
       OptionalNpcReference: {fileID: 11400000, guid: 8468daf25d821974a8b3b9c729b1d180,
         type: 2}
       Text: And now you're blaming me?  Over my knee, young lady!  It is obvious
-        your mother is not up providing the discipline you required!
+        your mother is not up to providing the discipline you required!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 0bd4b03b475c1a54ea79442410153405,
         type: 3}
@@ -147,6 +148,7 @@ MonoBehaviour:
       DialogClips:
       - {fileID: 8300000, guid: 00617a7fd64b03e4f93f84be0719fabf, type: 3}
       Text: ...soon there are real tears and please for mercy.
+    Choices: []
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: 8468daf25d821974a8b3b9c729b1d180,
@@ -168,8 +170,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
+      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -183,6 +185,7 @@ MonoBehaviour:
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -200,8 +203,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
+      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
