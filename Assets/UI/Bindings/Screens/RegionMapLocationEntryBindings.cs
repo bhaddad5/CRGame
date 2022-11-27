@@ -19,7 +19,7 @@ namespace Assets.GameModel.UiDisplayers
 		private bool isQuickAccess;
 		private MainGameManager mgm;
 
-		public bool IsNew => loc.HasNewInteractions(mgm) && loc.IsAccessible(mgm);
+		public bool IsNew => (loc.HasNewInteractions(mgm) || loc.HasNewPolicies(mgm)) && loc.IsAccessible(mgm);
 		public bool HasNpcs => loc.Npcs.Any(npc => npc.IsVisible(mgm));
 
 		public void Setup(Location dept, RegionMapScreenBindings mainMapUi, Vector2 mainMapSize, MainGameManager mgm, bool isQuickAccess = false)
@@ -43,7 +43,7 @@ namespace Assets.GameModel.UiDisplayers
 			Button.gameObject.SetActive(loc.IsVisible(mgm));
 			if(!isQuickAccess)
 				Button.transform.localPosition = ConvertMapPos(loc.UiPosition);
-			NewIndicator.SetActive(loc.HasNewInteractions(mgm) && loc.IsAccessible(mgm));
+			NewIndicator.SetActive(IsNew);
 
 			if (loc.IsAccessible(mgm))
 				TextBackground.color = Button.colors.normalColor;

@@ -2,11 +2,12 @@ using System.Collections.Generic;
 using Assets.UI_System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 namespace Assets.GameModel.UiDisplayers
 {
-	public class PolicyEntryBindings : MonoBehaviour, ITooltipProvider
+	public class PolicyEntryBindings : MonoBehaviour, ITooltipProvider, IPointerEnterHandler
 	{
 		[SerializeField] private TMP_Text Text;
 		[SerializeField] private Image Image;
@@ -15,6 +16,7 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private TMP_Text RewardsText;
 		[SerializeField] private Transform ActiveIndicator;
 		[SerializeField] private Button ActivatePolicyButton;
+		[SerializeField] private GameObject NewIndicator;
 
 		private Policy policy;
 		private MainGameManager mgm;
@@ -23,12 +25,15 @@ namespace Assets.GameModel.UiDisplayers
 		{
 			this.policy = policy;
 			this.mgm = mgm;
+			NewIndicator.SetActive(policy.IsNew(mgm));
 			
 			RefreshUiDisplay(mgm);
 		}
 
 		public void ActivatePolicy()
 		{
+			policy.New = false;
+
 			AudioHandler.Instance.PlayOverridingMusicTrack(mgm.PolicyAudioClip);
 			policy.Active = true;
 			policy.Cost.SubtractCost(mgm);
@@ -56,6 +61,15 @@ namespace Assets.GameModel.UiDisplayers
 			if (!policy.Cost.CanAffordCost(mgm))
 				return policy.Cost.GetInvalidTooltip(mgm);
 			return null;
+		}
+
+		public void OnPointerEnter(PointerEventData eventData)
+		{
+			if (policy.IsNew(mgm))
+			{
+				policy.New = false;
+				NewIndicator.SetActive(false);
+			}
 		}
 	}
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Assets.GameModel;
 using Assets.UI_System;
 using TMPro;
@@ -31,6 +32,8 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private StatusSymbolsBindings StatusSymbolsPrefab;
 		private StatusSymbolsBindings statusSymbols;
 
+		[SerializeField] private GameObject PoliciesNewIndicator;
+
 		private Location loc;
 		public bool IsAccessible(MainGameManager mgm) => loc.IsAccessible(mgm);
 
@@ -41,6 +44,8 @@ namespace Assets.GameModel.UiDisplayers
 			this.loc = loc;
 			this.mgm = mgm;
 			this.onClose = onClose;
+
+			PoliciesNewIndicator.SetActive(loc.Policies.Any(p => p.IsNew(mgm)));
 
 			foreach (Npc npc in loc.Npcs)
 			{
@@ -133,6 +138,8 @@ namespace Assets.GameModel.UiDisplayers
 			Description.text = loc.Description;
 			if (loc.Controlled)
 				Name.text += $" (Controlled)";
+
+			PoliciesNewIndicator.SetActive(loc.Policies.Any(p => p.IsNew(mgm)));
 
 			foreach (var npc in NpcOptionsParent.GetComponentsInChildren<LocationNpcEntryBindings>(true))
 			{

@@ -75,7 +75,7 @@ namespace Assets.GameModel
 
 		public bool HasNewInteractions(MainGameManager mgm)
 		{
-			return Locations.Any(l => l.IsVisible(mgm) && l.HasNewInteractions(mgm) && l.IsAccessible(mgm));
+			return Locations.Any(l => l.IsVisible(mgm) && (l.HasNewInteractions(mgm) || l.HasNewPolicies(mgm)) && l.IsAccessible(mgm));
 		}
 	}
 }

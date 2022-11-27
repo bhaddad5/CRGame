@@ -84,6 +84,11 @@ namespace Assets.GameModel
 			return Npcs.Any(n => n.IsVisible(mgm) && n.HasNewInteractions(mgm));
 		}
 
+		public bool HasNewPolicies(MainGameManager mgm)
+		{
+			return Policies.Any(p => p.IsNew(mgm));
+		}
+
 		public bool IsAccessible(MainGameManager mgm)
 		{
 			if (ClosedOnWeekdays && !mgm.IsWeekend())

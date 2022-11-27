@@ -296,7 +296,7 @@ public static class ProfilingHelpers
 			foreach (var choice in interaction.Result.Choices)
 			{
 				if(choice.Requirements.RequiredInteractions.Contains(interaction))
-					Debug.LogError($"{choice.name} requires it's parent interaction, {interaction.name}");
+					Debug.LogError($"{choice.name} is incorrectly set to require it's parent interaction, {interaction.name}");
 			}
 		}
 	}

@@ -211,7 +211,7 @@ namespace Assets.UI_System
 				if (currAudioClips.Count > 1 && newClip == MusicSource.clip)
 					newClip = currAudioClips.First(c => c != MusicSource.clip);
 				MusicSource.clip = newClip;
-				Debug.Log($"Setting clip to {MusicSource.clip}, clips count = {currAudioClips.Count}");
+				//Debug.Log($"Setting clip to {MusicSource.clip}, clips count = {currAudioClips.Count}");
 				MusicSource.Play();
 			}
 

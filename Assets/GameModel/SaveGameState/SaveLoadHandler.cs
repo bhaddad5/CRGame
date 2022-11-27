@@ -13,8 +13,6 @@ namespace Assets.GameModel.Save
 			
 			var res = JsonUtility.ToJson(state);
 
-			Debug.Log(res);
-
 			var test = JsonUtility.FromJson<SaveGameState>(res);
 
 			return res;

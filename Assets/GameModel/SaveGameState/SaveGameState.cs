@@ -237,12 +237,14 @@ namespace Assets.GameModel.Save
 		public string Id;
 
 		public bool Active;
+		public bool Visited;
 
 		public static SavedPolicyState FromData(Policy data)
 		{
 			var res = new SavedPolicyState();
 			res.Id = data.Id;
 			res.Active = data.Active;
+			res.Visited = !data.New;
 
 			return res;
 		}
@@ -255,6 +257,7 @@ namespace Assets.GameModel.Save
 				return;
 			}
 			data.Active = Active;
+			data.New = !Visited;
 		}
 	}
 

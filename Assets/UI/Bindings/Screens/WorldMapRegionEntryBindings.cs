@@ -42,7 +42,7 @@ namespace Assets.GameModel.UiDisplayers
 			Text.text = $"{region.Name}";
 			Button.gameObject.SetActive(region.IsVisible(mgm));
 			Button.transform.localPosition = ConvertMapPos(region.UiPosition);
-			NewIndicator.SetActive(region.HasNewInteractions(mgm));
+			NewIndicator.SetActive(IsNew);
 		}
 
 		private Vector3 ConvertMapPos(Vector2 mapPos)

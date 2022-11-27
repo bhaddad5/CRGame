@@ -28,9 +28,18 @@ namespace Assets.GameModel
 		[HideInInspector]
 		public bool Active;
 
+		[HideInInspector]
+		public bool New = true;
+
 		public void Setup()
 		{
 			Active = false;
+			New = true;
+		}
+
+		public bool IsNew(MainGameManager mgm)
+		{
+			return New && Requirements.RequirementsAreMet(mgm) && Cost.CanAffordCost(mgm);
 		}
 	}
 }
