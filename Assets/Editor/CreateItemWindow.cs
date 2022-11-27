@@ -40,6 +40,8 @@ public class CreateItemWindow : EditorWindow
 		item.Name = itemName;
 		item.Id = Guid.NewGuid().ToString();
 
+		data.InventoryItemOptions.Add(item);
+
 		AssetDatabase.CreateAsset(item, $"Assets/Data/_Items/{item.Name.ToFolderName()}.asset");
 		AssetDatabase.SaveAssets();
 	}
