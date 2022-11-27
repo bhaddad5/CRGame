@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: b5ffa987-ff8c-4256-b98a-c4ce3e80d86e
   Name: Watch the Maid work
+  SubInteraction: 0
   AlertNew: 1
   Category: 4
   Requirements:
@@ -39,6 +40,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: []
   Repeatable: 1
   PreviewEffect: 1
   Result:
@@ -52,9 +54,16 @@ MonoBehaviour:
       - {fileID: 32900000, guid: a395838216b0e0f4791b7e727f6772dd, type: 3}
       - {fileID: 32900000, guid: 5eddce65eb1187f439e022d7f3fefc3d, type: 3}
       - {fileID: 32900000, guid: 4bc25d7809736c0429ec806e82e1dac7, type: 3}
-      Texture: {fileID: 0}
+      - {fileID: 32900000, guid: a9a24cbea8656bf46a6f675996a062b5, type: 3}
+      - {fileID: 32900000, guid: 9ceebe69872c23c47b10e6a638241eb4, type: 3}
+      - {fileID: 32900000, guid: a9dacc33ad41f6a4cbdbb4641f780a22, type: 3}
+      - {fileID: 32900000, guid: d7b344dd34994054680554e825e20145, type: 3}
+      - {fileID: 32900000, guid: d9bfafbb93e6b3c44bc2469b01afe0e4, type: 3}
+      Textures: []
+      DialogClips: []
       Text: ...attend to the menial tasks required by such a large household is a
         necessity.  The girl is easily on her feet 18 hours a day!
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 8
@@ -72,6 +81,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
+      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -85,6 +96,7 @@ MonoBehaviour:
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -102,6 +114,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
+      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
