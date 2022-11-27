@@ -287,7 +287,20 @@ public static class ProfilingHelpers
 		}
 			
 	}
-	
+
+	[MenuItem("Company Man Debugging/Find Impossible Sub Interactions")]
+	public static void FindImpossibleSubInteractions()
+	{
+		foreach (var interaction in GetAllInteractions())
+		{
+			foreach (var choice in interaction.Result.Choices)
+			{
+				if(choice.Requirements.RequiredInteractions.Contains(interaction))
+					Debug.LogError($"{choice.name} requires it's parent interaction, {interaction.name}");
+			}
+		}
+	}
+
 	[MenuItem("Company Man Debugging/Print Control and Completion Interactions")]
 	public static void PrintControlInteractions()
 	{
