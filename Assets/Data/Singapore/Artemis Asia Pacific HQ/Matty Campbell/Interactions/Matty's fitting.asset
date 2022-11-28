@@ -16,13 +16,14 @@ MonoBehaviour:
   Name: Matty's fitting
   SubInteraction: 0
   AlertNew: 1
-  Category: 0
+  Category: 5
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 2db4579c27bef5145b6d446bd0a4aad9, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -43,14 +44,58 @@ MonoBehaviour:
   Repeatable: 0
   PreviewEffect: 0
   Result:
-    Dialogs: []
-    OptionalPopups: []
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 135575f1fe4c85c4e88c9642a3793f98,
+        type: 2}
+      Text: 'I don''t understand!  Is this a joke?  Am I actually expected to wear
+        this?  '
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 047b362e8acf92a4e8b219d7dacffda0, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 0facadccef224d547b295f53f5b5eebc,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 135575f1fe4c85c4e88c9642a3793f98,
+        type: 2}
+      Text: No joke, Matty!  It's for your own good.  All Artemis female staff that
+        report directly to me wear personal safety gear like this.  You're a pretty
+        girl-- you don't want to get raped, do you?
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 047b362e8acf92a4e8b219d7dacffda0, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 0facadccef224d547b295f53f5b5eebc,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: Be a good girl and...
+      Videos:
+      - {fileID: 32900000, guid: d9d12c511c1eea342bd97f8e687fff96, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: ...lock yourself up.  Now, don't you feel safer already, Matty?
+    - Title: When you earn some release...
+      Videos:
+      - {fileID: 32900000, guid: 272d5c7b622143949ad54ee923a2f85d, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: ...I might be persuaded to let you out of that thing-- but you'll have
+        to really earn it Matty!
     Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
       FundsEffect: 0
-      PowerEffect: 0
+      PowerEffect: 5
       PatentsEffect: 0
       CultureEffect: 0
       SpreadsheetsEffect: 0
@@ -61,7 +106,8 @@ MonoBehaviour:
       NpcsToTrain: []
       NpcsToRemoveFromGame: []
       LocationsToControl: []
-      TrophiesClaimedReferences: []
+      TrophiesClaimedReferences:
+      - {fileID: 11400000, guid: c68c032a1e1bb3c41835425daee6f125, type: 2}
       MissionsToComplete: []
       ItemsToAdd: []
       ItemsToRemove: []
