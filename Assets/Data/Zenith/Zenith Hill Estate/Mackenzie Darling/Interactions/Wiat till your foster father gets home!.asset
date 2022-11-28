@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 9b41f73a-8543-469b-95db-e20ec2c6dbe4
   Name: Wait till your foster father gets home!
+  SubInteraction: 0
   AlertNew: 1
   Category: 5
   Requirements:
@@ -39,6 +40,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     HornicalCost: 0
+    Items: []
   Repeatable: 1
   PreviewEffect: 1
   Result:
@@ -58,6 +60,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 300
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 8dff1f07f4971ef4a8c33a3e95657c17,
         type: 2}
@@ -73,6 +76,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 300
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: As the Master of the House...
       Videos:
@@ -83,16 +87,18 @@ MonoBehaviour:
       - {fileID: 32900000, guid: c2ead8ff3bcc2ab4598cb05f866b096c, type: 3}
       - {fileID: 32900000, guid: 559542089cfaade4481bea437beadd02, type: 3}
       - {fileID: 32900000, guid: 201ef615de9f3ff4bbeae361466b3e35, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: ...it is your responsibility to correct the teenager.  To be honest,
         it's a little household task you don't mind at all!
+    Choices: []
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: 8dff1f07f4971ef4a8c33a3e95657c17,
           type: 2}
         AmbitionEffect: -6
         PrideEffect: 0
-      EgoEffect: 0
+      EgoEffect: 8
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -107,6 +113,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
+      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -120,6 +128,7 @@ MonoBehaviour:
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -137,6 +146,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
+      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0

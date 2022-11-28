@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: b70a118e-78a0-4556-8550-12715171b073
   Name: I'm a single man
-  SubInteraction: 0
+  SubInteraction: 1
   AlertNew: 1
   Category: 3
   Requirements:
@@ -23,7 +23,8 @@ MonoBehaviour:
     RequiredTurnNumber: 0
     NpcStatRequirements: []
     RequiredInteractions: []
-    RequiredNotCompletedInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: ca459fbaf01edbd46b01740719f29d5c, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []

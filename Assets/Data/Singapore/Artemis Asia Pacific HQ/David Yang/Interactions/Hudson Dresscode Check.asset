@@ -46,29 +46,33 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: c87534d57e4416445bce3fc68ed6d9f3,
+        type: 2}
       Text: Ah,  {FirstName}!  Thank you so much for sharing the Admin Dress Code
         Manual for the Zenith campus!  I immediately handed it off to Miranda so
         she could memorize and start planning accordingly.  I was about to call her
         in for an Intimates Check.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 10b145aea24e7e1479ec6923d619dbee,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: c87534d57e4416445bce3fc68ed6d9f3,
+        type: 2}
       Text: I'd never pass up the opportunity to see the lovely Miranda present herself
         in her lingerie!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 10b145aea24e7e1479ec6923d619dbee,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
@@ -77,11 +81,12 @@ MonoBehaviour:
       Text: She wears things so scandalous my wife wouldn't ever consider wearing. 
         HUDSON!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 10b145aea24e7e1479ec6923d619dbee,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
@@ -89,11 +94,12 @@ MonoBehaviour:
         type: 2}
       Text: Yes, Sir Mr. Yang!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 10b145aea24e7e1479ec6923d619dbee,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
@@ -101,17 +107,19 @@ MonoBehaviour:
         type: 2}
       Text: Intimates check.  Go on--  Mr. {LastName} and I are busy men!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 10b145aea24e7e1479ec6923d619dbee,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups:
-    - Title: Miranda quickly strips down...
-      Videos: []
-      Textures:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 9fc7f810eb3503f44a56e215ed266849,
+        type: 2}
+      Text: Yes, Sir!  Right away!
+      CustomNpcImageOptions:
       - {fileID: 2800000, guid: fa110701c711794438c07f8d67b1f315, type: 3}
       - {fileID: 2800000, guid: 0e32905423686c4468799a49361f1d70, type: 3}
       - {fileID: 2800000, guid: 47d47db34e586c343946f45b72170a88, type: 3}
@@ -124,9 +132,15 @@ MonoBehaviour:
       - {fileID: 2800000, guid: 26df86f2ffeed1f49bff966043814ab2, type: 3}
       - {fileID: 2800000, guid: 7919ce5fd95dab6449e548443f87564c, type: 3}
       - {fileID: 2800000, guid: 6bd6dcedf9637a54a919ac732bc9f64d, type: 3}
-      DialogClips: []
-      Text: ...and awaits her superior's evaluation, which she can never assume will
-        be positive!
+      CustomBackground: {fileID: 2800000, guid: 10b145aea24e7e1479ec6923d619dbee,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups: []
     Choices: []
     Effect:
       NpcEffects:
@@ -134,7 +148,7 @@ MonoBehaviour:
           type: 2}
         AmbitionEffect: 0
         PrideEffect: 2
-      EgoEffect: 0
+      EgoEffect: 5
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
