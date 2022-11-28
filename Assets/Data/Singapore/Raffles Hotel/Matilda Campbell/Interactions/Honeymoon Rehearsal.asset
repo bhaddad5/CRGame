@@ -27,7 +27,7 @@ MonoBehaviour:
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled:
-    - {fileID: 11400000, guid: 62acd047d45c70044b6d51d7a4d4446a, type: 2}
+    - {fileID: 11400000, guid: 5352dc040d0e305479c1e1e7306cfead, type: 2}
     RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
     RequiredTrophies: []
@@ -39,7 +39,7 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    HornicalCost: 1
     Items: []
   Repeatable: 1
   PreviewEffect: 1
@@ -153,7 +153,7 @@ MonoBehaviour:
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
-        width: 300
+        width: 400
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
@@ -171,11 +171,11 @@ MonoBehaviour:
     Choices: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 11400000, guid: 62acd047d45c70044b6d51d7a4d4446a,
+      - OptionalNpcReference: {fileID: 11400000, guid: 5352dc040d0e305479c1e1e7306cfead,
           type: 2}
         AmbitionEffect: 0
         PrideEffect: -25
-      EgoEffect: 0
+      EgoEffect: 20
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -191,7 +191,8 @@ MonoBehaviour:
       TrophiesClaimedReferences: []
       MissionsToComplete: []
       ItemsToAdd: []
-      ItemsToRemove: []
+      ItemsToRemove:
+      - {fileID: 11400000, guid: 3ff5cfaad1c119d4ca9230878fa2fac1, type: 2}
       Car: 0
       Suits: 0
       JewleryCuffs: 0
