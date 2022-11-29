@@ -32,13 +32,12 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 350000
+    MoneyCost: 1000000
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
     Items: []
   Repeatable: 0
   PreviewEffect: 0
@@ -89,6 +88,22 @@ MonoBehaviour:
         width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 309360b9a7c730747a997d16770e5615,
+        type: 2}
+      Text: Very good, Mr. {LastName}.  I would be remiss in my duties as a Buyer's
+        Agent if I didn't point out that a residence matching your needs will be
+        a most expensive purchase!  But of course, you know this.  Let me get to
+        work!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 4a434114e66b9f64085c3c8149e89fac,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Miss Tang locates a penthouse worthy...
       Videos:
@@ -102,7 +117,7 @@ MonoBehaviour:
       NpcEffects: []
       EgoEffect: 50
       FundsEffect: 0
-      PowerEffect: 25
+      PowerEffect: 35
       PatentsEffect: 0
       CultureEffect: 0
       SpreadsheetsEffect: 0
@@ -118,7 +133,6 @@ MonoBehaviour:
       - {fileID: 11400000, guid: ca301a893f8200e4aa9321165d5a53bd, type: 2}
       MissionsToComplete: []
       ItemsToAdd: []
-      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -127,6 +141,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -151,7 +166,6 @@ MonoBehaviour:
       TrophiesClaimedReferences: []
       MissionsToComplete: []
       ItemsToAdd: []
-      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -160,5 +174,6 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
   New: 1
