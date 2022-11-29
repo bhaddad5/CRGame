@@ -124,6 +124,17 @@ namespace Assets.GameModel
 			TryRunStartOfTurnInteractions();
 		}
 
+		public void OpenRegion(Region region)
+		{
+			ReturnToWorldMap();
+			mainMapUiDisplay.ShowRegion(region, this);
+		}
+
+		public void ReturnToWorldMap()
+		{
+			mainMapUiDisplay.CurrOpenRegion.CloseRegion();
+		}
+
 		private void TryRunStartOfTurnInteractions()
 		{
 			foreach (var startOfTurnInteraction in Data.StartOfTurnInteractions)

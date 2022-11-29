@@ -41,25 +41,25 @@ namespace Assets.GameModel.UiDisplayers
 			AudioHandler.Instance.SetMusicTracks(mgm.IsWeekend() ? mgm.WorldWeekendAudio : mgm.WorldWeekdayAudio);
 		}
 
-		private RegionMapScreenBindings _currOpenRegion = null;
+		public RegionMapScreenBindings CurrOpenRegion = null;
 		public void ShowRegion(Region region, MainGameManager mgm)
 		{
 			gameObject.SetActive(false);
-			_currOpenRegion = Instantiate(_regionUiPrefab);
-			_currOpenRegion.Setup(mgm, region, () =>
+			CurrOpenRegion = Instantiate(_regionUiPrefab);
+			CurrOpenRegion.Setup(mgm, region, () =>
 			{
 				CameraMover.Instance.ResetCameraPos();
 				CameraMover.Instance.SetScreenSize(new Vector2(MapImage.mainTexture.width, MapImage.mainTexture.height));
 				gameObject.SetActive(true);
 				RefreshUiDisplay(mgm);
 			});
-			_currOpenRegion.RefreshUiDisplay(mgm);
+			CurrOpenRegion.RefreshUiDisplay(mgm);
 		}
 
 		public void HandleTurnChange()
 		{
-			if(_currOpenRegion != null)
-				_currOpenRegion.CloseCurrentDepartment(true);
+			if(CurrOpenRegion != null)
+				CurrOpenRegion.CloseCurrentDepartment(true);
 		}
 
 		public void RefreshUiDisplay(MainGameManager mgm)
@@ -67,8 +67,8 @@ namespace Assets.GameModel.UiDisplayers
 			foreach (var button in RegionsParent.GetComponentsInChildren<WorldMapRegionEntryBindings>(true))
 				button.RefreshUiDisplay(mgm);
 
-			if (_currOpenRegion != null)
-				_currOpenRegion.RefreshUiDisplay(mgm);
+			if (CurrOpenRegion != null)
+				CurrOpenRegion.RefreshUiDisplay(mgm);
 
 			if(gameObject.activeInHierarchy)
 				AudioHandler.Instance.SetMusicTracks(mgm.IsWeekend() ? mgm.WorldWeekendAudio : mgm.WorldWeekdayAudio);

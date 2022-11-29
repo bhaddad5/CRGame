@@ -16,9 +16,16 @@ namespace Assets.GameModel
 
 		public Effect Effect;
 
+		public Region GoToRegion;
+
 		public void Execute(MainGameManager mgm)
 		{
 			Effect.ExecuteEffect(mgm);
+
+			if (GoToRegion != null)
+			{
+				mgm.OpenRegion(GoToRegion);
+			}
 		}
 	}
 }
