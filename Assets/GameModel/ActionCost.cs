@@ -18,9 +18,13 @@ namespace Assets.GameModel
 		public float BrandCost;
 		public float RevanueCost;
 
-		public int HornicalCost;
-
 		public List<InventoryItem> Items;
+
+		public bool IsFree()
+		{
+			return EgoCost == 0 && MoneyCost == 0 && SpreadsheetsCost == 0 && CultureCost == 0 && PatentsCost == 0 &&
+			       BrandCost == 0 && RevanueCost == 0 && Items.Count == 0;
+		}
 
 		public bool CanAffordCost(MainGameManager mgm)
 		{

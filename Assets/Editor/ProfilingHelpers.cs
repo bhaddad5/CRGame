@@ -288,15 +288,23 @@ public static class ProfilingHelpers
 			
 	}
 
-	[MenuItem("Company Man Debugging/Find Impossible Sub Interactions")]
+	[MenuItem("Company Man Debugging/Find Bad Sub Interactions")]
 	public static void FindImpossibleSubInteractions()
 	{
 		foreach (var interaction in GetAllInteractions())
 		{
+			bool hasFreeChoice = false;
 			foreach (var choice in interaction.Result.Choices)
 			{
 				if(choice.Requirements.RequiredInteractions.Contains(interaction))
 					Debug.LogError($"{choice.name} is incorrectly set to require it's parent interaction, {interaction.name}");
+				if (choice.Requirements.AlwaysAllowed() && choice.Cost.IsFree())
+					hasFreeChoice = true;
+			}
+
+			if (interaction.Result.Choices.Count > 0 && !hasFreeChoice)
+			{
+				Debug.LogError($"{interaction.Name} does not have a 'free' option and could cause players to hit a dead end.");
 			}
 		}
 	}

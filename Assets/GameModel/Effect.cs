@@ -36,7 +36,6 @@ namespace Assets.GameModel
 		public List<Mission> MissionsToComplete;
 
 		public List<InventoryItem> ItemsToAdd;
-		public List<InventoryItem> ItemsToRemove;
 
 		public int Car;
 		public int Suits;
@@ -70,11 +69,6 @@ namespace Assets.GameModel
 			foreach (var inventoryItem in ItemsToAdd)
 			{
 				mgm.Data.AddItemToInventory(inventoryItem);
-			}
-
-			foreach (var item in ItemsToRemove)
-			{
-				mgm.Data.RemoveItemFromInventory(item);
 			}
 
 			foreach (var trophy in TrophiesClaimedReferences)

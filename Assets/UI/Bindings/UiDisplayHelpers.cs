@@ -38,8 +38,6 @@ namespace Assets.GameModel.UiDisplayers
 				str += $"-{cost.RevanueCost} Revenue, ";
 			if (cost.PatentsCost > 0)
 				str += $"-{cost.PatentsCost} Patents, ";
-			if (cost.HornicalCost > 0)
-				str += $"-{cost.HornicalCost} Hornical, ";
 
 			if (str.EndsWith(", "))
 				str = str.Substring(0, str.Length - 2);

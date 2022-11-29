@@ -57,6 +57,14 @@ namespace Assets.GameModel
 		public List<Npc> RequiredNpcsNotControled;
 		public List<Trophy> RequiredTrophies;
 
+		public bool AlwaysAllowed()
+		{
+			return RequiredPower == 0 && RequiredPromotionLevel == 0 && RequiredTurnNumber == 0 && NpcStatRequirements.Count == 0 &&
+			       RequiredInteractions.Count == 0 && RequiredNotCompletedInteractions.Count == 0 && RequiredPolicies.Count == 0 &&
+			       RequiredDepartmentsControled.Count == 0 && RequiredNpcsControled.Count == 0 && RequiredNpcsTrained.Count == 0 &&
+			       RequiredNpcsNotControled.Count == 0 && RequiredTrophies.Count == 0;
+		}
+
 		public bool VisRequirementsAreMet()
 		{
 			foreach (var interaction in RequiredInteractions)
