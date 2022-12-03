@@ -1,0 +1,246 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: Picking up her Power Suit
+  m_EditorClassIdentifier: 
+  Id: d4421dbd-3fea-4f51-9912-a89c8a2765ba
+  Name: Picking up her Power Suit
+  SubInteraction: 0
+  AlertNew: 1
+  Category: 1
+  Requirements:
+    RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
+    NpcStatRequirements: []
+    RequiredInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: 69f9d7b181331d64690c1b7cc4bb51f1, type: 2}
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredNpcsControled: []
+    RequiredNpcsTrained: []
+    RequiredNpcsNotControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 0
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    Items: []
+  Repeatable: 0
+  PreviewEffect: 0
+  Result:
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: e9c2df616b681d24caaa766fe0869ab3,
+        type: 2}
+      Text: Mr. Bannerjee, I received a message that my suit was ready for-- oh. 
+        It's you.  No, wait-- let me think--
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 8db5a8cb6386f094fbc84fe868d37d69,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.55
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: e9c2df616b681d24caaa766fe0869ab3,
+        type: 2}
+      Text: It's {FirstName}.  {FirstName} {LastName}.  I thought this was a men's
+        store!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 8db5a8cb6386f094fbc84fe868d37d69,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.55
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 1ac2e2d7fdcd46f4d89a6eae0d73789c,
+        type: 2}
+      Text: Oh, we cater to both ladies and gentlemen!  Ms. Jones, that message was
+        premature-- my most humble apologies!  We are attending to some final alterations
+        but it will be ready Monday  It is most gorgeous- made from finest Italian
+        silk!  A bespoke suit for your most important meetings, Ma'am!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 8db5a8cb6386f094fbc84fe868d37d69,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.55
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: e9c2df616b681d24caaa766fe0869ab3,
+        type: 2}
+      Text: Very well, Mr. Bannerjee.  You may have it sent over to my office then. 
+        Leave it with my receptionist, Britney.  I assume you're buying off the rack,
+        {LastName}.  Which is perfectly fine when you have limited means.  You probably
+        shouldn't invest in a decent wardrobe until you complete the Management Trainee
+        Program anyway.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 8db5a8cb6386f094fbc84fe868d37d69,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.55
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: e9c2df616b681d24caaa766fe0869ab3,
+        type: 2}
+      Text: 'I don''t see where that''s any of your business, Deborah.  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 8db5a8cb6386f094fbc84fe868d37d69,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.55
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: e9c2df616b681d24caaa766fe0869ab3,
+        type: 2}
+      Text: 'I''m only suggesting that if you don''t complete the MTP, you''ll have
+        no need of a power suit.  Admins aren''t expected to dress to exec standards. 
+        A polo and some skinny jeans will be all you''ll have to worry about.  Believe
+        me, dressing for work is a pain you won''t miss.  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 8db5a8cb6386f094fbc84fe868d37d69,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.55
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: e9c2df616b681d24caaa766fe0869ab3,
+        type: 2}
+      Text: I'm not going to wind up an Admin.  What gave you that idea?  I'm going
+        to complete the MTP before you do!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 8db5a8cb6386f094fbc84fe868d37d69,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.55
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: e9c2df616b681d24caaa766fe0869ab3,
+        type: 2}
+      Text: Good for you!  That's the spirit, {LastName}!  Well, got to go-- I have
+        a briefing to attend over at International.  Thanks Mr. Bannerjee!  I'll
+        be looking for my suit first thing Monday!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 8db5a8cb6386f094fbc84fe868d37d69,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.55
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: Deborah's soon strutting around in...
+      Videos:
+      - {fileID: 32900000, guid: 026f3a2f083bff6469cd8dbaad30d726, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: '...an admitedly impressive tailored suit that radiates power and style. 
+        If you are ever in the position to dictate what is and isn''t allowed in
+        your department, the first on the list to be banned are ugly women''s power
+        suits just like this! '
+    - Title: That said, there is one redeeming...
+      Videos:
+      - {fileID: 32900000, guid: 9c4550c9dcdf1174790836587e2886a2, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: ...aspect of Deborah Jones' new suit that you do approve of.  The tailored
+        fitting shows off what an incredible ass the bitch has!
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 10
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame:
+      - {fileID: 11400000, guid: e9c2df616b681d24caaa766fe0869ab3, type: 2}
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
+  FailureResult:
+    Dialogs: []
+    OptionalPopups: []
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  Completed: 0
+  New: 1
