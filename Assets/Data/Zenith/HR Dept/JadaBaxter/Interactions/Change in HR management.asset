@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: dbd294c4-4474-4062-bd9e-acf340d7534e
   Name: Change in HR management
+  SubInteraction: 0
   AlertNew: 1
   Category: 0
   Requirements:
@@ -38,8 +39,7 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
-    Items: 
+    Items: []
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -136,7 +136,7 @@ MonoBehaviour:
       OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
         type: 2}
       Text: 'NOTE: In Carole''s absence, Jada''s ambition actually grows.  She''ll
-        be willing to assist you, but she''s expecting to het the top job too.  Getting
+        be willing to assist you, but she''s expecting to get the top job too.  Getting
         Jada under control will be tricky, if you hope to avoid an unfair dismissal
         suit-- or even charges of racial discrimination!'
       CustomNpcImageOptions: []
@@ -149,6 +149,7 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
@@ -170,8 +171,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -180,11 +180,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -202,8 +204,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -212,5 +213,6 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
   New: 1

@@ -14,13 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: d43a2960-3028-4d83-b9e3-e2b9d67810d5
   Name: A Modest Proposal
+  SubInteraction: 0
+  AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 2def4d0454815d641a32da04ff8d7198, type: 2}
     RequiredNotCompletedInteractions: []
@@ -38,7 +39,7 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -48,10 +49,24 @@ MonoBehaviour:
       Text: I've been giving your problem some thought.  I think there's a solution,
         but it involves some work on your end.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
       Text: Please continue Malcolm.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
       Text: 'I''ve already suggested Amber''s not the most learned attorney.  Her
@@ -61,44 +76,95 @@ MonoBehaviour:
         You need a Corporate Counsel with a depth of Intellectual Property nous. 
         Amber isn''t that.    '
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
       Text: 'You''re suggesting she''s not up to the job? '
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
       Text: 'I''m suggesting she''s already made mistakes-- and when you have IP
         issues, they become BIG issues fast.  Get someone in Artemis Legal to dig. 
         You''ll find it-- and then Amber''s out.  '
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
       Text: I'll need your help.  What do you want, Malcolm?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
       Text: 'My nephew will be graduating law school shortly.  Some client-side work
         as Corporate Counsel for Artemis would be a fine start to his career before
         he takes over the firm.  I''m sure he''d be fine with any enlightened policies
         you wish to put in place.  As for me, since Amber will be looking for a new
-        job soon...  I make be persuaded to take her back on here.  On very different
+        job soon...  I may be persuaded to take her back on here.  On very different
         terms of course. '
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
       Text: I think we have a deal, Malcolm!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
       Text: Yes, I think we do.  Let's meet again to iron out the details.  I'll
         need to speak with Jackson of course.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: '"Yes, we do."'
       Videos:
       - {fileID: 32900000, guid: 983c6bf1a5c99dc43aad23cd200180ca, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: 
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -116,6 +182,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -123,16 +190,14 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -150,6 +215,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -157,9 +223,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  New: 1
