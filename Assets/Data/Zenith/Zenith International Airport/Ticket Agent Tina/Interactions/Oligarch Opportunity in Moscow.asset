@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 3b7b471c-b21e-45c8-95a9-64537f83e5ba
   Name: Oligarch Opportunity in Moscow
+  SubInteraction: 0
   AlertNew: 1
   Category: 6
   Requirements:
@@ -37,8 +38,7 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
-    Items: 
+    Items: []
   Repeatable: 1
   PreviewEffect: 1
   Result:
@@ -64,7 +64,8 @@ MonoBehaviour:
       Textures: []
       DialogClips:
       - {fileID: 8300000, guid: cd33ac5d95d8e844a9d6701662527352, type: 3}
-      Text: ...it's the place where nice contracts can be worked out!   +1 Revenue
+      Text: ...it's the place where nice contracts can be worked out!
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 25
@@ -82,8 +83,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -92,6 +92,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 1
   ProbabilityOfFailureResult: 0.75
   FailureResult:
@@ -110,6 +111,7 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 25
@@ -127,8 +129,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -137,5 +138,6 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
   New: 1

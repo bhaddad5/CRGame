@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: f2394c16-29d7-42a6-b855-007a3ea7f5d7
   Name: Technology transfer in Beijing
+  SubInteraction: 0
   AlertNew: 1
   Category: 6
   Requirements:
@@ -37,8 +38,7 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
-    Items: 
+    Items: []
   Repeatable: 1
   PreviewEffect: 1
   Result:
@@ -65,7 +65,8 @@ MonoBehaviour:
       DialogClips:
       - {fileID: 8300000, guid: 5e42db66372daca4f94bfb0f364f238a, type: 3}
       Text: ...but successful.  You return with a valuable new intellectual property
-        claim!   +1 Patent
+        claim!
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 25
@@ -83,8 +84,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -93,6 +93,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 1
   ProbabilityOfFailureResult: 0.75
   FailureResult:
@@ -112,6 +113,7 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 25
@@ -129,8 +131,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -139,5 +140,6 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
   New: 1

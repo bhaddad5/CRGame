@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: c3d324e2-6158-44a8-b19d-d407afe6d5e7
   Name: The Euro Summit
+  SubInteraction: 0
   AlertNew: 1
   Category: 6
   Requirements:
@@ -37,8 +38,7 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
-    Items: 
+    Items: []
   Repeatable: 1
   PreviewEffect: 1
   Result:
@@ -65,7 +65,8 @@ MonoBehaviour:
       DialogClips:
       - {fileID: 8300000, guid: 9c0be1e6f54a53d4185143368808fa46, type: 3}
       Text: ...secures some exclusive administrative agreements that provide Artemis
-        with the basis for further consultation!   +1 Power   +1 Corporate Culture
+        with the basis for further consultation!
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 35
@@ -83,8 +84,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -93,6 +93,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 1
   ProbabilityOfFailureResult: 0.75
   FailureResult:
@@ -112,6 +113,7 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 35
@@ -129,8 +131,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -139,5 +140,6 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
   New: 1
