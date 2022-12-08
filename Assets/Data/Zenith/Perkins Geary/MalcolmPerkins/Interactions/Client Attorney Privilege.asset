@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: cdc5dea8-2363-45f6-99c8-63c284e182df
   Name: Client Attorney Privilege
+  SubInteraction: 0
   AlertNew: 1
   Category: 1
   Requirements:
@@ -39,7 +40,7 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -57,6 +58,7 @@ MonoBehaviour:
         yPos: 0.3
         width: 250
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 0b1c698aa7383d04aa770a7f38902f80,
         type: 2}
@@ -69,6 +71,7 @@ MonoBehaviour:
         yPos: 0.3
         width: 250
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 0b1c698aa7383d04aa770a7f38902f80,
         type: 2}
@@ -81,6 +84,7 @@ MonoBehaviour:
         yPos: 0.3
         width: 250
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
         type: 2}
@@ -94,6 +98,7 @@ MonoBehaviour:
         yPos: 0.3
         width: 250
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
         type: 2}
@@ -108,6 +113,7 @@ MonoBehaviour:
         yPos: 0.3
         width: 250
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
         type: 2}
@@ -122,6 +128,7 @@ MonoBehaviour:
         yPos: 0.3
         width: 250
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
         type: 2}
@@ -136,6 +143,7 @@ MonoBehaviour:
         yPos: 0.3
         width: 250
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
         type: 2}
@@ -148,12 +156,14 @@ MonoBehaviour:
         yPos: 0.3
         width: 250
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
         type: 2}
-      Text: I'm connected dots.  I understand the baby was basically purchased from
-        a Romanian orphanage.  The secretary is an illegal alien suborned to sexual
-        servicing.  Put it all together and it looks like human trafficking to me.
+      Text: I've connected the dots.  I understand the baby was basically purchased
+        from a Romanian orphanage.  The secretary is an illegal alien suborned to
+        sexual servicing.  Put it all together and it looks like human trafficking
+        to me.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: f59a68988b745b64485aeeb4b5d28cbb,
         type: 3}
@@ -162,6 +172,7 @@ MonoBehaviour:
         yPos: 0.3
         width: 250
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
         type: 2}
@@ -175,6 +186,7 @@ MonoBehaviour:
         yPos: 0.3
         width: 250
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
         type: 2}
@@ -189,6 +201,7 @@ MonoBehaviour:
         yPos: 0.3
         width: 250
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
         type: 2}
@@ -203,6 +216,7 @@ MonoBehaviour:
         yPos: 0.3
         width: 250
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
         type: 2}
@@ -216,14 +230,17 @@ MonoBehaviour:
         yPos: 0.3
         width: 250
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Amber hovers...
       Videos:
       - {fileID: 32900000, guid: 77d842ca86b7fa04c8e6d9bc0d10bf49, type: 3}
       Textures: []
+      DialogClips: []
       Text: ...like a well trained waitress just waiting for a gesture to fetch more
         coffee or anything else her superior should request.  Malcolm has brought
         the once arrogant Corporate Counsel to heel nicely!
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -241,6 +258,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -249,11 +267,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -271,6 +291,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -279,5 +300,6 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
   New: 1

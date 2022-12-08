@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 13e5bc89-c7a8-41fc-bb72-196a16331309
   Name: Move to the Zenith Hill Estate
+  SubInteraction: 0
   AlertNew: 1
   Category: 1
   Requirements:
@@ -38,7 +39,7 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -55,6 +56,7 @@ MonoBehaviour:
         yPos: 0
         width: 680
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: cca5025e955bf9647992b7849a000067,
         type: 2}
@@ -67,6 +69,7 @@ MonoBehaviour:
         yPos: 0
         width: 680
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: cca5025e955bf9647992b7849a000067,
         type: 2}
@@ -79,10 +82,11 @@ MonoBehaviour:
         yPos: 0
         width: 680
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: cca5025e955bf9647992b7849a000067,
         type: 2}
-      Text: 'NOTE: You may now find your home on the city map.  Zenith Jill Estate
+      Text: 'NOTE: You may now find your home on the city map.  Zenith Hill Estate
         sits in the city''s most valuable real estate, wooded acres surrounded by
         the towers and mansions of the elite.  You''ll find it scant blocks away
         from the Metropolitan Club.'
@@ -94,13 +98,16 @@ MonoBehaviour:
         yPos: 0
         width: 680
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Finally, a home worthy of it's owner
       Videos:
       - {fileID: 32900000, guid: 519fbd61d1cec7c4ca84c53d67171bc9, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: Your home, your estate, your mansion-- congratulations, you've arrived
         at last.
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 60
@@ -118,6 +125,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -126,11 +134,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 8
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -148,6 +158,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -156,5 +167,6 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
   New: 1

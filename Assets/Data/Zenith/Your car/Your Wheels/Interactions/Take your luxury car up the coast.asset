@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 6d68c94c-ab15-4057-87d6-a4cb731a325e
   Name: Take your luxury car up the coast
+  SubInteraction: 0
   AlertNew: 1
   Category: 6
   Requirements:
@@ -31,14 +32,14 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 10
+    EgoCost: 0
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 1
   PreviewEffect: 1
   Result:
@@ -54,16 +55,20 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.5
         width: 200
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Nothing substitutes for the experience of...
       Videos:
       - {fileID: 32900000, guid: 9593c950762c21045ac2d77b2a14d59b, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: ...pure acceleration as your pulsing prestige vehicle speeds you in parallel
         to the ocean!
+    Choices: []
     Effect:
       NpcEffects: []
-      EgoEffect: 0
+      EgoEffect: 10
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -78,6 +83,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -86,11 +92,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -108,6 +116,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -116,5 +125,6 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
   New: 1

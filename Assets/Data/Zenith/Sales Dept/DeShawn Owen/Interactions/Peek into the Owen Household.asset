@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 85284fa3-70c0-4758-86e8-4f4718ee763d
   Name: Peek into the Owen Household
+  SubInteraction: 0
   AlertNew: 1
   Category: 7
   Requirements:
@@ -39,7 +40,7 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 1
   PreviewEffect: 1
   Result:
@@ -68,12 +69,14 @@ MonoBehaviour:
       - {fileID: 32900000, guid: 5913889670fb5164089a285c8d31dace, type: 3}
       - {fileID: 32900000, guid: 53d38b0d009e8b041b9570cba1f4503a, type: 3}
       - {fileID: 32900000, guid: 56c8d37475124ad41b9b482f8e6b4be7, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: ...the videos of Sydney Fitzgerald's never ending training at the hands
-        pf her new Trustee DeShawn Owen are exhilarating and impressive.  It's a
+        of her new Trustee DeShawn Owen are exhilarating and impressive.  It's a
         vicarious thrill every time you check in on the unlikely pair.  There's no
         doubt the troubled, spoiled and pampered princess has been broken by her
         new Legal Guardian!
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 7
@@ -92,6 +95,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -100,11 +104,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -122,6 +128,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -130,5 +137,6 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
   New: 1
