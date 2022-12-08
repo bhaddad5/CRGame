@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: f6efc741-52eb-4434-a23a-02b5b17f8d52
   Name: Debbie's first date with Katie
+  SubInteraction: 0
   AlertNew: 1
   Category: 2
   Requirements:
@@ -24,6 +25,7 @@ MonoBehaviour:
     RequiredInteractions:
     - {fileID: 11400000, guid: bce435905eda62f4d99d0f5b098528b0, type: 2}
     - {fileID: 11400000, guid: 35fa226f9f6345b448e95d07b8e1a559, type: 2}
+    - {fileID: 11400000, guid: 6af9b4aeb1b96004aa69f1aea09f0c3f, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -41,7 +43,7 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -60,6 +62,7 @@ MonoBehaviour:
         width: 375
       OptionalAudioClip: {fileID: 8300000, guid: 85b3d56a6b187a244bb7c1607b131154,
         type: 3}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -75,6 +78,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -90,6 +94,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -103,6 +108,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -116,6 +122,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -128,6 +135,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: f7a3898e350f7a84499562b0ca5a5a4b,
         type: 2}
@@ -140,6 +148,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: f7a3898e350f7a84499562b0ca5a5a4b,
         type: 2}
@@ -152,11 +161,13 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: You are the director and...
       Videos:
       - {fileID: 32900000, guid: fab0534dffe44fd4ab8a2da2b1100b1e, type: 3}
       Textures: []
+      DialogClips: []
       Text: ...give the Jones sisters their cues.  You begin with a long, sloppy
         lesbian make out session.  You make them perform for an hour, by which time
         you judge they are ready for the next stage.
@@ -164,6 +175,7 @@ MonoBehaviour:
       Videos:
       - {fileID: 32900000, guid: 08af21405ffe18f409aa4aedd5603b75, type: 3}
       Textures: []
+      DialogClips: []
       Text: ...before positioning themselves for a frantic tribbing that lasts another
         sixty minutes.  The mix of exhaustion, shame and lust on both their faces
         is your reward.  Are those tears as well?  Perhaps.
@@ -171,11 +183,13 @@ MonoBehaviour:
       Videos:
       - {fileID: 32900000, guid: b3827df91e1a3eb48923e587fde076ba, type: 3}
       Textures: []
+      DialogClips: []
       Text: ...position themselves for the ultimate act of mutual degradation.  You
         record their shameful sapphic sucking for future viewing.  Debbie and Katie
         sixtynine for another hour, long after they've both achieved their taboo
         orgasms, just because you want to watch.  You've achieved a carnal triumph
         to savour for many years to come.
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 200
@@ -194,6 +208,7 @@ MonoBehaviour:
       TrophiesClaimedReferences:
       - {fileID: 11400000, guid: 4c52d2997372fd44ab8a640ec250cf09, type: 2}
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -202,11 +217,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -224,6 +241,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -232,5 +250,6 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
   New: 1

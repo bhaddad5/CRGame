@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: a768762c-8a58-490b-b491-f2729f335117
   Name: Jayme's misuse of company equipment
+  SubInteraction: 0
   AlertNew: 1
   Category: 0
   Requirements:
@@ -39,51 +40,56 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
-    Items: 
+    Items: []
   Repeatable: 0
   PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 02285d513a8a80346bd5fceb01f05d8b,
+        type: 2}
       Text: Jayme, I've just come out of an emergency meeting in HR.  I'm afraid
-        the subject was you.  Indira notified me that some... rather lurid content
+        the subject was you. Technology notified me that some... rather lurid content
         was detected on your computer.  We were forced to review what was found. 
         Frankly, we were all shocked.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: c610e6c1edf21c24bb89e05553d0eae7,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.3
+        yPos: 0.4
+        width: 300
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 8300000, guid: afc7ff982809e08459a723ec559d5bd2,
         type: 3}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 02285d513a8a80346bd5fceb01f05d8b,
+        type: 2}
       Text: W-what?  W-what did you find-- on my computer?  I don't--
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: c610e6c1edf21c24bb89e05553d0eae7,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.3
+        yPos: 0.4
+        width: 300
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 02285d513a8a80346bd5fceb01f05d8b,
+        type: 2}
       Text: "Jayme, we're all aware of your... sexual preference.  But that doesn't
         mean you're allowed to use company equipment to indulge yourself!  I'd have
         thought as a social media professional, this would have been obvious!  And
         my goodness if you aren't into some rather outr\xE9 sexual deviations!  The
         material was disgusting!"
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: c610e6c1edf21c24bb89e05553d0eae7,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.3
+        yPos: 0.4
+        width: 300
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
@@ -95,9 +101,11 @@ MonoBehaviour:
       Text: ...that she's been the focus of an HR meeting as she is horrified by
         the planted porn.  She's stunned as she learns she's been officially reprimanded
         and that filters will now be placed on all her company equipment!
+    Choices: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 02285d513a8a80346bd5fceb01f05d8b,
+          type: 2}
         AmbitionEffect: -20
         PrideEffect: 0
       EgoEffect: 0
@@ -115,8 +123,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -125,11 +132,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -147,8 +156,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -157,5 +165,6 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
   New: 1
