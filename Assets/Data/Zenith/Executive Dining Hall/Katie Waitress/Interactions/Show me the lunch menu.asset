@@ -1,0 +1,174 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: Show me the lunch menu
+  m_EditorClassIdentifier: 
+  Id: e3c1fb33-9d62-4d44-a3e9-2af9212efeaa
+  Name: Show me the lunch menu
+  SubInteraction: 0
+  AlertNew: 1
+  Category: 6
+  Requirements:
+    RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
+    NpcStatRequirements: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: a13be8e79ad38f64e8185326e2ae8bef, type: 2}
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredNpcsControled: []
+    RequiredNpcsTrained: []
+    RequiredNpcsNotControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 0
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    Items: []
+  Repeatable: 1
+  PreviewEffect: 0
+  Result:
+    Dialogs:
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 532f58f85b2abd84cb0d657a4fa3cec2,
+        type: 2}
+      Text: The lunch menu, Katie.  This will be a working lunch with one of my inner
+        circle.  You'll keep the surrounding tables empty while we're eating.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f0bf6d1683bf9aa4faaa11a2eb7effbf,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.7
+        yPos: 0.4
+        width: 500
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 532f58f85b2abd84cb0d657a4fa3cec2,
+        type: 2}
+      Text: Very good Sir!  Shall I bring your guest over to your table when they
+        arrive or shall I announce them first?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f0bf6d1683bf9aa4faaa11a2eb7effbf,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.7
+        yPos: 0.4
+        width: 500
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 532f58f85b2abd84cb0d657a4fa3cec2,
+        type: 2}
+      Text: Just bring them over, Katie.  And no flirting with them either-- or I'll
+        send you to the Motivation Room.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f0bf6d1683bf9aa4faaa11a2eb7effbf,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.7
+        yPos: 0.4
+        width: 500
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 532f58f85b2abd84cb0d657a4fa3cec2,
+        type: 2}
+      Text: No, Mr. {LastName}!  Never!  Promise!  I'm a good girl!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f0bf6d1683bf9aa4faaa11a2eb7effbf,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.7
+        yPos: 0.4
+        width: 500
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: Given your tigtht scheddule...
+      Videos:
+      - {fileID: 32900000, guid: dcc3aa1d77fd75e40a9e99f7297646d7, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: ...you often have no choice but to have Debbie schedule working lunches
+        with your top lieutenants, just to keep up with the latest from your key
+        departments!
+    Choices:
+    - {fileID: 11400000, guid: 45e7e4bcc6af07b4198457df6a7748a4, type: 2}
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
+  FailureResult:
+    Dialogs: []
+    OptionalPopups: []
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  Completed: 0
+  New: 1
