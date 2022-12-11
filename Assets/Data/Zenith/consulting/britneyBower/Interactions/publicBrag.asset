@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: e5ed7398-d374-4f19-b1ef-2fcf81afa131
   Name: Brag about how easy she is in public
+  SubInteraction: 0
+  AlertNew: 1
   Category: 5
   Requirements:
     RequiredPower: 0
@@ -42,7 +44,7 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -58,6 +60,8 @@ MonoBehaviour:
         xPos: 0.35
         yPos: 0.45
         width: 380
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
         type: 2}
@@ -69,6 +73,8 @@ MonoBehaviour:
         xPos: 0.35
         yPos: 0.45
         width: 380
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
         type: 2}
@@ -80,6 +86,8 @@ MonoBehaviour:
         xPos: 0.35
         yPos: 0.45
         width: 380
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
         type: 2}
@@ -92,12 +100,17 @@ MonoBehaviour:
         xPos: 0.35
         yPos: 0.45
         width: 380
+      OptionalAudioClip: {fileID: 8300000, guid: 0bfa5401539524e46aea48c5c4636da8,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Britney's got a reputation now...
       Videos:
       - {fileID: 32900000, guid: 55be277450bc3754fad766c6d56810dc, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: ...she's {FirstName} {LastName}'s slut.  You never deny it.
+    Choices: []
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
@@ -119,6 +132,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -126,11 +140,14 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -148,6 +165,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -155,4 +173,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  New: 1

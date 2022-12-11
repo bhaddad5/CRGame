@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 57d0f13a-e1de-4265-a5d2-f699fee61d8b
   Name: BJ from Britney
+  SubInteraction: 0
   AlertNew: 1
   Category: 6
   Requirements:
@@ -43,7 +44,7 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 1
   PreviewEffect: 1
   Result:
@@ -59,6 +60,8 @@ MonoBehaviour:
         xPos: 0.35
         yPos: 0.45
         width: 380
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
         type: 2}
@@ -70,6 +73,8 @@ MonoBehaviour:
         xPos: 0.35
         yPos: 0.45
         width: 380
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
         type: 2}
@@ -81,6 +86,8 @@ MonoBehaviour:
         xPos: 0.35
         yPos: 0.45
         width: 380
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
         type: 2}
@@ -92,15 +99,20 @@ MonoBehaviour:
         xPos: 0.35
         yPos: 0.45
         width: 380
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: '"You''re a better cocksucker than receptionist."'
       Videos:
       - {fileID: 32900000, guid: 4e30d0cb49c006a45bf5c525b7dd9cc1, type: 3}
       - {fileID: 32900000, guid: ab4920e275bb528449b1c23c36799b4f, type: 3}
       - {fileID: 32900000, guid: 55be277450bc3754fad766c6d56810dc, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: 49b65bdb87765f3418392f594277c285, type: 3}
       Text: She no longer thinks you have any respect for her-- or ever did, for
         that matter.
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 7
@@ -118,6 +130,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -126,11 +139,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -148,6 +163,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -156,5 +172,6 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
   New: 1

@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: bbeedbd0-73d0-4736-9b43-3c6f8ee8c7e9
   Name: Is that a new suit?
+  SubInteraction: 0
   AlertNew: 1
   Category: 1
   Requirements:
@@ -38,8 +39,7 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
-    Items: 
+    Items: []
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -83,7 +83,8 @@ MonoBehaviour:
         xPos: 0.35
         yPos: 0.45
         width: 380
-      OptionalAudioClip: {fileID: 0}
+      OptionalAudioClip: {fileID: 8300000, guid: 86a646c64d76feb42a8f9f4545918dac,
+        type: 3}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
@@ -105,6 +106,7 @@ MonoBehaviour:
       Textures: []
       DialogClips: []
       Text: ...every girl's crazy 'bout a sharp dressed man!
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 5
@@ -122,8 +124,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -132,11 +133,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -154,8 +157,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -164,5 +166,6 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
   New: 1

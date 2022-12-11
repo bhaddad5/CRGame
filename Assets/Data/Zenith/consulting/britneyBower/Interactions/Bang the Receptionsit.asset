@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: b1e0f412-d52c-4ad5-bcc6-99a339e4a6f0
   Name: Bang the Receptionist
+  SubInteraction: 0
   AlertNew: 1
   Category: 6
   Requirements:
@@ -44,8 +45,7 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
-    Items: 
+    Items: []
   Repeatable: 1
   PreviewEffect: 1
   Result:
@@ -101,7 +101,8 @@ MonoBehaviour:
         xPos: 0.35
         yPos: 0.45
         width: 380
-      OptionalAudioClip: {fileID: 0}
+      OptionalAudioClip: {fileID: 8300000, guid: 365db2a5cec3aab46b47149d9a1ff9aa,
+        type: 3}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Britney's barely worth banging
@@ -111,6 +112,7 @@ MonoBehaviour:
       DialogClips:
       - {fileID: 8300000, guid: 209f4e668fb2c54469bb740d2fdb9ad1, type: 3}
       Text: She's so easy it takes all the fun out of it.
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 10
@@ -128,8 +130,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -138,11 +139,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -160,8 +163,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -170,5 +172,6 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
   New: 1

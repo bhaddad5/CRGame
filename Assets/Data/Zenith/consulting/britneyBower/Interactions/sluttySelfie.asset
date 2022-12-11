@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 8566a8cf-28ae-436e-a7b6-0af5f53de96d
   Name: Insist she send you a slutty selfie
+  SubInteraction: 0
   AlertNew: 1
   Category: 5
   Requirements:
@@ -38,8 +39,7 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
-    Items: 
+    Items: []
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -95,7 +95,8 @@ MonoBehaviour:
         xPos: 0.35
         yPos: 0.45
         width: 380
-      OptionalAudioClip: {fileID: 0}
+      OptionalAudioClip: {fileID: 8300000, guid: 37f471e25e6537f4084ddb979f469f4b,
+        type: 3}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Brit's so desperate...
@@ -105,6 +106,7 @@ MonoBehaviour:
       DialogClips:
       - {fileID: 8300000, guid: f819296747826654baf49e49399ecc7e, type: 3}
       Text: She's like a dog who needs a master, whether he is kind to her or not.
+    Choices: []
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
@@ -126,8 +128,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -136,11 +137,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -158,8 +161,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -168,5 +170,6 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
   New: 1

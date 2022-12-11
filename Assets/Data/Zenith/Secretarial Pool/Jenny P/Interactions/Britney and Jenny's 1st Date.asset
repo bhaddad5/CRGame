@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: d2ba329c-f1a6-46ec-8d0b-25a7d1e3754f
   Name: Britney and Jenny's 1st Date
+  SubInteraction: 0
   AlertNew: 1
   Category: 5
   Requirements:
@@ -39,7 +40,7 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -54,6 +55,7 @@ MonoBehaviour:
         yPos: 0
         width: 0
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
         type: 2}
@@ -67,6 +69,7 @@ MonoBehaviour:
         yPos: 0
         width: 0
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
         type: 2}
@@ -78,6 +81,7 @@ MonoBehaviour:
         yPos: 0
         width: 0
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
         type: 2}
@@ -91,13 +95,17 @@ MonoBehaviour:
         yPos: 0
         width: 0
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Jenny seems to be doing her...
       Videos:
       - {fileID: 32900000, guid: dac17b202c8b6894b9774f72be7fdf31, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: 4416887b3a7b0be4ab08d78fa816e787, type: 3}
       Text: ...best to bewitch the younger girl and is at least mimicking a kind
         of passion for the Receptionist.
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 10
@@ -115,6 +123,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -123,11 +132,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -145,6 +156,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -153,5 +165,6 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
   New: 1

@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: acaeae47-a62b-4847-a616-f30ef209f0ab
   Name: Bikini Modeling
+  SubInteraction: 0
+  AlertNew: 1
   Category: 6
   Requirements:
     RequiredPower: 0
@@ -43,7 +45,7 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -61,6 +63,8 @@ MonoBehaviour:
         xPos: 0.35
         yPos: 0.45
         width: 380
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
         type: 2}
@@ -73,6 +77,8 @@ MonoBehaviour:
         xPos: 0.35
         yPos: 0.45
         width: 380
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
         type: 2}
@@ -85,6 +91,8 @@ MonoBehaviour:
         xPos: 0.35
         yPos: 0.45
         width: 380
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
         type: 2}
@@ -97,7 +105,11 @@ MonoBehaviour:
         xPos: 0.35
         yPos: 0.45
         width: 380
+      OptionalAudioClip: {fileID: 8300000, guid: 8845031deb7c0394288367167601dc0c,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
@@ -119,6 +131,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -126,11 +139,14 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -148,6 +164,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -155,4 +172,7 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  New: 1

@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 2ab27117-0d5a-4b71-9478-56251d22f590
   Name: Misplace mail for Deborah
+  SubInteraction: 0
   AlertNew: 1
   Category: 4
   Requirements:
@@ -39,7 +40,7 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -56,6 +57,7 @@ MonoBehaviour:
         yPos: 0.45
         width: 380
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
         type: 2}
@@ -67,7 +69,9 @@ MonoBehaviour:
         xPos: 0.35
         yPos: 0.45
         width: 380
-      OptionalAudioClip: {fileID: 0}
+      OptionalAudioClip: {fileID: 8300000, guid: fa3a43d27defed84d9b049cc17ea5abd,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
         type: 2}
@@ -80,6 +84,7 @@ MonoBehaviour:
         yPos: 0.45
         width: 380
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
         type: 2}
@@ -92,6 +97,7 @@ MonoBehaviour:
         yPos: 0.45
         width: 380
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
         type: 2}
@@ -104,12 +110,13 @@ MonoBehaviour:
         yPos: 0.45
         width: 380
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Misplace Deborah's mail
       Videos:
       - {fileID: 32900000, guid: afc7fe5ebfe20234492d87c2a516b59d, type: 3}
       Textures: []
-      Texture: {fileID: 0}
+      DialogClips: []
       Text: 'Britney seems more than happy to do something that would inconvenience
         Deborah.  It seems no one in CSG, other than Susan, has much affection for
         the self-important Management Trainee... '
@@ -117,9 +124,10 @@ MonoBehaviour:
       Videos: []
       Textures:
       - {fileID: 2800000, guid: a4807aafcf356d24f8e16ef8f3d96f07, type: 3}
-      Texture: {fileID: 2800000, guid: a4807aafcf356d24f8e16ef8f3d96f07, type: 3}
+      DialogClips: []
       Text: Leave this with me, Brit.  I'll give it to Ms. Jones myself-- I'll just
         tell her I received it by accident.
+    Choices: []
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
@@ -141,6 +149,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -149,11 +158,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -171,6 +182,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -179,5 +191,6 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
   New: 1

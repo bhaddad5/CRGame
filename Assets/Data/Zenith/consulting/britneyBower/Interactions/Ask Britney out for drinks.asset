@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 2d4d0e99-271b-49ab-bae8-ad10967d2ce8
   Name: Ask Britney out for drinks
+  SubInteraction: 0
   AlertNew: 1
   Category: 3
   Requirements:
@@ -44,8 +45,7 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
-    Items: 
+    Items: []
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -100,7 +100,8 @@ MonoBehaviour:
         xPos: 0.35
         yPos: 0.45
         width: 380
-      OptionalAudioClip: {fileID: 0}
+      OptionalAudioClip: {fileID: 8300000, guid: 9ba1f9b44ce47b04db2745d3dd6781d0,
+        type: 3}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: '"I feel kind of dizzy!"'
@@ -115,7 +116,8 @@ MonoBehaviour:
       Videos:
       - {fileID: 32900000, guid: 2b2b229bd36ccbc4094df38535b817c8, type: 3}
       Textures: []
-      DialogClips: []
+      DialogClips:
+      - {fileID: 8300000, guid: c7b00643714c5d84290a444bf64a8480, type: 3}
       Text: There's no way you're spending any more time here than you need to. 
         But then, she is pretty drunk and awkwardly coming on to you.  You may as
         well take advantage of the situation.
@@ -123,10 +125,12 @@ MonoBehaviour:
       Videos:
       - {fileID: 32900000, guid: eccc2bb1bddf23244863abce6cdb9fa1, type: 3}
       Textures: []
-      DialogClips: []
+      DialogClips:
+      - {fileID: 8300000, guid: 387d06e479c01e8418f2b9bd6b7d7dee, type: 3}
       Text: ...as a way to thank you for such a fun time, and yes, it was your suggestion. 
         While she cleans herself up, you decide to look through her drawers, select
         a trophy and leave- before you have to have a conversation with her.
+    Choices: []
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
@@ -149,8 +153,7 @@ MonoBehaviour:
       TrophiesClaimedReferences:
       - {fileID: 11400000, guid: 38d985a02b240e04298d79c1c734c16e, type: 2}
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -159,11 +162,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -181,8 +186,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -191,5 +195,6 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
   New: 1

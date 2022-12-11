@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 1f9da76c-ea2c-418f-9a3a-bf9226baeafc
   Name: Ass2Mouth
+  SubInteraction: 0
   AlertNew: 1
   Category: 6
   Requirements:
@@ -38,7 +39,7 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 1
   PreviewEffect: 1
   Result:
@@ -59,6 +60,9 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.32
         width: 300
+      OptionalAudioClip: {fileID: 8300000, guid: c65cd9f2e334873469e47267d2415469,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: '"You like your new job Brit?"'
       Videos:
@@ -66,8 +70,10 @@ MonoBehaviour:
       - {fileID: 32900000, guid: 6fbfe2d03ff5f8a4aad0917811d909ca, type: 3}
       - {fileID: 32900000, guid: faac59bc25b2bb74aa9ae710ff2d4db2, type: 3}
       - {fileID: 32900000, guid: 2b34ee42830488a4f950169ca8a76019, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: She's gotten better at fucking since you fired her.  She's had to!
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 13
@@ -85,6 +91,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -93,11 +100,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -115,6 +124,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -123,5 +133,6 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
   New: 1
