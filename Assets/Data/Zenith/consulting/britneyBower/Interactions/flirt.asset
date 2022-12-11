@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 1c7566f7-6878-4a01-b2fd-7009f33bf0d9
   Name: 'Flirt '
+  SubInteraction: 0
   AlertNew: 1
   Category: 3
   Requirements:
@@ -45,8 +46,7 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
-    Items: 
+    Items: []
   Repeatable: 0
   PreviewEffect: 1
   Result:
@@ -128,7 +128,8 @@ MonoBehaviour:
         xPos: 0.35
         yPos: 0.45
         width: 380
-      OptionalAudioClip: {fileID: 0}
+      OptionalAudioClip: {fileID: 8300000, guid: e159e4b78ed042547998e5b65a1b6e64,
+        type: 3}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: It is obvious she's hot for you...
@@ -140,6 +141,7 @@ MonoBehaviour:
       Text: You can feel her resistance starting to melt.  She'll be an easy conquest
         if you continue to pay attention to her...and then you can use her for your
         own plans.
+    Choices: []
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
@@ -161,8 +163,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -171,6 +172,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 1
   ProbabilityOfFailureResult: 0.25
   FailureResult:
@@ -240,7 +242,8 @@ MonoBehaviour:
         yPos: 0.45
         width: 380
       OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 8300000, guid: e5c08d28476b35d45b38b2af758883b3,
+        type: 3}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
         type: 2}
@@ -263,6 +266,7 @@ MonoBehaviour:
       DialogClips: []
       Text: Of course, you must acknowledge your 'inappropriate behavior' and apologize
         to a delighted Britney.
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: -5
@@ -280,8 +284,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -290,5 +293,6 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
   New: 1
