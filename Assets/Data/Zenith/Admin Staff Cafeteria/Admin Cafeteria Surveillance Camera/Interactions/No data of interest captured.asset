@@ -10,22 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Pills
+  m_Name: No data of interest captured
   m_EditorClassIdentifier: 
-  Id: 6d136a69-d1e2-4662-a030-9be4630047df
-  Name: Pills
-  SubInteraction: 0
+  Id: 81a31887-0b3c-4229-8d18-9e1c3cb59b2f
+  Name: No data of interest captured
+  SubInteraction: 1
   AlertNew: 1
-  Category: 3
+  Category: 7
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NpcStatRequirements: []
-    RequiredInteractions:
-    - {fileID: 11400000, guid: c27ce3f1902013643baea0f7a8ba2f56, type: 2}
-    RequiredNotCompletedInteractions:
-    - {fileID: 11400000, guid: 70068b827299d384aab22612cb562754, type: 2}
+    RequiredInteractions: []
+    RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -41,65 +39,25 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 0
-  PreviewEffect: 1
+  Repeatable: 1
+  PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: a40ca6f122f02104c95b957d3df7a8a0,
-        type: 2}
-      Text: Hi, Maddy!  How's she going, Charlie?
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: 'NOTE: Nothing of interest captured'
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 371197f8242f61c40a9a0ccedaeb75ab,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.4
-        width: 350
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 2447b5794cc10d448b75441484c22173,
-        type: 2}
-      Text: What are you trying now, Maddy?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 371197f8242f61c40a9a0ccedaeb75ab,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.4
-        width: 350
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: a40ca6f122f02104c95b957d3df7a8a0,
-        type: 2}
-      Text: Bust Boom, Mr. Chase!  It's an all natural herbal.  The reviews are very
-        encouraging, Sir!  I bet you'll see some improvement any day!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 371197f8242f61c40a9a0ccedaeb75ab,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.4
-        width: 350
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups:
-    - Title: Charlie snickers and...
-      Videos: []
-      Textures:
-      - {fileID: 2800000, guid: 301d77272ccaca4448ea78569bcdbdf6, type: 3}
-      DialogClips: []
-      Text: ...just shrugs.  Madison's trying anything she can think of to meet his
-        demands!
+    OptionalPopups: []
     Choices: []
     Effect:
-      NpcEffects:
-      - OptionalNpcReference: {fileID: 11400000, guid: a40ca6f122f02104c95b957d3df7a8a0,
-          type: 2}
-        AmbitionEffect: -10
-        PrideEffect: 0
+      NpcEffects: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
