@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 559cb4c4-e6ca-4ce0-8083-01931104df3b
   Name: Dorm games for Debbie
+  SubInteraction: 0
   AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 7145bb3284653c346b6edbdb44800b66, type: 2}
@@ -39,8 +42,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 1
+  Cooldown: 3
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -58,6 +62,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -72,11 +77,13 @@ MonoBehaviour:
         width: 375
       OptionalAudioClip: {fileID: 8300000, guid: c0966d04f42ea6641b831ed0b1f5de44,
         type: 3}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: The games you send over...
       Videos: []
       Textures:
       - {fileID: 2800000, guid: 6725ed1ccd39e7d4e93665099c58d8bf, type: 3}
+      DialogClips: []
       Text: ...are studiously unopened and ignored... at first.  But eventually,
         Debbie and her dormmates can't resist and they begin to fight weekend boredom
         by playing the games you had delivered.
@@ -86,8 +93,10 @@ MonoBehaviour:
       - {fileID: 32900000, guid: 0f1d21c39551f8d4b96c93b790cd6df3, type: 3}
       - {fileID: 32900000, guid: c6c1576427aa7914d8ea016d48a5991b, type: 3}
       Textures: []
+      DialogClips: []
       Text: ...to the innocent-- and not so innocent-- fun going on in the Secretarial
         Dorm now.  It's all available on the Exectranet for their viewing pleasure!
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 10
@@ -105,6 +114,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -113,11 +123,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -135,6 +147,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -143,5 +156,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
