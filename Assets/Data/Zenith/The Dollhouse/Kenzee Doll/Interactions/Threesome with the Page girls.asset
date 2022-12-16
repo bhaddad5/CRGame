@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 75a41e70-e101-49a6-b678-ee093ca5b5a9
   Name: Threesome with the Page girls
+  SubInteraction: 0
   AlertNew: 1
   Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
@@ -37,8 +40,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 1
+  Cooldown: 4
   PreviewEffect: 1
   Result:
     Dialogs: []
@@ -48,10 +52,12 @@ MonoBehaviour:
       - {fileID: 32900000, guid: aa5b22f6118a2d842b2241e81efdca00, type: 3}
       - {fileID: 32900000, guid: d884750ffa4e90f42b6d5378d1bd3920, type: 3}
       - {fileID: 32900000, guid: e8f58cef2746cd94a8e362ffd00498ba, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: ...that you're the only 'client' who is allowed to enjoy the mother and
         daughter together.  It's a pleasure you reserve to yourself-- let others
         find and train their own mother-daughter teams!
+    Choices: []
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: 141b44f8872c8974d952509691bede0f,
@@ -77,6 +83,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -85,11 +92,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -107,6 +116,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -115,5 +125,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1

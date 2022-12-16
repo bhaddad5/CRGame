@@ -14,14 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: fcade74f-b126-4858-b38f-8289324dc3c1
   Name: Lexi Traci Watch Party
+  SubInteraction: 0
   AlertNew: 1
   Category: 6
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
+    - OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
       Stat: 0
       Is: 0
       Value: 0
@@ -44,32 +48,39 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 1
+  Cooldown: 4
   PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
       Text: 'NOTE: Debbie hands you the note with an arch and superior little smirk. 
         It''s a reminder of a Lexi heater with her new "work wife" Traci B.  While
         you can''t attend in person, you can easily access the session remotely,
         which you do for a few minutes.'
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: ad91f859a37b1f6499909a7d9ac22261,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.55
+        yPos: 0.4
+        width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: The adulterous office affair...
       Videos:
       - {fileID: 32900000, guid: 42cee55f7320905469baf66f8994fdd1, type: 3}
       - {fileID: 32900000, guid: 30e6c997f1e3a8748a976cb63ebc0c1e, type: 3}
       - {fileID: 32900000, guid: e00be04ee5e941540a587b8105e0aea5, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: ...between the Office Manager and her former superior is cause for frequent
         comment and jokes among the new executive hires.
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 10
@@ -87,6 +98,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -95,11 +107,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -117,6 +131,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -125,5 +140,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1

@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: dd256a3a-29c7-4904-8f8f-23b63fb95052
   Name: Play with your toys, Tracey
+  SubInteraction: 0
   AlertNew: 1
   Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
@@ -38,23 +41,29 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 1
+  Cooldown: 2
   PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 953fdaa61df0d874096f67b62bdff83f,
+        type: 2}
       Text: You've been such a good girl, Tracey.  You deserve a reward.  Would you
         like to go play with one of your toys?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 2eab091c1b8903840ae9023cf8e9d6cd,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 953fdaa61df0d874096f67b62bdff83f,
+        type: 2}
       Text: If you think I should, My Dearest.
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: feb82ea66f7757e4f885464dfdda2aed, type: 3}
@@ -64,11 +73,14 @@ MonoBehaviour:
       - {fileID: 2800000, guid: 6579fd57ff9a7ac4db27a05a080832a3, type: 3}
       - {fileID: 2800000, guid: cd24b8e6a96b5ad4cbfed54e7a11ecce, type: 3}
       - {fileID: 2800000, guid: f4e17645af62139449d68dbf903fad41, type: 3}
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 2eab091c1b8903840ae9023cf8e9d6cd,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Tracey might hate exposing herself...
       Videos:
@@ -77,9 +89,11 @@ MonoBehaviour:
       - {fileID: 32900000, guid: 051cb229d477f704585083deadf5cea1, type: 3}
       - {fileID: 32900000, guid: a5c929b1e153d41438bffdef3129eed3, type: 3}
       - {fileID: 32900000, guid: ba56e5fef5d28d742b6ce570c32ec5f8, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: '...this way, but if it pleases her husband, a trophy wife is willing
         to do whatever it takes. '
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 15
@@ -97,6 +111,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -105,11 +120,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -127,6 +144,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -135,5 +153,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1

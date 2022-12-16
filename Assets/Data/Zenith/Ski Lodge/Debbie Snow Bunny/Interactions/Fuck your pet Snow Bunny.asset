@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: e4c85128-549c-4328-bd08-97076296dacd
   Name: Fuck your pet Snow Bunny
+  SubInteraction: 0
   AlertNew: 1
   Category: 6
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
@@ -37,8 +40,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 1
+  Cooldown: 2
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -54,6 +58,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 325
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 0c138b1c8fa3a9547ad724d77d7c22f0,
         type: 2}
@@ -67,6 +72,7 @@ MonoBehaviour:
         width: 325
       OptionalAudioClip: {fileID: 8300000, guid: e4adcbf94fd476d46bd27da4ad47debe,
         type: 3}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Debbie's less inhibited than...
       Videos:
@@ -76,8 +82,10 @@ MonoBehaviour:
       - {fileID: 32900000, guid: 4487c749d14fad74c98a584da32f607f, type: 3}
       - {fileID: 32900000, guid: bce466104d4c7ee45a2110d565303756, type: 3}
       Textures: []
+      DialogClips: []
       Text: ...she normally is in the office. She submits more quickly and with more
         enthusiasm in the cold, whipping wind and freezing snow and ice!
+    Choices: []
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
@@ -99,6 +107,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -107,11 +116,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -129,6 +140,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -137,5 +149,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1

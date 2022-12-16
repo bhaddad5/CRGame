@@ -21,6 +21,8 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 9
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
@@ -39,36 +41,40 @@ MonoBehaviour:
     PatentsCost: 2
     BrandCost: 2
     RevanueCost: 2
-    HornicalCost: 0
     Items: []
   Repeatable: 1
+  Cooldown: 10
   PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: e824e839d0b9719409dc7942822791c4,
+        type: 2}
       Text: How does this Lesbinitol work again David?  Does it really turn straight
         women gay?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 0cfc0bf2b9b5fe8418cc4c3bd0caceb4,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.4
+        yPos: 0.42
+        width: 375
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: e824e839d0b9719409dc7942822791c4,
+        type: 2}
       Text: 'Hardly.  That said, it can instill an involuntary response which IS
         homosexual in nature.  It''s like a pregnant woman who suddenly finds herself
         craving for pickles and ice cream.  She knows it isn''t ''normal'' but it
         is beyond her control.  '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 0cfc0bf2b9b5fe8418cc4c3bd0caceb4,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.4
+        yPos: 0.42
+        width: 375
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
@@ -107,7 +113,6 @@ MonoBehaviour:
       MissionsToComplete: []
       ItemsToAdd:
       - {fileID: 11400000, guid: aea150d68b41794479e7d04c7aa437ed, type: 2}
-      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -116,6 +121,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -140,7 +146,6 @@ MonoBehaviour:
       TrophiesClaimedReferences: []
       MissionsToComplete: []
       ItemsToAdd: []
-      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -149,5 +154,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1

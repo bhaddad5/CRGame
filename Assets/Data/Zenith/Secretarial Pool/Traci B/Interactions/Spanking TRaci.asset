@@ -14,14 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 8abf8de8-d8c6-4145-8d45-c5da696e194a
   Name: Spanking Traci
+  SubInteraction: 0
   AlertNew: 1
   Category: 6
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
+    - OptionalNpcReference: {fileID: 11400000, guid: 6affcc7af4c14d34a9b976af0e468a1e,
+        type: 2}
       Stat: 0
       Is: 0
       Value: 0
@@ -41,31 +45,38 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 1
+  Cooldown: 3
   PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 6affcc7af4c14d34a9b976af0e468a1e,
+        type: 2}
       Text: 'NOTE: Now that Traci''s been subdued, there''s no reason not to indulge
         yourself.  Even the most efficient and compliant Office Girl always has some
         demerit on her record.  After insisting she apologize, you administer some
         spanking justice for the humbled former senior corporate executive.'
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: ad91f859a37b1f6499909a7d9ac22261,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.5
+        width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Punishing Traci is simply her...
       Videos:
       - {fileID: 32900000, guid: 8de1b18741ae5a9479fd28ea40d56f3d, type: 3}
       - {fileID: 32900000, guid: 4d817eea805fe7e448cf2acf96687347, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: ...getting her just desserts, after having been dethroned by her one
         time subordinate!
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 7
@@ -83,6 +94,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -91,11 +103,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -113,6 +127,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -121,5 +136,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1

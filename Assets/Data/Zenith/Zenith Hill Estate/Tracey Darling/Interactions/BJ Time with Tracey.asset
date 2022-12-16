@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 63ebad60-e450-4963-8170-6b3a4947ba22
   Name: BJ Time with Tracey
+  SubInteraction: 0
   AlertNew: 1
   Category: 6
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
@@ -38,8 +41,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 1
+  Cooldown: 3
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -54,6 +58,8 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Spontaneity is part of training...
       Videos:
@@ -62,14 +68,17 @@ MonoBehaviour:
       - {fileID: 32900000, guid: 129f7b96be7800d43a3aedd41336cbf2, type: 3}
       - {fileID: 32900000, guid: 2804f496cbe11b64da475769902bb225, type: 3}
       - {fileID: 32900000, guid: a169593f4dc5423409bacdc0bce43b1a, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: '...your trophy wife.  Whether it is first thing in the morning or right
         before you''re ready to attend a formal party, training Tracey to blow you
         on command is crucial.  Her mood or level of motivation is totally irrelevant! 
         Tracey must suck cock on command.  '
+    Choices: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 953fdaa61df0d874096f67b62bdff83f,
+          type: 2}
         AmbitionEffect: 0
         PrideEffect: -5
       EgoEffect: 15
@@ -87,6 +96,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -95,11 +105,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -117,6 +129,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -125,5 +138,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
