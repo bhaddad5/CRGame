@@ -21,6 +21,8 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 1
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
@@ -40,6 +42,7 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 0
   Result:
     Dialogs:
@@ -48,10 +51,11 @@ MonoBehaviour:
         type: 2}
       Text: Josie!  Pizza Day-- cool, right?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.3
-        yPos: 0.5
+        xPos: 0.5
+        yPos: 0.3
         width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
@@ -62,10 +66,11 @@ MonoBehaviour:
         and I aren't getting along, right?  It's pretty bad now and she's made a
         formal complaint against me with Dr. E.  I'm so screwed.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.3
-        yPos: 0.5
+        xPos: 0.5
+        yPos: 0.3
         width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
@@ -75,10 +80,11 @@ MonoBehaviour:
       Text: That sucks, Josie.  But what's this got to do with me?  I don't have
         anything to do with Blair!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.3
-        yPos: 0.5
+        xPos: 0.5
+        yPos: 0.3
         width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
@@ -89,10 +95,11 @@ MonoBehaviour:
         Well, for me anyway.  Blair's going to get our room all to herself for now! 
         He thought we'd make good roomies so...
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.3
-        yPos: 0.5
+        xPos: 0.5
+        yPos: 0.3
         width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
@@ -101,10 +108,11 @@ MonoBehaviour:
         type: 2}
       Text: But my room's too small for two girls, Josie.  Sorry, but--
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.3
-        yPos: 0.5
+        xPos: 0.5
+        yPos: 0.3
         width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
@@ -114,10 +122,11 @@ MonoBehaviour:
       Text: I'm sorry too but-- it's already been decided.  I'm moving in with you
         rigth after work.  Sorry!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.3
-        yPos: 0.5
+        xPos: 0.5
+        yPos: 0.3
         width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
@@ -165,7 +174,8 @@ MonoBehaviour:
         type: 2}
       Text: Amanda!  Can I sit with you!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
@@ -177,7 +187,8 @@ MonoBehaviour:
         type: 2}
       Text: Sure Josie!  How are things in Tech?  Do you believe it?  Pizza today!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
@@ -192,7 +203,8 @@ MonoBehaviour:
         so shameless-- always throwing herslf at him.  And she's jsut a bar girl
         basically.  Real low class.  But...
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
@@ -204,7 +216,8 @@ MonoBehaviour:
         type: 2}
       Text: But she's winning, isn't she?  I mean, she's Dr. E's favorite-- right?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
@@ -220,7 +233,8 @@ MonoBehaviour:
         meet new men, is it?  It's like he's bored with me and put me on a shelf--
         and there's nothing I can do!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
@@ -263,4 +277,5 @@ MonoBehaviour:
       Home: 0
     GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1

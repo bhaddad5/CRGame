@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: f13e1fae-f461-41c8-abdf-e1d56930d412
   Name: Enjoy our Executive Viewing Gallery
+  SubInteraction: 0
   AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 03c1c9685de0a2c4d83ef499fe5b390d, type: 2}
@@ -39,8 +42,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 1
+  Cooldown: 3
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -58,6 +62,8 @@ MonoBehaviour:
         xPos: 0.3
         yPos: 0.4
         width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: The girls don't know they are being watched...
       Videos:
@@ -66,9 +72,11 @@ MonoBehaviour:
       - {fileID: 32900000, guid: 659edd98916b2cd439c03fb31930004e, type: 3}
       - {fileID: 32900000, guid: 62018db59b28bf54e82cb2557e34e84d, type: 3}
       - {fileID: 32900000, guid: 52455fc8c59393e4ca4025d8a89ef0d0, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: '...for now anyway.  Artemis executives will be notified when their female
         subordinates are scheduled for a workout via the Hard Bodies app! '
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 7
@@ -86,6 +94,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -94,11 +103,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -116,6 +127,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -124,5 +136,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1

@@ -21,6 +21,8 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 1
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: f9a5144bfae14584ebd00d981f8916ff, type: 2}
@@ -41,7 +43,8 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 1
-  PreviewEffect: 0
+  Cooldown: 1
+  PreviewEffect: 1
   Result:
     Dialogs: []
     OptionalPopups:
@@ -52,7 +55,14 @@ MonoBehaviour:
       DialogClips: []
       Text: ...as they share opinions, fears, hopes and dreams with one another-
         all for your private entertainment.
-    Choices: []
+    Choices:
+    - {fileID: 11400000, guid: 21200dab8bc6b1f4c9c47d0971f27deb, type: 2}
+    - {fileID: 11400000, guid: 3ffd0e9f77043044986836a0f9b7d035, type: 2}
+    - {fileID: 11400000, guid: 71185c340f5c60f418f67090fb3a9606, type: 2}
+    - {fileID: 11400000, guid: d794f6db2d922bf418482f6353e9d5fb, type: 2}
+    - {fileID: 11400000, guid: 94d9fdf38ce650645819eec775aba5d0, type: 2}
+    - {fileID: 11400000, guid: c3829b3b49213fb47a5cc7bff076a42c, type: 2}
+    - {fileID: 11400000, guid: 359f458b91cf2e34796d2d7eddf91d07, type: 2}
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -114,4 +124,5 @@ MonoBehaviour:
       Home: 0
     GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1

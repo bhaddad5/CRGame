@@ -21,6 +21,8 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 1
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions:
@@ -43,6 +45,7 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 0
   Result:
     Dialogs:
@@ -52,7 +55,8 @@ MonoBehaviour:
       Text: Gemma, what's wrong?  I mean, aside from this awful soup they are serving
         today!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
@@ -64,7 +68,8 @@ MonoBehaviour:
         type: 2}
       Text: I just got an email from Human Resources.  It was... unexpected.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
@@ -76,7 +81,8 @@ MonoBehaviour:
         type: 2}
       Text: Oh no!  You haven't... been fired, have you?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
@@ -90,7 +96,8 @@ MonoBehaviour:
         invitation for my daughter Holly-- to become an intern with Artemis.  They
         expect her to apply and then come in for a personal interview.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
@@ -104,7 +111,8 @@ MonoBehaviour:
         what they want with us-- but then still want the daughters too?  Can't you
         appeal it?  Maybe ask Mr. {LastName} for an exemption for Holly?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
@@ -118,7 +126,8 @@ MonoBehaviour:
         'inapropriate' and that I'd be receiving an official warning for even making
         it.  My God- what am I supposed to say to Holly?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
@@ -171,11 +180,12 @@ MonoBehaviour:
       Text: I don't see why we have to eat with the admins.  We're both managers,
         you know!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
@@ -184,11 +194,12 @@ MonoBehaviour:
       Text: Technically, I suppose.  But I was explicitly told it would 'look good'
         if I ate here.  It 'sent the right message', van Engen told me.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
@@ -198,11 +209,12 @@ MonoBehaviour:
         the Chairman.  You know, at one point we were very close.  Quite close, if
         you know what I mean!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
@@ -214,11 +226,12 @@ MonoBehaviour:
         If they want me to eat with the secretaries, I'll do it.  Anything to keep
         the paycheck coming.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
@@ -229,11 +242,12 @@ MonoBehaviour:
         {FirstName} {LastName}, forget about finding a new job.  Things could be
         worse.  I''m still Manager of the Purchasing Department.  '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
@@ -244,11 +258,12 @@ MonoBehaviour:
         as long as Holly and I keep our visas, I'll do what I have to do-- which
         means even eating this horrid soup!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
@@ -288,4 +303,5 @@ MonoBehaviour:
       Home: 0
     GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1

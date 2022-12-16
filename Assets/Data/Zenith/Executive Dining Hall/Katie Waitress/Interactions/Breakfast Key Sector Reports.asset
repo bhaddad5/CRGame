@@ -21,6 +21,8 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
@@ -40,7 +42,8 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 1
-  PreviewEffect: 0
+  Cooldown: 2
+  PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 2
@@ -62,6 +65,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 267bb21c66b5095428e393e3f10bf9ce, type: 2}
     - {fileID: 11400000, guid: 77869fee50ceb61498e2e2cdff529f38, type: 2}
     - {fileID: 11400000, guid: 39430c569f02d3a4e93b4e3f7a1ae7e0, type: 2}
+    - {fileID: 11400000, guid: 499bc4eb8850f2d48ac5cf7bbefa5742, type: 2}
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -123,4 +127,5 @@ MonoBehaviour:
       Home: 0
     GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1

@@ -21,6 +21,8 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: a13be8e79ad38f64e8185326e2ae8bef, type: 2}
@@ -41,6 +43,7 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 1
+  Cooldown: 0
   PreviewEffect: 0
   Result:
     Dialogs:
@@ -110,6 +113,12 @@ MonoBehaviour:
         departments!
     Choices:
     - {fileID: 11400000, guid: 45e7e4bcc6af07b4198457df6a7748a4, type: 2}
+    - {fileID: 11400000, guid: 320b6a5c5084a034382b93617881a6a8, type: 2}
+    - {fileID: 11400000, guid: 1c042fb5f5e05d44cb78e11ce6c6913c, type: 2}
+    - {fileID: 11400000, guid: 684483e31dd54f44184c3c915dda5f84, type: 2}
+    - {fileID: 11400000, guid: 51d5bb753d4ceee489f841e41c06b16b, type: 2}
+    - {fileID: 11400000, guid: 93f80c6f2e619854f96fcef5b8154e49, type: 2}
+    - {fileID: 11400000, guid: 499bc4eb8850f2d48ac5cf7bbefa5742, type: 2}
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -171,4 +180,5 @@ MonoBehaviour:
       Home: 0
     GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1

@@ -21,6 +21,8 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 1
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: da0a8c27a87357943b138bb5fe48dbed, type: 2}
@@ -41,7 +43,8 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 0
-  PreviewEffect: 0
+  Cooldown: 0
+  PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 0
@@ -51,7 +54,8 @@ MonoBehaviour:
         sort of a reason Mr. Chase wanted me to ask you.  It's kind of embarassing
         though...
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
@@ -64,7 +68,8 @@ MonoBehaviour:
       Text: What is it Maddy?  Don't be silly-- there's not a lot that shocks me
         these days.  Just spill it, ok?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
@@ -80,7 +85,8 @@ MonoBehaviour:
         that Mr. Chase would probably like me to learn.  As my bride's maid, would
         you... teach me?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
@@ -95,7 +101,8 @@ MonoBehaviour:
         it was fine as long as there was video f the lessons he coudl watch and--
         oh, just say you will Jada-- it would mean so much to me!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
@@ -108,7 +115,8 @@ MonoBehaviour:
       Text: Fine.  I will.  If that's what Mr. van Engen wants, I don't even know
         why you're bothering to ask me.  What chocie do I have?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
@@ -159,7 +167,8 @@ MonoBehaviour:
         type: 2}
       Text: Jada, over here!  Please, come sit with me!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
@@ -172,7 +181,8 @@ MonoBehaviour:
       Text: Hey, Maddy!  Sure.  Isn't it great that they serve fruit now?  I was
         so sick of cereal all the time!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
@@ -185,7 +195,8 @@ MonoBehaviour:
       Text: I think we whined loud and hard enough that they had to give us something
         else!  Hey, I have something to ask you-- a favor if you will.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
@@ -197,7 +208,8 @@ MonoBehaviour:
         type: 2}
       Text: Sure- if I can!  What's up, Maddy?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
@@ -212,7 +224,8 @@ MonoBehaviour:
         of a company theme, so...  Well, here it is- would you be one of my bride's
         maids?  Please say yes?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
@@ -226,7 +239,8 @@ MonoBehaviour:
         you-- or Mr. Chase I guess wants-- sure- why not?  Sure- I'd be honored to
         be your bride's maid Maddy!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
@@ -269,4 +283,5 @@ MonoBehaviour:
       Home: 0
     GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1

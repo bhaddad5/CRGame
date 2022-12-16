@@ -21,6 +21,8 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 1
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
@@ -40,7 +42,8 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 0
-  PreviewEffect: 0
+  Cooldown: 0
+  PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 0
@@ -49,7 +52,8 @@ MonoBehaviour:
       Text: Val- over here!  What's the matter?  You seem so distracted!  Is everything
         ok?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
@@ -62,7 +66,8 @@ MonoBehaviour:
       Text: 'My boss just told me he''s getting engaged.  She''s some society girl. 
         Very beautiful, very rich, very charming.  Of course.  '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
@@ -74,7 +79,8 @@ MonoBehaviour:
         type: 2}
       Text: Oh!  Does he know how you... feel about him?  Maybe it would make a difference?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
@@ -89,7 +95,8 @@ MonoBehaviour:
         He said he had no plans to replace me and that his fiancee understood these
         'kind of office things'.  I didn't even know how to respond.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
@@ -101,7 +108,8 @@ MonoBehaviour:
         type: 2}
       Text: So- what are you going to do?  Are you going to quit?  Find a new job?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
@@ -115,7 +123,8 @@ MonoBehaviour:
         change-- except we'd be doing more anal since his fiancee didn't do that
         kind of thing.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
@@ -157,7 +166,7 @@ MonoBehaviour:
       Promotion: 0
       Home: 0
     GoToRegion: {fileID: 0}
-  CanFail: 0
+  CanFail: 1
   ProbabilityOfFailureResult: 0.5
   FailureResult:
     Dialogs:
@@ -167,7 +176,8 @@ MonoBehaviour:
       Text: Val- over here!  What's the matter?  You seem so distracted!  Is everything
         ok?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
@@ -180,7 +190,8 @@ MonoBehaviour:
       Text: Sorry Blair!  How's it going?  How is the amazing Dr. E?  God, you got
         lucky when you wound up working for him!  He's so brilliant-- and so nice!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
@@ -195,7 +206,8 @@ MonoBehaviour:
         he gave me!  But, in other regards, it's pretty cool working for him otherwise. 
         When he starts explaining some theorem, my knees start going weak!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
@@ -210,7 +222,8 @@ MonoBehaviour:
         But he's got such class and he treats me so well-- for a secretary anyway--
         I couldn't help but to start... well, never mind.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
@@ -224,7 +237,8 @@ MonoBehaviour:
         Jocelyn and I used to be good friends.  Now she'd do anything to get rid
         of me and keep Dr. E all to herself, that scheming slut!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: bb4ca884f7f046046ba7f92830301802,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
@@ -267,4 +281,5 @@ MonoBehaviour:
       Home: 0
     GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
