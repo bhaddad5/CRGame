@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 80abbf7e-635f-4d6b-9e6e-3b0465c323c1
   Name: Let's get physical!
+  SubInteraction: 0
   AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
@@ -37,8 +40,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 1
+  Cooldown: 4
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -53,6 +57,8 @@ MonoBehaviour:
         xPos: 0.7
         yPos: 0.43
         width: 390
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: '"You''re my favourite client!"'
       Videos:
@@ -60,9 +66,11 @@ MonoBehaviour:
       - {fileID: 32900000, guid: ab8eda07376d8c444b580c6049755cbc, type: 3}
       - {fileID: 32900000, guid: c62f539d7e1ade243a3a9114d2150658, type: 3}
       - {fileID: 32900000, guid: efda5bbc72ac548408779ac959c25dfd, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: Having a tumble with the tv fitness star is always invigorating, especially
         knowing her cuck of a husband is just in the next room!
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 20
@@ -80,6 +88,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -88,11 +97,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -110,6 +121,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -118,5 +130,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1

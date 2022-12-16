@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 42a35264-d54f-4a3b-a67a-e36d7eef0f6b
   Name: Multi-disciplined Marketing Campaigns
+  SubInteraction: 0
   AlertNew: 1
   Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
@@ -38,8 +41,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 1
-    HornicalCost: 0
-  Repeatable: 0
+    Items: []
+  Repeatable: 1
+  Cooldown: 5
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -57,6 +61,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 300
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: d5da105764ee21941942e88a7651e80e,
         type: 2}
@@ -69,7 +74,9 @@ MonoBehaviour:
         yPos: 0.4
         width: 300
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -88,6 +95,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -96,11 +104,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -109,7 +119,7 @@ MonoBehaviour:
       PatentsEffect: 0
       CultureEffect: 0
       SpreadsheetsEffect: 0
-      BrandEffect: 0
+      BrandEffect: 3
       RevanueEffect: 0
       HornicalEffect: 0
       NpcsToControl: []
@@ -118,6 +128,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -126,5 +137,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
