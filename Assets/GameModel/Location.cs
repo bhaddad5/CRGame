@@ -33,12 +33,7 @@ namespace Assets.GameModel
 		public Vector2 UiPosition;
 
 		public ActionRequirements VisRequirements;
-
-		public List<Interaction> VisibilityInteractions;
-		public List<Interaction> VisibilityNotCompletedInteractions;
-		public bool ClosedOnWeekends;
-		public bool ClosedOnWeekdays;
-
+		
 		public List<Policy> Policies = new List<Policy>();
 		public List<Mission> Missions = new List<Mission>();
 		public List<Npc> Npcs = new List<Npc>();

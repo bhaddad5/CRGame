@@ -351,46 +351,6 @@ public class EditorValidators
 		Debug.Log("Done!");
 	}
 
-	[MenuItem("Company Man Validators/Upgrade Regions", false, 100)]
-	public static void UpgradeRegions()
-	{
-		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
-
-		foreach (var region in gameData.Regions)
-		{
-			region.VisRequirements = new ActionRequirements()
-			{
-				RequiredInteractions = region.VisibilityInteractions,
-				RequiredNotCompletedInteractions = region.VisibilityNotCompletedInteractions
-			};
-			EditorUtility.SetDirty(region);
-
-			foreach (var location in region.Locations)
-			{
-				location.VisRequirements = new ActionRequirements()
-				{
-					RequiredInteractions = location.VisibilityInteractions,
-					RequiredNotCompletedInteractions = location.VisibilityNotCompletedInteractions,
-					NotOnWeekends = location.ClosedOnWeekends,
-					NotOnWeekdays = location.ClosedOnWeekdays,
-				};
-				EditorUtility.SetDirty(location);
-
-
-				foreach (var npc in location.Npcs)
-				{
-					npc.VisRequirements = new ActionRequirements()
-					{
-						RequiredInteractions = new List<Interaction>(){ npc.RequiredVisibilityInteractionReference },
-					};
-					EditorUtility.SetDirty(npc);
-				}
-			}
-		}
-		
-		Debug.Log("Requirements Upgraded!");
-	}
-
 	//TODO: USE THIS AS A TEMPLATE FOR DATA UPGRADES!
 	/*
 	[MenuItem("Company Man Validators/Upgrade Old Data")]

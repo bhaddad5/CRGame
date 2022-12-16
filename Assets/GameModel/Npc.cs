@@ -26,8 +26,7 @@ namespace Assets.GameModel
 		public string Education;
 		[TextArea(15, 20)]
 		public string Bio;
-
-		public Interaction RequiredVisibilityInteractionReference;
+		
 		public ActionRequirements VisRequirements;
 
 		[Header("Screen Position in Department/Location")]

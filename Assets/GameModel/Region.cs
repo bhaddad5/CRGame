@@ -35,9 +35,6 @@ namespace Assets.GameModel
 
 		public ActionRequirements VisRequirements;
 
-		public List<Interaction> VisibilityInteractions;
-		public List<Interaction> VisibilityNotCompletedInteractions;
-
 		public List<Location> QuickAccessLocations = new List<Location>();
 		public List<Location> Locations = new List<Location>();
 
