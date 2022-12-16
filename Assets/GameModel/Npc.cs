@@ -28,6 +28,7 @@ namespace Assets.GameModel
 		public string Bio;
 
 		public Interaction RequiredVisibilityInteractionReference;
+		public ActionRequirements VisRequirements;
 
 		[Header("Screen Position in Department/Location")]
 		public NpcLayout LocationLayout = new NpcLayout() { width = 200, xPos = .5f, yPos = .5f };
@@ -86,7 +87,12 @@ namespace Assets.GameModel
 			if (mgm.DebugAll)
 				return true;
 
-			return (RequiredVisibilityInteractionReference?.Completed ?? 1) > 0;
+			return VisRequirements.VisRequirementsAreMet();
+		}
+
+		public bool IsAccessible(MainGameManager mgm)
+		{
+			return VisRequirements.RequirementsAreMet(mgm);
 		}
 
 		public bool HasNewInteractions(MainGameManager mgm)

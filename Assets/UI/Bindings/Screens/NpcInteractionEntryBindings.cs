@@ -54,7 +54,10 @@ namespace Assets.GameModel.UiDisplayers
 			{
 				res.Execute(mgm);
 				if (succeeded)
+				{
 					interaction.Completed++;
+					interaction.TurnCompletedOn = mgm.Data.TurnNumber;
+				}
 				mgm.HandleTurnChange();
 			});
 		}
@@ -89,7 +92,7 @@ namespace Assets.GameModel.UiDisplayers
 			if (interaction.InteractionValid(mgm))
 				return null;
 			
-			var reqTooltip = interaction.Requirements.GetInvalidTooltip(mgm);
+			var reqTooltip = interaction.Requirements.GetInvalidTooltip(mgm, interaction);
 			var costTooltip = interaction.Cost.GetInvalidTooltip(mgm);
 
 			var tooltip = $"{reqTooltip}\n{costTooltip}";

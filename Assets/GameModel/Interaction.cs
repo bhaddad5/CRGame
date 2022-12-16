@@ -35,6 +35,7 @@ namespace Assets.GameModel
 		public ActionCost Cost;
 
 		public bool Repeatable = false;
+		public int Cooldown = 0;
 		
 		public bool PreviewEffect = false;
 
@@ -51,12 +52,15 @@ namespace Assets.GameModel
 		[HideInInspector]
 		public int Completed = 0;
 		[HideInInspector]
+		public int TurnCompletedOn = -1;
+		[HideInInspector]
 		public bool New = true;
 
 		public void Setup()
 		{
 			New = true;
 			Completed = 0;
+			TurnCompletedOn = -1;
 		}
 
 		public bool IsVisible(MainGameManager mgm)
@@ -76,6 +80,9 @@ namespace Assets.GameModel
 				return false;
 
 			if (!Requirements.RequirementsAreMet(mgm))
+				return false;
+
+			if (Completed > 0 && Repeatable && mgm.Data.TurnNumber <= TurnCompletedOn + Cooldown)
 				return false;
 
 			return Cost.CanAffordCost(mgm);

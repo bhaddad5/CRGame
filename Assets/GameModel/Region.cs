@@ -33,6 +33,8 @@ namespace Assets.GameModel
 
 		public RegionResources RegionResources;
 
+		public ActionRequirements VisRequirements;
+
 		public List<Interaction> VisibilityInteractions;
 		public List<Interaction> VisibilityNotCompletedInteractions;
 
@@ -60,17 +62,12 @@ namespace Assets.GameModel
 			if (mgm.DebugAll)
 				return true;
 
-			foreach (var interaction in VisibilityInteractions)
-			{
-				if (interaction != null && interaction.Completed == 0)
-					return false;
-			}
-			foreach (var interaction in VisibilityNotCompletedInteractions)
-			{
-				if (interaction != null && interaction.Completed > 0)
-					return false;
-			}
-			return true;
+			return VisRequirements.VisRequirementsAreMet();
+		}
+
+		public bool IsAccessible(MainGameManager mgm)
+		{
+			return VisRequirements.RequirementsAreMet(mgm);
 		}
 
 		public bool HasNewInteractions(MainGameManager mgm)

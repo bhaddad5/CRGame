@@ -45,6 +45,9 @@ namespace Assets.GameModel
 		public float RequiredPower;
 		public int RequiredPromotionLevel;
 		public int RequiredTurnNumber;
+
+		public bool NotOnWeekends;
+		public bool NotOnWeekdays;
 		
 		public List<NpcStatRequirement> NpcStatRequirements;
 		
@@ -62,13 +65,16 @@ namespace Assets.GameModel
 			return RequiredPower == 0 && RequiredPromotionLevel == 0 && RequiredTurnNumber == 0 && NpcStatRequirements.Count == 0 &&
 			       RequiredInteractions.Count == 0 && RequiredNotCompletedInteractions.Count == 0 && RequiredPolicies.Count == 0 &&
 			       RequiredDepartmentsControled.Count == 0 && RequiredNpcsControled.Count == 0 && RequiredNpcsTrained.Count == 0 &&
-			       RequiredNpcsNotControled.Count == 0 && RequiredTrophies.Count == 0;
+			       RequiredNpcsNotControled.Count == 0 && RequiredTrophies.Count == 0 && NotOnWeekends == false && NotOnWeekdays == false;
 		}
 
 		public bool VisRequirementsAreMet()
 		{
 			foreach (var interaction in RequiredInteractions)
 			{
+				if (interaction == null)
+					continue;
+
 				if (interaction.Completed == 0)
 					return false;
 			}
@@ -145,6 +151,12 @@ namespace Assets.GameModel
 				return false;
 
 			if (mgm.Data.TurnNumber < RequiredTurnNumber)
+				return false;
+
+			if (NotOnWeekdays && !mgm.IsWeekend())
+				return false;
+
+			if (NotOnWeekends && mgm.IsWeekend())
 				return false;
 
 			return true;

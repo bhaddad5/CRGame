@@ -41,6 +41,7 @@ namespace Assets.GameModel.UiDisplayers
 			Icon.sprite = region.Icon.ToSprite();
 			Text.text = $"{region.Name}";
 			Button.gameObject.SetActive(region.IsVisible(mgm));
+			Button.interactable = region.IsAccessible(mgm);
 			Button.transform.localPosition = ConvertMapPos(region.UiPosition);
 			NewIndicator.SetActive(IsNew);
 		}

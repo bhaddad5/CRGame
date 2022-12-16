@@ -53,7 +53,10 @@ namespace Assets.GameModel.UiDisplayers
 			{
 				res.Execute(mgm);
 				if (succeeded)
+				{
 					interaction.Completed++;
+					interaction.TurnCompletedOn = mgm.Data.TurnNumber;
+				}
 				choiceCompleted();
 			});
 		}

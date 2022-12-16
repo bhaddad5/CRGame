@@ -120,7 +120,7 @@ namespace Assets.GameModel.UiDisplayers
 			return TooltipsToString(tooltips);
 		}
 
-		public static string GetInvalidTooltip(this ActionRequirements req, MainGameManager mgm)
+		public static string GetInvalidTooltip(this ActionRequirements req, MainGameManager mgm, Interaction interaction = null)
 		{
 			List<string> tooltips = new List<string>();
 
@@ -154,10 +154,10 @@ namespace Assets.GameModel.UiDisplayers
 					tooltips.Add($"{requiredPolicy.Name}");
 			}
 
-			foreach (var interaction in req.RequiredInteractions)
+			foreach (var reqInteraction in req.RequiredInteractions)
 			{
-				if(interaction.Completed == 0)
-					tooltips.Add($"{interaction.Name}");
+				if(reqInteraction.Completed == 0)
+					tooltips.Add($"{reqInteraction.Name}");
 			}
 			
 			foreach (var npcReq in req.NpcStatRequirements)
@@ -170,6 +170,12 @@ namespace Assets.GameModel.UiDisplayers
 			
 			if (req.RequiredPower > mgm.Data.Power)
 				tooltips.Add($"{req.RequiredPower} or more Power");
+
+			if (interaction != null && interaction.Completed > 0 && mgm.Data.TurnNumber <= interaction.TurnCompletedOn + interaction.Cooldown)
+			{
+				int turnsUntilAllowed = (interaction.TurnCompletedOn + interaction.Cooldown) - (mgm.Data.TurnNumber);
+				tooltips.Add($"Must wait {turnsUntilAllowed + 1} Turns");
+			}
 
 			return TooltipsToString(tooltips);
 		}

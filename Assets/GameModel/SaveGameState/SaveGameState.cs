@@ -388,6 +388,7 @@ namespace Assets.GameModel.Save
 
 		public int Completed;
 		public bool New;
+		public int TurnCompletedOn;
 
 		public static SavedInteractionState FromData(Interaction data)
 		{
@@ -395,6 +396,7 @@ namespace Assets.GameModel.Save
 			res.Id = data.Id;
 			res.Completed = data.Completed;
 			res.New = data.New;
+			res.TurnCompletedOn = data.TurnCompletedOn;
 
 			return res;
 		}
@@ -408,6 +410,7 @@ namespace Assets.GameModel.Save
 			}
 			data.Completed = Completed;
 			data.New = New;
+			data.TurnCompletedOn = TurnCompletedOn;
 		}
 	}
 }

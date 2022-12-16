@@ -32,6 +32,8 @@ namespace Assets.GameModel
 
 		public Vector2 UiPosition;
 
+		public ActionRequirements VisRequirements;
+
 		public List<Interaction> VisibilityInteractions;
 		public List<Interaction> VisibilityNotCompletedInteractions;
 		public bool ClosedOnWeekends;
@@ -66,17 +68,7 @@ namespace Assets.GameModel
 			if (mgm.DebugAll)
 				return true;
 
-			foreach (var interaction in VisibilityInteractions)
-			{
-				if (interaction != null && interaction.Completed == 0)
-					return false;
-			}
-			foreach (var interaction in VisibilityNotCompletedInteractions)
-			{
-				if (interaction != null && interaction.Completed > 0)
-					return false;
-			}
-			return true;
+			return VisRequirements.VisRequirementsAreMet();
 		}
 
 		public bool HasNewInteractions(MainGameManager mgm)
@@ -91,12 +83,7 @@ namespace Assets.GameModel
 
 		public bool IsAccessible(MainGameManager mgm)
 		{
-			if (ClosedOnWeekdays && !mgm.IsWeekend())
-				return false;
-			if (ClosedOnWeekends && mgm.IsWeekend())
-				return false;
-
-			return true;
+			return VisRequirements.RequirementsAreMet(mgm);
 		}
 	}
 }
