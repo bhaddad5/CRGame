@@ -21,6 +21,8 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
@@ -41,7 +43,8 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 1
-  PreviewEffect: 0
+  Cooldown: 3
+  PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 0
@@ -184,4 +187,5 @@ MonoBehaviour:
       Home: 0
     GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
