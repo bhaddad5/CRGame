@@ -63,6 +63,9 @@ namespace Assets.GameModel
 			if (mgm.DebugAll)
 				return true;
 
+			if (!Npcs.Any(npc => npc?.IsVisible(mgm) ?? false) && (Policies?.Count ?? 0) == 0 && (Missions?.Count ?? 0) == 0)
+				return false;
+
 			return VisRequirements.VisRequirementsAreMet();
 		}
 
