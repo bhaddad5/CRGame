@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Wheels up for Singapore
   m_EditorClassIdentifier: 
   Id: 703af805-d164-4ec8-864f-6b42df4d0074
-  Name: Wheels up for Singapore
+  Name: Wheels up for Katanga
   SubInteraction: 0
   AlertNew: 1
   Category: 1
@@ -21,6 +21,8 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
@@ -40,6 +42,7 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 1
+  Cooldown: 6
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -59,7 +62,7 @@ MonoBehaviour:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 65ce22f005085e6438bb4f041acd1712,
         type: 2}
-      Text: Singapore, if you please Captain Ellis!
+      Text: Katanga, Captain.  Time for an African adventure.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 4a16f658d0222cf4882075fddfdcc687,
         type: 3}
@@ -72,7 +75,7 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 65ce22f005085e6438bb4f041acd1712,
         type: 2}
-      Text: Wheels up for Singapore then!  Buckle up and enjoy the ride, Mr. {LastName}!
+      Text: Wheels up for Katanga then!  Buckle up and enjoy the ride, Mr. {LastName}!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 4a16f658d0222cf4882075fddfdcc687,
         type: 3}
@@ -85,19 +88,19 @@ MonoBehaviour:
     OptionalPopups:
     - Title: The flight is whisper smooth...
       Videos:
-      - {fileID: 32900000, guid: 14cd13d99fd91ae469cae857ef50d71b, type: 3}
+      - {fileID: 32900000, guid: 20ce91f3fd665474880206e83a62befc, type: 3}
       Textures: []
       DialogClips:
       - {fileID: 8300000, guid: 0c4313697b746a44bb04aa8e214276c8, type: 3}
       Text: ...as always.  Captain Ellis is one of the best!
     - Title: As you descend...
       Videos:
-      - {fileID: 32900000, guid: 2976d74caf8f27649ad23236d64e0663, type: 3}
+      - {fileID: 32900000, guid: 821528b1521771f49bf222553e324cc7, type: 3}
       Textures: []
       DialogClips:
       - {fileID: 8300000, guid: 3817ba421352ef041bd0b52afe983ce8, type: 3}
-      Text: ...you marvel at the beauty that is Singapore!  You may now access Singapore
-        on the global map!
+      Text: ...you are impressed at the energy radiating below!  You may now access
+        Katanga on the global map!
     Choices: []
     Effect:
       NpcEffects: []
@@ -125,7 +128,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
-    GoToRegion: {fileID: 11400000, guid: 41f7759588bed2547acfc7f1e6b384ed, type: 2}
+    GoToRegion: {fileID: 11400000, guid: 3c25baf722acd4c439896656e7398e99, type: 2}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -160,4 +163,5 @@ MonoBehaviour:
       Home: 0
     GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
