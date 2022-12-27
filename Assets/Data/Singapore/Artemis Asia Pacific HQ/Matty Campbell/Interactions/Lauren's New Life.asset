@@ -21,6 +21,8 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 17bb6b5ce8ed8e548a2272c3066e240b, type: 2}
@@ -43,14 +45,15 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 0
   Result:
     Dialogs:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Sir, I checked in wit Mr. Soong to see how his new, uh, Tea Girl is settling
-        in.  It sounds like he-- and, uh, Miss Rose-- are very pleased with her so
-        far!
+      Text: Sir, I checked in with Mr. Soong to see how his new, uh, Tea Girl is
+        settling in.  It sounds like he-- and, uh, Miss Rose-- are very pleased with
+        her so far!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -144,4 +147,5 @@ MonoBehaviour:
       Home: 0
     GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
