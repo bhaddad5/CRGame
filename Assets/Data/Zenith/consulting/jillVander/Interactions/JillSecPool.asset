@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 8059672f-5b8a-42e3-8bde-4d592e3262dd
   Name: Send to Secretarial Pool
+  SubInteraction: 0
   AlertNew: 1
   Category: 4
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements:
     - OptionalNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
         type: 2}
@@ -44,8 +47,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -60,6 +64,8 @@ MonoBehaviour:
         xPos: 0.6
         yPos: 0.35
         width: 380
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
         type: 2}
@@ -71,6 +77,8 @@ MonoBehaviour:
         xPos: 0.6
         yPos: 0.35
         width: 380
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
         type: 2}
@@ -82,6 +90,8 @@ MonoBehaviour:
         xPos: 0.6
         yPos: 0.35
         width: 380
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
         type: 2}
@@ -93,10 +103,16 @@ MonoBehaviour:
         xPos: 0.6
         yPos: 0.35
         width: 380
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
         type: 2}
-      Text: Take it or leave it.  The Secretarial Pool-- or Hump Alley.  You decide.
+      Text: 'Take it or leave it.  The Secretarial Pool-- or Hump Alley.  You decide. 
+        I''m actually doing you a favor.  If you''re lucky, maybe some new hire will
+        pick you to become his personal secretary.  That would be a big step up for
+        a girl like you, Jill.  It''s a big opportunity-- you ought to think about
+        how you can make the most of it.  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: e84fa28c9b2465d4da4b8d52244709d2,
         type: 3}
@@ -104,6 +120,8 @@ MonoBehaviour:
         xPos: 0.6
         yPos: 0.35
         width: 380
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
         type: 2}
@@ -116,7 +134,10 @@ MonoBehaviour:
         xPos: 0.6
         yPos: 0.35
         width: 380
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 20
@@ -135,6 +156,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -143,11 +165,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -165,6 +189,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -173,5 +198,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
