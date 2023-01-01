@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Try the Black Jack
+  m_Name: I'm just window shopping
   m_EditorClassIdentifier: 
-  Id: 0550d6b9-486f-4924-8c9b-0a41afbbee6c
-  Name: Try the Black Jack
-  SubInteraction: 1
+  Id: 91fab7c3-2973-4b92-a2a7-dc6f85df8533
+  Name: I'm just window shopping
+  SubInteraction: 0
   AlertNew: 1
-  Category: 1
+  Category: 6
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -34,7 +34,7 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 100
+    MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -42,23 +42,39 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 1
-  Cooldown: 1
+  Cooldown: 2
   PreviewEffect: 1
   Result:
-    Dialogs: []
-    OptionalPopups:
-    - Title: A winner is YOU!
-      Videos:
-      - {fileID: 32900000, guid: 24ca8c8180990e448baad20b74e3a3ef, type: 3}
-      Textures: []
-      DialogClips:
-      - {fileID: 8300000, guid: b8d0f0e9382308a4696354525c548529, type: 3}
-      Text: Collect your winnings!
+    Dialogs:
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: I'm just looking for some ideas at the moment!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: 'NOT: You enjoy a couple of hours in the company of the high spirited
+        tourst discussing the local sights.'
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups: []
     Choices: []
     Effect:
       NpcEffects: []
-      EgoEffect: 10
-      FundsEffect: 250
+      EgoEffect: 0
+      FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
       CultureEffect: 0
@@ -82,18 +98,11 @@ MonoBehaviour:
       Promotion: 0
       Home: 0
     GoToRegion: {fileID: 0}
-  CanFail: 1
-  ProbabilityOfFailureResult: 0.6
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
-    OptionalPopups:
-    - Title: Lady Luck's abandoned you!
-      Videos:
-      - {fileID: 32900000, guid: 24ca8c8180990e448baad20b74e3a3ef, type: 3}
-      Textures: []
-      DialogClips:
-      - {fileID: 8300000, guid: b8d0f0e9382308a4696354525c548529, type: 3}
-      Text: Better luck next time!
+    OptionalPopups: []
     Choices: []
     Effect:
       NpcEffects: []

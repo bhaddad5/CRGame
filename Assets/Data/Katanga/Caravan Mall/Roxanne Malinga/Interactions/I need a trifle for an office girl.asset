@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Try the Black Jack
+  m_Name: I need a trifle for an office girl
   m_EditorClassIdentifier: 
-  Id: 0550d6b9-486f-4924-8c9b-0a41afbbee6c
-  Name: Try the Black Jack
-  SubInteraction: 1
+  Id: 2ac7e234-25e8-4b99-855b-dbcaad735877
+  Name: I need a trifle for an office girl
+  SubInteraction: 0
   AlertNew: 1
-  Category: 1
+  Category: 6
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -24,7 +24,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 1bcf74eb55655064197df1a9d826994a, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -34,31 +35,35 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 100
+    MoneyCost: 25
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 1
-  Cooldown: 1
-  PreviewEffect: 1
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
   Result:
     Dialogs: []
     OptionalPopups:
-    - Title: A winner is YOU!
-      Videos:
-      - {fileID: 32900000, guid: 24ca8c8180990e448baad20b74e3a3ef, type: 3}
-      Textures: []
-      DialogClips:
-      - {fileID: 8300000, guid: b8d0f0e9382308a4696354525c548529, type: 3}
-      Text: Collect your winnings!
+    - Title: '"How much work do your...'
+      Videos: []
+      Textures:
+      - {fileID: 2800000, guid: 2cfb8d569182b8f4c953f92ab167efaa, type: 3}
+      DialogClips: []
+      Text: '"...office girls actually get done anyway?  Anyway, this Katie of yours
+        will sure be surprised by this present brought all the way from Katanga!" '
     Choices: []
     Effect:
-      NpcEffects: []
-      EgoEffect: 10
-      FundsEffect: 250
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: f7a3898e350f7a84499562b0ca5a5a4b,
+          type: 2}
+        AmbitionEffect: 0
+        PrideEffect: 1
+      EgoEffect: 0
+      FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
       CultureEffect: 0
@@ -82,18 +87,11 @@ MonoBehaviour:
       Promotion: 0
       Home: 0
     GoToRegion: {fileID: 0}
-  CanFail: 1
-  ProbabilityOfFailureResult: 0.6
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
-    OptionalPopups:
-    - Title: Lady Luck's abandoned you!
-      Videos:
-      - {fileID: 32900000, guid: 24ca8c8180990e448baad20b74e3a3ef, type: 3}
-      Textures: []
-      DialogClips:
-      - {fileID: 8300000, guid: b8d0f0e9382308a4696354525c548529, type: 3}
-      Text: Better luck next time!
+    OptionalPopups: []
     Choices: []
     Effect:
       NpcEffects: []
