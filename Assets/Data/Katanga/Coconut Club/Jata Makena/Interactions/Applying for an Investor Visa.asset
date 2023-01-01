@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Tell me about the Kashongo clan
+  m_Name: Applying for an Investor Visa
   m_EditorClassIdentifier: 
-  Id: 42c16e6a-5286-4e7d-93cb-8e61a4cf16b7
-  Name: Tell me about the Kashongo clan.
+  Id: e9250c63-9188-496d-bb2c-afab93f819b4
+  Name: Applying for an Investor Visa
   SubInteraction: 0
   AlertNew: 1
   Category: 1
@@ -25,8 +25,7 @@ MonoBehaviour:
     NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 164b03c00cb3f8a4a8c793651688be06, type: 2}
-    - {fileID: 11400000, guid: db7444613d6af9049af6068fea5e114b, type: 2}
+    - {fileID: 11400000, guid: fd9753d5cb9b737439db8ae5499182d7, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -50,25 +49,7 @@ MonoBehaviour:
     Dialogs:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Well, it helps to know that the President of Katanga is a Kashongo but
-        that said, he has been so transparent in style that no one accuses him of
-        playing favorites.  That his clan often publicly crticizes his decisions
-        makes it clear that he truly does act with the best interests of the Katanga
-        people take precedence over those of his own clan.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: 'They''ve managed to burrow their way into the big mining operations,
-        which constitute the foundation of their influence.  Equatorial is the biggest
-        employer in Katanga and billions run through the company, of which the Kashongo
-        clan manages to scrape quite a bit off the top. '
+      Text: Hello {FirstName}!  Another perfect day here in Katanga, isn't it?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -79,8 +60,47 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Artemis has a joint venture with the Kashongos, which should help with
-        opening that door a bit.
+      Text: It is Jata!  How goes your hotel location work?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: Very well!  I think I've scouted out a wonderful location on the waterfront! 
+        The old colonial customs house is up for sale.  We'd knock it down and put
+        up a fifty story unit staffed by these very polite and compliant Whitangans. 
+        I can smell the money already!  I've already applied for an Investor Visa.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: An Investor Visa?  What's that?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: 'If you personally invest a million francs or more, or work for a business
+        that does so, you''re eligible for an Investor Visa.  It allows you to buy
+        a property or business here in Katanga.  The ability to work and live under
+        an offficial Katangan Investor Visa provides one with a very wide latitude
+        to operate here!  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:

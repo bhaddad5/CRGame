@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Tell me about the Kashongo clan
+  m_Name: Offer Elise a tip
   m_EditorClassIdentifier: 
-  Id: 42c16e6a-5286-4e7d-93cb-8e61a4cf16b7
-  Name: Tell me about the Kashongo clan.
+  Id: f3859d4d-0e51-4456-a0e7-664cd84582d7
+  Name: Offer Elise a tip
   SubInteraction: 0
   AlertNew: 1
   Category: 1
@@ -25,8 +25,7 @@ MonoBehaviour:
     NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 164b03c00cb3f8a4a8c793651688be06, type: 2}
-    - {fileID: 11400000, guid: db7444613d6af9049af6068fea5e114b, type: 2}
+    - {fileID: 11400000, guid: 8e8e7ee000587144aa62dab2ba34b675, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -48,13 +47,9 @@ MonoBehaviour:
   PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 0
+    - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Well, it helps to know that the President of Katanga is a Kashongo but
-        that said, he has been so transparent in style that no one accuses him of
-        playing favorites.  That his clan often publicly crticizes his decisions
-        makes it clear that he truly does act with the best interests of the Katanga
-        people take precedence over those of his own clan.
+      Text: You deserve something extra Elise-- here, take this.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -65,10 +60,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: 'They''ve managed to burrow their way into the big mining operations,
-        which constitute the foundation of their influence.  Equatorial is the biggest
-        employer in Katanga and billions run through the company, of which the Kashongo
-        clan manages to scrape quite a bit off the top. '
+      Text: Sir, I can't!  Thank you but service staff aren't allowed to accept tips. 
+        It is strictly against club policy!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -79,8 +72,20 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Artemis has a joint venture with the Kashongos, which should help with
-        opening that door a bit.
+      Text: Go on and take it-- I'll never tell!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: 'Sir, I can''t.  It would mean my job and if I lose this job-- and get
+        a black mark on my record- it would be impossible for me to ever waitress
+        again.  Thank you but... no.  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:

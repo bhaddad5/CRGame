@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Tell me about the Kashongo clan
+  m_Name: Order a drink
   m_EditorClassIdentifier: 
-  Id: 42c16e6a-5286-4e7d-93cb-8e61a4cf16b7
-  Name: Tell me about the Kashongo clan.
+  Id: a5dd783b-1e7a-4452-8c3f-f3c83e3db27d
+  Name: Order a drink
   SubInteraction: 0
   AlertNew: 1
   Category: 1
@@ -25,8 +25,7 @@ MonoBehaviour:
     NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 164b03c00cb3f8a4a8c793651688be06, type: 2}
-    - {fileID: 11400000, guid: db7444613d6af9049af6068fea5e114b, type: 2}
+    - {fileID: 11400000, guid: 5394ecb79db3be1448bdb3cf14275880, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -43,32 +42,14 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 0
+  Repeatable: 1
   Cooldown: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Well, it helps to know that the President of Katanga is a Kashongo but
-        that said, he has been so transparent in style that no one accuses him of
-        playing favorites.  That his clan often publicly crticizes his decisions
-        makes it clear that he truly does act with the best interests of the Katanga
-        people take precedence over those of his own clan.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: 'They''ve managed to burrow their way into the big mining operations,
-        which constitute the foundation of their influence.  Equatorial is the biggest
-        employer in Katanga and billions run through the company, of which the Kashongo
-        clan manages to scrape quite a bit off the top. '
+      Text: May I take your order, Sir?  Perhaps a cocktail?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -79,8 +60,19 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Artemis has a joint venture with the Kashongos, which should help with
-        opening that door a bit.
+      Text: What a splendid idea!  Yes, a drink would be perfect.  Please bill it
+        back to my room.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: Of course, Mr. {LastName}!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -90,7 +82,11 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
-    Choices: []
+    Choices:
+    - {fileID: 11400000, guid: c6822d4024d4bee4fbc6c0863a9419a0, type: 2}
+    - {fileID: 11400000, guid: 79200ff38a57d3c45902a1333b8d8a9c, type: 2}
+    - {fileID: 11400000, guid: 4f9d618cddfbc1641a6e1903b35ecc01, type: 2}
+    - {fileID: 11400000, guid: 73a5ca9778a08df47962ff20ac8582d4, type: 2}
     Effect:
       NpcEffects: []
       EgoEffect: 0

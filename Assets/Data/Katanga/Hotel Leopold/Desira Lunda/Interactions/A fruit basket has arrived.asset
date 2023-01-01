@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Tell me about the Kashongo clan
+  m_Name: A fruit basket has arrived
   m_EditorClassIdentifier: 
-  Id: 42c16e6a-5286-4e7d-93cb-8e61a4cf16b7
-  Name: Tell me about the Kashongo clan.
+  Id: 160e21b3-018b-4c54-840c-cbf784e7c382
+  Name: A fruit basket has arrived
   SubInteraction: 0
   AlertNew: 1
   Category: 1
@@ -25,8 +25,7 @@ MonoBehaviour:
     NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 164b03c00cb3f8a4a8c793651688be06, type: 2}
-    - {fileID: 11400000, guid: db7444613d6af9049af6068fea5e114b, type: 2}
+    - {fileID: 11400000, guid: 2a81d121eb52c794dbc00fc381234d17, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -50,11 +49,8 @@ MonoBehaviour:
     Dialogs:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Well, it helps to know that the President of Katanga is a Kashongo but
-        that said, he has been so transparent in style that no one accuses him of
-        playing favorites.  That his clan often publicly crticizes his decisions
-        makes it clear that he truly does act with the best interests of the Katanga
-        people take precedence over those of his own clan.
+      Text: Mr. {LastName}!  We've received a delivery for you-- a gorgeous fruit
+        basket.  Shall I have Nick bring it to you rroom?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -63,12 +59,11 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
+    - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 0}
-      Text: 'They''ve managed to burrow their way into the big mining operations,
-        which constitute the foundation of their influence.  Equatorial is the biggest
-        employer in Katanga and billions run through the company, of which the Kashongo
-        clan manages to scrape quite a bit off the top. '
+      Text: 'NOTE: The fruit basket is quite unexpected.  An attached note welcomes
+        you to Katanga and promises a meeting in the near future.  It is signed on
+        behalf of Kashongo Holdings Ltd. by Therese Kashongo.'
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -77,19 +72,14 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: Artemis has a joint venture with the Kashongos, which should help with
-        opening that door a bit.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups: []
+    OptionalPopups:
+    - Title: Of course- the Artemis joint venture partner...
+      Videos: []
+      Textures:
+      - {fileID: 2800000, guid: c54cc53c623e7414089e2ecffc1f6d6b, type: 3}
+      DialogClips: []
+      Text: ...in Katanga must have excellent intelligence to have been alerted about
+        your arrival!
     Choices: []
     Effect:
       NpcEffects: []
