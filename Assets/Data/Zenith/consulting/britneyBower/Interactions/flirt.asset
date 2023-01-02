@@ -21,6 +21,8 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements:
     - OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
         type: 2}
@@ -48,6 +50,7 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -193,7 +196,7 @@ MonoBehaviour:
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
         type: 2}
-      Text: Britney looks torn.  She's flattered but isn't about let your sexist
+      Text: Britney looks torn.  She's flattered but isn't about to let your sexist
         remark slide.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 9715a38e3a6cbee4384507990b5c1ad9,
@@ -233,7 +236,7 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
         type: 2}
-      Text: I'm going to report this!
+      Text: I'm going to report this!  THAT'S what I'm going to do!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 9715a38e3a6cbee4384507990b5c1ad9,
         type: 3}
@@ -295,4 +298,5 @@ MonoBehaviour:
       Home: 0
     GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
