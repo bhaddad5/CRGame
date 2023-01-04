@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: I saw you on television!
+  m_Name: Is your mistress available
   m_EditorClassIdentifier: 
-  Id: 2abdcefa-f822-47d3-97b9-0d85d6b2e7fe
-  Name: I saw you on television!
+  Id: 8c2b4754-d228-4bfe-96ea-5a0564994bda
+  Name: Is your mistress available?
   SubInteraction: 0
   AlertNew: 1
-  Category: 3
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -46,21 +46,9 @@ MonoBehaviour:
   PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: Excuse me-- but aren't you on the television?  You look so familiar!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: I forgive you because you're obviously a tourist-- yes, I'm a KBC newscaste. 
-        The name's Efe.  Would you like an autograph?
+      Text: Who are you?  Whitangans must ring at the Servant's Entrance in the back!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -71,8 +59,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: I'm sorry-- I didn't mean to disturb you.  May I make up for my boorishness
-        by buying you a drink?
+      Text: Excuse me but I am NOT a Whitangan.  I am here to see Ms. Kashimba. 
+        Is she available?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -83,9 +71,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: It's fine-- I'm used to it.  I kind of like it, to be honest!  No need
-        to buy me a drink- I'm still working on this one, ok?  You may join me, if
-        you like.
+      Text: Oh dear!  Please forgive me!  I didn't know!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -96,9 +82,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Thank you!  It must be exciting to be the face of the Katangan Broadcasting
-        Corporation!  I'm here on business-- I'm with a technology company named
-        Artemis.  We have a joint venture here and work with the Kashongo group.
+      Text: Your mistress-- is she at home?  Please le ther know {FirstName} {LastName}
+        is here to see her.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -109,57 +94,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: 'I''m impressed!  The Kashongos are a very powerful family.  I report
-        on their activities regularly on my news show.    '
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: I'd loved to learn more about them and Katnaga in general.  Might I take
-        you out to dinner?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: I'm sorry but no.  No offence, but I only date Katangan men.  It is nothing
-        personal.  I enjoy interviewing Westerners but I don't go out with them. 
-        I hope you understand!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: I'm disappointed, of course, but I respect your honesty.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: Thank you.  It is my trademark and probably why I'm one of the few journalists
-        who gets access to President Kashongo on a regular basis.  He says he also
-        finds my honesty 'refreshing'!
+      Text: Yes, Sir!  At once, Sir!  Again, I am most sorry- I meant no insult! 
+        You're obviously a Westerner!  I'll see if Mistress is available-- one moment!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -172,7 +108,7 @@ MonoBehaviour:
     Choices: []
     Effect:
       NpcEffects: []
-      EgoEffect: -20
+      EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0

@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: I saw you on television!
+  m_Name: Welcome to Kashimba House
   m_EditorClassIdentifier: 
-  Id: 2abdcefa-f822-47d3-97b9-0d85d6b2e7fe
-  Name: I saw you on television!
+  Id: 0088f40a-14d5-4ce5-ad65-3c3d045e806e
+  Name: Welcome to Kashimba House
   SubInteraction: 0
   AlertNew: 1
   Category: 3
@@ -46,9 +46,11 @@ MonoBehaviour:
   PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 1
+    - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Excuse me-- but aren't you on the television?  You look so familiar!
+      Text: Come in, Mr. {LastName}.  I've been so looking forward to meeting you. 
+        I understand there was some unpleasantness on the part of my witless maid
+        Pamela- isn't that right, Pammy?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -58,9 +60,9 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: I forgive you because you're obviously a tourist-- yes, I'm a KBC newscaste. 
-        The name's Efe.  Would you like an autograph?
+      OptionalNpcReference: {fileID: 11400000, guid: 7ad332e41342c4d4eaff6ae28a8e831b,
+        type: 2}
+      Text: I made a greivous error, Mistress!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -70,9 +72,10 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: I'm sorry-- I didn't mean to disturb you.  May I make up for my boorishness
-        by buying you a drink?
+      OptionalNpcReference: {fileID: 11400000, guid: 7ad332e41342c4d4eaff6ae28a8e831b,
+        type: 2}
+      Text: It is perfectly understandable.  Your maid made an honest mistake.  Please
+        don't punish her- there was no harm done.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -82,10 +85,37 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: It's fine-- I'm used to it.  I kind of like it, to be honest!  No need
-        to buy me a drink- I'm still working on this one, ok?  You may join me, if
-        you like.
+      OptionalNpcReference: {fileID: 11400000, guid: acdae65af7a81694698cb5f81533e9c8,
+        type: 2}
+      Text: No, Mr. {LastName}- believe me, giving these Whitangan slags any slack
+        is a very bad idea!  Pammy, instead of being allowed your customary Saturday
+        night off, you will muck out the attic.  Understand?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 7ad332e41342c4d4eaff6ae28a8e831b,
+        type: 2}
+      Text: Very good, Mistress.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: acdae65af7a81694698cb5f81533e9c8,
+        type: 2}
+      Text: Dismissed.  Now. Mr. {LastName}- what shall we discuss?  I understand
+        your firm is involved in promting female empowerment- but as you can see,
+        we Katangan women hardly need assistance in that area!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -95,10 +125,11 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: Thank you!  It must be exciting to be the face of the Katangan Broadcasting
-        Corporation!  I'm here on business-- I'm with a technology company named
-        Artemis.  We have a joint venture here and work with the Kashongo group.
+      OptionalNpcReference: {fileID: 11400000, guid: acdae65af7a81694698cb5f81533e9c8,
+        type: 2}
+      Text: Obviously!  No, it would seem that there are more opprtunities for our
+        consulting services here in Katanga than our technology solutions.  I'm here
+        in that capacity.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -108,9 +139,12 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: 'I''m impressed!  The Kashongos are a very powerful family.  I report
-        on their activities regularly on my news show.    '
+      OptionalNpcReference: {fileID: 11400000, guid: acdae65af7a81694698cb5f81533e9c8,
+        type: 2}
+      Text: 'Interesting.  As you may know, the Kashimbas are very involved in government
+        service.  Perhaps they might be scope for some improvements in the civil
+        administration.  I would have Katangan governance as a model for other nations
+        emerging from colonialism. '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -120,9 +154,9 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: I'd loved to learn more about them and Katnaga in general.  Might I take
-        you out to dinner?
+      OptionalNpcReference: {fileID: 11400000, guid: acdae65af7a81694698cb5f81533e9c8,
+        type: 2}
+      Text: Perhaps I might be permitted to discuss this with one of your ministers?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -132,10 +166,13 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: I'm sorry but no.  No offence, but I only date Katangan men.  It is nothing
-        personal.  I enjoy interviewing Westerners but I don't go out with them. 
-        I hope you understand!
+      OptionalNpcReference: {fileID: 11400000, guid: acdae65af7a81694698cb5f81533e9c8,
+        type: 2}
+      Text: Very well.  I'm directing you to speak with Minister Mbaka.  He's the
+        Minister for Resources and probably has the most important portfolio in the
+        whoel government- Resources is responsible for managing Katanga's mineral
+        wealth.  If there's any improvement we can make there, it would flow on to
+        the benefit of the whole country!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -144,22 +181,10 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: I'm disappointed, of course, but I respect your honesty.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: Thank you.  It is my trademark and probably why I'm one of the few journalists
-        who gets access to President Kashongo on a regular basis.  He says he also
-        finds my honesty 'refreshing'!
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: acdae65af7a81694698cb5f81533e9c8,
+        type: 2}
+      Text: 'NOTE: The Ministry for Resources is now unlocked!'
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -172,7 +197,7 @@ MonoBehaviour:
     Choices: []
     Effect:
       NpcEffects: []
-      EgoEffect: -20
+      EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0

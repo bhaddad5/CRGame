@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: I saw you on television!
+  m_Name: Primevan Quid Pro Quo
   m_EditorClassIdentifier: 
-  Id: 2abdcefa-f822-47d3-97b9-0d85d6b2e7fe
-  Name: I saw you on television!
+  Id: 214bc4b1-c9e2-4641-b706-93d0127634c8
+  Name: Primevan Quid Pro Quo
   SubInteraction: 0
   AlertNew: 1
-  Category: 3
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -24,7 +24,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 87424fb23edf9104a9bd56686226bd36, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -48,7 +49,8 @@ MonoBehaviour:
     Dialogs:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Excuse me-- but aren't you on the television?  You look so familiar!
+      Text: Mr. Banza, congratulations on securing the military assistance treaty
+        with Primeva!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -59,8 +61,10 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: I forgive you because you're obviously a tourist-- yes, I'm a KBC newscaste. 
-        The name's Efe.  Would you like an autograph?
+      Text: It was quite a coup.  The officer corp is onboard with this new direction
+        and Primeva has agreed to not only sell us the weapons systems suggested
+        in your original proposal, they are sending advisors as well.  All in all,
+        a major show of support for our heroes in uniform!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -71,8 +75,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: I'm sorry-- I didn't mean to disturb you.  May I make up for my boorishness
-        by buying you a drink?
+      Text: Primeva is expecting something in return-- full diplomatic recognition.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -83,9 +86,11 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: It's fine-- I'm used to it.  I kind of like it, to be honest!  No need
-        to buy me a drink- I'm still working on this one, ok?  You may join me, if
-        you like.
+      Text: They must be patient.  I've used quite a bit of my political capital
+        in making this treaty happen.  Perhaps if the idea came from an objective
+        outsider-- like yourself-- the President might be open to considering it. 
+        However, I couldn't be seen to be involved in anyway-- my motivations would
+        be suspected.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -94,72 +99,11 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
+    - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 0}
-      Text: Thank you!  It must be exciting to be the face of the Katangan Broadcasting
-        Corporation!  I'm here on business-- I'm with a technology company named
-        Artemis.  We have a joint venture here and work with the Kashongo group.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: 'I''m impressed!  The Kashongos are a very powerful family.  I report
-        on their activities regularly on my news show.    '
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: I'd loved to learn more about them and Katnaga in general.  Might I take
-        you out to dinner?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: I'm sorry but no.  No offence, but I only date Katangan men.  It is nothing
-        personal.  I enjoy interviewing Westerners but I don't go out with them. 
-        I hope you understand!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: I'm disappointed, of course, but I respect your honesty.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: Thank you.  It is my trademark and probably why I'm one of the few journalists
-        who gets access to President Kashongo on a regular basis.  He says he also
-        finds my honesty 'refreshing'!
+      Text: 'NOTE: It is a challenge.  Getting a meeting in the Presidential Palace
+        won''t be easy.  Perhaps someone who sees the President on a regular basis
+        might interven on your behalf?'
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -172,7 +116,7 @@ MonoBehaviour:
     Choices: []
     Effect:
       NpcEffects: []
-      EgoEffect: -20
+      EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
