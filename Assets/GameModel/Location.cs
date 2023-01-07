@@ -33,7 +33,7 @@ namespace Assets.GameModel
 		public Vector2 UiPosition;
 
 		public ActionRequirements VisRequirements;
-		
+
 		public List<Policy> Policies = new List<Policy>();
 		public List<Mission> Missions = new List<Mission>();
 		public List<Npc> Npcs = new List<Npc>();
@@ -63,7 +63,9 @@ namespace Assets.GameModel
 			if (mgm.DebugAll)
 				return true;
 
-			if (!Npcs.Any(npc => npc?.IsVisible(mgm) ?? false) && (Policies?.Count ?? 0) == 0 && (Missions?.Count ?? 0) == 0)
+			if (!ShowTrophyCase && !ShowCar && !ShowMyOfficeCustomBackground && !ShowMyHome &&
+			    !Npcs.Any(npc => npc?.IsVisible(mgm) ?? false) &&
+			    (Policies?.Count ?? 0) == 0 && (Missions?.Count ?? 0) == 0)
 				return false;
 
 			return VisRequirements.VisRequirementsAreMet();
