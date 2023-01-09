@@ -1,0 +1,208 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: Chat with Lemon
+  m_EditorClassIdentifier: 
+  Id: 2025241b-4668-4c3e-9dc9-78bca98e09cc
+  Name: Chat with Lemon
+  SubInteraction: 0
+  AlertNew: 1
+  Category: 3
+  Requirements:
+    RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
+    NpcStatRequirements: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: c33242740c0ac78409043b63c9b84d9b, type: 2}
+    - {fileID: 11400000, guid: 658205125440bec40bd382ea8d066e2e, type: 2}
+    - {fileID: 11400000, guid: 1a538b2cba859814b8b4ca612d206582, type: 2}
+    - {fileID: 11400000, guid: 00df832c9b64ce1499fe4d3462f4be5c, type: 2}
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredNpcsControled: []
+    RequiredNpcsTrained: []
+    RequiredNpcsNotControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 0
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    Items: []
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
+  Result:
+    Dialogs:
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Your name's not Lemon.  What is it?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: b94fb1ab6c27f044892d03a8bb21060d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 500
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: "What difference does it make?  Oh fine- \xC9l\xE9na Claes."
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: b94fb1ab6c27f044892d03a8bb21060d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 500
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Miss or Mrs?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: b94fb1ab6c27f044892d03a8bb21060d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 500
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: Mrs.  Yes, I'm married.  And yes-- my husband hates it.  Of course he
+        does.  But I can make ten times what he could earn in the mines.  We have
+        to be practical.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: b94fb1ab6c27f044892d03a8bb21060d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 500
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: What does he do for a living then?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: b94fb1ab6c27f044892d03a8bb21060d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 500
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: He's a house husband.  We have a nice place in teh WRD- well, one of
+        the nicer ones.  He looks after the girls and the house.  I work five days
+        on, then I get two days with my husband and the girls.  It's not what I had
+        hoped for but it is what we have.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: b94fb1ab6c27f044892d03a8bb21060d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 500
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: "Mrs. \xC9l\xE9na Claes can't hide..."
+      Videos:
+      - {fileID: 32900000, guid: 3fb5a76402c181448a2f8438daba1370, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: ...her bitterness and despite her pragmatism, it is clear she resents
+        having to be the family breadwinner.
+    - Title: You can see the mother...
+      Videos: []
+      Textures:
+      - {fileID: 2800000, guid: 420dc318befba4649965bf97d2470928, type: 3}
+      DialogClips: []
+      Text: ...in the features of the rapidly maturing daughters.  They seem clean,
+        healthy and protected from the reality of Katanga-- for now.
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
+  FailureResult:
+    Dialogs: []
+    OptionalPopups: []
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  Completed: 0
+  TurnCompletedOn: -1
+  New: 1
