@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: First Mating time!
+  m_Name: Debbie Below Deck
   m_EditorClassIdentifier: 
-  Id: b416920b-7e14-4a46-87b4-7b23e64f4f48
-  Name: First Mating time!
+  Id: 150c451e-c5de-4305-b4b1-954113457ce8
+  Name: Debbie Below Deck
   SubInteraction: 0
   AlertNew: 1
   Category: 6
@@ -23,14 +23,8 @@ MonoBehaviour:
     RequiredTurnNumber: 0
     NotOnWeekends: 0
     NotOnWeekdays: 0
-    NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Stat: 1
-      Is: 0
-      Value: 0
-    RequiredInteractions:
-    - {fileID: 11400000, guid: 4c2ffb0314a257546a55c66a672ca0b0, type: 2}
+    NpcStatRequirements: []
+    RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -48,55 +42,60 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 1
-  Cooldown: 4
+  Cooldown: 3
   PreviewEffect: 1
   Result:
     Dialogs:
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: cc0b245cabb1aa1439857af53ad155d5,
-        type: 2}
-      Text: Captain, you called?
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: 'NOTE: Once she''s aborad and you''re out at sea, Debbie''s giggles and
+        sly smiles all suggest a coy feminine insight.  Soon you finally realize
+        what she''s no doubt anticipated.  On the boat, there are no distractions. 
+        No computers, no meetings, no phones, no paperwork-- and especially no ther
+        women.  There''s just you and her '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 9c1c2eb4886f0b84297ed2fdc51d03ce,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 400
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: cc0b245cabb1aa1439857af53ad155d5,
-        type: 2}
-      Text: 'It''s time for the Captain''s Woman to service the Master of the boat! '
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: 'NOTE: It isn''t very often Debbie is the sole recipient of your full
+        attention.  She exults in it and uses her every move to tease you-- and to
+        remind you that she has a heart and a mind and needs and desires of her own. 
+        This is the time for your little secretary to shine and she revels in it!'
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 9c1c2eb4886f0b84297ed2fdc51d03ce,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 400
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: The warm air and cool water...
+    - Title: Debbie's teasing is no less effective...
       Videos:
-      - {fileID: 32900000, guid: d5a903baa99c619429a5cb0368fbae10, type: 3}
-      - {fileID: 32900000, guid: 1932fb7c048f58747979426f32ab4867, type: 3}
-      - {fileID: 32900000, guid: ec744d2e0d07a744e8ca73b42b2d5798, type: 3}
+      - {fileID: 32900000, guid: 336c02e31b4429942a0d051690c54849, type: 3}
+      - {fileID: 32900000, guid: b45cb73be5404c14385ac2c792b6e54f, type: 3}
+      - {fileID: 32900000, guid: 761597b368467a64b80316b22232a26d, type: 3}
+      - {fileID: 32900000, guid: d70c99dad29f3304e8a34cbc22e2c1e6, type: 3}
+      - {fileID: 32900000, guid: 88a62e09022944c4ea1d771374a32ac8, type: 3}
+      - {fileID: 32900000, guid: 184c2453318e4474ea8081f0acbe243f, type: 3}
       Textures: []
       DialogClips: []
-      Text: ...seem to unlock some sensuality that Debbie never seems to exhibit
-        in your office.  She seems to moan with abandon and buck excitedly as the
-        waves rock the yacht and your cock invades her own personal harbor!
+      Text: ...for being so obvious.  The office girl senses a rare opportunity to
+        impress her powerful boss without the distractions of other women!
     Choices: []
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
           type: 2}
         AmbitionEffect: 0
-        PrideEffect: 2
-      EgoEffect: 30
+        PrideEffect: 1
+      EgoEffect: 8
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
