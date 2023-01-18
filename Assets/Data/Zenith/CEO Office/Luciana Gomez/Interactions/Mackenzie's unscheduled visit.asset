@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: e0e51404-05f9-4e30-aecc-87508a142abf
   Name: Mackenzie's unscheduled visit
+  SubInteraction: 0
   AlertNew: 1
   Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 4ef50fa074fac874989db967b753c06b, type: 2}
@@ -38,8 +41,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -55,6 +59,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 340
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 0953b95bde8ae5747a4cb25d3630de98,
         type: 2}
@@ -69,6 +74,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 340
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 1895752c79cb36241b3e1f3755c8ca65,
         type: 2}
@@ -82,6 +88,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 340
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 0953b95bde8ae5747a4cb25d3630de98,
         type: 2}
@@ -95,6 +102,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 340
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 0953b95bde8ae5747a4cb25d3630de98,
         type: 2}
@@ -108,6 +116,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 340
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 0953b95bde8ae5747a4cb25d3630de98,
         type: 2}
@@ -122,7 +131,16 @@ MonoBehaviour:
         yPos: 0.4
         width: 340
       OptionalAudioClip: {fileID: 0}
-    OptionalPopups: []
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: The mother and daughter...
+      Videos:
+      - {fileID: 32900000, guid: 867352b4d7f1a8b41a934a4b4667a23c, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: ...share a common arrogance and self-regard far out of proportion to
+        any reality.
+    Choices: []
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: 1895752c79cb36241b3e1f3755c8ca65,
@@ -144,6 +162,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -152,11 +171,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -174,6 +195,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -182,5 +204,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1

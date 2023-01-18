@@ -1,0 +1,190 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: Miss Zenith Pageant
+  m_EditorClassIdentifier: 
+  Id: 5c6187a1-b630-44a6-828b-081ddf0e9601
+  Name: Miss Zenith Pageant
+  SubInteraction: 0
+  AlertNew: 1
+  Category: 6
+  Requirements:
+    RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
+    NpcStatRequirements:
+    - OptionalNpcReference: {fileID: 0}
+      Stat: 0
+      Is: 2
+      Value: 100
+    RequiredInteractions:
+    - {fileID: 11400000, guid: fe588ece178120d49badcf6dc562d861, type: 2}
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredNpcsControled: []
+    RequiredNpcsTrained: []
+    RequiredNpcsNotControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 0
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    Items: []
+  Repeatable: 0
+  Cooldown: 30
+  PreviewEffect: 1
+  Result:
+    Dialogs:
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Mackenzie, again- who are you?
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: e932874c07ac69a468238a1c67329797, type: 3}
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.4
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: I'm the prettiest girl in Zenith!
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: e932874c07ac69a468238a1c67329797, type: 3}
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.4
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: Her confidence wins the day!
+      Videos: []
+      Textures:
+      - {fileID: 2800000, guid: 8841ce76bf7e11d479396ff75dac80ee, type: 3}
+      DialogClips:
+      - {fileID: 8300000, guid: e3c945edcaf0ccc4ea2ba8315e072bd5, type: 3}
+      Text: You add the sash to your growing collection of Mackenzie's trophies,
+        while she wins a shopping spree from the pageant sponsor, Vixxxens!
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 40
+      FundsEffect: 0
+      PowerEffect: 5
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences:
+      - {fileID: 11400000, guid: f869125c2099fb045bbb60690aac6a73, type: 2}
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  CanFail: 1
+  ProbabilityOfFailureResult: 0.3
+  FailureResult:
+    Dialogs:
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Make me proud-- or you know what you'll be getting!
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: e932874c07ac69a468238a1c67329797, type: 3}
+      CustomBackground: {fileID: 2800000, guid: c21a10b71e5aa6a418ac58c38b270d1b,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.4
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: I'll do my very, very, bery best!
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: e932874c07ac69a468238a1c67329797, type: 3}
+      CustomBackground: {fileID: 2800000, guid: c21a10b71e5aa6a418ac58c38b270d1b,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.6
+        yPos: 0.4
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: Alas, despite her best...
+      Videos:
+      - {fileID: 32900000, guid: 5344eff543d510b46aad705669dc976e, type: 3}
+      - {fileID: 32900000, guid: 36b2d84d7e327f74d8ae8c263fd49d23, type: 3}
+      - {fileID: 32900000, guid: b9075537ea9608a45ae8dc4957d7cb12, type: 3}
+      Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: 9732b2f82524c1943aeeaa0d40407918, type: 3}
+      Text: ...Mackenzie fails to secure the crown.  Now it is time for her to pay
+        the price for disappointing you!
+    Choices: []
+    Effect:
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: 0
+        PrideEffect: 1
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  Completed: 0
+  TurnCompletedOn: -1
+  New: 1
