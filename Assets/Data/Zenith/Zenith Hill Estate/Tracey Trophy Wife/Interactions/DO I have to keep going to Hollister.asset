@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: DO I have to keep going to Hollister
   m_EditorClassIdentifier: 
   Id: 153d5f62-750b-4292-80c7-0f16b707cbed
-  Name: DO I have to keep going to Hollister?
+  Name: Do I have to keep going to Hollister?
   SubInteraction: 0
   AlertNew: 1
-  Category: 0
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -24,7 +24,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 863b7d480306d4e49b8e9c2a5b7733ef, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -45,8 +46,54 @@ MonoBehaviour:
   Cooldown: 0
   PreviewEffect: 0
   Result:
-    Dialogs: []
-    OptionalPopups: []
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: Darling, now that I've completed my studies at Hollister, don't you think
+        we can return to our old schedules around here?  Ther's really no need for
+        me to continue at Hollister-- is there?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: 'NOTE: She''s right.  Tracey''s successfully completed her studies and
+        there''s really no reason for her to keep going... except you have grown
+        used to having her kept busy and supervised.'
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: I think you'll continue at Hollister.  There's always room for improvement
+        and you have all these new friends there.  No, you'll continue and that's
+        the end of it.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: Tracey's little remonstrances...
+      Videos:
+      - {fileID: 32900000, guid: 3d5517d198cb0e44fb76a9b1062f3533, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: ...fall on deaf ears.  She'll continue on at Hollister-- for the time
+        being anyway.
     Choices: []
     Effect:
       NpcEffects: []
