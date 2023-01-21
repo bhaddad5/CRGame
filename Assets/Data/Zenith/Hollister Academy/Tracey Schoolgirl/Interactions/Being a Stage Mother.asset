@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Self Critique
+  m_Name: Being a Stage Mother
   m_EditorClassIdentifier: 
-  Id: e7445582-4582-4ea5-9189-523cfd7bc1d1
-  Name: Self Critique
+  Id: 6911dc1e-a18e-49db-9304-6114cf4070b3
+  Name: Being a Stage Mother
   SubInteraction: 1
   AlertNew: 1
   Category: 5
@@ -25,7 +25,8 @@ MonoBehaviour:
     NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: a52fae10767765e449b69007d6a91bac, type: 2}
+    - {fileID: 11400000, guid: 283393e3b50e6174abea1013beb67db7, type: 2}
+    - {fileID: 11400000, guid: 611f6c0b48a5d7943b9a1c52c46cc3f2, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -50,44 +51,44 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 73f45ec8296fdab4b9a111a643394c97,
         type: 2}
-      Text: Very good Tracey-- you may continue!
+      Text: How do you feel about your step daughter competing in the pageant field?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: adeb8ad6d5b6d7446b1c3bacf40b6183,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.5
-        width: 200
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 14af4b3289f7b75438728ac446c7b497,
         type: 2}
-      Text: 'Uh, well... I tend to over think things too much-- I''m working on that. 
-        And, well, my breasts aren''t nearly big enough for a man like my husband. 
-        It''s so embarrassing to have such small breasts.  '
+      Text: I couldn't be more excited!  There's so much value I think I can bring
+        to helping her reach her full potential!  {FirstName} doesn't have the time
+        for it and I know, under my direction, there are many opportunities out there
+        for my step daughter!  I want to be her Stage Mom, if {FirstName} allows
+        me to be!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: adeb8ad6d5b6d7446b1c3bacf40b6183,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.5
-        width: 200
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: Tracey's willingness...
+    - Title: Excellent!  Tracey's embraced...
       Videos: []
       Textures:
-      - {fileID: 2800000, guid: 2c1c1f6669e899743871d1bc0ba6f6ee, type: 3}
+      - {fileID: 2800000, guid: 2e7bf0587a6880e4593059db9585e4f6, type: 3}
       DialogClips: []
-      Text: ...to admit how deficient she is in so many ways will help motivate her
-        to compensate in other ways!
+      Text: '...the perfect role within your household!  You know Tracey will be
+        a strict, overbearing and not a little jealous Stage Mother who will bully,
+        coax and push Mackenzie to even greater heights!  It is all a superb outcome!  '
     Choices: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 11400000, guid: 14af4b3289f7b75438728ac446c7b497,
-          type: 2}
+      - OptionalNpcReference: {fileID: 0}
         AmbitionEffect: 0
         PrideEffect: 10
       - OptionalNpcReference: {fileID: 11400000, guid: d6893d3d1ae90dc4699580eb2d4b4f1a,
@@ -120,54 +121,54 @@ MonoBehaviour:
       Home: 0
     GoToRegion: {fileID: 0}
   CanFail: 1
-  ProbabilityOfFailureResult: 0.35
+  ProbabilityOfFailureResult: 0.65
   FailureResult:
     Dialogs:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 73f45ec8296fdab4b9a111a643394c97,
         type: 2}
-      Text: You're telling me you satisfy all of your husband's desires?  Are you
-        daft, girl?
+      Text: How do you feel about your step daughter competing in the pageant field?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: adeb8ad6d5b6d7446b1c3bacf40b6183,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.5
-        width: 200
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 14af4b3289f7b75438728ac446c7b497,
         type: 2}
-      Text: Well, really Head Mistress- what wife does?  You're talking about reaching
-        an impossible bar!
+      Text: Not much.  It's simply a little hobby for my husband.  Mackenzie may
+        as well be a race horse or a hunting dog.  It is all a diversion for him
+        to indulge in and it has nothing to do with me!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: adeb8ad6d5b6d7446b1c3bacf40b6183,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.5
-        width: 200
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: Tracey's failure to...
+    - Title: Tracey is refusing to...
       Videos: []
       Textures:
-      - {fileID: 2800000, guid: 2c1c1f6669e899743871d1bc0ba6f6ee, type: 3}
+      - {fileID: 2800000, guid: 2e7bf0587a6880e4593059db9585e4f6, type: 3}
       DialogClips: []
-      Text: ...admit the many ways in which she fails to meet your ideals means more
-        studying is needed!
-    - Title: Tracey can think about...
+      Text: ...accept the role you've chosen for her.  That's a pity-- for her. 
+        Th eonly way out of this class for her is to embrace it and all it implies.
+    - Title: Tracey's going to learn to be...
       Videos:
-      - {fileID: 32900000, guid: 05855cffb9afa6147b16d4862397056d, type: 3}
       - {fileID: 32900000, guid: 9c388fca5f136164896440512dafa884, type: 3}
       - {fileID: 32900000, guid: 6089526ca3265c84495906456f6249f3, type: 3}
+      - {fileID: 32900000, guid: 103b9b86993ebb04a82818913cd76bac, type: 3}
       Textures:
-      - {fileID: 2800000, guid: 2c1c1f6669e899743871d1bc0ba6f6ee, type: 3}
+      - {fileID: 2800000, guid: 2e7bf0587a6880e4593059db9585e4f6, type: 3}
       DialogClips: []
-      Text: ...her many failings while she's being punished!
+      Text: ...Mackenzie's Stage Mother, whether she wishes ot or not.  She will
+        be managing Mackenzie's new career and it will be the most important responsibility
+        she'll have.  Until then-- discipline!
     Choices: []
     Effect:
       NpcEffects:

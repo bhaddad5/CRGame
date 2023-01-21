@@ -53,11 +53,12 @@ MonoBehaviour:
       Text: So what IS a woman's most important job in life?-- and by that, I mean
         a woman like you, Tracey.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: adeb8ad6d5b6d7446b1c3bacf40b6183,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.5
+        width: 200
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
@@ -66,11 +67,12 @@ MonoBehaviour:
       Text: Well, I think it is obvious Head Mistress-- to be the best wife you can
         be!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: adeb8ad6d5b6d7446b1c3bacf40b6183,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.5
+        width: 200
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
@@ -84,7 +86,12 @@ MonoBehaviour:
     Choices: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 14af4b3289f7b75438728ac446c7b497,
+          type: 2}
+        AmbitionEffect: 0
+        PrideEffect: 10
+      - OptionalNpcReference: {fileID: 11400000, guid: d6893d3d1ae90dc4699580eb2d4b4f1a,
+          type: 2}
         AmbitionEffect: 0
         PrideEffect: 10
       EgoEffect: 0
@@ -117,15 +124,17 @@ MonoBehaviour:
   FailureResult:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 14af4b3289f7b75438728ac446c7b497,
+        type: 2}
       Text: I just don't see why being a feminist and a good wife are mutually incompatible,
         Head Mistress!  I'm sorry-- I just don't see it that way!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: adeb8ad6d5b6d7446b1c3bacf40b6183,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.5
+        width: 200
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
@@ -134,11 +143,12 @@ MonoBehaviour:
       Text: Perhaps not Tracey.  And I might even agree with you-- but none of that
         matters because your husband does NOT agree!  We'll start over again.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: adeb8ad6d5b6d7446b1c3bacf40b6183,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.5
+        width: 200
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
@@ -162,6 +172,10 @@ MonoBehaviour:
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: 0
+        PrideEffect: 1
+      - OptionalNpcReference: {fileID: 11400000, guid: d6893d3d1ae90dc4699580eb2d4b4f1a,
+          type: 2}
         AmbitionEffect: 0
         PrideEffect: 1
       EgoEffect: 0
