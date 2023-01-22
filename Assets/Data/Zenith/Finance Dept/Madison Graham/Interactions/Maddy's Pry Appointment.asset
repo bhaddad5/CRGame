@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: b73861b0-ccd9-4dc0-ac9c-d05a7afeb98d
   Name: Maddy's Pry Appointment
+  SubInteraction: 0
   AlertNew: 1
   Category: 2
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 4251c0df707b1be47a74aa0d4ee0401b, type: 2}
@@ -38,13 +41,14 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: a40ca6f122f02104c95b957d3df7a8a0,
+      OptionalNpcReference: {fileID: 11400000, guid: 2447b5794cc10d448b75441484c22173,
         type: 2}
       Text: Where's your girl?  Did you fire her after all?
       CustomNpcImageOptions: []
@@ -55,6 +59,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 350
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 2447b5794cc10d448b75441484c22173,
         type: 2}
@@ -70,6 +75,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 350
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 2447b5794cc10d448b75441484c22173,
         type: 2}
@@ -82,6 +88,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 350
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 2447b5794cc10d448b75441484c22173,
         type: 2}
@@ -97,13 +104,16 @@ MonoBehaviour:
         yPos: 0.4
         width: 350
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: You imagine Maddy will be VERY...
       Videos:
       - {fileID: 32900000, guid: a0c10c0dfed7588468238bd5c29f3f19, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: ...surprised at the size of her new sweater puppies, but no doubt she'll
         get used to them in time!  Madison is now TRAINED!
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -122,6 +132,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -130,11 +141,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -152,6 +165,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -160,5 +174,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
