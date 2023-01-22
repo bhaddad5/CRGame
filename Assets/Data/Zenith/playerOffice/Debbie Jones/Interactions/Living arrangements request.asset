@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: c1ec6ac7-3dff-45dc-9c7e-ec36dccc142a
   Name: Living arrangements request
+  SubInteraction: 0
   AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 10ef9d7749a878b46b17ff422aa883c1, type: 2}
@@ -38,8 +41,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 0
   Result:
     Dialogs:
@@ -48,25 +52,27 @@ MonoBehaviour:
         type: 2}
       Text: Sir?  May I have a quick word?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+      CustomBackground: {fileID: 2800000, guid: 04aba9185e390994fa36eca45cd4d343,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.52
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
       Text: Come in.  What's on your mind, Debbie?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+      CustomBackground: {fileID: 2800000, guid: 04aba9185e390994fa36eca45cd4d343,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.52
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -75,13 +81,14 @@ MonoBehaviour:
         her junk!  And there''s no room for another bed in my room!  I''m sorry for
         being impatient.  I was just wondering when she''ll be assigned her own room!  '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+      CustomBackground: {fileID: 2800000, guid: 04aba9185e390994fa36eca45cd4d343,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.52
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -90,13 +97,14 @@ MonoBehaviour:
         no, there isn't room for another bed so you'll share that as well.  Is there
         anything else?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+      CustomBackground: {fileID: 2800000, guid: 04aba9185e390994fa36eca45cd4d343,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.52
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -105,7 +113,7 @@ MonoBehaviour:
         rooms, as Debbie well knows, but forcing the sisters to live in such close
         quarters is a delicious prospect. '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+      CustomBackground: {fileID: 2800000, guid: 04aba9185e390994fa36eca45cd4d343,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.52
@@ -113,25 +121,30 @@ MonoBehaviour:
         width: 375
       OptionalAudioClip: {fileID: 8300000, guid: ff097897712e48446aa44457baa31cff,
         type: 3}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Watching on the dorm cam...
       Videos:
       - {fileID: 32900000, guid: d7ed2d436b5220f4193bca4369bd72ee, type: 3}
       Textures: []
+      DialogClips: []
       Text: ...you can see the friction sharing a single bed causes.  Like any thoughtful
         boss, you decide to address the issue.
     - Title: You have the bed cover...
       Videos:
       - {fileID: 32900000, guid: 219685f885b8ba44eaa350f7986822ef, type: 3}
       Textures: []
+      DialogClips: []
       Text: ...picked up for 'season cleaning and storage'.  Then you have the room
         temperature adjusted once the 9PM "lights out" notice is given.
     - Title: The Jones sisters...
       Videos:
       - {fileID: 32900000, guid: c18847996140a5e44bab7ac4734cb0fd, type: 3}
       Textures: []
+      DialogClips: []
       Text: ...must grow used to each other's bodies.  Being forced to snuggle for
         some body heat is an excellent beginning in that process!
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -149,6 +162,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -157,11 +171,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -179,6 +195,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -187,5 +204,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
