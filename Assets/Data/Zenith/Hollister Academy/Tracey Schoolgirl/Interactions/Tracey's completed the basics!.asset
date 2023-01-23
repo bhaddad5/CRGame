@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Schedule Mackenzie's Classes
+  m_Name: Tracey's completed the basics!
   m_EditorClassIdentifier: 
-  Id: f16f2ae6-ecf3-45f9-80ff-0c133016e28c
-  Name: Schedule Mackenzie's Classes
-  SubInteraction: 0
+  Id: 12241210-eec7-4bf9-970a-758fb86d9898
+  Name: Tracey's completed the basics!
+  SubInteraction: 1
   AlertNew: 1
   Category: 5
   Requirements:
@@ -24,9 +24,15 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
-    RequiredNotCompletedInteractions:
-    - {fileID: 11400000, guid: e2433d63ba77b5d4c9b84dbf70d90c94, type: 2}
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 0ffbe56f9e884d847b61daad334ecbdd, type: 2}
+    - {fileID: 11400000, guid: 589009a4e9e61fb43b042df0090b2599, type: 2}
+    - {fileID: 11400000, guid: 4aef72ab988a2f34ab80c06632c9f607, type: 2}
+    - {fileID: 11400000, guid: 29a76e29449c17a4a8dffdbcd11800ef, type: 2}
+    - {fileID: 11400000, guid: 03e084062a70dea4bbce251f1a4a4c20, type: 2}
+    - {fileID: 11400000, guid: 52e4f401b41de8642b3dac6e0d2fe56b, type: 2}
+    - {fileID: 11400000, guid: 06ea757543a034a4d8dba9be42235a35, type: 2}
+    RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -42,66 +48,28 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 1
-  Cooldown: 10
-  PreviewEffect: 1
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
   Result:
     Dialogs:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 73f45ec8296fdab4b9a111a643394c97,
         type: 2}
-      Text: Go on, Mackenzie- just as we rehearsed!
+      Text: I'm pleased to inform you that Mrs. {LastName} has completed the basic
+        course requirements and is ready to take on more advanced classes!  You must
+        be so proud of her!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: bb00c61aada9d364e8667e71cac17fc0,
+      CustomBackground: {fileID: 2800000, guid: c4c7decfdfe298944a303c432d301d2f,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
-        yPos: 0.2
-        width: 400
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: b78f3845998fdef498a2e6c9fc60efb4,
-        type: 2}
-      Text: Yes, Ma'am.  Daddy, which class would you like me to take next?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: bb00c61aada9d364e8667e71cac17fc0,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.2
-        width: 400
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 11400000, guid: b78f3845998fdef498a2e6c9fc60efb4,
-        type: 2}
-      Text: 'NOTE: It will take a few days to learn the subject well enough to pass
-        the class.  She will need to complete them all before being allowed to compete
-        in her first beauty pageant!'
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: bb00c61aada9d364e8667e71cac17fc0,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.2
-        width: 400
+        yPos: 0.3
+        width: 500
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
-    Choices:
-    - {fileID: 11400000, guid: e67157b061b86294bb9f3bd5a1b883b1, type: 2}
-    - {fileID: 11400000, guid: 0e089da88c80ec14ea0a9cb2637d814c, type: 2}
-    - {fileID: 11400000, guid: 55f6501d84cc8d24c85b7da623efade1, type: 2}
-    - {fileID: 11400000, guid: 08b602fbeec432847872666195cf19bd, type: 2}
-    - {fileID: 11400000, guid: 450ec3173d3a98c4cb4f0c3a1d2d401a, type: 2}
-    - {fileID: 11400000, guid: 0aa0f20763cc97943a9a0badb1db24ca, type: 2}
-    - {fileID: 11400000, guid: 99bb0eda183722b46bdd235699c18777, type: 2}
-    - {fileID: 11400000, guid: 41b5eeec90de8774baff50a19c20aa05, type: 2}
-    - {fileID: 11400000, guid: 4cc921027837da24abd73ddf810c0b06, type: 2}
-    - {fileID: 11400000, guid: c3cf4e0505af92f4f8d14f69c34f998d, type: 2}
-    - {fileID: 11400000, guid: 4c04aeb6790ae234c8887b5c23d084ee, type: 2}
-    - {fileID: 11400000, guid: e2433d63ba77b5d4c9b84dbf70d90c94, type: 2}
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0

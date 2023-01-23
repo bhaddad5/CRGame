@@ -104,7 +104,7 @@ MonoBehaviour:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: 14af4b3289f7b75438728ac446c7b497,
           type: 2}
-        AmbitionEffect: 0
+        AmbitionEffect: 10
         PrideEffect: 10
       EgoEffect: 0
       FundsEffect: 0
@@ -134,14 +134,57 @@ MonoBehaviour:
   CanFail: 1
   ProbabilityOfFailureResult: 0.4
   FailureResult:
-    Dialogs: []
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 14af4b3289f7b75438728ac446c7b497,
+        type: 2}
+      Text: So, I'm to understand that I think too much?  Isn't this just a little
+        absurd?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: bb00c61aada9d364e8667e71cac17fc0,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 73f45ec8296fdab4b9a111a643394c97,
+        type: 2}
+      Text: Is it?  Has thinking ever led you to any personal satisfaction or happiness? 
+        Until you'll prepared to trust your husband entirely, there's no moving forward
+        Tracey!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: bb00c61aada9d364e8667e71cac17fc0,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 14af4b3289f7b75438728ac446c7b497,
+        type: 2}
+      Text: How am I supposed to simply switch my brain off?  This is ridiculous!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: bb00c61aada9d364e8667e71cac17fc0,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Tracey seems to recoil...
       Videos: []
       Textures:
       - {fileID: 2800000, guid: 3684f8943326cf045acabeb143987600, type: 3}
       DialogClips: []
-      Text: ...from the implications of this basic class.
+      Text: ...from the implications of this basic class-- or to accept the lessons
+        it teaches!
     - Title: Until she's able to...
       Videos:
       - {fileID: 32900000, guid: edf5f35c0d33f6744ad5d48710f05bfc, type: 3}
@@ -150,8 +193,8 @@ MonoBehaviour:
       Textures:
       - {fileID: 2800000, guid: 3684f8943326cf045acabeb143987600, type: 3}
       DialogClips: []
-      Text: ...embrace the key points, she'll require some motivation to study even
-        harder!
+      Text: ...humbly embrace the key points, she'll require some motivation to study
+        even harder!
     Choices: []
     Effect:
       NpcEffects:

@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 417956c3-1d02-4f8c-9580-7b022665d124
   Name: Motivation Room Appointment
+  SubInteraction: 0
   AlertNew: 1
   Category: 5
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: b9172d7134e7a8e4da3b1bc20a92656a, type: 2}
@@ -38,8 +41,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
-  Repeatable: 0
+    Items: []
+  Repeatable: 1
+  Cooldown: 6
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -56,6 +60,7 @@ MonoBehaviour:
         yPos: 0.5
         width: 300
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
         type: 2}
@@ -69,6 +74,7 @@ MonoBehaviour:
         yPos: 0.5
         width: 300
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 78fb161dbf254fa4a9a40106bc4e1b3e,
         type: 2}
@@ -82,6 +88,7 @@ MonoBehaviour:
         yPos: 0.5
         width: 300
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 78fb161dbf254fa4a9a40106bc4e1b3e,
         type: 2}
@@ -96,14 +103,17 @@ MonoBehaviour:
         yPos: 0.5
         width: 300
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: The session has barely lasted...
       Videos:
       - {fileID: 32900000, guid: d64e7849a0a7f654198c5933daa76cba, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: ...an hour when Jennifer Page begs to be released.  Yes, yes, she promises
         to do whatever she's told.  She'll be grateful for the job you've offered
         her in the Artemis Secretarial Pool!
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -122,6 +132,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -130,6 +141,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 1
   ProbabilityOfFailureResult: 0.75
   FailureResult:
@@ -143,9 +155,11 @@ MonoBehaviour:
       - {fileID: 32900000, guid: 9a5e13cbe5a336c4ba2e99845a55523f, type: 3}
       - {fileID: 32900000, guid: ef4407f5298ff484e8f702631fd87b85, type: 3}
       - {fileID: 32900000, guid: 1f941098fbcb79d4d9e0258d0be9527f, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: ...on her rage, you realize that persuading Jennifer to accept her new
         status is going to be a grind-- especially for her!
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -163,6 +177,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -171,5 +186,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
