@@ -21,6 +21,8 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 5c570901729663041b3854d6c17370cd, type: 2}
@@ -39,9 +41,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
     Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 0
   Result:
     Dialogs:
@@ -70,7 +72,8 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.3
         width: 350
-      OptionalAudioClip: {fileID: 0}
+      OptionalAudioClip: {fileID: 8300000, guid: 81fc6b2e869ce8e4d859033e19382fd5,
+        type: 3}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 9fc7f810eb3503f44a56e215ed266849,
@@ -177,7 +180,6 @@ MonoBehaviour:
       TrophiesClaimedReferences: []
       MissionsToComplete: []
       ItemsToAdd: []
-      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -186,6 +188,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -210,7 +213,6 @@ MonoBehaviour:
       TrophiesClaimedReferences: []
       MissionsToComplete: []
       ItemsToAdd: []
-      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -219,5 +221,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
