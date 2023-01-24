@@ -13,7 +13,7 @@ public class TrophyCaseBindings : MonoBehaviour
 		foreach (var trophy in mgm.Data.GetOwnedTrophies())
 		{
 			var trophyOb = Instantiate(TrophyDisplayPrefab);
-			trophyOb.Setup(trophy);
+			trophyOb.Setup(trophy, mgm);
 			trophyOb.transform.SetParent(TrophyCaseParent);
 		}
 	}
