@@ -309,6 +309,16 @@ public static class ProfilingHelpers
 		}
 	}
 
+	[MenuItem("Company Man Debugging/Find Bad Failure Percentages")]
+	public static void FindBadFailPercents()
+	{
+		foreach (var interaction in GetAllInteractions())
+		{
+			if(interaction.CanFail && interaction.ProbabilityOfFailureResult <= 0 || interaction.ProbabilityOfFailureResult >= 1)
+				Debug.LogError($"{interaction.Name} has a failure chance of {interaction.ProbabilityOfFailureResult}.  This value must be between 0 and 1");
+		}
+	}
+
 	[MenuItem("Company Man Debugging/Print Control and Completion Interactions")]
 	public static void PrintControlInteractions()
 	{

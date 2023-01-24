@@ -137,6 +137,9 @@ namespace Assets.GameModel
 
 		private void TryRunStartOfTurnInteractions()
 		{
+			if (DebugAll)
+				return;
+
 			foreach (var startOfTurnInteraction in Data.StartOfTurnInteractions)
 			{
 				if (startOfTurnInteraction.InteractionValid(this))

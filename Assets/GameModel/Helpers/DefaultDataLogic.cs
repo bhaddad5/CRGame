@@ -61,6 +61,14 @@ public static class DefaultDataLogic
 								npcEffect.OptionalNpcReference = npc;
 							interaction.Result.Effect.NpcEffects[i] = npcEffect;
 						}
+
+						for (int i = 0; i < interaction.FailureResult.Effect.NpcEffects.Count; i++)
+						{
+							var npcEffect = interaction.FailureResult.Effect.NpcEffects[i];
+							if (npcEffect.OptionalNpcReference == null)
+								npcEffect.OptionalNpcReference = npc;
+							interaction.FailureResult.Effect.NpcEffects[i] = npcEffect;
+						}
 					}
 				}
 			}

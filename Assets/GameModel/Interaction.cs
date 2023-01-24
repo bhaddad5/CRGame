@@ -76,6 +76,12 @@ namespace Assets.GameModel
 
 		public bool InteractionValid(MainGameManager mgm)
 		{
+			if (Completed > 0 && !Repeatable)
+				return false;
+
+			if (mgm.DebugAll)
+				return true;
+
 			if (!IsVisible(mgm))
 				return false;
 

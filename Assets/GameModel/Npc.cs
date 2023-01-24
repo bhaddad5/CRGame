@@ -91,6 +91,9 @@ namespace Assets.GameModel
 
 		public bool IsAccessible(MainGameManager mgm)
 		{
+			if (mgm.DebugAll)
+				return true;
+
 			return VisRequirements.RequirementsAreMet(mgm);
 		}
 
