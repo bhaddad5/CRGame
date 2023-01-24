@@ -95,13 +95,19 @@ namespace Assets.GameModel
 
 		public bool GetInteractionSucceeded()
 		{
+			if (!CanFail)
+				return true;
+
 			UnityEngine.Random.InitState((int)Time.time);
 
 			var val = Random.Range(0f, 1f);
 
-			Debug.Log($"{val} >= {ProbabilityOfFailureResult}?");
+			bool succeeded = val >= ProbabilityOfFailureResult;
 
-			return !CanFail || val >= ProbabilityOfFailureResult;
+			var succStr = succeeded ? "Succeeded" : "Failed";
+			Debug.Log($"{Name}: {succStr}!  Rolled a {val} and needed to be greater than {ProbabilityOfFailureResult}.");
+
+			return succeeded;
 		}
 
 		public InteractionResult GetInteractionResult(bool succeeded)
