@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 2ac478b2-01e9-4bf1-bff9-38cbbd7bdac6
   Name: Commence Operation Baby Boom
-  SubInteraction: 1
+  SubInteraction: 0
   AlertNew: 1
   Category: 4
   Requirements:
@@ -24,7 +24,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 403c592beb356294aa92956cedc08f24, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []

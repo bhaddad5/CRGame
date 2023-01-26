@@ -124,7 +124,7 @@ MonoBehaviour:
       Home: 0
     GoToRegion: {fileID: 11400000, guid: f4b6c2fffb1ab3743ac190d5c780e3f6, type: 2}
   CanFail: 1
-  ProbabilityOfFailureResult: 0.7
+  ProbabilityOfFailureResult: 0.5
   FailureResult:
     Dialogs:
     - CurrSpeaker: 0
@@ -162,22 +162,22 @@ MonoBehaviour:
       - {fileID: 2800000, guid: 2e7bf0587a6880e4593059db9585e4f6, type: 3}
       DialogClips: []
       Text: ...accept the role you've chosen for her.  That's a pity-- for her. 
-        Th eonly way out of this class for her is to embrace it and all it implies.
+        The only way out of this class for her is to embrace it and all it implies.
     - Title: Tracey's going to learn to be...
       Videos:
       - {fileID: 32900000, guid: 9c388fca5f136164896440512dafa884, type: 3}
       - {fileID: 32900000, guid: 6089526ca3265c84495906456f6249f3, type: 3}
       - {fileID: 32900000, guid: 103b9b86993ebb04a82818913cd76bac, type: 3}
-      Textures:
-      - {fileID: 2800000, guid: 2e7bf0587a6880e4593059db9585e4f6, type: 3}
+      Textures: []
       DialogClips: []
-      Text: ...Mackenzie's Stage Mother, whether she wishes ot or not.  She will
+      Text: ...Mackenzie's Stage Mother, whether she wishes to be or not.  She will
         be managing Mackenzie's new career and it will be the most important responsibility
         she'll have.  Until then-- discipline!
     Choices: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 14af4b3289f7b75438728ac446c7b497,
+          type: 2}
         AmbitionEffect: 0
         PrideEffect: 1
       - OptionalNpcReference: {fileID: 11400000, guid: d6893d3d1ae90dc4699580eb2d4b4f1a,
