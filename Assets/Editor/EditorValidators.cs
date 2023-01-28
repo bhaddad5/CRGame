@@ -339,6 +339,15 @@ public class EditorValidators
 			vid = vid.Remove(0, "Assets/".Length);
 			vid = $"{Application.dataPath}/{vid}";
 			var vidDest = vid.Replace(".mp4", "-reduced.mp4");
+
+
+			if (File.Exists(vidDest))
+			{
+				Debug.LogError($"Trying to reduce {vid} but {vidDest} already exists!!!");
+				File.Delete(vid);
+				continue;
+			}
+
 			ProcessStartInfo startInfo = new ProcessStartInfo($"{Application.dataPath}/Editor/VideoConverter/VideoConverter.exe");
 			startInfo.Arguments = $"\"{vid}\" \"{vidDest}\" 20";
 			var p = Process.Start(startInfo);
