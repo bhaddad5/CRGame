@@ -15,6 +15,8 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private Color AfternoonTint;
 		[SerializeField] private Image MapImage;
 
+		[SerializeField] private GameObject ReturnToWorldNewIndicator;
+
 		[SerializeField] private RectTransform RegionMapCanvas;
 		[SerializeField] private Transform LocationsParent;
 		[SerializeField] private Transform QuickAccessLocationsParent;
@@ -29,8 +31,7 @@ namespace Assets.GameModel.UiDisplayers
 		[SerializeField] private TMP_Text RegionName;
 
 		[SerializeField] private List<GameObject> RegionUiToHide;
-
-
+		
 		[SerializeField] private ResourceManagerUiDisplay Power;
 		[SerializeField] private ResourceManagerUiDisplay Spreadsheets;
 		[SerializeField] private ResourceManagerUiDisplay Culture;
@@ -41,8 +42,10 @@ namespace Assets.GameModel.UiDisplayers
 		private MainGameManager mgm;
 		private Action onClose;
 		private Region region;
-		public void Setup(MainGameManager mgm, Region region, Action onClose)
+		private GameData gameData;
+		public void Setup(MainGameManager mgm, Region region, GameData gameData, Action onClose)
 		{
+			this.gameData = gameData;
 			this.onClose = onClose;
 			this.mgm = mgm;
 			this.region = region;
@@ -139,6 +142,8 @@ namespace Assets.GameModel.UiDisplayers
 			Patents.RefreshResourceDisplay(mgm.Data.Patents, mgm);
 			Brand.RefreshResourceDisplay(mgm.Data.Brand, mgm);
 			Revanue.RefreshResourceDisplay(mgm.Data.Revenue, mgm);
+
+			ReturnToWorldNewIndicator.SetActive(gameData.HasNewInteractionsNotInRegion(region));
 
 			AudioHandler.Instance.SetMusicTracks(region.GetCurrMusicTracks(mgm));
 		}

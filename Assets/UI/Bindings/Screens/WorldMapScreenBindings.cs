@@ -46,7 +46,7 @@ namespace Assets.GameModel.UiDisplayers
 		{
 			gameObject.SetActive(false);
 			CurrOpenRegion = Instantiate(_regionUiPrefab);
-			CurrOpenRegion.Setup(mgm, region, () =>
+			CurrOpenRegion.Setup(mgm, region, mgm.Data, () =>
 			{
 				CameraMover.Instance.ResetCameraPos();
 				CameraMover.Instance.SetScreenSize(new Vector2(MapImage.mainTexture.width, MapImage.mainTexture.height));
