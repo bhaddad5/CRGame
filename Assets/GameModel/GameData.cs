@@ -48,8 +48,11 @@ namespace Assets.GameModel
 
 		public List<Interaction> StartOfTurnInteractions = new List<Interaction>();
 
+		private MainGameManager mgm;
 		public void Setup(MainGameManager mgm)
 		{
+			this.mgm = mgm;
+
 			TurnNumber = 0;
 			Ego = StartingEgo;
 			Funds = StartingFunds;
@@ -94,6 +97,19 @@ namespace Assets.GameModel
 			//LEGACY
 			Hornical = 0;
 			//END LEGACY
+		}
+
+		public bool HasNewInteractionsNotInRegion(Region region)
+		{
+			foreach (var r in Regions)
+			{
+				if(r == region)
+					continue;
+				if (r.HasNewInteractions(mgm))
+					return true;
+			}
+
+			return false;
 		}
 		
 		public List<Trophy> GetOwnedTrophies()
