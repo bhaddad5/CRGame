@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: b15954f1-1f03-4729-ab2f-e092acc922e5
   Name: Declare a Truce
+  SubInteraction: 0
   AlertNew: 1
   Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 30ead1b1a357a35428af2abbb018328e, type: 2}
@@ -39,8 +42,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -56,6 +60,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 400
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
         type: 2}
@@ -69,6 +74,7 @@ MonoBehaviour:
         width: 400
       OptionalAudioClip: {fileID: 8300000, guid: 8729a787ee2184a4785f8a6ea78d1150,
         type: 3}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
         type: 2}
@@ -82,6 +88,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 400
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
         type: 2}
@@ -93,13 +100,18 @@ MonoBehaviour:
         xPos: 0.68
         yPos: 0.4
         width: 400
-      OptionalAudioClip: {fileID: 0}
+      OptionalAudioClip: {fileID: 8300000, guid: 4b6068f3cfa8126469b534908b174db3,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Deborah is confident, bordering on arrogant
       Videos:
       - {fileID: 32900000, guid: 37e3c53d909b21e4b9ccabfef6e1a506, type: 3}
       Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: 6b5a50bcdc75dcc4b8b6b4c8ad356468, type: 3}
       Text: 'It is obvious she''s used to being a ''golden girl'' deserving of success. '
+    Choices: []
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
@@ -121,6 +133,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -129,6 +142,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 1
   ProbabilityOfFailureResult: 0.3
   FailureResult:
@@ -145,6 +159,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 400
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
         type: 2}
@@ -157,6 +172,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 400
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
         type: 2}
@@ -169,6 +185,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 400
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
         type: 2}
@@ -181,14 +198,17 @@ MonoBehaviour:
         yPos: 0.4
         width: 400
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Based on her rising profile...
       Videos:
       - {fileID: 32900000, guid: c7e07983794c6de4fbd138d59a8a8bb1, type: 3}
       Textures: []
+      DialogClips: []
       Text: '...in the department, you can''t really disagree.  Things are looking
         grim.  Unless you manage to win this corporate tug of war, Deborah Jones
         is going to make your life miserable. '
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: -5
@@ -206,6 +226,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -214,5 +235,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1

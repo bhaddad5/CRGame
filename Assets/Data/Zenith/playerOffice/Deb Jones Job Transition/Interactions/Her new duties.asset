@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 785abc05-133e-4761-8065-fc2bd6b3f029
   Name: Her new duties
+  SubInteraction: 0
   AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: de54a4d75483a5648ba2d720d30726f6, type: 2}
@@ -38,9 +41,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
-    Items: 
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -70,14 +73,16 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
-      OptionalAudioClip: {fileID: 0}
+      OptionalAudioClip: {fileID: 8300000, guid: dfe721e0b7d9e8740816c6063030f481,
+        type: 3}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Deborah then begins to describe...
       Videos:
       - {fileID: 32900000, guid: b3eae93ea306a5847b2d31c45be0adc1, type: 3}
       Textures: []
-      DialogClips: []
+      DialogClips:
+      - {fileID: 8300000, guid: d5b501025d7dd2f42b6a1304338f86db, type: 3}
       Text: ...how she will effectively take on consulting management covering half
         the company, leaving you with the other half to deal with.  She is assuming
         the role will be more of a job sharing proposition than anything else.
@@ -85,35 +90,40 @@ MonoBehaviour:
       Videos:
       - {fileID: 32900000, guid: b478cb656999d264aa4e945e713a55f9, type: 3}
       Textures: []
-      DialogClips: []
+      DialogClips:
+      - {fileID: 8300000, guid: 3b5267d7e4afa33468ff774e2325e987, type: 3}
       Text: '"You''ll be covering my inbound calls and fielding any questions you
         can answer in my absence."'
     - Title: '"You''ll be handling all my correspondence."'
       Videos:
       - {fileID: 32900000, guid: 4163982843243df418cd628951df8391, type: 3}
       Textures: []
-      DialogClips: []
+      DialogClips:
+      - {fileID: 8300000, guid: c865b7b5e3b8e3840bfa47c80e21247a, type: 3}
       Text: '"Do you know short hand?  I think it will come in handy, especially
         for dictation."'
     - Title: '"I want the filing system redone."'
       Videos:
       - {fileID: 32900000, guid: 2c056dbabcba1d34d827acbe66e4e848, type: 3}
       Textures: []
-      DialogClips: []
+      DialogClips:
+      - {fileID: 8300000, guid: b6fd387d5da0980419b9a86f46df7d2a, type: 3}
       Text: '"Susan was a hopeless organizer.  I want to be able for you to find
         any file I need within minutes."'
     - Title: '"Of course, once you''ve proven...'
       Videos:
       - {fileID: 32900000, guid: df424672f58dbca4ebd8adb22826a585, type: 3}
       Textures: []
-      DialogClips: []
+      DialogClips:
+      - {fileID: 8300000, guid: 76ad673e0f36b5d4185b4f785fb44ac5, type: 3}
       Text: '"...you are able to carry out basic duties, I may assign you something
         a bit more interesting."'
     - Title: '"I''d advise spending...'
       Videos: []
       Textures:
       - {fileID: 2800000, guid: 951b1a9ac522f4f4caad2aa4e822e0e5, type: 3}
-      DialogClips: []
+      DialogClips:
+      - {fileID: 8300000, guid: 78e958fbf705b9c4a878ad4788e488f4, type: 3}
       Text: '"...a lot of time familiarizing yourself with basic secretarial requirements. 
         This handbook should prove invaluable to you in your new role. I expect before
         too long you''ll have it memorized from beginning to end."'
@@ -127,6 +137,7 @@ MonoBehaviour:
         completely discounted and that her new duties will be far more mundane that
         she had initially hoped.  She's used to setting the agenda- not following
         someone else's.
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -144,8 +155,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -154,11 +164,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -176,8 +188,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -186,5 +197,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
