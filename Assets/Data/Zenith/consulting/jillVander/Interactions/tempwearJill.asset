@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: a57552e5-15f3-4aff-bbfe-5825d039c590
   Name: Tempwear Tizzy
+  SubInteraction: 0
   AlertNew: 1
   Category: 5
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
@@ -38,8 +41,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -54,6 +58,8 @@ MonoBehaviour:
         xPos: 0.6
         yPos: 0.35
         width: 380
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
         type: 2}
@@ -65,6 +71,9 @@ MonoBehaviour:
         xPos: 0.6
         yPos: 0.35
         width: 380
+      OptionalAudioClip: {fileID: 8300000, guid: e3fa8be81120cb64a9855a2a035a7f56,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
         type: 2}
@@ -76,6 +85,8 @@ MonoBehaviour:
         xPos: 0.6
         yPos: 0.35
         width: 380
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
         type: 2}
@@ -87,6 +98,9 @@ MonoBehaviour:
         xPos: 0.6
         yPos: 0.35
         width: 380
+      OptionalAudioClip: {fileID: 8300000, guid: ad9f64e53512eef4d8ae667a5e344393,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
         type: 2}
@@ -98,6 +112,8 @@ MonoBehaviour:
         xPos: 0.6
         yPos: 0.35
         width: 380
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
         type: 2}
@@ -110,7 +126,11 @@ MonoBehaviour:
         xPos: 0.6
         yPos: 0.35
         width: 380
+      OptionalAudioClip: {fileID: 8300000, guid: 1eba96cc88cc98c4e988a6caae7e5192,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -128,6 +148,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -136,11 +157,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -158,6 +181,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -166,5 +190,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
