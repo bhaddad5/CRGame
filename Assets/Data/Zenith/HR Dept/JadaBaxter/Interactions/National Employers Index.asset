@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 9305c723-ad33-4264-94a3-f5eee5b27867
   Name: 'Jones, D: National Employers Index Profile'
+  SubInteraction: 0
   AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 69f9d7b181331d64690c1b7cc4bb51f1, type: 2}
@@ -41,9 +44,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
-    Items: 
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -261,7 +264,7 @@ MonoBehaviour:
       Textures:
       - {fileID: 2800000, guid: ed17d020ad1cc634db22cea7e7258b27, type: 3}
       DialogClips:
-      - {fileID: 8300000, guid: c0a489014cc34494bbb268457e5cce22, type: 3}
+      - {fileID: 8300000, guid: d2dce00ae28f6d04eb75cb5aebea092a, type: 3}
       Text: Your review damns her with faint praise and hints Deb has major issues
         with authority figures.  It suggests she'd be a high risk hire, especially
         for a position of any kind involving exercising corporate responsibility...
@@ -270,9 +273,10 @@ MonoBehaviour:
       - {fileID: 32900000, guid: 3132a6a047098f249a634f0b6f48a596, type: 3}
       Textures: []
       DialogClips:
-      - {fileID: 8300000, guid: 26d26d2f384ee644bb291c8391b6b157, type: 3}
+      - {fileID: 0}
       Text: ...Deborah left HR reeling, unable to comprehend the first negative feedback
         she's ever been given in her adult life.
+    Choices: []
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
@@ -294,8 +298,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -304,11 +307,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -326,8 +331,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -336,5 +340,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
