@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: d92d7293-1449-4893-a0c8-9e859eeefd18
   Name: "Susan\u2019s Story"
+  SubInteraction: 0
   AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 9a0c065f05fc2e04ca50e7c1b1a1be45, type: 2}
@@ -38,9 +41,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
-    Items: 
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 0
   Result:
     Dialogs:
@@ -116,9 +119,9 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
         type: 2}
-      Text: "In fact, I've been so busy with my job that I haven\u2019t had even
-        so much time for a social life!  Um, not that Artemis doesn't believe in
-        having a balanced work/life schedule\u2014 we totally do and I totally support
+      Text: "In fact, I've been so busy with my job that I haven\u2019t even had
+        any free time for a social life!  Um, not that Artemis doesn't believe in
+        having a balanced work/life schedule\u2014we totally do and I totally support
         that!"
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
@@ -176,8 +179,8 @@ MonoBehaviour:
       OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
         type: 2}
       Text: But they're all eating crow now!  There were definitely lean times, but
-        we bet on our ourselves and now it's going to pay off in a big way for all
-        those who trusted and kept the faith.
+        we bet on ourselves and now it's going to pay off in a big way for all those
+        who trusted and kept the faith.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
         type: 3}
@@ -238,6 +241,7 @@ MonoBehaviour:
       DialogClips: []
       Text: You suspect there was a reason Susan was asked and it's not for the reason
         she thinks...
+    Choices: []
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
@@ -259,8 +263,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -269,11 +272,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -291,8 +296,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -301,5 +305,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1

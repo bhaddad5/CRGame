@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 42612cfb-2e6c-45fb-a819-481344b75ebc
   Name: Welcome to Vixxxens!
+  SubInteraction: 0
   AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
@@ -37,15 +40,16 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 5e669a1c0e002604c952078aa61bea6d,
         type: 2}
-      Text: Please take your time and browse out extensive collection.  If there's
+      Text: Please take your time and browse our extensive collection.  If there's
         something you like, feel free to use one of our changing rooms to try it
         on!
       CustomNpcImageOptions: []
@@ -55,15 +59,19 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.34
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: You must have seen our new TV ad!
       Videos:
       - {fileID: 32900000, guid: 036d5c448d097d34d86fe260f2e4d990, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: The shop offers cheap knock-offs of quality fashion brands.  Clothes
         purchased at Vixxxens are eye catching but wear out quickly.  It's the kind
         of place that markets to women who want to look glamourous but can only afford
         down market tease.
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -81,6 +89,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -89,11 +98,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -111,6 +122,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -119,5 +131,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
