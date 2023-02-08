@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 74f8170f-996e-45d6-b56d-0a7edf1f8d02
   Name: Pry Therapy Session Four
+  SubInteraction: 0
   AlertNew: 1
   Category: 5
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 0d24b55d63ee90b48a6861373d58ebd0, type: 2}
@@ -38,9 +41,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
-    Items: 
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -48,7 +51,7 @@ MonoBehaviour:
       OptionalNpcReference: {fileID: 11400000, guid: 2dfaec005ac504e4f961f99c537e5805,
         type: 2}
       Text: 'I think the hypnotherapy will make sense now.  As I explained to Debbie,
-        part of treating her required us to understand her subconsciousness, including
+        part of treating her required us to understand her subconscious, including
         her dreams.  She was given a diary to record them as soon as she woke up.    '
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: 6e519d58226fbd34aab16aabe92b6bfc, type: 3}
@@ -166,6 +169,7 @@ MonoBehaviour:
       - {fileID: 8300000, guid: 11b43048d570fa9459c6a39c786296ad, type: 3}
       Text: ...harmless dreams, what she's actually sharing are detailed fantasies
         involving her in very compromising situations with virile men!
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -183,8 +187,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -193,11 +196,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -215,8 +220,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -225,5 +229,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1

@@ -13,13 +13,16 @@ MonoBehaviour:
   m_Name: Glidepath Charman's request
   m_EditorClassIdentifier: 
   Id: b2cea266-adf5-4d83-8c33-6f16010256a3
-  Name: Glidepath Charman's request
+  Name: Glidepath Chairman's request
+  SubInteraction: 0
   AlertNew: 1
   Category: 6
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements:
     - OptionalNpcReference: {fileID: 0}
       Stat: 0
@@ -41,8 +44,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs: []
@@ -50,9 +54,11 @@ MonoBehaviour:
     - Title: The airline chief...
       Videos:
       - {fileID: 32900000, guid: 323b95a651506874e8f99b96cd7991c1, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: ...thinks a blowjob from Meghan would help "progress contract discussions". 
         Meghan will, of course, comply with the customer's wishes.
+    Choices: []
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 0}
@@ -73,6 +79,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -81,11 +88,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -103,6 +112,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -111,5 +121,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
