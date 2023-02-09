@@ -21,6 +21,8 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 9da989dc1ba19e44083ca25a26ff58c4, type: 2}
@@ -42,6 +44,7 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 1
+  Cooldown: 0
   PreviewEffect: 0
   Result:
     Dialogs:
@@ -49,8 +52,8 @@ MonoBehaviour:
       OptionalNpcReference: {fileID: 11400000, guid: 2dfaec005ac504e4f961f99c537e5805,
         type: 2}
       Text: Gentlemen, I understand you're concerned about the health of your administrative
-        staff!  How commendable!  A corporate wellness program would easily pay it's
-        costs back and more in reducung absenteeism and sick days.
+        staff!  How commendable!  A corporate wellness program would easily pay its
+        costs back and more in reducing absenteeism and sick days.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 1e74745b312b1304c9269980c46c57f9,
         type: 3}
@@ -63,7 +66,7 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 3ed340b130310bb4abddc437bf706b8a,
         type: 2}
-      Text: What you you propose, Dr. Feng?
+      Text: What do you propose, Dr. Feng?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 1e74745b312b1304c9269980c46c57f9,
         type: 3}
@@ -106,7 +109,7 @@ MonoBehaviour:
       OptionalNpcReference: {fileID: 11400000, guid: 2dfaec005ac504e4f961f99c537e5805,
         type: 2}
       Text: 'Oh, far from it, Mr. {LastName}!  I''d suggest  a very basic menu--
-        nutricious but bland.  To keep costs down, I''d only offer one meal option
+        nutritious but bland.  To keep costs down, I''d only offer one meal option
         daily-- and restrict breakfast to basic cereal and milk.  Keep it all nice
         and simple for your admin girls-- and very, very cheap.  '
       CustomNpcImageOptions: []
@@ -216,4 +219,5 @@ MonoBehaviour:
       Home: 0
     GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
