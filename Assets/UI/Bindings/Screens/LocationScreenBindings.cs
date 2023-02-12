@@ -51,7 +51,7 @@ namespace Assets.GameModel.UiDisplayers
 			{
 				var f = Instantiate(_npcButtonPrefab);
 				f.Setup(npc, this, mgm);
-				f.transform.SetParent(NpcOptionsParent);
+				f.transform.SetParent(NpcOptionsParent, false);
 			}
 
 			if (loc.Policies.Count == 0)
