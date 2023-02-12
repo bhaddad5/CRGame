@@ -104,7 +104,7 @@ namespace Assets.GameModel
 
 		public Texture2D GetCurrentPicture()
 		{
-			Random r = new Random(mgm.Data.TurnNumber);
+			Random r = new Random((int)(mgm.Data.TurnNumber/2));
 			if (Trained)
 				return TrainedImages[r.Next(0, TrainedImages.Count)];
 			else if (Controlled)
