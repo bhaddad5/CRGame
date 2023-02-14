@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: c0a7dd31-fc2d-4400-ba09-8e9081e6622b
   Name: Pass or Fail
+  SubInteraction: 0
   AlertNew: 1
   Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 0a2bb246c4657384b9986693a7e19a3f, type: 2}
@@ -40,8 +43,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -58,6 +62,7 @@ MonoBehaviour:
         yPos: 0.35
         width: 400
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: c6fc9aa27a6291a41a2090f2db3a94e1,
         type: 2}
@@ -70,6 +75,7 @@ MonoBehaviour:
         yPos: 0.35
         width: 400
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: c6fc9aa27a6291a41a2090f2db3a94e1,
         type: 2}
@@ -83,6 +89,7 @@ MonoBehaviour:
         yPos: 0.35
         width: 400
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: c6fc9aa27a6291a41a2090f2db3a94e1,
         type: 2}
@@ -96,12 +103,13 @@ MonoBehaviour:
         yPos: 0.35
         width: 400
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: c6fc9aa27a6291a41a2090f2db3a94e1,
         type: 2}
-      Text: Deborah's been busy putting together the quarterly projection for the
-        CSG.  Apparently, Director Bledsoe is stopping by and she'll present her
-        findings.  It's a big opportunity for her!
+      Text: LATER... Deborah's been busy putting together the quarterly projection
+        for the CSG.  Apparently, Director Bledsoe is stopping by and she'll present
+        her findings.  It's a big opportunity for her!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 8e1cbf74d2a04e048b84691cc5c485e0,
         type: 3}
@@ -110,6 +118,7 @@ MonoBehaviour:
         yPos: 0.35
         width: 400
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: c6fc9aa27a6291a41a2090f2db3a94e1,
         type: 2}
@@ -125,6 +134,7 @@ MonoBehaviour:
         yPos: 0.35
         width: 400
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: c6fc9aa27a6291a41a2090f2db3a94e1,
         type: 2}
@@ -140,7 +150,17 @@ MonoBehaviour:
         yPos: 0.35
         width: 400
       OptionalAudioClip: {fileID: 0}
-    OptionalPopups: []
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: Deborah's in MBA mode.
+      Videos:
+      - {fileID: 32900000, guid: f671541c415a1694fa7b88e60f542b2d, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: She's no doubt preparing her proposal, double checking it and rehearsing
+        the delivery.  You almost feel sorry for her for what's about to happen to
+        the supremely confident executive on the fast track... almost.
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -158,6 +178,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -166,11 +187,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -188,6 +211,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -196,5 +220,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
