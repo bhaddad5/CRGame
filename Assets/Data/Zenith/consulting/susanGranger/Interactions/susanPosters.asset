@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 1ba8ad96-1166-4aa1-bdf4-f56358b93c4c
   Name: Compliment Susan's Posters
+  SubInteraction: 0
   AlertNew: 1
   Category: 3
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 69ca5a2875c2ec54bb21ae99498f1596, type: 2}
@@ -39,9 +42,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
-    Items: 
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 0
   Result:
     Dialogs:
@@ -83,7 +86,8 @@ MonoBehaviour:
         xPos: 0.35
         yPos: 0.4
         width: 400
-      OptionalAudioClip: {fileID: 0}
+      OptionalAudioClip: {fileID: 8300000, guid: abec1e03c4ff2cd44806207a10841385,
+        type: 3}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
@@ -138,7 +142,8 @@ MonoBehaviour:
         xPos: 0.35
         yPos: 0.4
         width: 400
-      OptionalAudioClip: {fileID: 0}
+      OptionalAudioClip: {fileID: 8300000, guid: d0b7fb459b8c3fe4fae4ebe78f331acd,
+        type: 3}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
@@ -152,29 +157,34 @@ MonoBehaviour:
         xPos: 0.35
         yPos: 0.4
         width: 400
-      OptionalAudioClip: {fileID: 0}
+      OptionalAudioClip: {fileID: 8300000, guid: 3fd63dc80ec6185468df2767c650e95f,
+        type: 3}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: '"I just love this one.  Don''t you?"'
       Videos: []
       Textures:
       - {fileID: 2800000, guid: 267a4fb3c97ceea42964715627f51bf7, type: 3}
-      DialogClips: []
+      DialogClips:
+      - {fileID: 8300000, guid: 68242d219ae7ceb4a832655d602f59e4, type: 3}
       Text: You politely bite your tongue and quietly wonder if this pain will all
         be worth it in the end.
     - Title: '"Everyone needs the occasional reminder, right?"'
       Videos: []
       Textures:
       - {fileID: 2800000, guid: 2a72585daf7bee649a17ae3a07c1bc16, type: 3}
-      DialogClips: []
+      DialogClips:
+      - {fileID: 8300000, guid: cb978549a6809284f8eeced475f72c66, type: 3}
       Text: You resist the urge to roll your eyes.   Talk about reinforcing the echo
         chamber.
     - Title: '"I''m a natural leader.  I always have been, I guess!"'
       Videos:
       - {fileID: 32900000, guid: 98ebdfe8ce083aa4a9e4d2cdba806593, type: 3}
       Textures: []
-      DialogClips: []
+      DialogClips:
+      - {fileID: 8300000, guid: 039d2301b3d7ab8458c39860aeb98268, type: 3}
       Text: You're far from convinced...
+    Choices: []
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
@@ -196,8 +206,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -206,11 +215,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -228,8 +239,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -238,5 +248,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
