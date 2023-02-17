@@ -21,6 +21,8 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 2b05a08476a3e144d830a32a1385ffa8, type: 2}
@@ -42,6 +44,7 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 0
   Result:
     Dialogs:
@@ -211,7 +214,7 @@ MonoBehaviour:
       OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
         type: 2}
       Text: You're just bitter and twisted.  Your marraige failed for the same reason
-        your career failed-- you're a pompous idiot who doesn't understand hwo the
+        your career failed-- you're a pompous idiot who doesn't understand how the
         real world works!  Fuck you and fuck off!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
@@ -272,4 +275,5 @@ MonoBehaviour:
       Home: 0
     GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
