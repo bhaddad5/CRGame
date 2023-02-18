@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: e1c4caa4-897a-4a0e-95cc-6a9713e7fa61
   Name: Debbie's Probation Review (take control)
+  SubInteraction: 0
   AlertNew: 1
   Category: 2
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements:
     - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -43,9 +46,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
-    Items: 
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -172,20 +175,23 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
-      OptionalAudioClip: {fileID: 0}
+      OptionalAudioClip: {fileID: 8300000, guid: c2ebcc6bc2d47d148ba36345478a9fe4,
+        type: 3}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Debbie is torn but there's really no choice.
       Videos:
       - {fileID: 32900000, guid: cc3d354343cb7ae4384621004f0dd430, type: 3}
       Textures: []
-      DialogClips: []
+      DialogClips:
+      - {fileID: 8300000, guid: 0391826f2b32c87429901c811826a82f, type: 3}
       Text: '"Of course, Mr. {LastName}.  I really do want to keep my job!"'
     - Title: The next morning, you are not disappointed.
       Videos:
       - {fileID: 32900000, guid: b740670ba51456b459ac4efd651674c9, type: 3}
       Textures: []
-      DialogClips: []
+      DialogClips:
+      - {fileID: 8300000, guid: 043c2bf4d807b31418e9d755315c1bc2, type: 3}
       Text: You now control Debbie.  She'll dress in a more provocative, if not outright
         slutty, manner and will be more malleable to training her to provide even
         more intimate types of secretarial services.
@@ -196,6 +202,7 @@ MonoBehaviour:
       DialogClips:
       - {fileID: 8300000, guid: 7f0e70588f13cdc43985d276141c576b, type: 3}
       Text: The less job security Debbie feels, the shorter her skirts get!
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 80
@@ -214,8 +221,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -224,11 +230,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 80
@@ -247,8 +255,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -257,5 +264,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
