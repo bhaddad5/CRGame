@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 69483dfc-80bb-4106-b19c-9304d8d627ac
   Name: A bottom line issue
+  SubInteraction: 0
   AlertNew: 1
   Category: 5
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements:
     - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -44,9 +47,14 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
-    Items: 
+    Items:
+    - {fileID: 11400000, guid: 093941a12d8d2f7489166430d82653c4, type: 2}
+    - {fileID: 11400000, guid: 093941a12d8d2f7489166430d82653c4, type: 2}
+    - {fileID: 11400000, guid: 093941a12d8d2f7489166430d82653c4, type: 2}
+    - {fileID: 11400000, guid: 093941a12d8d2f7489166430d82653c4, type: 2}
+    - {fileID: 11400000, guid: 093941a12d8d2f7489166430d82653c4, type: 2}
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -169,7 +177,7 @@ MonoBehaviour:
     OptionalPopups:
     - Title: Debbie's final acquiesence...
       Videos:
-      - {fileID: 32900000, guid: 6745e2d5a835e094882dfa0e6dbe4555, type: 3}
+      - {fileID: 32900000, guid: e2e7b9587d97ce944b11949ecd664643, type: 3}
       Textures: []
       DialogClips:
       - {fileID: 8300000, guid: db289aad637942e478f3ac36093e088f, type: 3}
@@ -183,6 +191,7 @@ MonoBehaviour:
       DialogClips: []
       Text: '...infractions and her corrections should help Debbie in her quest to
         become the Perfect Secretary! '
+    Choices: []
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
@@ -204,8 +213,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -214,6 +222,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 1
   ProbabilityOfFailureResult: 0.3
   FailureResult:
@@ -330,6 +339,7 @@ MonoBehaviour:
         finally submits and puts herself over your lap for a spanking in lieu of
         a demerit, it will make the moment even sweeter!  Give her a day, then try
         again!  '
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -347,8 +357,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -357,5 +366,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
