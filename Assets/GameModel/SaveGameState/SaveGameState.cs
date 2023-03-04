@@ -126,7 +126,8 @@ namespace Assets.GameModel.Save
 				var foundItem = data.InventoryItemOptions.FirstOrDefault(d => d?.Id == item.Id);
 				if(foundItem == null)
 					Debug.LogError($"Failed to find item with id {item.Id}");
-				data.AddItemToInventory(foundItem);
+				else
+					data.AddItemToInventory(foundItem);
 			}
 
 			foreach (var resRegion in data.Regions)
