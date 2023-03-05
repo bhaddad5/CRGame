@@ -53,9 +53,8 @@ namespace Assets.GameModel.UiDisplayers
 			{
 				if (!interaction.IsVisible(mgm) || interaction.SubInteraction)
 					continue;
-				var interactButton = Instantiate(InteractionEntryPrefab);
+				var interactButton = Instantiate(InteractionEntryPrefab, InteractionsParent);
 				interactButton.Setup(interaction, mgm, this);
-				interactButton.transform.SetParent(InteractionsParent);
 			}
 
 			Name.text = $"{this.npc.FirstName} {this.npc.LastName}";

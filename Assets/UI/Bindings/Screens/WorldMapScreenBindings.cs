@@ -33,9 +33,8 @@ namespace Assets.GameModel.UiDisplayers
 			this.mgm = mgm;
 			foreach (Region reg in regions)
 			{
-				var d = Instantiate(_regionEntryPrefab);
+				var d = Instantiate(_regionEntryPrefab, RegionsParent);
 				d.Setup(reg, this, mapSize, mgm);
-				d.transform.SetParent(RegionsParent, false);
 			}
 
 			AudioHandler.Instance.SetMusicTracks(mgm.IsWeekend() ? mgm.WorldWeekendAudio : mgm.WorldWeekdayAudio);

@@ -68,16 +68,14 @@ namespace Assets.GameModel.UiDisplayers
 				else if (loc.locationType == Location.LocationType.Home)
 					prefab = _locationHouseButtonPrefab;
 
-				var d = Instantiate(prefab);
+				var d = Instantiate(prefab, LocationsParent);
 				d.Setup(loc, this, mapSize, mgm);
-				d.transform.SetParent(LocationsParent, false);
 			}
 
 			foreach (var loc in region.QuickAccessLocations)
 			{
-				var d = Instantiate(_quickAccessButtonPrefab);
+				var d = Instantiate(_quickAccessButtonPrefab, QuickAccessLocationsParent);
 				d.Setup(loc, this, mapSize, mgm, true);
-				d.transform.SetParent(QuickAccessLocationsParent, false);
 			}
 
 			AudioHandler.Instance.SetBackgroundAmbiance(region.BackgroundAmbience);

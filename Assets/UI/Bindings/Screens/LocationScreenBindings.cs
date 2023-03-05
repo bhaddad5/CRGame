@@ -49,9 +49,8 @@ namespace Assets.GameModel.UiDisplayers
 
 			foreach (Npc npc in loc.Npcs)
 			{
-				var f = Instantiate(_npcButtonPrefab);
+				var f = Instantiate(_npcButtonPrefab, NpcOptionsParent);
 				f.Setup(npc, this, mgm);
-				f.transform.SetParent(NpcOptionsParent, false);
 			}
 
 			if (loc.Policies.Count == 0)

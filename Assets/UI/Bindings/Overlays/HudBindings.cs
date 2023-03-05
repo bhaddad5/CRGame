@@ -41,9 +41,8 @@ public class HudBindings : MonoBehaviour
 
 		foreach (var itemOption in mgm.Data.InventoryItemOptions)
 		{
-			var item = Instantiate(InventoryItemPrefab);
+			var item = Instantiate(InventoryItemPrefab, InventoryParent);
 			item.Setup(itemOption);
-			item.transform.SetParent(InventoryParent);
 			item.RefreshUiDisplay(mgm);
 		}
 	}
