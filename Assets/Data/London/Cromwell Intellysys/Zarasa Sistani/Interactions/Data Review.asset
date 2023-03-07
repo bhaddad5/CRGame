@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Cromwell Briefing
+  m_Name: Data Review
   m_EditorClassIdentifier: 
-  Id: 16993bd5-bc8c-42af-b475-21b370673f0f
-  Name: Cromwell Briefing
+  Id: 211a4bb9-3895-42c6-a988-6f2951ec4562
+  Name: Data Review
   SubInteraction: 0
   AlertNew: 1
   Category: 1
@@ -25,7 +25,7 @@ MonoBehaviour:
     NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: e6fc2cfaca6bda54eab91cb540839426, type: 2}
+    - {fileID: 11400000, guid: a647c5c8291270a4ca93d6386a89bcfe, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -47,13 +47,10 @@ MonoBehaviour:
   PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 0
+    - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: The SheSays product was quite promising.  The product seems tired now. 
-        Our government clients still are receptive-- they have to be, considering
-        the regulatory pressures with regards to female empowerment.  But our corporates
-        are less enthusiastic.  They're starting to question their investment in
-        Artemis offerings.
+      Text: Well, Ms. Sistani, hav eyou had an opportunity to review the data my
+        office forwarded you on the prototype test results?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -65,8 +62,7 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: bc33bf02957c7994b940aa4e96ab4303,
         type: 2}
-      Text: Zarasa may be overstating the situation a wee bit, Mr. {LastName}.  I
-        think--
+      Text: Hello, {FirstName}!  Mind if I join you two?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -78,9 +74,36 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ecb4dea71c79df84194bb478fc8d9e43,
         type: 2}
-      Text: And Alastair may be, once again, reluctant to offend our American visitor. 
-        Mr. {LastName}, I have no time for such niceties.  I'd like to hear your
-        response to the concerns I've shared today.
+      Text: You may, Alastair.  Yes, I have reviewed the data.  I've no way of confirming
+        the authenticity of the data, but--
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: bc33bf02957c7994b940aa4e96ab4303,
+        type: 2}
+      Text: Oh, Zarasa- that's hardly sporting!  {FirstName} here has let us peek
+        right into their cutting edge tech and you're calling him a liar?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: ecb4dea71c79df84194bb478fc8d9e43,
+        type: 2}
+      Text: BUT-- if I may continue Alastair?-- IF authentic, then their may be life
+        yet in the Artemis product lines.  I could see potential here for Cromwell. 
+        The staff summary was concise and very persuasive by the way.  I imagine
+        this Debbie is one of your strategy people?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -92,11 +115,11 @@ MonoBehaviour:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ecb4dea71c79df84194bb478fc8d9e43,
         type: 2}
-      Text: By all means, Ms. Sistani.  First, we've dramatically upgraded our executive
-        team, including our CTO.  That's led to an acceleration of r and d efforts
-        and we've since made huge progress towards the next generation of Artemis
-        products.  We have prototypes in the field now and initial clinical test
-        results suggest a quantum leap in terms of results.
+      Text: She'd be thrilled to hear talk that!  No, she is merely my personal secretary. 
+        I was wondering if you might be willing to test one of our new products out
+        for yourself, Ms. Sistani.  It's a text to speech application driiven by
+        deep AI.  It actually takes text messages and delivers them in the voice
+        of the sender.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -108,20 +131,7 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ecb4dea71c79df84194bb478fc8d9e43,
         type: 2}
-      Text: Specifics, please Mr {LastName}.  Enough with the vague generalities. 
-        Give me data if you wish to convince me.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: bc33bf02957c7994b940aa4e96ab4303,
-        type: 2}
-      Text: True!  Data, yes!  I agree one hundred percent on that!
+      Text: Perhaps.  What's the value of such an app?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -133,11 +143,9 @@ MonoBehaviour:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ecb4dea71c79df84194bb478fc8d9e43,
         type: 2}
-      Text: Of course!  I can provide you with lab verification that the prototype
-        next gen Artemis systems have increased job satisfaction by 79%, that positive
-        female employee customer satisfaction interactions have increased threfold,
-        and that social preference scores for female staff are up by 82%.  And please,
-        do call me {FirstName}.
+      Text: SheSez simply personalizes inter-staff communication, giving it more
+        impact.  I thought we might start by adding it to your phone-- and limiting
+        it to texts between yourself and Alastair.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -149,7 +157,8 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: bc33bf02957c7994b940aa4e96ab4303,
         type: 2}
-      Text: Very impressive, isn't it Zarasa?  And you must call me Alastair!
+      Text: The last thing Zarasa wants is more of me in her ear!  I can test it
+        if you prefer.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -161,48 +170,9 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ecb4dea71c79df84194bb478fc8d9e43,
         type: 2}
-      Text: Send me the data so I can review it for myself.  After that, I'm open
-        to another meeting.  For the moment, I do have another commitment.  Feel
-        free to continue to discuss all this with Alastair if you like.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: ecb4dea71c79df84194bb478fc8d9e43,
-        type: 2}
-      Text: 'No, that''s fine.  I''ll have my secretary forward you the data and
-        we can hopefully discuss next steps, alright? '
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: bc33bf02957c7994b940aa4e96ab4303,
-        type: 2}
-      Text: Yes, that sounds like a reasonable approach-- and do have a copy of the
-        data sent to me as well, please!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 11400000, guid: bc33bf02957c7994b940aa4e96ab4303,
-        type: 2}
-      Text: 'NOTE: A quick text to Debbie instructing her to gather the data from
-        Technology and R&D should hopefully satisfy the General Manager''s demand.'
+      Text: Nonsense.  It's the only way to properly test this Artemis tech, Alastair. 
+        Please stay out of this, alright?  Yes, Mr. {LastName}, I'll be happy to
+        test out your SheSez app.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -212,13 +182,14 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: The Pakistani GM is a tough nut.
+    - Title: Zarasa Sistani is soon...
       Videos:
-      - {fileID: 32900000, guid: ab6f2ad8a3a27b941838e00c95c7332b, type: 3}
+      - {fileID: 32900000, guid: 495b3ec65514a1648bfd097ad798bab7, type: 3}
       Textures: []
       DialogClips: []
-      Text: She's very wary of your attempts to charm her.  She'll only be persuaded
-        by the black and white facts.
+      Text: ...testing the app, which does indeed immediately translate Schofield's
+        text messages into rendered audio.  It will help condition her for eventual
+        AGATHA chip introducton.
     Choices: []
     Effect:
       NpcEffects: []

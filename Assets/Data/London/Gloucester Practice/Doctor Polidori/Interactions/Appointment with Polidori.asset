@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Cromwell Briefing
+  m_Name: Appointment with Polidori
   m_EditorClassIdentifier: 
-  Id: 16993bd5-bc8c-42af-b475-21b370673f0f
-  Name: Cromwell Briefing
+  Id: e7c4cf43-1b23-46e8-8cb5-269bcbd127b9
+  Name: Appointment with Polidori
   SubInteraction: 0
   AlertNew: 1
-  Category: 1
+  Category: 3
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -24,8 +24,7 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions:
-    - {fileID: 11400000, guid: e6fc2cfaca6bda54eab91cb540839426, type: 2}
+    RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -34,7 +33,7 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 35
+    EgoCost: 0
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -49,38 +48,8 @@ MonoBehaviour:
     Dialogs:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: The SheSays product was quite promising.  The product seems tired now. 
-        Our government clients still are receptive-- they have to be, considering
-        the regulatory pressures with regards to female empowerment.  But our corporates
-        are less enthusiastic.  They're starting to question their investment in
-        Artemis offerings.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: bc33bf02957c7994b940aa4e96ab4303,
-        type: 2}
-      Text: Zarasa may be overstating the situation a wee bit, Mr. {LastName}.  I
-        think--
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: ecb4dea71c79df84194bb478fc8d9e43,
-        type: 2}
-      Text: And Alastair may be, once again, reluctant to offend our American visitor. 
-        Mr. {LastName}, I have no time for such niceties.  I'd like to hear your
-        response to the concerns I've shared today.
+      Text: 'May I help you?  I don''t believe you have an appointment scheduled
+        and I don''t take walk-ins I''m afraid. '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -90,13 +59,8 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: ecb4dea71c79df84194bb478fc8d9e43,
-        type: 2}
-      Text: By all means, Ms. Sistani.  First, we've dramatically upgraded our executive
-        team, including our CTO.  That's led to an acceleration of r and d efforts
-        and we've since made huge progress towards the next generation of Artemis
-        products.  We have prototypes in the field now and initial clinical test
-        results suggest a quantum leap in terms of results.
+      OptionalNpcReference: {fileID: 0}
+      Text: My name is {LastName}- I have a referral actually.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -106,22 +70,10 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: ecb4dea71c79df84194bb478fc8d9e43,
-        type: 2}
-      Text: Specifics, please Mr {LastName}.  Enough with the vague generalities. 
-        Give me data if you wish to convince me.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: bc33bf02957c7994b940aa4e96ab4303,
-        type: 2}
-      Text: True!  Data, yes!  I agree one hundred percent on that!
+      OptionalNpcReference: {fileID: 0}
+      Text: A referral?  Who then has referred you?  If it is friends or family,
+        you'd have to schedule an appointment only after I've confirmed your referee. 
+        I only handle a very small number of patients you see.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -131,13 +83,9 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: ecb4dea71c79df84194bb478fc8d9e43,
-        type: 2}
-      Text: Of course!  I can provide you with lab verification that the prototype
-        next gen Artemis systems have increased job satisfaction by 79%, that positive
-        female employee customer satisfaction interactions have increased threfold,
-        and that social preference scores for female staff are up by 82%.  And please,
-        do call me {FirstName}.
+      OptionalNpcReference: {fileID: 0}
+      Text: Dr. Polidori, I was referred by Dr. Feng in the US.  You ARE a Pry affiliate,
+        are you not?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -147,23 +95,8 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: bc33bf02957c7994b940aa4e96ab4303,
-        type: 2}
-      Text: Very impressive, isn't it Zarasa?  And you must call me Alastair!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: ecb4dea71c79df84194bb478fc8d9e43,
-        type: 2}
-      Text: Send me the data so I can review it for myself.  After that, I'm open
-        to another meeting.  For the moment, I do have another commitment.  Feel
-        free to continue to discuss all this with Alastair if you like.
+      OptionalNpcReference: {fileID: 0}
+      Text: 'Yes.  Yes, of course.  And how is Dr. Feng?  And how do you know her?  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -173,10 +106,12 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: ecb4dea71c79df84194bb478fc8d9e43,
-        type: 2}
-      Text: 'No, that''s fine.  I''ll have my secretary forward you the data and
-        we can hopefully discuss next steps, alright? '
+      OptionalNpcReference: {fileID: 0}
+      Text: Pry manages the wellness of my employees.  I'm {FirstName} {LastName},
+        Chairman of Artemis Solution Systems.  I was hoping you might assist me locally. 
+        Our operations are expanding her in London and I coudl use the assistance
+        of a highly regarded physician such as yourself-- one used to less conventional
+        treatments.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -186,10 +121,10 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: bc33bf02957c7994b940aa4e96ab4303,
-        type: 2}
-      Text: Yes, that sounds like a reasonable approach-- and do have a copy of the
-        data sent to me as well, please!
+      OptionalNpcReference: {fileID: 0}
+      Text: That's why I'm a Pry affiliate.  Of course I'd be happy to work with
+        you.  And yes, I'm well acquainted with less conventional approaches.  It
+        all depends on the needs of my clients.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -198,11 +133,11 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 11400000, guid: bc33bf02957c7994b940aa4e96ab4303,
-        type: 2}
-      Text: 'NOTE: A quick text to Debbie instructing her to gather the data from
-        Technology and R&D should hopefully satisfy the General Manager''s demand.'
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: That's good to hear.  You see, my firm creates special chips used to
+        treat individuals for various conditions, often psychological in nature. 
+        I'm sure you're skilled enough to surgically implant them.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -211,14 +146,31 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups:
-    - Title: The Pakistani GM is a tough nut.
-      Videos:
-      - {fileID: 32900000, guid: ab6f2ad8a3a27b941838e00c95c7332b, type: 3}
-      Textures: []
-      DialogClips: []
-      Text: She's very wary of your attempts to charm her.  She'll only be persuaded
-        by the black and white facts.
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: You can safely assume that.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Thank you Doctor.  You'll be well paid for your work, I assure you. 
+        I'll be sending you new patients from time to time.  I'll be in touch-- thank
+        you for your time.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups: []
     Choices: []
     Effect:
       NpcEffects: []

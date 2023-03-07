@@ -13,14 +13,18 @@ MonoBehaviour:
   m_Name: Doctor Polidori
   m_EditorClassIdentifier: 
   Id: 4b2f8360-c38e-4f99-a96f-76a79024aa38
-  IsControllable: 0
-  StartingAmbition: 0
-  StartingPride: 0
+  IsControllable: 1
+  StartingAmbition: 300
+  StartingPride: 300
   FirstName: Doctor
   LastName: Polidori
-  Age: 0
-  Education: 
-  Bio: 
+  Age: 39
+  Education: University of Tasmania Medical School
+  Bio: 'Polidori''s Gloucester Practice was established five years ago after the
+    Australian immigrated ot the UK.  Highly selective, Polidori''s clientele is
+    made up of a few select aritocrats, celebrities and even soem member so fthe
+    Royal Family.  Known informally as ''Doctor Delightful'', Polidori is known to
+    dispense scripts and treatments other doctors shy away from. '
   VisRequirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -51,7 +55,9 @@ MonoBehaviour:
   Controlled: 0
   Trained: 0
   Exists: 1
-  Interactions: []
+  Interactions:
+  - {fileID: 11400000, guid: cf962ef9116c8214fbff00d68a00639e, type: 2}
+  - {fileID: 11400000, guid: 389efcb85f714f1479c32ba5f704d7a0, type: 2}
   Trophies: []
   IndependentImages:
   - {fileID: 2800000, guid: 2e29efb36df1eb041a1feb97ce921036, type: 3}
