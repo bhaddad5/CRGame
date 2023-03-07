@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Data Review
+  m_Name: I need you to step in!
   m_EditorClassIdentifier: 
-  Id: 211a4bb9-3895-42c6-a988-6f2951ec4562
-  Name: Data Review
+  Id: e3464bbe-144d-4c84-ac65-c01d5fdd67f0
+  Name: I need you to step in!
   SubInteraction: 0
   AlertNew: 1
-  Category: 1
+  Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -25,7 +25,7 @@ MonoBehaviour:
     NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: a647c5c8291270a4ca93d6386a89bcfe, type: 2}
+    - {fileID: 11400000, guid: b9043d5763952b645b85c8bac7032177, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -34,7 +34,7 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 50
+    EgoCost: 25
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -49,8 +49,10 @@ MonoBehaviour:
     Dialogs:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Well, Ms. Sistani, hav eyou had an opportunity to review the data my
-        office forwarded you on the prototype test results?
+      Text: Alastair, I'm finding your GM increasingly difficult to work with.  She's
+        refused to give me a commitment regarding our Next Gen product lines and
+        she's also informed me you're exploring working with another partner?  What
+        is going on here?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -60,50 +62,8 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: bc33bf02957c7994b940aa4e96ab4303,
-        type: 2}
-      Text: Hello, {FirstName}!  Mind if I join you two?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: ecb4dea71c79df84194bb478fc8d9e43,
-        type: 2}
-      Text: You may, Alastair.  Yes, I have reviewed the data.  I've no way of confirming
-        the authenticity of the data, but--
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: bc33bf02957c7994b940aa4e96ab4303,
-        type: 2}
-      Text: Oh, Zarasa- that's hardly sporting!  {FirstName} here has let us peek
-        right into their cutting edge tech and you're calling him a liar?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: ecb4dea71c79df84194bb478fc8d9e43,
-        type: 2}
-      Text: BUT-- if I may continue Alastair?-- IF authentic, then their may be life
-        yet in the Artemis product lines.  I could see potential here for Cromwell. 
-        The staff summary was concise and very persuasive by the way.  I imagine
-        this Debbie is one of your strategy people?
+      OptionalNpcReference: {fileID: 0}
+      Text: 'I''m sorry, {FirstName}!  I know Zarasa can be... difficult at times.  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -113,13 +73,9 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: ecb4dea71c79df84194bb478fc8d9e43,
-        type: 2}
-      Text: She'd be thrilled to hear talk that!  No, she is merely my personal secretary. 
-        I was wondering if you might be willing to test one of our new products out
-        for yourself, Ms. Sistani.  It's a text to speech application driiven by
-        deep AI.  It actually takes text messages and delivers them in the voice
-        of the sender.
+      OptionalNpcReference: {fileID: 0}
+      Text: Why do you put up with it?  You're the Managing Director, not her!  Isn't
+        it time you asserted yourself?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -129,9 +85,12 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: ecb4dea71c79df84194bb478fc8d9e43,
-        type: 2}
-      Text: Perhaps.  What's the value of such an app?
+      OptionalNpcReference: {fileID: 0}
+      Text: Look, when I started Cromwell, all I had was a redundancy from AngloTech
+        and an old name.  The name helped a bit-- there are three admirals, 2 naval
+        captains, a bishop and an ambassador in the Schofiedl line.  Me?  I was a
+        disposable middle manager with a so-so degree from a second rate school. 
+        It was Zarasa who really made Cromwell take off.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -141,11 +100,9 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: ecb4dea71c79df84194bb478fc8d9e43,
-        type: 2}
-      Text: SheSez simply personalizes inter-staff communication, giving it more
-        impact.  I thought we might start by adding it to your phone-- and limiting
-        it to texts between yourself and Alastair.
+      OptionalNpcReference: {fileID: 0}
+      Text: But surely by now Cromwell Intellysys can sustain itself without such
+        a difficult woman as Zarasa Sistani!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -155,10 +112,12 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: bc33bf02957c7994b940aa4e96ab4303,
-        type: 2}
-      Text: The last thing Zarasa wants is more of me in her ear!  I can test it
-        if you prefer.
+      OptionalNpcReference: {fileID: 0}
+      Text: '{FirstName}, I understand your frustration-- but really, without Zarasa
+        I''m fairly certain Cromwell''s bottom line would be grossly affected.  And
+        Cromwell''s profits allow me to enjoy the kind of lifestyle I always expected
+        to enjoy, given my upbringing.  I''m finally a success and I don''t wish
+        to jeopardize all that now.'
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -168,11 +127,25 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: ecb4dea71c79df84194bb478fc8d9e43,
-        type: 2}
-      Text: Nonsense.  It's the only way to properly test this Artemis tech, Alastair. 
-        Please stay out of this, alright?  Yes, Mr. {LastName}, I'll be happy to
-        test out your SheSez app.
+      OptionalNpcReference: {fileID: 0}
+      Text: In my experience, with a woman like Zarasa, eventually they are either
+        at your throat or on their knees.  We have a joint venture that you're willing
+        to sacrifice for this foreign woman-- really, Alastair?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: 'Believe me, the idea of deferring to Zarasa is... humbling.  Good God
+        man-- my great grandfather was a Resident Advisor in the Raj!  He''d be appalled
+        to see a Paki girl like Zarasa behaving the way she does towards  me!  But
+        I need her.  Besides, I''m quite capable of taking out my frustrations outside
+        the office. '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -182,14 +155,13 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: Zarasa Sistani is soon...
-      Videos:
-      - {fileID: 32900000, guid: 495b3ec65514a1648bfd097ad798bab7, type: 3}
-      Textures: []
+    - Title: He smiles smugly, absently...
+      Videos: []
+      Textures:
+      - {fileID: 0}
       DialogClips: []
-      Text: ...testing the app, which does indeed immediately translate Schofield's
-        text messages into rendered audio.  It will help condition her for eventual
-        AGATHA chip introducton.
+      Text: ...rubbing a gold ring he wears on his right hand even as he discounts
+        your legitimate frustrations with Zarasa Sistani.
     Choices: []
     Effect:
       NpcEffects: []
