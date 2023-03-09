@@ -1,0 +1,207 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: Fashion advice
+  m_EditorClassIdentifier: 
+  Id: a7e83c7e-a6c4-4285-978f-7b674b96f0d3
+  Name: Fashion advice
+  SubInteraction: 0
+  AlertNew: 1
+  Category: 0
+  Requirements:
+    RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
+    NpcStatRequirements:
+    - OptionalNpcReference: {fileID: 11400000, guid: ecb4dea71c79df84194bb478fc8d9e43,
+        type: 2}
+      Stat: 0
+      Is: 0
+      Value: 100
+    RequiredInteractions: []
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredNpcsControled: []
+    RequiredNpcsTrained: []
+    RequiredNpcsNotControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 50
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    Items: []
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
+  Result:
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: 'Zarasa, Mr. {LastName} here has suggested Cromwell Intellysys may be
+        projecting a frumpy image! '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: 'I was merely suggesting that Ms. Sistani might want to catch up on the
+        latest executive fashions.  As your General Manager, she really ought to
+        be projecting a smarter, executive look-- something a bit more daring and
+        more in line with her senior position here, that''s all.  Just a bit of constructive
+        criticism, Zarasa!    '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: ecb4dea71c79df84194bb478fc8d9e43,
+        type: 2}
+      Text: Mr. {LastName}, I'm a proud Muslim woman who dresses in accordance with
+        my cultural norms.  In Pakistan, there are limits on how much a woman, especially
+        a professional woman who must balance her fashion choices very carefully. 
+        I'll wear what I think best-- but thank you for your 'constructive criticism'.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: bc33bf02957c7994b940aa4e96ab4303,
+        type: 2}
+      Text: '{FirstName} is right.  Surely, you can show a bit of flexibility, Zarasa. 
+        Why not reconsider your fashion choices?  Surely you''re progressive enough
+        to wear more feminine outfits?  I want my General Manager to get the kind
+        of attention she deserves and which will impresss our clients and partners! 
+        Stretch your fashion horizons.  Am I clear, Zarasa?  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: ecb4dea71c79df84194bb478fc8d9e43,
+        type: 2}
+      Text: Alastair, you know the tightrope I have to walk!  I have family, friends
+        in Pakistand who are watching me!  But, I... suppose I might... stretch my
+        fashion horizons... within limits.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: Reluctantly, Zarasa begins...
+      Videos:
+      - {fileID: 32900000, guid: 1ca1017b66e930441b2e8d492f6e295d, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: '...to add items to her wardrobe she wouldn''t dare be caught wearing
+        in Islamabad!  She struggles with the recognition that her formerly tractable
+        Managing Director is suddenly showing an interest in her she finds most distasteful! 
+        Schofield is delighted, of course.   '
+    Choices: []
+    Effect:
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: ecb4dea71c79df84194bb478fc8d9e43,
+          type: 2}
+        AmbitionEffect: -30
+        PrideEffect: 0
+      - OptionalNpcReference: {fileID: 11400000, guid: bc33bf02957c7994b940aa4e96ab4303,
+          type: 2}
+        AmbitionEffect: 25
+        PrideEffect: 0
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
+  FailureResult:
+    Dialogs: []
+    OptionalPopups: []
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  Completed: 0
+  TurnCompletedOn: -1
+  New: 1
