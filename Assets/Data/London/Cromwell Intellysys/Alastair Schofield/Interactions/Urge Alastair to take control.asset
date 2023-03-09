@@ -1,0 +1,204 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: Urge Alastair to take control
+  m_EditorClassIdentifier: 
+  Id: 3138facc-45f4-4aea-a0e7-bc0d2e2d1eba
+  Name: Urge Alastair to take control
+  SubInteraction: 0
+  AlertNew: 1
+  Category: 2
+  Requirements:
+    RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
+    NpcStatRequirements:
+    - OptionalNpcReference: {fileID: 11400000, guid: ecb4dea71c79df84194bb478fc8d9e43,
+        type: 2}
+      Stat: 0
+      Is: 0
+      Value: 0
+    RequiredInteractions: []
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredNpcsControled: []
+    RequiredNpcsTrained: []
+    RequiredNpcsNotControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 50
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    Items: []
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
+  Result:
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: Mr. {LastName}'s been telling me how he runs his office back in Zenith. 
+        He insists on a great deal more formality that we do here.  I'm thinking
+        this is a trend we might follow here at Cromwell Intelysys.  What do YOU
+        think Zarasa?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: ecb4dea71c79df84194bb478fc8d9e43,
+        type: 2}
+      Text: 'I think we should do what''s best for OUR firm, Alastair.  And, if I
+        may be blunt, I think {LastName} has been interfering in what we do.  It''s
+        time we parted company.  His influence on you has been quite negative! '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: bc33bf02957c7994b940aa4e96ab4303,
+        type: 2}
+      Text: Oh, dear.  She really IS quite disrespectful, isn't she?  Zarasa, I've
+        allowed you a familiarity that you're taken for granted and it is high time
+        thungs snapped back to normal.  Henceforth, I am Mr. Schofield to you-- or
+        Sir.  I'm your superior-- in more ways than one-- and it is time you behaved
+        accordingly.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: ecb4dea71c79df84194bb478fc8d9e43,
+        type: 2}
+      Text: But don't you see what's happening?  He's done something-- I don't know
+        what-- but he's definitely done something to you!  You're not acting normally! 
+        Don't you see it... Mr.... Schofield?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: bc33bf02957c7994b940aa4e96ab4303,
+        type: 2}
+      Text: I'm behaving the way I should have from the beginnin, Zarasa.  Respect
+        is the foundation of any organizaton.  It is time you began appreciating
+        this.  And you'll show Mr. {LastName} the respect a critical partner deserves
+        as well.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: The usually confident Sistani...
+      Videos:
+      - {fileID: 32900000, guid: f2c0c82093fdde14bba8aa52a8e1c1f2, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: ...is reduced to a confused, emotional subordinate.  Yes, she promises,
+        she'll behave more like the junior she is rather than the equal she's been
+        masquerading as.  Zarasa Sistani is now CONTROLLED by Alsatair Schofield!
+    Choices: []
+    Effect:
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: bc33bf02957c7994b940aa4e96ab4303,
+          type: 2}
+        AmbitionEffect: 200
+        PrideEffect: 0
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl:
+      - {fileID: 11400000, guid: ecb4dea71c79df84194bb478fc8d9e43, type: 2}
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
+  FailureResult:
+    Dialogs: []
+    OptionalPopups: []
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  Completed: 0
+  TurnCompletedOn: -1
+  New: 1
