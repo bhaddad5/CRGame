@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: I need something for my secretary
+  m_Name: I want it!
   m_EditorClassIdentifier: 
-  Id: 93bc3485-53fc-458e-a4d9-3f25918a2fea
-  Name: I need something for my secretary
+  Id: ce6c2962-b74f-4af5-9798-24f9a5a8d79c
+  Name: I want it!
   SubInteraction: 1
   AlertNew: 1
-  Category: 6
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -34,7 +34,7 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 50
+    MoneyCost: 10000
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -45,24 +45,31 @@ MonoBehaviour:
   Cooldown: 0
   PreviewEffect: 0
   Result:
-    Dialogs: []
+    Dialogs:
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: What a wondrful suggestion!  Yes, I'll take it!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: '"I can tell from your smile...'
+    - Title: Please have it...
       Videos: []
       Textures:
-      - {fileID: 2800000, guid: 4103ce096f9369e478d6587ab30250d0, type: 3}
+      - {fileID: 2800000, guid: 47b8ef2c3c5a3514e959cdca08588d2c, type: 3}
       DialogClips: []
-      Text: '"...that your secretary probably does more than just answer your phone?"'
+      Text: ...packaged up and shipped back to my US address!
     Choices: []
     Effect:
-      NpcEffects:
-      - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-          type: 2}
-        AmbitionEffect: 0
-        PrideEffect: 1
-      EgoEffect: 0
+      NpcEffects: []
+      EgoEffect: 20
       FundsEffect: 0
-      PowerEffect: 0
+      PowerEffect: 4
       PatentsEffect: 0
       CultureEffect: 0
       SpreadsheetsEffect: 0
@@ -73,7 +80,8 @@ MonoBehaviour:
       NpcsToTrain: []
       NpcsToRemoveFromGame: []
       LocationsToControl: []
-      TrophiesClaimedReferences: []
+      TrophiesClaimedReferences:
+      - {fileID: 11400000, guid: 3a2b98920438eda4f80e964102449e16, type: 2}
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -84,7 +92,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
-    GoToRegion: {fileID: 11400000, guid: 3c25baf722acd4c439896656e7398e99, type: 2}
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:

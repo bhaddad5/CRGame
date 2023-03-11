@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: I need something for my secretary
+  m_Name: Looking for a busines gift
   m_EditorClassIdentifier: 
-  Id: 93bc3485-53fc-458e-a4d9-3f25918a2fea
-  Name: I need something for my secretary
-  SubInteraction: 1
+  Id: 719f9e44-20ee-4050-800c-187de7e68788
+  Name: Looking for a business gift
+  SubInteraction: 0
   AlertNew: 1
   Category: 6
   Requirements:
@@ -34,7 +34,7 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 50
+    MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -45,21 +45,26 @@ MonoBehaviour:
   Cooldown: 0
   PreviewEffect: 0
   Result:
-    Dialogs: []
-    OptionalPopups:
-    - Title: '"I can tell from your smile...'
-      Videos: []
-      Textures:
-      - {fileID: 2800000, guid: 4103ce096f9369e478d6587ab30250d0, type: 3}
-      DialogClips: []
-      Text: '"...that your secretary probably does more than just answer your phone?"'
-    Choices: []
+    Dialogs:
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Penny, I need something to impress business associates.  Show me what
+        you've got that would really floor a potential business partner or someone
+        I really, really want to impress!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups: []
+    Choices:
+    - {fileID: 11400000, guid: 4761888ba977eab439aa827837fe2c09, type: 2}
+    - {fileID: 11400000, guid: 7b2d7a7962ba8aa408affdc61a2eb7bb, type: 2}
     Effect:
-      NpcEffects:
-      - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-          type: 2}
-        AmbitionEffect: 0
-        PrideEffect: 1
+      NpcEffects: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -84,7 +89,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
-    GoToRegion: {fileID: 11400000, guid: 3c25baf722acd4c439896656e7398e99, type: 2}
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:

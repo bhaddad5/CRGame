@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: I need something for my secretary
+  m_Name: An Enigma Machine
   m_EditorClassIdentifier: 
-  Id: 93bc3485-53fc-458e-a4d9-3f25918a2fea
-  Name: I need something for my secretary
+  Id: 07c658eb-d15f-441a-b32e-1f440adfa889
+  Name: An Enigma Machine
   SubInteraction: 1
   AlertNew: 1
-  Category: 6
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -25,7 +25,8 @@ MonoBehaviour:
     NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions: []
-    RequiredNotCompletedInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: ed98f77230e6d054abce40d5ad15a9de, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -34,7 +35,7 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 50
+    MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -45,21 +46,35 @@ MonoBehaviour:
   Cooldown: 0
   PreviewEffect: 0
   Result:
-    Dialogs: []
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: 'Mr. {LastName}, I have a line on an item that has just come onto the
+        market.  It''s a piece of history really-- a bit of a Holy Grail, especially
+        for technologists! '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: '"I can tell from your smile...'
+    - Title: The fabled Enigma Machine!
       Videos: []
       Textures:
-      - {fileID: 2800000, guid: 4103ce096f9369e478d6587ab30250d0, type: 3}
+      - {fileID: 2800000, guid: fef0812e80aff2f4792e134dfdf408fd, type: 3}
       DialogClips: []
-      Text: '"...that your secretary probably does more than just answer your phone?"'
-    Choices: []
+      Text: 'A fully operational three-rotor Enigma I cipher machine. Berlin: Heimsoeth
+        und Rinke, 1943
+
+        PRICE: $200,000 USD'
+    Choices:
+    - {fileID: 11400000, guid: 394818ec2c7234941883d93240ba71c0, type: 2}
+    - {fileID: 11400000, guid: ed98f77230e6d054abce40d5ad15a9de, type: 2}
     Effect:
-      NpcEffects:
-      - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-          type: 2}
-        AmbitionEffect: 0
-        PrideEffect: 1
+      NpcEffects: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -84,7 +99,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
-    GoToRegion: {fileID: 11400000, guid: 3c25baf722acd4c439896656e7398e99, type: 2}
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:

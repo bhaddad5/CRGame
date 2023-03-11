@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: I need something for my secretary
+  m_Name: Something for my foster daughter
   m_EditorClassIdentifier: 
-  Id: 93bc3485-53fc-458e-a4d9-3f25918a2fea
-  Name: I need something for my secretary
-  SubInteraction: 1
+  Id: 81a5c9a9-ade2-406a-905c-668abc2d6389
+  Name: Something for my foster daughter
+  SubInteraction: 0
   AlertNew: 1
   Category: 6
   Requirements:
@@ -24,7 +24,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 85d25866f44744c4290213b7b2f06975, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -34,7 +35,7 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 50
+    MoneyCost: 100
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -45,21 +46,45 @@ MonoBehaviour:
   Cooldown: 0
   PreviewEffect: 0
   Result:
-    Dialogs: []
+    Dialogs:
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: I really should pick something up for my foster daughter-- any ideas?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: Little girls do love their teddy bears, Mr. {LastName}!  What about an
+        authetic Paddington Bear for her?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: '"I can tell from your smile...'
+    - Title: She's a bit old but I love...
       Videos: []
       Textures:
-      - {fileID: 2800000, guid: 4103ce096f9369e478d6587ab30250d0, type: 3}
+      - {fileID: 2800000, guid: 3e6e70083e507694baf1bf5d720d6546, type: 3}
       DialogClips: []
-      Text: '"...that your secretary probably does more than just answer your phone?"'
+      Text: ...the idea.  And she really has been making an effort at Hollister. 
+        Yes, I'll take it!
     Choices: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+      - OptionalNpcReference: {fileID: 11400000, guid: 4d7bbd9e5d8ecee4dbaec1cb452fe01e,
           type: 2}
         AmbitionEffect: 0
-        PrideEffect: 1
+        PrideEffect: 2
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -84,7 +109,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
-    GoToRegion: {fileID: 11400000, guid: 3c25baf722acd4c439896656e7398e99, type: 2}
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
