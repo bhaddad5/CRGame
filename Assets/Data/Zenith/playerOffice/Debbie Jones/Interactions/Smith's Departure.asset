@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Yanks bearing gifts
+  m_Name: Smith's Departure
   m_EditorClassIdentifier: 
-  Id: fa5f283b-5bed-4b4e-9f4b-a21e7238f5a2
-  Name: Yanks bearing gifts
+  Id: 58c83167-1a81-464f-b210-e09c874ea17b
+  Name: Smith's Departure
   SubInteraction: 0
   AlertNew: 1
   Category: 1
@@ -25,7 +25,7 @@ MonoBehaviour:
     NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: ed98f77230e6d054abce40d5ad15a9de, type: 2}
+    - {fileID: 11400000, guid: deadf3b6f12febd4c8c43c149c45f707, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -48,160 +48,134 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 682a0229c813d0b4d896808a88667a14,
-        type: 2}
-      Text: I was hoping we might try again.
+      OptionalNpcReference: {fileID: 0}
+      Text: Debbie, I understand from Mr. Smith that you were quite helpful with
+        his research.  Good job!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: c2004b7fd2e4b3b4692abd2627233e3f,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 400
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: 'Thank you, Sir!  I was just trying to be helpful!  Mr. Smith is scheduled
+        to deper back to London soon.  He''s waiting in your office to say good bye.  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 682a0229c813d0b4d896808a88667a14,
         type: 2}
-      Text: How did you guess I was a Turing fanboy?
+      Text: 'It''s true.  She has no idea, does she?  Your little blonde secretary
+        i scompletely oblivious to the AGATHA chip she''s still carrying around with
+        her.  I''m damned impressed.  And that''s persuaded me-- I agree.  Prometheus
+        AE and Artemsi are better together than apart.  I agree to the terms of the
+        acquisition as discussed.   '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: c2004b7fd2e4b3b4692abd2627233e3f,
+      CustomBackground: {fileID: 2800000, guid: 04aba9185e390994fa36eca45cd4d343,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
-        width: 400
+        width: 450
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 682a0229c813d0b4d896808a88667a14,
         type: 2}
-      Text: What accomplished computer researcher isn't?  Despite issues that limited
-        his potential, he managed to change history.
+      Text: I'm delighted.  I'll still need to work out the financing.  It may take
+        soem time.  We're talking about an enormous amount o fmoney.  I'll need to
+        seek out the right kind of backer for the deal-- one that's as discreet wth
+        very deep pockets.  Will you give us some time to work this out?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: c2004b7fd2e4b3b4692abd2627233e3f,
+      CustomBackground: {fileID: 2800000, guid: 04aba9185e390994fa36eca45cd4d343,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
-        width: 400
+        width: 450
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 682a0229c813d0b4d896808a88667a14,
         type: 2}
-      Text: You mean his homosexuality-- and my dwarfism.  I'm impressed-- both by
-        the gesture and the sentiment behind it.  Very well.  I'd be a bore not to
-        be impressed by both the thought-- and the cost-- behind this gift.  What
-        do you wish to discuss, Mr. {LastName}?
+      Text: As much as you need, within reason.  And I'd be happy to adjust the offer
+        a bit-- say by 100 REVENUE.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: c2004b7fd2e4b3b4692abd2627233e3f,
+      CustomBackground: {fileID: 2800000, guid: 04aba9185e390994fa36eca45cd4d343,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
-        width: 400
+        width: 450
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 682a0229c813d0b4d896808a88667a14,
         type: 2}
-      Text: PLease- it s {FirstName} to my friends-- or those I hope to become friends
-        with.  Tell me why you wanted to displaced Artemis as Cromwell's major commercial
-        partner?  What is going on here at Prometheus-- what are you working on?
+      Text: In exchange for?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: c2004b7fd2e4b3b4692abd2627233e3f,
+      CustomBackground: {fileID: 2800000, guid: 04aba9185e390994fa36eca45cd4d343,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
-        width: 400
+        width: 450
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 682a0229c813d0b4d896808a88667a14,
         type: 2}
-      Text: Those are multiple questions and some bad assumptions, {FirstName}. 
-        I'll answer-- but I expected full disclosure from you as well.  I'll start. 
-        I wasn't trying to replace you at Cromwell.  Perhaps Zarasa did but that
-        was not my intention.  I was only looking for a partner to help support our
-        research.  Prometheus requires funding.
+      Text: 'Her-- the blonde secretary-- but in English and a lot more posh.  While
+        I still seek love, you''ve convinced me that submission in a woman isn''t
+        the worst consolation prize.  Present me with a high class Debbie of my own
+        and I''ll knock off 100 REVENUE from my end of the deal.  Consider it a trade
+        in kind.  '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: c2004b7fd2e4b3b4692abd2627233e3f,
+      CustomBackground: {fileID: 2800000, guid: 04aba9185e390994fa36eca45cd4d343,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
-        width: 400
+        width: 450
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 682a0229c813d0b4d896808a88667a14,
         type: 2}
-      Text: Then I apologize for leaping to incorrect conclusions.  You wanted Cromwell
-        to fund you-- in exchange for equity I assume?  Or a share fo future profits? 
-        Zarasa's no fool, so I assume you're onto something big.  What will you do
-        now?
+      Text: I get the feeling you hav a particular woman in mind, Wayland.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: c2004b7fd2e4b3b4692abd2627233e3f,
+      CustomBackground: {fileID: 2800000, guid: 04aba9185e390994fa36eca45cd4d343,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
-        width: 400
+        width: 450
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 682a0229c813d0b4d896808a88667a14,
         type: 2}
-      Text: I'll go hat in hand looking for investment.  It isn't easy when your
-        proposed offering is a decade away.  But now I get to ask you a question.
-        What's happened to Zarasa?  We were on the cusp of a deal when she just went
-        silent and now seems powerless to make any deal.  There are rumors she's
-        nothing more than Schofield's mistress now.  Her behavior has precipitated
-        a major scandal in Pakistan.  I assume she broke her Confidentialiy promise
-        as well.
+      Text: 'Oh, for quite some time.  The next time you''re in your suite at The
+        Lanesborough, turn on the news channel.  Right- thanks for a lovely visit! 
+        You''ve been a marvelous host and we have a potential deal as a result. 
+        I''d call this a ''win-win'' as you Americans like to say!  Come see me back
+        in England if you''re able to accomodate my little side offer, ok?  '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: c2004b7fd2e4b3b4692abd2627233e3f,
+      CustomBackground: {fileID: 2800000, guid: 04aba9185e390994fa36eca45cd4d343,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
-        width: 400
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 682a0229c813d0b4d896808a88667a14,
-        type: 2}
-      Text: 'Of course she did.  How else would I have learned about Prometheus? 
-        And perhaps Miss Sistani needed some... modification.  Perhaps I applied
-        a technological solution to a serious business problem.  And perhaps I can
-        apply a financial solution to your challenge.  Perhaps Artemis would be interested
-        in funding your efforts.  '
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: c2004b7fd2e4b3b4692abd2627233e3f,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 400
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 682a0229c813d0b4d896808a88667a14,
-        type: 2}
-      Text: With respect, {FirstName}, if it weren't for some flavor of the day social
-        fad regarding carve outs for 'women'based' technology, you wouldn't have
-        a business.  Your offerings are garbage-- just nicely skinned pink apps. 
-        Our two companies have nothing in common, I assure you, and this discussion
-        is pointless.  Good day.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: c2004b7fd2e4b3b4692abd2627233e3f,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 400
+        width: 450
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []

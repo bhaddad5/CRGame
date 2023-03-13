@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Session #2 with Mr Smith
+  m_Name: Session #4 with Mr Smith
   m_EditorClassIdentifier: 
-  Id: fb9e1d03-a40d-40bf-aa49-7d8e1362b7e2
-  Name: Session #2 with Mr. Smith
+  Id: e635dd75-8570-4f25-8fa9-d9b50c6e1590
+  Name: Session #4 with Mr. Smith
   SubInteraction: 0
   AlertNew: 1
   Category: 7
@@ -25,7 +25,7 @@ MonoBehaviour:
     NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: d67206d3762839e4da1c2e4f8a625d0f, type: 2}
+    - {fileID: 11400000, guid: 83500a6038ce0d741a5c07fd559c8746, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -48,46 +48,11 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 682a0229c813d0b4d896808a88667a14,
-        type: 2}
-      Text: 'And here we are again!  I''d like to ask you now how your transition
-        from Management Trainee to Admin went.  Was the Artemis corporate culture
-        supportive of your job change? '
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 23dd0399516e7a549813c6fa9bee793b,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 450
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: 'Well, I had hoped someone would throw me a lifeline, so at least I coudl
-        move to another department.  Susan Granger was no longer in any position
-        to help and Steph Tremont was sympathetic but said she needed time to get
-        a position in her area approved before she said anything more. This is confidential
-        right?  OK-- well then I can say Jada Baxter was bitch and almost seemed
-        happy about my demotion!  '
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 450
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: 'Well, I had hoped someone would throw me a lifeline, so at least I coudl
-        move to another department.  Susan Granger was no longer in any position
-        to help and Steph Tremont was sympathetic but said she needed time to get
-        a position in her area approved before she said anything more. This is confidential
-        right?  OK-- well then I can say Jada Baxter was a bitch and almost seemed
-        happy about my demotion!  '
+      Text: 'Hi, Mr. Smith.  May I ask- will there be many more sessions?  I just
+        know how much work is piling up on my desk.  Keeping up with Mr.  {LastName}''s
+        assignments is tough enough day to day!   '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -99,8 +64,11 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 682a0229c813d0b4d896808a88667a14,
         type: 2}
-      Text: What about the job transition?  How smoothly did that go and how did
-        you feel going through it?
+      Text: We'll have as many sessions as I require, Debbie.  Now, let's get back
+        to the way your job changed.  Let's see-- there's a memo from Mr. {LastName}
+        to an executives only distribution list that designates you as falling under
+        'Executive Privilege'- what is that?  And there's a waiver here that I see
+        you signed.  Tell me about that too.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -112,11 +80,12 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: It was awful!  It was a terrible period for me.  The new Dress Code was
-        so sexist!  I later found out that Mr. {LastName} designed the whole thing
-        himself!  I was so mad.  I pretended to go along with it-- what choice did
-        I have?  but I actually filed an official complaint with the State Commission
-        on Human Rights!
+      Text: 'The memo-- yeah, that was pretty much the end of my social life.  It
+        meant that if I wanted to date some guy I had to submit an application. 
+        It all had to do with ''sensitive company information'' Mr. {LastName} was
+        worried I might spill on a date.  But you know what?  I got a call from a
+        guy in my B School class who was in town for business.  He asked me out--
+        just for a coffee-- and I said yes!   '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -128,7 +97,7 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 682a0229c813d0b4d896808a88667a14,
         type: 2}
-      Text: And what happened with that?
+      Text: That was rather daring of you.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -140,12 +109,11 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: 'Nothing.  I assume one of his political friends like the DA squashed
-        it.  But it was SO inappropriate-- there were even sections on what kind
-        of lingerie to wear!  No other departments had any dress code like that--
-        not then anyway.  Now of course it is a company-wide policy.  But back then,
-        it was only CSG.  I went along with it but I resented having to buy a whole
-        new wardrobe!   '
+      Text: I didn't care- I wasn't about to have to ask my boss for permission to
+        go out on a date like I was in Junior High!  It was goign great too-- until
+        I saw Britney Bower.  It was no secret- she's been Mr. {LastName}'s spy since
+        he started.  I had to ditch my date-- it was so embarrasing!  After that,
+        I stopped bothering.  What was the point?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -157,7 +125,7 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 682a0229c813d0b4d896808a88667a14,
         type: 2}
-      Text: 'I assume you considered yourself a Feminist at that time?  '
+      Text: And this waiver--regarding frivolous lawsuits?  Tell me about that.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -169,11 +137,11 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: I did and I still do, Mr. Smith!  I believe women should have the opportunity
-        to go as far as men in the corporate world, and earn as much as they do! 
-        Women deserve equal rights, equal pay and equity!  It's time we got some
-        social justice, Mr. Smith and if we don't get it, we'll keep fighting until
-        we do!
+      Text: What about it?  I signed it, didn't I?  They said it was to stop fake
+        harassment claims, but all it really did was let bosses take liberties without
+        having to worry about any consequences.  Every since then, a girl nver knows
+        when her boss is going to put his hands on her.  I know MY boss does-- and
+        I really, really don't like it!  What else?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -185,8 +153,9 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 682a0229c813d0b4d896808a88667a14,
         type: 2}
-      Text: Good for you, Miss Jones!  I'll make a note of all that!  Now, during
-        this time, did you manage to land any job interviews?
+      Text: 'Hold on.  Not so fast.  You didn''t like the waiver or what it allowed--
+        that''s clear.  Did you do something about it?  Remember Miss Jones-- the
+        polygraph is recording your responses!  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -198,12 +167,12 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: I did!  My network of Business School friends helped me get a couple
-        nailed down.  But whenever it looked like it might go to the next interview,
-        my NEI Profile caught up with me.  Either that or an unofficial call to Mr.
-        {LastName}'s office or Jada Baxter to 'check employment details' and the
-        process stopped dead in its tracks.  Plus, my new hours made it hard to be
-        flexible to schedule them.
+      Text: Fine.  Yes, I did.  I made an appointment with an employment lawyer and
+        told her what was going on.  I was hoping she'd represent me and hgelp me
+        stop the harassment!  It took all my courage to even go to her office.  But
+        as soon as she asked if I had signed the waiver voluntarily, I knew I had
+        made a mistake.  Then she asked for a retainer and I slunk just slunk out. 
+        Like I had any money forr that!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -215,8 +184,7 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 682a0229c813d0b4d896808a88667a14,
         type: 2}
-      Text: You were kept to strict office hours?  Was Mr. {LastName} particularly
-        strict with you?
+      Text: That must have been very demoralizing.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -228,22 +196,11 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: Well... not as strict as is now but, yeah, he's a very demanding boss. 
-        Can we leave it at that, Mr. Smith?  I mean I know this is confidential and
-        all, but...
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 682a0229c813d0b4d896808a88667a14,
-        type: 2}
-      Text: That will be all for now.  Thank you for your time, Debbie.  You may
-        go for now.
+      Text: It just got worse.  That was when Mr. {LastName} started dropping by
+        my place- when I wasn't home!  I had to give him a spare house key because
+        of some new HR policy.  The next thing I knew, I'd get home from work and
+        find someone had rifled through my things-- ALL my things.  What could I
+        say?  Could I possibly accuse my manager without proof?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -253,13 +210,14 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: Debbie's not enjoying having...
+    - Title: '"Mr. Smith-- will you please...'
       Videos:
-      - {fileID: 32900000, guid: 614adb613c7fcf242abb447ea5ce264f, type: 3}
+      - {fileID: 32900000, guid: 6bfb351e8b67e504ca1280524fcc9f8b, type: 3}
       Textures: []
       DialogClips: []
-      Text: ...to relive the disappointments of her 'transition' period from the
-        MTP to becoming an office assistant.
+      Text: '"...promise not to tell Mr. {LastName} about the date or my visit to
+        a lwayer?  You said thsi would be confidential and he''d get really, really
+        angry if he knew about all that?"'
     Choices: []
     Effect:
       NpcEffects: []

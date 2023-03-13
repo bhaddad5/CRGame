@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Session #2 with Mr Smith
+  m_Name: Session #5 with Mr Smith
   m_EditorClassIdentifier: 
-  Id: fb9e1d03-a40d-40bf-aa49-7d8e1362b7e2
-  Name: Session #2 with Mr. Smith
+  Id: 512f6d33-0930-4a11-a9fa-a5537ee3dcb4
+  Name: Session #5 with Mr. Smith
   SubInteraction: 0
   AlertNew: 1
   Category: 7
@@ -25,7 +25,7 @@ MonoBehaviour:
     NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: d67206d3762839e4da1c2e4f8a625d0f, type: 2}
+    - {fileID: 11400000, guid: a41066126cd289a4690117fb0faf303d, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -50,44 +50,22 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 682a0229c813d0b4d896808a88667a14,
         type: 2}
-      Text: 'And here we are again!  I''d like to ask you now how your transition
-        from Management Trainee to Admin went.  Was the Artemis corporate culture
-        supportive of your job change? '
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 23dd0399516e7a549813c6fa9bee793b,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 450
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: 'Well, I had hoped someone would throw me a lifeline, so at least I coudl
-        move to another department.  Susan Granger was no longer in any position
-        to help and Steph Tremont was sympathetic but said she needed time to get
-        a position in her area approved before she said anything more. This is confidential
-        right?  OK-- well then I can say Jada Baxter was bitch and almost seemed
-        happy about my demotion!  '
+      Text: Your file contains a copy of a certificate awarded for completing 'Diversity
+        Training'.  I assume that's a standard DEI kind of thing?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 450
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: 'Well, I had hoped someone would throw me a lifeline, so at least I coudl
-        move to another department.  Susan Granger was no longer in any position
-        to help and Steph Tremont was sympathetic but said she needed time to get
-        a position in her area approved before she said anything more. This is confidential
-        right?  OK-- well then I can say Jada Baxter was a bitch and almost seemed
-        happy about my demotion!  '
+      Text: That's what I assume when Mr. {LastName} registered me for it.  It was
+        a liitle more... in-depth than what I expected.  I'd rather not discuss it,
+        if that's ok, Mr. Smith?  Please?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -99,8 +77,8 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 682a0229c813d0b4d896808a88667a14,
         type: 2}
-      Text: What about the job transition?  How smoothly did that go and how did
-        you feel going through it?
+      Text: 'What exactly was the exact nature of this training then, Miss Jones? 
+        Why so reluctant to discuss it?  Remember, you''re being recorded!  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -112,11 +90,12 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: It was awful!  It was a terrible period for me.  The new Dress Code was
-        so sexist!  I later found out that Mr. {LastName} designed the whole thing
-        himself!  I was so mad.  I pretended to go along with it-- what choice did
-        I have?  but I actually filed an official complaint with the State Commission
-        on Human Rights!
+      Text: It was... learning about lesbianism.  It's mandatory for all Artemis
+        Admin girls now.  I was a kind of guinea pig.  As soon as I figured out what
+        it was really about, I asked to get out of it but Mr. {LastName} just laughed. 
+        He said if I complained again, he'd have me labeled as a homophobe and I'd
+        be forced to take evn more training until I passed.  I gave in-- but I never
+        liked it.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -128,7 +107,7 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 682a0229c813d0b4d896808a88667a14,
         type: 2}
-      Text: And what happened with that?
+      Text: What didn't you like about the training?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -140,12 +119,11 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: 'Nothing.  I assume one of his political friends like the DA squashed
-        it.  But it was SO inappropriate-- there were even sections on what kind
-        of lingerie to wear!  No other departments had any dress code like that--
-        not then anyway.  Now of course it is a company-wide policy.  But back then,
-        it was only CSG.  I went along with it but I resented having to buy a whole
-        new wardrobe!   '
+      Text: I didn't like what it involved and I certainly didn't like the reason
+        for the training, which had zero to do with tolerance!  In order to pass
+        Diversity Training, you have to perform with another girl.  Sexually.  To
+        demonstrate you were 'supportive and tolerant' of lesbians.  Mr. {LastName}
+        had me assigned with Susan Granger, my old boss.  It was...awkward.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -157,7 +135,8 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 682a0229c813d0b4d896808a88667a14,
         type: 2}
-      Text: 'I assume you considered yourself a Feminist at that time?  '
+      Text: Sounds unusually... immersive I guess.  But you participated voluntarily,
+        I note here.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -169,11 +148,11 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: I did and I still do, Mr. Smith!  I believe women should have the opportunity
-        to go as far as men in the corporate world, and earn as much as they do! 
-        Women deserve equal rights, equal pay and equity!  It's time we got some
-        social justice, Mr. Smith and if we don't get it, we'll keep fighting until
-        we do!
+      Text: 'Oh, of course Mr Smith!  It was all ''voluntary''-- or be fired.  Like
+        heaters are just ''experiential opportunities to demonstrate intra-Admin
+        team harmony''!  Yeah, right!  Heaters are the worst.  I''m NOT a lesbian,
+        Mr. Smith-- but my manager doesn''t really care what my preferences are-
+        not when it comes to those dame heaters he schedules!  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -185,8 +164,8 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 682a0229c813d0b4d896808a88667a14,
         type: 2}
-      Text: Good for you, Miss Jones!  I'll make a note of all that!  Now, during
-        this time, did you manage to land any job interviews?
+      Text: I'll need to ask him about thse 'heaters'.  I see a copy of your Demerits
+        Status.  What is that please?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -198,12 +177,12 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: I did!  My network of Business School friends helped me get a couple
-        nailed down.  But whenever it looked like it might go to the next interview,
-        my NEI Profile caught up with me.  Either that or an unofficial call to Mr.
-        {LastName}'s office or Jada Baxter to 'check employment details' and the
-        process stopped dead in its tracks.  Plus, my new hours made it hard to be
-        flexible to schedule them.
+      Text: 'You know how Mr. {LastName} said if I didn''t tell the truth to you
+        I''d get ten demerits?  Every demerit is a half day''s pay.  When I started
+        as an Admin, I racked up a bunch.  I couldn''t do anything right and my paycheck
+        kept getting docked.  The deductions were killing me!  So when Mr. {LastName}
+        offered me an alternative, well, I took it.  And I learned from my mistakes
+        too-- I get a LOT less demerits theses days!  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -215,8 +194,7 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 682a0229c813d0b4d896808a88667a14,
         type: 2}
-      Text: You were kept to strict office hours?  Was Mr. {LastName} particularly
-        strict with you?
+      Text: And what is this alternative he offerd you?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -228,22 +206,12 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: Well... not as strict as is now but, yeah, he's a very demanding boss. 
-        Can we leave it at that, Mr. Smith?  I mean I know this is confidential and
-        all, but...
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 682a0229c813d0b4d896808a88667a14,
-        type: 2}
-      Text: That will be all for now.  Thank you for your time, Debbie.  You may
-        go for now.
+      Text: Well-- it IS consentual.  I mean I make the decision when to... I have
+        to request the...alternative to knock off a few demerits.  It's painful but
+        he says it is the only other way I'll ever learn my lesson.  I think he's
+        right-- I AM getting less demerits.  Corporal correction, Mr. Smth.  Mr.
+        {LastName} administers corporal correction in exchange for erasing soem of
+        my accumulated demerits.  It's fair-- even if it hurts like hell!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -253,13 +221,13 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: Debbie's not enjoying having...
+    - Title: '"Mrr. {LastName} is very strict...'
       Videos:
-      - {fileID: 32900000, guid: 614adb613c7fcf242abb447ea5ce264f, type: 3}
+      - {fileID: 32900000, guid: dcfba44639eb69647b584279b4a32dee, type: 3}
       Textures: []
       DialogClips: []
-      Text: ...to relive the disappointments of her 'transition' period from the
-        MTP to becoming an office assistant.
+      Text: '"...but he is fair, most of the time anyway.  I''d rather be spanked
+        than broke all the time!"'
     Choices: []
     Effect:
       NpcEffects: []
