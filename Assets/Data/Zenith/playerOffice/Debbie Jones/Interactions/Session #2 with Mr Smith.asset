@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Session #1 with Mr Smith
+  m_Name: Session #2 with Mr Smith
   m_EditorClassIdentifier: 
-  Id: 3bbb18da-65a4-4880-8e77-ed59986fc227
-  Name: Session #1 with Mr. Smith
+  Id: fb9e1d03-a40d-40bf-aa49-7d8e1362b7e2
+  Name: Session #2 with Mr. Smith
   SubInteraction: 0
   AlertNew: 1
   Category: 7
@@ -24,7 +24,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: d67206d3762839e4da1c2e4f8a625d0f, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -47,26 +48,11 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: Well, Mr. Smith-- looks liek I'm all yours until you're done with me! 
-        Hey-- what's that?  Mr. {LastName} didn't say anything about that!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 23dd0399516e7a549813c6fa9bee793b,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 450
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 682a0229c813d0b4d896808a88667a14,
         type: 2}
-      Text: It's a polygraph.  I know you've promised to tell the truth, the whole
-        truth and nothing but the truth... but I really must be completely sure. 
-        Don't take it personally.  It won't hurt and I promise these sessiosn will
-        be completely confidential.  Nothing you say here will be repeated.  This
-        is just between you and me.  Is that ok, Debbie?
+      Text: 'And here we are again!  I''d like to ask you now how your transition
+        from Management Trainee to Admin went.  Was the Artemis corporate culture
+        supportive of your job change? '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 23dd0399516e7a549813c6fa9bee793b,
         type: 3}
@@ -79,39 +65,14 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: You promise, Mr. Smith?  Well... ok.  Can we just get started and get
-        this over with then, please?
+      Text: 'Well, I had hoped someone would throw me a lifeline, so at least I coudl
+        move to another department.  Susan Granger was no longer in any position
+        to help and Steph Tremont was sympathetic but said she needed time to get
+        a position in her area approved before she said anything more. This is confidential
+        right?  OK-- well then I can say Jada Baxter was bitch and almost seemed
+        happy about my demotion!  '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 23dd0399516e7a549813c6fa9bee793b,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 450
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 682a0229c813d0b4d896808a88667a14,
-        type: 2}
-      Text: 'Very good.  I understand you and Mr. {LastName} started here at Artemis
-        at the same time as Management Trainees.  Is that true?  '
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 23dd0399516e7a549813c6fa9bee793b,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 450
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 682a0229c813d0b4d896808a88667a14,
-        type: 2}
-      Text: 'Very good.  I understand you and Mr. {LastName} started here at Artemis
-        at the same time as Management Trainees.  Is that true?  '
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 23dd0399516e7a549813c6fa9bee793b,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
@@ -121,120 +82,180 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: I was actually here many months before he showed up one day because of
-        some legal settlement.  It's funny-- there was talk of him working for me
-        then.  No one thought he'd complete the MTP-- isn't that crazy?  I was just
-        weeks away from completing the program.  That's when things started to go
-        not so great for me.
+      Text: 'Well, I had hoped someone would throw me a lifeline, so at least I coudl
+        move to another department.  Susan Granger was no longer in any position
+        to help and Steph Tremont was sympathetic but said she needed time to get
+        a position in her area approved before she said anything more. This is confidential
+        right?  OK-- well then I can say Jada Baxter was a bitch and almost seemed
+        happy about my demotion!  '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 23dd0399516e7a549813c6fa9bee793b,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 450
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 682a0229c813d0b4d896808a88667a14,
         type: 2}
-      Text: Your file says you were let go from the MTP and were offred an admin
-        role by Mr. {LastName}.  That must have been a shock-- your credentials seem
-        impeccable!  High GPA right through High School, then State University and
-        Forbes Business School.  May I ask why you remained at Artemis when you clearly
-        are qualified for an executive level role somewhere else?
+      Text: What about the job transition?  How smoothly did that go and how did
+        you feel going through it?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 23dd0399516e7a549813c6fa9bee793b,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 450
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: 'Well, it wasn''t like I didn''t try to find a new job!  But... thre
-        was a kind of a disaster involving a high level project I was responsible
-        for.  That didn''t help.  And my NEI Profile isn''t exactly positive.  I
-        thought for a long time I might find something new, but...  It just never
-        happened.  Then the economy got worse and unemployment started going up. '
+      Text: It was awful!  It was a terrible period for me.  The new Dress Code was
+        so sexist!  I later found out that Mr. {LastName} designed the whole thing
+        himself!  I was so mad.  I pretended to go along with it-- what choice did
+        I have?  but I actually filed an official complaint with the State Commission
+        on Human Rights!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 23dd0399516e7a549813c6fa9bee793b,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 450
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 682a0229c813d0b4d896808a88667a14,
         type: 2}
-      Text: Do you think it was fair-- your downward move from Executive to Admin
-        Level?
+      Text: And what happened with that?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 23dd0399516e7a549813c6fa9bee793b,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 450
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: 'For a long time, I didn''t.  I was pretty bitter, to be honest.  I couldn''t
-        understand how Mr. {LastName}-- we''re about the same age-- just seem to
-        shoot ahead and never stopped-- while I just wound up in his shadow, always
-        farther behind.  Eventually, I just had to face the facts.  Mr. {LastName}
-        is an amazing success and I''m just not even in the same league. '
+      Text: 'Nothing.  Thank God Mr. {LastName} never heard about that!  But it was
+        inappropriate-- there were even sections on what kind of lingerie to wear! 
+        No other departments had any dress code like that-- not then anyway.  Now
+        of course it is a company-wide policy.  But back then, it was only CSG. 
+        I went along with it but I resented having to buy a whole new wardrobe!   '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 23dd0399516e7a549813c6fa9bee793b,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 450
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 682a0229c813d0b4d896808a88667a14,
         type: 2}
-      Text: We're off to an excellent start, Debbie.  You've been very honest and
-        that's very good.  Let's pick this up again at another time.
+      Text: 'I assume you considered yourself a Feminist at that time?  '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 23dd0399516e7a549813c6fa9bee793b,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 450
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: Thanks Mr. Smith.  None of this is easy to talk about.
+      Text: I did and I still do, Mr. Smith!  I believe women should have the opportunity
+        to go as far as men in the corporate world, and earn as much as they do!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 23dd0399516e7a549813c6fa9bee793b,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 450
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 682a0229c813d0b4d896808a88667a14,
+        type: 2}
+      Text: I'll make a note of that!  During this time, did you manage to land any
+        job interviews?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: I did!  My network of Business School friends helped me get a couple
+        nailed down.  But whenever it looked like it might go to the next interview,
+        my NEI Profile caught up with me.  Either that or an unofficial call to Mr.
+        {LastName}'s office or JAda Baxter to 'check employment details' and the
+        process stopped dead in its tracks.  Plus, my new hours made it hard to be
+        flexible to schedule them.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 682a0229c813d0b4d896808a88667a14,
+        type: 2}
+      Text: You were kept to strict office hours?  Was Mr. {LastName} particularly
+        strict with you?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: Well... not as strict as is now but, yeah, he's a very demanding boss. 
+        Can we leave it at that, Mr. Smith?  I mean I know this is confidential and
+        all, but...
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 682a0229c813d0b4d896808a88667a14,
+        type: 2}
+      Text: That will be all for now.  Thank you for your time, Debbie.  You may
+        go for now.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: Debbie seems intimidated...
+    - Title: Debbie's not enjoying having...
       Videos:
-      - {fileID: 32900000, guid: a4d1f747d12e86644a234beb24b4daa0, type: 3}
+      - {fileID: 32900000, guid: 614adb613c7fcf242abb447ea5ce264f, type: 3}
       Textures: []
       DialogClips: []
-      Text: ...by Smith's polygraph at first, but the initial questions aren't too
-        confronting, which allows her to lwer her guard a bit.
+      Text: ...to relive the disappointments of her 'transition' period from the
+        MTP to becoming an office assistant.
     Choices: []
     Effect:
       NpcEffects: []
