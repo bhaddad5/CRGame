@@ -14,13 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 07ed849a-fd93-4664-860e-f60930779e29
   IsControllable: 0
-  StartingAmbition: 0
-  StartingPride: 0
+  StartingAmbition: 500
+  StartingPride: 500
   FirstName: White
   LastName: Knight
-  Age: 0
-  Education: 
-  Bio: 
+  Age: 40
+  Education: Invisible College
+  Bio: The White Knight has been appointed as the Bailiff, the club officer responsible
+    for Collections.
   VisRequirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -28,7 +29,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 877e8827cb4dc3d4f8a74406ba878c11, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -51,7 +53,8 @@ MonoBehaviour:
   Controlled: 0
   Trained: 0
   Exists: 1
-  Interactions: []
+  Interactions:
+  - {fileID: 11400000, guid: 71d1e78994d8a554ea49023b25488d6c, type: 2}
   Trophies: []
   IndependentImages:
   - {fileID: 2800000, guid: 27c36397bb299f94d99f767234d97ef6, type: 3}

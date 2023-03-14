@@ -1,0 +1,237 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: Detaining the refugee
+  m_EditorClassIdentifier: 
+  Id: b02cd5b6-268c-45c3-8ce2-97dd36082fca
+  Name: Detaining the refugee
+  SubInteraction: 0
+  AlertNew: 1
+  Category: 4
+  Requirements:
+    RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
+    NpcStatRequirements: []
+    RequiredInteractions: []
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredNpcsControled: []
+    RequiredNpcsTrained: []
+    RequiredNpcsNotControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 0
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    Items: []
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
+  Result:
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: cf498a48a22642b41839c5bbeeeef69a,
+        type: 2}
+      Text: Mr. {LastName}?  They invited an American?  Sign of the times, I suppose. 
+        Here's a badge and ID.  You'll be 'Agent Harris'- I hope that suits.  The
+        Securiy Office is over there- here's a key.  Unless there's anything else,
+        I'll go have some tea while you... handle the passnger.  Is that satisfactory,
+        Sir?  You, uh, know what to do?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: cfb7623fd11365945929e2e4093b29da,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: cf498a48a22642b41839c5bbeeeef69a,
+        type: 2}
+      Text: I do.  You better run along.  Ah, here she comes.  One momnt please! 
+        You are...?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: cfb7623fd11365945929e2e4093b29da,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 7937bda5cf4734a4daf5ab2106017710,
+        type: 2}
+      Text: Marta Tymerschenko!  They said to follow red line and--
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: cfb7623fd11365945929e2e4093b29da,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 7937bda5cf4734a4daf5ab2106017710,
+        type: 2}
+      Text: Papers, please, Miss Tymerschencko.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: cfb7623fd11365945929e2e4093b29da,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 7937bda5cf4734a4daf5ab2106017710,
+        type: 2}
+      Text: Sure!  See, I have Special Refugee Visa-- stamp is here!  Your ID-- you
+        are Agent Harris, yes?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: cfb7623fd11365945929e2e4093b29da,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 7937bda5cf4734a4daf5ab2106017710,
+        type: 2}
+      Text: I am.  And you're travelling alone, I see?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: cfb7623fd11365945929e2e4093b29da,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 7937bda5cf4734a4daf5ab2106017710,
+        type: 2}
+      Text: My father is government minister for media and my mother is Party Leader
+        so they have to stay, but my family owns property here in UK and there are
+        bank accounts so--
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: cfb7623fd11365945929e2e4093b29da,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 7937bda5cf4734a4daf5ab2106017710,
+        type: 2}
+      Text: I see.  Such a shame what's happening in your country.  War is a terrible
+        thing.  I understand why your parents would wish to send you to the West
+        and out of harm's way.  Let me just run this visa through our system.  One
+        moment!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: cfb7623fd11365945929e2e4093b29da,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: The Eastern European girl...
+      Videos:
+      - {fileID: 32900000, guid: d239539faa84f7f489d0beb7fb24dab6, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: ...waits patiently as you 'check the system'.  You consider what would
+        be involved in identifying a suitable 'guest' of the Club and having the
+        power to detain her.  Poor Marta has no idea how long her day is about to
+        become...
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
+  FailureResult:
+    Dialogs: []
+    OptionalPopups: []
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  Completed: 0
+  TurnCompletedOn: -1
+  New: 1
