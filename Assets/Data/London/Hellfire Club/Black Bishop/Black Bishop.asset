@@ -14,13 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: e78c49a5-a5be-47dd-858a-fea7d9a18da9
   IsControllable: 0
-  StartingAmbition: 0
-  StartingPride: 0
+  StartingAmbition: 450
+  StartingPride: 450
   FirstName: Black
   LastName: Bishop
-  Age: 0
-  Education: 
-  Bio: 
+  Age: 56
+  Education: Invisible College
+  Bio: The Black Bishop acts as the Sheriff, the club official reporting to the Black
+    Queen and responsible for all extra-legal activities.
   VisRequirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -28,7 +29,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: c145195526eaa494c9d6f41b6239082b, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -51,7 +53,8 @@ MonoBehaviour:
   Controlled: 0
   Trained: 0
   Exists: 1
-  Interactions: []
+  Interactions:
+  - {fileID: 11400000, guid: 04b1235dad9f16346b2f193ef7a07f39, type: 2}
   Trophies: []
   IndependentImages:
   - {fileID: 2800000, guid: 7580cedd737ce2f43b1b89299363f4fc, type: 3}

@@ -14,13 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 1239ff4b-2106-4b00-8e23-46871e04ac57
   IsControllable: 0
-  StartingAmbition: 0
-  StartingPride: 0
+  StartingAmbition: 1000
+  StartingPride: 1000
   FirstName: White
   LastName: Rook
-  Age: 0
-  Education: 
-  Bio: 
+  Age: 27
+  Education: Invisible College
+  Bio: The White Rook serves as club Reeve, who is responsible for assisting the
+    Castellan in the supervision of the operations of the Hellfire Club.
   VisRequirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -28,7 +29,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 41630a2abea1b2b44b2a9f54a9d03443, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []

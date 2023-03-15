@@ -180,10 +180,10 @@ MonoBehaviour:
       - {fileID: 32900000, guid: d4bc3b0e116e1aa4bbabcfb43c698c10, type: 3}
       Textures: []
       DialogClips: []
-      Text: "...cavity search.  Very good.  OK, Marta-- I think I can, in good conscience
-        approve your stay in teh UK-- as a Sposnored Refugee.  Congratulations! 
-        \nNOTE: Marta will be transported to the Hellfire Club.  Your offering has
-        been accepted and your club dues paid!"
+      Text: "...cavity search.  Very good.  OK, Marta-- I think I can, in good conscience,
+        approve your stay in the UK-- as a Sponsored Refugee.  Congratulations! 
+        \nNOTE: Marta will be transported to the Hellfire Club as a 'guest'.  Your
+        offering has been accepted and your club dues considered as paid in full!"
     Choices: []
     Effect:
       NpcEffects: []
@@ -197,7 +197,8 @@ MonoBehaviour:
       RevanueEffect: 0
       HornicalEffect: 0
       NpcsToControl: []
-      NpcsToTrain: []
+      NpcsToTrain:
+      - {fileID: 11400000, guid: 7937bda5cf4734a4daf5ab2106017710, type: 2}
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
