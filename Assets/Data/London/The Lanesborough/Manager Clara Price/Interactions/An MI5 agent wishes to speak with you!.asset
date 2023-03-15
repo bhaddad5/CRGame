@@ -1,0 +1,311 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: An MI5 agent wishes to speak with you!
+  m_EditorClassIdentifier: 
+  Id: e6f7dda3-35a5-4979-92da-423f8f94194d
+  Name: An MI5 agent wishes to speak with you!
+  SubInteraction: 0
+  AlertNew: 1
+  Category: 1
+  Requirements:
+    RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
+    NpcStatRequirements: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: f75524725d436d54483bfaf7d389b1c3, type: 2}
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredNpcsControled: []
+    RequiredNpcsTrained: []
+    RequiredNpcsNotControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 0
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    Items: []
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
+  Result:
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: Mr. {LastName}, there's a government person here to speak with you, an
+        Agent Sybil Halifax.  She even showed me her badge!.  This is MOST irregular!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Send her up to my room.  I'm sure it's some paperwork issue and nothing
+        to be concerned about.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: d396cf8ea82c19e43b91aa3d92dab8e9,
+        type: 2}
+      Text: Mr. {LastName}?  Mr. {FirstName} {LastName}?  Registered as Chairman
+        of Artemis Solutions Systems, Zenith, USA?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: dd10738303803ac41ad0a260c1ad8878,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: d396cf8ea82c19e43b91aa3d92dab8e9,
+        type: 2}
+      Text: And you are?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: dd10738303803ac41ad0a260c1ad8878,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: d396cf8ea82c19e43b91aa3d92dab8e9,
+        type: 2}
+      Text: Senior Agent Sybil Halifax of MI5-- equivalent to your FBI, if that helps. 
+        Did you attend a gathering recently that might have been considered a...
+        costume party, let's say?  May I see that gold ring you're wearing?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: dd10738303803ac41ad0a260c1ad8878,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: d396cf8ea82c19e43b91aa3d92dab8e9,
+        type: 2}
+      Text: No, you may not.  Are you here to charge me with a crime?  Why are you
+        here, Agent Halifax?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: dd10738303803ac41ad0a260c1ad8878,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: d396cf8ea82c19e43b91aa3d92dab8e9,
+        type: 2}
+      Text: Look, Mr. {LastName}, I'm not interested in whatever it is you people
+        were up to.  In fact, I really, really don't want to know anything about
+        it, ok?  I'm only here to make sure you are... discreet about whoever you
+        might have met at this gathering.  That's my assignment-- not some investigation. 
+        OK?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: dd10738303803ac41ad0a260c1ad8878,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: d396cf8ea82c19e43b91aa3d92dab8e9,
+        type: 2}
+      Text: What IS your assignment, Agent Halifax?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: dd10738303803ac41ad0a260c1ad8878,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: d396cf8ea82c19e43b91aa3d92dab8e9,
+        type: 2}
+      Text: Royals Protection Squadron.  I've been assigned to look after... oh,
+        damn!  Look, you know who she is.  You spoke with her.  The client I'm supposed
+        to protect is Her Royal Highness Princess Alice, ok?  I'm just hehe to make
+        sure you're not about to sell any story to the scandal rags.  We must protect
+        her reputation at all costs.  That's my job and I'll damn well make sure
+        of it!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: dd10738303803ac41ad0a260c1ad8878,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: d396cf8ea82c19e43b91aa3d92dab8e9,
+        type: 2}
+      Text: She's the White Initiate, isn't she?  No, Agent Halifax.  I'll say nothing
+        about her involvement with... that group.  Discretion is my middle name,
+        alright?  I hardly need to money, do I?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: dd10738303803ac41ad0a260c1ad8878,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: d396cf8ea82c19e43b91aa3d92dab8e9,
+        type: 2}
+      Text: No, I gather that.  Very well, Mr. {LastName}.  But if ANYTHIUNG leaks
+        out, you'll be the first suspect on my list.  Understood?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: dd10738303803ac41ad0a260c1ad8878,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: d396cf8ea82c19e43b91aa3d92dab8e9,
+        type: 2}
+      Text: Understood.  It must be a frustrating assignment-- she seems like a bit
+        of a spoiled wild child to me.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: dd10738303803ac41ad0a260c1ad8878,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: d396cf8ea82c19e43b91aa3d92dab8e9,
+        type: 2}
+      Text: I really couldn't say-- even if I wanted to.  Good day, Mr. {LastName}.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: dd10738303803ac41ad0a260c1ad8878,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: There's no doubt she's...
+      Videos: []
+      Textures:
+      - {fileID: 2800000, guid: 46193f9a9483abf448b8d8df3659f5e8, type: 3}
+      DialogClips: []
+      Text: ...who she says she is.
+    - Title: The badge and gun...
+      Videos: []
+      Textures:
+      - {fileID: 2800000, guid: f1f23791a98dc634d92613f938e155bd, type: 3}
+      DialogClips: []
+      Text: ...are both genuine articles.  Agent Sybil Halifax is a factor you'll
+        need to consider in how you deal with Hellfire and this footloose princess!
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
+  FailureResult:
+    Dialogs: []
+    OptionalPopups: []
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  Completed: 0
+  TurnCompletedOn: -1
+  New: 1
