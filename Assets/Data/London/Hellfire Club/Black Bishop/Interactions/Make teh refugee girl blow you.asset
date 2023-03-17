@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Fetch the daily paper please
+  m_Name: Make teh refugee girl blow you
   m_EditorClassIdentifier: 
-  Id: 7c22881a-2e2b-45fb-a970-a6f15642ee17
-  Name: Fetch the daily paper please
-  SubInteraction: 0
+  Id: 5cf3200a-1cda-417a-b9e5-5e863ac1a463
+  Name: Make the refugee girl blow you
+  SubInteraction: 1
   AlertNew: 1
-  Category: 1
+  Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -24,8 +24,7 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions:
-    - {fileID: 11400000, guid: 39a073397c03afd4a92cb29ffcd8356a, type: 2}
+    RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -47,24 +46,13 @@ MonoBehaviour:
   PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: It pays to keep up with the latest headlines and your UK tabloids never
-        fail to amuse.  Go pick up a copy of today's paper, Jeeves.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: dd10738303803ac41ad0a260c1ad8878,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: Hopping to it right now, Sir!
+      OptionalNpcReference: {fileID: 11400000, guid: 7937bda5cf4734a4daf5ab2106017710,
+        type: 2}
+      Text: I just want to go home!  I don't care what they do to me!  Please let
+        me go!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: dd10738303803ac41ad0a260c1ad8878,
+      CustomBackground: {fileID: 2800000, guid: 0a4cdc684a7e54244ab56ccf8b2e802c,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0
@@ -73,17 +61,18 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: The shock headline...
-      Videos: []
-      Textures:
-      - {fileID: 2800000, guid: 7659168f30a8557428d98a410f2c04ef, type: 3}
+    - Title: Her tears are for nought.
+      Videos:
+      - {fileID: 32900000, guid: 36def667097764941a113cac1f2002ff, type: 3}
+      - {fileID: 32900000, guid: 78ac8ec3471adf144946434dc0760bcc, type: 3}
+      Textures: []
       DialogClips: []
-      Text: '...is no shock to you!  It appears the Princess Alice scandal has broken
-        through to the mainstream!  '
+      Text: You order her to pleasure you on her skinny, trembling knees and she
+        does so, sobbing inconsolably.
     Choices: []
     Effect:
       NpcEffects: []
-      EgoEffect: 0
+      EgoEffect: 15
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0

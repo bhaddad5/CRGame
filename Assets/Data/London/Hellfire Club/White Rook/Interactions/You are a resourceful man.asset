@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Appointment with Polidori
+  m_Name: You are a resourceful man
   m_EditorClassIdentifier: 
-  Id: e7c4cf43-1b23-46e8-8cb5-269bcbd127b9
-  Name: Appointment with Polidori
+  Id: 7490761b-46f9-4ff1-bf86-65af8fc97295
+  Name: You are a resourceful man
   SubInteraction: 0
   AlertNew: 1
   Category: 3
@@ -24,7 +24,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 53cf705dcc6371e4c85a6adb20f09f29, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -48,8 +49,7 @@ MonoBehaviour:
     Dialogs:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: 'May I help you?  I don''t believe you have an appointment scheduled
-        and I don''t take walk-ins I''m afraid. '
+      Text: Initiate, a word please.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -60,7 +60,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: My name is {LastName}- I have a referral actually.
+      Text: Of course!  We've not spoken before.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -71,9 +71,9 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: A referral?  Who then has referred you?  If it is friends or family,
-        you'd have to schedule an appointment only after I've confirmed your referee. 
-        I only handle a very small number of patients you see.
+      Text: No.  I only speak when it is required.  I understand you are a most resourceful
+        fellow.  I was wondering if I might prevail upon you to help me source something--
+        something that seems a bit mythical, to be honest.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -84,8 +84,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Dr. Polidori, I was referred by Dr. Feng in the US.  You ARE a Pry affiliate,
-        are you not?
+      Text: Well, if I can!  Mythical, you say?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -96,7 +95,10 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: 'Yes.  Yes, of course.  And how is Dr. Feng?  And how do you know her?  '
+      Text: An aphrodisiac.  Are they even real?  I've heard rumors that suggest
+        an aphrodiasiac has been produced in a lab, but there's nothing beyond the
+        whispers.  I need a quantity for reasons I won't reveal here.  Let's just
+        say a certain lady needs a nudge and that I'm a fool for love.  Can you help?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -107,11 +109,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Pry manages the wellness of my employees.  I'm {FirstName} {LastName},
-        Chairman of Artemis Solution Systems.  I was hoping you might assist me locally. 
-        Our operations are expanding her in London and I coudl use the assistance
-        of a highly regarded physician such as yourself-- one used to less conventional
-        treatments.
+      Text: Perhaps.  What quantity would you be looking for?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -122,9 +120,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: That's why I'm a Pry affiliate.  Of course I'd be happy to work with
-        you.  And yes, I'm well acquainted with less conventional approaches.  It
-        all depends on the needs of my clients.
+      Text: Five should be sufficient to jumpstart the romance I'm contemplating--
+        and no, it does NOT involve myself.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -135,9 +132,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: That's good to hear.  You see, my firm creates special chips used to
-        treat individuals for various conditions, often psychological in nature. 
-        I'm sure you're skilled enough to surgically implant them.
+      Text: And if I should do this for you...?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -148,7 +143,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: You can safely assume that.
+      Text: You'd have my gratitude-- and that's of inestimable value, once you come
+        to know me.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -157,35 +153,10 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
+    - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 0}
-      Text: Thank you Doctor.  You'll be well paid for your work, I assure you. 
-        I'll be sending you new patients from time to time.  I'll be in touch-- thank
-        you for your time.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 0730ef3abfa87124ea878ccf1e902c3c,
-        type: 2}
-      Text: Ah, I've arrived early!  Sorry, Doctor!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 517d026c3820d7f4c817ba09b9cd479a,
-        type: 2}
-      Text: Please come in, Ma'am-- this gentleman was just leaving.
+      Text: 'NOTE: You''ll need FIVE HORNICAL to meet the White Rook''s request and
+        there''s no promise of any reward...'
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:

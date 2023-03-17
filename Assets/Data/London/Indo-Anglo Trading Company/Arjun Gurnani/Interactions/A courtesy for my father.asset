@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Appointment with Polidori
+  m_Name: A courtesy for my father
   m_EditorClassIdentifier: 
-  Id: e7c4cf43-1b23-46e8-8cb5-269bcbd127b9
-  Name: Appointment with Polidori
+  Id: 5e4980e4-2ced-491b-a0cd-0d02da0f8b30
+  Name: A courtesy for my father
   SubInteraction: 0
   AlertNew: 1
   Category: 3
@@ -48,8 +48,10 @@ MonoBehaviour:
     Dialogs:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: 'May I help you?  I don''t believe you have an appointment scheduled
-        and I don''t take walk-ins I''m afraid. '
+      Text: Mr. {LastName}, I understand from my father that we owe you gratitude
+        for assisting with this visa nonsense.  I'm personally appreciative and Indo-Anglo
+        has already secured dozens of business visas-- so thank you.  It's earned
+        you an audience with my father and now me.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -60,7 +62,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: My name is {LastName}- I have a referral actually.
+      Text: And I'm grateful for your time.  I'm hoping we might uncover some business
+        opportunities.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -71,9 +74,11 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: A referral?  Who then has referred you?  If it is friends or family,
-        you'd have to schedule an appointment only after I've confirmed your referee. 
-        I only handle a very small number of patients you see.
+      Text: Perhaps, although our main focus is not in the tech sector.  We're more
+        about transactional consumer categories- ones India is well positioned to
+        exploit here in the UK.  And frankly, part of our mission statement is to
+        work with Indian entrepreneuers- no insult to Americans.  Hell, I went to
+        school there!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -84,8 +89,9 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Dr. Polidori, I was referred by Dr. Feng in the US.  You ARE a Pry affiliate,
-        are you not?
+      Text: And a good business opportunity is color blind.  Artemsi is looking for
+        parters in order to expand in a growing market.  I think if you would allow
+        me the time to--
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -96,7 +102,10 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: 'Yes.  Yes, of course.  And how is Dr. Feng?  And how do you know her?  '
+      Text: I think you really ought to be talking to my cousin Vijaya.   She's the
+        one with the head for high finance.  She runs Lotus Investments- that's our
+        hedge fund.  But even I have problems getting a meeting with her and she's
+        family!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -107,11 +116,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Pry manages the wellness of my employees.  I'm {FirstName} {LastName},
-        Chairman of Artemis Solution Systems.  I was hoping you might assist me locally. 
-        Our operations are expanding her in London and I coudl use the assistance
-        of a highly regarded physician such as yourself-- one used to less conventional
-        treatments.
+      Text: I see.  So Indo-Anglo is going well?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -122,9 +127,11 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: That's why I'm a Pry affiliate.  Of course I'd be happy to work with
-        you.  And yes, I'm well acquainted with less conventional approaches.  It
-        all depends on the needs of my clients.
+      Text: 'Well?  Fifty percent growth, year on year, Mr. {LastName}.  Britain
+        is turnoing out to be quite the pliable little commercial colony for India. 
+        Pay off the occaisional aristocrat or bureaucrat and they''ll happily sell
+        out their own people for a few bob.  Just the way they ran India for centures...ironic,
+        no?    '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -135,9 +142,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: That's good to hear.  You see, my firm creates special chips used to
-        treat individuals for various conditions, often psychological in nature. 
-        I'm sure you're skilled enough to surgically implant them.
+      Text: I admit- the way you discuss the relationship between two countries you
+        have such roots in seems strange to me.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -148,7 +154,11 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: You can safely assume that.
+      Text: The world is changing, Mr. {LastName}.  India is a superpower.  We're
+        not the poverty stricken hellhole of black and white twentieth century documentaries. 
+        We're a proud nuclear power with a bursting leadership and middle class eager
+        to expand.  Britain is weak, divided and ripe for exploitation.  It is begging
+        for Indian administration.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -159,9 +169,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Thank you Doctor.  You'll be well paid for your work, I assure you. 
-        I'll be sending you new patients from time to time.  I'll be in touch-- thank
-        you for your time.
+      Text: You're describing claiming Britain as a colony of India-- that's--
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -171,9 +179,23 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 0730ef3abfa87124ea878ccf1e902c3c,
-        type: 2}
-      Text: Ah, I've arrived early!  Sorry, Doctor!
+      OptionalNpcReference: {fileID: 0}
+      Text: That's reality.  That's how wealth and power fluctuate and this century
+        is ours.  After what they did to my family, it's become a personal mission. 
+        My father has sentimental fondness for this country but I don't.  I see it
+        simply as a country and people ripe for generating wealth for Indian owners
+        and managers.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: You're quite frank.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -183,9 +205,24 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 517d026c3820d7f4c817ba09b9cd479a,
-        type: 2}
-      Text: Please come in, Ma'am-- this gentleman was just leaving.
+      OptionalNpcReference: {fileID: 0}
+      Text: I can afford to be.  And because you're proven yourself to be useful
+        to the Gurnanis, I'll tell you something else too, Mr. {LastName}.  The real
+        marker of one people's dominance over another isn't who owns the land or
+        banks the gold.  It's something even more valuable.  I think you know what
+        I'm speaking of.  I'll ask my cousin to see you but I can't promise anything,
+        alright?  Good day, Mr. {LastName}.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: 'NOTE: Lotus Investments is now unlocked on the London map!'
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
