@@ -1,0 +1,315 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: A call from you roffice
+  m_EditorClassIdentifier: 
+  Id: 6c38763d-a3bc-40df-a942-1b0a1ca595ed
+  Name: A call from your office
+  SubInteraction: 0
+  AlertNew: 1
+  Category: 1
+  Requirements:
+    RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
+    NpcStatRequirements: []
+    RequiredInteractions: []
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredNpcsControled: []
+    RequiredNpcsTrained: []
+    RequiredNpcsNotControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 0
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    Items: []
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
+  Result:
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: bb307815132fd0e499f62653852141ff,
+        type: 2}
+      Text: Mr. {LastName}, I have a call from your office.  Shall I transfer it?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: b7c082e07d82cec4bab03eb849a78ebb,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: bb307815132fd0e499f62653852141ff,
+        type: 2}
+      Text: Please do, Miss Price.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: b7c082e07d82cec4bab03eb849a78ebb,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: Hello, Mr. {LastName}!  I hope I'm not disturbing you!  How's London?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e2a0b6f26b3b1d04f8c71f76e2e13af1,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.1
+        width: 700
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: It's fine and you're not disturbing me, Debbie.  What's up?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e2a0b6f26b3b1d04f8c71f76e2e13af1,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.1
+        width: 700
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: A call, Sir-- from that Miss Pant from Lotus Investments?  She left a
+        message.  She said to pass on her congratulations for the new JV agreement
+        with Cromwell Intellysys and said she thought it was 'the foundation for
+        great things for Artemis'.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e2a0b6f26b3b1d04f8c71f76e2e13af1,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.1
+        width: 700
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: Anything else?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e2a0b6f26b3b1d04f8c71f76e2e13af1,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.1
+        width: 700
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: Yes, she suggested that you might want to consider, uh, let's see, yes-
+        'broadening the Artemis network in the UK' by 'reaching out to new partners'. 
+        She also said that Lotus Investments was a Corporate Sponsor and Trustee
+        of India House.  I did some research- it is some kind of an NGO that facilitates
+        cultural and business exchanges between India and the UK.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e2a0b6f26b3b1d04f8c71f76e2e13af1,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.1
+        width: 700
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: On their website, the Executive Director is listed as an Anya Nandi,
+        who is the Director General of India House as well as being an Honorary Consul. 
+        Shall I make an appointment for you and forward the details?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e2a0b6f26b3b1d04f8c71f76e2e13af1,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.1
+        width: 700
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: My efficient little Girl Friday!  Sometimes I forget you're a Forbes
+        MBA.  Yes, you do that.  Anything else going on back at the ranch?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e2a0b6f26b3b1d04f8c71f76e2e13af1,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.1
+        width: 700
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: Nothing urgent, Sir!  Any further instructions?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e2a0b6f26b3b1d04f8c71f76e2e13af1,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.1
+        width: 700
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: You look cute today, Debbie.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e2a0b6f26b3b1d04f8c71f76e2e13af1,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.1
+        width: 700
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: Thank you, Sir!  I'm expected to dress for my manager, whether he's in
+        the office or not.  It's a two demerit infraction- a whole day's pay!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e2a0b6f26b3b1d04f8c71f76e2e13af1,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.1
+        width: 700
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: When is the last time I fucked my personal secretary, Debbie?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e2a0b6f26b3b1d04f8c71f76e2e13af1,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.1
+        width: 700
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: It's... been a while, Mr. {LastName}.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e2a0b6f26b3b1d04f8c71f76e2e13af1,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.1
+        width: 700
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: Add it to my To Do List, Debbie.
+      Videos:
+      - {fileID: 32900000, guid: d73115a03e1f8d6479b00085aa026368, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: '"Yes, Sir!"
+
+        NOTE: Details are soon forthcoming and INDIA HOUSE
+        is now UNLOCKED on the London Map!'
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
+  FailureResult:
+    Dialogs: []
+    OptionalPopups: []
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  Completed: 0
+  TurnCompletedOn: -1
+  New: 1
