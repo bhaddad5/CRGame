@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: A favor from the Minister
+  m_Name: Your new patient Sybil Halifax
   m_EditorClassIdentifier: 
-  Id: 98b13986-1d0a-47ff-9b80-4f6ca9e1cd1c
-  Name: A favor from the Minister
+  Id: b30d77d5-9ad0-4c75-b82c-fb558efb5678
+  Name: Your new patient Sybil Halifax
   SubInteraction: 0
   AlertNew: 1
-  Category: 1
+  Category: 4
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -25,9 +25,8 @@ MonoBehaviour:
     NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 3696d04986c8cf2499990a480cf471be, type: 2}
-    RequiredNotCompletedInteractions:
     - {fileID: 11400000, guid: d6e4e29948e399a4c8e9263ac61b02e7, type: 2}
+    RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -36,21 +35,22 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 0
+    MoneyCost: 10000
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    Items: []
-  Repeatable: 1
-  Cooldown: 6
-  PreviewEffect: 1
+    Items:
+    - {fileID: 11400000, guid: e5648fbbecc108a4daee508b6d979b5d, type: 2}
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
   Result:
     Dialogs:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Minister, may I have a word, Ma'am?
+      Text: You're going to have a new patient referral shortly-- a Sybil Halifax.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -61,9 +61,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Of course you may!  You know, that little refugee was delightful!  I
-        had a session with her myself last night-- my God, how she howled!  Now,
-        what favor may the Black Queen grant one of her subjects, hmm?
+      Text: Oh dear-- I really don't take on just anyone--
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -74,8 +72,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: MI5 falls under your budgetary authority, does it not?  So a 'suggestion'
-        from the Minister of State would carry the weight of--
+      Text: She's MI5 Doctor-- actually Princess Alice's assigned Royal Protection
+        Agent.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -86,9 +84,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: --an order to be obeyed.  Yes, but... MI5.  I mean, really Initiate...
-        we're not talking about scooping up Eastern European debris here at Customs! 
-        I did take an oath and all that nonsense, you know!
+      Text: Oh, well in THAT case, I'm sure I can fit her in.  I assume you have
+        some suggestions regarding how to 'treat' this new patient?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -99,8 +96,11 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: It's nothing disloyal!  It has to do with a member of the Royal Protection
-        Unit.
+      Text: 'Take this implant and this thumb drive.  My colleague from America Dr.
+        Eckstein will send you instructions on insertion.  The thumb drive contains
+        audio files the patient needs to hear.  It''s simply music but with a voice
+        subluminally embedded.  I''m not sure how you get Halifax to listen to it
+        though. '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -111,9 +111,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Oh, the Royals?  In that case, go on.  The Royals-- what trash they turned
-        out to be!  Have you seen how that tramp Princess Alice is behaving herself--
-        in public?  My God!
+      Text: I'll simply play it in the background- I usually have soothing music
+        on dring my appointments.  Very good-- leave it with me!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -124,9 +123,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: A small matter- simply a request that the agent assigned to Princess
-        Alice be sent for her annual check-up to the Gloucester Practice, that's
-        all.
+      Text: Thank you Doctor.  Here's your standard fee- a pleasure as always!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -135,12 +132,11 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
+    - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 0}
-      Text: 'Oh, Doctor Polidori!  He''s my docotr as well!  Fine man-- very discreet! 
-        That''s a small mattr.  I could dash of a memo today.  Now what''s fair for
-        a trifle like that-- since I''m sure you have some nefarious reason for the
-        request!  Fifty thousand sounds fair-- it''s not a big thing after all! '
+      Text: 'NOTE: With Sybil Halifax fitted with the AGATHA chip, you''ll now have
+        easy access to Belgravia House, the personal residence of the Princess (now
+        unlocked on teh London map)!'
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -150,9 +146,7 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
-    Choices:
-    - {fileID: 11400000, guid: d6e4e29948e399a4c8e9263ac61b02e7, type: 2}
-    - {fileID: 11400000, guid: dd801496e408dcd48a5d74baad7d30f7, type: 2}
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0

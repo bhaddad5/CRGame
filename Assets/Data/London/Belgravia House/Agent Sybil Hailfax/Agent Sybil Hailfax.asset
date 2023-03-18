@@ -14,13 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 6ba97e61-3493-4a66-9390-06c8334a088c
   IsControllable: 0
-  StartingAmbition: 0
-  StartingPride: 0
+  StartingAmbition: 300
+  StartingPride: 300
   FirstName: Agent Sybil
   LastName: Hailfax
-  Age: 0
-  Education: 
-  Bio: 
+  Age: 26
+  Education: Intelligence Officer Development Programme
+  Bio: 'With increasing opportunities for women in the security services, Sybil applied
+    and was accepted into MI5''s Women in Security initiative.  Because of her age,
+    she was assigned to HRH Princess Alice, though selected by the Royal Family in
+    hopes the agent''s patience, firmness and common sense. '
   VisRequirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -28,7 +31,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 4c4814ec98260c64292009f589fb916b, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -51,8 +55,11 @@ MonoBehaviour:
   Controlled: 0
   Trained: 0
   Exists: 1
-  Interactions: []
-  Trophies: []
+  Interactions:
+  - {fileID: 11400000, guid: 6b21f552681a6a64f924eec3e961c0c4, type: 2}
+  Trophies:
+  - {fileID: 11400000, guid: de71f9585980cd04eac3adc7cd6c5a79, type: 2}
+  - {fileID: 11400000, guid: 09e1fd0ff8af9e24f89f19c8394e9822, type: 2}
   IndependentImages:
   - {fileID: 2800000, guid: 7762e93bca2cf194b98f3d31367bfe31, type: 3}
   - {fileID: 2800000, guid: dee07f14a843a75409e35068c18ffa7b, type: 3}
