@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Bilateral Agreement
+  m_Name: I'll come back to you on this!
   m_EditorClassIdentifier: 
-  Id: 06bcfce3-947b-4543-b37c-5aba0a2acc24
-  Name: Bilateral Agreement
-  SubInteraction: 0
+  Id: 61266535-3a31-4894-93ea-70ec77a99cdd
+  Name: I'll come back to you on this!
+  SubInteraction: 1
   AlertNew: 1
-  Category: 4
+  Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -33,7 +33,7 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 100
+    EgoCost: 0
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -41,57 +41,15 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 0
+  Repeatable: 1
   Cooldown: 0
   PreviewEffect: 0
   Result:
     Dialogs:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: President Kashongo!  Has our Doctor Eckstein made an appearance yet?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: e824e839d0b9719409dc7942822791c4,
-        type: 2}
-      Text: 'The food here is wonderful!  And the Katangan people couldn''t be friendlier! 
-        Good news, Boss- Ias I''ve been reporting to the President, Whitangan fertility
-        is increaing-- rapidly!  The birthrate has jumped from .9 to 2.3!  '
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 2c00193b2a91a9a44aa0561dc9b1de92,
-        type: 2}
-      Text: Doctor, please come back later.  I'd like you to present the finsings
-        to my cabinet.  And now, Mr. {LastName}, let's attend to the real reason
-        for your visit.  I've already signed the documents.  On behalf of the people
-        of Katanga, I have instructed the Sovereign Fund to dispatch 50 REVENUE. 
-        Invest it well-- we expect a return on our investment!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 11400000, guid: 2c00193b2a91a9a44aa0561dc9b1de92,
-        type: 2}
-      Text: 'NOTE: Mission successful!  FIFTY REVENUE have beed deposited with Artemis
-        Solutions Systems by the Sovereign Fund of Katanga for your growth plans!'
+      Text: Fifty is fine- let me come back to you after I've figured out which budget
+        to tap for this, ok?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -111,7 +69,7 @@ MonoBehaviour:
       CultureEffect: 0
       SpreadsheetsEffect: 0
       BrandEffect: 0
-      RevanueEffect: 50
+      RevanueEffect: 0
       HornicalEffect: 0
       NpcsToControl: []
       NpcsToTrain: []
