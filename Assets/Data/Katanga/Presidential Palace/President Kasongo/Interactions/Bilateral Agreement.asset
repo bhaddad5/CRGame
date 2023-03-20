@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Soveriegn Fund of Katanga
+  m_Name: Bilateral Agreement
   m_EditorClassIdentifier: 
-  Id: 3de3af15-f7ba-40fb-8c8a-8a76ec7cd518
-  Name: Sovereign Fund of Katanga
+  Id: 06bcfce3-947b-4543-b37c-5aba0a2acc24
+  Name: Bilateral Agreement
   SubInteraction: 0
   AlertNew: 1
-  Category: 1
+  Category: 4
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -24,9 +24,7 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions:
-    - {fileID: 11400000, guid: 421d2edcde4ba5f4ab2607b8f5f8a73a, type: 2}
-    - {fileID: 11400000, guid: 088a42be26e59824f8c893b4a43e814f, type: 2}
+    RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -48,10 +46,9 @@ MonoBehaviour:
   PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 0
+    - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: '{FirstName}!  I was told your jet landed!  I hope you''re staying for
-        a bit!  There have been many positive developments since you were last here!  '
+      Text: President Kashongo!  Has our Doctor Eckstein made an appearance yet?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -61,9 +58,11 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: I'll do what I can, Mr. President!  But I've actually come to ask for
-        something-- so you may tire of me very quickly!
+      OptionalNpcReference: {fileID: 11400000, guid: e824e839d0b9719409dc7942822791c4,
+        type: 2}
+      Text: 'The food here is wonderful!  And the Katangan people couldn''t be friendlier! 
+        Good news, Boss- Ias I''ve been reporting to the President, Whitangan fertility
+        is increaing-- rapidly!  The birthrate has jumped from .9 to 2.3!  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -73,22 +72,13 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: Nonsesnse-- relax and tell me why you've come back to Kantaga!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: Mr. President, it is well known that the Katanga Sovereign Fund is well
-        funded and alway slooking for investments.  I may have one.  My firm is putting
-        together a group of lenders to back a very exciting acquisition- one which
-        will earn Katanga wonderful returns.
+      OptionalNpcReference: {fileID: 11400000, guid: 2c00193b2a91a9a44aa0561dc9b1de92,
+        type: 2}
+      Text: Doctor, please come back later.  I'd liek you to present the finsings
+        to my cabinet.  And now, Mr. {LastName}, let's attend to the real reason
+        for your visit.  I've already signed the documents.  On behalf of the people
+        of Katanga, I have instructed the Sovereign Fund to dispatch 50 REVENUE. 
+        Invest it well-- we expect a return on our investment!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -98,48 +88,10 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
-      Text: 'NOTE: You quickly brief President Kashongo on the Promethrus acquisition. 
-        While he only generally follows the contours of the deal, it is clear his
-        trust in you will lead to a deal.'
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: 'Very well.  I shall instruct the Sovereign Fund of Katanga to extend
-        you up to a 50 REVENUE line of credit!  However, I will insist on some technical
-        assistance in the form of 20 PATENTS, as well as a visit from your wise Doctor
-        Eckstein to prepare a report on the true aftermath of Operation Baby Boom! 
-        Agreed? '
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: Agreed, Mr. President and thank you so much!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
-      Text: 'NOTE: You''ll need to return with 20 PATENTS and organoze a visit from
-        your Head of Technology before returning to Katanga to sign off on the paperwork!'
+      OptionalNpcReference: {fileID: 11400000, guid: 2c00193b2a91a9a44aa0561dc9b1de92,
+        type: 2}
+      Text: 'NOTE: Mission successful!  FIFTY REVENUE have beed deposited with Artemis
+        Solutions Systems by the Sovereign Fund of Katanga for your growth plans!'
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -159,7 +111,7 @@ MonoBehaviour:
       CultureEffect: 0
       SpreadsheetsEffect: 0
       BrandEffect: 0
-      RevanueEffect: 0
+      RevanueEffect: 50
       HornicalEffect: 0
       NpcsToControl: []
       NpcsToTrain: []
