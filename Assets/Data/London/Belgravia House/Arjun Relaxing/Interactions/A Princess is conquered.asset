@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: A Princess is humbled
+  m_Name: A Princess is conquered
   m_EditorClassIdentifier: 
-  Id: 84459af0-d4d3-4c47-b17f-adba195bc233
-  Name: A Princess is humbled
+  Id: 7ecebe58-d818-418f-b652-4a8ed00b360b
+  Name: A Princess is conquered
   SubInteraction: 0
   AlertNew: 1
-  Category: 2
+  Category: 5
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -26,7 +26,7 @@ MonoBehaviour:
     NpcStatRequirements:
     - OptionalNpcReference: {fileID: 11400000, guid: 1da2f7c82b2de1240ad7a9beaa7cb712,
         type: 2}
-      Stat: 0
+      Stat: 1
       Is: 0
       Value: 0
     RequiredInteractions: []
@@ -57,9 +57,21 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: Your timing is auspicious, Mr. {LastName}.  Alice and I were just having
-        an important conversation.  Now, Alice- what are the new rules for our relationship?
+      OptionalNpcReference: {fileID: 11400000, guid: d396cf8ea82c19e43b91aa3d92dab8e9,
+        type: 2}
+      Text: Please come in, Mr. {LastName}!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: d396cf8ea82c19e43b91aa3d92dab8e9,
+        type: 2}
+      Text: Are you enjoying your new life, Sybil?  Be honest, now!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -69,36 +81,9 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 1da2f7c82b2de1240ad7a9beaa7cb712,
+      OptionalNpcReference: {fileID: 11400000, guid: d396cf8ea82c19e43b91aa3d92dab8e9,
         type: 2}
-      Text: T-that I will be completely faithful to you.  That I will be proud to
-        let the public know that I adore you!  That you're the man of my dreams! 
-        That... that I can't live without you, Arjun!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 5121dd671ea7fa941b2bb5bbb47995f8,
-        type: 2}
-      Text: Good!  And the rest of the rules?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 1da2f7c82b2de1240ad7a9beaa7cb712,
-        type: 2}
-      Text: 'That you''re free to see or sleep with whoever you want.  That if asked
-        about our relationship that I will admit that I am your... mistress.  '
+      Text: Mr. Gurnani, Mr. {LastName} here to see you, Sir!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -110,9 +95,10 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 5121dd671ea7fa941b2bb5bbb47995f8,
         type: 2}
-      Text: And if I am asked, I will deny any interest in you or any relationship
-        with you whatsover.  That my standards are much higher than that.  Isn't
-        that right?  Is that OK wiith you Alice?
+      Text: I'm thinking of knocking this place down and putting up a shopping complex--
+        the location is fabulous, is it not?  I'm so glad you're here.  You've been
+        quite patient but I don't think I need your assistance any longer with Alice. 
+        And you've brought a final package of that blue elixir-- lovely!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -121,10 +107,25 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 1da2f7c82b2de1240ad7a9beaa7cb712,
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 5121dd671ea7fa941b2bb5bbb47995f8,
         type: 2}
-      Text: Yes, it's... fine.
+      Text: What's changed?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 5121dd671ea7fa941b2bb5bbb47995f8,
+        type: 2}
+      Text: Nothing.  Everything's gone to plan.  Alice has officially been stripped
+        of her royal titles for flaunting her obsession with in and for flaunting
+        such unbecoming behavior.  Aside from a royal allowance and this place, she's
+        been cut off.  Amazing!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -136,8 +137,20 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 5121dd671ea7fa941b2bb5bbb47995f8,
         type: 2}
-      Text: Amazing what an English trollop will do for some attention, eh, Mr. {LastName}? 
-        Thank you fpr the extra Hornical-- she's becoming quite addicted to it!
+      Text: And THIS was your plan?  I don't understand!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 5121dd671ea7fa941b2bb5bbb47995f8,
+        type: 2}
+      Text: You should come see me in my office.  We'll continue this discussion
+        there.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -147,9 +160,9 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 11400000, guid: 1da2f7c82b2de1240ad7a9beaa7cb712,
+      OptionalNpcReference: {fileID: 11400000, guid: 5121dd671ea7fa941b2bb5bbb47995f8,
         type: 2}
-      Text: 'NOTE: Princess Alice is now CONTROLLED by Arjun Gurnani!'
+      Text: 'NOTE: Princess Alice is now TRAINED!'
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -158,14 +171,7 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups:
-    - Title: '"Alice, show Mr. {LastName}...'
-      Videos:
-      - {fileID: 32900000, guid: 8d10ae75f9a45944e824d0382e0c78a5, type: 3}
-      Textures: []
-      DialogClips: []
-      Text: '"...what a slut a princess can be-- and then I''ll give you what you
-        really want from me!"'
+    OptionalPopups: []
     Choices: []
     Effect:
       NpcEffects: []
@@ -179,7 +185,8 @@ MonoBehaviour:
       RevanueEffect: 0
       HornicalEffect: 0
       NpcsToControl: []
-      NpcsToTrain: []
+      NpcsToTrain:
+      - {fileID: 11400000, guid: 1da2f7c82b2de1240ad7a9beaa7cb712, type: 2}
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []

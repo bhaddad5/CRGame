@@ -10,26 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: A Princess is humbled
+  m_Name: Alice's new role
   m_EditorClassIdentifier: 
-  Id: 84459af0-d4d3-4c47-b17f-adba195bc233
-  Name: A Princess is humbled
+  Id: 25c3b516-47bc-4058-826b-de6c77ba9702
+  Name: Alice's new role
   SubInteraction: 0
   AlertNew: 1
-  Category: 2
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NotOnWeekends: 0
     NotOnWeekdays: 0
-    NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 11400000, guid: 1da2f7c82b2de1240ad7a9beaa7cb712,
-        type: 2}
-      Stat: 0
-      Is: 0
-      Value: 0
-    RequiredInteractions: []
+    NpcStatRequirements: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: c72a542c0e78f6549b988992a526ca93, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -45,21 +41,30 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    Items:
-    - {fileID: 11400000, guid: 3ff5cfaad1c119d4ca9230878fa2fac1, type: 2}
-    - {fileID: 11400000, guid: 3ff5cfaad1c119d4ca9230878fa2fac1, type: 2}
-    - {fileID: 11400000, guid: 3ff5cfaad1c119d4ca9230878fa2fac1, type: 2}
-    - {fileID: 11400000, guid: 3ff5cfaad1c119d4ca9230878fa2fac1, type: 2}
-    - {fileID: 11400000, guid: 3ff5cfaad1c119d4ca9230878fa2fac1, type: 2}
+    Items: []
   Repeatable: 0
   Cooldown: 0
   PreviewEffect: 0
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: Your timing is auspicious, Mr. {LastName}.  Alice and I were just having
-        an important conversation.  Now, Alice- what are the new rules for our relationship?
+      OptionalNpcReference: {fileID: 11400000, guid: 1da2f7c82b2de1240ad7a9beaa7cb712,
+        type: 2}
+      Text: Mr. {LastName}!  You're here to see Arjun?  It's so nice to see someone
+        familair.  My friends and family all seem to want to preten dI don't exst. 
+        Even the media's no longer interested in me.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 1da2f7c82b2de1240ad7a9beaa7cb712,
+        type: 2}
+      Text: You look... amazing.  What are you doing here, Your Highness?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -71,9 +76,9 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 1da2f7c82b2de1240ad7a9beaa7cb712,
         type: 2}
-      Text: T-that I will be completely faithful to you.  That I will be proud to
-        let the public know that I adore you!  That you're the man of my dreams! 
-        That... that I can't live without you, Arjun!
+      Text: It's just Alice now.  I'm no longer officially a princess.  Arjun likes
+        to have me around.  He likes to impress the Indian VIPs who come for meetings
+        here-- he thinks I'm good for business.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -83,36 +88,9 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 5121dd671ea7fa941b2bb5bbb47995f8,
+      OptionalNpcReference: {fileID: 11400000, guid: 9c69d4ff11fb99d43af67bff964674f5,
         type: 2}
-      Text: Good!  And the rest of the rules?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 1da2f7c82b2de1240ad7a9beaa7cb712,
-        type: 2}
-      Text: 'That you''re free to see or sleep with whoever you want.  That if asked
-        about our relationship that I will admit that I am your... mistress.  '
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 5121dd671ea7fa941b2bb5bbb47995f8,
-        type: 2}
-      Text: And if I am asked, I will deny any interest in you or any relationship
-        with you whatsover.  That my standards are much higher than that.  Isn't
-        that right?  Is that OK wiith you Alice?
+      Text: Alice, shouldn't you be changing now?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -124,7 +102,7 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 1da2f7c82b2de1240ad7a9beaa7cb712,
         type: 2}
-      Text: Yes, it's... fine.
+      Text: Yes, of course.  I feel so silly but--
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -134,10 +112,14 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 5121dd671ea7fa941b2bb5bbb47995f8,
+      OptionalNpcReference: {fileID: 11400000, guid: 9c69d4ff11fb99d43af67bff964674f5,
         type: 2}
-      Text: Amazing what an English trollop will do for some attention, eh, Mr. {LastName}? 
-        Thank you fpr the extra Hornical-- she's becoming quite addicted to it!
+      Text: 'Alice has volunteered to intern at India House.  It''s all very basic
+        office work but she still is required to wear a uniform.  It''s a public
+        gesture to show how much she admires Indian culture.  Anya Nandi is happy
+        to have such a high born little gofer at her disposal-- another sign of the
+        ascendancy of India over Britain Ithink.  Off you go, Alice!  Do a good job--
+        or else they''ll be a caning, Princess!  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -146,10 +128,10 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 2
+    - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 1da2f7c82b2de1240ad7a9beaa7cb712,
         type: 2}
-      Text: 'NOTE: Princess Alice is now CONTROLLED by Arjun Gurnani!'
+      Text: Not that!  I'll do just what Ms. Nandi tells me!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -158,14 +140,22 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups:
-    - Title: '"Alice, show Mr. {LastName}...'
-      Videos:
-      - {fileID: 32900000, guid: 8d10ae75f9a45944e824d0382e0c78a5, type: 3}
-      Textures: []
-      DialogClips: []
-      Text: '"...what a slut a princess can be-- and then I''ll give you what you
-        really want from me!"'
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 9c69d4ff11fb99d43af67bff964674f5,
+        type: 2}
+      Text: Now that she's off, I'm pleased to tell you I've advised my cousin that
+        you've helpe dme achieve my immediate goal with your kind help.  I believe
+        she has a couple more assignments to complete, but after that-- yes, you're
+        very close to getting the credit line you need from the Gurnanis!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups: []
     Choices: []
     Effect:
       NpcEffects: []
