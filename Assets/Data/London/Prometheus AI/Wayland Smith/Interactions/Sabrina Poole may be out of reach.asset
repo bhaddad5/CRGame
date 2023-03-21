@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Turn on the news for me
+  m_Name: Sabrina Poole may be out of reach
   m_EditorClassIdentifier: 
-  Id: 8c00efae-5eaa-4963-8a1d-96baba6ad844
-  Name: Turn on the news for me
-  SubInteraction: 0
+  Id: f360ea38-0f8d-4ef6-8a52-ca47496a894e
+  Name: Sabrina Poole may be out of reach
+  SubInteraction: 1
   AlertNew: 1
   Category: 1
   Requirements:
@@ -24,8 +24,7 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions:
-    - {fileID: 11400000, guid: fb64013d548f44e4baada4b93395ebf9, type: 2}
+    RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -43,50 +42,42 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 1
-  Cooldown: 4
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Be a good fellow and switch on telly for me-- the news channel please.
+      Text: She's a popular, widely admired and accomplished woman, Wayland.  She
+        may be out of reach.  I'll need to think about this-- I can't offer any guarantees
+        right now.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: dd10738303803ac41ad0a260c1ad8878,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 450
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Of course, Sir!  BBC World Report for you!
+      Text: Disappointing but I understand.  But we still have the deal, as far as
+        I'm concerned.  When you're rounded up the backing, I'm still prepared to
+        move forward.  But...if you change your mind... it would mean the world to
+        me.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: dd10738303803ac41ad0a260c1ad8878,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 450
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups:
-    - Title: When you ask...
-      Videos:
-      - {fileID: 32900000, guid: 16ac2ff2ca2784d4b8d37163a292337c, type: 3}
-      - {fileID: 32900000, guid: 6f5040e82abded346b98f3166a225ca4, type: 3}
-      - {fileID: 32900000, guid: 58d89345e89d36c498a3099c927ee6dc, type: 3}
-      - {fileID: 32900000, guid: a3b5431373fcc8145bde1dc1f1fe2255, type: 3}
-      Textures: []
-      DialogClips: []
-      Text: ...Jeeves informs you the lovely news reader's name is Sabrina Poole. 
-        Her cool beauty and posh Home County accent is quite a nice change from the
-        usually less elegant American media women you're more familiair with.
+    OptionalPopups: []
     Choices: []
     Effect:
       NpcEffects: []
-      EgoEffect: 3
+      EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
