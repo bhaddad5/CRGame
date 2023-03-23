@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: A very personal matter
+  m_Name: I'd like your help
   m_EditorClassIdentifier: 
-  Id: f23746bf-66c2-4c73-b1ac-96d15e9dc6d2
-  Name: A very personal matter
+  Id: b256ea75-dc31-4036-93eb-774a47a4b35a
+  Name: I'd like your help
   SubInteraction: 0
   AlertNew: 1
-  Category: 3
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -25,7 +25,8 @@ MonoBehaviour:
     NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions: []
-    RequiredNotCompletedInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: 5cf64ed0677177046a494f8c80ef2ffb, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -41,17 +42,14 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 0
-  Cooldown: 0
-  PreviewEffect: 0
+  Repeatable: 1
+  Cooldown: 10
+  PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: 'And so the White Queen is revealed, Mr. {LastName}!  Yes, I''ve known
-        who you are for quite some time.  Alastair had been itching to induct you
-        into our little social club as soon as it was apparent that awful Pakistani
-        woman began to bend the knee-- due to your machinations,  I understand.  '
+      Text: I've heard so much about you, Mr. {LastName}.  Eleanor is quite a fan.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -62,8 +60,9 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: A university is a fine location for poaching unattached young women,
-        Chancellor Graves.
+      Text: 'Chancellor Graves?  Yes, well, I''m humbled by her generous consideration. 
+        She''s an amazing lady, but then you''d know that yourself.  I understand
+        you two were-- are-- very close.  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -74,10 +73,12 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: 'Only if one is careful and very, very selective.  I tend to favor exchange
-        students-- most often before they even reach the campus.  It avoids complications. 
-        Now, can you repeat the little trick you performed for Schofield or are you
-        a one trick pony, Mr. {LastName}?  '
+      Text: We were schoolgirl lovers-- right into Cambridge-- much to the horror
+        of both our families.  Then, I don't know why, we went into different directions. 
+        Academia wasn't as forgiving back then and my father made threats regarding
+        my inheritance and... Anyway, that's all in the past.  We're the best of
+        chums now-- which is why you're here.  I understand you're a bit of a relationship
+        expert.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -88,7 +89,9 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: The silver ring-- what does it mean?
+      Text: That's one way to put it!  You need relationship help?  Why not seek
+        out some one with a lot of letters after their name.  You seem to have the
+        money to spend.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -99,8 +102,12 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Another group.  Call it Hellfire adjacent, but one more restrictive iin
-        its membership.  You'd never qualify, Mr. {LastName}.
+      Text: Mr. {LastName}, I could live off the interest on the interest on the
+        interest at this point.  If it was a money thing, I wouldn't need your expertise. 
+        But, believe it or not, there are, unfortunately some things money can't
+        buy... not directly, anyway.  You're looking for investment capital to back
+        growth, perhaps an acquisition, I understand.  Would TWENTY-FIVE REVENUE
+        help?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -111,8 +118,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: And why is that, especially if I'm a member in good standing of the Hellfire
-        Club?
+      Text: It would.  What kind of a relationship needs my intervention, Lady West?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -123,9 +129,11 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Well, you're not a woman and you're definitely not a lesbian, Mr. {LastName}. 
-        Therefore, as Mother Superior of the Lilith Society, I could not entertain
-        your application for membership-- as much as I like your style.
+      Text: I hired Heather Gray right out of university.  She was an average journo
+        wannabe but what a pretty face!  She got her start here at Juno!  We became
+        lovers.  Then she won a damn award and boom!-- she was headhunted away from
+        me and the rest of the dreary story proceeded-- she met a young share trader,
+        dropped me and that was that.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -136,7 +144,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: The Lilith Society?
+      Text: How sad for you!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -147,11 +155,11 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Just as old and exclusive as Hellfire but one dedicated solely for Sapphic
-        studies and personal exploration.  We have our own quarters- the Convent-
-        that provide just as much space space as Hellfire affords our members.  I
-        exist in both worlds, you see.  And perhaps that's why I need your help. 
-        It is for a member of the other group I belong to- the Lilith Society.
+      Text: I was younger and a fool for love.  Fast forward, Heather's one of those
+        married women who learns too late her husband has moved on.  He takes off,
+        secretary in tow, with all the family funds to some place there's no extradition-
+        leaving Heather destitute with a daughter in private school and a mortgaged
+        estate in Essex.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -162,7 +170,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: So... a friend of yours?
+      Text: So, there's a potential reunion in your future, Lady West?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -173,8 +181,11 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Perhaps a bit more... at one time.  But I have a Trustees meeting now. 
-        We'll need to meet again.
+      Text: 'I swooped in as soon as I heard.  Offered her an editor''s job here
+        to help out.  But I sense her dalliance with lesbianism was a youthful thing. 
+        She''s taken the job but she''s very standoffish.  I''d like help persuading
+        her the mistake she made was leaving me, not marrying that bastard who abandoned
+        she and her daughter.  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -185,7 +196,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Perhaps at The Convent?
+      Text: I see.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -196,9 +207,11 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: I see.  I am continuously amazed by the fascination men have for the
-        private business of women who have no interest in them.  Very well.  Come
-        visit me at The Convent, then we'll discuss my request.
+      Text: 'There''s more.  The daughter- Isabelle-- is really a lovely girl.  I''d
+        like to do my best for her as well.  I want to look after both of them, you
+        see.  I just know Heather and she''s always been so stubborn, so independent. 
+        I need her to be more... accepting of my help and participation in her life
+        again-- and her daughter''s.  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -207,9 +220,22 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 2
+    - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: 'NOTE: The Convent is now unlocked on the London map!'
+      Text: It's a complicated matter.  There's much to consider, Lady West, and
+        I have so many other responsibilities--
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: FIFTY revenue then-- the West Trust would stake your company that much
+        in exchange for your help.  Well,what's our answer, Mr. {LastName}?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -219,7 +245,9 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
-    Choices: []
+    Choices:
+    - {fileID: 11400000, guid: 5cf64ed0677177046a494f8c80ef2ffb, type: 2}
+    - {fileID: 11400000, guid: 5f9b132d9326c044f904e86f8e55aa24, type: 2}
     Effect:
       NpcEffects: []
       EgoEffect: 0

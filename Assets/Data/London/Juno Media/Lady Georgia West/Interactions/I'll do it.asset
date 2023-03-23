@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: My personal matter- at last
+  m_Name: I'll do it
   m_EditorClassIdentifier: 
-  Id: 966ca8c5-90ae-464d-9f4c-69527fbdad09
-  Name: My personal matter- at last
-  SubInteraction: 0
+  Id: 9772a511-fece-4358-bcd5-ce785fed174d
+  Name: I'll do it.
+  SubInteraction: 1
   AlertNew: 1
   Category: 1
   Requirements:
@@ -24,11 +24,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions:
-    - {fileID: 11400000, guid: 9a6c9ee17ba368743b4deb13d8cbfa37, type: 2}
-    - {fileID: 11400000, guid: 32e5ea77741c6d241aa7c49786ebe147, type: 2}
-    RequiredNotCompletedInteractions:
-    - {fileID: 11400000, guid: 80d842cb8ae15ab4ba176909c0a64258, type: 2}
+    RequiredInteractions: []
+    RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -44,34 +41,14 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 1
-  Cooldown: 10
-  PreviewEffect: 1
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
   Result:
     Dialogs:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: So we come to it at last, Mr. {LastName}.  Let's start with a story that
-        began about forty-five years ago.  A scholraship bookworm and the heiress
-        school captain- two more different girls you can't imagine-- and roommates
-        no less!  I won't bore you-- the details of such romances mean nothing unless
-        in them.  Let us say it lasted, on and off, through out twenties when Life
-        took us in different directions.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: 'We''re both well into our middle age now and while the passion has long
-        since dissipated, we remain dear friends.  She''s now excited about an opportunity
-        to find love again.  My own desires are quenched here in The Convent and
-        Hellfire, but she has had no such options until now.  Schofield''s revelations
-        suggested a way I might assist her find that love.   '
+      Text: 
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -82,8 +59,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: 'Through me and my... ''machinations''.  And why, with respect, should
-        I involve myself in such matters?  '
+      Text: Alright, Lady West-- I'm your man.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -94,35 +70,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: 'Two reasons.  The lady in question is in a position to make it worth
-        your while.  Schofield tells me you''re interested in rapid growth for your
-        company- she could help.  Old money, Mr. {LastName}-- she has it and that''sthe
-        best kind to have. '
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: And the second reason?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: 'I want her to be happy in the way I have found happiness at this age. 
-        If she can grab it, I want her to have it.  And that would indept me to you,
-        White Initiate.  As the White Queen, I have the right to make appointments
-        on my side of the board, so to speak.  So, will you help her?    '
+      Text: That's not something I'm usually excited about but this is an exception! 
+        Thank you!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -132,9 +81,7 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
-    Choices:
-    - {fileID: 11400000, guid: 80d842cb8ae15ab4ba176909c0a64258, type: 2}
-    - {fileID: 11400000, guid: 96fa6fd67093d7e4ca821650e64d08e7, type: 2}
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
