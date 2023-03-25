@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Taking the intern in hand
+  m_Name: Loose threads
   m_EditorClassIdentifier: 
-  Id: 6df7fce9-fc79-40f5-8e69-3826a0ed328a
-  Name: Taking the intern in hand
+  Id: f5391848-bcb8-4eb5-8e0c-8c7bb7c40797
+  Name: Loose threads
   SubInteraction: 0
   AlertNew: 1
-  Category: 0
+  Category: 2
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -24,8 +24,10 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
-    RequiredNotCompletedInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: b43793e50a0d74045adcd471c474f4f0, type: 2}
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: 469216b3cfb6f9b4dbbe9806db8a4d2a, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -48,9 +50,18 @@ MonoBehaviour:
     Dialogs:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: The back talk, the blatant disrespect-- Heather, I warned you and now
-        I must take matters into my own hand.  Young lady, I'll be handling your
-        correctiosn from now on-- and a grounding will be the least of it!
+      Text: I trust you have cleaned up your loose ends?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: I took care of it myself.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -60,10 +71,10 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 15ae905438bb63c4b8ed2c19095dc36d,
-        type: 2}
-      Text: Mother, are you going to allow this?  Do you even know what's going on--
-        what your precious aristocrat is really all about? Are you blind?
+      OptionalNpcReference: {fileID: 0}
+      Text: I am sorry you had to... but this is the business we are in.  This is
+        the life we chose.  You showed mettle, my boy.  It will be positively reflected
+        in my Field Report.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -73,12 +84,10 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 11400000, guid: 15ae905438bb63c4b8ed2c19095dc36d,
-        type: 2}
-      Text: 'NOTE: Heather Gray''s seeming incapacitation suggest she does-- but
-        is unable to intervene in whatever is going on between the girl and the woman. 
-        A shift has occurred and the grim smile on Lady West''s face suggests she''s
-        the inevitable victor who has emerged from this sordid little struggle.'
+      OptionalNpcReference: {fileID: 0}
+      Text: 'NOTE: Kempler''s grim respect indicates a kind of brutal admiration
+        and his favourable report results in several messages of ''well done!" from
+        senior Selectacorp executives.  +25 POWER'
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -90,18 +99,10 @@ MonoBehaviour:
     OptionalPopups: []
     Choices: []
     Effect:
-      NpcEffects:
-      - OptionalNpcReference: {fileID: 11400000, guid: 15ae905438bb63c4b8ed2c19095dc36d,
-          type: 2}
-        AmbitionEffect: -10
-        PrideEffect: 0
-      - OptionalNpcReference: {fileID: 11400000, guid: 5b372237565c8c845afe56c63b5c1019,
-          type: 2}
-        AmbitionEffect: 0
-        PrideEffect: -20
+      NpcEffects: []
       EgoEffect: 0
       FundsEffect: 0
-      PowerEffect: 0
+      PowerEffect: 25
       PatentsEffect: 0
       CultureEffect: 0
       SpreadsheetsEffect: 0
