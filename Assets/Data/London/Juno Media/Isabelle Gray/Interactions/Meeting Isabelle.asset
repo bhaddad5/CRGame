@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: A wonderful opportunity
+  m_Name: Meeting Isabelle
   m_EditorClassIdentifier: 
-  Id: 7c8a4267-5b4a-48e6-82c2-0498a32425f5
-  Name: A wonderful opportunity
+  Id: 70cd3c34-6489-47d2-803a-f2e1f1aa1d0b
+  Name: Meeting Isabelle
   SubInteraction: 0
   AlertNew: 1
-  Category: 1
+  Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -24,8 +24,7 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions:
-    - {fileID: 11400000, guid: 8da6cf26ad2aba84e9bc5aa8bbbdfe5e, type: 2}
+    RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -49,22 +48,8 @@ MonoBehaviour:
     Dialogs:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Georgia, I appreeciate the offer but Isabelle won't be interested.  She
-        wants to becoem a graphic artist, not a journalist.  An internship with Juno
-        Media won't excite her at all.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 140f65d99b295d2409317edfee76ac91,
-        type: 2}
-      Text: Mr. {LastName}, I'm offering Heather's daughter a wonderful opportunity
-        here, but she doesn't seem to see it.
+      Text: 'Isabelle, this is Mr. {LastName}.  He''s a guest and an important American
+        businessman.  Say hello, Isabelle.  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -75,7 +60,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: I don't think Mr. {LastName}'s opinions aren't relevant here, Georgia--
+      Text: 'Hello, Mr. {LastName}.  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -87,8 +72,8 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 140f65d99b295d2409317edfee76ac91,
         type: 2}
-      Text: But I do, Heather.  Mr. {LastName}, what do you think about Heather's
-        daughter doing an internship here after school for her Senior year?
+      Text: Isabelle has just joined us as an intern.  She's already proving very
+        helpful.  Go on, dear-- go ask any staff how yo might be of assistance, ok?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -97,11 +82,10 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 5b372237565c8c845afe56c63b5c1019,
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 15ae905438bb63c4b8ed2c19095dc36d,
         type: 2}
-      Text: It sounds like a fantastic opportunity.  I think it would be a real shame
-        if she missed out.
+      Text: Yes, ok.  Fine.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -113,46 +97,9 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 140f65d99b295d2409317edfee76ac91,
         type: 2}
-      Text: It is settled.  You'll inform Isabelle she's to report here every day
-        after school until she graduates.  We'll find plenty for her to do.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 5b372237565c8c845afe56c63b5c1019,
-        type: 2}
-      Text: But she's got her Dance and Cheer activities!  She's finally made the
-        school team and she's been so looking forward to participating--
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 140f65d99b295d2409317edfee76ac91,
-        type: 2}
-      Text: Yes, well, that's a sacrifice she'll have to make.  I expect to see her
-        here shortly-- am I understood Heather?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 5b372237565c8c845afe56c63b5c1019,
-        type: 2}
-      Text: ...yes, Georgia.
+      Text: I know what you're going to say, but... isn't she lovely?  Such a beauty! 
+        She reminds me of a younger Heather but much, much prettier!  And those breasts--
+        Heather's barely got any!  It would seem they skipped a generation.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -164,8 +111,7 @@ MonoBehaviour:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 140f65d99b295d2409317edfee76ac91,
         type: 2}
-      Text: What is this interest in her daughter?  We didn't discuss this, Lady
-        West!
+      Text: We never discussed this.  She's just a child.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -177,7 +123,20 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 140f65d99b295d2409317edfee76ac91,
         type: 2}
-      Text: Wait until you see her, Mr. {LastName}.  My, my, my....
+      Text: She's eighteen, Mr. {LastName}.  We all have to grow up sometime.  And
+        she's so unspoiled.  So fresh.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 140f65d99b295d2409317edfee76ac91,
+        type: 2}
+      Text: 'NOTE: This is an unexpected development-- or is it? '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
