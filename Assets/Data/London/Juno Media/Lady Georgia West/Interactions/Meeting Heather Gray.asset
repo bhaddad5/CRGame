@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Not at this time
+  m_Name: Meeting Heather Gray
   m_EditorClassIdentifier: 
-  Id: 777e1314-7c55-4f82-86ff-17328a723c8b
-  Name: Not at this time
-  SubInteraction: 1
+  Id: 04cf6d12-6c98-4760-b3ef-7593dfb92760
+  Name: Meeting Heather Gray
+  SubInteraction: 0
   AlertNew: 1
   Category: 1
   Requirements:
@@ -24,7 +24,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 34c95a7eb3801384495179cc596f5897, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -46,10 +47,11 @@ MonoBehaviour:
   PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 1
+    - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: I can't right now.  I'm over extended as it is.  I hope you understand,
-        Lady West.
+      Text: Heather, let me introduce you to Mr. {LastName}.  He's from the States. 
+        We're discussing areas we might partner in.  Heather is the Editor of Lilac,
+        our lesbian lifestyle magazine.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -59,9 +61,11 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: I'll accept your answer but you always have the opportunity to change
-        your mind, Mr. {LastName}.  Do consider it a live offer.
+      OptionalNpcReference: {fileID: 11400000, guid: 5b372237565c8c845afe56c63b5c1019,
+        type: 2}
+      Text: Heather, let me introduce you to Mr. {LastName}.  He's from the States. 
+        We're discussing areas we might partner in.  Heather is the Editor of Lilac,
+        our lesbian lifestyle magazine.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
