@@ -14,16 +14,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: f294d365-e2d7-43d7-a24e-f1866359451d
   Name: Holly begs for freedom (Hamiltons leave game)
+  SubInteraction: 0
   AlertNew: 1
   Category: 2
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 360e63dcca70f2441b9de9e3e2b3c100, type: 2}
     RequiredNotCompletedInteractions: []
-    RequiredPolicies: []
+    RequiredPolicies:
+    - {fileID: 11400000, guid: 2634cd0cfa0d37a40b3e6655b1c4cf65, type: 2}
+    - {fileID: 11400000, guid: 41d3c3a335249d945b3e2fd2a48fd517, type: 2}
+    - {fileID: 11400000, guid: 8ea92d0472802754e957adbd95198d75, type: 2}
+    - {fileID: 11400000, guid: 60e08527c7da9d84faf0df699140472f, type: 2}
     RequiredDepartmentsControled: []
     RequiredNpcsControled:
     - {fileID: 11400000, guid: d248b00fc853b4845a5da195f269d404, type: 2}
@@ -39,9 +47,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
-    Items: 
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -169,6 +177,7 @@ MonoBehaviour:
       Text: ...bearing a sentiment in practiced, juvenile script and no signature. 
         You feel light as a feather and finally appreciate how precious freedom really
         is.
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 150
@@ -188,8 +197,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -198,11 +206,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -220,8 +230,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -230,5 +239,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
