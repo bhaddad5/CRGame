@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 90f01ec9-b90d-415a-86ff-01cecd7cf90b
   Name: Candace chokes on it
+  SubInteraction: 0
   AlertNew: 1
   Category: 6
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements:
     - OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
         type: 2}
@@ -44,8 +47,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 1
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -57,9 +61,11 @@ MonoBehaviour:
       CustomBackground: {fileID: 2800000, guid: 015acc2fd3767b24a9d137be3d709390,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
+        xPos: 0.7
         yPos: 0.45
         width: 410
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
         type: 2}
@@ -68,9 +74,11 @@ MonoBehaviour:
       CustomBackground: {fileID: 2800000, guid: 015acc2fd3767b24a9d137be3d709390,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
+        xPos: 0.7
         yPos: 0.45
         width: 410
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
         type: 2}
@@ -80,15 +88,20 @@ MonoBehaviour:
       CustomBackground: {fileID: 2800000, guid: 015acc2fd3767b24a9d137be3d709390,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
+        xPos: 0.7
         yPos: 0.45
         width: 410
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Candace on her knees
       Videos:
       - {fileID: 32900000, guid: 11ca51cd603fe894f8d71dc5a667b687, type: 3}
-      Texture: {fileID: 0}
-      Text: 
+      Textures: []
+      DialogClips: []
+      Text: She knows what she's doing.  Her husband loved this kind of attention
+        when he was home on leave.
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 10
@@ -106,6 +119,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -114,11 +128,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -136,6 +152,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -144,5 +161,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1

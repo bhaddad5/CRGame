@@ -14,13 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: a47e1b16-fddf-4925-a119-802cf217dc45
   Name: Where is home
+  SubInteraction: 0
+  AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NpcAmbitionRequirements: []
-    NpcPrideRequirements: []
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 83ef468d7d0dbf44c8671753b3ce310b, type: 2}
     RequiredNotCompletedInteractions: []
@@ -38,32 +41,79 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
+        type: 2}
       Text: Do you live in the city?
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 015acc2fd3767b24a9d137be3d709390,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.7
+        yPos: 0.45
+        width: 410
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
+        type: 2}
       Text: We're in the suburbs.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 015acc2fd3767b24a9d137be3d709390,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.7
+        yPos: 0.45
+        width: 410
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
+        type: 2}
       Text: It must be nice to have a lawn!
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 015acc2fd3767b24a9d137be3d709390,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.7
+        yPos: 0.45
+        width: 410
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
+        type: 2}
       Text: Clover Lane is nice.  Not too fancy but perfect for us.
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 015acc2fd3767b24a9d137be3d709390,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.7
+        yPos: 0.45
+        width: 410
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
+        type: 2}
       Text: 'NOTE: You should now be able to visit the Kelly Household'
       CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 015acc2fd3767b24a9d137be3d709390,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.7
+        yPos: 0.45
+        width: 410
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -81,6 +131,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -88,16 +139,14 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -115,6 +164,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -122,9 +172,8 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
-    CustomBackground: {fileID: 0}
-    CustomBackgroundNpcLayout:
-      xPos: 0
-      yPos: 0
-      width: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
+  New: 1

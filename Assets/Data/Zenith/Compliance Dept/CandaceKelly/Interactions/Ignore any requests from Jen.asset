@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 9ae8212b-2d3b-4859-ae8d-61cec2cc60f2
   Name: Ignore any requests from Jen
+  SubInteraction: 0
   AlertNew: 1
   Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
@@ -39,8 +42,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -53,10 +57,11 @@ MonoBehaviour:
       CustomBackground: {fileID: 2800000, guid: 015acc2fd3767b24a9d137be3d709390,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
+        xPos: 0.7
         yPos: 0.45
         width: 410
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
         type: 2}
@@ -65,10 +70,11 @@ MonoBehaviour:
       CustomBackground: {fileID: 2800000, guid: 015acc2fd3767b24a9d137be3d709390,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
+        xPos: 0.7
         yPos: 0.45
         width: 410
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
         type: 2}
@@ -77,10 +83,11 @@ MonoBehaviour:
       CustomBackground: {fileID: 2800000, guid: 015acc2fd3767b24a9d137be3d709390,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
+        xPos: 0.7
         yPos: 0.45
         width: 410
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
         type: 2}
@@ -89,11 +96,13 @@ MonoBehaviour:
       CustomBackground: {fileID: 2800000, guid: 015acc2fd3767b24a9d137be3d709390,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
+        xPos: 0.7
         yPos: 0.45
         width: 410
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: be12a51bf8ae5c343a38ccd5b80d8007,
@@ -115,6 +124,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -123,11 +133,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -145,6 +157,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -153,5 +166,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1

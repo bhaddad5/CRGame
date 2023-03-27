@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: bbba38df-0974-41da-bd8a-8d24ae0538b6
   Name: Mother Daughter Bonding
+  SubInteraction: 0
   AlertNew: 1
   Category: 6
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements:
     - OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
         type: 2}
@@ -44,8 +47,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -58,9 +62,11 @@ MonoBehaviour:
       CustomBackground: {fileID: 2800000, guid: 015acc2fd3767b24a9d137be3d709390,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
+        xPos: 0.7
         yPos: 0.45
         width: 410
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
         type: 2}
@@ -69,9 +75,11 @@ MonoBehaviour:
       CustomBackground: {fileID: 2800000, guid: 015acc2fd3767b24a9d137be3d709390,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
+        xPos: 0.7
         yPos: 0.45
         width: 410
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
         type: 2}
@@ -82,9 +90,11 @@ MonoBehaviour:
       CustomBackground: {fileID: 2800000, guid: 015acc2fd3767b24a9d137be3d709390,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
+        xPos: 0.7
         yPos: 0.45
         width: 410
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
         type: 2}
@@ -93,9 +103,11 @@ MonoBehaviour:
       CustomBackground: {fileID: 2800000, guid: 015acc2fd3767b24a9d137be3d709390,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
+        xPos: 0.7
         yPos: 0.45
         width: 410
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
         type: 2}
@@ -105,9 +117,11 @@ MonoBehaviour:
       CustomBackground: {fileID: 2800000, guid: 015acc2fd3767b24a9d137be3d709390,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
+        xPos: 0.7
         yPos: 0.45
         width: 410
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
         type: 2}
@@ -116,16 +130,20 @@ MonoBehaviour:
       CustomBackground: {fileID: 2800000, guid: 015acc2fd3767b24a9d137be3d709390,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
+        xPos: 0.7
         yPos: 0.45
         width: 410
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Going lesbo for hubby!
       Videos:
       - {fileID: 32900000, guid: dc064c9a359e26842a61f1799986d195, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: What harm is there?  Donald be pleased and the girls will earn his approval
         with these shameful performances!
+    Choices: []
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
@@ -147,6 +165,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -155,11 +174,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -177,6 +198,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -185,5 +207,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
