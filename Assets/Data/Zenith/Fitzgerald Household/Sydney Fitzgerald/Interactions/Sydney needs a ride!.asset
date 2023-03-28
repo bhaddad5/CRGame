@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 40c43ecc-5c24-4a7f-a4bd-792e1709d0e0
   Name: Sydney needs a ride!
+  SubInteraction: 0
   AlertNew: 1
   Category: 3
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 8b48cbf0ca3adb74293f7cbd7457a6e0, type: 2}
@@ -39,8 +42,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -54,9 +58,11 @@ MonoBehaviour:
       CustomBackground: {fileID: 2800000, guid: d7ec62f2044e94f4a8671fed31846eb4,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.3
+        xPos: 0.7
         yPos: 0.45
         width: 440
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: d5fcf0ddcb7f29f4d9d9ed509fb5a411,
         type: 2}
@@ -66,9 +72,11 @@ MonoBehaviour:
       CustomBackground: {fileID: 2800000, guid: d7ec62f2044e94f4a8671fed31846eb4,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.3
+        xPos: 0.7
         yPos: 0.45
         width: 440
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: d5fcf0ddcb7f29f4d9d9ed509fb5a411,
         type: 2}
@@ -77,9 +85,11 @@ MonoBehaviour:
       CustomBackground: {fileID: 2800000, guid: d7ec62f2044e94f4a8671fed31846eb4,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.3
+        xPos: 0.7
         yPos: 0.45
         width: 440
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: d5fcf0ddcb7f29f4d9d9ed509fb5a411,
         type: 2}
@@ -90,18 +100,22 @@ MonoBehaviour:
       CustomBackground: {fileID: 2800000, guid: d7ec62f2044e94f4a8671fed31846eb4,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.3
+        xPos: 0.7
         yPos: 0.45
         width: 440
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: As she blabber son in near-tears, you head...
       Videos:
       - {fileID: 32900000, guid: e241069d1dded1b46a9bf9a276725a5e, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: ...for the office, where you promptly have Security escort her straight
         to Mr. Owen's office-- with your compliments.  Except for glimpsing her from
         your spy cams, you suspect you won't be seeing Sydney in the flesh again
         for some time!
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -120,6 +134,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -128,11 +143,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -150,6 +167,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -158,5 +176,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
