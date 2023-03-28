@@ -14,11 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 40a549ed-79d8-4b87-b05a-dc5c50681ddb
   Name: Approve Hard Bodies contract
+  SubInteraction: 0
+  AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 7b8738e26aad00b4082b417d928cdc2c, type: 2}
@@ -37,8 +41,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 2
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -51,9 +56,11 @@ MonoBehaviour:
       CustomBackground: {fileID: 2800000, guid: ae9697172c63f91499a5c58282a8b939,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.3
+        xPos: 0.7
         yPos: 0.4
         width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: f4719d35d414f7449a4a8fa6aa3b3421,
         type: 2}
@@ -63,15 +70,19 @@ MonoBehaviour:
       CustomBackground: {fileID: 2800000, guid: ae9697172c63f91499a5c58282a8b939,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.3
+        xPos: 0.7
         yPos: 0.4
         width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Welcome to Hard Bodies, your new home for fitness!
       Videos:
       - {fileID: 32900000, guid: 284cffcb388900644b6877436792ee8a, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: It's time to look your best for your Boss!
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -89,6 +100,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -96,11 +108,14 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -118,6 +133,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -125,4 +141,8 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
+  New: 1
