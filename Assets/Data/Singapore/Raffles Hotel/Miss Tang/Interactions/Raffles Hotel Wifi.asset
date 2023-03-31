@@ -29,7 +29,9 @@ MonoBehaviour:
       Stat: 1
       Is: 0
       Value: 15
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 8f699f0ecd4f6b24da8147af8b8f2263, type: 2}
+    - {fileID: 11400000, guid: f96395af5663b6d48916bfc5813a75e0, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -52,17 +54,19 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 309360b9a7c730747a997d16770e5615,
+        type: 2}
       Text: You ask Miss Tang for the hotel wifi password and you're soon able to
         log into your corporate intranet.  Thousands of miles away, a light blinks
         atop a small pink webcam and a wakened secretary feels the sensation of a
         *CLICK* releasing her from her chastity belt.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 4a434114e66b9f64085c3c8149e89fac,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
@@ -114,17 +118,19 @@ MonoBehaviour:
   FailureResult:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 309360b9a7c730747a997d16770e5615,
+        type: 2}
       Text: You ask Miss Tang for the hotel wifi password and you're soon able to
         log into your corporate intranet.  Thousands of miles away, a light blinks
         atop a small pink webcam and a wakened secretary feels the sensation of a
         *CLICK* releasing her from her chastity belt.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 4a434114e66b9f64085c3c8149e89fac,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
