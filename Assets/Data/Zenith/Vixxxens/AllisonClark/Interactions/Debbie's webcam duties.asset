@@ -13,17 +13,23 @@ MonoBehaviour:
   m_Name: Debbie's webcam duties
   m_EditorClassIdentifier: 
   Id: 6a569503-2849-4983-be2e-fd7e6a413ad2
-  Name: Debbie's webcam duties
+  Name: Toys for Debbie
+  SubInteraction: 0
   AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 361d0f55b7a21a744a93809e1761446f, type: 2}
+    - {fileID: 11400000, guid: 3ce6c7202bdf66042bb53dfe2a24bfde, type: 2}
     RequiredNotCompletedInteractions: []
-    RequiredPolicies: []
+    RequiredPolicies:
+    - {fileID: 11400000, guid: 65ed348016c083242982c0756d874438, type: 2}
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
     RequiredNpcsTrained:
@@ -32,24 +38,25 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 50
+    MoneyCost: 250
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 5e669a1c0e002604c952078aa61bea6d,
         type: 2}
-      Text: We stock a wide variety.  I'd go for a higher end model-- they're more
+      Text: We stock a wide variety.  I'd go for a higher end models-- they're more
         durable units.  If your secretary is really going to give it a good workout,
         you'll want to spend a little more for the styling as well.  Shall I engrave
-        your name on it as well?
+        your name on the vibrator as well?  It's no extra charge for you, Mr. {LastName}!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 0e6402f5c5dd12641ae4a04c6591f9a0,
         type: 3}
@@ -58,56 +65,24 @@ MonoBehaviour:
         yPos: 0.4
         width: 350
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: Debbie blushes when you hand her...
+    - Title: You've long thought...
       Videos: []
       Textures:
-      - {fileID: 2800000, guid: e0659277e73b3134ab5e4d21cb50edcd, type: 3}
-      Texture: {fileID: 2800000, guid: e0659277e73b3134ab5e4d21cb50edcd, type: 3}
-      Text: ...the gift.  When you tease her about not being able to start playing
-        with it, her cheeks burn red.
-    - Title: Thatta girl!  Your encouragement...
+      - {fileID: 2800000, guid: 5e5a2558a0ff1bb45826820ad907e8e1, type: 3}
+      DialogClips: []
+      Text: '...your personal secretary should be properly equipped with the right
+        tools to do her job.  Now that her job has changed, additional tools are
+        required.  '
+    - Title: The still cooly assured young woman...
       Videos:
-      - {fileID: 32900000, guid: ba9614672ed27a44eba3c24196df3f35, type: 3}
+      - {fileID: 32900000, guid: 202c23e4cbbd3254b883f9f28893013f, type: 3}
       Textures: []
-      Texture: {fileID: 0}
-      Text: ...helps her as she struggles to perform for you.  Debbie gasps as she
-        faces the webcam in the conference room and you watch from the convenience
-        of your home office!
-    Effect:
-      NpcEffects:
-      - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-          type: 2}
-        AmbitionEffect: 0
-        PrideEffect: -1
-      EgoEffect: 0
-      FundsEffect: 0
-      PowerEffect: 0
-      PatentsEffect: 0
-      CultureEffect: 0
-      SpreadsheetsEffect: 0
-      BrandEffect: 0
-      RevanueEffect: 0
-      HornicalEffect: 0
-      NpcsToControl: []
-      NpcsToTrain: []
-      NpcsToRemoveFromGame: []
-      LocationsToControl: []
-      TrophiesClaimedReferences: []
-      MissionsToComplete: []
-      Car: 0
-      Suits: 0
-      JewleryCuffs: 0
-      JewleryPen: 0
-      JewleryRing: 0
-      JewleryWatch: 0
-      Promotion: 0
-      Home: 0
-  CanFail: 0
-  ProbabilityOfFailureResult: 0
-  FailureResult:
-    Dialogs: []
-    OptionalPopups: []
+      DialogClips: []
+      Text: ...the public sees must learn to do things in private for you, her boss,
+        that she isn't very proud of!
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -125,6 +100,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -133,5 +109,40 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
+  FailureResult:
+    Dialogs: []
+    OptionalPopups: []
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
