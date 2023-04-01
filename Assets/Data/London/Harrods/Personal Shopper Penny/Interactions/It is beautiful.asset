@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: e3eb85e6-41cc-4464-b1b4-f70788b76265
   Name: It is beautiful
-  SubInteraction: 0
+  SubInteraction: 1
   AlertNew: 1
   Category: 1
   Requirements:
@@ -24,7 +24,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 7b2d7a7962ba8aa408affdc61a2eb7bb, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
