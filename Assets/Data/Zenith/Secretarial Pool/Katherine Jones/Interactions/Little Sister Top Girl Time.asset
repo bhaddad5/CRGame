@@ -23,7 +23,12 @@ MonoBehaviour:
     RequiredTurnNumber: 0
     NotOnWeekends: 0
     NotOnWeekdays: 0
-    NpcStatRequirements: []
+    NpcStatRequirements:
+    - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Stat: 1
+      Is: 0
+      Value: 10
     RequiredInteractions:
     - {fileID: 11400000, guid: 0939f60cc0e5dc6459c2b31d9eb0cda7, type: 2}
     RequiredNotCompletedInteractions: []
@@ -43,7 +48,7 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 1
-  Cooldown: 6
+  Cooldown: 12
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -135,7 +140,11 @@ MonoBehaviour:
         always in a most degrading and amusing manner! '
     Choices: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+          type: 2}
+        AmbitionEffect: 0
+        PrideEffect: -1
       EgoEffect: 25
       FundsEffect: 0
       PowerEffect: 0
