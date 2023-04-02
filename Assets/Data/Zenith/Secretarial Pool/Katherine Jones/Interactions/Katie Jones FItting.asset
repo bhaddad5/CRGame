@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Employee Personal Safety Measures
+  m_Name: Katie Jones FItting
   m_EditorClassIdentifier: 
-  Id: c5ac2654-63bf-44fb-963b-4d9b383a2bcf
-  Name: Employee Personal Safety Measures
+  Id: 15936401-fd74-431d-8aa8-375dfeccac4d
+  Name: Katie Jones Fitting
   SubInteraction: 0
   AlertNew: 1
   Category: 5
@@ -24,13 +24,13 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 1bcf74eb55655064197df1a9d826994a, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies:
     - {fileID: 11400000, guid: 02d58727caa89404fb602a14e40d5b80, type: 2}
     RequiredDepartmentsControled: []
-    RequiredNpcsControled:
-    - {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06, type: 2}
+    RequiredNpcsControled: []
     RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
     RequiredTrophies: []
@@ -45,93 +45,79 @@ MonoBehaviour:
     Items: []
   Repeatable: 0
   Cooldown: 0
-  PreviewEffect: 1
+  PreviewEffect: 0
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
         type: 2}
-      Text: You must feel MUCH safer now in your new protective gear, Miss Jones!
-      CustomNpcImageOptions:
-      - {fileID: 2800000, guid: 5af1bb3aea9a89148b708f0f994e14bb, type: 3}
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
-        type: 3}
+      Text: How's our new girl doing?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
         type: 2}
-      Text: I suppose so, Mr. {LastName}-- but why can't I have a key to my own belt?
-      CustomNpcImageOptions:
-      - {fileID: 2800000, guid: 5af1bb3aea9a89148b708f0f994e14bb, type: 3}
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
-        type: 3}
+      Text: Just finishing up her belt fitting now, Mr. {LastName}!  Go on, Katie-
+        show Mr. {LastName} how safe you are now!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: Because you're an irresponsible airhead and would lose it right away. 
-        You know what you have to do if you need some access.
-      CustomNpcImageOptions:
-      - {fileID: 2800000, guid: 5af1bb3aea9a89148b708f0f994e14bb, type: 3}
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+      OptionalNpcReference: {fileID: 11400000, guid: f7a3898e350f7a84499562b0ca5a5a4b,
         type: 2}
-      Text: Yes, Sir, I know, I know-- ask my manager to unlock the belt for me.
-      CustomNpcImageOptions:
-      - {fileID: 2800000, guid: 5af1bb3aea9a89148b708f0f994e14bb, type: 3}
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+      Text: This is insane!  Why do I have to wear this ridiculous thing?  Is this
+        some joke?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e6aebbc7a9fe36643bfce5bfc9cc1737,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 8300000, guid: 2b121238eb2a3d84ab42f172275482a4,
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: That will do, Katie!  Here's her key, Sir!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e6aebbc7a9fe36643bfce5bfc9cc1737,
         type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.4
+        yPos: 0.4
+        width: 350
+      OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: A new addition to your keychain!
-      Videos: []
-      Textures:
-      - {fileID: 2800000, guid: a1b3d1fc1318a9444bd1f55bc9d3cd86, type: 3}
-      DialogClips: []
-      Text: Debbie's safely under lock and key now.
-    - Title: You already anticipate the whining...
+    - Title: Katie will grow used...
       Videos:
-      - {fileID: 32900000, guid: 4e8fb3ad524483749856d3cd5213e498, type: 3}
+      - {fileID: 32900000, guid: 56059845c493fb74cb8af6fb81d7bb49, type: 3}
       Textures: []
-      DialogClips:
-      - {fileID: 8300000, guid: 173eb61ffa034944f8397cf897a505dc, type: 3}
-      Text: ...and lots of 'reasons' Debbie needs a release from her belt!  Your
-        resolution will be tested often, if unsuccessfully.  She'll have to earn
-        her release from now on.
+      DialogClips: []
+      Text: ...to the protective accessory that ensures her complete fidelity.  She
+        has no choice.  You pocket the key.
     Choices: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+      - OptionalNpcReference: {fileID: 11400000, guid: f7a3898e350f7a84499562b0ca5a5a4b,
           type: 2}
         AmbitionEffect: 0
         PrideEffect: -5
       EgoEffect: 0
       FundsEffect: 0
-      PowerEffect: 5
+      PowerEffect: 0
       PatentsEffect: 0
       CultureEffect: 0
       SpreadsheetsEffect: 0
@@ -143,7 +129,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences:
-      - {fileID: 11400000, guid: b40965f5dfaadc44fb6047779b6956ec, type: 2}
+      - {fileID: 11400000, guid: 7551c4d7ddb23c348934fa294e5ee47f, type: 2}
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
