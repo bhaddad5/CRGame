@@ -228,6 +228,10 @@ public class EditorValidators
 					if (npc.Interactions.Contains(null))
 						EditorUtility.SetDirty(npc);
 					npc.Interactions.RemoveAll(v => v == null);
+
+					if (npc.Trophies.Contains(null))
+						EditorUtility.SetDirty(npc);
+					npc.Trophies.RemoveAll(v => v == null);
 				}
 
 				if (location.Policies.Contains(null))

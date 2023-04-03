@@ -19,6 +19,7 @@ public static class NullCleanupLogic
 				foreach (var npc in location.Npcs)
 				{
 					npc.Interactions.RemoveAll(i => i == null);
+					npc.Trophies.RemoveAll(i => i == null);
 
 					foreach (var interaction in npc.Interactions)
 					{
