@@ -53,8 +53,8 @@ MonoBehaviour:
       Text: 'NOTE: Schofield has seconded Zara to you once a month to work on Artemis
         Projects exclusively.  The Executart may be assigned to work on revenue generation
         through development of marketing campaigns, sales presentations, contract
-        creation and lead generation.  She worked zealously until she''s produced
-        5 REVENUE for Artemis each month!'
+        creation and lead generation.  She''ll work zealously until she''s produced
+        5 REVENUE for Artemis each month when asked!'
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 2e42676c53ec1054da4afa5642b81def,
         type: 3}
@@ -70,11 +70,15 @@ MonoBehaviour:
       - {fileID: 32900000, guid: 1ac9bbe070c96d949921ac5b22563b50, type: 3}
       Textures: []
       DialogClips: []
-      Text: ...to Zara that if she fails to meet her assigned Artemis goals, she
-        can expect painful punishments!
+      Text: "...to Zara that if she fails to meet her assigned Artemis goals, he'll
+        be MOST disapponted with her!   \n+5 REVENUE"
     Choices: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: ecb4dea71c79df84194bb478fc8d9e43,
+          type: 2}
+        AmbitionEffect: 0
+        PrideEffect: -25
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -99,7 +103,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
-    GoToRegion: {fileID: 0}
+    GoToRegion: {fileID: 11400000, guid: fac1afe93f44f0944920b3e8a2d1194a, type: 2}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
