@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Sign the Cromwell agreement
+  m_Name: The next phase of the Cromweel Artemis partnership
   m_EditorClassIdentifier: 
-  Id: 600be1a0-6350-4cda-8f69-bdd83d9d7dc1
-  Name: Sign the Cromwell agreement
-  SubInteraction: 1
+  Id: 76f846fd-35c6-4391-bd4c-d4ffe08e668b
+  Name: The next phase of the Cromwell Artemis partnership
+  SubInteraction: 0
   AlertNew: 1
   Category: 0
   Requirements:
@@ -25,7 +25,7 @@ MonoBehaviour:
     NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: c73d600d3c52bfd488033928df7d4de7, type: 2}
+    - {fileID: 11400000, guid: 65c8c69aa54e0c2498edaf6d83acf5e8, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -34,12 +34,12 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 100
+    EgoCost: 50
     MoneyCost: 0
     SpreadsheetsCost: 0
-    CultureCost: 20
-    PatentsCost: 20
-    BrandCost: 20
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
     RevanueCost: 0
     Items: []
   Repeatable: 0
@@ -48,32 +48,41 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: ecb4dea71c79df84194bb478fc8d9e43,
-        type: 2}
-      Text: Very well-- you've won, Ms. Sistani.  Here's the new agreement-- I believe
-        it meets all your demands?
+      OptionalNpcReference: {fileID: 0}
+      Text: I'm concerned.  I'm sensing some uncertainty regarding our joint venture,
+        Ms. Sistani.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 2e42676c53ec1054da4afa5642b81def,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 450
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: ecb4dea71c79df84194bb478fc8d9e43,
-        type: 2}
-      Text: It appears so.  Very good-- I'm happy to sign.  Alastair also need to
-        sign it, but of course he signs anything I tell him to sign.  You have a
-        deal, Mr. {LastName}!
+      OptionalNpcReference: {fileID: 0}
+      Text: You should!  But I'd be happy to continue our partnership--assuming you're
+        prepared to dramatically increase what ARtemis brings to the party.  If you
+        want to extend our joint venture, we'd expect a contractual commitment that
+        reflects that.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 2e42676c53ec1054da4afa5642b81def,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 450
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: 'NOTE: Zarasa is prepared to sign an updated jv agreemnt-- but you''ll
+        need to provide 20 CULTURE, 20 PATENTS and 20 BRAND to meet her revised requirements!'
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
@@ -94,8 +103,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
-      MissionsToComplete:
-      - {fileID: 11400000, guid: ce9ba6ab6760d6847b7f47b43b8c4c79, type: 2}
+      MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
       Suits: 0
