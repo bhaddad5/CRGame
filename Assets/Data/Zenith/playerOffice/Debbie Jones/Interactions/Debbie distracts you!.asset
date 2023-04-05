@@ -25,7 +25,8 @@ MonoBehaviour:
     NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions: []
-    RequiredNotCompletedInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: 6735d59c11c7ad2418d16172e1b88419, type: 2}
     RequiredPolicies:
     - {fileID: 11400000, guid: 65ed348016c083242982c0756d874438, type: 2}
     RequiredDepartmentsControled: []
@@ -108,7 +109,8 @@ MonoBehaviour:
     Choices: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+          type: 2}
         AmbitionEffect: 0
         PrideEffect: 1
       EgoEffect: 8
@@ -162,7 +164,8 @@ MonoBehaviour:
     Choices: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+          type: 2}
         AmbitionEffect: 0
         PrideEffect: -1
       EgoEffect: 0
