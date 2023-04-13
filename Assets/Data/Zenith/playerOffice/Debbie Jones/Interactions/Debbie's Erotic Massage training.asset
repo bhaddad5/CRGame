@@ -10,31 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Your birthday!
+  m_Name: Debbie's Erotic Massage training
   m_EditorClassIdentifier: 
-  Id: 476a6c64-5ac5-4d84-93a4-ba2e6cc80f4b
-  Name: Your birthday!
+  Id: 71c972a0-372c-40e7-bd12-7f06080167d6
+  Name: Debbie's Erotic Massage training
   SubInteraction: 0
   AlertNew: 1
-  Category: 6
+  Category: 5
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NotOnWeekends: 0
     NotOnWeekdays: 0
-    NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Stat: 1
-      Is: 0
-      Value: 10
-    - OptionalNpcReference: {fileID: 11400000, guid: f7a3898e350f7a84499562b0ca5a5a4b,
-        type: 2}
-      Stat: 1
-      Is: 0
-      Value: 10
-    RequiredInteractions: []
+    NpcStatRequirements: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: f939260e32ea98d4db240142332bdb09, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -52,25 +43,13 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 1
-  Cooldown: 730
+  Cooldown: 10
   PreviewEffect: 1
   Result:
     Dialogs:
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: Happy Birthday, Mr. {LastName}!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 8300000, guid: fe2a2c572204bc744936a9c1924f76ba,
-        type: 3}
-      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: How did you--
+      Text: How goes your class, Debbie?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -81,21 +60,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: I took the liberty of checking your file, Sir.  I hope that was ok. 
-        I was just trying to be a good secretary!  Shouldn't a secretary need to
-        know when her boss has his birthday?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 8300000, guid: fbb833073d725aa47920e43f707cc393,
-        type: 3}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: I suppose.  Well, thank you, Debbie.
+      Text: It's going great, Mr. {LastName}!  Ms. Jantzen says I'm a natural!  I'm
+        looking forward to giving you your first massage, Sir.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -104,38 +70,30 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
+    - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Sir?  I was thinking I'll never have enough money to buy you something
-        nice, but... well... Katie and I had an idea... We want to give you something
-        really special... together.  May we, Mr. {LastName}?
+      Text: How nice!  It will be fun to have a bit of Hump Alley right here in my
+        own office!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
         xPos: 0
         yPos: 0
         width: 0
-      OptionalAudioClip: {fileID: 8300000, guid: eb2e3f5a8ebb314418359b05f783ce30,
-        type: 3}
+      OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: A threesome with the Jones sisters...
-      Videos:
-      - {fileID: 32900000, guid: eb4334f3ed693bf438e4cbe0e58fa55a, type: 3}
-      - {fileID: 32900000, guid: 3ce1a872d74f08b4fadddf0eda56c27c, type: 3}
-      - {fileID: 32900000, guid: 230c95249122aae44867e88e4017553b, type: 3}
-      - {fileID: 32900000, guid: a3bce2077bce58842803003b66ad883f, type: 3}
-      - {fileID: 32900000, guid: c7f878fec407a5047b0996964a1dc04f, type: 3}
-      - {fileID: 32900000, guid: 402327533b4e57240b185e5ca12f4d8e, type: 3}
-      Textures: []
-      DialogClips:
-      - {fileID: 8300000, guid: f8f826bd5e75f7645aee0dc44491f044, type: 3}
-      Text: ...provides you with a memorable birthday indeed!  You enjoy every moment
-        of it!
+    - Title: Debbie knows she's...
+      Videos: []
+      Textures:
+      - {fileID: 2800000, guid: c558872df1695be44a8d5b473dfc4c63, type: 3}
+      DialogClips: []
+      Text: ...expected to excel at any training you assign her-- and erotic massage
+        is no exception.  She's now able to perform in-office massages at your convenience!
     Choices: []
     Effect:
       NpcEffects: []
-      EgoEffect: 50
+      EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -160,11 +118,53 @@ MonoBehaviour:
       Promotion: 0
       Home: 0
     GoToRegion: {fileID: 0}
-  CanFail: 0
-  ProbabilityOfFailureResult: 0
+  CanFail: 1
+  ProbabilityOfFailureResult: 0.4
   FailureResult:
-    Dialogs: []
-    OptionalPopups: []
+    Dialogs:
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: How goes your class, Debbie?  I'm getting a little impatient.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: I'm sorry, Mr. {LastName}!  I'm trying my best buty Ms. Jantzen says
+        I'm not ready yet!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Perhaps a demerit will help motivate you then.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: Debbie winces, but...
+      Videos: []
+      Textures:
+      - {fileID: 2800000, guid: c558872df1695be44a8d5b473dfc4c63, type: 3}
+      DialogClips: []
+      Text: ...only nods.  You know she despises herself for having to undergo this
+        unwanted training.  It doesn't matter-- she needs to apply herself-- there's
+        no excuse!
     Choices: []
     Effect:
       NpcEffects: []
@@ -183,7 +183,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: []
+      ItemsToAdd:
+      - {fileID: 11400000, guid: 093941a12d8d2f7489166430d82653c4, type: 2}
       Car: 0
       Suits: 0
       JewleryCuffs: 0

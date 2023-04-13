@@ -10,30 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Your birthday!
+  m_Name: Maybe this WILL distract you
   m_EditorClassIdentifier: 
-  Id: 476a6c64-5ac5-4d84-93a4-ba2e6cc80f4b
-  Name: Your birthday!
-  SubInteraction: 0
+  Id: c13d2ad3-7f4e-4946-89c7-ebd1eb10067a
+  Name: Maybe this WILL distract you
+  SubInteraction: 1
   AlertNew: 1
-  Category: 6
+  Category: 5
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NotOnWeekends: 0
     NotOnWeekdays: 0
-    NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Stat: 1
-      Is: 0
-      Value: 10
-    - OptionalNpcReference: {fileID: 11400000, guid: f7a3898e350f7a84499562b0ca5a5a4b,
-        type: 2}
-      Stat: 1
-      Is: 0
-      Value: 10
+    NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
@@ -52,25 +42,14 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 1
-  Cooldown: 730
+  Cooldown: 10
   PreviewEffect: 1
   Result:
     Dialogs:
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: Happy Birthday, Mr. {LastName}!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 8300000, guid: fe2a2c572204bc744936a9c1924f76ba,
-        type: 3}
-      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: How did you--
+      Text: On second thought, maybe this is expecting too much of you.  We'll put
+        it aside- for the moment.  There' sjust too much on at the moment!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -79,23 +58,12 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
+    - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 0}
-      Text: I took the liberty of checking your file, Sir.  I hope that was ok. 
-        I was just trying to be a good secretary!  Shouldn't a secretary need to
-        know when her boss has his birthday?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 8300000, guid: fbb833073d725aa47920e43f707cc393,
-        type: 3}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: I suppose.  Well, thank you, Debbie.
+      Text: 'NOTE: Debbie smiles in relief.  She''s happy to avoid having to take
+        on yet more training, especially of an overtly sexual nature.  Keeping the
+        Boss happy is one thing-- having to provide ''happy endings'' like some Hump
+        Alley massage parlor slut is another!   '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -104,38 +72,11 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: Sir?  I was thinking I'll never have enough money to buy you something
-        nice, but... well... Katie and I had an idea... We want to give you something
-        really special... together.  May we, Mr. {LastName}?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 8300000, guid: eb2e3f5a8ebb314418359b05f783ce30,
-        type: 3}
-      OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups:
-    - Title: A threesome with the Jones sisters...
-      Videos:
-      - {fileID: 32900000, guid: eb4334f3ed693bf438e4cbe0e58fa55a, type: 3}
-      - {fileID: 32900000, guid: 3ce1a872d74f08b4fadddf0eda56c27c, type: 3}
-      - {fileID: 32900000, guid: 230c95249122aae44867e88e4017553b, type: 3}
-      - {fileID: 32900000, guid: a3bce2077bce58842803003b66ad883f, type: 3}
-      - {fileID: 32900000, guid: c7f878fec407a5047b0996964a1dc04f, type: 3}
-      - {fileID: 32900000, guid: 402327533b4e57240b185e5ca12f4d8e, type: 3}
-      Textures: []
-      DialogClips:
-      - {fileID: 8300000, guid: f8f826bd5e75f7645aee0dc44491f044, type: 3}
-      Text: ...provides you with a memorable birthday indeed!  You enjoy every moment
-        of it!
+    OptionalPopups: []
     Choices: []
     Effect:
       NpcEffects: []
-      EgoEffect: 50
+      EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
