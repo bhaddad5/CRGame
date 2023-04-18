@@ -86,7 +86,9 @@ namespace Assets.GameModel
 			if (mgm.DebugAll)
 				return true;
 
-			return VisRequirements.VisRequirementsAreMet();
+			//return VisRequirements.VisRequirementsAreMet();
+			//We should never see disabled npcs
+			return VisRequirements.RequirementsAreMet(mgm);
 		}
 
 		public bool IsAccessible(MainGameManager mgm)

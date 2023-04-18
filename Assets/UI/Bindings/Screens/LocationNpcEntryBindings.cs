@@ -43,7 +43,7 @@ namespace Assets.GameModel.UiDisplayers
 			Text.text = $"{npc.FirstName} {npc.LastName}";
 			NpcPic.sprite = npc.GetCurrentPicture().ToSprite();
 			gameObject.SetActive(npc.IsVisible(mgm));
-			Button.interactable = npc.IsAccessible(mgm);
+			//Button.interactable = npc.IsAccessible(mgm);
 			NewIndicator.SetActive(npc.HasNewInteractions(mgm));
 		}
 	}
