@@ -12,6 +12,7 @@ namespace Assets.GameModel
 		public Npc OptionalNpcReference;
 		public float AmbitionEffect;
 		public float PrideEffect;
+		public bool RemoveCurrentImage;
 	}
 
 	[Serializable]
@@ -55,6 +56,8 @@ namespace Assets.GameModel
 				effect.OptionalNpcReference.Pride = Mathf.Max(effect.OptionalNpcReference.Pride + effect.PrideEffect, 0);
 				effect.OptionalNpcReference.Ambition = Mathf.Max(effect.OptionalNpcReference.Ambition + effect.AmbitionEffect, 0);
 
+				if (effect.RemoveCurrentImage && effect.OptionalNpcReference.CanRemoveCurrentImage())
+					effect.OptionalNpcReference.RemovedImages.Add(effect.OptionalNpcReference.GetCurrentPicture().name);
 			}
 
 			mgm.Data.Ego = Mathf.Max(mgm.Data.Ego + EgoEffect, 0);

@@ -55,6 +55,9 @@ namespace Assets.GameModel
 		public List<Texture2D> IndependentImages = new List<Texture2D>();
 		public List<Texture2D> ControlledImages = new List<Texture2D>();
 		public List<Texture2D> TrainedImages = new List<Texture2D>();
+
+		[HideInInspector] public List<string> RemovedImages = new List<string>();
+
 		private MainGameManager mgm;
 
 		public void Setup(MainGameManager mgm)
@@ -64,6 +67,7 @@ namespace Assets.GameModel
 			Controlled = false;
 			Trained = false;
 			Exists = true;
+			RemovedImages.Clear();
 			Ambition = StartingAmbition;
 			Pride = StartingPride;
 
@@ -104,15 +108,30 @@ namespace Assets.GameModel
 			return Interactions.Any(i => i.IsNew(mgm) && !i.SubInteraction);
 		}
 
+		public bool CanRemoveCurrentImage()
+		{
+			var imageSetToUse = IndependentImages;
+			if (Trained)
+				imageSetToUse = TrainedImages;
+			else if (Controlled)
+				imageSetToUse = ControlledImages;
+
+			return imageSetToUse.Count(img => !RemovedImages.Contains(img.name)) > 1;
+		}
+
 		public Texture2D GetCurrentPicture()
 		{
 			Random r = new Random((int)(mgm.Data.TurnNumber/2));
+
+			var imageSetToUse = IndependentImages;
 			if (Trained)
-				return TrainedImages[r.Next(0, TrainedImages.Count)];
+				imageSetToUse = TrainedImages;
 			else if (Controlled)
-				return ControlledImages[r.Next(0, ControlledImages.Count)];
-			else
-				return IndependentImages[r.Next(0, IndependentImages.Count)];
+				imageSetToUse = ControlledImages;
+			
+			var resImages = imageSetToUse.Where(img => !RemovedImages.Contains(img.name)).ToArray();
+
+			return resImages[r.Next(0, resImages.Length)];
 		}
 
 		public override string ToString()

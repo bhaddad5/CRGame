@@ -303,6 +303,8 @@ namespace Assets.GameModel.Save
 		public List<SavedInteractionState> Interactions;
 		public List<SavedTrophyState> Trophies;
 
+		public List<string> RemovedImages;
+
 		public static SavedNpcState FromData(Npc data)
 		{
 			var res = new SavedNpcState();
@@ -312,6 +314,8 @@ namespace Assets.GameModel.Save
 			res.Pride = data.Pride;
 			res.Exists = data.Exists;
 			res.Trained = data.Trained;
+
+			res.RemovedImages = data.RemovedImages;
 
 			res.Interactions = new List<SavedInteractionState>();
 			foreach (var dataInteraction in data.Interactions)
@@ -343,6 +347,8 @@ namespace Assets.GameModel.Save
 			data.Pride = Pride;
 			data.Exists = Exists;
 			data.Trained = Trained;
+
+			data.RemovedImages = RemovedImages;
 
 			foreach (var interaction in Interactions)
 			{

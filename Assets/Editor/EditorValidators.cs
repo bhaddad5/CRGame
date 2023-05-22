@@ -170,6 +170,12 @@ public class EditorValidators
 						npc.Trained = false;
 						EditorUtility.SetDirty(npc);
 					}
+
+					if (npc.RemovedImages.Count > 0)
+					{
+						npc.RemovedImages.Clear();
+						EditorUtility.SetDirty(npc);
+					}
 				}
 
 				if (location.Controlled)
