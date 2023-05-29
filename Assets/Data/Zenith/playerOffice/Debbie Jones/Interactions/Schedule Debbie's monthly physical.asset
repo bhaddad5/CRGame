@@ -24,7 +24,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
+    - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Stat: 0
       Is: 0
       Value: 0
@@ -53,21 +54,23 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: Debbie, you're overdue for your mohthly Pry physical exam.  Make sure
-        you get yourself to the clinic, alright?  And remind your doctorr to send
+        you get yourself to the clinic, alright?  And remind your doctor to send
         me your exam video.  I'll review it personally-- if I have the time.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 04aba9185e390994fa36eca45cd4d343,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: You'll review my...  of course, Mr. {LastName}.  If those are your wishes,
         I'll remind my doctor to... do that.
       CustomNpcImageOptions: []
@@ -80,6 +83,13 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
+    - Title: If Debbie 'forgets' to remind her doctor...
+      Videos: []
+      Textures:
+      - {fileID: 2800000, guid: b08eaf050b1b2494d9c9bca8027f013a, type: 3}
+      DialogClips: []
+      Text: '...you''ve requested a video of her exam, you''ve made sure to request
+        it directly! '
     - Title: You know this forced exposure...
       Videos:
       - {fileID: 32900000, guid: 117a66c8ebb6e8a449b71b0c94bc1dae, type: 3}
@@ -106,7 +116,8 @@ MonoBehaviour:
     Choices: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+          type: 2}
         AmbitionEffect: 0
         PrideEffect: -1
         RemoveCurrentImage: 0
