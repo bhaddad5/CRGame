@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: I'm unable to help for now
+  m_Name: Princess Yasmine Sighting Zenith!
   m_EditorClassIdentifier: 
-  Id: 516aee1e-04a7-4679-b060-c3e0114edbdd
-  Name: I'm unable to help... for now.
-  SubInteraction: 1
+  Id: 7e5abaf3-bda1-46a1-b241-71057d2b9729
+  Name: 'Princess Yasmine Sighting: Zenith!'
+  SubInteraction: 0
   AlertNew: 1
   Category: 1
   Requirements:
@@ -24,7 +24,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -41,50 +42,19 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 1
+  Repeatable: 0
   Cooldown: 0
   PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: 'I sympathize with your plight, My Lord.  Alas, my hands are full at
-        the moment with other challenges.  I won''t be able to assist you-- not at
-        the moment, anyway.  '
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: You got my message!  Good to see you.  Yes, I got your query regarding
+        this Emirati woman.  She's here on an expedited tourist visa.  In fact, she's
+        in town-- here for a speaking engagement at the university!  You might want
+        to speak to our friend Professor Tyson over there...
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 04aba9185e390994fa36eca45cd4d343,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: 'I understand.  Perhaps when you have your own affairs in order, we can
-        discuss my sister Yasmine in the future. '
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 04aba9185e390994fa36eca45cd4d343,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: 'NOTE: When you are ready to take on the mission, you''ll be looking
-        to the the global map for alerts from useful friends in the right places
-        for sightings of Princess Yasmine.  An AGATHA chip will be required, as well
-        as a firearm.'
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 04aba9185e390994fa36eca45cd4d343,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
         xPos: 0
         yPos: 0
