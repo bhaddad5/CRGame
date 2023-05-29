@@ -10,30 +10,36 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: I'm unable to help for now
+  m_Name: Schedule Debbie's monthly physical
   m_EditorClassIdentifier: 
-  Id: 516aee1e-04a7-4679-b060-c3e0114edbdd
-  Name: I'm unable to help... for now.
-  SubInteraction: 1
+  Id: 53ddf452-e18b-440d-acb7-309ed4845dab
+  Name: Schedule Debbie's monthly physical
+  SubInteraction: 0
   AlertNew: 1
-  Category: 1
+  Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NotOnWeekends: 0
     NotOnWeekdays: 0
-    NpcStatRequirements: []
-    RequiredInteractions: []
+    NpcStatRequirements:
+    - OptionalNpcReference: {fileID: 0}
+      Stat: 0
+      Is: 0
+      Value: 0
+    RequiredInteractions:
+    - {fileID: 11400000, guid: a96f94afd236f1f4f8ab03051d579502, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
-    RequiredNpcsTrained: []
+    RequiredNpcsTrained:
+    - {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06, type: 2}
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 0
+    EgoCost: 7
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -42,16 +48,28 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 1
-  Cooldown: 0
-  PreviewEffect: 0
+  Cooldown: 60
+  PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: 'I sympathize with your plight, My Lord.  Alas, my hands are full at
-        the moment with other challenges.  I won''t be able to assist you-- not at
-        the moment, anyway.  '
+      OptionalNpcReference: {fileID: 0}
+      Text: Debbie, you're overdue for your mohthly Pry physical exam.  Make sure
+        you get yourself to the clinic, alright?  And remind your doctorr to send
+        me your exam video.  I'll review it personally-- if I have the time.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 04aba9185e390994fa36eca45cd4d343,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: You'll review my...  of course, Mr. {LastName}.  If those are your wishes,
+        I'll remind my doctor to... do that.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 04aba9185e390994fa36eca45cd4d343,
         type: 3}
@@ -61,40 +79,37 @@ MonoBehaviour:
         width: 375
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: 'I understand.  Perhaps when you have your own affairs in order, we can
-        discuss my sister Yasmine in the future. '
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 04aba9185e390994fa36eca45cd4d343,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: 'NOTE: When you are ready to take on the mission, you''ll be looking
-        to the the global map for alerts from useful friends in the right places
-        for sightings of Princess Yasmine.  An AGATHA chip will be required, as well
-        as a firearm.'
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 04aba9185e390994fa36eca45cd4d343,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups: []
+    OptionalPopups:
+    - Title: You know this forced exposure...
+      Videos:
+      - {fileID: 32900000, guid: 117a66c8ebb6e8a449b71b0c94bc1dae, type: 3}
+      - {fileID: 32900000, guid: 062b76715b01ba2449104289060af03e, type: 3}
+      - {fileID: 32900000, guid: 5de5c9583b984fe43bf34a66e89ac505, type: 3}
+      - {fileID: 32900000, guid: 419f19ff1ab0c7d4a8e8fcb1ec68981f, type: 3}
+      - {fileID: 32900000, guid: 15f07e7e88e7ca94fa8ba2e99a3ece5a, type: 3}
+      - {fileID: 32900000, guid: 2c2d3d52266e70c409b3e590eaa1fba8, type: 3}
+      - {fileID: 32900000, guid: 27ff0b962549eaf488a7d5cfb8d5ec9a, type: 3}
+      - {fileID: 32900000, guid: 0509eae10b3001742b1d63ffd63eb846, type: 3}
+      - {fileID: 32900000, guid: 86f2a53c9521a5d4d8522860c43a40b4, type: 3}
+      - {fileID: 32900000, guid: 2a3c55265ad26324892885ae7d7a7f83, type: 3}
+      - {fileID: 32900000, guid: 187dda4d3d0c6e24580ad113439cf068, type: 3}
+      - {fileID: 32900000, guid: 0dd8be39875b58b43892f7426ee887c8, type: 3}
+      - {fileID: 32900000, guid: a016a5184d50ffe4398a2c8273600669, type: 3}
+      - {fileID: 32900000, guid: 8e2f77ea576b0244d887c0bdfd33ebb7, type: 3}
+      - {fileID: 32900000, guid: f0c0cdf76b7a6a744861212f5c4d6511, type: 3}
+      - {fileID: 32900000, guid: aa8bc4498427c9644bc3215e173a226a, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: ...humbles the naturally modest young woman, but as long as Debbie is
+        covered by the Pry Admin Health Plan, her boss is entitled to review all
+        her regular examinations.
     Choices: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 0}
+        AmbitionEffect: 0
+        PrideEffect: -1
+        RemoveCurrentImage: 0
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
