@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Buy a Dubai Pass for Amalia
+  m_Name: I'll pass on your project for now
   m_EditorClassIdentifier: 
-  Id: 43b83dff-f900-46c1-b68e-a5b2194f765c
-  Name: Buy a Dubai Pass for Amalia
+  Id: fbbbaf28-739f-4eff-ad7a-6df353eae600
+  Name: I'll pass on your project for now
   SubInteraction: 1
   AlertNew: 1
   Category: 1
@@ -34,7 +34,7 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 50000
+    MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -46,10 +46,11 @@ MonoBehaviour:
   PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 0
+    - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: You could buy a Dubai Pass so whenever you're here, we could 'date'. 
-        How about that?
+      Text: 'Sorry Blake- I think I''ll pass on your next ''project'' for now.  I
+        think you''re a little long on the tooth to be ''starring'' in any new movie,
+        ok? '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -58,9 +59,9 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
+    - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Sure.  That's not a problem at all.  You got a fuckpad around here sweetie?
+      Text: S-sure.  But if you change your mind, we could always talk about it.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -75,7 +76,7 @@ MonoBehaviour:
       NpcEffects: []
       EgoEffect: 0
       FundsEffect: 0
-      PowerEffect: 10
+      PowerEffect: 0
       PatentsEffect: 0
       CultureEffect: 0
       SpreadsheetsEffect: 0
@@ -86,8 +87,7 @@ MonoBehaviour:
       NpcsToTrain: []
       NpcsToRemoveFromGame: []
       LocationsToControl: []
-      TrophiesClaimedReferences:
-      - {fileID: 11400000, guid: 8f2c7b039a427cf4586d684d2f4a46fd, type: 2}
+      TrophiesClaimedReferences: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
