@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Contract Sophie as your Dubai Companion
+  m_Name: You look just like
   m_EditorClassIdentifier: 
-  Id: 30f92969-679e-4e8e-afd0-fe5f3ebcdcfc
-  Name: Contract Sophie as your Dubai Companion
-  SubInteraction: 1
+  Id: b1a90147-746d-43f0-8f7a-c3ee4da20e02
+  Name: You look just like...
+  SubInteraction: 0
   AlertNew: 1
   Category: 1
   Requirements:
@@ -25,7 +25,8 @@ MonoBehaviour:
     NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions: []
-    RequiredNotCompletedInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: e5117b0b6da14a44cb7d22947685780f, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -34,22 +35,22 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 100000
+    MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 0
-  Cooldown: 0
-  PreviewEffect: 0
+  Repeatable: 1
+  Cooldown: 6
+  PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: I suppose it might be convenient to have a whore available- especially
-        a former tv starlet like you.
+      Text: ...that actress that was in those superhero movies!  You must get that
+        all the time!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -60,7 +61,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: It would be wonderful to be able to stay with a guest like you, Mr. {LastName}!
+      Text: But I am!  I'm Prix Carsen!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -71,8 +72,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: 'Fine.  But I don''t want you in my suite when I''m not here.  You''ll
-        wait in the lobby when I''m away.  '
+      Text: 'Oh!  Of course- you''ve has some work done-- to help you in your new
+        career.  I understand you''re an adult film star now, Prix. '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -83,7 +84,9 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Of course, Mr. {LastName}.  Thank you for this opportunity!
+      Text: 'If you know aboyt that, then... are you looking for some company while
+        you''re in Dubai?  I''m availabe right now-- sort of, uh, in between assignments
+        at the moment. '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -92,50 +95,26 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
-      Text: 'NOTE: Sophie Lerner will remain in the lobby unless you summon her,
-        but as long as you''re in Dubai, she''ll be available to service you and
-        perform errands you give her.'
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups:
-    - Title: Sophie's so happy to...
-      Videos:
-      - {fileID: 32900000, guid: a7c6c0a62d8fc0144883cd225c741e77, type: 3}
-      Textures: []
-      DialogClips: []
-      Text: ...have landed a Companion Contract and thanks you profusely for your
-        patronage!
-    Choices: []
+    OptionalPopups: []
+    Choices:
+    - {fileID: 11400000, guid: e5117b0b6da14a44cb7d22947685780f, type: 2}
+    - {fileID: 11400000, guid: 06bd7e492a41d1b438e1e9ea9ab5c947, type: 2}
     Effect:
-      NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
-        AmbitionEffect: 0
-        PrideEffect: 0
-        RemoveCurrentImage: 0
+      NpcEffects: []
       EgoEffect: 0
       FundsEffect: 0
-      PowerEffect: 10
+      PowerEffect: 0
       PatentsEffect: 0
       CultureEffect: 0
       SpreadsheetsEffect: 0
       BrandEffect: 0
       RevanueEffect: 0
       HornicalEffect: 0
-      NpcsToControl:
-      - {fileID: 0}
+      NpcsToControl: []
       NpcsToTrain: []
       NpcsToRemoveFromGame: []
       LocationsToControl: []
-      TrophiesClaimedReferences:
-      - {fileID: 11400000, guid: 3d128b4db11231143a78e0799647d4ef, type: 2}
+      TrophiesClaimedReferences: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
