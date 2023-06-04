@@ -1,0 +1,415 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: Invitation to visit
+  m_EditorClassIdentifier: 
+  Id: 1e138689-ee0a-4ccd-970d-c6ef673fd134
+  Name: Invitation to visit
+  SubInteraction: 0
+  AlertNew: 1
+  Category: 3
+  Requirements:
+    RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
+    NpcStatRequirements: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: adbd7b8780875324785fa54896dac052, type: 2}
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: 6e998aa1288e7614c93c3728d790c63c, type: 2}
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredNpcsControled: []
+    RequiredNpcsTrained: []
+    RequiredNpcsNotControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 0
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    Items: []
+  Repeatable: 1
+  Cooldown: 10
+  PreviewEffect: 1
+  Result:
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: 'Mr. {LastName}- welcome to my humble home!  I''m so pleased you got
+        my message and decided to drop by!  I have heard some extraordinary things
+        about you-- and your recent service to Sheikh Jubur, may Allah watch over
+        him!  We are all relieved th have Princess Yasmine back in Dubai.  I understand
+        you were instrumental in her safe return? '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: I played a small role, My Lord.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: Oh, more than that!  Because not only has Yasmine returned, she has retured
+        to her senses!  There was much concern about her public campaign for liberlization. 
+        All that talk seems to be over.  That's why I wished to--
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 484bcdc76eb16f241b61fa332626794a,
+        type: 2}
+      Text: Waalid, can we buy the Strasbourg FC team?  They have the best new center
+        and--
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: e4d11eb373f6df249a0aea1882d3f99a,
+        type: 2}
+      Text: Please pardon my son, Mr. {LastName}!  Zayed, no-- not again!  I just
+        got rid of Dundee United-- remember how you had to have that team?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 484bcdc76eb16f241b61fa332626794a,
+        type: 2}
+      Text: They were losers, Ab!  Please-- anyway, this French team has much cooler
+        team colors!  And my birthday IS coming up!  And you won't give me what I
+        really want!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: e4d11eb373f6df249a0aea1882d3f99a,
+        type: 2}
+      Text: No, you simply got bored with them.  As for your birthday, we'll see. 
+        I told you I'd think about it, alright?  How are your studies going?  What
+        are you studying today?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 484bcdc76eb16f241b61fa332626794a,
+        type: 2}
+      Text: Foreign Exchange and High Frequency Trading-- it is sooo boring!  So,
+        you really are thinking about it?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: e4d11eb373f6df249a0aea1882d3f99a,
+        type: 2}
+      Text: I am.  Now, introduce yourself to my guest Mr. {LastName} and return
+        to your studies.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 484bcdc76eb16f241b61fa332626794a,
+        type: 2}
+      Text: As-Salaam-Alaikum, Mr. {LastName}!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 484bcdc76eb16f241b61fa332626794a,
+        type: 2}
+      Text: Wa-Salaam-Alaikum, Prinvce Zayed!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: e4d11eb373f6df249a0aea1882d3f99a,
+        type: 2}
+      Text: 'I indulge him too much.  And when I see his mother in him, my heart
+        melts.  I lost her when he was delivered, Allah watch over my departed dearest! 
+        So, we were discussing your miraculous return of Princess Yasmine and her
+        remarkable change of heart when it comes to progressive politics. '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: e4d11eb373f6df249a0aea1882d3f99a,
+        type: 2}
+      Text: May I ask why the curiousity in what is, respectfully, a Jubur family
+        matter, My Lord?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: e4d11eb373f6df249a0aea1882d3f99a,
+        type: 2}
+      Text: 'Only that it suggests a possibiility regarding a family matter of my
+        own.  I''m not trying to intrude in Sheikh Jubur''s business but...  Well,
+        as you heard, Prince Zyed''s birthday approaches and that is an important
+        one for an Arab boy, one requiring a commensurately fitting gift.  Sheikh
+        Jubur is a friend.  When I learned of Yasmine''s return, we spoke and he
+        noted your gifts of persuasion. '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: e4d11eb373f6df249a0aea1882d3f99a,
+        type: 2}
+      Text: And what need do you have of my 'gifts of persuasion' My Lord?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: e4d11eb373f6df249a0aea1882d3f99a,
+        type: 2}
+      Text: 'Zayed watched too much television-- and he binge watches these awful
+        American shows.  It would see he''s become a fan of some silly reality tv
+        series and would like to meet the girl in question.  I was hoping you might
+        persuade those involved to make it happen. '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: e4d11eb373f6df249a0aea1882d3f99a,
+        type: 2}
+      Text: 'May I ask why you don''t simply invite her yourself, Sheikh al-Kather? 
+        I''m sure this girl would be happy to enjoy some five star Dubai hospitality? '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: e4d11eb373f6df249a0aea1882d3f99a,
+        type: 2}
+      Text: It's a bit more... complicated than that.  Zayed would like it to be
+        more permanent than a one time visit.  Now I know he's likely to grow bored,
+        as he always does with his toys, but... it IS his thirthteenth birthday and
+        he does expect something a bit special.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: e4d11eb373f6df249a0aea1882d3f99a,
+        type: 2}
+      Text: 'I see.  Well, that complicates things.  Even my ''gifts of persuasion''
+        can''t change the fact that this girl must have some level of celebrity and
+        that becomes a tricky proposition. '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: e4d11eb373f6df249a0aea1882d3f99a,
+        type: 2}
+      Text: 'Ah-- but you are thinking about the problem now-- very good, Mr. {LastName}! 
+        There is a pretext which might prove useful.  Part of my portfolio is Dubai
+        Studio City.  It is an official district set up to allow Dubai to become
+        a regional entertainment producer- a Hollywood for the Arab world, if you
+        will.  I am the Director General of Dubai Studio City. '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: e4d11eb373f6df249a0aea1882d3f99a,
+        type: 2}
+      Text: That's interesting.  If I were to take on this task, My Lord...
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: e4d11eb373f6df249a0aea1882d3f99a,
+        type: 2}
+      Text: 'I would reward you-- either personally or through a contract with your
+        firm.  The reward would be substantial, Mr. {LastName}.  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups: []
+    Choices:
+    - {fileID: 11400000, guid: 0edcae1d75049584198843a556cc4827, type: 2}
+    - {fileID: 11400000, guid: 6e998aa1288e7614c93c3728d790c63c, type: 2}
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
+  FailureResult:
+    Dialogs: []
+    OptionalPopups: []
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  Completed: 0
+  TurnCompletedOn: -1
+  New: 1
