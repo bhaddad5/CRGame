@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: I'll need your help Dr Quadir
+  m_Name: Next steps for the Jenkins
   m_EditorClassIdentifier: 
-  Id: 7fc779dc-7e59-4534-badb-0bf5acd518ba
-  Name: I'll need your help Dr. Quadir.
+  Id: f60d836f-91ee-4058-ac97-4ea236e46a7e
+  Name: Next steps for the Jenkins
   SubInteraction: 0
   AlertNew: 1
   Category: 1
@@ -24,7 +24,9 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 18e9da92dc2cd1c47a21bb4439a4c83d, type: 2}
+    - {fileID: 11400000, guid: 24839c71d5494d64f8011c630a39e98a, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -33,7 +35,7 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 0
+    EgoCost: 50
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -46,21 +48,10 @@ MonoBehaviour:
   PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: Mr. {LastName}, welcome to Prince Zayed Hospital!  The Sheikh told me
-        to expect you- tell me how I might be of assistance?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Thank you Doctor!  May I ask about the name of your hospital?
+      Text: The Jenkins certainly seem to be enjoying Dubai- thanks to you and Prince
+        Zayed.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -71,11 +62,12 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: A miracle born from tragedy, Mr. {LastName}.  I was the ob gyn doctor
-        on duty at the General Dubai Medical Center when the Princess al-Kather passed
-        and the Prince was born.  The Sheikh established this institution that day. 
-        I'm proud to  say this is one of the finest hospitals in the world and the
-        finest in the Middle East.
+      Text: Shall I be honest?  I had hoped the familiarity might have made the girl
+        less captivating to Zayed, but he seems even more enthralled by the girl. 
+        We have scores of prettier Western girls here-- they flock like moths to
+        money once their careers fail and many wind up 'yachting' here in the Gulf. 
+        But none of them seem to hold a candle to this rather ordinary Jo Beth. 
+        So... we must proceed after all.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -86,8 +78,20 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: We will need your most secure private wing for the procedure I'm going
-        to need you to perform Doctor...
+      Text: I've spoken to Dr. Quadir already.  If you wish to proceed, might I suggest
+        we start with the mother?  Then we can see how events unfold, My Lord?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: Very good.  Yes, Mr. {LastName}-- let us employ your unique 'gifts of
+        persuasion'.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -98,11 +102,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 0}
-      Text: 'NOTE: You offer the Doctor a briefing regarding the implanting of the
-        AGATHA chip, as well as the required audio conditioning.  His eyes betray
-        his amazement only once when you describe the effects and remarks simply
-        "Princess Yasmine, then?" which you respond to with a nod.  He agrees to
-        assist and you promise to secure him the chip when the time is right.'
+      Text: 'NOTE: You''ll need an AGATHA chip to pass on to Dr. Quadir for the next
+        phase to begin!'
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
