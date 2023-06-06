@@ -9,7 +9,7 @@ namespace Assets.GameModel.Save
 	{
 		public static string SaveToJson(GameData data)
 		{
-			SaveGameState state = SaveGameState.FromData(data);
+			SaveGameState state = SaveGameState.FromData(data, 1);
 			
 			var res = JsonUtility.ToJson(state);
 

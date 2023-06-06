@@ -13,6 +13,8 @@ namespace Assets.GameModel
 		public float AmbitionEffect;
 		public float PrideEffect;
 		public bool RemoveCurrentImage;
+		public List<ImageSet> ImageSetsToAdd;
+		public List<ImageSet> ImageSetsToRemove;
 	}
 
 	[Serializable]
@@ -58,6 +60,11 @@ namespace Assets.GameModel
 
 				if (effect.RemoveCurrentImage && effect.OptionalNpcReference.CanRemoveCurrentImage())
 					effect.OptionalNpcReference.RemovedImages.Add(effect.OptionalNpcReference.GetCurrentPicture().name);
+
+				foreach(var imageSet in effect.ImageSetsToAdd)
+					effect.OptionalNpcReference.CurrentImageSets.Add(imageSet);
+				foreach(var imageSet in effect.ImageSetsToRemove)
+					effect.OptionalNpcReference.CurrentImageSets.Remove(imageSet);
 			}
 
 			mgm.Data.Ego = Mathf.Max(mgm.Data.Ego + EgoEffect, 0);

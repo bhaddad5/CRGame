@@ -370,31 +370,117 @@ public class EditorValidators
 		Debug.Log("Done!");
 	}
 
-	//TODO: USE THIS AS A TEMPLATE FOR DATA UPGRADES!
-	/*
-	[MenuItem("Company Man Validators/Upgrade Old Data")]
+	[MenuItem("Company Man Validators/Upgrade Npcs to use Image Sets")]
 	public static void UpgradeOldData()
 	{
 		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
 
-		foreach (var location in gameData.Locations)
+		foreach (var region in gameData.Regions)
 		{
-			foreach (var npc in location.Npcs)
+			foreach (var location in region.Locations)
 			{
-				foreach (var interaction in npc.Interactions)
+				foreach (var npc in location.Npcs)
 				{
-					
+					ImageSet imageSet_ind = ScriptableObject.CreateInstance<ImageSet>();
+					imageSet_ind.Name = $"{npc.name}-Independent";
+					imageSet_ind.Id = Guid.NewGuid().ToString();
+					imageSet_ind.Images = npc.IndependentImages;
+					npc.AllImageSets.Add(imageSet_ind);
+					npc.StartingImageSets.Add(imageSet_ind);
+					var imageSetFolder_ind = Path.Combine(Path.GetDirectoryName(AssetDatabase.GetAssetPath(npc)), $"Pics-Independent");
+					AssetDatabase.CreateAsset(imageSet_ind, $"{imageSetFolder_ind}/{imageSet_ind.Name.ToFolderName()}.asset");
+					npc.Legacy_IndependentImages = imageSet_ind;
+
+					ImageSet imageSet_ctrl = null;
+					if (npc.ControlledImages.Count > 0)
+					{
+						imageSet_ctrl = ScriptableObject.CreateInstance<ImageSet>();
+						imageSet_ctrl.Name = $"{npc.name}-Controlled";
+						imageSet_ctrl.Id = Guid.NewGuid().ToString();
+						imageSet_ctrl.Images = npc.ControlledImages;
+						npc.AllImageSets.Add(imageSet_ctrl);
+						var imageSetFolder_ctrl = Path.Combine(Path.GetDirectoryName(AssetDatabase.GetAssetPath(npc)), $"Pics-Controlled");
+						AssetDatabase.CreateAsset(imageSet_ctrl, $"{imageSetFolder_ctrl}/{imageSet_ctrl.Name.ToFolderName()}.asset");
+						npc.Legacy_ControlledImages = imageSet_ctrl;
+					}
+
+					ImageSet imageSet_trn = null;
+					if (npc.TrainedImages.Count > 0)
+					{
+						imageSet_trn = ScriptableObject.CreateInstance<ImageSet>();
+						imageSet_trn.Name = $"{npc.name}-Trained";
+						imageSet_trn.Id = Guid.NewGuid().ToString();
+						imageSet_trn.Images = npc.TrainedImages;
+						npc.AllImageSets.Add(imageSet_trn);
+						var imageSetFolder_trn = Path.Combine(Path.GetDirectoryName(AssetDatabase.GetAssetPath(npc)), $"Pics-Trained");
+						AssetDatabase.CreateAsset(imageSet_trn, $"{imageSetFolder_trn}/{imageSet_trn.Name.ToFolderName()}.asset");
+						npc.Legacy_TrainedImages = imageSet_trn;
+					}
+
+					var ctrlInteractions = ProfilingHelpers.GetAllInteractions().Where(i => i.Result.Effect.NpcsToControl.Contains(npc));
+					foreach (var interaction in ctrlInteractions)
+					{
+						interaction.Result.Effect.NpcEffects.Add(new NpcEffect()
+						{
+							OptionalNpcReference = npc, 
+							ImageSetsToRemove = new List<ImageSet>(){ imageSet_ind },
+							ImageSetsToAdd= new List<ImageSet>() { imageSet_ctrl },
+						});
+						EditorUtility.SetDirty(interaction);
+					}
+
+					var trainInteractions = ProfilingHelpers.GetAllInteractions().Where(i => i.Result.Effect.NpcsToTrain.Contains(npc));
+					foreach (var interaction in trainInteractions)
+					{
+						interaction.Result.Effect.NpcEffects.Add(new NpcEffect()
+						{
+							OptionalNpcReference = npc,
+							ImageSetsToRemove = new List<ImageSet>() { imageSet_ctrl },
+							ImageSetsToAdd = new List<ImageSet>() { imageSet_trn },
+						});
+						EditorUtility.SetDirty(interaction);
+					}
+
+					EditorUtility.SetDirty(npc);
+
+					AssetDatabase.SaveAssets();
 				}
 			}
+		}
 
-			foreach (var policy in location.Policies)
-			{
-				
-			}
+		
 
-			foreach (var mission in location.Missions)
+		Debug.Log("Upgrade Complete!");
+	}
+
+	//TODO: USE THIS AS A TEMPLATE FOR DATA UPGRADES!
+	/*
+	[MenuItem("Company Man Validators/Upgrade Npcs to use Image Sets")]
+	public static void UpgradeOldData()
+	{
+		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
+
+		foreach (var region in gameData.Regions)
+		{
+			foreach (var location in region.Locations)
 			{
-				
+				foreach (var npc in location.Npcs)
+				{
+					foreach (var interaction in npc.Interactions)
+					{
+
+					}
+				}
+
+				foreach (var policy in location.Policies)
+				{
+
+				}
+
+				foreach (var mission in location.Missions)
+				{
+
+				}
 			}
 		}
 		Debug.Log("Upgrade Complete!");

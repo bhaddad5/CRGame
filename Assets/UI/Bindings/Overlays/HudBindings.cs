@@ -91,7 +91,7 @@ public class HudBindings : MonoBehaviour
 		Day.text = $"{dateTime.DayOfWeek}";
 		Month.text = $"{dateTime:MMMM} {dateTime.Day}";
 		
-		DowntimeButton.gameObject.SetActive(DowntimeTutorialCompleteInteraction.Completed > 0);
+		DowntimeButton.gameObject.SetActive(DowntimeTutorialCompleteInteraction.Completed > 0 || mgm.DebugAll);
 
 		InventoryMenu.gameObject.SetActive(mgm.Data.Inventory.Any(inv => inv.Value > 0));
 

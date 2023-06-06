@@ -9,6 +9,8 @@ namespace Assets.GameModel.Save
 	[Serializable]
 	public struct SaveGameState
 	{
+		public int SaveGameVersion;
+
 		public string FirstName;
 		public string LastName;
 		public int TurnNumber;
@@ -39,10 +41,11 @@ namespace Assets.GameModel.Save
 		public List<SavedLocationState> Locations;
 		public List<SavedInteractionState> StartTurnInteractions;
 
-		public static SaveGameState FromData(GameData data)
+		public static SaveGameState FromData(GameData data, int version)
 		{
 			var res = new SaveGameState();
 
+			res.SaveGameVersion = version;
 			res.FirstName = data.FirstName ?? "Hunter";
 			res.LastName = data.LastName ?? "Downe";
 			res.TurnNumber = data.TurnNumber;
@@ -107,12 +110,6 @@ namespace Assets.GameModel.Save
 			data.Revenue = Revenue;
 			data.Promotion = Promotion;
 			data.Home = Home;
-
-			//UPGRADE LEGACY DATA
-			for (int i = 0; i < Hornical; i++)
-				data.AddItemToInventory(DataUpgradeRefs.Instance.Hornical);
-			//END UPGRADE LEGACY DATA
-
 			data.Car = Car;
 			data.Suits = Suits;
 			data.JewleryCuffs = JewleryCuffs;
@@ -137,7 +134,7 @@ namespace Assets.GameModel.Save
 					if (Locations.Any(d => d.Id == resLocation?.Id))
 					{
 						var dataLocation = Locations.FirstOrDefault(d => d.Id == resLocation?.Id);
-						dataLocation.ApplyToData(resLocation);
+						dataLocation.ApplyToData(resLocation, SaveGameVersion);
 					}
 					
 				}
@@ -146,6 +143,12 @@ namespace Assets.GameModel.Save
 			foreach (var startTurnInteraction in StartTurnInteractions)
 			{
 				startTurnInteraction.ApplyToData(data.StartOfTurnInteractions.FirstOrDefault(i => i?.Id == startTurnInteraction.Id));
+			}
+
+			if (SaveGameVersion <= 0)
+			{
+				for (int i = 0; i < Hornical; i++)
+					data.AddItemToInventory(DataUpgradeRefs.Instance.Hornical);
 			}
 		}
 	}
@@ -207,7 +210,7 @@ namespace Assets.GameModel.Save
 			return res;
 		}
 
-		public void ApplyToData(Location data)
+		public void ApplyToData(Location data, int saveVersion)
 		{
 			if (data == null)
 			{
@@ -219,7 +222,7 @@ namespace Assets.GameModel.Save
 
 			foreach (var npc in Npcs)
 			{
-				npc.ApplyToData(data.Npcs.FirstOrDefault(d => d?.Id == npc.Id));
+				npc.ApplyToData(data.Npcs.FirstOrDefault(d => d?.Id == npc.Id), saveVersion);
 			}
 			foreach (var policy in Policies)
 			{
@@ -303,6 +306,7 @@ namespace Assets.GameModel.Save
 		public List<SavedInteractionState> Interactions;
 		public List<SavedTrophyState> Trophies;
 
+		public List<string> CurrentImageSets;
 		public List<string> RemovedImages;
 
 		public static SavedNpcState FromData(Npc data)
@@ -316,6 +320,9 @@ namespace Assets.GameModel.Save
 			res.Trained = data.Trained;
 
 			res.RemovedImages = data.RemovedImages;
+			res.CurrentImageSets = new List<string>();
+			foreach (var imageSet in data.CurrentImageSets)
+				res.CurrentImageSets.Add(imageSet.Id);
 
 			res.Interactions = new List<SavedInteractionState>();
 			foreach (var dataInteraction in data.Interactions)
@@ -334,7 +341,7 @@ namespace Assets.GameModel.Save
 			return res;
 		}
 
-		public void ApplyToData(Npc data)
+		public void ApplyToData(Npc data, int saveVersion)
 		{
 			if (data == null)
 			{
@@ -357,6 +364,33 @@ namespace Assets.GameModel.Save
 			foreach (var trophy in Trophies)
 			{
 				trophy.ApplyToData(data.Trophies.FirstOrDefault(d => d?.Id == trophy.Id));
+			}
+
+			data.CurrentImageSets.Clear();
+			foreach (var imageSetId in CurrentImageSets)
+			{
+				var imageSet = data.AllImageSets.FirstOrDefault(i => i.Id == imageSetId);
+				if (imageSet != null)
+					data.CurrentImageSets.Add(imageSet);
+				else
+					Debug.Log($"Could not find image set with id {Id}");
+			}
+
+			//If we're on an old save then the list is empty
+			if (saveVersion <= 0)
+			{
+				if (Trained)
+				{
+					data.CurrentImageSets.Add(data.Legacy_TrainedImages);
+				}
+				else if (Controlled)
+				{
+					data.CurrentImageSets.Add(data.Legacy_ControlledImages);
+				}
+				else
+				{
+					data.CurrentImageSets.Add(data.Legacy_IndependentImages);
+				}
 			}
 		}
 	}

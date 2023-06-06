@@ -52,11 +52,23 @@ namespace Assets.GameModel
 		public List<Interaction> Interactions = new List<Interaction>();
 		public List<Trophy> Trophies = new List<Trophy>();
 
+		public List<ImageSet> StartingImageSets = new List<ImageSet>();
+		public List<ImageSet> AllImageSets = new List<ImageSet>();
+
+		[HideInInspector]
+		public List<ImageSet> CurrentImageSets = new List<ImageSet>();
+
 		public List<Texture2D> IndependentImages = new List<Texture2D>();
 		public List<Texture2D> ControlledImages = new List<Texture2D>();
 		public List<Texture2D> TrainedImages = new List<Texture2D>();
 
-		[HideInInspector] public List<string> RemovedImages = new List<string>();
+		[Header("LEGACY DATA UPGRADE, DO NOT TOUCH:")]
+		public ImageSet Legacy_IndependentImages;
+		public ImageSet Legacy_ControlledImages;
+		public ImageSet Legacy_TrainedImages;
+
+		[HideInInspector]
+		public List<string> RemovedImages = new List<string>();
 
 		private MainGameManager mgm;
 
@@ -70,6 +82,10 @@ namespace Assets.GameModel
 			RemovedImages.Clear();
 			Ambition = StartingAmbition;
 			Pride = StartingPride;
+
+			CurrentImageSets.Clear();
+			foreach (var imageSet in StartingImageSets)
+				CurrentImageSets.Add(imageSet);
 
 			foreach (var ob in Interactions)
 			{
@@ -110,28 +126,32 @@ namespace Assets.GameModel
 
 		public bool CanRemoveCurrentImage()
 		{
-			var imageSetToUse = IndependentImages;
-			if (Trained)
-				imageSetToUse = TrainedImages;
-			else if (Controlled)
-				imageSetToUse = ControlledImages;
+			int totalAvailableImages = 0;
+			foreach (var imageSet in CurrentImageSets)
+				totalAvailableImages += imageSet.Images.Count(img => !RemovedImages.Contains(img.name));
 
-			return imageSetToUse.Count(img => !RemovedImages.Contains(img.name)) > 1;
+			return totalAvailableImages > 1;
 		}
 
 		public Texture2D GetCurrentPicture()
 		{
 			Random r = new Random((int)(mgm.Data.TurnNumber/2));
 
-			var imageSetToUse = IndependentImages;
-			if (Trained)
-				imageSetToUse = TrainedImages;
-			else if (Controlled)
-				imageSetToUse = ControlledImages;
-			
-			var resImages = imageSetToUse.Where(img => !RemovedImages.Contains(img.name)).ToArray();
+			//TODO: What if this image set has nothing in it, but others do?
 
-			return resImages[r.Next(0, resImages.Length)];
+			var resImages = new List<Texture2D>();
+			foreach (var imageSet in CurrentImageSets)
+			{
+				resImages = resImages.Concat(imageSet.Images.Where(img => !RemovedImages.Contains(img.name))).ToList();
+			}
+
+			resImages = resImages.ToList();
+
+			//Just default if no image available
+			if (resImages.Count == 0)
+				return AllImageSets.First().Images[0];
+
+			return resImages[r.Next(0, resImages.Count)];
 		}
 
 		public override string ToString()
