@@ -369,7 +369,7 @@ public class EditorValidators
 
 		Debug.Log("Done!");
 	}
-
+	/*
 	[MenuItem("Company Man Validators/Upgrade Npcs to use Image Sets")]
 	public static void UpgradeOldData()
 	{
@@ -452,6 +452,7 @@ public class EditorValidators
 
 		Debug.Log("Upgrade Complete!");
 	}
+	*/ 
 
 	//TODO: USE THIS AS A TEMPLATE FOR DATA UPGRADES!
 	/*

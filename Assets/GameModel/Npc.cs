@@ -57,11 +57,7 @@ namespace Assets.GameModel
 
 		[HideInInspector]
 		public List<ImageSet> CurrentImageSets = new List<ImageSet>();
-
-		public List<Texture2D> IndependentImages = new List<Texture2D>();
-		public List<Texture2D> ControlledImages = new List<Texture2D>();
-		public List<Texture2D> TrainedImages = new List<Texture2D>();
-
+		
 		[Header("LEGACY DATA UPGRADE, DO NOT TOUCH:")]
 		public ImageSet Legacy_IndependentImages;
 		public ImageSet Legacy_ControlledImages;
