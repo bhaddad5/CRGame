@@ -235,10 +235,28 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups: []
+    OptionalPopups:
+    - Title: Jo Beth later regales...
+      Videos:
+      - {fileID: 32900000, guid: e1e34ad2f5b7d4942b6d52e6f8196fa9, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: '...with tales of her Gold Market expedition with Prince Zayed.  Her
+        new matching 24 carat earrings, necklace and bracelet all gleam in the Dubai
+        sun! '
     Choices: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: 04f903b0882936d458062ef31fea517b,
+          type: 2}
+        AmbitionEffect: -25
+        PrideEffect: 0
+        RemoveCurrentImage: 0
+      - OptionalNpcReference: {fileID: 11400000, guid: 072a2bbacd41a0149b16f05432d34dc1,
+          type: 2}
+        AmbitionEffect: -25
+        PrideEffect: 0
+        RemoveCurrentImage: 0
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -264,7 +282,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
-    GoToRegion: {fileID: 0}
+    GoToRegion: {fileID: 11400000, guid: d758a363855930544b2aedf2f28a95af, type: 2}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
