@@ -21,6 +21,8 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 48bea5b2e08f25c40a65961eec4b7d98, type: 2}
@@ -42,6 +44,7 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 1
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs: []
@@ -78,7 +81,16 @@ MonoBehaviour:
         new Legal Guardian!
     Choices: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: d5fcf0ddcb7f29f4d9d9ed509fb5a411,
+          type: 2}
+        AmbitionEffect: 0
+        PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd:
+        - {fileID: 11400000, guid: d18d7547c5c7c5f40a16442b4dc31ac6, type: 2}
+        ImageSetsToRemove:
+        - {fileID: 11400000, guid: dc1132d4a50000d46876215709188115, type: 2}
       EgoEffect: 7
       FundsEffect: 0
       PowerEffect: 0
@@ -139,4 +151,5 @@ MonoBehaviour:
       Home: 0
     GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1

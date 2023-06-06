@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: a1437e89-467f-48f7-a67b-8c78a327003e
   Name: Reorganizing the Technology Department
+  SubInteraction: 0
   AlertNew: 1
   Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
@@ -38,9 +41,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
-    Items: 
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -123,8 +126,18 @@ MonoBehaviour:
       Textures: []
       DialogClips: []
       Text: ...by this change in corporate weather.  She'll prove useful.
+    Choices: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: 887ea77e488dfe645ac479235976bdd4,
+          type: 2}
+        AmbitionEffect: 0
+        PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd:
+        - {fileID: 11400000, guid: 8822eaf4f984083489ea1d5c450eb9d4, type: 2}
+        ImageSetsToRemove:
+        - {fileID: 11400000, guid: 5a0d57e10ec5287418a8a529e63b88e4, type: 2}
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -141,8 +154,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -151,11 +163,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -173,8 +187,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -183,5 +196,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1

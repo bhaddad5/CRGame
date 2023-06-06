@@ -137,7 +137,16 @@ MonoBehaviour:
         lean on her-- and you WILL lean hard on this overly educated temp drone...
     Choices: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: 8003d6763a8410040a93aba76a495954,
+          type: 2}
+        AmbitionEffect: 0
+        PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd:
+        - {fileID: 11400000, guid: dc8ee3239a3b2c4448a7328318ac7215, type: 2}
+        ImageSetsToRemove:
+        - {fileID: 11400000, guid: 6fb5fea7d18cd16458a2f40437db4138, type: 2}
       EgoEffect: 30
       FundsEffect: 0
       PowerEffect: 0

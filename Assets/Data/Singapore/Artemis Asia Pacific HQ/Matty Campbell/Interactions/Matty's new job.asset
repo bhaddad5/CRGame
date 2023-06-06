@@ -21,6 +21,8 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 77849c19b40d4c34ea88c97814173b29, type: 2}
@@ -39,9 +41,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
     Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 0
   Result:
     Dialogs:
@@ -157,6 +159,18 @@ MonoBehaviour:
           type: 2}
         AmbitionEffect: -30
         PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
+      - OptionalNpcReference: {fileID: 11400000, guid: 135575f1fe4c85c4e88c9642a3793f98,
+          type: 2}
+        AmbitionEffect: 0
+        PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd:
+        - {fileID: 11400000, guid: 74464b7fc602afe47a1ed3fc46454db3, type: 2}
+        ImageSetsToRemove:
+        - {fileID: 11400000, guid: 42475136b5d4a5e4aaebfd7dd284f4ce, type: 2}
       EgoEffect: 90
       FundsEffect: 0
       PowerEffect: 0
@@ -174,7 +188,6 @@ MonoBehaviour:
       TrophiesClaimedReferences: []
       MissionsToComplete: []
       ItemsToAdd: []
-      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -183,6 +196,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -207,7 +221,6 @@ MonoBehaviour:
       TrophiesClaimedReferences: []
       MissionsToComplete: []
       ItemsToAdd: []
-      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -216,5 +229,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1

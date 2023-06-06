@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 2001a046-ab9f-4fab-bce3-dbae9809fa55
   Name: Miss Lexi's new favorite
+  SubInteraction: 0
   AlertNew: 1
   Category: 2
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements:
     - OptionalNpcReference: {fileID: 0}
       Stat: 1
@@ -41,8 +44,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -56,6 +60,8 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
       Text: Yes, Sir!  I only have three demerits so far this month!  Just ask Miss
@@ -66,6 +72,8 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
       Text: That's good.  Are you are Miss Lexi getting along any better?
@@ -75,6 +83,8 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
       Text: 'I hope so, Mr. {LastName}!  Miss Lexi is like my Big Sister-- I admire
@@ -85,6 +95,8 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
       Text: 'Very good!  Tell Miss Lexi she has permission to fraternize with you
@@ -96,16 +108,29 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Traci blinks, smiles and...
       Videos:
       - {fileID: 32900000, guid: 8fc2d78d9cfa14a4cbe80b1f986f0545, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: ...hides her disgust.  She'll get used to being Lexi's new squeeze, just
         as Suzee did.  You make a note to check in with Lexi to see how responsive
         Traci is to her new girlfriend!
+    Choices: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: 6affcc7af4c14d34a9b976af0e468a1e,
+          type: 2}
+        AmbitionEffect: 0
+        PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd:
+        - {fileID: 11400000, guid: e9ed0a426497ad244a4e9156efa59b5b, type: 2}
+        ImageSetsToRemove:
+        - {fileID: 11400000, guid: c3d9bf2cabbb69345927173f270a43e5, type: 2}
       EgoEffect: 15
       FundsEffect: 0
       PowerEffect: 0
@@ -122,6 +147,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -130,11 +156,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -152,6 +180,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -160,5 +189,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1

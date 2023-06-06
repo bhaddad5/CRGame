@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: b84e5cf9-2b94-4969-98e0-a1d6be6cf046
   Name: Demote Jayme (take control)
+  SubInteraction: 0
   AlertNew: 1
   Category: 2
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements:
     - OptionalNpcReference: {fileID: 11400000, guid: 02285d513a8a80346bd5fceb01f05d8b,
         type: 2}
@@ -43,9 +46,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
     Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -160,8 +163,18 @@ MonoBehaviour:
       - {fileID: 8300000, guid: 3058072ea505e9e468e709d44d2f2d9f, type: 3}
       Text: '...sulks, while submissively accepting her new junior status.  Without
         Allison her former mentor, she seems beaten and discouraged.  '
+    Choices: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: 02285d513a8a80346bd5fceb01f05d8b,
+          type: 2}
+        AmbitionEffect: 0
+        PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd:
+        - {fileID: 11400000, guid: c82f54e9ec19f3d43929d3fe80aa313c, type: 2}
+        ImageSetsToRemove:
+        - {fileID: 11400000, guid: 864bf444466beb344813d732bf5c5402, type: 2}
       EgoEffect: 150
       FundsEffect: 0
       PowerEffect: 0
@@ -179,7 +192,6 @@ MonoBehaviour:
       TrophiesClaimedReferences: []
       MissionsToComplete: []
       ItemsToAdd: []
-      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -188,11 +200,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -211,7 +225,6 @@ MonoBehaviour:
       TrophiesClaimedReferences: []
       MissionsToComplete: []
       ItemsToAdd: []
-      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -220,5 +233,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1

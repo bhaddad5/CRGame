@@ -115,7 +115,16 @@ MonoBehaviour:
         her in the Artemis Secretarial Pool!
     Choices: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: 78fb161dbf254fa4a9a40106bc4e1b3e,
+          type: 2}
+        AmbitionEffect: 0
+        PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd:
+        - {fileID: 11400000, guid: bba64a9ace620e044851a57be677735f, type: 2}
+        ImageSetsToRemove:
+        - {fileID: 11400000, guid: f1f12089bb1a45a40acfb0482f398e57, type: 2}
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0

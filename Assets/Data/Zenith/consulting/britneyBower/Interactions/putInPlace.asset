@@ -21,6 +21,8 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements:
     - OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
         type: 2}
@@ -46,6 +48,7 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -143,7 +146,16 @@ MonoBehaviour:
     OptionalPopups: []
     Choices: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
+          type: 2}
+        AmbitionEffect: 0
+        PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd:
+        - {fileID: 11400000, guid: 5889ca1b3736b1445b305bec3f8300ac, type: 2}
+        ImageSetsToRemove:
+        - {fileID: 11400000, guid: c5cc52c70bf117d4a86b66191eff7e44, type: 2}
       EgoEffect: 30
       FundsEffect: 0
       PowerEffect: 0
@@ -204,4 +216,5 @@ MonoBehaviour:
       Home: 0
     GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1

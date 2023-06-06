@@ -127,7 +127,16 @@ MonoBehaviour:
         to be dominated and told what to do-- no matter how humiliating.
     Choices: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: f6d4bd87653453f40a7a1d5b33e2f36e,
+          type: 2}
+        AmbitionEffect: 0
+        PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd:
+        - {fileID: 11400000, guid: 1bc0d78d18eb8b54b8c3defb3361e92c, type: 2}
+        ImageSetsToRemove:
+        - {fileID: 11400000, guid: 3a2e6e5d822ed70429088c93780daf39, type: 2}
       EgoEffect: 85
       FundsEffect: 0
       PowerEffect: 0

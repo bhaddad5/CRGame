@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 766dffb5-abf0-41fa-b45a-06debb00904a
   Name: Take control of Josie Wong
+  SubInteraction: 0
   AlertNew: 1
   Category: 2
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements:
     - OptionalNpcReference: {fileID: 11400000, guid: a41d8fa3ed6f76a44b0814daec2c238f,
         type: 2}
@@ -44,9 +47,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
-    Items: 
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -100,8 +103,18 @@ MonoBehaviour:
       DialogClips: []
       Text: ...to keep her mouth shut.  She's yours now, as is the whole Technology
         Department-- including the crown jewel-- Research.
+    Choices: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: a41d8fa3ed6f76a44b0814daec2c238f,
+          type: 2}
+        AmbitionEffect: 0
+        PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd:
+        - {fileID: 11400000, guid: 0d7fc86876b7fb440a23677d9a5f2cd7, type: 2}
+        ImageSetsToRemove:
+        - {fileID: 11400000, guid: 4446e89527994e847923e37ecd6dac4f, type: 2}
       EgoEffect: 175
       FundsEffect: 0
       PowerEffect: 0
@@ -122,8 +135,7 @@ MonoBehaviour:
       MissionsToComplete:
       - {fileID: 11400000, guid: 78a4378ed7d0c8840b7293986aa74d76, type: 2}
       - {fileID: 11400000, guid: 011f6bcfbbcbb9743aabe9f0e37dde0b, type: 2}
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -132,11 +144,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -154,8 +168,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -164,5 +177,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1

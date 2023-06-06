@@ -214,7 +214,16 @@ MonoBehaviour:
         not at all!
     Choices: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+          type: 2}
+        AmbitionEffect: 0
+        PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd:
+        - {fileID: 11400000, guid: 846d32cc28ed8b64ba343b973a43c371, type: 2}
+        ImageSetsToRemove:
+        - {fileID: 11400000, guid: 2af53029c26cdca43adb5f98dc461970, type: 2}
       EgoEffect: 80
       FundsEffect: 0
       PowerEffect: 0

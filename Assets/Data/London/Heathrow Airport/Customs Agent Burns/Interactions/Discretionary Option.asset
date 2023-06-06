@@ -186,7 +186,16 @@ MonoBehaviour:
         offering has been accepted and your club dues considered as paid in full!"
     Choices: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: 7937bda5cf4734a4daf5ab2106017710,
+          type: 2}
+        AmbitionEffect: 0
+        PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd:
+        - {fileID: 11400000, guid: dc9999eea0ad4ec448e3d52559012d27, type: 2}
+        ImageSetsToRemove:
+        - {fileID: 11400000, guid: d476b2ffdfe558d44af564244ec74e3c, type: 2}
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0

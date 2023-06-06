@@ -115,7 +115,16 @@ MonoBehaviour:
         NOTE: Cynthia is now CONTROLLED by DeShawn.'
     Choices: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: cce62dcf1e1cc4346a6669063ec206c4,
+          type: 2}
+        AmbitionEffect: 0
+        PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd:
+        - {fileID: 11400000, guid: 9e5c01f37e0b0a4408d5c517119e5fa0, type: 2}
+        ImageSetsToRemove:
+        - {fileID: 11400000, guid: 273fee5097b4516469037f23b8a3dbd8, type: 2}
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0

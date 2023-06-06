@@ -173,7 +173,16 @@ MonoBehaviour:
         bribe.
     Choices: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: d5fcf0ddcb7f29f4d9d9ed509fb5a411,
+          type: 2}
+        AmbitionEffect: 0
+        PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd:
+        - {fileID: 11400000, guid: dc1132d4a50000d46876215709188115, type: 2}
+        ImageSetsToRemove:
+        - {fileID: 11400000, guid: b2a5b24f6a7645546b60eda4bdc07f07, type: 2}
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0

@@ -21,6 +21,8 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements:
     - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -44,9 +46,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
     Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -218,7 +220,16 @@ MonoBehaviour:
         left of her own dignity! '
     Choices: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+          type: 2}
+        AmbitionEffect: 0
+        PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd:
+        - {fileID: 11400000, guid: fd60b9181a8db16418c42e1adff825b8, type: 2}
+        ImageSetsToRemove:
+        - {fileID: 11400000, guid: 846d32cc28ed8b64ba343b973a43c371, type: 2}
       EgoEffect: 100
       FundsEffect: 0
       PowerEffect: 0
@@ -236,7 +247,6 @@ MonoBehaviour:
       TrophiesClaimedReferences: []
       MissionsToComplete: []
       ItemsToAdd: []
-      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -245,6 +255,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -269,7 +280,6 @@ MonoBehaviour:
       TrophiesClaimedReferences: []
       MissionsToComplete: []
       ItemsToAdd: []
-      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -278,5 +288,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1

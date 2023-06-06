@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: b9206c18-4557-40a2-9190-51ffb85bccf5
   Name: Annual General Meeting
+  SubInteraction: 0
   AlertNew: 1
   Category: 2
   Requirements:
     RequiredPower: 500
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements:
     - OptionalNpcReference: {fileID: 11400000, guid: be12a51bf8ae5c343a38ccd5b80d8007,
         type: 2}
@@ -50,8 +53,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -70,6 +74,7 @@ MonoBehaviour:
         yPos: 0.5
         width: 300
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: be12a51bf8ae5c343a38ccd5b80d8007,
         type: 2}
@@ -84,6 +89,7 @@ MonoBehaviour:
         yPos: 0
         width: 0
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: be12a51bf8ae5c343a38ccd5b80d8007,
         type: 2}
@@ -96,6 +102,7 @@ MonoBehaviour:
         yPos: 0
         width: 0
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: be12a51bf8ae5c343a38ccd5b80d8007,
         type: 2}
@@ -109,6 +116,7 @@ MonoBehaviour:
         yPos: 0
         width: 0
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: be12a51bf8ae5c343a38ccd5b80d8007,
         type: 2}
@@ -121,6 +129,7 @@ MonoBehaviour:
         yPos: 0
         width: 0
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: be12a51bf8ae5c343a38ccd5b80d8007,
         type: 2}
@@ -137,11 +146,13 @@ MonoBehaviour:
         yPos: 0
         width: 0
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Applause drowns out...
       Videos:
       - {fileID: 32900000, guid: 27fe6d94e6ea87a4b999f28b29fd5496, type: 3}
       Textures: []
+      DialogClips: []
       Text: ...Jennifer's attempt to regain control of the meeting, but finally slinks
         off in defeat.  You are now the Co CEO of Artemis-- congratulations!  Jennifer
         Page is now CONTROLLED.
@@ -149,14 +160,28 @@ MonoBehaviour:
       Videos:
       - {fileID: 32900000, guid: 8391cbc876759d3458a8ff246f98817f, type: 3}
       Textures: []
+      DialogClips: []
       Text: ...you've cleared the board and the Queen is yours.  Congratulations
         on a well played match.
+    Choices: []
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: be12a51bf8ae5c343a38ccd5b80d8007,
           type: 2}
         AmbitionEffect: -75
         PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
+      - OptionalNpcReference: {fileID: 11400000, guid: be12a51bf8ae5c343a38ccd5b80d8007,
+          type: 2}
+        AmbitionEffect: 0
+        PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd:
+        - {fileID: 11400000, guid: 8477e5434dd764d4994e8e9230dda40a, type: 2}
+        ImageSetsToRemove:
+        - {fileID: 11400000, guid: b5b6cff939dfb984d963bac2c3e1f4b4, type: 2}
       EgoEffect: 500
       FundsEffect: 0
       PowerEffect: 0
@@ -175,6 +200,7 @@ MonoBehaviour:
       TrophiesClaimedReferences: []
       MissionsToComplete:
       - {fileID: 11400000, guid: 0b5985a115547f3429d9198cadf71fc2, type: 2}
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -183,11 +209,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -205,6 +233,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -213,5 +242,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
