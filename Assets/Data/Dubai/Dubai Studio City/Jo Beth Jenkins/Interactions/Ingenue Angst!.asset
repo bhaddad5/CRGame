@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Pitch Meeting
+  m_Name: Ingenue Angst!
   m_EditorClassIdentifier: 
-  Id: 956443fe-4952-4bbd-8854-53841cdb429c
-  Name: Pitch Meeting
+  Id: 309ea43d-1cf8-48f2-95f4-d0c5e7ff8238
+  Name: Ingenue Angst!
   SubInteraction: 0
   AlertNew: 1
-  Category: 4
+  Category: 2
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -24,7 +24,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 4ba9c1d9f1682ef4ab678b3a0bbc456d, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -49,7 +50,34 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: e4d11eb373f6df249a0aea1882d3f99a,
         type: 2}
-      Text: Shall we discuss the scripts then, Ms. Jenkins?
+      Text: Well, I have wonderful news for you both!  I'm very pleased with the
+        results of Jo Beth's screen test and we're happy to move ahead with a project!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 072a2bbacd41a0149b16f05432d34dc1,
+        type: 2}
+      Text: Did you hear that Jo?  That's fantastic news!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 072a2bbacd41a0149b16f05432d34dc1,
+        type: 2}
+      Text: The Sheikh has decided to start you off with a pilot for a sitcom, Jo
+        Beth.  It's a bit of a take-off on Big Bang Theory.  Are you familiair with
+        that show?  Here-- take a look at the draft script!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -61,7 +89,8 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 04f903b0882936d458062ef31fea517b,
         type: 2}
-      Text: Shouldn't I have some copies to review as well?
+      Text: Well sure, but a sitcom?  I mean, I gues- that show was huge.  You guys
+        get that here in Dubai?  Let me see the script.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -71,24 +100,11 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 072a2bbacd41a0149b16f05432d34dc1,
+      OptionalNpcReference: {fileID: 11400000, guid: e4d11eb373f6df249a0aea1882d3f99a,
         type: 2}
-      Text: 'Darling, let me do the first pass, OK?  Perhaps Zayed, you might take
-        Jo Beth shopping?  '
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 484bcdc76eb16f241b61fa332626794a,
-        type: 2}
-      Text: Yes!  Let me take you to the Gold Market!  It's wonderful-- you must
-        let me buy you some earrings as well or a bracelet or a necklace-- or all
-        of those and more!
+      Text: Oh, yes!  My son loves watching the episodes!  He thought the actress
+        was very pretty!  He had quite  afew idea that are reflected in the pilot
+        that--
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -100,8 +116,9 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 04f903b0882936d458062ef31fea517b,
         type: 2}
-      Text: Well, you should really be buying those kinds of things for your girlfriend
-        Zayed, but if you want to--as a friend-- then that sounds cool!  Let's go!
+      Text: Hold on!  Mother-- have you seen this?  I'm not doing this!  My God--
+        have you really read this script?  I'd NEVER do this in front of a camera! 
+        There's no way!  Come on, Mother-- we're leaving now!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -113,38 +130,9 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: e4d11eb373f6df249a0aea1882d3f99a,
         type: 2}
-      Text: They make quite the couple, don't they?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 072a2bbacd41a0149b16f05432d34dc1,
-        type: 2}
-      Text: With respect, Sheikh, she's quite a bit older than Zayed!  She thinks
-        of him more as a little brother!  Now, as for these scripts-- they all seem
-        so... disappointing.  Juvenile.  Jo Beth needs a dramattic role, something
-        that will showcase her acting chops-- a role that shows she's not some reality
-        tv star du jour!  These scripts just don't cut it!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 072a2bbacd41a0149b16f05432d34dc1,
-        type: 2}
-      Text: Ms. Jenkins, I agree with you.  If we're to be honest Sheikh, Jo Beth
-        Jenkins is a star in the making- a diamond in the rough.  These roles are
-        all off brand.  Super hero, sitcom sweetheart, romantic interest- these are
-        all exploitative.  Can't we do better?
+      Text: Oh dear.  How disappointing.  Mr. {LastName}, could you think of any
+        gifts of persuasion we might use to convince Miss Jenkins to perform in our
+        pilot?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -156,22 +144,10 @@ MonoBehaviour:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: e4d11eb373f6df249a0aea1882d3f99a,
         type: 2}
-      Text: Of course!  I'll commission some original dramatic work for Jo Beth. 
-        In the meantime, my admin staff tell me we need a medical exam for insurance
-        purposes.  Liability or soemthing or other-- will that be alright, Ms. Jenkins?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 072a2bbacd41a0149b16f05432d34dc1,
-        type: 2}
-      Text: You mean for Jo Beth?  Of course- we had to do that for 'Stage Mom'. 
-        Oh- me as well?  Sure.
+      Text: It seems she's quite insistent, Sheikh.  I'm sorry but there it is. 
+        Might I suggest something to get this project back on track?   Let's toss
+        this script-- it obviously isn't appropriate-- and we go with something more
+        serious.  How does that sound, Jo Beth?  Brenda?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -181,11 +157,11 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 072a2bbacd41a0149b16f05432d34dc1,
+      OptionalNpcReference: {fileID: 11400000, guid: 04f903b0882936d458062ef31fea517b,
         type: 2}
-      Text: Let's get you sorted and when Jo Beth is available, we can schedule her
-        in.  But there's plenty of time- we still need to review the new scripts,
-        right Sheikh?
+      Text: Well, maybe there was a misunderstanding...I guess.  I was thinking of
+        something more classic like The Tinder Box or Princess Alicia or The Lady
+        in Blue than some dumb sitcom pilot!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -194,11 +170,13 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: e4d11eb373f6df249a0aea1882d3f99a,
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 04f903b0882936d458062ef31fea517b,
         type: 2}
-      Text: Absolutely.  Ms. Jenkins, I'll have a car take you to hospital.  Dr.
-        Quadir is my personal physician- there's nothing to fear.
+      Text: Quite right!  Brenda- take Jo Beth back to the hotel while the Sheikh
+        and I discuss this matter.  I'm so sure we'll find the right script that
+        I'm asking you to even go ahead and sschedule your studio medical with Dr.
+        Quadir- the one your mother's already seen to.  Is that ok?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -207,12 +185,10 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 072a2bbacd41a0149b16f05432d34dc1,
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 04f903b0882936d458062ef31fea517b,
         type: 2}
-      Text: Very well!  I look forward to getting back to this discussion though. 
-        We've been in Dubai for some tiem and I had hoped we'd be farther along on
-        a project by now!
+      Text: I suppose it doesn't commit me to anything.  Sure-- I'll call the doctor.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -222,11 +198,12 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 11400000, guid: 072a2bbacd41a0149b16f05432d34dc1,
+      OptionalNpcReference: {fileID: 11400000, guid: 04f903b0882936d458062ef31fea517b,
         type: 2}
-      Text: 'NOTE:  When Brenda Jenkins leaves the Prince Zayed Hospital, she will
-        be much more attentive to Sheikh al-Kather''s suggestions!  Brenda Jenkins
-        is now CONTROLLED.'
+      Text: 'NOTE: While the present situation is diffused, it is apparent you''ll
+        need to conjure up another AGATHA chip for the far too independent daughter! 
+        Once you''ve delivered another chip to Dr. Quadir, the rebellious actress
+        should become much more open to direction! '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -235,32 +212,10 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups:
-    - Title: Jo Beth later regales...
-      Videos:
-      - {fileID: 32900000, guid: e1e34ad2f5b7d4942b6d52e6f8196fa9, type: 3}
-      Textures: []
-      DialogClips: []
-      Text: '...with tales of her Gold Market expedition with Prince Zayed.  Her
-        new matching 24 carat earrings, necklace and bracelet all gleam in the Dubai
-        sun! '
+    OptionalPopups: []
     Choices: []
     Effect:
-      NpcEffects:
-      - OptionalNpcReference: {fileID: 11400000, guid: 04f903b0882936d458062ef31fea517b,
-          type: 2}
-        AmbitionEffect: -25
-        PrideEffect: 0
-        RemoveCurrentImage: 0
-        ImageSetsToAdd: []
-        ImageSetsToRemove: []
-      - OptionalNpcReference: {fileID: 11400000, guid: 072a2bbacd41a0149b16f05432d34dc1,
-          type: 2}
-        AmbitionEffect: -25
-        PrideEffect: 0
-        RemoveCurrentImage: 0
-        ImageSetsToAdd: []
-        ImageSetsToRemove: []
+      NpcEffects: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -270,8 +225,7 @@ MonoBehaviour:
       BrandEffect: 0
       RevanueEffect: 0
       HornicalEffect: 0
-      NpcsToControl:
-      - {fileID: 11400000, guid: 072a2bbacd41a0149b16f05432d34dc1, type: 2}
+      NpcsToControl: []
       NpcsToTrain: []
       NpcsToRemoveFromGame: []
       LocationsToControl: []
@@ -286,7 +240,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
-    GoToRegion: {fileID: 11400000, guid: d758a363855930544b2aedf2f28a95af, type: 2}
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
