@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: I'll be happy to seek her out for you
+  m_Name: Do you know an Amber Chow
   m_EditorClassIdentifier: 
-  Id: c81af607-054c-4582-8f60-44dbd6bbbd7e
-  Name: I'll be happy to seek her out for you
-  SubInteraction: 1
+  Id: 9ad3edbf-7fc1-479f-af0e-d5b4208553eb
+  Name: Do you know an Amber Chow?
+  SubInteraction: 0
   AlertNew: 1
-  Category: 3
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -24,7 +24,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: aa5654073c9f9924cbc2209bc1f61c85, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -48,7 +49,7 @@ MonoBehaviour:
     Dialogs:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: I'd be willing to make inquiries on your behalf.  What's her name?
+      Text: Donald, how's life in the ivory tower?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -59,9 +60,9 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: 'Haziqa will be sooo pleased!  Amber Chow-- she''s a PhD student at Zenith! 
-        Tell her she''s got a blank check-- whatever it takes to get her over here--
-        and she''ll have no interference whatsoever! '
+      Text: '{FirstName}!  You''re not here to socialize and I doubt you''re signing
+        up for my classes in Business Management Theory.  What can I do for you,
+        my friend?'
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -72,8 +73,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Very well, Sheikh.  I'll seek out this Amber Chow-- I can't promise anything
-        though!
+      Text: I'm looking for a prodigy-- a doctoral candidate named Amber Chow.  Ever
+        heard of her?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -84,8 +85,56 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Of course!  And do this for us and you will have firm friends in the
-        Zubaid clan, my friend!
+      Text: Oh my, yes!  She's over in the School of Biological Sciences.  Prodigy
+        is an understatement.  The Chancellor was just predicting she'd be our first
+        alumna to win a Nobel.  Are you looking to staff up in your Tech area?  It's
+        not really her area, to be honest.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: I'm asking for a friend who's followed her career, an overseas colleague. 
+        Can you organize a meeting?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: Of course!  What reason should I give her for the meeting?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Tell Ms. Chow I'm representing a prospective suporter, someone who very
+        much wants to be her patron.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: A patron?  How oddly old school!  Very well-- I'll make the call now.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
