@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Grand Opening
+  m_Name: No limits research
   m_EditorClassIdentifier: 
-  Id: 1ee21ee9-5dc9-4931-9914-55a939dcc5df
-  Name: Grand Opening
+  Id: 82b99880-7f4b-4391-8f29-82825d27d621
+  Name: No limits research
   SubInteraction: 0
   AlertNew: 1
-  Category: 3
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -24,7 +24,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 730f310205f30e747a5faa82be0f53cc, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -46,11 +47,10 @@ MonoBehaviour:
   PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: a25f5b1157e1b2547826369f0d9f1d84,
-        type: 2}
-      Text: 'Dcotor Chow- look-- a dear mutual friend of ours!  What do you think
-        of Dr. Chow''s new facilities?  '
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: 'NOTE: You wait for a moment alone with Dr. Chow.  Her brief comments
+        have aroused your curiousity...  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -60,11 +60,8 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 1e21777d672bca349a20e229c484281f,
-        type: 2}
-      Text: My Lord, Doctor Chow-- you are together at last!  What a most impressive
-        research center!  It's more impressive than the Artemis R&D Center!  Well,
-        Doctor, I see you've accepted the Sheikh's patronage after all!
+      OptionalNpcReference: {fileID: 0}
+      Text: Doctor- congratulations on the new title!  Are you enjoying Dubia?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -74,10 +71,25 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 91d949bb38c0e80489ad0b18e3d014c8,
-        type: 2}
-      Text: And mine, Mr. {LastName}.  I'm Haziqua.  Thank you for bringing Dr. Chow
-        to us.  Come, Dr. Chow, give our friend a tour of your new laboratory!
+      OptionalNpcReference: {fileID: 0}
+      Text: Thank you!  Dubia?  I hardly have a moment outside the lab!  I have far
+        too much work to do any sightseeing!  My accomodations are luxurious but
+        I practically live here!  The freedom to unlock the mysteries o fthe human
+        genome- that's my real reward!  I can do things here I couldn't have imagined--
+        well, perhaps I say too much.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: 'Nonsense.  I''m a friend of the Zubaids!  Wasn''t I the one who introduced
+        you to them-- and all this?  Please, do go on-- how are you taking advanatge
+        of all this new... freedom?  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -87,24 +99,11 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 1e21777d672bca349a20e229c484281f,
-        type: 2}
-      Text: Happy to, Princess!  Mr. {LastName}, I am so grateful to you-- you liberated
-        me!  I never realized how resticted I was working in Zenith.  Here I can
-        finally explore the boundaries, the edges-- here I can do---
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 91d949bb38c0e80489ad0b18e3d014c8,
-        type: 2}
-      Text: Anything you like, Dr. Chow.  And we want you to!  With you Dr. Chow,
-        we shall make history!
+      OptionalNpcReference: {fileID: 0}
+      Text: Of course, of course!  But rather than try to explain, let me show you! 
+        The power and speed of the super computers I have access to allow me to model
+        out anything!  And the Sheikh and Princess are so supportive-- anything I
+        ask for-- well, just look!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -114,27 +113,14 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: As Chow and the Zubaid siblings...
+    - Title: '"The ability to model certain pairings...'
       Videos:
-      - {fileID: 32900000, guid: f6503379f6114fe4b987aa543dfd8321, type: 3}
+      - {fileID: 32900000, guid: 921a9c7c86d5bc747a64b90bf9cac14c, type: 3}
       Textures: []
       DialogClips: []
-      Text: ...show off their computer modeling netowrk, you begin to see a family
-        hobby transform into something much more.
-    - Title: Other items you spy...
-      Videos: []
-      Textures:
-      - {fileID: 2800000, guid: f7cc887f809b7c049945b638c91c3728, type: 3}
-      DialogClips: []
-      Text: ...suggest there is much more than just theoretical scientific inquiry
-        going on here!
-    - Title: One book on the doctor's desk...
-      Videos: []
-      Textures:
-      - {fileID: 2800000, guid: d53207dd5aa69454193de9aa547e3fae, type: 3}
-      DialogClips: []
-      Text: ...seems to point to old rituals unique to the Middle East and incongruous
-        in such a modern institution.
+      Text: '"...would have been considered unethical back in straightlaced Zenith! 
+        But here, I''m encouraged to plan out-- to design! -- wonderful pairings
+        that would result in offspring of a high value!"'
     Choices: []
     Effect:
       NpcEffects: []
