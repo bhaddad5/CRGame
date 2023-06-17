@@ -123,7 +123,7 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 3a321a5fe1376ce4cbe9147eb624e2d4,
         type: 2}
-      Text: You're under suspicion of being in contravention of ARticle Six of the
+      Text: You're under suspicion of being in contravention of Article Six of the
         Drug Laws, Miss Morgan.  We've been watching you for some time.  Do I need
         to cuff you?
       CustomNpcImageOptions:
@@ -169,7 +169,7 @@ MonoBehaviour:
       OptionalNpcReference: {fileID: 11400000, guid: 3a321a5fe1376ce4cbe9147eb624e2d4,
         type: 2}
       Text: Mr. {LastName} is known to us.  He most certainly is NOT a drug dealer. 
-        Sorry for the inconvenience, Sir.  COme with me, Miss Morgan.
+        Sorry for the inconvenience, Sir.  Come with me, Miss Morgan.
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: 65f0c103b58734e4084cd2a8c134a0d8, type: 3}
       CustomBackground: {fileID: 2800000, guid: ccaaf9d4770e4934faeecaedc50190b7,
@@ -204,7 +204,8 @@ MonoBehaviour:
       HornicalEffect: 0
       NpcsToControl: []
       NpcsToTrain: []
-      NpcsToRemoveFromGame: []
+      NpcsToRemoveFromGame:
+      - {fileID: 11400000, guid: 3a321a5fe1376ce4cbe9147eb624e2d4, type: 2}
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
@@ -217,7 +218,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
-    GoToRegion: {fileID: 0}
+    GoToRegion: {fileID: 11400000, guid: d758a363855930544b2aedf2f28a95af, type: 2}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
