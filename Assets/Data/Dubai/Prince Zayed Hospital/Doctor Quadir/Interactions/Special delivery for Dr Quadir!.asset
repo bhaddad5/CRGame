@@ -49,72 +49,91 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: b2c5033f8abf25640a7bc8a3b8aa04a1,
+        type: 2}
       Text: Doctor, I have another deliver for you!  My commendation- your previous
         procedure was perfect!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: e5de21f433eae6842a0642f202cc556f,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: b2c5033f8abf25640a7bc8a3b8aa04a1,
+        type: 2}
       Text: It was easy enough.  I understand this little beauty is for the daughter?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: e5de21f433eae6842a0642f202cc556f,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: b2c5033f8abf25640a7bc8a3b8aa04a1,
+        type: 2}
       Text: Quite so.  And you can use the same audio conditioning as before, so
         that at least will save you some effort.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: e5de21f433eae6842a0642f202cc556f,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: b2c5033f8abf25640a7bc8a3b8aa04a1,
+        type: 2}
       Text: Not so, Mr. {LastName}!  The Sheikh has other ideas!  In any case, it
         is already in motion.  I'll ask the girl to see me shortly and I suspect
         you'll have another walking, talking exhibit for your marvelous technology! 
         Good day, Mr. {LastName}!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: e5de21f433eae6842a0642f202cc556f,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: b2c5033f8abf25640a7bc8a3b8aa04a1,
+        type: 2}
       Text: 'NOTE: The loyal Doctor shows no intention of sharing more information,
         so you''ll have to go along with the Sheikh''s wishes in this matter.  In
         any case, you suspect the next time you see Jo Beth, she''ll be more cooperative
-        with the dirction she''s given!'
+        with the direction she''s given!'
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: e5de21f433eae6842a0642f202cc556f,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
     Choices: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: 04f903b0882936d458062ef31fea517b,
+          type: 2}
+        AmbitionEffect: 0
+        PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd:
+        - {fileID: 11400000, guid: ea7f7c47950d8b44ebd2cce5ca07f46b, type: 2}
+        ImageSetsToRemove:
+        - {fileID: 11400000, guid: 8dce0807417d2ed44a805cc93c86204d, type: 2}
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -139,7 +158,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
-    GoToRegion: {fileID: 0}
+    GoToRegion: {fileID: 11400000, guid: d758a363855930544b2aedf2f28a95af, type: 2}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:

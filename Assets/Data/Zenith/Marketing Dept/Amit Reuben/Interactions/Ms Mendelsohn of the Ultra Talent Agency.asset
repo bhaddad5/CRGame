@@ -26,7 +26,8 @@ MonoBehaviour:
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 6e998aa1288e7614c93c3728d790c63c, type: 2}
-    RequiredNotCompletedInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: 4e6cd1a3cd90d8d41aea6740b2425e0b, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -42,77 +43,88 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 0
-  Cooldown: 0
-  PreviewEffect: 0
+  Repeatable: 1
+  Cooldown: 14
+  PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: adc578e52a532e242a7ba45c0911dc6d,
+        type: 2}
       Text: I've tracked down this talent agent for you.  Mitzi Mendelsohn runs Ultra
         Talent and she evidently represents this girl you asked about.  She's waiting
         for us.  What exactly are we looking--
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: c610e6c1edf21c24bb89e05553d0eae7,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: adc578e52a532e242a7ba45c0911dc6d,
+        type: 2}
       Text: Amt, strictly speaking, this isn't Artemis business.  I'd rather not
         get you involved anymore than you need to be.  I'll handle the meeting, ok?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: c610e6c1edf21c24bb89e05553d0eae7,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: adc578e52a532e242a7ba45c0911dc6d,
+        type: 2}
       Text: Absolutely.  I'll send in Mendelsohn.  If you do need anything, you know
         I'm here to help.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: c610e6c1edf21c24bb89e05553d0eae7,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: adc578e52a532e242a7ba45c0911dc6d,
+        type: 2}
       Text: Mitzi Mendelsohn, CEO of Ultra Talent.  I understand you're interested
         in the Jenkins girls for some corporate sponsorship?  They'd be perfect-
-        a mother daughter team that really fits the Artemis brand.  I've been thinkign
+        a mother daughter team that really fits the Artemis brand.  I've been thinking
         about some ideas--
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: b2fd654431bfefc43b69866362bfbd7c, type: 3}
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: c610e6c1edf21c24bb89e05553d0eae7,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: adc578e52a532e242a7ba45c0911dc6d,
+        type: 2}
       Text: 'Hold on, Ms Mendelsohn!  I only know about a Jo Beth.  '
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: b2fd654431bfefc43b69866362bfbd7c, type: 3}
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: c610e6c1edf21c24bb89e05553d0eae7,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: adc578e52a532e242a7ba45c0911dc6d,
+        type: 2}
       Text: Well, Jo Beth became a star because of Brenda Jenkin's turn on 'Stage
         Mom'!  Sure, Jo Beth took off from there, but Brenda's got a following of
         her own.  Plus, she manages Jo Beth's career so I'd advise you to consider
@@ -120,43 +132,49 @@ MonoBehaviour:
         I have a draft we might want to go over--
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: b2fd654431bfefc43b69866362bfbd7c, type: 3}
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: c610e6c1edf21c24bb89e05553d0eae7,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: adc578e52a532e242a7ba45c0911dc6d,
+        type: 2}
       Text: Mitzi, let's slow down.  Tell me about these Jenkins girls first, alright?
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: b2fd654431bfefc43b69866362bfbd7c, type: 3}
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: c610e6c1edf21c24bb89e05553d0eae7,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: adc578e52a532e242a7ba45c0911dc6d,
+        type: 2}
       Text: 'Sure!  No pressure, there. Mr. {LastName}-- oh, let''s make it first
         name basis, {FirstName}, shall we?  So, Brenda''s a studio costume department
         seamstress single mom with a cute daughter and she gets bit eby the Hollywood
-        bug, right?  She auditions for ''Stage Mom'', makes a minor spalsh and the
+        bug, right?  She auditions for ''Stage Mom'', makes a minor splash and the
         Jenkins girls come in third.  But that''s not the end of the story.  '
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: b2fd654431bfefc43b69866362bfbd7c, type: 3}
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: c610e6c1edf21c24bb89e05553d0eae7,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: adc578e52a532e242a7ba45c0911dc6d,
+        type: 2}
       Text: 'Brenda gets Jo Beth to start posting vids and pics on social media and
         the next thing you know, BOOM!, she''s getting millions of views, media coverage
         and the rest.  She''s on the bubble- ready to pop-- so your timing is perfect. 
@@ -164,106 +182,121 @@ MonoBehaviour:
         thrown in.  Hot, very very NOW, you know what I mean? '
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: b2fd654431bfefc43b69866362bfbd7c, type: 3}
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: c610e6c1edf21c24bb89e05553d0eae7,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: adc578e52a532e242a7ba45c0911dc6d,
+        type: 2}
       Text: I see.  And how old is Jo Beth?
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: b2fd654431bfefc43b69866362bfbd7c, type: 3}
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: c610e6c1edf21c24bb89e05553d0eae7,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: adc578e52a532e242a7ba45c0911dc6d,
+        type: 2}
       Text: Look, you didn't hear it from me but if she's a little older than her
         bio.  So... eighteen, not sixteen.  But bubbie, this is Hollyood-- no one
-        admits thei real age, ok?  What were you thinking?  Corporate spokesgirl
+        admits their real age, ok?  What were you thinking?  Corporate spokesgirl
         work?  Brand ambassador?  Some tv spots?  The girls would love to be associated
         with the Artemis brand!
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: b2fd654431bfefc43b69866362bfbd7c, type: 3}
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: c610e6c1edf21c24bb89e05553d0eae7,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: adc578e52a532e242a7ba45c0911dc6d,
+        type: 2}
       Text: Actually, I'm not the client.  It's an associate in the Middle East who
         is looking to launch some film and tv work.  All quite legit-- it is Studio
         City in Dubai.  They are looking to attract hot new talent to launch some
         projects.  Would your Jenkins ladies be available for work like that?
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: b2fd654431bfefc43b69866362bfbd7c, type: 3}
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: c610e6c1edf21c24bb89e05553d0eae7,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: adc578e52a532e242a7ba45c0911dc6d,
+        type: 2}
       Text: 'The Middle East, huh?  Not exactly a friendly venue for moi, if you
         know what I mean.  And these Middle East operations... I dunno, {FirstName}. 
         I just don''t know.  I mean these girls are a hot property right now!  Chasing
         some projects in the Middle East-- this is not what they need right now! 
-        And I could manage things there either!   '
+        And I couldn''t manage things there either!   '
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: b2fd654431bfefc43b69866362bfbd7c, type: 3}
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: c610e6c1edf21c24bb89e05553d0eae7,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: adc578e52a532e242a7ba45c0911dc6d,
+        type: 2}
       Text: 'Sure.  I understand, Mitzi.  But let''s be honest- these social media
         influencers have the half life of mayflies.  What if you passed on the Ultra
         Agency contract to me to manage and let''s have the girls just go visit and
         have a look around?  No harm in that, right?  And for your trouble, Artemis
-        would commit a sizeable chuck of our marketing budget to Ultra-proposed projects
+        would commit a sizeable chunk of our marketing budget to Ultra-proposed projects
         and talent?  '
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: b2fd654431bfefc43b69866362bfbd7c, type: 3}
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: c610e6c1edf21c24bb89e05553d0eae7,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: adc578e52a532e242a7ba45c0911dc6d,
+        type: 2}
       Text: 'Sizeable, huh?  Well, between us, you''re right.  These social media
         influencers are a dime a dozen.   And that Brenda Jenkins is an enormous
         pain in my tired ass.  Oy vey- a steroetypical stage mother is that one for
         sure.  Ok- let''s make a deal!     '
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: b2fd654431bfefc43b69866362bfbd7c, type: 3}
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: c610e6c1edf21c24bb89e05553d0eae7,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
-    Choices: []
+    Choices:
+    - {fileID: 11400000, guid: 4e6cd1a3cd90d8d41aea6740b2425e0b, type: 2}
+    - {fileID: 11400000, guid: c1b0fba1083a99349be8f1cd669b2032, type: 2}
     Effect:
       NpcEffects: []
       EgoEffect: 0
