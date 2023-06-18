@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: I'll pass on this fight
+  m_Name: Straw Weight English vs Scot
   m_EditorClassIdentifier: 
-  Id: ff328af2-527b-4e26-b551-6345ab4b21ea
-  Name: I'll pass on this fight
+  Id: a7093c6c-6bc1-413e-8149-857427de83b0
+  Name: 'Straw Weight: English vs Scot'
   SubInteraction: 1
   AlertNew: 1
   Category: 6
@@ -41,14 +41,18 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 1
-  Cooldown: 60
-  PreviewEffect: 1
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
   Result:
     Dialogs:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: I have no idea who will win.  No bet!
+      Text: This contest is all about youth versus experience.  There's a twenty-seven
+        year gap between these two, not to mention a lot of bad blood that comes
+        from hundreds of years of war.  The stakes are high and the girls will fight
+        hard for advancement in the stable ranks.  You'll need to lodge a wager of
+        $100,000 on this contest.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -57,8 +61,17 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups: []
-    Choices: []
+    OptionalPopups:
+    - Title: The desperation of the...
+      Videos: []
+      Textures:
+      - {fileID: 2800000, guid: 3db2eac737442614d822626ad1f5e3e2, type: 3}
+      DialogClips: []
+      Text: ...older Scotswoman contrasts with the fear of the younger English girl. 
+        It is a cleverly scheduled bout.  The vast resources and reach of the Hashids
+        make such acquisitions more a matter of careful selection than a challenge.
+    Choices:
+    - {fileID: 11400000, guid: c590673eea1fe4c488b31c6223187739, type: 2}
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -85,7 +98,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
-    GoToRegion: {fileID: 11400000, guid: d758a363855930544b2aedf2f28a95af, type: 2}
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
