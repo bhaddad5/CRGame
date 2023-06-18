@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: I'll pass on this fight
+  m_Name: I'll take the Greek
   m_EditorClassIdentifier: 
-  Id: 160bbd49-c6ed-41e1-85c1-be5cede722dd
-  Name: I'll pass on this fight
+  Id: a98656ef-7adb-46e2-9c1d-dae27d2dbf2e
+  Name: I'll take the Greek
   SubInteraction: 1
   AlertNew: 1
   Category: 6
@@ -34,7 +34,7 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 0
+    MoneyCost: 200000
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -46,9 +46,9 @@ MonoBehaviour:
   PreviewEffect: 1
   Result:
     Dialogs:
-    - CurrSpeaker: 1
+    - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: These two don't interest me.  No bet from me!
+      Text: The Greek seems especially vicious-- I'll take her!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -57,7 +57,77 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups: []
+    OptionalPopups:
+    - Title: The dark eyed beauty...
+      Videos:
+      - {fileID: 32900000, guid: de3b3becaadc7374eb833b807fbc3f38, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: ...doesn't disappoint!  She hisses at the Turk, who soon seems intimidated. 
+        As the Greek finally mounts the Turkish beauty's chest, the victor is accorded
+        the win.  In Fly Weights, the winners are permitted to participate in the
+        punishment of the losers and the Turkk is soon howling and begging the Greek
+        to end the caning.
+    - Title: Your bet pays off...
+      Videos:
+      - {fileID: 32900000, guid: d4ac7dba6b9418d4fb5c7ad240e40a92, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: ...at 2 to 1 for a $200,000 profit!
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 400000
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 11400000, guid: d758a363855930544b2aedf2f28a95af, type: 2}
+  CanFail: 1
+  ProbabilityOfFailureResult: 0.5
+  FailureResult:
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: The Greek seems especially vicious-- I'll take her!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: The dark eyed beauty...
+      Videos:
+      - {fileID: 32900000, guid: de3b3becaadc7374eb833b807fbc3f38, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: ...disappoints!  Her hisses at the Turk fail to intimidate.  As the Turk
+        finally mounts the Greek beauty's chest, the victor is accorded the win. 
+        In Fly Weights, the winners are permitted to participate in the punishment
+        of the losers and the Greek is soon howling and begging the Turk to end the
+        caning.
     Choices: []
     Effect:
       NpcEffects: []
@@ -86,39 +156,6 @@ MonoBehaviour:
       Promotion: 0
       Home: 0
     GoToRegion: {fileID: 11400000, guid: d758a363855930544b2aedf2f28a95af, type: 2}
-  CanFail: 0
-  ProbabilityOfFailureResult: 0
-  FailureResult:
-    Dialogs: []
-    OptionalPopups: []
-    Choices: []
-    Effect:
-      NpcEffects: []
-      EgoEffect: 0
-      FundsEffect: 0
-      PowerEffect: 0
-      PatentsEffect: 0
-      CultureEffect: 0
-      SpreadsheetsEffect: 0
-      BrandEffect: 0
-      RevanueEffect: 0
-      HornicalEffect: 0
-      NpcsToControl: []
-      NpcsToTrain: []
-      NpcsToRemoveFromGame: []
-      LocationsToControl: []
-      TrophiesClaimedReferences: []
-      MissionsToComplete: []
-      ItemsToAdd: []
-      Car: 0
-      Suits: 0
-      JewleryCuffs: 0
-      JewleryPen: 0
-      JewleryRing: 0
-      JewleryWatch: 0
-      Promotion: 0
-      Home: 0
-    GoToRegion: {fileID: 0}
   Completed: 0
   TurnCompletedOn: -1
   New: 1

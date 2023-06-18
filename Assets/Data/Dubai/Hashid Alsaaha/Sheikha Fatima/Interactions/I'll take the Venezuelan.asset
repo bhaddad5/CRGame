@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: I'll pass on this fight
+  m_Name: I'll take the Venezuelan
   m_EditorClassIdentifier: 
-  Id: 160bbd49-c6ed-41e1-85c1-be5cede722dd
-  Name: I'll pass on this fight
+  Id: b91f51b5-78dd-4a45-a72d-b7b5b39e6efd
+  Name: I'll take the Venezuelan
   SubInteraction: 1
   AlertNew: 1
   Category: 6
@@ -34,7 +34,7 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 0
+    MoneyCost: 200000
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -46,9 +46,9 @@ MonoBehaviour:
   PreviewEffect: 1
   Result:
     Dialogs:
-    - CurrSpeaker: 1
+    - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: These two don't interest me.  No bet from me!
+      Text: The Venezuelan seems to have something to prove- here's my bet!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -57,12 +57,29 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups: []
+    OptionalPopups:
+    - Title: The political prisoner...
+      Videos:
+      - {fileID: 32900000, guid: 3306728134de40843a5c64c64faacbd1, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: ...springs on top of the Colombian soap opera actress.  The cat fight
+        is on and the fur flies!  The brown skinned beauties battle fiercely until
+        the widow finally gains the upper hand!  She is even granted a request. 
+        Rather than punish her defeated foe, she begs for sexual servicing from her. 
+        For such an impressive effort, the Sheikha graciously allows it.  "Lesbian
+        romances!" she chuckles!
+    - Title: Your bet pays off...
+      Videos:
+      - {fileID: 32900000, guid: d4ac7dba6b9418d4fb5c7ad240e40a92, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: ...at 2 to 1 for a $200,000 profit!
     Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
-      FundsEffect: 0
+      FundsEffect: 400000
       PowerEffect: 0
       PatentsEffect: 0
       CultureEffect: 0
@@ -86,16 +103,37 @@ MonoBehaviour:
       Promotion: 0
       Home: 0
     GoToRegion: {fileID: 11400000, guid: d758a363855930544b2aedf2f28a95af, type: 2}
-  CanFail: 0
-  ProbabilityOfFailureResult: 0
+  CanFail: 1
+  ProbabilityOfFailureResult: 0.5
   FailureResult:
-    Dialogs: []
-    OptionalPopups: []
+    Dialogs:
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: The Venezuelan seems to have something to prove- here's my bet!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: The political prisoner...
+      Videos:
+      - {fileID: 32900000, guid: 3306728134de40843a5c64c64faacbd1, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: ...springs on top of the Colombian soap opera actress.  The cat fight
+        is on and the fur flies!  The brown skinned beauties battle fiercely until
+        it is the Colombian actress who finally gains the upper hand!  In tears,
+        the Venezuelan bows before her Colombian victor and submits to a most thorough
+        and painful caning!
     Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
-      FundsEffect: 0
+      FundsEffect: 200000
       PowerEffect: 0
       PatentsEffect: 0
       CultureEffect: 0
@@ -118,7 +156,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
-    GoToRegion: {fileID: 0}
+    GoToRegion: {fileID: 11400000, guid: d758a363855930544b2aedf2f28a95af, type: 2}
   Completed: 0
   TurnCompletedOn: -1
   New: 1
