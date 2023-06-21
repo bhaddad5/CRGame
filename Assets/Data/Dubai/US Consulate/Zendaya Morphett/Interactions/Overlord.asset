@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: A feather in your cap
+  m_Name: Overlord
   m_EditorClassIdentifier: 
-  Id: c80e34b2-a3ca-4268-8e42-1978256a3e75
-  Name: A feather in your cap
+  Id: 0257bf48-3d4b-4314-b81f-9e161bf1a2b6
+  Name: Overlord
   SubInteraction: 0
   AlertNew: 1
   Category: 2
@@ -25,9 +25,11 @@ MonoBehaviour:
     NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 3b4a12814d2b5b34cb55b6811564e2c6, type: 2}
+    - {fileID: 11400000, guid: 30e16168acfbe6d43adb4a9dddf1b093, type: 2}
     RequiredNotCompletedInteractions: []
-    RequiredPolicies: []
+    RequiredPolicies:
+    - {fileID: 11400000, guid: 6f71e1d2904014549996b50b082a78ab, type: 2}
+    - {fileID: 11400000, guid: d7ce66136e1b9a7458aeedca3d119eb8, type: 2}
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
     RequiredNpcsTrained: []
@@ -50,10 +52,7 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 8cbd2a6907683cd44b4a826746304f9c,
         type: 2}
-      Text: Oh.  You.  Sheikh Jubur.  I have submitted the treaty to the US Senate
-        for approval.  I expect it to pass without difficulty.  The Senate follows
-        State Department guidance on such matters.  It took some arm twisting but
-        it has been done.  Are we through for the time being?
+      Text: Did you receive your new toy yet, Sheikh Jubur?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -65,11 +64,10 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 062e8a50613524942bd2bdf3fc66ba84,
         type: 2}
-      Text: Oh, not quite.  I think there's further opportunity for our nations to
-        work together, especially now that we'll soon have a Security Transfer Treaty! 
-        In order to really give the treaty some teeth, we'll need some weapon systems. 
-        Would the US be interested in selling us some?  I understand your current
-        budget woes might incline you in this direction?
+      Text: The UAES Maktoum?  Oh yes-- a lovely ship!  The region is most pleased
+        to have our very own capability to project power.  Finally, we are possessed
+        of weapons equal to our wealth.  Yes, a most fruitful transaction for both
+        parties, I assume?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -81,9 +79,9 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 8cbd2a6907683cd44b4a826746304f9c,
         type: 2}
-      Text: Weapons sytems?  Now you're talking!  Of course, our defence contractors
-        are eager to work with you!  What are you looking for?  Fighter jets?  Tanks? 
-        Small arms or artillery?  Perhaps a missile system?
+      Text: The ten billion was most appreciated, Sheikh Jubur.  If our business
+        is concluded, I'll be taking my leave from Dubai shortly.  I just need to
+        wrap up some business with the Peabodys.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -95,8 +93,9 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 062e8a50613524942bd2bdf3fc66ba84,
         type: 2}
-      Text: 'In time.  But what I think would really show the world that things have
-        changed is the acquisition of a new prestige addition to our military.  '
+      Text: Before you leave, I say we conclude our talks with one last agreement. 
+        One that will remain confidential between our two governments.  I see no
+        value in publicly humiliating your country- it serves no one's interests.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -108,7 +107,8 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 8cbd2a6907683cd44b4a826746304f9c,
         type: 2}
-      Text: Oh!  What were you thinking?
+      Text: Humiliate the US?  Are you mad?  What kind of secret agrement are you
+        talking about?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -120,8 +120,11 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 062e8a50613524942bd2bdf3fc66ba84,
         type: 2}
-      Text: Your navy is about to commission a brand new nuclear aircraft carrier-
-        the USS Enterprise I believe.  I'd like to buy it.
+      Text: The proposed agreement-- the one you will sign shortly-- I refer to as
+        the Afrlurd Concordat.  The Overlord Concordat in your tongue.  It merely
+        confirms what the other agreements already suggest-- that the US explicitly
+        agrees to defer to the UAE and her regional allies with regards to all interaction
+        between the US and the Middle East.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -133,8 +136,7 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 8cbd2a6907683cd44b4a826746304f9c,
         type: 2}
-      Text: B-buy an aircraft carrier?  W-we've never done that before-- for anybody! 
-        It's... unprecedented!
+      Text: You mean KSA, Jordan, Oman--
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -146,10 +148,12 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 062e8a50613524942bd2bdf3fc66ba84,
         type: 2}
-      Text: As is your fiscal crisis, I believe.  Ten billion dollars-- that's my
-        offer.  Go seek out your superiors.  I suspect they'll be more open to the
-        windfal than you think, Deputy Secretary.  Think what such a sale would mean
-        for you--quite a feather in your cap to be the bearer of ten billion dollars!
+      Text: Egypt, Syria, Lebanon, Iraq-- do we need to list them all?  Yes, those
+        are the regional allies for whom it is my honor to speak for.  Henceforth,
+        the US will submit all requests to interact with us and we shall decide if
+        and how we wish to respond.  This will prevent further destructive meddling
+        in our various affairs.  Again, there will be no negotiations- you will sign
+        and accept.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -161,8 +165,8 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 8cbd2a6907683cd44b4a826746304f9c,
         type: 2}
-      Text: Yes!  That's true...  I'll make some calls, My Lord.  We'll see where
-        my inquiries go.
+      Text: No, I will NOT.  The US will not simply surrender our options like that! 
+        It's not official policy!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -171,11 +175,76 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 2
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 062e8a50613524942bd2bdf3fc66ba84,
+        type: 2}
+      Text: I don't care how you rationalize it with your superiors but Overlord
+        WILL be the new geopolitical reality in this region.  We are united in rejecting
+        any further interference.  And if you choose not to obey me in this... Zuri!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 1f2f545ea55768c488fb689065ae704a,
+        type: 2}
+      Text: My Lord?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 062e8a50613524942bd2bdf3fc66ba84,
+        type: 2}
+      Text: She was your lover, wasn't she?  When you instrcuted her in university? 
+        Marty- did you know?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 8fec372d968aae74488c5ab340c7076e,
+        type: 2}
+      Text: N- no.  My Lord.  I did not.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 062e8a50613524942bd2bdf3fc66ba84,
+        type: 2}
+      Text: Your lesbian dalliances frankly disgust me and I'm sure such an abuse
+        of your position of power over a student would force an early retirement,
+        at the very least, Deputy Secretary.  Zuri's statement has already been written
+        up and includes a video testimony.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 8cbd2a6907683cd44b4a826746304f9c,
         type: 2}
-      Text: 'NOTE: The Sheikh''s insight and timing prove to be on target.  The sale
-        is approved!'
+      Text: Zuri-- how could you?  It wasn't liek that!  It was completely consensual!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -184,7 +253,29 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups: []
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 062e8a50613524942bd2bdf3fc66ba84,
+        type: 2}
+      Text: Not according to your impressionable former student.  No doubt she proved
+        useful in her choice of husband.  You've moved the Peabodys around like pawns
+        on a chessboard-- unfortunately for you, I've captured your pawns and they
+        belong to me now.  Now sign the treaty.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: History is made...
+      Videos: []
+      Textures:
+      - {fileID: 2800000, guid: 68b82df872f5bc84db393115075a89fa, type: 3}
+      DialogClips: []
+      Text: ...and you are a witness.  The older American diplomat signs in furious
+        impotence.  You may now enact the Afrlord Concordat Policy in the US Consulate!
     Choices: []
     Effect:
       NpcEffects: []
@@ -202,8 +293,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
-      MissionsToComplete:
-      - {fileID: 11400000, guid: 146358d20ffeff24cb8b813005d5adba, type: 2}
+      MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
       Suits: 0
