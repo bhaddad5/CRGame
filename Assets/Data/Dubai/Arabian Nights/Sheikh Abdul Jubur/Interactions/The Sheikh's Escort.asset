@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Offering an apology
+  m_Name: The Sheikh's Escort
   m_EditorClassIdentifier: 
-  Id: 610c8079-a87d-4b6f-9afd-f4a3f3a7459e
-  Name: Offering an apology
+  Id: 2077ae26-43b6-47e9-8885-832a9912dc1b
+  Name: The Sheikh's Escort
   SubInteraction: 0
   AlertNew: 1
-  Category: 1
+  Category: 3
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -24,8 +24,7 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions:
-    - {fileID: 11400000, guid: ec55bfa267e167844a89d4edc5378e4e, type: 2}
+    RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -48,15 +47,26 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 1f2f545ea55768c488fb689065ae704a,
+      OptionalNpcReference: {fileID: 11400000, guid: e015f3581bae3b046bbd29f77d4b6d32,
         type: 2}
-      Text: Mrs. Peabody, I was hoping you'd see me.  I just wanted you-- and the
-        Ambassador, of course!-- to know I gave your answer to Sheikh Jubur.  He
-        wasn't happy but... well, you don't cross the US, right?  He said he'd reconsider
-        existign policies regarding women's right and that he was hoping to speak
-        with you to get your ideas about it.
+      Text: Sheikh Jubur, what a pleasant surprise!  And I see you have a companion!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: ab7927b9f76648b4685e4af54949d358,
+      CustomBackground: {fileID: 2800000, guid: 307c9c6a016d8134891444ebb32fb8c8,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: e015f3581bae3b046bbd29f77d4b6d32,
+        type: 2}
+      Text: I do.  I thought some socializing would help our working relationship,
+        so I invited Mrs. Peabody out dancing.  Your husband doesn't mind, does he
+        Zuri?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 307c9c6a016d8134891444ebb32fb8c8,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
@@ -67,9 +77,10 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 1f2f545ea55768c488fb689065ae704a,
         type: 2}
-      Text: Really?  Did you hear that, Marty?  I told you he'd come to heel!
+      Text: Well, he doesn't know.  I didn't tell him.  I don't think he'd like the
+        idea every much but...
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: ab7927b9f76648b4685e4af54949d358,
+      CustomBackground: {fileID: 2800000, guid: 307c9c6a016d8134891444ebb32fb8c8,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
@@ -78,11 +89,27 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 8fec372d968aae74488c5ab340c7076e,
+      OptionalNpcReference: {fileID: 11400000, guid: e015f3581bae3b046bbd29f77d4b6d32,
         type: 2}
-      Text: Did he say he wanted to speak to me about, well... anything, Mr. {LastName}?
+      Text: But a Sheikh outranks a mere ambasaaador-- isn't that true, Zuri?  And
+        you do want to get on my good side, don't you?  So we can put in all those
+        reforms you'r so eager to see instituted!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: ab7927b9f76648b4685e4af54949d358,
+      CustomBackground: {fileID: 2800000, guid: 307c9c6a016d8134891444ebb32fb8c8,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 1f2f545ea55768c488fb689065ae704a,
+        type: 2}
+      Text: That's exactly right!  That's why I'm here!  That's the only reason I'm
+        here, Mr. {LastName}.  You understand, don't you?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 307c9c6a016d8134891444ebb32fb8c8,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
@@ -91,62 +118,13 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 8fec372d968aae74488c5ab340c7076e,
-        type: 2}
-      Text: 'I''m sure he''d love your input as well, but he felt that working with
-        Mrs. Peabody might make more sense to start with, given how passionate she
-        is about women''s rights.  Mrs. Peabody, I hop eyou understand I was only
-        doing as teh Sheikh asked.  I''m a huge supporter of empowering women- it
-        is what Artemis is all about!  Will you accept my apolgy?  '
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: ab7927b9f76648b4685e4af54949d358,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 450
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 1f2f545ea55768c488fb689065ae704a,
         type: 2}
-      Text: 'Apology accepted, Mr. {LastName}.  You''ve actually turned out to be
-        quite useful!  You may inform the Sheikh I''d be happy to act as his advisor
-        on instituting women''s rights reforms-- BUT the appointment must be official
-        and public-- otherwise I won''t assist him.  Understand?  '
+      Text: 'Of course.  Far be it from me to question the reason you''re here partying
+        with Sheikh Jubur rather than be back at the embassy with the ambassador. 
+        That''s none of my business!  '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: ab7927b9f76648b4685e4af54949d358,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 450
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 8fec372d968aae74488c5ab340c7076e,
-        type: 2}
-      Text: Darling, don't rub his nose in it-- he is a Sheikh, for goodness' sake!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: ab7927b9f76648b4685e4af54949d358,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 450
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 1f2f545ea55768c488fb689065ae704a,
-        type: 2}
-      Text: Marty, hush!  This is the way you have to handle bullies like this! 
-        The little shiekh has no choice-- he doesn't want to cross the American ambassador,
-        does he?  Go on, Mr. {LastName}-- now you can be OUR messenger boy.  Persuade
-        your Arab friend to do the right thing so we can put this unpleasantess behind
-        us.  I'm eager to get busy drafting a whole new civil code for this backwards
-        counrty!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: ab7927b9f76648b4685e4af54949d358,
+      CustomBackground: {fileID: 2800000, guid: 307c9c6a016d8134891444ebb32fb8c8,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
@@ -157,7 +135,14 @@ MonoBehaviour:
     OptionalPopups: []
     Choices: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: 1f2f545ea55768c488fb689065ae704a,
+          type: 2}
+        AmbitionEffect: -75
+        PrideEffect: -75
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -169,7 +154,8 @@ MonoBehaviour:
       HornicalEffect: 0
       NpcsToControl: []
       NpcsToTrain: []
-      NpcsToRemoveFromGame: []
+      NpcsToRemoveFromGame:
+      - {fileID: 11400000, guid: e015f3581bae3b046bbd29f77d4b6d32, type: 2}
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []

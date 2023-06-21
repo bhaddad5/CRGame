@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: I have an idea!
+  m_Name: Stepping out
   m_EditorClassIdentifier: 
-  Id: 33b07e6d-a94e-4c9f-bb77-a36a3579d51f
-  Name: I have an idea!
-  SubInteraction: 1
+  Id: bf852755-bafc-4033-a8bf-956260e75267
+  Name: Stepping out
+  SubInteraction: 0
   AlertNew: 1
-  Category: 1
+  Category: 3
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -33,7 +33,7 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 0
+    EgoCost: 100
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -46,57 +46,28 @@ MonoBehaviour:
   PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 062e8a50613524942bd2bdf3fc66ba84,
-        type: 2}
-      Text: I can apply my technology solution to your diplomatic problem, Sheikh
-        Jubur.  Once Zuri Peabody is implanted with an AGATHA chip, she'll be as
-        pliable as you wish.  I'll need to win her confidence-- which will force
-        me to pretend to play the turncoat.  Her threats were none too subtle-- by
-        acting as your 'messenger boy' she said I was behaving in a most deplorable
-        waay.  I'd need to play on that...
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 260ab9edeb5ea9c42afadd99714d71a1,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 350
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 062e8a50613524942bd2bdf3fc66ba84,
-        type: 2}
-      Text: It sounds as if you've already begun designing a trap for the vile woman!  
-        Don't waste another minute, Mr. {LastName}!  See this done for me amd you'll
-        be given our highest honor!
+      OptionalNpcReference: {fileID: 0}
+      Text: XXX
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 260ab9edeb5ea9c42afadd99714d71a1,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 350
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 11400000, guid: 062e8a50613524942bd2bdf3fc66ba84,
-        type: 2}
-      Text: 'NOTE: To turn the tables on the Peabodys, you''ll need an AGATHA chip
-        and a tall tale to sell Zuri! '
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 260ab9edeb5ea9c42afadd99714d71a1,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 350
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
     Choices: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: 1f2f545ea55768c488fb689065ae704a,
+          type: 2}
+        AmbitionEffect: -75
+        PrideEffect: -75
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -108,7 +79,8 @@ MonoBehaviour:
       HornicalEffect: 0
       NpcsToControl: []
       NpcsToTrain: []
-      NpcsToRemoveFromGame: []
+      NpcsToRemoveFromGame:
+      - {fileID: 11400000, guid: 6cf45dba773df93458e39b8ff650a5e5, type: 2}
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
