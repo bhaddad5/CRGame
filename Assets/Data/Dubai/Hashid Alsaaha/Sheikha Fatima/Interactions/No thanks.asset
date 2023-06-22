@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Fly Weight Greek vs Turk
+  m_Name: No thanks
   m_EditorClassIdentifier: 
-  Id: 2839b76a-4646-42eb-a15e-fbd1f0c28796
-  Name: 'Fly Weight: Greek vs Turk'
+  Id: df6d77ec-5092-4466-bee4-24d57f68ea2b
+  Name: No thanks
   SubInteraction: 1
   AlertNew: 1
-  Category: 6
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -46,37 +46,19 @@ MonoBehaviour:
   PreviewEffect: 1
   Result:
     Dialogs:
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 49705918d855e9241b7abe9c2715c975,
-        type: 2}
-      Text: These two really despise each other!  They were both acquired around
-        the same time and they've already been disciplined twice for fighting in
-        the slave quarters.  It seems the animosity goes deep-- some kind of natural
-        feral bitchiness we love to encourage.  You'll need to lodge a wager of $200,000
-        on this contest.
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: I don't think I'll bet right now.  Perhaps next month.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: c12e53a47790d08408d6dbd6007b0a84,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 400
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups:
-    - Title: The Sheikha is proud to...
-      Videos: []
-      Textures:
-      - {fileID: 2800000, guid: f0501e71b508e654ead859724a4e17e3, type: 3}
-      DialogClips: []
-      Text: ...reveal that both girls enjoyed some level of fame in their respective
-        home lands and both were used to being treated as spoiled divas, before being
-        added to the stable, of course.  For such heated rivals, they could be sisters
-        as they look so similiar!
-    Choices:
-    - {fileID: 11400000, guid: d049787cc07ed574199f88bdb2ef2d04, type: 2}
-    - {fileID: 11400000, guid: 917b4f35b1ddab04aa7a6667c302a985, type: 2}
-    - {fileID: 11400000, guid: bd418a67678a92142bcad3768dad34e1, type: 2}
+    OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -103,7 +85,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
-    GoToRegion: {fileID: 0}
+    GoToRegion: {fileID: 11400000, guid: d758a363855930544b2aedf2f28a95af, type: 2}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
