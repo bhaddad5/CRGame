@@ -10,26 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Suck it like a secretary!
+  m_Name: Buy the Shadowfax for DeShawn
   m_EditorClassIdentifier: 
-  Id: 9efd58d6-c582-403e-92b3-3f48fe3dba93
-  Name: Suck it like a secretary!
-  SubInteraction: 0
+  Id: 654daa35-3586-4329-9c70-a63766feffd8
+  Name: Buy the Shadowfax for DeShawn
+  SubInteraction: 1
   AlertNew: 1
-  Category: 6
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NotOnWeekends: 0
     NotOnWeekdays: 0
-    NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
-      Stat: 1
-      Is: 0
-      Value: 50
-    RequiredInteractions:
-    - {fileID: 11400000, guid: 5f2e801b426873545957dff2ac044f77, type: 2}
+    NpcStatRequirements: []
+    RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -39,72 +34,71 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 0
+    MoneyCost: 200000
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 1
-  Cooldown: 12
-  PreviewEffect: 1
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
   Result:
     Dialogs:
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Throw in the floor mats and I'll take it.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Yes, Mr. {LastName}?  Did you need something?
+      Text: You got it!  You're a lucky man- there are less than a thousand of thse
+        csrs on the planet!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 04aba9185e390994fa36eca45cd4d343,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: I think your lips on my cock, Miss Jones, is what I need.  Let's see
-        you suck it like a secretary.
+      Text: It's not for me- it's for one of my top managers.  Have it delivered
+        with my compliments to M"r. DeShawn Owen, with a card reading "Thanks for
+        turbocharging Artemis sales- the best is yet to come!" signed "{FirstName}".
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 04aba9185e390994fa36eca45cd4d343,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups:
-    - Title: Debbie closes the office door...
-      Videos:
-      - {fileID: 32900000, guid: 75fe30a33be682e469f99d075b870b2a, type: 3}
-      - {fileID: 32900000, guid: e0341cb7ef53ed64caa282bad04d6181, type: 3}
-      - {fileID: 32900000, guid: 4eba3768988bbd84f958bb573eb8adc6, type: 3}
-      - {fileID: 32900000, guid: d8678f3a5048f5f448f4442fd8d072b0, type: 3}
-      - {fileID: 32900000, guid: 6faf253ceacff7540b2ac4636e477a27, type: 3}
-      - {fileID: 32900000, guid: 005ca0fe56d4d9946b7aa82acef4952b, type: 3}
-      - {fileID: 32900000, guid: 49ad07ae72f566b42b738c0627a99e55, type: 3}
-      - {fileID: 32900000, guid: d00545d77b530704996bb7d07e7390f7, type: 3}
-      - {fileID: 32900000, guid: 4bc44110acf1b6a419b52ee1ce98076e, type: 3}
-      - {fileID: 32900000, guid: 3ba691b9707d15a42b0315584b6a75a1, type: 3}
-      - {fileID: 32900000, guid: eeb83badecb4beb4da130870bc255e3a, type: 3}
-      - {fileID: 32900000, guid: f4500547c23b4f9409105df95e52d140, type: 3}
-      - {fileID: 32900000, guid: d50765a1891385e4091e4738521c92f1, type: 3}
-      - {fileID: 32900000, guid: 84153b94979be1d4199827ef78f5f44b, type: 3}
-      - {fileID: 32900000, guid: f8d2868f7c239734b95068c277b5a35e, type: 3}
-      - {fileID: 32900000, guid: 0c48d6df55e2fbe458baec46e0f11fff, type: 3}
-      Textures: []
-      DialogClips: []
-      Text: ...and like a capable and efficient secretary, begins servicing you. 
-        You notice that she takes this assignment a bit more seriously since she's
-        been promoted.  Debbie knows her oral skills are an essential part of her
-        secretarial repertoire!
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: He'll have the keys before the end fo the day!  Man, he's one lucky guy
+        then!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups: []
     Choices: []
     Effect:
       NpcEffects: []
-      EgoEffect: 12
+      EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
