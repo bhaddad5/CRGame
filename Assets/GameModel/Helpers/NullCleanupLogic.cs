@@ -20,6 +20,7 @@ public static class NullCleanupLogic
 				{
 					npc.Interactions.RemoveAll(i => i == null);
 					npc.Trophies.RemoveAll(i => i == null);
+					npc.AllImageSets.RemoveAll(i => i == null);
 
 					foreach (var interaction in npc.Interactions)
 					{
