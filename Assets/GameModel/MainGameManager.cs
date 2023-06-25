@@ -51,7 +51,7 @@ namespace Assets.GameModel
 
 		private HudBindings hudUiDisplay;
 		private WorldMapScreenBindings mainMapUiDisplay;
-		
+
 		public void InitializeGame(string saveDataPath, string firstName, string lastName)
 		{
 			if (hudUiDisplay != null)
@@ -60,7 +60,12 @@ namespace Assets.GameModel
 			}
 			if (mainMapUiDisplay != null)
 			{
+				ReturnToWorldMap();
 				GameObject.Destroy(mainMapUiDisplay.gameObject);
+			}
+			if (InteractionResultDisplayManager.LiveDisplayHandler != null)
+			{
+				InteractionResultDisplayManager.LiveDisplayHandler.NukeAndShutdown();
 			}
 
 			hudUiDisplay = Instantiate(HudUiDisplayPrefab);
@@ -132,7 +137,7 @@ namespace Assets.GameModel
 
 		public void ReturnToWorldMap()
 		{
-			mainMapUiDisplay.CurrOpenRegion.CloseRegion();
+			mainMapUiDisplay?.CurrOpenRegion?.CloseRegion();
 		}
 
 		private void TryRunStartOfTurnInteractions()

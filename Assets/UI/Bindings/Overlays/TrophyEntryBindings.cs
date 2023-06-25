@@ -31,7 +31,7 @@ public class TrophyEntryBindings : MonoBehaviour
 			Text = trophy.Description,
 		};
 
-		var popupParent = GameObject.Instantiate(UiPrefabReferences.Instance.PopupOverlayParent);
+		var popupParent = GameObject.Instantiate(UiPrefabReferences.Instance.PopupOverlayParent, transform);
 		GameObject.Instantiate(UiPrefabReferences.Instance.GetPrefabByName("Popup Display"), popupParent.transform).GetComponent<PopupBindings>().Setup(popup, 0, mgm, null);
 	}
 }

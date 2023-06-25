@@ -9,6 +9,9 @@ using UnityEngine;
 
 public class InteractionResultDisplayManager
 {
+	public static InteractionResultDisplayManager LiveDisplayHandler = null;
+	public GameObject LiveMenu = null;
+
 	private List<DialogEntry> currDialogsToShow = new List<DialogEntry>();
 	private List<Interaction> choices = new List<Interaction>();
 	private List<Popup> currPopupsToShow = new List<Popup>();
@@ -26,6 +29,8 @@ public class InteractionResultDisplayManager
 		this.completedCount = completionCount;
 		this.resultComplete = resultComplete;
 		this.currDisplayInfo = currDisplayInfo;
+
+		LiveDisplayHandler = this;
 
 		currDialogsToShow = new List<DialogEntry>(res.Dialogs);
 		if (failed && currDialogsToShow.Count > 0)
@@ -48,6 +53,13 @@ public class InteractionResultDisplayManager
 		HandleNextDialog();
 	}
 
+	public void NukeAndShutdown()
+	{
+		LiveDisplayHandler = null;
+		if (LiveMenu != null)
+			GameObject.Destroy(LiveMenu);
+	}
+
 	private void HandleNextDialog()
 	{
 		if (currDialogsToShow.Count > 0)
@@ -59,13 +71,17 @@ public class InteractionResultDisplayManager
 				AudioHandler.Instance.PlayOverridingMusicTrack(dialog.OptionalStartMusicClip);
 
 			currDialogsToShow.RemoveAt(0);
-			GameObject.Instantiate(UiPrefabReferences.Instance.GetPrefabByName("Dialog Screen")).GetComponent<DialogScreenBindings>().Setup(dialog, currDisplayInfo, mgm, HandleNextDialog);
+			var dialogScreen = GameObject.Instantiate(UiPrefabReferences.Instance.GetPrefabByName("Dialog Screen"));
+			LiveMenu = dialogScreen;
+			dialogScreen.GetComponent<DialogScreenBindings>().Setup(dialog, currDisplayInfo, mgm, HandleNextDialog);
 		}
 		else if (choices != null && choices.Count > 0)
 		{
 			var tmp = new List<Interaction>(choices);
 			choices = null;
-			GameObject.Instantiate(UiPrefabReferences.Instance.GetPrefabByName("Choices Screen")).GetComponent<ChoicesScreenBindings>().Setup(tmp, currDisplayInfo, mgm, HandleNextDialog);
+			var choicesScreen = GameObject.Instantiate(UiPrefabReferences.Instance.GetPrefabByName("Choices Screen"));
+			LiveMenu = choicesScreen;
+			choicesScreen.GetComponent<ChoicesScreenBindings>().Setup(tmp, currDisplayInfo, mgm, HandleNextDialog);
 		}
 		else if (currPopupsToShow.Count > 0)
 		{
@@ -73,6 +89,7 @@ public class InteractionResultDisplayManager
 			currPopupsToShow.RemoveAt(0);
 
 			var popupParent = GameObject.Instantiate(UiPrefabReferences.Instance.PopupOverlayParent);
+			LiveMenu = popupParent;
 			GameObject.Instantiate(UiPrefabReferences.Instance.GetPrefabByName("Popup Display"), popupParent.transform).GetComponent<PopupBindings>().Setup(popup, completedCount, mgm, HandleNextDialog);
 		}
 		else if (currTrophiesToShow.Count > 0)
@@ -90,6 +107,7 @@ public class InteractionResultDisplayManager
 				AudioHandler.Instance.PlayEffectClip(mgm.GreivousModeClip);
 
 			var popupParent = GameObject.Instantiate(UiPrefabReferences.Instance.PopupOverlayParent);
+			LiveMenu = popupParent;
 			GameObject.Instantiate(UiPrefabReferences.Instance.GetPrefabByName("Popup Display"), popupParent.transform).GetComponent<PopupBindings>().Setup(popup, completedCount, mgm, HandleNextDialog);
 		}
 		else if (currMissionsToShow.Count > 0)
@@ -104,10 +122,12 @@ public class InteractionResultDisplayManager
 
 			AudioHandler.Instance.PlayOverridingMusicTrack(mgm.MissionAudioClip);
 			var popupParent = GameObject.Instantiate(UiPrefabReferences.Instance.PopupOverlayParent);
+			LiveMenu = popupParent;
 			GameObject.Instantiate(UiPrefabReferences.Instance.GetPrefabByName("Popup Display"), popupParent.transform).GetComponent<PopupBindings>().Setup(popup, completedCount, mgm, HandleNextDialog);
 		}
 		else
 		{
+			LiveDisplayHandler = null;
 			resultComplete?.Invoke();
 		}
 	}

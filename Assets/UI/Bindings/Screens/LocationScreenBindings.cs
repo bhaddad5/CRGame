@@ -92,14 +92,14 @@ namespace Assets.GameModel.UiDisplayers
 
 		public void OpenPolicies()
 		{
-			var popupParent = GameObject.Instantiate(UiPrefabReferences.Instance.PopupOverlayParent);
+			var popupParent = GameObject.Instantiate(UiPrefabReferences.Instance.PopupOverlayParent, transform);
 			var policiesPopup = GameObject.Instantiate(PoliciesPopupPrefab, popupParent.transform);
 			policiesPopup.Setup(loc, mgm);
 		}
 
 		public void OpenMissions()
 		{
-			var popupParent = GameObject.Instantiate(UiPrefabReferences.Instance.PopupOverlayParent);
+			var popupParent = GameObject.Instantiate(UiPrefabReferences.Instance.PopupOverlayParent, transform);
 			var missionsPopup = GameObject.Instantiate(MissionsPopupPrefab, popupParent.transform);
 			missionsPopup.Setup(loc);
 		}

@@ -32,7 +32,7 @@ public class MainMenuBindings : MonoBehaviour
 			return;
 
 		loadSaveMenu = GameObject.Instantiate(LoadSavePrefab, transform.parent);
-		loadSaveMenu.Setup(mgm, false, gameObject, null);
+		loadSaveMenu.Setup(mgm, false, gameObject, transform.parent.gameObject);
 	}
 
 	public void SettingsMenu()
