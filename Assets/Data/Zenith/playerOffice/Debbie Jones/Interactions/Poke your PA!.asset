@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Fuck the secretary
+  m_Name: Poke your PA!
   m_EditorClassIdentifier: 
-  Id: c00d3805-bcbc-4b90-9284-47a50810d62e
-  Name: Fuck the secretary
+  Id: abc32884-f293-4e7c-8465-fdd5658ce4d7
+  Name: Poke your PA!
   SubInteraction: 0
   AlertNew: 1
   Category: 6
@@ -24,14 +24,12 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
+    - OptionalNpcReference: {fileID: 0}
       Stat: 1
       Is: 0
       Value: 50
     RequiredInteractions: []
-    RequiredNotCompletedInteractions:
-    - {fileID: 11400000, guid: 16e864af53179b84e8698239ecae01d2, type: 2}
+    RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -53,14 +51,10 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: 'Well, Debbie-- I couldn''t help but notice how pretty you look today. 
-        Is my little secretary trying to ingratiate herself with her boss?  Is that
-        what you''re up to, young lady?  '
+      OptionalNpcReference: {fileID: 0}
+      Text: How would like you to score some points with the Boss, Debbie?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
         xPos: 0.52
         yPos: 0.42
@@ -68,13 +62,11 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: No, Sir!  I just always try to look my best for work!  I wasn't trying
-        to--
+      OptionalNpcReference: {fileID: 0}
+      Text: I'm your Personal Assistant, Mr. {LastName}.  My only job is to do what
+        you tell me to do.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
         xPos: 0.52
         yPos: 0.42
@@ -82,13 +74,11 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: I think we BOTH know what you're up to, Debbie.  Come on-- you know damn
-        well how sexy you can be.  Come over here-- now.
+      OptionalNpcReference: {fileID: 0}
+      Text: And I'm telling you to do what you're best at- spreading those lovely
+        legs of yours, Miss Debbie Jones!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
         xPos: 0.52
         yPos: 0.42
@@ -96,35 +86,32 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: Debbie submits with a pout.
+    - Title: Since her promotion to PA...
       Videos:
-      - {fileID: 32900000, guid: bda91d04c5e195b48ab20088a8a43f9b, type: 3}
-      - {fileID: 32900000, guid: 39c235bbb37feb6459589ec1288fd494, type: 3}
-      - {fileID: 32900000, guid: 33f3119cdd50a354bbaa8ee3a12d4620, type: 3}
-      - {fileID: 32900000, guid: 9bd207a2c09f8174090e5fec380d31bf, type: 3}
-      - {fileID: 32900000, guid: 6546fd726d30e4743981665aa3e96ee3, type: 3}
-      - {fileID: 32900000, guid: 6d84af48956e0dc44aa60c7a516ee32a, type: 3}
-      - {fileID: 32900000, guid: 53d439301349d71409b33995857465a9, type: 3}
-      - {fileID: 32900000, guid: 88fbfdcd2540ad04f940007a3c3f3438, type: 3}
-      - {fileID: 32900000, guid: c0aec848edaa2ed439237acbb9ae013e, type: 3}
-      - {fileID: 32900000, guid: a6b42b736052ffe46aa5339d8b45f9d3, type: 3}
-      - {fileID: 32900000, guid: d814fa92343301142934c7f5b8da957c, type: 3}
-      - {fileID: 32900000, guid: 6b506d4938ca53e41ace83f6306b421b, type: 3}
-      - {fileID: 32900000, guid: 7b7d1d408eebe594ea65bf2bc14e53c5, type: 3}
-      - {fileID: 32900000, guid: c28e6649582e90448a596d03d4a271ac, type: 3}
-      - {fileID: 32900000, guid: fdab4732f85bed1428a897c93be73e8d, type: 3}
-      - {fileID: 32900000, guid: 0b04363e3c0b5e3408dcc7174727a621, type: 3}
-      - {fileID: 32900000, guid: f9c297b3a7b85ca4d8ff5acfe91cf1e7, type: 3}
+      - {fileID: 32900000, guid: 1fe8bad18b54ffb47b54bf1f1b600e88, type: 3}
+      - {fileID: 32900000, guid: 957a5b484d97f384aa1669cf48a763d5, type: 3}
+      - {fileID: 32900000, guid: bbe69d8e84f25dd48a4b8ab1e04c360a, type: 3}
+      - {fileID: 32900000, guid: 1fae3210c433ceb408d0a3893a9106e3, type: 3}
+      - {fileID: 32900000, guid: e9d9ab10c52491c49b9804352fc5d164, type: 3}
+      - {fileID: 32900000, guid: 5be77b5f952d0d248a671d047c40e1a2, type: 3}
+      - {fileID: 32900000, guid: 384b4273e89bf6049b9b45dd468008a2, type: 3}
+      - {fileID: 32900000, guid: 384b4273e89bf6049b9b45dd468008a2, type: 3}
+      - {fileID: 32900000, guid: c2792a46d0eb43447aef63ddead38965, type: 3}
+      - {fileID: 32900000, guid: e64495641a7b83448844de3af941097b, type: 3}
+      - {fileID: 32900000, guid: f56b4bf946a4d1f44b3fbee49112383c, type: 3}
+      - {fileID: 32900000, guid: c17fccdff675670469c1978d311d28ce, type: 3}
+      - {fileID: 32900000, guid: 89059957bf465894893d889af08aabf4, type: 3}
+      - {fileID: 32900000, guid: bd8a8fd1790b0d44cb863480b12e3566, type: 3}
+      - {fileID: 32900000, guid: 1d3c86a4d284d8146bf7a0b29ad5370b, type: 3}
       Textures: []
       DialogClips: []
-      Text: Since her promotion to full Secretary, Debbie knows her ability to please
-        her boss is crucial to her secure employment.  She's a receptive, if not
-        particularly enthusiastic, sexual partner in the office.  Debbie gives just
-        as much as she needs to in order to keep her job.
+      Text: '...Debbie tries a lot harder to ''make your day better''.  You can tell
+        she''s really trying to make sure she gets you off, reminding you more of
+        an experienced whore than some prim an dproper office girl. '
     Choices: []
     Effect:
       NpcEffects: []
-      EgoEffect: 15
+      EgoEffect: 20
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
