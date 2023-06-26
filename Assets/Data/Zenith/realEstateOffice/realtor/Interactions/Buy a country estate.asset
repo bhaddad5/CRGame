@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 76cf6511-2273-4886-b7aa-be659fae6d6d
   Name: Buy a country estate
+  SubInteraction: 0
   AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 421bd410b09710d4b988f8ee9407b4e6, type: 2}
@@ -38,8 +41,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -56,6 +60,8 @@ MonoBehaviour:
         xPos: 0.65
         yPos: 0
         width: 680
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: cca5025e955bf9647992b7849a000067,
         type: 2}
@@ -69,12 +75,16 @@ MonoBehaviour:
         xPos: 0.65
         yPos: 0
         width: 680
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: It's a perfect complement to your city home.
       Videos:
       - {fileID: 32900000, guid: e7f9bcd97e7e64b4e810a26cc330b403, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: Now you can enjoy the serenity of the countryside in peace and quiet!
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 35
@@ -93,6 +103,7 @@ MonoBehaviour:
       TrophiesClaimedReferences:
       - {fileID: 11400000, guid: c61d36401c664c243ae3bd9acdcfdf12, type: 2}
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -101,11 +112,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 11400000, guid: f4b6c2fffb1ab3743ac190d5c780e3f6, type: 2}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -123,6 +136,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -131,5 +145,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1

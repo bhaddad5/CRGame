@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 3a1a1b52-65b6-40cd-a1bd-f774f5532d29
   Name: Move to Crown Boulevard
+  SubInteraction: 0
   AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 14977b0ef19fab54fb6f0a91ae9fb2f6, type: 2}
@@ -38,8 +41,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -55,6 +59,7 @@ MonoBehaviour:
         yPos: 0
         width: 680
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: cca5025e955bf9647992b7849a000067,
         type: 2}
@@ -67,6 +72,7 @@ MonoBehaviour:
         yPos: 0
         width: 680
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: cca5025e955bf9647992b7849a000067,
         type: 2}
@@ -80,13 +86,16 @@ MonoBehaviour:
         yPos: 0
         width: 680
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Gracious living on a new scale
       Videos:
       - {fileID: 32900000, guid: 881722947000d9049af98c3e3d7523c5, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: Crown Boulevard boasts large, leafy lots which surround big two and three
         story homes.  Pools and tennis courts grace most of the properties.
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 40
@@ -104,6 +113,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -112,11 +122,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 6
+    GoToRegion: {fileID: 11400000, guid: f4b6c2fffb1ab3743ac190d5c780e3f6, type: 2}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -134,6 +146,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -142,5 +155,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
