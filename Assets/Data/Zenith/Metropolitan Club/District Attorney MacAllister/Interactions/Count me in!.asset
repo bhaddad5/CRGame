@@ -10,32 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Debbie asks to be promoted to Personal Assistant
+  m_Name: Count me in!
   m_EditorClassIdentifier: 
-  Id: 478be45d-fc5d-4d16-8e27-3a8a71cff213
-  Name: Debbie asks to be promoted to Personal Assistant
+  Id: a8617ddd-4c79-4ced-8e04-c70661298672
+  Name: Count me in!
   SubInteraction: 0
   AlertNew: 1
-  Category: 0
+  Category: 3
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NotOnWeekends: 0
     NotOnWeekdays: 0
-    NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Stat: 0
-      Is: 2
-      Value: 30
-    RequiredInteractions:
-    - {fileID: 11400000, guid: fdd156e91cdf917449de7c2ef38a0659, type: 2}
-    - {fileID: 11400000, guid: 5c67caeb99d2a864a841160b3934ea37, type: 2}
-    - {fileID: 11400000, guid: 53ee37c1dfc1e3946801e5897e80aea5, type: 2}
-    - {fileID: 11400000, guid: c3081afea1a6bf549b85cb4038a9b501, type: 2}
-    RequiredNotCompletedInteractions:
-    - {fileID: 11400000, guid: 16e864af53179b84e8698239ecae01d2, type: 2}
+    NpcStatRequirements: []
+    RequiredInteractions: []
+    RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -44,40 +34,69 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 0
+    MoneyCost: 500000
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 1
-  Cooldown: 30
-  PreviewEffect: 1
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: Mr. {LastName}, I'd like to officially apply to become your Personal
-        Assistant.  I've been working to demonstrate that I'm more than just a pretty
-        face!  Sir, I'm the Girl Friday you need!  If you give me this promotion,
-        you won't regret it!
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: I'm writing a check right now!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: And I'm putting you on my official Steering Committee, {FirstName}! 
+        I'll remember those who came to me early-- you can bank on that!  After I
+        win, the door to the Governor's Mansion will always be open to friends like
+        you!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: 'NOTE: Debbie was right in urging you to make this donation.  For a half
+        million, you have every prospect of having a friend in very high places!
+
+        +7
+        DEBBIE AMBITION'
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
-    Choices:
-    - {fileID: 11400000, guid: 6dcb273530cb5974690283bc9b5b2742, type: 2}
-    - {fileID: 11400000, guid: 16e864af53179b84e8698239ecae01d2, type: 2}
+    Choices: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+          type: 2}
+        AmbitionEffect: 7
+        PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -102,7 +121,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
-    GoToRegion: {fileID: 0}
+    GoToRegion: {fileID: 11400000, guid: f4b6c2fffb1ab3743ac190d5c780e3f6, type: 2}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
