@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Yes, you've earned it
+  m_Name: Ditch the Business Tease look
   m_EditorClassIdentifier: 
-  Id: d348ca8a-d427-4567-9d16-e3b512ec4477
-  Name: Yes, you've earned it
-  SubInteraction: 1
+  Id: 106b1bbf-1f0d-4c61-80a4-5c6bb0efd9ba
+  Name: Ditch the Business Tease look
+  SubInteraction: 0
   AlertNew: 1
   Category: 0
   Requirements:
@@ -24,7 +24,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 9d545098eb617294e8d93dba56fa2ee5, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -47,73 +48,31 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: Very well.  Debbie Jones, I am promoting you to my Executive Personal
-        Assistant.
+      OptionalNpcReference: {fileID: 0}
+      Text: You know, I think I like the professional Debbie more than the office
+        slut Debbie.  You can lose the Business Tease clothes, which I'm sure make
+        syou happy.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: 'Thank you, Sir.  I...don''t think you know what this means to me.  I''ll
-        be the best Executive Personal Assistant the business world has ever seen.  '
+      OptionalNpcReference: {fileID: 0}
+      Text: 'Once again, my boss displays amazing judegment!  Thanks, Chief-- I''ll
+        be happy to get rid of that stuff!  '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: You damn well better be, Debbie.  But, yes-- I think you've finally risen
-        to the level of all that potential you've always had.  My goodness- from
-        sassy little office girl all the way to EPA.  Congratulations, Debbie.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: 'NOTE: The raise still takes her well under the salary of any Management
-        Trainee.  She''ll immediately be expected to project a more formal look and
-        will swap out her PA wardrobe for the more upscale Executive Personal Assistant
-        Collection.  You may also approve her to buy the Smart Casual or Business
-        Tease Collections at Vixxxens!'
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups:
-    - Title: You can tell she...
-      Videos:
-      - {fileID: 32900000, guid: 45f9cf6bcb894ef4199dafd484d0927c, type: 3}
-      Textures: []
-      DialogClips: []
-      Text: '...is stunned.  The proud smile reminds you of a certain Deborah Jones
-        who had once hoped to be a corporate director.   '
+    OptionalPopups: []
     Choices: []
     Effect:
       NpcEffects:
@@ -122,10 +81,9 @@ MonoBehaviour:
         AmbitionEffect: 0
         PrideEffect: 0
         RemoveCurrentImage: 0
-        ImageSetsToAdd:
-        - {fileID: 11400000, guid: aa871ba76d6fd9049a21922a4f68b78f, type: 2}
+        ImageSetsToAdd: []
         ImageSetsToRemove:
-        - {fileID: 11400000, guid: 9326677a27184074685912d4e40bc20f, type: 2}
+        - {fileID: 11400000, guid: 043f858645adbe8408c6df636009f60b, type: 2}
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
