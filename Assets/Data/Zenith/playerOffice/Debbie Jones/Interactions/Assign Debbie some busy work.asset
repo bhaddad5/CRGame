@@ -19,7 +19,7 @@ MonoBehaviour:
   Category: 4
   Requirements:
     RequiredPower: 0
-    RequiredPromotionLevel: 0
+    RequiredPromotionLevel: 3
     RequiredTurnNumber: 0
     NotOnWeekends: 0
     NotOnWeekdays: 0
@@ -44,7 +44,7 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 1
-  Cooldown: 3
+  Cooldown: 6
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -80,9 +80,9 @@ MonoBehaviour:
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
       Text: 'NOTE: Idle hands are the Devil''s workshop!  You ought to assign Debbie
-        some busy work.  It might be potentially useful, such as conducting checks
-        on your industry competitors or researching potential investment stocks for
-        you. '
+        some busy work and since you were promoted to Manager, you can do just that! 
+        It might be potentially useful, such as conducting checks on your industry
+        competitors or researching potential investment stocks for you. '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
         type: 3}
@@ -134,6 +134,9 @@ MonoBehaviour:
           type: 2}
         AmbitionEffect: -1
         PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 1
       FundsEffect: 0
       PowerEffect: 0

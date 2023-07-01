@@ -10,22 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Presentation Formatting
+  m_Name: Office cleaning reminder
   m_EditorClassIdentifier: 
-  Id: e0a5ef86-58dd-4703-9d14-f44110be19b2
-  Name: Presentation Formatting
+  Id: cfb12cf4-b474-45d9-b8ff-3752da0de7d8
+  Name: Office cleaning reminder
   SubInteraction: 0
   AlertNew: 1
   Category: 0
   Requirements:
     RequiredPower: 0
-    RequiredPromotionLevel: 3
+    RequiredPromotionLevel: 7
     RequiredTurnNumber: 0
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions:
-    - {fileID: 11400000, guid: c0146d90add6a5541ad3c093c37b93c5, type: 2}
+    RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -34,7 +33,7 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 3
+    EgoCost: 0
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -43,44 +42,40 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 1
-  Cooldown: 10
+  Cooldown: 30
   PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: 'I''ve been reviewing my presentation and I''ll admit-- I''m impressed
-        with what you''ve done with it.  Nice job, Debbie-- you''re going to make
-        me look fantastic when I present all this!  '
+      OptionalNpcReference: {fileID: 0}
+      Text: Debbie, you need to do a little cleaning around here.  I need my office
+        looking like a showroom.  Once I reached the VP level, you knew I'd be hosting
+        pretty imprtant meetings in my office.  But you'll need to tidy up before
+        I arrive so I'm not distracted.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: Because you've been promoted...
+    - Title: A thorough fortnightly...
       Videos:
-      - {fileID: 32900000, guid: 3c74f545538756b41b7b21e15f3f145c, type: 3}
-      Textures: []
-      DialogClips: []
-      Text: ...to Manager, having Debbie handle your report fomatting frees up your
-        far more valuable time.
-    - Title: Debbie gives you the thumbs up...
-      Videos:
-      - {fileID: 32900000, guid: 257bbe9098dbd0e4eb78dc19900645a2, type: 3}
+      - {fileID: 32900000, guid: 88a2db24a66fe2b4a9c842e598fe82d0, type: 3}
+      - {fileID: 32900000, guid: 4e23e4fcdbf4a3b4d947035db990c642, type: 3}
+      - {fileID: 32900000, guid: 5e60185264fb6f5409e4fa81c078a2f3, type: 3}
       Textures: []
       DialogClips:
-      - {fileID: 8300000, guid: f4a17606ed260ba4ea063adf125f93db, type: 3}
-      Text: ...and seems pleased to be contributing to something important for once!
+      - {fileID: 8300000, guid: ff041d6e483b97b46a2879646fdbeaf9, type: 3}
+      Text: '...cleaning by Debbie leaves your office spic and span.  You never think
+        to thank her, nor should you.  It''s part of her job description, isn''t
+        it?  '
     Choices: []
     Effect:
       NpcEffects: []
-      EgoEffect: 0
+      EgoEffect: 15
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -105,33 +100,11 @@ MonoBehaviour:
       Promotion: 0
       Home: 0
     GoToRegion: {fileID: 0}
-  CanFail: 1
-  ProbabilityOfFailureResult: 0.35
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
   FailureResult:
-    Dialogs:
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: I trust you to improve my presentations, not screw up the formatting! 
-        What do you have to say for yourself?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups:
-    - Title: Debbie's quite embarrassed.
-      Videos:
-      - {fileID: 32900000, guid: e2805077775f36d4f92a9f55e8a08d26, type: 3}
-      Textures: []
-      DialogClips:
-      - {fileID: 8300000, guid: 503709f9e3a0f064bba0f228bd39643d, type: 3}
-      Text: She's not used to making mistakes like this and of course she expects
-        the demerit you issue her!
+    Dialogs: []
+    OptionalPopups: []
     Choices: []
     Effect:
       NpcEffects: []
@@ -150,8 +123,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd:
-      - {fileID: 11400000, guid: 093941a12d8d2f7489166430d82653c4, type: 2}
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
