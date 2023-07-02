@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: f6c43a40-da46-4fa2-8757-8ab11a164f09
   Name: A lovely keepsake
+  SubInteraction: 0
   AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
@@ -38,8 +41,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -57,20 +61,32 @@ MonoBehaviour:
         yPos: 0.4
         width: 350
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Debbie seems torn between...
       Videos: []
       Textures:
       - {fileID: 2800000, guid: 0754c9916a3e9b8459f75048ef180720, type: 3}
-      Texture: {fileID: 2800000, guid: 0754c9916a3e9b8459f75048ef180720, type: 3}
+      DialogClips: []
       Text: ...politeness and resentment.  She'll never forget that she was, at one
         time, your office superior and not merely your secretary.
+    - Title: She can't refuse the gift...
+      Videos:
+      - {fileID: 32900000, guid: b6d4dc73fe86a964088418eaa9e6614b, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: ...but Debbie doesn't look forward to having to wear it, as you'll certainly
+        expect her to.
+    Choices: []
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
           type: 2}
         AmbitionEffect: -1
         PrideEffect: -1
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -86,6 +102,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -94,11 +111,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -116,6 +135,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -124,5 +144,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
