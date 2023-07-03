@@ -23,7 +23,11 @@ MonoBehaviour:
     RequiredTurnNumber: 0
     NotOnWeekends: 0
     NotOnWeekdays: 0
-    NpcStatRequirements: []
+    NpcStatRequirements:
+    - OptionalNpcReference: {fileID: 0}
+      Stat: 1
+      Is: 0
+      Value: 50
     RequiredInteractions:
     - {fileID: 11400000, guid: 5fe1a65ffa865c04bb046d5429ea8d38, type: 2}
     - {fileID: 11400000, guid: 6171254416d31474dab40bc04d224b35, type: 2}
@@ -243,6 +247,9 @@ MonoBehaviour:
           type: 2}
         AmbitionEffect: 0
         PrideEffect: -4
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 50
       FundsEffect: 0
       PowerEffect: 0
