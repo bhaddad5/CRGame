@@ -22,6 +22,7 @@ public class TrophyEntryBindings : MonoBehaviour
 		TrophyName.text = trophy.Name;
 	}
 
+	private GameObject popupParent;
 	public void ViewTrophyPopup()
 	{
 		var popup = new Popup()
@@ -31,7 +32,15 @@ public class TrophyEntryBindings : MonoBehaviour
 			Text = trophy.Description,
 		};
 
-		var popupParent = GameObject.Instantiate(UiPrefabReferences.Instance.PopupOverlayParent, transform);
+		popupParent = GameObject.Instantiate(UiPrefabReferences.Instance.PopupOverlayParent);
 		GameObject.Instantiate(UiPrefabReferences.Instance.GetPrefabByName("Popup Display"), popupParent.transform).GetComponent<PopupBindings>().Setup(popup, 0, mgm, null);
+	}
+
+	private void OnDestroy()
+	{
+		if (popupParent != null)
+		{
+			GameObject.Destroy(popupParent);
+		}
 	}
 }
