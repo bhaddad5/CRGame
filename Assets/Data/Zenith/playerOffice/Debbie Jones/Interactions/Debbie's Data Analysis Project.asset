@@ -43,7 +43,7 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 1
-  Cooldown: 5
+  Cooldown: 10
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -135,8 +135,11 @@ MonoBehaviour:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
           type: 2}
-        AmbitionEffect: 0
-        PrideEffect: 10
+        AmbitionEffect: 5
+        PrideEffect: 5
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
