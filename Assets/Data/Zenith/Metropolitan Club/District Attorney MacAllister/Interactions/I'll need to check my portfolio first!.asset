@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: How's the campaign going
+  m_Name: I'll need to check my portfolio first!
   m_EditorClassIdentifier: 
-  Id: 1c65a394-68fd-4ec2-bd98-13c2622e0205
-  Name: How's the campaign going?
-  SubInteraction: 0
+  Id: e6054a5f-7c9b-4478-a0b5-f2c73f7ed043
+  Name: I'll need to check my portfolio first!
+  SubInteraction: 1
   AlertNew: 1
   Category: 3
   Requirements:
@@ -24,10 +24,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions:
-    - {fileID: 11400000, guid: 4527e88b77a0d904c9ff97d182029e24, type: 2}
-    RequiredNotCompletedInteractions:
-    - {fileID: 11400000, guid: 4ab5487789d2c66419174bdb0ea7dfce, type: 2}
+    RequiredInteractions: []
+    RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -35,7 +33,7 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 100
+    EgoCost: 0
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -48,24 +46,12 @@ MonoBehaviour:
   PreviewEffect: 1
   Result:
     Dialogs:
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: '{FirstName}!  How''s my boy?  We don''t see you here enough these days! 
-        Traveling much?'
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: More than I like, DA!  But never mind that.  How's the campaign going? 
-        As soon as I heard you were running, I made it a point to drop by!  Why didn't
-        you tell me you were running?  You're the perfect candidate to be our next
-        Governor!
+      Text: Of course, you're exactly the kind of leader our state so desperately
+        needs!  But I'll need to see how my portfolio is doing before I make that
+        kind of commitment.  I wouldn't want to write you a check that bounced--
+        then you'd have to arrest me!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -76,32 +62,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Ha!  Kind of you to say so!  I was planning on approaching you but I
-        wanted to get myself up into the polls before I hit the deep pockets in town. 
-        It's going to be a tough race... but with enough cash, I see a clear path!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: Never mind waiting!  We need to goose your poll numbers right now!  What
-        kind of money are you looking for at this stage, DA?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: About $500,000.  It's a big ask, I know!
+      Text: '{FirstName}, if and when you''re able to support me, you know I ALWAYS
+        remember who my friends are!'
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -111,9 +73,7 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
-    Choices:
-    - {fileID: 11400000, guid: 4ab5487789d2c66419174bdb0ea7dfce, type: 2}
-    - {fileID: 11400000, guid: b431f55899b55404aa12ba066c5cc0c6, type: 2}
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
