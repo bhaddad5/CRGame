@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: a8617ddd-4c79-4ced-8e04-c70661298672
   Name: Count me in!
-  SubInteraction: 0
+  SubInteraction: 1
   AlertNew: 1
   Category: 3
   Requirements:
@@ -47,46 +47,58 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 011424d9b1f7ff148b7ac7aa8d0483ee,
+        type: 2}
       Text: I'm writing a check right now!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 61d5c60fc2d8d2743bf89ac2ee391663,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.4
+        width: 375
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 011424d9b1f7ff148b7ac7aa8d0483ee,
+        type: 2}
       Text: And I'm putting you on my official Steering Committee, {FirstName}! 
         I'll remember those who came to me early-- you can bank on that!  After I
         win, the door to the Governor's Mansion will always be open to friends like
         you!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 61d5c60fc2d8d2743bf89ac2ee391663,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.4
+        width: 375
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 011424d9b1f7ff148b7ac7aa8d0483ee,
+        type: 2}
       Text: 'NOTE: Debbie was right in urging you to make this donation.  For a half
         million, you have every prospect of having a friend in very high places!
 
         +7
         DEBBIE AMBITION'
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 61d5c60fc2d8d2743bf89ac2ee391663,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.4
+        width: 375
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups: []
+    OptionalPopups:
+    - Title: Who knew...
+      Videos:
+      - {fileID: 32900000, guid: c97c7b061ec482849a36aeae017e658f, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: ...Debbie had such savvy political instincts?
     Choices: []
     Effect:
       NpcEffects:
