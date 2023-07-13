@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Snap Weigh-in!
+  m_Name: Monthly Assigned Weight Check
   m_EditorClassIdentifier: 
-  Id: 4591b4b9-6b0c-466e-bef3-6bd66a13776d
-  Name: Snap Monthly Weigh-in!
+  Id: ce4f16a4-b80d-4fc7-99d7-10b4d122fab7
+  Name: Monthly Assigned Weight Check
   SubInteraction: 0
   AlertNew: 1
   Category: 2
@@ -62,18 +62,22 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: Good girl!
+    - Title: Oh no!
       Videos:
-      - {fileID: 32900000, guid: ce4a329c4d97bda4a9aa8feec1b79546, type: 3}
+      - {fileID: 32900000, guid: 6b9f9aba26b6fe14fa1c3d7b21ca1e4b, type: 3}
       Textures: []
       DialogClips:
-      - {fileID: 8300000, guid: 572a4d507adee4d40b9b5f3c8d37679b, type: 3}
-      Text: 'I like that you''re keeping yourself fit for me!  Keep up the good work,
-        Debbie!  '
+      - {fileID: 8300000, guid: e444974f2c8f3d047ac8b6c426576737, type: 3}
+      Text: '...to lay off the dessert, Debbie!  Failing weight check gets you a
+        well deserved demerit, young lady!  Perhaps you need to hit the gym-- either
+        that or I''ll be interviewing more fit girls for your job!   +1 DEMERIT
+
+        NOTE:
+        Hardbodies Gym has a fitness program you might want to check out...'
     Choices: []
     Effect:
       NpcEffects: []
-      EgoEffect: 3
+      EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -88,7 +92,8 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd: []
+      ItemsToAdd:
+      - {fileID: 11400000, guid: 093941a12d8d2f7489166430d82653c4, type: 2}
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -116,30 +121,19 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: Oh no!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: Oh dear!  Looks like you need...
+    - Title: Right under your Assigned Weight!
       Videos:
-      - {fileID: 32900000, guid: 6b9f9aba26b6fe14fa1c3d7b21ca1e4b, type: 3}
+      - {fileID: 32900000, guid: ce4a329c4d97bda4a9aa8feec1b79546, type: 3}
       Textures: []
       DialogClips:
-      - {fileID: 8300000, guid: e444974f2c8f3d047ac8b6c426576737, type: 3}
-      Text: ...to lay off the dessert, Debbie!  Failing weight check is a TWO DEMERIT
-        infraction, young lady!
+      - {fileID: 8300000, guid: 572a4d507adee4d40b9b5f3c8d37679b, type: 3}
+      Text: 'I like that you''re keeping yourself fit for me!  Keep up the good work,
+        Debbie!  '
     Choices: []
     Effect:
       NpcEffects: []
-      EgoEffect: 0
+      EgoEffect: 3
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -154,9 +148,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd:
-      - {fileID: 11400000, guid: 093941a12d8d2f7489166430d82653c4, type: 2}
-      - {fileID: 11400000, guid: 093941a12d8d2f7489166430d82653c4, type: 2}
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0

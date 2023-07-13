@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Snap Weigh-in!
+  m_Name: Pass on the AW Training for now
   m_EditorClassIdentifier: 
-  Id: 4591b4b9-6b0c-466e-bef3-6bd66a13776d
-  Name: Snap Monthly Weigh-in!
-  SubInteraction: 0
+  Id: 6adda659-8c0e-458e-9201-0933ec8b9865
+  Name: Pass on the AW Training for now
+  SubInteraction: 1
   AlertNew: 1
-  Category: 2
+  Category: 5
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -24,8 +24,7 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions:
-    - {fileID: 11400000, guid: a96f94afd236f1f4f8ab03051d579502, type: 2}
+    RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -43,16 +42,15 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 1
-  Cooldown: 60
+  Cooldown: 14
   PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Time for a snap weight check, Debbie.  Let's see-- your assigned weight
-        goal is 120 pounds- your high school graduation weight.  And we both know
-        how important your appearance is to your career prospects here.  Go on--
-        let's see how you're doing.
+      Text: 'I like the program-- it looks very challenging!  But I''ve got a lot
+        of projects coming up and I''m not sure Debbie will have the time to commit
+        to this kind of training.  We''ll take a pass on this-- for now.  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -61,19 +59,25 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups:
-    - Title: Good girl!
-      Videos:
-      - {fileID: 32900000, guid: ce4a329c4d97bda4a9aa8feec1b79546, type: 3}
-      Textures: []
-      DialogClips:
-      - {fileID: 8300000, guid: 572a4d507adee4d40b9b5f3c8d37679b, type: 3}
-      Text: 'I like that you''re keeping yourself fit for me!  Keep up the good work,
-        Debbie!  '
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: f4719d35d414f7449a4a8fa6aa3b3421,
+        type: 2}
+      Text: Of course-- some men like a little extra bounce in their office girls. 
+        But when you're ready to get her back to trim  and toned up for you, we can
+        sign her up in a heartbeat!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups: []
     Choices: []
     Effect:
       NpcEffects: []
-      EgoEffect: 3
+      EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -98,44 +102,11 @@ MonoBehaviour:
       Promotion: 0
       Home: 0
     GoToRegion: {fileID: 0}
-  CanFail: 1
-  ProbabilityOfFailureResult: 0.2
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
   FailureResult:
-    Dialogs:
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: Time for a snap weight check, Debbie.  Let's see-- your assigned weight
-        goal is 120 pounds- your high school graduation weight.  And we both know
-        how important your appearance is to your career prospects here.  Go on--
-        let's see how you're doing.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: Oh no!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups:
-    - Title: Oh dear!  Looks like you need...
-      Videos:
-      - {fileID: 32900000, guid: 6b9f9aba26b6fe14fa1c3d7b21ca1e4b, type: 3}
-      Textures: []
-      DialogClips:
-      - {fileID: 8300000, guid: e444974f2c8f3d047ac8b6c426576737, type: 3}
-      Text: ...to lay off the dessert, Debbie!  Failing weight check is a TWO DEMERIT
-        infraction, young lady!
+    Dialogs: []
+    OptionalPopups: []
     Choices: []
     Effect:
       NpcEffects: []
@@ -154,9 +125,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences: []
       MissionsToComplete: []
-      ItemsToAdd:
-      - {fileID: 11400000, guid: 093941a12d8d2f7489166430d82653c4, type: 2}
-      - {fileID: 11400000, guid: 093941a12d8d2f7489166430d82653c4, type: 2}
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
