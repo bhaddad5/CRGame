@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Squeeze the Secretary
+  m_Name: Is your gym offering a new program
   m_EditorClassIdentifier: 
-  Id: 2312b841-04f1-4702-aeaa-4d82296a05d3
-  Name: Squeeze the Secretary
+  Id: 454642a0-aa91-4ba7-87a0-ff68a1707170
+  Name: Is your gym offering a new program?
   SubInteraction: 0
   AlertNew: 1
   Category: 6
@@ -25,9 +25,9 @@ MonoBehaviour:
     NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 5f2e801b426873545957dff2ac044f77, type: 2}
+    - {fileID: 11400000, guid: a40280d66eacf23468e4894a012cd1ef, type: 2}
     RequiredNotCompletedInteractions:
-    - {fileID: 11400000, guid: 16e864af53179b84e8698239ecae01d2, type: 2}
+    - {fileID: 11400000, guid: b42f69e2b275f0b469105b423d22f669, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -44,31 +44,16 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 1
-  Cooldown: 12
+  Cooldown: 10
   PreviewEffect: 1
   Result:
     Dialogs:
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: Mr. {LastName}- what are you doing?  Please, stop it!  This is a place
-        of business and we have a lot to do!  Can't you please stop?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: Debbie, if you're going to dress like that, you don't have anyone to
-        blame but yourself!  Of course you want my hands on you!
+      OptionalNpcReference: {fileID: 0}
+      Text: I saw a billboard for that gym of yours while I was driving.  It was
+        promoting some new bikini workout program.  Did you know about it?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+      CustomBackground: {fileID: 2800000, guid: 5143e3ce9e33973479a1d001c5e1c665,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.52
@@ -77,26 +62,29 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: But I really don't!  This isn't fair!  If I were an executive, you'd
-        never dare--
+      OptionalNpcReference: {fileID: 0}
+      Text: Oh, I think I saw a poster or something.  It didn't look like anything
+        I'd be interested in, though, so I didn't ask for any details.  Would you
+        like to review your travel itenerary for the rest of this month, Mr. {LastName}?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+      CustomBackground: {fileID: 2800000, guid: 5143e3ce9e33973479a1d001c5e1c665,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.52
         yPos: 0.42
         width: 375
-      OptionalAudioClip: {fileID: 8300000, guid: 7862a16b53d7e0c4189b5ad81a919de0,
+      OptionalAudioClip: {fileID: 8300000, guid: 8829b36e951a6e34283b6330cd5a6e90,
         type: 3}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: If you keep giving me lip, you're going to earn yourself a demerit, Debbie!
+      OptionalNpcReference: {fileID: 0}
+      Text: Not so fast.  Perhaps I'm interested in it for you.  You don't have any
+        of those microkinis, do you?  I think if you worked out, you'd be able to
+        pull it off.  Tell you what- you sign up for the program and I'll buy you
+        a whole slew of those-- what do they call them?-- oh, yes, slutkinis!  How
+        does that sound?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+      CustomBackground: {fileID: 2800000, guid: 5143e3ce9e33973479a1d001c5e1c665,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.52
@@ -104,24 +92,28 @@ MonoBehaviour:
         width: 375
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups:
-    - Title: Debbie shuts her mouth and...
-      Videos:
-      - {fileID: 32900000, guid: 7793f8447cfcf8c468359a1a0f44fe01, type: 3}
-      - {fileID: 32900000, guid: a9f44f0592d07f544816cc7fca269bcb, type: 3}
-      - {fileID: 32900000, guid: aa1b7cf726922e54789e08eb400b7b4f, type: 3}
-      - {fileID: 32900000, guid: bdcabcb907f103747af322ffed2c87dc, type: 3}
-      - {fileID: 32900000, guid: 250194dab18fc154284d59b671a475e7, type: 3}
-      - {fileID: 32900000, guid: 96484e1b92c2c8447835d8ec954127e3, type: 3}
-      - {fileID: 32900000, guid: cf030251d74247a4fa49e7d42812ed71, type: 3}
-      Textures: []
-      DialogClips: []
-      Text: ...stops struggling... reluctantly.  You can tell she HATES having her
-        personal space invaded any time you like!
-    Choices: []
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: Thank you, but no, Mr. {LastName}.  The idea of wearing one of those
+        things out in public-- uh, just no, ok?  But thanks for the offer.  Anyway,
+        it costs $2,000 and I don't have that kind of money, anyway.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 5143e3ce9e33973479a1d001c5e1c665,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 8300000, guid: defe50a4987ec7d4189a21a7011ad6b5,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups: []
+    Choices:
+    - {fileID: 11400000, guid: adc4347b5b2539d44b3c1b276472ff43, type: 2}
+    - {fileID: 11400000, guid: b42f69e2b275f0b469105b423d22f669, type: 2}
     Effect:
       NpcEffects: []
-      EgoEffect: 5
+      EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0

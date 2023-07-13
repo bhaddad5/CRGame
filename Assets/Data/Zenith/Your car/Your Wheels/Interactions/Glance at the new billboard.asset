@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Take your luxury car up the coast
+  m_Name: Glance at the new billboard
   m_EditorClassIdentifier: 
-  Id: 6d68c94c-ab15-4057-87d6-a4cb731a325e
-  Name: Take your luxury car up the coast
-  SubInteraction: 0
+  Id: 7717bbaf-2538-4790-87dd-00e38a3bf7a5
+  Name: Glance at the new billboard
+  SubInteraction: 1
   AlertNew: 1
   Category: 6
   Requirements:
@@ -25,7 +25,7 @@ MonoBehaviour:
     NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 8d3b21342de7f664db56bd2b6976a7d4, type: 2}
+    - {fileID: 11400000, guid: f7f3d26236906474d8626e4983af61ff, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -42,37 +42,23 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 1
+  Repeatable: 0
   Cooldown: 0
-  PreviewEffect: 1
+  PreviewEffect: 0
   Result:
-    Dialogs:
-    - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 11400000, guid: a5ea08aee4597534aa7704645f697029,
-        type: 2}
-      Text: You are soaring up the coast in extreme style and comfort!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: fac35367bc2f7a342b4efa1f81a304cf,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.5
-        width: 200
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
+    Dialogs: []
     OptionalPopups:
-    - Title: Nothing substitutes for the experience of...
-      Videos:
-      - {fileID: 32900000, guid: 9593c950762c21045ac2d77b2a14d59b, type: 3}
-      Textures: []
-      DialogClips: []
-      Text: ...pure acceleration as your pulsing prestige vehicle speeds you in parallel
-        to the ocean!
-    Choices:
-    - {fileID: 11400000, guid: a40280d66eacf23468e4894a012cd1ef, type: 2}
+    - Title: Why didn't Debbie...
+      Videos: []
+      Textures:
+      - {fileID: 2800000, guid: a9066cf27a6586b4ead54ca413591d7d, type: 3}
+      DialogClips:
+      - {fileID: 8300000, guid: 345d88bb2ce802945a08b568e51ba5a0, type: 3}
+      Text: ...mention her gym offered this?  It seems like a great idea!
+    Choices: []
     Effect:
       NpcEffects: []
-      EgoEffect: 10
+      EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -96,7 +82,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
-    GoToRegion: {fileID: 11400000, guid: f4b6c2fffb1ab3743ac190d5c780e3f6, type: 2}
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
