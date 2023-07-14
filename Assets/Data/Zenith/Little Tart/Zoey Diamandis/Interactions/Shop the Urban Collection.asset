@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Shop the Grunge Collection
+  m_Name: Shop the Urban Collection
   m_EditorClassIdentifier: 
-  Id: 676fcf6d-96e9-4eaf-8c0a-2aee131b7ac8
-  Name: Shop the Grunge Collection
+  Id: b8850be2-f2d4-4024-8173-f22717d7e8b4
+  Name: Shop the Urban Collection
   SubInteraction: 0
   AlertNew: 1
   Category: 6
@@ -27,7 +27,7 @@ MonoBehaviour:
     RequiredInteractions:
     - {fileID: 11400000, guid: 5f2e801b426873545957dff2ac044f77, type: 2}
     RequiredNotCompletedInteractions:
-    - {fileID: 11400000, guid: 4f52e0d79d7a4bf4fac8ccf94506e6e5, type: 2}
+    - {fileID: 11400000, guid: 6ca6b6de70a2cf3419f8ea87c8e11496, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -43,15 +43,14 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 1
-  Cooldown: 8
-  PreviewEffect: 1
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
   Result:
     Dialogs:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: The Grunge look is classic.  I mean if your dress code is cool with with
-        it, I can have her model soem grunge stuff for you.
+      Text: This collection has just arrived- the latest in Urban fashions!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -62,7 +61,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: That sounds great!  Let's see what you have!
+      Text: Let's have a look!  What do you think, Debbie?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -74,69 +73,67 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: But I HATE that kind of music!
+      Text: I... suppose there's no harm in just trying on a few things.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
         xPos: 0
         yPos: 0
         width: 0
-      OptionalAudioClip: {fileID: 8300000, guid: 9d671c8cd02da734582b97a037019b7e,
-        type: 3}
+      OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: It's not MY kind of thing, but if you're into it and she's into it--
+      Text: It is definitely a different look for her!
       CustomNpcImageOptions:
-      - {fileID: 2800000, guid: e3d49edd1f5ffa34095d0e60e630c978, type: 3}
+      - {fileID: 2800000, guid: f3470c58eac9ca24f84504c520ffafb7, type: 3}
       CustomBackground: {fileID: 2800000, guid: 788f2f3e2fc9efd4a9e113062ed83cef,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.65
         yPos: 0.3
         width: 450
-      OptionalAudioClip: {fileID: 8300000, guid: 91344f1c65176ef4098ea9eac999257c,
+      OptionalAudioClip: {fileID: 8300000, guid: 893d9f5164284bd429e766d5cc5b90ac,
         type: 3}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: It's a really edgy look, but your secretary seems to be able to pull
-        it off!
+      Text: It is definitely a different look for her!
       CustomNpcImageOptions:
-      - {fileID: 2800000, guid: a1ca97861b3bf154a9b4df246f7eabe1, type: 3}
+      - {fileID: 2800000, guid: 33f2262839c7ffb4eb62818f1b4c4f66, type: 3}
       CustomBackground: {fileID: 2800000, guid: 788f2f3e2fc9efd4a9e113062ed83cef,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.65
         yPos: 0.3
         width: 450
-      OptionalAudioClip: {fileID: 8300000, guid: 1f6f3a166a7b0f34e8bd1d5974a33770,
+      OptionalAudioClip: {fileID: 8300000, guid: 628e8a70a3b5fe64aa788530c59d7a60,
         type: 3}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: I think sh loks great in Grunge- really gritty!  The Grunge Collection
-        consists of nine separate outfits and costs $5,000 USD.  If you purchase
-        it, Miss Jones will wear them in rotation with her other approved wardrobe. 
-        Sorry- we don't have a refund policy.
+      Text: I thought this might appeal to you.  I mean, you ARE her boss, right? 
+        The Urban Collection consists of thirteen separate outfits and costs $10,000
+        USD.  If you purchase it, Miss Jones will wear them in rotation with her
+        other approved wardrobe.  Sorry- we don't have a refund policy.
       CustomNpcImageOptions:
-      - {fileID: 2800000, guid: dd6c82697e0c19b46a6427dff275734e, type: 3}
+      - {fileID: 2800000, guid: c8fb5f36199fc35429c20adb06204b1b, type: 3}
       CustomBackground: {fileID: 2800000, guid: 788f2f3e2fc9efd4a9e113062ed83cef,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.65
         yPos: 0.3
         width: 450
-      OptionalAudioClip: {fileID: 8300000, guid: 3de270c6b01c47546b49aba8ec6c3f72,
+      OptionalAudioClip: {fileID: 8300000, guid: 71858f76aab6acc42993d7bf22d8e906,
         type: 3}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
     Choices:
-    - {fileID: 11400000, guid: ee88cc2832d5f6748a71460310eec3e9, type: 2}
-    - {fileID: 11400000, guid: 4f52e0d79d7a4bf4fac8ccf94506e6e5, type: 2}
+    - {fileID: 11400000, guid: 6ca6b6de70a2cf3419f8ea87c8e11496, type: 2}
+    - {fileID: 11400000, guid: 79c498ef7ffc5844d94da9d6718dbd74, type: 2}
     Effect:
       NpcEffects: []
       EgoEffect: 0

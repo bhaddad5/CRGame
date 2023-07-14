@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Shop the Flamboyant Collection
+  m_Name: Debbie does Urban
   m_EditorClassIdentifier: 
-  Id: 20c82081-e408-4117-af75-43d9c751bdec
-  Name: Shop the Flamboyant Collection
-  SubInteraction: 0
+  Id: c02908bf-be79-49d1-baf2-ecaf8c58ea18
+  Name: Debbie does Urban
+  SubInteraction: 1
   AlertNew: 1
   Category: 6
   Requirements:
@@ -24,10 +24,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions:
-    - {fileID: 11400000, guid: 5f2e801b426873545957dff2ac044f77, type: 2}
-    RequiredNotCompletedInteractions:
-    - {fileID: 11400000, guid: a92dc986923fc724ba016a07b4627406, type: 2}
+    RequiredInteractions: []
+    RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -35,24 +33,22 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 0
-    MoneyCost: 0
+    EgoCost: 100
+    MoneyCost: 10000
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 1
-  Cooldown: 8
-  PreviewEffect: 1
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
   Result:
     Dialogs:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: 'My secretary can be such the little wallflower.  I really think she
-        needs a nudge for a more dramatic look.  What are college girls looking to
-        make a splash wear these days? '
+      Text: You're great at sales- we'll take it!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -64,20 +60,20 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: But, Mr. {LastName}- who cares what college girls are wearing?
+      Text: You take it!  I want nothing to do with these clothes!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
         xPos: 0
         yPos: 0
         width: 0
-      OptionalAudioClip: {fileID: 8300000, guid: 484aa53922d686440b5138a17e885dcd,
+      OptionalAudioClip: {fileID: 8300000, guid: 0cf205aefac83d84b9d0627666081a3c,
         type: 3}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 3eb9bdf0b0e405c4fa1f5a901abc156d,
         type: 2}
-      Text: Come on, lady- don't be noodge!  You'll love the Flamboyant Collection!
+      Text: These clothes are the latest thing!  Trust me- you'll kill in these outfits!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -86,61 +82,18 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: Damn, girl, you'll have every eye in the office on you in this little
-        number!
-      CustomNpcImageOptions:
-      - {fileID: 2800000, guid: dc87c0f61d126b54fa80f80a5cef66cb, type: 3}
-      CustomBackground: {fileID: 2800000, guid: 788f2f3e2fc9efd4a9e113062ed83cef,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.65
-        yPos: 0.3
-        width: 450
-      OptionalAudioClip: {fileID: 8300000, guid: c2968c2097eb6914fb345ac66d8887f8,
-        type: 3}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: How cute is this, right?
-      CustomNpcImageOptions:
-      - {fileID: 2800000, guid: cccb3f2f3fb307a4cb7f045674289f41, type: 3}
-      CustomBackground: {fileID: 2800000, guid: 788f2f3e2fc9efd4a9e113062ed83cef,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.65
-        yPos: 0.3
-        width: 450
-      OptionalAudioClip: {fileID: 8300000, guid: 24172a43632d0b54aa56f2e93284e97a,
-        type: 3}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: This might be a little over the top, but still... The Flamboyant Collection
-        consists of twenty-four separate outfits and costs $10,000 USD.  If you purchase
-        it, Miss Jones will wear them in rotation with her other approved wardrobe. 
-        Sorry- we don't have a refund policy.
-      CustomNpcImageOptions:
-      - {fileID: 2800000, guid: 30494ee650279134588cc138d22a044f, type: 3}
-      CustomBackground: {fileID: 2800000, guid: 788f2f3e2fc9efd4a9e113062ed83cef,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.65
-        yPos: 0.3
-        width: 450
-      OptionalAudioClip: {fileID: 8300000, guid: 9d22264f900a7844d9c1adbd165c2aa7,
-        type: 3}
-      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
-    Choices:
-    - {fileID: 11400000, guid: 22a134bae753b094b926362876f848a0, type: 2}
-    - {fileID: 11400000, guid: a92dc986923fc724ba016a07b4627406, type: 2}
+    Choices: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+          type: 2}
+        AmbitionEffect: 0
+        PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd:
+        - {fileID: 11400000, guid: 9ff712f3fc203fd49ad0a7574ee176bc, type: 2}
+        ImageSetsToRemove: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
