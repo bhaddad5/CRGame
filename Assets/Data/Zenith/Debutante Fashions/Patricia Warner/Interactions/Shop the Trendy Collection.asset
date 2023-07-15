@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Shop the Boho Collection
+  m_Name: Shop the Trendy Collection
   m_EditorClassIdentifier: 
-  Id: 7e2e7852-e904-4eeb-a6b2-3386f2293064
-  Name: Shop the Boho Collection
+  Id: 005bfd05-aead-4c7b-a685-f5adca7144d2
+  Name: Shop the Trendy Collection
   SubInteraction: 0
   AlertNew: 1
   Category: 6
@@ -27,7 +27,7 @@ MonoBehaviour:
     RequiredInteractions:
     - {fileID: 11400000, guid: 5f2e801b426873545957dff2ac044f77, type: 2}
     RequiredNotCompletedInteractions:
-    - {fileID: 11400000, guid: 4453c450c77bc044e9aeaebd5b3572da, type: 2}
+    - {fileID: 11400000, guid: 90aa2173570a40944802705e2c143708, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -43,28 +43,40 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 1
-  Cooldown: 8
-  PreviewEffect: 1
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: 'Do you have something that might be a bit looser, natural fabrics, less
-        formal? '
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: She may deny it, but I think my secretary is a little clothes horse.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: Sounds like a secretary is looking to let her hair down a bit!
+      Text: That's not true!  I'm only conforming to the Corporate Dress Code, Mr.
+        {LastName}!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 8300000, guid: ea13f4b63e3ce524b82279e1f312017b,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 17540fb751858a641bcd13012a0c8303,
+        type: 2}
+      Text: In that case, let's have her try on some selections from our Trendy Collection!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -76,71 +88,58 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 17540fb751858a641bcd13012a0c8303,
         type: 2}
-      Text: 'Let''s look at something in Boho, my dear!  Boho style-- free-spirited
-        aesthetic mixing different cultures and artistic expressions into an eclectic
-        style with an emphasis on organic elements and nature-- might be just the
-        thing you''re looking for!  Follow me!. '
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 17540fb751858a641bcd13012a0c8303,
-        type: 2}
-      Text: Not your usual look, but like a flower, it adorns any office it is worn
-        in!
+      Text: Our Trendy Collection represents the latest in fashions from all over
+        the globe!  The latest patterns, materials and shapes all for office girls
+        looking to get noticed!
       CustomNpcImageOptions:
-      - {fileID: 2800000, guid: a20ffac0e58d49d49bb6d21bb9351111, type: 3}
+      - {fileID: 2800000, guid: a7dc0eb7d09e7c742ac15710db98aa06, type: 3}
       CustomBackground: {fileID: 2800000, guid: b31cc1384f326824ba3428118f3d4869,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
         width: 450
-      OptionalAudioClip: {fileID: 8300000, guid: b1566b364b1c99a4e9562ca29dad7d2e,
+      OptionalAudioClip: {fileID: 8300000, guid: ec3de924ded239844aa6f4c2caabaace,
         type: 3}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 17540fb751858a641bcd13012a0c8303,
         type: 2}
-      Text: This is a hot look in Hollywood right now!
+      Text: Your secretary would look au courant in some of these outfits- a real
+        fashion templte for the rest of the secretarial pool!
       CustomNpcImageOptions:
-      - {fileID: 2800000, guid: 9be7bfbf9f8c0fb4e853334a4c54f9cc, type: 3}
+      - {fileID: 2800000, guid: 51cfb94ef93d5204888aa0ede77186d1, type: 3}
       CustomBackground: {fileID: 2800000, guid: b31cc1384f326824ba3428118f3d4869,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
         width: 450
-      OptionalAudioClip: {fileID: 8300000, guid: 3efa403f6427b844f950aeae8b2f7fa9,
+      OptionalAudioClip: {fileID: 8300000, guid: 877cd1cfc135e3c4fad31270dbffba8c,
         type: 3}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 17540fb751858a641bcd13012a0c8303,
         type: 2}
-      Text: Exprssive and feminine!  The Boho Collection consists of thirteen separate
-        outfits and costs $10,000 USD.  If you purchase it, your Miss Jones will
-        wear them in rotation with her other approved wardrobe.  Sorry- we don't
-        have a refund policy.
+      Text: She'd be a real trendsetter in these outfits!  The Trendy Collection
+        consists of eighteen separate outfits and costs $10,000 USD.  If you purchase
+        it, your Miss Jones will wear them in rotation with her other approved wardrobe. 
+        Sorry- we don't have a refund policy.
       CustomNpcImageOptions:
-      - {fileID: 2800000, guid: 657301b6ea086944c8275b9e698da1e4, type: 3}
+      - {fileID: 2800000, guid: 0dc4dd113a146ef4a9c7c1da009753f8, type: 3}
       CustomBackground: {fileID: 2800000, guid: b31cc1384f326824ba3428118f3d4869,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
         width: 450
-      OptionalAudioClip: {fileID: 8300000, guid: d817244d70cd8d5428375121fed642f7,
+      OptionalAudioClip: {fileID: 8300000, guid: 6d3e49a323ed44343b394f92d2cd8945,
         type: 3}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
     Choices:
-    - {fileID: 11400000, guid: 4453c450c77bc044e9aeaebd5b3572da, type: 2}
-    - {fileID: 11400000, guid: 944322729ac9ba74e89f50fabb158e5a, type: 2}
+    - {fileID: 11400000, guid: 90aa2173570a40944802705e2c143708, type: 2}
+    - {fileID: 11400000, guid: 3db94b5b4dff1b0458ec72816c1c3a85, type: 2}
     Effect:
       NpcEffects: []
       EgoEffect: 0

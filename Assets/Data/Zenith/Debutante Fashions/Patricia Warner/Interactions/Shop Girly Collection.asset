@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Shop the Boho Collection
+  m_Name: Shop Girly Collection
   m_EditorClassIdentifier: 
-  Id: 7e2e7852-e904-4eeb-a6b2-3386f2293064
-  Name: Shop the Boho Collection
+  Id: 7cff3abe-aabb-437b-9e66-d5c1932c69de
+  Name: Shop Girly Collection
   SubInteraction: 0
   AlertNew: 1
   Category: 6
@@ -27,7 +27,7 @@ MonoBehaviour:
     RequiredInteractions:
     - {fileID: 11400000, guid: 5f2e801b426873545957dff2ac044f77, type: 2}
     RequiredNotCompletedInteractions:
-    - {fileID: 11400000, guid: 4453c450c77bc044e9aeaebd5b3572da, type: 2}
+    - {fileID: 11400000, guid: c73526bcb2a85f1488b704f10c5c3ebe, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -48,99 +48,96 @@ MonoBehaviour:
   PreviewEffect: 1
   Result:
     Dialogs:
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: 'Do you have something that might be a bit looser, natural fabrics, less
-        formal? '
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: My secretary prides herself on her professionialism but it would be nice
+        to see her exhibit a friendlier side.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: Then our Girly Collection would be ideal!  It focuses highly on pink
+        and pastels, as well as a frilly and cute look.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: Sounds like a secretary is looking to let her hair down a bit!
+      Text: Look, that sounds a bit silly to me!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
         xPos: 0
         yPos: 0
         width: 0
-      OptionalAudioClip: {fileID: 0}
+      OptionalAudioClip: {fileID: 8300000, guid: dc8975cd14cb8ed41a397449d371d228,
+        type: 3}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 17540fb751858a641bcd13012a0c8303,
         type: 2}
-      Text: 'Let''s look at something in Boho, my dear!  Boho style-- free-spirited
-        aesthetic mixing different cultures and artistic expressions into an eclectic
-        style with an emphasis on organic elements and nature-- might be just the
-        thing you''re looking for!  Follow me!. '
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 17540fb751858a641bcd13012a0c8303,
-        type: 2}
-      Text: Not your usual look, but like a flower, it adorns any office it is worn
-        in!
+      Text: It's time for your secretary to start thinking pink!
       CustomNpcImageOptions:
-      - {fileID: 2800000, guid: a20ffac0e58d49d49bb6d21bb9351111, type: 3}
+      - {fileID: 2800000, guid: cbd64ba9449ea1d49b4f1c9b545173f1, type: 3}
       CustomBackground: {fileID: 2800000, guid: b31cc1384f326824ba3428118f3d4869,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
         width: 450
-      OptionalAudioClip: {fileID: 8300000, guid: b1566b364b1c99a4e9562ca29dad7d2e,
+      OptionalAudioClip: {fileID: 8300000, guid: 6df4912489c45a341a9d0e070f5ca4b4,
         type: 3}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 17540fb751858a641bcd13012a0c8303,
         type: 2}
-      Text: This is a hot look in Hollywood right now!
+      Text: Math may be hard for a girl like her, but who needs math when you're
+        this cute?
       CustomNpcImageOptions:
-      - {fileID: 2800000, guid: 9be7bfbf9f8c0fb4e853334a4c54f9cc, type: 3}
+      - {fileID: 2800000, guid: b681353f28b6bd34f90166f41463feb9, type: 3}
       CustomBackground: {fileID: 2800000, guid: b31cc1384f326824ba3428118f3d4869,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
         width: 450
-      OptionalAudioClip: {fileID: 8300000, guid: 3efa403f6427b844f950aeae8b2f7fa9,
+      OptionalAudioClip: {fileID: 8300000, guid: 28a5856149a3c4d499697be6498b92ab,
         type: 3}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 17540fb751858a641bcd13012a0c8303,
         type: 2}
-      Text: Exprssive and feminine!  The Boho Collection consists of thirteen separate
-        outfits and costs $10,000 USD.  If you purchase it, your Miss Jones will
-        wear them in rotation with her other approved wardrobe.  Sorry- we don't
-        have a refund policy.
+      Text: How can you resist this collection?  The Girly Collection consists of
+        thirty-four separate outfits and costs $20,000 USD.  If you purchase it,
+        your Miss Jones will wear them in rotation with her other approved wardrobe. 
+        Sorry- we don't have a refund policy.
       CustomNpcImageOptions:
-      - {fileID: 2800000, guid: 657301b6ea086944c8275b9e698da1e4, type: 3}
+      - {fileID: 2800000, guid: e49a5276976a61a468348791e4241802, type: 3}
       CustomBackground: {fileID: 2800000, guid: b31cc1384f326824ba3428118f3d4869,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
         width: 450
-      OptionalAudioClip: {fileID: 8300000, guid: d817244d70cd8d5428375121fed642f7,
+      OptionalAudioClip: {fileID: 8300000, guid: 5786c227812f23b47a493ac143aeac26,
         type: 3}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
     Choices:
-    - {fileID: 11400000, guid: 4453c450c77bc044e9aeaebd5b3572da, type: 2}
-    - {fileID: 11400000, guid: 944322729ac9ba74e89f50fabb158e5a, type: 2}
+    - {fileID: 11400000, guid: c73526bcb2a85f1488b704f10c5c3ebe, type: 2}
+    - {fileID: 11400000, guid: 2d936f933b8ae2647ac9eaaf39416e52, type: 2}
     Effect:
       NpcEffects: []
       EgoEffect: 0

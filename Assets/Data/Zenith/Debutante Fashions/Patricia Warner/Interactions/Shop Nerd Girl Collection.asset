@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Shop the Boho Collection
+  m_Name: Shop Nerd Girl Collection
   m_EditorClassIdentifier: 
-  Id: 7e2e7852-e904-4eeb-a6b2-3386f2293064
-  Name: Shop the Boho Collection
+  Id: 744e4313-c1ac-412f-bfdf-850b2029119b
+  Name: Shop Nerd Girl Collection
   SubInteraction: 0
   AlertNew: 1
   Category: 6
@@ -24,10 +24,9 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions:
-    - {fileID: 11400000, guid: 5f2e801b426873545957dff2ac044f77, type: 2}
+    RequiredInteractions: []
     RequiredNotCompletedInteractions:
-    - {fileID: 11400000, guid: 4453c450c77bc044e9aeaebd5b3572da, type: 2}
+    - {fileID: 11400000, guid: d4634aecedf6b81498e351fc6032f74b, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -49,10 +48,34 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: 'Your assistant seems to have quite a smart mouth on her.  It gives me
+        an idea... '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: 'Do you have something that might be a bit looser, natural fabrics, less
-        formal? '
+      Text: Of course I'm smart!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 8300000, guid: ec5a0be50a1dd464a9492b54cd3431a0,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: By all means, Ms. Warner- surpirse me!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -62,85 +85,59 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: Sounds like a secretary is looking to let her hair down a bit!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 17540fb751858a641bcd13012a0c8303,
         type: 2}
-      Text: 'Let''s look at something in Boho, my dear!  Boho style-- free-spirited
-        aesthetic mixing different cultures and artistic expressions into an eclectic
-        style with an emphasis on organic elements and nature-- might be just the
-        thing you''re looking for!  Follow me!. '
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 17540fb751858a641bcd13012a0c8303,
-        type: 2}
-      Text: Not your usual look, but like a flower, it adorns any office it is worn
-        in!
+      Text: Voila- from the Nerd Girl Collection!  Beauty and brains, wrapped up
+        in a cute little package!
       CustomNpcImageOptions:
-      - {fileID: 2800000, guid: a20ffac0e58d49d49bb6d21bb9351111, type: 3}
+      - {fileID: 2800000, guid: dbe3e1b9a24957c42831e769b88da5eb, type: 3}
       CustomBackground: {fileID: 2800000, guid: b31cc1384f326824ba3428118f3d4869,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
         width: 450
-      OptionalAudioClip: {fileID: 8300000, guid: b1566b364b1c99a4e9562ca29dad7d2e,
+      OptionalAudioClip: {fileID: 8300000, guid: 7bb1d2fc834d1ae469f72b75dace17f5,
         type: 3}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
+    - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 17540fb751858a641bcd13012a0c8303,
         type: 2}
-      Text: This is a hot look in Hollywood right now!
+      Text: The awkwardness contrasts with sharply with her undoubted physical appeal,
+        does it not?
       CustomNpcImageOptions:
-      - {fileID: 2800000, guid: 9be7bfbf9f8c0fb4e853334a4c54f9cc, type: 3}
+      - {fileID: 2800000, guid: c16e5da81d571834dbb81e20f7cc152f, type: 3}
       CustomBackground: {fileID: 2800000, guid: b31cc1384f326824ba3428118f3d4869,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
         width: 450
-      OptionalAudioClip: {fileID: 8300000, guid: 3efa403f6427b844f950aeae8b2f7fa9,
+      OptionalAudioClip: {fileID: 8300000, guid: b1723c4b0a1770647bc0273610f126a7,
         type: 3}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
+    - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 17540fb751858a641bcd13012a0c8303,
         type: 2}
-      Text: Exprssive and feminine!  The Boho Collection consists of thirteen separate
-        outfits and costs $10,000 USD.  If you purchase it, your Miss Jones will
-        wear them in rotation with her other approved wardrobe.  Sorry- we don't
-        have a refund policy.
+      Text: Who wouldn't want a try hard in such adorable outfits in their office? 
+        The Nerd Girl Collection consists of eleven separate outfits and costs $5,000
+        USD.  If you purchase it, your Miss Jones will wear them in rotation with
+        her other approved wardrobe.  Sorry- we don't have a refund policy.
       CustomNpcImageOptions:
-      - {fileID: 2800000, guid: 657301b6ea086944c8275b9e698da1e4, type: 3}
+      - {fileID: 2800000, guid: e95d15444c545b44a83c668674b6ad0f, type: 3}
       CustomBackground: {fileID: 2800000, guid: b31cc1384f326824ba3428118f3d4869,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
         width: 450
-      OptionalAudioClip: {fileID: 8300000, guid: d817244d70cd8d5428375121fed642f7,
+      OptionalAudioClip: {fileID: 8300000, guid: 568528f08ab22fc45b017bbf4d0f73e4,
         type: 3}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
     Choices:
-    - {fileID: 11400000, guid: 4453c450c77bc044e9aeaebd5b3572da, type: 2}
-    - {fileID: 11400000, guid: 944322729ac9ba74e89f50fabb158e5a, type: 2}
+    - {fileID: 11400000, guid: d4634aecedf6b81498e351fc6032f74b, type: 2}
+    - {fileID: 11400000, guid: 1611bd37be91eff4694a0acab3c36970, type: 2}
     Effect:
       NpcEffects: []
       EgoEffect: 0

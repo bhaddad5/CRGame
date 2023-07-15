@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Shop the Boho Collection
+  m_Name: Shop Girl Next Door Collection
   m_EditorClassIdentifier: 
-  Id: 7e2e7852-e904-4eeb-a6b2-3386f2293064
-  Name: Shop the Boho Collection
+  Id: 752bd6b8-2e40-4bd9-aecb-aa04389d4c1b
+  Name: Shop Girl Next Door Collection
   SubInteraction: 0
   AlertNew: 1
   Category: 6
@@ -27,7 +27,7 @@ MonoBehaviour:
     RequiredInteractions:
     - {fileID: 11400000, guid: 5f2e801b426873545957dff2ac044f77, type: 2}
     RequiredNotCompletedInteractions:
-    - {fileID: 11400000, guid: 4453c450c77bc044e9aeaebd5b3572da, type: 2}
+    - {fileID: 11400000, guid: 9cd95ef05eb120343be5a7da371b9c02, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -43,16 +43,42 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 1
-  Cooldown: 8
-  PreviewEffect: 1
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
   Result:
     Dialogs:
     - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: "'Girl Next Door' is our most popular collection.  Clothes that evoke
+        the traditional \u201Call-American Girl\u201D  with the allure of purity,
+        simplicity, and charm, with a natural, modest, or effortless beauty. "
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: 'Do you have something that might be a bit looser, natural fabrics, less
-        formal? '
+      Text: That was always my go to look growing up.  Everyone said I was the 'girl
+        next door'-- I didn't always like it, but it kind of stuck.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 8300000, guid: 149274572f8f08b4a92074355cfacac1,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: I think I want to see my secretary do some modeling!  Please proceed!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -62,85 +88,56 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: Sounds like a secretary is looking to let her hair down a bit!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 17540fb751858a641bcd13012a0c8303,
         type: 2}
-      Text: 'Let''s look at something in Boho, my dear!  Boho style-- free-spirited
-        aesthetic mixing different cultures and artistic expressions into an eclectic
-        style with an emphasis on organic elements and nature-- might be just the
-        thing you''re looking for!  Follow me!. '
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 17540fb751858a641bcd13012a0c8303,
-        type: 2}
-      Text: Not your usual look, but like a flower, it adorns any office it is worn
-        in!
+      Text: She really is a small town sweetheart!
       CustomNpcImageOptions:
-      - {fileID: 2800000, guid: a20ffac0e58d49d49bb6d21bb9351111, type: 3}
+      - {fileID: 2800000, guid: 546306df2808a6d41baa4232fb5b8c49, type: 3}
       CustomBackground: {fileID: 2800000, guid: b31cc1384f326824ba3428118f3d4869,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
         width: 450
-      OptionalAudioClip: {fileID: 8300000, guid: b1566b364b1c99a4e9562ca29dad7d2e,
+      OptionalAudioClip: {fileID: 8300000, guid: c5c4eb8c9a4a5314b889af7c3f3c1920,
         type: 3}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 17540fb751858a641bcd13012a0c8303,
         type: 2}
-      Text: This is a hot look in Hollywood right now!
+      Text: Like I say, it is a popular look for gilrs like your secretary.
       CustomNpcImageOptions:
-      - {fileID: 2800000, guid: 9be7bfbf9f8c0fb4e853334a4c54f9cc, type: 3}
+      - {fileID: 2800000, guid: c4ec824ef2785a84c8e86237e5e3adc8, type: 3}
       CustomBackground: {fileID: 2800000, guid: b31cc1384f326824ba3428118f3d4869,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
         width: 450
-      OptionalAudioClip: {fileID: 8300000, guid: 3efa403f6427b844f950aeae8b2f7fa9,
+      OptionalAudioClip: {fileID: 8300000, guid: 80b87bc1c90bf8e4b8a8dbad3fd52337,
         type: 3}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 17540fb751858a641bcd13012a0c8303,
         type: 2}
-      Text: Exprssive and feminine!  The Boho Collection consists of thirteen separate
-        outfits and costs $10,000 USD.  If you purchase it, your Miss Jones will
-        wear them in rotation with her other approved wardrobe.  Sorry- we don't
-        have a refund policy.
+      Text: Just adorable, isn't she?  The Girl Next Door Collection consists of
+        thirty-one separate outfits and costs $20,000 USD.  If you purchase it, your
+        Miss Jones will wear them in rotation with her other approved wardrobe. 
+        Sorry- we don't have a refund policy.
       CustomNpcImageOptions:
-      - {fileID: 2800000, guid: 657301b6ea086944c8275b9e698da1e4, type: 3}
+      - {fileID: 2800000, guid: e31882ca8cf952944853daf5c4211747, type: 3}
       CustomBackground: {fileID: 2800000, guid: b31cc1384f326824ba3428118f3d4869,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
         width: 450
-      OptionalAudioClip: {fileID: 8300000, guid: d817244d70cd8d5428375121fed642f7,
+      OptionalAudioClip: {fileID: 8300000, guid: 28c06f0a3935c344bb71a34c414acbf2,
         type: 3}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
     Choices:
-    - {fileID: 11400000, guid: 4453c450c77bc044e9aeaebd5b3572da, type: 2}
-    - {fileID: 11400000, guid: 944322729ac9ba74e89f50fabb158e5a, type: 2}
+    - {fileID: 11400000, guid: 9cd95ef05eb120343be5a7da371b9c02, type: 2}
     Effect:
       NpcEffects: []
       EgoEffect: 0
