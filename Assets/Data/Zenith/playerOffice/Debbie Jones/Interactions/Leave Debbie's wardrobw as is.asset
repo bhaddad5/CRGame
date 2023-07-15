@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Tired of your Country Girl look
+  m_Name: Leave Debbie's wardrobw as is
   m_EditorClassIdentifier: 
-  Id: 290ed30a-3e8a-49df-96e4-28e8acb4b7e1
-  Name: Tired of your Country Girl look
+  Id: 9704d186-d0f3-4cd1-b86c-78560911d06d
+  Name: Leave Debbie's wardrobe as is
   SubInteraction: 1
   AlertNew: 1
   Category: 0
@@ -41,25 +41,15 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 0
+  Repeatable: 1
   Cooldown: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   Result:
     Dialogs:
-    - CurrSpeaker: 1
+    - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 0}
-      Text: I'm overdosing on denim.  No more Country costumes, ok?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: Sure.
+      Text: Debbie's assigned outfits are fine.  No need for any changes at this
+        time.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -71,14 +61,7 @@ MonoBehaviour:
     OptionalPopups: []
     Choices: []
     Effect:
-      NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
-        AmbitionEffect: 0
-        PrideEffect: 0
-        RemoveCurrentImage: 0
-        ImageSetsToAdd: []
-        ImageSetsToRemove:
-        - {fileID: 11400000, guid: 4f71be23fd2e6de40b02895627c094e1, type: 2}
+      NpcEffects: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0

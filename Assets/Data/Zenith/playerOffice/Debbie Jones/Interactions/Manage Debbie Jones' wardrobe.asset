@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Tired of your Country Girl look
+  m_Name: Manage Debbie Jones' wardrobe
   m_EditorClassIdentifier: 
-  Id: 290ed30a-3e8a-49df-96e4-28e8acb4b7e1
-  Name: Tired of your Country Girl look
-  SubInteraction: 1
+  Id: 4a318e11-2644-49f6-8878-a037bb00ac58
+  Name: Manage Debbie Jones' wardrobe
+  SubInteraction: 0
   AlertNew: 1
   Category: 0
   Requirements:
@@ -24,7 +24,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 5f2e801b426873545957dff2ac044f77, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -41,44 +42,33 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 0
-  Cooldown: 0
-  PreviewEffect: 0
+  Repeatable: 1
+  Cooldown: 4
+  PreviewEffect: 1
   Result:
-    Dialogs:
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: I'm overdosing on denim.  No more Country costumes, ok?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: Sure.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
+    Dialogs: []
     OptionalPopups: []
-    Choices: []
+    Choices:
+    - {fileID: 11400000, guid: 5d47c9d7b64e7904d999d009bbfa5d96, type: 2}
+    - {fileID: 11400000, guid: b9c5fac96b97a044cbd02c11f08f6704, type: 2}
+    - {fileID: 11400000, guid: aa8f1c552a9cb58419f33611ae6dfed1, type: 2}
+    - {fileID: 11400000, guid: 33af41aa32f39b346a0ed5cb0923b320, type: 2}
+    - {fileID: 11400000, guid: 0aab1c9b18ccafe4a8061b03b7794eba, type: 2}
+    - {fileID: 11400000, guid: 446b96b1f593f7142a1a8a57e5e86fed, type: 2}
+    - {fileID: 11400000, guid: aa5c4fcffeb4708459f1ce735d842942, type: 2}
+    - {fileID: 11400000, guid: 6e9a4ba0fb91a6f4f9fc18f3d93de2fb, type: 2}
+    - {fileID: 11400000, guid: d95a1706d5ff4984198e771f6768e068, type: 2}
+    - {fileID: 11400000, guid: 842025bffc4116143b0b820d998703cb, type: 2}
+    - {fileID: 11400000, guid: defb1514447332647af9d3a6b84fd3e3, type: 2}
+    - {fileID: 11400000, guid: 27dca49f3aaef3b40b7423d33846c327, type: 2}
+    - {fileID: 11400000, guid: e4f043476280e32498ec0d89466bac9e, type: 2}
+    - {fileID: 11400000, guid: b8f708dae11ab2040a14b3703bf52334, type: 2}
+    - {fileID: 11400000, guid: 221628b480055764db23e65d016c5e86, type: 2}
+    - {fileID: 11400000, guid: cbda6318cbc923b42b621c990e5eed06, type: 2}
+    - {fileID: 11400000, guid: 2da293eb199c9b2419f61532cf71801d, type: 2}
+    - {fileID: 11400000, guid: be7fe463e71e0474eb2c69e5264f31d5, type: 2}
     Effect:
-      NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
-        AmbitionEffect: 0
-        PrideEffect: 0
-        RemoveCurrentImage: 0
-        ImageSetsToAdd: []
-        ImageSetsToRemove:
-        - {fileID: 11400000, guid: 4f71be23fd2e6de40b02895627c094e1, type: 2}
+      NpcEffects: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
