@@ -1,0 +1,276 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: Dorm Matron Briefing
+  m_EditorClassIdentifier: 
+  Id: ce3b80a4-9a56-4dfc-a7e3-5d1defa0ff73
+  Name: Dorm Matron Briefing
+  SubInteraction: 0
+  AlertNew: 1
+  Category: 1
+  Requirements:
+    RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
+    NpcStatRequirements: []
+    RequiredInteractions: []
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredNpcsControled: []
+    RequiredNpcsTrained: []
+    RequiredNpcsNotControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 0
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    Items: []
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
+  Result:
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: e919a2647617e8146b5be552b475f8ce,
+        type: 2}
+      Text: Thank you for visiting, {FirstName}!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: e919a2647617e8146b5be552b475f8ce,
+        type: 2}
+      Text: Lisa, it must be Mr. {LastName}.  I'm your superior.  While I know we've
+        shared some private moments, you do know that's all in the past.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: e919a2647617e8146b5be552b475f8ce,
+        type: 2}
+      Text: Yes, Mr. {LastName}.  I... understand.  Well, may I brief you on my plans
+        for the management of the domitory?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: e919a2647617e8146b5be552b475f8ce,
+        type: 2}
+      Text: You may, LIsa.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: e919a2647617e8146b5be552b475f8ce,
+        type: 2}
+      Text: Well, this is the Study Room.  It's a quiet safe space for the girls,
+        as well as where we gather them for dorm meetings and announcements.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: e919a2647617e8146b5be552b475f8ce,
+        type: 2}
+      Text: 'This is the Common Room.  There''s a television offering basic cable
+        programming where the girls can use in their free time.  We''ll also host
+        social events here- parties where the girls can celebrate birthdays, promotions
+        or just the end of a long week!  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f0288dad0eb808c41b353e0fb682da9d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: e919a2647617e8146b5be552b475f8ce,
+        type: 2}
+      Text: Here's one of the Superior bedrooms.  It's for the girls who have achieved
+        senior admin rank and have earned a bit of extra space.  With space at such
+        a premium, it provides girls with a real motivation to earn promotion!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 9995816d8e2f79f449fcc410c07b1533,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: e919a2647617e8146b5be552b475f8ce,
+        type: 2}
+      Text: This is a Standard Room.  It's for girls who have made it to secretary
+        status.  It is a squeeze for two, but if the girls get along, it's quite
+        bearable.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 70d32c4426d7e944b8125cc1dc6ade14,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: e919a2647617e8146b5be552b475f8ce,
+        type: 2}
+      Text: This is an Inferior Room.  It's for Office Girls who still on Probation. 
+        There's no question it is a tight fit, but girls who work together can manage
+        to share the space well enough.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 349996f26487e23458ff1563f9be3479,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: e919a2647617e8146b5be552b475f8ce,
+        type: 2}
+      Text: The bunks are reserved for the SecPool Girls.  Girls learn to share when
+        they are assigned two to a bunk.  I anticipate this will cause friction between
+        certain personalities so I'll have to manage bunkmate rotation on a regular
+        basis.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: d48b8eb9e680c7146a08b1fb8e8f6ef0,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: I won't bore you...
+      Videos: []
+      Textures:
+      - {fileID: 2800000, guid: 03d8ebd070ec3fc468dc4a79655561c4, type: 3}
+      DialogClips: []
+      Text: ...with the rules I've written up for proper dormitory behavior.  The
+        basics will be posted in every room so girls won't be able to plead ignorance. 
+        Ignorance of the law will be no excuse!
+    - Title: And for their safety...
+      Videos: []
+      Textures:
+      - {fileID: 2800000, guid: 4780ce49cfaf0c344aa127c75e90c1d2, type: 3}
+      DialogClips: []
+      Text: ...surveillance cameras have been installed in every room- includng bedrooms
+        and bathrooms.  I will also review the video regularly to check for anhy
+        dorm infractions.  I'll also be forwarding you a Weekly Dorm Matron Report
+        featuring some peeks at dorm life.  You'll see for yourself how the girls
+        are behaving.
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
+  FailureResult:
+    Dialogs: []
+    OptionalPopups: []
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  Completed: 0
+  TurnCompletedOn: -1
+  New: 1
