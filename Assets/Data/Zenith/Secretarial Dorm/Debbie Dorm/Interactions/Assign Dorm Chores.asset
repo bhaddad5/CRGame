@@ -1,0 +1,227 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: Assign Dorm Chores
+  m_EditorClassIdentifier: 
+  Id: 18284129-d29e-433e-aa88-73d766eea41d
+  Name: Assign Dorm Chores
+  SubInteraction: 1
+  AlertNew: 1
+  Category: 5
+  Requirements:
+    RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
+    NpcStatRequirements: []
+    RequiredInteractions: []
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredNpcsControled: []
+    RequiredNpcsTrained: []
+    RequiredNpcsNotControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 0
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    Items:
+    - {fileID: 11400000, guid: 8b92f52c987c459458b48b6ae066bb4d, type: 2}
+    - {fileID: 11400000, guid: 8b92f52c987c459458b48b6ae066bb4d, type: 2}
+  Repeatable: 1
+  Cooldown: 60
+  PreviewEffect: 1
+  Result:
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: e919a2647617e8146b5be552b475f8ce,
+        type: 2}
+      Text: There's nothing here too egregious but Debbie's no angel.  She's earned
+        soem Dorm Infractions over the last thirty days that should be addressed.
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 6fdbaffe9989c884eb51120a1ce87821, type: 3}
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: e919a2647617e8146b5be552b475f8ce,
+        type: 2}
+      Text: And what would you recommend, Lisa?
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 1d7fa578ba525bb4abed41e664019e2c, type: 3}
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: e919a2647617e8146b5be552b475f8ce,
+        type: 2}
+      Text: 'I''d suggest assigning her to the Punishment Dorm chores detail.  Debbie
+        might appreciate where she lives a bit more if she was made to help clean
+        and beautify her living space.   '
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: c64b1b6ee66caf7428f13715f2ec39ce, type: 3}
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: e919a2647617e8146b5be552b475f8ce,
+        type: 2}
+      Text: I approve.
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: ea20cbc203c8c52499e5bce31a4d7946, type: 3}
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: e919a2647617e8146b5be552b475f8ce,
+        type: 2}
+      Text: Thank you!  Perhaps keeping you busy will also keep you out of trouble,
+        young lady.  Let's get you to work!
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 6fdbaffe9989c884eb51120a1ce87821, type: 3}
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 14df74e6844c717478de06c275bd6470,
+        type: 2}
+      Text: 'Yes, Dorm Mother. '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: Debbie will spend the next...
+      Videos:
+      - {fileID: 32900000, guid: 06f418fb24e10d24ba8242376911becb, type: 3}
+      - {fileID: 32900000, guid: 6b17466028e008845bb3fa75288a2652, type: 3}
+      - {fileID: 32900000, guid: f1a9487d34f9da545b1c3de79d3df1a9, type: 3}
+      - {fileID: 32900000, guid: 57e7b751f09e85d47ae090566f31c80a, type: 3}
+      - {fileID: 32900000, guid: 61315c0700273f6489887c1b1f2e3007, type: 3}
+      - {fileID: 32900000, guid: 2f5f73088241f1f488785203578ae46c, type: 3}
+      - {fileID: 32900000, guid: aaaeb0cd7049ab941a4816fab129ca16, type: 3}
+      - {fileID: 32900000, guid: e346ad09c17577346979f778ae91bc98, type: 3}
+      - {fileID: 32900000, guid: 4f6b0a564949b1e4884c732cff6fbdfd, type: 3}
+      Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: 2e7c279ca35bbb34d86a65ea2522b71b, type: 3}
+      Text: ...month on dorm clean up duty.  Dusting, mopping, scrubbing away, all
+        while hopefully reflecting on how she wound up on the Punishment Detail and
+        resolving not to wind up her again in the future!
+    Choices: []
+    Effect:
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+          type: 2}
+        AmbitionEffect: -1
+        PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
+      - OptionalNpcReference: {fileID: 11400000, guid: e919a2647617e8146b5be552b475f8ce,
+          type: 2}
+        AmbitionEffect: 10
+        PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
+  FailureResult:
+    Dialogs: []
+    OptionalPopups: []
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  Completed: 0
+  TurnCompletedOn: -1
+  New: 1
