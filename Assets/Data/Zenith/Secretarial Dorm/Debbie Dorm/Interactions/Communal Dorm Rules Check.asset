@@ -23,11 +23,7 @@ MonoBehaviour:
     RequiredTurnNumber: 0
     NotOnWeekends: 0
     NotOnWeekdays: 0
-    NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
-      Stat: 0
-      Is: 0
-      Value: 0
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: d2977fd7a57f89e4e86643a573a37dfe, type: 2}
     RequiredNotCompletedInteractions: []
@@ -52,15 +48,17 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 14df74e6844c717478de06c275bd6470,
+        type: 2}
       Text: Lisa, let's have a report on Debbie Jones.  Is she respecting and following
         the rules of the institution?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
@@ -68,11 +66,12 @@ MonoBehaviour:
         type: 2}
       Text: I most certainly have!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
       OptionalAudioClip: {fileID: 8300000, guid: 89b52cf3bfe16fb44b4708c16a5747be,
         type: 3}
       OptionalStartMusicClip: {fileID: 0}
@@ -81,17 +80,22 @@ MonoBehaviour:
         type: 2}
       Text: Hush Debbie!  Let me check my records...
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 8300000, guid: 89b52cf3bfe16fb44b4708c16a5747be,
+      CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
         type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
+      OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
     Choices:
     - {fileID: 11400000, guid: ea7600ed52924c54f9520936079c877e, type: 2}
+    - {fileID: 11400000, guid: 3fe59d343d3246a4a8534d9dbe0010b3, type: 2}
+    - {fileID: 11400000, guid: 2de9dc4eefb813f42b5dd91c4e294bbf, type: 2}
+    - {fileID: 11400000, guid: 5dc71af963e28404f8cd38723b24f5da, type: 2}
+    - {fileID: 11400000, guid: 2cb9cdf5ef13aae49a34d06197253907, type: 2}
+    - {fileID: 11400000, guid: 7f344011b88b6e443a0e485e86155f2b, type: 2}
     Effect:
       NpcEffects: []
       EgoEffect: 0
