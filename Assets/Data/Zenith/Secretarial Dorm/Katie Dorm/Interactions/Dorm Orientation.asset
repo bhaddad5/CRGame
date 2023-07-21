@@ -1,0 +1,291 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: Dorm Orientation
+  m_EditorClassIdentifier: 
+  Id: 8dcc099b-47cf-4a62-9da5-2e0ca66b50b4
+  Name: Dorm Orientation
+  SubInteraction: 0
+  AlertNew: 1
+  Category: 5
+  Requirements:
+    RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
+    NpcStatRequirements: []
+    RequiredInteractions: []
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredNpcsControled: []
+    RequiredNpcsTrained: []
+    RequiredNpcsNotControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 0
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    Items: []
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
+  Result:
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: e919a2647617e8146b5be552b475f8ce,
+        type: 2}
+      Text: Mr. {LastName}, I was about to give Katie Jones her dorm orientation. 
+        Could you please join us, seeing as how she's assigned to your office?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: e919a2647617e8146b5be552b475f8ce,
+        type: 2}
+      Text: Yes, of course.  We should do this in their dorm room.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: e919a2647617e8146b5be552b475f8ce,
+        type: 2}
+      Text: 'Come girls-- you too, Debbie!  Very good.  Welcome to the Artemis Admin
+        Dormitory- more usually known as the SecDorm.  We''ll go over the Dorm Rules
+        and Regulations later- I don''t want to bore Mr. {LastName}-- so let''s go
+        through the basics.  Are you following, Katie?    '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 93498aa0c40370145a85ce8f4542299a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 94ede29d68677aa4586bfa72f6cabe02,
+        type: 2}
+      Text: Yes, Ms. Merchant.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 93498aa0c40370145a85ce8f4542299a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: e919a2647617e8146b5be552b475f8ce,
+        type: 2}
+      Text: In the dorm, you shall address me as Dorm Matron or Dorm Mother.  Now,
+        each pair of roomates are ranked. There is a Senior Girl and a Junior Girl. 
+        This helps ensure a chain of responsibility, which is necessary to maintain
+        civility and order in the dorm.  Katie, you are the Junior Girl asssigned
+        to Dorm Room 237.  Debbie is the Senior Girl.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 93498aa0c40370145a85ce8f4542299a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 14df74e6844c717478de06c275bd6470,
+        type: 2}
+      Text: May I ask a question, Dorm Mother?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 93498aa0c40370145a85ce8f4542299a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
+      OptionalAudioClip: {fileID: 8300000, guid: 6baeb41338e5bfe40beb5d2282970187,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: e919a2647617e8146b5be552b475f8ce,
+        type: 2}
+      Text: 'As you well know, Debbie, because you''ve already asked me this privately,
+        yes, while it is a bit of dorm slang, you may refer to yourself as the Top
+        Girl.  Katie, you would be known and referred to as the Bottom Girl for Romm
+        237. This reflects your status in the company org chart. '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 93498aa0c40370145a85ce8f4542299a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 14df74e6844c717478de06c275bd6470,
+        type: 2}
+      Text: I just wanted clarification for Katie, Ma'am.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 93498aa0c40370145a85ce8f4542299a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
+      OptionalAudioClip: {fileID: 8300000, guid: 1823886f0bc9f7c4c9cc64e520138ed7,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 14df74e6844c717478de06c275bd6470,
+        type: 2}
+      Text: That will be quite enough, Debbie!  Hush up and listen to the Dorm Matron,
+        young lady!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 93498aa0c40370145a85ce8f4542299a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
+      OptionalAudioClip: {fileID: 8300000, guid: 3662fffb26718824295154af78621b83,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: e919a2647617e8146b5be552b475f8ce,
+        type: 2}
+      Text: Now, as Senior or Top Girl, Debbie will be held responsible primarily
+        for the Junior Girl.  Debbie, if Katie breaks the rules, it will be will
+        YOU who will be held accountable first- and Katie second.  We'll discuss
+        roomate management tips later.  Are there questions, Katie?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 93498aa0c40370145a85ce8f4542299a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 94ede29d68677aa4586bfa72f6cabe02,
+        type: 2}
+      Text: Yes, Dorm Mother.  We only have the one single bed.  Is it possible to
+        have another bed brought in or at least a double please?  It is very difficult
+        to sleep comfortably.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 93498aa0c40370145a85ce8f4542299a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 94ede29d68677aa4586bfa72f6cabe02,
+        type: 2}
+      Text: 'I''ll take this.  Your sister has already made the same request.  The
+        answer is of course not.  How are you two ever supposed to get good at Heaters
+        unless you both rid yourself of this squeamishness?  Close quarters will
+        help break down your inhibitions.  Good- unless there''s anything else, welcome
+        to the Hen House, Katie-- that''s what the bosses call this place! '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 93498aa0c40370145a85ce8f4542299a,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups: []
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
+  FailureResult:
+    Dialogs: []
+    OptionalPopups: []
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  Completed: 0
+  TurnCompletedOn: -1
+  New: 1
