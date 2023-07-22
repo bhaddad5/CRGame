@@ -1,0 +1,258 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: Debbie's Manager Consultation
+  m_EditorClassIdentifier: 
+  Id: 210d9f1d-a4c6-47c8-858c-713aa7b75083
+  Name: Debbie's Manager Consultation
+  SubInteraction: 0
+  AlertNew: 1
+  Category: 1
+  Requirements:
+    RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
+    NpcStatRequirements: []
+    RequiredInteractions: []
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredNpcsControled: []
+    RequiredNpcsTrained: []
+    RequiredNpcsNotControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 0
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    Items:
+    - {fileID: 11400000, guid: 093941a12d8d2f7489166430d82653c4, type: 2}
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
+  Result:
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: Doctor?  I'm here with my manager, as requested.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 2dfaec005ac504e4f961f99c537e5805,
+        type: 2}
+      Text: Very good, Debbie.  Mr. {LastName}- thank you for coming.  I realize
+        this is an inconvenience but given the investment Artemis makes in its Admin
+        staff, we want all your executives to enjoy the maximum their admins can
+        provide.  Since Debbie's been working under you for some time, I was wondering
+        if she's still meeting expectations.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 2dfaec005ac504e4f961f99c537e5805,
+        type: 2}
+      Text: I would say thre's always room for improvement.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 2dfaec005ac504e4f961f99c537e5805,
+        type: 2}
+      Text: We find after a certain period that the managers of our patients grow
+        a bit bored with them.  But really, sometimes all it takes is for the girl
+        to be tuned up a bit, so to speak.  For example, do you find Debbie as tighht
+        a fit as she was when she first came under your management?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: Dr. Feng, that's a private matter between Mr. {LastName} and myself!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 8300000, guid: 067ca56a5c3e26e479e77464817a8c33,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 2dfaec005ac504e4f961f99c537e5805,
+        type: 2}
+      Text: Debbie, I'm your doctor.  Unlike you, I earned a medical degree.  If
+        I were a girl like you who has to rely on my less cerebral assets to keep
+        a job, I'd be quite a bit more humble.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 2dfaec005ac504e4f961f99c537e5805,
+        type: 2}
+      Text: Doctor, I apologize for my secretary's outburts.  Debbie, that's a demerit. 
+        If you want more, keep talking.  Yes, Doctor-- I'd have to say Debbie's a
+        little looser that whn we first met.  Of course, she gotten a lot of use
+        since her demotion.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 2dfaec005ac504e4f961f99c537e5805,
+        type: 2}
+      Text: As she should.  I think we might extend Debbie's shelf life with some
+        simple exercises.  Let me suggest this- let's put Deebie on a program and
+        once a month, she'll be trained up to put those exercises to work for you. 
+        Debbie, let's get you properly equipped.  Don't you want to be a tighter
+        fit for Mr. {LastName}?  Wouldn't that be good for your secretarial career
+        Debbie?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: Yes, Dr. Feng.  Thank you, Ma'am.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 8300000, guid: ea4fb21aba2144246a2bd61c24c0eba9,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: '"This will outline the...'
+      Videos: []
+      Textures:
+      - {fileID: 2800000, guid: f41bffacef706e24b916d11ff2f03feb, type: 3}
+      DialogClips: []
+      Text: ...exercises for her.  You miight have someone supervise to make sure
+        she sticks with the regimen."
+    - Title: '"I think you''ll find...'
+      Videos: []
+      Textures:
+      - {fileID: 2800000, guid: 27c7f6c1d5686e944b22806a82e9091b, type: 3}
+      DialogClips: []
+      Text: ...these weights will help her provide you with a more enjoyable experience. 
+        Try her out once a month, preferably where she lives these days.  It will
+        add to the overall pleasure.  And Debbie, I have some good news for you too! 
+        Girls who do kegel training are more likely to orgasm.  If you're a lucky
+        girl, your boss here might really make your day!"
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
+  FailureResult:
+    Dialogs: []
+    OptionalPopups: []
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  Completed: 0
+  TurnCompletedOn: -1
+  New: 1
