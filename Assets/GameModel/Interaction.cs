@@ -55,11 +55,14 @@ namespace Assets.GameModel
 		public int TurnCompletedOn = -1;
 		[HideInInspector]
 		public bool New = true;
+		[HideInInspector]
+		public int FailCount = 0;
 
 		public void Setup()
 		{
 			New = true;
 			Completed = 0;
+			FailCount = 0;
 			TurnCompletedOn = -1;
 		}
 

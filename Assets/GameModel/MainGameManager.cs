@@ -152,11 +152,18 @@ namespace Assets.GameModel
 					bool succeeded = startOfTurnInteraction.GetInteractionSucceeded();
 					var res = startOfTurnInteraction.GetInteractionResult(succeeded);
 					var displayHandler = new InteractionResultDisplayManager();
-					displayHandler.DisplayInteractionResult(startOfTurnInteraction.Completed, res, !succeeded, new NpcDisplayInfo(), this, () =>
+					displayHandler.DisplayInteractionResult(succeeded ? startOfTurnInteraction.Completed : startOfTurnInteraction.FailCount, res, !succeeded, new NpcDisplayInfo(), this, () =>
 					{
 						res.Execute(this);
-						if(succeeded)
+						if (succeeded)
+						{
 							startOfTurnInteraction.Completed++;
+							startOfTurnInteraction.TurnCompletedOn = Data.TurnNumber;
+						}
+						else
+						{
+							startOfTurnInteraction.FailCount++;
+						}
 						RefreshAllUi();
 					});
 				}

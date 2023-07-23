@@ -428,6 +428,7 @@ namespace Assets.GameModel.Save
 		public string Id;
 
 		public int Completed;
+		public int FailCount;
 		public bool New;
 		public int TurnCompletedOn;
 
@@ -436,6 +437,7 @@ namespace Assets.GameModel.Save
 			var res = new SavedInteractionState();
 			res.Id = data.Id;
 			res.Completed = data.Completed;
+			res.FailCount = data.FailCount;
 			res.New = data.New;
 			res.TurnCompletedOn = data.TurnCompletedOn;
 
@@ -450,6 +452,7 @@ namespace Assets.GameModel.Save
 				return;
 			}
 			data.Completed = Completed;
+			data.FailCount = FailCount;
 			data.New = New;
 			data.TurnCompletedOn = TurnCompletedOn;
 		}

@@ -49,13 +49,17 @@ namespace Assets.GameModel.UiDisplayers
 			var res = interaction.GetInteractionResult(succeeded);
 			interaction.Cost.SubtractCost(mgm);
 			var displayHandler = new InteractionResultDisplayManager();
-			displayHandler.DisplayInteractionResult(interaction.Completed, res, !succeeded, currDisplayInfo, mgm, () =>
+			displayHandler.DisplayInteractionResult(succeeded ? interaction.Completed : interaction.FailCount, res, !succeeded, currDisplayInfo, mgm, () =>
 			{
 				res.Execute(mgm);
 				if (succeeded)
 				{
 					interaction.Completed++;
 					interaction.TurnCompletedOn = mgm.Data.TurnNumber;
+				}
+				else
+				{
+					interaction.FailCount++;
 				}
 				choiceCompleted();
 			});

@@ -211,6 +211,12 @@ public class EditorValidators
 				interaction.Completed = 0;
 				EditorUtility.SetDirty(interaction);
 			}
+
+			if (interaction.FailCount > 0)
+			{
+				interaction.FailCount = 0;
+				EditorUtility.SetDirty(interaction);
+			}
 		}
 		
 		Debug.Log("Corrupted data reset!");
