@@ -17,6 +17,7 @@ public class InteractionResultDisplayManager
 	private List<Popup> currPopupsToShow = new List<Popup>();
 	private List<Mission> currMissionsToShow = new List<Mission>();
 	private List<Trophy> currTrophiesToShow = new List<Trophy>();
+	private List<Trophy> currRemovedTrophiesToShow = new List<Trophy>();
 	private Action resultComplete = null;
 	private int completedCount;
 	private MainGameManager mgm;
@@ -49,6 +50,7 @@ public class InteractionResultDisplayManager
 		currPopupsToShow = new List<Popup>(res.OptionalPopups);
 		currMissionsToShow = new List<Mission>(res.Effect.MissionsToComplete);
 		currTrophiesToShow = new List<Trophy>(res.Effect.TrophiesClaimedReferences);
+		currRemovedTrophiesToShow = new List<Trophy>(res.Effect.TrophiesRemoved);
 
 		HandleNextDialog();
 	}
@@ -106,6 +108,20 @@ public class InteractionResultDisplayManager
 			if(AudioHandler.Instance.GreivousMode)
 				AudioHandler.Instance.PlayEffectClip(mgm.GreivousModeClip);
 
+			var popupParent = GameObject.Instantiate(UiPrefabReferences.Instance.PopupOverlayParent);
+			LiveMenu = popupParent;
+			GameObject.Instantiate(UiPrefabReferences.Instance.GetPrefabByName("Popup Display"), popupParent.transform).GetComponent<PopupBindings>().Setup(popup, completedCount, mgm, HandleNextDialog);
+		}
+		else if (currRemovedTrophiesToShow.Count > 0)
+		{
+			var popup = new Popup()
+			{
+				Title = $"Trophy Removed: {currRemovedTrophiesToShow[0].Name}",
+				Textures = new List<Texture2D>() { currRemovedTrophiesToShow[0].Image },
+				Text = currRemovedTrophiesToShow[0].Description,
+			};
+			currRemovedTrophiesToShow.RemoveAt(0);
+			
 			var popupParent = GameObject.Instantiate(UiPrefabReferences.Instance.PopupOverlayParent);
 			LiveMenu = popupParent;
 			GameObject.Instantiate(UiPrefabReferences.Instance.GetPrefabByName("Popup Display"), popupParent.transform).GetComponent<PopupBindings>().Setup(popup, completedCount, mgm, HandleNextDialog);

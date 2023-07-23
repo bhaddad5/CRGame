@@ -36,6 +36,7 @@ namespace Assets.GameModel
 		public List<Npc> NpcsToRemoveFromGame;
 		public List<Location> LocationsToControl;
 		public List<Trophy> TrophiesClaimedReferences;
+		public List<Trophy> TrophiesRemoved;
 		public List<Mission> MissionsToComplete;
 
 		public List<InventoryItem> ItemsToAdd;
@@ -84,6 +85,11 @@ namespace Assets.GameModel
 			foreach (var trophy in TrophiesClaimedReferences)
 			{
 				trophy.Owned = true;
+			}
+
+			foreach (var trophy in TrophiesRemoved)
+			{
+				trophy.Owned = false;
 			}
 
 			foreach (var controlledNpc in NpcsToControl)
