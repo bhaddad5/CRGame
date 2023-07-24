@@ -1,0 +1,228 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: Anything to tell me, Debbie
+  m_EditorClassIdentifier: 
+  Id: 448ed91a-e467-4971-836f-85adf8906a8b
+  Name: Anything to tell me, Debbie?
+  SubInteraction: 0
+  AlertNew: 1
+  Category: 1
+  Requirements:
+    RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
+    NpcStatRequirements: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 8a2be95c55cea9b4aae7ef3e9be43272, type: 2}
+    - {fileID: 11400000, guid: 4e14e83c7eaf1464496c4f39c7407692, type: 2}
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredNpcsControled: []
+    RequiredNpcsTrained: []
+    RequiredNpcsNotControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 25
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    Items: []
+  Repeatable: 1
+  Cooldown: 4
+  PreviewEffect: 1
+  Result:
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: Mr. {LastName}?  You said it was my responsibility to report any contraband. 
+        Well... I found some.  In my sister's things.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
+      OptionalAudioClip: {fileID: 8300000, guid: b85a921eaecbc974796cd9fbe33ebf29,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Good girl.  You did the right thing.  Of course, that does mean Katie
+        WILL be punished and rather severely.  How do you feel about that?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: If Katherine- I mean Katie- has broken the rules, she deserves whatever
+        punishment you think she deserves, Sir.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
+      OptionalAudioClip: {fileID: 8300000, guid: 655227dfb093ee0438be097483b69acd,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Show me what your little sister has stashed away.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: She keeps these...
+      Videos: []
+      Textures:
+      - {fileID: 2800000, guid: 08a02b34ecaf87c40a9653ed730b886b, type: 3}
+      DialogClips:
+      - {fileID: 8300000, guid: d99f7b966cdb5ac4aa5bef800481c2c0, type: 3}
+      Text: ...in her jewellry box.  I TOLD her cigarettes weren't allowed in the
+        dorm!
+    - Title: I found these under...
+      Videos: []
+      Textures:
+      - {fileID: 2800000, guid: eae6e95828d1df3478233e57d6b67f83, type: 3}
+      DialogClips:
+      - {fileID: 8300000, guid: b116baaf0e673d04896816770ac93e7e, type: 3}
+      Text: ...some dirty clothes.  She's always been such a slob!
+    - Title: She tried to hide...
+      Videos: []
+      Textures:
+      - {fileID: 2800000, guid: 789aa75875f30264d8f22349daf21d57, type: 3}
+      DialogClips:
+      - {fileID: 8300000, guid: 712922ab6be69e64cb3c0df4eabdc5fc, type: 3}
+      Text: ...these edibles in her wallet.  Of course, they are compoletely banned
+        from tthe dorm.
+    - Title: Debbie, you did the right thing.
+      Videos: []
+      Textures:
+      - {fileID: 2800000, guid: f2e3a83a9b13ddc4fbcf46c3514670e5, type: 3}
+      DialogClips:
+      - {fileID: 8300000, guid: 764a8f69dd59553449da38ae7a001506, type: 3}
+      Text: You deserve a reward.  I happened to come across this money which Katie
+        had squirrled away.  Two hundred dollars!  You may have it.  Buy something
+        pretty for yourself.
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      TrophiesRemoved: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  CanFail: 1
+  ProbabilityOfFailureResult: 0.35
+  FailureResult:
+    Dialogs:
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Debbie, remember our chat about contraband?  Have you come across anything?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f0288dad0eb808c41b353e0fb682da9d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: No.  Nothing, Mr. {LastName}.  No contraband to report, Sir.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f0288dad0eb808c41b353e0fb682da9d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
+      OptionalAudioClip: {fileID: 8300000, guid: 78241ab00ddb4e34f86d5c85e93977b0,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups: []
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      TrophiesRemoved: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  Completed: 0
+  TurnCompletedOn: -1
+  New: 1
+  FailCount: 0
