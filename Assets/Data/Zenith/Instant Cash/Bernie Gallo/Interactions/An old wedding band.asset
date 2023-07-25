@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: I'll keep it
+  m_Name: An old wedding band
   m_EditorClassIdentifier: 
-  Id: 735e4e4d-ee49-41e4-895f-adcb6e8c94bd
-  Name: I'll keep it
+  Id: 4ffa1479-19ce-4330-a38e-2d2bf481ee42
+  Name: An old wedding band
   SubInteraction: 1
   AlertNew: 1
   Category: 1
@@ -24,8 +24,10 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
-    RequiredNotCompletedInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 284019461ec149a42905aac801464e4d, type: 2}
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: 9d4df375c6fd70143b6675be5ab4b709, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -46,21 +48,29 @@ MonoBehaviour:
   PreviewEffect: 1
   Result:
     Dialogs:
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 802bb6659f00db2469f7b9679f3e7f40,
-        type: 2}
-      Text: Thanks but I'll hang on to it.
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: I've got a lot of these.  Nothing but sentimental value but I'll give
+        you $250 for the value of the gold, ok?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: a8e09b3c62095124b9853393ea7d27d9,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 450
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups: []
-    Choices: []
+    OptionalPopups:
+    - Title: Candace Kelly's wedding band
+      Videos: []
+      Textures:
+      - {fileID: 2800000, guid: f6fa7a205cba94546bd21ceba1714b80, type: 3}
+      DialogClips: []
+      Text: It only has real value to Candace now.... but the pocket change might
+        be nice.
+    Choices:
+    - {fileID: 11400000, guid: 9d4df375c6fd70143b6675be5ab4b709, type: 2}
+    - {fileID: 11400000, guid: 27566046e7a8c564bba4786dc28a47a6, type: 2}
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -88,7 +98,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
-    GoToRegion: {fileID: 11400000, guid: f4b6c2fffb1ab3743ac190d5c780e3f6, type: 2}
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:

@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: I'll keep it
+  m_Name: Take it
   m_EditorClassIdentifier: 
-  Id: 735e4e4d-ee49-41e4-895f-adcb6e8c94bd
-  Name: I'll keep it
+  Id: 316c4a3e-a2df-4d03-9d0f-7707a58c75f5
+  Name: Take it
   SubInteraction: 1
   AlertNew: 1
   Category: 1
@@ -41,15 +41,28 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 1
+  Repeatable: 0
   Cooldown: 0
-  PreviewEffect: 1
+  PreviewEffect: 0
   Result:
     Dialogs:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 802bb6659f00db2469f7b9679f3e7f40,
         type: 2}
-      Text: Thanks but I'll hang on to it.
+      Text: You can have it-- it's just junk to me.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: a8e09b3c62095124b9853393ea7d27d9,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 802bb6659f00db2469f7b9679f3e7f40,
+        type: 2}
+      Text: Sure thing-- here's your dough!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: a8e09b3c62095124b9853393ea7d27d9,
         type: 3}
@@ -64,7 +77,7 @@ MonoBehaviour:
     Effect:
       NpcEffects: []
       EgoEffect: 0
-      FundsEffect: 0
+      FundsEffect: 250
       PowerEffect: 0
       PatentsEffect: 0
       CultureEffect: 0
@@ -77,7 +90,8 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
-      TrophiesRemoved: []
+      TrophiesRemoved:
+      - {fileID: 11400000, guid: 15d893b4e7696c247b92dd2bb2116dd0, type: 2}
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
