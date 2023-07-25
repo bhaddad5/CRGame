@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Lucy, go boot up my computer
+  m_Name: I'll take it
   m_EditorClassIdentifier: 
-  Id: cc6cc6cf-f4de-411d-a1ae-e300e3f11e1b
-  Name: Lucy, go boot up my computer
-  SubInteraction: 0
+  Id: 7e5491e6-0824-49d7-bec8-c893fb3f26e1
+  Name: I'll take it
+  SubInteraction: 1
   AlertNew: 1
-  Category: 7
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -41,47 +41,45 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 1
+  Repeatable: 0
   Cooldown: 0
   PreviewEffect: 0
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 95a8adb6670f2ed48ae2e10e6754885d,
-        type: 2}
-      Text: Lucy, go open up my office.  It better find it vacuumed and dusted.
+      OptionalNpcReference: {fileID: 0}
+      Text: You've got a deal-- here you go.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 71040694847e99141bd55e155e8b5c10,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.7
-        yPos: 0.3
-        width: 275
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 95a8adb6670f2ed48ae2e10e6754885d,
-        type: 2}
-      Text: Mr. {LastName}, I always clean your office first-- every day!  Even when
-        you're not here, I clean it!
+      OptionalNpcReference: {fileID: 0}
+      Text: Nice!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 71040694847e99141bd55e155e8b5c10,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.7
-        yPos: 0.3
-        width: 275
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups: []
-    Choices:
-    - {fileID: 11400000, guid: 0885e8eb263e6df41899b01eb95a21b2, type: 2}
-    - {fileID: 11400000, guid: 922585ed7ecdbdc44b991011ec643228, type: 2}
-    - {fileID: 11400000, guid: d21bea0c76833cb46b4da2e4b8495235, type: 2}
+    OptionalPopups:
+    - Title: Anne's ring leaves...
+      Videos: []
+      Textures:
+      - {fileID: 2800000, guid: 62278c7e6204d0c499cf74fa55739965, type: 3}
+      DialogClips: []
+      Text: ...your trophy collection!  +$2,000
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
-      FundsEffect: 0
+      FundsEffect: 2000
       PowerEffect: 0
       PatentsEffect: 0
       CultureEffect: 0
@@ -94,7 +92,8 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
-      TrophiesRemoved: []
+      TrophiesRemoved:
+      - {fileID: 11400000, guid: 3e78ad979ae21ee4b958a3858f2043aa, type: 2}
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
