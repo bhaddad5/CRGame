@@ -47,32 +47,37 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 95a8adb6670f2ed48ae2e10e6754885d,
+        type: 2}
       Text: Lucy, go open up my office.  It better find it vacuumed and dusted.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 71040694847e99141bd55e155e8b5c10,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.3
+        width: 275
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 95a8adb6670f2ed48ae2e10e6754885d,
+        type: 2}
       Text: Mr. {LastName}, I always clean your office first-- every day!  Evn when
         you're not here, I clean it!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 71040694847e99141bd55e155e8b5c10,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.3
+        width: 275
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
     Choices:
     - {fileID: 11400000, guid: 0885e8eb263e6df41899b01eb95a21b2, type: 2}
     - {fileID: 11400000, guid: 922585ed7ecdbdc44b991011ec643228, type: 2}
+    - {fileID: 11400000, guid: d21bea0c76833cb46b4da2e4b8495235, type: 2}
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -89,6 +94,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -122,6 +128,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -136,3 +143,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0

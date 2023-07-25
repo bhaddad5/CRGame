@@ -24,7 +24,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 0932caf053e2bb4479e3274ce4b6bb52, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -47,7 +48,8 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 14df74e6844c717478de06c275bd6470,
+        type: 2}
       Text: Well, Debbie, let's see how those kegels are going.  You think that pussy
         of your is a little bit tighter for me?
       CustomNpcImageOptions: []
@@ -56,11 +58,12 @@ MonoBehaviour:
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.4
-        width: 450
+        width: 380
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 14df74e6844c717478de06c275bd6470,
+        type: 2}
       Text: Only you can tell me that.  But I have been working hard on my exercises,
         Sir.
       CustomNpcImageOptions: []
@@ -69,33 +72,37 @@ MonoBehaviour:
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.4
-        width: 450
+        width: 380
       OptionalAudioClip: {fileID: 8300000, guid: 98332e90891168a499124cfe270866af,
         type: 3}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 14df74e6844c717478de06c275bd6470,
+        type: 2}
       Text: Only you can tell me that.  But I have been working hard on my exercises,
         Sir.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
-        yPos: 0.4
-        width: 450
+        yPos: 0.3
+        width: 380
       OptionalAudioClip: {fileID: 8300000, guid: 98332e90891168a499124cfe270866af,
         type: 3}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 14df74e6844c717478de06c275bd6470,
+        type: 2}
       Text: I know- Dorm Matron has confirmed that.  Ok-- let's see if Debbie Jones
         is a tighter fit for her big bad boss!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
-        yPos: 0.4
-        width: 450
+        yPos: 0.3
+        width: 380
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
@@ -120,7 +127,7 @@ MonoBehaviour:
       - {fileID: 32900000, guid: bb8951793ebd01c41b7e02de7709517c, type: 3}
       Textures: []
       DialogClips:
-      - {fileID: 8300000, guid: b5059472e8fb4e34ead263a5b19e1ddb, type: 3}
+      - {fileID: 0}
       Text: ...bragging about her boss'es latest dorm visit.  She's glowing with
         excitement and you're pleased because it snds the right message to the other
         admins- that when girls are good and work hard, they can enjoy an occaisional
@@ -149,6 +156,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -165,7 +173,8 @@ MonoBehaviour:
   FailureResult:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 14df74e6844c717478de06c275bd6470,
+        type: 2}
       Text: Well, Debbie, let's see how those kegels are going.  You think that pussy
         of your is a little bit tighter for me?
       CustomNpcImageOptions: []
@@ -174,7 +183,7 @@ MonoBehaviour:
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.4
-        width: 450
+        width: 380
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
@@ -188,7 +197,7 @@ MonoBehaviour:
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.4
-        width: 450
+        width: 380
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
@@ -202,7 +211,7 @@ MonoBehaviour:
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.4
-        width: 450
+        width: 380
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
@@ -238,6 +247,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -252,3 +262,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0
