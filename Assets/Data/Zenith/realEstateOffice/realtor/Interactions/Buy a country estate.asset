@@ -26,6 +26,7 @@ MonoBehaviour:
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 421bd410b09710d4b988f8ee9407b4e6, type: 2}
+    - {fileID: 11400000, guid: e617c9fd439edd747929163101a2caab, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -94,13 +95,42 @@ MonoBehaviour:
         width: 680
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: cca5025e955bf9647992b7849a000067,
+        type: 2}
+      Text: I think I know of a contractor that specializes in that kind of work. 
+        I'll have them do the work before I mnove in.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 0aaa3352438b4d745ba08b0cc48e9b84,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.65
+        yPos: 0
+        width: 680
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: cca5025e955bf9647992b7849a000067,
+        type: 2}
+      Text: 'NOTE: If Ms. Gleckman suspects what kind of ''play room'' you are envisioning,
+        she doesn''t indicate so.  You''ll need to visit OBEIR in order to complete
+        the fitout before you move in!'
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 0aaa3352438b4d745ba08b0cc48e9b84,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.65
+        yPos: 0
+        width: 680
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: It's a perfect complement to your city home.
       Videos:
       - {fileID: 32900000, guid: e7f9bcd97e7e64b4e810a26cc330b403, type: 3}
       Textures: []
       DialogClips: []
-      Text: Now you can enjoy the serenity of the countryside in peace and quiet!
+      Text: Soon you can enjoy the serenity of the countryside in peace and quiet!
     Choices: []
     Effect:
       NpcEffects: []

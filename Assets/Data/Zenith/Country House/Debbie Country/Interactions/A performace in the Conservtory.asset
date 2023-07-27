@@ -1,0 +1,172 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: A performace in the Conservtory
+  m_EditorClassIdentifier: 
+  Id: d984052a-b20c-4a0c-84cb-cf84794b10da
+  Name: A performance in the Conservatory
+  SubInteraction: 0
+  AlertNew: 1
+  Category: 6
+  Requirements:
+    RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
+    NpcStatRequirements: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 30a3eeef933fe0d498fc641bc3f2074f, type: 2}
+    - {fileID: 11400000, guid: 2ceee39f138ee9b42b5b469c02150da2, type: 2}
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredNpcsControled: []
+    RequiredNpcsTrained: []
+    RequiredNpcsNotControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 0
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    Items: []
+  Repeatable: 1
+  Cooldown: 4
+  PreviewEffect: 1
+  Result:
+    Dialogs:
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: cf8bd02da6f63b241b94e65c03778615,
+        type: 2}
+      Text: 'Debbie, I''m in the mood for a diversion.  Why don''t you go search
+        through your bag, find something interesting to wear and perform one of those
+        naughty little dances you''ve learn at Hardbodies?  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 2be9303aaf124ac4e9f7c22728820043,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: cf8bd02da6f63b241b94e65c03778615,
+        type: 2}
+      Text: Oh.  OK.  If that's what you'd like, Mr. {LastName}.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 2be9303aaf124ac4e9f7c22728820043,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 350
+      OptionalAudioClip: {fileID: 8300000, guid: 591fda632950f524488cefa3b2fc549c,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: It's always a good idea...
+      Videos:
+      - {fileID: 32900000, guid: c20ae8b068c029c489fa161fb1842408, type: 3}
+      - {fileID: 32900000, guid: de624b6e1e4f100439f5c0a61a49fe33, type: 3}
+      - {fileID: 32900000, guid: ff39eee9f53de064998840cdf709fa51, type: 3}
+      - {fileID: 32900000, guid: d697a45fc5cf7e34e9d545fa423a2a96, type: 3}
+      - {fileID: 32900000, guid: 4357bc2a4b2a8a14597b9187cd14a0aa, type: 3}
+      - {fileID: 32900000, guid: 0c5e61271cef61b418cd6e57de31ce4f, type: 3}
+      - {fileID: 32900000, guid: 4ad050ddd480ff448bc9c854c242ba97, type: 3}
+      - {fileID: 32900000, guid: 82bf8be5f04271c4da9424dba33f37b5, type: 3}
+      - {fileID: 32900000, guid: 6631d475909d8c64089ed3123fe4937b, type: 3}
+      - {fileID: 32900000, guid: 1050d33eb5da45b43a7885bb7af86231, type: 3}
+      - {fileID: 32900000, guid: 5d08210a0a54b5f47a29f7e60089521e, type: 3}
+      - {fileID: 32900000, guid: 1ac4711d48239b441975a88aec64e090, type: 3}
+      - {fileID: 32900000, guid: a499c525cb2bbbc47a537548f77a1951, type: 3}
+      - {fileID: 32900000, guid: 01162045f52e4e749a6f6e7300d94492, type: 3}
+      - {fileID: 32900000, guid: 11e8b7d795923254c9aa0355dce44a87, type: 3}
+      - {fileID: 32900000, guid: c30a0943ad0488c4fb029aeaef65e2af, type: 3}
+      - {fileID: 32900000, guid: 107f3ce37a986194ba4d1d51d36f70ed, type: 3}
+      - {fileID: 32900000, guid: e460aa2eae5e8ea4ea41fd6f3b4484be, type: 3}
+      - {fileID: 32900000, guid: 4632f3a7df2a6a246b1981b9dba8fa7f, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: ...to remind her she's not a guest.  Debbie's on the clock and earns
+        her time in paradise by offering entertainment and amusement.
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 10
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      TrophiesRemoved: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
+  FailureResult:
+    Dialogs: []
+    OptionalPopups: []
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      TrophiesRemoved: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  Completed: 0
+  TurnCompletedOn: -1
+  New: 1
+  FailCount: 0
