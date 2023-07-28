@@ -24,7 +24,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 30a3eeef933fe0d498fc641bc3f2074f, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -47,7 +48,8 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: cf8bd02da6f63b241b94e65c03778615,
+        type: 2}
       Text: I don't understand what I've done!  I've been good!  Please don't punish
         me!
       CustomNpcImageOptions: []
@@ -61,7 +63,8 @@ MonoBehaviour:
         type: 3}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: cf8bd02da6f63b241b94e65c03778615,
+        type: 2}
       Text: Debbie, you're the kind of girl who NEEDS discipline.  Without it, you
         get into all kinds of trouble.  Now strip down so we can begin.
       CustomNpcImageOptions: []
@@ -97,8 +100,8 @@ MonoBehaviour:
       Textures: []
       DialogClips:
       - {fileID: 8300000, guid: 322881978e4a294429fe4ae850ac3bb1, type: 3}
-      Text: The Play Room in unequalled.  Too bad Debbie can't appreciate OBEIR's
-        craftsmanship in the same way!
+      Text: The Play Room is unequalled, offering lots of painful diversions.  Too
+        bad Debbie can't appreciate OBEIR's craftsmanship in the same way!
     Choices: []
     Effect:
       NpcEffects:
