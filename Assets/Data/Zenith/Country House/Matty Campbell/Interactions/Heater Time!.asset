@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: I'll need to think on this
+  m_Name: Heater Time!
   m_EditorClassIdentifier: 
-  Id: ffe04bf9-95cd-4d28-a15f-3f6cb1f1d341
-  Name: I'll need to think on this
+  Id: 435b83bb-91c2-4b00-b90a-0cac517db47f
+  Name: Heater Time!
   SubInteraction: 1
   AlertNew: 1
-  Category: 1
+  Category: 6
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -41,30 +41,59 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 0
-  Cooldown: 0
-  PreviewEffect: 0
+  Repeatable: 1
+  Cooldown: 4
+  PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: ec9b6c5c6ec62c149bdd6a90fe5272e8,
-        type: 2}
-      Text: I may not be as ready to go ahead as I thought.  I'll come back to you
-        when I''m ready.
+      OptionalNpcReference: {fileID: 0}
+      Text: Matty, why don't you get busy with Debbie?  And take it nice and slow. 
+        Give me a show.  Make it good if you ever expect to be invited back here,
+        ok?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: d56786eb4e676e44fafa1c56c305f973,
+      CustomBackground: {fileID: 2800000, guid: 2be9303aaf124ac4e9f7c22728820043,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
-        yPos: 0.5
-        width: 200
+        yPos: 0.3
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups: []
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: If that's what you'd like...
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 2be9303aaf124ac4e9f7c22728820043,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: Watching the older Aussie girl...
+      Videos:
+      - {fileID: 32900000, guid: ba1addc42ac3e2643a968a3125471a73, type: 3}
+      - {fileID: 32900000, guid: 4c416191bce9c02469656ff5b0a4e441, type: 3}
+      - {fileID: 32900000, guid: 0b2c3f2104b80fa4aa48b3e11324f17b, type: 3}
+      - {fileID: 32900000, guid: bd20139e67a368b4d86be6c41919c3fa, type: 3}
+      - {fileID: 32900000, guid: 699f12eb287db954fb4d6b9b9c53efb7, type: 3}
+      - {fileID: 32900000, guid: 954c8cde016b94e46a84fe82c61c5ec7, type: 3}
+      - {fileID: 32900000, guid: cc47d419dc1852246a59583845b5f4cb, type: 3}
+      - {fileID: 32900000, guid: 45295175b42b76c4eb16dad700d72903, type: 3}
+      - {fileID: 32900000, guid: 341d4ddb537f8e34dbb7795447a77943, type: 3}
+      - {fileID: 32900000, guid: cb2cb36ea5f5e674587efcdfab5ccdac, type: 3}
+      Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: 5f4b150c61f825240a847b669fedd874, type: 3}
+      Text: '...with the younger Debbie, you''d never know they were both completely
+        straight!  Just another benefit from the right kind of corporate training... '
     Choices: []
     Effect:
       NpcEffects: []
-      EgoEffect: 0
+      EgoEffect: 15
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -89,7 +118,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
-    GoToRegion: {fileID: 11400000, guid: f4b6c2fffb1ab3743ac190d5c780e3f6, type: 2}
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:

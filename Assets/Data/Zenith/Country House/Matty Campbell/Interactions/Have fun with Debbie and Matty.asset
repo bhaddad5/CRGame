@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: I'll need to think on this
+  m_Name: Have fun with Debbie and Matty
   m_EditorClassIdentifier: 
-  Id: ffe04bf9-95cd-4d28-a15f-3f6cb1f1d341
-  Name: I'll need to think on this
-  SubInteraction: 1
+  Id: 69699cf8-8e31-4106-8c6a-192aaa5fbc38
+  Name: Have fun with Debbie and Matty
+  SubInteraction: 0
   AlertNew: 1
-  Category: 1
+  Category: 6
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -24,7 +24,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 1a0f72cf003767446959c6e7e9d7814f, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -41,27 +42,14 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 0
-  Cooldown: 0
-  PreviewEffect: 0
+  Repeatable: 1
+  Cooldown: 2
+  PreviewEffect: 1
   Result:
-    Dialogs:
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: ec9b6c5c6ec62c149bdd6a90fe5272e8,
-        type: 2}
-      Text: I may not be as ready to go ahead as I thought.  I'll come back to you
-        when I''m ready.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: d56786eb4e676e44fafa1c56c305f973,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.5
-        width: 200
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
+    Dialogs: []
     OptionalPopups: []
-    Choices: []
+    Choices:
+    - {fileID: 11400000, guid: fe05dbf8943f5a94591fbda3e1f41fa5, type: 2}
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -89,7 +77,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
-    GoToRegion: {fileID: 11400000, guid: f4b6c2fffb1ab3743ac190d5c780e3f6, type: 2}
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
