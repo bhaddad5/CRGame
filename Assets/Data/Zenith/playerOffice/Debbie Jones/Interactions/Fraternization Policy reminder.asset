@@ -27,6 +27,7 @@ MonoBehaviour:
     RequiredInteractions:
     - {fileID: 11400000, guid: 8d12ba6c3309f7f4c89706d85cc16a69, type: 2}
     - {fileID: 11400000, guid: 2378a84496e68ff4c93896ef48642f0c, type: 2}
+    - {fileID: 11400000, guid: 40a408b0bde54d8478b754368d5e3d5d, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -192,7 +193,8 @@ MonoBehaviour:
       - {fileID: 8300000, guid: 1477ca20ad3173344b26112541c6fe8f, type: 3}
       Text: ...has enraged Debbie.  Making her deny the accusation has amused you
         to no end!  Putting an end to her nightclub adventures is also a delicious
-        curb on your secretary's out of office activities!
+        curb on your secretary's out of office activities!  And there's no mention
+        of her 'boyfriend' Eugene who's no longer on the scene.
     - Title: You've decided to let...
       Videos:
       - {fileID: 32900000, guid: bbd1505ffdb8ee048ae9cec232fc702e, type: 3}
@@ -208,6 +210,9 @@ MonoBehaviour:
           type: 2}
         AmbitionEffect: -7
         PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 15
       FundsEffect: 0
       PowerEffect: 0
@@ -223,6 +228,7 @@ MonoBehaviour:
       - {fileID: 11400000, guid: 8d78b5bb64aca49438dd8dc9f780b77c, type: 2}
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd:
       - {fileID: 11400000, guid: 093941a12d8d2f7489166430d82653c4, type: 2}
@@ -257,6 +263,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -271,3 +278,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0
