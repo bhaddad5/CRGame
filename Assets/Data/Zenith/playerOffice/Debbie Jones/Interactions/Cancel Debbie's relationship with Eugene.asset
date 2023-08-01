@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Where did these flowers come from
+  m_Name: Cancel Debbie's relationship with Eugene
   m_EditorClassIdentifier: 
-  Id: dd68b32d-8c96-461d-ae7f-77ef611840f3
-  Name: Where did these flowers come from?
+  Id: 808cdea3-259b-4e48-b478-64c8c2dd08db
+  Name: Cancel Debbie's relationship with Eugene
   SubInteraction: 0
   AlertNew: 1
-  Category: 1
+  Category: 6
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -25,9 +25,8 @@ MonoBehaviour:
     NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 6d2ea976a9559784c8742a62c118706d, type: 2}
-    RequiredNotCompletedInteractions:
-    - {fileID: 11400000, guid: c1a56e749b032164798fa927328d438d, type: 2}
+    - {fileID: 11400000, guid: 60eeb0766bb210746a5bab1bd1e14773, type: 2}
+    RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -48,60 +47,80 @@ MonoBehaviour:
   PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 1
+    - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 0}
-      Text: Well, well!  A flowers delivery for you, Debbie?
+      Text: 'NOTE: You''ve come to a juncture wheree Debbie''s romantic dalliance
+        is beginning to distract her from her essential duties.  You need to end
+        this pointless romance with Eugene... but how to end it is the question. '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: e2a0b6f26b3b1d04f8c71f76e2e13af1,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
+    - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 0}
-      Text: Yes, Sir-- from Eugene!!!  Aren't they just glorious?
+      Text: 'NOTE: You can have Eugene sent far away from Zenith.  You have enough
+        influence with the District Attorney to make that happen.  A five minute
+        phone call will put Debbie''s boyfriend three time zones away.  '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: e2a0b6f26b3b1d04f8c71f76e2e13af1,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
+    - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 0}
-      Text: I looks like you ryoung man is quite smitten-- you're a lucky girl, Debbie!
+      Text: 'NOTE: You could alternately have Eugene promted at the DA''s offic. 
+        He sounds professionally capable enough and a promotion would catapult Lawson
+        into a new social strata where a secretary like Debbie just can''t compete
+        in- a message the DA will convey to the newly promoted Eugene. '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: e2a0b6f26b3b1d04f8c71f76e2e13af1,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups:
-    - Title: Debbie glories in the....
-      Videos:
-      - {fileID: 32900000, guid: bbc80e8665e01c749ae0436b6025f404, type: 3}
-      Textures: []
-      DialogClips:
-      - {fileID: 8300000, guid: 13df19b3c9a514d4bb4a45e6a38acbf4, type: 3}
-      Text: ...excited and envious glances the bouquet attracts from th eother secretaries!
-    Choices: []
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: 'NOTE: Or you can admit you like this guy.  He makes you wonder how you
+        might have turned out if not for events in the past.  You have an opening
+        he''d be perfect for- one that would qualify hm for his own Debbie, and not
+        the girlfriend version either but the office slut variety.'
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: 'NOTE: It''s your call but you have to make it now-- before Eugene''s
+        blueballs threaten to blow the whole thing up in a messy way.  What will
+        you decide?'
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups: []
+    Choices:
+    - {fileID: 11400000, guid: ecbe37fea715a984d816ed077a68dcd9, type: 2}
+    - {fileID: 11400000, guid: 4e2f02a1abea118478711aaecc083d5c, type: 2}
+    - {fileID: 11400000, guid: c4e19ee76994b0045990fac7065a2c26, type: 2}
     Effect:
-      NpcEffects:
-      - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-          type: 2}
-        AmbitionEffect: 0
-        PrideEffect: 2
-        RemoveCurrentImage: 0
-        ImageSetsToAdd: []
-        ImageSetsToRemove: []
+      NpcEffects: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -136,7 +155,7 @@ MonoBehaviour:
     Choices: []
     Effect:
       NpcEffects: []
-      EgoEffect: 0
+      EgoEffect: 100
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
