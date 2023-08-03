@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: a1af5fd2-4381-41a9-a8c0-54edd6ca6b99
   Name: Business Trip
-  SubInteraction: 0
+  SubInteraction: 1
   AlertNew: 1
   Category: 6
   Requirements:
@@ -183,6 +183,9 @@ MonoBehaviour:
           type: 2}
         AmbitionEffect: 0
         PrideEffect: 3
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 18
       FundsEffect: 0
       PowerEffect: 0
@@ -197,6 +200,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -230,6 +234,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -244,3 +249,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0
