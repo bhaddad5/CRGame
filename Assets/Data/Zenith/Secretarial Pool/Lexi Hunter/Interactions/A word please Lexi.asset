@@ -1,0 +1,386 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: A word please Lexi
+  m_EditorClassIdentifier: 
+  Id: 4c44c734-6da8-4bac-93f3-03a5055d467f
+  Name: A word please Lexi...
+  SubInteraction: 0
+  AlertNew: 1
+  Category: 0
+  Requirements:
+    RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
+    NpcStatRequirements: []
+    RequiredInteractions: []
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredNpcsControled: []
+    RequiredNpcsTrained: []
+    RequiredNpcsNotControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 25
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    Items: []
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
+  Result:
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: Yes, Mr. {LastName}?  Would you like to pick out an Office Girl to try
+        out?  We have some new hires--
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 1a4ae96f368ded24c83aabc216e8416d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: 'If they''re halfway cute, they''ll get picked up right away by a manager
+        though.  You get stuck with the fours and fives, don''t you Lexi?  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 1a4ae96f368ded24c83aabc216e8416d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: 'I''m not complaining, Mr. {LastName}.  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 1a4ae96f368ded24c83aabc216e8416d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: No, of course not.  You love your title and the power it gives you over
+        these poor girls.  You even have your own little office with a door.  Do
+        you like your new pod, Lexi?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 1a4ae96f368ded24c83aabc216e8416d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: Very much so, Mr. {LastName}!  Thank you VERY much for it.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 1a4ae96f368ded24c83aabc216e8416d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: The girls need to know you're in charge-- you deserve a perk.  How's
+        your lovely wife Susan doing?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 1a4ae96f368ded24c83aabc216e8416d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: 'Suzee''s ok.  She''s busy at the club.  We don''t see each other that
+        much these days.  Like ships passing in the night. '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 1a4ae96f368ded24c83aabc216e8416d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: Oh!  And you were so enamoured with her!  I remember your wedding and
+        the honeymoon-- that was fun to chaperone.  Mrs. and Mrs. Lexi Hunter-- and
+        now the bloom's off the rose, is it?  Why's that?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 1a4ae96f368ded24c83aabc216e8416d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: 'Lesbian bed death, I guess.  To be honest, she has to do things at the
+        club that make it hard for me to think about her liek I used to.  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 1a4ae96f368ded24c83aabc216e8416d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: What kind of things, Lexi?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 1a4ae96f368ded24c83aabc216e8416d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: Dancing- pole dancing, lap dancing-- I don't mind all that.  That's her
+        job.  Even the privates are ok.  But she's been turning tricks there now. 
+        Pussywillows gets a third but she brings home the rest.  We need the money
+        with the monthly mortgage on the Loft going up.  Omn a good night, she can
+        bring home between three and four hundred dollars.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 1a4ae96f368ded24c83aabc216e8416d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: What's the problem then?  You don't the idea of your wife prostituting
+        herself to make the mortgage?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 1a4ae96f368ded24c83aabc216e8416d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: 'It''s that it is with men and also... I think she likes it.  She was
+        never really into me and she never turned into a real lesbian, no matter
+        how hard I tried.  I think she likes her work-- too much.  But what can I
+        do?  We need the money.  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 1a4ae96f368ded24c83aabc216e8416d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: 'Well, I would never ask-- or allow you to-- divorce her.  But would
+        you be interested in something on the side?  With a pretty girl-- not one
+        of your plain, boring Office Girls, but a real honey? '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 1a4ae96f368ded24c83aabc216e8416d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: I wouldn't say no...
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 1a4ae96f368ded24c83aabc216e8416d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: Well, it's up to my wife.  You'll need to interview with her and she'll
+        decided if you're appropriate.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 1a4ae96f368ded24c83aabc216e8416d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: 'Wait-- Tracey?  I mean are we talking about Mrs. {LastName}?  I had
+        no idea she was a lesbian! '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 1a4ae96f368ded24c83aabc216e8416d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: Trust me, she's not.  No, this involves another female.  Why don't you
+        come around to the house and I'll let Tracey explain in more detail, alright?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 1a4ae96f368ded24c83aabc216e8416d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: 'NOTE: Excited and curious, Lexi agrees.  She''ll pay a visit to Zenith
+        Hills Estate shortly!'
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 1a4ae96f368ded24c83aabc216e8416d,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups: []
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      TrophiesRemoved: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
+  FailureResult:
+    Dialogs: []
+    OptionalPopups: []
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      TrophiesRemoved: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  Completed: 0
+  TurnCompletedOn: -1
+  New: 1
+  FailCount: 0
