@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Monthly Strapon Date
+  m_Name: What's that you're hiding
   m_EditorClassIdentifier: 
-  Id: d1568e92-ed03-4b01-bafd-489cacf7c64a
-  Name: Monthly Strapon Date
+  Id: 6ff985c1-2975-4e13-91a1-a1a289fc5edc
+  Name: What's that you're hiding?
   SubInteraction: 0
   AlertNew: 1
-  Category: 6
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -24,8 +24,7 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions:
-    - {fileID: 11400000, guid: f76a45cf490d47046871c47c34e076e1, type: 2}
+    RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -34,7 +33,7 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 50
+    EgoCost: 0
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -43,60 +42,57 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 1
-  Cooldown: 60
+  Cooldown: 14
   PreviewEffect: 1
   Result:
     Dialogs:
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: So, can I Mr. {LastName}?  It's the start of the monthly schedule-- is
-        it ok?  Can we?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 1ee0f52d6af2c054d895d5bd82a12907,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: From the look on Debbie's face, she doesn't exactly look excited.  But
-        I suppose it helps you two feel closer.  Go on-- go get your strapon, Lexi. 
-        Debbie, you're a lucky girl-- you get yourself ready for a good hard ride!
+      Text: Young lady, what is that?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 1ee0f52d6af2c054d895d5bd82a12907,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 375
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: What is what, Sir?  Oh-- this.  It's just for fun.  Something Miss Lexi
+        had me put on.  It's just temporary-- shall I wash it off?  I can wash it
+        off right now!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: Lexi enjoys these occaisions...
-      Videos:
-      - {fileID: 32900000, guid: f336af4f37db578479c7841363230c47, type: 3}
-      - {fileID: 32900000, guid: d710a7abcfbc0ca479afdc9bf7a47d79, type: 3}
-      - {fileID: 32900000, guid: 065266514795ea741af93b5f0ca29587, type: 3}
-      - {fileID: 32900000, guid: 9a27912f738466241be44544d0efdb82, type: 3}
-      - {fileID: 32900000, guid: de01dd116cb37eb4db2eb8cf92ae46cb, type: 3}
-      - {fileID: 32900000, guid: 5d0ede2e8b09aee428d57e89b19a565b, type: 3}
-      Textures: []
-      DialogClips:
-      - {fileID: 8300000, guid: 5f58e2a733a6b64449e1697aa03c020e, type: 3}
-      Text: '...much more than Debbie.  While your presence in the bedroom doesn''t
-        seem to inhibit Lexi at all, Debbie''s frequent glances suggest embarrassment,
-        resentment, depression and something else... perhaps a wish it wasn''t Lexi
-        she was servicing? '
+    - Title: She's hoping you'll tell her get rid of it
+      Videos: []
+      Textures:
+      - {fileID: 2800000, guid: 458c465c1e0018245869fa3a56328857, type: 3}
+      - {fileID: 2800000, guid: 992a2e7792fd5b744885ecd3e89eecdf, type: 3}
+      - {fileID: 2800000, guid: 4013a57423ed5a94a920f7a4235b91ad, type: 3}
+      - {fileID: 2800000, guid: 28a26107a36bd8c479b17668704eb9f4, type: 3}
+      - {fileID: 2800000, guid: 77a4266c07678574c993503d32053fb7, type: 3}
+      - {fileID: 2800000, guid: 1f06973583c0b654aadec5711b9f3607, type: 3}
+      - {fileID: 2800000, guid: fb7898affc50ede4cabf15f31ab78710, type: 3}
+      - {fileID: 2800000, guid: cbe749c0a0895f84fab5a8ffbeab1636, type: 3}
+      DialogClips: []
+      Text: No, it's a bit risque but gay girls like you can be a bit racey when
+        you finally come out of the closet.  I'll allow it.  Tell your girlfriend
+        I saw it and I approve.
     Choices: []
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
           type: 2}
         AmbitionEffect: 0
-        PrideEffect: 6
+        PrideEffect: 2
         RemoveCurrentImage: 0
         ImageSetsToAdd: []
         ImageSetsToRemove: []

@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Miss Lexi would like a word
+  m_Name: Request granted!
   m_EditorClassIdentifier: 
-  Id: 61b2ae0c-9943-4676-91a2-953b0b1041da
-  Name: Miss Lexi would like a word
-  SubInteraction: 0
+  Id: 1cacc2c6-93ed-40b3-99d9-f6b5c2fbedd6
+  Name: Request granted!
+  SubInteraction: 1
   AlertNew: 1
   Category: 1
   Requirements:
@@ -23,16 +23,9 @@ MonoBehaviour:
     RequiredTurnNumber: 0
     NotOnWeekends: 0
     NotOnWeekdays: 0
-    NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
-        type: 2}
-      Stat: 1
-      Is: 2
-      Value: 175
-    RequiredInteractions:
-    - {fileID: 11400000, guid: 4d84759adf75ace4f97c5ddc9db81fd0, type: 2}
-    RequiredNotCompletedInteractions:
-    - {fileID: 11400000, guid: f76a45cf490d47046871c47c34e076e1, type: 2}
+    NpcStatRequirements: []
+    RequiredInteractions: []
+    RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -48,50 +41,18 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 1
-  Cooldown: 2
-  PreviewEffect: 1
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: Sir, Miss Lexi was hoping she might have a quick word?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 353fe760631b2344bb89208f1d660b8b,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: About what Debbie?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 353fe760631b2344bb89208f1d660b8b,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: I don't know, Mr. {LastName}- she didn't tell me.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 353fe760631b2344bb89208f1d660b8b,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: Send her in.  Ah, Lexi-- what do you want?
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: 'And I bet as her lezzie tomboy partner, you''d like it too-- that feeling
+        of power over your haughty Deborah?  I bet you would.  Fine- we can add it
+        to your sleepover playdate menu.  But only once a month-- that will make
+        it special for the both of you.  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 353fe760631b2344bb89208f1d660b8b,
         type: 3}
@@ -104,7 +65,7 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
         type: 2}
-      Text: Sorry to disturb you.  I just wanted to ask something... about Deborah.
+      Text: Just once a month?   That's it?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 353fe760631b2344bb89208f1d660b8b,
         type: 3}
@@ -117,7 +78,7 @@ MonoBehaviour:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
         type: 2}
-      Text: You call her Deborah?  Why not Debbie?
+      Text: Take it or leave it.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 353fe760631b2344bb89208f1d660b8b,
         type: 3}
@@ -130,10 +91,8 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
         type: 2}
-      Text: Well, I understand she's 'Debbie' to you.  But to me, 'Deborah' is who
-        she is-- the hot, ambitious and very straight blonde executive who I first
-        set eyes on.  She likes it too, which makes things... nicer between us. 
-        If you prefer I call her 'Debbie'--
+      Text: Oh, yes-- that would be great!  Once a month would be great!  Thank you,
+        Mr. {LastName}!  Deborah will be THRILLED!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 353fe760631b2344bb89208f1d660b8b,
         type: 3}
@@ -143,26 +102,12 @@ MonoBehaviour:
         width: 375
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
+    - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
         type: 2}
-      Text: I could care less-- I was just curious.  What is it you wanted?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 353fe760631b2344bb89208f1d660b8b,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
-        type: 2}
-      Text: Well, the Lesbinitol works great!  She's not totally into it but get
-        gets wet enough for me whn we're together.  But she gets moody-- especially
-        when you're away.  I know from experience with Suzee that a good strapon
-        fucking would do Deborah a LOT of good.  Would it be ok?
+      Text: 'NOTE: You''re not so sure about that, but it''s the natural next step
+        in their relationship.  You may now allow monthly strapon sex dates between
+        the girls.'
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 353fe760631b2344bb89208f1d660b8b,
         type: 3}
@@ -173,9 +118,7 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
-    Choices:
-    - {fileID: 11400000, guid: 9ae345246a66ac547b7d539443ab2666, type: 2}
-    - {fileID: 11400000, guid: f76a45cf490d47046871c47c34e076e1, type: 2}
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
