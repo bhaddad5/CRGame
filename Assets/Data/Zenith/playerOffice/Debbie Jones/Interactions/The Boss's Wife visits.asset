@@ -1,0 +1,377 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: The Boss's Wife visits
+  m_EditorClassIdentifier: 
+  Id: 03907ed4-d83f-4273-bcce-907b7535ef06
+  Name: The Boss's Wife visits
+  SubInteraction: 0
+  AlertNew: 1
+  Category: 3
+  Requirements:
+    RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
+    NpcStatRequirements:
+    - OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Stat: 1
+      Is: 2
+      Value: 200
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 4d84759adf75ace4f97c5ddc9db81fd0, type: 2}
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredNpcsControled: []
+    RequiredNpcsTrained: []
+    RequiredNpcsNotControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 0
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    Items: []
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
+  Result:
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: d6893d3d1ae90dc4699580eb2d4b4f1a,
+        type: 2}
+      Text: Darling!  I was just downtown and thought I'd drop in-- I hope I haven't
+        come at an inconvenient time?
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 90f886d88d80b9540a3a6e36977ad5ca, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 5143e3ce9e33973479a1d001c5e1c665,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 8300000, guid: 92d8418e62340a94d87f19ea8f8b98c7,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: d6893d3d1ae90dc4699580eb2d4b4f1a,
+        type: 2}
+      Text: Tracey, you ALWAYS grace wherever you go.  Can Debbie get you something?
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 90f886d88d80b9540a3a6e36977ad5ca, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 5143e3ce9e33973479a1d001c5e1c665,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: Ma'am?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 5143e3ce9e33973479a1d001c5e1c665,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 8300000, guid: a23c1240b660be14f963c8c8db7ea22e,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: d6893d3d1ae90dc4699580eb2d4b4f1a,
+        type: 2}
+      Text: Debbie- you are why I'm here!  I understand you have a new girlfriend! 
+        How exciting-- is this true?  Have you come out of the closet as a lesbian
+        now, dear?
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 90f886d88d80b9540a3a6e36977ad5ca, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 5143e3ce9e33973479a1d001c5e1c665,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 8300000, guid: b520b8e3f821e8f4292f3fcc0e9afe15,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: Well... it's more complicated than that.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 5143e3ce9e33973479a1d001c5e1c665,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 8300000, guid: 6edbcc0fe8a6dc74f9bdd9fafa497cdf,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: d6893d3d1ae90dc4699580eb2d4b4f1a,
+        type: 2}
+      Text: I'm sure it isn't.  Darling, can you summon Debbie's new gal pal?  My
+        old analyst Alexis, isn't it, dear?
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 90f886d88d80b9540a3a6e36977ad5ca, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 5143e3ce9e33973479a1d001c5e1c665,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 8300000, guid: 75fc9a7f98c464a43899960b1bf1df1e,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: Mrs. {LastName}!  What an honor!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 5143e3ce9e33973479a1d001c5e1c665,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: d6893d3d1ae90dc4699580eb2d4b4f1a,
+        type: 2}
+      Text: Oh, it's fun to be back after so long!  Now Alexis, I understand there's
+        a new girl in your life!  I just wanted to caution you though.  Debbie here
+        still harbors some fantasies regarding my husband.  Between us, I bet she
+        still secretly considers herself {FirstName}'s dutiful work wife.  You'lll
+        need to be VERY strict with her.
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 90f886d88d80b9540a3a6e36977ad5ca, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 5143e3ce9e33973479a1d001c5e1c665,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 8300000, guid: 7925443076ee5ba4ab69a51cebe03a54,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: I absolutely willl, Mrs. {LastName}.  Deborah's my girlfriend now.  She'll
+        do what I say.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 5143e3ce9e33973479a1d001c5e1c665,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: d6893d3d1ae90dc4699580eb2d4b4f1a,
+        type: 2}
+      Text: Let's not get carried away.  First and foremost, Debbie's company property. 
+        She serves a purpose.  Your little lesbian affair is quite irrelevant except
+        insofar as it reminds Debbie of her proper place in life.  I didn't wish
+        for this visit to become unpleasant.  Alexis, we spoke about some photographs
+        of you two.  Show me.
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 90f886d88d80b9540a3a6e36977ad5ca, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 5143e3ce9e33973479a1d001c5e1c665,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 8300000, guid: 1aa01aee942893043be89ed5c3c59c07,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: Yes, Ma'am.  Here you are.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 5143e3ce9e33973479a1d001c5e1c665,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: d6893d3d1ae90dc4699580eb2d4b4f1a,
+        type: 2}
+      Text: Lovely!  A public record of two lesbian women finding contentment in
+        each other!  May I have this?
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 90f886d88d80b9540a3a6e36977ad5ca, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 5143e3ce9e33973479a1d001c5e1c665,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 8300000, guid: ce3e7e91064056d46884041309349a2b,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: Of course, Mrs. {LastName}- with my compliments.
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 90f886d88d80b9540a3a6e36977ad5ca, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 5143e3ce9e33973479a1d001c5e1c665,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: d6893d3d1ae90dc4699580eb2d4b4f1a,
+        type: 2}
+      Text: I assume you have the original.  Have two copies made.  The next time
+        I visit my husband, I want to see this prominently displayed on your desk
+        Debbie.  I want everyone to know you're in a committed relationship with
+        another girl.  Do you understand?
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 90f886d88d80b9540a3a6e36977ad5ca, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 5143e3ce9e33973479a1d001c5e1c665,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 8300000, guid: bfa67ddf1dfde624bbcc4cc66244ccdc,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: Yes, Ma'am.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 5143e3ce9e33973479a1d001c5e1c665,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 8300000, guid: a13a8664f30e6984cbc95a3bd19bbb37,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: d6893d3d1ae90dc4699580eb2d4b4f1a,
+        type: 2}
+      Text: Good!  Well, I'm off to tea and shopping with Sally MacAllister.  Kisses,
+        Darling!  Ta ta girls!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 5143e3ce9e33973479a1d001c5e1c665,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 8300000, guid: e7828f3eff7128646bba551103591487,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: Even you're momentarily...
+      Videos: []
+      Textures:
+      - {fileID: 2800000, guid: b9189218a180f5548b202ce1ad53a8c2, type: 3}
+      DialogClips: []
+      Text: ...tricked into believing Debroah Jones has become a lesbian.  You're
+        relieved.  Tracey's no longer threatened and everything goes on as before,
+        except for Debbie's new romantic obligations to Lexi.  But that's of little
+        importance to you.  It's a job well done!
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 25
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      TrophiesRemoved: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
+  FailureResult:
+    Dialogs: []
+    OptionalPopups: []
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      TrophiesRemoved: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  Completed: 0
+  TurnCompletedOn: -1
+  New: 1
+  FailCount: 0
