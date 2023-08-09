@@ -44,7 +44,7 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 1
-  Cooldown: 10
+  Cooldown: 14
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -108,6 +108,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -189,6 +190,9 @@ MonoBehaviour:
           type: 2}
         AmbitionEffect: 0
         PrideEffect: -2
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 10
       FundsEffect: 0
       PowerEffect: 0
@@ -203,6 +207,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd:
       - {fileID: 11400000, guid: 093941a12d8d2f7489166430d82653c4, type: 2}
@@ -218,3 +223,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0
