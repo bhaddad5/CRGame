@@ -21,6 +21,8 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
@@ -40,6 +42,7 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 0
   Result:
     Dialogs:
@@ -72,7 +75,7 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 524c352db1c37b24fa4df8930133125e,
         type: 2}
-      Text: 'You do that.  {FirstName}, any chance blondie there mighgt be available
+      Text: 'You do that.  {FirstName}, any chance blondie there might be available
         for a Page Three spread?  She''s not much in the tits department but she''s
         got a certain... something. '
       CustomNpcImageOptions: []
@@ -131,7 +134,7 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 524c352db1c37b24fa4df8930133125e,
         type: 2}
-      Text: 'She''s doing well as CEO of Primer Mover.  For a female CEO, they could
+      Text: 'She''s doing well as CEO of Prime Mover.  For a female CEO, they could
         be doing worse I suppose.  Prime Mover is no Artemis but they are attracting
         a lot of attention! '
       CustomNpcImageOptions: []
@@ -168,6 +171,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -201,6 +205,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -213,4 +218,6 @@ MonoBehaviour:
       Home: 0
     GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
+  FailCount: 0
