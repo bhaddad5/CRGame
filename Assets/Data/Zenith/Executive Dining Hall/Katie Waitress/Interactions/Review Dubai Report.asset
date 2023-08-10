@@ -21,6 +21,8 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 7a95df0535387cb4bbfd563f661f4c71, type: 2}
@@ -42,34 +44,39 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 0
   Result:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
-      Text: 'FR: Sheikh Abdul, Secretary General of the Gulf Enterprise Council 
+      OptionalNpcReference: {fileID: 11400000, guid: 532f58f85b2abd84cb0d657a4fa3cec2,
+        type: 2}
+      Text: 'FR: Sheikh Mahmood, Secretary General of the Gulf Enterprise Council 
         RE: Placing another order!   My friend!  I am enjoying Miss Harper so much,
         I''m hoping you might help me in identiying a proper playmate for her.  She''s
         quite lonely and the company would do her some good!'
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: f0bf6d1683bf9aa4faaa11a2eb7effbf,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.4
+        width: 500
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 532f58f85b2abd84cb0d657a4fa3cec2,
+        type: 2}
       Text: 'NOTE: The Sheikh''s request for more merchandise is a huge opportunity. 
         Global HNWIs such as the Sheikh constitute a large market for AGATHA-related
         tech.  The Gulf Enterprise Council is now unlocked in Dubai!'
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: f0bf6d1683bf9aa4faaa11a2eb7effbf,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.4
+        width: 500
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
@@ -98,6 +105,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -139,6 +147,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -151,4 +160,6 @@ MonoBehaviour:
       Home: 0
     GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
+  FailCount: 0
