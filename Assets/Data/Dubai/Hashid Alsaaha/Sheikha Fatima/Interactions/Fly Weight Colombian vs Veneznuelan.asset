@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Fly Weight Colombian vs Veneznuelan
   m_EditorClassIdentifier: 
   Id: 7311c084-267f-4bfb-b0ae-04197fb6c683
-  Name: 'Fly Weight: Colombian vs Veneznuelan'
+  Name: 'Fly Weight: Colombian vs Venezuelan'
   SubInteraction: 1
   AlertNew: 1
   Category: 6
@@ -47,17 +47,19 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 49705918d855e9241b7abe9c2715c975,
+        type: 2}
       Text: I think I'll be ordering more of these South American girls!  They are
         fairly inexpensive and what spirit they have!  Brio, they call it!  These
         two little tigresses put on quite a show, I promise  you!  You'll need to
         lodge a wager of $200,000 on this contest.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: c12e53a47790d08408d6dbd6007b0a84,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
@@ -90,6 +92,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -123,6 +126,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -137,3 +141,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0
