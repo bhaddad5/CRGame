@@ -81,7 +81,7 @@ MonoBehaviour:
       DialogClips: []
       Text: '"So spirited-- it must appeal to you!  Nevertheless, she''ll soon learn
         there''s so much more than awkwardly pointing her arms and legs in different
-        direction and mugging for the camera!"'
+        directions and mugging for the camera!"'
     Choices: []
     Effect:
       NpcEffects:
@@ -89,10 +89,16 @@ MonoBehaviour:
           type: 2}
         AmbitionEffect: 10
         PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       - OptionalNpcReference: {fileID: 11400000, guid: 4d7bbd9e5d8ecee4dbaec1cb452fe01e,
           type: 2}
         AmbitionEffect: 10
         PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -107,6 +113,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -140,6 +147,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -154,3 +162,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0
