@@ -29,7 +29,8 @@ MonoBehaviour:
       Stat: 1
       Is: 0
       Value: 0
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -124,6 +125,9 @@ MonoBehaviour:
           type: 2}
         AmbitionEffect: 0
         PrideEffect: -3
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 3
       FundsEffect: 0
       PowerEffect: 0
@@ -138,6 +142,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -171,6 +176,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -185,3 +191,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0
