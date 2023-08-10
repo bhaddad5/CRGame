@@ -21,6 +21,8 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 172394fd687f44b4ab1d083240f565df, type: 2}
@@ -41,6 +43,7 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 0
   Result:
     Dialogs:
@@ -75,7 +78,7 @@ MonoBehaviour:
       OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
         type: 2}
       Text: No- run along now.  I'm here to speak with your boss.  Jonathan, we have
-        to do something about these office girls stinking up the company refridgerators! 
+        to do something about these office girls stinking up the company refrigerators! 
         Debbie's tuna fish sandwich has my whole office smelling like a whorehouse
         at low tide!
       CustomNpcImageOptions: []
@@ -93,7 +96,7 @@ MonoBehaviour:
       Text: Oh for God's sakes, {FirstName}-- aren't you making a mountain over a
         mole hill?  But there is a bigger issue that might be adjacent to your little
         drama.  I've been thinking it might make sense to give our girls access to
-        more nutricious, healthier meals.  For one, a program like that would reduce
+        more nutritious, healthier meals.  For one, a program like that would reduce
         our insurance costs.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: b7b33b95b8ec3ac45bc1c380af567ee4,
@@ -194,6 +197,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -227,6 +231,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -239,4 +244,6 @@ MonoBehaviour:
       Home: 0
     GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
+  FailCount: 0
