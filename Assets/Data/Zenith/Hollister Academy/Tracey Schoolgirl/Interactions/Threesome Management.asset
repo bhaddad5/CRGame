@@ -51,7 +51,7 @@ MonoBehaviour:
       OptionalNpcReference: {fileID: 11400000, guid: 73f45ec8296fdab4b9a111a643394c97,
         type: 2}
       Text: What role does etiquette play when inviting a second woman to share your
-        marraige bed?
+        marriage bed?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: bb00c61aada9d364e8667e71cac17fc0,
         type: 3}
@@ -82,7 +82,7 @@ MonoBehaviour:
       Textures:
       - {fileID: 2800000, guid: 17cd487c636ebae4c9528c537219be59, type: 3}
       DialogClips: []
-      Text: ...threesomes is as important a trophy wive's duty as being a party planner
+      Text: ...threesomes is as important a trophy wife's duty as being a party planner
         and social ornament!
     Choices: []
     Effect:
@@ -91,10 +91,16 @@ MonoBehaviour:
           type: 2}
         AmbitionEffect: 0
         PrideEffect: 10
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       - OptionalNpcReference: {fileID: 11400000, guid: d6893d3d1ae90dc4699580eb2d4b4f1a,
           type: 2}
         AmbitionEffect: 0
         PrideEffect: 10
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -109,6 +115,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -141,7 +148,7 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 14af4b3289f7b75438728ac446c7b497,
         type: 2}
-      Text: This is all happening too fast!  Am I to understand myhusband selected
+      Text: This is all happening too fast!  Am I to understand my husband selected
         this class specifically?  Surely he didn't.  I know he has affairs, but this
         is just all so... matter of fact.  No, I don't believe it!
       CustomNpcImageOptions: []
@@ -175,10 +182,16 @@ MonoBehaviour:
       - OptionalNpcReference: {fileID: 0}
         AmbitionEffect: 0
         PrideEffect: 1
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       - OptionalNpcReference: {fileID: 11400000, guid: d6893d3d1ae90dc4699580eb2d4b4f1a,
           type: 2}
         AmbitionEffect: 0
         PrideEffect: 1
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -193,6 +206,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -207,3 +221,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0
