@@ -34,7 +34,7 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 0
+    EgoCost: 50
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -106,8 +106,8 @@ MonoBehaviour:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 682a0229c813d0b4d896808a88667a14,
         type: 2}
-      Text: Please- it s {FirstName} to my friends-- or those I hope to become friends
-        with.  Tell me why you wanted to displaced Artemis as Cromwell's major commercial
+      Text: Please- it is {FirstName} to my friends-- or those I hope to become friends
+        with.  Tell me why you wanted to displace Artemis as Cromwell's major commercial
         partner?  What is going on here at Prometheus-- what are you working on?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: c2004b7fd2e4b3b4692abd2627233e3f,
@@ -122,7 +122,7 @@ MonoBehaviour:
       OptionalNpcReference: {fileID: 11400000, guid: 682a0229c813d0b4d896808a88667a14,
         type: 2}
       Text: Those are multiple questions and some bad assumptions, {FirstName}. 
-        I'll answer-- but I expected full disclosure from you as well.  I'll start. 
+        I'll answer-- but I expect full disclosure from you as well.  I'll start. 
         I wasn't trying to replace you at Cromwell.  Perhaps Zarasa did but that
         was not my intention.  I was only looking for a partner to help support our
         research.  Prometheus requires funding.
@@ -220,6 +220,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -253,6 +254,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -267,3 +269,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0
