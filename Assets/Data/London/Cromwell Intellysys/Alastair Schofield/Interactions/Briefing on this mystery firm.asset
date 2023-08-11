@@ -86,7 +86,7 @@ MonoBehaviour:
       OptionalNpcReference: {fileID: 11400000, guid: bc33bf02957c7994b940aa4e96ab4303,
         type: 2}
       Text: Nevertheless, you'll give Mr. {LastName} a complete briefing on this
-        firm, then write up a memoranda to me with all those details.
+        firm, then write up a memorandum to me with all those details.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 2e42676c53ec1054da4afa5642b81def,
         type: 3}
@@ -196,6 +196,9 @@ MonoBehaviour:
           type: 2}
         AmbitionEffect: -20
         PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -210,6 +213,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -243,6 +247,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -257,3 +262,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0
