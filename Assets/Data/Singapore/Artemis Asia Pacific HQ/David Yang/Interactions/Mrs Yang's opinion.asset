@@ -93,7 +93,7 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: c87534d57e4416445bce3fc68ed6d9f3,
         type: 2}
-      Text: No, she doesn't.  Singaporean women tend to look down al all Western
+      Text: No, she doesn't.  Singaporean women tend to look down on all Western
         women.  It isn't personal, Miranda.  It is just that Western girls are assumed
         to all be sluts.
       CustomNpcImageOptions: []
@@ -119,10 +119,16 @@ MonoBehaviour:
           type: 2}
         AmbitionEffect: -10
         PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       - OptionalNpcReference: {fileID: 11400000, guid: c87534d57e4416445bce3fc68ed6d9f3,
           type: 2}
         AmbitionEffect: 10
         PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -137,6 +143,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -235,6 +242,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -249,3 +257,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0

@@ -79,7 +79,7 @@ MonoBehaviour:
       OptionalNpcReference: {fileID: 11400000, guid: 9fc7f810eb3503f44a56e215ed266849,
         type: 2}
       Text: Miranda, your title is variable and dependent on the requirements of
-        the business  You're in Singapore and things are different here.  David,
+        the business.  You're in Singapore and things are different here.  David,
         what title do you think is appropriate for Miranda Hudson, now that you've
         had the chance to work with her a bit?
       CustomNpcImageOptions: []
@@ -164,6 +164,9 @@ MonoBehaviour:
           type: 2}
         AmbitionEffect: -20
         PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -178,6 +181,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -211,6 +215,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -225,3 +230,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0

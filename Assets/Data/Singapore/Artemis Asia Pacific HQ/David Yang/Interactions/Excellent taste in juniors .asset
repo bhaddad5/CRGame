@@ -131,7 +131,7 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: The throbbing in her temoles...
+    - Title: The throbbing in her temples...
       Videos:
       - {fileID: 32900000, guid: f1e8c4c6f570d3b42a4a621cb50d0094, type: 3}
       Textures: []
@@ -150,10 +150,16 @@ MonoBehaviour:
           type: 2}
         AmbitionEffect: 0
         PrideEffect: 10
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       - OptionalNpcReference: {fileID: 11400000, guid: 9fc7f810eb3503f44a56e215ed266849,
           type: 2}
         AmbitionEffect: 0
         PrideEffect: -10
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -168,6 +174,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -201,6 +208,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -215,3 +223,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0
