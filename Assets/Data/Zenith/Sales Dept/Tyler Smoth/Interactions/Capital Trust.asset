@@ -13,13 +13,16 @@ MonoBehaviour:
   m_Name: Capital Trust
   m_EditorClassIdentifier: 
   Id: d431467a-fce4-4fb6-865c-e23acb21d39f
-  Name: Capital Trust
+  Name: Capitol Trust
+  SubInteraction: 0
   AlertNew: 1
   Category: 4
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 9eb883c35bb21cc49b2f8f586742a246, type: 2}
@@ -39,18 +42,20 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs: []
     OptionalPopups:
-    - Title: Capital Trust is one of...
+    - Title: Capitol Trust is one of...
       Videos: []
       Textures:
       - {fileID: 2800000, guid: a38837859f5ad3c4f9736eee598682de, type: 3}
-      Texture: {fileID: 2800000, guid: a38837859f5ad3c4f9736eee598682de, type: 3}
+      DialogClips: []
       Text: ...the biggest financial institutions in the region!
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -67,7 +72,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -76,11 +83,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -97,7 +106,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -106,5 +117,8 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
+  FailCount: 0

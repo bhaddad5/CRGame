@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: da07c0b1-2cb9-4adf-bf09-b25032feb60c
   Name: Back to basics for Cynthia
+  SubInteraction: 0
   AlertNew: 1
   Category: 6
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: cebc68e35e56ef1438a0edd95b552464, type: 2}
@@ -39,8 +42,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -57,6 +61,8 @@ MonoBehaviour:
         xPos: 0.4
         yPos: 0.4
         width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: cce62dcf1e1cc4346a6669063ec206c4,
         type: 2}
@@ -69,10 +75,12 @@ MonoBehaviour:
         xPos: 0.4
         yPos: 0.4
         width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: cce62dcf1e1cc4346a6669063ec206c4,
         type: 2}
-      Text: You must be used to is, Cynthia.  Don't tell me Simon didn't do this
+      Text: You must be used to it, Cynthia.  Don't tell me Simon didn't do this
         to you whenever he wanted.  Right?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 503f9f7fe7f7693488f8f78692f87bd6,
@@ -81,19 +89,26 @@ MonoBehaviour:
         xPos: 0.4
         yPos: 0.4
         width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: You can imagine the same...
       Videos:
       - {fileID: 32900000, guid: 3931f8e50b7a85446be17c79f5f70293, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: ...scenario playing out in the real estate office where she and her future
         husband met.  She seems to sense what you're thinking and winks playfully.
+    Choices: []
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: cce62dcf1e1cc4346a6669063ec206c4,
           type: 2}
         AmbitionEffect: -10
         PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 30
       FundsEffect: 0
       PowerEffect: 0
@@ -108,7 +123,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -117,11 +134,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -138,7 +157,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -147,5 +168,8 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
+  FailCount: 0
