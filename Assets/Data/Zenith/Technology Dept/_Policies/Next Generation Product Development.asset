@@ -17,13 +17,15 @@ MonoBehaviour:
   Image: {fileID: 2800000, guid: 73ca8c9a664ce8c4d8abacc78d6adbe8, type: 3}
   Description: Artemis has for too long rested on its laurels.  New products must
     be developed if the company is to survive.  A determined focus by Senior Management
-    will set the tone for aggressive research and the resourcing.  Only by pushing
-    the boundaries will Artemis be able to keep its leadership position in the female
-    technology empowerment sector!
+    will set the tone for aggressive research.  Only by pushing the boundaries will
+    Artemis be able to keep its leadership position in the female technology empowerment
+    sector!
   Requirements:
     RequiredPower: 150
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
@@ -42,7 +44,7 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Effect:
     NpcEffects: []
     EgoEffect: 0
@@ -59,7 +61,9 @@ MonoBehaviour:
     NpcsToRemoveFromGame: []
     LocationsToControl: []
     TrophiesClaimedReferences: []
+    TrophiesRemoved: []
     MissionsToComplete: []
+    ItemsToAdd: []
     Car: 0
     Suits: 0
     JewleryCuffs: 0
@@ -69,3 +73,4 @@ MonoBehaviour:
     Promotion: 0
     Home: 0
   Active: 0
+  New: 1
