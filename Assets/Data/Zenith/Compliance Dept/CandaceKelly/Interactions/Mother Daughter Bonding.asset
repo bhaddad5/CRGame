@@ -141,8 +141,8 @@ MonoBehaviour:
       - {fileID: 32900000, guid: dc064c9a359e26842a61f1799986d195, type: 3}
       Textures: []
       DialogClips: []
-      Text: What harm is there?  Donald be pleased and the girls will earn his approval
-        with these shameful performances!
+      Text: What harm is there?  Donald will be pleased and the girls will earn his
+        approval with these shameful performances!
     Choices: []
     Effect:
       NpcEffects:
@@ -150,6 +150,9 @@ MonoBehaviour:
           type: 2}
         AmbitionEffect: 0
         PrideEffect: -20
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 20
       FundsEffect: 0
       PowerEffect: 0
@@ -164,6 +167,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -197,6 +201,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -211,3 +216,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0
