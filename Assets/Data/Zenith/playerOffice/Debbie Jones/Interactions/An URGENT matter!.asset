@@ -84,7 +84,7 @@ MonoBehaviour:
       Text: Well, it's all the gossip, Mr. {LastName}.  The other girls in the office
         and certainly some executives-- they all seem to know about...  well, they
         seem to know about us.  I haven't said a word.  I've been completely discreet.  
-        I didn't want you to think I've said anything our relationship!
+        I didn't want you to think I've said anything about our relationship!
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: 30a8b82b4273e694aa703858781f1045, type: 3}
       CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
@@ -356,6 +356,9 @@ MonoBehaviour:
           type: 2}
         AmbitionEffect: 0
         PrideEffect: -2
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 10
       FundsEffect: 0
       PowerEffect: 1
@@ -370,6 +373,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -403,6 +407,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -417,3 +422,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0
