@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 4808aa3a-e81d-4e23-9372-08009a53cf35
   Name: New opportunities at Artemis
+  SubInteraction: 0
   AlertNew: 1
   Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: bb24d813e79602e4b997b32fe73a14c1, type: 2}
@@ -38,8 +41,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -53,6 +57,8 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
       Text: ...something new.  Are things not going well with DeShawn?
@@ -62,6 +68,8 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
       Text: Better than I expected, to be honest!  When he understood what I was
@@ -73,6 +81,8 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
       Text: That sounds good to me.  What's the problem then?  You actually have
@@ -83,6 +93,8 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
       Text: It has nothing to do with DeShawn.  I just think I've outgrown the job. 
@@ -95,13 +107,17 @@ MonoBehaviour:
         xPos: 0
         yPos: 0
         width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: You promise to consider...
       Videos:
       - {fileID: 32900000, guid: e5d5006b1dd18eb408cf7fbb1ab6122c, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: ...some options for her, but you're honestly a bit perplexed.  You hate
-        a valuable staffer to the competition!
+        losing a valuable staffer to the competition!
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -118,7 +134,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -127,11 +145,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -148,7 +168,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -157,5 +179,8 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
+  FailCount: 0

@@ -17,20 +17,22 @@ MonoBehaviour:
   Image: {fileID: 2800000, guid: 39b1a5ae60b515c41bfbacbe46058c68, type: 3}
   Description: 'In order to divest debt, the government has sold off student debt
     to employers, who are better able to re-coup the loan debt.  Artemis will purchase
-    employee student debt, in order to alleviate stress associated with  This will
-    offer staff more flexibility to repay student loans.
+    employee student debt, in order to alleviate stress associated with it.  This
+    will offer staff more flexibility to repay student loans.
 
-    Managers can now use
-    student debt as one of their management tools in dealing with staff.  Debt payments
-    may be increased or decreased, interest on that debt now owned by the company,
-    can also be increased or decreased, based on the advice of the manager.  It is
-    a tool that will prove most persuasive!
+    Managers can now
+    use student debt as one of their management tools in dealing with staff.  Debt
+    payments may be increased or decreased, interest on that debt now owned by the
+    company, can also be increased or decreased, based on the advice of the manager. 
+    It is a tool that will prove most persuasive!
 
 '
   Requirements:
     RequiredPower: 300
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
@@ -49,7 +51,7 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Effect:
     NpcEffects: []
     EgoEffect: 0
@@ -66,7 +68,9 @@ MonoBehaviour:
     NpcsToRemoveFromGame: []
     LocationsToControl: []
     TrophiesClaimedReferences: []
+    TrophiesRemoved: []
     MissionsToComplete: []
+    ItemsToAdd: []
     Car: 0
     Suits: 0
     JewleryCuffs: 0
@@ -76,3 +80,4 @@ MonoBehaviour:
     Promotion: 0
     Home: 0
   Active: 0
+  New: 1
