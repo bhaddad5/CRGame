@@ -24,7 +24,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 967249a00ba672e4ab8fc13079711975, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -47,18 +48,21 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: c141f1708f9d93540ac972588dbe090b,
+        type: 2}
       Text: Hey {FirstName}!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 8fd12060e4ad257438e284c314d8b69d,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: c141f1708f9d93540ac972588dbe090b,
+        type: 2}
       Text: Hi Deborah!  And you are...?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: e97365762c9b23a42bb7fd06c0e4e40e,
@@ -70,7 +74,8 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: c141f1708f9d93540ac972588dbe090b,
+        type: 2}
       Text: Miranda Hudson.  Product Manager at Microsoft.  Deborah, is this a special
         friend of yours?
       CustomNpcImageOptions: []
@@ -83,13 +88,15 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: c141f1708f9d93540ac972588dbe090b,
+        type: 2}
       Text: 'Not exactly.  We work together at Artemis.  Oh, hey, {FirstName}-- do
         you have a minute?  I need to ask you about this new Red Star Motors issue. 
         Sorry, Miranda-- it''s a bit of a crisis at the office.  it''s so great running
         into you!  '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 8fd12060e4ad257438e284c314d8b69d,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.4
@@ -97,9 +104,10 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
-      Text: Sure, sure.  Same here.  Landing a spot in the Managemengt Trainee Program
-        at ARtemis-- very impressive, Jones!  Nice to see things are goign so well
+      OptionalNpcReference: {fileID: 11400000, guid: c141f1708f9d93540ac972588dbe090b,
+        type: 2}
+      Text: Sure, sure.  Same here.  Landing a spot in the Management Trainee Program
+        at Artemis-- very impressive, Deborah!  Nice to see things are going so well
         for you!  Drop me an email once in a while, ok?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: e97365762c9b23a42bb7fd06c0e4e40e,
@@ -111,10 +119,12 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: c141f1708f9d93540ac972588dbe090b,
+        type: 2}
       Text: Of course-- see you later Miranda!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 8fd12060e4ad257438e284c314d8b69d,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.4
@@ -122,10 +132,12 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: c141f1708f9d93540ac972588dbe090b,
+        type: 2}
       Text: 'Red Star Motors?  What are you talking about?  '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 8fd12060e4ad257438e284c314d8b69d,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.4
@@ -133,17 +145,20 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: c141f1708f9d93540ac972588dbe090b,
+        type: 2}
       Text: I just wanted an excuse to ditch Miranda Hudson.  We were college roommates
         for a semester and it was miserable.  Look. I'll buy you a drink for being
         my alibi, ok?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 8fd12060e4ad257438e284c314d8b69d,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.4
         width: 350
-      OptionalAudioClip: {fileID: 0}
+      OptionalAudioClip: {fileID: 8300000, guid: 73e9f7f795dbe4e45ab401b1003eaaff,
+        type: 3}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Miranda Hudson's a real bitch.
@@ -157,7 +172,7 @@ MonoBehaviour:
     Choices: []
     Effect:
       NpcEffects: []
-      EgoEffect: 0
+      EgoEffect: 1
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
