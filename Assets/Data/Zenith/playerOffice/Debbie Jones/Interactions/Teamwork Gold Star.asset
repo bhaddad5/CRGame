@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 04716753-d020-4585-bc6a-729691db8f58
   Name: Teamwork Gold Star
+  SubInteraction: 0
   AlertNew: 1
   Category: 5
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 35fa226f9f6345b448e95d07b8e1a559, type: 2}
@@ -38,8 +41,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -55,6 +59,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -67,10 +72,11 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: It's a course designed to help you successfully multi-tasking with other
+      Text: It's a course designed to help you successfully multi-task with other
         Junior staffers.  It builds on your previous Diversity training, Debbie--
         at which you excelled, I'm delighted to note!
       CustomNpcImageOptions: []
@@ -81,6 +87,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -95,20 +102,24 @@ MonoBehaviour:
         width: 375
       OptionalAudioClip: {fileID: 8300000, guid: d09f861b12c40d940bceceefb44e3067,
         type: 3}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: By pairing her with a lifestyle lesbian...
       Videos:
       - {fileID: 32900000, guid: 166f84dab732f90499743f2e8a1feb67, type: 3}
       Textures: []
+      DialogClips: []
       Text: ...Debbie is learning what it is like to perform with a Gold Star Girl-
         a lesbian woman who has never had sex with a man.
     - Title: She earns her little gold star...
       Videos: []
       Textures:
       - {fileID: 2800000, guid: 5c85d58d15865dc47a3cd392029a8235, type: 3}
+      DialogClips: []
       Text: ...which she seems embarrassed to wear, even when you remind her to wear
         it in the office on those 'special' days you schedule that show off her new
         skills!
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -125,7 +136,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -134,11 +147,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -155,7 +170,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -164,5 +181,8 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
+  FailCount: 0
