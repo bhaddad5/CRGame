@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: bf643453-89d8-4b53-a2cc-8bc4d1e2cab1
   Name: Take the meeting notes
-  SubInteraction: 0
+  SubInteraction: 1
   AlertNew: 1
   Category: 0
   Requirements:
@@ -134,6 +134,9 @@ MonoBehaviour:
           type: 2}
         AmbitionEffect: -7
         PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 10
       FundsEffect: 0
       PowerEffect: 0
@@ -148,6 +151,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -181,6 +185,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -195,3 +200,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0
