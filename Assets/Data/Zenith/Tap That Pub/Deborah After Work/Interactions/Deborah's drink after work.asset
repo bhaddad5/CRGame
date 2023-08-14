@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Deborah's drink after work
   m_EditorClassIdentifier: 
   Id: d47c8c24-4b5b-421b-873c-6df7cc9c41d2
-  Name: Deborah's drink after work
+  Name: Running into Deborah
   SubInteraction: 0
   AlertNew: 1
   Category: 3
@@ -26,7 +26,8 @@ MonoBehaviour:
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: be6586ab68deb7241bbc28ec7cc87792, type: 2}
-    RequiredNotCompletedInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: fc02f17d89ade184bb3a64f5c10348c4, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -48,28 +49,32 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: c141f1708f9d93540ac972588dbe090b,
+        type: 2}
       Text: Hey, what's up!  Just want to say that your memo on emerging technology
         was pretty impressive.  I learned a LOT.  Mind if I ask you a few questions
         I had?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 8fd12060e4ad257438e284c314d8b69d,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: c141f1708f9d93540ac972588dbe090b,
+        type: 2}
       Text: Well, I suppose.  It was a little complicated so if I can help make it
         a bit clearer to someone who's not as familiar with--
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 8fd12060e4ad257438e284c314d8b69d,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
       OptionalAudioClip: {fileID: 8300000, guid: 598e38b16d099d14fad5c761a24e13c0,
         type: 3}
       OptionalStartMusicClip: {fileID: 0}
@@ -78,11 +83,12 @@ MonoBehaviour:
         type: 2}
       Text: Oh my God!  Hey guys!  Hey {FirstName}!  Buy me a drink?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 8fd12060e4ad257438e284c314d8b69d,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
       OptionalAudioClip: {fileID: 8300000, guid: ada609b248907e84eabc521b35615cbe,
         type: 3}
       OptionalStartMusicClip: {fileID: 0}
@@ -91,11 +97,12 @@ MonoBehaviour:
         type: 2}
       Text: Sure.  Deborah, can I buy you a drink too?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 8fd12060e4ad257438e284c314d8b69d,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
@@ -103,11 +110,12 @@ MonoBehaviour:
         type: 2}
       Text: You know how I get so slippery when wet, right {FirstName}?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 8fd12060e4ad257438e284c314d8b69d,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
       OptionalAudioClip: {fileID: 8300000, guid: 4d09ee1d61f378d4f96a127aaa82f41a,
         type: 3}
       OptionalStartMusicClip: {fileID: 0}
@@ -116,11 +124,12 @@ MonoBehaviour:
         type: 2}
       Text: I'm fine.  I'll leave you two to enjoy yourselves.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 8fd12060e4ad257438e284c314d8b69d,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
       OptionalAudioClip: {fileID: 8300000, guid: 6d8ed9e2c351b3e429a8832d9431e486,
         type: 3}
       OptionalStartMusicClip: {fileID: 0}
@@ -130,11 +139,12 @@ MonoBehaviour:
       Text: 'NOTE: Deborah glances back with haugty contempt for you and the receptionist. 
         Britney smirks as Deborah exits the arena.'
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 8fd12060e4ad257438e284c314d8b69d,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
