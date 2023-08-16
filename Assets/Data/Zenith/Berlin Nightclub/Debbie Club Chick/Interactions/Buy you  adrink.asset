@@ -72,7 +72,8 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 350
-      OptionalAudioClip: {fileID: 0}
+      OptionalAudioClip: {fileID: 8300000, guid: 0391386c2e8622e4e89375c67044a583,
+        type: 3}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 8d78b5bb64aca49438dd8dc9f780b77c,
@@ -101,14 +102,16 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 350
-      OptionalAudioClip: {fileID: 0}
+      OptionalAudioClip: {fileID: 8300000, guid: c4db20f59b0c6b84e91264306ea7ed94,
+        type: 3}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: She accepts the drink...
       Videos:
       - {fileID: 32900000, guid: 66dda9339772c8f408a5237f332296a6, type: 3}
       Textures: []
-      DialogClips: []
+      DialogClips:
+      - {fileID: 8300000, guid: c22234d0011af604d98b38f9ab977e51, type: 3}
       Text: ...then, after a prim and polite thank you, sidles off and away from
         you into the darker corners of the club..
     Choices: []
@@ -118,6 +121,9 @@ MonoBehaviour:
           type: 2}
         AmbitionEffect: -1
         PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -132,6 +138,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -165,6 +172,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -179,3 +187,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0
