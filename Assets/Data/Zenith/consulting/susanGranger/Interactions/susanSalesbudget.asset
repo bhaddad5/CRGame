@@ -33,7 +33,6 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 8b1ff10340c0a8b45a60e980c06b63c0, type: 2}
     RequiredNotCompletedInteractions:
     - {fileID: 11400000, guid: 1c3f822f55d8bd449945eabff4120250, type: 2}
-    - {fileID: 11400000, guid: b9334a72f3058c74cb6bbcceb11db528, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -84,7 +83,7 @@ MonoBehaviour:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
         type: 2}
-      Text: Increase Ms. Miller's budget.  If she could step up, we could still make
+      Text: Increase our sales budget.  If Sales could step up, we could still make
         our numbers.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
@@ -98,8 +97,8 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 2d2d9fe634f1ea843a4402dfeb8ad59a,
         type: 2}
-      Text: Maybe.  But it's a big ask, even for Anne. Still, I trust your call on
-        this one.  Let's do it.
+      Text: Maybe.  But it's a big ask. Still, I trust your call on this one.  Let's
+        do it.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 83dfbc2aa65584948afbc9c10added39,
         type: 3}
@@ -124,7 +123,7 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: '"Yes- let''s bump Anne''s sales quota-- why not?"'
+    - Title: '"Yes- let''s bump up the sales quota-- why not?"'
       Videos:
       - {fileID: 32900000, guid: 80a299d6b20c3804a9f1d83501648dd7, type: 3}
       Textures: []
@@ -148,6 +147,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -181,6 +181,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -195,3 +196,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0
