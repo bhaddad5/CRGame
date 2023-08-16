@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 323a2588-5b16-4dfc-8a64-bb9e98e59160
   Name: Corporate Companion Coursework
+  SubInteraction: 1
   AlertNew: 1
   Category: 5
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
@@ -39,8 +42,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -56,6 +60,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -68,6 +73,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -82,6 +88,7 @@ MonoBehaviour:
         yPos: 0.42
         width: 375
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
@@ -95,11 +102,13 @@ MonoBehaviour:
         width: 375
       OptionalAudioClip: {fileID: 8300000, guid: bab9f282b85b375489a3959840345c18,
         type: 3}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: You're beginning to suspect Debbie is...
       Videos:
       - {fileID: 32900000, guid: 802153a438d91de4995ba24c82d1cdde, type: 3}
       Textures: []
+      DialogClips: []
       Text: '...being quite sincere.  The coursework focuses on skill sets required
         of "The Other Woman" in a powerful executive''s entourage.  From the way
         she''s begun behaving, you almost think she''s embracing the idea. '
@@ -107,9 +116,11 @@ MonoBehaviour:
       Videos: []
       Textures:
       - {fileID: 2800000, guid: 10aadd9f7cb35594d81d328d4abadc00, type: 3}
+      DialogClips: []
       Text: ...the proud young woman with an MBA that the ink had hardly dried on
         reading these kinds of books, especially under the tutelage of a man she
         deeply despised-- that man being you.
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -126,7 +137,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -135,11 +148,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -156,7 +171,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -165,5 +182,8 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
+  FailCount: 0

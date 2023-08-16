@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: c5ac2654-63bf-44fb-963b-4d9b383a2bcf
   Name: Employee Personal Safety Measures
-  SubInteraction: 0
+  SubInteraction: 1
   AlertNew: 1
   Category: 5
   Requirements:
@@ -129,6 +129,9 @@ MonoBehaviour:
           type: 2}
         AmbitionEffect: 0
         PrideEffect: -5
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 5
@@ -144,6 +147,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences:
       - {fileID: 11400000, guid: b40965f5dfaadc44fb6047779b6956ec, type: 2}
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -177,6 +181,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -191,3 +196,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0
