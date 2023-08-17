@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Conduct
+  m_Name: You may go to the Club for now
   m_EditorClassIdentifier: 
-  Id: 491bb0a7-df76-4945-baf4-ee4ccbd9ed54
-  Name: Conduct
+  Id: e05833de-1b95-49a5-bb43-4e420676c26b
+  Name: You may go to the Club for now
   SubInteraction: 1
   AlertNew: 1
-  Category: 4
+  Category: 3
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -42,14 +42,15 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 1
-  Cooldown: 0
+  Cooldown: 14
   PreviewEffect: 1
   Result:
     Dialogs:
-    - CurrSpeaker: 2
+    - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: "NOTE: Conduct involves Debbie\u2019s personal comportment!"
+      Text: You may continue to go to the club, if you wish-- but you will behave
+        yourself and there will be no nonsense.  Understand?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
         type: 3}
@@ -59,17 +60,45 @@ MonoBehaviour:
         width: 375
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups: []
-    Choices:
-    - {fileID: 11400000, guid: 8ee224207f1ecb149a24928310ba070a, type: 2}
-    - {fileID: 11400000, guid: 8b9be71012868cd409828675de89c8f8, type: 2}
-    - {fileID: 11400000, guid: e34e28c7fd78fcc40ac245de77199532, type: 2}
-    - {fileID: 11400000, guid: fd8482e84dfe79544b3eb4d43bde414b, type: 2}
-    - {fileID: 11400000, guid: 281ecbcac451ac04186cd7623e559606, type: 2}
-    - {fileID: 11400000, guid: f6369223962944e44b2daed75fcce1d3, type: 2}
-    - {fileID: 11400000, guid: 2b840faba5318444aa508c46d66d5aa7, type: 2}
-    - {fileID: 11400000, guid: 9fe4ca4476dd133429cf6da64307fc95, type: 2}
-    - {fileID: 11400000, guid: 0ab8f89283e106346863daa398d13e1d, type: 2}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: Yes, Sir!  No nonsense-- I got it!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 8300000, guid: fda9cf7136b98ed478f9be7a397e5513,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: 'NOTE: You may change your mind in another week, if you so choose.  She''ll
+        only be allowed to visit the club as long as you give her permission to do
+        so.'
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: Despite what she says...
+      Videos:
+      - {fileID: 32900000, guid: 9221e0363dc4e0a43a862e3f3411417e, type: 3}
+      Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: 25a68836525836142abb0c614340e08e, type: 3}
+      Text: ...it might be worth keeping an eye on her when she's over at Berlin
+        just to make sure!
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
