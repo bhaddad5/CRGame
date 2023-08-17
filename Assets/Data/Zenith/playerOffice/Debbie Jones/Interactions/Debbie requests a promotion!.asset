@@ -29,7 +29,8 @@ MonoBehaviour:
       Stat: 1
       Is: 0
       Value: 40
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 55f90d1cb4cb9584cad0c5c436ea334f, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -94,7 +95,7 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
-      OptionalAudioClip: {fileID: 8300000, guid: 29b2cd66ee3952244838bf8f132f0df0,
+      OptionalAudioClip: {fileID: 8300000, guid: c4b262eb1a548cc49bd9d651fc7714d1,
         type: 3}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
@@ -224,6 +225,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -253,14 +255,15 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
-      OptionalAudioClip: {fileID: 0}
+      OptionalAudioClip: {fileID: 8300000, guid: 114918e817c06b444a09a7a40b9c4f9f,
+        type: 3}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
       Text: Your inability to manage your personal finances is your problem, not
-        mine.  But if you were to go braless a few days a month... give us all some
-        jiggle action...
+        mine.  As for your 'new duties', you have a long way to go.  But if you were
+        to go braless a few days a month... give us all some jiggle action...
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
         type: 3}
@@ -275,7 +278,8 @@ MonoBehaviour:
       Videos:
       - {fileID: 32900000, guid: a146273d8d031ba4eaff0017746f73fd, type: 3}
       Textures: []
-      DialogClips: []
+      DialogClips:
+      - {fileID: 8300000, guid: d99985ea0db27b04390c20c9ded598f3, type: 3}
       Text: ...to even consider such an idea suggests she's not quite ready to earn
         the jump to full Secretary!
     Choices: []
@@ -295,6 +299,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -309,3 +314,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0
