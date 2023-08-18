@@ -70,7 +70,9 @@ MonoBehaviour:
       Textures: []
       DialogClips: []
       Text: It is a solid drive.
-    Choices: []
+    Choices:
+    - {fileID: 11400000, guid: 049b937452826e343bfbf7e5467e52fe, type: 2}
+    - {fileID: 11400000, guid: bc9790ae097a48d47a3528a7f5fe8072, type: 2}
     Effect:
       NpcEffects: []
       EgoEffect: 7
@@ -87,6 +89,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -120,6 +123,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -134,3 +138,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0
