@@ -82,9 +82,10 @@ MonoBehaviour:
       Text: '... as temperatures plunge!  It''s time to bring the heat!  '
     - Title: Unfortunately for Debbie, you have other ideas...
       Videos:
-      - {fileID: 32900000, guid: 828fd0766bb4a1d4a87199e3652b1b5f, type: 3}
+      - {fileID: 32900000, guid: 613ca131dd39ebb478c5d3de85662ee0, type: 3}
       - {fileID: 32900000, guid: a30fc50d09ac61b4da13e059f7421a60, type: 3}
       - {fileID: 32900000, guid: e98beca0f8836f44ea3a0e42520df6f3, type: 3}
+      - {fileID: 32900000, guid: 828fd0766bb4a1d4a87199e3652b1b5f, type: 3}
       Textures: []
       DialogClips:
       - {fileID: 8300000, guid: 403244efdad126d44bb6d63c7b6e7af4, type: 3}
@@ -97,6 +98,9 @@ MonoBehaviour:
           type: 2}
         AmbitionEffect: 0
         PrideEffect: -1
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -111,6 +115,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -144,6 +149,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -158,3 +164,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0
