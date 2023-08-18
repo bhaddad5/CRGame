@@ -18,7 +18,7 @@ MonoBehaviour:
   AlertNew: 1
   Category: 0
   Requirements:
-    RequiredPower: 0
+    RequiredPower: 8
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NotOnWeekends: 0
@@ -235,7 +235,8 @@ MonoBehaviour:
       DialogClips:
       - {fileID: 8300000, guid: 5997986b1ed0ff049bf65afbf09de24e, type: 3}
       Text: '"I''m going to show you just how valuable I can be to you.  Watch this
-        space, Mr. {LastName}-- this girl is gunning to be your Personal Assistant!"'
+        space, Mr. {LastName}-- this girl is gunning to be your Personal Assistant! 
+        Every CEO needs a good one and that''s what I intend to become!"'
     Choices: []
     Effect:
       NpcEffects: []
@@ -253,6 +254,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -286,6 +288,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -300,3 +303,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0
