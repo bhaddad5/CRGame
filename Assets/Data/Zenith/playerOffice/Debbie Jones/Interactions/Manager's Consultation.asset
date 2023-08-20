@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 530db37c-8689-40cb-aeb2-cf95b71c8833
   Name: Manager's Consultation
-  SubInteraction: 0
+  SubInteraction: 1
   AlertNew: 1
   Category: 1
   Requirements:
@@ -49,7 +49,8 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: Um, Mr. {LastName}?  Uh, this is kind of embarrassing but I have to ask
         you something.  I mean it's not anything for me, but I was told I needed
         to--
@@ -63,7 +64,8 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: Debbie, I'm trying to run a business here.  What do you want?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 04aba9185e390994fa36eca45cd4d343,
@@ -75,7 +77,8 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: I got an alert from Pry Medical.  They want me to schedule an appointment.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 04aba9185e390994fa36eca45cd4d343,
@@ -88,7 +91,8 @@ MonoBehaviour:
         type: 3}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: So, schedule your appointment.  Just make sure it isn't during work hours.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 04aba9185e390994fa36eca45cd4d343,
@@ -100,7 +104,8 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: Well, it isn't a normal exam, Sir.  It's called a Manager Consultation. 
         I guess all managers who have secretaries are scheduling them now.  It's
         so you can consult with my doctor to manage my...uh, wellness program.
@@ -115,7 +120,8 @@ MonoBehaviour:
         type: 3}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: Oh, a secretarial tune up!  I like that!  Make the appointment and we'll
         go see Dr. Feng together.
       CustomNpcImageOptions: []
@@ -128,7 +134,8 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: Very good, Sir!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 04aba9185e390994fa36eca45cd4d343,
@@ -140,7 +147,8 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: 'NOTE: You may now consult with Dr. Feng over at Pry Medical at your
         convenience!'
       CustomNpcImageOptions: []
@@ -170,6 +178,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -203,6 +212,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -217,3 +227,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0
