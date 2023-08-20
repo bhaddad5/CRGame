@@ -126,6 +126,13 @@ namespace Assets.GameModel
 				if (!achievement.Completed && achievement.Requirements.RequirementsAreMet(this))
 				{
 					achievement.Completed = true;
+
+					var popupParent = GameObject.Instantiate(UiPrefabReferences.Instance.PopupOverlayParent);
+					Popup popup = new Popup();
+					popup.Title = $"Achievement Earned: {achievement.Name}";
+					popup.Text = achievement.Description;
+					popup.Textures = new List<Texture2D>() { achievement.Image };
+					GameObject.Instantiate(UiPrefabReferences.Instance.GetPrefabByName("Popup Display"), popupParent.transform).GetComponent<PopupBindings>().Setup(popup, 0, this, () => { });
 				}
 			}
 

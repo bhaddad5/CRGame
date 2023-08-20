@@ -76,7 +76,7 @@ public class HudBindings : MonoBehaviour
 	{
 		var popupParent = GameObject.Instantiate(UiPrefabReferences.Instance.PopupOverlayParent, transform);
 		var achievementsMenu = GameObject.Instantiate(AchievementsMenuPrefab, popupParent.transform);
-		achievementsMenu.Setup(mgm.Data.Achievements);
+		achievementsMenu.Setup(mgm);
 	}
 
 	public void CloseMainMenu()

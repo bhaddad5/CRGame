@@ -12,6 +12,8 @@ public class Achievement : ScriptableObject
 
 	public string Name;
 	[TextArea(15, 20)]
+	public string ToUnlockDescription;
+	[TextArea(15, 20)]
 	public string Description;
 	public Texture2D Image;
 
