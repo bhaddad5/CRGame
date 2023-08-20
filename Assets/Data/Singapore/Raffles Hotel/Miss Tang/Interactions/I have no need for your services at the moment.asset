@@ -15,12 +15,14 @@ MonoBehaviour:
   Id: 72c0b552-6b3a-490c-be0d-0ff0dec94fbb
   Name: I have no need for your services at the moment.
   SubInteraction: 1
-  AlertNew: 1
+  AlertNew: 0
   Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
@@ -38,22 +40,24 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
     Items: []
   Repeatable: 1
+  Cooldown: 0
   PreviewEffect: 0
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 309360b9a7c730747a997d16770e5615,
+        type: 2}
       Text: Thank you, Miss Tang.  I'll be sure to let you know when I have need
         of your services.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 4a434114e66b9f64085c3c8149e89fac,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
@@ -74,9 +78,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
-      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -85,6 +89,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
@@ -107,9 +112,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
-      ItemsToRemove: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -118,5 +123,8 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
+  FailCount: 0

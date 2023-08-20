@@ -15,7 +15,7 @@ MonoBehaviour:
   Id: 3e44be40-c5f1-43ed-aa9d-231e408a4b8a
   Name: Ground Debbie
   SubInteraction: 1
-  AlertNew: 1
+  AlertNew: 0
   Category: 5
   Requirements:
     RequiredPower: 0
@@ -51,16 +51,18 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 14df74e6844c717478de06c275bd6470,
+        type: 2}
       Text: My, my Debbie!  Look at all these Dorm Infractions  !  You've been a
         naughty girl.
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: 1d7fa578ba525bb4abed41e664019e2c, type: 3}
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
-        width: 400
+        width: 450
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
@@ -68,11 +70,12 @@ MonoBehaviour:
         type: 2}
       Text: Dorm Mother, some of those were not my fault, I swear!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
-        width: 400
+        width: 450
       OptionalAudioClip: {fileID: 8300000, guid: 7d1ce0c2679a62e4e87fe2eecec48fd4,
         type: 3}
       OptionalStartMusicClip: {fileID: 0}
@@ -84,11 +87,12 @@ MonoBehaviour:
         her bedroom, the Common Room, the grounds and that's it!
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: c64b1b6ee66caf7428f13715f2ec39ce, type: 3}
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
-        width: 400
+        width: 450
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
@@ -97,11 +101,12 @@ MonoBehaviour:
       Text: Done!  Debbie- you're gorunded.  Go to your room right now-- and I don't
         want any of that smart mouth of yours either!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
-        width: 400
+        width: 450
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
@@ -109,11 +114,12 @@ MonoBehaviour:
         type: 2}
       Text: Fine!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
-        width: 400
+        width: 450
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
@@ -155,6 +161,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -188,6 +195,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -202,3 +210,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0

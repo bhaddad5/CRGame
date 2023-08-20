@@ -15,7 +15,7 @@ MonoBehaviour:
   Id: 32fd57a0-4418-44d3-b6ef-048e65dc12a8
   Name: Theft of food
   SubInteraction: 1
-  AlertNew: 1
+  AlertNew: 0
   Category: 5
   Requirements:
     RequiredPower: 0
@@ -52,11 +52,12 @@ MonoBehaviour:
       Text: While other girls do 'borrow' food from their fellow residents, there
         have been no reports made involving Debbie this week.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
@@ -77,6 +78,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -98,11 +100,12 @@ MonoBehaviour:
       Text: Debbie, you need to control your appetite.  I have reports that you've
         been taking food from the dorm kitchen fridge that doesn't belong to you!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
@@ -110,11 +113,12 @@ MonoBehaviour:
         type: 2}
       Text: I most certainly have NOT!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
       OptionalAudioClip: {fileID: 8300000, guid: 0c6878aa8c0c1c745979e8dff8066dd7,
         type: 3}
       OptionalStartMusicClip: {fileID: 0}
@@ -143,6 +147,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd:
       - {fileID: 11400000, guid: 8b92f52c987c459458b48b6ae066bb4d, type: 2}
@@ -159,3 +164,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0

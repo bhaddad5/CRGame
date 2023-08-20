@@ -15,7 +15,7 @@ MonoBehaviour:
   Id: f4ca8521-aaa8-4852-bdce-f2365001584d
   Name: Beauty and Makeup Class
   SubInteraction: 1
-  AlertNew: 1
+  AlertNew: 0
   Category: 5
   Requirements:
     RequiredPower: 0
@@ -90,10 +90,16 @@ MonoBehaviour:
           type: 2}
         AmbitionEffect: 10
         PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       - OptionalNpcReference: {fileID: 11400000, guid: 4d7bbd9e5d8ecee4dbaec1cb452fe01e,
           type: 2}
         AmbitionEffect: 10
         PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -108,6 +114,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -141,6 +148,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -155,3 +163,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0

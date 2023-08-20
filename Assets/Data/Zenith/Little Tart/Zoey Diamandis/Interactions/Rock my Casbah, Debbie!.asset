@@ -15,7 +15,7 @@ MonoBehaviour:
   Id: 0abae287-b2cb-4679-a496-c6385b059c8c
   Name: Rock my Casbah, Debbie!
   SubInteraction: 1
-  AlertNew: 1
+  AlertNew: 0
   Category: 6
   Requirements:
     RequiredPower: 0
@@ -51,11 +51,12 @@ MonoBehaviour:
         type: 2}
       Text: You can buy this junk, but I won't wear it!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 0cd3ec7ee8974e44a8197ff1ce81818d,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 350
       OptionalAudioClip: {fileID: 8300000, guid: f463299f279436e45aecce3c97d2f722,
         type: 3}
       OptionalStartMusicClip: {fileID: 0}
@@ -65,11 +66,12 @@ MonoBehaviour:
       Text: You'll wear it to the office or you can wear it peddaling your unemployed
         ass down on Hump Alley/
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 0cd3ec7ee8974e44a8197ff1ce81818d,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
@@ -78,11 +80,12 @@ MonoBehaviour:
       Text: Wow, you're hardcore, Mister!  I'll pack these up so you can take them
         with you right now!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 0cd3ec7ee8974e44a8197ff1ce81818d,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
@@ -111,6 +114,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -144,6 +148,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -158,3 +163,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0

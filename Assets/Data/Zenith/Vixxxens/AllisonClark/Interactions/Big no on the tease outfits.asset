@@ -15,7 +15,7 @@ MonoBehaviour:
   Id: 31f8657c-7b26-4a54-a8b2-b0dd26380836
   Name: Big no on the tease outfits
   SubInteraction: 1
-  AlertNew: 1
+  AlertNew: 0
   Category: 0
   Requirements:
     RequiredPower: 0
@@ -47,15 +47,17 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 5e669a1c0e002604c952078aa61bea6d,
+        type: 2}
       Text: You know, I think I prefer Debbie more formal after all.  I'll take a
         pass for now.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 0e6402f5c5dd12641ae4a04c6591f9a0,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.6
+        yPos: 0.4
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
@@ -63,11 +65,12 @@ MonoBehaviour:
         type: 2}
       Text: Thank God!  I mean, whatever you say, Chief!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 0e6402f5c5dd12641ae4a04c6591f9a0,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.6
+        yPos: 0.4
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
@@ -88,6 +91,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -121,6 +125,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -135,3 +140,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0

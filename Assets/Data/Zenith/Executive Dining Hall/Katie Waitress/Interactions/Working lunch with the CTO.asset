@@ -15,12 +15,14 @@ MonoBehaviour:
   Id: 6dc5273f-d8d3-4257-9e10-a0da1b11ebd1
   Name: Working lunch with the CTO
   SubInteraction: 1
-  AlertNew: 1
+  AlertNew: 0
   Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
@@ -40,19 +42,22 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 1
+  Cooldown: 0
   PreviewEffect: 0
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 532f58f85b2abd84cb0d657a4fa3cec2,
+        type: 2}
       Text: The good doctor--- how nice of you to come out of your lab to dine with
         a mere mortal like me!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: f0bf6d1683bf9aa4faaa11a2eb7effbf,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.4
+        width: 500
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
@@ -61,11 +66,12 @@ MonoBehaviour:
       Text: Katie, you look very pretty today-- almost in the same league as your
         big sister!  I'll have the usual, ok?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: f0bf6d1683bf9aa4faaa11a2eb7effbf,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.4
+        width: 500
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
@@ -73,11 +79,12 @@ MonoBehaviour:
         type: 2}
       Text: Yes, Dr. E!  Thank you, Sir!  I'll send the order in right now!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: f0bf6d1683bf9aa4faaa11a2eb7effbf,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.4
+        width: 500
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
@@ -86,11 +93,12 @@ MonoBehaviour:
       Text: David, please-- don't let her get thoughts of snagging a CTO!  And you
         do know she HATES being compared to Debbie, don't you?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: f0bf6d1683bf9aa4faaa11a2eb7effbf,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.4
+        width: 500
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
@@ -99,11 +107,12 @@ MonoBehaviour:
       Text: I'm just teasing her.  I have my hands full with my Asian harem as it
         is!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: f0bf6d1683bf9aa4faaa11a2eb7effbf,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.4
+        width: 500
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
@@ -131,6 +140,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -147,15 +157,17 @@ MonoBehaviour:
   FailureResult:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 532f58f85b2abd84cb0d657a4fa3cec2,
+        type: 2}
       Text: The good doctor--- how nice of you to come out of your lab to dine with
         a mere mortal like me!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: f0bf6d1683bf9aa4faaa11a2eb7effbf,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.4
+        width: 500
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
@@ -164,11 +176,12 @@ MonoBehaviour:
       Text: Katie, you look very pretty today-- almost in the same league as your
         big sister!  I'll have the usual, ok?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: f0bf6d1683bf9aa4faaa11a2eb7effbf,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.4
+        width: 500
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
@@ -176,11 +189,12 @@ MonoBehaviour:
         type: 2}
       Text: Yes, Dr. E!  Thank you, Sir!  I'll send the order in right now!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: f0bf6d1683bf9aa4faaa11a2eb7effbf,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.4
+        width: 500
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
@@ -189,11 +203,12 @@ MonoBehaviour:
       Text: David, please-- don't let her get thoughts of snagging a CTO!  And you
         do know she HATES being compared to Debbie, don't you?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: f0bf6d1683bf9aa4faaa11a2eb7effbf,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.4
+        width: 500
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
@@ -202,11 +217,12 @@ MonoBehaviour:
       Text: I'm just teasing her.  I have my hands full with my Asian harem as it
         is!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: f0bf6d1683bf9aa4faaa11a2eb7effbf,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.4
+        width: 500
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
@@ -234,6 +250,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -246,4 +263,6 @@ MonoBehaviour:
       Home: 0
     GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
+  FailCount: 0

@@ -15,12 +15,14 @@ MonoBehaviour:
   Id: 7252e6d7-ac54-4f8a-9d9f-d3ed391a9113
   Name: Hold off for now
   SubInteraction: 1
-  AlertNew: 1
+  AlertNew: 0
   Category: 4
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
@@ -40,6 +42,7 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 1
+  Cooldown: 0
   PreviewEffect: 0
   Result:
     Dialogs:
@@ -76,6 +79,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -109,6 +113,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -121,4 +126,6 @@ MonoBehaviour:
       Home: 0
     GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
+  FailCount: 0

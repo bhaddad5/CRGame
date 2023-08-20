@@ -15,7 +15,7 @@ MonoBehaviour:
   Id: 5b491cae-6256-499b-9719-219297fb21c3
   Name: Buy the Girly Collection
   SubInteraction: 1
-  AlertNew: 1
+  AlertNew: 0
   Category: 6
   Requirements:
     RequiredPower: 0
@@ -51,23 +51,26 @@ MonoBehaviour:
         type: 2}
       Text: This stuff is too girly!  No way- hard pass!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 8d22771f37353c246a1c2dbbd43f9752,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.4
+        width: 450
       OptionalAudioClip: {fileID: 8300000, guid: 1dfcab8384f13204e9a491bf4da98b47,
         type: 3}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 17540fb751858a641bcd13012a0c8303,
+        type: 2}
       Text: On the contrary- you've made a sale.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 8d22771f37353c246a1c2dbbd43f9752,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.4
+        width: 450
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
@@ -75,11 +78,12 @@ MonoBehaviour:
         type: 2}
       Text: You know, I thought I would!  I'll gather them up and have them delivered!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 8d22771f37353c246a1c2dbbd43f9752,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.4
+        width: 450
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
@@ -108,6 +112,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -141,6 +146,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -155,3 +161,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0

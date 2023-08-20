@@ -15,12 +15,14 @@ MonoBehaviour:
   Id: 5a0e0770-893b-498c-8ce1-6462ac5fa01f
   Name: Working lunch with the CFO
   SubInteraction: 1
-  AlertNew: 1
+  AlertNew: 0
   Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
@@ -40,18 +42,21 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 1
+  Cooldown: 0
   PreviewEffect: 0
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 532f58f85b2abd84cb0d657a4fa3cec2,
+        type: 2}
       Text: Charlie, sit down and take a load off!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: f0bf6d1683bf9aa4faaa11a2eb7effbf,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.4
+        width: 500
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
@@ -60,11 +65,12 @@ MonoBehaviour:
       Text: You bet!  I could eat a horse!  Hey, blondie-- I'll have what the Boss
         is having, ok?  And a glass of Merlot while you're at it.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: f0bf6d1683bf9aa4faaa11a2eb7effbf,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.4
+        width: 500
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
@@ -72,11 +78,12 @@ MonoBehaviour:
         type: 2}
       Text: Coming right up, Mr. Chase!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: f0bf6d1683bf9aa4faaa11a2eb7effbf,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.4
+        width: 500
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
@@ -105,6 +112,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -121,14 +129,16 @@ MonoBehaviour:
   FailureResult:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 532f58f85b2abd84cb0d657a4fa3cec2,
+        type: 2}
       Text: Charlie, sit down and take a load off!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: f0bf6d1683bf9aa4faaa11a2eb7effbf,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.4
+        width: 500
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
@@ -137,11 +147,12 @@ MonoBehaviour:
       Text: You bet!  I could eat a horse!  Hey, blondie-- I'll have what the Boss
         is having, ok?  And a glass of Merlot while you're at it.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: f0bf6d1683bf9aa4faaa11a2eb7effbf,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.4
+        width: 500
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
@@ -149,11 +160,12 @@ MonoBehaviour:
         type: 2}
       Text: Coming right up, Mr. Chase!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: f0bf6d1683bf9aa4faaa11a2eb7effbf,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.4
+        width: 500
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
@@ -181,6 +193,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -193,4 +206,6 @@ MonoBehaviour:
       Home: 0
     GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
+  FailCount: 0

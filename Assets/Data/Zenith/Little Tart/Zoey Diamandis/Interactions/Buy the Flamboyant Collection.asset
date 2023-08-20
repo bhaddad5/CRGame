@@ -15,7 +15,7 @@ MonoBehaviour:
   Id: f4e86cdd-c733-4918-a262-21a6906d3658
   Name: Buy the Flamboyant Collection
   SubInteraction: 1
-  AlertNew: 1
+  AlertNew: 0
   Category: 6
   Requirements:
     RequiredPower: 0
@@ -51,11 +51,12 @@ MonoBehaviour:
         type: 2}
       Text: Mr. {LastName}, this isn't proper!  I can't wear this stuff at work!!!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 0cd3ec7ee8974e44a8197ff1ce81818d,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 350
       OptionalAudioClip: {fileID: 8300000, guid: f7304f362cbf8bc4a8a08df5e031307d,
         type: 3}
       OptionalStartMusicClip: {fileID: 0}
@@ -64,11 +65,12 @@ MonoBehaviour:
         type: 2}
       Text: Ignore my hysterical secretary- we'll take it!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 0cd3ec7ee8974e44a8197ff1ce81818d,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
@@ -77,11 +79,12 @@ MonoBehaviour:
       Text: Man, these outfits will have the water cooler gossip going full blast! 
         I'll pack them up for you right now, lady!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 0cd3ec7ee8974e44a8197ff1ce81818d,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
@@ -110,6 +113,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -143,6 +147,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -157,3 +162,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0

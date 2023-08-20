@@ -15,7 +15,7 @@ MonoBehaviour:
   Id: a4c90c6c-97d0-45b2-adf4-44a198f4a3cb
   Name: Defer the CapEx for now
   SubInteraction: 1
-  AlertNew: 1
+  AlertNew: 0
   Category: 0
   Requirements:
     RequiredPower: 0
@@ -47,15 +47,17 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: e824e839d0b9719409dc7942822791c4,
+        type: 2}
       Text: 'NOTE: You nod, promising nothing, as you place the Capital Expense Request
         form at the bottom of your current stack of Priority Action Items.  '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 0cfc0bf2b9b5fe8418cc4c3bd0caceb4,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.4
+        yPos: 0.42
+        width: 375
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
@@ -76,6 +78,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -109,6 +112,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -123,3 +127,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0
