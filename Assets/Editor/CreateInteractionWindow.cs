@@ -55,6 +55,7 @@ public class CreateInteractionWindow : EditorWindow
 
 		if (foundParentInteraction != null)
 		{
+			interaction.AlertNew = false;
 			interaction.SubInteraction = true;
 			foundParentInteraction.Result.Choices.Add(interaction);
 		}

@@ -9,10 +9,11 @@ using System;
 
 namespace Assets.GameModel.UiDisplayers
 {
-	public class ChoicesEntryBindings : MonoBehaviour, ITooltipProvider
+	public class ChoicesEntryBindings : MonoBehaviour, ITooltipProvider, IPointerEnterHandler
 	{
 		[SerializeField] private Button Button;
 		[SerializeField] private TMP_Text Text;
+		[SerializeField] private GameObject NewIndicator;
 
 		private Interaction interaction;
 
@@ -34,6 +35,8 @@ namespace Assets.GameModel.UiDisplayers
 
 			if (interaction.CanFail)
 				Text.text += $" ({(int)((1f - interaction.ProbabilityOfFailureResult) * 100)}% chance)";
+
+			NewIndicator.SetActive(interaction.IsNew(mgm));
 
 			if (!string.IsNullOrEmpty(interaction.Cost.GetCostString()))
 				Text.text += $" {interaction.Cost.GetCostString()}";
@@ -81,6 +84,15 @@ namespace Assets.GameModel.UiDisplayers
 				tooltip = tooltip.Substring(0, tooltip.Length - 1);
 
 			return tooltip;
+		}
+
+		public void OnPointerEnter(PointerEventData eventData)
+		{
+			if (interaction.InteractionValid(mgm))
+			{
+				interaction.New = false;
+				NewIndicator.SetActive(false);
+			}
 		}
 	}
 }
