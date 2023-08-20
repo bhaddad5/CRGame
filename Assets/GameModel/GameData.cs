@@ -48,6 +48,8 @@ namespace Assets.GameModel
 
 		public List<Interaction> StartOfTurnInteractions = new List<Interaction>();
 
+		public List<Achievement> Achievements = new List<Achievement>();
+
 		private MainGameManager mgm;
 		public void Setup(MainGameManager mgm)
 		{
@@ -92,6 +94,9 @@ namespace Assets.GameModel
 				ob.Setup(mgm);
 
 			foreach (var ob in StartOfTurnInteractions)
+				ob.Setup();
+
+			foreach (var ob in Achievements)
 				ob.Setup();
 
 			//LEGACY

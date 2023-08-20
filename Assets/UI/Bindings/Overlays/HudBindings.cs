@@ -32,6 +32,7 @@ public class HudBindings : MonoBehaviour
 	[SerializeField] private Interaction MyOfficeTutorialCompleteInteraction;
 	[SerializeField] private Interaction DowntimeTutorialCompleteInteraction;
 	[SerializeField] private MainMenuBindings MainMenuPrefab;
+	[SerializeField] private AchievementsPopup AchievementsMenuPrefab;
 	private MainMenuBindings mainMenu;
 
 	private MainGameManager mgm;
@@ -69,6 +70,13 @@ public class HudBindings : MonoBehaviour
 		var popupParent = GameObject.Instantiate(UiPrefabReferences.Instance.PopupOverlayParent, transform);
 		mainMenu = GameObject.Instantiate(MainMenuPrefab, popupParent.transform);
 		mainMenu.Setup(mgm);
+	}
+
+	public void OpenAchievementsMenu()
+	{
+		var popupParent = GameObject.Instantiate(UiPrefabReferences.Instance.PopupOverlayParent, transform);
+		var achievementsMenu = GameObject.Instantiate(AchievementsMenuPrefab, popupParent.transform);
+		achievementsMenu.Setup(mgm.Data.Achievements);
 	}
 
 	public void CloseMainMenu()

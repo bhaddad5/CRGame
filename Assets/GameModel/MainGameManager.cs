@@ -117,14 +117,22 @@ namespace Assets.GameModel
 				HandleBiMonthlyChange();
 			}
 
+			mainMapUiDisplay.HandleTurnChange();
+
+			RefreshAllUi();
+
+			foreach (var achievement in Data.Achievements)
+			{
+				if (!achievement.Completed && achievement.Requirements.RequirementsAreMet(this))
+				{
+					achievement.Completed = true;
+				}
+			}
+
 			string path = LoadSaveHelpers.FileToValidPath("Autosave");
 			if (path == null)
 				return;
 			File.WriteAllText(path, SaveLoadHandler.SaveToJson(Data));
-
-			mainMapUiDisplay.HandleTurnChange();
-
-			RefreshAllUi();
 
 			TryRunStartOfTurnInteractions();
 		}

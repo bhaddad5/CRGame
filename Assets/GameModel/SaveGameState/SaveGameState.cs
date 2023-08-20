@@ -40,6 +40,7 @@ namespace Assets.GameModel.Save
 		public List<SavedInventoryItemState> Inventory;
 		public List<SavedLocationState> Locations;
 		public List<SavedInteractionState> StartTurnInteractions;
+		public List<SavedAchievementState> Achievements;
 
 		public static SaveGameState FromData(GameData data, int version)
 		{
@@ -90,6 +91,13 @@ namespace Assets.GameModel.Save
 			{
 				if(startOfTurnInteraction != null)
 					res.StartTurnInteractions.Add(SavedInteractionState.FromData(startOfTurnInteraction));
+			}
+
+			res.Achievements = new List<SavedAchievementState>();
+			foreach (var achievement in data.Achievements)
+			{
+				if(achievement != null)
+					res.Achievements.Add(SavedAchievementState.FromData(achievement));
 			}
 
 			return res;
@@ -143,6 +151,11 @@ namespace Assets.GameModel.Save
 			foreach (var startTurnInteraction in StartTurnInteractions)
 			{
 				startTurnInteraction.ApplyToData(data.StartOfTurnInteractions.FirstOrDefault(i => i?.Id == startTurnInteraction.Id));
+			}
+
+			foreach (var achievement in Achievements)
+			{
+				achievement.ApplyToData(data.Achievements.FirstOrDefault(a => a?.Id == achievement.Id));
 			}
 
 			if (SaveGameVersion <= 0)
@@ -455,6 +468,33 @@ namespace Assets.GameModel.Save
 			data.FailCount = FailCount;
 			data.New = New;
 			data.TurnCompletedOn = TurnCompletedOn;
+		}
+	}
+
+	[Serializable]
+	public struct SavedAchievementState
+	{
+		public string Id;
+
+		public bool Completed;
+
+		public static SavedAchievementState FromData(Achievement data)
+		{
+			var res = new SavedAchievementState();
+			res.Id = data.Id;
+			res.Completed = data.Completed;
+
+			return res;
+		}
+
+		public void ApplyToData(Achievement data)
+		{
+			if (data == null)
+			{
+				Debug.Log($"Could not find Achievement with id {Id}");
+				return;
+			}
+			data.Completed = Completed;
 		}
 	}
 }
