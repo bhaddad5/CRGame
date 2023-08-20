@@ -9,6 +9,7 @@ using Assets.GameModel;
 using Assets.GameModel.Save;
 using UnityEditor;
 using UnityEngine;
+using static UnityEditor.FilePathAttribute;
 using Debug = UnityEngine.Debug;
 using Object = System.Object;
 
@@ -226,6 +227,10 @@ public class EditorValidators
 	public static void RemoveNulls()
 	{
 		var gameData = AssetDatabase.LoadAssetAtPath<GameData>("Assets/Data/GameData.asset");
+
+		if (gameData.Achievements.Any(a => a == null))
+			EditorUtility.SetDirty(gameData);
+		gameData.Achievements.RemoveAll(a => a == null);
 
 		foreach (var region in gameData.Regions)
 		{
