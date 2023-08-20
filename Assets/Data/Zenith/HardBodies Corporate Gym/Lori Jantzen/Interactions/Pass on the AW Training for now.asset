@@ -15,7 +15,7 @@ MonoBehaviour:
   Id: 6adda659-8c0e-458e-9201-0933ec8b9865
   Name: Pass on the AW Training for now
   SubInteraction: 1
-  AlertNew: 1
+  AlertNew: 0
   Category: 5
   Requirements:
     RequiredPower: 0
@@ -47,16 +47,18 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: f4719d35d414f7449a4a8fa6aa3b3421,
+        type: 2}
       Text: 'I like the program-- it looks very challenging!  But I''ve got a lot
         of projects coming up and I''m not sure Debbie will have the time to commit
         to this kind of training.  We''ll take a pass on this-- for now.  '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: ae9697172c63f91499a5c58282a8b939,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.4
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
@@ -66,11 +68,12 @@ MonoBehaviour:
         But when you're ready to get her back to trim  and toned up for you, we can
         sign her up in a heartbeat!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: ae9697172c63f91499a5c58282a8b939,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.4
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
@@ -91,6 +94,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -124,6 +128,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -138,3 +143,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0

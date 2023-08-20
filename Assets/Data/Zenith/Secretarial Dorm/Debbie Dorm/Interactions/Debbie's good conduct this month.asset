@@ -15,7 +15,7 @@ MonoBehaviour:
   Id: d7b35aab-c2e9-4a35-8322-d4c96bcecb5f
   Name: Debbie's good conduct this month
   SubInteraction: 1
-  AlertNew: 1
+  AlertNew: 0
   Category: 5
   Requirements:
     RequiredPower: 0
@@ -58,11 +58,12 @@ MonoBehaviour:
       - {fileID: 2800000, guid: 6fdbaffe9989c884eb51120a1ce87821, type: 3}
       - {fileID: 2800000, guid: c64b1b6ee66caf7428f13715f2ec39ce, type: 3}
       - {fileID: 2800000, guid: ea20cbc203c8c52499e5bce31a4d7946, type: 3}
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
-        width: 400
+        width: 450
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
@@ -75,11 +76,12 @@ MonoBehaviour:
       - {fileID: 2800000, guid: 6fdbaffe9989c884eb51120a1ce87821, type: 3}
       - {fileID: 2800000, guid: c64b1b6ee66caf7428f13715f2ec39ce, type: 3}
       - {fileID: 2800000, guid: ea20cbc203c8c52499e5bce31a4d7946, type: 3}
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
-        width: 400
+        width: 450
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
@@ -87,11 +89,12 @@ MonoBehaviour:
         type: 2}
       Text: Thank you, Sir!  Thank you, Dorm Mother!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
-        width: 400
+        width: 450
       OptionalAudioClip: {fileID: 8300000, guid: a2e2c99de3a39e4439274d046e106246,
         type: 3}
       OptionalStartMusicClip: {fileID: 0}
@@ -113,6 +116,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -146,6 +150,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -160,3 +165,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0

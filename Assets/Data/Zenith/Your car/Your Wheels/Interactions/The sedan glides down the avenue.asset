@@ -15,7 +15,7 @@ MonoBehaviour:
   Id: 3df49a4a-7e93-4841-90ea-eaced23c209c
   Name: The sedan glides down the avenue
   SubInteraction: 1
-  AlertNew: 1
+  AlertNew: 0
   Category: 0
   Requirements:
     RequiredPower: 0
@@ -47,14 +47,16 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: a5ea08aee4597534aa7704645f697029,
+        type: 2}
       Text: Such a smooth ride!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: fac35367bc2f7a342b4efa1f81a304cf,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.5
+        width: 200
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []

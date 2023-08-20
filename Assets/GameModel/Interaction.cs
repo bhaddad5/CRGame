@@ -99,7 +99,9 @@ namespace Assets.GameModel
 
 		public bool IsNew(MainGameManager mgm)
 		{
-			return AlertNew && New && InteractionValid(mgm);
+			bool anyChildInteractionsNew = Result.Choices.Any(c => c.IsNew(mgm)) || FailureResult.Choices.Any(c => c.IsNew(mgm));
+
+			return (AlertNew && New && InteractionValid(mgm)) || anyChildInteractionsNew;
 		}
 
 		public bool GetInteractionSucceeded()
