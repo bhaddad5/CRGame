@@ -31,6 +31,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 931ed9d701a803e45bbf1a1b8e67a740, type: 2}
     - {fileID: 11400000, guid: 78b3277f3192ea741a25908987f510e5, type: 2}
     - {fileID: 11400000, guid: 6ca6b6de70a2cf3419f8ea87c8e11496, type: 2}
+    - {fileID: 11400000, guid: a92dc986923fc724ba016a07b4627406, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -53,15 +54,17 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 3eb9bdf0b0e405c4fa1f5a901abc156d,
+        type: 2}
       Text: I'm sorry- we're currently closed for rennovations!  No telling when
         we'll be re-opening!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 0cd3ec7ee8974e44a8197ff1ce81818d,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
