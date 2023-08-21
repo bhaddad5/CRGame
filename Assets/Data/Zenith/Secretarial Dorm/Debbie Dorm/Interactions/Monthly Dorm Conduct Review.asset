@@ -48,15 +48,17 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 14df74e6844c717478de06c275bd6470,
+        type: 2}
       Text: Dorm Matron, it is that time of the month-- time to review Debbie's dorm
         conduct.  Do you have your notes prepared?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
@@ -69,11 +71,12 @@ MonoBehaviour:
       - {fileID: 2800000, guid: c64b1b6ee66caf7428f13715f2ec39ce, type: 3}
       - {fileID: 2800000, guid: 6fdbaffe9989c884eb51120a1ce87821, type: 3}
       - {fileID: 2800000, guid: 1d7fa578ba525bb4abed41e664019e2c, type: 3}
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
-        width: 400
+        width: 450
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
@@ -81,11 +84,12 @@ MonoBehaviour:
         type: 2}
       Text: Hi, Mr. {LastName}!  Sorry, Dorm Mother!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
-        width: 400
+        width: 450
       OptionalAudioClip: {fileID: 8300000, guid: 6c862aed759f14f42962703485cc1972,
         type: 3}
       OptionalStartMusicClip: {fileID: 0}
@@ -99,16 +103,21 @@ MonoBehaviour:
       - {fileID: 2800000, guid: c64b1b6ee66caf7428f13715f2ec39ce, type: 3}
       - {fileID: 2800000, guid: 6fdbaffe9989c884eb51120a1ce87821, type: 3}
       - {fileID: 2800000, guid: 1d7fa578ba525bb4abed41e664019e2c, type: 3}
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
         yPos: 0.3
-        width: 400
+        width: 450
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
     Choices:
     - {fileID: 11400000, guid: 684309bac2dc79d428af3f8ec2b4d61c, type: 2}
+    - {fileID: 11400000, guid: 1abc08cf58a6bec499b4082124a3d1bf, type: 2}
+    - {fileID: 11400000, guid: 5791e5e6278e7404ca5c9431dac047e3, type: 2}
+    - {fileID: 11400000, guid: e786bf4c9aa52984ca4e665c506bfbef, type: 2}
+    - {fileID: 11400000, guid: 097315711aaed4c43abfbb79b66d631b, type: 2}
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -125,6 +134,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -158,6 +168,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -172,3 +183,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0

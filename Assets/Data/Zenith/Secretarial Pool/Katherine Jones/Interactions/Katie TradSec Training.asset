@@ -53,19 +53,22 @@ MonoBehaviour:
         type: 2}
       Text: Mr. {LastName}!  I was just about to begin training Katherine-
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: ad91f859a37b1f6499909a7d9ac22261,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.4
         yPos: 0.4
         width: 350
-      OptionalAudioClip: {fileID: 0}
+      OptionalAudioClip: {fileID: 8300000, guid: 49f2061ad75365440a9e8de341cc5897,
+        type: 3}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
       Text: It's Katie from now on, Debbie.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: ad91f859a37b1f6499909a7d9ac22261,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.4
         yPos: 0.4
@@ -78,7 +81,8 @@ MonoBehaviour:
       Text: Of course, Sir!   I was just going to begin training Katie in some basic
         dictation and typing exercises.  May I proceed?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: ad91f859a37b1f6499909a7d9ac22261,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.4
         yPos: 0.4
@@ -91,7 +95,8 @@ MonoBehaviour:
       Text: You may.  Katie's desk is here, but she's been hired to support you,
         Debbie.  I urge you to make good use of her!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: ad91f859a37b1f6499909a7d9ac22261,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.4
         yPos: 0.4
@@ -104,7 +109,8 @@ MonoBehaviour:
       Text: Very good, Sir!  I think she needs a solid grounding in TradSec skills--
         just like I was!  Katie, let's begin!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: ad91f859a37b1f6499909a7d9ac22261,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.4
         yPos: 0.4
@@ -116,7 +122,8 @@ MonoBehaviour:
         type: 2}
       Text: Ok, Deborah but you have to start slow, ok?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: ad91f859a37b1f6499909a7d9ac22261,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.4
         yPos: 0.4
@@ -129,19 +136,22 @@ MonoBehaviour:
       Text: That's 'Miss Debbie' to you, Katie-- unless you wish to be corrected
         by Miss Lexi?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: ad91f859a37b1f6499909a7d9ac22261,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.4
         yPos: 0.4
         width: 350
-      OptionalAudioClip: {fileID: 0}
+      OptionalAudioClip: {fileID: 8300000, guid: b5c12c177a544334f8f80ae1916ea2ce,
+        type: 3}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: f7a3898e350f7a84499562b0ca5a5a4b,
         type: 2}
       Text: S-sorry, Miss Debbie!  Yes, I'm ready to begin!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: ad91f859a37b1f6499909a7d9ac22261,
+        type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.4
         yPos: 0.4
@@ -153,7 +163,8 @@ MonoBehaviour:
       Videos:
       - {fileID: 32900000, guid: 618473da058c18140920834c1b667808, type: 3}
       Textures: []
-      DialogClips: []
+      DialogClips:
+      - {fileID: 8300000, guid: 2a33519b64562c2428cf6c8e473ecf2e, type: 3}
       Text: Her sister couldn't have a better trainer!
     Choices: []
     Effect:
@@ -162,6 +173,9 @@ MonoBehaviour:
           type: 2}
         AmbitionEffect: 0
         PrideEffect: -2
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -176,6 +190,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -209,6 +224,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -223,3 +239,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0

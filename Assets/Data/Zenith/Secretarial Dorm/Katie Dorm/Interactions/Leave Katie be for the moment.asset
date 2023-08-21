@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Diary Pages 141 to 160
+  m_Name: Leave Katie be for the moment
   m_EditorClassIdentifier: 
-  Id: 4a95c1a2-fc28-4d4e-8351-a4e9657b5a08
-  Name: Diary Pages 141 to 160
+  Id: 7e454a62-42bb-44ed-938e-fb56ad2bf4d8
+  Name: Leave Katie be for the moment
   SubInteraction: 1
   AlertNew: 0
-  Category: 7
+  Category: 6
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -42,16 +42,23 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 1
-  Cooldown: 2
-  PreviewEffect: 1
+  Cooldown: 0
+  PreviewEffect: 0
   Result:
-    Dialogs: []
+    Dialogs:
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: I'm not wasting any time on you for now, Katie.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
-    Choices:
-    - {fileID: 11400000, guid: f5695ad23fe945e47889ebee16639e6e, type: 2}
-    - {fileID: 11400000, guid: 076ff7399d38a934d9ff9a002b323450, type: 2}
-    - {fileID: 11400000, guid: e0a193b9d3eacab48b46885ace663653, type: 2}
-    - {fileID: 11400000, guid: b0b5d1661d68bb341b935a2450e490f1, type: 2}
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0

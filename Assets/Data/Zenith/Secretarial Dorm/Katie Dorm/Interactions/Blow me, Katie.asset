@@ -15,7 +15,7 @@ MonoBehaviour:
   Id: 5d231f22-e3fe-4083-8dcc-aafc564aa644
   Name: Blow me, Katie.
   SubInteraction: 1
-  AlertNew: 0
+  AlertNew: 1
   Category: 6
   Requirements:
     RequiredPower: 0
@@ -24,7 +24,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 8542ef1eda17ae6419d199d1bd1774c9, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []

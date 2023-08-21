@@ -68,7 +68,7 @@ MonoBehaviour:
         type: 2}
       Text: I'll handle this- thank you, Miss Lexi!  So, you got fucked.  Lucky you. 
         Clean yourself up and get that belt back on, Katie.  You're not supposed
-        to be out of it longer than five minutes after an executive session.
+        to be out of it longer than three minutes after an executive session.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: ad91f859a37b1f6499909a7d9ac22261,
         type: 3}
@@ -76,7 +76,8 @@ MonoBehaviour:
         xPos: 0.4
         yPos: 0.4
         width: 350
-      OptionalAudioClip: {fileID: 0}
+      OptionalAudioClip: {fileID: 8300000, guid: 4835e16f0476d804286c13e515683b3c,
+        type: 3}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: f7a3898e350f7a84499562b0ca5a5a4b,
@@ -108,7 +109,8 @@ MonoBehaviour:
         xPos: 0.4
         yPos: 0.4
         width: 350
-      OptionalAudioClip: {fileID: 0}
+      OptionalAudioClip: {fileID: 8300000, guid: 263103afd2faba2499d5b17bca7d0690,
+        type: 3}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: f7a3898e350f7a84499562b0ca5a5a4b,
@@ -141,14 +143,16 @@ MonoBehaviour:
         xPos: 0.4
         yPos: 0.4
         width: 350
-      OptionalAudioClip: {fileID: 0}
+      OptionalAudioClip: {fileID: 8300000, guid: b5613c20d9637a8418275ef07a1cf110,
+        type: 3}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Debbie inspects her sister...
       Videos:
       - {fileID: 32900000, guid: 4e9e24fe7f539c848a76cdfaf8a282d9, type: 3}
       Textures: []
-      DialogClips: []
+      DialogClips:
+      - {fileID: 8300000, guid: 284f3a3ba456afb419ed29d2f14a44da, type: 3}
       Text: ...and even checks to make sure Katie's chastity belt is locked up tight--
         good girl!
     Choices: []
@@ -158,6 +162,9 @@ MonoBehaviour:
           type: 2}
         AmbitionEffect: 0
         PrideEffect: -2
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 10
       FundsEffect: 0
       PowerEffect: 0
@@ -172,6 +179,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -205,6 +213,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -219,3 +228,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0

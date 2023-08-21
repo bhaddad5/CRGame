@@ -48,31 +48,36 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: e919a2647617e8146b5be552b475f8ce,
+        type: 2}
       Text: Now that the younger Jones girl is settled in, why don't we have a look
         through her things?  Is she around right now?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: e919a2647617e8146b5be552b475f8ce,
+        type: 2}
       Text: I'll send her to the post office for some stamps.  You'll have ample
         time to do a quick search, Mr. {LastName}.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: e919a2647617e8146b5be552b475f8ce,
+        type: 2}
       Text: Debbie takes up most of the room.  She's relegated Katie to a couple
         of dresser drawers and some closet space.  Debbie claims because of her role,
         she requires a much bigger wardrobe, while Katie is merely a Junior Office
@@ -89,6 +94,12 @@ MonoBehaviour:
     OptionalPopups: []
     Choices:
     - {fileID: 11400000, guid: 4a306272a2314e94ca038c9e4d26d89b, type: 2}
+    - {fileID: 11400000, guid: e8e032f8d0815bb47958056d5facf78f, type: 2}
+    - {fileID: 11400000, guid: 3917b0ab6f32af747a52b5a3048aa8f9, type: 2}
+    - {fileID: 11400000, guid: f44f1e980920217478363f3d589f0449, type: 2}
+    - {fileID: 11400000, guid: 427e665b1e614364ba5448be99d304a9, type: 2}
+    - {fileID: 11400000, guid: 4e14e83c7eaf1464496c4f39c7407692, type: 2}
+    - {fileID: 11400000, guid: 6ed3d9ff224d4ea4ea268a5b8feb5b5f, type: 2}
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -105,6 +116,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -138,6 +150,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -152,3 +165,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0

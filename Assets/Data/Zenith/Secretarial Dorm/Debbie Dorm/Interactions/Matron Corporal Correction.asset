@@ -45,7 +45,12 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    Items: []
+    Items:
+    - {fileID: 11400000, guid: 8b92f52c987c459458b48b6ae066bb4d, type: 2}
+    - {fileID: 11400000, guid: 8b92f52c987c459458b48b6ae066bb4d, type: 2}
+    - {fileID: 11400000, guid: 8b92f52c987c459458b48b6ae066bb4d, type: 2}
+    - {fileID: 11400000, guid: 8b92f52c987c459458b48b6ae066bb4d, type: 2}
+    - {fileID: 11400000, guid: 8b92f52c987c459458b48b6ae066bb4d, type: 2}
   Repeatable: 1
   Cooldown: 60
   PreviewEffect: 1
@@ -100,7 +105,14 @@ MonoBehaviour:
     OptionalPopups: []
     Choices: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+          type: 2}
+        AmbitionEffect: 0
+        PrideEffect: -1
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
