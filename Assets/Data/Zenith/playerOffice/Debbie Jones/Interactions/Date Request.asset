@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: c25ab2f2-d423-4bdf-9ae9-2080f580a39a
   Name: Date Request
-  SubInteraction: 0
+  SubInteraction: 1
   AlertNew: 1
   Category: 1
   Requirements:
@@ -49,7 +49,8 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: Mr. {LastName}?  Eugene's asked me out on a date.  Can I have your approval...
         please?
       CustomNpcImageOptions: []
@@ -64,6 +65,11 @@ MonoBehaviour:
     OptionalPopups: []
     Choices:
     - {fileID: 11400000, guid: ab1f25ece8704f94281b96c2e3601153, type: 2}
+    - {fileID: 11400000, guid: 6d2ea976a9559784c8742a62c118706d, type: 2}
+    - {fileID: 11400000, guid: 55505a24dc9014448bbc457e19ced601, type: 2}
+    - {fileID: 11400000, guid: 2c846fd4d1cf2384f934979fa1dd2d67, type: 2}
+    - {fileID: 11400000, guid: 6076797d0394a2543a0727c407ad34da, type: 2}
+    - {fileID: 11400000, guid: 88d2d6864357fc34cb83b5ce3cdba7f3, type: 2}
     Effect:
       NpcEffects: []
       EgoEffect: 0
