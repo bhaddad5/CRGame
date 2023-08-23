@@ -43,13 +43,14 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 1
-  Cooldown: 4
-  PreviewEffect: 1
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 14df74e6844c717478de06c275bd6470,
+        type: 2}
       Text: Mr. {LastName}?  You said it was my responsibility to report any contraband. 
         Well... I found some.  In my sister's things.
       CustomNpcImageOptions: []
@@ -63,7 +64,8 @@ MonoBehaviour:
         type: 3}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 14df74e6844c717478de06c275bd6470,
+        type: 2}
       Text: Good girl.  You did the right thing.  Of course, that does mean Katie
         WILL be punished and rather severely.  How do you feel about that?
       CustomNpcImageOptions: []
@@ -76,7 +78,8 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 14df74e6844c717478de06c275bd6470,
+        type: 2}
       Text: If Katherine- I mean Katie- has broken the rules, she deserves whatever
         punishment you think she deserves, Sir.
       CustomNpcImageOptions: []
@@ -90,7 +93,8 @@ MonoBehaviour:
         type: 3}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 14df74e6844c717478de06c275bd6470,
+        type: 2}
       Text: Show me what your little sister has stashed away.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
@@ -124,7 +128,7 @@ MonoBehaviour:
       DialogClips:
       - {fileID: 8300000, guid: 712922ab6be69e64cb3c0df4eabdc5fc, type: 3}
       Text: ...these edibles in her wallet.  Of course, they are compoletely banned
-        from tthe dorm.
+        from the dorm.
     - Title: Debbie, you did the right thing.
       Videos: []
       Textures:
@@ -168,7 +172,8 @@ MonoBehaviour:
   FailureResult:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 14df74e6844c717478de06c275bd6470,
+        type: 2}
       Text: Debbie, remember our chat about contraband?  Have you come across anything?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: f0288dad0eb808c41b353e0fb682da9d,
@@ -180,7 +185,8 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 14df74e6844c717478de06c275bd6470,
+        type: 2}
       Text: No.  Nothing, Mr. {LastName}.  No contraband to report, Sir.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: f0288dad0eb808c41b353e0fb682da9d,
