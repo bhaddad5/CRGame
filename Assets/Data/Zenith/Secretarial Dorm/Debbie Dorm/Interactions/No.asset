@@ -15,7 +15,7 @@ MonoBehaviour:
   Id: 366c3571-a4ab-41bb-bf85-417d9303ec19
   Name: No.
   SubInteraction: 1
-  AlertNew: 0
+  AlertNew: 1
   Category: 5
   Requirements:
     RequiredPower: 0
@@ -49,8 +49,8 @@ MonoBehaviour:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: e919a2647617e8146b5be552b475f8ce,
         type: 2}
-      Text: No, Lisa.  You haven't earned that little pleasure-- not yet.  But don't
-        give up all hope-- I may chnage my mind.
+      Text: No, Lisa.  You haven't earned that little pleasure-- not this time. 
+        But don't give up all hope-- I may chnage my mind.
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: c64b1b6ee66caf7428f13715f2ec39ce, type: 3}
       CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
@@ -75,10 +75,47 @@ MonoBehaviour:
         width: 450
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups: []
+    OptionalPopups:
+    - Title: You administer the correction.
+      Videos:
+      - {fileID: 32900000, guid: 7ec909bc8e7d9204a81c6edcb6b3a9b0, type: 3}
+      - {fileID: 32900000, guid: 804f2162d55a29048a13f75923642deb, type: 3}
+      - {fileID: 32900000, guid: 2dd6c380c9c00e540ae35f54e6c12738, type: 3}
+      - {fileID: 32900000, guid: 0935870dc4951dd42bca1fe6c4142404, type: 3}
+      - {fileID: 32900000, guid: 448edafd6e8296f419e2505d9ef9f2f9, type: 3}
+      - {fileID: 32900000, guid: 0b480488caf26fd46a881091eca4fc7c, type: 3}
+      - {fileID: 32900000, guid: 4f770877aaa59b34ea0f2629448b1634, type: 3}
+      - {fileID: 32900000, guid: dd21d85dea6b1c5408bfeb00b16acecf, type: 3}
+      - {fileID: 32900000, guid: 5e604fb5a39fcfc4b9ed8d68014fc43f, type: 3}
+      - {fileID: 32900000, guid: 9ecf8fd4e7ea143498bebb613a3de7f5, type: 3}
+      - {fileID: 32900000, guid: 37086363475457e4b931e6537843b8f7, type: 3}
+      - {fileID: 32900000, guid: 8b133f44cac026a4287c8b053a250c5e, type: 3}
+      - {fileID: 32900000, guid: fb775ac5e6b402a49a8a49220f60726e, type: 3}
+      - {fileID: 32900000, guid: af0db07191d3cdd48be397f88144bce0, type: 3}
+      - {fileID: 32900000, guid: cc26a9e28a6feb0419eeee192197e34d, type: 3}
+      Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: 34d4f6dd109552f429b4fcfac5c1343f, type: 3}
+      - {fileID: 8300000, guid: 8eb6ba78cb59a0e46b0ca28918cf93b9, type: 3}
+      Text: 'Did you just catch Debbie smirking at the Dorm Matron?  Maybe you need
+        to lean in with this correctiona a bit so she learns to behave! '
     Choices: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+          type: 2}
+        AmbitionEffect: -1
+        PrideEffect: 1
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
+      - OptionalNpcReference: {fileID: 11400000, guid: e919a2647617e8146b5be552b475f8ce,
+          type: 2}
+        AmbitionEffect: 3
+        PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
