@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Dorm Sister Heater for the Boss
+  m_Name: Katie, you're on top1
   m_EditorClassIdentifier: 
-  Id: f33cfd3d-ece5-455e-ac6a-b1ec17b94601
-  Name: Dorm Sister Heater for the Boss
+  Id: c04e649a-edff-4e58-8903-616be80240a1
+  Name: Katie, you're on top1
   SubInteraction: 1
-  AlertNew: 0
+  AlertNew: 1
   Category: 6
   Requirements:
     RequiredPower: 0
@@ -41,63 +41,40 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 1
-  Cooldown: 4
-  PreviewEffect: 1
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 14df74e6844c717478de06c275bd6470,
-        type: 2}
-      Text: Why don't you two girls give me a little show.  Big Sister and Little
-        Sister doing very naughty things to each other.  And don't rush it-- I have
-        plenty of time.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 93498aa0c40370145a85ce8f4542299a,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 450
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 14df74e6844c717478de06c275bd6470,
         type: 2}
-      Text: 'Yes, Sir.  Come here, Katherine.  You heard the Boss.  '
+      Text: Katherine-- on top?  Well, if that's what you want...
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 93498aa0c40370145a85ce8f4542299a,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 450
-      OptionalAudioClip: {fileID: 8300000, guid: 5e05906553add494c812b0ff3ba8e7ca,
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 8300000, guid: 14ccd5cdd7d08344190f445d8feeb79e,
         type: 3}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 94ede29d68677aa4586bfa72f6cabe02,
-        type: 2}
-      Text: Yeah... ok.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 93498aa0c40370145a85ce8f4542299a,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 450
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups: []
-    Choices:
-    - {fileID: 11400000, guid: c7ee043ca32b5314fa47f3737c05a0fb, type: 2}
-    - {fileID: 11400000, guid: c08dfe8ce426524449b9e7b79f430d3f, type: 2}
-    - {fileID: 11400000, guid: 0dd9bc42607f8e24ea25773138602982, type: 2}
-    - {fileID: 11400000, guid: 2f57776e0bf26b543b118ae5c9c8ef73, type: 2}
-    - {fileID: 11400000, guid: 4237d49088957504ab66a2aa3e18a6ab, type: 2}
+    OptionalPopups:
+    - Title: Get your tongue deep in there!
+      Videos:
+      - {fileID: 32900000, guid: 725a2d0e093e12b4baaf3601228171da, type: 3}
+      - {fileID: 32900000, guid: 681bc99b11dbee7458b85781cf9eeafb, type: 3}
+      - {fileID: 32900000, guid: 74164bcb7085bca49a93df2e40937fcb, type: 3}
+      - {fileID: 32900000, guid: c5406d84ccca96d48b767a62494eef3a, type: 3}
+      - {fileID: 32900000, guid: a1d51a0eb6dedbc459a064dfdd0b16a5, type: 3}
+      Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: fa301d3bfb5bc9c4f920038e56bc1d3d, type: 3}
+      Text: Katie, let me know if your big sister starts to slack, ok?
+    Choices: []
     Effect:
       NpcEffects: []
-      EgoEffect: 15
+      EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
