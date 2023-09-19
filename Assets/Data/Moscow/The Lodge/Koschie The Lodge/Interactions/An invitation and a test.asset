@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Paying the ransom
+  m_Name: An invitation and a test
   m_EditorClassIdentifier: 
-  Id: a6493653-1292-471c-8f09-4973d400f72c
-  Name: Paying the ransom
+  Id: 8c1657a9-75a9-4d7c-ae8e-9e78a963f332
+  Name: An invitation and a test
   SubInteraction: 0
   AlertNew: 1
   Category: 1
@@ -24,9 +24,9 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions:
-    - {fileID: 11400000, guid: 88c446001c46fb249b37924fe9136a29, type: 2}
-    RequiredNotCompletedInteractions: []
+    RequiredInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: 6c6af91f189e17346be49fdd17673cc2, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -42,27 +42,14 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 0
+  Repeatable: 1
   Cooldown: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   Result:
     Dialogs:
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: 'My dear {LastName}!  What a fine day!  It is a day that I think your
-        Selectacorp staff will remember fondly, unless I''m mistaken. '
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: You're not mistaken.  I left the briefcase with Grishka.  Five million--
-        as you demanded.  Now-- will you release our people as you promised?
+      Text: You have a magnificent home.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -73,10 +60,9 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: '''Demanded''-- such a harsh word!  Your team had a paid for vacation-
-        as they will tell you.  As for your people, they have just been released
-        at the Brandenburg Gaates in Berlin-- none the less for wear.  And now that
-        our business has been concluded--  '
+      Text: Thank you for coming.  The Lodge is where I recuperate from the wounds
+        the world inflicts.  You never know how much longer you have- especially
+        in my trade.  Your people-- they are all well?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -87,10 +73,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Koschie-- wait!  One part of our business has been sorted.  But there
-        are still too many questions-- such as who and why?  Who was behind this--
-        who hired you?  And why kidnap our people and destroy our facility?  Why,
-        Koschie?
+      Text: 'Yes, thank you.  They reported that they were indeed well treated. 
+        You have created the basis for some trust we might build on.  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -101,8 +85,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Questions!  Life is filled with them-- and they go mostly unanswered! 
-        As reasonable as you have been, I cannot help you.  Good day, Mr. {LastName}!
+      Text: I have spoken with my client.  There is potential interest in a meeting.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -113,7 +96,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: What if I-- I mean- Selectacorp hired you and your organization?
+      Text: Excellent!  Finally, some progress!  When and where?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -124,8 +107,11 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: That would not be possible.  In the East, a word and a bond cannot be
-        be so easily swapped out.
+      Text: All in good time.  My client says that there are rumors that Selectacorp
+        has new technologies and capabilities, none of which were recovered at the
+        recently destroyed Ukrainian base.  This technology-- my client says it supposedly
+        renders merchandise utterly compliant without the physical and chemical processes
+        usually required.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -136,8 +122,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Then we'll be here again-- because we will rebuild and next time, the
-        resolution won't be as bloodless as today's has been, Koschie.
+      Text: So that was the reason for your raid?  To steal our tech?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -148,10 +133,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: '{FirstName}... look.  This is not trouble you want.  The world of yesterday
-        is ending.  A new era is dawning, one in which Selectacorp''s sun will not
-        shine as brightly.  Leave this be.  Leave the East to others.  It is for
-        the best.  '
+      Text: Perhaps one of many.  And?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -162,10 +144,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: What if I hired you to act as an intermediary betwen Selectacorp and
-        your client?  An introduction could lead to a way to avoid violence.  Selectacorp
-        doesn't want to go to war- we simply want to do business.  The world is a
-        big place-- big enough for us all to get rich.
+      Text: What profit is there to me is admitting the existence of new Selectacorp
+        capabilities one way or the other?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -176,7 +156,9 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: There is wisdom in what you say.  I'd need to speak to my client.
+      Text: None-- unless you wish to meet the party that was sufficiently powerful
+        enough to destroy your Eastern operations.  The client woudl like proof of
+        these new capabilities-- living proof.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -187,8 +169,9 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Then do so, Koschie.  Send Grishka when you have an answer for me.  I
-        will make it well worth your while.
+      Text: If such technology did exist, there would be no way to retrieve it from
+        a living host, trust me.  And such an exercise would be a time consuming
+        and expensive proposition.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -197,10 +180,34 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 2
+    - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: 'NOTE: Koschie leaves you in quiet comtemplation amongst the crowds of
-        visitors to Red Square.'
+      Text: Peace is always cheaper than war.  If you wish an introduction to my
+        client and the opportunity to avoid a battle for the European sector, this
+        is a non negotiable requirement.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: I see.  And what do you get out of all this Koschie?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: My client allowed me to select the subject to be presented-- that is
+        my reward.  Do you have an answer for me to report back?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -210,7 +217,9 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
-    Choices: []
+    Choices:
+    - {fileID: 11400000, guid: 6c6af91f189e17346be49fdd17673cc2, type: 2}
+    - {fileID: 11400000, guid: 2d95ba25836dec64e871369f5682bca5, type: 2}
     Effect:
       NpcEffects: []
       EgoEffect: 0
