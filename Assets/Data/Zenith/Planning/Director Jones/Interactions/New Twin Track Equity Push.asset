@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: The Jones Proposals
+  m_Name: New Twin Track Equity Push
   m_EditorClassIdentifier: 
-  Id: d3a9d6b9-99e1-45cf-a5ea-d9dd276235f3
-  Name: The Jones Proposals
+  Id: fe969a0b-4ca6-4a7d-9135-b62932331efe
+  Name: New Twin Track Equity Push
   SubInteraction: 0
   AlertNew: 1
   Category: 0
@@ -25,7 +25,7 @@ MonoBehaviour:
     NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 36fd1a0e651e4994b9e9c451b3baa2c2, type: 2}
+    - {fileID: 11400000, guid: 80ae434f2c2c30d40925bd2791c5f694, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -47,12 +47,23 @@ MonoBehaviour:
   PreviewEffect: 0
   Result:
     Dialogs:
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: It feels strange being summoned by my former secretary.  What is it you
+        want... Deborah?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: '{FirstName}. what the fuck is going on?  Debbie Jones just swanned into
-        my office and practically ordered me to review all these new policies!  Did
-        these come from you?  And why are you allowing her to dress that way?  She
-        says she''s a Director now-- that can''t be true, can it? '
+      Text: 'It''s something you''ll get used to, {FirstName}!  Based on what the
+        Prime Minister''s thinking, we''ll be working closely on a lot of projects--
+        just not the way we used to!    '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -63,8 +74,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: 'It''s all true, unfortunately.  The work of our new Board Member, Anna
-        Sarin.  '
+      Text: You mean--
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -75,10 +85,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: And why would you ever allow a witch like that inside Artemis?  Look
-        Boss-- are you feeling ok?  Anna Sarin is the insane feminist who pretty
-        much destroyed her own country with retarded laws and regulations?  What
-        are you thinking?
+      Text: I mean as colleagues and professionals.  And we can start that process
+        with my Twin Track Plan.  Have you read my memo?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -89,9 +97,10 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: I'll admit it-- it's all turned out to be much worse that I anticipated. 
-        But there's a method to my madness.  I need you to let the rest of the senior
-        management team know I have this in hand.
+      Text: Yes and I have the gravest reservations.  As I understand it, you want
+        every department management structure to transition to what you call 'gender
+        equity'-- so every department has a either a female head or a female number
+        two-- with a direct line to... you?  How is that supposed to work?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -102,9 +111,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: They'll need more than that.  They'll start to jump ship if things start
-        to revert back to the way the company used to be back in the bad old Page
-        days!
+      Text: 'That will be MY issue, not yours.  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -115,8 +122,10 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: 'I''m trying to thread a couple of needles, ok?  Bringing Anna Sarin
-        has boosted our share price, hasn''t it?  '
+      Text: I notice this 'gender equity' isn't a two way street-- and it seems that
+        departments led by both a femal ehead and deputy would be the ultimate goal. 
+        That would displace a very successful managemnt team I worked very hard to
+        recruit and put in place and--
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -127,7 +136,11 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: You mean all the DEI and ESG nonsense?  Well, sure I guess.
+      Text: Yes, well {FirstName}, you'll need that take all that up with the Prime
+        Minister-- but I understand her institutional investor allies are VERY excited
+        about this plan and approve of it one hundred percent!  Isn't you job as
+        Chairman to ensure the share price is as high as possible?  My Twin Track
+        Plan would--
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -138,9 +151,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Only someone with her profile could have done that.  Remind all our managers
-        who have options-- their personal net wealth has increased substantially
-        because of the good Prime Minister.
+      Text: 'AGATHA, initiate.  Has Anna Sarin shown any interest in Artemis research
+        and development?  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -151,8 +163,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: 'That''s true-- but you can''t let her continue with all these initiatives! 
-        You have to stop her! '
+      Text: Yes, Mr. {LastName}.  She has asked for access to the files on all ongoing
+        research.  She's met with Dr. Eckstein on several occasions.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -163,9 +175,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: And I will-- and when she goes, the institutionals will be happy, the
-        share price higher than ever and we can get back to business. Let the boys
-        all know this-- on the QT though.
+      Text: Yes, he's informed me.  But she doesn't know anything about AGATHA, does
+        she?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -176,10 +187,81 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Ok, I will.  We've put our trust in you so far and you've been a great
-        leader.  Let me know if I can help.  I just want things to get back to normal--
-        the girls are all getting restless.  You can't let this get too far out of
-        control!
+      Text: Nothing, Sir!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: You will 'stumble' across a cross-reference to AGATHA funding in a Finance
+        report and report this back to Anna Sarin.  Eckstein will refuse to divulge
+        any details without my permission, forcing Anna to deal with me directly. 
+        Are you following along, Debbie?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: I do, Sir!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Good girl.  You know, maybe when this little farce is concluded, I'll
+        let you keep one of these 'Director Deborah' outfits for some role playing
+        fun.  Would you like that, Debbie?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: B-but I'm the Director of Planning now!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Of course you are.  AGATHA, monitor mode.  Well-- I'll need to review
+        the org charts but I'm sure you've done your usual efficient analysis.  But
+        I am NOT happy about any of this, Deborah!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: I'm sure you aren't, {FirstName}, but this IS the way it is going to
+        be!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
