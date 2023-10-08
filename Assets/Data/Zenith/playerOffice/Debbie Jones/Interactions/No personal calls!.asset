@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Wire her the money and get one with it!
+  m_Name: No personal calls!
   m_EditorClassIdentifier: 
-  Id: 93dbca26-d967-4431-b908-9bf30498d978
-  Name: Wire her the money and get on with it!
-  SubInteraction: 1
-  AlertNew: 0
-  Category: 1
+  Id: f9486242-9ea1-4e7b-a624-a932364ce0d4
+  Name: No personal calls!
+  SubInteraction: 0
+  AlertNew: 1
+  Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -24,8 +24,10 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
-    RequiredNotCompletedInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 4acf9ce74ba333b41a89affa61b99f7d, type: 2}
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: c1a56e749b032164798fa927328d438d, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -34,7 +36,7 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 250000
+    MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -48,46 +50,61 @@ MonoBehaviour:
     Dialogs:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Of course!  Just see to it-- wire her the money from my personal account
-        and set up a meeting.
+      Text: Debbie, make sure the Board Room is presentable for the Friday meeting
+        and-- what's that?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Ok-- whatever you say, Boss!
+      Text: Sorry, Sir-- it's my phone!  Oh-- it's Eugene calling!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 2
+    - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: 'NOTE: Debbie will organize an appointment with Anna Sarin shortly!'
+      Text: You know the rules about personal calls!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups: []
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: Please may I take it just this one time?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: You let her take the call...
+      Videos:
+      - {fileID: 32900000, guid: cdab2f3dd37583541bb780d4af5c99e1, type: 3}
+      Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: bebc1629a61427847bee36afb26daae1, type: 3}
+      Text: ...just this once.  Of course, there's a price to be paid.
     Choices: []
     Effect:
       NpcEffects: []
-      EgoEffect: 0
+      EgoEffect: 8
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0

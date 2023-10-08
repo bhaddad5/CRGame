@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Wire her the money and get one with it!
+  m_Name: Pre-date warm up
   m_EditorClassIdentifier: 
-  Id: 93dbca26-d967-4431-b908-9bf30498d978
-  Name: Wire her the money and get on with it!
-  SubInteraction: 1
-  AlertNew: 0
-  Category: 1
+  Id: 4b7901a6-3d81-4883-807c-675d3b938c0a
+  Name: Pre-date warm up
+  SubInteraction: 0
+  AlertNew: 1
+  Category: 3
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -24,8 +24,10 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
-    RequiredNotCompletedInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: c7ef86c2176c2044eac6dd6252bc70fd, type: 2}
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: c1a56e749b032164798fa927328d438d, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -34,7 +36,7 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 250000
+    MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -48,42 +50,47 @@ MonoBehaviour:
     Dialogs:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Of course!  Just see to it-- wire her the money from my personal account
-        and set up a meeting.
+      Text: You seem so happy!  Getting ready to go out, Debbie?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Ok-- whatever you say, Boss!
+      Text: Yes, Mr. {LastName}-- with my boyfriend Eugene!  He'll be here any minute!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 2
+    - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: 'NOTE: Debbie will organize an appointment with Anna Sarin shortly!'
+      Text: You must have been looking forward to this all week!  Let me help you
+        get warmed up for him.  Out of those clothes and on your back-- hurry up! 
+        You don't want to keep your boyfriend waiting, do you!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups: []
+    OptionalPopups:
+    - Title: Poor Eugene is keep waiting...
+      Videos:
+      - {fileID: 32900000, guid: 431ae8f0641eeff448e70dd85eede93e, type: 3}
+      Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: 83ab4995ae8d3ea46a21e65180a05259, type: 3}
+      Text: ...again- and not for the first time!
     Choices: []
     Effect:
       NpcEffects: []
