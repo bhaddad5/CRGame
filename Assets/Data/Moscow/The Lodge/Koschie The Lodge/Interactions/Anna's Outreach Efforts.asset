@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: A timely visit!
+  m_Name: Anna's Outreach Efforts
   m_EditorClassIdentifier: 
-  Id: 4deb4956-67ea-40ba-bad6-38ba70ab3bff
-  Name: A timely visit!
+  Id: 507018c6-8bea-46e2-b982-acc6f78a8398
+  Name: Anna's Outreach Efforts
   SubInteraction: 0
   AlertNew: 1
-  Category: 1
+  Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -25,7 +25,7 @@ MonoBehaviour:
     NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: accb1a504f81df1429dd94b0abc01e09, type: 2}
+    - {fileID: 11400000, guid: 04757b9a2744e6a48a3b3bda56f1f205, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -47,10 +47,10 @@ MonoBehaviour:
   PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 77d097c23a8250840b1d1bf52816ec08,
-        type: 2}
-      Text: '{FirstName}!  I wasn''t told you were visiting Moscow!'
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Having Anna as your Special Assistant seems a particularly cruel fate
+        for even her.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -60,24 +60,11 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 5b115431bedcbd1429d0eceb743b3ab9,
-        type: 2}
-      Text: I'm so pleased you've been able to join us.  As I mentioned when we spoke
-        on the telephone, Anna here has been quite busy since leaving the service
-        of your organization.  She's making a real difference in bridging the diferences
-        between our peoples, aren't you Anna?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 77d097c23a8250840b1d1bf52816ec08,
-        type: 2}
-      Text: 'I am doing my best, Mr. Koschie!  '
+      OptionalNpcReference: {fileID: 0}
+      Text: Nonsense.  In the Imperial Era, it was a common practice for Russian
+        aristocrats to acquire Nordlund mistresses, regardless of social rank.  Many
+        Nordlund princesses found themselves as courtesans serving in the palaces
+        of Moscow and St. Petersburg.  I'm merely resuming an old Russian tradition!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -87,10 +74,37 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: I understand her abrupt change in sympathies has created a political
+        crisis in Nordlund and a new more neutral government has taken power.  Rumors
+        swirl that Nordlund is preparing to abandon their recent treaty with the
+        West- the one Prime Minister Sarin was so proud of.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: Anna is providing just the kidn of role model Nordlund needs.  Cometh
+        the hour, cometh the woman?  And she has personally been invested in creating
+        warmed feelings towards Nordlund.  She's had audiences with MANY senior Russian
+        government officials, not least the President!  Isn't that right, Anna?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 77d097c23a8250840b1d1bf52816ec08,
         type: 2}
-      Text: 'I''ve been following your progress in the media.  I thought your interviews
-        were very sincere-- but your photo shoots were VERY revealing. '
+      Text: It has been my honor to have met with the President.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -102,11 +116,11 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 5b115431bedcbd1429d0eceb743b3ab9,
         type: 2}
-      Text: It was important to introduce Anna to the Russian public in a very special
-        way.  Of course, the good people of Nordlund were scandalized to see their
-        former Prime Minister expose herelf so shamelessly.  It was a difficult time
-        for poor Anna, wasn't it My Dear?  Especially all those proud little Nordlund
-        feminists who idolized you!
+      Text: More than 'met'.  Anna's been spreading the message of peace by spreading
+        her legs-- a time honored form of Nordlund diplomacy, as I mentioned!  And
+        as a former Prime Minister, she's been a prodigious source of classified
+        information.  Which reminds me-- Anna, the FSB men would like to interview
+        you again.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -118,9 +132,7 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 77d097c23a8250840b1d1bf52816ec08,
         type: 2}
-      Text: 'I have no regrets!  I did what I did FOR those girls!  If there isn''t
-        peace ebtween Nordlund and Russia, there''s more at risk than their silly
-        pride--isn''t that right Mr. Koschie?  '
+      Text: 'But I''ve told them everything I know!  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -132,11 +144,10 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 5b115431bedcbd1429d0eceb743b3ab9,
         type: 2}
-      Text: She takes direction VERY well, Mr. {LastName}.  Most impressive.  Now
-        that the media portion of her campaign has concluded, I was thinking of interviewing
-        Anna for a permanent position with my organization.  Would you like to sit
-        in?  I don't think it wil take very long at all-- and you ARE looking for
-        a position, aren't you Anna?
+      Text: I know you have but they are very thorough.  There might be some random
+        secret you haven't shared that you don't even realize!  It's important we
+        have all the data we need before negotiating he new Friendship Treaty, Anna. 
+        You'll cooperate.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -148,7 +159,7 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 77d097c23a8250840b1d1bf52816ec08,
         type: 2}
-      Text: 'W-what kind of position are you talking about?  '
+      Text: Yes, Mr. Koschie.  I'll tell them everything I know.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -158,41 +169,20 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: What would you bring to my company, Anna?
+    - Title: Anna's been most helpful.
       Videos:
-      - {fileID: 32900000, guid: bf586c76b5b9b8746a26d7383bb0848c, type: 3}
+      - {fileID: 32900000, guid: 4e57a6b6ba53cc14cb1d9f4661f19fa0, type: 3}
       Textures: []
       DialogClips: []
-      Text: I was the former Prime Minister of Nordlund!  Before that, I was the
-        leader of the Nordlund Progressive Party.
-    - Title: Lose the outfit Anna and continue.
+      Text: 'She even revealed the names of Nordlund agents and the dissidents they
+        were working with! '
+    - Title: Anna, show Mr. {LastName}...
       Videos:
-      - {fileID: 32900000, guid: 89b08cad62ee7e84185133b5904f0670, type: 3}
+      - {fileID: 32900000, guid: 5964f897e581d9d47934c2f9f057a55f, type: 3}
       Textures: []
       DialogClips: []
-      Text: I started in politics as the Youth Leader of the Young Progressives and
-        worked my way up from there!
-    - Title: Fascinating!  Lose the slip-- and the bra, Anna.
-      Videos:
-      - {fileID: 32900000, guid: 670cfaafaff9efc408797b503001a34a, type: 3}
-      Textures: []
-      DialogClips: []
-      Text: 'I saw an opening to take over leadership of the party during the Scandia
-        Bank scandal and took it!  Does HE have to be here for this, Mr. Koschie? '
-    - Title: The panties now.  And make your final pitch.
-      Videos:
-      - {fileID: 32900000, guid: a1b55fe1a5323654ba421e4f256dcaf4, type: 3}
-      Textures: []
-      DialogClips: []
-      Text: 'I-- I''m not sure what position you are thinking of for me, but you
-        can be sure I will make the most of it.  I am a natural leader and was voted
-        Most Powerful Women of the Year by Time Magazine! '
-    - Title: You'll make a lovely Special Assistant, Anna.
-      Videos:
-      - {fileID: 32900000, guid: e595bceaa8aa6f840b6dbae1dcc70bd5, type: 3}
-      Textures: []
-      DialogClips: []
-      Text: Thank you, Mr. Koschie!  It wil be an honor to work for a man like you!
+      Text: ...how you've been trying to cooperate with Russian authorities of all
+        types!
     Choices: []
     Effect:
       NpcEffects: []
