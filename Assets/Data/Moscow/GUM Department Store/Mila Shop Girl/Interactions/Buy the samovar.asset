@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Commission the Chase Play Room
+  m_Name: Buy the samovar
   m_EditorClassIdentifier: 
-  Id: a1026684-d32d-488b-be13-edaee2864b75
-  Name: Commission the Chase Play Room
+  Id: 1affcdf0-1fa4-48f0-b2a2-051bb3f5a05c
+  Name: Buy the samovar
   SubInteraction: 1
   AlertNew: 0
   Category: 1
@@ -47,20 +47,26 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: ec9b6c5c6ec62c149bdd6a90fe5272e8,
-        type: 2}
-      Text: Please proceed with the commission.  I think my friend Charlie will enjoy
-        this wedding gift a hell of a lot more than some damn toaster!
+      OptionalNpcReference: {fileID: 0}
+      Text: It does seem like the perfect gift for my host.  I'll take it.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: d56786eb4e676e44fafa1c56c305f973,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.5
-        width: 200
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups: []
+    OptionalPopups:
+    - Title: Imperial Romanov Samovar
+      Videos: []
+      Textures:
+      - {fileID: 2800000, guid: d1ecce1e076ccaf459afe1869a7e229d, type: 3}
+      DialogClips: []
+      Text: "A large samovar, Batashev factory, Tula, 1898\r of traditional shape,
+        with wooden handle insulators.  \rManufactured by Yakov Vasilevitch / Vishau',
+        with Batashev factory marks, prizes and the logo of the All-\rRussian exhibition
+        of 1896 in Novgorod"
     Choices: []
     Effect:
       NpcEffects: []
@@ -89,7 +95,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
-    GoToRegion: {fileID: 11400000, guid: f4b6c2fffb1ab3743ac190d5c780e3f6, type: 2}
+    GoToRegion: {fileID: 11400000, guid: 3d94054923f994f48b341c60d4a7451b, type: 2}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
