@@ -13,14 +13,17 @@ MonoBehaviour:
   m_Name: Special Assistant Anna
   m_EditorClassIdentifier: 
   Id: b652919d-49bd-46d1-851a-d3781fca6a77
-  IsControllable: 0
-  StartingAmbition: 0
-  StartingPride: 0
+  IsControllable: 1
+  StartingAmbition: 50
+  StartingPride: 50
   FirstName: Special Assistant
   LastName: Anna
-  Age: 0
-  Education: 
-  Bio: 
+  Age: 34
+  Education: Royal University of Nordlund
+  Bio: Anna Sarin's 180 degree reversal on all her former policies and beliefs have
+    shocked most Nordlunders and Russians alike.  Now she is, like all traitors,
+    distrusted by all-- except those few who have some knowledge of the process that
+    has brought her to this strange new peacemaker role.
   VisRequirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -28,7 +31,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 04757b9a2744e6a48a3b3bda56f1f205, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
