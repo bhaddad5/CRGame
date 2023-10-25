@@ -10,23 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Artemis share price is softening!
+  m_Name: Anna's slutwear
   m_EditorClassIdentifier: 
-  Id: 3cb2f41b-0406-41fc-ba94-e4d2a9b6e086
-  Name: Artemis share price is softening!
+  Id: 66d4c583-f778-4ec8-8452-212b681e61de
+  Name: Anna's slutwear
   SubInteraction: 0
   AlertNew: 1
-  Category: 1
+  Category: 3
   Requirements:
-    RequiredPower: 2000
+    RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
-    RequiredNotCompletedInteractions:
-    - {fileID: 11400000, guid: accb1a504f81df1429dd94b0abc01e09, type: 2}
+    RequiredInteractions:
+    - {fileID: 11400000, guid: d3ab7c26b5233aa4f884e9bc03dbd594, type: 2}
+    RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -42,103 +42,77 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 0
-  Cooldown: 0
-  PreviewEffect: 0
+  Repeatable: 1
+  Cooldown: 10
+  PreviewEffect: 1
   Result:
     Dialogs:
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 2447b5794cc10d448b75441484c22173,
-        type: 2}
-      Text: Charlie, what's up?  Your email said you wanted to see me privately--
-        something about our share price?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 371197f8242f61c40a9a0ccedaeb75ab,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.4
-        width: 350
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 2447b5794cc10d448b75441484c22173,
+      OptionalNpcReference: {fileID: 11400000, guid: 77d097c23a8250840b1d1bf52816ec08,
         type: 2}
-      Text: Sorry for the mystery-- I didn't want to put too much on the record. 
-        Yeah, it's our share price.  It's been drifting south pretty steadily.
+      Text: Mr. {LastName}!  Are you here to see Mr. Koschie?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 371197f8242f61c40a9a0ccedaeb75ab,
+      CustomBackground: {fileID: 2800000, guid: 78cb904f4a416a34b958d37b4d391d26,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
-        yPos: 0.4
-        width: 350
+        yPos: 0.3
+        width: 250
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 2447b5794cc10d448b75441484c22173,
+      OptionalNpcReference: {fileID: 11400000, guid: 77d097c23a8250840b1d1bf52816ec08,
         type: 2}
-      Text: I just assumed it was fluctuating.  Our revenues are up, as our our profits. 
-        Surely the shares will bounce north soon enough?
+      Text: Actually, I was passing through.  Since I have an open invitation, I
+        tought you might show me the latest addition to your slutwear collection.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 371197f8242f61c40a9a0ccedaeb75ab,
+      CustomBackground: {fileID: 2800000, guid: 78cb904f4a416a34b958d37b4d391d26,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
-        yPos: 0.4
-        width: 350
+        yPos: 0.3
+        width: 250
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 2447b5794cc10d448b75441484c22173,
+      OptionalNpcReference: {fileID: 11400000, guid: 77d097c23a8250840b1d1bf52816ec08,
         type: 2}
-      Text: 'If it was a matter of simple profit and loss, you''d be right.  But
-        institutionals are increasingly enamoured of all these new DEI and ESG ideas--
-        and we''re falling behind in those areas. '
+      Text: As you wish...
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 371197f8242f61c40a9a0ccedaeb75ab,
+      CustomBackground: {fileID: 2800000, guid: 78cb904f4a416a34b958d37b4d391d26,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
-        yPos: 0.4
-        width: 350
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 2447b5794cc10d448b75441484c22173,
-        type: 2}
-      Text: We haven't embraced any of that madness because it runs totally against
-        the way we've run the company as successfully as we have since we went public! 
-        To adopt all that would kill our profitability!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 371197f8242f61c40a9a0ccedaeb75ab,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.4
-        width: 350
+        yPos: 0.3
+        width: 250
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 2447b5794cc10d448b75441484c22173,
+      OptionalNpcReference: {fileID: 11400000, guid: 77d097c23a8250840b1d1bf52816ec08,
         type: 2}
-      Text: I know-- but there it is.  We have some time but you're going to have
-        to figure out you want to deal with all this because eventually the share
-        WILL drop-- and that won't make anyone happy.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 371197f8242f61c40a9a0ccedaeb75ab,
+      Text: Do you like, Mr. {LastName}?
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 8a626230651e89d4893e214e32d40ebe, type: 3}
+      - {fileID: 2800000, guid: 16c11849745eb3344b050dabef7a46c9, type: 3}
+      - {fileID: 2800000, guid: e70676d3d9a33834b8849851be849b3a, type: 3}
+      - {fileID: 2800000, guid: ea14ad440ba558e4cbc1e11bc93e145b, type: 3}
+      - {fileID: 2800000, guid: 68a18fd7f7b05ff4d8f8e884541983cc, type: 3}
+      - {fileID: 2800000, guid: 8ac465bd159ff484890171694a86e329, type: 3}
+      - {fileID: 2800000, guid: e34c108bf5b012d4294a22e24d6cfca8, type: 3}
+      - {fileID: 2800000, guid: 98469e42d4215f443b0390e4c773fefe, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 78cb904f4a416a34b958d37b4d391d26,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
-        yPos: 0.4
-        width: 350
+        yPos: 0.3
+        width: 250
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
     Choices: []
     Effect:
       NpcEffects: []
-      EgoEffect: 0
+      EgoEffect: 8
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
