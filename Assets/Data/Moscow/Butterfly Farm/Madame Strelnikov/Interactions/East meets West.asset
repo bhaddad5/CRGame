@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Security check
+  m_Name: East meets West
   m_EditorClassIdentifier: 
-  Id: ab97bcdf-2a55-4338-a0c0-1e2c7cd09ea3
-  Name: Security check
+  Id: d17f59de-0292-4bd0-bf43-667a45def54d
+  Name: East meets West
   SubInteraction: 0
   AlertNew: 1
   Category: 1
@@ -33,7 +33,7 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 50
+    EgoCost: 0
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -47,9 +47,9 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 684e11d9b22dc274eba46ffcd8daefce,
+      OptionalNpcReference: {fileID: 11400000, guid: 69e0f35990f76e84cbfc9be60b77153b,
         type: 2}
-      Text: You are {LastName} {FirstName}?
+      Text: Mr. {LastName}-- a pleasure to meet a man who keeps his word.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
         type: 3}
@@ -60,9 +60,9 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 684e11d9b22dc274eba46ffcd8daefce,
+      OptionalNpcReference: {fileID: 11400000, guid: 69e0f35990f76e84cbfc9be60b77153b,
         type: 2}
-      Text: Well, {FirstName} {LastName} actually, but... yes.  Yes, I am.
+      Text: You are Strelnikov?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
         type: 3}
@@ -73,9 +73,9 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 684e11d9b22dc274eba46ffcd8daefce,
+      OptionalNpcReference: {fileID: 11400000, guid: 69e0f35990f76e84cbfc9be60b77153b,
         type: 2}
-      Text: I must search you.
+      Text: I am.  You expected a man.  Typical!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
         type: 3}
@@ -86,9 +86,9 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 684e11d9b22dc274eba46ffcd8daefce,
+      OptionalNpcReference: {fileID: 11400000, guid: 69e0f35990f76e84cbfc9be60b77153b,
         type: 2}
-      Text: I am unarmed.
+      Text: No-- I didn't know who to expect.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
         type: 3}
@@ -99,9 +99,13 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 684e11d9b22dc274eba46ffcd8daefce,
+      OptionalNpcReference: {fileID: 11400000, guid: 69e0f35990f76e84cbfc9be60b77153b,
         type: 2}
-      Text: I must search you.
+      Text: That sounds honest.  Although women are rare in this business, I can
+        tell you those who are involved in it, have an advantage.  We understand
+        the pyschology of submission acutely-- it is imprinted on our biology, Mr.
+        {LastName}.  When we master it for our own uses, the results can be quite
+        powerful!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
         type: 3}
@@ -112,9 +116,12 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 684e11d9b22dc274eba46ffcd8daefce,
+      OptionalNpcReference: {fileID: 11400000, guid: 69e0f35990f76e84cbfc9be60b77153b,
         type: 2}
-      Text: Of course.  You may proceed.
+      Text: I see the wisdom of that.  For myself, I never planned to be in 'ths
+        business'-- it was a bit of an accident to be honest.  And now that I find
+        myself in it, it is hard to imagine a life outside of it-- although I often
+        wonder...
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
         type: 3}
@@ -125,9 +132,72 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 684e11d9b22dc274eba46ffcd8daefce,
+      OptionalNpcReference: {fileID: 11400000, guid: 69e0f35990f76e84cbfc9be60b77153b,
         type: 2}
-      Text: Unarmed.  Good.  Wait here please.
+      Text: I had no such happy accidents.  I was destined for it, regardless of
+        my own wishes.  I have no regrets.  I am already enjoying you far more than
+        the obnoxious Phenex.  If that jackass had half the manners you have, Mr.
+        {LastName}, we might not be chatting here so amiably.  So, once again, Destiny
+        directs all.  We Russians are all fatalists, you must understand!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 69e0f35990f76e84cbfc9be60b77153b,
+        type: 2}
+      Text: This place-- the Butterfly Farm-- it is your vision?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 69e0f35990f76e84cbfc9be60b77153b,
+        type: 2}
+      Text: 'You have professional curiousity I see!  Yes, this is mine- although
+        without Tartofski, it would never have grown the way it has.  And Rumisa''s
+        Security unit allows us the peace of mind we need in order to work here. 
+        You will see part of it.  I am very proud of our facility and eager to show
+        it off, especially to a fellow practitioner!  Anna Sarin-- what work you
+        did there! '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 69e0f35990f76e84cbfc9be60b77153b,
+        type: 2}
+      Text: You are too kind.  Yes, we traffic in lower volume but the quality we
+        provide is... I'd like to think is world class.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 69e0f35990f76e84cbfc9be60b77153b,
+        type: 2}
+      Text: As is our own merchandise.  Let me have a look at our current Works In
+        Progress and you can see how we do things in the East then...
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
         type: 3}

@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Security check
+  m_Name: Ryan, Sheila
   m_EditorClassIdentifier: 
-  Id: ab97bcdf-2a55-4338-a0c0-1e2c7cd09ea3
-  Name: Security check
-  SubInteraction: 0
-  AlertNew: 1
+  Id: c8fe6664-2ead-43c5-a233-d60440ff0728
+  Name: Ryan, Sheila
+  SubInteraction: 1
+  AlertNew: 0
   Category: 1
   Requirements:
     RequiredPower: 0
@@ -41,17 +41,34 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 0
+  Repeatable: 1
   Cooldown: 0
   PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 684e11d9b22dc274eba46ffcd8daefce,
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 69e0f35990f76e84cbfc9be60b77153b,
         type: 2}
-      Text: You are {LastName} {FirstName}?
+      Text: You mentioned you seemed to be fated for this odd businss we're in. 
+        May I ask you said that?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
+      CustomBackground: {fileID: 2800000, guid: 32156a6c762539943975ce4127a8da66,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 69e0f35990f76e84cbfc9be60b77153b,
+        type: 2}
+      Text: My parents ranked among the top officialdom in the old Soviet era.  I
+        grew up in a kind of a dream world.  The world was to be my oyster, Mr. {LastName}. 
+        Then... History took a hand.  'Investors' with lots of American dollars began
+        purging the old elites.  My parents were arrested.  Then they were murdered.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 32156a6c762539943975ce4127a8da66,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
@@ -60,11 +77,11 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 684e11d9b22dc274eba46ffcd8daefce,
+      OptionalNpcReference: {fileID: 11400000, guid: 69e0f35990f76e84cbfc9be60b77153b,
         type: 2}
-      Text: Well, {FirstName} {LastName} actually, but... yes.  Yes, I am.
+      Text: And... what happened...
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
+      CustomBackground: {fileID: 2800000, guid: 32156a6c762539943975ce4127a8da66,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
@@ -73,11 +90,13 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 684e11d9b22dc274eba46ffcd8daefce,
+      OptionalNpcReference: {fileID: 11400000, guid: 69e0f35990f76e84cbfc9be60b77153b,
         type: 2}
-      Text: I must search you.
+      Text: What always happens to the discarded children of an exterminated elite. 
+        I was placed in the state system.  It was called an orphange.  It was actually
+        a brothel.  And so I learned 'the business' as you say from the inside out.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
+      CustomBackground: {fileID: 2800000, guid: 32156a6c762539943975ce4127a8da66,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
@@ -86,11 +105,11 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 684e11d9b22dc274eba46ffcd8daefce,
+      OptionalNpcReference: {fileID: 11400000, guid: 69e0f35990f76e84cbfc9be60b77153b,
         type: 2}
-      Text: I am unarmed.
+      Text: I... don't know what to say.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
+      CustomBackground: {fileID: 2800000, guid: 32156a6c762539943975ce4127a8da66,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
@@ -99,37 +118,12 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 684e11d9b22dc274eba46ffcd8daefce,
+      OptionalNpcReference: {fileID: 11400000, guid: 69e0f35990f76e84cbfc9be60b77153b,
         type: 2}
-      Text: I must search you.
+      Text: 'Just spare me your trite comic book hero morality.  Respect me enough
+        to do that, will you?  Ah, young Sheila!  '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 400
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 684e11d9b22dc274eba46ffcd8daefce,
-        type: 2}
-      Text: Of course.  You may proceed.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 400
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 684e11d9b22dc274eba46ffcd8daefce,
-        type: 2}
-      Text: Unarmed.  Good.  Wait here please.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
+      CustomBackground: {fileID: 2800000, guid: 32156a6c762539943975ce4127a8da66,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
@@ -138,7 +132,8 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
-    Choices: []
+    Choices:
+    - {fileID: 11400000, guid: d2220b765a3f3a948b592389c450c1be, type: 2}
     Effect:
       NpcEffects: []
       EgoEffect: 0

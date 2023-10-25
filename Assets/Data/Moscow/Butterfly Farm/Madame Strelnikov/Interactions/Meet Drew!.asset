@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Security check
+  m_Name: Meet Drew!
   m_EditorClassIdentifier: 
-  Id: ab97bcdf-2a55-4338-a0c0-1e2c7cd09ea3
-  Name: Security check
-  SubInteraction: 0
-  AlertNew: 1
+  Id: f8393a99-9193-4d85-9979-9ef4ff009ae0
+  Name: Meet Drew!
+  SubInteraction: 1
+  AlertNew: 0
   Category: 1
   Requirements:
     RequiredPower: 0
@@ -33,7 +33,7 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 50
+    EgoCost: 0
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -41,103 +41,80 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 0
+  Repeatable: 1
   Cooldown: 0
   PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 684e11d9b22dc274eba46ffcd8daefce,
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 69e0f35990f76e84cbfc9be60b77153b,
         type: 2}
-      Text: You are {LastName} {FirstName}?
+      Text: My God!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
+      CustomBackground: {fileID: 2800000, guid: e16b99502e732b6448becd349148b1a4,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 400
+        xPos: 0.2
+        yPos: 0.2
+        width: 500
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 69e0f35990f76e84cbfc9be60b77153b,
+        type: 2}
+      Text: Yes!  Tartofski does excellent work.  Drew was a custom order, as are
+        ALL our orders.  The Admiral was quite clear in his requirements-- an All
+        American boy, somewhat athletic and thoroughly heterosexual.  Young, naive,
+        fit and in every way 'normal'.  These Asians have all their conceptions based
+        on consuming your exported television and movies.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: e16b99502e732b6448becd349148b1a4,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.2
+        yPos: 0.2
+        width: 500
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 684e11d9b22dc274eba46ffcd8daefce,
+      OptionalNpcReference: {fileID: 11400000, guid: 69e0f35990f76e84cbfc9be60b77153b,
         type: 2}
-      Text: Well, {FirstName} {LastName} actually, but... yes.  Yes, I am.
+      Text: You've been operating in our sector.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
+      CustomBackground: {fileID: 2800000, guid: 879c651fbd41a7240af3a961d318297b,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 400
+        xPos: 0.3
+        yPos: 0.2
+        width: 500
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 684e11d9b22dc274eba46ffcd8daefce,
+      OptionalNpcReference: {fileID: 11400000, guid: 69e0f35990f76e84cbfc9be60b77153b,
         type: 2}
-      Text: I must search you.
+      Text: Yes, well, we can discuss that later.  But to really get a sense of Tartofski's
+        genius, you must review young Drew's file here.  Once we've concluded our
+        business, assuming a reasonable outcome, you're free to visit Drew later
+        if you like!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
+      CustomBackground: {fileID: 2800000, guid: e16b99502e732b6448becd349148b1a4,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 400
+        xPos: 0.2
+        yPos: 0.2
+        width: 500
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 684e11d9b22dc274eba46ffcd8daefce,
-        type: 2}
-      Text: I am unarmed.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 400
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 684e11d9b22dc274eba46ffcd8daefce,
-        type: 2}
-      Text: I must search you.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 400
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 684e11d9b22dc274eba46ffcd8daefce,
-        type: 2}
-      Text: Of course.  You may proceed.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 400
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 684e11d9b22dc274eba46ffcd8daefce,
-        type: 2}
-      Text: Unarmed.  Good.  Wait here please.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 400
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups: []
+    OptionalPopups:
+    - Title: The file reveals a...
+      Videos: []
+      Textures:
+      - {fileID: 2800000, guid: 2adc9ef3578ffe14a98661c40528e029, type: 3}
+      DialogClips: []
+      Text: ...hapy, normal American high school boy, once bound for college but
+        now propelled towards a far darker future.  It appears his destiny is not
+        to have a girlfriend but to be a girlfriend-- or a feminine companion of
+        some type.
     Choices: []
     Effect:
       NpcEffects: []

@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Security check
+  m_Name: Meet Emma!
   m_EditorClassIdentifier: 
-  Id: ab97bcdf-2a55-4338-a0c0-1e2c7cd09ea3
-  Name: Security check
-  SubInteraction: 0
-  AlertNew: 1
-  Category: 1
+  Id: 9118077d-9541-476b-8164-b45f0e06c410
+  Name: Meet Emma!
+  SubInteraction: 1
+  AlertNew: 0
+  Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -33,7 +33,7 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 50
+    EgoCost: 0
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -41,103 +41,106 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 0
+  Repeatable: 1
   Cooldown: 0
   PreviewEffect: 0
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 684e11d9b22dc274eba46ffcd8daefce,
+      OptionalNpcReference: {fileID: 11400000, guid: 69e0f35990f76e84cbfc9be60b77153b,
         type: 2}
-      Text: You are {LastName} {FirstName}?
+      Text: 'And here we have young Emma!  Another American girl.  Your youth are
+        in great demand by the new global elite!  The Colonel was dead set on her
+        once she reviewed the scouting report!  '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
+      CustomBackground: {fileID: 2800000, guid: 2addafb34142a6943982ae4fbbf81f07,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 400
+        xPos: 0.2
+        yPos: 0.2
+        width: 500
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 684e11d9b22dc274eba46ffcd8daefce,
+      OptionalNpcReference: {fileID: 11400000, guid: 69e0f35990f76e84cbfc9be60b77153b,
         type: 2}
-      Text: Well, {FirstName} {LastName} actually, but... yes.  Yes, I am.
+      Text: At least she looks a bit older.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
+      CustomBackground: {fileID: 2800000, guid: 22079bff55d359b4db5ec2c750d8101c,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 400
+        xPos: 0.2
+        yPos: 0.2
+        width: 500
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 684e11d9b22dc274eba46ffcd8daefce,
+      OptionalNpcReference: {fileID: 11400000, guid: 69e0f35990f76e84cbfc9be60b77153b,
         type: 2}
-      Text: I must search you.
+      Text: Emma was acquired on one of your university campuses, which are quite
+        fertile hunting grounds by the way!  Poor to no security, incredibly gullible
+        quarry and usually conveniently located near a harbor or airport for quick
+        packing and departure!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
+      CustomBackground: {fileID: 2800000, guid: 22079bff55d359b4db5ec2c750d8101c,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 400
+        xPos: 0.2
+        yPos: 0.2
+        width: 500
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 684e11d9b22dc274eba46ffcd8daefce,
+      OptionalNpcReference: {fileID: 11400000, guid: 69e0f35990f76e84cbfc9be60b77153b,
         type: 2}
-      Text: I am unarmed.
+      Text: Is she on some kind of hormone treatment?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
+      CustomBackground: {fileID: 2800000, guid: 2addafb34142a6943982ae4fbbf81f07,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 400
+        xPos: 0.2
+        yPos: 0.2
+        width: 500
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 684e11d9b22dc274eba46ffcd8daefce,
+      OptionalNpcReference: {fileID: 11400000, guid: 69e0f35990f76e84cbfc9be60b77153b,
         type: 2}
-      Text: I must search you.
+      Text: No.  The Colonel simply wanted a healthy, attractive and fit young girl
+        with a pronounced preference for other women.  Emma fit the bill completely. 
+        There was no need for orientation re-set.  Of course, Emma probably would
+        never have voluntarily chosen to become the companion of an older and not
+        very fit or attractive lady, but that's obviously immaterial.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
+      CustomBackground: {fileID: 2800000, guid: 2addafb34142a6943982ae4fbbf81f07,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 400
+        xPos: 0.2
+        yPos: 0.2
+        width: 500
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 684e11d9b22dc274eba46ffcd8daefce,
+      OptionalNpcReference: {fileID: 11400000, guid: 69e0f35990f76e84cbfc9be60b77153b,
         type: 2}
-      Text: Of course.  You may proceed.
+      Text: May I see her file?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
+      CustomBackground: {fileID: 2800000, guid: 2addafb34142a6943982ae4fbbf81f07,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 400
+        xPos: 0.2
+        yPos: 0.2
+        width: 500
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 684e11d9b22dc274eba46ffcd8daefce,
-        type: 2}
-      Text: Unarmed.  Good.  Wait here please.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 400
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups: []
+    OptionalPopups:
+    - Title: Boston College is in MY sector.
+      Videos: []
+      Textures:
+      - {fileID: 2800000, guid: 831a4533acec31141b49667ea827d6a6, type: 3}
+      DialogClips: []
+      Text: '"Yes, well, we need to work out boundaries, don''t we, Mr. {LastName}? 
+        A modus vivendi that works for everyone."'
     Choices: []
     Effect:
       NpcEffects: []

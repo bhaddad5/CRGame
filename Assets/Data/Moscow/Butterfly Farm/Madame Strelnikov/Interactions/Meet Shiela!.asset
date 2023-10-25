@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Security check
+  m_Name: Meet Shiela!
   m_EditorClassIdentifier: 
-  Id: ab97bcdf-2a55-4338-a0c0-1e2c7cd09ea3
-  Name: Security check
-  SubInteraction: 0
-  AlertNew: 1
+  Id: bd1bedd8-658f-41c7-bb97-8126df1cac86
+  Name: Meet Shiela!
+  SubInteraction: 1
+  AlertNew: 0
   Category: 1
   Requirements:
     RequiredPower: 0
@@ -33,7 +33,7 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 50
+    EgoCost: 0
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -46,98 +46,87 @@ MonoBehaviour:
   PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 684e11d9b22dc274eba46ffcd8daefce,
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 69e0f35990f76e84cbfc9be60b77153b,
         type: 2}
-      Text: You are {LastName} {FirstName}?
+      Text: She looks very young.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
+      CustomBackground: {fileID: 2800000, guid: b7cd51373220d8f4d902ed157cd6c102,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 400
+        xPos: 0.2
+        yPos: 0.2
+        width: 500
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 69e0f35990f76e84cbfc9be60b77153b,
+        type: 2}
+      Text: The Judge wanted a 'very fresh' picking.  Young, fit, fertile and ginger. 
+        He loves the distinctive look and given the relative rarity of the MC1R gene,
+        one that could have commercial potential!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 37eafc97b432f704685608e5531f9bc6,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.2
+        yPos: 0.2
+        width: 500
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 684e11d9b22dc274eba46ffcd8daefce,
+      OptionalNpcReference: {fileID: 11400000, guid: 69e0f35990f76e84cbfc9be60b77153b,
         type: 2}
-      Text: Well, {FirstName} {LastName} actually, but... yes.  Yes, I am.
+      Text: Selectacorp has a policy-- we don't trade in merchandise under a certain
+        age.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
+      CustomBackground: {fileID: 2800000, guid: b7cd51373220d8f4d902ed157cd6c102,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 400
+        xPos: 0.2
+        yPos: 0.2
+        width: 500
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 684e11d9b22dc274eba46ffcd8daefce,
+      OptionalNpcReference: {fileID: 11400000, guid: 69e0f35990f76e84cbfc9be60b77153b,
         type: 2}
-      Text: I must search you.
+      Text: That's your policy-- not mine.  If we do business together, you're going
+        to have to demonstrate some flexibility.  Concepts of 'Age of Majority' simply
+        don't apply in the East-- as I can affirm from my own personal and very painful
+        experience.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
+      CustomBackground: {fileID: 2800000, guid: 37eafc97b432f704685608e5531f9bc6,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 400
+        xPos: 0.2
+        yPos: 0.2
+        width: 500
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 684e11d9b22dc274eba46ffcd8daefce,
+      OptionalNpcReference: {fileID: 11400000, guid: 69e0f35990f76e84cbfc9be60b77153b,
         type: 2}
-      Text: I am unarmed.
+      Text: May I see her file?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
+      CustomBackground: {fileID: 2800000, guid: 37eafc97b432f704685608e5531f9bc6,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 400
+        xPos: 0.2
+        yPos: 0.2
+        width: 500
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 684e11d9b22dc274eba46ffcd8daefce,
-        type: 2}
-      Text: I must search you.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 400
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 684e11d9b22dc274eba46ffcd8daefce,
-        type: 2}
-      Text: Of course.  You may proceed.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 400
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 684e11d9b22dc274eba46ffcd8daefce,
-        type: 2}
-      Text: Unarmed.  Good.  Wait here please.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 400
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups: []
+    OptionalPopups:
+    - Title: '"Is she just another ''missing person'' now?"'
+      Videos: []
+      Textures:
+      - {fileID: 2800000, guid: b522f30d2fac36d408802c1a09b847c2, type: 3}
+      DialogClips: []
+      Text: '"Our acquisitions are usually staged as deaths by misadventure.  Sheila
+        here tragically perished in a car accident-- a high blood alcohol level,
+        etc etc.  We may be cruel but we aren''t heartless.  Loved ones always have
+        some closure."'
     Choices: []
     Effect:
       NpcEffects: []
