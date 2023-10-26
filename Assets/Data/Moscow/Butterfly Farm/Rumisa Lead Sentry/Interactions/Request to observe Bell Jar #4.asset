@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Meet Shiela!
+  m_Name: Request to observe Bell Jar #4
   m_EditorClassIdentifier: 
-  Id: bd1bedd8-658f-41c7-bb97-8126df1cac86
-  Name: Meet Sheila!
-  SubInteraction: 1
-  AlertNew: 0
-  Category: 1
+  Id: 1946e07a-9ff9-4433-b6d3-4124712bcda6
+  Name: Request to observe Andrew Gaines
+  SubInteraction: 0
+  AlertNew: 1
+  Category: 7
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -24,7 +24,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 741e4f3499cd3cd4eb758d6702795080, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -41,92 +42,51 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 1
+  Repeatable: 0
   Cooldown: 0
   PreviewEffect: 0
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 69e0f35990f76e84cbfc9be60b77153b,
+      OptionalNpcReference: {fileID: 11400000, guid: 684e11d9b22dc274eba46ffcd8daefce,
         type: 2}
-      Text: She looks very young.
+      Text: I'd like to observe Andrew Gaines.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: b7cd51373220d8f4d902ed157cd6c102,
+      CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.2
-        yPos: 0.2
-        width: 500
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 69e0f35990f76e84cbfc9be60b77153b,
+      OptionalNpcReference: {fileID: 11400000, guid: 684e11d9b22dc274eba46ffcd8daefce,
         type: 2}
-      Text: The Judge wanted a 'very fresh' picking.  Young, fit, fertile and ginger. 
-        He loves the distinctive look and given the relative rarity of the MC1R gene,
-        one that could have commercial potential!
+      Text: Please proceed to Bell Jar #4.  Enjoy your stay, Mr. {LastName}.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 37eafc97b432f704685608e5531f9bc6,
+      CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.2
-        yPos: 0.2
-        width: 500
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 69e0f35990f76e84cbfc9be60b77153b,
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: 684e11d9b22dc274eba46ffcd8daefce,
         type: 2}
-      Text: Selectacorp has a policy-- we don't trade in merchandise under a certain
-        age.
+      Text: 'NOTE: Bell Jar #4 is now unlocked!'
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: b7cd51373220d8f4d902ed157cd6c102,
+      CustomBackground: {fileID: 2800000, guid: f8a1f1c516dba554496f7bb2f7c46c33,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.2
-        yPos: 0.2
-        width: 500
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 69e0f35990f76e84cbfc9be60b77153b,
-        type: 2}
-      Text: That's your policy-- not mine.  If we do business together, you're going
-        to have to demonstrate some flexibility.  Concepts of 'Age of Majority' simply
-        don't apply in the East-- as I can affirm from my own personal and very painful
-        experience.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 37eafc97b432f704685608e5531f9bc6,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.2
-        yPos: 0.2
-        width: 500
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 69e0f35990f76e84cbfc9be60b77153b,
-        type: 2}
-      Text: May I see her file?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 37eafc97b432f704685608e5531f9bc6,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.2
-        yPos: 0.2
-        width: 500
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups:
-    - Title: '"Is she just another ''missing person'' now?"'
-      Videos: []
-      Textures:
-      - {fileID: 2800000, guid: b522f30d2fac36d408802c1a09b847c2, type: 3}
-      DialogClips: []
-      Text: '"Our acquisitions are usually staged as deaths by misadventure.  Sheila
-        here tragically perished in a car accident-- a high blood alcohol level,
-        etc etc.  We may be cruel but we aren''t heartless.  Loved ones always have
-        some closure."'
+    OptionalPopups: []
     Choices: []
     Effect:
       NpcEffects: []
@@ -155,7 +115,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
-    GoToRegion: {fileID: 0}
+    GoToRegion: {fileID: 11400000, guid: f4b6c2fffb1ab3743ac190d5c780e3f6, type: 2}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
