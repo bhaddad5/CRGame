@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Dobryy den'!
+  m_Name: OK-- Ashley's yours
   m_EditorClassIdentifier: 
-  Id: 8954270e-f4eb-4fa1-a7be-790259853ca5
-  Name: Dobryy den'!
+  Id: 8e7f3b0e-5db9-4311-8b00-3faf8d4218e8
+  Name: OK-- Ashley's yours.
   SubInteraction: 0
   AlertNew: 1
-  Category: 1
+  Category: 3
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -25,7 +25,7 @@ MonoBehaviour:
     NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: bd5ca4e9e53f73f4fba9b6ecdaf43797, type: 2}
+    - {fileID: 11400000, guid: f85408c4333703f42b255a1c51e77e60, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -35,7 +35,7 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 3000000
+    MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -48,39 +48,32 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: eb51879bd4ec5e44798335b41f391cd8,
-        type: 2}
-      Text: Hello, Grishka.  I've been expecting you.
+      OptionalNpcReference: {fileID: 0}
+      Text: I've been thinking about your offer-- is the million still good for Ashley?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 8ae997835c178f940a3defeb93145105,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 350
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: eb51879bd4ec5e44798335b41f391cd8,
-        type: 2}
-      Text: Dobryy den', Mr. {LastName}!  He will, I think, be happy to see you,
-        Sir!  Oh yes, very happy!  Shall we go?
+      OptionalNpcReference: {fileID: 0}
+      Text: You bet it is!  Do we have a deal?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 8ae997835c178f940a3defeb93145105,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 350
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: eb51879bd4ec5e44798335b41f391cd8,
-        type: 2}
-      Text: Can you tell me where we'll be meeting today?
+      OptionalNpcReference: {fileID: 0}
+      Text: Yes we do!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 702cdc6145b335b44ab7064839a73619,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
         xPos: 0
         yPos: 0
@@ -88,26 +81,12 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: eb51879bd4ec5e44798335b41f391cd8,
+      OptionalNpcReference: {fileID: 11400000, guid: 524c352db1c37b24fa4df8930133125e,
         type: 2}
-      Text: Of course, Sir!  The place Koschie reserves for his happiest meetings--
-        and we are here!
+      Text: Then I'll wire you the million right now!  Have you got a key for her
+        place-- and an address?  I'll introduce myself.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 702cdc6145b335b44ab7064839a73619,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 11400000, guid: eb51879bd4ec5e44798335b41f391cd8,
-        type: 2}
-      Text: 'NOTE: Red Square is now unlocked!'
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 702cdc6145b335b44ab7064839a73619,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
         xPos: 0
         yPos: 0
@@ -119,7 +98,7 @@ MonoBehaviour:
     Effect:
       NpcEffects: []
       EgoEffect: 0
-      FundsEffect: 0
+      FundsEffect: 1000000
       PowerEffect: 0
       PatentsEffect: 0
       CultureEffect: 0
@@ -129,10 +108,12 @@ MonoBehaviour:
       HornicalEffect: 0
       NpcsToControl: []
       NpcsToTrain: []
-      NpcsToRemoveFromGame: []
+      NpcsToRemoveFromGame:
+      - {fileID: 11400000, guid: d6a66ac714b2b6143974e140f5c91609, type: 2}
       LocationsToControl: []
       TrophiesClaimedReferences: []
-      TrophiesRemoved: []
+      TrophiesRemoved:
+      - {fileID: 11400000, guid: 30e283bda4bf0f3449f7bcd65519a5e4, type: 2}
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -143,7 +124,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
-    GoToRegion: {fileID: 11400000, guid: 3d94054923f994f48b341c60d4a7451b, type: 2}
+    GoToRegion: {fileID: 11400000, guid: f4b6c2fffb1ab3743ac190d5c780e3f6, type: 2}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
