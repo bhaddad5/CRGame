@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Settling Debbie's debt
+  m_Name: How goes the job search
   m_EditorClassIdentifier: 
-  Id: 6c368d19-c18e-40a9-881e-264f8987afc8
-  Name: Settling Debbie's debt
+  Id: e78fb30a-9927-48e1-a1aa-aef4baabb838
+  Name: How goes the job search?
   SubInteraction: 0
   AlertNew: 1
   Category: 1
@@ -25,7 +25,7 @@ MonoBehaviour:
     NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: e62b7df5b198cf84aa53170612056756, type: 2}
+    - {fileID: 11400000, guid: e384075943a915543a305a5400e32907, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -35,7 +35,7 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 15000
+    MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -49,9 +49,7 @@ MonoBehaviour:
     Dialogs:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Mr. Bannerjee, I'm sorry for this little drama involving my secretary. 
-        She had some absurd idea that she was going to be a businesswoman of some
-        sort and she was egged on by a woman who clearly was a bad influence on her.
+      Text: How goes the job search?  Find anything out there?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -62,8 +60,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Mr. {LastName}, you know I have always treasured your trade.  I know
-        this is in no way your fault--but I must recover my losses here!
+      Text: SInce you said I'd have to find something I could do on the weekends--
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -74,11 +71,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Good luck with that!  Debbie's credit rating is zero.  She's never got
-        more than fifty bucks in her savings account and she's barely hanging on
-        to her job as it is.  You can't get blood from a stone, Bannerjee.  But because
-        I don't want my office associated with any kind of scandal, I'm willing to
-        pay for Debbie's suits.
+      Text: Except when I might like you available--
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -89,8 +82,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: What a gentleman!  That silly girl doesn't deserve such a kind and generous
-        boss!  What a noble heart you have!  You have the cash?
+      Text: I know, I know.  It's just hard.  I keep looking but...  no luck so far.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -101,8 +93,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Here you go.  As for my noble heart, we'll see about that.  But that's
-        business I'll take up with Debbie.  Good day, Bannerjee!
+      Text: Well, keep looking.  You've got to find something.  Perhaps I can ask
+        around for you.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -113,7 +105,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Thank you!  Come again!
+      Text: Would you?  That would be great!  I'm ready to work, if I could just
+        find the right thing!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -122,27 +115,20 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
-      Text: 'NOTE:  There''s only legal way for Debbie to earn any money with which
-        to repay you.  And truth be told, it will probably cost you some more money
-        if you proceed.  (CHOICE: TAKE NO FURTHER ACTION or DISCUSS WITH DEBBIE). 
-        In any case, your reputation is preserved: +5 POWER'
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups: []
+    OptionalPopups:
+    - Title: You can tell...
+      Videos:
+      - {fileID: 32900000, guid: 01bcf24e6b02ff246a923a009c72f864, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: ...Debbie's not having any luck.  You didn't expect her to.  Time to
+        talk to Patsy at Pussywilllows!
     Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
       FundsEffect: 0
-      PowerEffect: 5
+      PowerEffect: 0
       PatentsEffect: 0
       CultureEffect: 0
       SpreadsheetsEffect: 0
