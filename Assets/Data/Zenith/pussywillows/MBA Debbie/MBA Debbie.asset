@@ -23,7 +23,7 @@ MonoBehaviour:
   Bio: 'High-end Girl Friday by day, Debbie Jones is efficient, deferential and tenuously
     clinging to corporate respectability.  Due to personal debt, she''s recently
     assumed a semi-regular part time job dancing at Pussywillows.  Shameless and
-    in desperate pursuit of tips, she''s a growing favorite with the Pussywillows
+    in desperate pursuit of tips, ''MBA Debbie'' is a growing favorite with the Pussywillows
     clientele!  '
   VisRequirements:
     RequiredPower: 0
@@ -31,7 +31,11 @@ MonoBehaviour:
     RequiredTurnNumber: 0
     NotOnWeekends: 0
     NotOnWeekdays: 0
-    NpcStatRequirements: []
+    NpcStatRequirements:
+    - OptionalNpcReference: {fileID: 11400000}
+      Stat: 0
+      Is: 0
+      Value: 40
     RequiredInteractions:
     - {fileID: 11400000, guid: 7d022b207bfe9ec4ab52d2e938c6f6df, type: 2}
     RequiredNotCompletedInteractions: []
