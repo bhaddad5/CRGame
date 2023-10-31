@@ -24,8 +24,7 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions:
-    - {fileID: 0}
+    RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies:
     - {fileID: 11400000, guid: d91aa674369a61a4eaedfd6abb9711b9, type: 2}
@@ -49,7 +48,8 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: Mr. {LastName}, she doesn't have an appointment and I've told her you
         were busy but she's insisting on seeing you!  Sorry-- Jada, from HR.
       CustomNpcImageOptions: []
@@ -62,7 +62,8 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: 'I''ll see her.  She wouldn''t dare disturb without a good reason.  Send
         her in. '
       CustomNpcImageOptions: []
@@ -79,7 +80,7 @@ MonoBehaviour:
         type: 2}
       Text: Sorry for the interruption, but when this came across my desk, I knew
         you'd want to see it.  As you know, company policy is for all admin and interns
-        submit to a Pry examination.  Those exam results are accessible by managers. 
+        to submit to a Pry examination.  Those exam results are accessible by managers. 
         Well, this one was interesting...
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 353fe760631b2344bb89208f1d660b8b,
