@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Debbie does the VIP Room
+  m_Name: Debbie's club promotion
   m_EditorClassIdentifier: 
-  Id: 6bf6aba9-0ed6-4fac-ba46-980dbd32baf9
-  Name: Debbie does the VIP Room
+  Id: 2483cbcc-dab2-4f6b-8664-a303483068cb
+  Name: Debbie's club promotion
   SubInteraction: 0
   AlertNew: 1
-  Category: 6
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -28,7 +28,7 @@ MonoBehaviour:
         type: 2}
       Stat: 0
       Is: 0
-      Value: 20
+      Value: 30
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
@@ -46,17 +46,60 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 1
-  Cooldown: 1
-  PreviewEffect: 1
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 2
+    - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: The VIP Room girls are reserved for the club's biggest 'high rollers'-
-        the elite of Zenith.  Debbie's sometimes even forced to interact with powerful
-        men she has encountered in her day job-- not to mention alums of the Business
-        School she earned her MBA at!
+      Text: What's wrong?  Have you been... crying?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: Sorry. Boss.  I'm just being silly.  I shoudl really be happy but...
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Why?  What's happened?  Something wrong?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: 'Not at all.  Ms. Nelson said I''m going to be featured in the Champagne
+        Room at the club.  It''s a big opportunity!  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: So your part time job is going well then.  I know I've been receiving
+        payments from the club.  What's the issue then?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -66,19 +109,13 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: To her credit...
+    - Title: Ms. Nelson is making me...
       Videos:
-      - {fileID: 32900000, guid: f0854471b4c1c99408b4b6bba7d69e27, type: 3}
-      - {fileID: 32900000, guid: c7394e4ebe294104eb33781544a49ce7, type: 3}
-      - {fileID: 32900000, guid: f4cc0350e26d8ec49af4d7e972f64874, type: 3}
-      - {fileID: 32900000, guid: ff33bb676d8539449a771c326849c14f, type: 3}
-      - {fileID: 32900000, guid: 9b9b10d8ebd304e45b0b4eef50a76fec, type: 3}
-      - {fileID: 32900000, guid: 6aa5ccf56355ea94ba902a7f932e3d43, type: 3}
+      - {fileID: 32900000, guid: 53f4076f58757fb43982238f1330315e, type: 3}
       Textures: []
       DialogClips: []
-      Text: '...no matter where she finds herself, Debbie is still always extremely
-        ambitious.  In the Pussywillows VIP Room, she''s reached the top of her new
-        proffession-- something her tips certainly reflect! '
+      Text: ...tell my social network about it.  She thinks it will bring in more
+        customers.  Based on the comments left on my post, I think... she's right.
     Choices: []
     Effect:
       NpcEffects:
@@ -90,7 +127,7 @@ MonoBehaviour:
         ImageSetsToAdd: []
         ImageSetsToRemove: []
       EgoEffect: 0
-      FundsEffect: 300
+      FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
       CultureEffect: 0
