@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
   m_Name: Billy Baker from HR!
   m_EditorClassIdentifier: 
-  Id: f4a19783-f2bf-4bb7-960d-6fa4f04e3863
+  Id: 271f9244-2db1-4ea9-84fb-39077009d99e
   Name: Billy Baker from HR!
   SubInteraction: 1
-  AlertNew: 1
+  AlertNew: 0
   Category: 0
   Requirements:
     RequiredPower: 0
@@ -49,8 +49,10 @@ MonoBehaviour:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: Congratulations, Billy!  You've made your uncle very proud!  Briana,
-        it's time to lose your cherry!
+      Text: 'Congratulations, Billy!  You''ve made your uncle very proud!  Briana,
+        it''s time to lose your cherry!
+
+'
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: 0f22988fb580a824fba7086ad06173df, type: 3}
       CustomBackground: {fileID: 2800000, guid: 21d40e7a975d6954ea66d3b6c06bc20a,
@@ -64,7 +66,7 @@ MonoBehaviour:
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: Thanks, Mr. {LastName}!  She's pretty!  Can I fuck her now?
+      Text: Can I fuck now?  Can I fuck her?
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: 0f22988fb580a824fba7086ad06173df, type: 3}
       CustomBackground: {fileID: 2800000, guid: 21d40e7a975d6954ea66d3b6c06bc20a,
@@ -93,7 +95,7 @@ MonoBehaviour:
       Textures:
       - {fileID: 2800000, guid: 1e94b76176e8e524997cc76c9ba0098f, type: 3}
       DialogClips: []
-      Text: ...to recognize your achievements!  Congratulations on winning the First
+      Text: ...to recognize your achievement!  Congratulations on winning the First
         Annual Artemis Cherry Popper Award.  Now have your fun, Billy!  Gentlemen,
         let's allow the happy couple some privacy, shall we?
     Choices: []
@@ -124,7 +126,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
-    GoToRegion: {fileID: 0}
+    GoToRegion: {fileID: 11400000, guid: f4b6c2fffb1ab3743ac190d5c780e3f6, type: 2}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
