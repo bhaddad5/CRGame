@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
   m_Name: Debbie does the VIP Room
   m_EditorClassIdentifier: 
-  Id: 6bf6aba9-0ed6-4fac-ba46-980dbd32baf9
+  Id: b9f2e1ef-dc19-4fd0-8c8a-28b6482b4174
   Name: Debbie does the VIP Room
   SubInteraction: 0
   AlertNew: 1
@@ -24,8 +24,7 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 11400000, guid: 25a39b39806339b4bb4cef325ae8999f,
-        type: 2}
+    - OptionalNpcReference: {fileID: 0}
       Stat: 0
       Is: 0
       Value: 20
@@ -48,7 +47,7 @@ MonoBehaviour:
     Items: []
   Repeatable: 1
   Cooldown: 1
-  PreviewEffect: 1
+  PreviewEffect: 0
   Result:
     Dialogs:
     - CurrSpeaker: 2
@@ -68,20 +67,19 @@ MonoBehaviour:
     OptionalPopups:
     - Title: To her credit...
       Videos:
-      - {fileID: 32900000, guid: f0854471b4c1c99408b4b6bba7d69e27, type: 3}
-      - {fileID: 32900000, guid: 6aa5ccf56355ea94ba902a7f932e3d43, type: 3}
-      - {fileID: 32900000, guid: c7394e4ebe294104eb33781544a49ce7, type: 3}
-      - {fileID: 32900000, guid: f4cc0350e26d8ec49af4d7e972f64874, type: 3}
+      - {fileID: 32900000, guid: d0ed4acafc1b70c45922f743ddb66787, type: 3}
+      - {fileID: 32900000, guid: cca2061a404437747901f490bab846f0, type: 3}
+      - {fileID: 32900000, guid: 1f3ec47e27d72b549b6f7bf22b0745da, type: 3}
+      - {fileID: 32900000, guid: 98712a16a5d268b4cb6e4828daadcc8c, type: 3}
       Textures: []
       DialogClips: []
-      Text: '...no matter where she finds herself, Debbie is still always extremely
-        ambitious.  In the Pussywillows VIP Room, she''s reached the top of her new
-        proffession-- something her tips certainly reflect! '
+      Text: ...no matter where she finds herself, Debbie is still always extremely
+        ambitious.  In the Pussywillows VIP Room, she's reached the top of her new
+        profession-- something her tips certainly reflect!
     Choices: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 11400000, guid: 25a39b39806339b4bb4cef325ae8999f,
-          type: 2}
+      - OptionalNpcReference: {fileID: 0}
         AmbitionEffect: -3
         PrideEffect: -3
         RemoveCurrentImage: 0

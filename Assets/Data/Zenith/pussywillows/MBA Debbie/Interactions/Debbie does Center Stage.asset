@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
   m_Name: Debbie does Center Stage
   m_EditorClassIdentifier: 
-  Id: 26bcab9d-60d8-411a-b789-192695d89d74
+  Id: e7f17685-70c8-4ee1-b40b-58360a5c9309
   Name: Debbie does Center Stage
   SubInteraction: 0
   AlertNew: 1
@@ -24,8 +24,7 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 11400000, guid: 25a39b39806339b4bb4cef325ae8999f,
-        type: 2}
+    - OptionalNpcReference: {fileID: 0}
       Stat: 0
       Is: 0
       Value: 40
@@ -48,14 +47,14 @@ MonoBehaviour:
     Items: []
   Repeatable: 1
   Cooldown: 1
-  PreviewEffect: 1
+  PreviewEffect: 0
   Result:
     Dialogs:
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 0}
       Text: Earning a spot on the Center Stage earns Debbie both more attention and
         more money!  It also means she's starting to attract regulars who like watching
-        a nice 'professional' girl forcd to strip for them!
+        a nice 'professional' girl forced to strip for them!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -67,10 +66,10 @@ MonoBehaviour:
     OptionalPopups:
     - Title: As much as she hates it....
       Videos:
-      - {fileID: 32900000, guid: 1e52f6447a99f4544a9aa2e647ae3dfe, type: 3}
-      - {fileID: 32900000, guid: 04d3400777fe37e4e9730b3f88b15708, type: 3}
-      - {fileID: 32900000, guid: d17678af84fbe0e4aacf294b25e2bd8d, type: 3}
-      - {fileID: 32900000, guid: 7ded28d5fa3f3b246bcb1e5987d0acfa, type: 3}
+      - {fileID: 32900000, guid: f262848caf7cf0b4cace191f33783ecc, type: 3}
+      - {fileID: 32900000, guid: e921141bc422bef4e96bbd7372990385, type: 3}
+      - {fileID: 32900000, guid: 568250f68d78318449d377a798d28152, type: 3}
+      - {fileID: 32900000, guid: 89feb7b9aa14a9b499e87be1f6b8ff7b, type: 3}
       Textures: []
       DialogClips: []
       Text: ...the more she reveals, the more money she earns and the sooner she'll
@@ -78,8 +77,7 @@ MonoBehaviour:
     Choices: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 11400000, guid: 25a39b39806339b4bb4cef325ae8999f,
-          type: 2}
+      - OptionalNpcReference: {fileID: 0}
         AmbitionEffect: -3
         PrideEffect: -3
         RemoveCurrentImage: 0

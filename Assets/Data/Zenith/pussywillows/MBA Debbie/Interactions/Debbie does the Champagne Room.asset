@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
   m_Name: Debbie does the Champagne Room
   m_EditorClassIdentifier: 
-  Id: 9e1be542-11d7-4ce6-9a2d-b1f1077060df
+  Id: cb7c9278-7dc6-4301-b18b-e73a24e13203
   Name: Debbie does the Champagne Room
   SubInteraction: 0
   AlertNew: 1
@@ -24,8 +24,7 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 11400000, guid: 25a39b39806339b4bb4cef325ae8999f,
-        type: 2}
+    - OptionalNpcReference: {fileID: 0}
       Stat: 0
       Is: 0
       Value: 30
@@ -48,15 +47,15 @@ MonoBehaviour:
     Items: []
   Repeatable: 1
   Cooldown: 1
-  PreviewEffect: 1
+  PreviewEffect: 0
   Result:
     Dialogs:
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 0}
-      Text: 'The club''s Champagne Room features the prettier dancers who perform
-        for more well heeled clients.  To Debbie''s horror, more than a few of her
-        old high school and college acquaintances have made the pilgrimage into Zenith
-        just to see her perform! '
+      Text: The club's Champagne Room features the prettier dancers who perform for
+        more well heeled clients.  To Debbie's horror, more than a few of her old
+        high school and college acquaintances have made the pilgrimage into Zenith
+        just to see her perform!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -68,20 +67,19 @@ MonoBehaviour:
     OptionalPopups:
     - Title: She works hard...
       Videos:
-      - {fileID: 32900000, guid: e32b4eed606ce434e9d3a6b1f52fb137, type: 3}
-      - {fileID: 32900000, guid: 95f8990bcba9ce347a648eafaf8f69ba, type: 3}
-      - {fileID: 32900000, guid: 3356150345d18c749b483fe00a757c2e, type: 3}
-      - {fileID: 32900000, guid: 74ffd7675aaad78429fc237d4a2ff544, type: 3}
+      - {fileID: 32900000, guid: 4ec1e114102a6a744be93e34727c71ca, type: 3}
+      - {fileID: 32900000, guid: 67eb2d87d1e86e548b2ca5a0db232eec, type: 3}
+      - {fileID: 32900000, guid: 2fd0933a7d73c1147a551d0fee1811a7, type: 3}
+      - {fileID: 32900000, guid: d2db3060f34c2f848a62badb5d0bcab7, type: 3}
       Textures: []
       DialogClips: []
-      Text: ...for the money she earns in teh Champagne Room.  Customers with deep
+      Text: ...for the money she earns in the Champagne Room.  Customers with deep
         pockets also demand top notch performances from the girls!  Debbie ends her
         acts exhausted and drenched in sweat-- if also smiling for the clients!
     Choices: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 11400000, guid: 25a39b39806339b4bb4cef325ae8999f,
-          type: 2}
+      - OptionalNpcReference: {fileID: 0}
         AmbitionEffect: -3
         PrideEffect: -3
         RemoveCurrentImage: 0

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
   m_Name: Do Debbie in her dressing room
   m_EditorClassIdentifier: 
-  Id: 653f201f-93a4-40a6-80e8-6307dd58b287
+  Id: af11bed2-73ab-4612-93b1-48277e7e7fc4
   Name: Do Debbie in her dressing room
   SubInteraction: 0
   AlertNew: 1
@@ -24,8 +24,7 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 11400000, guid: 25a39b39806339b4bb4cef325ae8999f,
-        type: 2}
+    - OptionalNpcReference: {fileID: 0}
       Stat: 0
       Is: 0
       Value: 10
@@ -46,9 +45,9 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 1
-  Cooldown: 1
-  PreviewEffect: 1
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
   Result:
     Dialogs:
     - CurrSpeaker: 2
@@ -67,10 +66,10 @@ MonoBehaviour:
     OptionalPopups:
     - Title: You don't need a key...
       Videos:
-      - {fileID: 32900000, guid: c51f8a6777eae254590aa93185fc7469, type: 3}
-      - {fileID: 32900000, guid: 7d9bac8a12db88546ab792dea925d421, type: 3}
-      - {fileID: 32900000, guid: ec9dec08c87e2974bb2ea54608edc265, type: 3}
-      - {fileID: 32900000, guid: 9f5d28fbe92f37d4983ac0d46f6f8709, type: 3}
+      - {fileID: 32900000, guid: a217fb379e9b226429ebdfe9daeed067, type: 3}
+      - {fileID: 32900000, guid: fe5fa09b4670b314a8123a2794efd4fe, type: 3}
+      - {fileID: 32900000, guid: 5ce3da57b318d0b418331307c99c86c2, type: 3}
+      - {fileID: 32900000, guid: 7aa88156e4a13e843a2aeb8ad8c82743, type: 3}
       Textures: []
       DialogClips: []
       Text: ...and you don't need to pay.  It is understand that when Debbie's boss
@@ -78,7 +77,7 @@ MonoBehaviour:
     Choices: []
     Effect:
       NpcEffects: []
-      EgoEffect: 12
+      EgoEffect: 15
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
