@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: No deportment assignments
+  m_Name: What do you want from me
   m_EditorClassIdentifier: 
-  Id: b51eeb61-929a-4750-9316-bed5e191dc83
-  Name: No deportment assignment
+  Id: 36ad51a8-ed3f-40da-851e-38839ea1324e
+  Name: What do you want from me?
   SubInteraction: 1
-  AlertNew: 1
-  Category: 4
+  AlertNew: 0
+  Category: 6
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -24,7 +24,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: aabf1fde632a7314aa7361b2ee56ba11, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -41,25 +42,20 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 1
-  Cooldown: 4
-  PreviewEffect: 1
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
   Result:
-    Dialogs:
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: No deportment assignments for Debbie at this time
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups: []
+    Dialogs: []
+    OptionalPopups:
+    - Title: Debbie's frustrated!
+      Videos:
+      - {fileID: 32900000, guid: f6ed541e2ce7b1747ac61adf5543f734, type: 3}
+      Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: 30438ef042ae8744987956021de8b984, type: 3}
+      Text: If you're satisfied, you can start letting her make public posts on Artemis
+        Angels!  If not, she's giving up trying!
     Choices: []
     Effect:
       NpcEffects: []

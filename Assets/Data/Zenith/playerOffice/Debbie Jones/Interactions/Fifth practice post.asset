@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: No deportment assignments
+  m_Name: Fifth practice post
   m_EditorClassIdentifier: 
-  Id: b51eeb61-929a-4750-9316-bed5e191dc83
-  Name: No deportment assignment
+  Id: a0ee5eba-fe21-4c2c-a1a1-41f739ee52bd
+  Name: Fifth practice post
   SubInteraction: 1
-  AlertNew: 1
-  Category: 4
+  AlertNew: 0
+  Category: 6
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -24,7 +24,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 37aa258ef16826245a95a7001d673eb6, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -41,25 +42,20 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 1
-  Cooldown: 4
-  PreviewEffect: 1
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
   Result:
-    Dialogs:
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: No deportment assignments for Debbie at this time
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups: []
+    Dialogs: []
+    OptionalPopups:
+    - Title: Debbie's fifth practice post
+      Videos:
+      - {fileID: 32900000, guid: 4e89ce68994aa194a961d3a143023aab, type: 3}
+      Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: 3f2fd501f93538b4db9e8b5e188e0cc3, type: 3}
+      Text: If you're satisfied, you can start letting her make public posts on Artemis
+        Angels!
     Choices: []
     Effect:
       NpcEffects: []

@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: No deportment assignments
+  m_Name: Debbie's Practice Posting
   m_EditorClassIdentifier: 
-  Id: b51eeb61-929a-4750-9316-bed5e191dc83
-  Name: No deportment assignment
+  Id: a684802a-cc74-4791-bf5c-41d05c16daf3
+  Name: Debbie's Practice Posting
   SubInteraction: 1
-  AlertNew: 1
-  Category: 4
+  AlertNew: 0
+  Category: 6
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -24,8 +24,11 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
-    RequiredNotCompletedInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 22070a38916704946a585237eb25cc2b, type: 2}
+    - {fileID: 11400000, guid: 7e890159b9863e74eb77502ba969ca1b, type: 2}
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: 15f02d4b02617f149861597967bd27ac, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -42,14 +45,14 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 1
-  Cooldown: 4
+  Cooldown: 2
   PreviewEffect: 1
   Result:
     Dialogs:
-    - CurrSpeaker: 0
+    - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: No deportment assignments for Debbie at this time
+      Text: Review Debbie's Artemis Angels latest practice post!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
         type: 3}
@@ -60,7 +63,15 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
-    Choices: []
+    Choices:
+    - {fileID: 11400000, guid: cb0806f4ee016d2428f61c981657b5fe, type: 2}
+    - {fileID: 11400000, guid: 15f02d4b02617f149861597967bd27ac, type: 2}
+    - {fileID: 11400000, guid: 434c0f8a30c2d6d499a95e935b20dcc6, type: 2}
+    - {fileID: 11400000, guid: 25d23a901cc08ac4883cac5a745f285e, type: 2}
+    - {fileID: 11400000, guid: 37aa258ef16826245a95a7001d673eb6, type: 2}
+    - {fileID: 11400000, guid: 79f521b1c9976024fa05641362aef30a, type: 2}
+    - {fileID: 11400000, guid: aabf1fde632a7314aa7361b2ee56ba11, type: 2}
+    - {fileID: 11400000, guid: bba967da294bfdd4eaadfb4479cf13d2, type: 2}
     Effect:
       NpcEffects: []
       EgoEffect: 0
