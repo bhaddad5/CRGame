@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Deportment
+  m_Name: Review Debbie's Cupid Posts
   m_EditorClassIdentifier: 
-  Id: fab3fc12-b5b1-468a-a015-ee8a2c90f4b0
-  Name: Deportment
+  Id: 2b69533b-ee83-46f2-96c0-74b94a5cd9de
+  Name: Review Debbie's Cupid Posts
   SubInteraction: 1
-  AlertNew: 1
-  Category: 4
+  AlertNew: 0
+  Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -42,14 +42,14 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 1
-  Cooldown: 0
+  Cooldown: 3
   PreviewEffect: 1
   Result:
     Dialogs:
-    - CurrSpeaker: 2
+    - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: 'NOTE: Deportment involves managing Debbie''s workplace appearance!'
+      Text: I'm going to have a look at your latest post on Artemis Angels.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
         type: 3}
@@ -59,17 +59,44 @@ MonoBehaviour:
         width: 375
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups: []
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: Well... I hope you like it!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: Debbie's hoping...
+      Videos:
+      - {fileID: 32900000, guid: 327d3fcd7fcd42e448299b6e3fbf06aa, type: 3}
+      - {fileID: 32900000, guid: 3505380e39c6b444da580ae692a92ab0, type: 3}
+      - {fileID: 32900000, guid: 3ed6e9fab927e9646841235470fdad1c, type: 3}
+      - {fileID: 32900000, guid: 3a3b677bafcc848499b11425993b9a6c, type: 3}
+      - {fileID: 32900000, guid: 680429d150286c044b026e0a34528df5, type: 3}
+      - {fileID: 32900000, guid: f24614d0999d1f74eb9ea31042e17854, type: 3}
+      - {fileID: 32900000, guid: 4075c0fe8f2dc6d4d8d8b31202372a0c, type: 3}
+      - {fileID: 32900000, guid: eaf0347417778b44395656f46ac7c59e, type: 3}
+      Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: b5ebf700d6b2b4748ab362bafcb4760a, type: 3}
+      - {fileID: 8300000, guid: d466ed1ea55638d49bda3053a642b6c7, type: 3}
+      - {fileID: 8300000, guid: 10bca11a4a6d2484ba0e0da30690798b, type: 3}
+      - {fileID: 8300000, guid: 8e3da4b4ca8be624cbab3be50bf952a3, type: 3}
+      - {fileID: 8300000, guid: dcc6082421765134786bee5b629e8a1c, type: 3}
+      - {fileID: 8300000, guid: acdc94b96804e744c9e7f9894ed627a8, type: 3}
+      - {fileID: 8300000, guid: 6bdbabb6083c3c5438cdbff414d28360, type: 3}
+      - {fileID: 8300000, guid: 79f4d969344cb3a45b0120abe0925e96, type: 3}
+      Text: ...this post will earn her a coveted Halo Point!
     Choices:
-    - {fileID: 11400000, guid: 797daaa8a02f40a478442dd97c3e7d79, type: 2}
-    - {fileID: 11400000, guid: ac0c081320b821e40877093384f2e074, type: 2}
-    - {fileID: 11400000, guid: 4ab57c9f535e22f4595bb581ad0b480f, type: 2}
-    - {fileID: 11400000, guid: ff245359f7e822143a6da38ca1874f39, type: 2}
-    - {fileID: 11400000, guid: 6cb5654758b0eed4f88285c30df42b5c, type: 2}
-    - {fileID: 11400000, guid: c0d93ee7568172445927d2a389923ebf, type: 2}
-    - {fileID: 11400000, guid: 2464a60188b53e2468f64e3fd1333481, type: 2}
-    - {fileID: 11400000, guid: 6e2ba5bc336d38b4dbc8c3cdd7ef67d8, type: 2}
-    - {fileID: 11400000, guid: 9ea2a7abafa2e8d4da5ea3f94faa68c4, type: 2}
+    - {fileID: 11400000, guid: 83003addef123fe44ac2d674fa6dab76, type: 2}
+    - {fileID: 11400000, guid: f78174a609b62dd4685e303118f92fa4, type: 2}
     Effect:
       NpcEffects: []
       EgoEffect: 0
