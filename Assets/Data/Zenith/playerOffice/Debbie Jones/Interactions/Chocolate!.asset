@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: A Halo Point for Debbie!
+  m_Name: Chocolate!
   m_EditorClassIdentifier: 
-  Id: e238ce44-607c-4730-9a9b-6fa04cf8a4bd
-  Name: A Halo Point for Debbie!
+  Id: 22a5e4e2-0cfe-4e1b-a0df-c025daca35ab
+  Name: Chocolate!
   SubInteraction: 1
   AlertNew: 0
-  Category: 0
+  Category: 6
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -40,28 +40,23 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    Items: []
+    Items:
+    - {fileID: 11400000, guid: 0717c5a25e2bae34f8e1356920a2b5d9, type: 2}
+    - {fileID: 11400000, guid: 0717c5a25e2bae34f8e1356920a2b5d9, type: 2}
+    - {fileID: 11400000, guid: 0717c5a25e2bae34f8e1356920a2b5d9, type: 2}
   Repeatable: 1
-  Cooldown: 0
+  Cooldown: 6
   PreviewEffect: 0
   Result:
-    Dialogs:
-    - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: 'NOTE: You can tell Debbie''s quietly pleased to have earned a precious
-        Halo Point by the coy smile on her face she tries to hide!  She may use her
-        Halo Points to get rewards in her Daily Assignments Special Events activity!'
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups: []
+    Dialogs: []
+    OptionalPopups:
+    - Title: Chocolate is considered....
+      Videos:
+      - {fileID: 32900000, guid: b3165c96ac0ef264ab274b079c061d2f, type: 3}
+      Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: e7a98f54413283c4bb653cf260b7b640, type: 3}
+      Text: ...dorm contraband, unless it is provided by the Boss!
     Choices: []
     Effect:
       NpcEffects: []
@@ -81,8 +76,7 @@ MonoBehaviour:
       TrophiesClaimedReferences: []
       TrophiesRemoved: []
       MissionsToComplete: []
-      ItemsToAdd:
-      - {fileID: 11400000, guid: 0717c5a25e2bae34f8e1356920a2b5d9, type: 2}
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
