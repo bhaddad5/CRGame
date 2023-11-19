@@ -9,6 +9,7 @@ using Assets.GameModel;
 using Assets.GameModel.Save;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Video;
 using static UnityEditor.FilePathAttribute;
 using Debug = UnityEngine.Debug;
 using Object = System.Object;
@@ -350,11 +351,13 @@ public class EditorValidators
 		Debug.Log("Done!");
 	}
 
+	public const int VidMaxTime = 15;
+
 	[MenuItem("Company Man Validators/Reduce Video Clips", false, 200)]
 	public static void ReduceVideoClips()
 	{
 		var vids = AssetDatabase.FindAssets("t:videoClip");
-		
+
 		foreach (var vidGuid in vids)
 		{
 			var vid = AssetDatabase.GUIDToAssetPath(vidGuid);
@@ -374,7 +377,7 @@ public class EditorValidators
 			}
 
 			ProcessStartInfo startInfo = new ProcessStartInfo($"{Application.dataPath}/Editor/VideoConverter/VideoConverter.exe");
-			startInfo.Arguments = $"\"{vid}\" \"{vidDest}\" 20";
+			startInfo.Arguments = $"\"{vid}\" \"{vidDest}\" {VidMaxTime}";
 			var p = Process.Start(startInfo);
 			p.WaitForExit();
 
@@ -384,6 +387,49 @@ public class EditorValidators
 
 		Debug.Log("Done!");
 	}
+
+	[MenuItem("Company Man Validators/Re-Reduce Existing Video Clips", false, 200)]
+	public static void ReReduceExistingVideoClips()
+	{
+		var vids = AssetDatabase.FindAssets("t:videoClip");
+		
+		foreach (var vidGuid in vids)
+		{
+			var vid = AssetDatabase.GUIDToAssetPath(vidGuid);
+
+			var vidLength = AssetDatabase.LoadAssetAtPath<VideoClip>(vid).length;
+
+			if (vidLength <= VidMaxTime)
+				continue;
+
+			//if (vid.EndsWith("-reduced.mp4"))
+			//	continue;
+
+			vid = vid.Remove(0, "Assets/".Length);
+			vid = $"{Application.dataPath}/{vid}";
+			var vidDest = vid.Replace(".mp4", "-2.mp4");
+
+
+			/*if (File.Exists(vidDest))
+			{
+				Debug.LogError($"Trying to reduce {vid} but {vidDest} already exists!!!");
+				File.Delete(vid);
+				continue;
+			}*/
+
+			ProcessStartInfo startInfo = new ProcessStartInfo($"{Application.dataPath}/Editor/VideoConverter/VideoConverter.exe");
+			startInfo.Arguments = $"\"{vid}\" \"{vidDest}\" {VidMaxTime}";
+			var p = Process.Start(startInfo);
+			p.WaitForExit();
+
+			File.Delete(vid);
+			File.Move(vidDest, vid);
+			File.Delete(vidDest);
+		}
+
+		Debug.Log("Done!");
+	}
+
 	/*
 	[MenuItem("Company Man Validators/Upgrade Npcs to use Image Sets")]
 	public static void UpgradeOldData()

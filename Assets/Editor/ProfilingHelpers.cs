@@ -155,7 +155,7 @@ public static class ProfilingHelpers
 						continue;
 					numOfVideos++;
 					totalVideoLength += videoClip.length;
-					videoLengthCapped += Mathf.Min((float)videoClip.length, 20f);
+					videoLengthCapped += Mathf.Min((float)videoClip.length, EditorValidators.VidMaxTime);
 					//if(videoClip.length > 20)
 					//	Debug.Log($"{videoClip}: {videoClip.length} seconds, frame size {videoClip.width} {videoClip.height}");
 				}
