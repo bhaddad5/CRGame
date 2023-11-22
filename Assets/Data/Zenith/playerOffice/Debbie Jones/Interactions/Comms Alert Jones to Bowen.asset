@@ -1,0 +1,263 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: Comms Alert Jones to Bowen
+  m_EditorClassIdentifier: 
+  Id: 7b51b909-87f6-4700-9ba4-0e1b68bfc134
+  Name: Comms Alert Jones to Bowen
+  SubInteraction: 0
+  AlertNew: 1
+  Category: 7
+  Requirements:
+    RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
+    NpcStatRequirements: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: fd07a42d0c72d85418aa58ded7d4f494, type: 2}
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredNpcsControled: []
+    RequiredNpcsTrained: []
+    RequiredNpcsNotControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 0
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    Items: []
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
+  Result:
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: So, how did it go?  The interview with Mr. {LastName}?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 05f26d08c0fb03445923429b8aace2f0,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 0f3d85121c8ee2f479d74f4173eda9f4,
+        type: 2}
+      Text: Meh.  Not so great.  Look, why don't YOU tell me what's going on at Artemis? 
+        Don't you have something to tell me about you and your boss?  Come on, roomie--
+        spill the beans.  It's so obvious already!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 05f26d08c0fb03445923429b8aace2f0,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: I... I don't know what you mean!  I'm his assistant, ok?  And a damn
+        good one too!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 05f26d08c0fb03445923429b8aace2f0,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 0f3d85121c8ee2f479d74f4173eda9f4,
+        type: 2}
+      Text: 'Hon, you''re his secretary, not his assistant.  He''s your boss.  Come
+        on-- I won''t judge.  I''m your friend.  There''s no way you can like this
+        guy-- he''s the one who demoted you!  Got you dumped as an exec and forces
+        you to dress like a--  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 05f26d08c0fb03445923429b8aace2f0,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: 'Elizabeth, stop it!  Right now!  Of course I don''t like him!  How could
+        I?  But I can''t...  I can''t talk about this.  I''d lose my job and--  You
+        know how hard even secretary jobs are to get?  My MBA is like an anchor--
+        I''m way overqualified for an admin job but my resume is a trainwreck.      '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 05f26d08c0fb03445923429b8aace2f0,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 0f3d85121c8ee2f479d74f4173eda9f4,
+        type: 2}
+      Text: Deb, you need to tell your story!  I'd keep  it completely anonymous. 
+        But if the article lands the way I think it will, your boss will be in serious
+        trouble and things at Artemis will ahve to change for the better.  And that
+        would include YOU, babe!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 05f26d08c0fb03445923429b8aace2f0,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: I don't know.  Would you really be able to keep my name out of it?  And
+        this magazine-- is it really that big of a deal?  I've never heard of it.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 05f26d08c0fb03445923429b8aace2f0,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 0f3d85121c8ee2f479d74f4173eda9f4,
+        type: 2}
+      Text: One hundred percent!  And when the issue hits, you'll see how much coverage
+        it will get!  Anyway, there's more to it than just a little magazine.  Don't
+        you want him to feel some pain after what he's done to you?  You KNOW you
+        deserve a LOT more than some office girl job!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 05f26d08c0fb03445923429b8aace2f0,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: Yes... yes, I do!  OK.  What do you want to know?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 05f26d08c0fb03445923429b8aace2f0,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 0f3d85121c8ee2f479d74f4173eda9f4,
+        type: 2}
+      Text: Let's start with the obvious.  How long has {FirstName} {LastName} been
+        fucking you?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 05f26d08c0fb03445923429b8aace2f0,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups: []
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      TrophiesRemoved: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
+  FailureResult:
+    Dialogs: []
+    OptionalPopups: []
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      TrophiesRemoved: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  Completed: 0
+  TurnCompletedOn: -1
+  New: 1
+  FailCount: 0
