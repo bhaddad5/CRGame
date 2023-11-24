@@ -1,0 +1,371 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: An official CGE Inquiry
+  m_EditorClassIdentifier: 
+  Id: 9cc92ea0-e1c3-45c9-8873-258350a7ef96
+  Name: An official CGE Inquiry
+  SubInteraction: 0
+  AlertNew: 1
+  Category: 1
+  Requirements:
+    RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
+    NpcStatRequirements: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: d9741b38b45f57d4f8e256c3704ba0da, type: 2}
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredNpcsControled: []
+    RequiredNpcsTrained: []
+    RequiredNpcsNotControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 100
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    Items: []
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
+  Result:
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: May I introduce {FirstName} {LastName}, the Chairman of Artemis Solution
+        Systems.  This is--
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef25c0dc25e5afe4b9ce257cbbd7b6d8,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: f5435a039e5bf6b4681eca8571df4411,
+        type: 2}
+      Text: Hannah Baron-Cohen, with the Commission on Gender Equity.  The FEDERAL
+        Commission.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef25c0dc25e5afe4b9ce257cbbd7b6d8,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: f5435a039e5bf6b4681eca8571df4411,
+        type: 2}
+      Text: I see.  And what do we owe the pleasure of your visit, Ms. Baron-Cohen?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef25c0dc25e5afe4b9ce257cbbd7b6d8,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: f5435a039e5bf6b4681eca8571df4411,
+        type: 2}
+      Text: 'We both know why.  I''m here because of the very alarming claims made
+        in a recent article in The Business magazine.  Claims of pervasive exploitation
+        of female staff- professionally, financially and potentially criminal in
+        nature.  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef25c0dc25e5afe4b9ce257cbbd7b6d8,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 7aa0a263180bef84182a01222d781db3,
+        type: 2}
+      Text: Criminal?  I've heard nothign from the District Attorney's office--
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef25c0dc25e5afe4b9ce257cbbd7b6d8,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: f5435a039e5bf6b4681eca8571df4411,
+        type: 2}
+      Text: You mean your board member?  No, Jackson, I wouldn't expect you have. 
+        This is in MY jurisdiction, not his.  There's nothign he can do for you-
+        this is a FEDERAL matter.  Now, I'll need unrestricted access to begin interviewing
+        all your staff.  If the claims made are even halfway substantiated--
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef25c0dc25e5afe4b9ce257cbbd7b6d8,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 7aa0a263180bef84182a01222d781db3,
+        type: 2}
+      Text: No, no, no.  I've already spoken to our legal firm.  They've advised
+        we're under no obligation to cooperate with your 'investigation.'  Of course
+        we're quite prepared to deal with these ridiculous claims and are preparing
+        legal action against the publication in question.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef25c0dc25e5afe4b9ce257cbbd7b6d8,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: f5435a039e5bf6b4681eca8571df4411,
+        type: 2}
+      Text: I DO have the right to formally request records and institute a formal
+        inquiry regarding Artemis.  If you choose not to cooperate, you'll be taking
+        your chances.  In the meantime--
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef25c0dc25e5afe4b9ce257cbbd7b6d8,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 7aa0a263180bef84182a01222d781db3,
+        type: 2}
+      Text: In the meantime, because we are so eager to put this calumny behind us,
+        Perkins Geary has fast tracked a request for arbitration un the the Gender
+        Equity Commission's Recourse regulations, Point Ten, Subsection H.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef25c0dc25e5afe4b9ce257cbbd7b6d8,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: f5435a039e5bf6b4681eca8571df4411,
+        type: 2}
+      Text: Arbitration?  That suggests you're prepared to admit some level of culpability--
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef25c0dc25e5afe4b9ce257cbbd7b6d8,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 7aa0a263180bef84182a01222d781db3,
+        type: 2}
+      Text: You may assume what you like, Ms. Baron-Cohen.  We look forward to our
+        arbitration session.  Good day!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef25c0dc25e5afe4b9ce257cbbd7b6d8,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: f5435a039e5bf6b4681eca8571df4411,
+        type: 2}
+      Text: I see.  I look forward to it.  My card, {FirstName}.  Good day.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef25c0dc25e5afe4b9ce257cbbd7b6d8,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 7aa0a263180bef84182a01222d781db3,
+        type: 2}
+      Text: 'I''m sorry I needed to bother you with this.  Uncle Malcolm suggested
+        we go the arbitration route to stop any formal investigation.  Once that
+        bitch got inside Artemis, she''d be relentless.  By being proactive, it buys
+        us some time.  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef25c0dc25e5afe4b9ce257cbbd7b6d8,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 7aa0a263180bef84182a01222d781db3,
+        type: 2}
+      Text: This is spiralling out of control.  It smells too.  She's pouncing right
+        after an obscure magazine publishes some article no one has read?  Something's
+        going on.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef25c0dc25e5afe4b9ce257cbbd7b6d8,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 7aa0a263180bef84182a01222d781db3,
+        type: 2}
+      Text: Uncle Malcolm agrees.  He's insisting on representing Artemis in the
+        arbitration proceedings and I've agreed.  He is the best around.  We'll need
+        him, believe me.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef25c0dc25e5afe4b9ce257cbbd7b6d8,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 7aa0a263180bef84182a01222d781db3,
+        type: 2}
+      Text: What's your threat assessment here Jackson?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef25c0dc25e5afe4b9ce257cbbd7b6d8,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 7aa0a263180bef84182a01222d781db3,
+        type: 2}
+      Text: 'If the arbitration goes against us-- and this Baron-Cohen bitch clearly
+        thinks it will-- then we have major problems.  We''ll be forced into agreements
+        to restructure the business and more than likely that a new management team
+        is put in place.  We have to get ahead of this before that happens and before
+        the stock price is affected.  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: ef25c0dc25e5afe4b9ce257cbbd7b6d8,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.35
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: The situation is more...
+      Videos: []
+      Textures:
+      - {fileID: 2800000, guid: 0a24326bf5a8f324faeb75ea810c95e5, type: 3}
+      DialogClips: []
+      Text: '...delicate than you had assumed.     NOTE: The Arbitration Center is
+        unlocked on the Zenith map!'
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      TrophiesRemoved: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
+  FailureResult:
+    Dialogs: []
+    OptionalPopups: []
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      TrophiesRemoved: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  Completed: 0
+  TurnCompletedOn: -1
+  New: 1
+  FailCount: 0
