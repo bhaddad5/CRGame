@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Pre-date warm up
+  m_Name: A nice diversion
   m_EditorClassIdentifier: 
-  Id: 4b7901a6-3d81-4883-807c-675d3b938c0a
-  Name: Pre-date warm up
-  SubInteraction: 0
-  AlertNew: 1
-  Category: 3
+  Id: 3cb4b7aa-1de5-43cd-9ade-747748b4b717
+  Name: A nice diversion
+  SubInteraction: 1
+  AlertNew: 0
+  Category: 6
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -24,10 +24,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions:
-    - {fileID: 11400000, guid: c7ef86c2176c2044eac6dd6252bc70fd, type: 2}
-    RequiredNotCompletedInteractions:
-    - {fileID: 11400000, guid: c1a56e749b032164798fa927328d438d, type: 2}
+    RequiredInteractions: []
+    RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -43,64 +41,28 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 0
+  Repeatable: 1
   Cooldown: 0
   PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 14df74e6844c717478de06c275bd6470,
-        type: 2}
-      Text: You seem so happy!  Getting ready to go out, Debbie?
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: It's relaxing just to be away from your office and let the road take
+        you to new parts of the area...
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 450
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 14df74e6844c717478de06c275bd6470,
-        type: 2}
-      Text: Yes, Mr. {LastName}-- with my boyfriend Eugene!  He'll be here any minute!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 450
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 14df74e6844c717478de06c275bd6470,
-        type: 2}
-      Text: You must have been looking forward to this all week!  Let me help you
-        get warmed up for him.  Out of those clothes and on your back-- hurry up! 
-        You don't want to keep your boyfriend waiting, do you!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 450
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups:
-    - Title: Poor Eugene is kept waiting...
-      Videos:
-      - {fileID: 32900000, guid: 431ae8f0641eeff448e70dd85eede93e, type: 3}
-      Textures: []
-      DialogClips:
-      - {fileID: 8300000, guid: 83ab4995ae8d3ea46a21e65180a05259, type: 3}
-      Text: ...again- and not for the first time!
+    OptionalPopups: []
     Choices: []
     Effect:
       NpcEffects: []
-      EgoEffect: 12
+      EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
