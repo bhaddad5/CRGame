@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Surprise Witness
+  m_Name: Expert Witness
   m_EditorClassIdentifier: 
-  Id: 91c93f27-a95f-4c57-a98f-3b922dceb362
-  Name: Surprise Witness
+  Id: 698dd644-5905-4c23-9c8a-0e1162b37af9
+  Name: Expert Witness
   SubInteraction: 0
   AlertNew: 1
   Category: 1
@@ -25,7 +25,7 @@ MonoBehaviour:
     NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 611ae411184cf9d4b882e83f0a969b61, type: 2}
+    - {fileID: 11400000, guid: b625c11eaca01de48b04c75c0518de5c, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -50,7 +50,8 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
         type: 2}
-      Text: Your Honor, we call for Elizabeth Bowen to take the stand.
+      Text: Your Honor, before we call our expert witness, we kindly ask that the
+        gallery be cleared to protect the privacy of all parties.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 91d1a907470a6cf43b7af90618e0c318,
         type: 3}
@@ -63,24 +64,7 @@ MonoBehaviour:
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
         type: 2}
-      Text: 'I anticipated this request, Mr. Perkins-- as did Ms. Baron-Cohen.  She''s
-        requested a gag order on any testimony related to Ms. Bowen''s article and
-        an temporary injunction has been issued.  Until that judgement is reviewed,
-        Ms. Bowen won''t be taking the stand.  '
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 91d1a907470a6cf43b7af90618e0c318,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.2
-        yPos: 0.1
-        width: 700
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
-        type: 2}
-      Text: 'And since I anticipated that move, we''ll go straight to our surprise
-        witness.  I request that Stephanie Tremont take the stand.  '
+      Text: Without objection.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 91d1a907470a6cf43b7af90618e0c318,
         type: 3}
@@ -91,25 +75,10 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
+      OptionalNpcReference: {fileID: 11400000, guid: f5435a039e5bf6b4681eca8571df4411,
         type: 2}
-      Text: And may I ask the relevancy of this witness, Mr. Perkins?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 91d1a907470a6cf43b7af90618e0c318,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.2
-        yPos: 0.1
-        width: 700
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
-        type: 2}
-      Text: 'Stephanie Tremont is Ms. Baron-Cohen''s superior and the Commissioner
-        of the Gender Equity Commission.  Surely, she''s prepared to testify in support
-        of her own subordinate?  I would also cite New York versus Cadwallader, which
-        allows for---  '
+      Text: Your Honor, we object to the testimony of this so-called expert witness. 
+        Testimony is immaterial to the question before the court.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 91d1a907470a6cf43b7af90618e0c318,
         type: 3}
@@ -122,8 +91,7 @@ MonoBehaviour:
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
         type: 2}
-      Text: ---the heads of government agencies to be called as witnesses in ongoing
-        litigation.  Yes, Mr. Perkins, I'll allow it.  I assume Ms. Tremont is--
+      Text: Goes directly to motivation, Your Honor!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 91d1a907470a6cf43b7af90618e0c318,
         type: 3}
@@ -136,10 +104,9 @@ MonoBehaviour:
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
         type: 2}
-      Text: I'm here, Your Honor.  Of course, I'm prepared to answer any questions. 
-        Hello, Malcolm.
+      Text: Objection overruled.  Proceed with yrou witness, Mr. Perkins.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: c77572803fcef64499e72fa2d55c5647,
+      CustomBackground: {fileID: 2800000, guid: 91d1a907470a6cf43b7af90618e0c318,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.2
@@ -150,9 +117,9 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
         type: 2}
-      Text: Stephanie.
+      Text: Would you please state your name and position please.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: c77572803fcef64499e72fa2d55c5647,
+      CustomBackground: {fileID: 2800000, guid: b5ca1004ad5232e4882967a31c67b229,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.2
@@ -163,9 +130,11 @@ MonoBehaviour:
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
         type: 2}
-      Text: How did you know I'd be in town?
+      Text: My name is Dr. Rose Feng.  I am the Executive Miedical Director of the
+        Pry Clinic.  We provide healthcare for the employees of Artemis Solution
+        Systems.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: c77572803fcef64499e72fa2d55c5647,
+      CustomBackground: {fileID: 2800000, guid: b5ca1004ad5232e4882967a31c67b229,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.2
@@ -176,10 +145,37 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
         type: 2}
-      Text: 'As soon as we researched who was behind this, I assumed you wouldn''t
-        be able to stay away.  Ms. Tremont, please state your name and current position.  '
+      Text: And one of your patients is Debbie Jones, correct?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: c77572803fcef64499e72fa2d55c5647,
+      CustomBackground: {fileID: 2800000, guid: b5ca1004ad5232e4882967a31c67b229,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.2
+        yPos: 0.1
+        width: 700
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: f5435a039e5bf6b4681eca8571df4411,
+        type: 2}
+      Text: Objection!  Doctor Patient Confidentiality!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: b5ca1004ad5232e4882967a31c67b229,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.2
+        yPos: 0.1
+        width: 700
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
+        type: 2}
+      Text: Which is why we requested the courtrrom be cleared, Your Honor.  Also,
+        please see Exhibit Two, which includes the signed patient waiver form.  Miss
+        Jones has voluntarily forfeited her right to medical confidentiality.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: b5ca1004ad5232e4882967a31c67b229,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.2
@@ -190,10 +186,9 @@ MonoBehaviour:
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
         type: 2}
-      Text: My name is Stephanie Tremont.  I was appointed Commissioner of the Gender
-        Equity Commission.
+      Text: Yes, all in order.  Overruled.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: c77572803fcef64499e72fa2d55c5647,
+      CustomBackground: {fileID: 2800000, guid: b5ca1004ad5232e4882967a31c67b229,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.2
@@ -204,9 +199,10 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
         type: 2}
-      Text: And what was your position three years ago, Ms. Tremont?
+      Text: Dr. Feng, you've heard the charges Miss Jones has made regarding her
+        employer.  Are you surprised at all?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: c77572803fcef64499e72fa2d55c5647,
+      CustomBackground: {fileID: 2800000, guid: b5ca1004ad5232e4882967a31c67b229,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.2
@@ -217,9 +213,9 @@ MonoBehaviour:
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
         type: 2}
-      Text: I was the Chief Operating Officer of Artemis Solution Systems.
+      Text: 'No.  Not at all.  '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: c77572803fcef64499e72fa2d55c5647,
+      CustomBackground: {fileID: 2800000, guid: b5ca1004ad5232e4882967a31c67b229,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.2
@@ -230,10 +226,9 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
         type: 2}
-      Text: Is it fair to say you were considered the frontrunner for the CEO position
-        once the company went public?
+      Text: Then you believe her claims of gross sexual harassment and exploitation?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: c77572803fcef64499e72fa2d55c5647,
+      CustomBackground: {fileID: 2800000, guid: b5ca1004ad5232e4882967a31c67b229,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.2
@@ -244,9 +239,11 @@ MonoBehaviour:
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
         type: 2}
-      Text: So some would say.  I hardly think that's relevant--
+      Text: Oh, certainly not!  Debbie's simply manifesting again.  She's prone to
+        this kind of behavior from time to time.  It is common for those with an
+        Icarus Complex.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: c77572803fcef64499e72fa2d55c5647,
+      CustomBackground: {fileID: 2800000, guid: b5ca1004ad5232e4882967a31c67b229,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.2
@@ -257,9 +254,9 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
         type: 2}
-      Text: That was until Mr. {LastName} here was given the job instead of you?
+      Text: Please explain that Doctor Feng.  What is an Icarus Complex?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: c77572803fcef64499e72fa2d55c5647,
+      CustomBackground: {fileID: 2800000, guid: b5ca1004ad5232e4882967a31c67b229,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.2
@@ -270,23 +267,12 @@ MonoBehaviour:
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
         type: 2}
-      Text: Yes.  What does that have to do with anything?
+      Text: I'd be happy to.  I diagnosed Debbie with the complex some time ago. 
+        It is increasingly common among so called "Fail To Launch" career women. 
+        Debbie spent her childhood and young adulthood preparing for a professional
+        career, one that failed to materialize.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: c77572803fcef64499e72fa2d55c5647,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.2
-        yPos: 0.1
-        width: 700
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
-        type: 2}
-      Text: A great deal-- if you used the power of your agency to persecute Mr.
-        {LastName} here.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: c77572803fcef64499e72fa2d55c5647,
+      CustomBackground: {fileID: 2800000, guid: b5ca1004ad5232e4882967a31c67b229,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.2
@@ -297,10 +283,13 @@ MonoBehaviour:
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
         type: 2}
-      Text: Oh, Malcolm!  Please!  You heard Ms. Jones yourself.  You can't change
-        the facts--
+      Text: Instead of an executive track, she found herself on a much more limited
+        and far less rewarding path.  She resents her social, professional and economic
+        freefall and she blames Mr. {LastName}.  In fact, she's developed a bit of
+        a conspiracy theory in which her superior has arranged her downfall.  It's
+        laughable.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: c77572803fcef64499e72fa2d55c5647,
+      CustomBackground: {fileID: 2800000, guid: b5ca1004ad5232e4882967a31c67b229,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.2
@@ -311,10 +300,9 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
         type: 2}
-      Text: 'We''ll get to Ms. Jones in due time.  Your Honor, I now submit this
-        completed Freedom of Information request as evidence.  '
+      Text: Miss Jones blames Mr. {LastName} here for her own professional failures?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: c77572803fcef64499e72fa2d55c5647,
+      CustomBackground: {fileID: 2800000, guid: b5ca1004ad5232e4882967a31c67b229,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.2
@@ -325,9 +313,11 @@ MonoBehaviour:
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
         type: 2}
-      Text: The evidence is admitted as  Exhibit One.  Proceed, Mr. Perkins.
+      Text: Yes-- laughable as I said.  Debbie believes Mr. {LastName} is the author
+        of all her problems and is the reason for her current rather minor role. 
+        That said, her real animus subconciously is even more revealing.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: c77572803fcef64499e72fa2d55c5647,
+      CustomBackground: {fileID: 2800000, guid: b5ca1004ad5232e4882967a31c67b229,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.2
@@ -338,9 +328,9 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
         type: 2}
-      Text: Ms. Tremont, please describe the contents of Exhibit One.
+      Text: Please enlighten us, Doctor.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: c77572803fcef64499e72fa2d55c5647,
+      CustomBackground: {fileID: 2800000, guid: b5ca1004ad5232e4882967a31c67b229,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.2
@@ -351,10 +341,12 @@ MonoBehaviour:
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
         type: 2}
-      Text: It is a cashed check written out to The Business magazine for the amount
-        of one hundred thousand dollars.
+      Text: Well, Debbie's subconcious has responded to her new subservient status
+        by developing a sexual attraction to Mr. {LastName} here.  She's attracted
+        to the power and prestige Mr. {LastName} represents.  Of course, she's also
+        frustrated by his lack of emotional response to her as well.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: c77572803fcef64499e72fa2d55c5647,
+      CustomBackground: {fileID: 2800000, guid: b5ca1004ad5232e4882967a31c67b229,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.2
@@ -365,9 +357,10 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
         type: 2}
-      Text: Issued by the Commission for Gender Equity?  And the signature is yours?
+      Text: So consciously Jones hates her superior, while subconsciously she is
+        in love with him?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: c77572803fcef64499e72fa2d55c5647,
+      CustomBackground: {fileID: 2800000, guid: b5ca1004ad5232e4882967a31c67b229,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.2
@@ -378,10 +371,11 @@ MonoBehaviour:
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
         type: 2}
-      Text: As Commissioner, I'm the only one who has the power to sign off on a
-        commission expense of that kind.
+      Text: More of a schoolgril crush, I'd say-- though she's never consciously
+        admit or accept this.  Needless to say, she's a confused, bitter and very,
+        very jealous woman.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: c77572803fcef64499e72fa2d55c5647,
+      CustomBackground: {fileID: 2800000, guid: b5ca1004ad5232e4882967a31c67b229,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.2
@@ -392,10 +386,10 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
         type: 2}
-      Text: And why was an obscure magazine granted one hundred thousand dollars
-        in taxpayer monies, Ms. Tremont?
+      Text: Would the woman you've described be capable of lying to hurt a man she
+        considers her tormenter?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: c77572803fcef64499e72fa2d55c5647,
+      CustomBackground: {fileID: 2800000, guid: b5ca1004ad5232e4882967a31c67b229,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.2
@@ -406,10 +400,11 @@ MonoBehaviour:
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
         type: 2}
-      Text: Your Honor, I'd like to request th eopportunity to discuss this with
-        my own personal attorney before responding to Mr. Perkin's question.
+      Text: Either lying or truly believing stories she's made up in her own head. 
+        Yes, I'd say so.  That said, with continued treatment, Debbie's got excellent
+        prospects of accepting her life as it is.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: c77572803fcef64499e72fa2d55c5647,
+      CustomBackground: {fileID: 2800000, guid: b5ca1004ad5232e4882967a31c67b229,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.2
@@ -420,10 +415,22 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
         type: 2}
-      Text: There's no need for delay, Your Honor.  I withdraw the question.  This
-        witness is dismissed.
+      Text: Your witness, Ms. Baron-Cohen.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: c77572803fcef64499e72fa2d55c5647,
+      CustomBackground: {fileID: 2800000, guid: b5ca1004ad5232e4882967a31c67b229,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.2
+        yPos: 0.1
+        width: 700
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: f5435a039e5bf6b4681eca8571df4411,
+        type: 2}
+      Text: No questions Your Honor.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: b5ca1004ad5232e4882967a31c67b229,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.2
