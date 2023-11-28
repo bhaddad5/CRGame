@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Review Debbie's Venus Posts
   m_EditorClassIdentifier: 
   Id: f569066d-37bc-4330-b05e-ac0a95631946
-  Name: Review Debbie's Venus Posts
+  Name: Review Debbie's Venus Posts (weekly)
   SubInteraction: 1
   AlertNew: 0
   Category: 0
@@ -48,26 +48,30 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: I think I'll take a look at your latest Venus Post.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: Then I hope you'll like what you see enough to give me some Halo Points,
         Mr. {LastName} .
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
@@ -121,7 +125,9 @@ MonoBehaviour:
       - {fileID: 8300000, guid: a571f5a6bb8d44c489aae5cab1503d25, type: 3}
       Text: ...just for you, hoping to earn the Halo Points that will unlock special
         rewards!
-    Choices: []
+    Choices:
+    - {fileID: 11400000, guid: d5cd8d64fb1bda847a6fecf42772e604, type: 2}
+    - {fileID: 11400000, guid: eb2c485cf12b6a14280f59e0b99fb26a, type: 2}
     Effect:
       NpcEffects: []
       EgoEffect: 0
