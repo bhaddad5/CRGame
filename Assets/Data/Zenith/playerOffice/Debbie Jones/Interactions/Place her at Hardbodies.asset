@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Give her to Eugene Lawson
+  m_Name: Place her at Hardbodies
   m_EditorClassIdentifier: 
-  Id: 08acd176-35a5-4266-9cff-516897ef2fac
-  Name: Give her to Eugene Lawson
+  Id: be472513-e1a8-4866-9e59-096dafdda979
+  Name: Place her at Hardbodies
   SubInteraction: 1
   AlertNew: 0
   Category: 1
@@ -25,7 +25,7 @@ MonoBehaviour:
     NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: b6a82a4812340ac47a6e88e53d8123c0, type: 2}
+    - {fileID: 11400000, guid: 2e6e36d3ef8101d4f872f1c63accb6aa, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -48,9 +48,9 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 0f3d85121c8ee2f479d74f4173eda9f4,
-        type: 2}
-      Text: You've got to give me a second chance!
+      OptionalNpcReference: {fileID: 0}
+      Text: If you force me out of journalism, how am I supposed to make a living? 
+        Oh, why am I asking-- you hardly care.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
         type: 3}
@@ -61,10 +61,11 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 0f3d85121c8ee2f479d74f4173eda9f4,
-        type: 2}
-      Text: Yes, alright.  But not on the outside.  You've already proven you're
-        a good writer.  Why not consider working for us?  Working for Artemis?
+      OptionalNpcReference: {fileID: 0}
+      Text: You can be even more histrionic than Debbie sometimes.  I took you to
+        be the more daring of the two of you.  Debbie's too scared to ever try a
+        new thing-- but I sense Elizabeth Bowen migth be made of sterner stuff. 
+        Maybe a change of career would do you a world of good.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
         type: 3}
@@ -75,9 +76,10 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 0f3d85121c8ee2f479d74f4173eda9f4,
-        type: 2}
-      Text: Are you serious?  As a writer?
+      OptionalNpcReference: {fileID: 0}
+      Text: 'That''s easy for you to say.  You have everything.  I''d have to srart
+        from nothing-- and what could I even do?  Are you... offering me something
+        here at Artemis?  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
         type: 3}
@@ -88,12 +90,10 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 0f3d85121c8ee2f479d74f4173eda9f4,
-        type: 2}
-      Text: 'Yes, why not?  You can easily write lies for us as you can your silly
-        magazines-- and it would put your talents to work for us, as opposed to against
-        us.  We have a very dynamic new manager in Government Affairs.  I''m sure
-        he could put you to work over in his shop.  And we''d drop the libel suit.  '
+      OptionalNpcReference: {fileID: 0}
+      Text: 'No.  You''d be too disruptive here.  You''re not Artemis Girl material--
+        you''re too independent Elizabeth.  But I do know of a business partner looking
+        for someone.  You seem quite fit. '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
         type: 3}
@@ -104,12 +104,9 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 0f3d85121c8ee2f479d74f4173eda9f4,
-        type: 2}
-      Text: Well, it sounds better than what I've been doing, I guess.  I've always
-        sort of envied Deborah's corporate security-- before I found out she was
-        just a secretary, of course.  It would be a public relations writing job,
-        right?
+      OptionalNpcReference: {fileID: 0}
+      Text: I take care of myself.  What are you getting at?  What business partner
+        are you referring to?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
         type: 3}
@@ -120,11 +117,10 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 0f3d85121c8ee2f479d74f4173eda9f4,
-        type: 2}
-      Text: Something like that.  You'd have to work it out with Lawson.  Gene Lawson
-        is the Director of Government Affairs.  A real young hotshot, if I say so
-        myself.  Well, Elizabeth?
+      OptionalNpcReference: {fileID: 0}
+      Text: Hardbodies.  They manage the Wellness Program for our Admin girls here
+        at Artemis.  It's very important wotk.  The Gym Owner is looking for Personal
+        Trainers.  Would you like me to put a word in for you, Elizabeth?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
         type: 3}
@@ -135,9 +131,9 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 0f3d85121c8ee2f479d74f4173eda9f4,
-        type: 2}
-      Text: Well.. what would be involved-- if I did agree to take this new job?
+      OptionalNpcReference: {fileID: 0}
+      Text: Huh.  Well, I admit I didn't expect that!  Me- a Personal Trainer?  I
+        mean I'd rather get back to journalism--
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
         type: 3}
@@ -148,37 +144,12 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 0f3d85121c8ee2f479d74f4173eda9f4,
-        type: 2}
-      Text: The usual onboarding.  Plus a physical exam at Pry Medical, which is
-        mandatory for insurance purposes.  Do you have health coverage now Elizabeth?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 0f3d85121c8ee2f479d74f4173eda9f4,
-        type: 2}
-      Text: No!  No I don't!  Health coverage woudl be a big deal to me, actually.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 0f3d85121c8ee2f479d74f4173eda9f4,
-        type: 2}
-      Text: Well then, why don't you run along to see Gene and see if you two hit
-        it off?
+      OptionalNpcReference: {fileID: 0}
+      Text: 'Oh, I''m afraid that''s out of the question, Elizabeth.  You have to
+        pay a price for yoru mischief.  But the libel suit would go away if you were
+        to take on a role at Hardbodies.  And Debbie''s there all the time, so you
+        could continue to reconnect with her!  Jantz is tough but fair.  I think
+        you''d get along.  Shall I put in a call for you?   '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
         type: 3}
@@ -189,14 +160,9 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 11400000, guid: 0f3d85121c8ee2f479d74f4173eda9f4,
-        type: 2}
-      Text: 'NOTE:  Gene has no idea what you''ve just gifted him.  Of course, before
-        Elizabeth can start, she''ll need to be prepared.  An AGATHA chip will ensure
-        she has the kind of attitude Gene will expect in his department-- not that
-        he even needs to know just WHY Elizabeth seems so pliable...   You''ll need
-        to get an AGATHA chip to Dr. Feng at Pry if you choose to place Elizabeth
-        with Gene Lawson...'
+      OptionalNpcReference: {fileID: 0}
+      Text: 'NOTE: Elizabeth Bowen nods and even seems relieved.  It''s not the worst
+        option for her at this point.'
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
         type: 3}
