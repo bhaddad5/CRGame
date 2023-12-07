@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Living her Best Life
+  m_Name: May I have a word with her
   m_EditorClassIdentifier: 
-  Id: 0d1712ea-5dd2-427d-8907-9bcba0f0afa6
-  Name: Living her Best Life
+  Id: b1806ba1-41b7-4096-b89e-a7a25c428779
+  Name: May I have a word with her?
   SubInteraction: 0
   AlertNew: 1
   Category: 1
@@ -24,7 +24,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 581c080e6a57c0d4992d2eab32a6d96f, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -47,73 +48,35 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: Hello, Leeza.  Got plans for the weekend?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: 'No.  Mr. Tyson likes me available.  Sometime he likes to take me to
-        parties, so I have to stick around.  '
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: It must feel strange.  He's a lot younger than you are.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: It doesn't matter.  I know all about Executive Privilege.  At least it
-        gets me out of here.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: 'I know what you''re thinking, Leeza.  That you''ll be able to get a
-        new job and put all this behind you.  Ask Debbie how that worked out for
-        her.  She''s got a master''s degree- just like you.  Here''s some advice. 
-        Forget getting used to it-- instead, embrace it.  You''ll be happier when
-        you finally accept that you''re now living your best life.  It''s as good
-        as it gets for you Leeza.    '
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 8bab944b3600def4eba669bb9598d7f1,
+      OptionalNpcReference: {fileID: 11400000, guid: 140f65d99b295d2409317edfee76ac91,
         type: 2}
-      Text: Hey {FirstName}!  Leeza- get yourself pretty-- you have ten minutes! 
-        Heard about an awesome kegger at Kappa Kappa and I need my armcandy ready
-        to roll!
+      Text: Before I go- might I have a word with Lezabette?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 140f65d99b295d2409317edfee76ac91,
+        type: 2}
+      Text: 'By all means.  Lezabette, tell Mr. {LastName} whatever he wishes to
+        learn.  The quicker you do, the sooner he''ll be on his way-- and the happier
+        you''ll be! '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: ef0272b8454caf444915e5aef55c24cc,
+        type: 2}
+      Text: What do you want?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -123,9 +86,11 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 8bab944b3600def4eba669bb9598d7f1,
+      OptionalNpcReference: {fileID: 11400000, guid: ef0272b8454caf444915e5aef55c24cc,
         type: 2}
-      Text: You kids have fun!
+      Text: 'Tell me what you do for her.  Spare no details.  And know that everything
+        you tell me, I''m going to relay back to Deborah.  It is time she began appreciating
+        her gild cage instead of hating it.  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -134,11 +99,36 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups: []
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: ef0272b8454caf444915e5aef55c24cc,
+        type: 2}
+      Text: 'NOTE: She''s a tough girl.  She shakes her head in refusal, tears springing
+        down her cheeks.  But finally, AGATHA commands and she obeys.'
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: 
+      Videos: []
+      Textures: []
+      DialogClips: []
+      Text: 
+    - Title: I think even Debbie...
+      Videos:
+      - {fileID: 32900000, guid: 4620651b1c34aa64c9b3fdab43cc835e, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: ...would agree she has it better than her old roommate.  Thank you for
+        your honesty, Lezabette.  Good luck in your new endeavours here at Juno Media!
     Choices: []
     Effect:
       NpcEffects: []
-      EgoEffect: 0
+      EgoEffect: 50
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
