@@ -1,0 +1,297 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: Time for a private meeting
+  m_EditorClassIdentifier: 
+  Id: dda2650a-7560-411e-bea4-d0a395e13040
+  Name: Time for a private meeting?
+  SubInteraction: 0
+  AlertNew: 1
+  Category: 3
+  Requirements:
+    RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
+    NpcStatRequirements: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: ddf70854d94ffcc439add0ada91d0d01, type: 2}
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredNpcsControled: []
+    RequiredNpcsTrained: []
+    RequiredNpcsNotControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 0
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    Items: []
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
+  Result:
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: f47977d500fc00e4ca470278a500ec42,
+        type: 2}
+      Text: Mr. {LastName}, Mr. Lochobar would like a word in private if you have
+        a moment.  This way please?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 61d5c60fc2d8d2743bf89ac2ee391663,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 524c352db1c37b24fa4df8930133125e,
+        type: 2}
+      Text: 'Here you are!  Best we had this chat away from the madding crowd, no? 
+        Look, I''m going to repay you for Betsy here, like it or not!  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f1729eb62997f9e4580deec37703c583,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 524c352db1c37b24fa4df8930133125e,
+        type: 2}
+      Text: It isn't necessary.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f1729eb62997f9e4580deec37703c583,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: f47977d500fc00e4ca470278a500ec42,
+        type: 2}
+      Text: Please, Mr. {LastName}-- I really owe you a debt as well.  You allowed
+        me to continue in my profession-- I owe you for that.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f1729eb62997f9e4580deec37703c583,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 524c352db1c37b24fa4df8930133125e,
+        type: 2}
+      Text: Look, you know one of my titles is Success Magazine.  I want Betsy here
+        to do a piece on you--
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f1729eb62997f9e4580deec37703c583,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 524c352db1c37b24fa4df8930133125e,
+        type: 2}
+      Text: No thank you!  Didn't we just do this?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f1729eb62997f9e4580deec37703c583,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: f47977d500fc00e4ca470278a500ec42,
+        type: 2}
+      Text: It wouldn't be like that!  I'd write whatever you todl me to!  And you'd
+        have complete veto on the article.  I'll write it until it says just what
+        you want it to say!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f1729eb62997f9e4580deec37703c583,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: f47977d500fc00e4ca470278a500ec42,
+        type: 2}
+      Text: Really?  Ms. Journalism is happy to write up a puff piece on me, her
+        college roommate's mean, evil boss?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f1729eb62997f9e4580deec37703c583,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 524c352db1c37b24fa4df8930133125e,
+        type: 2}
+      Text: Betsy's a good girl these days-- she writes what she's told, don't you
+        Bets?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f1729eb62997f9e4580deec37703c583,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: f47977d500fc00e4ca470278a500ec42,
+        type: 2}
+      Text: Whatever I'm told, Chief!  It sure beats unemployment, right?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f1729eb62997f9e4580deec37703c583,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 524c352db1c37b24fa4df8930133125e,
+        type: 2}
+      Text: Didn't I tell you?  Look, I'll send her over and when you have a minute,
+        she interview you.  We'll give it wide promotion and it should be good for
+        a nuce pr bump for you and Artemis.  Sound good?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f1729eb62997f9e4580deec37703c583,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 524c352db1c37b24fa4df8930133125e,
+        type: 2}
+      Text: Well, if this would help the company-- why not?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f1729eb62997f9e4580deec37703c583,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: f47977d500fc00e4ca470278a500ec42,
+        type: 2}
+      Text: 'NOTE: Betsy will schedule a meeting at your office in order to interview
+        you!'
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: f1729eb62997f9e4580deec37703c583,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups: []
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      TrophiesRemoved: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
+  FailureResult:
+    Dialogs: []
+    OptionalPopups: []
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      TrophiesRemoved: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  Completed: 0
+  TurnCompletedOn: -1
+  New: 1
+  FailCount: 0
