@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Dress code drama
+  m_Name: Frustrated and agitated!
   m_EditorClassIdentifier: 
-  Id: 8d08074d-6c86-4bac-8f64-e5d8ac646813
-  Name: Dress code drama
+  Id: 63a84f32-ee82-499a-a46c-5adacdb20a2c
+  Name: Frustrated and agitated!
   SubInteraction: 0
   AlertNew: 1
-  Category: 0
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -25,7 +25,7 @@ MonoBehaviour:
     NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 7491f2a0064d4a248867435506b2be8f, type: 2}
+    - {fileID: 11400000, guid: 7529e11c8e5ecc5409ebc9c85a1f5ffd, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -48,9 +48,84 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: So now I know why my dates with Debbie never went anywhere!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Sorry about that.  But as an Exec Keyholder, you can appreciate my position
+        since you now share it!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: Oh, of course!  If anything, I blame Debbie now.  She never told me she
+        was belted-- it was damn selfish of her too.  It didn't make any sense at
+        the time-- I knew she was horny as hell but she played the Ice Princess act
+        to the end.  And ever since Elizabeth's been fitted, she's been acting nutty.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Perhaps ther's something in the water!  It also sounds like she could
+        use a SRS- Secretarial Relief Session.  I let Debbie have one every so often. 
+        It calms here down.  Call her in-- I'll show you.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 6e1f31f1bdad617478a6e3f8240556bd,
         type: 2}
-      Text: But Mr. Lawson, there's nothing wrong with this outfit!
+      Text: Yes, Mr. Lawson?  Oh, hello, Mr. {LastName}!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 6e1f31f1bdad617478a6e3f8240556bd,
+        type: 2}
+      Text: 'Hello, Elizabeth!  I understand you''re frustrated.  Would you like
+        a SRS?  You just have to ask Mr. Lawson here.  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 6e1f31f1bdad617478a6e3f8240556bd,
+        type: 2}
+      Text: No, it's cool!  I don't need one!  I'd never ask for one either!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -62,21 +137,7 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 6cf03be3ec0645e47b84af5fbd6d1207,
         type: 2}
-      Text: I think it is too formal.  You're a secretary, Elizabeth.  I'll conduct
-        inspections until I see a change that suits this department.  Understand
-        me?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 6e1f31f1bdad617478a6e3f8240556bd,
-        type: 2}
-      Text: Yes, Mr. Lawson!
+      Text: Elizabeth, you may have a SRS.  Show me what this SRS is-- NOW.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -91,25 +152,23 @@ MonoBehaviour:
       Textures: []
       DialogClips: []
       Text: 
-    - Title: Elizabeth...
+    - Title: She yips when unbelted.
       Videos:
-      - {fileID: 32900000, guid: d1c2b4eccae73aa4384e635bba53eb03, type: 3}
+      - {fileID: 32900000, guid: 24918ba2039c6ec45b200f2ca4cddeb0, type: 3}
       Textures: []
       DialogClips: []
-      Text: ...struggles at her inability to defy Lawson in anything, even an argument
-        over the way she's expected to dress for work!
+      Text: Despite the modest blush, you notice her eyes are on Lawson the whole
+        time.
     Choices: []
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: 6e1f31f1bdad617478a6e3f8240556bd,
           type: 2}
-        AmbitionEffect: -15
+        AmbitionEffect: -10
         PrideEffect: 0
         RemoveCurrentImage: 0
-        ImageSetsToAdd:
-        - {fileID: 11400000, guid: a69ce33addd17514cb8da1e22d1f8c94, type: 2}
-        ImageSetsToRemove:
-        - {fileID: 11400000, guid: 23c43eb16baa5264ab4b2d6eb375c59b, type: 2}
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0

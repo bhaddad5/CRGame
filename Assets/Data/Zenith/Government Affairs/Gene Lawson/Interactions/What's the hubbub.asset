@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Dress code drama
+  m_Name: What's the hubbub
   m_EditorClassIdentifier: 
-  Id: 8d08074d-6c86-4bac-8f64-e5d8ac646813
-  Name: Dress code drama
+  Id: 9cca43d8-17a0-40cb-ad96-d0eafb9e91f9
+  Name: What's the hubbub?
   SubInteraction: 0
   AlertNew: 1
   Category: 0
@@ -25,7 +25,7 @@ MonoBehaviour:
     NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 7491f2a0064d4a248867435506b2be8f, type: 2}
+    - {fileID: 11400000, guid: 31f94b8c9f4dbf14d93c81f572afc117, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -48,9 +48,10 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 6e1f31f1bdad617478a6e3f8240556bd,
+      OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
         type: 2}
-      Text: But Mr. Lawson, there's nothing wrong with this outfit!
+      Text: Bowen, this is non negotiable!  ALL admin staff must be fitted with personal
+        protective gear in accordance with our Take Back The Night Policy!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -60,11 +61,34 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 6e1f31f1bdad617478a6e3f8240556bd,
+        type: 2}
+      Text: I'm not going to be 'fitted' with anything!  You can't make me!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 6e1f31f1bdad617478a6e3f8240556bd,
+        type: 2}
+      Text: Good Lord, Gene- is this how you run your department?  Use your Boss
+        Voice and calm your hysterical secretary!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 6cf03be3ec0645e47b84af5fbd6d1207,
         type: 2}
-      Text: I think it is too formal.  You're a secretary, Elizabeth.  I'll conduct
-        inspections until I see a change that suits this department.  Understand
-        me?
+      Text: Elizabeth!  Stop!  You WILL follow Miss Baxter's instructions!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -73,10 +97,10 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
+    - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 6e1f31f1bdad617478a6e3f8240556bd,
         type: 2}
-      Text: Yes, Mr. Lawson!
+      Text: Yes, Mr. Lawson.  S-sorry.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -85,31 +109,42 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups:
-    - Title: 
-      Videos: []
-      Textures: []
-      DialogClips: []
-      Text: 
-    - Title: Elizabeth...
-      Videos:
-      - {fileID: 32900000, guid: d1c2b4eccae73aa4384e635bba53eb03, type: 3}
-      Textures: []
-      DialogClips: []
-      Text: ...struggles at her inability to defy Lawson in anything, even an argument
-        over the way she's expected to dress for work!
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 6e1f31f1bdad617478a6e3f8240556bd,
+        type: 2}
+      Text: Good.  Elizabeth, you'll feel MUCH safer when your key is securely clipped
+        on Mr. Lawson's keychain!  Jada, take her away now and have her fitted.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: dd5b08983f1efcd4bb18ed6f3a7ee3b7,
+        type: 2}
+      Text: Right away, Mr {LastName}!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups: []
     Choices: []
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: 6e1f31f1bdad617478a6e3f8240556bd,
           type: 2}
-        AmbitionEffect: -15
+        AmbitionEffect: -10
         PrideEffect: 0
         RemoveCurrentImage: 0
-        ImageSetsToAdd:
-        - {fileID: 11400000, guid: a69ce33addd17514cb8da1e22d1f8c94, type: 2}
-        ImageSetsToRemove:
-        - {fileID: 11400000, guid: 23c43eb16baa5264ab4b2d6eb375c59b, type: 2}
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
