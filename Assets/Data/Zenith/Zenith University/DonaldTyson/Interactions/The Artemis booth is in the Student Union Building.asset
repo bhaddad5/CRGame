@@ -48,18 +48,21 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 49c059802b4b2a842be5a5c55f4435f6,
+        type: 2}
       Text: You're looking for the Artemis Hospitality booth?  All the way down...
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 7f239f2c1dffed941ad3536b63160463,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.37
+        width: 270
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 49c059802b4b2a842be5a5c55f4435f6,
+        type: 2}
       Text: There's a big turnout!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 8a08616610139b740b31487ee95309ee,
@@ -71,7 +74,8 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 49c059802b4b2a842be5a5c55f4435f6,
+        type: 2}
       Text: Here we go.  Show time!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 425c619b8e12e524c9bda95aeba5e3a1,
@@ -108,7 +112,14 @@ MonoBehaviour:
         over well!
     Choices: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+          type: 2}
+        AmbitionEffect: -1
+        PrideEffect: -1
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
