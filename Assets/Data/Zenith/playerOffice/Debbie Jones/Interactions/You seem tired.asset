@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Elizabeth is kinky!
+  m_Name: You seem tired
   m_EditorClassIdentifier: 
-  Id: 16809885-6a08-4245-9b2a-7a483f2f52de
-  Name: Elizabeth is kinky!
+  Id: 5f059a7a-4683-44f6-a3cf-262adbec56d0
+  Name: You seem tired
   SubInteraction: 0
   AlertNew: 1
-  Category: 5
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -25,7 +25,7 @@ MonoBehaviour:
     NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: ec920b44e0e6a6f45afc884f6440f44b, type: 2}
+    - {fileID: 11400000, guid: d27ac4c86822b534f995e0cc3f92f133, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -47,53 +47,73 @@ MonoBehaviour:
   PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 6cf03be3ec0645e47b84af5fbd6d1207,
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: Our Diversity Training is unbelievable!  I was talking to the Trainer-
-        Carole?-- and she really puts the girls through their paces!
+      Text: You see distracted.  Are you getting enough sleep?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: c1e11bc18ce00ec448412466ca445109,
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.29
-        width: 450
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: It's Elizabeth.  She's my gym trainer and she's turned out to be kind
+        of a bitch, Mr. {LastName}.  I never thought my best friend would turn out
+        to be such a slavedriver.  She's increasing all my workouts!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 6cf03be3ec0645e47b84af5fbd6d1207,
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: Carole's good at what she does.  She has to be tough.  The girls start
-        with VERY high inhibitions.  Where are the girls now?  I keep forgetting
-        to ask Debbie.
+      Text: I see.  Well, I'm sure it is for your own good.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: c1e11bc18ce00ec448412466ca445109,
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.29
-        width: 450
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: I don't know.  It doesn't matter.  I just wish she'd give me a break,
+        that's all!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: '"Kinks 101."'
-      Videos: []
-      Textures:
-      - {fileID: 2800000, guid: 573b5a3532313ea4d815acd581a7f813, type: 3}
-      DialogClips: []
-      Text: '"I never imagined Deborah was ever capable of... all this."       ELIZABETH
-        BOWEN  -20 PRIDE'
+    - Title: Debbie doesn't know...
+      Videos:
+      - {fileID: 32900000, guid: 2fce496a44d50a9459a83a0c222b19e3, type: 3}
+      Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: cf87cea61ce2d994a968b2f4c66f362f, type: 3}
+      Text: ...her BFF is only following orders-- YOUR orders.  Even Debbie's new
+        workout mantra has come straight from you.
     Choices: []
     Effect:
-      NpcEffects:
-      - OptionalNpcReference: {fileID: 11400000, guid: 6e1f31f1bdad617478a6e3f8240556bd,
-          type: 2}
-        AmbitionEffect: 0
-        PrideEffect: -20
-        RemoveCurrentImage: 0
-        ImageSetsToAdd: []
-        ImageSetsToRemove: []
+      NpcEffects: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
