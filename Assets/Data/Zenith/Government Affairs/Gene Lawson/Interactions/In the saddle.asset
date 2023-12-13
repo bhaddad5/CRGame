@@ -48,36 +48,35 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 6cf03be3ec0645e47b84af5fbd6d1207,
+        type: 2}
       Text: How's it hanging Gene?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: c1e11bc18ce00ec448412466ca445109,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.29
+        width: 450
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 6cf03be3ec0645e47b84af5fbd6d1207,
+        type: 2}
       Text: Low to the ground!  But seriously, things couldn't be going better. 
         The department is running smooth as butter.  We're making progress on all
         our departmental objectives and I can personally guarantee that management
         morale is sky high!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: c1e11bc18ce00ec448412466ca445109,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.29
+        width: 450
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: 
-      Videos: []
-      Textures: []
-      DialogClips: []
-      Text: 
     - Title: Elizabeth Bowen looks...
       Videos:
       - {fileID: 32900000, guid: f3bbff89b901b664080ddec25c8d8d5a, type: 3}
@@ -87,7 +86,14 @@ MonoBehaviour:
         boss is happy, you're happy!
     Choices: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: 6e1f31f1bdad617478a6e3f8240556bd,
+          type: 2}
+        AmbitionEffect: 0
+        PrideEffect: -5
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0

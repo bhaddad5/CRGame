@@ -29,7 +29,8 @@ MonoBehaviour:
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
-    RequiredNpcsControled: []
+    RequiredNpcsControled:
+    - {fileID: 11400000, guid: 6e1f31f1bdad617478a6e3f8240556bd, type: 2}
     RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
     RequiredTrophies: []
@@ -48,8 +49,9 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: Mr. {LastName}, it's Lawson for you.  He thinks he can just barge in
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: Mr. {LastName}, it's Eugene for you.  He thinks he can just barge in
         here without an appointment!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 04aba9185e390994fa36eca45cd4d343,
@@ -61,7 +63,8 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: Show MISTER Lawson in-- and if there's another slip like that, it will
         be a demerit!
       CustomNpcImageOptions: []
@@ -104,7 +107,7 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 6cf03be3ec0645e47b84af5fbd6d1207,
         type: 2}
-      Text: Well-- I thought it was a gag you were playing on me.  Is thsi training...
+      Text: Well-- I thought it was a gag you were playing on me.  Is this training...
         real?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 04aba9185e390994fa36eca45cd4d343,
@@ -134,7 +137,7 @@ MonoBehaviour:
         type: 2}
       Text: 'The Artemis diversity training program is a training initiative aimed
         at promoting understanding and appreciation for differences among admin staff
-        in our workplace. Mr. Lawson.  It is very... comprehensive. '
+        in our workplace, Mr. Lawson.  It is very... comprehensive. '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 04aba9185e390994fa36eca45cd4d343,
         type: 3}
@@ -142,13 +145,14 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
-      OptionalAudioClip: {fileID: 0}
+      OptionalAudioClip: {fileID: 8300000, guid: cc880d743789c5544a245de0201a59e5,
+        type: 3}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
       Text: Debbie, Elizabeth is about to begin her Diversity Training.  Since you
-        two have a pre-existing relationship, why don't you act as her Training Partner
+        two have a pre-existing relationship, why don't you act as her Training Partner--
         that is unlss you have any objections, Gene?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 04aba9185e390994fa36eca45cd4d343,
@@ -204,8 +208,9 @@ MonoBehaviour:
       Videos:
       - {fileID: 32900000, guid: 3ff0790a9ab93d143ae8c64f3b666c93, type: 3}
       Textures: []
-      DialogClips: []
-      Text: '...about thsi revelation.  Or is it because she''ll be helping turn
+      DialogClips:
+      - {fileID: 8300000, guid: abbd5ba969d633b4eb440160532bbe3e, type: 3}
+      Text: '...about this revelation.  Or is it because she''ll be helping turn
         her BFF into a switch hitter?  Maybe both! '
     Choices: []
     Effect:
