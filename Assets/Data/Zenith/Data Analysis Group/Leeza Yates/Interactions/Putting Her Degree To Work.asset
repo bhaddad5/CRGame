@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Living her Best Life
+  m_Name: Putting Her Degree To Work
   m_EditorClassIdentifier: 
-  Id: 0d1712ea-5dd2-427d-8907-9bcba0f0afa6
-  Name: Frat Party Mascot
+  Id: 60808be9-efed-4114-acf1-53efb5eacc00
+  Name: Putting Her Degree To Work
   SubInteraction: 0
   AlertNew: 1
-  Category: 1
+  Category: 6
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -24,7 +24,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 1f9555ffd7b03304ead4945012c64880, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -48,7 +49,7 @@ MonoBehaviour:
     Dialogs:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Hello, Ellie.  Got plans for the weekend?
+      Text: Looks like Kevin gave you a lot of homework to catch up on, huh, Ellie?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -59,8 +60,9 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: 'No.  Mr. Tyson likes me available.  Sometime he likes to take me to
-        parties, so I have to stick around.  '
+      Text: "Yes, Mr. {LastName}, I\u2019m not sure how I can even manage to get
+        through it with half of the C-Suite popping into the dorm room to use me
+        for\u2026for\u2026"
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -71,7 +73,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: It must feel strange.  He's a lot younger than you are.
+      Text: "Don\u2019t be embarrassed, Ellie, after all, that\u2019s why you\u2019re
+        employed here!"
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -82,8 +85,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: It doesn't matter.  I know all about Executive Privilege.  At least it
-        gets me out of here.
+      Text: "\u2026but, Mr. {LastName}, what about my data analyses, surely that\u2014"
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -94,26 +96,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: 'I know what you''re thinking, Ellie.  That you''ll be able to get a
-        new job and put all this behind you.  Ask Debbie how that worked out for
-        her.  She''s got a master''s degree- just like you.  Here''s some advice. 
-        Forget getting used to it-- instead, embrace it.  You''ll be happier when
-        you finally accept that you''re now living your best life.  It''s as good
-        as it gets for you, Ellie.    '
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 8bab944b3600def4eba669bb9598d7f1,
-        type: 2}
-      Text: Hey {FirstName}!  Ellie- get yourself pretty-- you have ten minutes! 
-        Heard about an awesome kegger at Kappa Kappa and I need my armcandy ready
-        to roll!
+      Text: "Don\u2019t be ridiculous, Ellie, any of our computers can do that job. 
+        Your job is to look pretty and bend over for the executive team.  "
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -123,9 +107,19 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 8bab944b3600def4eba669bb9598d7f1,
-        type: 2}
-      Text: You kids have fun!
+      OptionalNpcReference: {fileID: 0}
+      Text: Yes, Sir.  Sorry, Sir.  Anyway, what can I help you with?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: What do you think?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -135,19 +129,19 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: You see a video on...
+    - Title: Ellie looks at you...
       Videos:
-      - {fileID: 32900000, guid: 8011964dd35070b4a9adf0b316ece9b6, type: 3}
-      - {fileID: 32900000, guid: 72284fbd0b8e3fb44b1607fbacb6b77d, type: 3}
-      - {fileID: 32900000, guid: b06813f8cc748a04fa513ca469c7c218, type: 3}
+      - {fileID: 32900000, guid: ea54987e74267614d8502883dc104f66, type: 3}
+      - {fileID: 32900000, guid: e1c57bf44358bc8458e2efd709c9f587, type: 3}
+      - {fileID: 32900000, guid: ebc72f96c5c03874c9e94c49d834b34c, type: 3}
       Textures: []
       DialogClips: []
-      Text: " ...Kevin\u2019s social media later that night, Ellie is the life of
-        the frat party, whether she likes it or not!"
+      Text: ...forlornly before accepting her fate, putting the papers down, dropping
+        her skirt and bending over for you to be used.
     Choices: []
     Effect:
       NpcEffects: []
-      EgoEffect: 8
+      EgoEffect: 12
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
