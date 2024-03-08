@@ -1,0 +1,211 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: Jones Coaching Session
+  m_EditorClassIdentifier: 
+  Id: e5d9f5ba-48c3-43b2-845c-a238f6e9a031
+  Name: Jones Coaching Session
+  SubInteraction: 0
+  AlertNew: 1
+  Category: 5
+  Requirements:
+    RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
+    NpcStatRequirements: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 9a4221e9a46fa734082798465a971151, type: 2}
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredNpcsControled: []
+    RequiredNpcsTrained: []
+    RequiredNpcsNotControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 0
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    Items:
+    - {fileID: 11400000, guid: 093941a12d8d2f7489166430d82653c4, type: 2}
+  Repeatable: 1
+  Cooldown: 12
+  PreviewEffect: 1
+  Result:
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 14df74e6844c717478de06c275bd6470,
+        type: 2}
+      Text: "Reporting for my session, Ma\u2019am.  Hello, Sir!"
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 704fb54c0f477084783c2c1d89664ecb,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 14df74e6844c717478de06c275bd6470,
+        type: 2}
+      Text: Hello, Debbie.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 704fb54c0f477084783c2c1d89664ecb,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: d6893d3d1ae90dc4699580eb2d4b4f1a,
+        type: 2}
+      Text: 'Attention on ME, young lady, not him!  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 704fb54c0f477084783c2c1d89664ecb,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 8300000, guid: edb505d66223b804d9f272b0af8d7274,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 14df74e6844c717478de06c275bd6470,
+        type: 2}
+      Text: Yes, Mrs. {LastName}.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 704fb54c0f477084783c2c1d89664ecb,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: d6893d3d1ae90dc4699580eb2d4b4f1a,
+        type: 2}
+      Text: "Come with me then.  It\u2019s time to review your weekly progress. 
+        I\u2019ve been supplied with some notes here\u2014 there are some issues
+        we need to cover."
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 704fb54c0f477084783c2c1d89664ecb,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 8300000, guid: 166a7d3661c79104eb048813e6fba6ad,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 14df74e6844c717478de06c275bd6470,
+        type: 2}
+      Text: "Yes, Ma\u2019am."
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 704fb54c0f477084783c2c1d89664ecb,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: "You peek in\u2026"
+      Videos:
+      - {fileID: 32900000, guid: 6ee1a59b34607e44499c326da0eb35bb, type: 3}
+      - {fileID: 32900000, guid: 7ffd7053aa8b0a4489d17f1e4f37b173, type: 3}
+      - {fileID: 32900000, guid: 76d613a02244def4cb9667633d890235, type: 3}
+      - {fileID: 32900000, guid: 6a57949fc11bfd24c83c10bdf0038931, type: 3}
+      - {fileID: 32900000, guid: 1a6e06029af4e674ba304090dbf06fc2, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: "\u2026to see Debbie, once again, paying for her slightest slips at work! 
+        Even her weekends are dominated by the {LastName}s!"
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      TrophiesRemoved: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
+  FailureResult:
+    Dialogs: []
+    OptionalPopups: []
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      TrophiesRemoved: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  Completed: 0
+  TurnCompletedOn: -1
+  New: 1
+  FailCount: 0
