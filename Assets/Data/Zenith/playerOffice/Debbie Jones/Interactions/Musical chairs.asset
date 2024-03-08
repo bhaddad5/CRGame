@@ -1,0 +1,398 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: Musical chairs
+  m_EditorClassIdentifier: 
+  Id: 82a18553-98ec-4386-8f8e-240e110e5cdc
+  Name: Musical chairs
+  SubInteraction: 0
+  AlertNew: 1
+  Category: 1
+  Requirements:
+    RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
+    NpcStatRequirements: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 5b62f9667acd53e4894635022b7c7cc5, type: 2}
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredNpcsControled: []
+    RequiredNpcsTrained: []
+    RequiredNpcsNotControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 0
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    Items: []
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
+  Result:
+    Dialogs:
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: "I can\u2019t believe it!  One minute Yellowbridge is getting ready to
+        devour Prime Mover and the next, it is Old Home Week.  Damn, you\u2019re
+        good, {FirstName}."
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 2de3566efaa2bd747a5011e3c695eff9, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: You got your new contract?
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 1c697e3571f1c804fbc1742f6d840fca, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: "I did.  It is a generous package.  With the way Artemis shares are rising,
+        I\u2019ll be retiring early."
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 1c697e3571f1c804fbc1742f6d840fca, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: "Not for ten years though.  But yes, after that, you\u2019ll live a very
+        comfortable life."
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 7532a735740bd6b44b48ca455c16ac76, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: "The \u2018senior position\u2019 isn\u2019t specified.  I don\u2019t
+        assume you\u2019ll be giving me Marketing back.  And what happened to Jayme
+        Keller?"
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 843390b5a48f9704cab3f08db16728bd, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: "It\u2019s a long story. They\u2019ll be time later.  No, Amit\u2019s
+        doing a great job and I don\u2019t want to upset the apple cart.  In fact,
+        I\u2019ve already assured the Management Team that they\u2019ll all continue
+        reporting in to me.  They like their autonomy and they have all earned it."
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 71fedae0c112aa64893da4051681b7ff, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: "Which leaves me.  Looks like the music has stopped and I\u2019m the
+        one without a chair."
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 71fedae0c112aa64893da4051681b7ff, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: I did have an idea.  What about COO?
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 2de3566efaa2bd747a5011e3c695eff9, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: "No.  That won\u2019t work."
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 2de3566efaa2bd747a5011e3c695eff9, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: What?
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 2de3566efaa2bd747a5011e3c695eff9, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: "Come on, {FirstName}.  It won\u2019t work.  You\u2019ve already said
+        your boys wouldn\u2019t like having a speed bump between you and them, even
+        a symbolic one.  And the culture here has changed dramatically.  Having a
+        real female COO, one that would be active, wouldn\u2019t really fit with
+        what you\u2019ve built here at Artemis, would it?"
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 71fedae0c112aa64893da4051681b7ff, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: "I hadn\u2019t thought of any of that.  I just know I want to work with
+        you.  You\u2019re creative, competent and\u2014"
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 71fedae0c112aa64893da4051681b7ff, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: "Thank you-- and let\u2019s leave that unsaid part aside- for the moment. 
+        I feel the same.  I\u2019m excited to be back and to be working with\u2014for\u2014you. 
+        And I have a counter offer."
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 71fedae0c112aa64893da4051681b7ff, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Go on.
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 843390b5a48f9704cab3f08db16728bd, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: "Make me your Chief of Staff.  I\u2019ll be your right hand operationally
+        and be working in your name.  The title won\u2019t ruffle feathers but it
+        will give me the authority to keep the trains running on time.  What do you
+        say?"
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 2de3566efaa2bd747a5011e3c695eff9, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: "You\u2019re right\u2014 it is perfect.  I say yes!"
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 2de3566efaa2bd747a5011e3c695eff9, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: "I\u2019ll still take that COO office though."
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 1c697e3571f1c804fbc1742f6d840fca, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: "Of course!  I\u2019ll have Debbie organize it for you immediately!"
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 1c697e3571f1c804fbc1742f6d840fca, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: How about having Blondie fetch us some champagne to celebrate then?
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 7532a735740bd6b44b48ca455c16ac76, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: "NOTE: Allison will now appear in the COO\u2019s office as your new Chief
+        of Staff!"
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 1c697e3571f1c804fbc1742f6d840fca, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups: []
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      TrophiesRemoved: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
+  FailureResult:
+    Dialogs: []
+    OptionalPopups: []
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      TrophiesRemoved: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  Completed: 0
+  TurnCompletedOn: -1
+  New: 1
+  FailCount: 0
