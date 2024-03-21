@@ -26,7 +26,8 @@ MonoBehaviour:
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 01fca135ac0f3c14bb0bcb22ef2e2cd6, type: 2}
-    RequiredNotCompletedInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: b7896cea031a79e458a4727c1846886e, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -42,7 +43,7 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 0
+  Repeatable: 1
   Cooldown: 0
   PreviewEffect: 0
   Result:
@@ -238,7 +239,8 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
-    Choices: []
+    Choices:
+    - {fileID: 11400000, guid: b7896cea031a79e458a4727c1846886e, type: 2}
     Effect:
       NpcEffects: []
       EgoEffect: 0
