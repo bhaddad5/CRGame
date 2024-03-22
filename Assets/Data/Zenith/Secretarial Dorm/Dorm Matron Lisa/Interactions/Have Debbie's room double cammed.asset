@@ -29,7 +29,8 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 2916d2e2d4478334f87aa79b27cc91ef, type: 2}
     - {fileID: 11400000, guid: df4e72a25a808c742a98b2ba299437b5, type: 2}
     - {fileID: 11400000, guid: 537a6ea9e5809444389f8d53927cbb77, type: 2}
-    RequiredNotCompletedInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: b7896cea031a79e458a4727c1846886e, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -125,6 +126,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -158,6 +160,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -172,3 +175,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0
