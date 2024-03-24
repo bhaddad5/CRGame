@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Lucy, go boot up my computer
+  m_Name: Keeping an eye on Debbie
   m_EditorClassIdentifier: 
-  Id: cc6cc6cf-f4de-411d-a1ae-e300e3f11e1b
-  Name: Lucy, go boot up my computer
+  Id: 1b4cbf6a-ca6e-48ec-b2ab-7eb876182718
+  Name: Keeping an eye on Debbie
   SubInteraction: 0
   AlertNew: 1
   Category: 7
@@ -21,12 +21,12 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NotOnWeekends: 0
+    NotOnWeekends: 1
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
-    RequiredNotCompletedInteractions:
+    RequiredInteractions:
     - {fileID: 11400000, guid: 2e4649ef8f5809c48ba747f718aaecbb, type: 2}
+    RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -42,43 +42,55 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 1
+  Repeatable: 0
   Cooldown: 0
   PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 95a8adb6670f2ed48ae2e10e6754885d,
-        type: 2}
-      Text: Lucy, go open up my office.  I better find it vacuumed and dusted.
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: "Drives around town are more interesting now that you can pull up the
+        surveillance feed from Debbie\u2019s apartment on your dashboard!"
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 71040694847e99141bd55e155e8b5c10,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.7
-        yPos: 0.3
-        width: 275
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 95a8adb6670f2ed48ae2e10e6754885d,
-        type: 2}
-      Text: Mr. {LastName}, I always clean your office first-- every day!  Even when
-        you're not here, I clean it!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 71040694847e99141bd55e155e8b5c10,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.7
-        yPos: 0.3
-        width: 275
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups: []
-    Choices:
-    - {fileID: 11400000, guid: 0885e8eb263e6df41899b01eb95a21b2, type: 2}
-    - {fileID: 11400000, guid: 922585ed7ecdbdc44b991011ec643228, type: 2}
-    - {fileID: 11400000, guid: d21bea0c76833cb46b4da2e4b8495235, type: 2}
+    OptionalPopups:
+    - Title: "Now that she\u2019s escaped the dorm, Debbie thinks\u2026 "
+      Videos:
+      - {fileID: 32900000, guid: 37ce80c6b542272499923e5ceffd7e35, type: 3}
+      - {fileID: 32900000, guid: de25dd501e888204f833df9401cdae97, type: 3}
+      - {fileID: 32900000, guid: c6a472f25ab3efc49a3cc2c1328aabcf, type: 3}
+      - {fileID: 32900000, guid: 008d5deadf5cdf443bd08b1c8ed9ba97, type: 3}
+      - {fileID: 32900000, guid: af126e450c2d9574f8a323b790ca6309, type: 3}
+      - {fileID: 32900000, guid: 4a469e16fa9c9034887f0ba6a2e2af59, type: 3}
+      - {fileID: 32900000, guid: cf248b723c66b6343b06d026bb7e0314, type: 3}
+      - {fileID: 32900000, guid: 92d6cedc60df7694ca38645e68c06a4f, type: 3}
+      - {fileID: 32900000, guid: 9097509c1806c36498739f268df69cc8, type: 3}
+      - {fileID: 32900000, guid: 2cf73d0cea6025744ab0d485be9e2946, type: 3}
+      - {fileID: 32900000, guid: 4c90294c924da3843addbd1c280f865c, type: 3}
+      - {fileID: 32900000, guid: 04303b5e4b36755469f4821f18c3416d, type: 3}
+      Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: f22394e2d8f29a94f914a3ee4146fccd, type: 3}
+      - {fileID: 8300000, guid: a12e463fc28ac4841902cb375c9e63ae, type: 3}
+      - {fileID: 8300000, guid: cc38981798719204fb39f862e91b4f5c, type: 3}
+      - {fileID: 8300000, guid: f7c7223aa62fa1945966826571167602, type: 3}
+      - {fileID: 8300000, guid: 798890c82c680184a980ff73b800a8c0, type: 3}
+      - {fileID: 8300000, guid: 8c6be5037354d7d45ba7e5a87ac10eb0, type: 3}
+      - {fileID: 8300000, guid: 0afade9c1dcbfc64a9587df847a920ae, type: 3}
+      - {fileID: 8300000, guid: 564f81d19caa23f4a91b502ebd8ee642, type: 3}
+      - {fileID: 8300000, guid: 87fcf698509aa534e8c2cf4dd88310c2, type: 3}
+      - {fileID: 8300000, guid: e887e6862ecbb1642b9e5cf5bbdf092f, type: 3}
+      - {fileID: 8300000, guid: 1235d3e78432f224a9797d7ff7d48ffa, type: 3}
+      - {fileID: 8300000, guid: 0394e4d3d111b2744a4e4a74c97ca0aa, type: 3}
+      Text: "\u2026 she\u2019s finally earned some privacy.  She\u2019s wrong, of
+        course!"
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
