@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: 'Put a ring on it! '
+  m_Name: 'Save the Date '
   m_EditorClassIdentifier: 
-  Id: 7b36968c-5747-4644-bab3-3864cc66f979
-  Name: 'Put a ring on it! '
+  Id: 12d66d2d-ffc4-4e33-8a6e-b6e40795313d
+  Name: 'Save the Date '
   SubInteraction: 0
   AlertNew: 1
   Category: 1
@@ -25,7 +25,8 @@ MonoBehaviour:
     NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: b2445936209dfd84088ac7c7301594b1, type: 2}
+    - {fileID: 11400000, guid: f991634e39c546a408326938c1637328, type: 2}
+    - {fileID: 11400000, guid: 62afb602ae5299944a3717069644684a, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -34,8 +35,8 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 0
-    MoneyCost: 250
+    EgoCost: 100
+    MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -49,31 +50,10 @@ MonoBehaviour:
     Dialogs:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: "Mr. {LastName}, it\u2019s so nice to see you!  Are you looking for something
-        special?"
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: "Special?  Yes, I suppose so.  We\u2019re here looking for an engagement
-        ring."
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: How wonderful!  What did you have in mind?
+      Text: "Congratulations, Debbie.  I know you\u2019re normally supposed to congratulate
+        the fianc\xE9, but in this case, I\u2019d say you\u2019ve earned it.  It
+        isn\u2019t every day a man as successful and powerful as {FirstName} would
+        choose a girl of such modest means to be his future wife."
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -85,7 +65,7 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: "Uh, well\u2026 could we see-"
+      Text: Thank you, Mr. Perkins.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -94,11 +74,11 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
         type: 2}
-      Text: "Something inexpensive.  My secretary Debbie here got knocked up and
-        I\u2019m only doing what I feel is my duty."
+      Text: We have some papers for you to sign.  A Pre Nuptial Agreement.  Do you
+        know what that is, Debbie?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -110,7 +90,7 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: What?
+      Text: It is a legal agreement regarding the separation of assets prior to marriage.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -120,22 +100,13 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 3963f50d6424e1649a4b75504bf00eb6,
+      OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
         type: 2}
-      Text: Oh!  I see!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 3963f50d6424e1649a4b75504bf00eb6,
-        type: 2}
-      Text: "I\u2019m sure she\u2019d like some over the top diamond ring, but it\u2019s
-        hardly required.  Something suitable for a gold digger would be fine."
+      Text: "I forget you do have an MBA, don\u2019t you?  Yes, that\u2019s correct. 
+        In the event of divorce, this contract instructs that both parties retain
+        only what the assets they had prior to the marriage.  In addition, this agreement
+        has a clause that you surrender all custody rights to your child should a
+        divorce occur."
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -147,7 +118,7 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: "That\u2019s, that\u2019s, that\u2019s\u2026"
+      Text: "I\u2019m not prepared to sign something like that!"
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -159,8 +130,71 @@ MonoBehaviour:
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: Debbie, this engagement can be cancelled as quickly as it started.  Be
-        quiet.  Now, can you help us?
+      Text: Then the wedding is off.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: "OK, fine!  I\u2019ll sign it!"
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
+        type: 2}
+      Text: "Good girl.  It is for the best.  Here\u2019s some advice- just be a
+        good wifey and let your husband do the thinking from now on, ok?  Do you
+        have a date yet?"
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
+        type: 2}
+      Text: A date?  I thought this could be done at Zenith City Hall.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
+        type: 2}
+      Text: "Oh, {FirstName}, do let the girl have her big day!  Let me organize
+        something at the Metropolitan for you.  Something simple on the club grounds. 
+        Give Debbie here some happy memories, won\u2019t you?"
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 2030f38a3a781734280cf9b1d4bfecea,
+        type: 2}
+      Text: Alright.  I suppose it is quite a big deal for her.  Thanks Malcolm.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -170,18 +204,13 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: "The ring is flashy and the stone\u2026"
+    - Title: "Debbie signs the pre-nuptial\u2026"
       Videos: []
       Textures:
-      - {fileID: 2800000, guid: 23c1b7b676ca4a642beccf42f5d9b67b, type: 3}
+      - {fileID: 2800000, guid: 475a2c074e40d7a429b3ac62cffcf8e2, type: 3}
       DialogClips: []
-      Text: "\u2026artificial.  The engraving was included in the cost."
-    - Title: "It doesn\u2019t matter."
-      Videos:
-      - {fileID: 32900000, guid: 596a032ae6b8eb0409dd48b5ca507d42, type: 3}
-      Textures: []
-      DialogClips: []
-      Text: A ring is still a ring and Debbie is hypnotized by it!
+      Text: "\u2026reluctantly.  It formalizes her powerless position within the
+        marriage."
     Choices: []
     Effect:
       NpcEffects: []
