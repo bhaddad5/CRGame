@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Something Blue
+  m_Name: Get me to the church on time!
   m_EditorClassIdentifier: 
-  Id: 2e0d2bc9-f1b6-428c-bf05-d59f1f4099d4
-  Name: Something Blue
+  Id: 0976b723-362a-4474-80c7-41aaeb99c37a
+  Name: Get me to the church on time!
   SubInteraction: 0
   AlertNew: 1
-  Category: 1
+  Category: 3
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -25,9 +25,9 @@ MonoBehaviour:
     NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 67ceed0138b2d9440981f213dd43c045, type: 2}
-    RequiredNotCompletedInteractions:
-    - {fileID: 11400000, guid: 9cd660054a74eea4c866cfd15c969f78, type: 2}
+    - {fileID: 11400000, guid: 16ef180a734122f4d85af11800411b6a, type: 2}
+    - {fileID: 11400000, guid: 18065958ab89332459da97a7a60b9d30, type: 2}
+    RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -49,109 +49,104 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+      OptionalNpcReference: {fileID: 11400000, guid: e919a2647617e8146b5be552b475f8ce,
         type: 2}
-      Text: Deborah Jones, wonder girl MBA, gets the biggest win of all!
+      Text: Mr. {LastName}, you look so dashing!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: ad91f859a37b1f6499909a7d9ac22261,
+      CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.55
-        yPos: 0.4
-        width: 350
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: e919a2647617e8146b5be552b475f8ce,
+        type: 2}
+      Text: "Thank you, Lisa.  Where\u2019s Debbie?  It is time to get this show
+        on the road\u2014the limo is waiting!"
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: e919a2647617e8146b5be552b475f8ce,
+        type: 2}
+      Text: "She\u2019s been fussing all day!  I\u2019ll go get her!"
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+      OptionalNpcReference: {fileID: 11400000, guid: 14df74e6844c717478de06c275bd6470,
         type: 2}
-      Text: Excuse me, Miss Hunter?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: ad91f859a37b1f6499909a7d9ac22261,
+      Text: Hello.
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 339ec26b24ccedc42a9c838f2cb1e3c7, type: 3}
+      CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.55
-        yPos: 0.4
-        width: 350
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 14df74e6844c717478de06c275bd6470,
         type: 2}
-      Text: "It is ok\u2014 I got the memo.  And look at that fancy ring!  That can\u2019t
-        be real, right?"
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: ad91f859a37b1f6499909a7d9ac22261,
+      Text: You look stunning!  Ready to go?  The limo is waiting to take us to the
+        Metropolitan.
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 339ec26b24ccedc42a9c838f2cb1e3c7, type: 3}
+      CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.55
-        yPos: 0.4
-        width: 350
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 14df74e6844c717478de06c275bd6470,
         type: 2}
-      Text: "It\u2019s \u2026zirconia."
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: ad91f859a37b1f6499909a7d9ac22261,
+      Text: "I\u2019ve never been more ready!"
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 339ec26b24ccedc42a9c838f2cb1e3c7, type: 3}
+      CustomBackground: {fileID: 2800000, guid: d7e0e79587992924abc9faa0cb69af41,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.55
-        yPos: 0.4
-        width: 350
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
-        type: 2}
-      Text: "Of course.  So it is about as real as this engagement, right?  Hey,
-        I\u2019m just kidding.  I\u2019m happy for you!  We all do what we have to
-        do, right?  "
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: ad91f859a37b1f6499909a7d9ac22261,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.55
-        yPos: 0.4
-        width: 350
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: 'Yes, well, I AM going to be Mrs. {LastName}.  '
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: ad91f859a37b1f6499909a7d9ac22261,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.55
-        yPos: 0.4
-        width: 350
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
-        type: 2}
-      Text: "Oh yes, I know!  I was asked to get you \u2018something blue\u2019 as
-        a good luck gift.  I asked Mr. {LastName} for some direction as to what you
-        might need and he had a really interesting idea!  Here you go!"
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: ad91f859a37b1f6499909a7d9ac22261,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.55
-        yPos: 0.4
-        width: 350
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: "The confusion on Debbie\u2019s face\u2026"
-      Videos: []
-      Textures:
-      - {fileID: 2800000, guid: 53af7d453baa72744a3ec00a29a32452, type: 3}
-      DialogClips: []
-      Text: "\u2026elicits laughter from the lesbian Office Manager, as well as a
-        knowing grin!"
+    - Title: "Of course, she objects\u2026"
+      Videos:
+      - {fileID: 32900000, guid: 5bd9c90e229e6684e8c90c3e2656eb89, type: 3}
+      Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: 728354ebdb513c74e8c87656d06e58fa, type: 3}
+      Text: "\u2026and claims you\u2019re ruining hours of makeup prep!  Who cares."
+    - Title: "By the time you arrive at the Metro Club, Debbie\u2026"
+      Videos:
+      - {fileID: 32900000, guid: 5bd9c90e229e6684e8c90c3e2656eb89, type: 3}
+      Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: 42761cd8c4a8c0a458f9214bc32f3a7c, type: 3}
+      Text: "\u2026has hastily prepared herself for public viewing, albeit with a
+        creampie between her legs!"
     Choices: []
     Effect:
       NpcEffects: []
