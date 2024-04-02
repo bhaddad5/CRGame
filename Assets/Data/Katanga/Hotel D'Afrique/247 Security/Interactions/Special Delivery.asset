@@ -1,0 +1,281 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: Special Delivery
+  m_EditorClassIdentifier: 
+  Id: 76edbb30-b296-4c50-a08b-abc2debadb92
+  Name: Special Delivery
+  SubInteraction: 0
+  AlertNew: 1
+  Category: 6
+  Requirements:
+    RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
+    NpcStatRequirements: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 9acbb3487b8070f458b559e1841f7fcd, type: 2}
+    - {fileID: 11400000, guid: ae6d1920aba5fe1428ae9a1c75fd93b1, type: 2}
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredNpcsControled: []
+    RequiredNpcsTrained: []
+    RequiredNpcsNotControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 0
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    Items: []
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
+  Result:
+    Dialogs:
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: b9b02897456ee0849ada384cc5460d53,
+        type: 2}
+      Text: Sounds like the package I ordered has arrived!
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 17481f4e60bcd984ba7598a19e60682e, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 2a4a8691808848a4c875788bbbffd6d9,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 4d7bbd9e5d8ecee4dbaec1cb452fe01e,
+        type: 2}
+      Text: "Daddy?  They picked me up at school and I\u2026 oh!"
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: b69afba366cbc5043a17351c21b874bc, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 2a4a8691808848a4c875788bbbffd6d9,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 4d7bbd9e5d8ecee4dbaec1cb452fe01e,
+        type: 2}
+      Text: Mackenzie, meet your new step mother, Debbie.  We were just married.
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: b69afba366cbc5043a17351c21b874bc, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 2a4a8691808848a4c875788bbbffd6d9,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: b9b02897456ee0849ada384cc5460d53,
+        type: 2}
+      Text: You sent for your foster daughter?!?!
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 17481f4e60bcd984ba7598a19e60682e, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 2a4a8691808848a4c875788bbbffd6d9,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 4d7bbd9e5d8ecee4dbaec1cb452fe01e,
+        type: 2}
+      Text: "Oh, Daddy!  Debbie\u2014 your secretary?  ReallY?"
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 820f40f3e2b25e7478ecd2a86fba22d6, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 2a4a8691808848a4c875788bbbffd6d9,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 4d7bbd9e5d8ecee4dbaec1cb452fe01e,
+        type: 2}
+      Text: "I thought we\u2019d make the honeymoon really memorable by spicing it
+        up with a tasty treat like Mackenzie.  You don\u2019t mind sharing your honeymoon
+        with your new step daughter, do you?"
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 820f40f3e2b25e7478ecd2a86fba22d6, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 2a4a8691808848a4c875788bbbffd6d9,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: b9b02897456ee0849ada384cc5460d53,
+        type: 2}
+      Text: "I can\u2019t believe this!  I... I can't do this!"
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 17481f4e60bcd984ba7598a19e60682e, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 2a4a8691808848a4c875788bbbffd6d9,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 4d7bbd9e5d8ecee4dbaec1cb452fe01e,
+        type: 2}
+      Text: Mackenzie, strip down and join us.  You know what to do.
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 17481f4e60bcd984ba7598a19e60682e, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 2a4a8691808848a4c875788bbbffd6d9,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 4d7bbd9e5d8ecee4dbaec1cb452fe01e,
+        type: 2}
+      Text: Mackenzie, strip down and join us.  You know what to do.
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: b69afba366cbc5043a17351c21b874bc, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 2a4a8691808848a4c875788bbbffd6d9,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 4d7bbd9e5d8ecee4dbaec1cb452fe01e,
+        type: 2}
+      Text: Yes, Daddy.
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: b69afba366cbc5043a17351c21b874bc, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 2a4a8691808848a4c875788bbbffd6d9,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: b9b02897456ee0849ada384cc5460d53,
+        type: 2}
+      Text: "You two look so sweet together.  We\u2019ll have a bit more fun and
+        then it will be time to go home.  Ok, girls\u2014 let\u2019s go! "
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 17481f4e60bcd984ba7598a19e60682e, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 2a4a8691808848a4c875788bbbffd6d9,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: "The girls are going to have\u2026"
+      Videos:
+      - {fileID: 32900000, guid: a57d16d022693f94baf403b54f3be23d, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: "\u2026to learn to share!"
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      TrophiesRemoved: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 11400000, guid: f4b6c2fffb1ab3743ac190d5c780e3f6, type: 2}
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
+  FailureResult:
+    Dialogs: []
+    OptionalPopups: []
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      TrophiesRemoved: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  Completed: 0
+  TurnCompletedOn: -1
+  New: 1
+  FailCount: 0
