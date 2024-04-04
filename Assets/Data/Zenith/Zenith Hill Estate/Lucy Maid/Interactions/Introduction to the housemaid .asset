@@ -1,0 +1,293 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: 'Introduction to the housemaid '
+  m_EditorClassIdentifier: 
+  Id: a4da50d9-5db2-4b7c-9bd3-76c5771756f7
+  Name: 'Introduction to the housemaid '
+  SubInteraction: 0
+  AlertNew: 1
+  Category: 1
+  Requirements:
+    RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
+    NpcStatRequirements: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 1ff21fa105f75b14ab48ebea082a8b50, type: 2}
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredNpcsControled: []
+    RequiredNpcsTrained: []
+    RequiredNpcsNotControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 0
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    Items: []
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
+  Result:
+    Dialogs:
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 95a8adb6670f2ed48ae2e10e6754885d,
+        type: 2}
+      Text: Lucy!  Attend!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 71040694847e99141bd55e155e8b5c10,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.7
+        yPos: 0.3
+        width: 275
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 95a8adb6670f2ed48ae2e10e6754885d,
+        type: 2}
+      Text: Yes, Master!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 71040694847e99141bd55e155e8b5c10,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.7
+        yPos: 0.3
+        width: 275
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 95a8adb6670f2ed48ae2e10e6754885d,
+        type: 2}
+      Text: "Debbie, this is Lucy, your new Lady\u2019s Maid.  Lucy, this is your
+        new Mistress, Mrs. {LastName}.  Debbie is my new wife."
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 71040694847e99141bd55e155e8b5c10,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.7
+        yPos: 0.3
+        width: 275
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: b9b02897456ee0849ada384cc5460d53,
+        type: 2}
+      Text: Hello, Lucy.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 71040694847e99141bd55e155e8b5c10,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 275
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 95a8adb6670f2ed48ae2e10e6754885d,
+        type: 2}
+      Text: Mistress!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 71040694847e99141bd55e155e8b5c10,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.7
+        yPos: 0.3
+        width: 275
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: b9b02897456ee0849ada384cc5460d53,
+        type: 2}
+      Text: "This is a test for you Debbie.  You\u2019ve never managed anyone before-"
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 71040694847e99141bd55e155e8b5c10,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 275
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: b9b02897456ee0849ada384cc5460d53,
+        type: 2}
+      Text: "I did!  I was in charge of the Internship Program\u2014 remember?"
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 71040694847e99141bd55e155e8b5c10,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 275
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: b9b02897456ee0849ada384cc5460d53,
+        type: 2}
+      Text: "Another task at which you failed, Debbie.  I\u2019ll administer discipline
+        for Lucy for now.  But that doesn\u2019t mean the maid isn\u2019t to report
+        to you.  Lucy, you will attend to my new wife just as you served your old
+        mistress\u2014 is that understood?"
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 71040694847e99141bd55e155e8b5c10,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 275
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 95a8adb6670f2ed48ae2e10e6754885d,
+        type: 2}
+      Text: 'Yes, Master! '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 71040694847e99141bd55e155e8b5c10,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.7
+        yPos: 0.3
+        width: 275
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 95a8adb6670f2ed48ae2e10e6754885d,
+        type: 2}
+      Text: "And I do mean you\u2019ll do EVERYTHING Tracey expected of you-- or
+        you'll be returned south of the border and you don't want that."
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 71040694847e99141bd55e155e8b5c10,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.7
+        yPos: 0.3
+        width: 275
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 95a8adb6670f2ed48ae2e10e6754885d,
+        type: 2}
+      Text: Yes, Master!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 71040694847e99141bd55e155e8b5c10,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.7
+        yPos: 0.3
+        width: 275
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: b9b02897456ee0849ada384cc5460d53,
+        type: 2}
+      Text: "It\u2019s OK, Lucy!  I\u2019m sure we\u2019ll get along just fine! 
+        I'll be fair with you, I promise."
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 71040694847e99141bd55e155e8b5c10,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 275
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: b9b02897456ee0849ada384cc5460d53,
+        type: 2}
+      Text: "Never mind fair, just be strict.  Lucy's a servant and needs orders. 
+        You\u2019ll enjoy having a Lady\u2019s Maid at your disposal."
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 71040694847e99141bd55e155e8b5c10,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 275
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups: []
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      TrophiesRemoved: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
+  FailureResult:
+    Dialogs: []
+    OptionalPopups: []
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      TrophiesRemoved: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  Completed: 0
+  TurnCompletedOn: -1
+  New: 1
+  FailCount: 0

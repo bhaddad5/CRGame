@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Your Rent is Due
+  m_Name: "Debbie\u2019s new bedroom "
   m_EditorClassIdentifier: 
-  Id: a5ec154d-7f95-45ef-9215-8744843b2b67
-  Name: Your Rent is Due
+  Id: fd0452c6-1e87-48e7-b9b5-444228fc40c4
+  Name: "Debbie\u2019s new bedroom "
   SubInteraction: 0
   AlertNew: 1
-  Category: 6
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -24,7 +24,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 05be34886350f1747b0a1bc784041225, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -41,14 +42,14 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 1
-  Cooldown: 29
-  PreviewEffect: 1
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
   Result:
     Dialogs:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Hi, Mr. {LastName}.
+      Text: "I don\u2019t understand.  What is this room?"
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -59,7 +60,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: You know what day it is, Debbie?
+      Text: Your bedroom.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -70,7 +71,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: It is the day my rent is due, Sir.
+      Text: You sleep here?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -81,7 +82,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: "That\u2019s right.  Do you have the money ready?"
+      Text: "Of course not!  I sleep in the Master Bedroom.  But with my schedule,
+        I\u2019m not going to have you inconveniencing me."
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -92,18 +94,20 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Sir, I was hoping we might make other arrangements.
+      Text: I thought I was your wife and we were going to share the same bed.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
         xPos: 0
         yPos: 0
         width: 0
-      OptionalAudioClip: {fileID: 0}
+      OptionalAudioClip: {fileID: 8300000, guid: 53b90068c9db8b746bf68ffafba6b840,
+        type: 3}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: "I see.  You\u2019re a very naughty girl, aren\u2019t you Debbie?"
+      Text: "This bedroom should suffice.  There\u2019s plenty of room and, of course,
+        I\u2019ll be inviting you to stay with me\u2026 when it suits me, of course."
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -114,7 +118,7 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Yes, I guess I am, Mr. {LastName}.
+      Text: I see.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -123,53 +127,11 @@ MonoBehaviour:
         width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: So, what will it be?  A nasty striptease for the landlord?  Dress-up? 
-        Something kinky?  Maybe we should make a porno starring Deborah Jones?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups:
-    - Title: "Debbie tries to make each fortnightly Rent Day\u2026"
-      Videos:
-      - {fileID: 32900000, guid: f7152bb614c5a2a408797066737753be, type: 3}
-      - {fileID: 32900000, guid: 973d4c8da983f0f4685a2de2f3f832ca, type: 3}
-      - {fileID: 32900000, guid: b01d35a0c67724c408030d5f60eb9363, type: 3}
-      - {fileID: 32900000, guid: 1c1d26569e53ba5438a5cb32fefcc929, type: 3}
-      - {fileID: 32900000, guid: a9d4f0b4ad6833146937828ebfbf06bd, type: 3}
-      - {fileID: 32900000, guid: 00fdb829f1f02b848965db7ccc515adc, type: 3}
-      - {fileID: 32900000, guid: c98eb72006ae0de418ea3dbd04258901, type: 3}
-      - {fileID: 32900000, guid: e81832d5434e2464ebfa1c22690cae83, type: 3}
-      - {fileID: 32900000, guid: 7d4223bff7a52ad4d9fa53e026526e6a, type: 3}
-      - {fileID: 32900000, guid: d2de44a2b157c09458510c8a1d6fc0ec, type: 3}
-      - {fileID: 32900000, guid: 10318790f4c96b64ab07d9fcc4807081, type: 3}
-      - {fileID: 32900000, guid: eb61f0387d9da1e4db70d004b7bf4188, type: 3}
-      - {fileID: 32900000, guid: 7f6aced2fd91f13459d093f14f8aa1d5, type: 3}
-      - {fileID: 32900000, guid: 23bda3036278cab408b25627c4b3d653, type: 3}
-      - {fileID: 32900000, guid: 73ea2720d963cad4cb7ec9136c63c019, type: 3}
-      - {fileID: 32900000, guid: 23226981b7df8274d83e377e7540884a, type: 3}
-      - {fileID: 32900000, guid: 9d18f0f983de554409563994b5b2d6c5, type: 3}
-      - {fileID: 32900000, guid: b26e3467dac1b4f4f878d54feac1de0f, type: 3}
-      - {fileID: 32900000, guid: 2ee8739a8b8015643b5660b20e001ca7, type: 3}
-      - {fileID: 32900000, guid: 6e8b69737835a584e894614a4b7a5947, type: 3}
-      - {fileID: 32900000, guid: 99764844f09b16a42931aec478d62d4c, type: 3}
-      - {fileID: 32900000, guid: c5cb054f78f3cdc4bb29bb38c726eccf, type: 3}
-      - {fileID: 32900000, guid: c34cd359b4e396145ad541ed28185cf7, type: 3}
-      - {fileID: 32900000, guid: 7cdacb95634490247a930a9cbde379bb, type: 3}
-      - {fileID: 32900000, guid: a65f05091e464ff429f85493ed1ae488, type: 3}
-      Textures: []
-      DialogClips: []
-      Text: "\u2026something special for her landlord!"
+    OptionalPopups: []
     Choices: []
     Effect:
       NpcEffects: []
-      EgoEffect: 25
+      EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0

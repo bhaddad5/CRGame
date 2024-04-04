@@ -1,0 +1,179 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: Workplace relations
+  m_EditorClassIdentifier: 
+  Id: 0e2dd58b-ba15-4e4b-9a40-24acc1e0d010
+  Name: Workplace relations
+  SubInteraction: 0
+  AlertNew: 1
+  Category: 7
+  Requirements:
+    RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
+    NpcStatRequirements: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 196639efe9c4f8146b5997e5aee0bec9, type: 2}
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredNpcsControled: []
+    RequiredNpcsTrained: []
+    RequiredNpcsNotControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 0
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    Items: []
+  Repeatable: 1
+  Cooldown: 9
+  PreviewEffect: 1
+  Result:
+    Dialogs:
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 11400000, guid: b9b02897456ee0849ada384cc5460d53,
+        type: 2}
+      Text: "NOTE:  No one is expecting you to be on the estate at th emoment, which
+        is precisely why you've chosen to Ahave a peek at how how the household runs
+        when you're absent.  As you approach Debbie\u2019s bedroom, you hear female
+        voices.  One is loud and strident. The one is softer and docile."
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: febd8a52e673c044da33afac295be69f,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.75
+        yPos: 0.34
+        width: 365
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: b9b02897456ee0849ada384cc5460d53,
+        type: 2}
+      Text: Attend me, Lucy!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: febd8a52e673c044da33afac295be69f,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.75
+        yPos: 0.34
+        width: 365
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 95a8adb6670f2ed48ae2e10e6754885d,
+        type: 2}
+      Text: At once, Mistress.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: febd8a52e673c044da33afac295be69f,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.4
+        yPos: 0.34
+        width: 365
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: "When Debbie is given even a little\u2026"
+      Videos:
+      - {fileID: 32900000, guid: f5b188074c199a84bad685668f62f793, type: 3}
+      - {fileID: 32900000, guid: 338f8dc8183a07c41a66732567482cd2, type: 3}
+      - {fileID: 32900000, guid: 34689d79539da124996bc95f3ac875ce, type: 3}
+      - {fileID: 32900000, guid: 05509df4e14074a4aadac64a8d514997, type: 3}
+      - {fileID: 32900000, guid: cffc911a6868c12439ba0444918ba295, type: 3}
+      - {fileID: 32900000, guid: 53270638ec90897439ff309bdac3dab0, type: 3}
+      - {fileID: 32900000, guid: 926934c76ea58da4cb51b0fd09972b83, type: 3}
+      Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: fcfd96295fa7c1f498e1101aa1cdf1ba, type: 3}
+      - {fileID: 8300000, guid: 4030709c006260c4b82cae2df16c9225, type: 3}
+      - {fileID: 8300000, guid: 3c13197f464cbbb419b02e992e4bbd5e, type: 3}
+      - {fileID: 8300000, guid: 5c703843b737a0f4895b7c5ca1afa089, type: 3}
+      - {fileID: 8300000, guid: 94d249d3588eddc4d871e873bf5b6d3d, type: 3}
+      - {fileID: 8300000, guid: bf04947270b71374fa8d731460fa1b92, type: 3}
+      - {fileID: 8300000, guid: cbf8e9124e0499a46b96635c67f8ac2d, type: 3}
+      Text: "\u2026power, it seems to go to her head.   She\u2019d have made a most
+        unpopular Artemis manager!"
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      TrophiesRemoved: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
+  FailureResult:
+    Dialogs: []
+    OptionalPopups: []
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      TrophiesRemoved: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  Completed: 0
+  TurnCompletedOn: -1
+  New: 1
+  FailCount: 0
