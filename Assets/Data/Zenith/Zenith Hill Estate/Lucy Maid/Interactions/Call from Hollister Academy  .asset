@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Dirty Little Debbie
+  m_Name: 'Call from Hollister Academy  '
   m_EditorClassIdentifier: 
-  Id: d086c37c-b26f-4556-a782-7a0d0504d417
-  Name: Dirty Little Debbie
+  Id: c3e8c068-25b8-4ba1-9c51-2b3ce740c8f9
+  Name: 'Call from Hollister Academy  '
   SubInteraction: 0
   AlertNew: 1
-  Category: 6
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -41,110 +41,91 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 1
-  Cooldown: 13
-  PreviewEffect: 1
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
   Result:
     Dialogs:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Daddy?
+      Text: Master, a phone call for you.  Ms. Jeffries?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 71040694847e99141bd55e155e8b5c10,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.7
-        yPos: 0.3
-        width: 275
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: Mr. {LastName}?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: Yes, Debbie-- what is it you want?
+      Text: Yes, Head Mistress, how can I help you?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 71040694847e99141bd55e155e8b5c10,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.7
-        yPos: 0.3
-        width: 275
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
+    - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 0}
-      Text: It is just that you've been so busy and... well... could I?  Please?
+      Text: I just wanted to let you know that your wife has been undergoing her
+        orientation here at Hollister.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 71040694847e99141bd55e155e8b5c10,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.7
-        yPos: 0.3
-        width: 275
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: Could you what??
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 71040694847e99141bd55e155e8b5c10,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.7
-        yPos: 0.3
-        width: 275
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: You said I should always ask you.  To... you know...
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 71040694847e99141bd55e155e8b5c10,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.7
-        yPos: 0.3
-        width: 275
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: To WHAT, Debbie?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 71040694847e99141bd55e155e8b5c10,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.7
-        yPos: 0.3
-        width: 275
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: To play with myself, Daddy?  Please?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 71040694847e99141bd55e155e8b5c10,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.7
-        yPos: 0.3
-        width: 275
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: '"Go on.  I may...'
+    - Title: "She\u2019s been measured\u2026"
       Videos:
-      - {fileID: 32900000, guid: a1abf79be6b54c4489a7f78fa35c0aa1, type: 3}
-      - {fileID: 32900000, guid: 82daf5787b493be46bd360b700d92e76, type: 3}
-      - {fileID: 32900000, guid: 2132b5d7bb60f3f4290cf4a2460ea112, type: 3}
-      - {fileID: 32900000, guid: 10a8fa2bacc82154fa4c1f0d3bdf7f6f, type: 3}
-      - {fileID: 32900000, guid: 1ed9d561deb218e4ebcb4d46f6445717, type: 3}
-      - {fileID: 32900000, guid: d355bb947a2a6f24c8b3278c1550aa23, type: 3}
-      - {fileID: 32900000, guid: 23154f5494b5f0949ba8e4756591aba7, type: 3}
-      - {fileID: 32900000, guid: db5b1b7c76d227946a5d69846a069247, type: 3}
+      - {fileID: 32900000, guid: 57cda19908127ed48a53af895aae237f, type: 3}
       Textures: []
-      DialogClips:
-      - {fileID: 8300000, guid: 203d3fe06cf69ae429ae45f60bc496f8, type: 3}
-      Text: ...peek in to see how you're going later."
+      DialogClips: []
+      Text: "\u2026for her uniforms.  Debbie\u2019s a bit nervous, but that\u2019s
+        typical."
+    - Title: "Our staff was surprised at\u2026"
+      Videos:
+      - {fileID: 32900000, guid: dc0bf9174b2a547468f9ae21b4657c69, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: "\u2026how modest she is.  Most of these gold digger types are more used
+        to being handled."
+    - Title: "Both our male and female\u2026"
+      Videos:
+      - {fileID: 32900000, guid: f21e7ca7e6916a745b88cdc0726cd291, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: "\u2026instructors are quite taken with your wife!"
+    - Title: "Debbie didn\u2019t much like\u2026  "
+      Videos:
+      - {fileID: 32900000, guid: 191bc7caa72cd3c4094cefcc34713c64, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: "\u2026our mandatory physical exam, but it is required for insurance
+        purposes."
+    - Title: "In any case, I can confirm that Debbie {LastName}\u2026"
+      Videos:
+      - {fileID: 32900000, guid: 1e6049ebfd413cf4face1d0fe7f6ee62, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: "\u2026has successfully completed our induction process and is now a
+        part of our Wife Daycare Program!"
     Choices: []
     Effect:
       NpcEffects: []
