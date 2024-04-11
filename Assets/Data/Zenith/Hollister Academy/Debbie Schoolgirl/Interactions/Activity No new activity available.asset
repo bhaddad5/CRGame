@@ -16,7 +16,7 @@ MonoBehaviour:
   Name: 'Activity: No new activity available'
   SubInteraction: 1
   AlertNew: 0
-  Category: 0
+  Category: 4
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -45,7 +45,34 @@ MonoBehaviour:
   Cooldown: 0
   PreviewEffect: 0
   Result:
-    Dialogs: []
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 73f45ec8296fdab4b9a111a643394c97,
+        type: 2}
+      Text: No special activities are scheduled for Debbie at the moment, so she'll
+        join the rest of the girls for General Instruction.  Run along, Debbie!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 17156850beef93c4a94ea21982678759,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.33
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: aac2b707067cadc469c3395f14a34adc,
+        type: 2}
+      Text: Yes, Ma'am!  Thank you, Head Mistress!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 17156850beef93c4a94ea21982678759,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.33
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
     Choices: []
     Effect:

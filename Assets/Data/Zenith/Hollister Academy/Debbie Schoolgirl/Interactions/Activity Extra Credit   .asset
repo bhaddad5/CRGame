@@ -16,7 +16,7 @@ MonoBehaviour:
   Name: 'Activity: Extra Credit   '
   SubInteraction: 1
   AlertNew: 0
-  Category: 0
+  Category: 4
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -45,8 +45,50 @@ MonoBehaviour:
   Cooldown: 0
   PreviewEffect: 0
   Result:
-    Dialogs: []
-    OptionalPopups: []
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 73f45ec8296fdab4b9a111a643394c97,
+        type: 2}
+      Text: 'The opportunity to earn extra credit isn''t extended to all the girls,
+        Debbie.  But you''ve shown promise and some instructors think you have quite
+        a lot of potential.  A week spent earning Extra Credit will look quit egood
+        in your Permanent Record.   '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 17156850beef93c4a94ea21982678759,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.33
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: aac2b707067cadc469c3395f14a34adc,
+        type: 2}
+      Text: Yes, Head Mistress Jeffries!  I've always enjoyed my studies!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 17156850beef93c4a94ea21982678759,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.33
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: Of course, Debbie had no idea...
+      Videos:
+      - {fileID: 32900000, guid: 7e48fd1b921083a478feca53e0f07b00, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: ...that the only way to earn Extra Credit at Hollister is to successfully
+        seduce her various female instructors !
+    - Title: Being a Teacher's Pet...
+      Videos: []
+      Textures:
+      - {fileID: 2800000, guid: a1b098275d5b13c458a25ead1236d0f9, type: 3}
+      DialogClips: []
+      Text: ...at Hollister brings Debbie more shame than pride!
     Choices: []
     Effect:
       NpcEffects: []

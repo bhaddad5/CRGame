@@ -16,7 +16,7 @@ MonoBehaviour:
   Name: 'Activity: Computers   '
   SubInteraction: 1
   AlertNew: 0
-  Category: 0
+  Category: 4
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -45,8 +45,50 @@ MonoBehaviour:
   Cooldown: 0
   PreviewEffect: 0
   Result:
-    Dialogs: []
-    OptionalPopups: []
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 73f45ec8296fdab4b9a111a643394c97,
+        type: 2}
+      Text: The Internet is serious business, Debbie!  Just because you used it while
+        working, it doesn't mean you used it responsibly!  Your husband wants you
+        re-trained to use the internet under mature direction.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 17156850beef93c4a94ea21982678759,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.33
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: aac2b707067cadc469c3395f14a34adc,
+        type: 2}
+      Text: If that's what he wishes, Head Mistress, I'm eager to begin!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 17156850beef93c4a94ea21982678759,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.33
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: The list of websites she is given to...
+      Videos:
+      - {fileID: 32900000, guid: 118c9fc7f87dc44469b08e26904c0ac4, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: ...explore daily have all been chosen by you and she is allowed to respond
+        to the content under the supervision of Hollister instructors!
+    - Title: After a week of guided web surfing...
+      Videos: []
+      Textures:
+      - {fileID: 2800000, guid: e1828a51f139c614babb330818bf513d, type: 3}
+      DialogClips: []
+      Text: ...Dbbie has more than earned her certificate for Responsible Computer
+        Use!
     Choices: []
     Effect:
       NpcEffects: []

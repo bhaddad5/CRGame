@@ -16,7 +16,7 @@ MonoBehaviour:
   Name: 'Activity: Competitive   '
   SubInteraction: 1
   AlertNew: 0
-  Category: 0
+  Category: 4
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -45,8 +45,50 @@ MonoBehaviour:
   Cooldown: 0
   PreviewEffect: 0
   Result:
-    Dialogs: []
-    OptionalPopups: []
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 73f45ec8296fdab4b9a111a643394c97,
+        type: 2}
+      Text: 'Debbie seems to be a very ambitious and competitive kind of girl.  I
+        suspect she''ll take to the wrestlng matt liek a fish to water!  Those other
+        girls better watch out-- right Debbie?  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 17156850beef93c4a94ea21982678759,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.33
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: aac2b707067cadc469c3395f14a34adc,
+        type: 2}
+      Text: But I don't want to fight other girls!  Do I have to... Daddy?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 17156850beef93c4a94ea21982678759,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.33
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: She wins some and...
+      Videos:
+      - {fileID: 32900000, guid: 64e3eb1acf735e84eb07f2a4a929839b, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: ...loses some matches.  The point is less who wins but the spectacle
+        of two pretty girls forced to wrestle for the amusement of their husbands.
+    - Title: 'Debbie''s '
+      Videos: []
+      Textures:
+      - {fileID: 2800000, guid: 7d4f9b9f0cc51074f973f457ec0fd831, type: 3}
+      DialogClips: []
+      Text: ...loses some matches.  The point is less who wins but the spectacle
+        of two pretty girls forced to wrestle for the amusement of their husbands.
     Choices: []
     Effect:
       NpcEffects: []

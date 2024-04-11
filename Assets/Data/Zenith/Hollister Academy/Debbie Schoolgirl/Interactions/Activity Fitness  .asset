@@ -16,7 +16,7 @@ MonoBehaviour:
   Name: 'Activity: Fitness  '
   SubInteraction: 1
   AlertNew: 0
-  Category: 0
+  Category: 4
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -45,8 +45,49 @@ MonoBehaviour:
   Cooldown: 0
   PreviewEffect: 0
   Result:
-    Dialogs: []
-    OptionalPopups: []
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 73f45ec8296fdab4b9a111a643394c97,
+        type: 2}
+      Text: Debbie's VERY happy to be spending the week working towards her Fitness
+        Award!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 17156850beef93c4a94ea21982678759,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.33
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: aac2b707067cadc469c3395f14a34adc,
+        type: 2}
+      Text: I'm already in good shape and it never hurts to put in some effort to
+        looking your best, Head Mistress!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 17156850beef93c4a94ea21982678759,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.33
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: Debbie's spent lots of time...
+      Videos:
+      - {fileID: 32900000, guid: a50a5983a2c502f4882189a6f74c0b54, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: ...in the gym since she came underneath your thumb.  A good hard workout
+        doesn't intimidate her in the least!
+    - Title: Of all the awards she's won...
+      Videos: []
+      Textures:
+      - {fileID: 2800000, guid: d02604b2efb64e044900c739cfd32b1a, type: 3}
+      DialogClips: []
+      Text: ...the Fitness Award came the easiest!
     Choices: []
     Effect:
       NpcEffects: []
