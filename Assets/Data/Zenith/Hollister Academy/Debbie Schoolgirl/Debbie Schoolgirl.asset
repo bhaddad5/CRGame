@@ -27,7 +27,7 @@ MonoBehaviour:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
-    NotOnWeekends: 0
+    NotOnWeekends: 1
     NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
@@ -49,18 +49,32 @@ MonoBehaviour:
     width: 200
   BackgroundImage: {fileID: 2800000, guid: adeb8ad6d5b6d7446b1c3bacf40b6183, type: 3}
   OptionalDialogClip: {fileID: 0}
-  Ambition: 0
-  Pride: 0
+  Ambition: 60
+  Pride: 60
   Controlled: 0
   Trained: 0
   Exists: 1
-  Interactions: []
+  Interactions:
+  - {fileID: 11400000, guid: 167fab8a9d6536940a70ae7006e691cd, type: 2}
+  - {fileID: 11400000, guid: d0850f1464cf1b04a83d64a5fc0e6581, type: 2}
+  - {fileID: 11400000, guid: d68a9be5b1507a544a49dbda8990a539, type: 2}
+  - {fileID: 11400000, guid: c36ff9c1234f14849bf9749409c192cd, type: 2}
+  - {fileID: 11400000, guid: 58ad8ffda96bbea4bb5e9ec9a99bfde3, type: 2}
+  - {fileID: 11400000, guid: 5af2b80af6783c548b751499e390a2b7, type: 2}
+  - {fileID: 11400000, guid: 519bfe29e3b571244a9db4126535a838, type: 2}
+  - {fileID: 11400000, guid: 446f7022b40059440adf23d2590fc5e3, type: 2}
+  - {fileID: 11400000, guid: e667b9ce7ac13ec4f885a529c32ada12, type: 2}
+  - {fileID: 11400000, guid: ff9d4d4a0731d3a48b845ebfd5ecb327, type: 2}
+  - {fileID: 11400000, guid: 01ae0dec91e4cd94f8fc42158ea5494a, type: 2}
+  - {fileID: 11400000, guid: 24eca179558b72d43b18e7db94cabf23, type: 2}
+  - {fileID: 11400000, guid: 2cf7c2705f20b9844b88fefb2060bb5d, type: 2}
   Trophies: []
   StartingImageSets:
   - {fileID: 11400000, guid: 573fdf8f0fa424843920fe2b04ee2139, type: 2}
   AllImageSets:
   - {fileID: 11400000, guid: 573fdf8f0fa424843920fe2b04ee2139, type: 2}
-  CurrentImageSets: []
+  CurrentImageSets:
+  - {fileID: 11400000, guid: 573fdf8f0fa424843920fe2b04ee2139, type: 2}
   Legacy_IndependentImages: {fileID: 0}
   Legacy_ControlledImages: {fileID: 0}
   Legacy_TrainedImages: {fileID: 0}
