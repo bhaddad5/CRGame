@@ -1,0 +1,197 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: Monthly Performance Review
+  m_EditorClassIdentifier: 
+  Id: 1f8aa09d-4e35-4d43-8021-0b422815a912
+  Name: Monthly Performance Review
+  SubInteraction: 0
+  AlertNew: 1
+  Category: 5
+  Requirements:
+    RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
+    NpcStatRequirements: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: e37017b8866d007478de63b5466992e0, type: 2}
+    - {fileID: 11400000, guid: 57a2d76bd329da345add314d02099afc, type: 2}
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredNpcsControled: []
+    RequiredNpcsTrained: []
+    RequiredNpcsNotControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 0
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    Items: []
+  Repeatable: 1
+  Cooldown: 59
+  PreviewEffect: 1
+  Result:
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: I got a reminder that today is my Monthly Performance Review, Mr. {LastName}.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: "Since you\u2019re still only Probationary, Miss Hunter will handle your
+        Review.  I\u2019ve given her my thoughts already. Good luck!"
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: "Are you sure?  I\u2019d much rather be reviewed by you that Miss Lexi. 
+        She\u2019s such a\u2014"
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: That will be all, Katie.  Run along and go see Miss. Hunter.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: Of course, Sir.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: "Katie hates having Lexi\u2019s hands\u2026"
+      Videos:
+      - {fileID: 32900000, guid: fa3be170fee98f34998648b1b54a1d9b, type: 3}
+      - {fileID: 32900000, guid: 38d27da55ce5e44438417e33b0fe4edd, type: 3}
+      - {fileID: 32900000, guid: 054736a2abb39c44997a5e77ee428b0b, type: 3}
+      - {fileID: 32900000, guid: 7c245f96cbbf4794099f95d1b537dbd4, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: "\u2026on her for ANY reason- something Lexi knows well.  Like her big
+        sister, Katie finds lesbians most disagreeable."
+    Choices: []
+    Effect:
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: c7a476e5aae6def4482da935c3335c38,
+          type: 2}
+        AmbitionEffect: -10
+        PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      TrophiesRemoved: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
+  FailureResult:
+    Dialogs: []
+    OptionalPopups: []
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      TrophiesRemoved: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  Completed: 0
+  TurnCompletedOn: -1
+  New: 1
+  FailCount: 0
