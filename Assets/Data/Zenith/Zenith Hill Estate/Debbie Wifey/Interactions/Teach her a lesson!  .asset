@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Call from my sister's Wife Daycare
+  m_Name: 'Teach her a lesson!  '
   m_EditorClassIdentifier: 
-  Id: c2af4ea0-6c27-48b6-bcee-3eb943fd563c
-  Name: Call from my sister's Wife Daycare
+  Id: 2bc4cf64-2c6f-4604-9209-ad1e9b59592b
+  Name: 'Teach her a lesson!  '
   SubInteraction: 0
   AlertNew: 1
-  Category: 3
+  Category: 5
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -25,7 +25,7 @@ MonoBehaviour:
     NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 29a5cea8dd989d44dacf6356c8fd1bee, type: 2}
+    - {fileID: 11400000, guid: e65403f256fac8849923f9a5b2206f25, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -42,16 +42,14 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 1
-  Cooldown: 27
-  PreviewEffect: 1
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
   Result:
     Dialogs:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: "Hey, Boss.  It is Head Mistress Jeffries from Hollister\u2014 it is
-        time for Deborah\u2019s Fortnightly Review.  OK for her to proceed and do
-        you want to watch?"
+      Text: "Oh, dear.  Something happened at the office, didn\u2019t it?"
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -62,19 +60,8 @@ MonoBehaviour:
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: "Yes, perfectly fine.  I\u2019m busy.  I\u2019ll need you to review your
-        big sisters\u2019 correction for me.  Are you able to do that?"
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: "Oh, I\u2019d be HAPPY to take care of that for you, Boss!"
+      Text: "You don\u2019t have any idea about the value of money, do you, little
+        Miss MBA?"
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -84,18 +71,12 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: "Katie takes this assignment\u2026"
+    - Title: "\u201CYou cost me ten grand\u2026"
       Videos:
-      - {fileID: 32900000, guid: e1e54b012595edf48b71f69e63c91ca4, type: 3}
-      - {fileID: 32900000, guid: 70d1fcfafc6fd3f47b951d2dba985e96, type: 3}
-      - {fileID: 32900000, guid: dfe506b88ab51df45a855d0b63eb333a, type: 3}
-      - {fileID: 32900000, guid: a7dc4db3c637f8f418cd56f45f548b04, type: 3}
-      - {fileID: 32900000, guid: 2744819addc035b42a7072b981316098, type: 3}
-      - {fileID: 32900000, guid: b2bd474cee23fce45b1b1851b5d2c451, type: 3}
-      - {fileID: 32900000, guid: b9451a5fed13f3842b1226fab6517654, type: 3}
+      - {fileID: 32900000, guid: 4ef9b9e5b57295f4abb8b6a7b8d9e76a, type: 3}
       Textures: []
       DialogClips: []
-      Text: "\u2026very seriously and always seems to look forward to it!"
+      Text: "\u2026because you\u2019re a pea brained bimbo!\u201D"
     Choices: []
     Effect:
       NpcEffects:
@@ -106,7 +87,7 @@ MonoBehaviour:
         RemoveCurrentImage: 0
         ImageSetsToAdd: []
         ImageSetsToRemove: []
-      EgoEffect: 0
+      EgoEffect: 25
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
