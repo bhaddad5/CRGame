@@ -1,0 +1,445 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: Corporate Tribute
+  m_EditorClassIdentifier: 
+  Id: 00554f2a-5d87-4de1-af11-6e9750323660
+  Name: Corporate Tribute
+  SubInteraction: 0
+  AlertNew: 1
+  Category: 1
+  Requirements:
+    RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
+    NpcStatRequirements:
+    - OptionalNpcReference: {fileID: 11400000, guid: 7550a16742ca6604ab3d132b7acc1214,
+        type: 2}
+      Stat: 0
+      Is: 0
+      Value: 0
+    RequiredInteractions:
+    - {fileID: 11400000, guid: d423b388298470840af122c43696dc16, type: 2}
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled: []
+    RequiredNpcsControled: []
+    RequiredNpcsTrained: []
+    RequiredNpcsNotControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 0
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    Items: []
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
+  Result:
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: c7a476e5aae6def4482da935c3335c38,
+        type: 2}
+      Text: Miss Hunter for you, Boss.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: "Mr. {LastName}, you\u2019re looking well.  Married life agrees with
+        you.  The new Mrs. {LastName} is working out then?"
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: After some settling in, well enough.  What is it you want, Lexi?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: "Well, as you know, I was a student and with the change up in the staffing
+        of the Chairman\u2019s Office, there\u2019s been\u2026 speculation.  With
+        Debbie now in a new role, well.. my school lessons remind me that\u2026 Nature
+        abhors a vacuum."
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: "Spoken like a clever little Mathlete.  Well, if this has to do with
+        Debbie\u2019s old job,  I do have Katie handling the desk duties now."
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: "Of course!  But Katie isn\u2019t Debbie, is she?  Look, I\u2019ve had
+        several girls who have volunteered to\u2026 put themselves at the Chairman\u2019s
+        disposal.  They have all kinds of reasons\u2014 mostly, they know that sleeping
+        with the Chairman will help their careers."
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: I see!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: I also know that several department heads would also like to put forward
+        girls to further their own interests.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: This gets more interesting all the time.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: "You\u2019re the king, right?  Everyone wants to please the king.  I
+        just wanted to know how you\u2019d like it all handled.  I can simply forward
+        them all here, if you like."
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: That would be too obvious and too distracting.  This is a place of business,
+        not a bordello
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: I agree.  I thought you might feel that way.   Perhaps you might entertain
+        allowing select volunteers to visit you at your home during the weekend?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: "That would certainly make for some fun weekends!  Debbie wouldn\u2019t
+        like it\u2014"
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: "Does that matter?  Perhaps you might include her.  Shouldn\u2019t the
+        duties of a wife like Debbie be to organize threesomes for a powerful man
+        like you\u2026 Sir?"
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: My, you HAVE been thinking about this!  Why?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: "I was hoping\u2026 I might be the first on your list of work guests."
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: "I see.  But as we\u2019ve discussed, that\u2019s not possible.  Debbie
+        is off limits to you now, Lexi."
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: "Oh.  Alright.  Yes\u2026 Sir."
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: "But I like your idea.  Debbie\u2019s a lot more realistic about her
+        role as my wife now.  She wouldn\u2019t like it\u2014 but she is a fairly
+        good little organizer.  She probably needs a refresher when it comes to threesomes
+        with office girls though."
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: "I\u2019ll have something delivered to your estate that will help!"
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: "Excellent.  Starting putting together a list and we\u2019ll do some
+        interviews.  Debbie can take it from there.  Good work, Lexi.  I know you\u2019re
+        disappointed about Debbie.  That was a fling and I only allowed it because
+        it was convenient.  But you have to find a new girl\u2014 ok?"
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: ... Yes, Mr. {LastName}.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
+      Text: And do have Pry give each candidate a clean slate before the interview. 
+        I want to check the paperwork myself!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups: []
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      TrophiesRemoved: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
+  FailureResult:
+    Dialogs: []
+    OptionalPopups: []
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      TrophiesRemoved: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  Completed: 0
+  TurnCompletedOn: -1
+  New: 1
+  FailCount: 0
