@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: "Earning the Chairman\u2019s Mark"
+  m_Name: Schedule a visit for Frances McHugh
   m_EditorClassIdentifier: 
-  Id: c11ef385-280d-41ea-9c65-16128afad845
-  Name: "Earning the Chairman\u2019s Mark"
-  SubInteraction: 0
-  AlertNew: 1
-  Category: 1
+  Id: d9917a99-0ecd-42b6-8862-eec4f8a6cf18
+  Name: Schedule a visit for Frances McHugh
+  SubInteraction: 1
+  AlertNew: 0
+  Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -24,8 +24,7 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions:
-    - {fileID: 11400000, guid: 1737c81cd35d3924185428de82bfef9a, type: 2}
+    RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -48,84 +47,11 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
-        type: 2}
-      Text: "Debbie didn\u2019t much like her new practice dummy."
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.4
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
-        type: 2}
-      Text: "I would loved to have seen the look on her face!  She\u2019s always
-        had a stubborn streak.  I\u2019ve put the word out regarding the new program. 
-        I\u2019ve been calling it the Chairman\u2019s Club.  There\u2019s a lot of
-        interest."
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.4
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
-        type: 2}
-      Text: How will it work?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.4
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
-        type: 2}
-      Text: "I\u2019ll schedule interviews and you can let me know if you\u2019re
-        interested.  You can schedule a private visit to your home so she can spend
-        time with the Chairman and his lovely wife.  Or you can reject her and we\u2019ll
-        dispose of the candidate.  It is as simple as that."
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.4
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
-        type: 2}
-      Text: "Let\u2019s really make it a big occasion for the lucky selections. 
-        If a girl is chosen, I want her tattooed with my mark.  That way she\u2019ll
-        always have a reminder of the great honor she\u2019s been granted. "
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.4
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
-        type: 2}
-      Text: "It will increase her marketability too.  Executives will want to acquire
-        girls who have earned their Chairman\u2019s Mark."
-      CustomNpcImageOptions: []
+      OptionalNpcReference: {fileID: 0}
+      Text: "What a brave little mother you are!  I suppose you have to do what you
+        have to do, don\u2019t you?"
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: fb6bde37aa176ca4d82d0b8c8a0a9953, type: 3}
       CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
         type: 3}
       CustomBackgroundNpcLayout:
@@ -135,12 +61,36 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
-        type: 2}
-      Text: "NOTE:  Candidates will become available to interview in your office. 
-        The cost to select a girl for a Chairman\u2019s Mark is 5 Power.  Will the
-        pleasure be worth it?  That\u2019s up to you to decide!"
-      CustomNpcImageOptions: []
+      OptionalNpcReference: {fileID: 0}
+      Text: Please give me the chance to earn your mark, Sir!
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: fb6bde37aa176ca4d82d0b8c8a0a9953, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: I will.
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: fb6bde37aa176ca4d82d0b8c8a0a9953, type: 3}
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: 'NOTE: Frances McHugh will plan to pay a visit over the weekend!'
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: fb6bde37aa176ca4d82d0b8c8a0a9953, type: 3}
       CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
         type: 3}
       CustomBackgroundNpcLayout:
@@ -155,7 +105,7 @@ MonoBehaviour:
       NpcEffects: []
       EgoEffect: 0
       FundsEffect: 0
-      PowerEffect: 0
+      PowerEffect: -5
       PatentsEffect: 0
       CultureEffect: 0
       SpreadsheetsEffect: 0
