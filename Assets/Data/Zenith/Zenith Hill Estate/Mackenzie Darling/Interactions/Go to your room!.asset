@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Wiat till your foster father gets home!
+  m_Name: Go to your room!
   m_EditorClassIdentifier: 
-  Id: 9b41f73a-8543-469b-95db-e20ec2c6dbe4
-  Name: Wait till your foster father gets home!
+  Id: b243624e-6728-4e49-a518-aa105bdad54e
+  Name: Go to your room!
   SubInteraction: 0
   AlertNew: 1
   Category: 5
@@ -25,7 +25,7 @@ MonoBehaviour:
     NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: b8c5100f62ae4644586bb9b04750d4af, type: 2}
+    - {fileID: 11400000, guid: d51a533f132ba874b95c96b2bb826048, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -42,69 +42,93 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 1
-  Cooldown: 3
-  PreviewEffect: 1
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 11400000, guid: 8dff1f07f4971ef4a8c33a3e95657c17,
-        type: 2}
-      Text: 'NOTE: These days, after a passionate greeting kiss from your trophy
-        wife, the first issue to deal when upon returning home is: "What''s she done
-        now?".  The answer is usually plenty.  Tracey''s Punishment Notebook has
-        filled up rapidly.'
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: "Well, well, well.  I understand you\u2019ve been corrected by your step
+        mother and sent to your room for the rest of the day."
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 26af887ce2611244e8504d6437577c96,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.4
-        width: 300
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 11400000, guid: 8dff1f07f4971ef4a8c33a3e95657c17,
-        type: 2}
-      Text: From talking back to unmade beds to poorly carried out household chores,
-        Mackenzie has usually failed to satisfy her step-mother in some way.  This
-        is why the warning that haunts her most these days is "Wait till your foster
-        father gets home!"
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: "I\u2019m too old to be treated this way!  "
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 26af887ce2611244e8504d6437577c96,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.4
-        width: 300
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: When you disobey, what else do you expect is going to happen?  I thought
+        you were a clever girl.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: "I\u2019ve NEVER been spanked and I\u2019m an adult now\u2014 plus that
+        bitch is WAY too into it."
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: "Perhaps if your so called mother had bothered to spank you, you\u2019d
+        be more of a lady and less of a brat."
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: "I\u2019m telling you\u2014 that bitch looks for ANY opportunity to get
+        her hands on me!"
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: As the Master of the House...
+    - Title: "She seems more angry\u2026"
       Videos:
-      - {fileID: 32900000, guid: a823c40088efc584393e67ed1384ccf2, type: 3}
-      - {fileID: 32900000, guid: 6c580b263e9ff3342ac575af8ba6fe66, type: 3}
-      - {fileID: 32900000, guid: 40ea6d41febb15448b1a607cbc935ae1, type: 3}
-      - {fileID: 32900000, guid: 949ffb746a162ab4bbb94163120fb762, type: 3}
-      - {fileID: 32900000, guid: c2ead8ff3bcc2ab4598cb05f866b096c, type: 3}
-      - {fileID: 32900000, guid: 559542089cfaade4481bea437beadd02, type: 3}
-      - {fileID: 32900000, guid: 201ef615de9f3ff4bbeae361466b3e35, type: 3}
+      - {fileID: 32900000, guid: 8d62b41a0e7abc443a77a8751f2b02f1, type: 3}
       Textures: []
-      DialogClips:
-      - {fileID: 8300000, guid: 805a85b2833cee14fb2a52d2412fcad7, type: 3}
-      Text: ...it is your responsibility to correct the teenager.  To be honest,
-        it's a little household task you don't mind at all!
+      DialogClips: []
+      Text: "\u2026about the contact with Tracey than the discipline itself."
     Choices: []
     Effect:
-      NpcEffects:
-      - OptionalNpcReference: {fileID: 11400000, guid: 8dff1f07f4971ef4a8c33a3e95657c17,
-          type: 2}
-        AmbitionEffect: -6
-        PrideEffect: 0
-        RemoveCurrentImage: 0
-        ImageSetsToAdd: []
-        ImageSetsToRemove: []
-      EgoEffect: 8
+      NpcEffects: []
+      EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
