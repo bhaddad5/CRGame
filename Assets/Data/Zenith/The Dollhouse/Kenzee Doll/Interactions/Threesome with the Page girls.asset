@@ -53,7 +53,8 @@ MonoBehaviour:
       - {fileID: 32900000, guid: d884750ffa4e90f42b6d5378d1bd3920, type: 3}
       - {fileID: 32900000, guid: e8f58cef2746cd94a8e362ffd00498ba, type: 3}
       Textures: []
-      DialogClips: []
+      DialogClips:
+      - {fileID: 8300000, guid: 8dcc015bca3c249489bdbbb799fbc7f3, type: 3}
       Text: ...that you're the only 'client' who is allowed to enjoy the mother and
         daughter together.  It's a pleasure you reserve to yourself-- let others
         find and train their own mother-daughter teams!
@@ -64,10 +65,16 @@ MonoBehaviour:
           type: 2}
         AmbitionEffect: -10
         PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       - OptionalNpcReference: {fileID: 11400000, guid: 141b44f8872c8974d952509691bede0f,
           type: 2}
         AmbitionEffect: 0
         PrideEffect: -5
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 25
       FundsEffect: 0
       PowerEffect: 0
@@ -82,6 +89,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -115,6 +123,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -129,3 +138,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0

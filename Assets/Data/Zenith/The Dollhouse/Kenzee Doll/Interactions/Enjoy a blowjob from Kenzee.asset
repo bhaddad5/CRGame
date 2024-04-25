@@ -57,7 +57,8 @@ MonoBehaviour:
       - {fileID: 32900000, guid: 4bac233e950b9c642bc8f40b6aa7aafc, type: 3}
       - {fileID: 32900000, guid: 4b9ee3cc77ccef140a25a11d44c761f9, type: 3}
       Textures: []
-      DialogClips: []
+      DialogClips:
+      - {fileID: 8300000, guid: 7ed8a990e05f63e46a6bb154816a9ffa, type: 3}
       Text: ...to service her Legal Guardian!  She wishes you dropped by more often--
         or so she says.
     Choices: []
@@ -67,6 +68,9 @@ MonoBehaviour:
           type: 2}
         AmbitionEffect: 0
         PrideEffect: -5
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 11
       FundsEffect: 0
       PowerEffect: 0
@@ -81,6 +85,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -114,6 +119,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -128,3 +134,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0

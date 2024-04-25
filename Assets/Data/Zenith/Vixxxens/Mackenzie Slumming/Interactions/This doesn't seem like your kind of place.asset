@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: d3261141-5190-4b9d-b7d5-2799b7765129
   Name: This doesn't seem like your kind of place
+  SubInteraction: 0
   AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions:
@@ -38,8 +41,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -57,6 +61,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 350
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 13f1495a5fe7fee4f9021bb876025407,
         type: 2}
@@ -71,7 +76,9 @@ MonoBehaviour:
         xPos: 0.6
         yPos: 0.4
         width: 350
-      OptionalAudioClip: {fileID: 0}
+      OptionalAudioClip: {fileID: 8300000, guid: 544498da6c9894a439b9c6e37f19072d,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 13f1495a5fe7fee4f9021bb876025407,
         type: 2}
@@ -87,6 +94,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 350
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 13f1495a5fe7fee4f9021bb876025407,
         type: 2}
@@ -101,6 +109,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 350
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 13f1495a5fe7fee4f9021bb876025407,
         type: 2}
@@ -114,6 +123,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 350
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 13f1495a5fe7fee4f9021bb876025407,
         type: 2}
@@ -129,6 +139,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 350
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 13f1495a5fe7fee4f9021bb876025407,
         type: 2}
@@ -141,6 +152,7 @@ MonoBehaviour:
         yPos: 0.4
         width: 350
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 13f1495a5fe7fee4f9021bb876025407,
         type: 2}
@@ -155,20 +167,27 @@ MonoBehaviour:
         yPos: 0.4
         width: 350
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: She's privileged, spoiled and...
       Videos:
       - {fileID: 32900000, guid: f864ec7de0614fd4e9295c4f7b48fb41, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: 219283b3c7ff7f44db4ee5ac80a76e1a, type: 3}
       Text: ...obviously pampered as you'd expect Jennifer Page's daughter to be. 
         You've never heard mention of a father and the girl, while pretty, doesn't
         look anything like her mother.
+    Choices: []
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: 0953b95bde8ae5747a4cb25d3630de98,
           type: 2}
         AmbitionEffect: -3
         PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -184,7 +203,9 @@ MonoBehaviour:
       - {fileID: 11400000, guid: 13f1495a5fe7fee4f9021bb876025407, type: 2}
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -193,11 +214,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -214,7 +237,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -223,5 +248,8 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
+  FailCount: 0
