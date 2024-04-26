@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Debbie's Wifely Duties
+  m_Name: Date night with Debbie
   m_EditorClassIdentifier: 
-  Id: f60b4af2-1157-4e03-a7c0-998e124d4a4a
-  Name: Debbie's Wifely Duties
+  Id: 71db3aca-0a30-4321-a9d1-82ac723136a0
+  Name: Date night with Debbie
   SubInteraction: 0
   AlertNew: 1
   Category: 6
@@ -24,7 +24,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 75a2299fae304744c9845b2123dc1a5b, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -41,62 +42,63 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 1
-  Cooldown: 3
+  Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 0
   Result:
     Dialogs:
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Yes, you wanted to talk?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Being summoned to the Master Bedroom always makes my day.
+      Text: I was hoping we could spend some time alone-- just us.  Liek a date night!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 2eab091c1b8903840ae9023cf8e9d6cd,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 300
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: I'm sure it does!
+      Text: And no Mackenzie?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 2eab091c1b8903840ae9023cf8e9d6cd,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 300
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: Definitely NO Mackenzie!  Please?  I have a surpirse for you!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: Debbie's discarded all her...
+    - Title: It is a sweet gesture...
       Videos:
-      - {fileID: 32900000, guid: becbba021b6ffde4ea5341971d2e2ce5, type: 3}
-      - {fileID: 32900000, guid: 53c66b6a76491694c88726c6a2a04c8a, type: 3}
-      - {fileID: 32900000, guid: c72c79de8b5c5cc45b93c70dc7ea80ea, type: 3}
-      - {fileID: 32900000, guid: 14851bc11199ba3448139a2f099a3fe1, type: 3}
-      - {fileID: 32900000, guid: 16b3c3d048928174eb69bc0204a66612, type: 3}
-      - {fileID: 32900000, guid: 0cc738e05b3acd24fa188c06d06a6eb8, type: 3}
-      - {fileID: 32900000, guid: 202177bd65be37b4f8dec389e622907f, type: 3}
-      - {fileID: 32900000, guid: d259923804432c4478b5c2c97e0b2f2c, type: 3}
-      - {fileID: 32900000, guid: 3db0c9520b65d574baa0b202e1114064, type: 3}
-      - {fileID: 32900000, guid: 8cfd5ea57c0546c46a8ac75cb41db118, type: 3}
-      - {fileID: 32900000, guid: a02eed4c68954e54c9e5701c52e69e3e, type: 3}
-      - {fileID: 32900000, guid: ce6d39881d4f6224db4c74f1dcff8676, type: 3}
-      - {fileID: 32900000, guid: 4df657388415eb54ea8dc38b3e79de21, type: 3}
-      - {fileID: 32900000, guid: c6e74398e3bda514292ecbe1693f20f8, type: 3}
-      - {fileID: 32900000, guid: babb4a4dcdce3d447b7d0517faf34453, type: 3}
-      - {fileID: 32900000, guid: c1737b44661abcf4cb1719be7115e2b3, type: 3}
-      - {fileID: 32900000, guid: 36be406cae133484191b7a106ef71d74, type: 3}
-      - {fileID: 32900000, guid: 8da5422c34ecaf540987a2a76dd1c48a, type: 3}
-      - {fileID: 32900000, guid: 52dfa28fd27af04499cfb2aaa1d3d07e, type: 3}
-      - {fileID: 32900000, guid: dffd74c6d0ca4244f9feaff421187285, type: 3}
+      - {fileID: 32900000, guid: ff4f554a7e485b54882f96b7ea7d566c, type: 3}
       Textures: []
       DialogClips: []
-      Text: '...feminist ideas about sex.  Your pleasure comes first-- her own is
-        incidental.  She''s learned to become a good wifey! '
+      Text: ...but you're getting rather jaded.  "Try again Debbie and put some imagination
+        into it."
     Choices: []
     Effect:
       NpcEffects: []
