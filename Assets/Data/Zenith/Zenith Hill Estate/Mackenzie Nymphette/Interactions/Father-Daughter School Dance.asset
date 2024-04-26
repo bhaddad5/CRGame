@@ -83,7 +83,8 @@ MonoBehaviour:
       Videos:
       - {fileID: 32900000, guid: 433011daafb520442992a5c820255ae5, type: 3}
       Textures: []
-      DialogClips: []
+      DialogClips:
+      - {fileID: 8300000, guid: d3f88d289cf988e4791dcb756d929434, type: 3}
       Text: ...you are surprised to get the sense that Mackenzie might actually be
         enjoying spending time in your arms!  Other student sponsors admire your
         youthful partner as you dance by them.
@@ -103,18 +104,30 @@ MonoBehaviour:
           type: 2}
         AmbitionEffect: 0
         PrideEffect: 2
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       - OptionalNpcReference: {fileID: 11400000, guid: b78f3845998fdef498a2e6c9fc60efb4,
           type: 2}
         AmbitionEffect: 0
         PrideEffect: 2
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       - OptionalNpcReference: {fileID: 11400000, guid: d6893d3d1ae90dc4699580eb2d4b4f1a,
           type: 2}
         AmbitionEffect: 0
         PrideEffect: -2
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       - OptionalNpcReference: {fileID: 11400000, guid: 14af4b3289f7b75438728ac446c7b497,
           type: 2}
         AmbitionEffect: 0
         PrideEffect: -2
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -129,6 +142,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -162,6 +176,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -176,3 +191,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0
