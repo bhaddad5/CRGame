@@ -185,8 +185,8 @@ MonoBehaviour:
         type: 2}
       Text: She'd HATE being spoken about this way, but... yeah, I heard about that
         presentation.  Wow-- what a disaster that was!  Director Bledsoe even spoke
-        to my boss about the whole thing.  She pretty much decided to boot Deborah
-        from the MTP already.  What do you want from me?
+        to my boss about the whole thing.  She's half and half on whether to boot
+        Deborah from the MTP as it is.  What do you want from me?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 793d3fec56c01544bbb8a217b63e918a,
         type: 3}
@@ -283,6 +283,9 @@ MonoBehaviour:
           type: 2}
         AmbitionEffect: -20
         PrideEffect: -10
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -297,6 +300,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -330,6 +334,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -344,3 +349,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0
