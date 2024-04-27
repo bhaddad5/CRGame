@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 6179c468-a4c8-487e-bf70-cadc119ce00d
   Name: Request for relationship escalation
+  SubInteraction: 0
   AlertNew: 1
   Category: 6
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 4ad949db49c29394f990ef9cdbc6c034, type: 2}
@@ -38,64 +41,83 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
       Text: 'NOTE: Even now, the little lesbian mathlete''s request is professional,
         well reasoned and respectful.  She''d like to take things up a notch with
         her new work wife Traci-- but she knows better than to move forward without
         your express approval.'
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: ad91f859a37b1f6499909a7d9ac22261,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.55
+        yPos: 0.4
+        width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
       Text: '"I strongly believe Traci would benefit from this, Mr. {LastName}. 
-        In many ways, straight girls can never truly accept another woman as her
+        In many ways, a straight girl can never truly accept another woman as her
         lover unless she can experience the kind of pleasure only this tool can provide."'
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: ad91f859a37b1f6499909a7d9ac22261,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.55
+        yPos: 0.4
+        width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
       Text: '"Of course, if you believe this request is impertinent, I apologize
         in advance.  I meant no disrespect and if you prefer we maintain the current
         range of our intimacies, I will, of course, accept your decision.  Most Respectfully,
         Lexi Hunter/ Office Manager"'
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: ad91f859a37b1f6499909a7d9ac22261,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.55
+        yPos: 0.4
+        width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
+        type: 2}
       Text: 'NOTE: The ACCEPT/REJECT buttons wait your executive decision.  Considering
         the deferential manner in which Lexi has couched her request, you see no
         reason to deny her.  How grateful she''ll be for this exciting new chapter
         in her latest relationship!  '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: ad91f859a37b1f6499909a7d9ac22261,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.55
+        yPos: 0.4
+        width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: Lexi's strapon has now claimed it's second...
+    - Title: Lexi's strapon has now claimed its second...
       Videos:
       - {fileID: 32900000, guid: 5075307f44d8878488ad23356d7a594e, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: ...trophy.  Traci even seems to respond to it with surprising delight!
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 20
@@ -112,7 +134,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -121,11 +145,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -142,7 +168,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -151,5 +179,8 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
+  FailCount: 0

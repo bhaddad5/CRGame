@@ -24,7 +24,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
+    - OptionalNpcReference: {fileID: 11400000, guid: 6affcc7af4c14d34a9b976af0e468a1e,
+        type: 2}
       Stat: 1
       Is: 0
       Value: 0
@@ -51,63 +52,73 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 6affcc7af4c14d34a9b976af0e468a1e,
+        type: 2}
       Text: Traci, I haven't received any bad reports on you recently.  Are you behaving
         yourself?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: ad91f859a37b1f6499909a7d9ac22261,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.5
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 6affcc7af4c14d34a9b976af0e468a1e,
+        type: 2}
       Text: Yes, Sir!  I only have three demerits so far this month!  Just ask Miss
         Lexi if you don't believe me!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: ad91f859a37b1f6499909a7d9ac22261,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.5
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: That's good.  Are you are Miss Lexi getting along any better?
+      OptionalNpcReference: {fileID: 11400000, guid: 6affcc7af4c14d34a9b976af0e468a1e,
+        type: 2}
+      Text: That's good.  Are you and Miss Lexi getting along any better?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: ad91f859a37b1f6499909a7d9ac22261,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.5
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 6affcc7af4c14d34a9b976af0e468a1e,
+        type: 2}
       Text: 'I hope so, Mr. {LastName}!  Miss Lexi is like my Big Sister-- I admire
         her so much!  She''s my mentor and I don''t want to let her down by misbehaving!  '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: ad91f859a37b1f6499909a7d9ac22261,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.5
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 6affcc7af4c14d34a9b976af0e468a1e,
+        type: 2}
       Text: 'Very good!  Tell Miss Lexi she has permission to fraternize with you
         outside the office.  I hope you don''t mind being the ''Other Woman'' as
         she is a married lady.  I hope you two have fun together.    '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: ad91f859a37b1f6499909a7d9ac22261,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.5
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
@@ -146,6 +157,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -179,6 +191,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -193,3 +206,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0
