@@ -128,7 +128,7 @@ MonoBehaviour:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 72b8eb7927e248049955652b2584fcea,
         type: 2}
-      Text: You are suprisingly perceptive at times, {FirstName}.  I like that. 
+      Text: You are surprisingly perceptive at times, {FirstName}.  I like that. 
         I know I can be a bit demanding but you always want to hitch your career
         to a shooting star, right? Let me ask you this- would your girlfriend have
         a problem if you wound up working for me at some point?  Would she be ok
@@ -201,6 +201,9 @@ MonoBehaviour:
           type: 2}
         AmbitionEffect: -4
         PrideEffect: 4
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -215,6 +218,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -248,6 +252,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -262,3 +267,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0
