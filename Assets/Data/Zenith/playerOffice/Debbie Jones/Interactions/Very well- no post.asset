@@ -104,11 +104,18 @@ MonoBehaviour:
       Textures: []
       DialogClips: []
       Text: ...her knees.  She's more than happy to blow you but is frantic about
-        some video circulatimg!  Women can be mystifying at times!  Debbie +5 PRIDE 
+        some video circulating!  Women can be mystifying at times!  Debbie +5 PRIDE 
         +5 AMBITION
     Choices: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+          type: 2}
+        AmbitionEffect: 5
+        PrideEffect: 5
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 20
       FundsEffect: 0
       PowerEffect: 0
