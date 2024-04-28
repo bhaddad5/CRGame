@@ -73,7 +73,7 @@ MonoBehaviour:
       - {fileID: 8300000, guid: b8afdd348834e204483098fa6c7f8309, type: 3}
       - {fileID: 8300000, guid: 7668cf32fd11d28429ada5e977c98b43, type: 3}
       - {fileID: 8300000, guid: 26436a3ec7b3ab84589948c9c959c56a, type: 3}
-      Text: ...amd she loves diving!
+      Text: ...and she loves diving!
     Choices: []
     Effect:
       NpcEffects:
@@ -81,6 +81,9 @@ MonoBehaviour:
           type: 2}
         AmbitionEffect: 0
         PrideEffect: 1
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 10
       FundsEffect: 0
       PowerEffect: 0
@@ -95,6 +98,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -128,6 +132,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -142,3 +147,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0
