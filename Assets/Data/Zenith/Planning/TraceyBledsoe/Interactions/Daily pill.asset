@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 23e7bd32-0d2b-4718-bf19-a26b25533a20
   Name: Daily pill
+  SubInteraction: 0
   AlertNew: 1
   Category: 3
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: d087b4b747ce9c947a103524f9c9cff3, type: 2}
@@ -39,8 +42,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -56,6 +60,8 @@ MonoBehaviour:
         xPos: 0.37
         yPos: 0.44
         width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
         type: 2}
@@ -67,6 +73,8 @@ MonoBehaviour:
         xPos: 0.37
         yPos: 0.44
         width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
         type: 2}
@@ -79,6 +87,8 @@ MonoBehaviour:
         xPos: 0.37
         yPos: 0.44
         width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
         type: 2}
@@ -90,13 +100,18 @@ MonoBehaviour:
         xPos: 0.37
         yPos: 0.44
         width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: '"I''ve been taking them for years.  They... calm me down."'
       Videos:
       - {fileID: 32900000, guid: 10494ba331eceee43b5762dd8e9bd652, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: b759dcb71b8706f4cbbf8ff87b947aef, type: 3}
       Text: 'Interesting to know!  If you were to exchange her prescription with
         a placebo...  It might be worth asking Maxwell about this! '
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -113,7 +128,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -122,11 +139,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -143,7 +162,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -152,5 +173,8 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
+  FailCount: 0

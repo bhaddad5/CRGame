@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 6ce909ea-ae6b-4de1-ad0a-c438f06f1dac
   Name: Annual Strategy feedback
+  SubInteraction: 0
   AlertNew: 1
   Category: 3
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements:
     - OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
         type: 2}
@@ -44,8 +47,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -61,6 +65,8 @@ MonoBehaviour:
         xPos: 0.37
         yPos: 0.44
         width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
         type: 2}
@@ -72,6 +78,8 @@ MonoBehaviour:
         xPos: 0.37
         yPos: 0.44
         width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
         type: 2}
@@ -84,6 +92,9 @@ MonoBehaviour:
         xPos: 0.37
         yPos: 0.44
         width: 400
+      OptionalAudioClip: {fileID: 8300000, guid: 2bf47437f947c4147a4f3b3e6fccdc65,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
         type: 2}
@@ -95,6 +106,8 @@ MonoBehaviour:
         xPos: 0.37
         yPos: 0.44
         width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
         type: 2}
@@ -106,6 +119,8 @@ MonoBehaviour:
         xPos: 0.37
         yPos: 0.44
         width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
         type: 2}
@@ -117,18 +132,25 @@ MonoBehaviour:
         xPos: 0.37
         yPos: 0.44
         width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: '"I like what you''ve suggested.  Good work!"'
       Videos:
       - {fileID: 32900000, guid: cf5291fbc3386d24db5b951f83aeb96f, type: 3}
-      Texture: {fileID: 0}
-      Text: 
+      Textures: []
+      DialogClips: []
+      Text: She's never been generous with plaudits-- good work!
+    Choices: []
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
           type: 2}
         AmbitionEffect: -10
         PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -143,7 +165,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -152,11 +176,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -173,7 +199,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -182,5 +210,8 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
+  FailCount: 0

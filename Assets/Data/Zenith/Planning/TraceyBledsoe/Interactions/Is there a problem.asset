@@ -14,11 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: ff9d32a7-828f-4e6e-a4fa-e720084bf823
   Name: Is there a problem
+  SubInteraction: 0
+  AlertNew: 1
   Category: 2
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 123c4a167f83dc143887306b57f75eb5, type: 2}
@@ -38,8 +42,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 0
   Result:
     Dialogs:
@@ -54,6 +59,8 @@ MonoBehaviour:
         xPos: 0.37
         yPos: 0.44
         width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
         type: 2}
@@ -66,6 +73,8 @@ MonoBehaviour:
         xPos: 0.37
         yPos: 0.44
         width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
         type: 2}
@@ -78,6 +87,8 @@ MonoBehaviour:
         xPos: 0.37
         yPos: 0.44
         width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
         type: 2}
@@ -89,6 +100,9 @@ MonoBehaviour:
         xPos: 0.37
         yPos: 0.44
         width: 400
+      OptionalAudioClip: {fileID: 8300000, guid: 278d28906bd5eba4a81d334812e2648c,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 7c902c9082b20154aa5efc973815811c,
         type: 2}
@@ -100,12 +114,16 @@ MonoBehaviour:
         xPos: 0.37
         yPos: 0.44
         width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: '"You''re out of line!"'
       Videos:
       - {fileID: 32900000, guid: 63050901de277ea41bb67fd0b72da073, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: She seems to know something's wrong but she can't put her finger on it...
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -122,7 +140,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -130,11 +150,14 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -151,7 +174,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -159,4 +184,9 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
+  New: 1
+  FailCount: 0
