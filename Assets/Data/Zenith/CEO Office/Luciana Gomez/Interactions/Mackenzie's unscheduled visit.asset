@@ -74,7 +74,8 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 340
-      OptionalAudioClip: {fileID: 0}
+      OptionalAudioClip: {fileID: 8300000, guid: 7da67e3005fd8414fa3f8f3546f016e2,
+        type: 3}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 1895752c79cb36241b3e1f3755c8ca65,
@@ -103,7 +104,8 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 340
-      OptionalAudioClip: {fileID: 0}
+      OptionalAudioClip: {fileID: 8300000, guid: ce344830180075a4e9c5bdeccb98ce4b,
+        type: 3}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 0953b95bde8ae5747a4cb25d3630de98,
@@ -133,14 +135,16 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 340
-      OptionalAudioClip: {fileID: 0}
+      OptionalAudioClip: {fileID: 8300000, guid: c0ce5557dea4bab4e9c13f9cc0966186,
+        type: 3}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: The mother and daughter...
       Videos:
       - {fileID: 32900000, guid: 867352b4d7f1a8b41a934a4b4667a23c, type: 3}
       Textures: []
-      DialogClips: []
+      DialogClips:
+      - {fileID: 8300000, guid: 60dfead2a129f0249942be7e93c9759c, type: 3}
       Text: ...share a common arrogance and self-regard far out of proportion to
         any reality.
     Choices: []
@@ -167,6 +171,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -200,6 +205,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -214,3 +220,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0
