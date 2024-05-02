@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 2f4aabfa-0d9b-4199-b798-c6e003f0b92b
   Name: Watch the new Thriller
+  SubInteraction: 0
   AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
@@ -37,8 +40,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -47,29 +51,35 @@ MonoBehaviour:
         type: 2}
       Text: I heard there's a twist.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 6a2dde48a80a84345ba84923fe1b3fd9,
+      CustomBackground: {fileID: 2800000, guid: 6386878f45c454a439f9a8d37995c8a3,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.7
         yPos: 0.3
         width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 606fcda51bb272e4b947c3c87d34bb4b,
         type: 2}
       Text: There is-- but you won't hear it from me!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 6a2dde48a80a84345ba84923fe1b3fd9,
+      CustomBackground: {fileID: 2800000, guid: 6386878f45c454a439f9a8d37995c8a3,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.7
         yPos: 0.3
         width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: You figured it out...
       Videos:
       - {fileID: 32900000, guid: b3b891ac81b49874784d0a4d84b8d197, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: ...halfway through.  Still, not a bad movie!
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 7
@@ -86,7 +96,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -95,11 +107,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -116,7 +130,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -125,5 +141,8 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
+  FailCount: 0

@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 7c439342-eef7-4e8c-888e-da806dcda300
   Name: Time for a comedy break
+  SubInteraction: 0
   AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
@@ -37,8 +40,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -48,29 +52,35 @@ MonoBehaviour:
       Text: You hear that laughter?  This comedy is killing it!  Funniest thing you'll
         see all year!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 6a2dde48a80a84345ba84923fe1b3fd9,
+      CustomBackground: {fileID: 2800000, guid: 6386878f45c454a439f9a8d37995c8a3,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.7
         yPos: 0.3
         width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 606fcda51bb272e4b947c3c87d34bb4b,
         type: 2}
       Text: Excellent-- I could use a good laugh!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 6a2dde48a80a84345ba84923fe1b3fd9,
+      CustomBackground: {fileID: 2800000, guid: 6386878f45c454a439f9a8d37995c8a3,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.7
         yPos: 0.3
         width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: It's all a hoot...
       Videos:
       - {fileID: 32900000, guid: a03c5a19d90534f4a87707976ab09e9b, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: ...definitely has the craziest gags you've seen in a long time!
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 7
@@ -87,7 +97,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -96,11 +108,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -117,7 +131,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -126,5 +142,8 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
+  FailCount: 0

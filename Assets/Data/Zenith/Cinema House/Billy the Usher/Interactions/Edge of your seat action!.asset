@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 3bd0c5f8-1bd6-45d1-b4a1-3c6ee6382406
   Name: Edge of your seat action!
+  SubInteraction: 0
   AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
@@ -37,8 +40,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -47,29 +51,35 @@ MonoBehaviour:
         type: 2}
       Text: Is this as good as they say it is?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 6a2dde48a80a84345ba84923fe1b3fd9,
+      CustomBackground: {fileID: 2800000, guid: 6386878f45c454a439f9a8d37995c8a3,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.7
         yPos: 0.3
         width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 606fcda51bb272e4b947c3c87d34bb4b,
         type: 2}
       Text: All I can tell you is I've seen it three times already!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 6a2dde48a80a84345ba84923fe1b3fd9,
+      CustomBackground: {fileID: 2800000, guid: 6386878f45c454a439f9a8d37995c8a3,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.7
         yPos: 0.3
         width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: The heart pounding action...
       Videos:
       - {fileID: 32900000, guid: fb5c668f8a438f74f9d78868057c47a7, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: ...continues right up until the final scene!
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 7
@@ -86,7 +96,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -95,11 +107,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -116,7 +130,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -125,5 +141,8 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
+  FailCount: 0
