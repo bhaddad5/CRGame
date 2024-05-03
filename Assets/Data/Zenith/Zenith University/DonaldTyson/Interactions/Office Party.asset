@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 45925d7f-9e2b-44a6-8719-72cb197656ce
   Name: Office Party
+  SubInteraction: 0
   AlertNew: 1
   Category: 3
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 876da880e9910f544b964d7b95f9778c, type: 2}
@@ -38,9 +41,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
-    Items: 
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 0
   Result:
     Dialogs:
@@ -49,12 +52,12 @@ MonoBehaviour:
         type: 2}
       Text: This is Candace Kelly, our Compliance Manager.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 7f239f2c1dffed941ad3536b63160463,
+      CustomBackground: {fileID: 2800000, guid: 7dbd0dde07e98c24096817a365f5a84a,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
-        yPos: 0.37
-        width: 270
+        yPos: 0.3
+        width: 450
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
@@ -62,12 +65,12 @@ MonoBehaviour:
         type: 2}
       Text: Hello Candace!  Nice to meet you!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 7f239f2c1dffed941ad3536b63160463,
+      CustomBackground: {fileID: 2800000, guid: 7dbd0dde07e98c24096817a365f5a84a,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
-        yPos: 0.37
-        width: 270
+        yPos: 0.3
+        width: 450
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
@@ -75,26 +78,26 @@ MonoBehaviour:
         type: 2}
       Text: Candace has been keen to meet you.  Why don't you two get better acquainted?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 7f239f2c1dffed941ad3536b63160463,
+      CustomBackground: {fileID: 2800000, guid: 7dbd0dde07e98c24096817a365f5a84a,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
-        yPos: 0.37
-        width: 270
+        yPos: 0.3
+        width: 450
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 49c059802b4b2a842be5a5c55f4435f6,
         type: 2}
       Text: 'Sounds like an excellent idea.  I''ve never been able to say no to a
-        redhead-- especially one as striking as you, Candace! '
+        lady-- especially one as striking as you, Candace! '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 7f239f2c1dffed941ad3536b63160463,
+      CustomBackground: {fileID: 2800000, guid: 7dbd0dde07e98c24096817a365f5a84a,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.5
-        yPos: 0.37
-        width: 270
+        yPos: 0.3
+        width: 450
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
@@ -105,6 +108,7 @@ MonoBehaviour:
       DialogClips: []
       Text: ...has no trouble drawing the attention of a most interested Professor
         Tyson!
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -121,9 +125,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -132,11 +136,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -153,9 +159,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -164,5 +170,8 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
+  FailCount: 0
