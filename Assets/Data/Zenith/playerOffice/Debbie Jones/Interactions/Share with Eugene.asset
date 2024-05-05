@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Jones-Bower Heater Session
+  m_Name: Share with Eugene
   m_EditorClassIdentifier: 
-  Id: 9c7611f1-5900-437c-855b-bd01391fbaa5
-  Name: Jones-Bower Heater Session
-  SubInteraction: 0
-  AlertNew: 1
-  Category: 6
+  Id: 7a02a7a5-eb64-4f2c-9f98-d7dc6c62cd95
+  Name: Share with Eugene
+  SubInteraction: 1
+  AlertNew: 0
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -24,8 +24,7 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions:
-    - {fileID: 11400000, guid: 8a265fe386609c24997b23cc17d04b8a, type: 2}
+    RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -42,80 +41,42 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 1
-  Cooldown: 30
-  PreviewEffect: 1
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 1
+    - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 0}
-      Text: Ready, girls?
+      Text: 'NOTE:  You don''t indicate what you''ll do.  For a day or two, she thinks
+        you might have forgotten all about this and she''s relieved.'
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.4
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
-        type: 2}
-      Text: Oh, yeah!  Definitely!  I'v ebeen looking forward to this ever since
-        you scheduled it!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.4
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: Yes... Mr. {LastName}.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.4
-        width: 375
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: These 'Continuing Development Sessions"...
+    - Title: '"TO: Gene Lawson...'
       Videos:
-      - {fileID: 32900000, guid: 60856d3c69a228f44be4e4cce66d0ce1, type: 3}
-      - {fileID: 32900000, guid: 278fdd4ecf9ea524099a9d7a7ef09cdf, type: 3}
-      - {fileID: 32900000, guid: 5f42c435cc722d04b9158a5bbc9e5cf8, type: 3}
-      - {fileID: 32900000, guid: a1e9a3073862c1746862971fe368f87a, type: 3}
-      - {fileID: 32900000, guid: eec6bc21ada023d4e872c95e3ceb7240, type: 3}
+      - {fileID: 32900000, guid: 0e429282674f83440b451c9236913bbc, type: 3}
       Textures: []
       DialogClips: []
-      Text: ...have a disparate impact on your staff.  Britney always seems more
-        excited about them than Debbie!
+      Text: '"...Enjoy!  There''s plenty more where this came from!  Regards, The
+        Boss"'
     Choices: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 11400000, guid: ad8fc78cc6faa1046bae2c0a2a3c33c8,
-          type: 2}
-        AmbitionEffect: 2
-        PrideEffect: 2
-        RemoveCurrentImage: 0
-        ImageSetsToAdd: []
-        ImageSetsToRemove: []
       - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
           type: 2}
-        AmbitionEffect: -1
-        PrideEffect: -1
+        AmbitionEffect: -5
+        PrideEffect: -5
         RemoveCurrentImage: 0
         ImageSetsToAdd: []
         ImageSetsToRemove: []
-      EgoEffect: 15
+      EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
