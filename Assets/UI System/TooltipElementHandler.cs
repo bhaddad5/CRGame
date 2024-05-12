@@ -32,7 +32,7 @@ public class TooltipElementHandler : MonoBehaviour, IPointerEnterHandler, IPoint
 			if (Time.time - enteredTime > .2f)
 			{
 				string tooltip = GetComponentInParent<ITooltipProvider>()?.GetTooltip();
-				if (tooltip != null)
+				if (!string.IsNullOrEmpty(tooltip))
 				{
 					TooltipCanvas.Instance.CreateTooltip(tooltip);
 					tooltipIsCreated = true;
