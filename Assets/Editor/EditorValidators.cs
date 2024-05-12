@@ -247,6 +247,12 @@ public class EditorValidators
 						EditorUtility.SetDirty(npc);
 					npc.Interactions.RemoveAll(v => v == null);
 
+					foreach (var interaction in npc.Interactions)
+					{
+						CleanUpEffect(interaction.Result.Effect, interaction);
+						CleanUpEffect(interaction.FailureResult.Effect, interaction);
+					}
+
 					if (npc.Trophies.Contains(null))
 						EditorUtility.SetDirty(npc);
 					npc.Trophies.RemoveAll(v => v == null);
@@ -263,10 +269,50 @@ public class EditorValidators
 				if (location.Missions.Contains(null))
 					EditorUtility.SetDirty(location);
 				location.Missions.RemoveAll(v => v == null);
+
+				foreach(var mission in location.Missions)
+				{
+					CleanUpEffect(mission.Effect, mission);
+				}
 			}
 		}
 			
 		Debug.Log("Null values removed!");
+	}
+
+	private static void CleanUpEffect(Effect effect, UnityEngine.Object ob)
+	{
+		if (effect.NpcsToControl.Contains(null))
+			EditorUtility.SetDirty(ob);
+		effect.NpcsToControl.RemoveAll(v => v == null);
+
+		if (effect.NpcsToTrain.Contains(null))
+			EditorUtility.SetDirty(ob);
+		effect.NpcsToTrain.RemoveAll(v => v == null);
+
+		if (effect.NpcsToRemoveFromGame.Contains(null))
+			EditorUtility.SetDirty(ob);
+		effect.NpcsToRemoveFromGame.RemoveAll(v => v == null);
+
+		if (effect.LocationsToControl.Contains(null))
+			EditorUtility.SetDirty(ob);
+		effect.LocationsToControl.RemoveAll(v => v == null);
+
+		if (effect.TrophiesClaimedReferences.Contains(null))
+			EditorUtility.SetDirty(ob);
+		effect.TrophiesClaimedReferences.RemoveAll(v => v == null);
+
+		if (effect.TrophiesRemoved.Contains(null))
+			EditorUtility.SetDirty(ob);
+		effect.TrophiesRemoved.RemoveAll(v => v == null);
+
+		if (effect.MissionsToComplete.Contains(null))
+			EditorUtility.SetDirty(ob);
+		effect.MissionsToComplete.RemoveAll(v => v == null);
+
+		if (effect.ItemsToAdd.Contains(null))
+			EditorUtility.SetDirty(ob);
+		effect.ItemsToAdd.RemoveAll(v => v == null);
 	}
 
 	[MenuItem("Company Man Validators/Update Audio Clip Names", false, 200)]
