@@ -129,6 +129,15 @@ MonoBehaviour:
         type: 3}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
+    - Title: '"If you''d like to make your own...'
+      Videos:
+      - {fileID: 32900000, guid: 4b2f83a552c73684f8d0d039d0fa7ce9, type: 3}
+      Textures: []
+      DialogClips:
+      - {fileID: 0}
+      Text: ...arrangements, you're free to pay for your preferred method of birth
+        control.  Otherwise, you'll accept my guidance in this matter.  Is that clear,
+        Debbie?"  Of course it is.
     - Title: Implanon relieves the recipient of any...
       Videos:
       - {fileID: 32900000, guid: c2825124aefacc14085386f3e32b6a00, type: 3}
@@ -138,6 +147,13 @@ MonoBehaviour:
       Text: ...responsibility for her own birth control.  The injection will prevent
         Debbie from becoming pregnant for the next three years.  It's a convenience
         for both the manager and the working girl!
+    - Title: Dr. Feng reports that...
+      Videos:
+      - {fileID: 32900000, guid: d9b0d9c5e29c59948af93c94c3c10eed, type: 3}
+      Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: be9e6675dde09c6419234944430e8f59, type: 3}
+      Text: ...Debbie has now been 'risk proofed' for additional 'duties'.
     Choices: []
     Effect:
       NpcEffects:
@@ -145,6 +161,9 @@ MonoBehaviour:
           type: 2}
         AmbitionEffect: 0
         PrideEffect: -5
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 10
       FundsEffect: 0
       PowerEffect: 0
@@ -159,6 +178,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -192,6 +212,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -206,3 +227,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0
