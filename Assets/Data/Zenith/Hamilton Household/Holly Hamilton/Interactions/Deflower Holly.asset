@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 391a17a0-3061-4585-81fa-f27948c3271f
   Name: Deflower Holly
+  SubInteraction: 0
   AlertNew: 1
   Category: 6
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions:
@@ -39,8 +42,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -55,6 +59,8 @@ MonoBehaviour:
         xPos: 0.6
         yPos: 0.35
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 8d9f38aa47f1c4f48b97afffaa769f0d,
         type: 2}
@@ -66,6 +72,8 @@ MonoBehaviour:
         xPos: 0.6
         yPos: 0.35
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 8d9f38aa47f1c4f48b97afffaa769f0d,
         type: 2}
@@ -78,21 +86,28 @@ MonoBehaviour:
         xPos: 0.6
         yPos: 0.35
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: You take her doggy style.
       Videos:
       - {fileID: 32900000, guid: 247eca9b43de8c947956a38be6c07fb4, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: 'Nor are you particularly gentle.  You tell her to think of England while
         you fuck her-- a joke that goes well over her head.  Towards the end, she
         manages to achieve a small orgasm and she lets fly a small, surprised moan.  '
+    Choices: []
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: 8d9f38aa47f1c4f48b97afffaa769f0d,
           type: 2}
         AmbitionEffect: 0
         PrideEffect: -20
-      EgoEffect: 35
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
+      EgoEffect: 23
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -106,7 +121,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -115,11 +132,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -136,7 +155,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -145,5 +166,8 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
+  FailCount: 0

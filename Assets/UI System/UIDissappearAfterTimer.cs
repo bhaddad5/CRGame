@@ -16,6 +16,6 @@ public class UIDissappearAfterTimer : MonoBehaviour
     {
         await System.Threading.Tasks.Task.Delay((int)(SecondsToStayOpen * 1000));
 
-        gameObject.SetActive(false);
+        gameObject?.SetActive(false);
     }
 }

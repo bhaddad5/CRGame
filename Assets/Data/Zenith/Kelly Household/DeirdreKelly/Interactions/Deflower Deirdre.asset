@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 2eb95a21-413b-4524-903f-7c640fa51eb7
   Name: Deflower Deirdre
+  SubInteraction: 0
   AlertNew: 1
   Category: 6
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions:
@@ -39,8 +42,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -55,6 +59,8 @@ MonoBehaviour:
         xPos: 0.6
         yPos: 0.4
         width: 325
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 8468daf25d821974a8b3b9c729b1d180,
         type: 2}
@@ -67,6 +73,8 @@ MonoBehaviour:
         xPos: 0.6
         yPos: 0.4
         width: 325
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 8468daf25d821974a8b3b9c729b1d180,
         type: 2}
@@ -78,6 +86,8 @@ MonoBehaviour:
         xPos: 0.6
         yPos: 0.4
         width: 325
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 8468daf25d821974a8b3b9c729b1d180,
         type: 2}
@@ -90,6 +100,8 @@ MonoBehaviour:
         xPos: 0.6
         yPos: 0.4
         width: 325
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 8468daf25d821974a8b3b9c729b1d180,
         type: 2}
@@ -101,28 +113,36 @@ MonoBehaviour:
         xPos: 0.6
         yPos: 0.4
         width: 325
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Pop goes the cherry!
       Videos:
       - {fileID: 32900000, guid: 73d367fe2e55c214890a19695153a87d, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: Poor little thing squeals like a stuck piglet as you rob her of her innocence. 
         Good thing you made sure she was alone before you took your prize!  She's
         tight but that won't last long.  Like her mom, you can tell she's a bad girl.
     - Title: Candace, oblivious, tells you Deridre...
       Videos:
       - {fileID: 32900000, guid: 257f1cc73731f3a409a6024267267537, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: ...spent the next day in bed.  No doubt she's reliving the whole traumatic
         episode like the teen drama queen she is.  You briefly regret not letting
         Professor Tyson have the honours, but it's all spilt milk now...
+    Choices: []
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: 8468daf25d821974a8b3b9c729b1d180,
           type: 2}
         AmbitionEffect: 0
         PrideEffect: -20
-      EgoEffect: 30
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
+      EgoEffect: 20
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -136,7 +156,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -145,11 +167,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -166,7 +190,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -175,5 +201,8 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
+  FailCount: 0
