@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: f940eca8-0a40-4dfc-8bc6-e37e1bb272ad
   Name: Teen dating advice
+  SubInteraction: 0
   AlertNew: 1
   Category: 6
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements:
     - OptionalNpcReference: {fileID: 11400000, guid: 8468daf25d821974a8b3b9c729b1d180,
         type: 2}
@@ -44,8 +47,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -60,6 +64,8 @@ MonoBehaviour:
         xPos: 0.6
         yPos: 0.4
         width: 325
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 8468daf25d821974a8b3b9c729b1d180,
         type: 2}
@@ -71,6 +77,8 @@ MonoBehaviour:
         xPos: 0.6
         yPos: 0.4
         width: 325
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 8468daf25d821974a8b3b9c729b1d180,
         type: 2}
@@ -83,25 +91,33 @@ MonoBehaviour:
         xPos: 0.6
         yPos: 0.4
         width: 325
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Come sit down next to me!
       Videos:
       - {fileID: 32900000, guid: e8d406e13dfb3b340aa54ee1a267bff6, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: The girl obeys reluctantly as you explain all her physical failings
     - Title: This is how a 4 can become a...
       Videos:
       - {fileID: 32900000, guid: 741006678a4607b43937e68d9a64516a, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips: []
       Text: ...7!  See-- I'm not looking at your mosquito bites at all now-- you've
         completely distracted me, Deirdre!
+    Choices: []
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: 8468daf25d821974a8b3b9c729b1d180,
           type: 2}
         AmbitionEffect: 0
         PrideEffect: -10
-      EgoEffect: 15
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
+      EgoEffect: 7
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -115,7 +131,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -124,11 +142,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -145,7 +165,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -154,5 +176,8 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
+  FailCount: 0
