@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Final call to Primeva Legation
+  m_Name: Deciding the fate of the Hamiltons
   m_EditorClassIdentifier: 
-  Id: d63622f3-9a04-4224-abfe-f4cce5c8bb05
-  Name: Final call to Primeva Legation (Hamiltons leave game)
+  Id: 74255eac-5a7b-44d7-a6fc-43f3bd7436a0
+  Name: Deciding the fate of the Hamiltons
   SubInteraction: 0
   AlertNew: 1
-  Category: 2
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -25,19 +25,20 @@ MonoBehaviour:
     NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 360e63dcca70f2441b9de9e3e2b3c100, type: 2}
-    - {fileID: 11400000, guid: f219a71e67704c442bee6e1fbd4b228c, type: 2}
-    - {fileID: 11400000, guid: 2887c3eca10ed534cb23288e18e19451, type: 2}
-    - {fileID: 11400000, guid: 013f608a796d63144a804cc51288fda9, type: 2}
-    RequiredNotCompletedInteractions: []
+    - {fileID: 11400000, guid: 960c8fb190c1c794698e7d1742bdcd65, type: 2}
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: 384d5ea5d5a92d84cae2ebda26f8c547, type: 2}
+    - {fileID: 11400000, guid: cd72503215843f34ba4beaeb98cb2a10, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
-    RequiredNpcsControled: []
+    RequiredNpcsControled:
+    - {fileID: 11400000, guid: d248b00fc853b4845a5da195f269d404, type: 2}
+    - {fileID: 11400000, guid: 8d9f38aa47f1c4f48b97afffaa769f0d, type: 2}
     RequiredNpcsTrained: []
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 25
+    EgoCost: 0
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -47,37 +48,59 @@ MonoBehaviour:
     Items: []
   Repeatable: 0
   Cooldown: 0
-  PreviewEffect: 1
+  PreviewEffect: 0
   Result:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 11400000, guid: d248b00fc853b4845a5da195f269d404,
-        type: 2}
-      Text: 'NOTE: A short call is made, the only message conveyed being a residential
-        address.  The Hamiltons'' decision to "move'' was precipitated by a family
-        ''situation'' back in the UK, a short email explains afterwards.'
+      OptionalNpcReference: {fileID: 0}
+      Text: 'NOTE:  Now that you''ve gained control over the Hamilton family, you''re
+        free to decide their fate.  Their lives are in your hands.  You can do what
+        you like with them and you have three options.'
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 9ef55447bce818949932d5e32e92a35c,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.45
-        yPos: 0.36
-        width: 340
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 8300000, guid: 1adcbce5878371c4c92b404c3cd24473,
-        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 11400000, guid: d248b00fc853b4845a5da195f269d404,
-        type: 2}
-      Text: 'The prompt arrival of monies in your bank account from a Southwest Pacific
-        Trading Company is the only remaining evidence that they ever existed.  '
+      OptionalNpcReference: {fileID: 0}
+      Text: 'NOTE:  You may keep the status quo.  In exchange for allowing Gemma
+        Hamilton to remain at Artemis, you may continue enjoying her charms at the
+        office, as well as dropping by to enjoy what her teenage daughter has to
+        offer.  Owning a mother daughter team is a tempting option.'
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 9ef55447bce818949932d5e32e92a35c,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.45
-        yPos: 0.36
-        width: 340
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: 'NOTE:  You may sell them to Primevan agents.  It would be entirely legal,
+        according to Primevan law, and you''d pocket a nice amount!'
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 2
+      OptionalNpcReference: {fileID: 0}
+      Text: 'NOTE:  Finally, you may show mercy and allow the Hamiltons to simply
+        slip away.  It might feel good to perform a good deed and the Hamiltons surely
+        are in need of a white knight.  Those are the choices available to you.  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
@@ -85,7 +108,7 @@ MonoBehaviour:
     Effect:
       NpcEffects: []
       EgoEffect: 0
-      FundsEffect: 20000
+      FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
       CultureEffect: 0
@@ -95,9 +118,7 @@ MonoBehaviour:
       HornicalEffect: 0
       NpcsToControl: []
       NpcsToTrain: []
-      NpcsToRemoveFromGame:
-      - {fileID: 11400000, guid: d248b00fc853b4845a5da195f269d404, type: 2}
-      - {fileID: 11400000, guid: 8d9f38aa47f1c4f48b97afffaa769f0d, type: 2}
+      NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
       TrophiesRemoved: []
