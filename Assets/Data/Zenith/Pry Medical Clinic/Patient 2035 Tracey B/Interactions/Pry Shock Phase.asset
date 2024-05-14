@@ -14,11 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 1d3b9ed9-428e-4966-bf7d-62792d10ebed
   Name: Pry Shock Phase
+  SubInteraction: 0
+  AlertNew: 1
   Category: 5
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: b65f71ef28d328f47a2fb8cd6b80b9cb, type: 2}
@@ -37,8 +41,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -53,6 +58,8 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 688eee32fa3ac404ca925c42e0e17c55,
         type: 2}
@@ -64,6 +71,8 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 688eee32fa3ac404ca925c42e0e17c55,
         type: 2}
@@ -77,6 +86,8 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 688eee32fa3ac404ca925c42e0e17c55,
         type: 2}
@@ -88,6 +99,8 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 688eee32fa3ac404ca925c42e0e17c55,
         type: 2}
@@ -101,18 +114,26 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 300
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Typical patient response at this early stage
       Videos:
       - {fileID: 32900000, guid: 90c6efb6475989b449d52ed282235781, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: 3cd5240faba1e484eaeccc2e2cd47dc5, type: 3}
       Text: Nothing to be concerned about.  As the song goes, we've only  just begun!
+    Choices: []
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: 688eee32fa3ac404ca925c42e0e17c55,
           type: 2}
         AmbitionEffect: 0
         PrideEffect: -10
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -127,7 +148,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -135,11 +158,14 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -156,7 +182,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -164,4 +192,9 @@ MonoBehaviour:
       JewleryRing: 0
       JewleryWatch: 0
       Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
+  New: 1
+  FailCount: 0

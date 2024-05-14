@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 86c0076c-b6a2-41c1-9c37-953b6140275c
   Name: Bledsoe Check In
+  SubInteraction: 0
   AlertNew: 1
   Category: 5
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions: []
     RequiredNotCompletedInteractions: []
@@ -37,8 +40,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -55,6 +59,8 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.35
         width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 688eee32fa3ac404ca925c42e0e17c55,
         type: 2}
@@ -67,6 +73,8 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.35
         width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 688eee32fa3ac404ca925c42e0e17c55,
         type: 2}
@@ -81,6 +89,8 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.35
         width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 688eee32fa3ac404ca925c42e0e17c55,
         type: 2}
@@ -92,6 +102,8 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.35
         width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: 688eee32fa3ac404ca925c42e0e17c55,
         type: 2}
@@ -107,6 +119,8 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.35
         width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: 688eee32fa3ac404ca925c42e0e17c55,
         type: 2}
@@ -119,13 +133,18 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.35
         width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: She knows you are responsible for...
       Videos:
       - {fileID: 32900000, guid: 91b0bec510cddfa42987f73e033117c8, type: 3}
-      Texture: {fileID: 0}
+      Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: 814c34a953d7f0b43849c1937d974eab, type: 3}
       Text: ...her current situation.  Too bad there's nothing she can do with the
         knowledge!
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -142,7 +161,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -151,11 +172,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -172,7 +195,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -181,5 +206,8 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
+  FailCount: 0
