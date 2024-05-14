@@ -23,11 +23,7 @@ MonoBehaviour:
     RequiredTurnNumber: 0
     NotOnWeekends: 0
     NotOnWeekdays: 0
-    NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
-      Stat: 0
-      Is: 0
-      Value: 0
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: cd72503215843f34ba4beaeb98cb2a10, type: 2}
     RequiredNotCompletedInteractions: []
@@ -52,7 +48,8 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: There's a foreign gentleman for you.  A Commissioner Kabemba from some
         place called... Primeva?
       CustomNpcImageOptions: []
@@ -65,7 +62,8 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: Hello.
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: 43aa270c38007da40a0aa0f53a0153a9, type: 3}
@@ -78,7 +76,8 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: 'How may I help you, Commissioner?  I don''t believe we do business in
         Primeva.  '
       CustomNpcImageOptions:
@@ -92,7 +91,8 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: I'm not a Commercial Attache.  I'm with the Sponsorship Registry Authority. 
         We handle domestic assignments for Minions.  I'm only clear to reconcile
         our book keeping.  It appears you were responsible for reporting the whereabouts
@@ -108,7 +108,8 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: Yes, I did.  Why are you here?  I thought you had... retrieved the Hamiltons.
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: 43aa270c38007da40a0aa0f53a0153a9, type: 3}
@@ -121,8 +122,9 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
-      Text: Oh, yes!  They've already been distributed!  Liek I say, I'm here to
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: Oh, yes!  They've already been distributed!  Like I say, I'm here to
         reconcile accounts.  The President is a stickler for transparency and any
         hint of fiduciary malfeasance is--
       CustomNpcImageOptions:
@@ -136,7 +138,8 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: Please, Commissioner Kabemba-- why are you here?
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: 43aa270c38007da40a0aa0f53a0153a9, type: 3}
@@ -149,7 +152,8 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: 'Your bounty-- taxes were applied to it that didn''t apply as you are
         not a Primevan citizen.  You''re owed an additional $2,000.  '
       CustomNpcImageOptions:
@@ -163,10 +167,11 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: 'NOTE:  You sign an official receipt and the cash is handed over.  It
-        is small compensation for the news he shares on departure of the two women. 
-        -35 EGO  '
+        is small compensation for the news he shares regarding the current disposition
+        of the two Hamilton women.  -35 EGO  '
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: 43aa270c38007da40a0aa0f53a0153a9, type: 3}
       CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
@@ -183,8 +188,8 @@ MonoBehaviour:
       - {fileID: 32900000, guid: da60c5e3a0ca2ef439e91939e0da6eec, type: 3}
       Textures: []
       DialogClips: []
-      Text: ...to an officer's brothel.  The mother was shot trying to escape.  Again,
-        thanks for your cooperation!"
+      Text: ...to an officer's brothel.  The mother was shot while trying to escape. 
+        Again, thanks for your cooperation.  Good day, Mr. {LastName}!"
     Choices: []
     Effect:
       NpcEffects: []

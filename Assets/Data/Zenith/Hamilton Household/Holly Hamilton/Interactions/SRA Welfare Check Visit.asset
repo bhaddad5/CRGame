@@ -26,6 +26,7 @@ MonoBehaviour:
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: e9804d9e59eee2946ac86eaf633dfe50, type: 2}
+    - {fileID: 11400000, guid: c24cf826b224fba438cb87f3c754cfa1, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -48,15 +49,17 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 8d9f38aa47f1c4f48b97afffaa769f0d,
+        type: 2}
       Text: 'NOTE:  Your agreement to pimp Holly out occaisionally to visiting Primevan
         dignitaries is a profitable little money spinner. '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 85b8dd32509540d4faf282e6b4772bff,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.6
+        yPos: 0.35
+        width: 300
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
