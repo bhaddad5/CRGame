@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: ee61ccd6-cb7c-4d7b-b0bc-4e219db01b19
   Name: Call to Dr. Feng
+  SubInteraction: 0
   AlertNew: 1
   Category: 5
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 89b17aaf10fb1814297f3c6fc826a206, type: 2}
@@ -38,9 +41,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
-    Items: 
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -63,7 +66,7 @@ MonoBehaviour:
         type: 2}
       Text: 'While attentive, her attitude has always seemed more obligatory than
         engaged.  Recently, she''s been more enthusiastic when I''ve called her in
-        for some secretarial stress relief! '
+        for some executive stress relief! '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
         type: 3}
@@ -76,11 +79,12 @@ MonoBehaviour:
     OptionalPopups:
     - Title: Debbie's professional facade...
       Videos:
-      - {fileID: 32900000, guid: 89deea0a69523f747ae1b2032ef8a520, type: 3}
+      - {fileID: 32900000, guid: 8087b504b045c7948957b0a467da0ba6, type: 3}
       Textures: []
       DialogClips:
       - {fileID: 8300000, guid: 6f3e0a1a6fe695041943da31579123d8, type: 3}
       Text: ...has begun to slip.  She's less inhibited than before.
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -97,9 +101,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -108,11 +112,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -129,9 +135,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
-      ItemsToAdd: 
-      ItemsToRemove: 
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -140,5 +146,8 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
+  FailCount: 0
