@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Junior Prom Photo
+  m_Name: Nothing new here
   m_EditorClassIdentifier: 
-  Id: 27a7bbfd-8069-4e3b-8565-d0acea65b9b8
-  Name: Junior Prom Photo
+  Id: 7513ffa6-396b-4bc0-b028-9a309fe0b61a
+  Name: Nothing new here
   SubInteraction: 1
   AlertNew: 0
   Category: 7
@@ -41,18 +41,23 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 1
+  Repeatable: 0
   Cooldown: 0
-  PreviewEffect: 1
+  PreviewEffect: 0
   Result:
-    Dialogs: []
-    OptionalPopups:
-    - Title: "You can tell right away\u2026"
-      Videos: []
-      Textures:
-      - {fileID: 2800000, guid: 75093ca3ce37b2b49b1aed3c22db7ba9, type: 3}
-      DialogClips: []
-      Text: "\u2026that the prom night did NOT go the way her dorky date had hoped!"
+    Dialogs:
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: There's nothing new here to see.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups: []
     Choices: []
     Effect:
       NpcEffects: []
