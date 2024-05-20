@@ -58,7 +58,8 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 300
-      OptionalAudioClip: {fileID: 0}
+      OptionalAudioClip: {fileID: 8300000, guid: b393bbf40e74bf5498872e5cdba1d52d,
+        type: 3}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Spontaneity is part of training...
@@ -69,7 +70,8 @@ MonoBehaviour:
       - {fileID: 32900000, guid: 2804f496cbe11b64da475769902bb225, type: 3}
       - {fileID: 32900000, guid: a169593f4dc5423409bacdc0bce43b1a, type: 3}
       Textures: []
-      DialogClips: []
+      DialogClips:
+      - {fileID: 8300000, guid: f5d6d9e52f8baff4a952c7d76f1b1c66, type: 3}
       Text: '...your trophy wife.  Whether it is first thing in the morning or right
         before you''re ready to attend a formal party, training Tracey to blow you
         on command is crucial.  Her mood or level of motivation is totally irrelevant! 
@@ -81,6 +83,9 @@ MonoBehaviour:
           type: 2}
         AmbitionEffect: 0
         PrideEffect: -5
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 15
       FundsEffect: 0
       PowerEffect: 0
@@ -95,6 +100,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -128,6 +134,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -142,3 +149,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0
