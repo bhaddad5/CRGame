@@ -60,9 +60,9 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 300
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 8300000, guid: f6f1bb6f53955bb48a82163279266a68,
+      OptionalAudioClip: {fileID: 8300000, guid: 0cd20dbe45abfac49babe5359296cb92,
         type: 3}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: 8dff1f07f4971ef4a8c33a3e95657c17,
         type: 2}
@@ -74,31 +74,34 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 300
-      OptionalAudioClip: {fileID: 0}
+      OptionalAudioClip: {fileID: 8300000, guid: 1a588747976ed6a4da73cb1a562cd470,
+        type: 3}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: As Tracey winks and leaves...
       Videos: []
       Textures:
       - {fileID: 2800000, guid: 2f72b33b34ffdda41b5694685f8034bd, type: 3}
-      DialogClips: []
+      DialogClips:
+      - {fileID: 8300000, guid: 84dcc66921e51fb44951496d881e63c5, type: 3}
       Text: ...Mackenzie hands you a card.
     - Title: '"Daddy?  Step-mother told me...'
       Videos:
       - {fileID: 32900000, guid: f46d372873736504ca00b1766896220e, type: 3}
       Textures: []
-      DialogClips: []
+      DialogClips:
+      - {fileID: 8300000, guid: cbc46018d958a054bbde5c23a71a4928, type: 3}
       Text: ...to remind you that the age of consent is..."
     - Title: It is all you need.
       Videos:
       - {fileID: 32900000, guid: d0703504b8fccd34386e105140858e56, type: 3}
       Textures: []
       DialogClips:
-      - {fileID: 8300000, guid: 5a763ad0c844dd54bbc0ea5bba3c0849, type: 3}
+      - {fileID: 8300000, guid: 6e81e0234d9c62749afb8e526493da88, type: 3}
       Text: 'As you claim this prize, you are as pleased with the cooperation of
-        your trophy wife as you are with the submission of the now deflowered teenage
+        your trophy wife as you are with the submission of the now ensnared teenage
         daughter of your defeated rival.  Jennifer Page''s precious daughter is now
-        just your teen sex slave.  It is a sublime kind of pleasure that is fleeting. '
+        just your teen sex toy.  It is a sublime kind of pleasure that is fleeting. '
     Choices: []
     Effect:
       NpcEffects: []
@@ -116,6 +119,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -149,6 +153,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -163,3 +168,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0
