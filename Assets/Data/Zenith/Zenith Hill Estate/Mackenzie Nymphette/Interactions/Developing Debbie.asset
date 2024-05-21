@@ -16,7 +16,7 @@ MonoBehaviour:
   Name: Developing Debbie
   SubInteraction: 0
   AlertNew: 1
-  Category: 0
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -24,7 +24,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: f8ace190893919947bc7b9d8c8933a74, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -47,7 +48,8 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 4d7bbd9e5d8ecee4dbaec1cb452fe01e,
+        type: 2}
       Text: Daddy, may I have a moment?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: ad3c89833c80af24abf8d5a2a864c72e,
@@ -59,7 +61,8 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 4d7bbd9e5d8ecee4dbaec1cb452fe01e,
+        type: 2}
       Text: You may.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: ad3c89833c80af24abf8d5a2a864c72e,
@@ -71,7 +74,8 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 4d7bbd9e5d8ecee4dbaec1cb452fe01e,
+        type: 2}
       Text: "I know how much Debbie has disappointed you.  She should be so happy
         to be married to you but instead she\u2019s behaving like such an ingrate!"
       CustomNpcImageOptions: []
@@ -84,7 +88,8 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 4d7bbd9e5d8ecee4dbaec1cb452fe01e,
+        type: 2}
       Text: Mackenzie, remember that Debbie IS your step mother.
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: ad3c89833c80af24abf8d5a2a864c72e,
@@ -96,7 +101,8 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 4d7bbd9e5d8ecee4dbaec1cb452fe01e,
+        type: 2}
       Text: "Which is why she should be setting a better example for me\u2014 right,
         Daddy?  I try to be the Princess you want.  Shouldn\u2019t Debbie be the
         Queen you deserve?"
@@ -110,7 +116,8 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 4d7bbd9e5d8ecee4dbaec1cb452fe01e,
+        type: 2}
       Text: True.  When did you get so clever?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: ad3c89833c80af24abf8d5a2a864c72e,
@@ -122,7 +129,8 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 4d7bbd9e5d8ecee4dbaec1cb452fe01e,
+        type: 2}
       Text: "Daddy, I\u2019ve always been clever and what I\u2019ve learned, I\u2019ve
         HAD to learn.  As for my lazy, selfish step mother\u2026 well.  I thought
         you might like to see this.  "
@@ -136,22 +144,11 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 4d7bbd9e5d8ecee4dbaec1cb452fe01e,
+        type: 2}
       Text: "Daddy, I\u2019ve always been clever and what I\u2019ve learned, I\u2019ve
         HAD to learn.  As for my lazy, selfish step mother\u2026 well.  I thought
         you might like to see this.  "
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: ad3c89833c80af24abf8d5a2a864c72e,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 400
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
-      Text: "NOTE:  Mackenzie\u2019s brought home a brochure from her school.  "
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: ad3c89833c80af24abf8d5a2a864c72e,
         type: 3}

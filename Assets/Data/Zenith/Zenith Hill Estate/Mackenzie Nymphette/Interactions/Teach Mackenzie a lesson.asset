@@ -78,7 +78,21 @@ MonoBehaviour:
       Text: You both know you're punishing her simply because you can!
     Choices: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: 4d7bbd9e5d8ecee4dbaec1cb452fe01e,
+          type: 2}
+        AmbitionEffect: 0
+        PrideEffect: -5
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
+      - OptionalNpcReference: {fileID: 11400000, guid: b78f3845998fdef498a2e6c9fc60efb4,
+          type: 2}
+        AmbitionEffect: 0
+        PrideEffect: 1
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 7
       FundsEffect: 0
       PowerEffect: 0

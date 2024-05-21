@@ -23,12 +23,7 @@ MonoBehaviour:
     RequiredTurnNumber: 0
     NotOnWeekends: 0
     NotOnWeekdays: 1
-    NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 11400000, guid: 4d7bbd9e5d8ecee4dbaec1cb452fe01e,
-        type: 2}
-      Stat: 1
-      Is: 2
-      Value: 10
+    NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 3bd6e9b2b1d253f42950e2ab4d7fed45, type: 2}
     RequiredNotCompletedInteractions: []
@@ -47,9 +42,9 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 0
-  Cooldown: 0
-  PreviewEffect: 0
+  Repeatable: 1
+  Cooldown: 14
+  PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 2
@@ -71,14 +66,38 @@ MonoBehaviour:
     - Title: I suppose I should be grateful.
       Videos:
       - {fileID: 32900000, guid: 4423399f99aea164ea17ddef87e5729b, type: 3}
+      - {fileID: 32900000, guid: 643bc63ca6a739447bea1ff2f0ea73f9, type: 3}
+      - {fileID: 32900000, guid: a297df8916e4d4b4dafee9b87918be35, type: 3}
+      - {fileID: 32900000, guid: cab3511d26aaf374f862b975397e37ee, type: 3}
+      - {fileID: 32900000, guid: b07a42fac5eff3d43adf6eec8b64cecd, type: 3}
+      - {fileID: 32900000, guid: 0f6b3c59f0f45d846a6d633e441723a1, type: 3}
+      - {fileID: 32900000, guid: 948c3bd0b92bfb74782808a3d1cf6fbb, type: 3}
+      - {fileID: 32900000, guid: f2d1fbb70f340a042adc99024f2de2f9, type: 3}
+      - {fileID: 32900000, guid: 979c5e040cfcb9644a0a8664e4918b55, type: 3}
+      - {fileID: 32900000, guid: 4423399f99aea164ea17ddef87e5729b, type: 3}
       Textures: []
       DialogClips:
       - {fileID: 8300000, guid: fc021e12f2d7c97429e039cbf49fded2, type: 3}
+      - {fileID: 8300000, guid: c7623daae01b6f24ab7a8a9c0e67fb80, type: 3}
+      - {fileID: 8300000, guid: 070fc96e552d5bf4199ec873f8f8bed0, type: 3}
+      - {fileID: 8300000, guid: 757484a521b45024dbdd070f6745088b, type: 3}
+      - {fileID: 8300000, guid: 769fb50c24b915c4f9eebecbcc4960da, type: 3}
+      - {fileID: 8300000, guid: 69e5bf2fa7dabe54d93c04e33d8e9da1, type: 3}
+      - {fileID: 8300000, guid: dcd13d9daa963094fa0b06fbc3ffc61b, type: 3}
+      - {fileID: 8300000, guid: b91ad262198df704eb80e99f885fc840, type: 3}
+      - {fileID: 8300000, guid: 61f2a4f8d8884ca47b211a0b9c699662, type: 3}
       Text: A lot of my school friends have really old and gross sponsors.  Some
         even have old biddies who have sponsored 'em!  Isn't that disgusting?  Right?
     Choices: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: 4d7bbd9e5d8ecee4dbaec1cb452fe01e,
+          type: 2}
+        AmbitionEffect: -4
+        PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 6
       FundsEffect: 0
       PowerEffect: 0

@@ -42,20 +42,22 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 1
-  Cooldown: 5
+  Cooldown: 7
   PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
-      Text: 'NOTE: As soon as she thinks she''s above, that''s the PERFECT time to
-        remind Mackenzie what happens to steppies who disappoint their Daddies! '
+      OptionalNpcReference: {fileID: 11400000, guid: 4d7bbd9e5d8ecee4dbaec1cb452fe01e,
+        type: 2}
+      Text: 'NOTE: As soon as she thinks she''s above it all, that''s the PERFECT
+        time to remind Mackenzie what happens to steppies who disappoint their Daddies! '
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 26af887ce2611244e8504d6437577c96,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.4
+        width: 300
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
@@ -84,7 +86,14 @@ MonoBehaviour:
       Text: ...needs constant reminders to keep her in line!
     Choices: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: 4d7bbd9e5d8ecee4dbaec1cb452fe01e,
+          type: 2}
+        AmbitionEffect: 0
+        PrideEffect: -5
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
