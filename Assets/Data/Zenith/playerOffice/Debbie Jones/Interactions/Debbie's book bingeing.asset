@@ -72,7 +72,7 @@ MonoBehaviour:
       Text: 'Yes I am!  Um, well, like I said before, it''s all just so silly.  But
         it''s not as bad as I first thought.  The boss in the story-- he''s just
         so infuriating!  He treats the heroine so badly-- and she just seems to take
-        it like a floor mat!  He even spanks her-- do you believe it?  '
+        it like a door mat!  He even spanks her-- do you believe it?  '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
         type: 3}
@@ -80,7 +80,8 @@ MonoBehaviour:
         xPos: 0.52
         yPos: 0.42
         width: 375
-      OptionalAudioClip: {fileID: 0}
+      OptionalAudioClip: {fileID: 8300000, guid: b5482bbdd8eea354e8ea26526ba8186a,
+        type: 3}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
@@ -139,7 +140,8 @@ MonoBehaviour:
       Videos:
       - {fileID: 32900000, guid: 71323ef38a49dc844afb2bf12c48632c, type: 3}
       Textures: []
-      DialogClips: []
+      DialogClips:
+      - {fileID: 8300000, guid: 09a1715eed1456e4e8e25299f2c3367f, type: 3}
       Text: "AGATHA DATA TRANSMISSION... \nSUBJECT'S CURRENT CONTENT AVERSION/AROUSAL
         RATIO: 94/91"
     Choices: []
@@ -206,6 +208,6 @@ MonoBehaviour:
       Home: 0
     GoToRegion: {fileID: 0}
   Completed: 0
-  TurnCompletedOn: 2095
-  New: 0
+  TurnCompletedOn: -1
+  New: 1
   FailCount: 0
