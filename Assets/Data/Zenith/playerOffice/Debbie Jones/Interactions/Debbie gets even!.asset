@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Reward for Miss Teen Spirit
+  m_Name: Debbie gets even!
   m_EditorClassIdentifier: 
-  Id: 29af8e61-5920-48fb-8b7b-d043006e7e32
-  Name: Reward for Miss Teen Spirit
+  Id: c0cf3504-4151-495e-90ef-5ab8072952a8
+  Name: Debbie gets even!
   SubInteraction: 0
   AlertNew: 1
-  Category: 6
+  Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -25,7 +25,7 @@ MonoBehaviour:
     NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 3d1b3cf16e11527439a7bd92d2373d3e, type: 2}
+    - {fileID: 11400000, guid: 540db4d9047907a4aaab63c012e51e7c, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -35,7 +35,7 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 50
+    MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -47,58 +47,93 @@ MonoBehaviour:
   PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: b78f3845998fdef498a2e6c9fc60efb4,
-        type: 2}
-      Text: Daddy, no!  Not those!  They're so... naughty!
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Don't you seem especially chipper today!  Why are you is such a good
+        mood?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 0e6402f5c5dd12641ae4a04c6591f9a0,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.6
-        yPos: 0.4
-        width: 350
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 5e669a1c0e002604c952078aa61bea6d,
-        type: 2}
-      Text: 'It''s fine, Mackenzie.  Lots of girl your age start experimenting with
-        g strings.  Shall I ring it up?  '
+      OptionalNpcReference: {fileID: 0}
+      Text: Just happy to be working for you, Sir!  Sounds like Miranda's settling
+        in nicely in Singapore?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 0e6402f5c5dd12641ae4a04c6591f9a0,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.6
-        yPos: 0.4
-        width: 350
-      OptionalAudioClip: {fileID: 0}
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 8300000, guid: 3c6e9aa9721d2654ebe14233e46bdf9e,
+        type: 3}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 5e669a1c0e002604c952078aa61bea6d,
-        type: 2}
-      Text: Yes, that's the one!
+      OptionalNpcReference: {fileID: 0}
+      Text: Yes.  You certainly earned your referral bonus.  Thank you for introducing
+        Miranda into our corporate family.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 0e6402f5c5dd12641ae4a04c6591f9a0,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.6
-        yPos: 0.4
-        width: 350
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: 'Oh, it was entirely my pleasure, Mr. {LastName}.  Miranda really derserved
+        the opportunity.  Thank you for my referral! '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 8300000, guid: eb401e6ba328e4f47aab4c55c73b19f7,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Best fifty dollars I ever spent.  Back to work now, Debbie.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: Mackenzie feels shame...
-      Videos: []
-      Textures:
-      - {fileID: 2800000, guid: 48aef9c3e859f864387edebc40d8005d, type: 3}
+    - Title: Yes, Sir!
+      Videos:
+      - {fileID: 32900000, guid: c9d8a66ad7368fe44859fcc1deb524ec, type: 3}
+      Textures: []
       DialogClips:
-      - {fileID: 8300000, guid: d2a23ebaea77be443bb10168ec66afa9, type: 3}
-      Text: ...when the truth of your relationship is shared publicly.
+      - {fileID: 8300000, guid: 391c75cee22418d49bd6a294de99a692, type: 3}
+      Text: After thinking about it, I much prefer working for you in Zenith!
+    - Title: Debbie's delighted...
+      Videos:
+      - {fileID: 32900000, guid: 892c7e4900b8bd6428c523f6cc765e3c, type: 3}
+      Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: fbd13f18735f4634192fadbf428a3f31, type: 3}
+      Text: ...at having finally enacted revenge on her old college roommate!
     Choices: []
     Effect:
-      NpcEffects: []
-      EgoEffect: 15
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+          type: 2}
+        AmbitionEffect: 0
+        PrideEffect: 3
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
+      EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0

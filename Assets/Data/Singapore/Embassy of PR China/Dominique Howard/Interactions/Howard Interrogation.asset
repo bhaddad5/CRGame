@@ -65,7 +65,8 @@ MonoBehaviour:
       OptionalNpcReference: {fileID: 11400000, guid: fee1437fca3985949a321466a6bd1145,
         type: 2}
       Text: I'm not a traitor!
-      CustomNpcImageOptions: []
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: cfed62c4b4633804fb672779dba5a5c2, type: 3}
       CustomBackground: {fileID: 2800000, guid: e3607a3d74dc15240a397a81d11a133c,
         type: 3}
       CustomBackgroundNpcLayout:
@@ -137,6 +138,9 @@ MonoBehaviour:
           type: 2}
         AmbitionEffect: -20
         PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -151,6 +155,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -184,6 +189,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -198,3 +204,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0
