@@ -61,7 +61,8 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 300
-      OptionalAudioClip: {fileID: 0}
+      OptionalAudioClip: {fileID: 8300000, guid: bbabf6bf627938f40ba832b94682dc13,
+        type: 3}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: d6893d3d1ae90dc4699580eb2d4b4f1a,
@@ -90,14 +91,16 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 300
-      OptionalAudioClip: {fileID: 0}
+      OptionalAudioClip: {fileID: 8300000, guid: 39bfc698d475a4146aca72a417f5a5c3,
+        type: 3}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: Tracey tries her best...
       Videos:
       - {fileID: 32900000, guid: 8b1e85a98d15fda4c9e0885f8fc32e07, type: 3}
       Textures: []
-      DialogClips: []
+      DialogClips:
+      - {fileID: 8300000, guid: e4f3b98e09cff214ab9e00099bdce687, type: 3}
       Text: ...to tease you.  Despite her attempts to seduce you, you refrain.  She
         hasn't come close to earning that kind of attention yet!
     Choices: []
@@ -117,6 +120,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -150,6 +154,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -164,3 +169,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0
