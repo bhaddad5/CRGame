@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Katie Jones Orientation
+  m_Name: Solar Eclipse Charter
   m_EditorClassIdentifier: 
-  Id: 564ba375-73df-4688-a598-cf0912ca36e5
-  Name: Katie Jones Orientation
+  Id: d8b92670-1f12-4d84-a5fd-1d6d1270071b
+  Name: Solar Eclipse Charter
   SubInteraction: 0
   AlertNew: 1
-  Category: 1
+  Category: 6
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -34,7 +34,7 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 0
+    MoneyCost: 50000
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -43,56 +43,13 @@ MonoBehaviour:
     Items: []
   Repeatable: 0
   Cooldown: 0
-  PreviewEffect: 1
+  PreviewEffect: 0
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
-        type: 2}
-      Text: So, a new girl for the Pool, Mr. {LastName}?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
-        type: 2}
-      Text: Yes.  I'm pleased to hand Katie over to you, Lexi.  She's been hired
-        as a Junior Office Girl on a Probationary Basis.  I want her assigned to
-        my office, to handle my secretary's overflow.  When she's not attending to
-        the overflow, you may use her as you see fit.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
-        type: 2}
-      Text: Debbie must be delighted to have a girl do her scutwork!  Yes, I look
-        forward to knocking Katie into shape.  She's so pretty-- you can see the
-        resemblance.  I assume that's why she's been hired, Mr. {LastName}?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
-      CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 6a3d4b7816d4dd24ab8130b1b9178c47,
-        type: 2}
-      Text: 'That''s my affair but... yes, you could say I have collected the complete
-        Jones Sisters bookend set now.  Katie, you''re to do as Miss Lexi tells you. 
-        You do NOT want to cross your new supervisor.  Do you understand?  '
+      OptionalNpcReference: {fileID: 0}
+      Text: It's a once in a lifetime opportunity to watch a full solar eclipse! 
+        The charter flight will follow the eclipse as it transits the meridian...
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
@@ -102,18 +59,16 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: Katie is still recovering...
+    - Title: It is a brief, but awe inspiring moment...
       Videos:
-      - {fileID: 32900000, guid: 1583df1d15bbb7f4c81fb3c2ca6cbdb7, type: 3}
+      - {fileID: 32900000, guid: 162c01b38a608664fa4d4fb3e61ac883, type: 3}
       Textures: []
-      DialogClips:
-      - {fileID: 8300000, guid: 0858bfb603e1e3b438c8fd911ca97451, type: 3}
-      Text: ...her balance.  The sudden change in her life plans have confused her
-        but she's clever enough to know when it is best to go along to get along!
+      DialogClips: []
+      Text: ...you will never forget!
     Choices: []
     Effect:
       NpcEffects: []
-      EgoEffect: 0
+      EgoEffect: 200
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
