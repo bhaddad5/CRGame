@@ -114,7 +114,8 @@ MonoBehaviour:
       Videos: []
       Textures:
       - {fileID: 2800000, guid: d7257d471fb189c4083621eadfcee630, type: 3}
-      DialogClips: []
+      DialogClips:
+      - {fileID: 8300000, guid: bf0c7b16479255d44865bd1169ea996b, type: 3}
       Text: When she behaves herself and earns some attention, the key will get some
         use.  Until then, she'll have to grow accustomed to privation and learn to
         appreciate the virtue of patience!
@@ -125,6 +126,9 @@ MonoBehaviour:
           type: 2}
         AmbitionEffect: 0
         PrideEffect: -5
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -140,6 +144,7 @@ MonoBehaviour:
       LocationsToControl: []
       TrophiesClaimedReferences:
       - {fileID: 11400000, guid: 7551c4d7ddb23c348934fa294e5ee47f, type: 2}
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -173,6 +178,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -187,3 +193,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0

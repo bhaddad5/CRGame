@@ -94,7 +94,8 @@ MonoBehaviour:
       OptionalNpcReference: {fileID: 11400000, guid: 7a7caa08786bd91498605c6b78933ce1,
         type: 2}
       Text: Yes. There is problem?
-      CustomNpcImageOptions: []
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 2a06abe5c127da24f8fa38dbd133d09d, type: 3}
       CustomBackground: {fileID: 2800000, guid: cfb7623fd11365945929e2e4093b29da,
         type: 3}
       CustomBackgroundNpcLayout:
@@ -123,7 +124,8 @@ MonoBehaviour:
       OptionalNpcReference: {fileID: 11400000, guid: 7a7caa08786bd91498605c6b78933ce1,
         type: 2}
       Text: The red line there?  Yes, yes-- I go!
-      CustomNpcImageOptions: []
+      CustomNpcImageOptions:
+      - {fileID: 2800000, guid: 2a06abe5c127da24f8fa38dbd133d09d, type: 3}
       CustomBackground: {fileID: 2800000, guid: cfb7623fd11365945929e2e4093b29da,
         type: 3}
       CustomBackgroundNpcLayout:
@@ -184,6 +186,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -217,6 +220,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -231,3 +235,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0

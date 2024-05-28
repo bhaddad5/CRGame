@@ -48,28 +48,30 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: b493d84688f3b5d4eb63cace30e407ed,
+        type: 2}
       Text: 'Mr. {LastName}?  Miss Clara mentioned you were in London for business. 
         Would you be interested in a copy of the latest business magazine? '
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: dd10738303803ac41ad0a260c1ad8878,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: b493d84688f3b5d4eb63cace30e407ed,
+        type: 2}
       Text: What a fine idea!  Yes, that would be fine, Jeevsie!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: dd10738303803ac41ad0a260c1ad8878,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 450
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
@@ -96,6 +98,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -129,6 +132,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -143,3 +147,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0
