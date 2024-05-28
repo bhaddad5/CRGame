@@ -172,7 +172,18 @@ MonoBehaviour:
         and now very domesticated-- Deirdre.
     Choices: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: 8468daf25d821974a8b3b9c729b1d180,
+          type: 2}
+        AmbitionEffect: 0
+        PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd:
+        - {fileID: 11400000, guid: 41fa1160bd1ed0b47a019ba7aec137b9, type: 2}
+        ImageSetsToRemove:
+        - {fileID: 11400000, guid: 9586397a14406694badc049541909633, type: 2}
+        - {fileID: 11400000, guid: bb5cf863b2825684083b87c43908048e, type: 2}
+        - {fileID: 11400000, guid: 85dab72241a24d8488f4de4b5d348c12, type: 2}
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -184,8 +195,7 @@ MonoBehaviour:
       HornicalEffect: 0
       NpcsToControl: []
       NpcsToTrain: []
-      NpcsToRemoveFromGame:
-      - {fileID: 11400000, guid: 8468daf25d821974a8b3b9c729b1d180, type: 2}
+      NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
       TrophiesRemoved: []
