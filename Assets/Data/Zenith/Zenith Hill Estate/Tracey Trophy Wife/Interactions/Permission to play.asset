@@ -58,7 +58,8 @@ MonoBehaviour:
         xPos: 0.5
         yPos: 0.4
         width: 300
-      OptionalAudioClip: {fileID: 0}
+      OptionalAudioClip: {fileID: 8300000, guid: adc803e6e01442b4cb58e552581890b2,
+        type: 3}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: d6893d3d1ae90dc4699580eb2d4b4f1a,
@@ -80,7 +81,10 @@ MonoBehaviour:
       - {fileID: 32900000, guid: b549f42824ed3394ca7bee3aaf550789, type: 3}
       - {fileID: 32900000, guid: bb0c0dabc7c66514cb9ffdac92d3d843, type: 3}
       Textures: []
-      DialogClips: []
+      DialogClips:
+      - {fileID: 8300000, guid: 47d97588ab7e6e048b1c1e976c497e73, type: 3}
+      - {fileID: 8300000, guid: 6edecd7ca8a500b49ab1029c58bdf4e5, type: 3}
+      - {fileID: 8300000, guid: de86e2713cc8d404e87dfef82192bb7c, type: 3}
       Text: ...which makes these sessions all the more enjoyable.
     Choices: []
     Effect:
@@ -99,6 +103,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -132,6 +137,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -146,3 +152,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0
