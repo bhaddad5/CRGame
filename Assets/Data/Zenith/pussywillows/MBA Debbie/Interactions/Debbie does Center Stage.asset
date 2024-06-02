@@ -24,7 +24,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
+    - OptionalNpcReference: {fileID: 11400000, guid: 25a39b39806339b4bb4cef325ae8999f,
+        type: 2}
       Stat: 0
       Is: 0
       Value: 40
@@ -51,16 +52,18 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 25a39b39806339b4bb4cef325ae8999f,
+        type: 2}
       Text: Earning a spot on the Center Stage earns Debbie both more attention and
         more money!  It also means she's starting to attract regulars who like watching
         a nice 'professional' girl forced to strip for them!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 247adf15d0884854c9e020b8c8b4bb90,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 275
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
@@ -71,13 +74,18 @@ MonoBehaviour:
       - {fileID: 32900000, guid: 568250f68d78318449d377a798d28152, type: 3}
       - {fileID: 32900000, guid: 89feb7b9aa14a9b499e87be1f6b8ff7b, type: 3}
       Textures: []
-      DialogClips: []
+      DialogClips:
+      - {fileID: 8300000, guid: 88a32a7609ac3c64287229c2a4dca985, type: 3}
+      - {fileID: 8300000, guid: 5bdebb5af71de2141b326470b64460da, type: 3}
+      - {fileID: 8300000, guid: 144813d7a4b20cd4aa18ed24a53ef2e8, type: 3}
+      - {fileID: 8300000, guid: e2cdc047292c0de4b9cca745e1df7a4e, type: 3}
       Text: ...the more she reveals, the more money she earns and the sooner she'll
         be out of debt!
     Choices: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 25a39b39806339b4bb4cef325ae8999f,
+          type: 2}
         AmbitionEffect: -3
         PrideEffect: -3
         RemoveCurrentImage: 0

@@ -24,7 +24,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
+    - OptionalNpcReference: {fileID: 11400000, guid: 25a39b39806339b4bb4cef325ae8999f,
+        type: 2}
       Stat: 0
       Is: 0
       Value: 10
@@ -51,16 +52,18 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 25a39b39806339b4bb4cef325ae8999f,
+        type: 2}
       Text: As one of the club's star performers, Debbie has her own dressing room. 
         Unlike the rest of the onlookers, when one of Debbie's acts winds you up,
         you can do something about it!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 247adf15d0884854c9e020b8c8b4bb90,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 275
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
@@ -71,7 +74,11 @@ MonoBehaviour:
       - {fileID: 32900000, guid: 5ce3da57b318d0b418331307c99c86c2, type: 3}
       - {fileID: 32900000, guid: 7aa88156e4a13e843a2aeb8ad8c82743, type: 3}
       Textures: []
-      DialogClips: []
+      DialogClips:
+      - {fileID: 8300000, guid: 6eb86710af3cb2847a5eb50fb6bbe651, type: 3}
+      - {fileID: 8300000, guid: 7bc44e491ac0d6e4c8f620eec3c396c5, type: 3}
+      - {fileID: 8300000, guid: 1be98aa23b1e1f342865fecfcb76b167, type: 3}
+      - {fileID: 8300000, guid: f84c1097a40e0394f8374bd45e4560d7, type: 3}
       Text: ...and you don't need to pay.  It is understand that when Debbie's boss
         visits her dressing room, she won't be available for that shift!
     Choices: []

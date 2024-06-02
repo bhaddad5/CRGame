@@ -24,7 +24,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements:
-    - OptionalNpcReference: {fileID: 0}
+    - OptionalNpcReference: {fileID: 11400000, guid: 25a39b39806339b4bb4cef325ae8999f,
+        type: 2}
       Stat: 0
       Is: 0
       Value: 20
@@ -51,17 +52,19 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 25a39b39806339b4bb4cef325ae8999f,
+        type: 2}
       Text: The VIP Room girls are reserved for the club's biggest 'high rollers'-
         the elite of Zenith.  Debbie's sometimes even forced to interact with powerful
         men she has encountered in her day job-- not to mention alums of the Business
         School she earned her MBA at!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 247adf15d0884854c9e020b8c8b4bb90,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.3
+        width: 275
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
@@ -72,14 +75,19 @@ MonoBehaviour:
       - {fileID: 32900000, guid: 1f3ec47e27d72b549b6f7bf22b0745da, type: 3}
       - {fileID: 32900000, guid: 98712a16a5d268b4cb6e4828daadcc8c, type: 3}
       Textures: []
-      DialogClips: []
+      DialogClips:
+      - {fileID: 8300000, guid: 0f9747985ff3e294a853af8bed8b2372, type: 3}
+      - {fileID: 8300000, guid: 4e2a896fc822e014c91f008f1bad1d6d, type: 3}
+      - {fileID: 8300000, guid: d9ef2a1a1f30d7f40bbd19a37a615cd9, type: 3}
+      - {fileID: 8300000, guid: b6b4334de86733f458b709766224218c, type: 3}
       Text: ...no matter where she finds herself, Debbie is still always extremely
         ambitious.  In the Pussywillows VIP Room, she's reached the top of her new
         profession-- something her tips certainly reflect!
     Choices: []
     Effect:
       NpcEffects:
-      - OptionalNpcReference: {fileID: 0}
+      - OptionalNpcReference: {fileID: 11400000, guid: 25a39b39806339b4bb4cef325ae8999f,
+          type: 2}
         AmbitionEffect: -3
         PrideEffect: -3
         RemoveCurrentImage: 0
