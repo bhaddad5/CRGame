@@ -117,13 +117,21 @@ MonoBehaviour:
       Videos:
       - {fileID: 32900000, guid: d9f27ae00c176c84bb3469fb00b6cba9, type: 3}
       Textures: []
-      DialogClips: []
+      DialogClips:
+      - {fileID: 8300000, guid: fc9ab1f60bb917948aac3ec39591cb52, type: 3}
       Text: ...has stacked up while you were masquerading as a director, Debbie. 
         Expect to be working late for the next few months.  When you catch up, we'll
         discuss returning to a normal schedule.
     Choices: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+          type: 2}
+        AmbitionEffect: -50
+        PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
