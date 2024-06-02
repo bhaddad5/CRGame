@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: A talented tongue!
+  m_Name: Time to leave
   m_EditorClassIdentifier: 
-  Id: 1327ef8e-eace-41dc-bc3d-6136758fd4e3
-  Name: A talented tongue!
+  Id: b51b6ca2-82ed-459e-b63c-489a1a6b362a
+  Name: Time to leave
   SubInteraction: 0
   AlertNew: 1
-  Category: 3
+  Category: 7
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -24,8 +24,7 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions:
-    - {fileID: 11400000, guid: d3ab7c26b5233aa4f884e9bc03dbd594, type: 2}
+    RequiredInteractions: []
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -43,40 +42,26 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 1
-  Cooldown: 10
-  PreviewEffect: 1
+  Cooldown: 0
+  PreviewEffect: 0
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 77d097c23a8250840b1d1bf52816ec08,
-        type: 2}
-      Text: 'I''d prefer that well formed mouth put to gainful employment, Prime
-        Minister.  Please get to work now.  '
+      OptionalNpcReference: {fileID: 0}
+      Text: It is time for me to leave.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 78cb904f4a416a34b958d37b4d391d26,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 250
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups:
-    - Title: Anna's blowjobs are...
-      Videos:
-      - {fileID: 32900000, guid: a1d36d06718dd4c4f8c5c89e0d03ab92, type: 3}
-      - {fileID: 32900000, guid: 1f2ea619526f18f4bbf372bc08f984f1, type: 3}
-      - {fileID: 32900000, guid: 1b980077a902be34ea687d7d7d75cb95, type: 3}
-      Textures: []
-      DialogClips:
-      - {fileID: 8300000, guid: 33be3fc925a220a45a058c03e39287ac, type: 3}
-      - {fileID: 8300000, guid: 3fb60ad7da957c74686d9ffe81bcdd8f, type: 3}
-      - {fileID: 8300000, guid: 065f5c44cc6428847ad3856442b06087, type: 3}
-      Text: ...enthusiastic, if lacking in technique.
+    OptionalPopups: []
     Choices: []
     Effect:
       NpcEffects: []
-      EgoEffect: 10
+      EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -101,7 +86,7 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
-    GoToRegion: {fileID: 0}
+    GoToRegion: {fileID: 11400000, guid: 3d94054923f994f48b341c60d4a7451b, type: 2}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
