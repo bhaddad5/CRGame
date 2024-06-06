@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Send out the invitations!
+  m_Name: No need to make a rash decision
   m_EditorClassIdentifier: 
-  Id: 19657af9-ddcf-40ab-8a9b-e027709ada42
-  Name: Send out the invitations!
+  Id: f9626ef4-404f-4dae-ad78-8c7fb505106f
+  Name: No need to make a rash decision
   SubInteraction: 1
   AlertNew: 0
-  Category: 3
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -24,7 +24,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: ca459fbaf01edbd46b01740719f29d5c, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -34,28 +35,25 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 5000
+    MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    Items:
-    - {fileID: 11400000, guid: aea150d68b41794479e7d04c7aa437ed, type: 2}
-    - {fileID: 11400000, guid: aea150d68b41794479e7d04c7aa437ed, type: 2}
-    - {fileID: 11400000, guid: aea150d68b41794479e7d04c7aa437ed, type: 2}
-  Repeatable: 0
+    Items: []
+  Repeatable: 1
   Cooldown: 0
   PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 1
+    - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
         type: 2}
-      Text: "OK- why not?  You can invite up to ten girls.  They all have to work
-        here in the Zenith office, so forget any friends from back home or college. 
-        You can have it during the week but you will all be expected to be at work
-        the next day\u2014 no sick days!  Is that ok?"
+      Text: 'NOTE:  You can''t put this decision off too long.  If you do choose
+        to make an honest woman out of your pregnant secretary, you''ll need to divorce
+        your current wife first-- which means a visit to your lawyer, Malcolm Perkins. 
+        That will unlock an option to marry Debbie, if that is your decision.'
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
         type: 3}
@@ -65,28 +63,7 @@ MonoBehaviour:
         width: 375
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: "Sure!  No problem!  This is going to be incredible!  Now\u2026 who to
-        invite?"
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups:
-    - Title: "While Debbie considers who to invite\u2026"
-      Videos:
-      - {fileID: 32900000, guid: ac8b7c5a6b29b11409a6300fd2167a2e, type: 3}
-      Textures: []
-      DialogClips:
-      - {fileID: 8300000, guid: 274cedceb683dd748a0907a0bdf54a1b, type: 3}
-      Text: "\u2026you make a note to call Pussywillows to book a VIP Room!"
+    OptionalPopups: []
     Choices: []
     Effect:
       NpcEffects: []
