@@ -14,16 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 5095d6e7-d6b1-4d0c-84ed-3f2405ab7cb8
   Name: Debbie's tongue pierced
+  SubInteraction: 0
   AlertNew: 1
   Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 89c71df3ba154bc418d89239a4fbe551, type: 2}
-    RequiredNotCompletedInteractions: []
+    RequiredNotCompletedInteractions:
+    - {fileID: 11400000, guid: 0e26b8ce5d9d7ab4c9096b5c732515cc, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -38,8 +42,9 @@ MonoBehaviour:
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
-    HornicalCost: 0
+    Items: []
   Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 1
   Result:
     Dialogs:
@@ -56,6 +61,7 @@ MonoBehaviour:
         yPos: 0.37
         width: 420
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 11400000, guid: f9219735fd98fc744bd1e0f5a2c3529f,
         type: 2}
@@ -68,6 +74,7 @@ MonoBehaviour:
         yPos: 0.37
         width: 420
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: f9219735fd98fc744bd1e0f5a2c3529f,
         type: 2}
@@ -82,27 +89,32 @@ MonoBehaviour:
         yPos: 0.37
         width: 420
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
     - Title: You select an appropriate stud to...
       Videos:
       - {fileID: 32900000, guid: bd517ebaad3800244bf5fec391022dd3, type: 3}
       Textures: []
-      Texture: {fileID: 0}
+      DialogClips: []
       Text: ...help Debbie start her collection.  She'll insert it for the very next
         blowjob she gives you.  She sulks ungratefully.
     - Title: It cheapens her.
       Videos: []
       Textures:
       - {fileID: 2800000, guid: 29ff4f4d891a5d4439981bbeb930e13c, type: 3}
-      Texture: {fileID: 2800000, guid: 29ff4f4d891a5d4439981bbeb930e13c, type: 3}
+      DialogClips: []
       Text: She'll get used to it but it will always be an unwelcome sensation in
         her mouth, reminding her of her least enjoyable daily task.
+    Choices: []
     Effect:
       NpcEffects:
       - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
           type: 2}
         AmbitionEffect: 0
         PrideEffect: -3
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
@@ -117,7 +129,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -126,11 +140,13 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   CanFail: 0
   ProbabilityOfFailureResult: 0
   FailureResult:
     Dialogs: []
     OptionalPopups: []
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -147,7 +163,9 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
+      ItemsToAdd: []
       Car: 0
       Suits: 0
       JewleryCuffs: 0
@@ -156,5 +174,8 @@ MonoBehaviour:
       JewleryWatch: 0
       Promotion: 0
       Home: 0
+    GoToRegion: {fileID: 0}
   Completed: 0
+  TurnCompletedOn: -1
   New: 1
+  FailCount: 0

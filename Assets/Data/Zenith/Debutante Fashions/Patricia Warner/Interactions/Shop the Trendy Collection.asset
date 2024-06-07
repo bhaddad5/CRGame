@@ -28,6 +28,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 5f2e801b426873545957dff2ac044f77, type: 2}
     RequiredNotCompletedInteractions:
     - {fileID: 11400000, guid: 90aa2173570a40944802705e2c143708, type: 2}
+    - {fileID: 11400000, guid: 0e26b8ce5d9d7ab4c9096b5c732515cc, type: 2}
     RequiredPolicies: []
     RequiredDepartmentsControled: []
     RequiredNpcsControled: []
@@ -49,14 +50,16 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 17540fb751858a641bcd13012a0c8303,
+        type: 2}
       Text: She may deny it, but I think my secretary is a little clothes horse.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 8d22771f37353c246a1c2dbbd43f9752,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.4
+        width: 450
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
@@ -65,11 +68,12 @@ MonoBehaviour:
       Text: That's not true!  I'm only conforming to the Corporate Dress Code, Mr.
         {LastName}!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 8d22771f37353c246a1c2dbbd43f9752,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.4
+        width: 450
       OptionalAudioClip: {fileID: 8300000, guid: ea13f4b63e3ce524b82279e1f312017b,
         type: 3}
       OptionalStartMusicClip: {fileID: 0}
@@ -78,11 +82,12 @@ MonoBehaviour:
         type: 2}
       Text: In that case, let's have her try on some selections from our Trendy Collection!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: 8d22771f37353c246a1c2dbbd43f9752,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.7
+        yPos: 0.4
+        width: 450
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
@@ -156,6 +161,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -189,6 +195,7 @@ MonoBehaviour:
       NpcsToRemoveFromGame: []
       LocationsToControl: []
       TrophiesClaimedReferences: []
+      TrophiesRemoved: []
       MissionsToComplete: []
       ItemsToAdd: []
       Car: 0
@@ -203,3 +210,4 @@ MonoBehaviour:
   Completed: 0
   TurnCompletedOn: -1
   New: 1
+  FailCount: 0
