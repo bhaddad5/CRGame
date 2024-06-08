@@ -24,7 +24,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: f3c3ade7554baa14ca2d5e532cb23187, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -47,15 +48,17 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7550a16742ca6604ab3d132b7acc1214,
+        type: 2}
       Text: Frances here has a twelve year old son.
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: 99fce12d7dceb894a9b4c194c91a7774, type: 3}
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: febd8a52e673c044da33afac295be69f,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.6
+        yPos: 0.33
+        width: 390
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
@@ -64,36 +67,41 @@ MonoBehaviour:
       Text: "Hi, Frances!  Wow\u2014 you look amazing to have a soon that age!"
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: 99fce12d7dceb894a9b4c194c91a7774, type: 3}
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: febd8a52e673c044da33afac295be69f,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.6
+        yPos: 0.33
+        width: 390
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7550a16742ca6604ab3d132b7acc1214,
+        type: 2}
       Text: "Thanks, Mrs. {LastName}.  He\u2019s a great kid.  He just has this issue
         with--"
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: 99fce12d7dceb894a9b4c194c91a7774, type: 3}
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: febd8a52e673c044da33afac295be69f,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.6
+        yPos: 0.33
+        width: 390
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 7550a16742ca6604ab3d132b7acc1214,
+        type: 2}
       Text: "You\u2019re boring me.  Let\u2019s get started."
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: 99fce12d7dceb894a9b4c194c91a7774, type: 3}
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: febd8a52e673c044da33afac295be69f,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.6
+        yPos: 0.33
+        width: 390
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
