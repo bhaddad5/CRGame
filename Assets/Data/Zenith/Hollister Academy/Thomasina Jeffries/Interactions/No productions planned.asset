@@ -24,7 +24,19 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 6618ff7451b91b547a508ee7cee11189, type: 2}
+    - {fileID: 11400000, guid: be7807afd7b9e7e4caed933cf45c3338, type: 2}
+    - {fileID: 11400000, guid: 2a49590314a94f441a0ea916695ef583, type: 2}
+    - {fileID: 11400000, guid: be76e308387f3da449170920ee4017ec, type: 2}
+    - {fileID: 11400000, guid: f8942f1814276474fa4546e9d99eff31, type: 2}
+    - {fileID: 11400000, guid: 662d76a73529340489cbdf538eb1fe6e, type: 2}
+    - {fileID: 11400000, guid: 46061a758cd38d6429ad7b064b593d11, type: 2}
+    - {fileID: 11400000, guid: 66e51bd0cb86b444f8ad1b953fc0a42d, type: 2}
+    - {fileID: 11400000, guid: 59848eb3f5877594999b2cae4881ce3f, type: 2}
+    - {fileID: 11400000, guid: 136af95a6a13cab4bac33b6e1a8371b4, type: 2}
+    - {fileID: 11400000, guid: 1151d98016e77b94bb976823a129da50, type: 2}
+    - {fileID: 11400000, guid: 0d4c5b4cab37ebe4cb7d7a0cdf656408, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -47,14 +59,16 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: 73f45ec8296fdab4b9a111a643394c97,
+        type: 2}
       Text: There are no further dramas in production at this time!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 0}
+      CustomBackground: {fileID: 2800000, guid: adeb8ad6d5b6d7446b1c3bacf40b6183,
+        type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0
-        yPos: 0
-        width: 0
+        xPos: 0.5
+        yPos: 0.2
+        width: 200
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []

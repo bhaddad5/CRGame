@@ -26,7 +26,6 @@ MonoBehaviour:
     NpcStatRequirements: []
     RequiredInteractions:
     - {fileID: 11400000, guid: 459d93b9366dfa44b879764be4bbda09, type: 2}
-    - {fileID: 11400000, guid: b08c5ebf2aa74d74b9b23956c8cea103, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -106,7 +105,8 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: c7a476e5aae6def4482da935c3335c38,
+        type: 2}
       Text: "Mr. {LastName}, you\u2019re going to be glad you agreed to see me. 
         My unfortunate career choice is going to be YOUR gain!"
       CustomNpcImageOptions:
@@ -120,7 +120,8 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: c7a476e5aae6def4482da935c3335c38,
+        type: 2}
       Text: How so?
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: 8051d6e9071222b40a8ebb7d6d4b4950, type: 3}
@@ -133,7 +134,8 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: c7a476e5aae6def4482da935c3335c38,
+        type: 2}
       Text: "How would you like to have your own internal resource for reporting
         on administrative staff who are \u2018problems\u2019?  A company like Artemis
         needs to protect itself!  I can do that for you!"
@@ -148,7 +150,8 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: c7a476e5aae6def4482da935c3335c38,
+        type: 2}
       Text: How would you do that?
       CustomNpcImageOptions:
       - {fileID: 2800000, guid: 8051d6e9071222b40a8ebb7d6d4b4950, type: 3}
@@ -161,7 +164,8 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: c7a476e5aae6def4482da935c3335c38,
+        type: 2}
       Text: "Designate me as a \u2018Floater\u2019 staff member.  I can be assigned
         to various departments and report on any information I learn\u2014 complaints,
         poor performances or even plans to hurt Artemis through lawsuits!    "
@@ -176,7 +180,9 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
-    Choices: []
+    Choices:
+    - {fileID: 11400000, guid: c6b996d959c487b418428ba9691b7e9e, type: 2}
+    - {fileID: 11400000, guid: ace5eed2c8a44cf45961b63d374d9109, type: 2}
     Effect:
       NpcEffects: []
       EgoEffect: 0
