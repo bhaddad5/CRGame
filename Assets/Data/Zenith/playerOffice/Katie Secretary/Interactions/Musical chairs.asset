@@ -10,22 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: A Charity Request
+  m_Name: Musical chairs
   m_EditorClassIdentifier: 
-  Id: 082c14f5-3958-4064-ad2a-d51b06fe9c83
-  Name: A Charity Request
+  Id: e9599e2c-1276-4a82-84f7-9f44f9c1ad18
+  Name: Musical chairs
   SubInteraction: 0
   AlertNew: 1
-  Category: 0
+  Category: 1
   Requirements:
-    RequiredPower: 2800
-    RequiredPromotionLevel: 9
+    RequiredPower: 0
+    RequiredPromotionLevel: 0
     RequiredTurnNumber: 0
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 741e4f3499cd3cd4eb758d6702795080, type: 2}
+    - {fileID: 11400000, guid: 5b62f9667acd53e4894635022b7c7cc5, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -48,296 +48,283 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: c7a476e5aae6def4482da935c3335c38,
+      OptionalNpcReference: {fileID: 11400000, guid: 7461e951b6ba1d5478b24454eac5d16b,
         type: 2}
-      Text: Mr. {LastName}, you have a visitor waiting.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 353fe760631b2344bb89208f1d660b8b,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: c7a476e5aae6def4482da935c3335c38,
-        type: 2}
-      Text: More information please.
+      Text: "I can\u2019t believe it!  One minute Yellowbridge is getting ready to
+        devour Prime Mover and the next, it is Old Home Week.  Damn, you\u2019re
+        good, {FirstName}."
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 7461e951b6ba1d5478b24454eac5d16b,
+        type: 2}
+      Text: You got your new contract?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
         width: 375
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: c7a476e5aae6def4482da935c3335c38,
+      OptionalNpcReference: {fileID: 11400000, guid: 7461e951b6ba1d5478b24454eac5d16b,
         type: 2}
-      Text: "It\u2019s someone from one of those charities on the Approved List. 
-        I think they\u2019ve contacted us before\u2014 a Mr. Kempler from the Baltic
-        Foundation?"
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 5143e3ce9e33973479a1d001c5e1c665,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: c7a476e5aae6def4482da935c3335c38,
-        type: 2}
-      Text: Send him in immediately!
+      Text: "I did.  It is a generous package.  With the way Artemis shares are rising,
+        I\u2019ll be retiring early."
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 7461e951b6ba1d5478b24454eac5d16b,
+        type: 2}
+      Text: "Not for ten years though.  But yes, after that, you\u2019ll live a very
+        comfortable life."
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 7461e951b6ba1d5478b24454eac5d16b,
+        type: 2}
+      Text: "The \u2018senior position\u2019 isn\u2019t specified.  I don\u2019t
+        assume you\u2019ll be giving me Marketing back.  And what happened to Jayme
+        Keller?"
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 7461e951b6ba1d5478b24454eac5d16b,
+        type: 2}
+      Text: "It\u2019s a long story. They\u2019ll be time later.  No, Amit\u2019s
+        doing a great job and I don\u2019t want to upset the apple cart.  In fact,
+        I\u2019ve already assured the Management Team that they\u2019ll all continue
+        reporting in to me.  They like their autonomy and they have all earned it."
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 7461e951b6ba1d5478b24454eac5d16b,
+        type: 2}
+      Text: "Which leaves me.  Looks like the music has stopped and I\u2019m the
+        one without a chair."
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 7461e951b6ba1d5478b24454eac5d16b,
+        type: 2}
+      Text: I did have an idea.  What about COO?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 7461e951b6ba1d5478b24454eac5d16b,
+        type: 2}
+      Text: "No.  That won\u2019t work."
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 7461e951b6ba1d5478b24454eac5d16b,
+        type: 2}
+      Text: What?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 7461e951b6ba1d5478b24454eac5d16b,
+        type: 2}
+      Text: "Come on, {FirstName}.  It won\u2019t work.  You\u2019ve already said
+        your boys wouldn\u2019t like having a speed bump between you and them, even
+        a symbolic one.  And the culture here has changed dramatically.  Having a
+        real female COO, one that would be active, wouldn\u2019t really fit with
+        what you\u2019ve built here at Artemis, would it?"
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 7461e951b6ba1d5478b24454eac5d16b,
+        type: 2}
+      Text: "I hadn\u2019t thought of any of that.  I just know I want to work with
+        you.  You\u2019re creative, competent and\u2014"
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 7461e951b6ba1d5478b24454eac5d16b,
+        type: 2}
+      Text: "Thank you-- and let\u2019s leave that unsaid part aside- for the moment. 
+        I feel the same.  I\u2019m excited to be back and to be working with\u2014for\u2014you. 
+        And I have a counter offer."
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 7461e951b6ba1d5478b24454eac5d16b,
+        type: 2}
+      Text: Go on.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 7461e951b6ba1d5478b24454eac5d16b,
+        type: 2}
+      Text: "Make me your Chief of Staff.  I\u2019ll be your right hand operationally
+        and be working in your name.  The title won\u2019t ruffle feathers but it
+        will give me the authority to keep the trains running on time.  What do you
+        say?"
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 7461e951b6ba1d5478b24454eac5d16b,
+        type: 2}
+      Text: "You\u2019re right\u2014 it is perfect.  I say yes!"
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 7461e951b6ba1d5478b24454eac5d16b,
+        type: 2}
+      Text: "I\u2019ll still take that COO office though."
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 7461e951b6ba1d5478b24454eac5d16b,
+        type: 2}
+      Text: "Of course!  I\u2019ll have Debbie Katie it for you immediately!"
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 7461e951b6ba1d5478b24454eac5d16b,
+        type: 2}
+      Text: How about having Blondie fetch us some champagne to celebrate then?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
         width: 375
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 11400000, guid: c7a476e5aae6def4482da935c3335c38,
+      OptionalNpcReference: {fileID: 11400000, guid: 7461e951b6ba1d5478b24454eac5d16b,
         type: 2}
-      Text: "Hello, my boy.  What a magnificent office!  And your assistant\u2014
-        what a lovely specimen."
-      CustomNpcImageOptions:
-      - {fileID: 2800000, guid: 4251047f0f2711243856a452acc3dd12, type: 3}
-      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: a9f36d74290bea345a69a42d57aba772,
-        type: 2}
-      Text: "You\u2019ve never come here before.  Is everything alright?"
+      Text: "NOTE: Allison will now appear in the COO\u2019s office as your new Chief
+        of Staff!"
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: a9f36d74290bea345a69a42d57aba772,
-        type: 2}
-      Text: "Yes and no.  I\u2019ve never wanted to distract your work here.  It
-        has been instrumental in helping rebuild and buttress our position, both
-        financially and technologically.  But, as you may have sensed in that Russian
-        business, Selectacorp\u2019s position is\u2026 not what it once was."
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: a9f36d74290bea345a69a42d57aba772,
-        type: 2}
-      Text: "What\u2019s happened?"
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: a9f36d74290bea345a69a42d57aba772,
-        type: 2}
-      Text: "How did the man go bankrupt?  Slowly\u2014 then all at once.  We\u2019re
-        not there yet, but our traditional market dominance in the international
-        human capital markets is under assault.  We\u2019re facing more competitors
-        who are more sophisticated than ever.  It is inevitable."
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: a9f36d74290bea345a69a42d57aba772,
-        type: 2}
-      Text: "In my sector, we\u2019re doing very well."
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: a9f36d74290bea345a69a42d57aba772,
-        type: 2}
-      Text: Yes.  It has been noticed.  It is why you are now a member of the Executive
-        Council.  And the time has come for you to take the next step.  We now need
-        you elsewhere.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: a9f36d74290bea345a69a42d57aba772,
-        type: 2}
-      Text: Where?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: a9f36d74290bea345a69a42d57aba772,
-        type: 2}
-      Text: Your technology, if applied judiciously, could help us recoup our retail
-        market share losses by concentrating on lucrative niche markets.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: a9f36d74290bea345a69a42d57aba772,
-        type: 2}
-      Text: Such as?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: a9f36d74290bea345a69a42d57aba772,
-        type: 2}
-      Text: "Entertainment.  Finance.  Even politics.  While mass production of AGATHA
-        chips is cost prohibitive, selective application should be to be vastly profitable,
-        especially in the key sectors I\u2019ve listed.  We need you to do in those
-        markets what you\u2019ve achieved here in Zenith."
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: a9f36d74290bea345a69a42d57aba772,
-        type: 2}
-      Text: "I\u2019m ready!"
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: a9f36d74290bea345a69a42d57aba772,
-        type: 2}
-      Text: "We know you are.  But\u2026 not so fast.  Before we can authorize a
-        new assignment, we need to know this operation is left in safe hands."
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: a9f36d74290bea345a69a42d57aba772,
-        type: 2}
-      Text: I have a top notch management team.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: a9f36d74290bea345a69a42d57aba772,
-        type: 2}
-      Text: "For running a mid sized tech company yes\u2014 but these are not Selectacorp
-        tier candidates.  No, you\u2019ll need someone extraordinary whom you can
-        trust with all the secrets you hold.  You need to find a successor.  When
-        you have a suitable candidate, get in touch."
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: a9f36d74290bea345a69a42d57aba772,
-        type: 2}
-      Text: "That\u2019s that then?"
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: a9f36d74290bea345a69a42d57aba772,
-        type: 2}
-      Text: "That\u2019s that, my boy.  Find another individual as dauntless as yourself. 
-        It may well be the greatest challenge you\u2019ve ever faced."
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
+        xPos: 0.5
+        yPos: 0.4
         width: 375
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}

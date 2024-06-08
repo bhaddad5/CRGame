@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Diddling Debbie
+  m_Name: Give McMasters $250,000
   m_EditorClassIdentifier: 
-  Id: 24d57983-fad9-458a-9f5f-932e95f2aa4b
-  Name: Diddling Debbie
-  SubInteraction: 0
-  AlertNew: 1
-  Category: 6
+  Id: da52c1b4-81c9-43b4-9961-fec74e5f102c
+  Name: Give McMasters $250,000
+  SubInteraction: 1
+  AlertNew: 0
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -34,70 +34,44 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 0
+    MoneyCost: 250000
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 1
-  Cooldown: 13
+  Repeatable: 0
+  Cooldown: 0
   PreviewEffect: 0
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 7550a16742ca6604ab3d132b7acc1214,
+      OptionalNpcReference: {fileID: 11400000, guid: c0796ec1273c4044c909192668fdd801,
         type: 2}
-      Text: Daddy... It is just that you've been so busy and... well... could I? 
-        Please?
+      Text: I'll double this for you.  Prime Mover is in play.  Check your account
+        in a bit.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: febd8a52e673c044da33afac295be69f,
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.6
-        yPos: 0.33
-        width: 390
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 7550a16742ca6604ab3d132b7acc1214,
-        type: 2}
-      Text: Go ahead, you spoiled brat.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: febd8a52e673c044da33afac295be69f,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.6
-        yPos: 0.33
-        width: 390
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: The Deborah Jones of old...
-      Videos:
-      - {fileID: 32900000, guid: a1abf79be6b54c4489a7f78fa35c0aa1, type: 3}
-      - {fileID: 32900000, guid: d355bb947a2a6f24c8b3278c1550aa23, type: 3}
-      - {fileID: 32900000, guid: 82daf5787b493be46bd360b700d92e76, type: 3}
-      - {fileID: 32900000, guid: 23154f5494b5f0949ba8e4756591aba7, type: 3}
-      - {fileID: 32900000, guid: 2132b5d7bb60f3f4290cf4a2460ea112, type: 3}
-      - {fileID: 32900000, guid: db5b1b7c76d227946a5d69846a069247, type: 3}
-      - {fileID: 32900000, guid: 10a8fa2bacc82154fa4c1f0d3bdf7f6f, type: 3}
-      - {fileID: 32900000, guid: 1ed9d561deb218e4ebcb4d46f6445717, type: 3}
-      Textures: []
-      DialogClips:
-      - {fileID: 8300000, guid: 3e8f4cecf96f25743b0239ffd7aefbd0, type: 3}
-      - {fileID: 8300000, guid: afc468ff68231cb4292fc8032aa3712e, type: 3}
-      - {fileID: 8300000, guid: 82ccf7c32722e394bb1148ad140c3919, type: 3}
-      - {fileID: 8300000, guid: b96d60c1a385ee74e8694f24f7bf32df, type: 3}
-      - {fileID: 8300000, guid: c2f80fc960059c34a91d31c313e2c6bf, type: 3}
-      Text: ...would be horrified to see herself masturbating shamelessly for her
-        hated rival!
+    - Title: The tip is...
+      Videos: []
+      Textures:
+      - {fileID: 2800000, guid: 25d860d97f9eabe479d3201ac18171a9, type: 3}
+      DialogClips: []
+      Text: ...solid gold.  $500,000 hits your account soon after!
     Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
-      FundsEffect: 0
+      FundsEffect: 500000
       PowerEffect: 0
       PatentsEffect: 0
       CultureEffect: 0

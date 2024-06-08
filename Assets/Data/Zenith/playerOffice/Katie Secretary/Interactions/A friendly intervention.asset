@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: A Request for a Meeting
+  m_Name: A friendly intervention
   m_EditorClassIdentifier: 
-  Id: 7d1fb225-8c72-4b98-899d-a80caf93c6b6
-  Name: A Request for a Meeting
+  Id: dff0d1fb-3ecc-4ed5-aab5-836ffcbbc7cb
+  Name: A friendly intervention
   SubInteraction: 0
   AlertNew: 1
-  Category: 0
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -25,7 +25,7 @@ MonoBehaviour:
     NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 9582fd2740b19bc479b96429c856c8e3, type: 2}
+    - {fileID: 11400000, guid: 6f7c0804311bf5d4597f52baf735943d, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -47,111 +47,135 @@ MonoBehaviour:
   PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: c7a476e5aae6def4482da935c3335c38,
-        type: 2}
-      Text: "Why didn\u2019t you prioritize this request?"
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 11400000, guid: c7a476e5aae6def4482da935c3335c38,
         type: 2}
-      Text: "I\u2019m sorry\u2014 which one now?"
+      Text: Ms. Riordan to see you, Sir.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+      CustomBackground: {fileID: 2800000, guid: 04aba9185e390994fa36eca45cd4d343,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.52
         yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: c7a476e5aae6def4482da935c3335c38,
-        type: 2}
-      Text: "The message from Allison Riordan, requesting a meeting.  It\u2019s at
-        the bottom of the pile."
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: c7a476e5aae6def4482da935c3335c38,
+      OptionalNpcReference: {fileID: 11400000, guid: 7461e951b6ba1d5478b24454eac5d16b,
         type: 2}
-      Text: "Oh, that!  Well, your schedule is very busy and it didn\u2019t seem\u2014"
+      Text: "My, my\u2014 is that really the Ice Queen\u2019s sister?  I\u2019m assuming
+        that outfit of hers is all for the benefit of the Boss?  Anyway, I\u2019m
+        assuming I\u2019m here because you\u2019ve learned something.  Your sources
+        have always been impeccable."
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.52
         yPos: 0.42
-        width: 375
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: c7a476e5aae6def4482da935c3335c38,
+      OptionalNpcReference: {fileID: 11400000, guid: 7461e951b6ba1d5478b24454eac5d16b,
         type: 2}
-      Text: 'Allison Riordan is one of the few ex Artemis women worth a damn.  You''ll
-        put her on my Top Priority Contact List.  Got it? '
+      Text: Prime Mover is in play.  Do you want your company bought out from under
+        you?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.52
         yPos: 0.42
-        width: 375
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: c7a476e5aae6def4482da935c3335c38,
+      OptionalNpcReference: {fileID: 11400000, guid: 7461e951b6ba1d5478b24454eac5d16b,
         type: 2}
-      Text: Crystal clear, Mr. {LastName}.  My apologies for the slip.
+      Text: "Of course not!  But Yellowbridge smells blood.  I\u2019ve invested so
+        much in our tech, they know I don\u2019t have the capital to do a stock buyback. 
+        By trying to do a good job, I\u2019ve left my company open to a hostile takeover\u2014and
+        there\u2019s not much I can do about it."
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.52
         yPos: 0.42
-        width: 375
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: c7a476e5aae6def4482da935c3335c38,
+      OptionalNpcReference: {fileID: 11400000, guid: 7461e951b6ba1d5478b24454eac5d16b,
         type: 2}
-      Text: 'Set up a meeting with Allison- at her convenience.  And do it right
-        now, before your pea brain forgets! '
+      Text: "Prime Mover\u2019s AI tech would fold well into the Artemis tech portfolio. 
+        What if we were to make a counter-offer?"
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.52
         yPos: 0.42
-        width: 375
+        width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 7461e951b6ba1d5478b24454eac5d16b,
+        type: 2}
+      Text: "You\u2019re offering to play white knight for me?  I don\u2019t like
+        being here, hat in hand.  I don\u2019t like being a corporate damsel in distress."
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: 7461e951b6ba1d5478b24454eac5d16b,
+        type: 2}
+      Text: "Yes, you do.  And I\u2019d make it a condition of the acquisition to
+        retain you in a senior position for ten years\u2014 along with stock options,
+        of course.  What do you say?"
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 350
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: 7461e951b6ba1d5478b24454eac5d16b,
+        type: 2}
+      Text: "What do you think?  Of course I\u2019d agree.  You\u2019d be getting
+        a hell of an acquisition too\u2014 Prime Mover is a real prize.  But are
+        you sure Artemis is able to pull this off though?"
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 11400000, guid: c7a476e5aae6def4482da935c3335c38,
+      OptionalNpcReference: {fileID: 11400000, guid: 7461e951b6ba1d5478b24454eac5d16b,
         type: 2}
-      Text: 'Katie frowns, stung by the rebuke and hurries to obey! '
+      Text: "It\u2019s a good question.  You\u2019ll need to talk to your CFO to
+        find out!"
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.52
         yPos: 0.42
-        width: 375
+        width: 350
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []

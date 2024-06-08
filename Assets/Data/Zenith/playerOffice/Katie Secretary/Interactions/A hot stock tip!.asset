@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: A Request for a Meeting
+  m_Name: A hot stock tip!
   m_EditorClassIdentifier: 
-  Id: 7d1fb225-8c72-4b98-899d-a80caf93c6b6
-  Name: A Request for a Meeting
+  Id: 843a3c49-f8e4-428a-aa80-ed190605f9e2
+  Name: A hot stock tip!
   SubInteraction: 0
   AlertNew: 1
-  Category: 0
+  Category: 3
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -25,7 +25,7 @@ MonoBehaviour:
     NotOnWeekdays: 0
     NpcStatRequirements: []
     RequiredInteractions:
-    - {fileID: 11400000, guid: 9582fd2740b19bc479b96429c856c8e3, type: 2}
+    - {fileID: 11400000, guid: f3d4b0c7b0cead94b9ebb13e5c02b58f, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -47,115 +47,111 @@ MonoBehaviour:
   PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: c7a476e5aae6def4482da935c3335c38,
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 11400000, guid: c0796ec1273c4044c909192668fdd801,
         type: 2}
-      Text: "Why didn\u2019t you prioritize this request?"
+      Text: '{FirstName}, thanks for giving an old man some time.'
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
+        xPos: 0.5
+        yPos: 0.4
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 11400000, guid: c0796ec1273c4044c909192668fdd801,
+        type: 2}
+      Text: "You are always welcome to drop in whenever you like.  I\u2019d had my
+        girl add you to my personal priority contact list, Dean.  What can I do for
+        you?"
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.4
         width: 375
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: c7a476e5aae6def4482da935c3335c38,
+      OptionalNpcReference: {fileID: 11400000, guid: c0796ec1273c4044c909192668fdd801,
         type: 2}
-      Text: "I\u2019m sorry\u2014 which one now?"
+      Text: "More like what I can do for you!  A little bird tells me a big meeting
+        happened recently at Yellowbridge Capital\u2014between Ron Cox and a certain
+        ex Marketing girl from none other than Artemis now running a tech firm called
+        Prime Mover! "
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
+        xPos: 0.5
+        yPos: 0.4
         width: 375
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: c7a476e5aae6def4482da935c3335c38,
+      OptionalNpcReference: {fileID: 11400000, guid: c0796ec1273c4044c909192668fdd801,
         type: 2}
-      Text: "The message from Allison Riordan, requesting a meeting.  It\u2019s at
-        the bottom of the pile."
+      Text: "So that\u2019s why she\u2019s here!  Yes, Allison Riordan.  She used
+        to run Marketing here before she got headhunted to take the top job at Prime
+        Mover.  Why is this of interest?"
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
+        xPos: 0.5
+        yPos: 0.4
         width: 375
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: c7a476e5aae6def4482da935c3335c38,
+      OptionalNpcReference: {fileID: 11400000, guid: c0796ec1273c4044c909192668fdd801,
         type: 2}
-      Text: "Oh, that!  Well, your schedule is very busy and it didn\u2019t seem\u2014"
+      Text: "Yellowbridge specializes in acquisitions.  Prime Mover shares are undervalued. 
+        It is a natural takeover target.  I\u2019m telling you\u2014Yellowbridge
+        is preparing to make a move.  Give me whatever liquid cash you can spare
+        and when they make their move, the Prime Mover stock will double."
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
+        xPos: 0.5
+        yPos: 0.4
         width: 375
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: c7a476e5aae6def4482da935c3335c38,
+      OptionalNpcReference: {fileID: 11400000, guid: c0796ec1273c4044c909192668fdd801,
         type: 2}
-      Text: 'Allison Riordan is one of the few ex Artemis women worth a damn.  You''ll
-        put her on my Top Priority Contact List.  Got it? '
+      Text: Wow.  Would they keep on Allison Riordan as CEO?
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
+        xPos: 0.5
+        yPos: 0.4
         width: 375
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: c7a476e5aae6def4482da935c3335c38,
+      OptionalNpcReference: {fileID: 11400000, guid: c0796ec1273c4044c909192668fdd801,
         type: 2}
-      Text: Crystal clear, Mr. {LastName}.  My apologies for the slip.
+      Text: Doubtful.  Who cares?  My question is this- do you want to make a quick
+        profit on this or not?  Prime Mover is in play and there's money to be made!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: c7a476e5aae6def4482da935c3335c38,
-        type: 2}
-      Text: 'Set up a meeting with Allison- at her convenience.  And do it right
-        now, before your pea brain forgets! '
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 11400000, guid: c7a476e5aae6def4482da935c3335c38,
-        type: 2}
-      Text: 'Katie frowns, stung by the rebuke and hurries to obey! '
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 68299baf120e84f4eb3579f5864df440,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
+        xPos: 0.5
+        yPos: 0.4
         width: 375
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
-    Choices: []
+    Choices:
+    - {fileID: 11400000, guid: a74ac36806e9c4f478714d113d411d7e, type: 2}
     Effect:
       NpcEffects: []
       EgoEffect: 0
