@@ -45,14 +45,43 @@ MonoBehaviour:
   Cooldown: 0
   PreviewEffect: 0
   Result:
-    Dialogs: []
+    Dialogs:
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: So, why are you here, Mr. {LastName}?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 07ffcfb99d5cab444aa064402b1b84b2,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: I was thinking of when we first met and remembered how one day I was
+        going to have Deborah Jones give me a lap dance in public-- for everyone
+        to see how she was really putting her MBA to work.  Here's my money, MBA
+        Debbie.  Lucky for you, it helps you knock off some of your outstanding debt. 
+        Nice for me because I get wind up getting back-- right?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 07ffcfb99d5cab444aa064402b1b84b2,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.5
+        yPos: 0.3
+        width: 400
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     OptionalPopups:
-    - Title: 
+    - Title: What's the club policy, Debbie?
       Videos:
       - {fileID: 32900000, guid: ff2bb49d34e758a40baf09de798f58d9, type: 3}
       Textures: []
-      DialogClips: []
-      Text: 
+      DialogClips:
+      - {fileID: 8300000, guid: 3e9cb6299ec44c043803a31c65a47af2, type: 3}
+      Text: '"Customer satisfaction is job one, Sir."'
     Choices: []
     Effect:
       NpcEffects: []

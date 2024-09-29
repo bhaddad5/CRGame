@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Request a quickie
+  m_Name: You forget your wallet!
   m_EditorClassIdentifier: 
-  Id: 83db5c52-508d-4a68-93d6-05be86fe4b4b
-  Name: Request a quickie
+  Id: 777af60b-1657-4a44-848e-b1617f3fb849
+  Name: You forget your wallet!
   SubInteraction: 1
   AlertNew: 0
   Category: 6
@@ -34,7 +34,7 @@ MonoBehaviour:
     RequiredTrophies: []
   Cost:
     EgoCost: 0
-    MoneyCost: 75
+    MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
     PatentsCost: 0
@@ -48,7 +48,8 @@ MonoBehaviour:
     Dialogs:
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Seventy-five dollars?  What would you like me to do, Mr. {LastName}?
+      Text: Debbie suppresses a giggle when it is obvious you've misplaced your wallet. 
+        There won't be any performances for you this time!
       CustomNpcImageOptions: []
       CustomBackground: {fileID: 2800000, guid: 07ffcfb99d5cab444aa064402b1b84b2,
         type: 3}
@@ -58,63 +59,10 @@ MonoBehaviour:
         width: 400
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: For that kind of money, nothing less than a quickie, Debbie.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 07ffcfb99d5cab444aa064402b1b84b2,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 400
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: Please-- not out in the open!  Not so all the other girls and customers
-        can see!  Please, let's go in the back!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 07ffcfb99d5cab444aa064402b1b84b2,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 400
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: You think you're something special?  You're just MBA Debbie-- just another
-        club whore.  Why should I be bothered to go in the back?  So you can pretend
-        you're too good to give a paying customer a quickie?
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 07ffcfb99d5cab444aa064402b1b84b2,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.5
-        yPos: 0.3
-        width: 400
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups:
-    - Title: You need to lose this attitude.
-      Videos:
-      - {fileID: 32900000, guid: 4c8dd75d876eda8488e2fa304e23d11e, type: 3}
-      Textures: []
-      DialogClips:
-      - {fileID: 8300000, guid: 8a28aa8f56e9cbf42811a118de646095, type: 3}
-      Text: Otherwise, you'll start doing 'privates' for any customer who wants one!
+    OptionalPopups: []
     Choices: []
     Effect:
-      NpcEffects:
-      - OptionalNpcReference: {fileID: 11400000, guid: 25a39b39806339b4bb4cef325ae8999f,
-          type: 2}
-        AmbitionEffect: -3
-        PrideEffect: -3
-        RemoveCurrentImage: 0
-        ImageSetsToAdd: []
-        ImageSetsToRemove: []
+      NpcEffects: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
