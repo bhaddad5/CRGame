@@ -1,0 +1,244 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
+  m_Name: Celebrate your Planning Appointment
+  m_EditorClassIdentifier: 
+  Id: da5e5492-9d0f-4622-b572-d72478aa52d0
+  Name: Celebrate your Planning Appointment
+  SubInteraction: 0
+  AlertNew: 1
+  Category: 0
+  Requirements:
+    RequiredPower: 0
+    RequiredPromotionLevel: 0
+    RequiredTurnNumber: 0
+    NotOnWeekends: 0
+    NotOnWeekdays: 0
+    NpcStatRequirements: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: b1dbeefa1efb1ef4ea03d05f77a347c7, type: 2}
+    RequiredNotCompletedInteractions: []
+    RequiredPolicies: []
+    RequiredDepartmentsControled:
+    - {fileID: 11400000, guid: 8305bbc52b682a44cb8a5ecd37e1f16a, type: 2}
+    RequiredNpcsControled: []
+    RequiredNpcsTrained: []
+    RequiredNpcsNotControled: []
+    RequiredTrophies: []
+  Cost:
+    EgoCost: 0
+    MoneyCost: 0
+    SpreadsheetsCost: 0
+    CultureCost: 0
+    PatentsCost: 0
+    BrandCost: 0
+    RevanueCost: 0
+    Items: []
+  Repeatable: 0
+  Cooldown: 0
+  PreviewEffect: 0
+  Result:
+    Dialogs:
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Well, it looks like leadership qualities really are rewarded here.  I've
+        been given responsibility for the Planning Department.  That was an area
+        you had hoped to move into, wasn't it?  Before you were re-assigned more
+        suitable duties?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: Yes.  I read the announcement.  Congratulations, of course.  At one time
+        I had thought Planning might be a good fot for me.  I'm sure you'll do a
+        great job running it, Mr. {LastName}.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 8300000, guid: 054cf37c4b89b3a40b1a3558f42c2abd,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: 'It will mean more work for my secretary as well, though not the more
+        interesting type I''m afraid.  Do you remember those Cuban cigars you gave
+        me as a thank you goft for approving tha vacation of yours?  Why don''t you
+        light on up for me, Debbie, so I can properly celebrate the moment? '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: 'Sorry, Mr. {LastName}-- remember?  There''s a no smoking policy in the
+        office!  Anyway, I don''t smoke.  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 8300000, guid: 0876a1b77d9381f46b2f14db68f1802f,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: 'Well Debbie, since I''m the boss, I''m changing the policy.  And I''d
+        only like you to light it for me and get it started-- I certainly wasn''t
+        offering you a cigar.  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: Well, like I said, I don't smoke so I couldn't--
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 8300000, guid: d77eef4a8ea237246adad7957d851139,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Am I detecting some resentment because of this appointment?  That would
+        be disappointing and might require a couple of demerits to remind you who
+        the boss is, Debbie.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: I'm sorry, Mr. {LastName}.  I'd be happy to help you celebrate your appointment. 
+        Let me get a cigar ready for you right now.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 8300000, guid: 21545a0513d687046b151b6c7a88ceef,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Better, Debbie.  You'll make a fine secretary-- once you've been properly
+        trained.  I know that cigar is a big one, but let's see you get your lips
+        around the whole thing.  And give it a good suck, ok?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: Debbie's icy reserve...
+      Videos:
+      - {fileID: 32900000, guid: 0bc058569953609468f0187d8d2ea6f6, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: ...suggests she's furious at having to serve as your personal Cigarette
+        Girl in the office.
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 20
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      TrophiesRemoved: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  CanFail: 0
+  ProbabilityOfFailureResult: 0
+  FailureResult:
+    Dialogs: []
+    OptionalPopups: []
+    Choices: []
+    Effect:
+      NpcEffects: []
+      EgoEffect: 0
+      FundsEffect: 0
+      PowerEffect: 0
+      PatentsEffect: 0
+      CultureEffect: 0
+      SpreadsheetsEffect: 0
+      BrandEffect: 0
+      RevanueEffect: 0
+      HornicalEffect: 0
+      NpcsToControl: []
+      NpcsToTrain: []
+      NpcsToRemoveFromGame: []
+      LocationsToControl: []
+      TrophiesClaimedReferences: []
+      TrophiesRemoved: []
+      MissionsToComplete: []
+      ItemsToAdd: []
+      Car: 0
+      Suits: 0
+      JewleryCuffs: 0
+      JewleryPen: 0
+      JewleryRing: 0
+      JewleryWatch: 0
+      Promotion: 0
+      Home: 0
+    GoToRegion: {fileID: 0}
+  Completed: 0
+  TurnCompletedOn: -1
+  New: 1
+  FailCount: 0
