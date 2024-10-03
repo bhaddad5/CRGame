@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Deny her vacation request
+  m_Name: Time you learned a lesson
   m_EditorClassIdentifier: 
-  Id: 3f2d0a31-9774-4ae1-925f-006a9fa16834
-  Name: Deny her vacation request
+  Id: 81028cd9-6f64-4b1d-9d53-95f993eed174
+  Name: Time you learned a lesson
   SubInteraction: 1
   AlertNew: 0
-  Category: 0
+  Category: 1
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -47,78 +47,65 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 0041cc9001d9b5e46817e841349ddd12,
-        type: 2}
-      Text: I'm sorry.  I'm going to deny your request for vacation time.  You haven't
-        earned it and there's plenty of work to be done here.  It would also send
-        a bad signal to the other admin girls.
+      OptionalNpcReference: {fileID: 0}
+      Text: If you wanted permission to go out and see your college friend, you should
+        have asked for it.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 936c9fbc30a60ab47a10e29d15a3682d,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 11400000, guid: 0041cc9001d9b5e46817e841349ddd12,
-        type: 2}
-      Text: But there's a non cancellation clause!  I'll lose all my money!  Thousands! 
-        They won't issue refunds on this deal!  It was a special deal!
+      OptionalNpcReference: {fileID: 0}
+      Text: Mr. {LastName}, it was just a kind of spur of the moment kind of thing. 
+        It... won't happen again.  There's no reason to over react!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 936c9fbc30a60ab47a10e29d15a3682d,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 8300000, guid: 381997c29ebb8094baa6d10e4bb54a59,
-        type: 3}
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 11400000, guid: 0041cc9001d9b5e46817e841349ddd12,
-        type: 2}
-      Text: 'That''s not my problem.  You should of thought of all that before you
-        were dropped from the Management Trainee Program.  It will be a good lesson
-        for the future- never make assumptions that you''re financially unprepared
-        to meet.  That''s my final decision.  '
+      OptionalNpcReference: {fileID: 0}
+      Text: I'm not over reacting-- and nor should you when I issue you this demerit
+        AND add a formal note for your file.  This WILL come up in your Probation
+        Review, Debbie.  Understood?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 936c9fbc30a60ab47a10e29d15a3682d,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 11400000, guid: 0041cc9001d9b5e46817e841349ddd12,
-        type: 2}
-      Text: 'NOTE: Deborah Jones just looks at you as if you''re joking with her. 
-        When it sinks it that you''re not, she leaves your office stunned. '
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: Yes, I understand.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 936c9fbc30a60ab47a10e29d15a3682d,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups:
-    - Title: Little does she know...
-      Videos:
-      - {fileID: 32900000, guid: c70adce33a6336349a2a34052316b576, type: 3}
-      Textures: []
-      DialogClips:
-      - {fileID: 8300000, guid: 5c4aa4d4283604b458f4fb739fc9c358, type: 3}
-      Text: ...but the next vacation she takes will be with you and the pleasure
-        will be all yours.  For now, she stews impotently.
+    OptionalPopups: []
     Choices: []
     Effect:
-      NpcEffects: []
-      EgoEffect: 20
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+          type: 2}
+        AmbitionEffect: -5
+        PrideEffect: 0
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
+      EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
       PatentsEffect: 0
@@ -134,7 +121,8 @@ MonoBehaviour:
       TrophiesClaimedReferences: []
       TrophiesRemoved: []
       MissionsToComplete: []
-      ItemsToAdd: []
+      ItemsToAdd:
+      - {fileID: 11400000, guid: 093941a12d8d2f7489166430d82653c4, type: 2}
       Car: 0
       Suits: 0
       JewleryCuffs: 0
