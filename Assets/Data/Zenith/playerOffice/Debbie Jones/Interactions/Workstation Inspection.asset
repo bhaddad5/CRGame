@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Suggest the annual Zenith Fair
+  m_Name: Workstation Inspection
   m_EditorClassIdentifier: 
-  Id: cfa72676-1776-4103-8360-8f91470ec338
-  Name: Suggest the annual Zenith Fair
+  Id: aea6fb9f-cec6-47b1-a61b-c8a0233a558c
+  Name: Workstation Inspection
   SubInteraction: 1
   AlertNew: 0
-  Category: 0
+  Category: 7
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -43,40 +43,16 @@ MonoBehaviour:
     Items: []
   Repeatable: 1
   Cooldown: 0
-  PreviewEffect: 0
+  PreviewEffect: 1
   Result:
     Dialogs:
     - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: What's up, Debbie?  You seem kind of lost.
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: Debbie, can you hand deliver this file for me?  It is time sensitive
+        so off you go.
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 5143e3ce9e33973479a1d001c5e1c665,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
-      Text: In the old days, I used to go places!  Now there's no reason for me to
-        even go to the airport.  I never go anywhere I want to go!
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 5143e3ce9e33973479a1d001c5e1c665,
-        type: 3}
-      CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
-      OptionalStartMusicClip: {fileID: 0}
-    - CurrSpeaker: 1
-      OptionalNpcReference: {fileID: 0}
-      Text: Well, the annual fair is coming up.  Why not spend your vacation there? 
-        I'm sure even you can afford to do thst.
-      CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 5143e3ce9e33973479a1d001c5e1c665,
+      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.52
@@ -85,37 +61,24 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
-      Text: 'NOTE:  She nods.  It''s better thsn hanging around the Secretarial Dorm
-        under the eagle eyes of the Dorm Mother!'
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
+      Text: 'NOTE: Debbie''s absence gives you the opportunity to make an inspection
+        of her work space.  Where to start?'
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 5143e3ce9e33973479a1d001c5e1c665,
+      CustomBackground: {fileID: 2800000, guid: fbda46cf33011764b958192be050645f,
         type: 3}
       CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups:
-    - Title: Debbie has a ball at...
-      Videos:
-      - {fileID: 32900000, guid: 1a70751c3daea2f4181ef45c0168d46b, type: 3}
-      Textures: []
-      DialogClips:
-      - {fileID: 8300000, guid: 668e993c5c263c347af648dd7e2427c3, type: 3}
-      Text: ...the Annual Zenith City Fair!  She talks about it for days after she
-        returns to work!
-    Choices: []
+    OptionalPopups: []
+    Choices:
+    - {fileID: 11400000, guid: da69de5b0eeafc04d8bc221907ea7289, type: 2}
     Effect:
-      NpcEffects:
-      - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-          type: 2}
-        AmbitionEffect: 7
-        PrideEffect: 3
-        RemoveCurrentImage: 0
-        ImageSetsToAdd: []
-        ImageSetsToRemove: []
+      NpcEffects: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
