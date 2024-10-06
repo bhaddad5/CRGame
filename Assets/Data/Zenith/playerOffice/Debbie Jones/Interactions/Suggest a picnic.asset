@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Interdepartmental
+  m_Name: Suggest a picnic
   m_EditorClassIdentifier: 
-  Id: ec07f8d3-0c45-4051-91c4-4a495de36ba0
-  Name: Interdepartmental
+  Id: 5cd9f726-3e67-41b6-a4c0-2ff1cf626c32
+  Name: Suggest a picnic
   SubInteraction: 1
-  AlertNew: 1
-  Category: 4
+  AlertNew: 0
+  Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -43,16 +43,14 @@ MonoBehaviour:
     Items: []
   Repeatable: 1
   Cooldown: 0
-  PreviewEffect: 1
+  PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: 'NOTE: Interdepartmental assignments allow Debbie to act on your behalf
-        across the company'
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: You poor thing.  You used to travel quite a bit, didn't you Debbie?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+      CustomBackground: {fileID: 2800000, guid: 5143e3ce9e33973479a1d001c5e1c665,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.52
@@ -60,24 +58,65 @@ MonoBehaviour:
         width: 375
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups: []
-    Choices:
-    - {fileID: 11400000, guid: 37e296309e21e1849ba3d66fd0ce04f8, type: 2}
-    - {fileID: 11400000, guid: ecb4861f762e3ce44aba599b52bb6242, type: 2}
-    - {fileID: 11400000, guid: bb0fa96134ecd2849810aa1c8863ba47, type: 2}
-    - {fileID: 11400000, guid: 94ff7c7b957ca0b4faf582b36e87e43d, type: 2}
-    - {fileID: 11400000, guid: e5f954ed05ac3094d9faaea32d2a4f1f, type: 2}
-    - {fileID: 11400000, guid: b70258e3092971f4d9efbd5ffcfbdd32, type: 2}
-    - {fileID: 11400000, guid: 8db1318eccaf063428e4f4700ce83d90, type: 2}
-    - {fileID: 11400000, guid: f31b37e6347cad448bc5ba2e3bcaa610, type: 2}
-    - {fileID: 11400000, guid: a6807a4209b49dc4bac6a2351dc7d33c, type: 2}
-    - {fileID: 11400000, guid: 2630095f126808f4a8a13d66caee36dd, type: 2}
-    - {fileID: 11400000, guid: 1ef6f8ac895b155428ec387a26044cdb, type: 2}
-    - {fileID: 11400000, guid: f66b9f21d2f7eb24e80f43c0b72d6e52, type: 2}
-    - {fileID: 11400000, guid: 4648e2254df23984ca8444f88526236c, type: 2}
-    - {fileID: 11400000, guid: 67caf6038aab9864d9b13193e1380521, type: 2}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: I don't think about it, Mr. {LastName}.  I'm just a day to day kind of
+        girl now.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 5143e3ce9e33973479a1d001c5e1c665,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: That's probably best.  Keep it simple, right?  Why don't you treat yourself
+        to a nice picnic at the park?  It's local and cheap enough.  Hopefully the
+        weather will be nice.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 5143e3ce9e33973479a1d001c5e1c665,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: 'That''s about all I can afford this year.  A picnic it will be for me,
+        I guess.  '
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 5143e3ce9e33973479a1d001c5e1c665,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: The modest vacation...
+      Videos:
+      - {fileID: 32900000, guid: fae400fd69f1fe34cbf57d85de3a32a3, type: 3}
+      Textures: []
+      DialogClips:
+      - {fileID: 8300000, guid: af6a5f6e35041aa4a956779a07d8e872, type: 3}
+      Text: ...isn't anything to brag about, but it does provide Debbie with some
+        relaxtion.
+    Choices: []
     Effect:
-      NpcEffects: []
+      NpcEffects:
+      - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+          type: 2}
+        AmbitionEffect: 2
+        PrideEffect: 3
+        RemoveCurrentImage: 0
+        ImageSetsToAdd: []
+        ImageSetsToRemove: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0

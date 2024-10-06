@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Interdepartmental
+  m_Name: Research the latest marketing trends
   m_EditorClassIdentifier: 
-  Id: ec07f8d3-0c45-4051-91c4-4a495de36ba0
-  Name: Interdepartmental
+  Id: 831f3483-1043-4819-97eb-bd95c1461cd6
+  Name: Research the latest marketing trends
   SubInteraction: 1
-  AlertNew: 1
-  Category: 4
+  AlertNew: 0
+  Category: 0
   Requirements:
     RequiredPower: 0
     RequiredPromotionLevel: 0
@@ -33,7 +33,7 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 0
+    EgoCost: 20
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -41,18 +41,18 @@ MonoBehaviour:
     BrandCost: 0
     RevanueCost: 0
     Items: []
-  Repeatable: 1
+  Repeatable: 0
   Cooldown: 0
-  PreviewEffect: 1
+  PreviewEffect: 0
   Result:
     Dialogs:
-    - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-        type: 2}
-      Text: 'NOTE: Interdepartmental assignments allow Debbie to act on your behalf
-        across the company'
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Since you have such a fine brain, let's put it to use.  I've been so
+        busy keepinhg this company on track, I've lost track on the latest in the
+        world of marketing.  You had pretensiosn in that ara once, didn't you?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 7b229387ac624744e8cba637eeda5934,
+      CustomBackground: {fileID: 2800000, guid: 04aba9185e390994fa36eca45cd4d343,
         type: 3}
       CustomBackgroundNpcLayout:
         xPos: 0.52
@@ -60,22 +60,61 @@ MonoBehaviour:
         width: 375
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
-    OptionalPopups: []
-    Choices:
-    - {fileID: 11400000, guid: 37e296309e21e1849ba3d66fd0ce04f8, type: 2}
-    - {fileID: 11400000, guid: ecb4861f762e3ce44aba599b52bb6242, type: 2}
-    - {fileID: 11400000, guid: bb0fa96134ecd2849810aa1c8863ba47, type: 2}
-    - {fileID: 11400000, guid: 94ff7c7b957ca0b4faf582b36e87e43d, type: 2}
-    - {fileID: 11400000, guid: e5f954ed05ac3094d9faaea32d2a4f1f, type: 2}
-    - {fileID: 11400000, guid: b70258e3092971f4d9efbd5ffcfbdd32, type: 2}
-    - {fileID: 11400000, guid: 8db1318eccaf063428e4f4700ce83d90, type: 2}
-    - {fileID: 11400000, guid: f31b37e6347cad448bc5ba2e3bcaa610, type: 2}
-    - {fileID: 11400000, guid: a6807a4209b49dc4bac6a2351dc7d33c, type: 2}
-    - {fileID: 11400000, guid: 2630095f126808f4a8a13d66caee36dd, type: 2}
-    - {fileID: 11400000, guid: 1ef6f8ac895b155428ec387a26044cdb, type: 2}
-    - {fileID: 11400000, guid: f66b9f21d2f7eb24e80f43c0b72d6e52, type: 2}
-    - {fileID: 11400000, guid: 4648e2254df23984ca8444f88526236c, type: 2}
-    - {fileID: 11400000, guid: 67caf6038aab9864d9b13193e1380521, type: 2}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: Marketing was one of my MBA cores, if that's what you mean, Sir.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 04aba9185e390994fa36eca45cd4d343,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Then you won't mind studying the latest trends and briefing me upon your
+        return from vacation.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 04aba9185e390994fa36eca45cd4d343,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: I'm flattered that you think I could be os use!  Yes, of course, Mr.
+        }LastName}!  I'd be happy too!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 2800000, guid: 04aba9185e390994fa36eca45cd4d343,
+        type: 3}
+      CustomBackgroundNpcLayout:
+        xPos: 0.52
+        yPos: 0.42
+        width: 375
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    OptionalPopups:
+    - Title: The book is rather...
+      Videos: []
+      Textures:
+      - {fileID: 2800000, guid: 9c41bb2a02266b9498210879cf2d9bf4, type: 3}
+      DialogClips: []
+      Text: ...dry, but always the eager student, Debbie take sit with pride.
+    - Title: She devours the book!
+      Videos:
+      - {fileID: 32900000, guid: d69d6c06826f48940857cc9f02d8dbe4, type: 3}
+      Textures: []
+      DialogClips: []
+      Text: 'On her return, you enjoy a most thorough and valuable briefing from
+        the Forbes MBA!
+
+        +1 Brand'
+    Choices: []
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -84,7 +123,7 @@ MonoBehaviour:
       PatentsEffect: 0
       CultureEffect: 0
       SpreadsheetsEffect: 0
-      BrandEffect: 0
+      BrandEffect: 1
       RevanueEffect: 0
       HornicalEffect: 0
       NpcsToControl: []
