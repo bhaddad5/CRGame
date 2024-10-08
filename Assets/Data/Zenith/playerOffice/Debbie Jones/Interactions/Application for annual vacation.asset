@@ -49,7 +49,8 @@ MonoBehaviour:
   Result:
     Dialogs:
     - CurrSpeaker: 0
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: Mr. {LastName}, I've submitted my request for my annual vacation.  It's
         been a long year and I am really looking forward to a break!
       CustomNpcImageOptions: []
@@ -62,7 +63,8 @@ MonoBehaviour:
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
-      OptionalNpcReference: {fileID: 0}
+      OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
+        type: 2}
       Text: 'NOTE:  You have several options here.  You can ''suggest'' how she spend
         her vacation.  You can make it a working holiday by giving her a project. 
         Or you can deny her application.  '
@@ -78,6 +80,9 @@ MonoBehaviour:
     OptionalPopups: []
     Choices:
     - {fileID: 11400000, guid: b7e0d982948d1e3418aba6cc08342b62, type: 2}
+    - {fileID: 11400000, guid: fdae897125ebc9940b48db826b831b56, type: 2}
+    - {fileID: 11400000, guid: 9c0224966991cda49a2674981161334a, type: 2}
+    - {fileID: 11400000, guid: 9650094cb358fba45943755adb503472, type: 2}
     Effect:
       NpcEffects: []
       EgoEffect: 0
@@ -140,7 +145,7 @@ MonoBehaviour:
       Promotion: 0
       Home: 0
     GoToRegion: {fileID: 0}
-  Completed: 0
-  TurnCompletedOn: -1
-  New: 1
+  Completed: 1
+  TurnCompletedOn: 4181
+  New: 0
   FailCount: 0
