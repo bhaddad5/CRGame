@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd82948dc1c59274f942ff99737d3e88, type: 3}
-  m_Name: Deny the request
+  m_Name: Election Day
   m_EditorClassIdentifier: 
-  Id: aada89ed-228f-499e-8c97-d74716f360ed
-  Name: Deny the request
+  Id: b5b6f1a0-eadf-4cbe-8e86-e19791e7904e
+  Name: Election Day
   SubInteraction: 1
   AlertNew: 0
   Category: 0
@@ -24,7 +24,8 @@ MonoBehaviour:
     NotOnWeekends: 0
     NotOnWeekdays: 0
     NpcStatRequirements: []
-    RequiredInteractions: []
+    RequiredInteractions:
+    - {fileID: 11400000, guid: 04b8c4fd893d25b488618c61d45d983a, type: 2}
     RequiredNotCompletedInteractions: []
     RequiredPolicies: []
     RequiredDepartmentsControled: []
@@ -33,7 +34,7 @@ MonoBehaviour:
     RequiredNpcsNotControled: []
     RequiredTrophies: []
   Cost:
-    EgoCost: 25
+    EgoCost: 0
     MoneyCost: 0
     SpreadsheetsCost: 0
     CultureCost: 0
@@ -42,62 +43,104 @@ MonoBehaviour:
     RevanueCost: 0
     Items: []
   Repeatable: 1
-  Cooldown: 0
+  Cooldown: 730
   PreviewEffect: 1
   Result:
     Dialogs:
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: You seem quite animated today.  Something going on in your little life,
+        Debbie?
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 0
       OptionalNpcReference: {fileID: 0}
-      Text: Mr. {LastName}, I'd really appreciate it if you could approve my vacation
-        time, please?
+      Text: It's Election Day, Mr, {LastName}!  I've been following the election
+        closely.  Lots of important issues are at stake!
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 5143e3ce9e33973479a1d001c5e1c665,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
-      OptionalAudioClip: {fileID: 0}
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 8300000, guid: 7bef0fc0f517a38479f48d59370f1741,
+        type: 3}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 1
       OptionalNpcReference: {fileID: 0}
-      Text: I wish I could but I really can't do without you right now, Debbie. 
-        I'm sorry.  Your request for annual vacation time is denied.
+      Text: I see!  And who are you voting for?
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 5143e3ce9e33973479a1d001c5e1c665,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: Well, that's my really my business.  I mean, I'd rather not say... Sir.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 8300000, guid: f06f5f846f24ade4987088ccee5b167c,
+        type: 3}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 1
+      OptionalNpcReference: {fileID: 0}
+      Text: Well, now you've got me curious!  But I suppose if you don't wish to
+        discuss it, we might discuss other things.  Perhaps your current demerit
+        status.
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 0}
+      OptionalStartMusicClip: {fileID: 0}
+    - CurrSpeaker: 0
+      OptionalNpcReference: {fileID: 0}
+      Text: Ok, ok!  I'm got to vote for the Progressive candidates.  At least they
+        try to represent and fight for female rights and equality.  I've always been
+        a Feminist and voted for the party that fights for women like me!
+      CustomNpcImageOptions: []
+      CustomBackground: {fileID: 0}
+      CustomBackgroundNpcLayout:
+        xPos: 0
+        yPos: 0
+        width: 0
+      OptionalAudioClip: {fileID: 8300000, guid: 2665087384a17b842a681c7795657605,
+        type: 3}
       OptionalStartMusicClip: {fileID: 0}
     - CurrSpeaker: 2
       OptionalNpcReference: {fileID: 0}
-      Text: 'NOTE:  The shock on her face is stark but she quickly reverts to the
-        expected blank pleasant expression required when dealing with her superior. 
-        She knows it is pointless to debate the matter.  Still, her disappointment
-        is obvious.'
+      Text: 'NOTE:  You can tell she''s passionate about this and if you support
+        Debbie''s right to participate in this election, she''ll feel a rush of +5
+        Pride and +5 Ambition!  Or you could discourage her-- with a demerit.'
       CustomNpcImageOptions: []
-      CustomBackground: {fileID: 2800000, guid: 5143e3ce9e33973479a1d001c5e1c665,
-        type: 3}
+      CustomBackground: {fileID: 0}
       CustomBackgroundNpcLayout:
-        xPos: 0.52
-        yPos: 0.42
-        width: 375
+        xPos: 0
+        yPos: 0
+        width: 0
       OptionalAudioClip: {fileID: 0}
       OptionalStartMusicClip: {fileID: 0}
     OptionalPopups: []
-    Choices: []
+    Choices:
+    - {fileID: 11400000, guid: b4360590f78bc6142adea16685ca0278, type: 2}
+    - {fileID: 11400000, guid: c258b882c7ab88d4b8a8ec825939e876, type: 2}
     Effect:
-      NpcEffects:
-      - OptionalNpcReference: {fileID: 11400000, guid: ee1da375ae4db704d92072d1a5229c06,
-          type: 2}
-        AmbitionEffect: -10
-        PrideEffect: -10
-        RemoveCurrentImage: 0
-        ImageSetsToAdd: []
-        ImageSetsToRemove: []
+      NpcEffects: []
       EgoEffect: 0
       FundsEffect: 0
       PowerEffect: 0
